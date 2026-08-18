@@ -1,0 +1,35 @@
+/* Being and Time — forest manuscript */
+:root, html[data-theme="dark"] {
+  --bg: #0a100c;
+  --bg-elevated: #101a14;
+  --bg-soft: #16241c;
+  --surface: #1c2c22;
+  --border: rgba(74, 222, 128, 0.14);
+  --border-strong: rgba(74, 222, 128, 0.28);
+  --text: #e4f0e8;
+  --text-muted: #8aab96;
+  --text-faint: #5a7564;
+  --accent: #4ade80;
+  --accent-soft: rgba(74, 222, 128, 0.1);
+  --accent-hover: #86efac;
+  --copper: #a3e635;
+  --reader-max: 50rem;
+  --font-serif: "Cormorant Garamond", "Palatino Linotype", Palatino, "Times New Roman", serif;
+}
+html[data-theme="sepia"] {
+  --bg: #f3f0e6;
+  --text: #1a2a1c;
+  --accent: #2f6b45;
+  --bg-elevated: #ebe6d6;
+}
+.cover-glow {
+  background: radial-gradient(ellipse, rgba(74, 222, 128, 0.12) 0%, transparent 65%);
+}
+.cover-grid {
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 27px,
+    rgba(74, 222, 128, 0.05) 27px, rgba(74, 222, 128, 0.05) 28px
+  );
+}
+.title-line.accent { font-style: italic; color: var(--accent); }
+.chapter-text p { text-align: justify; hyphens: auto; }

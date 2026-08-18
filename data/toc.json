@@ -1,0 +1,241 @@
+{
+  "title": "Atlas Shrugged",
+  "author": "Ayn Rand",
+  "dedication": "To Frank O’Connor",
+  "parts": [
+    {
+      "id": "part-i",
+      "roman": "I",
+      "name": "ONE",
+      "subtitle": "NON-CONTRADICTION",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "THE THEME",
+          "word_count": 10733
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "THE CHAIN",
+          "word_count": 7990
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "THE TOP AND THE BOTTOM",
+          "word_count": 9292
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "THE IMMOVABLE MOVERS",
+          "word_count": 11463
+        },
+        {
+          "id": "p1c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "THE CLIMAX OF THE D’ANCONIAS",
+          "word_count": 18342
+        },
+        {
+          "id": "p1c6",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "THE NON-COMMERCIAL",
+          "word_count": 16270
+        },
+        {
+          "id": "p1c7",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "THE EXPLOITERS AND THE EXPLOITED",
+          "word_count": 25618
+        },
+        {
+          "id": "p1c8",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "THE JOHN GALT LINE",
+          "word_count": 18521
+        },
+        {
+          "id": "p1c9",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "THE SACRED AND THE PROFANE",
+          "word_count": 18918
+        },
+        {
+          "id": "p1c10",
+          "number_label": "Chapter X",
+          "roman": "X",
+          "title": "WYATT’S TORCH",
+          "word_count": 21772
+        }
+      ]
+    },
+    {
+      "id": "part-ii",
+      "roman": "II",
+      "name": "TWO",
+      "subtitle": "EITHER-OR",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "THE MAN WHO BELONGED ON EARTH",
+          "word_count": 19954
+        },
+        {
+          "id": "p2c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "THE ARISTOCRACY OF PULL",
+          "word_count": 21772
+        },
+        {
+          "id": "p2c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "WHITE BLACKMAIL",
+          "word_count": 18692
+        },
+        {
+          "id": "p2c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "THE SANCTION OF THE VICTIM",
+          "word_count": 16908
+        },
+        {
+          "id": "p2c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "ACCOUNT OVERDRAWN",
+          "word_count": 17707
+        },
+        {
+          "id": "p2c6",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "MIRACLE METAL",
+          "word_count": 17002
+        },
+        {
+          "id": "p2c7",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "THE MORATORIUM ON BRAINS",
+          "word_count": 20134
+        },
+        {
+          "id": "p2c8",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "BY OUR LOVE",
+          "word_count": 12510
+        },
+        {
+          "id": "p2c9",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "THE FACE WITHOUT PAIN OR FEAR OR GUILT",
+          "word_count": 10401
+        },
+        {
+          "id": "p2c10",
+          "number_label": "Chapter X",
+          "roman": "X",
+          "title": "THE SIGN OF THE DOLLAR",
+          "word_count": 21590
+        }
+      ]
+    },
+    {
+      "id": "part-iii",
+      "roman": "III",
+      "name": "THREE",
+      "subtitle": "A IS A",
+      "chapters": [
+        {
+          "id": "p3c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "ATLANTIS",
+          "word_count": 25360
+        },
+        {
+          "id": "p3c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "THE UTOPIA OF GREED",
+          "word_count": 32088
+        },
+        {
+          "id": "p3c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "ANTI-GREED",
+          "word_count": 22928
+        },
+        {
+          "id": "p3c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "ANTI-LIFE",
+          "word_count": 22234
+        },
+        {
+          "id": "p3c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "THEIR BROTHERS’ KEEPERS",
+          "word_count": 27275
+        },
+        {
+          "id": "p3c6",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "THE CONCERTO OF DELIVERANCE",
+          "word_count": 18211
+        },
+        {
+          "id": "p3c7",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "“THIS IS JOHN GALT SPEAKING”",
+          "word_count": 37525
+        },
+        {
+          "id": "p3c8",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "THE EGOIST",
+          "word_count": 26637
+        },
+        {
+          "id": "p3c9",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "THE GENERATOR",
+          "word_count": 10122
+        },
+        {
+          "id": "p3c10",
+          "number_label": "Chapter X",
+          "roman": "X",
+          "title": "IN THE NAME OF THE BEST WITHIN US",
+          "word_count": 10246
+        }
+      ]
+    }
+  ]
+}

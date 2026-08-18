@@ -1,0 +1,28 @@
+/* Beyond Good and Evil — violet lightning, free spirit */
+:root, html[data-theme="dark"] {
+  --bg: #0c0a12;
+  --bg-elevated: #15121f;
+  --bg-soft: #1c1829;
+  --surface: #221e32;
+  --border: rgba(167, 139, 250, 0.16);
+  --border-strong: rgba(167, 139, 250, 0.32);
+  --text: #f0eafc;
+  --text-muted: #a89bc4;
+  --text-faint: #6f6488;
+  --accent: #a78bfa;
+  --accent-soft: rgba(167, 139, 250, 0.12);
+  --accent-hover: #c4b5fd;
+  --copper: #c084fc;
+  --reader-max: 50rem;
+}
+.cover-grid {
+  background-image: repeating-linear-gradient(
+    -12deg, transparent, transparent 40px,
+    rgba(167, 139, 250, 0.04) 40px, rgba(167, 139, 250, 0.04) 41px
+  );
+}
+.cover-glow {
+  background: radial-gradient(ellipse, rgba(167, 139, 250, 0.2) 0%, rgba(192, 132, 252, 0.08) 40%, transparent 70%);
+}
+.title-line.accent { color: var(--accent); font-style: italic; }
+.rule-diamond { border-radius: 1px; box-shadow: 0 0 12px var(--accent); }

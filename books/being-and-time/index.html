@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Being and Time by Martin Heidegger — a clean literary reading experience." />
+  <title>Being and Time — Martin Heidegger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/reader.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <div id="app">
+    <section id="cover" class="view active" aria-label="Cover">
+      <div class="cover-bg" aria-hidden="true">
+        <div class="cover-grid"></div>
+        <div class="cover-glow"></div>
+      </div>
+      <div class="cover-content">
+        <p class="cover-eyebrow">A work by</p>
+        <h1 class="cover-title">
+          <span class="title-line" id="cover-title-main">Being</span>
+          <span class="title-line accent">and Time</span>
+        </h1>
+        <div class="cover-rule" aria-hidden="true"><span class="rule-diamond"></span></div>
+        <p class="cover-author" id="cover-author">Martin Heidegger</p>
+        <p class="cover-dedication" id="cover-dedication" hidden></p>
+        <p class="cover-quote" id="cover-quote">The Exposition of the Question of the Meaning of Being</p>
+        <div class="cover-actions">
+          <button type="button" class="btn btn-primary" data-action="begin">Begin Reading</button>
+          <button type="button" class="btn btn-ghost" data-action="open-toc">Table of Contents</button>
+          <button type="button" class="btn btn-ghost" data-action="library">← Library</button>
+        </div>
+        <p class="cover-continue hidden" id="cover-continue">
+          <button type="button" class="link-btn" data-action="resume">Continue where you left off →</button>
+        </p>
+      </div>
+      <footer class="cover-footer">
+        <span id="cover-footer-meta"></span>
+      </footer>
+    </section>
+
+    <section id="reader" class="view" aria-label="Reader" hidden>
+      <header class="reader-header">
+        <div class="header-left">
+          <button type="button" class="icon-btn" id="btn-library" title="Library" aria-label="Library">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V5a1 1 0 0 1 1-1h4l2 2h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/></svg>
+          </button>
+          <button type="button" class="icon-btn" id="btn-home" title="Cover" aria-label="Cover">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5z"/></svg>
+          </button>
+          <button type="button" class="icon-btn" id="btn-toc" title="Contents" aria-label="Table of contents">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          </button>
+        </div>
+        <div class="header-center">
+          <p class="header-part" id="header-part"></p>
+          <h2 class="header-chapter" id="header-chapter"></h2>
+        </div>
+        <div class="header-right">
+          <button type="button" class="icon-btn" id="btn-settings" title="Reading settings" aria-label="Settings">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </header>
+
+      <article class="reader-body" id="reader-body">
+        <div class="chapter-meta" id="chapter-meta">
+          <p class="meta-part" id="meta-part"></p>
+          <h1 class="meta-title" id="meta-title"></h1>
+          <p class="meta-number" id="meta-number"></p>
+          <div class="meta-rule" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="chapter-text" id="chapter-text"></div>
+        <nav class="chapter-nav" id="chapter-nav">
+          <button type="button" class="nav-btn prev" id="btn-prev" disabled>
+            <span class="nav-label">Previous</span>
+            <span class="nav-title" id="prev-title"></span>
+          </button>
+          <button type="button" class="nav-btn next" id="btn-next" disabled>
+            <span class="nav-label">Next</span>
+            <span class="nav-title" id="next-title"></span>
+          </button>
+        </nav>
+      </article>
+    </section>
+  </div>
+
+  <aside id="toc-drawer" class="drawer" aria-hidden="true" aria-label="Table of contents">
+    <div class="drawer-backdrop" data-action="close-toc"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div>
+          <p class="drawer-eyebrow">Being and Time</p>
+          <h2>Contents</h2>
+        </div>
+        <button type="button" class="icon-btn" data-action="close-toc" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="drawer-body" id="toc-list"></div>
+    </div>
+  </aside>
+
+  <div id="settings-panel" class="settings" aria-hidden="true" role="dialog" aria-labelledby="settings-title">
+    <button type="button" class="settings-backdrop" id="settings-backdrop" aria-label="Close settings"></button>
+    <div class="settings-card" id="settings-card">
+      <div class="settings-header">
+        <h3 id="settings-title">Reading Settings</h3>
+        <button type="button" class="icon-btn" id="settings-close" aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="settings-row">
+        <span>Theme</span>
+        <div class="seg" role="group" aria-label="Theme">
+          <button type="button" class="seg-btn" data-pref="theme" data-value="dark">Dark</button>
+          <button type="button" class="seg-btn" data-pref="theme" data-value="sepia">Sepia</button>
+          <button type="button" class="seg-btn" data-pref="theme" data-value="light">Light</button>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span>Text size</span>
+        <div class="seg" role="group" aria-label="Text size">
+          <button type="button" class="seg-btn" data-pref="size" data-value="sm">A</button>
+          <button type="button" class="seg-btn" data-pref="size" data-value="md">A</button>
+          <button type="button" class="seg-btn" data-pref="size" data-value="lg">A</button>
+          <button type="button" class="seg-btn" data-pref="size" data-value="xl">A</button>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span>Line height</span>
+        <div class="seg" role="group" aria-label="Line height">
+          <button type="button" class="seg-btn" data-pref="leading" data-value="tight">Tight</button>
+          <button type="button" class="seg-btn" data-pref="leading" data-value="normal">Normal</button>
+          <button type="button" class="seg-btn" data-pref="leading" data-value="loose">Loose</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading" class="loading hidden" aria-live="polite">
+    <div class="loading-spinner"></div>
+    <p>Loading chapter…</p>
+  </div>
+
+  <script>
+    window.BOOK_CONFIG = {
+      storageKey: "reader-being-and-time",
+      libraryHref: "../../index.html",
+      tagline: "The Exposition of the Question of the Meaning of Being"
+    };
+  </script>
+  <script src="../../shared/reader.js"></script>
+</body>
+</html>

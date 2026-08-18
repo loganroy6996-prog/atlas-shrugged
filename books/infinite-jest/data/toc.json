@@ -1,0 +1,330 @@
+{
+  "title": "Infinite Jest",
+  "author": "David Foster Wallace",
+  "dedication": "For F. P. Foster: R.I.P.",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "Infinite Jest",
+      "subtitle": "The Novel",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "§ 1",
+          "roman": "1",
+          "title": "Year Of Glad",
+          "word_count": 6734
+        },
+        {
+          "id": "p1c2",
+          "number_label": "§ 2",
+          "roman": "2",
+          "title": "Year Of The Depend Adult",
+          "word_count": 7780
+        },
+        {
+          "id": "p1c3",
+          "number_label": "§ 3",
+          "roman": "3",
+          "title": "Year Of The Depend Adult (2)",
+          "word_count": 1897
+        },
+        {
+          "id": "p1c4",
+          "number_label": "§ 4",
+          "roman": "4",
+          "title": "Year Of The Trial-Size Dove Bar",
+          "word_count": 1285
+        },
+        {
+          "id": "p1c5",
+          "number_label": "§ 5",
+          "roman": "5",
+          "title": "Year Of The Depend Adult (3)",
+          "word_count": 4170
+        },
+        {
+          "id": "p1c6",
+          "number_label": "§ 6",
+          "roman": "6",
+          "title": "Year Of The Depend Adult (4)",
+          "word_count": 7771
+        },
+        {
+          "id": "p1c7",
+          "number_label": "§ 7",
+          "roman": "7",
+          "title": "Year Of The Depend Adult Undergarment",
+          "word_count": 1283
+        },
+        {
+          "id": "p1c8",
+          "number_label": "§ 8",
+          "roman": "8",
+          "title": "Year Of The Depend Adult (5)",
+          "word_count": 8293
+        },
+        {
+          "id": "p1c9",
+          "number_label": "§ 9",
+          "roman": "9",
+          "title": "Year Of The Depend Adult Undergarment (2)",
+          "word_count": 4706
+        },
+        {
+          "id": "p1c10",
+          "number_label": "§ 10",
+          "roman": "10",
+          "title": "Year Of The Depend Adult Undergarment (3)",
+          "word_count": 36451
+        },
+        {
+          "id": "p1c11",
+          "number_label": "§ 11",
+          "roman": "11",
+          "title": "Year Of The Depend Adult Undergarment (4)",
+          "word_count": 5665
+        },
+        {
+          "id": "p1c12",
+          "number_label": "§ 12",
+          "roman": "12",
+          "title": "Year Of The Depend Adult (6)",
+          "word_count": 8436
+        },
+        {
+          "id": "p1c13",
+          "number_label": "§ 13",
+          "roman": "13",
+          "title": "Year Of The Depend Adult Undergarment (5)",
+          "word_count": 10215
+        },
+        {
+          "id": "p1c14",
+          "number_label": "§ 14",
+          "roman": "14",
+          "title": "Year Of The Depend Adult (7)",
+          "word_count": 18494
+        },
+        {
+          "id": "p1c15",
+          "number_label": "§ 15",
+          "roman": "15",
+          "title": "Year Of The Depend Adult (8)",
+          "word_count": 21578
+        },
+        {
+          "id": "p1c16",
+          "number_label": "§ 16",
+          "roman": "16",
+          "title": "Year Of The Depend Adult Undergarment (6)",
+          "word_count": 8739
+        },
+        {
+          "id": "p1c17",
+          "number_label": "§ 17",
+          "roman": "17",
+          "title": "Year Of The Depend Adult Undergarment (7)",
+          "word_count": 1989
+        },
+        {
+          "id": "p1c18",
+          "number_label": "§ 18",
+          "roman": "18",
+          "title": "Year Of The Depend Adult (9)",
+          "word_count": 10255
+        },
+        {
+          "id": "p1c19",
+          "number_label": "§ 19",
+          "roman": "19",
+          "title": "Year Of The Depend Adult Undergarment (8)",
+          "word_count": 17248
+        },
+        {
+          "id": "p1c20",
+          "number_label": "§ 20",
+          "roman": "20",
+          "title": "Year Of The Depend Adult Undergarment (9)",
+          "word_count": 2325
+        },
+        {
+          "id": "p1c21",
+          "number_label": "§ 21",
+          "roman": "21",
+          "title": "Year Of The Depend Adult (10)",
+          "word_count": 17052
+        },
+        {
+          "id": "p1c22",
+          "number_label": "§ 22",
+          "roman": "22",
+          "title": "Year Of The Depend Adult Undergarment (10)",
+          "word_count": 11352
+        },
+        {
+          "id": "p1c23",
+          "number_label": "§ 23",
+          "roman": "23",
+          "title": "Year Of The Depend Adult (11)",
+          "word_count": 4187
+        },
+        {
+          "id": "p1c24",
+          "number_label": "§ 24",
+          "roman": "24",
+          "title": "Year Of The Depend Adult Undergarment (11)",
+          "word_count": 29310
+        },
+        {
+          "id": "p1c25",
+          "number_label": "§ 25",
+          "roman": "25",
+          "title": "Year Of The Depend Adult Undergarment (12)",
+          "word_count": 10965
+        },
+        {
+          "id": "p1c26",
+          "number_label": "§ 26",
+          "roman": "26",
+          "title": "Year Of The Depend Adult Undergarment (13)",
+          "word_count": 8562
+        },
+        {
+          "id": "p1c27",
+          "number_label": "§ 27",
+          "roman": "27",
+          "title": "Year Of The Depend Adult Undergarment (14)",
+          "word_count": 872
+        },
+        {
+          "id": "p1c28",
+          "number_label": "§ 28",
+          "roman": "28",
+          "title": "Year Of The Depend Adult Undergarment (15)",
+          "word_count": 1691
+        },
+        {
+          "id": "p1c29",
+          "number_label": "§ 29",
+          "roman": "29",
+          "title": "Year Of The Depend Adult Undergarment (16)",
+          "word_count": 36566
+        },
+        {
+          "id": "p1c30",
+          "number_label": "§ 30",
+          "roman": "30",
+          "title": "Year Of The Depend Adult Undergarment (17)",
+          "word_count": 10070
+        },
+        {
+          "id": "p1c31",
+          "number_label": "§ 31",
+          "roman": "31",
+          "title": "Year Of The Depend Adult Undergarment (18)",
+          "word_count": 1712
+        },
+        {
+          "id": "p1c32",
+          "number_label": "§ 32",
+          "roman": "32",
+          "title": "Year Of The Depend Adult Undergarment (19)",
+          "word_count": 13469
+        },
+        {
+          "id": "p1c33",
+          "number_label": "§ 33",
+          "roman": "33",
+          "title": "Year Of The Depend Adult Undergarment (20)",
+          "word_count": 1784
+        },
+        {
+          "id": "p1c34",
+          "number_label": "§ 34",
+          "roman": "34",
+          "title": "Year Of The Depend Adult Undergarment (21)",
+          "word_count": 1898
+        },
+        {
+          "id": "p1c35",
+          "number_label": "§ 35",
+          "roman": "35",
+          "title": "Year Of The Depend Adult Undergarment (22)",
+          "word_count": 4376
+        },
+        {
+          "id": "p1c36",
+          "number_label": "§ 36",
+          "roman": "36",
+          "title": "Year Of The Depend Adult Undergarment (23)",
+          "word_count": 8741
+        },
+        {
+          "id": "p1c37",
+          "number_label": "§ 37",
+          "roman": "37",
+          "title": "Year Of The Depend Adult Undergarment (24)",
+          "word_count": 1645
+        },
+        {
+          "id": "p1c38",
+          "number_label": "§ 38",
+          "roman": "38",
+          "title": "Year Of The Depend Adult Undergarment (25)",
+          "word_count": 2006
+        },
+        {
+          "id": "p1c39",
+          "number_label": "§ 39",
+          "roman": "39",
+          "title": "Year Of The Depend Adult Undergarment (26)",
+          "word_count": 15657
+        },
+        {
+          "id": "p1c40",
+          "number_label": "§ 40",
+          "roman": "40",
+          "title": "Year Of The Depend Adult Undergarment (27)",
+          "word_count": 14137
+        },
+        {
+          "id": "p1c41",
+          "number_label": "§ 41",
+          "roman": "41",
+          "title": "Year Of The Depend Adult Undergarment (28)",
+          "word_count": 31056
+        },
+        {
+          "id": "p1c42",
+          "number_label": "§ 42",
+          "roman": "42",
+          "title": "Year Of The Depend Adult Undergarment (29)",
+          "word_count": 3268
+        },
+        {
+          "id": "p1c43",
+          "number_label": "§ 43",
+          "roman": "43",
+          "title": "Year Of The Depend Adult Undergarment (30)",
+          "word_count": 12924
+        },
+        {
+          "id": "p1c44",
+          "number_label": "§ 44",
+          "roman": "44",
+          "title": "Year Of The Depend Adult Undergarment (31)",
+          "word_count": 43825
+        },
+        {
+          "id": "p1c45",
+          "number_label": "§ 45",
+          "roman": "45",
+          "title": "Year Of The Depend Adult Undergarment (32)",
+          "word_count": 9946
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,886 @@
+{
+  "title": "Thus Spoke Zarathustra",
+  "author": "Friedrich Nietzsche",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "Part One",
+      "subtitle": "Part One",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Zarathustra’s Prologue",
+          "roman": "2",
+          "title": "Zarathustra’s Prologue",
+          "word_count": 451
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Zarathustra answered: ‘I love mankind.’",
+          "roman": "3",
+          "title": "Zarathustra answered: ‘I love mankind.’",
+          "word_count": 3394
+        },
+        {
+          "id": "p1c3",
+          "number_label": "The old man went away, but returned at once and offered Zarathustra",
+          "roman": "4",
+          "title": "The old man went away, but returned at once and offered Zarathustra",
+          "word_count": 436
+        },
+        {
+          "id": "p1c4",
+          "number_label": "The creator seeks companions, not corpses or herds or believers. The",
+          "roman": "5",
+          "title": "The creator seeks companions, not corpses or herds or believers. The",
+          "word_count": 11
+        },
+        {
+          "id": "p1c5",
+          "number_label": "The creator seeks companions and fellow-harvesters: for with him",
+          "roman": "6",
+          "title": "The creator seeks companions and fellow-harvesters: for with him",
+          "word_count": 22
+        },
+        {
+          "id": "p1c6",
+          "number_label": "The creator seeks companions and such as know how to whet their",
+          "roman": "7",
+          "title": "The creator seeks companions and such as know how to whet their",
+          "word_count": 404
+        },
+        {
+          "id": "p1c7",
+          "number_label": "Of the Three Metamorphoses",
+          "roman": "9",
+          "title": "Of the Three Metamorphoses",
+          "word_count": 693
+        },
+        {
+          "id": "p1c8",
+          "number_label": "Of the Chairs of Virtue",
+          "roman": "10",
+          "title": "Of the Chairs of Virtue",
+          "word_count": 812
+        },
+        {
+          "id": "p1c9",
+          "number_label": "Of the Afterworldsmen",
+          "roman": "11",
+          "title": "Of the Afterworldsmen",
+          "word_count": 1008
+        },
+        {
+          "id": "p1c10",
+          "number_label": "Of the Despisers of the Body",
+          "roman": "12",
+          "title": "Of the Despisers of the Body",
+          "word_count": 609
+        },
+        {
+          "id": "p1c11",
+          "number_label": "Of Joys and Passions",
+          "roman": "13",
+          "title": "Of Joys and Passions",
+          "word_count": 555
+        },
+        {
+          "id": "p1c12",
+          "number_label": "Of the Pale Criminal",
+          "roman": "14",
+          "title": "Of the Pale Criminal",
+          "word_count": 273
+        },
+        {
+          "id": "p1c13",
+          "number_label": "The chalk-line charmed the hen; the blow he struck charmed his simple",
+          "roman": "15",
+          "title": "The chalk-line charmed the hen; the blow he struck charmed his simple",
+          "word_count": 424
+        },
+        {
+          "id": "p1c14",
+          "number_label": "Of Reading and Writing",
+          "roman": "16",
+          "title": "Of Reading and Writing",
+          "word_count": 545
+        },
+        {
+          "id": "p1c15",
+          "number_label": "Of the Tree on the Mountainside",
+          "roman": "17",
+          "title": "Of the Tree on the Mountainside",
+          "word_count": 187
+        },
+        {
+          "id": "p1c16",
+          "number_label": "Zarathustra smiled and said: ‘There are many souls one will never",
+          "roman": "18",
+          "title": "Zarathustra smiled and said: ‘There are many souls one will never",
+          "word_count": 704
+        },
+        {
+          "id": "p1c17",
+          "number_label": "Of the Preachers of Death",
+          "roman": "19",
+          "title": "Of the Preachers of Death",
+          "word_count": 583
+        },
+        {
+          "id": "p1c18",
+          "number_label": "Of War and Warriors",
+          "roman": "20",
+          "title": "Of War and Warriors",
+          "word_count": 594
+        },
+        {
+          "id": "p1c19",
+          "number_label": "Of the New Idol",
+          "roman": "21",
+          "title": "Of the New Idol",
+          "word_count": 827
+        },
+        {
+          "id": "p1c20",
+          "number_label": "Of the Flies of the Market-place",
+          "roman": "22",
+          "title": "Of the Flies of the Market-place",
+          "word_count": 131
+        },
+        {
+          "id": "p1c21",
+          "number_label": "The world revolves about the inventor of new values: imperceptibly it",
+          "roman": "23",
+          "title": "The world revolves about the inventor of new values: imperceptibly it",
+          "word_count": 824
+        },
+        {
+          "id": "p1c22",
+          "number_label": "Of Chastity",
+          "roman": "24",
+          "title": "Of Chastity",
+          "word_count": 397
+        },
+        {
+          "id": "p1c23",
+          "number_label": "Of the Friend",
+          "roman": "25",
+          "title": "Of the Friend",
+          "word_count": 674
+        },
+        {
+          "id": "p1c24",
+          "number_label": "Of the Thousand and One Goals",
+          "roman": "26",
+          "title": "Of the Thousand and One Goals",
+          "word_count": 638
+        },
+        {
+          "id": "p1c25",
+          "number_label": "Zarathustra has seen many lands and many peoples: Zarathustra has",
+          "roman": "27",
+          "title": "Zarathustra has seen many lands and many peoples: Zarathustra has",
+          "word_count": 106
+        },
+        {
+          "id": "p1c26",
+          "number_label": "Of Love of One’s Neighbour",
+          "roman": "28",
+          "title": "Of Love of One’s Neighbour",
+          "word_count": 556
+        },
+        {
+          "id": "p1c27",
+          "number_label": "Of the Way of the Creator",
+          "roman": "29",
+          "title": "Of the Way of the Creator",
+          "word_count": 904
+        },
+        {
+          "id": "p1c28",
+          "number_label": "Of Old and Young Women",
+          "roman": "30",
+          "title": "Of Old and Young Women",
+          "word_count": 657
+        },
+        {
+          "id": "p1c29",
+          "number_label": "Of the Adder’s Bite",
+          "roman": "31",
+          "title": "Of the Adder’s Bite",
+          "word_count": 536
+        },
+        {
+          "id": "p1c30",
+          "number_label": "Of Marriage and Children",
+          "roman": "32",
+          "title": "Of Marriage and Children",
+          "word_count": 638
+        },
+        {
+          "id": "p1c31",
+          "number_label": "Of Voluntary Death",
+          "roman": "33",
+          "title": "Of Voluntary Death",
+          "word_count": 123
+        },
+        {
+          "id": "p1c32",
+          "number_label": "The man consummating his life dies his death triumphantly, surrounded",
+          "roman": "34",
+          "title": "The man consummating his life dies his death triumphantly, surrounded",
+          "word_count": 782
+        },
+        {
+          "id": "p1c33",
+          "number_label": "Of the Bestowing Virtue",
+          "roman": "35",
+          "title": "Of the Bestowing Virtue",
+          "word_count": 983
+        },
+        {
+          "id": "p1c34",
+          "number_label": "The body purifies itself through knowledge; experimenting with",
+          "roman": "36",
+          "title": "The body purifies itself through knowledge; experimenting with",
+          "word_count": 320
+        },
+        {
+          "id": "p1c35",
+          "number_label": "Zarathustra? You are my believers: but of what importance are all",
+          "roman": "37",
+          "title": "Zarathustra? You are my believers: but of what importance are all",
+          "word_count": 192
+        }
+      ]
+    },
+    {
+      "id": "part-2",
+      "roman": "II",
+      "name": "Part Two",
+      "subtitle": "Part Two",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "Opening",
+          "roman": "1",
+          "title": "Zarathustra’s Prologue",
+          "word_count": 40
+        },
+        {
+          "id": "p2c2",
+          "number_label": "The Child with the Mirror",
+          "roman": "2",
+          "title": "The Child with the Mirror",
+          "word_count": 647
+        },
+        {
+          "id": "p2c3",
+          "number_label": "The tension of my cloud has been too great: between laughter-peals of",
+          "roman": "3",
+          "title": "The tension of my cloud has been too great: between laughter-peals of",
+          "word_count": 174
+        },
+        {
+          "id": "p2c4",
+          "number_label": "On the Blissful Islands",
+          "roman": "4",
+          "title": "On the Blissful Islands",
+          "word_count": 810
+        },
+        {
+          "id": "p2c5",
+          "number_label": "Of the Compassionate",
+          "roman": "5",
+          "title": "Of the Compassionate",
+          "word_count": 12
+        },
+        {
+          "id": "p2c6",
+          "number_label": "Zarathustra! Does he not go among us as if among animals?’",
+          "roman": "6",
+          "title": "Zarathustra! Does he not go among us as if among animals?’",
+          "word_count": 849
+        },
+        {
+          "id": "p2c7",
+          "number_label": "Of the Priests",
+          "roman": "7",
+          "title": "Of the Priests",
+          "word_count": 799
+        },
+        {
+          "id": "p2c8",
+          "number_label": "Of the Virtuous",
+          "roman": "8",
+          "title": "Of the Virtuous",
+          "word_count": 983
+        },
+        {
+          "id": "p2c9",
+          "number_label": "Of the Rabble",
+          "roman": "9",
+          "title": "Of the Rabble",
+          "word_count": 108
+        },
+        {
+          "id": "p2c10",
+          "number_label": "The fruit grows mawkish and over-ripe in their hands: the fruit tree",
+          "roman": "10",
+          "title": "The fruit grows mawkish and over-ripe in their hands: the fruit tree",
+          "word_count": 721
+        },
+        {
+          "id": "p2c11",
+          "number_label": "Of the Tarantulas",
+          "roman": "11",
+          "title": "Of the Tarantulas",
+          "word_count": 1030
+        },
+        {
+          "id": "p2c12",
+          "number_label": "Of the Famous Philosophers",
+          "roman": "12",
+          "title": "Of the Famous Philosophers",
+          "word_count": 918
+        },
+        {
+          "id": "p2c13",
+          "number_label": "The Night Song",
+          "roman": "13",
+          "title": "The Night Song",
+          "word_count": 587
+        },
+        {
+          "id": "p2c14",
+          "number_label": "The Dance Song",
+          "roman": "14",
+          "title": "The Dance Song",
+          "word_count": 778
+        },
+        {
+          "id": "p2c15",
+          "number_label": "The Funeral Song",
+          "roman": "15",
+          "title": "The Funeral Song",
+          "word_count": 960
+        },
+        {
+          "id": "p2c16",
+          "number_label": "Of Self-Overcoming",
+          "roman": "16",
+          "title": "Of Self-Overcoming",
+          "word_count": 1113
+        },
+        {
+          "id": "p2c17",
+          "number_label": "Of the Sublime Men",
+          "roman": "17",
+          "title": "Of the Sublime Men",
+          "word_count": 795
+        },
+        {
+          "id": "p2c18",
+          "number_label": "Of the Land of Culture",
+          "roman": "18",
+          "title": "Of the Land of Culture",
+          "word_count": 780
+        },
+        {
+          "id": "p2c19",
+          "number_label": "Of Immaculate Perception",
+          "roman": "19",
+          "title": "Of Immaculate Perception",
+          "word_count": 920
+        },
+        {
+          "id": "p2c20",
+          "number_label": "Of Scholars",
+          "roman": "20",
+          "title": "Of Scholars",
+          "word_count": 640
+        },
+        {
+          "id": "p2c21",
+          "number_label": "Of Poets",
+          "roman": "21",
+          "title": "Of Poets",
+          "word_count": 955
+        },
+        {
+          "id": "p2c22",
+          "number_label": "Of Great Events",
+          "roman": "22",
+          "title": "Of Great Events",
+          "word_count": 15
+        },
+        {
+          "id": "p2c23",
+          "number_label": "Zarathustra – upon which a volcano continually smokes; the people, and",
+          "roman": "23",
+          "title": "Zarathustra – upon which a volcano continually smokes; the people, and",
+          "word_count": 1191
+        },
+        {
+          "id": "p2c24",
+          "number_label": "The Prophet",
+          "roman": "24",
+          "title": "The Prophet",
+          "word_count": 1168
+        },
+        {
+          "id": "p2c25",
+          "number_label": "Of Redemption",
+          "roman": "25",
+          "title": "Of Redemption",
+          "word_count": 915
+        },
+        {
+          "id": "p2c26",
+          "number_label": "The will cannot will backwards; that it cannot break time and time’s",
+          "roman": "26",
+          "title": "The will cannot will backwards; that it cannot break time and time’s",
+          "word_count": 613
+        },
+        {
+          "id": "p2c27",
+          "number_label": "Zarathustra laugh, he looked up in curiosity, and said slowly:",
+          "roman": "27",
+          "title": "Zarathustra laugh, he looked up in curiosity, and said slowly:",
+          "word_count": 59
+        },
+        {
+          "id": "p2c28",
+          "number_label": "Of Manly Prudence",
+          "roman": "28",
+          "title": "Of Manly Prudence",
+          "word_count": 12
+        },
+        {
+          "id": "p2c29",
+          "number_label": "The abyss where the glance plunges downward and the hand grasps",
+          "roman": "29",
+          "title": "The abyss where the glance plunges downward and the hand grasps",
+          "word_count": 887
+        },
+        {
+          "id": "p2c30",
+          "number_label": "The Stillest Hour",
+          "roman": "30",
+          "title": "The Stillest Hour",
+          "word_count": 922
+        }
+      ]
+    },
+    {
+      "id": "part-3",
+      "roman": "III",
+      "name": "Part Three",
+      "subtitle": "Part Three",
+      "chapters": [
+        {
+          "id": "p3c1",
+          "number_label": "Opening",
+          "roman": "1",
+          "title": "Zarathustra’s Prologue",
+          "word_count": 48
+        },
+        {
+          "id": "p3c2",
+          "number_label": "The Wanderer",
+          "roman": "2",
+          "title": "The Wanderer",
+          "word_count": 1025
+        },
+        {
+          "id": "p3c3",
+          "number_label": "Of the Vision and the Riddle",
+          "roman": "3",
+          "title": "Of the Vision and the Riddle",
+          "word_count": 1609
+        },
+        {
+          "id": "p3c4",
+          "number_label": "Of Involuntary Bliss",
+          "roman": "4",
+          "title": "Of Involuntary Bliss",
+          "word_count": 1998
+        },
+        {
+          "id": "p3c5",
+          "number_label": "The world is deep: and deeper than day has ever comprehended. Not",
+          "roman": "5",
+          "title": "The world is deep: and deeper than day has ever comprehended. Not",
+          "word_count": 41
+        },
+        {
+          "id": "p3c6",
+          "number_label": "Of the Virtue that Makes Small",
+          "roman": "6",
+          "title": "Of the Virtue that Makes Small",
+          "word_count": 228
+        },
+        {
+          "id": "p3c7",
+          "number_label": "The same day, however, he spoke his discourse upon the virtue that",
+          "roman": "7",
+          "title": "The same day, however, he spoke his discourse upon the virtue that",
+          "word_count": 1503
+        },
+        {
+          "id": "p3c8",
+          "number_label": "On the Mount of Olives",
+          "roman": "8",
+          "title": "On the Mount of Olives",
+          "word_count": 969
+        },
+        {
+          "id": "p3c9",
+          "number_label": "Of Passing By",
+          "roman": "9",
+          "title": "Of Passing By",
+          "word_count": 922
+        },
+        {
+          "id": "p3c10",
+          "number_label": "Of the Apostates",
+          "roman": "10",
+          "title": "Of the Apostates",
+          "word_count": 204
+        },
+        {
+          "id": "p3c11",
+          "number_label": "The remainder: that is always the majority, the commonplace, the",
+          "roman": "11",
+          "title": "The remainder: that is always the majority, the commonplace, the",
+          "word_count": 1018
+        },
+        {
+          "id": "p3c12",
+          "number_label": "The Home-Coming",
+          "roman": "12",
+          "title": "The Home-Coming",
+          "word_count": 1115
+        },
+        {
+          "id": "p3c13",
+          "number_label": "Of the Three Evil Things",
+          "roman": "13",
+          "title": "Of the Three Evil Things",
+          "word_count": 1425
+        },
+        {
+          "id": "p3c14",
+          "number_label": "Of the Spirit of Gravity",
+          "roman": "14",
+          "title": "Of the Spirit of Gravity",
+          "word_count": 1344
+        },
+        {
+          "id": "p3c15",
+          "number_label": "Of Old and New Law-Tables",
+          "roman": "15",
+          "title": "Of Old and New Law-Tables",
+          "word_count": 1395
+        },
+        {
+          "id": "p3c16",
+          "number_label": "On the contrary, even simpletons contradict him. ‘What?’ say the",
+          "roman": "16",
+          "title": "On the contrary, even simpletons contradict him. ‘What?’ say the",
+          "word_count": 3392
+        },
+        {
+          "id": "p3c17",
+          "number_label": "The good and just themselves could not understand him: their spirit is",
+          "roman": "17",
+          "title": "The good and just themselves could not understand him: their spirit is",
+          "word_count": 722
+        },
+        {
+          "id": "p3c18",
+          "number_label": "The Convalescent",
+          "roman": "18",
+          "title": "The Convalescent",
+          "word_count": 69
+        },
+        {
+          "id": "p3c19",
+          "number_label": "Zarathustra’s cave all the creatures slipped away, flying, fluttering,",
+          "roman": "19",
+          "title": "Zarathustra’s cave all the creatures slipped away, flying, fluttering,",
+          "word_count": 1948
+        },
+        {
+          "id": "p3c20",
+          "number_label": "The serpent and the eagle, however, when they found him thus silent,",
+          "roman": "20",
+          "title": "The serpent and the eagle, however, when they found him thus silent,",
+          "word_count": 9
+        },
+        {
+          "id": "p3c21",
+          "number_label": "Of the Great Longing",
+          "roman": "21",
+          "title": "Of the Great Longing",
+          "word_count": 823
+        },
+        {
+          "id": "p3c22",
+          "number_label": "The Second Dance Song",
+          "roman": "22",
+          "title": "The Second Dance Song",
+          "word_count": 943
+        },
+        {
+          "id": "p3c23",
+          "number_label": "The Seven Seals (or: The Song of Yes and Amen)",
+          "roman": "23",
+          "title": "The Seven Seals (or: The Song of Yes and Amen)",
+          "word_count": 978
+        }
+      ]
+    },
+    {
+      "id": "part-4",
+      "roman": "IV",
+      "name": "Part Four",
+      "subtitle": "Part Four",
+      "chapters": [
+        {
+          "id": "p4c1",
+          "number_label": "Opening",
+          "roman": "1",
+          "title": "Zarathustra’s Prologue",
+          "word_count": 78
+        },
+        {
+          "id": "p4c2",
+          "number_label": "The Honey Offering",
+          "roman": "2",
+          "title": "The Honey Offering",
+          "word_count": 1157
+        },
+        {
+          "id": "p4c3",
+          "number_label": "The Cry of Distress",
+          "roman": "3",
+          "title": "The Cry of Distress",
+          "word_count": 615
+        },
+        {
+          "id": "p4c4",
+          "number_label": "The prophet, however, did not respond to Zarathustra’s anguish, but",
+          "roman": "4",
+          "title": "The prophet, however, did not respond to Zarathustra’s anguish, but",
+          "word_count": 1744
+        },
+        {
+          "id": "p4c5",
+          "number_label": "The Leech",
+          "roman": "5",
+          "title": "The Leech",
+          "word_count": 1091
+        },
+        {
+          "id": "p4c6",
+          "number_label": "The Sorcerer",
+          "roman": "6",
+          "title": "The Sorcerer",
+          "word_count": 3118
+        },
+        {
+          "id": "p4c7",
+          "number_label": "The Ugliest Man",
+          "roman": "7",
+          "title": "The Ugliest Man",
+          "word_count": 1091
+        },
+        {
+          "id": "p4c8",
+          "number_label": "Zarathustra, passed him by and said: “No! No! Thrice No!”",
+          "roman": "8",
+          "title": "Zarathustra, passed him by and said: “No! No! Thrice No!”",
+          "word_count": 495
+        },
+        {
+          "id": "p4c9",
+          "number_label": "The Voluntary Beggar",
+          "roman": "9",
+          "title": "The Voluntary Beggar",
+          "word_count": 1302
+        },
+        {
+          "id": "p4c10",
+          "number_label": "The Shadow",
+          "roman": "10",
+          "title": "The Shadow",
+          "word_count": 2065
+        },
+        {
+          "id": "p4c11",
+          "number_label": "The Greeting",
+          "roman": "11",
+          "title": "The Greeting",
+          "word_count": 224
+        },
+        {
+          "id": "p4c12",
+          "number_label": "Zarathustra beheld all this with great amazement; then, however, he",
+          "roman": "12",
+          "title": "Zarathustra beheld all this with great amazement; then, however, he",
+          "word_count": 396
+        },
+        {
+          "id": "p4c13",
+          "number_label": "Zarathustra, do we recognize you as Zarathustra. You have humbled",
+          "roman": "13",
+          "title": "Zarathustra, do we recognize you as Zarathustra. You have humbled",
+          "word_count": 1142
+        },
+        {
+          "id": "p4c14",
+          "number_label": "The Last Supper",
+          "roman": "14",
+          "title": "The Last Supper",
+          "word_count": 212
+        },
+        {
+          "id": "p4c15",
+          "number_label": "On this occasion, when the prophet desired wine, it happened that the",
+          "roman": "15",
+          "title": "On this occasion, when the prophet desired wine, it happened that the",
+          "word_count": 149
+        },
+        {
+          "id": "p4c16",
+          "number_label": "Zarathustra even a king may be a cook.’",
+          "roman": "16",
+          "title": "Zarathustra even a king may be a cook.’",
+          "word_count": 273
+        },
+        {
+          "id": "p4c17",
+          "number_label": "Of the Higher Man",
+          "roman": "17",
+          "title": "Of the Higher Man",
+          "word_count": 284
+        },
+        {
+          "id": "p4c18",
+          "number_label": "The most cautious people ask today: ‘How may man still be preserved?’",
+          "roman": "18",
+          "title": "The most cautious people ask today: ‘How may man still be preserved?’",
+          "word_count": 1152
+        },
+        {
+          "id": "p4c19",
+          "number_label": "The prudence and providence of pregnancy is in your selfishness! What",
+          "roman": "19",
+          "title": "The prudence and providence of pregnancy is in your selfishness! What",
+          "word_count": 976
+        },
+        {
+          "id": "p4c20",
+          "number_label": "Zarathustra the dancer, Zarathustra the light, who beckons with his",
+          "roman": "20",
+          "title": "Zarathustra the dancer, Zarathustra the light, who beckons with his",
+          "word_count": 398
+        },
+        {
+          "id": "p4c21",
+          "number_label": "The Song of Melancholy",
+          "roman": "21",
+          "title": "The Song of Melancholy",
+          "word_count": 630
+        },
+        {
+          "id": "p4c22",
+          "number_label": "On motley rainbows,",
+          "roman": "22",
+          "title": "On motley rainbows,",
+          "word_count": 250
+        },
+        {
+          "id": "p4c23",
+          "number_label": "The hanging rose-gardens,",
+          "roman": "23",
+          "title": "The hanging rose-gardens,",
+          "word_count": 66
+        },
+        {
+          "id": "p4c24",
+          "number_label": "Of Science",
+          "roman": "24",
+          "title": "Of Science",
+          "word_count": 807
+        },
+        {
+          "id": "p4c25",
+          "number_label": "Zarathustra looks ill-temperedly – just see him! he is angry with me:",
+          "roman": "25",
+          "title": "Zarathustra looks ill-temperedly – just see him! he is angry with me:",
+          "word_count": 58
+        },
+        {
+          "id": "p4c26",
+          "number_label": "Zarathustra went round and mischievously and lovingly shook hands with",
+          "roman": "26",
+          "title": "Zarathustra went round and mischievously and lovingly shook hands with",
+          "word_count": 184
+        },
+        {
+          "id": "p4c27",
+          "number_label": "Zarathustra! Here there is much hidden misery that wants to speak out,",
+          "roman": "27",
+          "title": "Zarathustra! Here there is much hidden misery that wants to speak out,",
+          "word_count": 355
+        },
+        {
+          "id": "p4c28",
+          "number_label": "The sweetest-smelling of all little mouths:",
+          "roman": "28",
+          "title": "The sweetest-smelling of all little mouths:",
+          "word_count": 343
+        },
+        {
+          "id": "p4c29",
+          "number_label": "Of her dearest, daintiest",
+          "roman": "29",
+          "title": "Of her dearest, daintiest",
+          "word_count": 185
+        },
+        {
+          "id": "p4c30",
+          "number_label": "The Awakening",
+          "roman": "30",
+          "title": "The Awakening",
+          "word_count": 1006
+        },
+        {
+          "id": "p4c31",
+          "number_label": "The Ass Festival",
+          "roman": "31",
+          "title": "The Ass Festival",
+          "word_count": 1056
+        },
+        {
+          "id": "p4c32",
+          "number_label": "The Intoxicated Song",
+          "roman": "32",
+          "title": "The Intoxicated Song",
+          "word_count": 2195
+        },
+        {
+          "id": "p4c33",
+          "number_label": "The Sign",
+          "roman": "33",
+          "title": "The Sign",
+          "word_count": 1031
+        }
+      ]
+    }
+  ]
+}

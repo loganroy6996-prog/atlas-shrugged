@@ -1,0 +1,28 @@
+/* Will to Power — crimson iron */
+:root, html[data-theme="dark"] {
+  --bg: #0c0808;
+  --bg-elevated: #160e0e;
+  --bg-soft: #1f1414;
+  --surface: #281818;
+  --border: rgba(225, 29, 72, 0.16);
+  --border-strong: rgba(225, 29, 72, 0.3);
+  --text: #fce8ec;
+  --text-muted: #c4909a;
+  --text-faint: #7a5058;
+  --accent: #e11d48;
+  --accent-soft: rgba(225, 29, 72, 0.12);
+  --accent-hover: #fb7185;
+  --copper: #9f1239;
+  --reader-max: 50rem;
+}
+.cover-glow {
+  background: radial-gradient(ellipse, rgba(225, 29, 72, 0.18) 0%, rgba(159, 18, 57, 0.08) 40%, transparent 70%);
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(225, 29, 72, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(225, 29, 72, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.title-line.accent { color: var(--accent); font-weight: 600; font-style: normal; }
+.progress-fill { background: linear-gradient(90deg, #9f1239, #e11d48); }

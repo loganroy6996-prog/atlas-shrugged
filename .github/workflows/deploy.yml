@@ -1,0 +1,70 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Assemble static site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+
+          # Library shell
+          cp index.html catalog.json _site/
+          cp -r css shared _site/
+          touch _site/.nojekyll
+
+          # Each book: index, theme, data (no bulk book.json)
+          mkdir -p _site/books
+          for book in books/*/; do
+            slug=$(basename "$book")
+            mkdir -p "_site/books/$slug/data/chapters"
+            cp "$book/index.html" "$book/theme.css" "$book/meta.json" "_site/books/$slug/" 2>/dev/null || true
+            if [ -f "$book/data/toc.json" ]; then
+              cp "$book/data/toc.json" "_site/books/$slug/data/"
+            fi
+            if [ -d "$book/data/chapters" ]; then
+              cp "$book/data/chapters/"*.json "_site/books/$slug/data/chapters/" 2>/dev/null || true
+            fi
+          done
+
+          echo "=== Deploy artifact ==="
+          find _site -type f | wc -l
+          du -sh _site
+          du -sh _site/books/* | sort -h
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

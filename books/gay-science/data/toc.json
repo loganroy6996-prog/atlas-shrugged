@@ -1,0 +1,127 @@
+{
+  "title": "The Gay Science",
+  "author": "Friedrich Nietzsche",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "Preface",
+      "subtitle": "Preface to the Second Edition",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Preface to the Second Edition",
+          "roman": "1",
+          "title": "Preface to the Second Edition",
+          "word_count": 2453
+        }
+      ]
+    },
+    {
+      "id": "part-2",
+      "roman": "II",
+      "name": "Prelude",
+      "subtitle": "Joke, Cunning, and Revenge",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "Joke, Cunning, and Revenge: Prelude in German Rhymes",
+          "roman": "1",
+          "title": "Joke, Cunning, and Revenge: Prelude in German Rhymes",
+          "word_count": 2214
+        }
+      ]
+    },
+    {
+      "id": "part-3",
+      "roman": "III",
+      "name": "Book One",
+      "subtitle": "Book One",
+      "chapters": [
+        {
+          "id": "p3c1",
+          "number_label": "Book One",
+          "roman": "1",
+          "title": "Book One",
+          "word_count": 14795
+        }
+      ]
+    },
+    {
+      "id": "part-4",
+      "roman": "IV",
+      "name": "Book Two",
+      "subtitle": "Book Two",
+      "chapters": [
+        {
+          "id": "p4c1",
+          "number_label": "Book Two",
+          "roman": "1",
+          "title": "Book Two",
+          "word_count": 13257
+        }
+      ]
+    },
+    {
+      "id": "part-5",
+      "roman": "V",
+      "name": "Book Three",
+      "subtitle": "Book Three",
+      "chapters": [
+        {
+          "id": "p5c1",
+          "number_label": "Book Three",
+          "roman": "1",
+          "title": "Book Three",
+          "word_count": 13087
+        }
+      ]
+    },
+    {
+      "id": "part-6",
+      "roman": "VI",
+      "name": "Book Four",
+      "subtitle": "Book Four: St Januarius",
+      "chapters": [
+        {
+          "id": "p6c1",
+          "number_label": "Book Four: St Januarius",
+          "roman": "1",
+          "title": "Book Four: St Januarius",
+          "word_count": 15122
+        }
+      ]
+    },
+    {
+      "id": "part-7",
+      "roman": "VII",
+      "name": "Book Five",
+      "subtitle": "Book Five: We Fearless Ones",
+      "chapters": [
+        {
+          "id": "p7c1",
+          "number_label": "Book Five: We Fearless Ones",
+          "roman": "1",
+          "title": "Book Five: We Fearless Ones",
+          "word_count": 20085
+        }
+      ]
+    },
+    {
+      "id": "part-8",
+      "roman": "VIII",
+      "name": "Appendix",
+      "subtitle": "Songs of Prince Vogelfrei",
+      "chapters": [
+        {
+          "id": "p8c1",
+          "number_label": "Appendix: Songs of Prince Vogelfrei",
+          "roman": "1",
+          "title": "Appendix: Songs of Prince Vogelfrei",
+          "word_count": 2198
+        }
+      ]
+    }
+  ]
+}

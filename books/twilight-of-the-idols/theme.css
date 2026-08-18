@@ -1,0 +1,26 @@
+/* Twilight of the Idols — hammer, bronze, ash */
+:root, html[data-theme="dark"] {
+  --bg: #12100e;
+  --bg-elevated: #1c1814;
+  --bg-soft: #26201a;
+  --surface: #2e261e;
+  --border: rgba(196, 165, 116, 0.16);
+  --border-strong: rgba(196, 165, 116, 0.3);
+  --text: #f0e6d6;
+  --text-muted: #a89880;
+  --text-faint: #706050;
+  --accent: #c4a574;
+  --accent-soft: rgba(196, 165, 116, 0.12);
+  --accent-hover: #ddc09a;
+  --copper: #a16207;
+  --reader-max: 48rem;
+}
+.cover-glow {
+  background: radial-gradient(ellipse, rgba(196, 165, 116, 0.16) 0%, transparent 60%);
+}
+.cover-grid {
+  background-image: linear-gradient(90deg, rgba(196, 165, 116, 0.06) 1px, transparent 1px);
+  background-size: 32px 100%;
+}
+.title-line.accent { letter-spacing: 0.04em; font-style: normal; text-transform: uppercase; font-size: 0.55em; }
+.meta-title { text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(1.5rem, 4vw, 2.2rem); }

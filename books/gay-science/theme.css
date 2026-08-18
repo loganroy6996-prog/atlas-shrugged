@@ -1,0 +1,32 @@
+/* The Gay Science — Mediterranean sea & sky */
+:root, html[data-theme="dark"] {
+  --bg: #071318;
+  --bg-elevated: #0c1c24;
+  --bg-soft: #122830;
+  --surface: #163038;
+  --border: rgba(56, 189, 248, 0.16);
+  --border-strong: rgba(56, 189, 248, 0.3);
+  --text: #e0f2fe;
+  --text-muted: #7dd3fc;
+  --text-faint: #4a8aa8;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.12);
+  --accent-hover: #7dd3fc;
+  --copper: #fbbf24;
+  --reader-max: 50rem;
+}
+html[data-theme="light"] {
+  --bg: #f0f9ff;
+  --text: #0c4a6e;
+  --accent: #0284c7;
+  --bg-elevated: #ffffff;
+}
+.cover-glow {
+  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.22) 0%, rgba(251, 191, 36, 0.08) 45%, transparent 70%);
+}
+.cover-grid {
+  background-image: radial-gradient(rgba(56, 189, 248, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.title-line.accent { color: #fbbf24; font-style: italic; }
+.cover-eyebrow { color: var(--accent); }

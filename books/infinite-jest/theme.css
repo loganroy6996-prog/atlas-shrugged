@@ -1,0 +1,37 @@
+/* Infinite Jest — court green, entertainment yellow, maximalist */
+:root, html[data-theme="dark"] {
+  --bg: #0a120c;
+  --bg-elevated: #111c14;
+  --bg-soft: #18261c;
+  --surface: #1e3024;
+  --border: rgba(163, 230, 53, 0.16);
+  --border-strong: rgba(163, 230, 53, 0.3);
+  --text: #ecfcd9;
+  --text-muted: #a3c47a;
+  --text-faint: #6a8550;
+  --accent: #a3e635;
+  --accent-soft: rgba(163, 230, 53, 0.12);
+  --accent-hover: #bef264;
+  --copper: #facc15;
+  --reader-max: 54rem;
+}
+html[data-theme="light"] {
+  --bg: #f7fee7;
+  --text: #1a2e05;
+  --accent: #65a30d;
+  --bg-elevated: #ffffff;
+}
+.cover-glow {
+  background:
+    radial-gradient(ellipse at 30% 40%, rgba(163, 230, 53, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 50%, rgba(250, 204, 21, 0.1) 0%, transparent 45%);
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(163, 230, 53, 0.06) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(163, 230, 53, 0.06) 2px, transparent 2px);
+  background-size: 100px 100px;
+}
+.title-line.accent { color: #facc15; font-style: italic; }
+.cover-title { font-size: clamp(3rem, 10vw, 5.5rem); }
+.chapter-text { font-size: calc(var(--text-size) * 0.98); line-height: calc(var(--leading) * 1.02); }

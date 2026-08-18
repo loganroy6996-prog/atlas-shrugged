@@ -1,0 +1,597 @@
+{
+  "title": "Being and Time",
+  "author": "Martin Heidegger",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "1",
+      "name": "Introduction",
+      "subtitle": "The Question of Being",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "§ 1",
+          "roman": "1",
+          "title": "The Necessity of an Explicit Repetition of the Question of Being",
+          "word_count": 1011
+        },
+        {
+          "id": "p1c2",
+          "number_label": "§ 2",
+          "roman": "2",
+          "title": "The Formal Structure of the Question of Being",
+          "word_count": 1597
+        },
+        {
+          "id": "p1c3",
+          "number_label": "§ 3",
+          "roman": "3",
+          "title": "The Ontological Priority of the Question of Being",
+          "word_count": 1202
+        },
+        {
+          "id": "p1c4",
+          "number_label": "§ 4",
+          "roman": "4",
+          "title": "The Ontic Priority of the Question of Being",
+          "word_count": 1361
+        },
+        {
+          "id": "p1c5",
+          "number_label": "§ 5",
+          "roman": "5",
+          "title": "The Ontological Analysis of Dasein as Exposing the Horizon for an",
+          "word_count": 1804
+        },
+        {
+          "id": "p1c6",
+          "number_label": "§ 6",
+          "roman": "6",
+          "title": "The Task of a Destruction of the History of Ontology",
+          "word_count": 3013
+        },
+        {
+          "id": "p1c7",
+          "number_label": "§ 7",
+          "roman": "7",
+          "title": "The Phenomenological Method of the Investigation",
+          "word_count": 4819
+        },
+        {
+          "id": "p1c8",
+          "number_label": "§ 8",
+          "roman": "8",
+          "title": "The Outline of the Treatise",
+          "word_count": 299
+        }
+      ]
+    },
+    {
+      "id": "part-2",
+      "roman": "2",
+      "name": "Division One",
+      "subtitle": "Division One",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "§ 9",
+          "roman": "9",
+          "title": "The Theme of the Analytic of Dasein",
+          "word_count": 1588
+        },
+        {
+          "id": "p2c2",
+          "number_label": "§ 10",
+          "roman": "10",
+          "title": "How the Analytic of Dasein is to be Distinguished from Anthropology,",
+          "word_count": 1894
+        },
+        {
+          "id": "p2c3",
+          "number_label": "§ 11",
+          "roman": "11",
+          "title": "The Existential Analytic and the Interpretation of Primitive Dasein: The",
+          "word_count": 606
+        },
+        {
+          "id": "p2c4",
+          "number_label": "§ 12",
+          "roman": "12",
+          "title": "The Preliminary Sketch of Being-in-the-World [In-der-Welt-sein] in",
+          "word_count": 2982
+        },
+        {
+          "id": "p2c5",
+          "number_label": "§ 13",
+          "roman": "13",
+          "title": "The Exemplification of Being-in in a Founded Mode: Knowing the",
+          "word_count": 1344
+        },
+        {
+          "id": "p2c6",
+          "number_label": "§ 14",
+          "roman": "14",
+          "title": "The Idea of the Worldliness of the World [Weltlichkeit der Welt] in",
+          "word_count": 1499
+        },
+        {
+          "id": "p2c7",
+          "number_label": "§ 15",
+          "roman": "15",
+          "title": "The Being of Beings Encountered in the Surrounding World",
+          "word_count": 2375
+        },
+        {
+          "id": "p2c8",
+          "number_label": "§ 16",
+          "roman": "16",
+          "title": "The Worldly Character of the Surrounding World Announcing Itself in",
+          "word_count": 4601
+        },
+        {
+          "id": "p2c9",
+          "number_label": "§ 18",
+          "roman": "18",
+          "title": "Relevance [Bewandtnis] and Significance [Bedeutsamkeit]: The",
+          "word_count": 2728
+        },
+        {
+          "id": "p2c10",
+          "number_label": "§ 19",
+          "roman": "19",
+          "title": "The Determination of the \"World\" as res extensa",
+          "word_count": 883
+        },
+        {
+          "id": "p2c11",
+          "number_label": "§ 20",
+          "roman": "20",
+          "title": "The Fundaments of the Ontological Definition of the \"World\"",
+          "word_count": 1096
+        },
+        {
+          "id": "p2c12",
+          "number_label": "§ 21",
+          "roman": "21",
+          "title": "The Hermeneutical Discussion of the Cartesian Ontology of the \"World\"",
+          "word_count": 2878
+        },
+        {
+          "id": "p2c13",
+          "number_label": "§ 22",
+          "roman": "22",
+          "title": "The Spatiality of Innerworldly Things at Hand",
+          "word_count": 1138
+        },
+        {
+          "id": "p2c14",
+          "number_label": "§ 23",
+          "roman": "23",
+          "title": "The Spatiality of Being-in-the-World",
+          "word_count": 2409
+        },
+        {
+          "id": "p2c15",
+          "number_label": "§ 24",
+          "roman": "24",
+          "title": "The Spatiality of Dasein and Space",
+          "word_count": 1619
+        },
+        {
+          "id": "p2c16",
+          "number_label": "§ 25",
+          "roman": "25",
+          "title": "The Approach to the Existential Question of the Who of Dasein",
+          "word_count": 1274
+        },
+        {
+          "id": "p2c17",
+          "number_label": "§ 26",
+          "roman": "26",
+          "title": "The Dasein-with of Others and Everyday Being-with",
+          "word_count": 3670
+        },
+        {
+          "id": "p2c18",
+          "number_label": "§ 27",
+          "roman": "27",
+          "title": "Everyday Being a Self and the They",
+          "word_count": 1944
+        },
+        {
+          "id": "p2c19",
+          "number_label": "§ 28",
+          "roman": "28",
+          "title": "The Task of a Thematic Analysis of Being-in",
+          "word_count": 1403
+        },
+        {
+          "id": "p2c20",
+          "number_label": "§ 29",
+          "roman": "29",
+          "title": "Da-sein as Attunement",
+          "word_count": 2406
+        },
+        {
+          "id": "p2c21",
+          "number_label": "§ 30",
+          "roman": "30",
+          "title": "Fear as a Mode of Attunement6",
+          "word_count": 1091
+        },
+        {
+          "id": "p2c22",
+          "number_label": "§ 31",
+          "roman": "31",
+          "title": "Da-sein as Understanding",
+          "word_count": 2304
+        },
+        {
+          "id": "p2c23",
+          "number_label": "§ 32",
+          "roman": "32",
+          "title": "Understanding and Interpretation",
+          "word_count": 2346
+        },
+        {
+          "id": "p2c24",
+          "number_label": "§ 33",
+          "roman": "33",
+          "title": "Statement [Aussage] as a Derivative Mode of Interpretation",
+          "word_count": 2836
+        },
+        {
+          "id": "p2c25",
+          "number_label": "§ 34",
+          "roman": "34",
+          "title": "Da-sein and Discourse. Language",
+          "word_count": 2863
+        },
+        {
+          "id": "p2c26",
+          "number_label": "§ 35",
+          "roman": "35",
+          "title": "Idle Talk",
+          "word_count": 1270
+        },
+        {
+          "id": "p2c27",
+          "number_label": "§ 36",
+          "roman": "36",
+          "title": "Curiosity",
+          "word_count": 1183
+        },
+        {
+          "id": "p2c28",
+          "number_label": "§ 37",
+          "roman": "37",
+          "title": "Ambiguity",
+          "word_count": 935
+        },
+        {
+          "id": "p2c29",
+          "number_label": "§ 38",
+          "roman": "38",
+          "title": "Falling Prey [Verfallen] and Thrownness",
+          "word_count": 2009
+        },
+        {
+          "id": "p2c30",
+          "number_label": "§ 39",
+          "roman": "39",
+          "title": "The Question of the Primordial Totality of the Structural Whole of",
+          "word_count": 1404
+        },
+        {
+          "id": "p2c31",
+          "number_label": "§ 40",
+          "roman": "40",
+          "title": "The Fundamental Attunement of Anxiety as an Eminent Disclosedness",
+          "word_count": 2642
+        },
+        {
+          "id": "p2c32",
+          "number_label": "§ 41",
+          "roman": "41",
+          "title": "The Being of Dasein as Care",
+          "word_count": 2275
+        },
+        {
+          "id": "p2c33",
+          "number_label": "§ 42",
+          "roman": "42",
+          "title": "Confirmation of the Existential Interpretation of Dasein as Care in",
+          "word_count": 1281
+        },
+        {
+          "id": "p2c34",
+          "number_label": "§ 43",
+          "roman": "43",
+          "title": "Dasein, Worldliness, and Reality",
+          "word_count": 4713
+        },
+        {
+          "id": "p2c35",
+          "number_label": "§ 44",
+          "roman": "44",
+          "title": "Dasein, Disclosedness, and Truth",
+          "word_count": 7106
+        },
+        {
+          "id": "p2c36",
+          "number_label": "§ 45",
+          "roman": "45",
+          "title": "The Result of the Preparatory Fundamental Analysis of Dasein and the",
+          "word_count": 1806
+        },
+        {
+          "id": "p2c37",
+          "number_label": "§ 46",
+          "roman": "46",
+          "title": "The Seeming Impossibility of Ontologically Grasping and Determining",
+          "word_count": 745
+        },
+        {
+          "id": "p2c38",
+          "number_label": "§ 47",
+          "roman": "47",
+          "title": "The Possibility of Experiencing the Death of Others and the Possibility",
+          "word_count": 1546
+        },
+        {
+          "id": "p2c39",
+          "number_label": "§ 48",
+          "roman": "48",
+          "title": "What is Outstanding, End, and Wholeness",
+          "word_count": 2133
+        },
+        {
+          "id": "p2c40",
+          "number_label": "§ 49",
+          "roman": "49",
+          "title": "How the Existential Analysis of Death Differs from Other Possible",
+          "word_count": 1047
+        },
+        {
+          "id": "p2c41",
+          "number_label": "§ 50",
+          "roman": "50",
+          "title": "A Preliminary Sketch of the Existential and Ontological Structure of",
+          "word_count": 1068
+        },
+        {
+          "id": "p2c42",
+          "number_label": "§ 51",
+          "roman": "51",
+          "title": "Being-toward-Death and the Everydayness of Dasein",
+          "word_count": 1034
+        },
+        {
+          "id": "p2c43",
+          "number_label": "§ 52",
+          "roman": "52",
+          "title": "Everyday Being-toward-Death and the Complete Existential Concept of",
+          "word_count": 1901
+        },
+        {
+          "id": "p2c44",
+          "number_label": "§ 53",
+          "roman": "53",
+          "title": "Existential Project of an Authentic Being-toward-Death",
+          "word_count": 2922
+        },
+        {
+          "id": "p2c45",
+          "number_label": "§ 54",
+          "roman": "54",
+          "title": "The Problem of the Attestation of an Authentic Existentiell Possibility",
+          "word_count": 1086
+        },
+        {
+          "id": "p2c46",
+          "number_label": "§ 55",
+          "roman": "55",
+          "title": "The Existential and Ontological Foundations* of Conscience",
+          "word_count": 727
+        },
+        {
+          "id": "p2c47",
+          "number_label": "§ 56",
+          "roman": "56",
+          "title": "The Character of Conscience as a Call",
+          "word_count": 877
+        },
+        {
+          "id": "p2c48",
+          "number_label": "§ 57",
+          "roman": "57",
+          "title": "Conscience as the Call of Care",
+          "word_count": 2279
+        },
+        {
+          "id": "p2c49",
+          "number_label": "§ 58",
+          "roman": "58",
+          "title": "Understanding the Summons and Guilt",
+          "word_count": 4040
+        },
+        {
+          "id": "p2c50",
+          "number_label": "§ 59",
+          "roman": "59",
+          "title": "The Existential Interpretation of Conscience and the Vulgar",
+          "word_count": 2633
+        },
+        {
+          "id": "p2c51",
+          "number_label": "§ 60",
+          "roman": "60",
+          "title": "The Existential Structure of the Authentic Potentiality-of-Being Attested",
+          "word_count": 2481
+        },
+        {
+          "id": "p2c52",
+          "number_label": "§ 61",
+          "roman": "61",
+          "title": "Preliminary Sketch of the Methodological Step from Outlining the",
+          "word_count": 1170
+        },
+        {
+          "id": "p2c53",
+          "number_label": "§ 62",
+          "roman": "62",
+          "title": "The Existentielly Authentic of Dasein as Anticipatory Resoluteness",
+          "word_count": 2084
+        },
+        {
+          "id": "p2c54",
+          "number_label": "§ 63",
+          "roman": "63",
+          "title": "The Hemeneutical Situation at Which We Have Arrived for Interpreting",
+          "word_count": 2471
+        },
+        {
+          "id": "p2c55",
+          "number_label": "§ 64",
+          "roman": "64",
+          "title": "Care and Seood",
+          "word_count": 2309
+        },
+        {
+          "id": "p2c56",
+          "number_label": "§ 65",
+          "roman": "65",
+          "title": "Temporality as the Ontological Meaning of Care",
+          "word_count": 3214
+        },
+        {
+          "id": "p2c57",
+          "number_label": "§ 66",
+          "roman": "66",
+          "title": "The Temporality of Dasein and the Tasks of a More Primordial",
+          "word_count": 955
+        },
+        {
+          "id": "p2c58",
+          "number_label": "§ 67",
+          "roman": "67",
+          "title": "The Basic Content of the Existential Constitution of Dasein, and the",
+          "word_count": 603
+        },
+        {
+          "id": "p2c59",
+          "number_label": "§ 68",
+          "roman": "68",
+          "title": "The Temporality of Disclosedness in General",
+          "word_count": 5994
+        },
+        {
+          "id": "p2c60",
+          "number_label": "§ 69",
+          "roman": "69",
+          "title": "The Temporality of Being-in-the-World and the Problem of the",
+          "word_count": 6701
+        },
+        {
+          "id": "p2c61",
+          "number_label": "§ 70",
+          "roman": "70",
+          "title": "The Temporality of the Spatiality Characteristic of Dasein",
+          "word_count": 1265
+        },
+        {
+          "id": "p2c62",
+          "number_label": "§ 71",
+          "roman": "71",
+          "title": "The Temporal Meaning of the Everydayness of Dasein",
+          "word_count": 815
+        },
+        {
+          "id": "p2c63",
+          "number_label": "§ 72",
+          "roman": "72",
+          "title": "The Existential and Ontological Exposition of the Problem of History",
+          "word_count": 2330
+        },
+        {
+          "id": "p2c64",
+          "number_label": "§ 73",
+          "roman": "73",
+          "title": "The Vulgar Understanding of History and the Occurrence of Dasein",
+          "word_count": 1777
+        },
+        {
+          "id": "p2c65",
+          "number_label": "§ 74",
+          "roman": "74",
+          "title": "The Essential Constitution of Historicity",
+          "word_count": 1966
+        },
+        {
+          "id": "p2c66",
+          "number_label": "§ 75",
+          "roman": "75",
+          "title": "The Historicity of Dasein and World History",
+          "word_count": 1913
+        },
+        {
+          "id": "p2c67",
+          "number_label": "§ 76",
+          "roman": "76",
+          "title": "The Existential Origin of Historiography from the Historicity of Dasein",
+          "word_count": 2088
+        },
+        {
+          "id": "p2c68",
+          "number_label": "§ 77",
+          "roman": "77",
+          "title": "The Connection of the Foregoing Exposition of the Problem of",
+          "word_count": 2490
+        },
+        {
+          "id": "p2c69",
+          "number_label": "§ 78",
+          "roman": "78",
+          "title": "The Incompleteness of the Foregoing Temporal Analysis of Dasein",
+          "word_count": 895
+        },
+        {
+          "id": "p2c70",
+          "number_label": "§ 79",
+          "roman": "79",
+          "title": "The Temporality of Dasein and Taking Care of Time",
+          "word_count": 2287
+        },
+        {
+          "id": "p2c71",
+          "number_label": "§ 80",
+          "roman": "80",
+          "title": "Time Taken Care of and Within-Timeness",
+          "word_count": 3802
+        },
+        {
+          "id": "p2c72",
+          "number_label": "§ 81",
+          "roman": "81",
+          "title": "Within-Timeness and the Genesis of the Vulgar Concept of Time",
+          "word_count": 3078
+        },
+        {
+          "id": "p2c73",
+          "number_label": "§ 82",
+          "roman": "82",
+          "title": "The Contrast of the Existential and Ontological Connection of",
+          "word_count": 2555
+        },
+        {
+          "id": "p2c74",
+          "number_label": "§ 83",
+          "roman": "83",
+          "title": "The Existential and Temporal Analytic of Dasein and the Fundamental",
+          "word_count": 11324
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Local / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.log
+
+# Build output
+_site/
+dist/
+
+# Large source dumps (optional local only; site uses books/*/data)
+raw_extract/
+*.pdf
+*.epub
+
+# Optional local env
+.env
+.env.*

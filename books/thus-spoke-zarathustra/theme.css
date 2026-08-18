@@ -1,0 +1,29 @@
+/* Zarathustra — mountain dusk, amber sun */
+:root, html[data-theme="dark"] {
+  --bg: #100d0a;
+  --bg-elevated: #1a1510;
+  --bg-soft: #221c15;
+  --surface: #2a2218;
+  --border: rgba(232, 168, 56, 0.16);
+  --border-strong: rgba(232, 168, 56, 0.3);
+  --text: #f5ead6;
+  --text-muted: #b09a78;
+  --text-faint: #7a6850;
+  --accent: #e8a838;
+  --accent-soft: rgba(232, 168, 56, 0.12);
+  --accent-hover: #f0c060;
+  --copper: #d97706;
+  --reader-max: 48rem;
+}
+.cover-bg {
+  background:
+    linear-gradient(180deg, #1a1420 0%, transparent 40%),
+    linear-gradient(0deg, #2a1810 0%, transparent 35%);
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 30%, rgba(232, 168, 56, 0.25) 0%, rgba(217, 119, 6, 0.08) 35%, transparent 65%);
+  height: 480px;
+}
+.cover-grid { opacity: 0.35; background-size: 80px 80px; }
+.title-line.accent { color: var(--accent); font-style: italic; font-weight: 400; }
+.chapter-text { font-size: calc(var(--text-size) * 1.02); }

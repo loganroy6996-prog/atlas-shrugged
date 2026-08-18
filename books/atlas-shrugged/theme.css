@@ -1,0 +1,27 @@
+/* Atlas Shrugged — industrial gold on iron */
+:root, html[data-theme="dark"] {
+  --bg: #0b0a09;
+  --bg-elevated: #141210;
+  --bg-soft: #1a1714;
+  --surface: #1e1b17;
+  --border: rgba(212, 175, 100, 0.14);
+  --border-strong: rgba(212, 175, 100, 0.28);
+  --text: #ebe4d6;
+  --text-muted: #9a9080;
+  --text-faint: #6b6358;
+  --accent: #d4af64;
+  --accent-soft: rgba(212, 175, 100, 0.12);
+  --accent-hover: #e4c57a;
+  --copper: #b87333;
+  --reader-max: 52rem;
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(212, 175, 100, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 100, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+.cover-glow {
+  background: radial-gradient(ellipse, rgba(212, 175, 100, 0.14) 0%, rgba(184, 115, 51, 0.06) 40%, transparent 70%);
+}
+.title-line.accent { color: var(--accent); font-style: italic; }

@@ -1,0 +1,92 @@
+{
+  "title": "Beyond Good and Evil",
+  "author": "Friedrich Nietzsche",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "The Work",
+      "subtitle": "Prelude to a Philosophy of the Future",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Preface",
+          "roman": "0",
+          "title": "Preface",
+          "word_count": 696
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "Prejudices Of Philosophers",
+          "word_count": 7430
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "The Free Spirit",
+          "word_count": 6684
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "The Religious Mood",
+          "word_count": 5506
+        },
+        {
+          "id": "p1c5",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "Apophthegms And Interludes",
+          "word_count": 2540
+        },
+        {
+          "id": "p1c6",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "The Natural History Of Morals",
+          "word_count": 7064
+        },
+        {
+          "id": "p1c7",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "We Scholars",
+          "word_count": 6332
+        },
+        {
+          "id": "p1c8",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "Our Virtues",
+          "word_count": 7818
+        },
+        {
+          "id": "p1c9",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "Peoples And Countries",
+          "word_count": 7684
+        },
+        {
+          "id": "p1c10",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "What Is Noble?",
+          "word_count": 10352
+        },
+        {
+          "id": "p1c11",
+          "number_label": "Aftersong",
+          "roman": "X",
+          "title": "From the Heights",
+          "word_count": 552
+        }
+      ]
+    }
+  ]
+}

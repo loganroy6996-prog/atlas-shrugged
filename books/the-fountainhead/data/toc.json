@@ -1,0 +1,452 @@
+{
+  "title": "The Fountainhead",
+  "author": "Ayn Rand",
+  "dedication": "To Frank O’Connor",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "1",
+      "name": "Part 1",
+      "subtitle": "Peter Keating",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "Chapter I",
+          "word_count": 5736
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "Chapter II",
+          "word_count": 4646
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "Chapter III",
+          "word_count": 5939
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "Chapter IV",
+          "word_count": 7407
+        },
+        {
+          "id": "p1c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "Chapter V",
+          "word_count": 5259
+        },
+        {
+          "id": "p1c6",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "Chapter VI",
+          "word_count": 4399
+        },
+        {
+          "id": "p1c7",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "Chapter VII",
+          "word_count": 3191
+        },
+        {
+          "id": "p1c8",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "Chapter VIII",
+          "word_count": 3832
+        },
+        {
+          "id": "p1c9",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "Chapter IX",
+          "word_count": 5497
+        },
+        {
+          "id": "p1c10",
+          "number_label": "Chapter X",
+          "roman": "X",
+          "title": "Chapter X",
+          "word_count": 6679
+        },
+        {
+          "id": "p1c11",
+          "number_label": "Chapter XI",
+          "roman": "XI",
+          "title": "Chapter XI",
+          "word_count": 4375
+        },
+        {
+          "id": "p1c12",
+          "number_label": "Chapter XII",
+          "roman": "XII",
+          "title": "Chapter XII",
+          "word_count": 9349
+        },
+        {
+          "id": "p1c13",
+          "number_label": "Chapter XIII",
+          "roman": "XIII",
+          "title": "Chapter XIII",
+          "word_count": 6096
+        },
+        {
+          "id": "p1c14",
+          "number_label": "Chapter XIV",
+          "roman": "XIV",
+          "title": "Chapter XIV",
+          "word_count": 5125
+        },
+        {
+          "id": "p1c15",
+          "number_label": "Chapter XV",
+          "roman": "XV",
+          "title": "Chapter XV",
+          "word_count": 8849
+        }
+      ]
+    },
+    {
+      "id": "part-2",
+      "roman": "2",
+      "name": "Part 2",
+      "subtitle": "Ellsworth M. Toohey",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "Chapter I",
+          "word_count": 3794
+        },
+        {
+          "id": "p2c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "Chapter II",
+          "word_count": 5755
+        },
+        {
+          "id": "p2c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "Chapter III",
+          "word_count": 5375
+        },
+        {
+          "id": "p2c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "Chapter IV",
+          "word_count": 4109
+        },
+        {
+          "id": "p2c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "Chapter V",
+          "word_count": 3984
+        },
+        {
+          "id": "p2c6",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "Chapter VI",
+          "word_count": 6856
+        },
+        {
+          "id": "p2c7",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "Chapter VII",
+          "word_count": 3689
+        },
+        {
+          "id": "p2c8",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "Chapter VIII",
+          "word_count": 9146
+        },
+        {
+          "id": "p2c9",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "Chapter IX",
+          "word_count": 6636
+        },
+        {
+          "id": "p2c10",
+          "number_label": "Chapter X",
+          "roman": "X",
+          "title": "Chapter X",
+          "word_count": 6246
+        },
+        {
+          "id": "p2c11",
+          "number_label": "Chapter XI",
+          "roman": "XI",
+          "title": "Chapter XI",
+          "word_count": 7773
+        },
+        {
+          "id": "p2c12",
+          "number_label": "Chapter XII",
+          "roman": "XII",
+          "title": "Chapter XII",
+          "word_count": 9005
+        },
+        {
+          "id": "p2c13",
+          "number_label": "Chapter XIII",
+          "roman": "XIII",
+          "title": "Chapter XIII",
+          "word_count": 5178
+        },
+        {
+          "id": "p2c14",
+          "number_label": "Chapter XIV",
+          "roman": "XIV",
+          "title": "Chapter XIV",
+          "word_count": 4006
+        },
+        {
+          "id": "p2c15",
+          "number_label": "Chapter XV",
+          "roman": "XV",
+          "title": "Chapter XV",
+          "word_count": 5509
+        }
+      ]
+    },
+    {
+      "id": "part-3",
+      "roman": "3",
+      "name": "Part 3",
+      "subtitle": "Gail Wynand",
+      "chapters": [
+        {
+          "id": "p3c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "Chapter I",
+          "word_count": 13695
+        },
+        {
+          "id": "p3c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "Chapter II",
+          "word_count": 5953
+        },
+        {
+          "id": "p3c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "Chapter III",
+          "word_count": 4162
+        },
+        {
+          "id": "p3c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "Chapter IV",
+          "word_count": 3171
+        },
+        {
+          "id": "p3c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "Chapter V",
+          "word_count": 7428
+        },
+        {
+          "id": "p3c6",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "Chapter VI",
+          "word_count": 4527
+        },
+        {
+          "id": "p3c7",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "Chapter VII",
+          "word_count": 4173
+        },
+        {
+          "id": "p3c8",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "Chapter VIII",
+          "word_count": 4041
+        },
+        {
+          "id": "p3c9",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "Chapter IX",
+          "word_count": 3372
+        }
+      ]
+    },
+    {
+      "id": "part-4",
+      "roman": "4",
+      "name": "Part 4",
+      "subtitle": "Howard Roark",
+      "chapters": [
+        {
+          "id": "p4c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "Chapter I",
+          "word_count": 5560
+        },
+        {
+          "id": "p4c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "Chapter II",
+          "word_count": 4710
+        },
+        {
+          "id": "p4c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "Chapter III",
+          "word_count": 3820
+        },
+        {
+          "id": "p4c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "Chapter IV",
+          "word_count": 5092
+        },
+        {
+          "id": "p4c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "Chapter V",
+          "word_count": 3218
+        },
+        {
+          "id": "p4c6",
+          "number_label": "Chapter VI",
+          "roman": "VI",
+          "title": "Chapter VI",
+          "word_count": 3541
+        },
+        {
+          "id": "p4c7",
+          "number_label": "Chapter VII",
+          "roman": "VII",
+          "title": "Chapter VII",
+          "word_count": 6076
+        },
+        {
+          "id": "p4c8",
+          "number_label": "Chapter VIII",
+          "roman": "VIII",
+          "title": "Chapter VIII",
+          "word_count": 4406
+        },
+        {
+          "id": "p4c9",
+          "number_label": "Chapter IX",
+          "roman": "IX",
+          "title": "Chapter IX",
+          "word_count": 4944
+        },
+        {
+          "id": "p4c10",
+          "number_label": "Chapter X",
+          "roman": "X",
+          "title": "Chapter X",
+          "word_count": 3361
+        },
+        {
+          "id": "p4c11",
+          "number_label": "Chapter XI",
+          "roman": "XI",
+          "title": "Chapter XI",
+          "word_count": 3562
+        },
+        {
+          "id": "p4c12",
+          "number_label": "Chapter XII",
+          "roman": "XII",
+          "title": "Chapter XII",
+          "word_count": 4074
+        },
+        {
+          "id": "p4c13",
+          "number_label": "Chapter XIII",
+          "roman": "XIII",
+          "title": "Chapter XIII",
+          "word_count": 6061
+        },
+        {
+          "id": "p4c14",
+          "number_label": "Chapter XIV",
+          "roman": "XIV",
+          "title": "Chapter XIV",
+          "word_count": 4873
+        },
+        {
+          "id": "p4c15",
+          "number_label": "Chapter XV",
+          "roman": "XV",
+          "title": "Chapter XV",
+          "word_count": 7108
+        },
+        {
+          "id": "p4c16",
+          "number_label": "Chapter XVI",
+          "roman": "XVI",
+          "title": "Chapter XVI",
+          "word_count": 4262
+        },
+        {
+          "id": "p4c17",
+          "number_label": "Chapter XVII",
+          "roman": "XVII",
+          "title": "Chapter XVII",
+          "word_count": 4781
+        },
+        {
+          "id": "p4c18",
+          "number_label": "Chapter XVIII",
+          "roman": "XVIII",
+          "title": "Chapter XVIII",
+          "word_count": 5821
+        },
+        {
+          "id": "p4c19",
+          "number_label": "Chapter XIX",
+          "roman": "XIX",
+          "title": "Chapter XIX",
+          "word_count": 2761
+        },
+        {
+          "id": "p4c20",
+          "number_label": "Chapter XX",
+          "roman": "XX",
+          "title": "Chapter XX",
+          "word_count": 840
+        }
+      ]
+    }
+  ]
+}

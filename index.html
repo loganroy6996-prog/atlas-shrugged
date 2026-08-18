@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A private literary library — Rand, Nietzsche, Heidegger, Wallace, and more." />
+  <title>Literary Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/library.css" />
+</head>
+<body>
+  <div class="library-bg" aria-hidden="true"></div>
+  <main class="library">
+    <header class="library-header">
+      <p class="library-eyebrow">A private collection</p>
+      <h1 class="library-title">Literary <em>Library</em></h1>
+      <div class="library-rule" aria-hidden="true"><span></span></div>
+      <p class="library-sub">
+        Beautifully set editions — cleaned of publisher junk, ready to read.
+      </p>
+      <p class="library-count" id="library-count">Loading…</p>
+    </header>
+
+    <ul class="book-grid" id="book-grid" aria-label="Books"></ul>
+
+    <footer class="library-footer">
+      <p>Dark · Sepia · Light themes · Reading progress saved per book</p>
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const BASE = new URL("./", location.href).href;
+      const grid = document.getElementById("book-grid");
+      const countEl = document.getElementById("library-count");
+
+      function fmt(n) {
+        if (n >= 1e6) return (n / 1e6).toFixed(2).replace(/\.?0+$/, "") + "M";
+        if (n >= 1e3) return Math.round(n / 1e3) + "k";
+        return String(n);
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      fetch(new URL("catalog.json", BASE))
+        .then((r) => {
+          if (!r.ok) throw new Error("catalog");
+          return r.json();
+        })
+        .then((data) => {
+          const books = data.books || [];
+          countEl.textContent = `${books.length} volumes`;
+          grid.innerHTML = "";
+          books.forEach((b, i) => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.className = "book-card";
+            a.href = `books/${encodeURIComponent(b.slug)}/`;
+            a.style.setProperty("--card-accent", b.accent || "#e8d5a3");
+            a.style.animationDelay = `${0.05 + i * 0.04}s`;
+            a.innerHTML = `
+              <p class="book-year">${escapeHtml(b.year || "")}</p>
+              <h2 class="book-title">${escapeHtml(b.title)}</h2>
+              <p class="book-author">${escapeHtml(b.author)}</p>
+              <p class="book-blurb">${escapeHtml(b.blurb || b.tagline || "")}</p>
+              <div class="book-meta">
+                <span>${b.chapters || 0} chapters</span>
+                <span>${fmt(b.words || 0)} words</span>
+                <span>${b.parts || 0} parts</span>
+              </div>
+              <span class="book-open">Open →</span>
+            `;
+            li.appendChild(a);
+            grid.appendChild(li);
+          });
+        })
+        .catch((err) => {
+          console.error(err);
+          countEl.textContent = "Could not load catalog — serve this folder over HTTP.";
+        });
+    })();
+  </script>
+</body>
+</html>

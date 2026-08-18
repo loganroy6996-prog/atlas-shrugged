@@ -1,0 +1,43 @@
+/* The Fountainhead — granite, glass, blueprint */
+:root, html[data-theme="dark"] {
+  --bg: #0e1218;
+  --bg-elevated: #151b24;
+  --bg-soft: #1a2230;
+  --surface: #1e2836;
+  --border: rgba(107, 154, 196, 0.16);
+  --border-strong: rgba(107, 154, 196, 0.32);
+  --text: #e6edf5;
+  --text-muted: #8b9bb0;
+  --text-faint: #5c6b7e;
+  --accent: #6b9ac4;
+  --accent-soft: rgba(107, 154, 196, 0.12);
+  --accent-hover: #8fb6d9;
+  --copper: #94a3b8;
+  --reader-max: 52rem;
+}
+html[data-theme="sepia"] {
+  --bg: #eef2f6;
+  --bg-elevated: #e4eaf1;
+  --bg-soft: #d8e0ea;
+  --surface: #ffffff;
+  --text: #1a2330;
+  --text-muted: #5a6a7c;
+  --accent: #3d6f99;
+  --border: rgba(61, 111, 153, 0.15);
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(107, 154, 196, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 154, 196, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.cover-glow {
+  background: radial-gradient(ellipse, rgba(107, 154, 196, 0.18) 0%, transparent 65%);
+}
+.cover-title { letter-spacing: -0.03em; }
+.title-line.accent { font-style: normal; font-weight: 600; color: var(--accent); }
+.chapter-text p:first-of-type::first-letter {
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+  padding-left: 0.15em;
+}
