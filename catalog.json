@@ -65,11 +65,11 @@
       "theme": "gay-science",
       "accent": "#38bdf8",
       "blurb": "Laughter, style, and the death of God — science as a joyful, dangerous art.",
+      "source": "Cambridge Texts in the History of Philosophy (EPUB)",
       "slug": "gay-science",
       "chapters": 8,
-      "words": 83211,
-      "parts": 8,
-      "source": "Cambridge Texts in the History of Philosophy (EPUB)"
+      "words": 83346,
+      "parts": 8
     },
     {
       "title": "Twilight of the Idols",
@@ -126,6 +126,20 @@
       "chapters": 45,
       "words": 482385,
       "parts": 1
+    },
+    {
+      "title": "Forty Ways to Look at Winston Churchill",
+      "author": "Gretchen Rubin",
+      "dedication": "To my mother and father",
+      "tagline": "Forty Contrasting Views of a Giant",
+      "year": "2003",
+      "theme": "forty-ways-to-look-at-churchill",
+      "accent": "#a68c6b",
+      "blurb": "Warrior and writer, genius and crank — forty contrasting views of the man who led Britain alone in 1940.",
+      "slug": "forty-ways-to-look-at-churchill",
+      "chapters": 41,
+      "words": 48831,
+      "parts": 5
     }
   ]
 }

@@ -1,0 +1,46 @@
+/* Forty Ways — wartime brass, newsprint, cigar smoke */
+:root, html[data-theme="dark"] {
+  --bg: #0f1410;
+  --bg-elevated: #161c16;
+  --bg-soft: #1e261e;
+  --surface: #243024;
+  --border: rgba(166, 140, 107, 0.16);
+  --border-strong: rgba(166, 140, 107, 0.32);
+  --text: #f0e8d8;
+  --text-muted: #b8a898;
+  --text-faint: #7a7060;
+  --accent: #a68c6b;
+  --accent-soft: rgba(166, 140, 107, 0.12);
+  --accent-hover: #c4a882;
+  --copper: #c9a86a;
+  --reader-max: 50rem;
+}
+html[data-theme="sepia"] {
+  --bg: #f4efe2;
+  --bg-elevated: #ede6d3;
+  --bg-soft: #e0d8c0;
+  --surface: #ffffff;
+  --text: #2a2418;
+  --text-muted: #6b6254;
+  --accent: #8a7040;
+  --border: rgba(138, 112, 64, 0.18);
+}
+html[data-theme="light"] {
+  --bg: #fafaf8;
+  --text: #1a1814;
+  --accent: #8a7040;
+  --bg-elevated: #ffffff;
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(166, 140, 107, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(166, 140, 107, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 35%, rgba(166, 140, 107, 0.18) 0%, rgba(120, 140, 110, 0.06) 42%, transparent 70%);
+}
+.title-line.accent { color: var(--accent); font-style: italic; font-weight: 400; }
+.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
+.meta-title { text-transform: none; letter-spacing: -0.01em; }
+.chapter-text blockquote { border-left-color: var(--accent); }

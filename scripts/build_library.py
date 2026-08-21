@@ -1159,6 +1159,286 @@ def parse_infinite_jest() -> tuple[dict, list]:
     return meta, parts
 
 
+class _ChurchillBlocks(HTMLParser):
+    """Block extractor for Forty Ways EPUB (handles p + table rows)."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.blocks: list[tuple[str, str, str]] = []
+        self._buf: list[str] = []
+        self._tag: str | None = None
+        self._attrs: dict = {}
+        self._skip = 0
+        self._in_tr = False
+        self._row_cells: list[str] = []
+        self._in_td = False
+        self._td_buf: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"):
+            self._skip += 1
+            return
+        if self._skip:
+            return
+        d = dict(attrs)
+        if tag == "tr":
+            self._in_tr = True
+            self._row_cells = []
+            return
+        if tag == "td" and self._in_tr:
+            self._in_td = True
+            self._td_buf = []
+            return
+        if tag == "br":
+            if self._in_td:
+                self._td_buf.append(" ")
+            elif self._tag:
+                self._buf.append(" ")
+            return
+        if tag in ("p", "h1", "h2", "h3", "h4", "li", "blockquote"):
+            if self._buf and self._tag:
+                txt = re.sub(r"\s+", " ", "".join(self._buf)).strip()
+                if txt:
+                    self.blocks.append((self._tag, self._attrs.get("class", ""), txt))
+                self._buf = []
+            self._tag = tag
+            self._attrs = d
+            return
+        if tag == "div":
+            if self._buf and self._tag:
+                txt = re.sub(r"\s+", " ", "".join(self._buf)).strip()
+                if txt:
+                    self.blocks.append((self._tag, self._attrs.get("class", ""), txt))
+                self._buf = []
+            self._tag = tag
+            self._attrs = d
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style"):
+            self._skip = max(0, self._skip - 1)
+            return
+        if self._skip:
+            return
+        if tag == "tr" and self._in_tr:
+            self._in_tr = False
+            cells = [c for c in self._row_cells if c]
+            if cells:
+                if len(cells) == 2:
+                    txt = f"{cells[0]} — {cells[1]}"
+                else:
+                    txt = "  ".join(cells)
+                txt = re.sub(r"\s+", " ", txt).strip()
+                if txt:
+                    self.blocks.append(("p", "table-row", txt))
+            self._row_cells = []
+            return
+        if tag == "td" and self._in_td:
+            self._in_td = False
+            txt = re.sub(r"\s+", " ", "".join(self._td_buf)).strip()
+            if txt:
+                self._row_cells.append(txt)
+            self._td_buf = []
+            return
+        if tag in ("p", "h1", "h2", "h3", "h4", "li", "blockquote", "div") and self._tag == tag:
+            txt = re.sub(r"\s+", " ", "".join(self._buf)).strip()
+            if txt:
+                self.blocks.append((tag, self._attrs.get("class", ""), txt))
+            self._buf = []
+            self._tag = None
+            self._attrs = {}
+
+    def handle_data(self, data):
+        if self._skip:
+            return
+        if self._in_td:
+            self._td_buf.append(data)
+        elif self._tag:
+            self._buf.append(data)
+
+
+def parse_forty_ways_to_look_at_churchill() -> tuple[dict, list]:
+    """Gretchen Rubin EPUB — 40 ways + Introduction."""
+    candidates = list(ROOT.glob("*Forty*Churchill*.epub")) + list(
+        ROOT.glob("*Churchill*.epub")
+    ) + list(ROOT.glob("_OceanofPDF*Churchill*.epub"))
+    # fallback: exact known name
+    if not candidates:
+        ep = ROOT / "_OceanofPDF.com_Forty_Ways_to_Look_at_Winston_Churchill_-_Gretchen_Rubin.epub"
+        if ep.exists():
+            candidates = [ep]
+    if not candidates:
+        raise FileNotFoundError("Forty Ways EPUB not found")
+    epub_path = candidates[0]
+
+    TOC_TITLES = [
+        "Churchill as Liberty’s Champion: Heroic View",
+        "Churchill as Failed Statesman: Critical View",
+        "Churchill’s Contemporaries: Whom He Knew",
+        "Churchill’s Finest Hour—May 28, 1940: The Decisive Moment",
+        "Churchill as Leader: Suited to High Office?",
+        "Churchill’s Genius with Words: His Greatest Strength",
+        "Churchill’s Eloquence: His Exact Words",
+        "Churchill in Symbols: Metonymy",
+        "Churchill, True: In a Single Word",
+        "Churchill’s Desire for Fame: His Motive",
+        "Churchill as Depressive: The “Black Dog”?",
+        "Churchill’s Disdain: His Dominant Quality",
+        "Churchill’s Belligerence: His Defining Characteristic",
+        "Churchill’s Time Line: Key Events",
+        "Churchill as Son: His Most Formative Role",
+        "Churchill as Father: A Good Parent?",
+        "Churchill the Painter: His Favorite Pastime",
+        "Churchill the Spendthrift: A Weakness",
+        "Conflicting Views of Churchill: How Others Saw Him",
+        "Churchill in Tears: Telling Detail",
+        "Churchill the Drinker: An Alcoholic?",
+        "Churchill in Context: Facts at a Glance",
+        "Churchill and Sex: Too Interesting to Ignore",
+        "Churchill as Husband: A Happy Marriage?",
+        "Churchill’s Island Story: His Myth",
+        "Churchill in Photographs: How He Changed Through Time",
+        "Churchill as the Hero of a Novel: The Imagined and the Real",
+        "Churchill’s Destiny: How He Saw Himself",
+        "Churchill the Imperialist: His Cause",
+        "Churchill’s Empire: How He Saw the World",
+        "Churchill and Roosevelt: Friends as Well as Allies?",
+        "Churchill’s Imagination: How He Saw History",
+        "Churchill and Hitler: Nemesis",
+        "Churchill Exposed: Missing Information Supplied",
+        "Churchill True or False: Challenged Assumptions",
+        "The Tragedy of Winston Churchill, Englishman: The Meaning of His Life",
+        "Churchill in Portrait: A Likeness",
+        "Churchill’s Last Days: How He Died",
+        "My Churchill: Judgment",
+        "Remember Winston Churchill: Epitaph",
+    ]
+
+    def file_blocks(rel: str) -> list[tuple[str, str, str]]:
+        with zipfile.ZipFile(epub_path, "r") as zf:
+            data = zf.read(rel).decode("utf-8", errors="replace")
+        p = _ChurchillBlocks()
+        p.feed(data)
+        return p.blocks
+
+    def to_paras(blocks: list[tuple[str, str, str]]) -> list[str]:
+        filtered: list[tuple[str, str]] = []
+        for tag, cls, txt in blocks:
+            if txt == "Forty Ways to Look at Winston Churchill":
+                continue
+            if "Photo ©" in txt or "Photo courtesy" in txt:
+                continue
+            if cls in ("cn", "ct", "cst"):
+                continue
+            if cls == "is":
+                continue
+            if not txt.strip():
+                continue
+            filtered.append((cls, txt))
+        # merge da + following ctag* (time line)
+        paras: list[str] = []
+        i = 0
+        while i < len(filtered):
+            cls, txt = filtered[i]
+            if cls == "da":
+                j = i + 1
+                ctags = []
+                while j < len(filtered) and filtered[j][0].startswith("ctag"):
+                    ctags.append(filtered[j][1])
+                    j += 1
+                if ctags:
+                    combined = "; ".join(ctags)
+                    paras.append(f"{txt} — {combined}")
+                    i = j
+                    continue
+                paras.append(txt)
+                i += 1
+                continue
+            paras.append(txt)
+            i += 1
+        return paras
+
+    # Build chapters: Introduction + 40 ways
+    all_chapters: list[dict] = []
+
+    # Introduction
+    itr_blocks = file_blocks("OEBPS/Rubi_9781588363848_epub_itr_r1.htm")
+    itr_paras = to_paras(itr_blocks)
+    all_chapters.append(
+        {
+            "number_label": "Introduction",
+            "roman": "0",
+            "title": "Introduction",
+            "paragraphs": itr_paras,
+        }
+    )
+
+    for idx, title in enumerate(TOC_TITLES, start=1):
+        rel = f"OEBPS/Rubi_9781588363848_epub_c{idx:02d}_r1.htm"
+        try:
+            blocks = file_blocks(rel)
+        except KeyError:
+            continue
+        paras = to_paras(blocks)
+        # c30 is map-only with 1 intro para — keep it
+        if not paras:
+            continue
+        all_chapters.append(
+            {
+                "number_label": str(idx),
+                "roman": str(idx),
+                "title": title,
+                "paragraphs": paras,
+            }
+        )
+
+    # Group into parts: 1 Intro + 4 groups of 10
+    parts: list[dict] = []
+    # Part I – Introduction
+    parts.append(
+        {
+            "roman": "I",
+            "name": "Introduction",
+            "subtitle": "How I Came to Churchill",
+            "chapters": [all_chapters[0]],
+        }
+    )
+    # Parts II–V
+    group_names = [
+        ("II", "Ways 1–10", "Hero, Statesman, Words"),
+        ("III", "Ways 11–20", "Character & Family"),
+        ("IV", "Ways 21–30", "Context & Myth"),
+        ("V", "Ways 31–40", "Empire, Nemesis & Epitaph"),
+    ]
+    for (rom, name, subtitle), start in zip(group_names, [1, 11, 21, 31]):
+        end = start + 10  # exclusive in all_chapters indexing (offset by 1 for intro)
+        # all_chapters[1:] holds 40 ways indexed 0..39; slice accordingly
+        # start is 1-based way number, so index = start (since intro at 0)
+        chap_slice = all_chapters[start : start + 10]
+        if chap_slice:
+            parts.append(
+                {"roman": rom, "name": name, "subtitle": subtitle, "chapters": chap_slice}
+            )
+
+    # Cache plain text for debugging
+    plain = []
+    for ch in all_chapters:
+        plain.append(f"\n\n=== {ch['title']} ===\n\n")
+        plain.extend(x + "\n\n" for x in ch["paragraphs"])
+    (RAW / "forty_ways_churchill_epub.txt").write_text("".join(plain), encoding="utf-8")
+
+    meta = {
+        "title": "Forty Ways to Look at Winston Churchill",
+        "author": "Gretchen Rubin",
+        "dedication": "To my mother and father",
+        "tagline": "Forty Contrasting Views of a Giant",
+        "year": "2003",
+        "theme": "forty-ways-to-look-at-churchill",
+        "accent": "#a68c6b",
+        "blurb": "Warrior and writer, genius and crank — forty contrasting views of the man who led Britain alone in 1940.",
+    }
+    return meta, parts
+
+
 def migrate_atlas() -> None:
     """Copy existing Atlas Shrugged data into books/atlas-shrugged/."""
     src_data = ROOT / "data"
@@ -1205,6 +1485,7 @@ PARSERS = [
     ("gay-science", parse_gay_science),
     ("being-and-time", parse_being_and_time),
     ("infinite-jest", parse_infinite_jest),
+    ("forty-ways-to-look-at-churchill", parse_forty_ways_to_look_at_churchill),
 ]
 
 
@@ -1237,7 +1518,7 @@ def main() -> None:
 
             traceback.print_exc()
 
-    # Sort catalog: Rand, Nietzsche cluster, Heidegger, DFW
+    # Sort catalog: Rand, Nietzsche cluster, Heidegger, DFW, Churchill
     order = [
         "atlas-shrugged",
         "the-fountainhead",
@@ -1248,6 +1529,7 @@ def main() -> None:
         "will-to-power",
         "being-and-time",
         "infinite-jest",
+        "forty-ways-to-look-at-churchill",
     ]
     catalog.sort(key=lambda m: order.index(m["slug"]) if m["slug"] in order else 99)
     (ROOT / "catalog.json").write_text(
