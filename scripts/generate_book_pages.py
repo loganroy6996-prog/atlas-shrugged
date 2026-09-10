@@ -361,6 +361,147 @@ html[data-theme="light"] {
 .cover-title { font-size: clamp(3rem, 10vw, 5.5rem); }
 .chapter-text { font-size: calc(var(--text-size) * 0.98); line-height: calc(var(--leading) * 1.02); }
 """,
+    "open-letter": """
+/* Open Letter — oxblood ink, broadsheet */
+:root, html[data-theme="dark"] {
+  --bg: #120d0c;
+  --bg-elevated: #1a1312;
+  --bg-soft: #241817;
+  --surface: #2c1e1c;
+  --border: rgba(192, 87, 70, 0.16);
+  --border-strong: rgba(192, 87, 70, 0.32);
+  --text: #f3e6df;
+  --text-muted: #c09a8e;
+  --text-faint: #7d5f57;
+  --accent: #c05746;
+  --accent-soft: rgba(192, 87, 70, 0.12);
+  --accent-hover: #d97a63;
+  --copper: #d9a05a;
+  --reader-max: 50rem;
+}
+html[data-theme="sepia"] {
+  --bg: #f5eee3;
+  --bg-elevated: #ece1cf;
+  --bg-soft: #e0d2b8;
+  --surface: #ffffff;
+  --text: #2e1f1b;
+  --text-muted: #6f5a52;
+  --accent: #a03e2e;
+  --border: rgba(160, 62, 46, 0.18);
+}
+html[data-theme="light"] {
+  --bg: #faf8f5;
+  --text: #241614;
+  --accent: #a03e2e;
+  --bg-elevated: #ffffff;
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 38%, rgba(192, 87, 70, 0.2) 0%, rgba(120, 60, 50, 0.06) 45%, transparent 70%);
+}
+.cover-grid {
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 31px,
+    rgba(192, 87, 70, 0.07) 31px, rgba(192, 87, 70, 0.07) 32px
+  );
+}
+.title-line.accent { color: var(--accent); font-style: italic; }
+.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
+.chapter-text p { text-align: justify; hyphens: auto; }
+""",
+    "gentle-introduction": """
+/* Gentle Introduction — verdigris, deep water */
+:root, html[data-theme="dark"] {
+  --bg: #0b1214;
+  --bg-elevated: #111b1e;
+  --bg-soft: #182528;
+  --surface: #1f3034;
+  --border: rgba(95, 143, 131, 0.16);
+  --border-strong: rgba(95, 143, 131, 0.32);
+  --text: #e2efeb;
+  --text-muted: #93b3a9;
+  --text-faint: #5d7a72;
+  --accent: #5f8f83;
+  --accent-soft: rgba(95, 143, 131, 0.12);
+  --accent-hover: #7fb3a4;
+  --copper: #c9b37a;
+  --reader-max: 50rem;
+}
+html[data-theme="sepia"] {
+  --bg: #eef1ea;
+  --bg-elevated: #e2e8de;
+  --bg-soft: #d3dccd;
+  --surface: #ffffff;
+  --text: #1c2a27;
+  --text-muted: #5a6f6a;
+  --accent: #3f6b61;
+  --border: rgba(63, 107, 97, 0.18);
+}
+html[data-theme="light"] {
+  --bg: #f7faf9;
+  --text: #16211f;
+  --accent: #3f6b61;
+  --bg-elevated: #ffffff;
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 35%, rgba(95, 143, 131, 0.18) 0%, rgba(60, 100, 110, 0.07) 45%, transparent 70%);
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(95, 143, 131, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(95, 143, 131, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.title-line.accent { color: var(--accent); font-style: italic; }
+.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
+.chapter-text p { text-align: justify; hyphens: auto; }
+""",
+    "sovereign-individual": """
+/* Sovereign Individual — bullion gold on charcoal */
+:root, html[data-theme="dark"] {
+  --bg: #101014;
+  --bg-elevated: #17171d;
+  --bg-soft: #1f1f26;
+  --surface: #26262e;
+  --border: rgba(201, 162, 39, 0.16);
+  --border-strong: rgba(201, 162, 39, 0.32);
+  --text: #f0ead6;
+  --text-muted: #b3a888;
+  --text-faint: #776f57;
+  --accent: #c9a227;
+  --accent-soft: rgba(201, 162, 39, 0.12);
+  --accent-hover: #e0bc45;
+  --copper: #e0bc45;
+  --reader-max: 52rem;
+}
+html[data-theme="sepia"] {
+  --bg: #f4efdd;
+  --bg-elevated: #eae2c9;
+  --bg-soft: #dcd2b2;
+  --surface: #ffffff;
+  --text: #2a2517;
+  --text-muted: #6b6247;
+  --accent: #8a6f14;
+  --border: rgba(138, 111, 20, 0.18);
+}
+html[data-theme="light"] {
+  --bg: #fbf9f2;
+  --text: #201c10;
+  --accent: #8a6f14;
+  --bg-elevated: #ffffff;
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 35%, rgba(201, 162, 39, 0.2) 0%, rgba(150, 120, 40, 0.06) 45%, transparent 70%);
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(201, 162, 39, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 162, 39, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.title-line.accent { color: var(--accent); font-style: italic; }
+.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
+.chapter-text p { text-align: justify; hyphens: auto; }
+""",
 }
 
 # Map meta theme field to THEMES key
@@ -375,6 +516,9 @@ THEME_KEY = {
     "being-and-time": "being-and-time",
     "infinite-jest": "infinite-jest",
     "forty-ways-to-look-at-churchill": "forty-ways-to-look-at-churchill",
+    "open-letter": "open-letter",
+    "gentle-introduction": "gentle-introduction",
+    "sovereign-individual": "sovereign-individual",
 }
 
 

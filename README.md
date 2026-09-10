@@ -15,8 +15,10 @@ A multi-volume reading site: cleaned text, chapter navigation, and a distinct vi
 | The Will to Power | Friedrich Nietzsche |
 | Being and Time | Martin Heidegger |
 | Infinite Jest | David Foster Wallace |
-
-Publisher marketing, OceanofPDF marks, and other non-book material are stripped where possible.
+| Forty Ways to Look at Winston Churchill | Gretchen Rubin |
+| An Open Letter to Open-Minded Progressives | Mencius Moldbug |
+| A Gentle Introduction to Unqualified Reservations | Mencius Moldbug |
+| The Sovereign Individual | James Dale Davidson & William Rees-Mogg |
 
 ## Run locally
 
@@ -33,12 +35,16 @@ Deploy-style artifact:
 python3 -m http.server 8080 --directory _site
 ```
 
-## Rebuild book data from PDFs
+## Rebuild book data from PDFs / EPUBs
 
 ```bash
-# 1) Extract PDFs (once)
+# 1) Extract sources (once)
 mkdir -p raw_extract
 pdftotext -layout "The Fountainhead.pdf" raw_extract/the_fountainhead.txt
+pdftotext -layout "open_letter.pdf" raw_extract/open_letter.txt
+pdftotext -layout "gentle_introduction_to_ur.pdf" raw_extract/gentle_introduction_to_ur.txt
+# EPUBs (Gay Science, Churchill, Sovereign Individual) are read in place —
+# copy them next to the scripts' expected filenames (see build_library.py).
 # …or re-extract all as needed
 
 # 2) Structure chapters + catalog

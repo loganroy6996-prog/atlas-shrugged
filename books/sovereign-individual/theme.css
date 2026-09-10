@@ -1,0 +1,45 @@
+/* Sovereign Individual — bullion gold on charcoal */
+:root, html[data-theme="dark"] {
+  --bg: #101014;
+  --bg-elevated: #17171d;
+  --bg-soft: #1f1f26;
+  --surface: #26262e;
+  --border: rgba(201, 162, 39, 0.16);
+  --border-strong: rgba(201, 162, 39, 0.32);
+  --text: #f0ead6;
+  --text-muted: #b3a888;
+  --text-faint: #776f57;
+  --accent: #c9a227;
+  --accent-soft: rgba(201, 162, 39, 0.12);
+  --accent-hover: #e0bc45;
+  --copper: #e0bc45;
+  --reader-max: 52rem;
+}
+html[data-theme="sepia"] {
+  --bg: #f4efdd;
+  --bg-elevated: #eae2c9;
+  --bg-soft: #dcd2b2;
+  --surface: #ffffff;
+  --text: #2a2517;
+  --text-muted: #6b6247;
+  --accent: #8a6f14;
+  --border: rgba(138, 111, 20, 0.18);
+}
+html[data-theme="light"] {
+  --bg: #fbf9f2;
+  --text: #201c10;
+  --accent: #8a6f14;
+  --bg-elevated: #ffffff;
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 35%, rgba(201, 162, 39, 0.2) 0%, rgba(150, 120, 40, 0.06) 45%, transparent 70%);
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(201, 162, 39, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 162, 39, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.title-line.accent { color: var(--accent); font-style: italic; }
+.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
+.chapter-text p { text-align: justify; hyphens: auto; }

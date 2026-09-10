@@ -1439,6 +1439,279 @@ def parse_forty_ways_to_look_at_churchill() -> tuple[dict, list]:
     return meta, parts
 
 
+MOLDBUG_HEADER_RE = re.compile(r"^\s*\d+\s+CHAPTER\s+[0-9XIV]+\..*$")
+MOLDBUG_CH_RE = re.compile(r"^\s*Chapter\s+([0-9XIV]+)\s*$")
+
+
+def parse_moldbug(raw_name: str, meta: dict, titles: list[str], part_name: str) -> tuple[dict, list]:
+    """Shared parser for the Moldbug LaTeX PDFs (pdftotext -layout extract).
+
+    Structure: full-line 'Chapter N' heading, blank line, 1-2 centered title
+    lines, then body. Running headers ('<page> CHAPTER N. TITLE') are
+    stripped. Bare-number footnote markers are already junk, so footnote text
+    merges into the surrounding paragraph via reflow.
+    """
+    lines = load_raw(raw_name)
+    # Start at first chapter heading (skip Contents/Foreword/Acknowledgments/Copyright)
+    start = 0
+    for i, l in enumerate(lines):
+        if MOLDBUG_CH_RE.match(l):
+            start = i
+            break
+    body = lines[start:]
+
+    parts = [
+        {"roman": "I", "name": part_name, "subtitle": meta["tagline"], "chapters": []}
+    ]
+    cur_ch = None
+    buf: list[str] = []
+    title_idx = 0
+
+    def fin_ch():
+        nonlocal cur_ch, buf
+        if cur_ch is None:
+            buf = []
+            return
+        paras = reflow(buf)
+        cur_ch["paragraphs"] = paras
+        if paras:
+            parts[0]["chapters"].append(cur_ch)
+        cur_ch = None
+        buf = []
+
+    def skip_title(i: int, title: str) -> int:
+        """Skip blank lines, then the raw lines that spell out the title."""
+        j = i
+        while j < len(body) and not body[j].strip():
+            j += 1
+        need = re.sub(r"\s+", " ", title).strip().lower()
+        got = ""
+        k = j
+        while k < len(body) and body[k].strip() and len(got) <= len(need) + 10:
+            got = (got + " " + body[k].strip()).strip()
+            k += 1
+            if got.lower() == need:
+                return k
+        # Fallback: skip up to 2 short centered lines
+        k = j
+        for _ in range(2):
+            if k < len(body) and body[k].strip() and len(body[k].strip()) < 60:
+                k += 1
+            else:
+                break
+        return k
+
+    i = 0
+    while i < len(body):
+        m = MOLDBUG_CH_RE.match(body[i])
+        if m:
+            fin_ch()
+            num = m.group(1)
+            title = titles[title_idx] if title_idx < len(titles) else f"Chapter {num}"
+            title_idx += 1
+            cur_ch = {
+                "number_label": f"Chapter {num}",
+                "roman": num,
+                "title": title,
+                "paragraphs": [],
+            }
+            buf = []
+            i = skip_title(i + 1, title)
+            continue
+        if cur_ch is None:
+            i += 1
+            continue
+        if MOLDBUG_HEADER_RE.match(body[i]):
+            i += 1
+            continue
+        buf.append(body[i])
+        i += 1
+    fin_ch()
+    return meta, parts
+
+
+def parse_open_letter() -> tuple[dict, list]:
+    """Mencius Moldbug LaTeX PDF (2008) — 14 chapters, arabic then roman."""
+    titles = [
+        "A Horizon Made of Canvas",
+        "More Historical Anomalies",
+        "The Jacobite History of the World",
+        "Dr. Johnson’s Hypothesis",
+        "The Shortest Way to World Peace",
+        "The Lost Theory of Government",
+        "The Ugly Truth About Government",
+        "A Reset Is Not a Revolution",
+        "How to Uninstall a Cathedral",
+        "A Simple Sovereign Bankruptcy Procedure",
+        "The Truth About Left and Right",
+        "What Is to Be Done?",
+        "Tactics and Structures of Any Prospective Restoration",
+        "Rules for Reactionaries",
+    ]
+    meta = {
+        "title": "An Open Letter to Open-Minded Progressives",
+        "author": "Mencius Moldbug",
+        "dedication": "",
+        "tagline": "Fourteen chapters on power, history, and who really rules",
+        "year": "2008",
+        "theme": "open-letter",
+        "accent": "#c05746",
+        "blurb": "Who really rules? Fourteen installments dismantling progressive history — and sketching a sovereign alternative.",
+    }
+    return parse_moldbug("open_letter.txt", meta, titles, "An Open Letter")
+
+
+def parse_gentle_introduction() -> tuple[dict, list]:
+    """Mencius Moldbug LaTeX PDF (2009) — 11 chapters."""
+    titles = [
+        "The Red Pill",
+        "The American Rebellion",
+        "AGW, KFM, and HNU",
+        "Plan Moldbug",
+        "The Modern Structure",
+        "Brother Jonathan",
+        "The War of Secession",
+        "Olde Towne Easte",
+        "The Procedure and the Reaction",
+        "The Mandate of Heaven",
+        "The New Structure",
+    ]
+    meta = {
+        "title": "A Gentle Introduction to Unqualified Reservations",
+        "author": "Mencius Moldbug",
+        "dedication": "",
+        "tagline": "Eleven doses of the red pill",
+        "year": "2009",
+        "theme": "gentle-introduction",
+        "accent": "#5f8f83",
+        "blurb": "The Cathedral, two American rebellions, and a procedure for restoration — UR’s self-styled gentle introduction.",
+    }
+    return parse_moldbug(
+        "gentle_introduction_to_ur.txt", meta, titles, "Gentle Introduction"
+    )
+
+
+def parse_sovereign_individual() -> tuple[dict, list]:
+    """Davidson & Rees-Mogg calibre-conversion EPUB — 11 chapters."""
+    epubs = list(ROOT.glob("*soverign*.epub")) + list(
+        ROOT.glob("*overeign*dividual*.epub")
+    )
+    if not epubs:
+        raise FileNotFoundError("Sovereign Individual EPUB not found")
+    epub_path = epubs[0]
+    titles = {
+        1: "The Transition in the Year 2000",
+        2: "Megapolitical Transformations in Historical Perspective",
+        3: "East of Eden",
+        4: "The Last Days of Politics",
+        5: "The Life and Health of the Nation-State",
+        6: "The Megapolitics of the Information Age",
+        7: "Transcending Locality",
+        8: "The End of Egalitarian Economics",
+        9: "Nationalism, Reaction, and the New Luddites",
+        10: "The Twilight of Democracy",
+        11: "Morality and Crime in the “Natural Economy” of the Information Age",
+    }
+
+    with tempfile.TemporaryDirectory(prefix="sovereign_epub_") as td:
+        tdir = Path(td)
+        with zipfile.ZipFile(epub_path, "r") as zf:
+            zf.extractall(tdir)
+        splits = sorted(tdir.glob("index_split_*.html"))
+        blocks: list[tuple[str, str]] = []
+        for sp in splits:
+            raw = sp.read_text(encoding="utf-8", errors="replace")
+            # Drop <head>: _HtmlBlocks would otherwise prepend <title> text
+            # (identical to the running header) to each split's first block,
+            # hiding chapter markers like <h2>CHAPTER 2</h2>.
+            raw = re.sub(r"<head>.*?</head>", "", raw, flags=re.S)
+            p = _HtmlBlocks()
+            p.feed(raw)
+            blocks.extend(p.blocks)
+
+    MARK_RE = re.compile(r"^(Chapter|CHAPTER)\s+(\d+)\s*(.*)$")
+    PAGENO_RE = re.compile(r"^[A-Za-z]?\d{1,3}\.?$")
+    parts = [
+        {
+            "roman": "I",
+            "name": "The Sovereign Individual",
+            "subtitle": "Eleven Chapters",
+            "chapters": [],
+        }
+    ]
+    cur_ch = None
+    buf: list[str] = []
+    title_zone = False
+
+    def fin_ch():
+        nonlocal cur_ch, buf
+        if cur_ch is None:
+            buf = []
+            return
+        paras = [b for b in buf if b.strip()]
+        cur_ch["paragraphs"] = paras
+        if paras:
+            parts[0]["chapters"].append(cur_ch)
+        cur_ch = None
+        buf = []
+
+    for _, text in blocks:
+        t = re.sub(r"\s+", " ", text).strip()
+        if not t:
+            continue
+        if t.startswith("James Dale Davidson"):
+            continue  # running header on every split
+        if t == "Document Outline":
+            break  # backmatter TOC
+        if PAGENO_RE.match(t):
+            continue  # page-number artifacts (1, 2., A3)
+        m = MARK_RE.match(t)
+        if m:
+            num = int(m.group(2))
+            rest = m.group(3).strip()
+            letters = re.sub(r"[^A-Za-z]", "", rest)
+            if 1 <= num <= 11 and (
+                not rest or (rest == rest.upper() and len(letters) >= 2)
+            ):
+                fin_ch()
+                title = titles.get(num, f"Chapter {num}")
+                cur_ch = {
+                    "number_label": f"Chapter {num}",
+                    "roman": str(num),
+                    "title": title,
+                    "paragraphs": [],
+                }
+                buf = []
+                title_zone = True
+                continue
+        if cur_ch is None:
+            continue  # title page, skip content before Chapter 1
+        if title_zone and len(t) < 90 and t == t.upper() and re.search(r"[A-Z]{2}", t):
+            continue  # chapter-title remnant (title is hardcoded above)
+        title_zone = False
+        buf.append(t)
+    fin_ch()
+
+    # Cache plain text for debugging
+    plain = []
+    for ch in parts[0]["chapters"]:
+        plain.append(f"\n\n=== {ch['title']} ===\n\n")
+        plain.extend(x + "\n\n" for x in ch["paragraphs"])
+    (RAW / "sovereign_individual_epub.txt").write_text("".join(plain), encoding="utf-8")
+
+    meta = {
+        "title": "The Sovereign Individual",
+        "author": "James Dale Davidson & William Rees-Mogg",
+        "dedication": "",
+        "tagline": "How to Survive and Thrive During the Collapse of the Welfare State",
+        "year": "1997",
+        "theme": "sovereign-individual",
+        "accent": "#c9a227",
+        "blurb": "Megapolitics for the information age — as the nation-state fades, the individual returns.",
+    }
+    return meta, parts
+
+
 def migrate_atlas() -> None:
     """Copy existing Atlas Shrugged data into books/atlas-shrugged/."""
     src_data = ROOT / "data"
@@ -1486,6 +1759,9 @@ PARSERS = [
     ("being-and-time", parse_being_and_time),
     ("infinite-jest", parse_infinite_jest),
     ("forty-ways-to-look-at-churchill", parse_forty_ways_to_look_at_churchill),
+    ("open-letter", parse_open_letter),
+    ("gentle-introduction", parse_gentle_introduction),
+    ("sovereign-individual", parse_sovereign_individual),
 ]
 
 
@@ -1517,8 +1793,16 @@ def main() -> None:
             import traceback
 
             traceback.print_exc()
+    # Preserve books whose sources are absent locally (gitignored PDFs/EPUBs):
+    # a rebuild must never drop them from the menu.
+    have = {m["slug"] for m in catalog}
+    for meta_path in sorted(BOOKS.glob("*/meta.json")):
+        slug = meta_path.parent.name
+        if slug not in have:
+            catalog.append(json.loads(meta_path.read_text(encoding="utf-8")))
+            print(f"  … {slug}: kept existing data (source absent)")
 
-    # Sort catalog: Rand, Nietzsche cluster, Heidegger, DFW, Churchill
+    # Sort catalog: Rand, Nietzsche cluster, Heidegger, DFW, Churchill, Moldbug, Davidson/Rees-Mogg
     order = [
         "atlas-shrugged",
         "the-fountainhead",
@@ -1530,6 +1814,9 @@ def main() -> None:
         "being-and-time",
         "infinite-jest",
         "forty-ways-to-look-at-churchill",
+        "open-letter",
+        "gentle-introduction",
+        "sovereign-individual",
     ]
     catalog.sort(key=lambda m: order.index(m["slug"]) if m["slug"] in order else 99)
     (ROOT / "catalog.json").write_text(

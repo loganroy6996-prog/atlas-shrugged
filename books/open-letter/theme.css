@@ -1,0 +1,45 @@
+/* Open Letter — oxblood ink, broadsheet */
+:root, html[data-theme="dark"] {
+  --bg: #120d0c;
+  --bg-elevated: #1a1312;
+  --bg-soft: #241817;
+  --surface: #2c1e1c;
+  --border: rgba(192, 87, 70, 0.16);
+  --border-strong: rgba(192, 87, 70, 0.32);
+  --text: #f3e6df;
+  --text-muted: #c09a8e;
+  --text-faint: #7d5f57;
+  --accent: #c05746;
+  --accent-soft: rgba(192, 87, 70, 0.12);
+  --accent-hover: #d97a63;
+  --copper: #d9a05a;
+  --reader-max: 50rem;
+}
+html[data-theme="sepia"] {
+  --bg: #f5eee3;
+  --bg-elevated: #ece1cf;
+  --bg-soft: #e0d2b8;
+  --surface: #ffffff;
+  --text: #2e1f1b;
+  --text-muted: #6f5a52;
+  --accent: #a03e2e;
+  --border: rgba(160, 62, 46, 0.18);
+}
+html[data-theme="light"] {
+  --bg: #faf8f5;
+  --text: #241614;
+  --accent: #a03e2e;
+  --bg-elevated: #ffffff;
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 38%, rgba(192, 87, 70, 0.2) 0%, rgba(120, 60, 50, 0.06) 45%, transparent 70%);
+}
+.cover-grid {
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 31px,
+    rgba(192, 87, 70, 0.07) 31px, rgba(192, 87, 70, 0.07) 32px
+  );
+}
+.title-line.accent { color: var(--accent); font-style: italic; }
+.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
+.chapter-text p { text-align: justify; hyphens: auto; }
