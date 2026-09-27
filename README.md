@@ -19,6 +19,7 @@ A multi-volume reading site: cleaned text, chapter navigation, and a distinct vi
 | An Open Letter to Open-Minded Progressives | Mencius Moldbug |
 | A Gentle Introduction to Unqualified Reservations | Mencius Moldbug |
 | The Sovereign Individual | James Dale Davidson & William Rees-Mogg |
+| Bronze Age Mindset | Bronze Age Pervert |
 
 ## Run locally
 
