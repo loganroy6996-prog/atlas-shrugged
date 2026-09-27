@@ -502,53 +502,6 @@ html[data-theme="light"] {
 .cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
 .chapter-text p { text-align: justify; hyphens: auto; }
 """,
-    "bronze-age-mindset": """
-/* Bronze Age Mindset — forged bronze on basalt */
-:root, html[data-theme="dark"] {
-  --bg: #100c08;
-  --bg-elevated: #181209;
-  --bg-soft: #201709;
-  --surface: #26200f;
-  --border: rgba(205, 127, 50, 0.16);
-  --border-strong: rgba(205, 127, 50, 0.32);
-  --text: #f2e6cf;
-  --text-muted: #bda87f;
-  --text-faint: #7d6f52;
-  --accent: #cd7f32;
-  --accent-soft: rgba(205, 127, 50, 0.12);
-  --accent-hover: #e09a4e;
-  --copper: #e09a4e;
-  --reader-max: 52rem;
-}
-html[data-theme="sepia"] {
-  --bg: #f3ecda;
-  --bg-elevated: #e9dfc4;
-  --bg-soft: #dbcdab;
-  --surface: #ffffff;
-  --text: #2b2113;
-  --text-muted: #6f6046;
-  --accent: #96601f;
-  --border: rgba(150, 96, 31, 0.18);
-}
-html[data-theme="light"] {
-  --bg: #fbf8ef;
-  --text: #221a0d;
-  --accent: #96601f;
-  --bg-elevated: #ffffff;
-}
-.cover-glow {
-  background: radial-gradient(ellipse at 50% 35%, rgba(205, 127, 50, 0.22) 0%, rgba(150, 90, 30, 0.07) 45%, transparent 70%);
-}
-.cover-grid {
-  background-image:
-    linear-gradient(rgba(205, 127, 50, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(205, 127, 50, 0.07) 1px, transparent 1px);
-  background-size: 56px 56px;
-}
-.title-line.accent { color: var(--accent); font-style: italic; }
-.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
-.chapter-text p { text-align: justify; hyphens: auto; }
-""",
 }
 
 # Map meta theme field to THEMES key
@@ -566,7 +519,6 @@ THEME_KEY = {
     "open-letter": "open-letter",
     "gentle-introduction": "gentle-introduction",
     "sovereign-individual": "sovereign-individual",
-    "bronze-age-mindset": "bronze-age-mindset",
 }
 
 

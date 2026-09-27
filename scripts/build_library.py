@@ -1712,119 +1712,6 @@ def parse_sovereign_individual() -> tuple[dict, list]:
     return meta, parts
 
 
-def _bam_short_title(opener: str) -> str:
-    """Short section title from the opening paragraph."""
-    t = opener.strip()
-    for sep in ("—", "–", ":", ";", ".", "!", "?"):
-        i = t.find(sep)
-        if 12 <= i <= 70:
-            t = t[:i]
-            break
-    else:
-        if len(t) > 52:
-            cut = t.rfind(" ", 0, 52)
-            t = t[: cut if cut > 20 else 52]
-    t = t.strip().rstrip(",")
-    return (t[:1].upper() + t[1:]) if t else ""
-
-
-def parse_bronze_age_mindset() -> tuple[dict, list]:
-    """Bronze Age Pervert pypdf extract — Prologue + 77 numbered sections.
-
-    Structure: 'PROLOGUE' heading, then Part headings each followed by
-    bare-number section markers ('1'..'77') on their own line. No
-    running headers or folios in the text layer, so sections split
-    cleanly on the bare numbers and reflow into paragraphs.
-    """
-    lines = load_raw("bronze_age_mindset.txt")
-    NUM_RE = re.compile(r"^\s*\d{1,3}\s*$")
-    PART_RE = re.compile(r"(?i)^\s*part\s+(one|two|three|four)\b")
-
-    pro = next(i for i, l in enumerate(lines) if l.strip() == "PROLOGUE")
-    body = lines[pro + 1 :]
-
-    prologue_buf: list[str] = []
-    sections: list[tuple[int, list[str]]] = []
-    cur_num: int | None = None
-    cur_buf: list[str] = []
-    skip_next = False  # second line of two-line Part Three heading
-    for l in body:
-        s = l.strip()
-        if skip_next:
-            skip_next = False
-            continue
-        if PART_RE.match(s):
-            if "Men of Power" in s:
-                skip_next = True  # 'Ascent of Youth' on the next line
-            continue
-        m = NUM_RE.match(l)
-        if m:
-            if cur_num is not None:
-                sections.append((cur_num, cur_buf))
-            cur_num = int(s)
-            cur_buf = []
-            continue
-        if cur_num is None:
-            prologue_buf.append(l)
-        else:
-            cur_buf.append(l)
-    if cur_num is not None:
-        sections.append((cur_num, cur_buf))
-
-    prologue_paras = reflow(prologue_buf)
-    ranges = [
-        ("I", "Part One", "The Flame of Life", 1, 30),
-        ("II", "Part Two", "Parable of Iron Prison", 31, 48),
-        ("III", "Part Three", "Men of Power, and the Ascent of Youth", 49, 62),
-        ("IV", "Part Four", "A Few Arrows", 63, 77),
-    ]
-    by_num = dict(sections)
-    seen: dict[str, int] = {}
-    parts = []
-    for roman, name, subtitle, lo, hi in ranges:
-        chs = []
-        if lo == 1 and prologue_paras:
-            chs.append(
-                {
-                    "number_label": "Prologue",
-                    "roman": "P",
-                    "title": "Victory to the Gods!",
-                    "paragraphs": prologue_paras,
-                }
-            )
-        for num in range(lo, hi + 1):
-            paras = reflow(by_num.get(num, []))
-            if not paras:
-                continue
-            title = _bam_short_title(paras[0]) or f"Section {num}"
-            seen[title] = seen.get(title, 0) + 1
-            if seen[title] > 1:
-                title = f"{title} ({seen[title]})"
-            chs.append(
-                {
-                    "number_label": f"§ {num}",
-                    "roman": str(num),
-                    "title": title,
-                    "paragraphs": paras,
-                }
-            )
-        parts.append(
-            {"roman": roman, "name": name, "subtitle": subtitle, "chapters": chs}
-        )
-
-    meta = {
-        "title": "Bronze Age Mindset",
-        "author": "Bronze Age Pervert",
-        "dedication": "To the memory of Dean Dejana",
-        "tagline": "An Exhortation",
-        "year": "2018",
-        "theme": "bronze-age-mindset",
-        "accent": "#cd7f32",
-        "blurb": "Life, power, and the return of the heroic — an exhortation in 77 sections.",
-    }
-    return meta, parts
-
-
 def migrate_atlas() -> None:
     """Copy existing Atlas Shrugged data into books/atlas-shrugged/."""
     src_data = ROOT / "data"
@@ -1873,7 +1760,6 @@ PARSERS = [
     ("infinite-jest", parse_infinite_jest),
     ("forty-ways-to-look-at-churchill", parse_forty_ways_to_look_at_churchill),
     ("sovereign-individual", parse_sovereign_individual),
-    ("bronze-age-mindset", parse_bronze_age_mindset),
 ]
 
 
@@ -1929,7 +1815,6 @@ def main() -> None:
         "open-letter",
         "gentle-introduction",
         "sovereign-individual",
-        "bronze-age-mindset",
     ]
     catalog.sort(key=lambda m: order.index(m["slug"]) if m["slug"] in order else 99)
     (ROOT / "catalog.json").write_text(
