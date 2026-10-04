@@ -1066,85 +1066,246 @@ def parse_being_and_time() -> tuple[dict, list]:
     return meta, parts
 
 
+def _ij_scrub(s: str) -> str:
+    return s.replace("\u00ad", "").replace("\ufeff", "").replace("\x0c", "").strip()
+
+
+def _ij_up_ratio(s: str) -> float:
+    letters = [c for c in s if c.isalpha()]
+    if not letters:
+        return 0.0
+    return sum(1 for c in letters if c.isupper()) / len(letters)
+
+
+def _ij_is_caps_line(s: str) -> bool:
+    s = _ij_scrub(s)
+    return bool(s) and len(s) <= 85 and _ij_up_ratio(s) > 0.7
+
+
+# First line of a section header must carry a dateline cue. This keeps
+# all-caps prose (the videophony essay, headline montages, exam text) out.
+_IJ_FIRST_RE = re.compile(
+    r"YEAR OF|Y\.D\.A\.U|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|"
+    r"SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER|\bB\.S\. 19|GAUDEAMUS|INTERDEPENDENCE|"
+    r"^PRE-DAWN|MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY|"
+    r"EARLY |LATE |AUTUMN|WINTER|SPRING|SUMMER|TUCSON|DENVER|^AS OF YEAR|"
+    r"^ON-CALL|^1 MAY|^30 APRIL|^3 NOVEMBER",
+    re.I,
+)
+
+_IJ_SMALL = {
+    "of", "the", "and", "a", "an", "in", "on", "to", "for",
+    "from", "vs", "v", "de", "la", "du", "des", "et", "und",
+}
+
+
+def _ij_title_case(s: str) -> str:
+    def word(tok: str, first: bool, last: bool) -> str:
+        m = re.match(r"^([\"'“”‘’(«–—-]*)(.*?)([\"'“”‘’».,;:!?–—-]*)$", tok)
+        if not m:
+            return tok
+        pre, core, post = m.groups()
+        if not core:
+            return tok
+        # Hyphen compounds: capitalize each segment ("Pre-dawn" -> "Pre-Dawn").
+        if "-" in core and "." not in core:
+            parts = core.split("-")
+            fixed = "-".join(p[:1].upper() + p[1:].lower() for p in parts)
+            return pre + fixed + post
+        if "." in core or core in {"AZ", "MA", "CO", "CA", "B.S", "U.S.A", "D.A.R.H"}:
+            return tok  # dotted initials / state codes keep source case
+        low = core.lower()
+        w = low if (not first and not last and low in _IJ_SMALL) else low[:1].upper() + low[1:]
+        return pre + w + post
+    # Split em/en-dash-glued tokens ("APRIL—YEAR" -> "April — Year").
+    toks = re.findall(r"[^\s—–]+|[—–]", s)
+    out = []
+    words = [t for t in toks if t not in ("—", "–")]
+    wi = 0
+    for t in toks:
+        if t in ("—", "–"):
+            out.append("—")
+            continue
+        out.append(word(t, wi == 0, wi == len(words) - 1))
+        wi += 1
+    return " ".join(out).replace(" — ", " — ")
+
+
+def _ij_header_title(run: list[str]) -> str:
+    joined = " ".join(run)
+    # Split a leading date/place line off the year line for readability:
+    # "DENVER CO, 1 NOVEMBER YEAR OF ..." -> "Denver CO, 1 November — Year of ..."
+    for k, line in enumerate(run):
+        if k > 0 and re.search(r"YEAR OF|Y\.D\.A\.U", line, re.I):
+            joined = " ".join(run[:k]) + " — " + " ".join(run[k:])
+            break
+    return _ij_title_case(joined)
+
+
 def parse_infinite_jest() -> tuple[dict, list]:
     lines = load_raw("_oceanofpdf_com_infinite_jest___david_fo.txt")
-    # Start at YEAR OF GLAD
-    start = 0
-    for i, l in enumerate(lines):
-        if l.strip() == "YEAR OF GLAD":
-            start = i
-            break
-    body = lines[start:]
-    # End before NOTES AND ERRATA or endnotes section "NOTES AND ERRATA"
-    end = len(body)
-    for i, l in enumerate(body):
-        if re.match(r"^\s*NOTES AND ERRATA\s*$", l, re.I) or re.match(
-            r"^\s*Notes and Errata\s*$", l
+    start = next(i for i, l in enumerate(lines) if _ij_scrub(l) == "YEAR OF GLAD")
+    about = next(
+        i for i, l in enumerate(lines) if i > start and _ij_scrub(l) == "ABOUT THE AUTHOR"
+    )
+    body = lines[start:about]
+    n = len(body)
+
+    # Section breaks: blank-delimited all-caps blocks (<=4 lines) whose first
+    # line carries a dateline cue, plus immediately following all-caps tail
+    # blocks (INTERDEPENDENCE DAY / GAUDEAMUS IGITUR, FRONT OFFICE ...).
+    # Mixed-case scene-setters (1610h. E.T.A. Weight Room ...) stay in the body.
+    bounds: list[tuple[int, int, list[str]]] = []  # (hdr_first, body_start, run)
+    def _ij_take(s: int) -> tuple[list[str], int] | None:
+        """Gather a header run at caps line s; None if not a section break."""
+        j = s
+        run: list[str] = []
+        while j < n and len(run) < 4 and body[j].strip() and _ij_is_caps_line(body[j]):
+            run.append(_ij_scrub(body[j]))
+            j += 1
+        k = j
+        while len(run) < 6:
+            k2 = k
+            while k2 < n and not body[k2].strip():
+                k2 += 1
+            if k2 >= n or not _ij_is_caps_line(body[k2]):
+                break
+            tail: list[str] = []
+            q = k2
+            while q < n and len(tail) < 2 and body[q].strip() and _ij_is_caps_line(body[q]):
+                tail.append(_ij_scrub(body[q]))
+                q += 1
+            if not tail:
+                break
+            run.extend(tail)
+            k = q
+        if not re.search(r"YEAR OF|Y\.D\.A\.U|B\.S\.", " // ".join(run)):
+            return None  # all-caps prose (essay, headlines, exam) is body text
+        return run, k
+    if _ij_is_caps_line(body[0]) and _IJ_FIRST_RE.search(_ij_scrub(body[0])):
+        first = _ij_take(0)
+        if first is not None:
+            bounds.append((0, first[1], first[0]))
+            i = first[1]
+        else:
+            i = 0
+    else:
+        i = 0
+    while i < n:
+        if (
+            body[i].strip() == ""
+            and i + 1 < n
+            and _ij_is_caps_line(body[i + 1])
+            and _IJ_FIRST_RE.search(_ij_scrub(body[i + 1]))
         ):
-            end = i
-            break
-        # numbered endnotes block often starts with "1. Methamphetamine"
-        if i > 35000 and re.match(r"^1\.\s+Methamphetamine", l):
-            end = i
-            break
-    body = body[:end]
+            taken = _ij_take(i + 1)
+            if taken is not None:
+                run, k = taken
+                bounds.append((i + 1, k, run))
+                i = k
+                continue
+        i += 1
 
-    # Section headers: full line YEAR OF ...
-    YEAR_RE = re.compile(r"^YEAR OF .+$")
-
-    parts = [{"roman": "I", "name": "Infinite Jest", "subtitle": "The Novel", "chapters": []}]
-    cur_ch = None
-    buf = []
-    section_idx = 0
-
-    def fin_ch():
-        nonlocal cur_ch, buf
-        if cur_ch is None:
-            buf = []
-            return
-        paras = reflow(buf, fill_width=72)
-        cur_ch["paragraphs"] = paras
-        if paras:  # skip empty
-            parts[0]["chapters"].append(cur_ch)
-        cur_ch = None
-        buf = []
-
-    for line in body:
-        s = line.strip()
-        if YEAR_RE.match(s) and len(s) < 80:
-            fin_ch()
-            section_idx += 1
-            # Collapse repeated year names with index
-            title = s.title() if s.isupper() else s
-            cur_ch = {
-                "number_label": f"§ {section_idx}",
-                "roman": str(section_idx),
-                "title": title,
-                "paragraphs": [],
-            }
-            buf = []
+    novel = []
+    for idx, ( _hf, ks, run) in enumerate(bounds):
+        ks_next = bounds[idx + 1][0] if idx + 1 < len(bounds) else n
+        paras = reflow(body[ks:ks_next], fill_width=72)
+        if not paras:
             continue
-        if cur_ch is None:
-            section_idx = 1
-            cur_ch = {
-                "number_label": "§ 1",
-                "roman": "1",
-                "title": "Year of Glad",
-                "paragraphs": [],
+        novel.append(
+            {
+                "number_label": f"§ {len(novel) + 1}",
+                "roman": str(len(novel) + 1),
+                "title": _ij_header_title(run),
+                "paragraphs": paras,
             }
-            buf = []
-        buf.append(line)
-    fin_ch()
+        )
+    # Dedupe genuinely undated repeats: "Year of ..." -> "Year of ... (2)".
+    seen: dict[str, int] = {}
+    for ch in novel:
+        seen[ch["title"]] = seen.get(ch["title"], 0) + 1
+        if seen[ch["title"]] > 1:
+            ch["title"] = f"{ch['title']} ({seen[ch['title']]})"
 
-    # Merge consecutive sections with identical titles into readable chunks
-    # (optional) — keep as-is with numbered duplicates for navigation
-    # Rename duplicates: "Year of … (2)"
-    seen = {}
-    for ch in parts[0]["chapters"]:
-        t = ch["title"]
-        seen[t] = seen.get(t, 0) + 1
-        if seen[t] > 1:
-            ch["title"] = f"{t} ({seen[t]})"
+    # ── Endnotes: numbered notes 1–388, filmography embedded in note 24 ──
+    notes_at = next(
+        i for i, l in enumerate(lines) if re.match(r"^\s*NOTES AND ERRATA\s*$", l)
+    )
+    thanks_at = next(i for i, l in enumerate(lines) if "Thank you for buying this ebook" in l)
+    raw_notes = lines[notes_at + 1 : thanks_at]
+    merged: list[str] = []
+    k = 0
+    while k < len(raw_notes):
+        s = raw_notes[k].strip()
+        # Page-break split: bare "24." / "28." / ... followed by blank line(s);
+        # glue the number onto the next non-blank line so the boundary scan
+        # sees the note start.
+        if re.match(r"^\d{1,3}\.$", s):
+            q = k + 1
+            while q < len(raw_notes) and not raw_notes[q].strip():
+                q += 1
+            if q < len(raw_notes):
+                merged.append(s + " " + raw_notes[q].strip())
+                k = q + 1
+                continue
+            merged.append(raw_notes[k])
+            k += 1
+            continue
+        merged.append(raw_notes[k])
+        k += 1
+    notes: list[tuple[int, list[str]]] = []
+    cur: int | None = None
+    buf: list[str] = []
+    for ln in merged:
+        m = re.match(r"^(\d{1,3})\.\s", ln.strip())
+        if m:
+            if cur is not None:
+                notes.append((cur, buf))
+            cur = int(m.group(1))
+            buf = [ln]
+        else:
+            buf.append(ln)
+    if cur is not None:
+        notes.append((cur, buf))
+
+    groups: list[tuple[int, int]] = [(1, 23), (24, 24)]
+    lo = 25
+    while lo <= 388:
+        groups.append((lo, min(lo + 39, 388)))
+        lo += 40
+    by_num = dict(notes)
+    note_chs = []
+    for a, b in groups:
+        if a not in by_num or b not in by_num:
+            continue
+        chunk: list[str] = []
+        for num in range(a, b + 1):
+            chunk.extend(by_num[num])
+        paras = reflow(chunk, fill_width=72)
+        if not paras:
+            continue
+        if a == b == 24:
+            title = "Note 24 — James O. Incandenza: A Filmography"
+            label = "Note 24"
+        elif a == b:
+            title = f"Note {a}"
+            label = f"Note {a}"
+        else:
+            title = f"Notes {a}–{b}"
+            label = f"Notes {a}–{b}"
+        note_chs.append(
+            {"number_label": label, "roman": label, "title": title, "paragraphs": paras}
+        )
+
+    parts = [
+        {"roman": "I", "name": "Infinite Jest", "subtitle": "The Novel", "chapters": novel},
+        {
+            "roman": "II",
+            "name": "Endnotes & Errata",
+            "subtitle": "Notes and Errata",
+            "chapters": note_chs,
+        },
+    ]
 
     meta = {
         "title": "Infinite Jest",
