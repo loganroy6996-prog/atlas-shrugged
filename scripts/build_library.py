@@ -1920,8 +1920,6 @@ PARSERS = [
     ("being-and-time", parse_being_and_time),
     ("infinite-jest", parse_infinite_jest),
     ("forty-ways-to-look-at-churchill", parse_forty_ways_to_look_at_churchill),
-    ("open-letter", parse_open_letter),
-    ("gentle-introduction", parse_gentle_introduction),
     ("sovereign-individual", parse_sovereign_individual),
 ]
 
