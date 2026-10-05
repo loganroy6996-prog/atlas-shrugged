@@ -26,10 +26,444 @@
       "chapters": [
         {
           "id": "p2c1",
-          "number_label": "Joke, Cunning, and Revenge: Prelude in German Rhymes",
+          "number_label": "§ 1",
           "roman": "1",
-          "title": "Joke, Cunning, and Revenge: Prelude in German Rhymes",
-          "word_count": 2349
+          "title": "1. Invitation",
+          "word_count": 39
+        },
+        {
+          "id": "p2c2",
+          "number_label": "§ 2",
+          "roman": "2",
+          "title": "2. My Happiness",
+          "word_count": 31
+        },
+        {
+          "id": "p2c3",
+          "number_label": "§ 3",
+          "roman": "3",
+          "title": "3. Undaunted",
+          "word_count": 23
+        },
+        {
+          "id": "p2c4",
+          "number_label": "§ 4",
+          "roman": "4",
+          "title": "4. Dialogue",
+          "word_count": 31
+        },
+        {
+          "id": "p2c5",
+          "number_label": "§ 5",
+          "roman": "5",
+          "title": "5. To the Virtuous",
+          "word_count": 24
+        },
+        {
+          "id": "p2c6",
+          "number_label": "§ 6",
+          "roman": "6",
+          "title": "6. Worldly Wisdom",
+          "word_count": 25
+        },
+        {
+          "id": "p2c7",
+          "number_label": "§ 7",
+          "roman": "7",
+          "title": "7. Vademecum – Vadetecum1",
+          "word_count": 31
+        },
+        {
+          "id": "p2c8",
+          "number_label": "§ 8",
+          "roman": "8",
+          "title": "8. On the Third Shedding",
+          "word_count": 54
+        },
+        {
+          "id": "p2c9",
+          "number_label": "§ 9",
+          "roman": "9",
+          "title": "9. My Roses",
+          "word_count": 64
+        },
+        {
+          "id": "p2c10",
+          "number_label": "§ 10",
+          "roman": "10",
+          "title": "10. The Scornful One",
+          "word_count": 38
+        },
+        {
+          "id": "p2c11",
+          "number_label": "§ 11",
+          "roman": "11",
+          "title": "11. The Proverb Speaks",
+          "word_count": 40
+        },
+        {
+          "id": "p2c12",
+          "number_label": "§ 12",
+          "roman": "12",
+          "title": "12. To a Friend of Light",
+          "word_count": 23
+        },
+        {
+          "id": "p2c13",
+          "number_label": "§ 13",
+          "roman": "13",
+          "title": "13. For Dancers",
+          "word_count": 13
+        },
+        {
+          "id": "p2c14",
+          "number_label": "§ 14",
+          "roman": "14",
+          "title": "14. The Good Man",
+          "word_count": 17
+        },
+        {
+          "id": "p2c15",
+          "number_label": "§ 15",
+          "roman": "15",
+          "title": "15. Rust",
+          "word_count": 18
+        },
+        {
+          "id": "p2c16",
+          "number_label": "§ 16",
+          "roman": "16",
+          "title": "16. Upward",
+          "word_count": 22
+        },
+        {
+          "id": "p2c17",
+          "number_label": "§ 17",
+          "roman": "17",
+          "title": "17. Motto of A Brute",
+          "word_count": 18
+        },
+        {
+          "id": "p2c18",
+          "number_label": "§ 18",
+          "roman": "18",
+          "title": "18. Narrow Souls",
+          "word_count": 16
+        },
+        {
+          "id": "p2c19",
+          "number_label": "§ 19",
+          "roman": "19",
+          "title": "19. The Involuntary Seducer",
+          "word_count": 22
+        },
+        {
+          "id": "p2c20",
+          "number_label": "§ 20",
+          "roman": "20",
+          "title": "20. Consider This",
+          "word_count": 18
+        },
+        {
+          "id": "p2c21",
+          "number_label": "§ 21",
+          "roman": "21",
+          "title": "21. Against Arrogance",
+          "word_count": 17
+        },
+        {
+          "id": "p2c22",
+          "number_label": "§ 22",
+          "roman": "22",
+          "title": "22. Man and Female",
+          "word_count": 26
+        },
+        {
+          "id": "p2c23",
+          "number_label": "§ 23",
+          "roman": "23",
+          "title": "23. Interpretation",
+          "word_count": 32
+        },
+        {
+          "id": "p2c24",
+          "number_label": "§ 24",
+          "roman": "24",
+          "title": "24. Medication for Pessimists2",
+          "word_count": 55
+        },
+        {
+          "id": "p2c25",
+          "number_label": "§ 25",
+          "roman": "25",
+          "title": "25. Request",
+          "word_count": 70
+        },
+        {
+          "id": "p2c26",
+          "number_label": "§ 26",
+          "roman": "26",
+          "title": "26. My Hardness",
+          "word_count": 40
+        },
+        {
+          "id": "p2c27",
+          "number_label": "§ 27",
+          "roman": "27",
+          "title": "27. The Wanderer",
+          "word_count": 38
+        },
+        {
+          "id": "p2c28",
+          "number_label": "§ 28",
+          "roman": "28",
+          "title": "28. Consolation for Beginners",
+          "word_count": 54
+        },
+        {
+          "id": "p2c29",
+          "number_label": "§ 29",
+          "roman": "29",
+          "title": "29. Stellar Egotism",
+          "word_count": 34
+        },
+        {
+          "id": "p2c30",
+          "number_label": "§ 30",
+          "roman": "30",
+          "title": "30. The Closest One",
+          "word_count": 25
+        },
+        {
+          "id": "p2c31",
+          "number_label": "§ 31",
+          "roman": "31",
+          "title": "31. The Disguised Saint",
+          "word_count": 29
+        },
+        {
+          "id": "p2c32",
+          "number_label": "§ 32",
+          "roman": "32",
+          "title": "32. The Bound Man",
+          "word_count": 44
+        },
+        {
+          "id": "p2c33",
+          "number_label": "§ 33",
+          "roman": "33",
+          "title": "33. The Solitary One",
+          "word_count": 85
+        },
+        {
+          "id": "p2c34",
+          "number_label": "§ 34",
+          "roman": "34",
+          "title": "34. Seneca et hoc genus omne3",
+          "word_count": 21
+        },
+        {
+          "id": "p2c35",
+          "number_label": "§ 35",
+          "roman": "35",
+          "title": "35. Ice",
+          "word_count": 27
+        },
+        {
+          "id": "p2c36",
+          "number_label": "§ 36",
+          "roman": "36",
+          "title": "36. Juvenilia4",
+          "word_count": 33
+        },
+        {
+          "id": "p2c37",
+          "number_label": "§ 37",
+          "roman": "37",
+          "title": "37. Caution",
+          "word_count": 35
+        },
+        {
+          "id": "p2c38",
+          "number_label": "§ 38",
+          "roman": "38",
+          "title": "38. The Pious One Speaks",
+          "word_count": 42
+        },
+        {
+          "id": "p2c39",
+          "number_label": "§ 39",
+          "roman": "39",
+          "title": "39. In Summer5",
+          "word_count": 52
+        },
+        {
+          "id": "p2c40",
+          "number_label": "§ 40",
+          "roman": "40",
+          "title": "40. Without Envy",
+          "word_count": 39
+        },
+        {
+          "id": "p2c41",
+          "number_label": "§ 41",
+          "roman": "41",
+          "title": "41. Heracliteanism",
+          "word_count": 35
+        },
+        {
+          "id": "p2c42",
+          "number_label": "§ 41a",
+          "roman": "41a",
+          "title": "41a. Principle of the All-Too-Refined",
+          "word_count": 25
+        },
+        {
+          "id": "p2c43",
+          "number_label": "§ 43",
+          "roman": "43",
+          "title": "43. Admonition",
+          "word_count": 24
+        },
+        {
+          "id": "p2c44",
+          "number_label": "§ 44",
+          "roman": "44",
+          "title": "44. The Well-Grounded One6",
+          "word_count": 31
+        },
+        {
+          "id": "p2c45",
+          "number_label": "§ 45",
+          "roman": "45",
+          "title": "45. Forever",
+          "word_count": 30
+        },
+        {
+          "id": "p2c46",
+          "number_label": "§ 46",
+          "roman": "46",
+          "title": "46. Judgements of the Weary",
+          "word_count": 22
+        },
+        {
+          "id": "p2c47",
+          "number_label": "§ 47",
+          "roman": "47",
+          "title": "47. Going Down7",
+          "word_count": 35
+        },
+        {
+          "id": "p2c48",
+          "number_label": "§ 48",
+          "roman": "48",
+          "title": "48. Against the Laws",
+          "word_count": 57
+        },
+        {
+          "id": "p2c49",
+          "number_label": "§ 49",
+          "roman": "49",
+          "title": "49. The Wise Man Speaks",
+          "word_count": 28
+        },
+        {
+          "id": "p2c50",
+          "number_label": "§ 50",
+          "roman": "50",
+          "title": "50. Lost His Head",
+          "word_count": 42
+        },
+        {
+          "id": "p2c51",
+          "number_label": "§ 51",
+          "roman": "51",
+          "title": "51. Pious Wishes8",
+          "word_count": 35
+        },
+        {
+          "id": "p2c52",
+          "number_label": "§ 52",
+          "roman": "52",
+          "title": "52. Writing With One’s Foot",
+          "word_count": 32
+        },
+        {
+          "id": "p2c53",
+          "number_label": "§ 53",
+          "roman": "53",
+          "title": "53. ‘Human, All Too Human. ‘A Book9",
+          "word_count": 37
+        },
+        {
+          "id": "p2c54",
+          "number_label": "§ 54",
+          "roman": "54",
+          "title": "54. To My Reader",
+          "word_count": 28
+        },
+        {
+          "id": "p2c55",
+          "number_label": "§ 55",
+          "roman": "55",
+          "title": "55. The Realistic Painter",
+          "word_count": 49
+        },
+        {
+          "id": "p2c56",
+          "number_label": "§ 56",
+          "roman": "56",
+          "title": "56. Poet’s Vanity",
+          "word_count": 29
+        },
+        {
+          "id": "p2c57",
+          "number_label": "§ 57",
+          "roman": "57",
+          "title": "57. Choosy Taste",
+          "word_count": 27
+        },
+        {
+          "id": "p2c58",
+          "number_label": "§ 58",
+          "roman": "58",
+          "title": "58. The Crooked Nose10",
+          "word_count": 42
+        },
+        {
+          "id": "p2c59",
+          "number_label": "§ 59",
+          "roman": "59",
+          "title": "59. The Pen Scribbles",
+          "word_count": 65
+        },
+        {
+          "id": "p2c60",
+          "number_label": "§ 60",
+          "roman": "60",
+          "title": "60. Higher Men",
+          "word_count": 32
+        },
+        {
+          "id": "p2c61",
+          "number_label": "§ 61",
+          "roman": "61",
+          "title": "61. The Sceptic Speaks",
+          "word_count": 63
+        },
+        {
+          "id": "p2c62",
+          "number_label": "§ 62",
+          "roman": "62",
+          "title": "62. Ecce Homo",
+          "word_count": 35
+        },
+        {
+          "id": "p2c63",
+          "number_label": "§ 63",
+          "roman": "63",
+          "title": "63. Stellar Morals",
+          "word_count": 181
         }
       ]
     },
@@ -41,10 +475,395 @@
       "chapters": [
         {
           "id": "p3c1",
-          "number_label": "Book One",
+          "number_label": "§ 1",
           "roman": "1",
-          "title": "Book One",
-          "word_count": 14795
+          "title": "1. The teachers of the purpose of existence.",
+          "word_count": 1239
+        },
+        {
+          "id": "p3c2",
+          "number_label": "§ 2",
+          "roman": "2",
+          "title": "2. Intellectual conscience.",
+          "word_count": 340
+        },
+        {
+          "id": "p3c3",
+          "number_label": "§ 3",
+          "roman": "3",
+          "title": "3. Noble and common.",
+          "word_count": 644
+        },
+        {
+          "id": "p3c4",
+          "number_label": "§ 4",
+          "roman": "4",
+          "title": "4. What preserves the species.",
+          "word_count": 278
+        },
+        {
+          "id": "p3c5",
+          "number_label": "§ 5",
+          "roman": "5",
+          "title": "5. Unconditional duties.",
+          "word_count": 303
+        },
+        {
+          "id": "p3c6",
+          "number_label": "§ 6",
+          "roman": "6",
+          "title": "6. Loss of dignity.",
+          "word_count": 165
+        },
+        {
+          "id": "p3c7",
+          "number_label": "§ 7",
+          "roman": "7",
+          "title": "7. Something for the industrious.",
+          "word_count": 440
+        },
+        {
+          "id": "p3c8",
+          "number_label": "§ 8",
+          "roman": "8",
+          "title": "8. Unconscious virtues.",
+          "word_count": 265
+        },
+        {
+          "id": "p3c9",
+          "number_label": "§ 9",
+          "roman": "9",
+          "title": "9. Our eruptions.",
+          "word_count": 154
+        },
+        {
+          "id": "p3c10",
+          "number_label": "§ 10",
+          "roman": "10",
+          "title": "10. A kind of atavism.",
+          "word_count": 217
+        },
+        {
+          "id": "p3c11",
+          "number_label": "§ 11",
+          "roman": "11",
+          "title": "11. Consciousness (Bewußtsein)6",
+          "word_count": 295
+        },
+        {
+          "id": "p3c12",
+          "number_label": "§ 12",
+          "roman": "12",
+          "title": "12. On the aim of science.",
+          "word_count": 312
+        },
+        {
+          "id": "p3c13",
+          "number_label": "§ 13",
+          "roman": "13",
+          "title": "13. On the doctrine of the feeling of power.",
+          "word_count": 558
+        },
+        {
+          "id": "p3c14",
+          "number_label": "§ 14",
+          "roman": "14",
+          "title": "14. The things people call love.",
+          "word_count": 611
+        },
+        {
+          "id": "p3c15",
+          "number_label": "§ 15",
+          "roman": "15",
+          "title": "15. From a distance.",
+          "word_count": 155
+        },
+        {
+          "id": "p3c16",
+          "number_label": "§ 16",
+          "roman": "16",
+          "title": "16. Over the footbridge.",
+          "word_count": 201
+        },
+        {
+          "id": "p3c17",
+          "number_label": "§ 17",
+          "roman": "17",
+          "title": "17. Finding a motive for one’s poverty.",
+          "word_count": 97
+        },
+        {
+          "id": "p3c18",
+          "number_label": "§ 18",
+          "roman": "18",
+          "title": "18. Ancient pride.",
+          "word_count": 210
+        },
+        {
+          "id": "p3c19",
+          "number_label": "§ 19",
+          "roman": "19",
+          "title": "19. Evil.",
+          "word_count": 93
+        },
+        {
+          "id": "p3c20",
+          "number_label": "§ 20",
+          "roman": "20",
+          "title": "20. The dignity of foolishness.",
+          "word_count": 108
+        },
+        {
+          "id": "p3c21",
+          "number_label": "§ 21",
+          "roman": "21",
+          "title": "21. To the teachers of selflessness.",
+          "word_count": 957
+        },
+        {
+          "id": "p3c22",
+          "number_label": "§ 22",
+          "roman": "22",
+          "title": "22. L’ordre du jour pour le roi.12",
+          "word_count": 416
+        },
+        {
+          "id": "p3c23",
+          "number_label": "§ 23",
+          "roman": "23",
+          "title": "23. The signs of corruption.",
+          "word_count": 980
+        },
+        {
+          "id": "p3c24",
+          "number_label": "§ 24",
+          "roman": "24",
+          "title": "24. Different forms of dissatisfaction.",
+          "word_count": 301
+        },
+        {
+          "id": "p3c25",
+          "number_label": "§ 25",
+          "roman": "25",
+          "title": "25. Not predestined for knowledge.",
+          "word_count": 129
+        },
+        {
+          "id": "p3c26",
+          "number_label": "§ 26",
+          "roman": "26",
+          "title": "26. What is life?",
+          "word_count": 67
+        },
+        {
+          "id": "p3c27",
+          "number_label": "§ 27",
+          "roman": "27",
+          "title": "27. The renouncer.",
+          "word_count": 151
+        },
+        {
+          "id": "p3c28",
+          "number_label": "§ 28",
+          "roman": "28",
+          "title": "28. Harming with what is best in oneself.",
+          "word_count": 193
+        },
+        {
+          "id": "p3c29",
+          "number_label": "§ 29",
+          "roman": "29",
+          "title": "29. The add-on-liars.",
+          "word_count": 122
+        },
+        {
+          "id": "p3c30",
+          "number_label": "§ 30",
+          "roman": "30",
+          "title": "30. The comedy of the famous.",
+          "word_count": 230
+        },
+        {
+          "id": "p3c31",
+          "number_label": "§ 31",
+          "roman": "31",
+          "title": "31. Trade and nobility.",
+          "word_count": 233
+        },
+        {
+          "id": "p3c32",
+          "number_label": "§ 32",
+          "roman": "32",
+          "title": "32. Undesired disciples.",
+          "word_count": 112
+        },
+        {
+          "id": "p3c33",
+          "number_label": "§ 33",
+          "roman": "33",
+          "title": "33. Outside the lecture-room.",
+          "word_count": 77
+        },
+        {
+          "id": "p3c34",
+          "number_label": "§ 34",
+          "roman": "34",
+          "title": "34. Historia abscondita.20",
+          "word_count": 67
+        },
+        {
+          "id": "p3c35",
+          "number_label": "§ 35",
+          "roman": "35",
+          "title": "35. Heresy and witchcraft.",
+          "word_count": 116
+        },
+        {
+          "id": "p3c36",
+          "number_label": "§ 36",
+          "roman": "36",
+          "title": "36. Last words.",
+          "word_count": 224
+        },
+        {
+          "id": "p3c37",
+          "number_label": "§ 37",
+          "roman": "37",
+          "title": "37. Because of three errors.",
+          "word_count": 130
+        },
+        {
+          "id": "p3c38",
+          "number_label": "§ 38",
+          "roman": "38",
+          "title": "38. The explosive ones.",
+          "word_count": 94
+        },
+        {
+          "id": "p3c39",
+          "number_label": "§ 39",
+          "roman": "39",
+          "title": "39. Changed taste.",
+          "word_count": 176
+        },
+        {
+          "id": "p3c40",
+          "number_label": "§ 40",
+          "roman": "40",
+          "title": "40. On the lack of noble style.",
+          "word_count": 323
+        },
+        {
+          "id": "p3c41",
+          "number_label": "§ 41",
+          "roman": "41",
+          "title": "41. Against remorse.",
+          "word_count": 69
+        },
+        {
+          "id": "p3c42",
+          "number_label": "§ 42",
+          "roman": "42",
+          "title": "42. Work and boredom.",
+          "word_count": 284
+        },
+        {
+          "id": "p3c43",
+          "number_label": "§ 43",
+          "roman": "43",
+          "title": "43. What the laws betray.",
+          "word_count": 263
+        },
+        {
+          "id": "p3c44",
+          "number_label": "§ 44",
+          "roman": "44",
+          "title": "44. The supposed motives.",
+          "word_count": 87
+        },
+        {
+          "id": "p3c45",
+          "number_label": "§ 45",
+          "roman": "45",
+          "title": "45. Epicurus.34",
+          "word_count": 123
+        },
+        {
+          "id": "p3c46",
+          "number_label": "§ 46",
+          "roman": "46",
+          "title": "46. Our amazement.",
+          "word_count": 213
+        },
+        {
+          "id": "p3c47",
+          "number_label": "§ 47",
+          "roman": "47",
+          "title": "47. On the suppression of the passions.",
+          "word_count": 218
+        },
+        {
+          "id": "p3c48",
+          "number_label": "§ 48",
+          "roman": "48",
+          "title": "48. Knowledge of distress.",
+          "word_count": 462
+        },
+        {
+          "id": "p3c49",
+          "number_label": "§ 49",
+          "roman": "49",
+          "title": "49. Magnanimity and related things.",
+          "word_count": 258
+        },
+        {
+          "id": "p3c50",
+          "number_label": "§ 50",
+          "roman": "50",
+          "title": "50. The argument from growing solitary.",
+          "word_count": 96
+        },
+        {
+          "id": "p3c51",
+          "number_label": "§ 51",
+          "roman": "51",
+          "title": "51. The sense of truth.",
+          "word_count": 55
+        },
+        {
+          "id": "p3c52",
+          "number_label": "§ 52",
+          "roman": "52",
+          "title": "52. What others know about us.",
+          "word_count": 64
+        },
+        {
+          "id": "p3c53",
+          "number_label": "§ 53",
+          "roman": "53",
+          "title": "53. Where the good begins.",
+          "word_count": 111
+        },
+        {
+          "id": "p3c54",
+          "number_label": "§ 54",
+          "roman": "54",
+          "title": "54. The consciousness of appearance.",
+          "word_count": 265
+        },
+        {
+          "id": "p3c55",
+          "number_label": "§ 55",
+          "roman": "55",
+          "title": "55. The ultimate noblemindedness.",
+          "word_count": 213
+        },
+        {
+          "id": "p3c56",
+          "number_label": "§ 56",
+          "roman": "56",
+          "title": "56. The desire for suffering.",
+          "word_count": 231
         }
       ]
     },
@@ -56,10 +875,360 @@
       "chapters": [
         {
           "id": "p4c1",
-          "number_label": "Book Two",
-          "roman": "1",
-          "title": "Book Two",
-          "word_count": 13257
+          "number_label": "§ 57",
+          "roman": "57",
+          "title": "57. To the realists.",
+          "word_count": 286
+        },
+        {
+          "id": "p4c2",
+          "number_label": "§ 58",
+          "roman": "58",
+          "title": "58. Only as creators!",
+          "word_count": 191
+        },
+        {
+          "id": "p4c3",
+          "number_label": "§ 59",
+          "roman": "59",
+          "title": "59. We artists.",
+          "word_count": 380
+        },
+        {
+          "id": "p4c4",
+          "number_label": "§ 60",
+          "roman": "60",
+          "title": "60. Women and their action at a distance.",
+          "word_count": 366
+        },
+        {
+          "id": "p4c5",
+          "number_label": "§ 61",
+          "roman": "61",
+          "title": "61. In honour of friendship.",
+          "word_count": 130
+        },
+        {
+          "id": "p4c6",
+          "number_label": "§ 62",
+          "roman": "62",
+          "title": "62. Love.",
+          "word_count": 10
+        },
+        {
+          "id": "p4c7",
+          "number_label": "§ 63",
+          "roman": "63",
+          "title": "63. The woman in music.",
+          "word_count": 40
+        },
+        {
+          "id": "p4c8",
+          "number_label": "§ 64",
+          "roman": "64",
+          "title": "64. Sceptics.",
+          "word_count": 66
+        },
+        {
+          "id": "p4c9",
+          "number_label": "§ 65",
+          "roman": "65",
+          "title": "65. Devotion.",
+          "word_count": 62
+        },
+        {
+          "id": "p4c10",
+          "number_label": "§ 66",
+          "roman": "66",
+          "title": "66. The strength of the weak.",
+          "word_count": 69
+        },
+        {
+          "id": "p4c11",
+          "number_label": "§ 67",
+          "roman": "67",
+          "title": "67. Feigning oneself.",
+          "word_count": 62
+        },
+        {
+          "id": "p4c12",
+          "number_label": "§ 68",
+          "roman": "68",
+          "title": "68. Will and willingness.",
+          "word_count": 184
+        },
+        {
+          "id": "p4c13",
+          "number_label": "§ 69",
+          "roman": "69",
+          "title": "69. Capacity for revenge.",
+          "word_count": 109
+        },
+        {
+          "id": "p4c14",
+          "number_label": "§ 70",
+          "roman": "70",
+          "title": "70. The women who master the masters.",
+          "word_count": 174
+        },
+        {
+          "id": "p4c15",
+          "number_label": "§ 71",
+          "roman": "71",
+          "title": "71. On female chastity.",
+          "word_count": 362
+        },
+        {
+          "id": "p4c16",
+          "number_label": "§ 72",
+          "roman": "72",
+          "title": "72. Mothers.",
+          "word_count": 141
+        },
+        {
+          "id": "p4c17",
+          "number_label": "§ 73",
+          "roman": "73",
+          "title": "73. Holy cruelty.",
+          "word_count": 126
+        },
+        {
+          "id": "p4c18",
+          "number_label": "§ 74",
+          "roman": "74",
+          "title": "74. The unsuccessful.",
+          "word_count": 40
+        },
+        {
+          "id": "p4c19",
+          "number_label": "§ 75",
+          "roman": "75",
+          "title": "75. The third sex.",
+          "word_count": 46
+        },
+        {
+          "id": "p4c20",
+          "number_label": "§ 76",
+          "roman": "76",
+          "title": "76. The greatest danger.",
+          "word_count": 408
+        },
+        {
+          "id": "p4c21",
+          "number_label": "§ 77",
+          "roman": "77",
+          "title": "77. The animal with a good conscience.",
+          "word_count": 376
+        },
+        {
+          "id": "p4c22",
+          "number_label": "§ 78",
+          "roman": "78",
+          "title": "78. What we should be grateful for.",
+          "word_count": 184
+        },
+        {
+          "id": "p4c23",
+          "number_label": "§ 79",
+          "roman": "79",
+          "title": "79. The attraction of imperfection.",
+          "word_count": 204
+        },
+        {
+          "id": "p4c24",
+          "number_label": "§ 80",
+          "roman": "80",
+          "title": "80. Art and nature.",
+          "word_count": 719
+        },
+        {
+          "id": "p4c25",
+          "number_label": "§ 81",
+          "roman": "81",
+          "title": "81. Greek taste.",
+          "word_count": 38
+        },
+        {
+          "id": "p4c26",
+          "number_label": "§ 82",
+          "roman": "82",
+          "title": "82. Esprit17 as un-Greek.",
+          "word_count": 213
+        },
+        {
+          "id": "p4c27",
+          "number_label": "§ 83",
+          "roman": "83",
+          "title": "83. Translations.",
+          "word_count": 343
+        },
+        {
+          "id": "p4c28",
+          "number_label": "§ 84",
+          "roman": "84",
+          "title": "84. On the origin of poetry.",
+          "word_count": 985
+        },
+        {
+          "id": "p4c29",
+          "number_label": "§ 85",
+          "roman": "85",
+          "title": "85. The good and the beautiful.",
+          "word_count": 203
+        },
+        {
+          "id": "p4c30",
+          "number_label": "§ 86",
+          "roman": "86",
+          "title": "86. On theatre.",
+          "word_count": 425
+        },
+        {
+          "id": "p4c31",
+          "number_label": "§ 87",
+          "roman": "87",
+          "title": "87. On the vanity of artists.",
+          "word_count": 403
+        },
+        {
+          "id": "p4c32",
+          "number_label": "§ 88",
+          "roman": "88",
+          "title": "88. Being serious about truth.",
+          "word_count": 167
+        },
+        {
+          "id": "p4c33",
+          "number_label": "§ 89",
+          "roman": "89",
+          "title": "89. Now and formerly.",
+          "word_count": 77
+        },
+        {
+          "id": "p4c34",
+          "number_label": "§ 90",
+          "roman": "90",
+          "title": "90. Lights and shadows.",
+          "word_count": 68
+        },
+        {
+          "id": "p4c35",
+          "number_label": "§ 91",
+          "roman": "91",
+          "title": "91. Caution.",
+          "word_count": 101
+        },
+        {
+          "id": "p4c36",
+          "number_label": "§ 92",
+          "roman": "92",
+          "title": "92. Prose and poetry.",
+          "word_count": 289
+        },
+        {
+          "id": "p4c37",
+          "number_label": "§ 93",
+          "roman": "93",
+          "title": "93. But then why do you write?",
+          "word_count": 135
+        },
+        {
+          "id": "p4c38",
+          "number_label": "§ 94",
+          "roman": "94",
+          "title": "94. Growth after death.",
+          "word_count": 111
+        },
+        {
+          "id": "p4c39",
+          "number_label": "§ 95",
+          "roman": "95",
+          "title": "95. Chamfort.40",
+          "word_count": 468
+        },
+        {
+          "id": "p4c40",
+          "number_label": "§ 96",
+          "roman": "96",
+          "title": "96. Two speakers.",
+          "word_count": 188
+        },
+        {
+          "id": "p4c41",
+          "number_label": "§ 97",
+          "roman": "97",
+          "title": "97. On the garrulousness of writers.",
+          "word_count": 102
+        },
+        {
+          "id": "p4c42",
+          "number_label": "§ 98",
+          "roman": "98",
+          "title": "98. In praise of Shakespeare.",
+          "word_count": 435
+        },
+        {
+          "id": "p4c43",
+          "number_label": "§ 99",
+          "roman": "99",
+          "title": "99. Schopenhauer’s followers.",
+          "word_count": 1328
+        },
+        {
+          "id": "p4c44",
+          "number_label": "§ 100",
+          "roman": "100",
+          "title": "100. Learning how to pay homage.",
+          "word_count": 216
+        },
+        {
+          "id": "p4c45",
+          "number_label": "§ 101",
+          "roman": "101",
+          "title": "101. Voltaire.65",
+          "word_count": 133
+        },
+        {
+          "id": "p4c46",
+          "number_label": "§ 102",
+          "roman": "102",
+          "title": "102. A word to the philologists.",
+          "word_count": 132
+        },
+        {
+          "id": "p4c47",
+          "number_label": "§ 103",
+          "roman": "103",
+          "title": "103. On German music.",
+          "word_count": 411
+        },
+        {
+          "id": "p4c48",
+          "number_label": "§ 104",
+          "roman": "104",
+          "title": "104. On the sound of the German language.",
+          "word_count": 743
+        },
+        {
+          "id": "p4c49",
+          "number_label": "§ 105",
+          "roman": "105",
+          "title": "105. The Germans as artists.",
+          "word_count": 186
+        },
+        {
+          "id": "p4c50",
+          "number_label": "§ 106",
+          "roman": "106",
+          "title": "106. Music as advocate",
+          "word_count": 217
+        },
+        {
+          "id": "p4c51",
+          "number_label": "§ 107",
+          "roman": "107",
+          "title": "107. Our ultimate gratitude to art.",
+          "word_count": 405
         }
       ]
     },
@@ -71,10 +1240,1179 @@
       "chapters": [
         {
           "id": "p5c1",
-          "number_label": "Book Three",
-          "roman": "1",
-          "title": "Book Three",
-          "word_count": 13087
+          "number_label": "§ 108",
+          "roman": "108",
+          "title": "108. New battles.",
+          "word_count": 57
+        },
+        {
+          "id": "p5c2",
+          "number_label": "§ 109",
+          "roman": "109",
+          "title": "109. Let us beware.",
+          "word_count": 529
+        },
+        {
+          "id": "p5c3",
+          "number_label": "§ 110",
+          "roman": "110",
+          "title": "110. Origin of knowledge.",
+          "word_count": 781
+        },
+        {
+          "id": "p5c4",
+          "number_label": "§ 111",
+          "roman": "111",
+          "title": "111. The origin of the logical.",
+          "word_count": 323
+        },
+        {
+          "id": "p5c5",
+          "number_label": "§ 112",
+          "roman": "112",
+          "title": "112. Cause and effect.",
+          "word_count": 323
+        },
+        {
+          "id": "p5c6",
+          "number_label": "§ 113",
+          "roman": "113",
+          "title": "113. On the doctrine of poisons.",
+          "word_count": 173
+        },
+        {
+          "id": "p5c7",
+          "number_label": "§ 114",
+          "roman": "114",
+          "title": "114. The scope of the moral.",
+          "word_count": 55
+        },
+        {
+          "id": "p5c8",
+          "number_label": "§ 115",
+          "roman": "115",
+          "title": "115. The four errors.",
+          "word_count": 100
+        },
+        {
+          "id": "p5c9",
+          "number_label": "§ 116",
+          "roman": "116",
+          "title": "116. Herd instinct.",
+          "word_count": 140
+        },
+        {
+          "id": "p5c10",
+          "number_label": "§ 117",
+          "roman": "117",
+          "title": "117. Herd pangs of conscience.",
+          "word_count": 285
+        },
+        {
+          "id": "p5c11",
+          "number_label": "§ 118",
+          "roman": "118",
+          "title": "118. Benevolence.",
+          "word_count": 152
+        },
+        {
+          "id": "p5c12",
+          "number_label": "§ 119",
+          "roman": "119",
+          "title": "119. No altruism!",
+          "word_count": 98
+        },
+        {
+          "id": "p5c13",
+          "number_label": "§ 120",
+          "roman": "120",
+          "title": "120. Health of the soul.",
+          "word_count": 266
+        },
+        {
+          "id": "p5c14",
+          "number_label": "§ 121",
+          "roman": "121",
+          "title": "121. Life not an argument.",
+          "word_count": 63
+        },
+        {
+          "id": "p5c15",
+          "number_label": "§ 122",
+          "roman": "122",
+          "title": "122. Moral scepticism in Christianity.",
+          "word_count": 244
+        },
+        {
+          "id": "p5c16",
+          "number_label": "§ 123",
+          "roman": "123",
+          "title": "123. Knowledge more than a means.",
+          "word_count": 388
+        },
+        {
+          "id": "p5c17",
+          "number_label": "§ 124",
+          "roman": "124",
+          "title": "124. In the horizon of the infinite.",
+          "word_count": 127
+        },
+        {
+          "id": "p5c18",
+          "number_label": "§ 125",
+          "roman": "125",
+          "title": "125. The madman.",
+          "word_count": 555
+        },
+        {
+          "id": "p5c19",
+          "number_label": "§ 126",
+          "roman": "126",
+          "title": "126. Mystical explanations",
+          "word_count": 17
+        },
+        {
+          "id": "p5c20",
+          "number_label": "§ 127",
+          "roman": "127",
+          "title": "127. Aftereffects of the oldest religiosity.",
+          "word_count": 480
+        },
+        {
+          "id": "p5c21",
+          "number_label": "§ 128",
+          "roman": "128",
+          "title": "128. The value of prayer.",
+          "word_count": 322
+        },
+        {
+          "id": "p5c22",
+          "number_label": "§ 129",
+          "roman": "129",
+          "title": "129. The conditions for God.",
+          "word_count": 36
+        },
+        {
+          "id": "p5c23",
+          "number_label": "§ 130",
+          "roman": "130",
+          "title": "130. A dangerous decision.",
+          "word_count": 22
+        },
+        {
+          "id": "p5c24",
+          "number_label": "§ 131",
+          "roman": "131",
+          "title": "131. Christianity and suicide.",
+          "word_count": 62
+        },
+        {
+          "id": "p5c25",
+          "number_label": "§ 132",
+          "roman": "132",
+          "title": "132. Against Christianity.",
+          "word_count": 15
+        },
+        {
+          "id": "p5c26",
+          "number_label": "§ 133",
+          "roman": "133",
+          "title": "133. Principle.",
+          "word_count": 47
+        },
+        {
+          "id": "p5c27",
+          "number_label": "§ 134",
+          "roman": "134",
+          "title": "134. Pessimists as victims.",
+          "word_count": 129
+        },
+        {
+          "id": "p5c28",
+          "number_label": "§ 135",
+          "roman": "135",
+          "title": "135. Origin of sin.",
+          "word_count": 408
+        },
+        {
+          "id": "p5c29",
+          "number_label": "§ 136",
+          "roman": "136",
+          "title": "136. The chosen people.",
+          "word_count": 176
+        },
+        {
+          "id": "p5c30",
+          "number_label": "§ 137",
+          "roman": "137",
+          "title": "137. Speaking in a parable.",
+          "word_count": 100
+        },
+        {
+          "id": "p5c31",
+          "number_label": "§ 138",
+          "roman": "138",
+          "title": "138. Christ’s error.",
+          "word_count": 88
+        },
+        {
+          "id": "p5c32",
+          "number_label": "§ 139",
+          "roman": "139",
+          "title": "139. The colour of the passions.",
+          "word_count": 105
+        },
+        {
+          "id": "p5c33",
+          "number_label": "§ 140",
+          "roman": "140",
+          "title": "140. Too Jewish.",
+          "word_count": 51
+        },
+        {
+          "id": "p5c34",
+          "number_label": "§ 141",
+          "roman": "141",
+          "title": "141. Too oriental.",
+          "word_count": 83
+        },
+        {
+          "id": "p5c35",
+          "number_label": "§ 142",
+          "roman": "142",
+          "title": "142. Incense.",
+          "word_count": 26
+        },
+        {
+          "id": "p5c36",
+          "number_label": "§ 143",
+          "roman": "143",
+          "title": "143. The greatest advantage of polytheism.",
+          "word_count": 409
+        },
+        {
+          "id": "p5c37",
+          "number_label": "§ 144",
+          "roman": "144",
+          "title": "144. Religious wars.",
+          "word_count": 75
+        },
+        {
+          "id": "p5c38",
+          "number_label": "§ 145",
+          "roman": "145",
+          "title": "145. Danger for vegetarians.",
+          "word_count": 101
+        },
+        {
+          "id": "p5c39",
+          "number_label": "§ 146",
+          "roman": "146",
+          "title": "146. German hopes.",
+          "word_count": 148
+        },
+        {
+          "id": "p5c40",
+          "number_label": "§ 147",
+          "roman": "147",
+          "title": "147. Question and answer.",
+          "word_count": 36
+        },
+        {
+          "id": "p5c41",
+          "number_label": "§ 148",
+          "roman": "148",
+          "title": "148. Where reformations arise.",
+          "word_count": 93
+        },
+        {
+          "id": "p5c42",
+          "number_label": "§ 149",
+          "roman": "149",
+          "title": "149. The failure of reformations.",
+          "word_count": 363
+        },
+        {
+          "id": "p5c43",
+          "number_label": "§ 150",
+          "roman": "150",
+          "title": "150. Towards a critique of saints.",
+          "word_count": 70
+        },
+        {
+          "id": "p5c44",
+          "number_label": "§ 151",
+          "roman": "151",
+          "title": "151. On the origin of religion.",
+          "word_count": 113
+        },
+        {
+          "id": "p5c45",
+          "number_label": "§ 152",
+          "roman": "152",
+          "title": "152. The greatest change.",
+          "word_count": 233
+        },
+        {
+          "id": "p5c46",
+          "number_label": "§ 153",
+          "roman": "153",
+          "title": "153. Homo poeta.27",
+          "word_count": 86
+        },
+        {
+          "id": "p5c47",
+          "number_label": "§ 154",
+          "roman": "154",
+          "title": "154. Different types of danger in life.",
+          "word_count": 102
+        },
+        {
+          "id": "p5c48",
+          "number_label": "§ 155",
+          "roman": "155",
+          "title": "155. What we lack.",
+          "word_count": 43
+        },
+        {
+          "id": "p5c49",
+          "number_label": "§ 156",
+          "roman": "156",
+          "title": "156. The most influential.",
+          "word_count": 40
+        },
+        {
+          "id": "p5c50",
+          "number_label": "§ 157",
+          "roman": "157",
+          "title": "157. Mentiri.29",
+          "word_count": 38
+        },
+        {
+          "id": "p5c51",
+          "number_label": "§ 158",
+          "roman": "158",
+          "title": "158. An uncomfortable trait.",
+          "word_count": 34
+        },
+        {
+          "id": "p5c52",
+          "number_label": "§ 159",
+          "roman": "159",
+          "title": "159. Every virtue has its age.",
+          "word_count": 33
+        },
+        {
+          "id": "p5c53",
+          "number_label": "§ 160",
+          "roman": "160",
+          "title": "160. Dealing with virtues.",
+          "word_count": 15
+        },
+        {
+          "id": "p5c54",
+          "number_label": "§ 161",
+          "roman": "161",
+          "title": "161. To the lovers of the age.",
+          "word_count": 61
+        },
+        {
+          "id": "p5c55",
+          "number_label": "§ 162",
+          "roman": "162",
+          "title": "162. Egoism.",
+          "word_count": 30
+        },
+        {
+          "id": "p5c56",
+          "number_label": "§ 163",
+          "roman": "163",
+          "title": "163. After a great victory.",
+          "word_count": 41
+        },
+        {
+          "id": "p5c57",
+          "number_label": "§ 164",
+          "roman": "164",
+          "title": "164. The seekers of rest.",
+          "word_count": 55
+        },
+        {
+          "id": "p5c58",
+          "number_label": "§ 165",
+          "roman": "165",
+          "title": "165. On the happiness of those who renounce something.",
+          "word_count": 52
+        },
+        {
+          "id": "p5c59",
+          "number_label": "§ 166",
+          "roman": "166",
+          "title": "166. Always in our company.",
+          "word_count": 44
+        },
+        {
+          "id": "p5c60",
+          "number_label": "§ 167",
+          "roman": "167",
+          "title": "167. Misanthropy and love.",
+          "word_count": 54
+        },
+        {
+          "id": "p5c61",
+          "number_label": "§ 168",
+          "roman": "168",
+          "title": "168. About a sick man.",
+          "word_count": 150
+        },
+        {
+          "id": "p5c62",
+          "number_label": "§ 169",
+          "roman": "169",
+          "title": "169. Open enemies.",
+          "word_count": 59
+        },
+        {
+          "id": "p5c63",
+          "number_label": "§ 170",
+          "roman": "170",
+          "title": "170. With the crowd.",
+          "word_count": 77
+        },
+        {
+          "id": "p5c64",
+          "number_label": "§ 171",
+          "roman": "171",
+          "title": "171. Fame.",
+          "word_count": 16
+        },
+        {
+          "id": "p5c65",
+          "number_label": "§ 172",
+          "roman": "172",
+          "title": "172. The spoiler of taste.",
+          "word_count": 38
+        },
+        {
+          "id": "p5c66",
+          "number_label": "§ 173",
+          "roman": "173",
+          "title": "173. Being deep and seeming deep.",
+          "word_count": 54
+        },
+        {
+          "id": "p5c67",
+          "number_label": "§ 174",
+          "roman": "174",
+          "title": "174. Aside.",
+          "word_count": 77
+        },
+        {
+          "id": "p5c68",
+          "number_label": "§ 175",
+          "roman": "175",
+          "title": "175. On eloquence.",
+          "word_count": 36
+        },
+        {
+          "id": "p5c69",
+          "number_label": "§ 176",
+          "roman": "176",
+          "title": "176. Compassion.",
+          "word_count": 66
+        },
+        {
+          "id": "p5c70",
+          "number_label": "§ 177",
+          "roman": "177",
+          "title": "177. On ‘the educational establishment’.",
+          "word_count": 28
+        },
+        {
+          "id": "p5c71",
+          "number_label": "§ 178",
+          "roman": "178",
+          "title": "178. On moral enlightenment.",
+          "word_count": 28
+        },
+        {
+          "id": "p5c72",
+          "number_label": "§ 179",
+          "roman": "179",
+          "title": "179. Thoughts.",
+          "word_count": 15
+        },
+        {
+          "id": "p5c73",
+          "number_label": "§ 180",
+          "roman": "180",
+          "title": "180. The good age for free spirits.",
+          "word_count": 44
+        },
+        {
+          "id": "p5c74",
+          "number_label": "§ 181",
+          "roman": "181",
+          "title": "181. Following and leading.",
+          "word_count": 58
+        },
+        {
+          "id": "p5c75",
+          "number_label": "§ 182",
+          "roman": "182",
+          "title": "182. In solitude.",
+          "word_count": 37
+        },
+        {
+          "id": "p5c76",
+          "number_label": "§ 183",
+          "roman": "183",
+          "title": "183. The music of the best future.",
+          "word_count": 40
+        },
+        {
+          "id": "p5c77",
+          "number_label": "§ 184",
+          "roman": "184",
+          "title": "184. Justice.",
+          "word_count": 32
+        },
+        {
+          "id": "p5c78",
+          "number_label": "§ 185",
+          "roman": "185",
+          "title": "185. Poor.",
+          "word_count": 43
+        },
+        {
+          "id": "p5c79",
+          "number_label": "§ 186",
+          "roman": "186",
+          "title": "186. Bad conscience.",
+          "word_count": 26
+        },
+        {
+          "id": "p5c80",
+          "number_label": "§ 187",
+          "roman": "187",
+          "title": "187. What is offensive in the presentation.",
+          "word_count": 60
+        },
+        {
+          "id": "p5c81",
+          "number_label": "§ 188",
+          "roman": "188",
+          "title": "188. Work.",
+          "word_count": 43
+        },
+        {
+          "id": "p5c82",
+          "number_label": "§ 189",
+          "roman": "189",
+          "title": "189. The thinker.",
+          "word_count": 20
+        },
+        {
+          "id": "p5c83",
+          "number_label": "§ 190",
+          "roman": "190",
+          "title": "190. Against those who praise.",
+          "word_count": 26
+        },
+        {
+          "id": "p5c84",
+          "number_label": "§ 191",
+          "roman": "191",
+          "title": "191. Against many a defence.",
+          "word_count": 22
+        },
+        {
+          "id": "p5c85",
+          "number_label": "§ 192",
+          "roman": "192",
+          "title": "192. The good-natured.",
+          "word_count": 84
+        },
+        {
+          "id": "p5c86",
+          "number_label": "§ 193",
+          "roman": "193",
+          "title": "193. Kant’s joke.",
+          "word_count": 49
+        },
+        {
+          "id": "p5c87",
+          "number_label": "§ 194",
+          "roman": "194",
+          "title": "194. The ‘openhearted’ one.",
+          "word_count": 29
+        },
+        {
+          "id": "p5c88",
+          "number_label": "§ 195",
+          "roman": "195",
+          "title": "195. Laughable.",
+          "word_count": 31
+        },
+        {
+          "id": "p5c89",
+          "number_label": "§ 196",
+          "roman": "196",
+          "title": "196. Limits of our sense of hearing.",
+          "word_count": 22
+        },
+        {
+          "id": "p5c90",
+          "number_label": "§ 197",
+          "roman": "197",
+          "title": "197. Better be careful!",
+          "word_count": 28
+        },
+        {
+          "id": "p5c91",
+          "number_label": "§ 198",
+          "roman": "198",
+          "title": "198. Chagrin of the proud one.",
+          "word_count": 29
+        },
+        {
+          "id": "p5c92",
+          "number_label": "§ 199",
+          "roman": "199",
+          "title": "199. Generosity.",
+          "word_count": 14
+        },
+        {
+          "id": "p5c93",
+          "number_label": "§ 200",
+          "roman": "200",
+          "title": "200. Laughter.",
+          "word_count": 12
+        },
+        {
+          "id": "p5c94",
+          "number_label": "§ 201",
+          "roman": "201",
+          "title": "201. Applause.",
+          "word_count": 20
+        },
+        {
+          "id": "p5c95",
+          "number_label": "§ 202",
+          "roman": "202",
+          "title": "202. A squanderer.",
+          "word_count": 36
+        },
+        {
+          "id": "p5c96",
+          "number_label": "§ 203",
+          "roman": "203",
+          "title": "203. Hic niger est.34",
+          "word_count": 20
+        },
+        {
+          "id": "p5c97",
+          "number_label": "§ 204",
+          "roman": "204",
+          "title": "204. Beggars and courtesy.",
+          "word_count": 44
+        },
+        {
+          "id": "p5c98",
+          "number_label": "§ 205",
+          "roman": "205",
+          "title": "205. Need.",
+          "word_count": 29
+        },
+        {
+          "id": "p5c99",
+          "number_label": "§ 206",
+          "roman": "206",
+          "title": "206. When it rains.",
+          "word_count": 62
+        },
+        {
+          "id": "p5c100",
+          "number_label": "§ 207",
+          "roman": "207",
+          "title": "207. The envious one.",
+          "word_count": 28
+        },
+        {
+          "id": "p5c101",
+          "number_label": "§ 208",
+          "roman": "208",
+          "title": "208. Great man!",
+          "word_count": 40
+        },
+        {
+          "id": "p5c102",
+          "number_label": "§ 209",
+          "roman": "209",
+          "title": "209. A way of asking for reasons.",
+          "word_count": 54
+        },
+        {
+          "id": "p5c103",
+          "number_label": "§ 210",
+          "roman": "210",
+          "title": "210. Moderation in diligence.",
+          "word_count": 19
+        },
+        {
+          "id": "p5c104",
+          "number_label": "§ 211",
+          "roman": "211",
+          "title": "211. Secret enemies.",
+          "word_count": 30
+        },
+        {
+          "id": "p5c105",
+          "number_label": "§ 212",
+          "roman": "212",
+          "title": "212. Not to let oneself be deceived.",
+          "word_count": 38
+        },
+        {
+          "id": "p5c106",
+          "number_label": "§ 213",
+          "roman": "213",
+          "title": "213. The road to happiness.",
+          "word_count": 69
+        },
+        {
+          "id": "p5c107",
+          "number_label": "§ 214",
+          "roman": "214",
+          "title": "214. Faith makes blessed.",
+          "word_count": 58
+        },
+        {
+          "id": "p5c108",
+          "number_label": "§ 215",
+          "roman": "215",
+          "title": "215. Ideal and material.",
+          "word_count": 43
+        },
+        {
+          "id": "p5c109",
+          "number_label": "§ 216",
+          "roman": "216",
+          "title": "216. Danger in the voice.",
+          "word_count": 22
+        },
+        {
+          "id": "p5c110",
+          "number_label": "§ 217",
+          "roman": "217",
+          "title": "217. Cause and effect.",
+          "word_count": 21
+        },
+        {
+          "id": "p5c111",
+          "number_label": "§ 218",
+          "roman": "218",
+          "title": "218. My antipathy.",
+          "word_count": 39
+        },
+        {
+          "id": "p5c112",
+          "number_label": "§ 219",
+          "roman": "219",
+          "title": "219. The purpose of punishment.",
+          "word_count": 27
+        },
+        {
+          "id": "p5c113",
+          "number_label": "§ 220",
+          "roman": "220",
+          "title": "220. Sacrifice.",
+          "word_count": 22
+        },
+        {
+          "id": "p5c114",
+          "number_label": "§ 221",
+          "roman": "221",
+          "title": "221. Forbearance.",
+          "word_count": 17
+        },
+        {
+          "id": "p5c115",
+          "number_label": "§ 222",
+          "roman": "222",
+          "title": "222. Poet and liar.",
+          "word_count": 43
+        },
+        {
+          "id": "p5c116",
+          "number_label": "§ 223",
+          "roman": "223",
+          "title": "223. Vicariousness of the senses.",
+          "word_count": 34
+        },
+        {
+          "id": "p5c117",
+          "number_label": "§ 224",
+          "roman": "224",
+          "title": "224. Animals’ criticism.",
+          "word_count": 42
+        },
+        {
+          "id": "p5c118",
+          "number_label": "§ 225",
+          "roman": "225",
+          "title": "225. The natural.",
+          "word_count": 43
+        },
+        {
+          "id": "p5c119",
+          "number_label": "§ 226",
+          "roman": "226",
+          "title": "226. The distrustful and style.",
+          "word_count": 39
+        },
+        {
+          "id": "p5c120",
+          "number_label": "§ 227",
+          "roman": "227",
+          "title": "227. Bad inference; bad shot.",
+          "word_count": 39
+        },
+        {
+          "id": "p5c121",
+          "number_label": "§ 228",
+          "roman": "228",
+          "title": "228. Against mediators.",
+          "word_count": 41
+        },
+        {
+          "id": "p5c122",
+          "number_label": "§ 229",
+          "roman": "229",
+          "title": "229. Obstinacy and faithfulness.",
+          "word_count": 22
+        },
+        {
+          "id": "p5c123",
+          "number_label": "§ 230",
+          "roman": "230",
+          "title": "230. Lack of silence.",
+          "word_count": 26
+        },
+        {
+          "id": "p5c124",
+          "number_label": "§ 231",
+          "roman": "231",
+          "title": "231. The ‘thorough’.",
+          "word_count": 18
+        },
+        {
+          "id": "p5c125",
+          "number_label": "§ 232",
+          "roman": "232",
+          "title": "232. Dreaming.",
+          "word_count": 29
+        },
+        {
+          "id": "p5c126",
+          "number_label": "§ 233",
+          "roman": "233",
+          "title": "233. The most dangerous point of view.",
+          "word_count": 47
+        },
+        {
+          "id": "p5c127",
+          "number_label": "§ 234",
+          "roman": "234",
+          "title": "234. Words of comfort for a musician.",
+          "word_count": 80
+        },
+        {
+          "id": "p5c128",
+          "number_label": "§ 235",
+          "roman": "235",
+          "title": "235. Spirit and character.",
+          "word_count": 29
+        },
+        {
+          "id": "p5c129",
+          "number_label": "§ 236",
+          "roman": "236",
+          "title": "236. In order to move the crowd.",
+          "word_count": 48
+        },
+        {
+          "id": "p5c130",
+          "number_label": "§ 237",
+          "roman": "237",
+          "title": "237. The polite one.",
+          "word_count": 36
+        },
+        {
+          "id": "p5c131",
+          "number_label": "§ 238",
+          "roman": "238",
+          "title": "238. Without envy.",
+          "word_count": 33
+        },
+        {
+          "id": "p5c132",
+          "number_label": "§ 239",
+          "roman": "239",
+          "title": "239. The joyless one.",
+          "word_count": 47
+        },
+        {
+          "id": "p5c133",
+          "number_label": "§ 240",
+          "roman": "240",
+          "title": "240. At the sea.",
+          "word_count": 55
+        },
+        {
+          "id": "p5c134",
+          "number_label": "§ 241",
+          "roman": "241",
+          "title": "241. Work and artist.",
+          "word_count": 27
+        },
+        {
+          "id": "p5c135",
+          "number_label": "§ 242",
+          "roman": "242",
+          "title": "242. Suum cuique?37",
+          "word_count": 48
+        },
+        {
+          "id": "p5c136",
+          "number_label": "§ 243",
+          "roman": "243",
+          "title": "243. Origin of ‘good’ and ‘bad’.",
+          "word_count": 23
+        },
+        {
+          "id": "p5c137",
+          "number_label": "§ 244",
+          "roman": "244",
+          "title": "244. Thoughts and words.",
+          "word_count": 14
+        },
+        {
+          "id": "p5c138",
+          "number_label": "§ 245",
+          "roman": "245",
+          "title": "245. Praise by choice.",
+          "word_count": 16
+        },
+        {
+          "id": "p5c139",
+          "number_label": "§ 246",
+          "roman": "246",
+          "title": "246. Mathematics.",
+          "word_count": 60
+        },
+        {
+          "id": "p5c140",
+          "number_label": "§ 247",
+          "roman": "247",
+          "title": "247. Habit.",
+          "word_count": 15
+        },
+        {
+          "id": "p5c141",
+          "number_label": "§ 248",
+          "roman": "248",
+          "title": "248. Books.",
+          "word_count": 17
+        },
+        {
+          "id": "p5c142",
+          "number_label": "§ 249",
+          "roman": "249",
+          "title": "249. The sigh of the one who comes to",
+          "word_count": 100
+        },
+        {
+          "id": "p5c143",
+          "number_label": "§ 250",
+          "roman": "250",
+          "title": "250. Guilt.",
+          "word_count": 34
+        },
+        {
+          "id": "p5c144",
+          "number_label": "§ 251",
+          "roman": "251",
+          "title": "251. Misunderstood sufferers.",
+          "word_count": 86
+        },
+        {
+          "id": "p5c145",
+          "number_label": "§ 252",
+          "roman": "252",
+          "title": "252. Better in debt.",
+          "word_count": 25
+        },
+        {
+          "id": "p5c146",
+          "number_label": "§ 253",
+          "roman": "253",
+          "title": "253. Always at home.",
+          "word_count": 51
+        },
+        {
+          "id": "p5c147",
+          "number_label": "§ 254",
+          "roman": "254",
+          "title": "254. Against embarrassment.",
+          "word_count": 13
+        },
+        {
+          "id": "p5c148",
+          "number_label": "§ 255",
+          "roman": "255",
+          "title": "255. Imitators.",
+          "word_count": 33
+        },
+        {
+          "id": "p5c149",
+          "number_label": "§ 256",
+          "roman": "256",
+          "title": "256. Skinnedness.",
+          "word_count": 41
+        },
+        {
+          "id": "p5c150",
+          "number_label": "§ 257",
+          "roman": "257",
+          "title": "257. From experience.",
+          "word_count": 24
+        },
+        {
+          "id": "p5c151",
+          "number_label": "§ 258",
+          "roman": "258",
+          "title": "258. Those who deny chance.",
+          "word_count": 11
+        },
+        {
+          "id": "p5c152",
+          "number_label": "§ 259",
+          "roman": "259",
+          "title": "259. From paradise.",
+          "word_count": 16
+        },
+        {
+          "id": "p5c153",
+          "number_label": "§ 260",
+          "roman": "260",
+          "title": "260. One times one.",
+          "word_count": 25
+        },
+        {
+          "id": "p5c154",
+          "number_label": "§ 261",
+          "roman": "261",
+          "title": "261. Originality.",
+          "word_count": 52
+        },
+        {
+          "id": "p5c155",
+          "number_label": "§ 262",
+          "roman": "262",
+          "title": "262. Sub specie aeterni.39",
+          "word_count": 48
+        },
+        {
+          "id": "p5c156",
+          "number_label": "§ 263",
+          "roman": "263",
+          "title": "263. Without vanity.",
+          "word_count": 40
+        },
+        {
+          "id": "p5c157",
+          "number_label": "§ 264",
+          "roman": "264",
+          "title": "264. What we do.",
+          "word_count": 17
+        },
+        {
+          "id": "p5c158",
+          "number_label": "§ 265",
+          "roman": "265",
+          "title": "265. Ultimate doubt.",
+          "word_count": 18
+        },
+        {
+          "id": "p5c159",
+          "number_label": "§ 266",
+          "roman": "266",
+          "title": "266. Where cruelty is needed.",
+          "word_count": 18
+        },
+        {
+          "id": "p5c160",
+          "number_label": "§ 267",
+          "roman": "267",
+          "title": "267. With a great goal.",
+          "word_count": 23
+        },
+        {
+          "id": "p5c161",
+          "number_label": "§ 268",
+          "roman": "268",
+          "title": "268. What makes one heroic?",
+          "word_count": 19
+        },
+        {
+          "id": "p5c162",
+          "number_label": "§ 269",
+          "roman": "269",
+          "title": "269. What do you believe in?",
+          "word_count": 19
+        },
+        {
+          "id": "p5c163",
+          "number_label": "§ 270",
+          "roman": "270",
+          "title": "270. What does your conscience say?",
+          "word_count": 13
+        },
+        {
+          "id": "p5c164",
+          "number_label": "§ 271",
+          "roman": "271",
+          "title": "271. Where lie your greatest dangers?",
+          "word_count": 9
+        },
+        {
+          "id": "p5c165",
+          "number_label": "§ 272",
+          "roman": "272",
+          "title": "272. What do you love in others?",
+          "word_count": 10
+        },
+        {
+          "id": "p5c166",
+          "number_label": "§ 273",
+          "roman": "273",
+          "title": "273. Whom do you call bad?",
+          "word_count": 16
+        },
+        {
+          "id": "p5c167",
+          "number_label": "§ 274",
+          "roman": "274",
+          "title": "274. What is most human to you?",
+          "word_count": 12
+        },
+        {
+          "id": "p5c168",
+          "number_label": "§ 275",
+          "roman": "275",
+          "title": "275. What is the seal of having become free’?",
+          "word_count": 17
         }
       ]
     },
@@ -86,10 +2424,472 @@
       "chapters": [
         {
           "id": "p6c1",
-          "number_label": "Book Four: St Januarius",
-          "roman": "1",
-          "title": "Book Four: St Januarius",
-          "word_count": 15122
+          "number_label": "§ 276",
+          "roman": "276",
+          "title": "276. For the new year.",
+          "word_count": 166
+        },
+        {
+          "id": "p6c2",
+          "number_label": "§ 277",
+          "roman": "277",
+          "title": "277. Personal providence.",
+          "word_count": 378
+        },
+        {
+          "id": "p6c3",
+          "number_label": "§ 278",
+          "roman": "278",
+          "title": "278. The thought of death.",
+          "word_count": 248
+        },
+        {
+          "id": "p6c4",
+          "number_label": "§ 279",
+          "roman": "279",
+          "title": "279. Star friendship.",
+          "word_count": 245
+        },
+        {
+          "id": "p6c5",
+          "number_label": "§ 280",
+          "roman": "280",
+          "title": "280. Architecture for those who wish to pursue knowledge.",
+          "word_count": 207
+        },
+        {
+          "id": "p6c6",
+          "number_label": "§ 281",
+          "roman": "281",
+          "title": "281. Knowing how to end.",
+          "word_count": 92
+        },
+        {
+          "id": "p6c7",
+          "number_label": "§ 282",
+          "roman": "282",
+          "title": "282. Gait.",
+          "word_count": 115
+        },
+        {
+          "id": "p6c8",
+          "number_label": "§ 283",
+          "roman": "283",
+          "title": "283. Preparatory human beings.",
+          "word_count": 330
+        },
+        {
+          "id": "p6c9",
+          "number_label": "§ 284",
+          "roman": "284",
+          "title": "284. Faith in oneself.",
+          "word_count": 84
+        },
+        {
+          "id": "p6c10",
+          "number_label": "§ 285",
+          "roman": "285",
+          "title": "285. Excelsior.6",
+          "word_count": 211
+        },
+        {
+          "id": "p6c11",
+          "number_label": "§ 286",
+          "roman": "286",
+          "title": "286. Interruption.",
+          "word_count": 70
+        },
+        {
+          "id": "p6c12",
+          "number_label": "§ 287",
+          "roman": "287",
+          "title": "287. Delight in blindness.",
+          "word_count": 50
+        },
+        {
+          "id": "p6c13",
+          "number_label": "§ 288",
+          "roman": "288",
+          "title": "288. High spirits.",
+          "word_count": 167
+        },
+        {
+          "id": "p6c14",
+          "number_label": "§ 289",
+          "roman": "289",
+          "title": "289. Get on the ships!",
+          "word_count": 214
+        },
+        {
+          "id": "p6c15",
+          "number_label": "§ 290",
+          "roman": "290",
+          "title": "290. One thing is needful.",
+          "word_count": 415
+        },
+        {
+          "id": "p6c16",
+          "number_label": "§ 291",
+          "roman": "291",
+          "title": "291. Genoa.",
+          "word_count": 418
+        },
+        {
+          "id": "p6c17",
+          "number_label": "§ 292",
+          "roman": "292",
+          "title": "292. To the preachers of morals.",
+          "word_count": 246
+        },
+        {
+          "id": "p6c18",
+          "number_label": "§ 293",
+          "roman": "293",
+          "title": "293. Our air.",
+          "word_count": 380
+        },
+        {
+          "id": "p6c19",
+          "number_label": "§ 294",
+          "roman": "294",
+          "title": "294. Against the slanderers of nature.",
+          "word_count": 137
+        },
+        {
+          "id": "p6c20",
+          "number_label": "§ 295",
+          "roman": "295",
+          "title": "295. Brief habits.",
+          "word_count": 354
+        },
+        {
+          "id": "p6c21",
+          "number_label": "§ 296",
+          "roman": "296",
+          "title": "296. A firm reputation.",
+          "word_count": 296
+        },
+        {
+          "id": "p6c22",
+          "number_label": "§ 297",
+          "roman": "297",
+          "title": "297. Being able to contradict.",
+          "word_count": 102
+        },
+        {
+          "id": "p6c23",
+          "number_label": "§ 298",
+          "roman": "298",
+          "title": "298. Sigh.",
+          "word_count": 65
+        },
+        {
+          "id": "p6c24",
+          "number_label": "§ 299",
+          "roman": "299",
+          "title": "299. What one should learn from artists.",
+          "word_count": 219
+        },
+        {
+          "id": "p6c25",
+          "number_label": "§ 300",
+          "roman": "300",
+          "title": "300. Preludes to science",
+          "word_count": 251
+        },
+        {
+          "id": "p6c26",
+          "number_label": "§ 301",
+          "roman": "301",
+          "title": "301. Delusion of the contemplative ones.",
+          "word_count": 372
+        },
+        {
+          "id": "p6c27",
+          "number_label": "§ 302",
+          "roman": "302",
+          "title": "302. The danger of the happiest.",
+          "word_count": 266
+        },
+        {
+          "id": "p6c28",
+          "number_label": "§ 303",
+          "roman": "303",
+          "title": "303. Two happy ones.",
+          "word_count": 291
+        },
+        {
+          "id": "p6c29",
+          "number_label": "§ 304",
+          "roman": "304",
+          "title": "304. By doing we forgo.",
+          "word_count": 187
+        },
+        {
+          "id": "p6c30",
+          "number_label": "§ 305",
+          "roman": "305",
+          "title": "305. Self-control.",
+          "word_count": 164
+        },
+        {
+          "id": "p6c31",
+          "number_label": "§ 306",
+          "roman": "306",
+          "title": "306. Stoics and Epicureans.",
+          "word_count": 207
+        },
+        {
+          "id": "p6c32",
+          "number_label": "§ 307",
+          "roman": "307",
+          "title": "307. In favour of criticism.",
+          "word_count": 173
+        },
+        {
+          "id": "p6c33",
+          "number_label": "§ 308",
+          "roman": "308",
+          "title": "308. The history of every day.",
+          "word_count": 95
+        },
+        {
+          "id": "p6c34",
+          "number_label": "§ 309",
+          "roman": "309",
+          "title": "309. From the seventh solitude.",
+          "word_count": 133
+        },
+        {
+          "id": "p6c35",
+          "number_label": "§ 310",
+          "roman": "310",
+          "title": "310. Will and wave.",
+          "word_count": 290
+        },
+        {
+          "id": "p6c36",
+          "number_label": "§ 311",
+          "roman": "311",
+          "title": "311. Refracted light.",
+          "word_count": 299
+        },
+        {
+          "id": "p6c37",
+          "number_label": "§ 312",
+          "roman": "312",
+          "title": "312. My dog.",
+          "word_count": 57
+        },
+        {
+          "id": "p6c38",
+          "number_label": "§ 313",
+          "roman": "313",
+          "title": "313. No image of torment.",
+          "word_count": 54
+        },
+        {
+          "id": "p6c39",
+          "number_label": "§ 314",
+          "roman": "314",
+          "title": "314. New domestic animals.",
+          "word_count": 54
+        },
+        {
+          "id": "p6c40",
+          "number_label": "§ 315",
+          "roman": "315",
+          "title": "315. On the last hour.",
+          "word_count": 62
+        },
+        {
+          "id": "p6c41",
+          "number_label": "§ 316",
+          "roman": "316",
+          "title": "316. Prophetic human beings.",
+          "word_count": 176
+        },
+        {
+          "id": "p6c42",
+          "number_label": "§ 317",
+          "roman": "317",
+          "title": "317. Retrospection.",
+          "word_count": 143
+        },
+        {
+          "id": "p6c43",
+          "number_label": "§ 318",
+          "roman": "318",
+          "title": "318. Wisdom in pain.",
+          "word_count": 230
+        },
+        {
+          "id": "p6c44",
+          "number_label": "§ 319",
+          "roman": "319",
+          "title": "319. As interpreters of our experiences.",
+          "word_count": 159
+        },
+        {
+          "id": "p6c45",
+          "number_label": "§ 320",
+          "roman": "320",
+          "title": "320. On meeting again.",
+          "word_count": 100
+        },
+        {
+          "id": "p6c46",
+          "number_label": "§ 321",
+          "roman": "321",
+          "title": "321. New caution.",
+          "word_count": 122
+        },
+        {
+          "id": "p6c47",
+          "number_label": "§ 322",
+          "roman": "322",
+          "title": "322. Parable.",
+          "word_count": 46
+        },
+        {
+          "id": "p6c48",
+          "number_label": "§ 323",
+          "roman": "323",
+          "title": "323. Luck in fate",
+          "word_count": 33
+        },
+        {
+          "id": "p6c49",
+          "number_label": "§ 324",
+          "roman": "324",
+          "title": "324. In media vita.19",
+          "word_count": 150
+        },
+        {
+          "id": "p6c50",
+          "number_label": "§ 325",
+          "roman": "325",
+          "title": "325. What belongs to greatness",
+          "word_count": 70
+        },
+        {
+          "id": "p6c51",
+          "number_label": "§ 326",
+          "roman": "326",
+          "title": "326. Soul-doctors and pain.",
+          "word_count": 421
+        },
+        {
+          "id": "p6c52",
+          "number_label": "§ 327",
+          "roman": "327",
+          "title": "327. Taking seriously.",
+          "word_count": 98
+        },
+        {
+          "id": "p6c53",
+          "number_label": "§ 328",
+          "roman": "328",
+          "title": "328. To harm stupidity.",
+          "word_count": 204
+        },
+        {
+          "id": "p6c54",
+          "number_label": "§ 329",
+          "roman": "329",
+          "title": "329. Leisure and idleness.",
+          "word_count": 518
+        },
+        {
+          "id": "p6c55",
+          "number_label": "§ 330",
+          "roman": "330",
+          "title": "330. Applause.",
+          "word_count": 74
+        },
+        {
+          "id": "p6c56",
+          "number_label": "§ 331",
+          "roman": "331",
+          "title": "331. Better deaf than deafened",
+          "word_count": 114
+        },
+        {
+          "id": "p6c57",
+          "number_label": "§ 332",
+          "roman": "332",
+          "title": "332. The evil hour.",
+          "word_count": 47
+        },
+        {
+          "id": "p6c58",
+          "number_label": "§ 333",
+          "roman": "333",
+          "title": "333. What knowing means.",
+          "word_count": 325
+        },
+        {
+          "id": "p6c59",
+          "number_label": "§ 334",
+          "roman": "334",
+          "title": "334. One must learn to love.",
+          "word_count": 213
+        },
+        {
+          "id": "p6c60",
+          "number_label": "§ 335",
+          "roman": "335",
+          "title": "335. Long live physics!",
+          "word_count": 1164
+        },
+        {
+          "id": "p6c61",
+          "number_label": "§ 336",
+          "roman": "336",
+          "title": "336. Nature’s stinginess.",
+          "word_count": 64
+        },
+        {
+          "id": "p6c62",
+          "number_label": "§ 337",
+          "roman": "337",
+          "title": "337. The ‘humanity’ of the future.",
+          "word_count": 475
+        },
+        {
+          "id": "p6c63",
+          "number_label": "§ 338",
+          "roman": "338",
+          "title": "338. The will to suffer and those who feel",
+          "word_count": 916
+        },
+        {
+          "id": "p6c64",
+          "number_label": "§ 339",
+          "roman": "339",
+          "title": "339. Vita femina.28",
+          "word_count": 251
+        },
+        {
+          "id": "p6c65",
+          "number_label": "§ 340",
+          "roman": "340",
+          "title": "340. The dying Socrates.30",
+          "word_count": 217
+        },
+        {
+          "id": "p6c66",
+          "number_label": "§ 341",
+          "roman": "341",
+          "title": "341. The heaviest weight.",
+          "word_count": 233
+        },
+        {
+          "id": "p6c67",
+          "number_label": "§ 342",
+          "roman": "342",
+          "title": "342. Incipit tragoedia.32",
+          "word_count": 282
         }
       ]
     },
@@ -101,10 +2901,290 @@
       "chapters": [
         {
           "id": "p7c1",
-          "number_label": "Book Five: We Fearless Ones",
-          "roman": "1",
-          "title": "Book Five: We Fearless Ones",
-          "word_count": 20085
+          "number_label": "§ 343",
+          "roman": "343",
+          "title": "343. How to understand our cheerfulness.",
+          "word_count": 450
+        },
+        {
+          "id": "p7c2",
+          "number_label": "§ 344",
+          "roman": "344",
+          "title": "344. In what way we, too, are still pious.",
+          "word_count": 863
+        },
+        {
+          "id": "p7c3",
+          "number_label": "§ 345",
+          "roman": "345",
+          "title": "345. Morality as a problem.",
+          "word_count": 692
+        },
+        {
+          "id": "p7c4",
+          "number_label": "§ 346",
+          "roman": "346",
+          "title": "346. Our question mark.",
+          "word_count": 545
+        },
+        {
+          "id": "p7c5",
+          "number_label": "§ 347",
+          "roman": "347",
+          "title": "347. Believers and their need to believe.",
+          "word_count": 636
+        },
+        {
+          "id": "p7c6",
+          "number_label": "§ 348",
+          "roman": "348",
+          "title": "348. On the origin of scholars.",
+          "word_count": 507
+        },
+        {
+          "id": "p7c7",
+          "number_label": "§ 349",
+          "roman": "349",
+          "title": "349. Once again, the origin of the scholars.",
+          "word_count": 239
+        },
+        {
+          "id": "p7c8",
+          "number_label": "§ 350",
+          "roman": "350",
+          "title": "350. In honour of the homines religiosi.10",
+          "word_count": 192
+        },
+        {
+          "id": "p7c9",
+          "number_label": "§ 351",
+          "roman": "351",
+          "title": "351. In honour of the priestly type:",
+          "word_count": 458
+        },
+        {
+          "id": "p7c10",
+          "number_label": "§ 352",
+          "roman": "352",
+          "title": "352. The extent to which morality is hardly dispensable.",
+          "word_count": 279
+        },
+        {
+          "id": "p7c11",
+          "number_label": "§ 353",
+          "roman": "353",
+          "title": "353. On the origin of religions.",
+          "word_count": 359
+        },
+        {
+          "id": "p7c12",
+          "number_label": "§ 354",
+          "roman": "354",
+          "title": "354. On ‘the genius of the species’.",
+          "word_count": 1084
+        },
+        {
+          "id": "p7c13",
+          "number_label": "§ 355",
+          "roman": "355",
+          "title": "355. The origin of our concept of ‘knowledge’.",
+          "word_count": 434
+        },
+        {
+          "id": "p7c14",
+          "number_label": "§ 356",
+          "roman": "356",
+          "title": "356. The extent to which things will become ever",
+          "word_count": 811
+        },
+        {
+          "id": "p7c15",
+          "number_label": "§ 357",
+          "roman": "357",
+          "title": "357. On the old problem: ‘What is German?’ –",
+          "word_count": 1570
+        },
+        {
+          "id": "p7c16",
+          "number_label": "§ 358",
+          "roman": "358",
+          "title": "358. The peasant rebellion of the spirit.",
+          "word_count": 993
+        },
+        {
+          "id": "p7c17",
+          "number_label": "§ 359",
+          "roman": "359",
+          "title": "359. The revenge against the spirit and other ulterior",
+          "word_count": 510
+        },
+        {
+          "id": "p7c18",
+          "number_label": "§ 360",
+          "roman": "360",
+          "title": "360. Two kinds of causes that are often confused.",
+          "word_count": 264
+        },
+        {
+          "id": "p7c19",
+          "number_label": "§ 361",
+          "roman": "361",
+          "title": "361. On the problem of the actor.",
+          "word_count": 516
+        },
+        {
+          "id": "p7c20",
+          "number_label": "§ 362",
+          "roman": "362",
+          "title": "362. Our faith in the masculinization of Europe.",
+          "word_count": 268
+        },
+        {
+          "id": "p7c21",
+          "number_label": "§ 363",
+          "roman": "363",
+          "title": "363. How each sex has its own prejudice about",
+          "word_count": 564
+        },
+        {
+          "id": "p7c22",
+          "number_label": "§ 364",
+          "roman": "364",
+          "title": "364. The hermit speaks.",
+          "word_count": 223
+        },
+        {
+          "id": "p7c23",
+          "number_label": "§ 365",
+          "roman": "365",
+          "title": "365. The hermit speaks again.",
+          "word_count": 222
+        },
+        {
+          "id": "p7c24",
+          "number_label": "§ 366",
+          "roman": "366",
+          "title": "366. Faced with a scholarly book.",
+          "word_count": 687
+        },
+        {
+          "id": "p7c25",
+          "number_label": "§ 367",
+          "roman": "367",
+          "title": "367. The first distinction to draw regarding artworks.",
+          "word_count": 121
+        },
+        {
+          "id": "p7c26",
+          "number_label": "§ 368",
+          "roman": "368",
+          "title": "368. The cynic speaks.",
+          "word_count": 493
+        },
+        {
+          "id": "p7c27",
+          "number_label": "§ 369",
+          "roman": "369",
+          "title": "369. Our coexistence.",
+          "word_count": 297
+        },
+        {
+          "id": "p7c28",
+          "number_label": "§ 370",
+          "roman": "370",
+          "title": "370. What is romanticism?",
+          "word_count": 925
+        },
+        {
+          "id": "p7c29",
+          "number_label": "§ 371",
+          "roman": "371",
+          "title": "371. We incomprehensible ones.",
+          "word_count": 239
+        },
+        {
+          "id": "p7c30",
+          "number_label": "§ 372",
+          "roman": "372",
+          "title": "372. Why we are not idealists.",
+          "word_count": 346
+        },
+        {
+          "id": "p7c31",
+          "number_label": "§ 373",
+          "roman": "373",
+          "title": "373. ‘Science’ as prejudice.",
+          "word_count": 544
+        },
+        {
+          "id": "p7c32",
+          "number_label": "§ 374",
+          "roman": "374",
+          "title": "374. Our new ‘infinite’.",
+          "word_count": 272
+        },
+        {
+          "id": "p7c33",
+          "number_label": "§ 375",
+          "roman": "375",
+          "title": "375. Why we seem to be Epicureans.",
+          "word_count": 210
+        },
+        {
+          "id": "p7c34",
+          "number_label": "§ 376",
+          "roman": "376",
+          "title": "376. Our slow periods.",
+          "word_count": 118
+        },
+        {
+          "id": "p7c35",
+          "number_label": "§ 377",
+          "roman": "377",
+          "title": "377. We who are homeless.",
+          "word_count": 911
+        },
+        {
+          "id": "p7c36",
+          "number_label": "§ 378",
+          "roman": "378",
+          "title": "378. ‘Andbecome bright again’.",
+          "word_count": 136
+        },
+        {
+          "id": "p7c37",
+          "number_label": "§ 379",
+          "roman": "379",
+          "title": "379. The fool’s interlude.",
+          "word_count": 268
+        },
+        {
+          "id": "p7c38",
+          "number_label": "§ 380",
+          "roman": "380",
+          "title": "380. ‘The wanderer’ speaks.",
+          "word_count": 316
+        },
+        {
+          "id": "p7c39",
+          "number_label": "§ 381",
+          "roman": "381",
+          "title": "381. On the question of being understandable.",
+          "word_count": 644
+        },
+        {
+          "id": "p7c40",
+          "number_label": "§ 382",
+          "roman": "382",
+          "title": "382. The great health.",
+          "word_count": 524
+        },
+        {
+          "id": "p7c41",
+          "number_label": "§ 383",
+          "roman": "383",
+          "title": "383. Epilogue.",
+          "word_count": 305
         }
       ]
     },

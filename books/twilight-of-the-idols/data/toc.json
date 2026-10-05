@@ -11,71 +11,85 @@
       "chapters": [
         {
           "id": "p1c1",
-          "number_label": "Maxims And Barbs",
+          "number_label": "Foreword",
           "roman": "1",
+          "title": "Foreword",
+          "word_count": 384
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Maxims And Barbs",
+          "roman": "2",
           "title": "Maxims And Barbs",
           "word_count": 991
         },
         {
-          "id": "p1c2",
+          "id": "p1c3",
           "number_label": "The Problem Of Socrates",
-          "roman": "2",
+          "roman": "3",
           "title": "The Problem Of Socrates",
           "word_count": 1719
         },
         {
-          "id": "p1c3",
+          "id": "p1c4",
           "number_label": "‘Reason’ In Philosophy",
-          "roman": "3",
+          "roman": "4",
           "title": "‘Reason’ In Philosophy",
           "word_count": 1465
         },
         {
-          "id": "p1c4",
-          "number_label": "How The ‘Real World’ Finally",
-          "roman": "4",
-          "title": "How The ‘Real World’ Finally",
-          "word_count": 258
+          "id": "p1c5",
+          "number_label": "How the Real World Finally Became a Fable",
+          "roman": "5",
+          "title": "How the Real World Finally Became a Fable",
+          "word_count": 256
         },
         {
-          "id": "p1c5",
+          "id": "p1c6",
           "number_label": "Morality As Anti-Nature",
-          "roman": "5",
+          "roman": "6",
           "title": "Morality As Anti-Nature",
           "word_count": 1622
         },
         {
-          "id": "p1c6",
+          "id": "p1c7",
           "number_label": "The Four Great Errors",
-          "roman": "6",
+          "roman": "7",
           "title": "The Four Great Errors",
           "word_count": 2622
         },
         {
-          "id": "p1c7",
+          "id": "p1c8",
           "number_label": "The ‘Improvers’ Of Humanity",
-          "roman": "7",
+          "roman": "8",
           "title": "The ‘Improvers’ Of Humanity",
           "word_count": 1265
         },
         {
-          "id": "p1c8",
+          "id": "p1c9",
           "number_label": "What The Germans Lack",
-          "roman": "8",
+          "roman": "9",
           "title": "What The Germans Lack",
-          "word_count": 13993
+          "word_count": 2048
         },
         {
-          "id": "p1c9",
+          "id": "p1c10",
+          "number_label": "Reconnaissance Raids of an Untimely Man",
+          "roman": "10",
+          "title": "Reconnaissance Raids of an Untimely Man",
+          "word_count": 11939
+        },
+        {
+          "id": "p1c11",
           "number_label": "What I Owe The Ancients",
-          "roman": "9",
+          "roman": "11",
           "title": "What I Owe The Ancients",
           "word_count": 2091
         },
         {
-          "id": "p1c10",
+          "id": "p1c12",
           "number_label": "The Hammer Speaks",
-          "roman": "10",
+          "roman": "12",
           "title": "The Hammer Speaks",
           "word_count": 153
         }

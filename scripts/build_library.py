@@ -252,7 +252,8 @@ def parse_fountainhead() -> tuple[dict, list]:
             fin_part()
             num = m.group(1)
             subtitle = ""
-            # next non-junk non-empty may be part name (PETER KEATING)
+            # next non-junk non-empty may be part name (PETER KEATING);
+            # stop at a chapter numeral so "I" is never eaten as subtitle.
             j = i + 1
             while j < len(body) and (not body[j].strip() or is_junk(body[j])):
                 j += 1
@@ -271,18 +272,32 @@ def parse_fountainhead() -> tuple[dict, list]:
             continue
         m = CH_RE.match(s)
         if m and cur_part is not None:
-            # Avoid matching random I in text: only short roman alone
-            fin_ch()
+            # Bare romans only count as chapters when blank-surrounded AND
+            # the next roman in sequence (I..II..III). Front-matter TOC
+            # fragments (bare I/II at file top) never satisfy both guards.
             rom = m.group(1)
-            cur_ch = {
-                "number_label": f"Chapter {rom}",
-                "roman": rom,
-                "title": f"Chapter {rom}",
-                "paragraphs": [],
-            }
-            buf = []
-            i += 1
-            continue
+            prev_blank = not body[i - 1].strip() if i > 0 else True
+            nxt_blank = not body[i + 1].strip() if i + 1 < len(body) else True
+            expect = len(cur_part["chapters"]) + 1
+            if cur_ch is not None:
+                expect += 1  # open chapter not yet flushed into the list
+            vals = {"I": 1, "V": 5, "X": 10, "L": 50}
+            tot, pv = 0, 0
+            for ch in reversed(rom):
+                v = vals.get(ch, 0)
+                tot += -v if v < pv else v
+                pv = v
+            if prev_blank and nxt_blank and tot == expect:
+                fin_ch()
+                cur_ch = {
+                    "number_label": f"Chapter {rom}",
+                    "roman": rom,
+                    "title": f"Chapter {rom}",
+                    "paragraphs": [],
+                }
+                buf = []
+                i += 1
+                continue
         if cur_ch is not None:
             buf.append(body[i])
         i += 1
@@ -325,12 +340,11 @@ def parse_beyond_good_and_evil() -> tuple[dict, list]:
             return
         paras = reflow(buf)
         if paras and paras[0] == paras[0].upper() and len(paras[0]) < 80:
-            # chapter subtitle like PREJUDICES OF PHILOSOPHERS
-            cur_ch["title"] = paras[0].title() if paras[0].isupper() else paras[0]
-            # keep nicer title casing for known all-caps
-            cur_ch["title"] = paras[0]
-            if cur_ch["title"].isupper():
-                cur_ch["title"] = cur_ch["title"].title()
+            # chapter subtitle line (e.g. PREJUDICES OF PHILOSOPHERS) duplicates
+            # the titles-dict value already set on cur_ch; keep dict casing and
+            # only take paras[0] when cur_ch still holds the generic fallback.
+            if cur_ch["title"] == f"Chapter {cur_ch['roman']}":
+                cur_ch["title"] = paras[0].title() if paras[0].isupper() else paras[0]
             paras = paras[1:]
         cur_ch["paragraphs"] = paras
         if not cur_ch.get("title"):
@@ -394,15 +408,15 @@ def parse_beyond_good_and_evil() -> tuple[dict, list]:
 
 def parse_zarathustra() -> tuple[dict, list]:
     lines = load_raw("thus_spoke_zarathustra.txt")
-    # Body: "PA RT O N E" or "PART ONE" near prologue
+    # Body opens at the spaced "PA RT O N E" header (front Contents is skipped).
     start = 0
     for i, l in enumerate(lines):
-        compact = re.sub(r"\s+", "", l.upper())
-        if compact in ("PARTONE", "PARTONE.") or "ZARATHUSTRA’SPROLOGUE" in compact.replace("'", "’"):
-            if i > 900:
-                start = i
-                break
-        if l.strip() in ("PART ONE", "Part One") and i > 900:
+        if i > 900 and re.sub(r"[^A-Z]", "", l.upper()) in (
+            "PARTONE",
+            "PARTTWO",
+            "PARTTHREE",
+            "PARTFOUR",
+        ):
             start = i
             break
     # Fallback: When Zarathustra was thirty (second occurrence)
@@ -418,10 +432,49 @@ def parse_zarathustra() -> tuple[dict, list]:
                 body = body[:i]
                 break
 
-    PART_RE = re.compile(r"^\s*P\s*A\s*R\s*T\s+(O\s*N\s*E|T\s*W\s*O|T\s*H\s*R\s*E\s*E|F\s*O\s*U\s*R|ONE|TWO|THREE|FOUR)\s*$", re.I)
-    PART_RE2 = re.compile(r"^\s*Part\s+(One|Two|Three|Four)\s*$", re.I)
-    # Discourse titles: "Of the Three Metamorphoses" style - title case lines short
-    # Also "Zarathustra's Prologue"
+    # Gazetteer from the front Contents (canonical display titles).
+    GAZETTEER = [
+        "Of the Three Metamorphoses", "Of the Chairs of Virtue", "Of the Afterworldsmen",
+        "Of the Despisers of the Body", "Of Joys and Passions", "Of the Pale Criminal",
+        "Of Reading and Writing", "Of the Tree on the Mountainside", "Of the Preachers of Death",
+        "Of War and Warriors", "Of the New Idol", "Of the Flies of the Market-place",
+        "Of Chastity", "Of the Friend", "Of the Thousand and One Goals",
+        "Of Love of One\u2019s Neighbour", "Of the Way of the Creator", "Of Old and Young Women",
+        "Of the Adder\u2019s Bite", "Of Marriage and Children", "Of Voluntary Death",
+        "Of the Bestowing Virtue",
+        "The Child with the Mirror", "On the Blissful Islands", "Of the Compassionate",
+        "Of the Priests", "Of the Virtuous", "Of the Rabble", "Of the Tarantulas",
+        "Of the Famous Philosophers", "The Night Song", "The Dance Song", "The Funeral Song",
+        "Of Self-Overcoming", "Of the Sublime Men", "Of the Land of Culture",
+        "Of Immaculate Perception", "Of Scholars", "Of Poets", "Of Great Events",
+        "The Prophet", "Of Redemption", "Of Manly Prudence", "The Stillest Hour",
+        "The Wanderer", "Of the Vision and the Riddle", "Of Involuntary Bliss",
+        "Before Sunrise", "Of the Virtue that Makes Small", "On the Mount of Olives",
+        "Of Passing By", "Of the Apostates", "The Home-Coming", "Of the Three Evil Things",
+        "Of the Spirit of Gravity", "Of Old and New Law-Tables", "The Convalescent",
+        "Of the Great Longing", "The Second Dance Song",
+        "The Seven Seals (or: The Song of Yes and Amen)",
+        "The Honey Offering", "The Cry of Distress", "Conversation with the Kings",
+        "The Leech", "The Sorcerer", "Retired from Service", "The Ugliest Man",
+        "The Voluntary Beggar", "The Shadow", "At Noontide", "The Greeting",
+        "The Last Supper", "Of the Higher Man", "The Song of Melancholy", "Of Science",
+        "Among the Daughters of the Desert", "The Awakening", "The Ass Festival",
+        "The Intoxicated Song", "The Sign",
+    ]
+
+    def _norm(s: str) -> str:
+        s = s.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+        return re.sub(r"\s+", " ", s).strip().lower()
+
+    GAZ_MAP = {_norm(t): t for t in GAZETTEER}
+    PROLOGUE_NORM = _norm("Zarathustra\u2019s Prologue")
+    DISCOURSES_NORM = _norm("Zarathustra\u2019s Discourses")
+    GAZ_MAP[PROLOGUE_NORM] = "Zarathustra\u2019s Prologue"
+
+    ZAR_EPIGRAPH_RE = re.compile(r"^\s*ZARATHUSTRA\s*:", re.I)
+    POEM_ENUM_RE = re.compile(
+        r"^(One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve)!$", re.I
+    )
 
     parts = []
     cur_part = None
@@ -446,20 +499,6 @@ def parse_zarathustra() -> tuple[dict, list]:
             parts.append(cur_part)
             cur_part = None
 
-    def is_discourse_title(s: str) -> bool:
-        if not s or len(s) > 70:
-            return False
-        if s.startswith("Of ") or s.startswith("On ") or s.startswith("The ") or s.startswith("Zarathustra"):
-            if re.search(r"[.!?]$", s):
-                return False
-            # not a normal sentence mid-para
-            words = s.split()
-            if 2 <= len(words) <= 12:
-                return True
-        if s in ("Zarathustra’s Prologue", "Zarathustra's Prologue"):
-            return True
-        return False
-
     part_map = {
         "ONE": ("I", "Part One"),
         "TWO": ("II", "Part Two"),
@@ -469,52 +508,51 @@ def parse_zarathustra() -> tuple[dict, list]:
 
     for line in body:
         s = line.strip()
-        s_norm = re.sub(r"\s+", " ", s)
-        compact = re.sub(r"\s+", "", s.upper())
-        m = PART_RE.match(s) or PART_RE2.match(s) or (re.match(r"^PART\s+(ONE|TWO|THREE|FOUR)$", s, re.I))
-        if compact.startswith("PARTONE") or compact.startswith("PARTTWO") or compact.startswith("PARTTHREE") or compact.startswith("PARTFOUR"):
-            fin_part()
-            key = compact.replace("PART", "").replace(".", "")
-            # normalize spaced ONE
-            key = re.sub(r"[^A-Z]", "", key)
-            if key.startswith("ONE"):
-                key = "ONE"
-            elif key.startswith("TWO"):
-                key = "TWO"
-            elif key.startswith("THREE"):
-                key = "THREE"
-            elif key.startswith("FOUR"):
-                key = "FOUR"
-            rom, name = part_map.get(key, ("?", key))
-            cur_part = {"roman": rom, "name": name, "subtitle": name, "chapters": []}
+        if not s:
+            if cur_ch is not None:
+                buf.append(line)
             continue
-        if m:
+        # Drop bare page/prologue-section numbers, the R.J.H. signature,
+        # ZARATHUSTRA: epigraph lines, and One!/Two!.. poem enumerations.
+        if re.fullmatch(r"\d{1,4}", s):
+            continue
+        if s == "R.J.H.":
+            continue
+        if ZAR_EPIGRAPH_RE.match(line):
+            continue
+        if POEM_ENUM_RE.match(s):
+            continue
+        # Spaced part headers: "PA RT O N E" .. "PA RT F O U R".
+        pkey = re.sub(r"[^A-Z]", "", s.upper())
+        if pkey in ("PARTONE", "PARTTWO", "PARTTHREE", "PARTFOUR"):
             fin_part()
-            raw = re.sub(r"\s+", "", m.group(1).upper())
-            rom, name = part_map.get(raw, ("?", raw))
+            rom, name = part_map[pkey[len("PART"):]]
             cur_part = {"roman": rom, "name": name, "subtitle": name, "chapters": []}
             continue
         if cur_part is None:
-            # create part one implicitly
-            cur_part = {"roman": "I", "name": "Part One", "subtitle": "Part One", "chapters": []}
-        if is_discourse_title(s_norm) and not s_norm[0].isdigit():
+            continue
+        indent = len(line) - len(line.lstrip(" "))
+        key = _norm(s)
+        # "Zarathustra's Discourses" is a section divider, not a chapter.
+        if key == DISCOURSES_NORM:
             fin_ch()
+            continue
+        # Centered gazetteer titles open chapters.
+        if indent >= 10 and key in GAZ_MAP:
+            fin_ch()
+            title = GAZ_MAP[key]
             cur_ch = {
-                "number_label": s_norm,
+                "number_label": title,
                 "roman": str(len(cur_part["chapters"]) + 1),
-                "title": s_norm,
+                "title": title,
                 "paragraphs": [],
             }
             buf = []
             continue
         if cur_ch is None:
-            cur_ch = {
-                "number_label": "Opening",
-                "roman": "1",
-                "title": "Zarathustra’s Prologue",
-                "paragraphs": [],
-            }
-            buf = []
+            # Epigraph/prologue-number lines before the first discourse
+            # title belong to no chapter: drop them.
+            continue
         buf.append(line)
     fin_part()
 
@@ -523,20 +561,20 @@ def parse_zarathustra() -> tuple[dict, list]:
         "author": "Friedrich Nietzsche",
         "dedication": "",
         "tagline": "A Book for Everyone and No One",
-        "year": "1883–1885",
+        "year": "1883\u20131885",
         "theme": "zarathustra",
         "accent": "#e8a838",
-        "blurb": "The prophet descends from the mountain — with laughter, lightning, and the overman.",
+        "blurb": "The prophet descends from the mountain \u2014 with laughter, lightning, and the overman.",
     }
     return meta, parts
 
 
 def parse_twilight() -> tuple[dict, list]:
     lines = load_raw("_oceanofpdf_com_twilight_of_the_idols___.txt")
-    # Body starts at MAXIMS AND BARBS
+    # Body starts at FOREWORD (its own chapter titled 'Foreword')
     start = 0
     for i, l in enumerate(lines):
-        if "MAXIMS AND BARBS" in l.upper() or "MAXIMS AND ARROWS" in l.upper():
+        if i > 500 and l.strip().rstrip("*").strip().upper() == "FOREWORD":
             start = i
             break
     body = lines[start:]
@@ -558,17 +596,57 @@ def parse_twilight() -> tuple[dict, list]:
             break
     body = body[:end]
 
+    # Join wrapped two-line caps headers before matching.
+    joined: list[str] = []
+    skip_next = False
+    for j, ln in enumerate(body):
+        if skip_next:
+            skip_next = False
+            continue
+        cu = ln.strip().rstrip("*").strip().upper()
+        nxt = body[j + 1].strip().rstrip("*").strip() if j + 1 < len(body) else ""
+        nu = nxt.upper()
+        if (
+            cu.startswith("HOW THE")
+            and "REAL WORLD" in cu
+            and nu.startswith("BECAME")
+        ):
+            merged = ln.strip() + " " + nxt.strip()
+            merged = re.sub(r"\bAFABLE\b", "A FABLE", merged, flags=re.I)
+            joined.append(merged)
+            skip_next = True
+            continue
+        if cu.startswith("RECONNAISSANCE RAIDS") and nu.startswith("UNTIMELY"):
+            joined.append(ln.strip() + " " + nxt.strip())
+            skip_next = True
+            continue
+        joined.append(ln)
+    body = joined
+
+    def clean_title(raw: str) -> str:
+        t = raw.replace("*", "").strip()
+        t = re.sub(r"\bAFABLE\b", "A FABLE", t, flags=re.I)
+        return t
+
     # Section headers: ALL CAPS short lines, often with *
     SECTION_RE = re.compile(
-        r"^(MAXIMS AND BARBS|MAXIMS AND ARROWS|THE PROBLEM OF SOCRATES|"
+        r"^(FOREWORD|MAXIMS AND BARBS|MAXIMS AND ARROWS|THE PROBLEM OF SOCRATES|"
         r"‘REASON’ IN PHILOSOPHY|REASON IN PHILOSOPHY|"
-        r"HOW THE[‘'\" ]*REAL WORLD[‘'\" ]* AT LAST BECAME A FABLE|"
+        r"HOW THE[‘'\" ]*REAL WORLD[‘'\" ]*(AT LAST|FINALLY) BECAME A FABLE|"
         r"MORALITY AS ANTI-NATURE|THE FOUR GREAT ERRORS|"
         r"THE[‘'\" ]*IMPROVERS[‘'\" ]* OF MANKIND|WHAT THE GERMANS LACK|"
+        r"RECONNAISSANCE RAIDS OF AN UNTIMELY MAN|"
         r"SKIRMISHES OF AN UNTIMELY MAN|WHAT I OWE THE ANCIENTS|"
         r"THE HAMMER SPEAKS).*$",
         re.I,
     )
+
+    CANON = {
+        "FOREWORD": "Foreword",
+        "HOW THE REAL WORLD FINALLY BECAME A FABLE": "How the Real World Finally Became a Fable",
+        "HOW THE REAL WORLD AT LAST BECAME A FABLE": "How the Real World Finally Became a Fable",
+        "RECONNAISSANCE RAIDS OF AN UNTIMELY MAN": "Reconnaissance Raids of an Untimely Man",
+    }
 
     parts = [{"roman": "I", "name": "Twilight", "subtitle": "How to Philosophize with a Hammer", "chapters": []}]
     cur_ch = None
@@ -586,14 +664,15 @@ def parse_twilight() -> tuple[dict, list]:
         buf = []
 
     for line in body:
-        s = line.strip().rstrip("*").strip()
-        su = s.upper()
+        s = clean_title(line.strip())
+        su = re.sub(r"[‘’'\"*,]", "", s).upper()
+        su = re.sub(r"\s+", " ", su).strip()
         # detect section headers
         is_header = False
         title = s
         if SECTION_RE.match(su) or SECTION_RE.match(s):
             is_header = True
-            title = s.rstrip("*").strip()
+            title = clean_title(s)
         elif (
             s.isupper()
             and 8 < len(s) < 70
@@ -605,6 +684,7 @@ def parse_twilight() -> tuple[dict, list]:
             if any(
                 k in su
                 for k in (
+                    "FOREWORD",
                     "MAXIMS",
                     "SOCRATES",
                     "REASON",
@@ -613,19 +693,22 @@ def parse_twilight() -> tuple[dict, list]:
                     "ERRORS",
                     "IMPROVERS",
                     "GERMANS",
+                    "RECONNAISSANCE",
+                    "RAIDS",
+                    "UNTIMELY",
                     "SKIRMISHES",
                     "ANCIENTS",
                     "HAMMER",
                 )
             ):
                 is_header = True
-                title = s.rstrip("*").strip().title()
-                if s.isupper():
-                    title = s.rstrip("*").strip().title()
+                title = clean_title(s).title()
 
         if is_header:
             fin_ch()
-            t = title if not title.isupper() else title.title()
+            key = re.sub(r"[‘’'\"*,]", "", title).upper()
+            key = re.sub(r"\s+", " ", key).strip()
+            t = CANON.get(key, title if not title.isupper() else title.title())
             cur_ch = {
                 "number_label": t,
                 "roman": str(len(parts[0]["chapters"]) + 1),
@@ -669,7 +752,7 @@ def parse_will_to_power() -> tuple[dict, list]:
     body = lines[pref:]
     # End before glossary/notes/index at end
     for i, l in enumerate(body):
-        if i > 500 and re.match(r"^\s*(Notes|Index|Bibliography)\s*$", l):
+        if i > 500 and re.match(r"^\s*(Notes|Index|Bibliography|Note on the Text and Translation)\s*$", l):
             body = body[:i]
             break
 
@@ -681,6 +764,8 @@ def parse_will_to_power() -> tuple[dict, list]:
     cur_ch = None
     buf = []
 
+    pending_part: str | None = None  # most recent "Part N. Title" header text
+
     def fin_ch():
         nonlocal cur_ch, buf
         if cur_ch is None:
@@ -688,7 +773,7 @@ def parse_will_to_power() -> tuple[dict, list]:
             return
         paras = reflow(buf)
         cur_ch["paragraphs"] = paras
-        if cur_part:
+        if cur_part and paras:
             cur_part["chapters"].append(cur_ch)
         cur_ch = None
         buf = []
@@ -723,25 +808,31 @@ def parse_will_to_power() -> tuple[dict, list]:
             continue
         m = PART_RE.match(s)
         if m and cur_part is not None:
+            # Part headers ("Part 1. Nihilism") are navigation, not chapters:
+            # close any open chapter and remember the Part title for the next section.
             fin_ch()
-            cur_ch = {
-                "number_label": f"Part {m.group(1)}",
-                "roman": m.group(1),
-                "title": m.group(2).strip(),
-                "paragraphs": [],
-            }
+            pending_part = (m.group(1), m.group(2).strip())
             buf = []
             continue
         # numbered sections like "1. Nihilism as..."
         m2 = re.match(r"^(\d+)\.\s+([A-Z].{5,80})$", s)
         if m2 and cur_part is not None and len(s) < 100:
             fin_ch()
-            cur_ch = {
-                "number_label": m2.group(1),
-                "roman": m2.group(1),
-                "title": m2.group(2).strip(),
-                "paragraphs": [],
-            }
+            if pending_part:
+                cur_ch = {
+                    "number_label": f"Part {pending_part[0]} · {m2.group(1)}",
+                    "roman": m2.group(1),
+                    "title": f"{pending_part[1]} — {m2.group(2).strip()}",
+                    "paragraphs": [],
+                }
+                pending_part = None
+            else:
+                cur_ch = {
+                    "number_label": m2.group(1),
+                    "roman": m2.group(1),
+                    "title": m2.group(2).strip(),
+                    "paragraphs": [],
+                }
             buf = []
             continue
         if cur_ch is None and cur_part is not None:
@@ -755,7 +846,6 @@ def parse_will_to_power() -> tuple[dict, list]:
         if cur_ch is not None:
             buf.append(line)
     fin_part()
-
     meta = {
         "title": "The Will to Power",
         "author": "Friedrich Nietzsche",
@@ -813,15 +903,128 @@ class _HtmlBlocks(HTMLParser):
             self._buf.append(data)
 
 
+def _parse_gay_science_from_cache() -> tuple[dict, list]:
+    """Fallback when the EPUB is absent: split the cached plain-text extract
+    (raw_extract/gay_science_cambridge_epub.txt) into aphorism-level chapters.
+    Cache format: '=== <Section> ===' headers with blank-line-separated blocks;
+    each aphorism/poem starts on its own line matching ^N. <text>."""
+    cache = RAW / "gay_science_cambridge_epub.txt"
+    if not cache.exists():
+        raise FileNotFoundError(
+            "Gay Science EPUB not found (expected Nietzsche_ The Gay Science*.epub) "
+            "and no fallback cache at raw_extract/gay_science_cambridge_epub.txt"
+        )
+    text = cache.read_text(encoding="utf-8", errors="replace")
+    chunks = re.split(r"^=== (.+?) ===\s*$", text, flags=re.M)
+    bodies: dict[str, list[str]] = {}
+    for i in range(1, len(chunks), 2):
+        bodies[chunks[i].strip()] = chunks[i + 1].splitlines()
+
+    start_re = re.compile(r"^(\d+)\.\s+(.+)$")
+
+    def dedupe(chapters: list[dict]) -> None:
+        seen: dict[str, int] = {}
+        for ch in chapters:
+            seen[ch["title"]] = seen.get(ch["title"], 0) + 1
+            if seen[ch["title"]] > 1:
+                ch["title"] = f"{ch['title']} ({seen[ch['title']]})"
+
+    def aphorism_title(num: str, rest: str) -> str:
+        head = " ".join(rest.split()[:8])
+        dash = head.find(" – ")
+        if dash != -1:
+            head = head[:dash]
+        else:
+            dot = head.find(".")
+            if dot != -1:
+                head = head[: dot + 1]
+        if len(head) > 60:
+            head = head[:60].rstrip()
+        return f"{num}. {head}"
+
+    def split_numbered(lines: list[str], title_fn) -> list[dict]:
+        idx = [k for k, ln in enumerate(lines) if start_re.match(ln.strip())]
+        chapters: list[dict] = []
+        seen_nums: dict[str, int] = {}
+        for j, k in enumerate(idx):
+            m = start_re.match(lines[k].strip())
+            assert m is not None
+            num = m.group(1)
+            rest = m.group(2).strip()
+            seen_nums[num] = seen_nums.get(num, 0) + 1
+            # The Prelude numbers two poems '41.'; label the second '41a'.
+            tag = f"{num}a" if seen_nums[num] > 1 else num
+            end = idx[j + 1] if j + 1 < len(idx) else len(lines)
+            extra = [ln.strip() for ln in lines[k + 1 : end] if ln.strip()]
+            paras = [lines[k].strip(), *extra] if extra else [lines[k].strip()]
+            chapters.append(
+                {
+                    "number_label": f"§ {tag}",
+                    "roman": tag,
+                    "title": title_fn(tag, rest),
+                    "paragraphs": paras,
+                }
+            )
+        dedupe(chapters)
+        return chapters
+
+    def single(header: str, title: str) -> list[dict]:
+        paras = [ln.strip() for ln in bodies[header] if ln.strip()]
+        return [
+            {
+                "number_label": title,
+                "roman": "1",
+                "title": title,
+                "paragraphs": paras,
+            }
+        ]
+
+    spec = [
+        ("I", "Preface", "Preface to the Second Edition",
+         single("Preface to the Second Edition", "Preface to the Second Edition")),
+        ("II", "Prelude", "Joke, Cunning, and Revenge",
+         split_numbered(
+             bodies["Joke, Cunning, and Revenge: Prelude in German Rhymes"],
+             lambda tag, rest: f"{tag}. {rest}",
+         )),
+        ("III", "Book One", "Book One",
+         split_numbered(bodies["Book One"], aphorism_title)),
+        ("IV", "Book Two", "Book Two",
+         split_numbered(bodies["Book Two"], aphorism_title)),
+        ("V", "Book Three", "Book Three",
+         split_numbered(bodies["Book Three"], aphorism_title)),
+        ("VI", "Book Four", "Book Four: St Januarius",
+         split_numbered(bodies["Book Four: St Januarius"], aphorism_title)),
+        ("VII", "Book Five", "Book Five: We Fearless Ones",
+         split_numbered(bodies["Book Five: We Fearless Ones"], aphorism_title)),
+        ("VIII", "Appendix", "Songs of Prince Vogelfrei",
+         single("Appendix: Songs of Prince Vogelfrei",
+                "Appendix: Songs of Prince Vogelfrei")),
+    ]
+    parts = [
+        {"roman": rom, "name": name, "subtitle": sub, "chapters": chs}
+        for rom, name, sub, chs in spec
+    ]
+    meta = {
+        "title": "The Gay Science",
+        "author": "Friedrich Nietzsche",
+        "dedication": "",
+        "tagline": "With a Prelude in Rhymes and an Appendix of Songs",
+        "year": "1882 / 1887",
+        "theme": "gay-science",
+        "accent": "#38bdf8",
+        "blurb": "Laughter, style, and the death of God — science as a joyful, dangerous art.",
+        "source": "Cambridge Texts in the History of Philosophy (EPUB)",
+    }
+    return meta, parts
+
 def parse_gay_science() -> tuple[dict, list]:
     """Cambridge Texts EPUB (preferred) — not the scanned PDF."""
     epubs = list(ROOT.glob("Nietzsche_ The Gay Science*.epub")) + list(
         ROOT.glob("*Gay*Science*.epub")
     )
     if not epubs:
-        raise FileNotFoundError(
-            "Gay Science EPUB not found (expected Nietzsche_ The Gay Science*.epub)"
-        )
+        return _parse_gay_science_from_cache()
     epub_path = epubs[0]
 
     def is_footnote(text: str) -> bool:
@@ -988,12 +1191,50 @@ def parse_being_and_time() -> tuple[dict, list]:
             break
 
     SECTION_RE = re.compile(r"^§\s*(\d+)\.?\s*(.*)$")
+    OCR_RE = re.compile(r"^§\s*(IT|17)\b\s*(.*)$")
     DIV_RE = re.compile(r"^(DIVISION\s+(ONE|TWO)|INTRODUCTION|PART\s+ONE)\s*$", re.I)
+    # Title ends mid-phrase (preposition/article/comma/adjective/participle) ->
+    # the next line(s) are wrapped title continuations. Requires whitespace
+    # before the word so hyphenated ends like "Being-in" do not match.
+    TRUNC_END = re.compile(
+        r"(,|\s(for|an|in|of|and|the|a|to|as|on|at|with|from|toward|towards"
+        r"|possible|primordial|vulgar|determining|interpreting))\s*$", re.I)
+    CONT_SHORT = 35
+
+    PART_INFO = [
+        ("Introduction", "The Question of Being"),
+        ("Division One", "The Preparatory Fundamental Analysis of Dasein"),
+        ("Division Two", "Dasein and Temporality"),
+    ]
 
     parts = []
+    by_idx = {}
     cur_part = None
     cur_ch = None
     buf = []
+
+    def target_part(num: int):
+        idx = 0 if num <= 8 else (1 if num <= 44 else 2)
+        if idx not in by_idx:
+            name, sub = PART_INFO[idx]
+            by_idx[idx] = {
+                "roman": str(idx + 1),
+                "name": name,
+                "subtitle": sub,
+                "chapters": [],
+            }
+            parts.append(by_idx[idx])
+        return by_idx[idx]
+
+    def scrub_title(t: str) -> str:
+        t = re.sub(r"\s+\d+\s*$", "", t)
+        t = re.sub(r"[\d*±†]+\s*$", "", t)
+        # footnote markers attached mid-title (e.g. "Foundations* of ...")
+        t = re.sub(r"([A-Za-z)])[\*±†]+", r"\1", t)
+        t = t.replace("Seood", "Selfhood")
+        t = t.replace("Hemeneutical", "Hermeneutical")
+        t = t.replace("hemeneutical", "hermeneutical")
+        return t.strip()
 
     def fin_ch():
         nonlocal cur_ch, buf
@@ -1007,51 +1248,67 @@ def parse_being_and_time() -> tuple[dict, list]:
         cur_ch = None
         buf = []
 
-    def fin_part():
-        nonlocal cur_part
-        fin_ch()
-        if cur_part and cur_part["chapters"]:
-            parts.append(cur_part)
-        cur_part = None
-
-    for line in body:
+    i = 0
+    n = len(body)
+    while i < n:
+        line = body[i]
         s = line.strip()
-        m = DIV_RE.match(s)
-        if m:
-            fin_part()
-            title = s.title()
-            cur_part = {
-                "roman": str(len(parts) + 1),
-                "name": title,
-                "subtitle": title,
-                "chapters": [],
-            }
+        if DIV_RE.match(s):
+            i += 1
             continue
         m = SECTION_RE.match(s)
+        num = None
+        title = None
         if m:
-            if cur_part is None:
-                cur_part = {
-                    "roman": "1",
-                    "name": "Introduction",
-                    "subtitle": "The Question of Being",
-                    "chapters": [],
-                }
-            fin_ch()
             num = m.group(1)
             title = m.group(2).strip() or f"§ {num}"
-            # clean trailing page numbers
-            title = re.sub(r"\s+\d+\s*$", "", title)
+        else:
+            om = OCR_RE.match(s)
+            if om and "Reference [Verweisung] and Signs [Zeichen]" in om.group(2):
+                num = "17"
+                title = "Reference and Signs"
+        if num is not None:
+            # join up to 2 wrapped title continuation lines
+            j = i + 1
+            for _ in range(2):
+                k = j
+                while k < n and not body[k].strip():
+                    k += 1
+                if k >= n:
+                    break
+                cand = body[k].strip()
+                if SECTION_RE.match(cand) or OCR_RE.match(cand) or DIV_RE.match(cand):
+                    break
+                if (
+                    TRUNC_END.search(title)
+                    or cand[:1].islower()
+                    or (len(cand) <= CONT_SHORT and re.match(r"^[A-Z\"'(]", cand)
+                        and not cand.endswith("."))
+                ):
+                    cand = re.sub(r"\s+\d+\s*$", "", cand)
+                    title = (title + " " + cand).strip()
+                    j = k + 1
+                else:
+                    break
+            i = j
+            title = scrub_title(title)
+            if not title:
+                title = f"§ {num}"
+            fin_ch()
+            cur_part = target_part(int(num))
             cur_ch = {
                 "number_label": f"§ {num}",
                 "roman": num,
-                "title": title if title else f"§ {num}",
+                "title": title,
                 "paragraphs": [],
             }
             buf = []
             continue
         if cur_ch is not None:
             buf.append(line)
-    fin_part()
+        i += 1
+    fin_ch()
+    parts = [p for p in parts if p["chapters"]]
 
     meta = {
         "title": "Being and Time",
