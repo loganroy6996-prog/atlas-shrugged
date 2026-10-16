@@ -1,0 +1,155 @@
+/* ══════════════════════════════════════════════════════════════════════
+   UNLAYERED READING-PREFERENCE OVERRIDE · ReaderLead · 2026-10-16
+   ──────────────────────────────────────────────────────────────────────
+   WHY: Contract §8 puts every shared rule in `@layer shared`, and §8 then
+   states unlayered book CSS always wins. Books legitimately shipped
+   unlayered prose pins — max-width (Atlas, IJ p1c32, Being and Time,
+   Will to Power, Sovereign, Gentle Introduction …), font-size/line-height
+   (Atlas, Zarathustra, Sovereign, Will to Power), and font tokens scoped
+   on `body`/`#app` (IJ, Sovereign). Those pins defeated the layered §8/A.3
+   composition, so the reading controls went dead: IJ p1c32 was pinned at
+   592px in narrow/standard/wide (the reported "Wide broken"), Atlas p1c3
+   at 656/764/764 with a pinned 20.48px, BT p2c19 pinned at 544px, and
+   Serif/Sans could not change IJ or Open Letter prose.
+
+   This section restores the reader's preference as the winner WITHOUT
+   !important. It is unlayered (so book CSS cannot outrank it by layer
+   order) and every selector carries TWO ids (#reader or #reader-body plus
+   #chapter-text), i.e. (2,5,3) — above the strongest book pin measured in
+   books/** (max (1,4,3): Sovereign's `#app`-scoped attribute chains; the
+   widest id-scoped chapter pin is IJ p1c32 at (1,2,2); Atlas (0,2,2)).
+   No book stylesheet declares !important on max-width / font-size /
+   line-height / font-family, so plain specificity is sufficient.
+   It is appended AFTER the layered A.3 block, which stays untouched.
+
+   SEMANTICS (unchanged from §8 / A.3 — the ruling's verified 1440w matrix
+   is "34rem book → 544/544/1024; 38rem chapter → 608/608/1024"):
+     narrow    min(authored, 40rem)   books already narrower keep theirs
+     standard  min(authored, 65ch)    authored measure + readability cap
+     wide      max(authored, 64rem)   floor: never narrower than 64rem
+   `authored` = var(--chapter-max, var(--reader-max, 52rem)) resolved ON the
+   node, so per-chapter relief tokens (BT B7) and `#app`-scoped book tokens
+   (Sovereign) both compose. A book whose authored measure is already ≤ 40rem
+   therefore reads the same at narrow and standard BY CONTRACT, and expands
+   to ≥ 64rem at wide.
+
+   SCOPE GUARD — only body prose paragraphs and the body/nav containers are
+   selected. Paragraphs carrying a BOOK class (pull quotes, inserts, poems,
+   stamps, fleurons, marginalia, archive rows) keep their authored
+   typography, and openers (`:first-of-type`) keep their authored
+   size/leading/typeface — they still compose with the measure pref.
+   Epigraphs (`blockquote.chapter-epigraph`), headings, `.reader-note`
+   structure, chapter art and the settings chrome are never selected.
+
+   CONTAINER SLACK: the `#reader-body` box uses `<measure> + 7rem` rather than
+   A.3's `+ 5rem`. Books that reserve a margin rail (Being and Time ≥1100px:
+   3rem side padding; BT intro-world up to 3rem) would otherwise be squeezed
+   below the authoritative prose measure at wide. The extra 2rem only widens
+   the centring box and the marginalia gutter — never the prose column.
+
+   NEW ADDITIVE TOKEN: `--reader-sans` — the prose sans for the Typeface →
+   Sans preference. Books MAY override it under `:root`. It is deliberately
+   NOT `--font-sans`: in several themes that token is a book DISPLAY face
+   (IJ "Archivo Black", Atlas "Barlow Condensed", WtP "IBM Plex Mono") and
+   would be unreadable as body prose.
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* Prose sans for Typeface → Sans (see note above). */
+:root {
+  --reader-sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ── 1 · Line length (measure pref) ──────────────────────────────────── */
+
+/* narrow */
+html:root[data-measure="narrow"] body #reader #reader-body,
+html:root[data-measure="narrow"] body #reader .reader-body {
+  max-width: calc(min(max(var(--chapter-max, var(--reader-max, 52rem)), var(--reader-max, 52rem)), 40rem) + 7rem);
+}
+html:root[data-measure="narrow"] body #reader #chapter-nav {
+  max-width: min(var(--reader-max, 52rem), 40rem);
+}
+html:root[data-measure="narrow"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop),
+html:root[data-measure="narrow"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop) {
+  --reader-measure: min(var(--chapter-max, var(--reader-max, 52rem)), 40rem);
+  max-width: var(--reader-measure);
+}
+
+/* standard — authored measure (65ch readability cap applies, A.3) */
+html:root[data-measure="standard"] body #reader #reader-body,
+html:root[data-measure="standard"] body #reader .reader-body {
+  max-width: calc(max(var(--chapter-max, var(--reader-max, 52rem)), var(--reader-max, 52rem)) + 7rem);
+}
+html:root[data-measure="standard"] body #reader #chapter-nav {
+  max-width: min(var(--reader-max, 52rem), 65ch);
+}
+html:root[data-measure="standard"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop),
+html:root[data-measure="standard"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop) {
+  --reader-measure: min(var(--chapter-max, var(--reader-max, 52rem)), 65ch);
+  max-width: var(--reader-measure);
+}
+
+/* wide — floor of 64rem, so the user's wide choice can never be pinned */
+html:root[data-measure="wide"] body #reader #reader-body,
+html:root[data-measure="wide"] body #reader .reader-body {
+  max-width: calc(max(var(--chapter-max, var(--reader-max, 52rem)), var(--reader-max, 52rem), 64rem) + 7rem);
+}
+html:root[data-measure="wide"] body #reader #chapter-nav {
+  max-width: max(var(--reader-max, 52rem), 64rem);
+}
+html:root[data-measure="wide"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop),
+html:root[data-measure="wide"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop) {
+  --reader-measure: max(var(--chapter-max, var(--reader-max, 52rem)), 64rem);
+  max-width: var(--reader-measure);
+}
+
+/* ── 2 · Text size (size pref) ───────────────────────────────────────── */
+
+html:root[data-size="sm"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-size="sm"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  font-size: var(--text-size);
+}
+html:root[data-size="md"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-size="md"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  font-size: var(--text-size);
+}
+html:root[data-size="lg"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-size="lg"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  font-size: var(--text-size);
+}
+html:root[data-size="xl"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-size="xl"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  font-size: var(--text-size);
+}
+
+/* ── 3 · Leading (leading pref) ──────────────────────────────────────── */
+
+html:root[data-leading="tight"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-leading="tight"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  line-height: var(--leading);
+}
+html:root[data-leading="normal"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-leading="normal"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  line-height: var(--leading);
+}
+html:root[data-leading="loose"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-leading="loose"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  line-height: var(--leading);
+}
+
+/* ── 4 · Typeface (font pref) ────────────────────────────────────────── */
+
+/* Serif: prose follows the book's body serif token even where a theme pins
+   font-family on the .chapter-text container (Atlas `--as-body`,
+   Zarathustra, Gay Science, Open Letter, WtP …). */
+html:root body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  font-family: var(--font-serif);
+}
+
+/* Sans: one shared reading sans (--reader-sans), which also beats the
+   themes that re-point `--font-serif` on `body`/`#app` (IJ, Sovereign). */
+html:root[data-font="sans"] body #reader #chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type),
+html:root[data-font="sans"] body #reader #reader-body .chapter-text > p:is(:not([class]), .reader-note, .reader-note-sub, .reader-nb, .reader-fragnum, .no-drop):not(:first-of-type) {
+  font-family: var(--reader-sans);
+}

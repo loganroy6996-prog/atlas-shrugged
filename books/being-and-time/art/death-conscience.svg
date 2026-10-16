@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Being and Time · cohort 5 "death-conscience" (p3c1–p3c16, §§45–60)
+  Night-path plates in the Clearing grammar: ink grounds, mist linework,
+  straw shaft / rationed ember light logic. One <symbol> per chapter on a
+  shared 1200×760 grid; reader.js clones the named symbol into #chapter-art
+  (v1.1 {src, symbol}), so every symbol is SELF-CONTAINED (local grain
+  filter, no cross-symbol <use>). Root <defs> keep the canonical grain +
+  hatch for whole-file renders and the frag library. Flat ink fills only;
+  no decorative gradients. Ember appears ONLY in scene-p3c3…scene-p3c9.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Death and conscience night-path plates">
+  <defs>
+    <filter id="dc-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <pattern id="dc-hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#9DB89A" stroke-width="2" opacity="0.5" class="dc-ink"/>
+    </pattern>
+  </defs>
+
+  <!-- ============ §45 p3c1 · nested hermeneutic rings, beam 34° ============ -->
+  <symbol id="scene-p3c1" viewBox="0 0 1200 760" aria-label="Three nested unclosed rings on the night path">
+    <filter id="dcg1" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="52" y="0" width="44" height="760"/>
+      <rect x="132" y="0" width="30" height="760"/>
+      <rect x="1018" y="0" width="52" height="760"/>
+      <rect x="1106" y="0" width="34" height="760"/>
+    </g>
+    <polygon points="952,0 1014,0 786,760 706,760" fill="#E9D488" opacity="0.22" class="dc-shaft"/>
+    <polygon points="976,0 1002,0 824,760 790,760" fill="#E9D488" opacity="0.4" class="dc-shaft"/>
+    <g fill="none" stroke-linecap="round">
+      <circle cx="470" cy="400" r="238" stroke="#9DB89A" stroke-width="4" class="dc-ash"
+        stroke-dasharray="1470 26" stroke-dashoffset="-1380"/>
+      <circle cx="470" cy="400" r="172" stroke="#9DB89A" stroke-width="4" class="dc-ash"
+        stroke-dasharray="1020 61" stroke-dashoffset="-960"/>
+      <circle cx="470" cy="400" r="106" stroke="#C9D4C3" stroke-width="6" class="dc-line"
+        stroke-dasharray="540 126" stroke-dashoffset="-500"/>
+    </g>
+    <g fill="#C9D4C3" class="dc-solid">
+      <rect x="560" y="278" width="14" height="5" transform="rotate(38 567 280)"/>
+      <rect x="588" y="252" width="10" height="4" transform="rotate(38 593 254)"/>
+    </g>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg1)" opacity="0.55" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §46 p3c2 · widest-open ring + drifting chips ============ -->
+  <symbol id="scene-p3c2" viewBox="0 0 1200 760" aria-label="A ring gapped by a quarter arc, chips drifting ahead">
+    <filter id="dcg2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="70" y="0" width="40" height="760"/>
+      <rect x="146" y="0" width="26" height="760"/>
+    </g>
+    <polygon points="900,0 948,0 700,760 640,760" fill="#E9D488" opacity="0.16" class="dc-shaft"/>
+    <circle cx="430" cy="396" r="220" fill="none" stroke="#9DB89A" stroke-width="5" class="dc-ash"
+      stroke-dasharray="1037 345" stroke-linecap="round"/>
+    <g fill="#C9D4C3" class="dc-solid">
+      <rect x="585" y="180" width="18" height="6" transform="rotate(-32 594 183)"/>
+      <rect x="648" y="142" width="14" height="5" transform="rotate(-32 655 144)"/>
+      <rect x="706" y="180" width="11" height="4" transform="rotate(-32 711 182)"/>
+      <rect x="622" y="96" width="9" height="4" transform="rotate(-32 626 98)"/>
+      <rect x="752" y="120" width="13" height="5" transform="rotate(-32 758 122)"/>
+      <rect x="560" y="230" width="8" height="4" transform="rotate(-32 564 232)"/>
+      <rect x="806" y="176" width="9" height="4" transform="rotate(-32 810 178)"/>
+      <rect x="684" y="70" width="7" height="3" transform="rotate(-32 687 71)"/>
+    </g>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg2)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §47 p3c3 · mourner frieze + void + gouge cut ============ -->
+  <symbol id="scene-p3c3" viewBox="0 0 1200 760" aria-label="Two mourners flanking an empty place split by a hard cut">
+    <filter id="dcg3" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="40" y="0" width="36" height="760"/>
+      <rect x="1124" y="0" width="36" height="760"/>
+    </g>
+    <polygon points="880,0 924,0 690,760 636,760" fill="#E9D488" opacity="0.15" class="dc-shaft"/>
+    <g fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.7" class="dc-ash">
+      <line x1="540" y1="200" x2="560" y2="230"/><line x1="640" y1="200" x2="620" y2="230"/>
+      <line x1="532" y1="260" x2="552" y2="290"/><line x1="648" y1="260" x2="628" y2="290"/>
+      <line x1="540" y1="470" x2="560" y2="500"/><line x1="640" y1="470" x2="620" y2="500"/>
+    </g>
+    <line x1="600" y1="170" x2="600" y2="530" stroke="#C9D4C3" stroke-width="6" class="dc-line"/>
+    <g transform="translate(360 0)">
+      <circle cx="0" cy="470" r="26" fill="#C9D4C3" class="dc-solid"/>
+      <path d="M -52 640 Q -46 520 -18 492 L 18 492 Q 46 520 52 640 Z" fill="#0D120B" stroke="#C9D4C3" stroke-width="4" class="dc-fig1"/>
+      <path d="M 18 540 Q 60 520 96 470" fill="none" stroke="#C9D4C3" stroke-width="4" class="dc-line"/>
+    </g>
+    <g transform="translate(840 0)">
+      <circle cx="0" cy="470" r="30" fill="none" stroke="#C9D4C3" stroke-width="7" class="dc-line"/>
+      <path d="M -58 640 Q -50 510 -20 484 L 20 484 Q 50 510 58 640 Z" fill="#0D120B" stroke="#C9D4C3" stroke-width="7" class="dc-fig2"/>
+    </g>
+    <rect x="300" y="648" width="600" height="4" fill="#9DB89A" opacity="0.5" class="dc-ashfill"/>
+    <rect x="0" y="706" width="1200" height="8" fill="#C96F3B" class="dc-ember"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg3)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §48 p3c4 · struck triptych: coins / moon / fruit ============ -->
+  <symbol id="scene-p3c4" viewBox="0 0 1200 760" aria-label="Three rejected metaphors struck by one diagonal cut">
+    <filter id="dcg4" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="none" stroke="#9DB89A" stroke-width="2" opacity="0.8" class="dc-ash">
+      <rect x="150" y="90" width="250" height="540"/>
+      <rect x="475" y="90" width="250" height="540"/>
+      <rect x="800" y="90" width="250" height="540"/>
+    </g>
+    <g fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.85" class="dc-ash">
+      <circle cx="225" cy="300" r="34"/><circle cx="305" cy="300" r="34"/>
+      <circle cx="265" cy="390" r="34"/>
+      <line x1="190" y1="470" x2="340" y2="470"/><line x1="190" y1="500" x2="340" y2="500"/>
+      <line x1="190" y1="530" x2="300" y2="530"/>
+    </g>
+    <g>
+      <circle cx="600" cy="330" r="90" fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.85" class="dc-ash"/>
+      <circle cx="640" cy="300" r="78" fill="#060805" class="dc-cut"/>
+      <line x1="520" y1="500" x2="680" y2="500" stroke="#9DB89A" stroke-width="3" opacity="0.7" class="dc-ash"/>
+    </g>
+    <g fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.85" class="dc-ash">
+      <path d="M 830 260 Q 925 230 1020 260" />
+      <line x1="925" y1="244" x2="925" y2="280"/>
+      <circle cx="925" cy="360" r="62"/>
+      <path d="M 905 320 Q 925 300 945 320" />
+    </g>
+    <line x1="110" y1="130" x2="1090" y2="630" stroke="#C9D4C3" stroke-width="7" class="dc-line"/>
+    <text x="600" y="682" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic"
+      font-size="30" letter-spacing="2" fill="#C9D4C3" class="dc-carve">old enough to die right away</text>
+    <rect x="0" y="706" width="1200" height="8" fill="#C96F3B" class="dc-ember"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg4)" opacity="0.45" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §49 p3c5 · five bars + threading path ============ -->
+  <symbol id="scene-p3c5" viewBox="0 0 1200 760" aria-label="Five exclusion bars threaded by one unbroken path">
+    <filter id="dcg5" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#232B1F" class="dc-bar">
+      <rect x="238" y="40" width="26" height="660"/>
+      <rect x="408" y="40" width="26" height="660"/>
+      <rect x="578" y="40" width="26" height="660"/>
+      <rect x="748" y="40" width="26" height="660"/>
+      <rect x="918" y="40" width="26" height="660"/>
+    </g>
+    <path d="M 150 60 C 330 140 300 260 480 330 C 660 400 560 500 760 570 C 900 620 950 660 1050 700"
+      fill="none" stroke="#C9D4C3" stroke-width="5" stroke-linecap="round" class="dc-line"/>
+    <circle cx="150" cy="60" r="7" fill="#C9D4C3" class="dc-solid"/>
+    <rect x="0" y="706" width="1200" height="8" fill="#C96F3B" class="dc-ember"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg5)" opacity="0.45" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §50 p3c6 · storm + convergence arcs ============ -->
+  <symbol id="scene-p3c6" viewBox="0 0 1200 760" aria-label="A thunderstorm below, three arcs converging above it">
+    <filter id="dcg6" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="60" y="0" width="34" height="420"/>
+      <rect x="1106" y="0" width="34" height="420"/>
+    </g>
+    <g fill="none" stroke="#C9D4C3" stroke-width="5" class="dc-line">
+      <path d="M 330 330 Q 470 180 600 118"/>
+      <path d="M 600 350 L 600 118"/>
+      <path d="M 870 330 Q 730 180 600 118"/>
+    </g>
+    <circle cx="600" cy="112" r="12" fill="none" stroke="#C9D4C3" stroke-width="5" class="dc-line"/>
+    <g fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.8" class="dc-ash">
+      <path d="M 120 470 Q 220 430 320 462 Q 420 494 520 460 Q 620 428 720 462 Q 820 494 920 460 Q 1000 438 1080 462"/>
+      <path d="M 120 470 L 120 640 M 1080 462 L 1080 640"/>
+      <polyline points="430,470 400,540 430,540 395,620" />
+      <polyline points="800,462 775,520 800,520 770,600" />
+    </g>
+    <g fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.8" class="dc-ash">
+      <path d="M 520 640 L 560 600 L 640 600 L 680 640"/>
+      <line x1="520" y1="640" x2="680" y2="640"/>
+    </g>
+    <rect x="0" y="706" width="1200" height="8" fill="#C96F3B" class="dc-ember"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg6)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §51 p3c7 · they-crowd + hollow + ribbon rule ============ -->
+  <symbol id="scene-p3c7" viewBox="0 0 1200 760" aria-label="A leveled crowd with one hollow face under a flattening rule">
+    <filter id="dcg7" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.75" class="dc-ash">
+      <path d="M 72 130 h 56 M 86 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 212 130 h 56 M 226 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 352 130 h 56 M 366 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 492 130 h 56 M 506 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 632 130 h 56 M 646 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 772 130 h 56 M 786 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 912 130 h 56 M 926 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 1052 130 h 56 M 1066 130 a 14 14 0 1 1 28 0"/>
+      <path d="M 72 300 h 56 M 86 300 a 14 14 0 1 1 28 0"/>
+      <path d="M 212 300 h 56 M 226 300 a 14 14 0 1 1 28 0"/>
+      <path d="M 352 300 h 56 M 366 300 a 14 14 0 1 1 28 0"/>
+      <path d="M 492 300 h 56 M 506 300 a 14 14 0 1 1 28 0"/>
+      <path d="M 772 300 h 56 M 786 300 a 14 14 0 1 1 28 0"/>
+      <path d="M 912 300 h 56 M 926 300 a 14 14 0 1 1 28 0"/>
+      <path d="M 1052 300 h 56 M 1066 300 a 14 14 0 1 1 28 0"/>
+      <path d="M 72 470 h 56 M 86 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 212 470 h 56 M 226 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 352 470 h 56 M 366 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 492 470 h 56 M 506 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 632 470 h 56 M 646 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 772 470 h 56 M 786 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 912 470 h 56 M 926 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 1052 470 h 56 M 1066 470 a 14 14 0 1 1 28 0"/>
+      <path d="M 72 620 h 56 M 86 620 a 14 14 0 1 1 28 0"/>
+      <path d="M 212 620 h 56 M 226 620 a 14 14 0 1 1 28 0"/>
+      <path d="M 352 620 h 56 M 366 620 a 14 14 0 1 1 28 0"/>
+      <path d="M 492 620 h 56 M 506 620 a 14 14 0 1 1 28 0"/>
+      <path d="M 632 620 h 56 M 646 620 a 14 14 0 1 1 28 0"/>
+      <path d="M 772 620 h 56 M 786 620 a 14 14 0 1 1 28 0"/>
+      <path d="M 912 620 h 56 M 926 620 a 14 14 0 1 1 28 0"/>
+      <path d="M 1052 620 h 56 M 1066 620 a 14 14 0 1 1 28 0"/>
+    </g>
+    <rect x="620" y="272" width="80" height="60" fill="#060805" class="dc-cut"/>
+    <circle cx="660" cy="302" r="22" fill="none" stroke="#C9D4C3" stroke-width="5" class="dc-line"/>
+    <rect x="0" y="386" width="1200" height="12" fill="#C9D4C3" class="dc-solid"/>
+    <rect x="0" y="706" width="1200" height="8" fill="#C96F3B" class="dc-ember"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg7)" opacity="0.4" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §52 p3c8 · certain / indefinite double ring ============ -->
+  <symbol id="scene-p3c8" viewBox="0 0 1200 760" aria-label="A crisp ring and a dissolving ring sharing one gap">
+    <filter id="dcg8" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="56" y="0" width="38" height="760"/>
+      <rect x="1106" y="0" width="38" height="760"/>
+    </g>
+    <circle cx="560" cy="390" r="252" fill="none" stroke="#9DB89A" stroke-width="3" class="dc-ash"
+      stroke-dasharray="60 26 14 30 90 200" stroke-dashoffset="-300" opacity="0.9" stroke-linecap="round"/>
+    <g fill="#9DB89A" opacity="0.8" class="dc-ashfill">
+      <circle cx="770" cy="200" r="4"/><circle cx="800" cy="176" r="3"/>
+      <circle cx="826" cy="210" r="4"/><circle cx="852" cy="180" r="3"/>
+      <circle cx="880" cy="212" r="4"/><circle cx="742" cy="168" r="3"/>
+    </g>
+    <circle cx="560" cy="390" r="196" fill="none" stroke="#C9D4C3" stroke-width="6" class="dc-line"
+      stroke-dasharray="1150 82" stroke-dashoffset="-1090" stroke-linecap="round"/>
+    <path d="M 700 252 A 150 150 0 0 1 780 300" fill="none" stroke="#C9D4C3" stroke-width="2" opacity="0.6" class="dc-line"/>
+    <circle cx="782" cy="302" r="11" fill="#C9D4C3" class="dc-solid"/>
+    <rect x="0" y="706" width="1200" height="8" fill="#C96F3B" class="dc-ember"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg8)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §53 p3c9 · CLIMAX: single vertical beam, no trunks ============ -->
+  <symbol id="scene-p3c9" viewBox="0 0 1200 760" aria-label="A single vertical shaft of light on night ground">
+    <filter id="dcg9" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.91  0 0 0 0 0.83  0 0 0 0 0.53  0 0 0 0.08 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="dc9-beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0"/>
+      <stop offset="0.30" stop-color="#E9D488" stop-opacity="0.30"/>
+      <stop offset="0.50" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.70" stop-color="#E9D488" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dc9-pool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.04"/>
+    </linearGradient>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <polygon points="520,-20 680,-20 660,780 540,780" fill="url(#dc9-beam)" class="dc-shaft"/>
+    <polygon points="578,-20 622,-20 614,780 586,780" fill="#E9D488" opacity="0.55" class="dc-shaft"/>
+    <ellipse cx="600" cy="660" rx="150" ry="34" fill="url(#dc9-pool)" class="dc-shaft"/>
+    <g fill="#E9D488" class="dc-shaft">
+      <circle cx="592" cy="150" r="2.2" opacity="0.6"/>
+      <circle cx="610" cy="260" r="1.7" opacity="0.45"/>
+      <circle cx="596" cy="380" r="2.5" opacity="0.65"/>
+      <circle cx="606" cy="490" r="1.8" opacity="0.5"/>
+      <circle cx="594" cy="580" r="2.3" opacity="0.6"/>
+      <circle cx="612" cy="90" r="1.5" opacity="0.4"/>
+    </g>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg9)" opacity="0.6" class="dc-grainrect"/>
+</symbol>
+
+  <!-- ============ §54 p3c10 · seal tablet + erased rings ============ -->
+  <symbol id="scene-p3c10" viewBox="0 0 1200 760" aria-label="A seal ring pressed into a dark tablet among erased rings">
+    <filter id="dcg10" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="48" y="0" width="40" height="760"/>
+      <rect x="1112" y="0" width="40" height="760"/>
+    </g>
+    <polygon points="470,0 500,0 440,760 404,760" fill="#E9D488" opacity="0.3" class="dc-shaft"/>
+    <polygon points="700,0 730,0 760,760 724,760" fill="#E9D488" opacity="0.3" class="dc-shaft"/>
+    <g fill="none" stroke="#9DB89A" stroke-width="3" opacity="0.4" stroke-dasharray="40 24" class="dc-ash">
+      <circle cx="600" cy="380" r="280"/>
+      <circle cx="600" cy="380" r="330"/>
+      <circle cx="600" cy="380" r="225" stroke-dasharray="24 30"/>
+    </g>
+    <rect x="420" y="180" width="360" height="400" fill="#0D120B" stroke="#C9D4C3" stroke-width="5" class="dc-tablet"/>
+    <circle cx="600" cy="380" r="112" fill="none" stroke="#C9D4C3" stroke-width="7" class="dc-line"
+      stroke-dasharray="640 64" stroke-dashoffset="-600" stroke-linecap="round"/>
+    <g stroke="#C9D4C3" stroke-width="4" stroke-linecap="round" class="dc-line">
+      <line x1="600" y1="240" x2="600" y2="262"/>
+      <line x1="480" y1="380" x2="502" y2="380"/>
+      <line x1="698" y1="380" x2="720" y2="380"/>
+      <line x1="600" y1="498" x2="600" y2="520"/>
+    </g>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg10)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §55 p3c11 · babble field + clean cut ============ -->
+  <symbol id="scene-p3c11" viewBox="0 0 1200 760" aria-label="Chatter marks broken by one clean vertical cut">
+    <filter id="dcg11" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g stroke="#9DB89A" stroke-width="3" opacity="0.7" stroke-linecap="round" class="dc-ash">
+      <path d="M 80 100 l 26 26 M 106 100 l -26 26"/><path d="M 190 150 l 26 26 M 216 150 l -26 26"/>
+      <path d="M 300 90 l 26 26 M 326 90 l -26 26"/><path d="M 420 140 l 26 26 M 446 140 l -26 26"/>
+      <path d="M 530 100 l 26 26 M 556 100 l -26 26"/><path d="M 640 150 l 26 26 M 666 150 l -26 26"/>
+      <path d="M 130 240 l 26 26 M 156 240 l -26 26"/><path d="M 250 290 l 26 26 M 276 290 l -26 26"/>
+      <path d="M 370 240 l 26 26 M 396 240 l -26 26"/><path d="M 490 300 l 26 26 M 516 300 l -26 26"/>
+      <path d="M 600 250 l 26 26 M 626 250 l -26 26"/><path d="M 700 300 l 26 26 M 726 300 l -26 26"/>
+      <path d="M 90 400 l 26 26 M 116 400 l -26 26"/><path d="M 210 460 l 26 26 M 236 460 l -26 26"/>
+      <path d="M 330 410 l 26 26 M 356 410 l -26 26"/><path d="M 450 470 l 26 26 M 476 470 l -26 26"/>
+      <path d="M 570 420 l 26 26 M 596 420 l -26 26"/><path d="M 690 470 l 26 26 M 716 470 l -26 26"/>
+      <path d="M 140 570 l 26 26 M 166 570 l -26 26"/><path d="M 270 620 l 26 26 M 296 620 l -26 26"/>
+      <path d="M 400 570 l 26 26 M 426 570 l -26 26"/><path d="M 520 630 l 26 26 M 546 630 l -26 26"/>
+      <path d="M 640 580 l 26 26 M 666 580 l -26 26"/><path d="M 740 630 l 26 26 M 766 630 l -26 26"/>
+      <path d="M 60 520 l 26 26 M 86 520 l -26 26"/><path d="M 350 180 l 26 26 M 376 180 l -26 26"/>
+      <path d="M 560 180 l 26 26 M 586 180 l -26 26"/><path d="M 200 360 l 26 26 M 226 360 l -26 26"/>
+      <path d="M 480 540 l 26 26 M 506 540 l -26 26"/><path d="M 120 660 l 26 26 M 146 660 l -26 26"/>
+    </g>
+    <g fill="none" stroke="#C9D4C3" stroke-width="4" class="dc-line">
+      <path d="M 800 320 Q 850 380 800 440"/>
+      <path d="M 824 340 Q 852 380 824 420"/>
+    </g>
+    <polygon points="880,0 902,0 902,760 866,760" fill="#E9D488" opacity="0.28" class="dc-shaft"/>
+    <rect x="906" y="0" width="12" height="760" fill="#C9D4C3" class="dc-solid"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg11)" opacity="0.45" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §56 p3c12 · NICHTS void (deliberate minimal plate) ============ -->
+  <symbol id="scene-p3c12" viewBox="0 0 1200 760" aria-label="The word NICHTS ringed by three broken arcs">
+    <filter id="dcg12" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.05 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <line x1="880" y1="0" x2="760" y2="300" stroke="#E9D488" stroke-width="2" opacity="0.5" class="dc-shaftline"/>
+    <line x1="960" y1="0" x2="800" y2="300" stroke="#E9D488" stroke-width="2" opacity="0.5" class="dc-shaftline"/>
+    <g fill="none" stroke="#C9D4C3" stroke-linecap="round" class="dc-line">
+      <path d="M 240 560 A 200 200 0 0 1 240 240" stroke-width="5"/>
+      <path d="M 160 620 A 280 280 0 0 1 160 180" stroke-width="4"/>
+      <path d="M 84 676 A 356 356 0 0 1 84 124" stroke-width="3"/>
+    </g>
+    <text x="330" y="470" font-family="Fraunces, Georgia, serif" font-weight="300"
+      font-size="150" letter-spacing="26" fill="#C9D4C3" class="dc-word">NICHTS</text>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg12)" opacity="0.4" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §57 p3c13 · tilted house + thin-wall arc ============ -->
+  <symbol id="scene-p3c13" viewBox="0 0 1200 760" aria-label="A tilted hut under a wide thin arc, cuts rising from the ridge">
+    <filter id="dcg13" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <polygon points="180,0 214,0 330,560 290,560" fill="#E9D488" opacity="0.25" class="dc-shaft"/>
+    <polygon points="986,0 1020,0 870,560 830,560" fill="#E9D488" opacity="0.25" class="dc-shaft"/>
+    <circle cx="600" cy="1050" r="700" fill="none" stroke="#C9D4C3" stroke-width="4" class="dc-line"/>
+    <line x1="180" y1="560" x2="1020" y2="560" stroke="#9DB89A" stroke-width="3" class="dc-ash"/>
+    <g transform="rotate(-4 540 470)">
+      <rect x="480" y="470" width="120" height="90" fill="#0D120B" stroke="#C9D4C3" stroke-width="5" class="dc-tablet"/>
+      <polygon points="465,470 540,415 615,470" fill="none" stroke="#C9D4C3" stroke-width="5" stroke-linejoin="round" class="dc-line"/>
+      <line x1="534" y1="560" x2="534" y2="515" stroke="#C9D4C3" stroke-width="4" class="dc-line"/>
+    </g>
+    <g stroke="#C9D4C3" stroke-width="4" stroke-linecap="round" class="dc-line">
+      <line x1="660" y1="560" x2="660" y2="500"/>
+      <line x1="690" y1="560" x2="694" y2="488"/>
+      <line x1="720" y1="560" x2="728" y2="496"/>
+      <line x1="630" y1="560" x2="626" y2="512"/>
+    </g>
+    <polyline points="648,560 668,576 654,592" fill="none" stroke="#9DB89A" stroke-width="3" class="dc-ash"/>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg13)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §58 p3c14 · abyss rings + fraying plumb-line ============ -->
+  <symbol id="scene-p3c14" viewBox="0 0 1200 760" aria-label="A plumb line fraying above a descending abyss of rings">
+    <filter id="dcg14" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="48" y="0" width="40" height="760"/>
+      <rect x="1112" y="0" width="40" height="760"/>
+    </g>
+    <polygon points="430,0 458,0 400,760 366,760" fill="#E9D488" opacity="0.22" class="dc-shaft"/>
+    <polygon points="742,0 770,0 834,760 800,760" fill="#E9D488" opacity="0.22" class="dc-shaft"/>
+    <g fill="none" stroke="#9DB89A" class="dc-ash">
+      <ellipse cx="600" cy="560" rx="270" ry="72" stroke-width="4"/>
+      <ellipse cx="600" cy="572" rx="205" ry="54" stroke-width="4"/>
+      <ellipse cx="600" cy="584" rx="145" ry="38" stroke-width="3"/>
+      <ellipse cx="600" cy="594" rx="90" ry="24" stroke-width="3"/>
+      <ellipse cx="600" cy="602" rx="42" ry="12" stroke-width="2" stroke-dasharray="10 8"/>
+    </g>
+    <line x1="600" y1="40" x2="600" y2="380" stroke="#C9D4C3" stroke-width="5" class="dc-line"/>
+    <g fill="none" stroke="#C9D4C3" stroke-linecap="round" class="dc-line">
+      <path d="M 600 380 Q 590 430 572 470" stroke-width="4"/>
+      <path d="M 600 380 Q 602 435 600 480" stroke-width="3"/>
+      <path d="M 600 380 Q 612 428 628 466" stroke-width="3" stroke-dasharray="14 10"/>
+    </g>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg14)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §59 p3c15 · ledger vs abyss split plate ============ -->
+  <symbol id="scene-p3c15" viewBox="0 0 1200 760" aria-label="A ruled ledger cracking apart against an unruled abyss">
+    <filter id="dcg15" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.83  0 0 0 0 0.76  0 0 0 0.06 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g stroke="#9DB89A" stroke-width="2" opacity="0.75" class="dc-ashgrid">
+      <line x1="120" y1="140" x2="120" y2="620"/><line x1="220" y1="140" x2="220" y2="620"/>
+      <line x1="320" y1="140" x2="320" y2="620"/><line x1="420" y1="140" x2="420" y2="620"/>
+      <line x1="520" y1="140" x2="520" y2="620"/>
+      <line x1="80" y1="200" x2="560" y2="200"/><line x1="80" y1="280" x2="560" y2="280"/>
+      <line x1="80" y1="360" x2="560" y2="360"/><line x1="80" y1="440" x2="560" y2="440"/>
+      <line x1="80" y1="520" x2="560" y2="520"/><line x1="80" y1="600" x2="560" y2="600"/>
+    </g>
+    <g fill="none" stroke="#C9D4C3" stroke-width="4" class="dc-line">
+      <line x1="320" y1="400" x2="320" y2="500"/>
+      <line x1="250" y1="425" x2="390" y2="425"/>
+      <path d="M 250 425 Q 250 470 272 470 Q 294 470 294 425"/>
+      <path d="M 346 425 Q 346 470 368 470 Q 390 470 390 425"/>
+    </g>
+    <g fill="none" stroke="#C9D4C3" stroke-width="4" stroke-linejoin="round" class="dc-line">
+      <polyline points="600,180 570,260 596,340 566,430"/>
+      <polyline points="600,400 576,470 600,540 578,620"/>
+      <polyline points="600,120 584,150 596,190"/>
+    </g>
+    <line x1="600" y1="0" x2="600" y2="760" stroke="#C9D4C3" stroke-width="4" class="dc-line"/>
+    <g fill="none" stroke="#9DB89A" class="dc-ash">
+      <ellipse cx="900" cy="480" rx="220" ry="120" stroke-width="4"/>
+      <ellipse cx="900" cy="500" rx="150" ry="80" stroke-width="3"/>
+      <ellipse cx="900" cy="518" rx="84" ry="44" stroke-width="3"/>
+      <ellipse cx="900" cy="532" rx="30" ry="16" stroke-width="2" stroke-dasharray="8 8"/>
+    </g>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg15)" opacity="0.45" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ §60 p3c16 · figure-in-gap clearing (horizontal, rejoined) ============ -->
+  <symbol id="scene-p3c16" viewBox="0 0 1200 760" aria-label="A standing figure completing the ring as horizontal light breaks">
+    <filter id="dcg16" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.91  0 0 0 0 0.83  0 0 0 0 0.53  0 0 0 0.07 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="0" width="1200" height="760" fill="#060805" class="dc-ground"/>
+    <g fill="#0D120B" class="dc-trunk">
+      <rect x="0" y="0" width="30" height="760"/>
+      <rect x="1170" y="0" width="30" height="760"/>
+    </g>
+    <rect x="0" y="170" width="1200" height="14" fill="#E9D488" opacity="0.45" class="dc-shaft"/>
+    <rect x="0" y="330" width="1200" height="8" fill="#E9D488" opacity="0.3" class="dc-shaft"/>
+    <rect x="0" y="470" width="1200" height="20" fill="#E9D488" opacity="0.6" class="dc-shaft"/>
+    <rect x="470" y="462" width="260" height="36" fill="#E9D488" opacity="0.85" class="dc-shaft"/>
+    <circle cx="600" cy="350" r="205" fill="none" stroke="#C9D4C3" stroke-width="7" class="dc-line"
+      stroke-dasharray="1180 110" stroke-dashoffset="-180" stroke-linecap="round"/>
+    <g>
+      <path d="M 566 640 L 574 470 L 592 442 L 608 442 L 626 470 L 634 640 Z" fill="#C9D4C3" class="dc-solid"/>
+      <circle cx="600" cy="420" r="19" fill="#C9D4C3" class="dc-solid"/>
+    </g>
+    <rect x="0" y="0" width="1200" height="760" filter="url(#dcg16)" opacity="0.5" class="dc-grainrect"/>
+  </symbol>
+
+  <!-- ============ TOC glyph fragments (120×120) ============ -->
+  <g id="frag-p3c1"><circle cx="60" cy="60" r="44" fill="none" stroke="#C9D4C3" stroke-width="6" stroke-dasharray="262 15" stroke-dashoffset="-250" class="dc-ink"/><circle cx="60" cy="60" r="28" fill="none" stroke="#C9D4C3" stroke-width="5" stroke-dasharray="150 26" stroke-dashoffset="-138" class="dc-ink"/><circle cx="60" cy="60" r="13" fill="none" stroke="#C9D4C3" stroke-width="4" stroke-dasharray="60 22" stroke-dashoffset="-50" class="dc-ink"/></g>
+  <g id="frag-p3c2"><circle cx="54" cy="62" r="40" fill="none" stroke="#C9D4C3" stroke-width="6" stroke-dasharray="188 64" stroke-linecap="round" class="dc-ink"/><g fill="#C9D4C3" class="dc-ink"><rect x="86" y="22" width="10" height="4" transform="rotate(-32 91 24)"/><rect x="100" y="36" width="8" height="3" transform="rotate(-32 104 37)"/></g></g>
+  <g id="frag-p3c3"><path d="M 28 100 Q 30 62 40 52 L 52 52 Q 62 62 64 100" fill="none" stroke="#C9D4C3" stroke-width="5" class="dc-ink"/><path d="M 58 100 Q 60 62 70 52 L 82 52 Q 92 62 94 100" fill="none" stroke="#C9D4C3" stroke-width="5" class="dc-ink"/><line x1="60" y1="14" x2="60" y2="44" stroke="#C9D4C3" stroke-width="5" class="dc-ink"/></g>
+  <g id="frag-p3c4"><rect x="14" y="24" width="28" height="72" fill="none" stroke="#9DB89A" stroke-width="3" class="dc-ink"/><rect x="46" y="24" width="28" height="72" fill="none" stroke="#9DB89A" stroke-width="3" class="dc-ink"/><rect x="78" y="24" width="28" height="72" fill="none" stroke="#9DB89A" stroke-width="3" class="dc-ink"/><line x1="8" y1="30" x2="112" y2="90" stroke="#C9D4C3" stroke-width="5" class="dc-ink"/></g>
+  <g id="frag-p3c5"><g stroke="#9DB89A" stroke-width="6" class="dc-ink"><line x1="24" y1="10" x2="24" y2="110"/><line x1="48" y1="10" x2="48" y2="110"/><line x1="72" y1="10" x2="72" y2="110"/><line x1="96" y1="10" x2="96" y2="110"/></g><path d="M 8 20 C 50 40 70 70 112 96" fill="none" stroke="#C9D4C3" stroke-width="5" stroke-linecap="round" class="dc-ink"/></g>
+  <g id="frag-p3c6"><path d="M 30 44 Q 46 24 60 20 M 60 46 L 60 20 M 90 44 Q 74 24 60 20" fill="none" stroke="#C9D4C3" stroke-width="5" stroke-linecap="round" class="dc-ink"/><polyline points="40,66 34,84 40,84 32,104" fill="none" stroke="#9DB89A" stroke-width="4"/><polyline points="84,66 78,84 84,84 76,104" fill="none" stroke="#9DB89A" stroke-width="4"/></g>
+  <g id="frag-p3c7"><g fill="#9DB89A" class="dc-ink"><circle cx="22" cy="30" r="7"/><circle cx="46" cy="30" r="7"/><circle cx="70" cy="30" r="7"/><circle cx="94" cy="30" r="7"/><circle cx="22" cy="58" r="7"/><circle cx="46" cy="58" r="7"/><circle cx="94" cy="58" r="7"/><circle cx="22" cy="86" r="7"/><circle cx="46" cy="86" r="7"/><circle cx="70" cy="86" r="7"/><circle cx="94" cy="86" r="7"/></g><circle cx="70" cy="58" r="9" fill="none" stroke="#C9D4C3" stroke-width="4" class="dc-ink"/><rect x="8" y="100" width="104" height="6" fill="#C9D4C3" class="dc-ink"/></g>
+  <g id="frag-p3c8"><circle cx="58" cy="60" r="34" fill="none" stroke="#C9D4C3" stroke-width="6" stroke-dasharray="200 14" stroke-dashoffset="-190" class="dc-ink"/><circle cx="58" cy="60" r="46" fill="none" stroke="#9DB89A" stroke-width="3" stroke-dasharray="20 14 8 20 40 60" opacity="0.9" class="dc-ink"/><circle cx="98" cy="34" r="6" fill="#C9D4C3" class="dc-ink"/></g>
+  <g id="frag-p3c9"><rect x="52" y="6" width="16" height="108" fill="#E9D488" class="dc-shaft"/><rect x="57" y="44" width="6" height="34" fill="#C96F3B" class="dc-embertick"/><circle cx="34" cy="60" r="7" fill="#C9D4C3" class="dc-ink"/><path d="M 32 68 L 26 100 M 32 68 L 40 100" stroke="#C9D4C3" stroke-width="5" stroke-linecap="round" class="dc-ink"/></g>
+  <g id="frag-p3c10"><rect x="28" y="28" width="64" height="64" fill="none" stroke="#C9D4C3" stroke-width="5" class="dc-ink"/><circle cx="60" cy="60" r="20" fill="none" stroke="#C9D4C3" stroke-width="6" stroke-dasharray="112 14" stroke-dashoffset="-104" class="dc-ink"/><circle cx="60" cy="60" r="34" fill="none" stroke="#9DB89A" stroke-width="2" stroke-dasharray="12 10" opacity="0.6" class="dc-ink"/></g>
+  <g id="frag-p3c11"><g stroke="#9DB89A" stroke-width="4" stroke-linecap="round" class="dc-ink"><path d="M 14 20 l 14 14 M 28 20 l -14 14"/><path d="M 48 34 l 14 14 M 62 34 l -14 14"/><path d="M 14 62 l 14 14 M 28 62 l -14 14"/><path d="M 48 76 l 14 14 M 62 76 l -14 14"/></g><rect x="88" y="8" width="8" height="104" fill="#C9D4C3" class="dc-ink"/></g>
+  <g id="frag-p3c12"><path d="M 34 92 A 44 44 0 0 1 34 28" fill="none" stroke="#C9D4C3" stroke-width="5" stroke-linecap="round" class="dc-ink"/><path d="M 18 104 A 62 62 0 0 1 18 16" fill="none" stroke="#C9D4C3" stroke-width="4" stroke-linecap="round" class="dc-ink"/><circle cx="72" cy="60" r="8" fill="#C9D4C3" class="dc-ink"/></g>
+  <g id="frag-p3c13"><g transform="rotate(-4 60 66)"><rect x="44" y="66" width="32" height="24" fill="none" stroke="#C9D4C3" stroke-width="5" class="dc-ink"/><polygon points="38,66 60,48 82,66" fill="none" stroke="#C9D4C3" stroke-width="5" stroke-linejoin="round" class="dc-ink"/></g><path d="M 8 40 A 120 120 0 0 1 112 40" fill="none" stroke="#C9D4C3" stroke-width="3" class="dc-ink"/><line x1="60" y1="104" x2="60" y2="94" stroke="#C9D4C3" stroke-width="4" class="dc-ink"/></g>
+  <g id="frag-p3c14"><ellipse cx="60" cy="78" rx="44" ry="18" fill="none" stroke="#9DB89A" stroke-width="4"/><ellipse cx="60" cy="84" rx="28" ry="11" fill="none" stroke="#9DB89A" stroke-width="3"/><line x1="60" y1="8" x2="60" y2="52" stroke="#C9D4C3" stroke-width="5" class="dc-ink"/><path d="M 60 52 L 54 68 M 60 52 L 66 68" stroke="#C9D4C3" stroke-width="3" class="dc-ink"/></g>
+  <g id="frag-p3c15"><line x1="60" y1="8" x2="60" y2="112" stroke="#C9D4C3" stroke-width="4" class="dc-ink"/><g stroke="#9DB89A" stroke-width="2" class="dc-ink"><line x1="16" y1="20" x2="52" y2="20"/><line x1="16" y1="36" x2="52" y2="36"/><line x1="16" y1="52" x2="52" y2="52"/><line x1="28" y1="12" x2="28" y2="100"/><line x1="42" y1="12" x2="42" y2="100"/></g><ellipse cx="88" cy="66" rx="20" ry="30" fill="none" stroke="#9DB89A" stroke-width="3"/><ellipse cx="88" cy="70" rx="10" ry="16" fill="none" stroke="#9DB89A" stroke-width="2"/></g>
+  <g id="frag-p3c16"><rect x="6" y="34" width="108" height="6" fill="#E9D488" opacity="0.6" class="dc-shaft"/><rect x="6" y="72" width="108" height="9" fill="#E9D488" opacity="0.8" class="dc-shaft"/><circle cx="60" cy="60" r="30" fill="none" stroke="#C9D4C3" stroke-width="6" stroke-dasharray="168 22" stroke-dashoffset="-30" class="dc-ink"/><path d="M 54 100 L 56 78 L 60 72 L 64 78 L 66 100 Z" fill="#C9D4C3" class="dc-ink"/></g>
+
+  <!-- ============ nav beam fragments ============ -->
+  <g id="frag-nav-back" aria-label="Calling back beam"><path d="M 112 20 Q 60 60 8 60" fill="none" stroke="#E9D488" stroke-width="6" stroke-linecap="round" class="dc-shaft"/><path d="M 112 100 Q 60 60 8 60" fill="none" stroke="#9DB89A" stroke-width="3" stroke-linecap="round" class="dc-ink"/></g>
+  <g id="frag-nav-forth" aria-label="Calling forth beam"><path d="M 8 20 Q 60 60 112 60" fill="none" stroke="#E9D488" stroke-width="6" stroke-linecap="round" class="dc-shaft"/><path d="M 8 100 Q 60 60 112 60" fill="none" stroke="#9DB89A" stroke-width="3" stroke-linecap="round" class="dc-ink"/></g>
+</svg>

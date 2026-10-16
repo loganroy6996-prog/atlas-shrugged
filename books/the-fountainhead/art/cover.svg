@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The Fountainhead · cover artwork (Direction A: THE FURNACE — ArtDirector APPROVED 2026-10-15). -->
+<!-- Original authored SVG: furnace-bar tower over a hearth line. viewBox 800×1000. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="fh-cover-title fh-cover-desc">
+  <title id="fh-cover-title">The Fountainhead — furnace tower</title>
+  <desc id="fh-cover-desc">A dark tower crossed by glowing orange furnace bars, rising from a hearth line.</desc>
+  <defs>
+    <linearGradient id="heat" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E4572E"/>
+      <stop offset="0.45" stop-color="#8C3A20"/>
+      <stop offset="0.8" stop-color="#33200F"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient>
+    <radialGradient id="hearth" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD9A0" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#E4572E" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="1000" fill="#17100B"/>
+  <!-- tower mass -->
+  <rect x="300" y="130" width="200" height="680" fill="#241610"/>
+  <rect x="300" y="130" width="200" height="680" fill="url(#heat)" opacity="0.6"/>
+  <!-- tower arrises: bone left, ember right -->
+  <rect x="300" y="130" width="10" height="680" fill="#F6EAD6" opacity="0.9"/>
+  <rect x="490" y="130" width="10" height="680" fill="#E4572E" opacity="0.85"/>
+  <!-- furnace bars -->
+  <g fill="#100B08">
+    <rect x="248" y="280" width="304" height="18"/>
+    <rect x="248" y="380" width="304" height="18"/>
+    <rect x="248" y="480" width="304" height="18"/>
+    <rect x="248" y="580" width="304" height="18"/>
+    <rect x="248" y="680" width="304" height="18"/>
+  </g>
+  <g fill="#E4572E">
+    <rect x="248" y="276" width="304" height="4"/>
+    <rect x="248" y="376" width="304" height="4"/>
+    <rect x="248" y="476" width="304" height="4"/>
+    <rect x="248" y="576" width="304" height="4"/>
+    <rect x="248" y="676" width="304" height="4"/>
+  </g>
+  <!-- spire -->
+  <rect x="394" y="40" width="12" height="90" fill="#F6EAD6"/>
+  <!-- hearth glow + hearth line -->
+  <ellipse cx="400" cy="830" rx="300" ry="110" fill="url(#hearth)"/>
+  <rect x="130" y="838" width="540" height="12" fill="#E4572E"/>
+  <rect x="130" y="850" width="540" height="4" fill="#F6EAD6" opacity="0.5"/>
+  <!-- datum ticks -->
+  <g fill="#7A6A58">
+    <rect x="130" y="862" width="4" height="18"/>
+    <rect x="342" y="862" width="4" height="18"/>
+    <rect x="554" y="862" width="4" height="18"/>
+    <rect x="666" y="862" width="4" height="18"/>
+  </g>
+</svg>

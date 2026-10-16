@@ -1,0 +1,107 @@
+/* Forty Ways — Cohort C (Part IV, Ways 21–30) reading treatments.
+   DIFFERENTIAL over theme.css §§2–7 shared bases: every rule below refines a
+   chapter+role context the shared base cannot know. Keyed to
+   body[data-chapter] / body[data-art] + p[data-fw]; unlayered (wins over
+   @layer shared). Zero nth-child content rules — facets.js stamps data-fw
+   from design/cohort-c.json. C4: vermilion/slate = plates/large display
+   only; ochre = large numerals/rules only; body text stays Bone. */
+
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .chapter-text > p:first-of-type {
+  font-style: italic;
+  color: var(--fw-faded);
+  max-width: 34rem;
+}
+
+/* Ledger heads: bone display caps with the plate's ochre tick repeated. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-head"] {
+  color: var(--fw-bone);
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-head"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.3em;
+  background: var(--fw-ochre);
+}
+
+/* Ledger rows: tabular rhythm; the Wilderness-years row is the ledger's joke. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-row"] {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.55em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-row"]:last-of-type {
+  border-bottom: 0;
+}
+
+/* Bullet rows keep their verbatim • (hanging indent only — no added tick). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="list-item"] {
+  text-indent: -1.5rem;
+}
+
+/* Clough verse [95–102]: centered stanza, tight leading, air around the block. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="verse"] {
+  text-align: center;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.15em;
+  line-height: 1.55;
+}
+
+/* Explainer prose (peerage [33–34], gov notes [104–108]) stays calm prose. */
+
+/* Sticky mini-index (facets.js injects nav.fw-index; theme ships the base).
+   Cohort extends: ledger typography + ochre index flags echoing the plate. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index {
+  font-family: var(--fw-display);
+  letter-spacing: 0.06em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index ol {
+  border-left: 0;
+  border-top: 2px solid var(--fw-ochre);
+  background: var(--bg-elevated);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index a::before {
+  content: "";
+  display: inline-block;
+  width: 0.9rem;
+  height: 2px;
+  margin-right: 0.5rem;
+  vertical-align: 0.25em;
+  background: var(--fw-ochre);
+  opacity: 0.7;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index a:hover::before,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index a:focus-visible::before {
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index {
+    float: none;
+    position: static;
+    width: auto;
+    margin: 0 0 1.5rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    border-top: 2px solid var(--fw-ochre);
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index li {
+    margin: 0;
+  }
+}
+
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index {
+    display: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-row"] {
+    border-bottom: 0;
+  }
+}

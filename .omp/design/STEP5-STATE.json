@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "remaining": [],
+  "not_run_axes": [
+    "Full exhaustive keyboard-walk persistence pass (bounded keyboard/settings/note/theme/reload persistence checks all observed PASS)",
+    "Per-chapter visual sweep of all 942 chapters (structural census + representative chapters + final gate cover the sample; Gay Science 448-row TOC / CSS seed chapters intentional and walked)",
+    "Sovereign plate-grid authored prose cap (documented authored limit; computed measure responds 640->1024)",
+    "favicon 404 (no favicon shipped, non-defect); homepage-search/backplate minor sub-axes, ?fail= retry hook, 411 replay count"
+  ],
+  "session_ids": {
+    "model": "opencode/glm-5.3-flash-free (reasoning max) - all roles, only provider opencode; no paid fallback used",
+    "producer": "ses_ebdf4e1c2ffec4zeR2Kz6jefo9",
+    "reader_lead": "ses_ebdf0b69fffeslFiCDWrTjhbck",
+    "reader_engineer": "ses_ebde04c84ffeKMAqYGIzjI0agO",
+    "ij_supervisor": "ses_ebdf073bfffenS6luAz42nsqvH",
+    "ij_cohort_d_designer": "ses_ebde4cd06ffeexO7H4jq1ht2mH",
+    "art_director": "ses_ebdf073b5ffeRsmFNTd6kinibH",
+    "final_validator": "ses_eb984b2ffffeTDoscdKcJBD6bX",
+    "aborted_root_checkpoints": {
+      "producer": "ses_ebfb6315fffeUAe39lsWKMEaSP",
+      "ij_supervisor": "ses_ebfb0564effed2JRkIlKFRgGcZ",
+      "art_director": "ses_ebfb009fcffeWwUBMG8tK9A53b",
+      "final_validator": "ses_ebfafbad2ffe7kRH305OPvISTu"
+    }
+  },
+  "evidence": [
+    ".omp/design/STEP5-FINAL.md",
+    ".omp/design/evidence/step5/final/FINAL-ACCEPTANCE-REPORT.md",
+    ".omp/design/evidence/step5/final/carries/probe.mjs",
+    ".omp/design/evidence/step5/reader-repair/REPORT-VALIDATE.md",
+    ".omp/design/evidence/step5/art-director-findings.md",
+    "books/infinite-jest/design/DESIGN-FINDINGS-D.md",
+    "books/infinite-jest/design/ACCEPTANCE-VERDICT.md",
+    "books/infinite-jest/design/COVERAGE.md",
+    "books/infinite-jest/design/INTEGRATION.md",
+    ".omp/design/evidence/step5/ij/ (d-review, b-repair, endmarks, theme-review, receipts, acceptance incl fa-repairs)",
+    ".omp/design/evidence/step5/validator/ (census-structural.json, census-refs.json, phase1-battery.json, phase1b-midprobe.json)",
+    ".omp/design/evidence/integration/wave3/",
+    ".omp/design/CURRENT-MODEL.md",
+    ".omp/design/STEP5-STATUS.md"
+  ],
+  "preview": "http://localhost:8000/ serving _site (md5-verified in sync)",
+  "updated_at": "2026-10-16T23:10:00.617119+00:00",
+  "runtime_note": "Agent/model service shut down, retry monitor stopped, persistent stop marker installed. Existing final code and reports preserved. Local preview remains available; six key source/build files hash-verified identical.",
+  "automation_status": "stopped",
+  "agent_execution_enabled": false,
+  "stopped_at_user_request": "2026-10-16T23:10:00.617119+00:00",
+  "stop_reason": "User requested final changes and stop to limit internet use. Final reviewer reports are retained; no more automated model calls or review loops.",
+  "acceptance_scope": "Bounded independent cross-book review and targeted repair acceptance; exhaustive every-chapter visual/keyboard sweeps were not performed. See not_run_axes.",
+  "local_handoff_verification": "/home/prateek/.omp/agent/launches/atlas-step5-20261015T155616Z/final-local-handoff-verification.json"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The Fountainhead · four part marks (Direction A: THE FURNACE — ArtDirector APPROVED 2026-10-15). -->
+<!-- Original authored SVG. Four 200×140 cells on umber Hearth backing (F2: structural elevations). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" role="img" aria-labelledby="fh-motifs-title">
+  <title id="fh-motifs-title">The Fountainhead — part marks</title>
+  <rect x="0" y="0" width="800" height="140" fill="#17100B"/>
+  <!-- I · KEATING — fluted pilasters ×4, going nowhere -->
+  <g id="mark-keating">
+    <rect x="0" y="0" width="200" height="140" fill="none"/>
+    <g stroke="#7A6A58" stroke-width="5">
+      <line x1="45" y1="128" x2="45" y2="34"/>
+      <line x1="82" y1="128" x2="82" y2="34"/>
+      <line x1="119" y1="128" x2="119" y2="34"/>
+      <line x1="156" y1="128" x2="156" y2="34"/>
+    </g>
+    <rect x="29" y="20" width="144" height="10" fill="#7A6A58"/>
+    <rect x="29" y="116" width="144" height="6" fill="#C8A06A" opacity="0.7"/>
+  </g>
+  <!-- II · TOOHEY — twin arches gathered on one spring line -->
+  <g id="mark-toohey">
+    <g fill="none" stroke="#7A6A58" stroke-width="5">
+      <path d="M220 128 A 40 40 0 0 1 300 128"/>
+      <path d="M300 128 A 40 40 0 0 1 380 128"/>
+    </g>
+    <line x1="220" y1="128" x2="380" y2="128" stroke="#C8A06A" stroke-width="3"/>
+    <circle cx="260" cy="128" r="5" fill="#C8A06A" opacity="0.8"/>
+    <circle cx="340" cy="128" r="5" fill="#C8A06A" opacity="0.8"/>
+  </g>
+  <!-- III · WYNAND — setback ziggurat lit from below -->
+  <g id="mark-wynand">
+    <g fill="#7A6A58">
+      <rect x="420" y="102" width="160" height="14"/>
+      <rect x="436" y="80" width="128" height="14"/>
+      <rect x="454" y="58" width="92" height="14"/>
+      <rect x="474" y="36" width="52" height="14"/>
+    </g>
+    <rect x="420" y="102" width="160" height="4" fill="#E4572E"/>
+    <rect x="420" y="120" width="160" height="4" fill="#C8A06A" opacity="0.6"/>
+  </g>
+  <!-- IV · ROARK — single white-hot cantilever past its support -->
+  <g id="mark-roark">
+    <rect x="612" y="50" width="176" height="18" fill="#F6EAD6"/>
+    <rect x="612" y="50" width="176" height="5" fill="#E4572E"/>
+    <rect x="748" y="68" width="14" height="60" fill="#7A6A58"/>
+    <line x1="612" y1="128" x2="788" y2="128" stroke="#C8A06A" stroke-width="3"/>
+  </g>
+</svg>

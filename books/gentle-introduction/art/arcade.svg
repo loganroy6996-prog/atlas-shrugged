@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="c6t c6d">
+<title id="c6t">Dose VI — The arcade: four nested arch orders recede to a gold vanishing bay; the left piers catch candlelight, the right fall dark</title>
+<desc id="c6d">Nave plate. The nave arcade in steep one-point perspective: four nested pointed-arch orders recede to a vanishing bay filled with flat candle-gold. One sanctuary candle burns on a stand at the near-left pier. The left piers of every order catch stepped candlelight; the right piers fall to unlit night — the same arcade under two lightings, winners lit and the disappeared dark, all stone whole.</desc>
+<defs>
+<linearGradient id="c6night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".6" stop-color="#100F0D"/><stop offset="1" stop-color="#171410"/>
+</linearGradient>
+<linearGradient id="c6stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="c6flame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<filter id="c6grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#c6grain)">
+<rect x="0" y="0" width="1600" height="900" fill="url(#c6night)"/>
+<!-- the vanishing bay: the hottest single point in the cohort so far -->
+<rect x="620" y="400" width="360" height="300" fill="#DFA050" opacity=".5"/>
+<rect x="680" y="470" width="240" height="230" fill="#DFA050" opacity=".35"/>
+<rect x="620" y="400" width="360" height="300" fill="none" stroke="#6B5B3E" stroke-width="2"/>
+<path d="M620,700 V520 Q620,450 800,432 Q980,450 980,520 V700" fill="none" stroke="#6B5B3E" stroke-width="2.5"/>
+<!-- ===== FOUR nested pointed-arch orders, far to near ===== -->
+<!-- Order 4 (far): 3px #6B5B3E — the lofty rostrum's own order -->
+<g>
+<path d="M560,900 V520 Q560,420 800,390 Q1040,420 1040,520 V900" fill="none" stroke="#6B5B3E" stroke-width="3"/>
+<rect x="526" y="520" width="68" height="380" fill="url(#c6stone)" stroke="#6B5B3E" stroke-width="2.5"/>
+<rect x="1006" y="520" width="68" height="380" fill="url(#c6stone)" stroke="#6B5B3E" stroke-width="2.5"/>
+<polygon points="560,520 560,900 526,900 526,520" fill="#DFA050" opacity=".14"/>
+<polygon points="1006,520 1006,900 1074,900 1074,520" fill="#060504" opacity=".55"/>
+<rect x="519" y="509" width="82" height="13" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+<rect x="999" y="509" width="82" height="13" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+</g>
+<!-- Order 3: 4px #4A4335 -->
+<g>
+<path d="M440,900 V480 Q440,350 800,310 Q1160,350 1160,480 V900" fill="none" stroke="#4A4335" stroke-width="4"/>
+<rect x="398" y="480" width="84" height="420" fill="url(#c6stone)" stroke="#4A4335" stroke-width="3"/>
+<rect x="1118" y="480" width="84" height="420" fill="url(#c6stone)" stroke="#4A4335" stroke-width="3"/>
+<polygon points="440,480 440,900 398,900 398,480" fill="#DFA050" opacity=".14"/>
+<polygon points="1118,480 1118,900 1202,900 1202,480" fill="#060504" opacity=".55"/>
+<rect x="390" y="468" width="100" height="14" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+<rect x="1110" y="468" width="100" height="14" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+</g>
+<!-- Order 2: 5px #4A4335 -->
+<g>
+<path d="M290,900 V450 Q290,300 800,250 Q1310,300 1310,450 V900" fill="none" stroke="#4A4335" stroke-width="5"/>
+<rect x="238" y="450" width="104" height="450" fill="url(#c6stone)" stroke="#4A4335" stroke-width="3.5"/>
+<rect x="1258" y="450" width="104" height="450" fill="url(#c6stone)" stroke="#4A4335" stroke-width="3.5"/>
+<polygon points="290,450 290,900 238,900 238,450" fill="#DFA050" opacity=".14"/>
+<polygon points="1258,450 1258,900 1362,900 1362,450" fill="#060504" opacity=".55"/>
+<rect x="228" y="436" width="124" height="16" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+<rect x="1248" y="436" width="124" height="16" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+</g>
+<!-- Order 1 (near): 6px #5A5142 — the miniscule stultified near orders -->
+<g>
+<path d="M120,900 V420 Q120,240 800,180 Q1480,240 1480,420 V900" fill="none" stroke="#5A5142" stroke-width="6"/>
+<rect x="60" y="420" width="120" height="480" fill="url(#c6stone)" stroke="#5A5142" stroke-width="4"/>
+<rect x="1420" y="420" width="120" height="480" fill="url(#c6stone)" stroke="#5A5142" stroke-width="4"/>
+<polygon points="120,420 120,900 60,900 60,420" fill="#DFA050" opacity=".14"/>
+<polygon points="1420,420 1420,900 1540,900 1540,420" fill="#060504" opacity=".55"/>
+<rect x="48" y="404" width="144" height="18" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+<rect x="1408" y="404" width="144" height="18" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+</g>
+<!-- foreground floor -->
+<rect x="0" y="700" width="1600" height="200" fill="#0B0A08" opacity=".85"/>
+<line x1="0" y1="700" x2="1600" y2="700" stroke="#2C2721" stroke-width="2"/>
+<!-- drawn light: two wedges run from the vanishing bay toward the viewer -->
+<path d="M620,700 H980 L1140,900 H460 Z" fill="#DFA050" opacity=".35"/>
+<path d="M680,700 H920 L1040,900 H560 Z" fill="#DFA050" opacity=".3"/>
+<!-- the candle on its stand at the near-left pier: the light's visible source -->
+<g>
+<rect x="244" y="760" width="48" height="10" fill="#2C2721" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="268" y1="760" x2="268" y2="690" stroke="#3A332A" stroke-width="4"/>
+<ellipse cx="268" cy="690" rx="12" ry="4" fill="#E8DCC2"/>
+<rect x="263" y="606" width="10" height="84" fill="#E8DCC2"/>
+<line x1="268" y1="606" x2="268" y2="600" stroke="#14120E" stroke-width="2"/>
+<path d="M268,600 C262.2,589.6 263.2,581.8 268,573.5 C272.8,581.8 273.8,589.6 268,600 Z" fill="url(#c6flame)"/>
+</g>
+<!-- (no in-SVG caption strip: the manifest caption covers it) -->
+</g>
+</svg>

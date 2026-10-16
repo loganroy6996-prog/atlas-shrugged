@@ -1,0 +1,415 @@
+/* ─────────────────────────────────────────────
+   Shared Ornament System (art.css) — ADDITIVE ONLY
+   Loaded via a single `@import` at line 1 of
+   css/library.css and shared/reader.css. Never edit
+   existing rules here; every selector below is either
+   a NEW utility class or a previously-unused
+   pseudo-element on an existing hook.
+
+   Contents:
+     0. Tokens      · --art-* (accent-driven)
+     1. Fleuron dividers (opt-in: .art-divider/.art-fleuron)
+     2. Home ornaments (eyebrow, rule glow, shelf, footer)
+     3. Card corner flourishes (.book-grid > li hooks)
+     4. Reader ornaments (meta fleuron, cover, drop-cap,
+        chapter-end mark)
+     5. Grain + vignette overlays (body::before/::after)
+     6. Motion + print guards
+────────────────────────────────────────────── */
+
+/* ── 0. Tokens ───────────────────────────── */
+:root {
+  --art-accent: var(--card-accent, var(--accent));
+  --art-fleuron: "❦";
+  --art-diamond: "◆";
+  --art-grain-opacity: 0.05;
+  --art-vignette: rgba(0, 0, 0, 0.16);
+  --art-glow: 0 0 18px rgba(212, 175, 100, 0.35);
+  --art-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  --art-diamonds: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cpath d='M14 4 L24 14 L14 24 L4 14 Z' fill='none' stroke='%23d4af64' stroke-opacity='0.5' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+/* ── 1. Fleuron dividers (opt-in) ──────────
+   Use: <div class="art-divider" aria-hidden="true"><span>❦</span></div>
+   The span glyph inherits per-theme accent automatically. */
+.art-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin: 2.5rem auto;
+  max-width: 32rem;
+  color: var(--art-accent);
+}
+
+.art-divider::before,
+.art-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  max-width: 10rem;
+}
+
+.art-divider::before {
+  background: linear-gradient(90deg, transparent, var(--art-accent));
+  opacity: 0.7;
+}
+
+.art-divider::after {
+  background: linear-gradient(90deg, var(--art-accent), transparent);
+  opacity: 0.7;
+}
+
+.art-divider span {
+  font-size: 1.15rem;
+  line-height: 1;
+  text-shadow: var(--art-glow);
+}
+
+/* Diamond variant: <div class="art-divider art-divider-diamond" …><span>◆</span></div> */
+.art-divider-diamond span {
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+}
+
+/* Inline fleuron, no rules. Empty element renders ❦ by itself. */
+.art-fleuron {
+  color: var(--art-accent);
+  text-shadow: var(--art-glow);
+}
+
+.art-fleuron:empty::before {
+  content: var(--art-fleuron);
+}
+
+/* Small diamond-dot texture strip (opt-in background). */
+.art-texture-diamonds {
+  background-image: var(--art-diamonds);
+  background-size: 28px 28px;
+  background-repeat: repeat;
+}
+
+/* ── 2. Home ornaments ─────────────────────
+   Hooks: .library-eyebrow / .library-rule span /
+   .shelf-title / .library-footer — none of these
+   carry ::before/::after in library.css, so these
+   pseudos are free. */
+
+/* Eyebrow leads with a fleuron: "❦ · A private collection" */
+.library-eyebrow::before {
+  content: var(--art-fleuron) " · ";
+  color: var(--art-accent);
+}
+
+/* The existing rule diamond gets a soft accent glow. */
+.library-rule span {
+  box-shadow: 0 0 10px var(--art-accent);
+}
+
+/* "Continue reading" shelf title earns a diamond chip. */
+.shelf-title::before {
+  content: var(--art-diamond);
+  margin-right: 0.55em;
+  font-size: 0.75em;
+  vertical-align: 0.12em;
+  color: var(--art-accent);
+}
+
+/* Footer colophon: ❦ ◆ ❦ above the small print. */
+.library-footer::before {
+  content: var(--art-fleuron) " " var(--art-diamond) " " var(--art-fleuron);
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--art-accent);
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  opacity: 0.7;
+}
+
+/* ── 3. Card corner flourishes ─────────────
+   .book-card owns ::before/::after already, so the
+   frame lives on the grid <li> wrapper (unstyled,
+   pseudo-free) and keys off per-card --card-accent. */
+.book-grid > li {
+  position: relative;
+}
+
+.book-grid > li::before,
+.book-grid > li::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.55;
+  transition: opacity 0.3s ease;
+}
+
+.book-grid > li::before {
+  top: 6px;
+  left: 6px;
+  border-top: 1px solid var(--card-accent, var(--accent));
+  border-left: 1px solid var(--card-accent, var(--accent));
+  border-top-left-radius: 6px;
+}
+
+.book-grid > li::after {
+  bottom: 6px;
+  right: 6px;
+  border-bottom: 1px solid var(--card-accent, var(--accent));
+  border-right: 1px solid var(--card-accent, var(--accent));
+  border-bottom-right-radius: 6px;
+}
+
+.book-grid > li:has(.book-card:hover)::before,
+.book-grid > li:has(.book-card:hover)::after {
+  opacity: 1;
+}
+
+.book-grid > li:has(.book-card:focus-visible)::before,
+.book-grid > li:has(.book-card:focus-visible)::after {
+  opacity: 1;
+}
+
+/* Opt-in frame for any other card-like block. */
+.art-corners {
+  position: relative;
+}
+
+.art-corners::before,
+.art-corners::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+.art-corners::before {
+  top: 6px;
+  left: 6px;
+  border-top: 1px solid var(--art-accent);
+  border-left: 1px solid var(--art-accent);
+  border-top-left-radius: 6px;
+}
+
+.art-corners::after {
+  bottom: 6px;
+  right: 6px;
+  border-bottom: 1px solid var(--art-accent);
+  border-right: 1px solid var(--art-accent);
+  border-bottom-right-radius: 6px;
+}
+
+/* ── 4. Reader ornaments ───────────────────
+   Free hooks in reader.css: .chapter-meta (no
+   pseudo), .meta-number (no pseudo), .cover-eyebrow /
+   .cover-quote (no pseudos), p:last-child::after
+   (only ::first-letter is taken, on first-of-type).
+   The drop-cap rule below ADDS background/glow only —
+   size, float, color still come from reader.css. */
+
+/* Fleuron seal beneath the chapter heading block. */
+.chapter-meta::after {
+  content: var(--art-fleuron);
+  display: block;
+  margin-top: 1.4rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.8;
+  text-shadow: var(--art-glow);
+  animation: artFadeUp 0.8s var(--ease, ease) 0.15s both;
+}
+
+/* Number line is flanked by small diamonds (symmetric with the opener rule). */
+.meta-number::before {
+  content: var(--art-diamond) "  ";
+  color: var(--accent);
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+.meta-number::after {
+  content: "  " var(--art-diamond);
+  color: var(--accent);
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Existing meta rule hairline picks up a glow. */
+.meta-rule span {
+  box-shadow: 0 0 8px var(--accent);
+}
+
+/* Cover eyebrow flanked by fleurons. */
+.cover-eyebrow::before {
+  content: var(--art-fleuron) "   ";
+  color: var(--accent);
+}
+
+.cover-eyebrow::after {
+  content: "   " var(--art-fleuron);
+  color: var(--accent);
+}
+
+/* Cover quote seals with a fleuron. */
+.cover-quote::after {
+  content: "  " var(--art-fleuron);
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+/* Cover rule diamond glows like its library cousin. */
+.rule-diamond {
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* Illuminated drop-cap: manuscript wash + halo.
+   Specificity ties the reader.css rule, but art.css
+   only introduces NEW properties (background,
+   radius, shadow) — the cascade order cannot clobber
+   the original size/float/color. Skips .no-drop openers. */
+.chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  background: linear-gradient(160deg, var(--accent-soft, rgba(212, 175, 100, 0.14)), transparent 72%);
+  border-radius: 2px;
+  text-shadow: 0 0 20px var(--accent-soft, rgba(212, 175, 100, 0.35));
+}
+
+/* Chapter-end mark: centered fleuron after the final
+   paragraph of each chapter. */
+.chapter-text > p:last-child::after {
+  content: var(--art-fleuron);
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.75;
+  text-shadow: var(--art-glow);
+}
+
+/* ── 5. Grain + vignette overlays ──────────
+   body carries no ::before/::after in either sheet,
+   so both are free. Fixed, pointer-transparent film
+   over every page; tint follows the active theme via
+   var(--accent) / --art-vignette overrides. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  pointer-events: none;
+}
+
+body::before {
+  background-image: var(--art-grain);
+  background-size: 160px 160px;
+  opacity: var(--art-grain-opacity);
+}
+
+body::after {
+  background: radial-gradient(ellipse 120% 90% at 50% 40%, transparent 55%, var(--art-vignette) 100%);
+}
+
+/* Sepia warms the vignette; light softens it. */
+:root[data-theme="sepia"] body::after,
+html[data-theme="sepia"] body::after {
+  --art-vignette: rgba(92, 64, 30, 0.14);
+}
+
+:root[data-theme="light"] body::after,
+html[data-theme="light"] body::after {
+  --art-vignette: rgba(60, 45, 25, 0.1);
+}
+
+:root[data-theme="light"],
+html[data-theme="light"] {
+  --art-grain-opacity: 0.035;
+}
+
+/* Opt-out: <body class="art-off"> kills the film. */
+body.art-off::before,
+body.art-off::after {
+  display: none;
+}
+
+/* ── Motion ──────────────────────────────── */
+@keyframes artFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 0.8;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chapter-meta::after {
+    animation: none;
+  }
+
+  .book-grid > li::before,
+  .book-grid > li::after {
+    transition: none;
+  }
+}
+
+/* ── Small screens: quieter ornaments ────── */
+@media (max-width: 560px) {
+  .art-divider {
+    margin: 2rem auto;
+  }
+
+  .book-grid > li::before,
+  .book-grid > li::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .library-footer::before {
+    letter-spacing: 0.35em;
+    text-indent: 0.35em;
+  }
+}
+
+/* ── Print: ornaments stay home ──────────── */
+@media print {
+  body::before,
+  body::after,
+  .chapter-meta::after,
+  .chapter-text > p:last-child::after,
+  .library-eyebrow::before,
+  .library-footer::before,
+  .shelf-title::before,
+  .cover-eyebrow::before,
+  .cover-eyebrow::after,
+  .cover-quote::after,
+  .meta-number::after,
+  .book-grid > li::before,
+  .book-grid > li::after,
+  .art-divider,
+  .art-fleuron,
+  .art-texture-diamonds {
+    display: none !important;
+  }
+
+  .library-rule span,
+  .meta-rule span,
+  .rule-diamond {
+    box-shadow: none !important;
+  }
+
+  .chapter-text > p:first-of-type::first-letter {
+    background: none !important;
+    text-shadow: none !important;
+  }
+}

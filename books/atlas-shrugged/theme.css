@@ -1,27 +1,683 @@
-/* Atlas Shrugged — industrial gold on iron */
-:root, html[data-theme="dark"] {
-  --bg: #0b0a09;
-  --bg-elevated: #141210;
-  --bg-soft: #1a1714;
-  --surface: #1e1b17;
-  --border: rgba(212, 175, 100, 0.14);
-  --border-strong: rgba(212, 175, 100, 0.28);
-  --text: #ebe4d6;
-  --text-muted: #9a9080;
-  --text-faint: #6b6358;
-  --accent: #d4af64;
-  --accent-soft: rgba(212, 175, 100, 0.12);
-  --accent-hover: #e4c57a;
-  --copper: #b87333;
+/* ═══════════════════════════════════════════════════════════════════
+   ATLAS SHRUGGED — THE SIGNAL · theme.css (supervisor-owned, sole writer)
+   The novel as a night railroad run: every chapter is a signal aspect.
+   Part I CLEAR green · Part II CAUTION amber · Part III STOP red.
+   AT1: aspects = lamps/plates/rules/kickers ONLY, never body or small text.
+   AT4: gold refusal is TOTAL — no gilt anywhere in this file.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── 1. Signal tokens: night grounds + three aspects + railsteel ── */
+:root {
+  --as-night: #0E1216;
+  --as-tunnel: #07090C;
+  --as-beam: #F2E8D0;
+  --as-clear: #3FD08C;
+  --as-caution: #E8A33D;
+  --as-stop: #E0483E;
+  --as-rail: #8B98A5;
+  --as-ink: #1D2126;
+  --as-paper: #F2EAD8;
+  --as-clear-deep: #186641;
+  --as-caution-deep: #875510;
+  --as-stop-deep: #A8322A;
+  --as-display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Impact, sans-serif;
+  --as-body: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --as-mono: "Space Mono", ui-monospace, Menlo, monospace;
+}
+
+/* Active-part aspect hook: --accent follows the part on reader view. */
+body[data-book="atlas-shrugged"][data-part-id="part-i"] { --accent: var(--as-clear); }
+body[data-book="atlas-shrugged"][data-part-id="part-ii"] { --accent: var(--as-caution); }
+body[data-book="atlas-shrugged"][data-part-id="part-iii"] { --accent: var(--as-stop); }
+/* Intruder chapters light the intruder lamp, not the part lamp. */
+body[data-book="atlas-shrugged"][data-art="signal-stop-intruder"] { --accent: var(--as-stop); }
+body[data-book="atlas-shrugged"][data-art="signal-clear-intruder"] { --accent: var(--as-clear); }
+
+/* ── 2. Per-theme shared-token overrides (all 8 themes keep working) ── */
+:root,
+html[data-theme="dark"] {
+  --bg: #0E1216;
+  --bg-elevated: #141A20;
+  --bg-soft: #10151A;
+  --surface: #182028;
+  --border: rgba(139, 152, 165, 0.16);
+  --border-strong: rgba(139, 152, 165, 0.34);
+  --text: #F2E8D0;
+  --text-muted: #B9C2CB;
+  --text-faint: #8B98A5;
+  --accent: #3FD08C;
+  --accent-soft: rgba(63, 208, 140, 0.12);
+  --accent-hover: #5FDBA0;
+  --copper: #8B98A5;
+  --on-accent: #07090C;
   --reader-max: 52rem;
+  --font-serif: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --font-sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --text-size: 1.28rem;
+  --leading: 1.78;
 }
-.cover-grid {
-  background-image:
-    linear-gradient(rgba(212, 175, 100, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212, 175, 100, 0.05) 1px, transparent 1px);
-  background-size: 64px 64px;
+html[data-theme="nocturne"] {
+  --bg: #0A0E1A;
+  --bg-elevated: #101728;
+  --bg-soft: #0C1222;
+  --surface: #182238;
+  --border: rgba(139, 152, 165, 0.16);
+  --border-strong: rgba(139, 152, 165, 0.34);
+  --text: #F2E8D0;
+  --text-muted: #B9C2CB;
+  --text-faint: #8B98A5;
+  --accent: #3FD08C;
+  --accent-soft: rgba(63, 208, 140, 0.12);
+  --accent-hover: #5FDBA0;
+  --copper: #8B98A5;
+  --on-accent: #07090C;
+  --font-serif: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --font-sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
 }
-.cover-glow {
-  background: radial-gradient(ellipse, rgba(212, 175, 100, 0.14) 0%, rgba(184, 115, 51, 0.06) 40%, transparent 70%);
+html[data-theme="verdant"] {
+  --bg: #0A130C;
+  --bg-elevated: #101F14;
+  --bg-soft: #0C1810;
+  --surface: #16301C;
+  --border: rgba(139, 152, 165, 0.16);
+  --border-strong: rgba(139, 152, 165, 0.34);
+  --text: #F2E8D0;
+  --text-muted: #B9C2CB;
+  --text-faint: #8B98A5;
+  --accent: #3FD08C;
+  --accent-soft: rgba(63, 208, 140, 0.12);
+  --accent-hover: #5FDBA0;
+  --copper: #8B98A5;
+  --on-accent: #07090C;
+  --font-serif: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --font-sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
 }
-.title-line.accent { color: var(--accent); font-style: italic; }
+html[data-theme="oxblood"] {
+  --bg: #120B0B;
+  --bg-elevated: #1C1210;
+  --bg-soft: #160E0C;
+  --surface: #2A1A14;
+  --border: rgba(139, 152, 165, 0.16);
+  --border-strong: rgba(139, 152, 165, 0.34);
+  --text: #F2E8D0;
+  --text-muted: #C4B4A4;
+  --text-faint: #8B98A5;
+  --accent: #3FD08C;
+  --accent-soft: rgba(63, 208, 140, 0.12);
+  --accent-hover: #5FDBA0;
+  --copper: #8B98A5;
+  --on-accent: #07090C;
+  --font-serif: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --font-sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+html[data-theme="candlelight"] {
+  --bg: #140D06;
+  --bg-elevated: #1F1309;
+  --bg-soft: #181009;
+  --surface: #2E1F12;
+  --border: rgba(139, 152, 165, 0.18);
+  --border-strong: rgba(139, 152, 165, 0.36);
+  --text: #F7E4C8;
+  --text-muted: #D3BFA2;
+  --text-faint: #9A8F7C;
+  --accent: #3FD08C;
+  --accent-soft: rgba(63, 208, 140, 0.12);
+  --accent-hover: #5FDBA0;
+  --copper: #8B98A5;
+  --on-accent: #07090C;
+  --font-serif: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --font-sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+html[data-theme="slate"] {
+  --bg: #0F151B;
+  --bg-elevated: #171F27;
+  --bg-soft: #121922;
+  --surface: #26323B;
+  --border: rgba(139, 152, 165, 0.18);
+  --border-strong: rgba(139, 152, 165, 0.36);
+  --text: #F2E8D0;
+  --text-muted: #B9C2CB;
+  --text-faint: #8B98A5;
+  --accent: #3FD08C;
+  --accent-soft: rgba(63, 208, 140, 0.12);
+  --accent-hover: #5FDBA0;
+  --copper: #8B98A5;
+  --on-accent: #07090C;
+  --font-serif: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --font-sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+/* Paper grounds: aspects deepen so kickers stay ≥4.5:1; plates keep night inlay. */
+html[data-theme="sepia"],
+html[data-theme="light"] {
+  --bg: #F2EAD8;
+  --bg-elevated: #EAE0C8;
+  --bg-soft: #E4D8BC;
+  --surface: #FBF6E9;
+  --border: rgba(29, 33, 38, 0.14);
+  --border-strong: rgba(29, 33, 38, 0.32);
+  --text: #1D2126;
+  --text-muted: #4A545E;
+  --text-faint: #57616B;
+  --accent: #186641;
+  --accent-soft: rgba(24, 102, 65, 0.12);
+  --accent-hover: #124F31;
+  --copper: #5B6771;
+  --on-accent: #F2EAD8;
+  --font-serif: "Crimson Pro", Georgia, "Palatino Linotype", serif;
+  --font-sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+}
+html[data-theme="sepia"] body[data-book="atlas-shrugged"][data-part-id="part-i"],
+html[data-theme="light"] body[data-book="atlas-shrugged"][data-part-id="part-i"] { --accent: #186641; }
+html[data-theme="sepia"] body[data-book="atlas-shrugged"][data-part-id="part-ii"],
+html[data-theme="light"] body[data-book="atlas-shrugged"][data-part-id="part-ii"] { --accent: #875510; }
+html[data-theme="sepia"] body[data-book="atlas-shrugged"][data-part-id="part-iii"],
+html[data-theme="light"] body[data-book="atlas-shrugged"][data-part-id="part-iii"] { --accent: #A8322A; }
+html[data-theme="sepia"] body[data-book="atlas-shrugged"][data-art="signal-stop-intruder"],
+html[data-theme="light"] body[data-book="atlas-shrugged"][data-art="signal-stop-intruder"] { --accent: #A8322A; }
+html[data-theme="sepia"] body[data-book="atlas-shrugged"][data-art="signal-clear-intruder"],
+html[data-theme="light"] body[data-book="atlas-shrugged"][data-art="signal-clear-intruder"] { --accent: #186641; }
+
+/* ── 3. Cover: asymmetric timetable grid + night signal plate ── */
+body[data-book="atlas-shrugged"][data-view="cover"] #cover {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 3rem;
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 2.5rem 6rem;
+  text-align: left;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-bg { display: none; }
+body[data-book="atlas-shrugged"][data-view="cover"] #cover-art {
+  display: block;
+  order: 2;
+  margin: 0;
+  background: var(--as-tunnel);
+  border: 1px solid var(--border-strong);
+}
+body[data-book="atlas-shrugged"][data-view="cover"] #cover-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] #cover-art figcaption {
+  font-family: var(--as-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--as-clear);
+  padding: 0.8rem 1rem;
+  border-top: 1px solid var(--border-strong);
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-content {
+  order: 1;
+  margin: 0;
+  max-width: none;
+  text-align: left;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-eyebrow {
+  font-family: var(--as-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--as-clear);
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-eyebrow::before,
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-eyebrow::after {
+  content: none;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-title {
+  font-family: var(--as-display);
+  font-weight: 700;
+  font-size: clamp(3.4rem, 10vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .title-line.accent {
+  color: var(--text);
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0.55;
+  text-shadow: none;
+}
+/* The three-aspect bar: the whole novel's logic in one rule. */
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-rule {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  max-width: 26rem;
+  margin: 1.7rem 0 1.3rem;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-rule::before {
+  content: "";
+  flex: 3;
+  height: 8px;
+  background: var(--as-clear);
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-rule::after {
+  content: "";
+  flex: 4;
+  height: 8px;
+  background: var(--as-stop);
+  order: 3;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .rule-diamond {
+  flex: 2;
+  width: auto;
+  height: 8px;
+  background: var(--as-caution);
+  transform: none;
+  box-shadow: none;
+  order: 2;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-author {
+  font-family: var(--as-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-dedication {
+  font-family: var(--as-body);
+  font-style: italic;
+  color: var(--text-muted);
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-quote {
+  font-family: var(--as-body);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-quote::after { content: none; }
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-actions { justify-content: flex-start; }
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-continue .link-btn {
+  font-family: var(--as-mono);
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .cover-continue .link-btn::after { content: none; }
+body[data-book="atlas-shrugged"][data-view="cover"] .btn-primary {
+  font-family: var(--as-mono);
+  letter-spacing: 0.14em;
+}
+body[data-book="atlas-shrugged"][data-view="cover"] .btn-ghost {
+  font-family: var(--as-mono);
+  letter-spacing: 0.14em;
+}
+
+/* ── 4. Chapter opener: signal plate + timetable meta, left-weighted ── */
+body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art {
+  margin: 0 auto 2.2rem;
+  max-width: 72rem;
+  background: var(--as-tunnel);
+  border: 1px solid var(--border-strong);
+}
+body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Full-scene proportions: the class system varies plate presence by width. */
+body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art.grand { max-width: 80rem; }
+body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art.monumental { max-width: 84rem; }
+body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art.compact { max-width: 56rem; }
+body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art figcaption {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: calc(var(--reader-max) + 5rem);
+  margin: 0 auto;
+  padding: 0.7rem 2rem;
+  font-family: var(--as-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .as-inscription {
+  font-family: var(--as-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: -1.4rem 0 2.2rem;
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .as-inscription span { display: block; }
+body[data-book="atlas-shrugged"][data-view="reader"] .chapter-meta {
+  text-align: left;
+  margin-bottom: 2.6rem;
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .chapter-meta::after { content: none; }
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-part {
+  font-family: var(--as-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-indent: 0;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-title {
+  margin: 0;
+  max-width: none;
+  font-family: var(--as-display);
+  font-weight: 600;
+  font-size: 1.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-number {
+  font-family: var(--as-mono);
+  font-style: normal;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-number::before,
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-number::after {
+  content: none;
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-sub {
+  font-family: var(--as-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-rule {
+  justify-content: flex-start;
+  gap: 0;
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-rule::before,
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-rule::after {
+  content: none;
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .meta-rule span {
+  width: 12rem;
+  height: 4px;
+  transform: none;
+  background: var(--accent);
+  box-shadow: none;
+  opacity: 1;
+}
+/* One orchestrated moment: the aspect lamp fades in once per chapter load. */
+body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art figcaption::before {
+  animation: as-lamp-in 900ms ease-out both;
+}
+@keyframes as-lamp-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── 5. Reading body: calm Crimson Pro + muted-aspect drop cap ── */
+body[data-book="atlas-shrugged"][data-view="reader"] .chapter-text {
+  font-family: var(--as-body);
+  font-size: 1.28rem;
+  line-height: 1.78;
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .chapter-text p {
+  max-width: min(var(--reader-max), 66ch);
+}
+body[data-book="atlas-shrugged"][data-view="reader"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  font-family: var(--as-display);
+  font-weight: 600;
+  font-size: 3.2em;
+  line-height: 0.85;
+  color: var(--accent);
+  opacity: 0.85;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+/* Aspect diamond end-marks: authored SVG seals (contract A.0), ≤32px. */
+body[data-book="atlas-shrugged"][data-art="signal-clear"] .chapter-text > p:last-child::after,
+body[data-book="atlas-shrugged"][data-art="signal-clear-intruder"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M7 0 L14 7 L7 14 L0 7 Z' fill='%233FD08C'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  line-height: 1;
+  text-shadow: none;
+  opacity: 1;
+}
+body[data-book="atlas-shrugged"][data-art="signal-caution"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M7 0 L14 7 L7 14 L0 7 Z' fill='%23E8A33D'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  line-height: 1;
+  text-shadow: none;
+  opacity: 1;
+}
+body[data-book="atlas-shrugged"][data-art="signal-stop"] .chapter-text > p:last-child::after,
+body[data-book="atlas-shrugged"][data-art="signal-stop-intruder"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M7 0 L14 7 L7 14 L0 7 Z' fill='%23E0483E'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  line-height: 1;
+  text-shadow: none;
+  opacity: 1;
+}
+/* p3c10 ends on the gesture: no ornament after the last sentence. */
+body[data-book="atlas-shrugged"][data-chapter="p3c10"] .chapter-text > p:last-child::after {
+  content: none;
+}
+/* p3c4 refuses ornament: plain cap, absent end-mark. */
+body[data-book="atlas-shrugged"][data-chapter="p3c4"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--text);
+  opacity: 1;
+}
+body[data-book="atlas-shrugged"][data-chapter="p3c4"] .chapter-text > p:last-child::after {
+  content: none;
+}
+
+/* ── 6. p3c7 long-address apparatus (AT5): numerals + spine + relief ── */
+body[data-book="atlas-shrugged"][data-chapter="p3c7"] .chapter-text {
+  position: relative;
+}
+body[data-book="atlas-shrugged"][data-chapter="p3c7"] .chapter-text > p.as-beat {
+  margin-top: 2.6em;
+  scroll-margin-top: calc(var(--header-h) + 3rem);
+}
+body[data-book="atlas-shrugged"][data-chapter="p3c7"] .chapter-text > p.as-beat::before {
+  content: "§ " attr(data-beat);
+  display: block;
+  font-family: var(--as-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+body[data-book="atlas-shrugged"][data-chapter="p3c7"] .as-spine {
+  position: fixed;
+  right: max(1rem, calc(50vw - var(--reader-max) / 2 - 4rem));
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  z-index: 5;
+}
+body[data-book="atlas-shrugged"][data-chapter="p3c7"] .as-spine a {
+  display: block;
+  width: 2px;
+  height: 1.6rem;
+  background: var(--border-strong);
+  border-radius: 1px;
+}
+body[data-book="atlas-shrugged"][data-chapter="p3c7"] .as-spine a.lit { background: var(--accent); }
+body[data-book="atlas-shrugged"][data-chapter="p3c7"] .as-spine a span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* ── 7. TOC drawer: signal codes, lamp dots, aspect part headers ── */
+body[data-book="atlas-shrugged"] .drawer-eyebrow {
+  font-family: var(--as-mono);
+  letter-spacing: 0.3em;
+}
+body[data-book="atlas-shrugged"] .drawer-header h2 {
+  font-family: var(--as-display);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"] .toc-progress {
+  font-family: var(--as-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"] .toc-search {
+  font-family: var(--as-mono);
+  font-size: 0.8rem;
+}
+body[data-book="atlas-shrugged"] .toc-part-header {
+  font-family: var(--as-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--part-aspect, var(--accent));
+}
+body[data-book="atlas-shrugged"] .toc-part-header::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--part-aspect, var(--accent));
+  box-shadow: 0 0 0 2px var(--bg-elevated), 0 0 0 4px var(--part-aspect, var(--accent));
+  margin-right: 0.8em;
+  vertical-align: baseline;
+}
+body[data-book="atlas-shrugged"] .toc-part-sub {
+  font-family: var(--as-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+body[data-book="atlas-shrugged"] .toc-part:nth-of-type(1) { --part-aspect: var(--as-clear); }
+body[data-book="atlas-shrugged"] .toc-part:nth-of-type(2) { --part-aspect: var(--as-caution); }
+body[data-book="atlas-shrugged"] .toc-part:nth-of-type(3) { --part-aspect: var(--as-stop); }
+html[data-theme="sepia"] body[data-book="atlas-shrugged"] .toc-part:nth-of-type(1),
+html[data-theme="light"] body[data-book="atlas-shrugged"] .toc-part:nth-of-type(1) { --part-aspect: var(--as-clear-deep); }
+html[data-theme="sepia"] body[data-book="atlas-shrugged"] .toc-part:nth-of-type(2),
+html[data-theme="light"] body[data-book="atlas-shrugged"] .toc-part:nth-of-type(2) { --part-aspect: var(--as-caution-deep); }
+html[data-theme="sepia"] body[data-book="atlas-shrugged"] .toc-part:nth-of-type(3),
+html[data-theme="light"] body[data-book="atlas-shrugged"] .toc-part:nth-of-type(3) { --part-aspect: var(--as-stop-deep); }
+body[data-book="atlas-shrugged"] .toc-num {
+  font-family: var(--as-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  min-width: 3.2rem;
+  color: var(--part-aspect, var(--text-faint));
+  opacity: 0.85;
+}
+body[data-book="atlas-shrugged"] .toc-name {
+  font-family: var(--as-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"] .toc-sub {
+  font-family: var(--as-mono);
+  letter-spacing: 0.1em;
+}
+body[data-book="atlas-shrugged"] .toc-chapter.active .toc-name { color: var(--text); }
+body[data-book="atlas-shrugged"] .toc-chapter.active .toc-num { opacity: 1; }
+body[data-book="atlas-shrugged"] .toc-chapter.active .toc-check {
+  background: var(--part-aspect, var(--accent));
+  border-color: var(--part-aspect, var(--accent));
+}
+body[data-book="atlas-shrugged"] .toc-chapter.read:not(.active) .toc-name { opacity: 0.55; }
+
+/* ── 8. Header, nav, settings chrome in railsteel + aspect accents ── */
+body[data-book="atlas-shrugged"] .header-part {
+  font-family: var(--as-mono);
+  letter-spacing: 0.28em;
+}
+body[data-book="atlas-shrugged"] .header-chapter {
+  font-family: var(--as-display);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"] .progress-fill {
+  background: var(--accent);
+}
+body[data-book="atlas-shrugged"] .progress-fill::after {
+  background: var(--accent);
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px var(--accent);
+}
+body[data-book="atlas-shrugged"] .nav-label {
+  font-family: var(--as-mono);
+  letter-spacing: 0.26em;
+}
+body[data-book="atlas-shrugged"] .nav-title {
+  font-family: var(--as-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"] .settings-header h3 {
+  font-family: var(--as-display);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"] .settings-row > span {
+  font-family: var(--as-mono);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+body[data-book="atlas-shrugged"] .seg-btn {
+  font-family: var(--as-mono);
+}
+body[data-book="atlas-shrugged"] .seg-theme-label {
+  font-family: var(--as-mono);
+}
+
+/* ── 9. Guards: motion, small screens, print ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art figcaption::before {
+    animation: none;
+  }
+}
+@media (max-width: 900px) {
+  body[data-book="atlas-shrugged"][data-view="cover"] #cover {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1.5rem 6rem;
+  }
+  body[data-book="atlas-shrugged"][data-view="cover"] #cover-art { order: 2; }
+  body[data-book="atlas-shrugged"][data-view="cover"] .cover-content { order: 1; }
+}
+@media (max-width: 560px) {
+  body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art.compact { max-width: 100%; }
+  body[data-book="atlas-shrugged"][data-view="reader"] .meta-title { font-size: 1.4rem; }
+  body[data-book="atlas-shrugged"][data-chapter="p3c7"] .as-spine { display: none; }
+}
+@media print {
+  body[data-book="atlas-shrugged"][data-view="reader"] #chapter-art { border: none; }
+  body[data-book="atlas-shrugged"] .chapter-text > p:last-child::after { content: none; }
+}

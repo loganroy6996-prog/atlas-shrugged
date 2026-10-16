@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The Will to Power — COVER plate ("The Black Notebook").
+  Owner: SupWtP-3 (supervisor-authored; normative per ART-DIRECTION.md §4 +
+  book-identity.json cover contract + ArtDirector Q3: left monumental title,
+  RIGHT ring/hammer plate occupying the right 40% desktop / stacked above the
+  title on phone; plate must be LARGE, never a timid medallion).
+  Composition: the broken ring of recurrence (Gloom Violet gouge, one gap at
+  upper right) struck through by the hammer-fracture (Bloodline gouge diagonal);
+  one Sulphur seal-dot at the fracture origin (match logic: the single heat
+  source). Bone etched ticks on the ring's inner rim. Torn knockout-mask edges
+  throughout (W1); NO gradients/filters/blur. viewBox 400x520 (portrait plate).
+  Loaded declaratively: manifest cover {src:"art/cover.svg"} (whole file, no
+  symbol) into #cover-art per READER-CONTRACT §3–§4.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" role="img" aria-label="Broken ring struck by a hammer fracture">
+  <mask id="cov-g" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="520">
+    <rect width="400" height="520" fill="#fff"/>
+    <path d="M258 88 L240 130 L254 168 L236 210 L250 248 L232 290 L246 328 L230 366 L242 402" fill="none" stroke="#000" stroke-width="10"/>
+    <path d="M258 88 L290 110 L284 146 M240 250 L208 268 L214 304 M244 370 L276 388 L270 424" fill="none" stroke="#000" stroke-width="7"/>
+    <path d="M70 120 l 12 6 l 2 14 M330 400 l -12 -4 l -4 -12 M64 400 l 14 -2 l 6 12" fill="none" stroke="#000" stroke-width="7"/>
+    <path d="M150 40 l 8 8 l -4 10 M300 60 l -8 8 l 2 10" fill="none" stroke="#000" stroke-width="6"/>
+  </mask>
+  <g mask="url(#cov-g)">
+    <!-- broken ring of recurrence: one gap at upper right -->
+    <path d="M276 96 C 320 130, 344 180, 344 260 C 344 360, 280 438, 196 438 C 112 438, 52 362, 52 262 C 52 168, 116 92, 204 78"
+          fill="none" stroke="#5A4E6E" stroke-width="22" opacity="0.9"/>
+    <path d="M268 104 C 306 134, 328 180, 328 260 C 328 350, 270 422, 196 422 C 122 422, 68 352, 68 262 C 68 178, 126 108, 204 94"
+          fill="none" stroke="#0B0A08" stroke-width="3" opacity="0.9"/>
+    <!-- hammer-fracture: diagonal gouged band through the ring -->
+    <path d="M238 70 L282 96 L262 150 L286 210 L258 270 L282 330 L256 390 L272 448 L226 462 L210 400 L230 340 L206 280 L230 220 L208 160 L226 104 Z"
+          fill="#8E2F32" opacity="0.88"/>
+    <g stroke="#0B0A08" stroke-width="2.5" opacity="0.9">
+      <path d="M232 120 L268 142 M224 190 L262 212 M216 260 L254 282 M210 330 L248 352 M222 400 L252 418"/>
+    </g>
+    <!-- etched bone ticks on the ring's inner rim -->
+    <g stroke="#EDE4D3" stroke-width="2.5" opacity="0.75">
+      <path d="M120 180 l 12 6 M100 240 l 13 2 M102 300 l 12 -3 M130 352 l 10 -8"/>
+      <path d="M272 340 l -11 -6 M292 288 l -13 -1 M292 232 l -12 4"/>
+    </g>
+    <!-- escaping sulphur chip near the ring gap -->
+    <path d="M292 84 L306 78 L302 94 L288 96 Z" fill="#E3A82B"/>
+  </g>
+  <!-- the single heat source: seal-dot at the fracture origin -->
+  <circle cx="252" cy="100" r="8" fill="#E3A82B"/>
+  <circle cx="252" cy="100" r="13" fill="none" stroke="#E3A82B" stroke-width="1.5" opacity="0.7"/>
+</svg>

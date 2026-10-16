@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="odTitle odDesc">
+<title id="odTitle">OL-DOUBT cohort plates: painted scenery that physically tears</title>
+<desc id="odDesc">Four painted plates in the Stitches-in-the-Canvas craft. Plate 1: a gilt night star-map tearing open over broadsheet columns. Plate 2: a curiosity cabinet of tilted specimen frames over a torn wall-chart. Plate 3: the white Jacobite cockade over Stuart-rose wallpaper with a torn corner. Plate 4: a torn Putney Debates broadsheet nailed to a dark board.</desc>
+<!-- ══════════ PLATE 1 · p1c1-tearing-canvas · Figure I · The horizon tears ══════════ -->
+<symbol id="p1c1-tearing-canvas" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice"><defs>
+<filter id="od1-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.07 0"/>
+</filter>
+<pattern id="od1-weave" width="14" height="14" patternUnits="userSpaceOnUse">
+<path d="M1 4 l5 1 M8 10 l5 -1 M2 12 l4 0" stroke="#A89A80" stroke-width="1" opacity="0.16" stroke-linecap="round"/>
+<path d="M9 3 l4 1 M3 8 l4 -1" stroke="#EDE2CE" stroke-width="1" opacity="0.10" stroke-linecap="round"/>
+</pattern>
+<g id="od1-star">
+<path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z"/>
+</g>
+</defs>
+
+<rect x="0" y="0" width="1200" height="460" fill="#0D0B09"/>
+<!-- painted night wash: flat umber-violet masses, brushworked edges -->
+<path d="M0 0 L1200 0 L1200 300 Q1000 322 800 306 Q620 292 420 312 Q220 330 0 306 Z" fill="#1E1A15"/>
+<path d="M0 0 L1200 0 L1200 210 Q980 236 760 218 Q560 202 360 224 Q180 244 0 226 Z" fill="#141210"/>
+<path d="M0 0 L1200 0 L1150 120 Q880 150 620 128 Q380 108 120 138 L0 120 Z" fill="#0D0B09"/>
+<rect x="0" y="0" width="1200" height="330" fill="url(#od1-weave)" opacity="0.8"/>
+<!-- gilt constellation lines: one continuous sky-survey -->
+<g fill="none" stroke="#C9A227" stroke-width="1.6" opacity="0.85" stroke-linecap="round">
+<path d="M120 90 L210 150 L300 120 L390 190 L470 150"/>
+<path d="M520 80 L600 140 L700 100 L790 170"/>
+<path d="M840 90 L930 150 L1020 110 L1100 180"/>
+<path d="M210 150 L230 230 L330 250"/>
+<path d="M700 100 L720 190 L820 220"/>
+<path d="M930 150 L950 230 L1050 250"/>
+<circle cx="660" cy="240" r="46" stroke-dasharray="2 7"/>
+<path d="M150 280 L150 300 M250 272 L250 292 M1050 272 L1050 292 M950 280 L950 300" opacity="0.6"/>
+</g>
+<!-- compass rose, painted -->
+<g transform="translate(660,240)" opacity="0.9">
+<circle r="46" fill="none" stroke="#C9A227" stroke-width="1.6"/>
+<circle r="34" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.7"/>
+<path d="M0 -46 L8 -8 L46 0 L8 8 L0 46 L-8 8 L-46 0 L-8 -8 Z" fill="#C9A227" opacity="0.28"/>
+<path d="M0 -46 L0 46 M-46 0 L46 0" stroke="#C9A227" stroke-width="1.2"/>
+<circle r="4" fill="#C9A227"/>
+</g>
+<!-- gilt star points on the constellation nodes -->
+<g fill="#C9A227">
+<use href="#od1-star" x="120" y="90"/><use href="#od1-star" x="210" y="150"/>
+<use href="#od1-star" x="300" y="120"/><use href="#od1-star" x="390" y="190"/>
+<use href="#od1-star" x="470" y="150"/><use href="#od1-star" x="520" y="80"/>
+<use href="#od1-star" x="600" y="140"/><use href="#od1-star" x="700" y="100"/>
+<use href="#od1-star" x="790" y="170"/><use href="#od1-star" x="840" y="90"/>
+<use href="#od1-star" x="930" y="150"/><use href="#od1-star" x="1020" y="110"/>
+<use href="#od1-star" x="1100" y="180"/><use href="#od1-star" x="230" y="230"/>
+<use href="#od1-star" x="720" y="190"/><use href="#od1-star" x="950" y="230"/>
+</g>
+<!-- field stars: small Newsprint dabs -->
+<g fill="#EDE2CE">
+<circle cx="60" cy="200" r="1.6" opacity="0.7"/><circle cx="170" cy="60" r="1.3" opacity="0.6"/>
+<circle cx="260" cy="200" r="1.5" opacity="0.65"/><circle cx="350" cy="60" r="1.2" opacity="0.55"/>
+<circle cx="440" cy="230" r="1.7" opacity="0.7"/><circle cx="560" cy="200" r="1.3" opacity="0.6"/>
+<circle cx="640" cy="60" r="1.5" opacity="0.65"/><circle cx="760" cy="240" r="1.2" opacity="0.5"/>
+<circle cx="880" cy="200" r="1.6" opacity="0.65"/><circle cx="990" cy="60" r="1.3" opacity="0.55"/>
+<circle cx="1070" cy="220" r="1.5" opacity="0.6"/><circle cx="1150" cy="90" r="1.4" opacity="0.6"/>
+<circle cx="90" cy="260" r="1.2" opacity="0.5"/><circle cx="510" cy="270" r="1.2" opacity="0.5"/>
+<circle cx="1010" cy="290" r="1.2" opacity="0.5"/><circle cx="1150" cy="260" r="1.3" opacity="0.55"/>
+</g>
+<!-- the chapter's single Signal accent: one red star -->
+<use href="#od1-star" x="790" y="170" fill="#D64533"/>
+<!-- broadsheet columns revealed beneath the tear -->
+<g>
+<rect x="120" y="330" width="290" height="130" fill="#141210"/>
+<rect x="430" y="330" width="290" height="130" fill="#141210"/>
+<rect x="740" y="330" width="290" height="130" fill="#141210"/>
+<g fill="#EDE2CE" opacity="0.78">
+<rect x="140" y="348" width="250" height="6"/><rect x="140" y="362" width="250" height="6"/>
+<rect x="140" y="376" width="180" height="6"/><rect x="140" y="396" width="250" height="6"/>
+<rect x="140" y="410" width="220" height="6"/><rect x="140" y="424" width="250" height="6"/>
+<rect x="450" y="348" width="250" height="6"/><rect x="450" y="362" width="250" height="6"/>
+<rect x="450" y="376" width="190" height="6"/><rect x="450" y="396" width="250" height="6"/>
+<rect x="450" y="410" width="215" height="6"/><rect x="450" y="424" width="250" height="6"/>
+<rect x="760" y="348" width="250" height="6"/><rect x="760" y="362" width="250" height="6"/>
+<rect x="760" y="376" width="185" height="6"/><rect x="760" y="396" width="250" height="6"/>
+<rect x="760" y="410" width="225" height="6"/><rect x="760" y="424" width="250" height="6"/>
+</g>
+<g fill="#C9A227" opacity="0.9">
+<rect x="120" y="330" width="290" height="3"/><rect x="430" y="330" width="290" height="3"/>
+<rect x="740" y="330" width="290" height="3"/>
+</g>
+</g>
+<!-- torn flap curling upward: canvas-back + Newsprint edge + gilt stitches -->
+<path d="M0 330 Q150 300 320 326 Q480 350 640 322 Q820 296 980 324 Q1100 342 1200 326 L1200 300 Q1050 286 900 304 Q740 326 580 302 Q420 280 260 306 Q120 326 0 310 Z" fill="#A89A80"/>
+<path d="M0 330 Q150 300 320 326 Q480 350 640 322 Q820 296 980 324 Q1100 342 1200 326" fill="none" stroke="#EDE2CE" stroke-width="4"/>
+<g stroke="#C9A227" stroke-width="2.4" stroke-linecap="round">
+<line x1="120" y1="316" x2="132" y2="332"/><line x1="260" y1="312" x2="272" y2="328"/>
+<line x1="420" y1="330" x2="432" y2="345"/><line x1="580" y1="308" x2="592" y2="324"/>
+<line x1="740" y1="308" x2="752" y2="324"/><line x1="900" y1="306" x2="912" y2="322"/>
+<line x1="1040" y1="326" x2="1052" y2="341"/>
+</g>
+<rect x="0" y="0" width="1200" height="460" filter="url(#od1-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ══════════ PLATE 3 · p1c3-cockade · Figure III · For the King over the water ══════════ -->
+<symbol id="p1c3-cockade" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice"><defs>
+<filter id="od3-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.07 0"/>
+</filter>
+<pattern id="od3-weave" width="14" height="14" patternUnits="userSpaceOnUse">
+<path d="M1 4 l5 1 M8 10 l5 -1 M2 12 l4 0" stroke="#A89A80" stroke-width="1" opacity="0.16" stroke-linecap="round"/>
+<path d="M9 3 l4 1 M3 8 l4 -1" stroke="#EDE2CE" stroke-width="1" opacity="0.10" stroke-linecap="round"/>
+</pattern>
+<g id="od3-sprig">
+<circle r="9" fill="none" stroke="#C9A227" stroke-width="2"/>
+<circle r="4" fill="#C9A227" opacity="0.85"/>
+<path d="M-9 2 Q-18 8 -26 6 M9 2 Q18 8 26 6" fill="none" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M-22 6 l-4 -5 M22 6 l4 -5" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round"/>
+</g>
+</defs>
+
+<rect x="0" y="0" width="1200" height="460" fill="#7E2A22"/>
+<!-- brushworked wallpaper: layered oxblood masses -->
+<path d="M0 0 L1200 0 L1200 460 L0 460 Z" fill="#7E2A22"/>
+<path d="M0 60 Q300 20 600 70 Q900 120 1200 60 L1200 0 L0 0 Z" fill="#8a3226" opacity="0.7"/>
+<path d="M0 400 Q350 440 700 400 Q950 370 1200 410 L1200 460 L0 460 Z" fill="#6d231d" opacity="0.8"/>
+<path d="M0 200 Q400 160 800 210 Q1000 235 1200 200 L1200 260 Q900 300 500 260 Q250 235 0 260 Z" fill="#7E2A22"/>
+<rect x="0" y="0" width="1200" height="460" fill="url(#od3-weave)" opacity="0.9"/>
+<!-- gilt rose sprigs across the wallpaper -->
+<g opacity="0.85">
+<use href="#od3-sprig" x="130" y="110"/><use href="#od3-sprig" x="330" y="70"/>
+<use href="#od3-sprig" x="530" y="110"/><use href="#od3-sprig" x="730" y="70"/>
+<use href="#od3-sprig" x="930" y="110"/><use href="#od3-sprig" x="1090" y="70"/>
+<use href="#od3-sprig" x="230" y="230"/><use href="#od3-sprig" x="430" y="270"/>
+<use href="#od3-sprig" x="970" y="250"/><use href="#od3-sprig" x="130" y="350"/>
+<use href="#od3-sprig" x="330" y="390"/><use href="#od3-sprig" x="700" y="360"/>
+</g>
+<!-- the white cockade, large at optical center -->
+<g transform="translate(520,215)">
+<circle r="118" fill="#0D0B09" opacity="0.45"/>
+<circle r="112" fill="#EDE2CE"/>
+<circle r="112" fill="none" stroke="#0D0B09" stroke-width="3"/>
+<circle r="88" fill="none" stroke="#0D0B09" stroke-width="2"/>
+<circle r="62" fill="none" stroke="#0D0B09" stroke-width="2"/>
+<circle r="36" fill="none" stroke="#0D0B09" stroke-width="2"/>
+<circle r="18" fill="#7E2A22" stroke="#0D0B09" stroke-width="2"/>
+<g stroke="#0D0B09" stroke-width="1.6" opacity="0.8">
+<line x1="0" y1="-112" x2="0" y2="-92"/><line x1="0" y1="92" x2="0" y2="112"/>
+<line x1="-112" y1="0" x2="-92" y2="0"/><line x1="92" y1="0" x2="112" y2="0"/>
+<line x1="-79" y1="-79" x2="-65" y2="-65"/><line x1="65" y1="65" x2="79" y2="79"/>
+<line x1="79" y1="-79" x2="65" y2="-65"/><line x1="-65" y1="65" x2="-79" y2="79"/>
+<line x1="0" y1="-62" x2="0" y2="-40"/><line x1="0" y1="40" x2="0" y2="62"/>
+<line x1="-62" y1="0" x2="-40" y2="0"/><line x1="40" y1="0" x2="62" y2="0"/>
+</g>
+<circle r="118" fill="none" stroke="#C9A227" stroke-width="3"/>
+<path d="M-34 106 L-52 172 L-24 156 L0 178 L24 156 L52 172 L34 106 Z" fill="#EDE2CE" stroke="#0D0B09" stroke-width="2"/>
+</g>
+<!-- torn corner, lower right: wallpaper ripped away -->
+<path d="M1200 460 L1200 260 L1010 300 L1080 340 L990 370 L1060 410 L980 430 Z" fill="#0D0B09"/>
+<path d="M1200 260 L1010 300 L1080 340 L990 370 L1060 410 L980 430 L960 460" fill="none" stroke="#EDE2CE" stroke-width="4"/>
+<path d="M1200 260 L1140 272 L1170 300 L1120 330 L1150 360 L1100 390 L1120 420 L1070 440 L1080 460 L1200 460 Z" fill="#A89A80" opacity="0.85"/>
+<!-- cracking progressive timeline band beneath -->
+<g>
+<rect x="840" y="330" width="360" height="64" fill="#EDE2CE" opacity="0.92"/>
+<g stroke="#0D0B09" stroke-width="2.4">
+<line x1="880" y1="330" x2="880" y2="394"/><line x1="930" y1="330" x2="934" y2="394"/>
+<line x1="980" y1="330" x2="975" y2="394"/><line x1="1030" y1="330" x2="1036" y2="358"/>
+<line x1="1036" y1="358" x2="1028" y2="394"/>
+<line x1="1080" y1="330" x2="1084" y2="394"/><line x1="1130" y1="330" x2="1130" y2="394"/>
+</g>
+<path d="M1036 358 l14 6" stroke="#D64533" stroke-width="3" stroke-linecap="round"/>
+<path d="M840 362 L1200 362" stroke="#0D0B09" stroke-width="1.4" opacity="0.6"/>
+</g>
+<rect x="0" y="0" width="1200" height="460" filter="url(#od3-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ══════════ PLATE 2 · p1c2-anomaly-table · Figure II · The cabinet of anomalies ══════════ -->
+<symbol id="p1c2-anomaly-table" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice"><defs>
+<filter id="od2-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.07 0"/>
+</filter>
+<pattern id="od2-weave" width="14" height="14" patternUnits="userSpaceOnUse">
+<path d="M1 4 l5 1 M8 10 l5 -1 M2 12 l4 0" stroke="#A89A80" stroke-width="1" opacity="0.16" stroke-linecap="round"/>
+<path d="M9 3 l4 1 M3 8 l4 -1" stroke="#EDE2CE" stroke-width="1" opacity="0.10" stroke-linecap="round"/>
+</pattern>
+<pattern id="od2-chartgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+<path d="M26 0 L0 0 L0 26" fill="none" stroke="#6E6252" stroke-width="1" opacity="0.55"/>
+</pattern>
+</defs>
+
+<rect x="0" y="0" width="1200" height="460" fill="#1E1A15"/>
+<!-- painted umber cabinet ground with shadowed shelves -->
+<path d="M0 140 L1200 140 L1200 168 L0 168 Z" fill="#0D0B09" opacity="0.75"/>
+<path d="M0 168 L1200 168 L1200 176 L0 176 Z" fill="#C9A227" opacity="0.25"/>
+<path d="M0 330 L1200 330 L1200 358 L0 358 Z" fill="#0D0B09" opacity="0.75"/>
+<path d="M0 358 L1200 358 L1200 366 L0 366 Z" fill="#C9A227" opacity="0.25"/>
+<path d="M0 0 L1200 0 L1200 90 Q800 130 400 100 Q150 82 0 100 Z" fill="#141210"/>
+<rect x="0" y="0" width="1200" height="460" fill="url(#od2-weave)" opacity="0.8"/>
+<!-- torn wall-chart behind the frames -->
+<g>
+<rect x="90" y="40" width="1020" height="380" fill="#EDE2CE" opacity="0.16"/>
+<rect x="90" y="40" width="1020" height="380" fill="url(#od2-chartgrid)" opacity="0.5"/>
+<path d="M180 40 L160 160 L195 250 L165 340 L185 420" fill="none" stroke="#EDE2CE" stroke-width="5"/>
+<path d="M180 40 L160 160 L195 250 L165 340 L185 420 L205 420 L185 330 L215 250 L180 160 L200 40 Z" fill="#0D0B09" opacity="0.9"/>
+</g>
+<!-- frame 1: Kenya corner (tilted -7°) -->
+<g transform="translate(300,235) rotate(-7)">
+<rect x="-140" y="-120" width="280" height="240" fill="#0b0e19" stroke="#C9A227" stroke-width="4"/>
+<rect x="-140" y="-120" width="280" height="240" fill="none" stroke="#0D0B09" stroke-width="1" opacity="0.5"/>
+<path d="M-140 60 L140 60 L140 120 L-140 120 Z" fill="#141210"/>
+<path d="M-100 60 L-100 -40 L-60 -40 L-60 60 M-20 60 L-20 -70 L60 -70 L60 60" fill="none" stroke="#A89A80" stroke-width="2" opacity="0.7"/>
+<rect x="-110" y="78" width="120" height="30" fill="#2b4d7a"/>
+<rect x="-110" y="78" width="120" height="8" fill="#EDE2CE" opacity="0.35"/>
+<rect x="-60" y="-32" width="120" height="18" fill="#0D0B09" opacity="0.8"/>
+<rect x="-70" y="28" width="140" height="22" fill="#A89A80"/>
+<line x1="0" y1="-170" x2="0" y2="-120" stroke="#C9A227" stroke-width="3"/>
+<circle cx="0" cy="-176" r="10" fill="#D64533" stroke="#0D0B09" stroke-width="2"/>
+<ellipse cx="-3" cy="-179" rx="3.4" ry="2.2" fill="#EDE2CE" opacity="0.75"/>
+</g>
+<!-- frame 2: Borboni gold-on-oxblood scrap (tilted +9°) -->
+<g transform="translate(620,225) rotate(9)">
+<rect x="-140" y="-115" width="280" height="230" fill="#7E2A22" stroke="#C9A227" stroke-width="4"/>
+<rect x="-112" y="-88" width="224" height="176" fill="none" stroke="#C9A227" stroke-width="1.6" opacity="0.8"/>
+<path d="M-112 -88 L-84 -88 L-112 -60 Z M112 -88 L84 -88 L112 -60 Z M-112 88 L-84 88 L-112 60 Z M112 88 L84 88 L112 60 Z" fill="#C9A227"/>
+<ellipse cx="0" cy="-10" rx="62" ry="44" fill="none" stroke="#C9A227" stroke-width="2.4"/>
+<ellipse cx="0" cy="-10" rx="44" ry="30" fill="none" stroke="#C9A227" stroke-width="1.4" opacity="0.8"/>
+<circle cx="0" cy="-10" r="6" fill="#C9A227"/>
+<rect x="-70" y="42" width="140" height="22" fill="#A89A80"/>
+<line x1="-60" y1="-160" x2="-60" y2="-115" stroke="#C9A227" stroke-width="3"/>
+<circle cx="-60" cy="-166" r="9" fill="#C9A227" stroke="#0D0B09" stroke-width="2"/>
+</g>
+<!-- frame 3: 1914 encirclement arcs (tilted -5°) -->
+<g transform="translate(920,240) rotate(-5)">
+<rect x="-130" y="-115" width="260" height="230" fill="#0D0B09" stroke="#C9A227" stroke-width="4"/>
+<g fill="none" stroke="#C9A227" stroke-width="2">
+<path d="M-90 -60 A100 100 0 0 1 90 -60"/>
+<path d="M-70 -40 A76 76 0 0 1 70 -40" opacity="0.8"/>
+<path d="M-50 -20 A52 52 0 0 1 50 -20" opacity="0.65"/>
+</g>
+<ellipse cx="0" cy="30" rx="46" ry="30" fill="none" stroke="#C9A227" stroke-width="2.4"/>
+<circle cx="0" cy="30" r="5" fill="#C9A227"/>
+<g stroke="#C9A227" stroke-width="1.4" opacity="0.7">
+<line x1="-100" y1="80" x2="100" y2="80"/>
+<line x1="-80" y1="74" x2="-80" y2="86"/><line x1="0" y1="74" x2="0" y2="86"/><line x1="80" y1="74" x2="80" y2="86"/>
+</g>
+<rect x="-55" y="48" width="110" height="20" fill="#A89A80"/>
+<line x1="60" y1="-160" x2="60" y2="-115" stroke="#C9A227" stroke-width="3"/>
+<circle cx="60" cy="-166" r="9" fill="#C9A227" stroke="#0D0B09" stroke-width="2"/>
+</g>
+<rect x="0" y="0" width="1200" height="460" filter="url(#od2-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ══════════ PLATE 4 · p1c4-putney-sheet · Figure IV · The first Whig ══════════ -->
+<symbol id="p1c4-putney-sheet" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice"><defs>
+<filter id="od4-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.07 0"/>
+</filter>
+<pattern id="od4-weave" width="14" height="14" patternUnits="userSpaceOnUse">
+<path d="M1 4 l5 1 M8 10 l5 -1 M2 12 l4 0" stroke="#A89A80" stroke-width="1" opacity="0.16" stroke-linecap="round"/>
+<path d="M9 3 l4 1 M3 8 l4 -1" stroke="#EDE2CE" stroke-width="1" opacity="0.10" stroke-linecap="round"/>
+</pattern>
+</defs>
+
+<rect x="0" y="0" width="1200" height="460" fill="#141210"/>
+<!-- painted woodgrain board -->
+<g stroke="#0D0B09" stroke-width="3" opacity="0.7" fill="none">
+<path d="M0 60 Q300 40 600 62 Q900 84 1200 58"/>
+<path d="M0 150 Q350 128 700 152 Q950 170 1200 146"/>
+<path d="M0 260 Q300 240 620 262 Q920 282 1200 256"/>
+<path d="M0 360 Q350 340 700 362 Q950 378 1200 354"/>
+</g>
+<g stroke="#1E1A15" stroke-width="1.4" opacity="0.9" fill="none">
+<path d="M0 100 Q400 80 800 102 Q1000 112 1200 98"/>
+<path d="M0 210 Q400 190 800 212 Q1000 222 1200 208"/>
+<path d="M0 310 Q400 290 800 312 Q1000 322 1200 308"/>
+<path d="M0 410 Q400 392 800 412 Q1000 420 1200 408"/>
+</g>
+<rect x="0" y="0" width="1200" height="460" fill="url(#od4-weave)" opacity="0.6"/>
+<!-- the Putney sheet: Newsprint scrap with deckled edges -->
+<path d="M300 50 L880 50 L905 80 L890 120 L910 170 L895 230 L912 290 L896 350 L908 400 L540 415 L520 400 L350 408 L330 390 L315 340 L330 280 L312 220 L328 160 L312 100 Z" fill="#EDE2CE"/>
+<path d="M300 50 L880 50 L905 80 L890 120 L910 170 L895 230 L912 290 L896 350 L908 400 L540 415 L520 400 L350 408 L330 390 L315 340 L330 280 L312 220 L328 160 L312 100 Z" fill="none" stroke="#A89A80" stroke-width="2" opacity="0.9"/>
+<!-- oxblood column wash: printed blocks, no baked text -->
+<g fill="#7E2A22" opacity="0.82">
+<rect x="360" y="110" width="150" height="14"/><rect x="360" y="132" width="150" height="14"/>
+<rect x="360" y="154" width="110" height="14"/><rect x="360" y="186" width="150" height="14"/>
+<rect x="360" y="208" width="130" height="14"/><rect x="360" y="230" width="150" height="14"/>
+<rect x="540" y="110" width="150" height="14"/><rect x="540" y="132" width="150" height="14"/>
+<rect x="540" y="154" width="115" height="14"/><rect x="540" y="186" width="150" height="14"/>
+<rect x="540" y="208" width="128" height="14"/><rect x="540" y="230" width="150" height="14"/>
+</g>
+<g fill="#7E2A22" opacity="0.5">
+<rect x="360" y="262" width="150" height="10"/><rect x="540" y="262" width="150" height="10"/>
+<rect x="360" y="280" width="120" height="10"/><rect x="540" y="280" width="120" height="10"/>
+</g>
+<!-- diagonal tear across the sheet's lower half -->
+<path d="M330 300 L450 285 L520 305 L640 290 L760 308 L896 292 L896 330 L760 348 L630 332 L510 348 L420 332 L328 344 Z" fill="#141210"/>
+<path d="M330 300 L450 285 L520 305 L640 290 L760 308 L896 292" fill="none" stroke="#EDE2CE" stroke-width="4"/>
+<path d="M328 344 L420 332 L510 348 L630 332 L760 348 L896 330" fill="none" stroke="#A89A80" stroke-width="3"/>
+<!-- gilt nail-heads: three set, one half-loose with lifting corner -->
+<g>
+<circle cx="352" cy="82" r="11" fill="#C9A227" stroke="#0D0B09" stroke-width="2"/>
+<circle cx="352" cy="82" r="4" fill="#0D0B09" opacity="0.7"/>
+<circle cx="848" cy="82" r="11" fill="#C9A227" stroke="#0D0B09" stroke-width="2"/>
+<circle cx="848" cy="82" r="4" fill="#0D0B09" opacity="0.7"/>
+<circle cx="380" cy="378" r="11" fill="#C9A227" stroke="#0D0B09" stroke-width="2"/>
+<circle cx="380" cy="378" r="4" fill="#0D0B09" opacity="0.7"/>
+<path d="M560 415 L700 400 L700 370 L585 378 Z" fill="#A89A80"/>
+<path d="M560 415 L700 400" fill="none" stroke="#EDE2CE" stroke-width="3"/>
+<circle cx="648" cy="364" r="11" fill="#C9A227" stroke="#0D0B09" stroke-width="2"/>
+<circle cx="648" cy="364" r="4" fill="#0D0B09" opacity="0.7"/>
+<line x1="648" y1="375" x2="648" y2="392" stroke="#C9A227" stroke-width="4"/>
+</g>
+<!-- Signal devil-tail fleuron at the colophon -->
+<g transform="translate(790,352)">
+<path d="M-5 -30 C-16 -14 -12 5 4 10 C18 14 25 6 20 -2 C16 -7 9 -5 11 0" fill="none" stroke="#D64533" stroke-width="4" stroke-linecap="round"/>
+<path d="M-5 -30 L-12 -39 M-5 -30 L4 -37 M-5 -30 L-5 -40" stroke="#D64533" stroke-width="2.6" stroke-linecap="round"/>
+</g>
+<rect x="0" y="0" width="1200" height="460" filter="url(#od4-grain)" opacity="0.9"/>
+</symbol>
+</svg>

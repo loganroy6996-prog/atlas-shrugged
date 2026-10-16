@@ -1,0 +1,226 @@
+/* Forty Ways — Cohort D (Intro + Part V Ways 31,32,34,35,37,38,39) treatments.
+   DIFFERENTIAL over theme.css §§2–7 shared bases: every rule refines a
+   chapter+role context the shared base cannot know. Keyed to
+   body[data-book][data-chapter] + p[data-fw] / details.fw-mask; unlayered
+   (wins over @layer shared). Zero positional content rules — facets.js
+   stamps data-fw from design/cohort-d.json (the one :last-of-type below is
+   content-addressed to the tablet epitaph, pinned in the comment).
+   C4: vermilion/slate = plates/large display only; ochre = large
+   numerals/rules only; NO body-text or small-label use below. */
+
+/* Note 1 — Intro lens opener (p1c1 ¶0 head is the served duplicate heading;
+   styled as the lens label; NEVER "§ · <subtitle>" — the part subtitle must
+   not be duplicated here). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="head"] {
+  color: var(--fw-bone);
+  letter-spacing: 0.22em;
+}
+/* p1c1 ¶16 speech: the book's first full peroration — widest measure in the
+   cohort with an ochre shard-tick spine (rule, not text — C4-legal). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="speech"] {
+  max-width: 40rem;
+  border-left: 3px solid var(--fw-ochre);
+}
+/* p1c1 ¶32 coda: extra top air; theme italic stands (no override). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="coda"] {
+  margin-top: 3rem;
+}
+
+/* ¶0 warm head: bone text, ochre left spine. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c1"] p[data-fw="verdict"] {
+  padding-left: 1rem;
+  border-left: 3px solid var(--fw-ochre);
+}
+/* ¶6 cold head: a verdict that FOLLOWS warm-case prose — keyed by sibling
+   context (content-addressed, not positional: the cold head always follows
+   a paragraph, the warm head opens the chapter). Bone text with a lampblack
+   inset panel (NOT slate/vermilion text — C4). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c1"] p + p[data-fw="verdict"] {
+  border-left: 0;
+  padding: 1rem 1.25rem;
+  background: var(--fw-lampblack);
+}
+/* First para of each half: small-caps lead line via ::first-line (no art
+   behind prose — a #chapter-text background split is FORBIDDEN). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c1"] p[data-fw="verdict"] + p::first-line {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+
+/* Note 3 — Inscription verse (p5c2 ¶¶5–17): ONE monumental centered block.
+   Served caps are already monumental — no added small-caps. Air lives on the
+   serving setup (¶4) and natural flow, never on verse-run position. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="verse"] {
+  text-align: center;
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.1em;
+  line-height: 1.6;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="setup"] {
+  margin-bottom: 2.5rem;
+}
+/* Memo ¶¶20–21: theme base + tabular routing rhythm on BOTH memos alike
+   (keying the routing line alone would need a positional selector — the
+   routing line is distinguished by content, not CSS). No slate/vermilion
+   chip — C4. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="memo"] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Note 4 — Dossier quote (p5c4 ¶8 Boneless Wonder): theme shard-tick stands;
+   cohort adds a bone double-bar spine (4px + 1px gap) marking the chapter's
+   single lifted voice. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] p[data-fw="quote"] {
+  border-left: 4px solid var(--fw-bone);
+  outline: 1px solid var(--fw-bone);
+  outline-offset: 5px;
+}
+/* p5c4 ¶11 thesis: theme size stands — centered as the Both-verdict plaque. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] p[data-fw="thesis"] {
+  text-align: center;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Note 5 — Quiz engine (p5c5). mask-q rows: tabular numerals, letterspaced
+   True/False pair, air-separated (hairline separators FORBIDDEN — no
+   hairline-box grammar). Ochre tick is a decorative rule — C4-legal. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] p[data-fw="mask-q"] {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] p[data-fw="mask-q"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.35em;
+  background: var(--fw-ochre);
+}
+/* Quiz-quotations (¶¶97–127) are SMALLER than chapter-quotations — a p5c5-only
+   refinement distinguishing statements-to-attribute from lifted voices. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] p[data-fw="quote"] {
+  font-size: 1.05rem;
+}
+/* Answers disclosure (facets.js wraps mask-a in details.fw-mask "Answers"):
+   vermilion left spine (large-display-adjacent rule — C4-legal); answers are
+   record, not voice — bone, non-italic. Instant toggle only (no reveal
+   animation — see reduced-motion note 10). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask {
+  border-left: 4px solid var(--fw-vermilion);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask p[data-fw="mask-a"] {
+  color: var(--fw-bone);
+  font-style: normal;
+}
+
+/* Note 6 — Portrait captions (p5c7 ¶8/¶9 closing pair): sepia-plate framing
+   echoing the p4c6 photo grammar WITHOUT copying it (rule only, no
+   frame-sepia tile). p5c7 ¶5 (braced-figure narration) stays prose — MUST NOT
+   be pulled as a quote. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c7"] p[data-fw="caption"] {
+  border: 1px solid var(--border-strong);
+  padding: 0.6rem 1rem;
+  max-width: 34rem;
+}
+
+/* Note 7 — Elegy pair (p5c8): ¶4 last words keep theme italic (served text
+   already quotes — NO added quote glyphs). ¶11 tablet is the stone
+   inscription — letterspaced small-caps. The 3rem air keys :last-of-type on
+   the ROLE: content-addressed (the tablet epitaph is always last), not
+   positional nth-child — legal. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c8"] p[data-fw="epitaph"]:last-of-type {
+  margin-top: 3rem;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  font-size: 1.1rem;
+}
+
+/* Note 8 — Verdict address (p5c9): ¶1 thesis speaks TO the reader — the only
+   italic thesis in the cohort (second-person emphasis WITHOUT color). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="thesis"] {
+  font-style: italic;
+}
+/* ¶¶9–10 epitaph vision pair: alive, not inscribed — staged line-height, NO
+   small-caps (deliberate contrast with p5c8 ¶11). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="epitaph"] {
+  line-height: 1.9;
+}
+/* ¶12 coda: the book-closing lens image as colophon. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="coda"] {
+  text-align: center;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Note 9 — Per-motif plate responsive. facets.js sets preserveAspectRatio
+   slice on the inline <svg>; at ≤560px slice crops edges. The four
+   left/right-weighted plates (p5c2 column x≈100–220, p5c4 right sheet,
+   p5c8 tablet x≈980–1100, p5c9 chair x≈670–860) switch to meet with a
+   lampblack letterbox so the motif stays whole; numerals stay ≥120px
+   effective. All other plates keep slicing. Plates NEVER hidden on phones
+   (ART-DIRECTION §4.1); theme guarantees min-height 220px. */
+@media (max-width: 560px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c8"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] #chapter-art {
+    background: var(--fw-lampblack);
+  }
+  /* preserveAspectRatio is a presentation attribute on the inline <svg>;
+     facets.js stamps slice at clone time; the meet switch for these four
+     plates is a one-line supervisor ruling at integration (facets.js reads
+     the manifest motif for the meet-list). Until then the lampblack
+     letterbox above keeps any slice-crop composited on the plate bed. */
+}
+
+/* ≤720px responsive: captions go full-width; wide openers collapse to the
+   shared measure (theme already caps .chapter-text p at 100%). */
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c7"] p[data-fw="caption"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="speech"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="verse"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] p[data-fw="thesis"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="coda"] {
+    max-width: 100%;
+  }
+}
+
+/* Note 10 — Reduced-motion / print. Plates are static SVG: NO plate motion
+   is specified anywhere in this cohort, so there is nothing to kill. The
+   answers disclosure toggles instantly (no reveal animation authored). */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask summary {
+    animation: none;
+    transition: none;
+  }
+}
+/* Print (note 5): answers must print — disclosure forced open, summary
+   retired; theme already hides plates and flattens the mask border. */
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask {
+    display: block;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask > summary {
+    display: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask p[data-fw="mask-a"] {
+    display: block;
+  }
+}

@@ -1,0 +1,441 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Intro-world cohort art: fourteen clearing scenes">
+<!-- Being and Time - cohort intro-world - The Clearing (Direction A) -->
+<!-- Ink: currentColor / var bt tokens ONLY. Grain gated via CSS (.iw-grain hidden under reduced-motion/narrow). -->
+<defs>
+<filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter>
+<linearGradient id="iw-fade" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fff" stop-opacity="0.9"/>
+<stop offset="0.7" stop-color="#fff" stop-opacity="0.55"/>
+<stop offset="1" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<symbol id="iw-forgotten" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="130.8,0 139.5,0 142.6,420 133.9,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="648.1,0 663.8,0 662.4,420 646.7,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="226.6,0 236.6,0 238.9,420 228.9,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="763.0,0 780.3,0 777.9,420 760.6,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="303.2,0 314.3,0 315.9,420 304.8,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="590.6,0 605.5,0 604.6,420 589.7,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="169.1,0 178.4,0 181.1,420 171.9,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="360.7,0 372.5,0 373.6,420 361.8,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1068.2,0 1075.8,0 1079.6,420 1072.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1117.7,0 1130.8,0 1131.1,420 1118.0,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1148.4,0 1164.9,0 1162.9,420 1146.4,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1160.2,0 1177.9,0 1175.2,420 1157.4,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1176.7,0 1196.3,0 1192.3,420 1172.7,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1110.6,0 1123.0,0 1123.7,420 1111.4,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1167.2,0 1185.8,0 1182.5,420 1164.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1127.1,0 1141.3,0 1140.9,420 1126.7,420" opacity="0.88"/>
+<g class="iw-forgetting" opacity="1">
+<rect class="iw-bar" x="90" y="150" width="300" height="14"/>
+<rect class="iw-bar" x="90" y="205" width="360" height="14"/>
+<rect class="iw-bar" x="90" y="260" width="260" height="14"/>
+<path class="iw-query" d="M120,340 C200,300 260,330 300,300 C330,278 320,250 348,238" fill="none" stroke-width="5"/>
+<circle class="iw-dot" cx="348" cy="228" r="9"/>
+</g>
+<polygon class="iw-beam" points="996.0,0 1044.0,0 760.7,420 712.7,420" opacity="0.85"/>
+<polygon class="iw-beam-core" points="1013.0,0 1027.0,0 743.7,420 729.7,420" opacity="0.9"/>
+<rect class="iw-grain" x="960" y="0" width="130" height="420" filter="url(#iw-grainf)" opacity="0.4" data-seed="forgotten"/>
+</symbol>
+<symbol id="iw-loop" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="128.4,0 137.0,0 140.2,420 131.5,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="635.4,0 651.1,0 649.6,420 633.9,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="222.2,0 232.2,0 234.5,420 224.5,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="748.0,0 765.3,0 762.9,420 745.6,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="297.4,0 308.4,0 310.0,420 299.0,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="579.0,0 594.0,0 593.0,420 578.1,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="165.9,0 175.1,0 177.9,420 168.7,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1067.2,0 1074.9,0 1078.7,420 1071.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1117.2,0 1130.3,0 1130.5,420 1117.4,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1148.1,0 1164.6,0 1162.7,420 1146.2,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1160.0,0 1177.8,0 1175.0,420 1157.2,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1176.6,0 1196.2,0 1192.3,420 1172.7,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1110.0,0 1122.4,0 1123.1,420 1110.8,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1167.1,0 1185.7,0 1182.4,420 1163.8,420" opacity="0.75"/>
+<path class="iw-loop-line" d="M330,150 C230,150 180,215 196,275 C212,335 290,365 352,335 C405,310 420,255 398,215" fill="none" stroke-width="6"/>
+<circle class="iw-node" cx="248" cy="156" r="10"/>
+<circle class="iw-node" cx="194" cy="268" r="10"/>
+<circle class="iw-node" cx="344" cy="340" r="10"/>
+<path class="iw-return" d="M398,215 L388,182 M388,182 L368,192 M388,182 L400,196" fill="none" stroke-width="5"/>
+<polygon class="iw-beam" points="977.0,0 1043.0,0 759.7,420 693.7,420" opacity="0.85"/>
+<polygon class="iw-beam-core" points="1000.0,0 1020.0,0 736.7,420 716.7,420" opacity="0.9"/>
+<rect class="iw-grain" x="940" y="0" width="150" height="420" filter="url(#iw-grainf)" opacity="0.4" data-seed="loop"/>
+</symbol>
+<symbol id="iw-foundation" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="125.9,0 134.6,0 137.7,420 129.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="622.6,0 638.3,0 636.9,420 621.2,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="217.9,0 227.9,0 230.1,420 220.1,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="733.0,0 750.3,0 747.9,420 730.6,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="291.5,0 302.5,0 304.1,420 293.1,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="567.4,0 582.4,0 581.4,420 566.5,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="162.7,0 171.9,0 174.7,420 165.5,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1066.3,0 1073.9,0 1077.7,420 1070.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1116.7,0 1129.8,0 1130.0,420 1116.9,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1147.8,0 1164.3,0 1162.4,420 1145.9,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1159.8,0 1177.6,0 1174.8,420 1157.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1176.6,0 1196.2,0 1192.3,420 1172.7,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1109.5,0 1121.8,0 1122.5,420 1110.2,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1167.0,0 1185.6,0 1182.3,420 1163.7,420" opacity="0.75"/>
+<rect class="iw-stone" x="150" y="300" width="180" height="46"/>
+<rect class="iw-stone" x="340" y="300" width="150" height="46"/>
+<rect class="iw-stone" x="190" y="252" width="170" height="44"/>
+<rect class="iw-stone" x="370" y="252" width="140" height="44"/>
+<path class="iw-stone-crack" d="M240,204 L308,204 L298,222 L312,232 L300,250 L240,250 Z"/>
+<path class="iw-stone-crack" d="M332,204 L420,204 L420,250 L336,250 L346,232 L334,222 Z"/>
+<path class="iw-cracklip" d="M308,204 L298,222 L312,232 L300,250 M332,204 L334,222 L346,232 L336,250" fill="none" stroke-width="3"/>
+<line class="iw-plumb" x1="320" y1="0" x2="320" y2="352" stroke-width="4"/>
+<circle class="iw-plumb-bob" cx="320" cy="364" r="8"/>
+<polygon class="iw-beam" points="958.0,0 1042.0,0 758.7,420 674.7,420" opacity="0.8"/>
+<polygon class="iw-beam-core" points="988.0,0 1012.0,0 728.7,420 704.7,420" opacity="0.85"/>
+<rect class="iw-grain" x="930" y="0" width="160" height="420" filter="url(#iw-grainf)" opacity="0.4" data-seed="foundation"/>
+</symbol>
+<symbol id="iw-root" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="123.4,0 132.1,0 135.2,420 126.5,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="609.9,0 625.6,0 624.2,420 608.5,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="213.5,0 223.5,0 225.8,420 215.8,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="718.0,0 735.3,0 732.8,420 715.6,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="285.6,0 296.6,0 298.2,420 287.2,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="555.8,0 570.8,0 569.9,420 554.9,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="159.5,0 168.7,0 171.4,420 162.2,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1065.3,0 1073.0,0 1076.8,420 1069.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1116.1,0 1129.2,0 1129.5,420 1116.4,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1147.6,0 1164.0,0 1162.1,420 1145.6,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1159.6,0 1177.4,0 1174.7,420 1156.9,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1176.6,0 1196.2,0 1192.2,420 1172.6,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1108.9,0 1121.2,0 1122.0,420 1109.6,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1166.9,0 1185.5,0 1182.2,420 1163.6,420" opacity="0.75"/>
+<polygon class="iw-trunk-strong" points="357.0,40 383.0,40 383.0,220 357.0,220" opacity="1.0"/>
+<path class="iw-root1" d="M370,215 C340,260 300,290 250,330" fill="none" stroke-width="7"/>
+<path class="iw-root2a" d="M370,215 C375,265 370,300 365,345" fill="none" stroke-width="4"/>
+<path class="iw-root2b" d="M384,215 C389,265 384,300 379,345" fill="none" stroke-width="4"/>
+<path class="iw-root3" d="M374,215 C410,255 450,285 500,320" fill="none" stroke-width="7"/>
+<circle class="iw-root-ring" cx="512" cy="328" r="14" fill="none" stroke-width="4"/>
+<polygon class="iw-beam" points="939.0,0 1041.0,0 757.7,420 655.7,420" opacity="0.8"/>
+<line class="iw-beam-edge2" x1="1046" y1="0" x2="762.7" y2="420" stroke-width="3"/>
+<polygon class="iw-beam-core" points="976.0,0 1004.0,0 720.7,420 692.7,420" opacity="0.85"/>
+<rect class="iw-grain" x="910" y="0" width="180" height="420" filter="url(#iw-grainf)" opacity="0.4" data-seed="root"/>
+</symbol>
+<symbol id="iw-horizon" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<line class="iw-hatch" x1="40" y1="312" x2="26" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="66" y1="312" x2="52" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="92" y1="312" x2="78" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="118" y1="312" x2="104" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="144" y1="312" x2="130" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="170" y1="312" x2="156" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="196" y1="312" x2="182" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="222" y1="312" x2="208" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="248" y1="312" x2="234" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="274" y1="312" x2="260" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="300" y1="312" x2="286" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="326" y1="312" x2="312" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="352" y1="312" x2="338" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="378" y1="312" x2="364" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="404" y1="312" x2="390" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="430" y1="312" x2="416" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="456" y1="312" x2="442" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="482" y1="312" x2="468" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="508" y1="312" x2="494" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="534" y1="312" x2="520" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="560" y1="312" x2="546" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="586" y1="312" x2="572" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="612" y1="312" x2="598" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="638" y1="312" x2="624" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="664" y1="312" x2="650" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="690" y1="312" x2="676" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="716" y1="312" x2="702" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="742" y1="312" x2="728" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="768" y1="312" x2="754" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="794" y1="312" x2="780" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="820" y1="312" x2="806" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="846" y1="312" x2="832" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="872" y1="312" x2="858" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="898" y1="312" x2="884" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="924" y1="312" x2="910" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="950" y1="312" x2="936" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="976" y1="312" x2="962" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="1002" y1="312" x2="988" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="1028" y1="312" x2="1014" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="1054" y1="312" x2="1040" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="1080" y1="312" x2="1066" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="1106" y1="312" x2="1092" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="1132" y1="312" x2="1118" y2="408" stroke-width="3" opacity="0.7"/>
+<line class="iw-hatch" x1="1158" y1="312" x2="1144" y2="408" stroke-width="3" opacity="0.7"/>
+<polygon class="iw-trunk" points="44.0,120 56.0,120 56.0,300 44.0,300" opacity="1.0"/>
+<polygon class="iw-trunk" points="89.0,120 101.0,120 101.0,300 89.0,300" opacity="1.0"/>
+<polygon class="iw-trunk" points="1099.0,120 1111.0,120 1111.0,300 1099.0,300" opacity="1.0"/>
+<polygon class="iw-trunk" points="1144.0,120 1156.0,120 1156.0,300 1144.0,300" opacity="1.0"/>
+<line class="iw-horizon-line" x1="30" y1="300" x2="1170" y2="300" stroke-width="4"/>
+<rect class="iw-horizon-beam" x="660" y="252" width="200" height="48" opacity="0.8"/>
+<rect class="iw-beam-core" x="732" y="252" width="56" height="48" opacity="0.9"/>
+<circle class="iw-sun" cx="760" cy="282" r="17"/>
+<rect class="iw-grain" x="680" y="230" width="180" height="120" filter="url(#iw-grainf)" opacity="0.45" data-seed="horizon"/>
+</symbol>
+<symbol id="iw-strata" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<rect class="iw-stratum" x="0" y="300" width="1200" height="120" opacity="0.9"/>
+<rect class="iw-stratum" x="0" y="190" width="1200" height="106" opacity="0.7"/>
+<rect class="iw-stratum" x="0" y="90" width="1200" height="96" opacity="0.5"/>
+<line class="iw-stratum-seam" x1="0" y1="300" x2="1200" y2="300" stroke-width="3"/>
+<line class="iw-stratum-seam" x1="0" y1="190" x2="1200" y2="190" stroke-width="3"/>
+<line class="iw-stratum-seam" x1="0" y1="90" x2="1200" y2="90" stroke-width="3"/>
+<text class="iw-stratum-label" x="60" y="372">ARISTOTLE</text>
+<text class="iw-stratum-label" x="60" y="256">DESCARTES</text>
+<text class="iw-stratum-label" x="60" y="150">KANT</text>
+<polygon class="iw-lean-trunk" points="785.7,30 819.7,30 847.0,420 813.0,420" opacity="1.0"/>
+<polygon class="iw-beam" points="808.0,0 952.0,0 668.7,420 524.7,420" opacity="0.85"/>
+<polygon class="iw-beam-core" points="860.0,0 900.0,0 616.7,420 576.7,420" opacity="0.9"/>
+<rect class="iw-grain" x="790" y="0" width="190" height="420" filter="url(#iw-grainf)" opacity="0.45" data-seed="strata"/>
+</symbol>
+<symbol id="iw-lean" viewBox="0 0 1200 420">
+<polygon class="iw-lean-trunk" points="555.0,20 589.0,20 617.0,420 583.0,420" opacity="1.0"/>
+</symbol>
+<symbol id="iw-clearing" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk-dense" points="110.0,0 118.7,0 121.8,420 113.1,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="540.9,0 556.6,0 555.2,420 539.5,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="189.8,0 199.8,0 202.1,420 192.1,420" opacity="1.0"/>
+<polygon class="iw-trunk-dense" points="636.6,0 653.9,0 651.5,420 634.2,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="253.6,0 264.7,0 266.3,420 255.2,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="493.0,0 507.9,0 507.0,420 492.1,420" opacity="1.0"/>
+<polygon class="iw-trunk-dense" points="141.9,0 151.2,0 153.9,420 144.7,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="301.5,0 313.3,0 314.4,420 302.6,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="110.0,0 118.7,0 121.8,420 113.1,420" opacity="1.0"/>
+<polygon class="iw-trunk-dense" points="540.9,0 556.6,0 555.2,420 539.5,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="189.8,0 199.8,0 202.1,420 192.1,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="1030.2,0 1037.8,0 1041.6,420 1034.0,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="1096.5,0 1109.6,0 1109.9,420 1096.8,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="1137.6,0 1154.1,0 1152.1,420 1135.6,420" opacity="1.0"/>
+<polygon class="iw-trunk-dense" points="1153.4,0 1171.1,0 1168.4,420 1150.6,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="1175.5,0 1195.1,0 1191.1,420 1171.5,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="1087.0,0 1099.4,0 1100.1,420 1087.8,420" opacity="1.0"/>
+<polygon class="iw-trunk-dense" points="1162.8,0 1181.4,0 1178.1,420 1159.6,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="1109.1,0 1123.3,0 1122.9,420 1108.7,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="1030.2,0 1037.8,0 1041.6,420 1034.0,420" opacity="1.0"/>
+<polygon class="iw-trunk-dense" points="1096.5,0 1109.6,0 1109.9,420 1096.8,420" opacity="0.75"/>
+<polygon class="iw-trunk-dense" points="1137.6,0 1154.1,0 1152.1,420 1135.6,420" opacity="0.88"/>
+<polygon class="iw-trunk-dense" points="817.2,0 833.2,0 808.0,420 792.0,420" opacity="1.0"/>
+<polygon class="iw-trunk-dense" points="1006.8,0 1022.8,0 1048.0,420 1032.0,420" opacity="1.0"/>
+<polygon class="iw-beam" points="836.0,0 1004.0,0 720.7,420 552.7,420" opacity="0.9"/>
+<polygon class="iw-beam-core" points="890.0,0 950.0,0 666.7,420 606.7,420" opacity="0.95"/>
+<circle class="iw-point" cx="637" cy="382" r="12"/>
+<ellipse class="iw-landing" cx="637" cy="398" rx="72" ry="9"/>
+<rect class="iw-grain" x="800" y="0" width="240" height="420" filter="url(#iw-grainf)" opacity="0.5" data-seed="clearing"/>
+</symbol>
+<symbol id="iw-map" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="122.5,0 131.2,0 134.3,420 125.6,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="605.2,0 620.9,0 619.5,420 603.8,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="211.9,0 221.9,0 224.2,420 214.2,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="712.5,0 729.8,0 727.3,420 710.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="283.4,0 294.4,0 296.0,420 285.0,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="551.6,0 566.5,0 565.6,420 550.7,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1110.0,0 1117.6,0 1121.4,420 1113.8,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1141.0,0 1154.1,0 1154.4,420 1141.3,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1160.2,0 1176.7,0 1174.8,420 1158.3,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1167.6,0 1185.4,0 1182.7,420 1164.9,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1178.0,0 1197.6,0 1193.6,420 1174.0,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1136.6,0 1148.9,0 1149.7,420 1137.4,420" opacity="1.0"/>
+<rect class="iw-tablet" x="120" y="90" width="320" height="250" />
+<line class="iw-tablet-div" x1="280" y1="110" x2="280" y2="320" stroke-width="3"/>
+<text class="iw-tablet-num" x="172" y="160">I</text>
+<text class="iw-tablet-num" x="338" y="160">II</text>
+<line class="iw-tablet-tick" x1="152" y1="200" x2="222" y2="200" stroke-width="4"/>
+<line class="iw-tablet-tick" x1="312" y1="200" x2="382" y2="200" stroke-width="4"/>
+<line class="iw-tablet-tick" x1="152" y1="240" x2="222" y2="240" stroke-width="4"/>
+<line class="iw-tablet-tick" x1="312" y1="240" x2="382" y2="240" stroke-width="4"/>
+<line class="iw-tablet-tick" x1="152" y1="280" x2="222" y2="280" stroke-width="4"/>
+<line class="iw-tablet-tick" x1="312" y1="280" x2="382" y2="280" stroke-width="4"/>
+<path class="iw-path" d="M90,382 C200,368 300,340 380,290 C470,230 560,205 680,160 C790,120 850,95 905,70" fill="none" stroke-width="5" stroke-dasharray="2 12" stroke-linecap="round"/>
+<text class="iw-path-label" x="60" y="406">Dasein</text>
+<text class="iw-path-label" x="890" y="46">Zeit</text>
+<polygon class="iw-beam" points="932.0,0 1088.0,0 804.7,420 648.7,420" opacity="0.7"/>
+<line class="iw-measure" x1="1093" y1="0" x2="809.7" y2="420" stroke-width="3"/>
+<polygon class="iw-beam-core" points="990.0,0 1030.0,0 746.7,420 706.7,420" opacity="0.8"/>
+<rect class="iw-grain" x="920" y="0" width="200" height="420" filter="url(#iw-grainf)" opacity="0.35" data-seed="map"/>
+</symbol>
+<symbol id="iw-mine" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="117.0,0 125.7,0 128.8,420 120.2,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="577.1,0 592.8,0 591.4,420 575.6,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="202.2,0 212.2,0 214.5,420 204.5,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="679.3,0 696.6,0 694.1,420 676.9,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="270.4,0 281.4,0 283.0,420 272.0,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="526.0,0 540.9,0 540.0,420 525.0,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="151.1,0 160.3,0 163.1,420 153.9,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1092.9,0 1100.5,0 1104.3,420 1096.7,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1131.5,0 1144.6,0 1144.9,420 1131.7,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1155.4,0 1171.9,0 1169.9,420 1153.5,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1164.6,0 1182.4,0 1179.6,420 1161.8,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1177.4,0 1197.1,0 1193.1,420 1173.5,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1126.0,0 1138.3,0 1139.1,420 1126.7,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1170.1,0 1188.7,0 1185.4,420 1166.8,420" opacity="0.75"/>
+<polygon class="iw-beam" points="890.0,0 1070.0,0 786.7,420 606.7,420" opacity="0.8"/>
+<polygon class="iw-beam-core" points="954.0,0 1006.0,0 722.7,420 670.7,420" opacity="0.85"/>
+<polygon class="iw-trunk-onbeam" points="898.0,0 912.0,0 912.0,420 898.0,420" opacity="1.0"/>
+<polygon class="iw-trunk-onbeam" points="1050.0,0 1060.0,0 1060.0,420 1050.0,420" opacity="1.0"/>
+<circle class="iw-mine-ring" cx="330" cy="230" r="95" fill="none" stroke-width="6"/>
+<circle class="iw-mine-center" cx="368" cy="252" r="13"/>
+<rect class="iw-grain" x="870" y="0" width="230" height="420" filter="url(#iw-grainf)" opacity="0.4" data-seed="mine"/>
+</symbol>
+<symbol id="iw-boundary" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="115.0,0 123.7,0 126.8,420 118.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="566.4,0 582.1,0 580.6,420 564.9,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="198.6,0 208.5,0 210.8,420 200.8,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="666.7,0 683.9,0 681.5,420 664.2,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="265.4,0 276.5,0 278.1,420 267.0,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="516.2,0 531.1,0 530.2,420 515.3,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="148.4,0 157.6,0 160.4,420 151.2,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1089.1,0 1096.7,0 1100.5,420 1092.9,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1129.4,0 1142.5,0 1142.7,420 1129.6,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1154.3,0 1170.8,0 1168.9,420 1152.4,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1163.9,0 1181.7,0 1178.9,420 1161.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1177.3,0 1196.9,0 1193.0,420 1173.4,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1123.6,0 1135.9,0 1136.7,420 1124.4,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1169.7,0 1188.2,0 1184.9,420 1166.4,420" opacity="0.75"/>
+<polygon class="iw-beam" points="874.0,0 1066.0,0 782.7,420 590.7,420" opacity="0.55"/>
+<line class="iw-boundary-edge" x1="1071" y1="0" x2="787.7" y2="420" stroke-width="5"/>
+<polygon class="iw-beam-core" points="950.0,0 990.0,0 706.7,420 666.7,420" opacity="0.7"/>
+<line class="iw-boundary-line" x1="420" y1="20" x2="420" y2="400" stroke-width="5"/>
+<text class="iw-refused" x="478" y="150">α</text>
+<text class="iw-refused" x="478" y="235">ψ</text>
+<text class="iw-refused" x="478" y="320">β</text>
+<circle class="iw-near-point" cx="340" cy="230" r="12"/>
+<rect class="iw-grain" x="860" y="0" width="240" height="420" filter="url(#iw-grainf)" opacity="0.3" data-seed="boundary"/>
+</symbol>
+<symbol id="iw-sherd" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="112.9,0 121.6,0 124.7,420 116.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="555.6,0 571.3,0 569.9,420 554.2,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="194.9,0 204.9,0 207.1,420 197.1,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="654.0,0 671.3,0 668.9,420 651.6,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="260.5,0 271.5,0 273.1,420 262.1,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1085.3,0 1092.9,0 1096.7,420 1089.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1127.3,0 1140.4,0 1140.6,420 1127.5,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1153.2,0 1169.7,0 1167.8,420 1151.3,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1163.2,0 1181.0,0 1178.2,420 1160.4,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1177.2,0 1196.8,0 1192.9,420 1173.3,420" opacity="0.88"/>
+<polygon class="iw-beam-soft" points="858.0,0 1062.0,0 778.7,420 574.7,420" opacity="0.6"/>
+<polygon class="iw-beam-core-soft" points="930.0,0 990.0,0 706.7,420 646.7,420" opacity="0.65"/>
+<path class="iw-sherd" d="M230,295 C245,215 320,170 415,178 C390,245 340,295 230,295 Z" fill="none" stroke-width="6"/>
+<line class="iw-sherd-hatch" x1="275" y1="222" x2="261" y2="256" stroke-width="3"/>
+<line class="iw-sherd-hatch" x1="299" y1="227" x2="285" y2="261" stroke-width="3"/>
+<line class="iw-sherd-hatch" x1="323" y1="232" x2="309" y2="266" stroke-width="3"/>
+<line class="iw-sherd-hatch" x1="347" y1="237" x2="333" y2="271" stroke-width="3"/>
+<line class="iw-sherd-hatch" x1="371" y1="242" x2="357" y2="276" stroke-width="3"/>
+<line class="iw-ground" x1="140" y1="328" x2="530" y2="328" stroke-width="3"/>
+<rect class="iw-grain" x="840" y="0" width="250" height="420" filter="url(#iw-grainf)" opacity="0.3" data-seed="sherd"/>
+</symbol>
+<symbol id="iw-dwelling" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk-curve" points="449.9,0 465.9,0 428.0,420 412.0,420" opacity="1.0"/>
+<polygon class="iw-trunk-curve" points="519.2,0 531.2,0 506.0,420 494.0,420" opacity="1.0"/>
+<polygon class="iw-trunk-curve" points="1073.1,0 1091.1,0 1129.0,420 1111.0,420" opacity="1.0"/>
+<polygon class="iw-trunk-curve" points="1035.0,0 1047.0,0 1068.0,420 1056.0,420" opacity="1.0"/>
+<polygon class="iw-trunk-curve" points="345.5,0 356.5,0 335.5,420 324.5,420" opacity="1.0"/>
+<polygon class="iw-beam" points="872.0,0 1088.0,0 804.7,420 588.7,420" opacity="0.85"/>
+<polygon class="iw-beam-core-wide" points="932.0,0 1028.0,0 744.7,420 648.7,420" opacity="0.9"/>
+<path class="iw-hut" d="M615,420 L615,318 L697,252 L779,318 L779,420" fill="none" stroke-width="7"/>
+<rect class="iw-hut-door" x="669" y="330" width="56" height="90"/>
+<line class="iw-hut-base" x1="595" y1="420" x2="799" y2="420" stroke-width="5"/>
+<path class="iw-hold-ring" d="M545,305 C560,200 610,150 697,150 C784,150 834,200 849,305" fill="none" stroke-width="4"/>
+<rect class="iw-grain" x="800" y="0" width="260" height="420" filter="url(#iw-grainf)" opacity="0.45" data-seed="dwelling"/>
+</symbol>
+<symbol id="iw-outside" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="110.0,0 118.7,0 121.8,420 113.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="540.9,0 556.6,0 555.2,420 539.5,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="189.8,0 199.8,0 202.1,420 192.1,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="636.6,0 653.9,0 651.5,420 634.2,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="253.6,0 264.7,0 266.3,420 255.2,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="493.0,0 507.9,0 507.0,420 492.1,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1087.2,0 1094.8,0 1098.6,420 1091.0,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1128.3,0 1141.4,0 1141.7,420 1128.6,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1153.8,0 1170.3,0 1168.3,420 1151.8,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1163.6,0 1181.3,0 1178.6,420 1160.8,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1177.3,0 1196.9,0 1192.9,420 1173.3,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1122.4,0 1134.8,0 1135.5,420 1123.2,420" opacity="1.0"/>
+<polygon class="iw-beam-washed" points="836.0,0 1064.0,0 780.7,420 552.7,420" opacity="0.4"/>
+<polygon class="iw-beam-core-washed" points="920.0,0 980.0,0 696.7,420 636.7,420" opacity="0.45"/>
+<rect class="iw-cabinet" x="170" y="170" width="190" height="150" fill="none" stroke-width="4" stroke-dasharray="10 8"/>
+<line class="iw-cabinet" x1="170" y1="225" x2="360" y2="225" stroke-width="3" stroke-dasharray="10 8"/>
+<path class="iw-out-arrow" d="M420,250 L560,250 M560,250 L534,232 M560,250 L534,268" fill="none" stroke-width="6"/>
+<circle class="iw-out-tip" cx="560" cy="250" r="7"/>
+<rect class="iw-grain" x="820" y="0" width="270" height="420" filter="url(#iw-grainf)" opacity="0.25" data-seed="outside"/>
+</symbol>
+<symbol id="iw-ring" viewBox="0 0 1200 420"><defs><filter id="iw-grainf" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.6 0.6 0.6 0 0" result="nw"/>
+<feComposite in="nw" in2="SourceGraphic" operator="in" result="g"/>
+</filter></defs>
+<polygon class="iw-trunk" points="107.9,0 116.6,0 119.7,420 111.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="530.2,0 545.9,0 544.5,420 528.7,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="186.1,0 196.1,0 198.4,420 188.4,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="624.0,0 641.3,0 638.8,420 621.6,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="248.7,0 259.7,0 261.3,420 250.3,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="483.3,0 498.2,0 497.3,420 482.3,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1083.4,0 1091.0,0 1094.8,420 1087.2,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1126.2,0 1139.3,0 1139.6,420 1126.4,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1152.7,0 1169.2,0 1167.2,420 1150.8,420" opacity="1.0"/>
+<polygon class="iw-trunk" points="1162.9,0 1180.7,0 1177.9,420 1160.1,420" opacity="0.75"/>
+<polygon class="iw-trunk" points="1177.1,0 1196.8,0 1192.8,420 1173.2,420" opacity="0.88"/>
+<polygon class="iw-trunk" points="1120.1,0 1132.4,0 1133.2,420 1120.8,420" opacity="1.0"/>
+<polygon class="iw-beam" points="820.0,0 1060.0,0 776.7,420 536.7,420" opacity="0.85"/>
+<polygon class="iw-beam-core" points="904.0,0 976.0,0 692.7,420 620.7,420" opacity="0.9"/>
+<ellipse class="iw-pool" cx="670" cy="404" rx="150" ry="14"/>
+<path class="iw-ring" d="M448,178 C380,145 305,195 298,275 C291,355 358,400 432,392 C490,385 528,348 530,298" fill="none" stroke-width="6"/>
+<line class="iw-ring-tick" x1="312" y1="225" x2="328" y2="214" stroke-width="4"/>
+<line class="iw-ring-tick" x1="303" y1="300" x2="303" y2="280" stroke-width="4"/>
+<line class="iw-ring-tick" x1="348" y1="365" x2="333" y2="352" stroke-width="4"/>
+<line class="iw-ring-tick" x1="425" y1="388" x2="406" y2="383" stroke-width="4"/>
+<rect class="iw-grain" x="800" y="0" width="280" height="420" filter="url(#iw-grainf)" opacity="0.4" data-seed="ring"/>
+</symbol>
+</svg>

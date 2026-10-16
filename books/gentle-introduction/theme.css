@@ -1,45 +1,1053 @@
-/* Gentle Introduction — verdigris, deep water */
+/* Gentle Introduction — THE CONTEMPLATIVE CATHEDRAL (approved GI1–GI7)
+   Book tokens + cover composition + TOC/nav/ending grammar.
+   Cohort plate treatments merge below, sequentially, as cohort CSS lands.
+   Hooks: body[data-book="gentle-introduction"], [data-view], [data-chapter],
+   [data-art]; slots #cover-art / #chapter-art (reader.js fills from
+   design/chapters.json). Unlayered: wins over @layer shared. */
+
+/* ── 1. Tokens: six named hues (book-identity.json) ─────────────── */
+body[data-book="gentle-introduction"] {
+  --gi-narthex: #100f0d;
+  --gi-ashlar: #1e1b16;
+  --gi-vellum: #ece2ce;
+  --gi-candle: #dfa050;
+  --gi-ember: #a83a2c;
+  --gi-ashen: #9c917e;
+  --gi-paper: #f4eee1;
+  --gi-sepia: #efe4d0;
+  --gi-ink: #241f16;
+  --gi-candle-deep: #7d5719;
+  --gi-ember-paper: #8e2f24;
+  --font-display: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+}
+
+/* Dark-first: Narthex ground, Vellum text, Candle light.
+   --text-faint is the Ashen step #8F8674 (5.3:1 on Narthex), NOT the
+   shared #6F675A (3.43:1 — R2 finding): it paints .meta-sub directly. */
 :root, html[data-theme="dark"] {
-  --bg: #0b1214;
-  --bg-elevated: #111b1e;
-  --bg-soft: #182528;
-  --surface: #1f3034;
-  --border: rgba(95, 143, 131, 0.16);
-  --border-strong: rgba(95, 143, 131, 0.32);
-  --text: #e2efeb;
-  --text-muted: #93b3a9;
-  --text-faint: #5d7a72;
-  --accent: #5f8f83;
-  --accent-soft: rgba(95, 143, 131, 0.12);
-  --accent-hover: #7fb3a4;
-  --copper: #c9b37a;
-  --reader-max: 50rem;
+  --bg: #100f0d;
+  --bg-elevated: #1e1b16;
+  --bg-soft: #1e1b16;
+  --surface: #1e1b16;
+  --border: rgba(156, 145, 126, 0.2);
+  --border-strong: rgba(156, 145, 126, 0.42);
+  --text: #ece2ce;
+  --text-muted: #9c917e;
+  --text-faint: #8f8674;
+  --accent: #dfa050;
+  --accent-soft: rgba(223, 160, 80, 0.12);
+  --accent-hover: #f4d9a0;
+  --copper: #a83a2c;
+  --on-accent: #100f0d;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --reader-max: 42rem;
+}
+
+/* Light + sepia: warm paper, ink text, Candle deepened, plates stay night.
+   --text-faint #6B6252 holds 5.2/4.8:1 on paper/sepia; --accent #7D5719
+   holds 5.6/5.1:1 so dose numerals + drop caps pass on paper (measured). */
+html[data-theme="light"] {
+  --bg: #f4eee1;
+  --bg-elevated: #ece2ce;
+  --bg-soft: #e7dcc4;
+  --surface: #ece2ce;
+  --border: rgba(36, 31, 22, 0.14);
+  --border-strong: rgba(36, 31, 22, 0.3);
+  --text: #241f16;
+  --text-muted: #5c5344;
+  --text-faint: #6b6252;
+  --accent: #7d5719;
+  --accent-soft: rgba(125, 87, 25, 0.12);
+  --accent-hover: #6e4d16;
+  --copper: #8e2f24;
+  --on-accent: #f4eee1;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --reader-max: 42rem;
 }
 html[data-theme="sepia"] {
-  --bg: #eef1ea;
-  --bg-elevated: #e2e8de;
-  --bg-soft: #d3dccd;
-  --surface: #ffffff;
-  --text: #1c2a27;
-  --text-muted: #5a6f6a;
-  --accent: #3f6b61;
-  --border: rgba(63, 107, 97, 0.18);
+  --bg: #efe4d0;
+  --bg-elevated: #e7d8ba;
+  --bg-soft: #e0cfae;
+  --surface: #e7d8ba;
+  --border: rgba(36, 31, 22, 0.14);
+  --border-strong: rgba(36, 31, 22, 0.3);
+  --text: #241f16;
+  --text-muted: #5c5344;
+  --text-faint: #6b6252;
+  --accent: #7d5719;
+  --accent-soft: rgba(125, 87, 25, 0.14);
+  --accent-hover: #6e4d16;
+  --copper: #8e2f24;
+  --on-accent: #efe4d0;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --reader-max: 42rem;
 }
-html[data-theme="light"] {
-  --bg: #f7faf9;
-  --text: #16211f;
-  --accent: #3f6b61;
-  --bg-elevated: #ffffff;
+
+/* Remaining themes inherit the dark Narthex identity */
+html[data-theme="nocturne"] {
+  --bg: #100f0d;
+  --bg-elevated: #1e1b16;
+  --bg-soft: #1e1b16;
+  --surface: #1e1b16;
+  --text: #ece2ce;
+  --text-muted: #9c917e;
+  --text-faint: #8f8674;
+  --accent: #dfa050;
+  --accent-soft: rgba(223, 160, 80, 0.12);
+  --accent-hover: #f4d9a0;
+  --copper: #a83a2c;
+  --on-accent: #100f0d;
+  --border: rgba(156, 145, 126, 0.2);
+  --border-strong: rgba(156, 145, 126, 0.42);
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --reader-max: 42rem;
 }
-.cover-glow {
-  background: radial-gradient(ellipse at 50% 35%, rgba(95, 143, 131, 0.18) 0%, rgba(60, 100, 110, 0.07) 45%, transparent 70%);
+html[data-theme="verdant"], html[data-theme="oxblood"],
+html[data-theme="slate"], html[data-theme="candlelight"] {
+  --bg: #100f0d;
+  --bg-elevated: #1e1b16;
+  --bg-soft: #1e1b16;
+  --surface: #1e1b16;
+  --text: #ece2ce;
+  --text-muted: #9c917e;
+  --text-faint: #8f8674;
+  --accent: #dfa050;
+  --accent-soft: rgba(223, 160, 80, 0.12);
+  --accent-hover: #f4d9a0;
+  --copper: #a83a2c;
+  --on-accent: #100f0d;
+  --border: rgba(156, 145, 126, 0.2);
+  --border-strong: rgba(156, 145, 126, 0.42);
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --reader-max: 42rem;
 }
-.cover-grid {
-  background-image:
-    linear-gradient(rgba(95, 143, 131, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(95, 143, 131, 0.06) 1px, transparent 1px);
-  background-size: 40px 40px;
+
+/* ── 2. Cover: plate right, inscriptional title block left ───────
+   #cover-art is injected before .cover-content; book CSS lays the two
+   side by side. Shared .cover-bg/.cover-grid/.cover-glow stay hidden. */
+body[data-book="gentle-introduction"][data-view="cover"] #cover {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  align-items: stretch;
+  padding: 0;
 }
-.title-line.accent { color: var(--accent); font-style: italic; }
-.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
-.chapter-text p { text-align: justify; hyphens: auto; }
+body[data-book="gentle-introduction"] .cover-bg { display: none; }
+body[data-book="gentle-introduction"] #cover-art {
+  display: flex;
+  margin: 0;
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 100%;
+  max-width: none;
+  align-items: center;
+  justify-content: center;
+  background: #0b0a08;
+}
+body[data-book="gentle-introduction"] #cover-art svg {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+body[data-book="gentle-introduction"] #cover-art figcaption { display: none; }
+body[data-book="gentle-introduction"] .cover-content {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  max-width: none;
+  padding: clamp(2rem, 6vw, 5rem);
+  padding-bottom: 5rem;
+  margin: 0;
+}
+body[data-book="gentle-introduction"] .cover-eyebrow {
+  color: var(--text-faint);
+}
+body[data-book="gentle-introduction"] .cover-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 5.2vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+body[data-book="gentle-introduction"] .title-line.accent {
+  font-style: normal;
+}
+body[data-book="gentle-introduction"] .cover-rule {
+  margin-left: 0;
+  margin-right: 0;
+}
+body[data-book="gentle-introduction"] .cover-author {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+}
+body[data-book="gentle-introduction"] .cover-quote {
+  font-size: 1.1rem;
+}
+body[data-book="gentle-introduction"] .cover-actions {
+  justify-content: flex-start;
+}
+body[data-book="gentle-introduction"] .cover-footer {
+  text-align: left;
+  padding-left: clamp(2rem, 6vw, 5rem);
+}
+
+/* Cover door-light settle: ONE orchestrated moment, once per visit */
+@keyframes gi-door-settle {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+body[data-book="gentle-introduction"][data-view="cover"] #cover-art svg {
+  animation: gi-door-settle 1.1s ease-out both;
+}
+
+/* ── 3. Chapter opener grammar (plates arrive via cohort CSS) ── */
+/* R3 fix (FinalValidator): honor the shared SANS reading preference. The
+   book's per-theme --font-serif (unlayered) always beats the shared
+   html[data-font] switch, so the switch is honored explicitly here for
+   reading prose (Zarathustra R2-2 precedent). Marcellus display, drop
+   caps, captions, numerals, and seals never switch. */
+html[data-font="sans"] body[data-book="gentle-introduction"][data-view="reader"] .chapter-text,
+html[data-font="sans"] body[data-book="gentle-introduction"][data-view="reader"] .chapter-text > p {
+  font-family: var(--font-sans);
+}
+body[data-book="gentle-introduction"] #chapter-art {
+  margin: 0 auto 2.5rem;
+  max-width: 64rem;
+}
+body[data-book="gentle-introduction"] #chapter-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body[data-book="gentle-introduction"] #chapter-art figcaption {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  color: var(--gi-vellum);
+  background: #100f0d;
+  display: table;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgba(223, 160, 80, 0.35);
+}
+body[data-book="gentle-introduction"] .chapter-meta { margin-bottom: 3rem; }
+body[data-book="gentle-introduction"] .meta-part {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+body[data-book="gentle-introduction"] .meta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  line-height: 1.12;
+  text-wrap: balance;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-book="gentle-introduction"] .meta-number {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.28em;
+  color: var(--text-muted);
+}
+body[data-book="gentle-introduction"] .meta-rule span {
+  width: 9rem;
+  height: 12px;
+  transform: none;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 2 C13 8 13.6 11 10 14 C6.4 11 7 8 10 2 Z' fill='%23DFA050'/%3E%3Cpath d='M10 8.5 C11.4 11 11.6 12.2 10 13 C8.4 12.2 8.6 11 10 8.5 Z' fill='%23F4D9A0'/%3E%3C/svg%3E") center / 12px 12px no-repeat,
+    linear-gradient(90deg, transparent, var(--text-faint) 30%, var(--text-faint) 70%, transparent) center / 100% 1px no-repeat;
+  box-shadow: none;
+  opacity: 1;
+}
+/* Silence the shared fleuron ornaments: the candle rule is this book's
+   only opener ornament (unlayered book CSS wins over @layer shared). */
+body[data-book="gentle-introduction"] .chapter-meta::after,
+body[data-book="gentle-introduction"] .meta-number::after,
+body[data-book="gentle-introduction"] .cover-eyebrow::before,
+body[data-book="gentle-introduction"] .cover-eyebrow::after,
+body[data-book="gentle-introduction"] .cover-quote::after {
+  content: none;
+}
+/* GIR1: the Marcellus "I" is a plain stem — at drop-cap size it reads as
+   a gold bar ("| thought"). Five chapters open I-led: p1c1/p1c5 with
+   single-letter "I", p1c7/p1c8/p1c11 with "It"/"In" (the narrow I + tight
+   pair reads as a bar + ghost). p1c3/p1c10 open short (reader.js .no-drop).
+   So: no drop cap on the first paragraph for exactly those chapters;
+   instead the cap moves to the first droppable paragraph (authored per
+   chapter, verified text). All other chapters keep the inscriptional
+   Marcellus Candle cap on P0. */
+body[data-book="gentle-introduction"] .chapter-text p {
+  max-width: min(var(--reader-max), 68ch);
+  hyphens: none;
+}
+body[data-book="gentle-introduction"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  color: var(--accent);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c11"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  background: none;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c10"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c11"] .chapter-text > p.gi-drop::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 3.4em;
+  line-height: 0.8;
+  padding: 0.06em 0.13em 0 0;
+  color: var(--accent);
+  background: none;
+  text-shadow: none;
+}
+
+/* ── 4. TOC: dispensary-of-stations ledger (GIR3) ───────────────
+   The drawer is a stations ledger: Marcellus part header over a
+   candle-rule, one arch-notch per dose in its authored arc tint,
+   Source Serif titles, ember→gold read state. Tints authored per
+   chapter (cover.svg arc), never modulo. */
+body[data-book="gentle-introduction"] .drawer-panel {
+  background: var(--gi-narthex);
+}
+body[data-book="gentle-introduction"] .drawer-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  color: var(--text-muted);
+}
+body[data-book="gentle-introduction"] .drawer-header h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+body[data-book="gentle-introduction"] .toc-part-header {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+}
+body[data-book="gentle-introduction"] .toc-part-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.02em;
+  border-top: 1px solid var(--border-strong);
+}
+body[data-book="gentle-introduction"] .toc-search {
+  font-family: var(--font-serif);
+  background: var(--gi-ashlar);
+}
+body[data-book="gentle-introduction"] .toc-progress {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="gentle-introduction"] .toc-num {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  min-width: 2.6rem;
+  color: var(--text-muted);
+}
+body[data-book="gentle-introduction"] .toc-name {
+  font-family: var(--font-serif);
+}
+body[data-book="gentle-introduction"] .toc-sub {
+  font-family: var(--font-serif);
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 0.82rem;
+}
+body[data-book="gentle-introduction"] .toc-chapter {
+  position: relative;
+  padding-left: 2.1rem;
+  border-left: none;
+}
+body[data-book="gentle-introduction"] .toc-chapter::before {
+  content: "";
+  position: absolute;
+  left: 0.95rem;
+  top: 50%;
+  width: 7px;
+  height: 20px;
+  transform: translateY(-50%);
+  clip-path: polygon(50% 0, 100% 28%, 100% 100%, 0 100%, 0 28%);
+  opacity: 0.55;
+}
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c1"]::before { background: #a83a2c; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c2"]::before { background: #ac432b; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c3"]::before { background: #b14d2a; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c4"]::before { background: #b65729; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c5"]::before { background: #bb622a; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c6"]::before { background: #c06d2c; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c7"]::before { background: #c6782f; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c8"]::before { background: #cc8333; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c9"]::before { background: #d48c49; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c10"]::before { background: #da964c; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c11"]::before { background: #dfa050; }
+body[data-book="gentle-introduction"] .toc-chapter.active::before,
+body[data-book="gentle-introduction"] .toc-chapter.read::before {
+  opacity: 1;
+}
+body[data-book="gentle-introduction"] .toc-chapter.active .toc-num {
+  color: var(--accent);
+}
+body[data-book="gentle-introduction"] .toc-chapter.active .toc-name,
+body[data-book="gentle-introduction"] .toc-chapter.read .toc-name {
+  color: var(--text);
+}
+body[data-book="gentle-introduction"] .toc-chapter.read .toc-check {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+body[data-book="gentle-introduction"] .toc-check {
+  border-radius: 0;
+  clip-path: polygon(50% 0, 100% 28%, 100% 100%, 0 100%, 0 28%);
+  width: 0.85rem;
+  height: 1.05rem;
+  border: none;
+  background: var(--border-strong);
+}
+/* (GIR3: the §4 ledger owns all TOC rows; C.5's cohort-C notches merged there.) */
+
+/* ── 5. Navigation + endings ───────────────────────────────────
+   Prev/next cards carry the neighbor's motif name (§5): the reader
+   always knows which station the walk reaches next. C.9–C.11 carry
+   the cohort-C labels (§7 C.6); the eight below complete the walk. */
+body[data-book="gentle-introduction"] .nav-label {
+  font-family: var(--font-display);
+  letter-spacing: 0.24em;
+  color: var(--text-muted);
+}
+body[data-book="gentle-introduction"] .nav-title {
+  font-family: var(--font-serif);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #btn-next .nav-label::after {
+  content: " · Dose II — Two arches";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #btn-prev .nav-label::after {
+  content: " · Dose I — The narthex door";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #btn-next .nav-label::after {
+  content: " · Dose III — Three lancets";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #btn-prev .nav-label::after {
+  content: " · Dose II — Two arches";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #btn-next .nav-label::after {
+  content: " · Dose IV — The cornerstone";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #btn-prev .nav-label::after {
+  content: " · Dose III — Three lancets";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #btn-next .nav-label::after {
+  content: " · Dose V — The westwork";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #btn-prev .nav-label::after {
+  content: " · Dose IV — The cornerstone";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #btn-next .nav-label::after {
+  content: " · Dose VI — The arcade";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #btn-prev .nav-label::after {
+  content: " · Dose V — The westwork";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #btn-next .nav-label::after {
+  content: " · Dose VII — Two chapels";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #btn-prev .nav-label::after {
+  content: " · Dose VI — The arcade";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #btn-next .nav-label::after {
+  content: " · Dose VIII — The spire";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #btn-prev .nav-label::after {
+  content: " · Dose VII — Two chapels";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #btn-next .nav-label::after {
+  content: " · Dose IX — The crossing";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c9"] #btn-prev .nav-label::after {
+  content: " · Dose VIII — The spire";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c11"] #btn-next .nav-label::after {
+  content: " · End of the walk";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* ── 6. Responsive: plate never below portal + notches on phones */
+@media (max-width: 860px) {
+  body[data-book="gentle-introduction"][data-view="cover"] #cover {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(42vh, auto) 1fr;
+  }
+  body[data-book="gentle-introduction"] #cover-art {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 42vh;
+  }
+  body[data-book="gentle-introduction"] #cover-art svg {
+    min-height: 42vh;
+    max-height: 52vh;
+  }
+  body[data-book="gentle-introduction"] .cover-content {
+    grid-column: 1;
+    grid-row: 2;
+    padding-bottom: 4rem;
+  }
+}
+@media (max-width: 560px) {
+  body[data-book="gentle-introduction"] #chapter-art {
+    margin-bottom: 2rem;
+  }
+  body[data-book="gentle-introduction"] .meta-title {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="gentle-introduction"][data-view="cover"] #cover-art svg {
+    animation: none;
+  }
+}
+@media print {
+  body[data-book="gentle-introduction"] #cover-art,
+  body[data-book="gentle-introduction"] #chapter-art {
+    display: none;
+  }
+}
+
+/* ── 7. Cohort C integration (Crossing → Sanctuary, merged 2026-10-15) ──
+   Source: design/cohort-c.css (C.1 plate frame, C.4 end seals, C.6 nav
+   labels, C.8 mobile). C.0 tokens + C.2 meta + C.3 body skipped:
+   shell-owned. C.5 TOC notches superseded by the §4 GIR3 ledger (all 11
+   doses). p1c10 red drop cap rejected (4.46:1 < 4.5); Candle stands. */
+body[data-book="gentle-introduction"] #chapter-art.plate {
+  background: var(--gi-narthex);
+  border: 1px solid rgba(156, 145, 126, 0.35);
+}
+body[data-book="gentle-introduction"] #chapter-art.plate svg {
+  min-height: 200px;
+}
+body[data-book="gentle-introduction"] #chapter-art.plate figcaption,
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art figcaption,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art figcaption {
+  border-top: 1px solid rgba(156, 145, 126, 0.35);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  display: block;
+  letter-spacing: 0.22em;
+  padding: 0.7rem 1rem 0.8rem;
+  text-align: center;
+}
+/* C.4 end seals: authored url() art ≤32px per contract A.0 */
+body[data-book="gentle-introduction"][data-chapter="p1c9"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 28 L6 14 Q6 7 16 4 Q26 7 26 14 L26 28 Z' fill='none' stroke='%23DFA050' stroke-width='2'/%3E%3Cpath d='M16 12 C18.5 16.5 19 19 16 21.5 C13 19 13.5 16.5 16 12 Z' fill='%23DFA050'/%3E%3C/svg%3E");
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c10"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23A83A2C' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23DFA050'/%3E%3Cg stroke='%23A83A2C' stroke-width='1.6'%3E%3Cpath d='M16 5v4M16 23v4M5 16h4M23 16h4M8.2 8.2l2.8 2.8M21 21l2.8 2.8M23.8 8.2L21 11M11 21l-2.8 2.8'/%3E%3C/g%3E%3C/svg%3E");
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c11"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M8 28 L8 15 Q8 8 16 5 Q24 8 24 15 L24 28 Z' fill='%23DFA050' opacity='.28' stroke='%23DFA050' stroke-width='2'/%3E%3Cpath d='M16 11 C17.5 14 17.8 15.5 16 17 C14.2 15.5 14.5 14 16 11 Z' fill='%23F4D9A0'/%3E%3C/svg%3E");
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: none;
+}
+/* C.6 nav labels: neighbor motif names */
+body[data-book="gentle-introduction"][data-chapter="p1c9"] #btn-next .nav-label::after {
+  content: " · Dose X — The rose";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c10"] #btn-prev .nav-label::after {
+  content: " · Dose IX — The crossing";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c10"] #btn-next .nav-label::after {
+  content: " · Dose XI — The sanctuary";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c11"] #btn-prev .nav-label::after {
+  content: " · Dose X — The rose";
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+/* C.8 mobile: plate breathes edge-to-edge */
+@media (max-width: 560px) {
+  body[data-book="gentle-introduction"] #chapter-art.plate {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    max-width: none;
+  }
+}
+/* ── 8. Cohort A integration (Narthex, merged 2026-10-15) ──────────
+   Source: design/cohort-a.css (per-motif arch frames, authored drop-cap
+   sizes, A.0 end seals, phone floor, reduced-motion guard). Adopted with
+   two repairs: (a) p1c1's drop cap moved to P1 (.gi-drop) — the Marcellus
+   "I" stem reads as a bar (GIR1); p1c1's first-of-type keeps the shell's
+   plain-letter reset. (b) p1c3's .no-drop override deleted — cathedral.js
+   marks P1 (.gi-drop) instead, so the Loyalist-now address opens clean
+   and the story paragraph carries the cap. In-SVG dose strips removed at
+   the art source (GI-A3); the 0.25rem svg/caption gap note is moot. */
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #100f0d;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch {
+  max-width: 560px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch svg {
+  border: 1px solid #3a332a;
+  box-shadow: 0 0 0 4px #060504, 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch {
+  max-width: 620px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch svg {
+  border: 1px solid #4a4335;
+  border-left: 3px solid #2c2721;
+  border-right: 3px solid #2c2721;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch {
+  max-width: 600px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch svg {
+  border: 1px solid #4a4335;
+  border-bottom: 4px solid #1e1b16;
+  box-shadow: 0 0 0 4px #0b0a08, 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-art="narthex-door"] .chapter-text > p.gi-drop::first-letter {
+  font-size: 3.15em;
+  line-height: 0.8;
+  padding: 0.05em 0.12em 0 0;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="twin-arch"] .chapter-text > p:first-of-type::first-letter {
+  font-weight: 400;
+  font-size: 3.4em;
+  line-height: 0.79;
+  padding: 0.05em 0.13em 0 0;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p.gi-drop::first-letter {
+  font-size: 3.55em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+}
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="narthex-door"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="twin-arch"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="narthex-door"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="twin-arch"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p.gi-drop::first-letter {
+  color: #7d5719;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%2021%20V11%20Q6%206%2012%203%20Q18%206%2018%2011%20V21%20Z'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.6'/%3E%3Cpath%20d='M8.5%2021%20V12%20Q8.5%208%2012%205.5%20V21%20Z'%20fill='%23A83A2C'/%3E%3Cline%20x1='12'%20y1='5.5'%20x2='12'%20y2='21'%20stroke='%239C917E'%20stroke-width='1'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='24'%20viewBox='0%200%2028%2024'%3E%3Cpath%20d='M3%2021%20V12%20Q3%208%207%205.5%20Q11%208%2011%2012%20V21%20Z'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.4'/%3E%3Cpath%20d='M17%2021%20V12%20Q17%208%2021%205.5%20Q25%208%2025%2012%20V21%20Z'%20fill='%23AC432B'%20fill-opacity='0.9'%20stroke='%239C917E'%20stroke-width='1.4'/%3E%3Cpath%20d='M14%204%20L15.5%206.5%20L14%209%20L12.5%206.5%20Z'%20fill='%23AC432B'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='24'%20viewBox='0%200%2030%2024'%3E%3Cpath%20d='M4%2021%20V10%20Q4%207%206.5%204.5%20Q9%207%209%2010%20V21%20Z'%20fill='%23B14D2A'%20fill-opacity='0.9'/%3E%3Cpath%20d='M12.5%2021%20V10%20Q12.5%207%2015%204.5%20Q17.5%207%2017.5%2010%20V21%20Z'%20fill='%23DFA050'%20fill-opacity='0.9'/%3E%3Cpath%20d='M21%2021%20V10%20Q21%207%2023.5%204.5%20Q26%207%2026%2010%20V21%20Z'%20fill='%23B14D2A'%20fill-opacity='0.45'/%3E%3Cg%20fill='none'%20stroke='%239C917E'%20stroke-width='1'%3E%3Cpath%20d='M4%2021%20V10%20Q4%207%206.5%204.5%20Q9%207%209%2010%20V21%20Z'/%3E%3Cpath%20d='M12.5%2021%20V10%20Q12.5%207%2015%204.5%20Q17.5%207%2017.5%2010%20V21%20Z'/%3E%3Cpath%20d='M21%2021%20V10%20Q21%207%2023.5%204.5%20Q26%207%2026%2010%20V21%20Z'/%3E%3C/g%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+@media (max-width: 560px) {
+  body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch {
+    width: auto;
+    max-width: none;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch svg {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* ── 9. Cohort B integration (Nave, merged 2026-10-15) ─────────────
+   Source: design/cohort-b.css, adopted VERBATIM (scope-clean: arch/plate
+   frames + drop caps + seals + phone + reduced-motion only; GIR1-aware:
+   p1c5 styles the .gi-drop hook, never re-caps P0). Art repairs applied
+   pre-merge at the lead's bench: westwork candle shortened clear of the
+   oculus; arcade vanishing-bay reordered + arch bite inside the gold. */
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate svg,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #100f0d;
+  margin-bottom: 0.25rem;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch {
+  max-width: 600px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch svg {
+  border: 1px solid #3a332a;
+  box-shadow: 0 0 0 5px #060504, 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate {
+  max-width: 660px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate svg,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate svg {
+  border: 1px solid #dfa050;
+  box-shadow: 0 0 0 4px #1e1b16, 0 22px 52px rgba(16, 15, 13, 0.45);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch {
+  max-width: 560px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch svg {
+  border: 1px solid #4a4335;
+  border-left: 3px solid #6b5b3e;
+  border-right: 3px solid #2c2721;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch {
+  max-width: 640px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch svg {
+  border: 1px solid #3a332a;
+  border-left: 3px solid #3a332a;
+  border-right: 3px solid #4a4335;
+  border-bottom: 4px solid #9c917e;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch {
+  max-width: 620px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch svg {
+  border: 1px solid #3a332a;
+  border-top: 2px solid #9c917e;
+  border-bottom: 4px solid #0b0a08;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="cornerstone"] .chapter-text > p:first-of-type::first-letter {
+  font-weight: 400;
+  font-size: 3.45em;
+  line-height: 0.79;
+  padding: 0.05em 0.13em 0 0;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="arcade"] .chapter-text > p:first-of-type::first-letter {
+  font-weight: 400;
+  font-size: 3.5em;
+  line-height: 0.79;
+  padding: 0.05em 0.13em 0 0;
+}
+/* p1c7/p1c8 open "It"/"In" (GIR1 bar-ghost): P0 un-capped by the shell;
+   the authored sizes below style the .gi-drop fallback instead. */
+body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] .chapter-text > p.gi-drop::first-letter {
+  font-weight: 400;
+  font-size: 3.55em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-art="spire"] .chapter-text > p.gi-drop::first-letter {
+  font-weight: 400;
+  font-size: 3.65em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-art="westwork"] .chapter-text > p.gi-drop::first-letter {
+  font-size: 3.6em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+}
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="cornerstone"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="westwork"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="arcade"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="twin-chapels"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="spire"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="cornerstone"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="westwork"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="arcade"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="twin-chapels"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="spire"] .chapter-text > p.gi-drop::first-letter {
+  color: #7d5719;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='26'%20viewBox='0%200%2026%2026'%3E%3Crect%20x='4'%20y='7'%20width='18'%20height='14'%20fill='none'%20stroke='%23B65729'%20stroke-width='1.8'/%3E%3Crect%20x='7.5'%20y='10.5'%20width='11'%20height='7'%20fill='none'%20stroke='%239C917E'%20stroke-width='1'/%3E%3Cpath%20d='M13%204.5%20C14.5%207%2014.7%208%2013%209%20C11.3%208%2011.5%207%2013%204.5%20Z'%20fill='%23DFA050'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='24'%20viewBox='0%200%2030%2024'%3E%3Cpath%20d='M4%2021%20V8%20H10%20V21%20Z%20M20%2021%20V8%20H26%20V21%20Z'%20fill='none'%20stroke='%23BB622A'%20stroke-width='1.6'/%3E%3Cline%20x1='4'%20y1='21'%20x2='26'%20y2='21'%20stroke='%23BB622A'%20stroke-width='1.6'/%3E%3Ccircle%20cx='15'%20cy='13'%20r='4.5'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.2'/%3E%3Ccircle%20cx='15'%20cy='13'%20r='1.8'%20fill='%23DFA050'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='24'%20viewBox='0%200%2028%2024'%3E%3Cpath%20d='M5%2021%20V12%20Q5%207%2014%204%20Q23%207%2023%2012%20V21'%20fill='none'%20stroke='%23C06D2C'%20stroke-width='1.6'/%3E%3Cpath%20d='M9%2021%20V13%20Q9%209%2014%206.5%20Q19%209%2019%2013%20V21'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.2'/%3E%3Cpath%20d='M5%2021%20V12%20Q5%207%2014%204%20V21%20Z'%20fill='%23C06D2C'%20fill-opacity='0.5'/%3E%3Cpath%20d='M14%204%20Q23%207%2023%2012%20V21%20H14%20Z'%20fill='%23100F0D'%20fill-opacity='0.7'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='24'%20viewBox='0%200%2030%2024'%3E%3Cpath%20d='M3%2021%20V12%20L8%207%20L13%2012%20V21%20Z'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.4'/%3E%3Cpath%20d='M17%2021%20V12%20L22%207%20L27%2012%20V21%20Z'%20fill='%23C6782F'%20fill-opacity='0.65'%20stroke='%23C6782F'%20stroke-width='1.4'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='26'%20viewBox='0%200%2028%2026'%3E%3Cpath%20d='M10%2023%20V12%20L14%203%20L18%2012%20V23%20Z'%20fill='none'%20stroke='%23CC8333'%20stroke-width='1.6'/%3E%3Cg%20fill='%23DFA050'%3E%3Crect%20x='10.8'%20y='13'%20width='1.4'%20height='4'/%3E%3Crect%20x='13.1'%20y='13'%20width='1.4'%20height='4'/%3E%3Crect%20x='15.4'%20y='13'%20width='1.4'%20height='4'/%3E%3Crect%20x='17.7'%20y='13'%20width='1.4'%20height='4'/%3E%3C/g%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+@media (max-width: 560px) {
+  body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+  body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate {
+    width: auto;
+    max-width: none;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+  body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate,
+  body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate svg,
+  body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate svg {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* All cohorts merged: A §8 + B §9 + C §7. Eleven doses complete. */

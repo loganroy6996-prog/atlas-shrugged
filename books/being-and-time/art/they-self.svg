@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Being and Time — cohort art: they-self (p2c17–p2c26, §§25–34).
+  Identity: "The Clearing" (ART-DIRECTION.md §§1–10; ArtDirector PROVISIONAL
+  PASS B1–B8). Arc beat: leveling They → attunement. gapWidth 30→38%
+  (28% binding dip at §27), shaft 26° softening, ghosts LEFT-BLEED, NO ember.
+
+  v1.1 sprite: 12 <symbol> entries, each viewBox="0 0 1200 520",
+  preserveAspectRatio slice (plate crop). Manifest references via the explicit
+  `symbol` key (contract A.2) — no fragment URLs.
+
+  CLONE-SAFETY (read aloud before editing): reader.js fillArtSlot() clones
+  ONLY the referenced <symbol> node into #chapter-art. Any url(#…) or
+  use-href pointing OUTSIDE the symbol would dangle. Therefore every symbol
+  is SELF-CONTAINED: trunk paths are inlined absolute coordinates, and each
+  blur filter is defined INSIDE the symbol that uses it (unique ids).
+  The top-level <defs> below is the authorship record (trunk library +
+  filter recipes) for supervisors/validators; runtime uses the per-symbol
+  copies. There are intentionally NO <use> cross-references at all.
+
+  Palette: CSS vars with dark hex fallbacks so light/sepia remap
+  ("bt-shaft" CSS var, straw #E9D488, etc.). Trunk silhouettes stay near-black
+  (#080B07) on every theme — they are occluding masses, not text.
+  NO embedded <style>, NO remote refs, NO feTurbulence. Blur filters are
+  gated behind prefers-reduced-motion / narrow widths by the cohort CSS.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+  <defs>
+    <!-- Authorship record: trunk library (7 hand-plotted + 1 leaning).
+         Symbols carry their own absolute-coordinate copies. -->
+    <path id="ts-trunk-a" d="M60,470 C56,360 66,240 66,80 L98,80 C96,240 104,360 100,470 Z"/>
+    <path id="ts-trunk-b" d="M180,470 C184,350 172,230 172,64 L202,64 C204,230 214,350 210,470 Z"/>
+    <path id="ts-trunk-c" d="M300,470 C294,360 306,250 310,92 L344,92 C340,250 348,360 342,470 Z"/>
+    <path id="ts-trunk-d" d="M1010,470 C1014,350 1002,220 1004,72 L1036,72 C1036,220 1046,350 1042,470 Z"/>
+    <path id="ts-trunk-e" d="M1100,470 C1098,360 1104,240 1104,96 L1132,96 C1132,240 1136,360 1130,470 Z"/>
+    <path id="ts-trunk-f" d="M420,470 C424,350 414,230 416,70 L446,70 C446,230 456,350 452,470 Z"/>
+    <path id="ts-trunk-g" d="M520,470 C514,360 526,240 528,88 L562,88 C560,240 568,360 562,470 Z"/>
+    <path id="ts-trunk-lean" d="M120,470 C126,350 108,230 95,84 L127,84 C140,230 158,350 152,470 Z"/>
+    <!-- Authorship record: softening filters. Recipe: single feGaussianBlur.
+         Symbols define their own uniquely-id'd copies. -->
+    <filter id="ts-soft6" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="ts-soft9" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <!-- Authorship record: fleck + plan-tick units. -->
+    <circle id="ts-fleck" r="2.2"/>
+    <line id="ts-plan-tick" x1="-5" y1="-5" x2="5" y2="5"/>
+  </defs>
+
+  <!-- ============ ts-quest — §25: the suspect I (p2c17) ============
+       One stray leaning trunk stage-left; narrow interrogative shaft with a
+       cross-tick; floor nearly bare. gapWidth 30%. -->
+  <symbol id="ts-quest" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="850,0 960,0 706,520 596,520" fill="var(--bt-shaft,#E9D488)" opacity="0.14"/>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M120,470 C126,350 108,230 95,84 L127,84 C140,230 158,350 152,470 Z"/>
+    </g>
+    <g class="ts-motif">
+      <line x1="806" y1="116" x2="952" y2="44" stroke="var(--bt-shaft,#E9D488)" stroke-width="3" opacity="0.8"/>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.5">
+      <circle cx="700" cy="470" r="2.2"/>
+      <circle cx="760" cy="488" r="2"/>
+      <circle cx="640" cy="492" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-with — §26: the with-world at work (p2c18) ============
+       Nine uneven working trunks; tool-shadows (hammer, book-block, hull arc)
+       lie in the shaft floor-light; leaping-IN chevron lands in a ring while
+       the leaping-AHEAD chevron arcs past it. gapWidth 31%. -->
+  <symbol id="ts-with" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="800,0 975,0 721,520 546,520" fill="var(--bt-shaft,#E9D488)" opacity="0.15"/>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M10,470 C5,355 17,235 16,80 L48,80 C49,235 37,355 42,470 Z"/>
+      <path d="M130,470 C125,355 137,235 122,64 L152,64 C167,235 155,355 160,470 Z"/>
+      <path d="M250,470 C245,355 257,235 260,92 L294,92 C291,235 279,355 284,470 Z"/>
+      <path d="M370,470 C365,355 377,235 366,70 L396,70 C407,235 395,355 400,470 Z"/>
+      <path d="M470,470 C465,355 477,235 478,88 L508,88 C509,235 495,355 500,470 Z"/>
+      <path d="M860,470 C855,355 867,235 864,100 L892,100 C895,235 883,355 888,470 Z"/>
+      <path d="M960,470 C955,355 967,235 954,74 L984,74 C997,235 985,355 990,470 Z"/>
+      <path d="M1040,470 C1035,355 1047,235 1046,88 L1078,88 C1079,235 1067,355 1072,470 Z"/>
+      <path d="M1120,470 C1115,355 1127,235 1116,96 L1144,96 C1155,235 1143,355 1148,470 Z"/>
+    </g>
+    <g class="ts-motif">
+      <g class="ts-trunks" transform="rotate(26 560 452)" fill="#0A0D09" opacity="0.9">
+        <rect x="546" y="407" width="28" height="90" rx="2"/>
+        <rect x="537" y="387" width="46" height="20" rx="2"/>
+      </g>
+      <rect x="700" y="470" width="90" height="14" rx="1" fill="#0A0D09" opacity="0.9"/>
+      <path d="M800,476 Q845,452 890,476" stroke="#0A0D09" stroke-width="6" fill="none" opacity="0.9"/>
+      <circle cx="620" cy="440" r="14" fill="none" stroke="var(--bt-bark,#3E4A34)" stroke-width="2"/>
+      <path d="M610,434 L620,444 L630,434" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2.5" opacity="0.9"/>
+      <path d="M690,408 L710,428 L730,408" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="2.5" opacity="0.85"/>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.45">
+      <circle cx="520" cy="470" r="2"/>
+      <circle cx="590" cy="492" r="2.2"/>
+      <circle cx="660" cy="478" r="1.8"/>
+      <circle cx="740" cy="490" r="2.2"/>
+      <circle cx="810" cy="472" r="2"/>
+      <circle cx="880" cy="490" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-they — §27: twelve even trunks (p2c19, BINDING) ============
+       TWELVE IDENTICAL 30px rects at 100px pitch + 12 straw hairline echoes;
+       NARROWED unblurred shaft pair; floor = 2 perfectly gridded dot-rows
+       (25 dots, 48px pitch). Leveling made literal. gapWidth 28%. -->
+  <symbol id="ts-they" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="815,0 955,0 701,520 561,520" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+    <polygon class="ts-core" points="845,0 925,0 671,520 591,520" fill="var(--bt-shaft,#E9D488)" opacity="0.14"/>
+    <g class="ts-trunks" fill="#080B07">
+      <rect x="20" y="30" width="30" height="440"/>
+      <rect x="120" y="30" width="30" height="440"/>
+      <rect x="220" y="30" width="30" height="440"/>
+      <rect x="320" y="30" width="30" height="440"/>
+      <rect x="420" y="30" width="30" height="440"/>
+      <rect x="520" y="30" width="30" height="440"/>
+      <rect x="620" y="30" width="30" height="440"/>
+      <rect x="720" y="30" width="30" height="440"/>
+      <rect x="820" y="30" width="30" height="440"/>
+      <rect x="920" y="30" width="30" height="440"/>
+      <rect x="1020" y="30" width="30" height="440"/>
+      <rect x="1120" y="30" width="30" height="440"/>
+    </g>
+    <g class="ts-motif" stroke="var(--bt-shaft,#E9D488)" stroke-width="1" opacity="0.25">
+      <line x1="53" y1="30" x2="53" y2="470"/>
+      <line x1="153" y1="30" x2="153" y2="470"/>
+      <line x1="253" y1="30" x2="253" y2="470"/>
+      <line x1="353" y1="30" x2="353" y2="470"/>
+      <line x1="453" y1="30" x2="453" y2="470"/>
+      <line x1="553" y1="30" x2="553" y2="470"/>
+      <line x1="653" y1="30" x2="653" y2="470"/>
+      <line x1="753" y1="30" x2="753" y2="470"/>
+      <line x1="853" y1="30" x2="853" y2="470"/>
+      <line x1="953" y1="30" x2="953" y2="470"/>
+      <line x1="1053" y1="30" x2="1053" y2="470"/>
+      <line x1="1153" y1="30" x2="1153" y2="470"/>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-shaft,#E9D488)">
+      <g opacity="0.3">
+        <circle cx="24" cy="468" r="2.4"/><circle cx="72" cy="468" r="2.4"/><circle cx="120" cy="468" r="2.4"/><circle cx="168" cy="468" r="2.4"/><circle cx="216" cy="468" r="2.4"/>
+        <circle cx="264" cy="468" r="2.4"/><circle cx="312" cy="468" r="2.4"/><circle cx="360" cy="468" r="2.4"/><circle cx="408" cy="468" r="2.4"/><circle cx="456" cy="468" r="2.4"/>
+        <circle cx="504" cy="468" r="2.4"/><circle cx="552" cy="468" r="2.4"/><circle cx="600" cy="468" r="2.4"/><circle cx="648" cy="468" r="2.4"/><circle cx="696" cy="468" r="2.4"/>
+        <circle cx="744" cy="468" r="2.4"/><circle cx="792" cy="468" r="2.4"/><circle cx="840" cy="468" r="2.4"/><circle cx="888" cy="468" r="2.4"/><circle cx="936" cy="468" r="2.4"/>
+        <circle cx="984" cy="468" r="2.4"/><circle cx="1032" cy="468" r="2.4"/><circle cx="1080" cy="468" r="2.4"/><circle cx="1128" cy="468" r="2.4"/><circle cx="1176" cy="468" r="2.4"/>
+      </g>
+      <g opacity="0.16">
+        <circle cx="24" cy="496" r="2"/><circle cx="72" cy="496" r="2"/><circle cx="120" cy="496" r="2"/><circle cx="168" cy="496" r="2"/><circle cx="216" cy="496" r="2"/>
+        <circle cx="264" cy="496" r="2"/><circle cx="312" cy="496" r="2"/><circle cx="360" cy="496" r="2"/><circle cx="408" cy="496" r="2"/><circle cx="456" cy="496" r="2"/>
+        <circle cx="504" cy="496" r="2"/><circle cx="552" cy="496" r="2"/><circle cx="600" cy="496" r="2"/><circle cx="648" cy="496" r="2"/><circle cx="696" cy="496" r="2"/>
+        <circle cx="744" cy="496" r="2"/><circle cx="792" cy="496" r="2"/><circle cx="840" cy="496" r="2"/><circle cx="888" cy="496" r="2"/><circle cx="936" cy="496" r="2"/>
+        <circle cx="984" cy="496" r="2"/><circle cx="1032" cy="496" r="2"/><circle cx="1080" cy="496" r="2"/><circle cx="1128" cy="496" r="2"/><circle cx="1176" cy="496" r="2"/>
+      </g>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-hinge — §28: plan of the there (p2c20) ============
+       The surveyor's plan: 8 trunks part around ruled geometry — a center
+       rule forking at one DA node into branch A (6 ticks, §§29–34) and
+       branch B (4 ticks, §§35–38), equal weight. gapWidth 32%. -->
+  <symbol id="ts-hinge" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="790,0 980,0 726,520 536,520" fill="var(--bt-shaft,#E9D488)" opacity="0.1"/>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M30,470 C25,355 37,235 35,78 L67,78 C69,235 57,355 62,470 Z"/>
+      <path d="M140,470 C135,355 147,235 133,66 L163,66 C177,235 165,355 170,470 Z"/>
+      <path d="M260,470 C255,355 267,235 269,90 L303,90 C301,235 289,355 294,470 Z"/>
+      <path d="M380,470 C375,355 387,235 377,72 L405,72 C415,235 403,355 408,470 Z"/>
+      <path d="M800,470 C795,355 807,235 806,84 L836,84 C837,235 825,355 830,470 Z"/>
+      <path d="M910,470 C905,355 917,235 905,68 L937,68 C949,235 937,355 942,470 Z"/>
+      <path d="M1020,470 C1015,355 1027,235 1027,92 L1055,92 C1055,235 1043,355 1048,470 Z"/>
+      <path d="M1110,470 C1105,355 1117,235 1104,76 L1134,76 C1147,235 1135,355 1140,470 Z"/>
+    </g>
+    <g class="ts-motif" fill="none">
+      <line x1="700" y1="0" x2="700" y2="330" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" opacity="0.8"/>
+      <path d="M700,330 L560,470" stroke="var(--bt-shaft,#E9D488)" stroke-width="1.5" opacity="0.85"/>
+      <path d="M700,330 L840,470" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" opacity="0.85"/>
+      <g stroke="var(--bt-shaft,#E9D488)" stroke-width="1.5" opacity="0.85">
+        <line x1="675" y1="347" x2="683" y2="355"/>
+        <line x1="654" y1="368" x2="662" y2="376"/>
+        <line x1="633" y1="389" x2="641" y2="397"/>
+        <line x1="612" y1="410" x2="620" y2="418"/>
+        <line x1="591" y1="431" x2="599" y2="439"/>
+        <line x1="570" y1="452" x2="578" y2="460"/>
+      </g>
+      <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" opacity="0.85">
+        <line x1="717" y1="347" x2="725" y2="355"/>
+        <line x1="738" y1="368" x2="746" y2="376"/>
+        <line x1="759" y1="389" x2="767" y2="397"/>
+        <line x1="780" y1="410" x2="788" y2="418"/>
+      </g>
+      <circle cx="700" cy="330" r="5" fill="var(--bt-shaft,#E9D488)" stroke="none" opacity="0.9"/>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-lichen,#9DB89A)" opacity="0.35">
+      <circle cx="540" cy="492" r="2"/>
+      <circle cx="660" cy="486" r="1.8"/>
+      <circle cx="760" cy="492" r="2"/>
+      <circle cx="860" cy="482" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-mood — §29: weather over the there (p2c21) ============
+       Three horizontal fog bands cross 8 softening trunks; the shaft diffuses
+       through them (blur 6); floor flecks scattered unevenly — moods assail
+       from neither within nor without. gapWidth 33%. -->
+  <symbol id="ts-mood" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="ts-mood-b6" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6"/>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <g filter="url(#ts-mood-b6)">
+      <polygon class="ts-shaft" points="780,0 990,0 736,520 526,520" fill="var(--bt-shaft,#E9D488)" opacity="0.15"/>
+      <polygon class="ts-core" points="830,0 940,0 686,520 576,520" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    </g>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M0,470 C-5,355 7,235 7,82 L41,82 C41,235 29,355 34,470 Z"/>
+      <path d="M110,470 C105,355 117,235 104,68 L134,68 C147,235 135,355 140,470 Z"/>
+      <path d="M230,470 C225,355 237,235 238,94 L270,94 C269,235 257,355 262,470 Z"/>
+      <path d="M350,470 C345,355 357,235 346,74 L374,74 C385,235 373,355 378,470 Z"/>
+      <path d="M730,470 C725,355 737,235 735,86 L765,86 C767,235 755,355 760,470 Z"/>
+      <path d="M850,470 C845,355 857,235 842,70 L874,70 C889,235 877,355 882,470 Z"/>
+      <path d="M970,470 C965,355 977,235 976,94 L1004,94 C1005,235 993,355 998,470 Z"/>
+      <path d="M1080,470 C1075,355 1087,235 1075,80 L1105,80 C1117,235 1105,355 1110,470 Z"/>
+    </g>
+    <g class="ts-fog" fill="var(--bt-lichen,#9DB89A)">
+      <rect x="0" y="140" width="1200" height="24" opacity="0.18"/>
+      <rect x="0" y="260" width="1200" height="40" opacity="0.26"/>
+      <rect x="0" y="370" width="1200" height="28" opacity="0.2"/>
+    </g>
+    <g class="ts-flecks">
+      <circle cx="120" cy="452" r="2.2" fill="var(--bt-shaft,#E9D488)" opacity="0.4"/>
+      <circle cx="210" cy="478" r="1.8" fill="var(--bt-lichen,#9DB89A)" opacity="0.35"/>
+      <circle cx="330" cy="462" r="2.4" fill="var(--bt-shaft,#E9D488)" opacity="0.32"/>
+      <circle cx="450" cy="492" r="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.4"/>
+      <circle cx="540" cy="458" r="1.8" fill="var(--bt-shaft,#E9D488)" opacity="0.45"/>
+      <circle cx="610" cy="482" r="2.2" fill="var(--bt-lichen,#9DB89A)" opacity="0.3"/>
+      <circle cx="690" cy="466" r="2" fill="var(--bt-shaft,#E9D488)" opacity="0.5"/>
+      <circle cx="770" cy="490" r="2.4" fill="var(--bt-lichen,#9DB89A)" opacity="0.35"/>
+      <circle cx="840" cy="460" r="1.8" fill="var(--bt-shaft,#E9D488)" opacity="0.38"/>
+      <circle cx="920" cy="484" r="2.2" fill="var(--bt-lichen,#9DB89A)" opacity="0.42"/>
+      <circle cx="1010" cy="468" r="2" fill="var(--bt-shaft,#E9D488)" opacity="0.34"/>
+      <circle cx="1100" cy="488" r="2.2" fill="var(--bt-lichen,#9DB89A)" opacity="0.3"/>
+      <circle cx="180" cy="496" r="1.8" fill="var(--bt-shaft,#E9D488)" opacity="0.36"/>
+      <circle cx="960" cy="452" r="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.38"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-fear — §30: the approach (p2c22) ============
+       Seven trunks mass the left; three chevrons descend the beam axis toward
+       the floor node — the fearsome approaching within nearness. gapWidth 34%. -->
+  <symbol id="ts-fear" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="760,0 1000,0 746,520 506,520" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M0,470 C-5,355 7,235 4,76 L36,76 C39,235 27,355 32,470 Z"/>
+      <path d="M80,470 C75,355 87,235 75,64 L105,64 C117,235 105,355 110,470 Z"/>
+      <path d="M160,470 C155,355 167,235 167,88 L201,88 C201,235 189,355 194,470 Z"/>
+      <path d="M240,470 C235,355 247,235 237,70 L265,70 C275,235 263,355 268,470 Z"/>
+      <path d="M320,470 C315,355 327,235 325,82 L355,82 C357,235 345,355 350,470 Z"/>
+      <path d="M400,470 C395,355 407,235 394,68 L426,68 C439,235 427,355 432,470 Z"/>
+      <path d="M470,470 C465,355 477,235 474,90 L502,90 C503,235 493,355 498,470 Z"/>
+    </g>
+    <g class="ts-motif" fill="none" stroke="var(--bt-shaft,#E9D488)">
+      <path d="M697,150 L807,230 L917,150" stroke-width="3" opacity="0.45"/>
+      <path d="M678,260 L753,320 L828,260" stroke-width="3.5" opacity="0.6"/>
+      <path d="M654,370 L699,415 L744,370" stroke-width="4" opacity="0.8"/>
+      <circle cx="700" cy="470" r="4" fill="var(--bt-shaft,#E9D488)" stroke="none" opacity="0.85"/>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-shaft,#E9D488)">
+      <circle cx="660" cy="462" r="2" opacity="0.5"/>
+      <circle cx="680" cy="458" r="2.2" opacity="0.45"/>
+      <circle cx="720" cy="460" r="2" opacity="0.55"/>
+      <circle cx="740" cy="466" r="2.2" opacity="0.4"/>
+      <circle cx="665" cy="478" r="2" opacity="0.45"/>
+      <circle cx="685" cy="484" r="2.2" opacity="0.5"/>
+      <circle cx="715" cy="484" r="2" opacity="0.55"/>
+      <circle cx="735" cy="478" r="2.2" opacity="0.4"/>
+      <circle cx="648" cy="470" r="1.8" opacity="0.45"/>
+      <circle cx="752" cy="470" r="1.8" opacity="0.45"/>
+      <circle cx="700" cy="452" r="2" opacity="0.5"/>
+      <circle cx="700" cy="494" r="2" opacity="0.4"/>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-lichen,#9DB89A)" opacity="0.3">
+      <circle cx="900" cy="470" r="1.8"/>
+      <circle cx="950" cy="488" r="1.8"/>
+      <circle cx="150" cy="480" r="1.8"/>
+      <circle cx="1050" cy="475" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-project — §31: cast forward (p2c23) ============
+       A floor node casts an upward fan of three rays — center brightest
+       (transparency) — with the 26° shaft crossing behind; trunks parted
+       widest so far. gapWidth 35%. -->
+  <symbol id="ts-project" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="780,0 990,0 736,520 526,520" fill="var(--bt-shaft,#E9D488)" opacity="0.12"/>
+    <g class="ts-motif">
+      <polygon points="688,470 698,470 528,0 518,0" fill="var(--bt-lichen,#9DB89A)" opacity="0.25"/>
+      <polygon points="702,470 712,470 882,0 872,0" fill="var(--bt-lichen,#9DB89A)" opacity="0.25"/>
+      <polygon points="690,470 710,470 704,0 696,0" fill="var(--bt-shaft,#E9D488)" opacity="0.2"/>
+    </g>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M0,470 C-5,355 7,235 6,80 L38,80 C39,235 27,355 32,470 Z"/>
+      <path d="M140,470 C135,355 147,235 133,66 L163,66 C177,235 165,355 170,470 Z"/>
+      <path d="M280,470 C275,355 287,235 285,90 L313,90 C315,235 303,355 308,470 Z"/>
+      <path d="M800,470 C795,355 807,235 796,72 L826,72 C837,235 825,355 830,470 Z"/>
+      <path d="M920,470 C915,355 927,235 927,86 L959,86 C959,235 947,355 952,470 Z"/>
+      <path d="M1040,470 C1035,355 1047,235 1035,70 L1063,70 C1075,235 1063,355 1068,470 Z"/>
+      <path d="M1130,470 C1125,355 1137,235 1134,92 L1164,92 C1167,235 1155,355 1160,470 Z"/>
+    </g>
+    <circle cx="700" cy="470" r="5" fill="var(--bt-shaft,#E9D488)" opacity="0.9"/>
+    <g class="ts-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.5">
+      <circle cx="640" cy="452" r="2"/>
+      <circle cx="600" cy="470" r="2.2"/>
+      <circle cx="650" cy="490" r="2"/>
+      <circle cx="700" cy="498" r="2.2"/>
+      <circle cx="750" cy="490" r="2"/>
+      <circle cx="800" cy="470" r="2.2"/>
+      <circle cx="760" cy="452" r="2"/>
+      <circle cx="580" cy="490" r="1.8"/>
+      <circle cx="820" cy="490" r="1.8"/>
+      <circle cx="700" cy="440" r="2"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-circle — §32: the hermeneutic circle (p2c24) ============
+       Three concentric fore-rings (bark / lichen / shaft = Vorhabe, Vorsicht,
+       Vorgriff) centered in the soft shaft; twelve as-tick flecks ride the
+       outer ring; the center holds dark (the Abgrund). gapWidth 36%. -->
+  <symbol id="ts-circle" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="ts-circle-b7" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="7"/>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <g filter="url(#ts-circle-b7)">
+      <polygon class="ts-shaft" points="780,0 990,0 736,520 526,520" fill="var(--bt-shaft,#E9D488)" opacity="0.15"/>
+      <polygon class="ts-core" points="830,0 940,0 686,520 576,520" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    </g>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M20,470 C15,355 27,235 25,78 L57,78 C59,235 47,355 52,470 Z"/>
+      <path d="M150,470 C145,355 157,235 144,66 L174,66 C187,235 175,355 180,470 Z"/>
+      <path d="M280,470 C275,355 287,235 287,88 L315,88 C315,235 303,355 308,470 Z"/>
+      <path d="M850,470 C845,355 857,235 845,74 L875,74 C887,235 875,355 880,470 Z"/>
+      <path d="M960,470 C955,355 967,235 966,86 L998,86 C999,235 987,355 992,470 Z"/>
+      <path d="M1060,470 C1055,355 1067,235 1056,72 L1084,72 C1095,235 1083,355 1088,470 Z"/>
+      <path d="M1140,470 C1135,355 1147,235 1143,94 L1169,94 C1173,235 1161,355 1166,470 Z"/>
+    </g>
+    <g class="ts-motif" fill="none">
+      <circle cx="700" cy="300" r="92" stroke="var(--bt-bark,#3E4A34)" stroke-width="2"/>
+      <circle cx="700" cy="300" r="142" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" opacity="0.55"/>
+      <circle cx="700" cy="300" r="192" stroke="var(--bt-shaft,#E9D488)" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.55">
+      <circle cx="892" cy="300" r="2.2"/>
+      <circle cx="866" cy="396" r="2.2"/>
+      <circle cx="796" cy="466" r="2.2"/>
+      <circle cx="700" cy="492" r="2.2"/>
+      <circle cx="604" cy="466" r="2.2"/>
+      <circle cx="534" cy="396" r="2.2"/>
+      <circle cx="508" cy="300" r="2.2"/>
+      <circle cx="534" cy="204" r="2.2"/>
+      <circle cx="604" cy="134" r="2.2"/>
+      <circle cx="700" cy="108" r="2.2"/>
+      <circle cx="796" cy="134" r="2.2"/>
+      <circle cx="866" cy="204" r="2.2"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-point — §33: pointing-out (p2c25) ============
+       The hammer lies diagonally in the crisp floor-light (near-black
+       silhouette against the straw wash — apophantic letting-be-seen); a
+       pointing rule extends from its head to the copula bridge;
+       three predicate ticks beneath. gapWidth 37%. -->
+  <symbol id="ts-point" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="770,0 1000,0 746,520 516,520" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M40,470 C35,355 47,235 46,80 L78,80 C79,235 67,355 72,470 Z"/>
+      <path d="M190,470 C185,355 197,235 184,68 L214,68 C227,235 215,355 220,470 Z"/>
+      <path d="M340,470 C335,355 347,235 345,90 L373,90 C375,235 363,355 368,470 Z"/>
+      <path d="M860,470 C855,355 867,235 855,74 L885,74 C897,235 885,355 890,470 Z"/>
+      <path d="M990,470 C985,355 997,235 997,88 L1029,88 C1029,235 1017,355 1022,470 Z"/>
+      <path d="M1100,470 C1095,355 1107,235 1096,78 L1124,78 C1135,235 1123,355 1128,470 Z"/>
+    </g>
+    <g class="ts-motif">
+      <ellipse cx="680" cy="460" rx="150" ry="26" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <g class="ts-trunks" transform="rotate(26 640 446)" fill="#0A0D09" opacity="0.9">
+        <rect x="614" y="434" width="52" height="24" rx="3"/>
+        <rect x="632" y="446" width="16" height="70" rx="3"/>
+      </g>
+      <line x1="666" y1="446" x2="860" y2="446" stroke="var(--bt-shaft,#E9D488)" stroke-width="1.5" opacity="0.85"/>
+      <path d="M852,446 q8,-14 16,0" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2" opacity="0.85"/>
+      <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="2" opacity="0.6">
+        <line x1="700" y1="478" x2="740" y2="478"/>
+        <line x1="760" y1="478" x2="790" y2="478"/>
+        <line x1="810" y1="478" x2="830" y2="478"/>
+      </g>
+    </g>
+    <g class="ts-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.4">
+      <circle cx="560" cy="478" r="2"/>
+      <circle cx="900" cy="482" r="2"/>
+      <circle cx="760" cy="494" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-voice — §34: voice from silence (p2c26) ============
+       Four voice arcs propagate right from a single straw node across the
+       cohort's widest, softest shaft (blur 9); trunks pushed to the margins;
+       the left floor held deliberately bare. gapWidth 38%. -->
+  <symbol id="ts-voice" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="ts-voice-b9" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="9"/>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1200" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="ts-floor" x="0" y="430" width="1200" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1200" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="ts-shaft" points="780,0 990,0 736,520 526,520" fill="var(--bt-shaft,#E9D488)" opacity="0.16" filter="url(#ts-voice-b9)"/>
+    <g class="ts-trunks" fill="#080B07">
+      <path d="M0,470 C-5,355 7,235 7,82 L41,82 C41,235 29,355 34,470 Z"/>
+      <path d="M120,470 C115,355 127,235 114,68 L144,68 C157,235 145,355 150,470 Z"/>
+      <path d="M240,470 C235,355 247,235 248,94 L280,94 C279,235 267,355 272,470 Z"/>
+      <path d="M360,470 C355,355 367,235 356,76 L384,76 C395,235 383,355 388,470 Z"/>
+      <path d="M1000,470 C995,355 1007,235 1005,84 L1035,84 C1037,235 1025,355 1030,470 Z"/>
+      <path d="M1110,470 C1105,355 1117,235 1104,72 L1132,72 C1145,235 1133,355 1138,470 Z"/>
+    </g>
+    <g class="ts-motif" fill="none" stroke="var(--bt-lichen,#9DB89A)">
+      <path d="M762,240 A90,90 0 0 1 762,420" stroke-width="2" opacity="0.5"/>
+      <path d="M762,170 A160,160 0 0 1 762,490" stroke-width="2" opacity="0.43"/>
+      <path d="M762,100 A230,230 0 0 1 762,560" stroke-width="1.5" opacity="0.36"/>
+      <path d="M762,30 A300,300 0 0 1 762,630" stroke-width="1.5" opacity="0.3"/>
+      <circle cx="762" cy="330" r="4" fill="var(--bt-shaft,#E9D488)" stroke="none" opacity="0.8"/>
+    </g>
+    <g class="ts-flecks">
+      <circle cx="840" cy="462" r="2" fill="var(--bt-shaft,#E9D488)" opacity="0.4"/>
+      <circle cx="900" cy="478" r="2.2" fill="var(--bt-lichen,#9DB89A)" opacity="0.35"/>
+      <circle cx="960" cy="466" r="2" fill="var(--bt-shaft,#E9D488)" opacity="0.42"/>
+      <circle cx="1020" cy="484" r="1.8" fill="var(--bt-lichen,#9DB89A)" opacity="0.32"/>
+      <circle cx="1080" cy="470" r="2" fill="var(--bt-shaft,#E9D488)" opacity="0.36"/>
+      <circle cx="870" cy="494" r="1.8" fill="var(--bt-lichen,#9DB89A)" opacity="0.3"/>
+      <circle cx="990" cy="494" r="2" fill="var(--bt-shaft,#E9D488)" opacity="0.32"/>
+      <circle cx="1050" cy="458" r="1.8" fill="var(--bt-lichen,#9DB89A)" opacity="0.34"/>
+      <circle cx="810" cy="486" r="2" fill="var(--bt-shaft,#E9D488)" opacity="0.38"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-shaft-soft — shared soft shaft pair ============
+       Reusable overlay (transparent ground): blurred 26° pair for
+       supervisor/TOC-miniature use. Self-contained filter. -->
+  <symbol id="ts-shaft-soft" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="ts-shaft-soft-b6" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6"/>
+      </filter>
+    </defs>
+    <g filter="url(#ts-shaft-soft-b6)">
+      <polygon class="ts-shaft" points="780,0 990,0 736,520 526,520" fill="var(--bt-shaft,#E9D488)" opacity="0.15"/>
+      <polygon class="ts-core" points="830,0 940,0 686,520 576,520" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    </g>
+  </symbol>
+
+  <!-- ============ ts-shaft-hard — shared hard shaft pair ============
+       Reusable overlay (transparent ground): the §27 narrowed unblurred pair
+       for supervisor/TOC-miniature use. -->
+  <symbol id="ts-shaft-hard" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+    <polygon class="ts-shaft" points="815,0 955,0 701,520 561,520" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+    <polygon class="ts-core" points="845,0 925,0 671,520 591,520" fill="var(--bt-shaft,#E9D488)" opacity="0.14"/>
+  </symbol>
+</svg>

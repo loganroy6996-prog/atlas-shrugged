@@ -1,0 +1,2470 @@
+{
+  "meta": {
+    "role": "independent validator — verification only, no implementation edits",
+    "site": "http://localhost:8000 (serves _site)",
+    "viewports": {
+      "1440x1000": "desktop+kb+notes",
+      "820x1180": "tablet",
+      "390x844": "phone"
+    },
+    "reducedMotionEmulated": true,
+    "browser": "chromium (/etc/profiles/per-user/prateek/bin/chromium)",
+    "date": "2026-10-16T14:11:47.686Z",
+    "runs": [
+      {
+        "site": "http://localhost:8000 (serves _site)",
+        "viewport": "1440x1000",
+        "reducedMotionEmulated": true,
+        "date": "2026-10-16T14:11:47.686Z",
+        "tool": "playwright chromium headless --no-sandbox",
+        "browser": "chromium (/etc/profiles/per-user/prateek/bin/chromium)",
+        "scope": "ALL 13 books; reader prefs on real built site; verification only, no implementation edits"
+      },
+      {
+        "site": "http://localhost:8000 (serves _site)",
+        "viewport": "820x1180",
+        "reducedMotionEmulated": true,
+        "date": "2026-10-16T14:15:06.666Z",
+        "tool": "playwright chromium headless --no-sandbox",
+        "browser": "chromium (/etc/profiles/per-user/prateek/bin/chromium)",
+        "scope": "ALL 13 books; reader prefs on real built site; verification only, no implementation edits"
+      },
+      {
+        "site": "http://localhost:8000 (serves _site)",
+        "viewport": "390x844",
+        "reducedMotionEmulated": true,
+        "date": "2026-10-16T14:18:12.329Z",
+        "tool": "playwright chromium headless --no-sandbox",
+        "browser": "chromium (/etc/profiles/per-user/prateek/bin/chromium)",
+        "scope": "ALL 13 books; reader prefs on real built site; verification only, no implementation edits"
+      }
+    ],
+    "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) computed ON the probe paragraph (rem→px timing via injected width probe); 65ch measured in-probe (65 '0' glyphs, font:inherit); tol ±2px on computed maxWidth; <1072px: computed maxWidth + rendered monotonicity",
+    "expectationSources": "recomputed live per measurement (document.fonts.ready awaited) — not copied from the implementer's verification",
+    "retryPolicy": "books erroring once were rerun immediately; check-level values are direct observations"
+  },
+  "books": {
+    "atlas-shrugged": {
+      "probe": {
+        "idx": 13,
+        "len": 413,
+        "fallback": false,
+        "head": "Orren Boyle had appeared from nowhere, five years ago, and had since m",
+        "classlessCount": 249,
+        "psTotal": 249
+      },
+      "storageKeys": {
+        "book": "reader-atlas-shrugged",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c3\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-atlas-shrugged"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 764.34/764.346 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Crimson Pro\", Georgia, \"Palatino Linoty → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(185, 194, 203)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(63, 208, 140)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "shot": [
+              "screenshots/atlas-shrugged-focus-visible-1440.png",
+              "screenshots/atlas-shrugged-settings-panel-open-1440.png"
+            ],
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 756/764.346 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Crimson Pro\", Georgia, \"Palatino Linoty → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/764.346 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Crimson Pro\", Georgia, \"Palatino Linoty → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "being-and-time": {
+      "probe": {
+        "idx": 11,
+        "len": 596,
+        "fallback": false,
+        "head": "In these characteristics of being which we have laid out-everyday bein",
+        "classlessCount": 22,
+        "psTotal": 22
+      },
+      "storageKeys": {
+        "book": "reader-being-and-time",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c19\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-being-and-time"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 544/544 · 544/544 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(157, 184, 154)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(233, 212, 136)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 544/544 · 544/544 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/544 · 353.22/544 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "beyond-good-and-evil": {
+      "probe": {
+        "idx": 10,
+        "len": 1396,
+        "fallback": false,
+        "head": "problem of truthfulness is even hinted at in the remotest manner. They",
+        "classlessCount": 52,
+        "psTotal": 75
+      },
+      "storageKeys": {
+        "book": "reader-beyond-good-and-evil",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c2\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-beyond-good-and-evil"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 674.53/674.544 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(162, 150, 122)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(217, 164, 65)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 674.53/674.544 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/674.544 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "forty-ways-to-look-at-churchill": {
+      "probe": {
+        "idx": 10,
+        "len": 1013,
+        "fallback": false,
+        "head": "Sometimes I’d detect a biographer’s reading too much into facts—supply",
+        "classlessCount": 32,
+        "psTotal": 33
+      },
+      "storageKeys": {
+        "book": "reader-forty-ways-to-look-at-churchill",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-forty-ways-to-look-at-churchill"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 592/592 · 592/592 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, serif → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(183, 169, 143)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(200, 152, 74)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 592/592 · 592/592 · 772/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, serif → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 342/592 · 342/592 · 342/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, serif → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "gay-science": {
+      "probe": {
+        "idx": 5,
+        "len": 758,
+        "fallback": true,
+        "head": "* ‘Scherz, List, und Rache’ is the title of a libretto written by Goet",
+        "classlessCount": 5,
+        "psTotal": 6
+      },
+      "storageKeys": {
+        "book": "reader-gay-science",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c63\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-gay-science"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 592.08/592.085 · 592.08/592.085 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Cormorant Garamond\", \"Palatino Linotype → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(205, 191, 164)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(245, 179, 1)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 592.08/592.085 · 592.08/592.085 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Cormorant Garamond\", \"Palatino Linotype → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/592.085 · 353.22/592.085 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Cormorant Garamond\", \"Palatino Linotype → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "gentle-introduction": {
+      "probe": {
+        "idx": 11,
+        "len": 713,
+        "fallback": false,
+        "head": "The third, our third, is very different from the other two. We must re",
+        "classlessCount": 157,
+        "psTotal": 158
+      },
+      "storageKeys": {
+        "book": "reader-gentle-introduction",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-gentle-introduction"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 672/672 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(156, 145, 126)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(223, 160, 80)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 672/672 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/672 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "infinite-jest": {
+      "probe": {
+        "idx": 12,
+        "len": 408,
+        "fallback": false,
+        "head": "‘Attractive paraplegic female seeks same; object:’ The windowless lary",
+        "classlessCount": 53,
+        "psTotal": 54
+      },
+      "storageKeys": {
+        "book": "reader-infinite-jest",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c32\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-infinite-jest"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 608/608 · 608/608 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, \"Times New Roman\",  → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(179, 168, 136)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(201, 162, 39)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "shot": [
+              "screenshots/infinite-jest-settings-panel-open-1440.png"
+            ],
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 299,
+            "chaptersWithRefs": 52,
+            "noAnnotationControlsByDesign": true,
+            "exercised": {
+              "roundTripWorked": true,
+              "ref": {
+                "note": "62",
+                "href": "#note-62",
+                "paraIdx": 25,
+                "text": "‘aesthetically challenged.’ 62 She sometimes"
+              },
+              "clickedOriginChapter": "p1c32",
+              "jumpedTo": "p2c3",
+              "chip": {
+                "visible": true,
+                "text": "↩ Return to Late October — Year of the Depend Adult Undergarment"
+              },
+              "targetElement": {
+                "id": "note-62",
+                "rect": {
+                  "y": 433.375,
+                  "h": 174.6875
+                },
+                "visible": true
+              },
+              "returnState": {
+                "chapter": "p1c32",
+                "chipHidden": true,
+                "scrollY": 9482
+              },
+              "shot": [
+                "screenshots/infinite-jest-note-return-chip-1440.png"
+              ]
+            },
+            "verdict": "PASS (endnote round-trip via note chip + Esc)"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 608/608 · 608/608 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, \"Times New Roman\",  → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/608 · 353.22/608 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, \"Times New Roman\",  → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "open-letter": {
+      "probe": {
+        "idx": 11,
+        "len": 403,
+        "fallback": false,
+        "head": "Of course, Mamet is Mamet. He’s out to shock, not convert. Even the wo",
+        "classlessCount": 115,
+        "psTotal": 115
+      },
+      "storageKeys": {
+        "book": "reader-open-letter",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-open-letter"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 648.86/648.859 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"EB Garamond\", \"Cormorant Garamond\", \"Pa → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(168, 154, 128)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(126, 42, 34)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 648.86/648.859 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"EB Garamond\", \"Cormorant Garamond\", \"Pa → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/648.859 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"EB Garamond\", \"Cormorant Garamond\", \"Pa → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "sovereign-individual": {
+      "probe": {
+        "idx": 10,
+        "len": 1212,
+        "fallback": false,
+        "head": "When failing systems have the power to do so, they often impose penal ",
+        "classlessCount": 137,
+        "psTotal": 164
+      },
+      "storageKeys": {
+        "book": "reader-sovereign-individual",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c5\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-sovereign-individual"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 340/640 · 436/715.097 · 616.64/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(168, 156, 124)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(210, 167, 44)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 715.09/715.097 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/715.097 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Times New Ro → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "the-fountainhead": {
+      "probe": {
+        "idx": 10,
+        "len": 581,
+        "fallback": false,
+        "head": "He cut straight across the lake to the shore ahead. He reached the roc",
+        "classlessCount": 164,
+        "psTotal": 164
+      },
+      "storageKeys": {
+        "book": "reader-the-fountainhead",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-the-fountainhead"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 674.53/674.544 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Palatino Lin → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(201, 183, 151)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(228, 87, 46)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 674.53/674.544 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Palatino Lin → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/674.544 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Source Serif 4\", Georgia, \"Palatino Lin → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "thus-spoke-zarathustra": {
+      "probe": {
+        "idx": 105,
+        "len": 513,
+        "fallback": false,
+        "head": "But then something happened that silenced every mouth and fixed every ",
+        "classlessCount": 150,
+        "psTotal": 150
+      },
+      "storageKeys": {
+        "book": "reader-thus-spoke-zarathustra",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-thus-spoke-zarathustra"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 640/640 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Spectral, Georgia, serif → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(183, 172, 147)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(232, 169, 61)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 640/640 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Spectral, Georgia, serif → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/640 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Spectral, Georgia, serif → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "twilight-of-the-idols": {
+      "probe": {
+        "idx": 10,
+        "len": 1126,
+        "fallback": false,
+        "head": "In this state we enrich everything out of our own plenitude: whatever ",
+        "classlessCount": 39,
+        "psTotal": 61
+      },
+      "storageKeys": {
+        "book": "reader-twilight-of-the-idols",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c10\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-twilight-of-the-idols"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 644.8/644.804 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Cormorant Garamond\", \"Palatino Linotype → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(168, 154, 128)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(210, 154, 74)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 640/640 · 644.8/644.804 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Cormorant Garamond\", \"Palatino Linotype → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/640 · 353.22/644.804 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "\"Cormorant Garamond\", \"Palatino Linotype → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    },
+    "will-to-power": {
+      "probe": {
+        "idx": 5,
+        "len": 848,
+        "fallback": true,
+        "head": "(4) If we are to be opposed to ‘meaninglessness’ on the one hand, and ",
+        "classlessCount": 8,
+        "psTotal": 9
+      },
+      "storageKeys": {
+        "book": "reader-will-to-power",
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c1\",\"scrollY\":0,\"read\":[]}",
+        "allKeysAtPersistence": [
+          "reader-will-to-power"
+        ],
+        "libraryThemeKeySeen": false
+      },
+      "viewports": {
+        "1440x1000": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 608/608 · 608/608 · 1024/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, \"Iowan Old Style\",  → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "beforeFocus": {
+              "outlineStyle": "none",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(168, 156, 134)",
+              "boxShadow": "none"
+            },
+            "tabStepsToSettings": 13,
+            "reachedSettings": true,
+            "focusState": {
+              "activeId": "btn-settings",
+              "focusedOnSettings": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "2px",
+              "outlineColor": "rgb(227, 168, 43)",
+              "boxShadow": "none",
+              "focusVisible": true
+            },
+            "focusIndicatorChanged": true,
+            "enterOpens": true,
+            "escapeCloses": true,
+            "escapeFocusReturnsTo": "btn-settings",
+            "panelAutoFocus": {
+              "id": "",
+              "pref": "theme",
+              "value": "dark",
+              "ariaPressed": "true"
+            },
+            "arrowRightOnThemeRow": {
+              "from": "dark",
+              "to": "nocturne"
+            },
+            "tabVisitedPrefs": [
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "theme",
+              "size"
+            ],
+            "rowArrowAndEnter": {
+              "before": "xl",
+              "arrowRight": {
+                "focused": "md",
+                "dataset": "md"
+              },
+              "afterEnter": "md"
+            },
+            "valueToggled": true,
+            "sShortcutOpens": true,
+            "pass": true
+          },
+          "notes": {
+            "noteRefsInBook": 0,
+            "chaptersWithRefs": 0,
+            "noAnnotationControlsByDesign": true,
+            "exercised": null,
+            "verdict": "no note_refs encoded in this book; reader.js defines NO user-annotation (create-note) control by design — verified from source: controls are .reader-noteref links, #note-return-chip, Esc return only"
+          }
+        },
+        "820x1180": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 608/608 · 608/608 · 756/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, \"Iowan Old Style\",  → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        },
+        "390x844": {
+          "error": null,
+          "measure": {
+            "pass": true,
+            "rendered": "narrow/standard/wide = 353.22/608 · 353.22/608 · 353.22/1024 (rendered/computedMax px)"
+          },
+          "size": {
+            "pass": true,
+            "observed": "sm:18.4px md:20.8px lg:24px xl:27.2px"
+          },
+          "leading": {
+            "pass": true,
+            "observed": "tight:38.4px normal:44.4px loose:50.4px"
+          },
+          "font": {
+            "pass": true,
+            "observed": "Newsreader, Georgia, \"Iowan Old Style\",  → \"DM Sans\", system-ui, -apple-system, \"Se"
+          },
+          "persistence": {
+            "pass": true,
+            "after": "{\"measure\":\"wide\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"theme\":\"dark\"}",
+            "computed": "{\"fontSizePx\":\"27.2px\",\"lineHeightPx\":\"57.12px\",\"computedMaxWidth\":\"1024px\",\"expectedWide\":1024,\"fontFamily\":\"\\\"DM Sans\\\", system-ui, -apple-system, \\\"Segoe UI\\\", sans-serif\"}"
+          },
+          "overflow": {
+            "pass": true,
+            "sweeps": 12
+          },
+          "keyboard": {
+            "skipped": true,
+            "reason": "desktop-only per brief"
+          },
+          "notes": {
+            "skipped": true,
+            "reason": "desktop-only exercise; census verified in preflight"
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "runs": [
+      {
+        "viewport": "1440",
+        "books": 13,
+        "retries": []
+      },
+      {
+        "viewport": "820",
+        "books": 13,
+        "retries": []
+      },
+      {
+        "viewport": "390",
+        "books": 13,
+        "retries": []
+      }
+    ]
+  }
+}

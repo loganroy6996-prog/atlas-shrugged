@@ -1,0 +1,329 @@
+/* Twilight of the Idols — UNTIMELYDUSK cohort (design/untimelydusk.css).
+   Closing movement, p1c9–p1c12. Implements the DESIGNER-OWNED manifest
+   design/untimelydusk.json (incl. raids map + engineer_notes) against
+   art/untimelydusk.svg. Every rule is scoped under
+   body[data-chapter="p1c9..p1c12"]. Unlayered book CSS beats @layer shared;
+   supervisor loads this file AFTER design/book.css and merges the cohort
+   JSON into design/chapters.json sequentially — do NOT append concurrently
+   with other cohorts.
+
+   Grammar: STRUCK BRONZE / sounding-out. Ring-density crescendo 9→10→11→
+   diamond-collapse across the four openers; p1c10's raid gallery ticked by
+   family pips (pen/eye/mask/sword + major heads); p1c12 resolves to poster.
+   Bone #EDE2CC engraving, bronze #D29A4A structure, ember #B23A2A cracks
+   only, ash #A89A80 secondary. Zero border-radius on identity furniture.
+   Never touches .chapter-meta::before (reserve) or .chapter-meta::after
+   (book opener seal). Opener emblems are reader.js-inlined symbols (contract
+   v1.1 A.2, unaffected); pips and seals are data-URI SVG content:url()s —
+   file-fragment references to <symbol> content (<symbol> or <view> anchors)
+   paint blank in live sinks, proven 2026-10-15, so the artwork is embedded
+   byte-faithfully with each symbol's children as top-level rendered content
+   (seal-ring.svg construction, fixed authored hex).
+
+   Path note: this file ships at design/untimelydusk.css; data-URI art needs
+   no path rewrite if the supervisor INLINES this file into theme.css. */
+
+/* ── 1. Opener emblem sizes (beat book 148px/112px via higher specificity) ── */
+body[data-chapter="p1c9"] #chapter-art.motif svg {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c10"] #chapter-art.motif svg {
+  width: 340px;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c11"] #chapter-art.motif svg {
+  width: min(360px, 78vw);
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c12"] #chapter-art.motif svg {
+  width: min(340px, 76vw);
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c9"] #chapter-art,
+body[data-chapter="p1c10"] #chapter-art,
+body[data-chapter="p1c11"] #chapter-art,
+body[data-chapter="p1c12"] #chapter-art {
+  margin: 0 auto 2rem;
+}
+
+/* ── 2. Figcaptions: DM Sans ash p1c9–p1c11, Cinzel bronze inscription p1c12 ── */
+body[data-chapter="p1c9"] #chapter-art figcaption,
+body[data-chapter="p1c10"] #chapter-art figcaption,
+body[data-chapter="p1c11"] #chapter-art figcaption {
+  font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--tw-ash, #A89A80);
+  text-align: center;
+}
+body[data-chapter="p1c12"] #chapter-art figcaption {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: var(--tw-bronze, #D29A4A);
+  text-align: center;
+}
+
+/* ── 3. Cohort end seals (sanctioned A.0 p:last-child::after swap ONLY, 28px) ── */
+body[data-chapter="p1c9"] .chapter-text > p:last-child::after,
+body[data-chapter="p1c10"] .chapter-text > p:last-child::after,
+body[data-chapter="p1c11"] .chapter-text > p:last-child::after,
+body[data-chapter="p1c12"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EStruck-disc end seal%3C/title%3E%3Ccircle class='seal' cx='16' cy='16' r='10' fill='none' stroke='%23D29A4A' stroke-width='2' stroke-opacity='0.95'/%3E%3Ccircle class='seal' cx='16' cy='16' r='5.5' fill='none' stroke='%23D29A4A' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpolyline class='seal' points='16,7 14.6,12 16.4,17 15,21.5 16,25' fill='none' stroke='%23B23A2A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle class='seal' cx='16' cy='16' r='1.8' fill='%23B23A2A' stroke='none'/%3E%3C/svg%3E");
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 4. p1c9: honest narrow dancing-baseline (turn arc + centred finale) ── */
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(8) {
+  margin-top: 2.6em;
+}
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(8)::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 24px;
+  margin: 0 auto 1.6em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 24'%3E%3Cpath d='M8 21 A76 76 0 0 1 70 6.2 M90 6.2 A76 76 0 0 1 152 21' fill='none' stroke='%23D29A4A' stroke-width='1.5' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(10) {
+  text-align: center;
+}
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(10)::first-line {
+  color: var(--tw-bronze, #D29A4A);
+}
+
+/* ── 5. p1c10: raid family pips over the book ring-on-hairline grammar ── */
+/* Shared pip reset + geometry: every pip rule resets the book 9px ring. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::before {
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 22px;
+  height: 22px;
+  top: -5px;
+  left: 0;
+}
+/* Literary pen: raids 02/03/04/07. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="02"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="03"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="04"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="07"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3ELiterary raid marker: quill nib%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M16 25 L12 12 Q16 7 20 12 Z' fill='none' stroke='%23D29A4A' stroke-width='1.4'/%3E%3Cline x1='16' y1='25' x2='16' y2='14' stroke='%23D29A4A' stroke-width='1'/%3E%3Ccircle cx='16' cy='10' r='1.2' fill='%23D29A4A' stroke='none'/%3E%3C/svg%3E");
+}
+/* Psychology eye: raids 05/08/09/11/14/17/18. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="05"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="08"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="09"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="11"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="14"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="17"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="18"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EPsychology raid marker: almond eye%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M8 16 Q16 9 24 16 Q16 23 8 16 Z' fill='none' stroke='%23A89A80' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23D29A4A' stroke='none'/%3E%3C/svg%3E");
+}
+/* Art mask: raid 10. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="10"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EArt raid marker: miniature mask%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M10 10 Q16 8 22 10 L21 20 Q16 24 11 20 Z' fill='none' stroke='%23D29A4A' stroke-width='1.4'/%3E%3Cpath d='M12.5 15 h2.4 M17.1 15 h2.4 M14.5 20 h3' stroke='%23EDE2CC' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+/* Politics sword: raids 12/15/20/21. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="12"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="15"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="20"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="21"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EPolitics raid marker: short blade%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M16 6 L18 18 L16 24 L14 18 Z' fill='none' stroke='%23A89A80' stroke-width='1.4' stroke-linejoin='round'/%3E%3Cline x1='12' y1='19' x2='20' y2='19' stroke='%23D29A4A' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+/* Movement heads: raids 06/13/16/19/22 ride the hairline at 26px. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="06"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="13"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="16"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="19"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="22"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ctitle%3EMovement-head marker: cracked disc with ember core%3C/title%3E%3Cpath class='arc-deco' d='M6 32 A 20 20 0 0 1 42 32' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.55'/%3E%3Ccircle class='seal' cx='24' cy='22' r='11' fill='none' stroke='%23D29A4A' stroke-width='1.6'/%3E%3Cpolyline class='seal' points='24,12 22,18 25,24 22.5,30 24,32' fill='none' stroke='%23B23A2A' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle class='seal' cx='24' cy='22' r='2' fill='%23B23A2A' stroke='none'/%3E%3C/svg%3E");
+  width: 26px;
+  height: 26px;
+}
+/* Raid 01 is :first-of-type (book hides its ring): re-show as the major pip
+   floating clear above the drop-cap line; its label keeps top:-2.6em. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="01"]:first-of-type::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ctitle%3EMovement-head marker: cracked disc with ember core%3C/title%3E%3Cpath class='arc-deco' d='M6 32 A 20 20 0 0 1 42 32' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.55'/%3E%3Ccircle class='seal' cx='24' cy='22' r='11' fill='none' stroke='%23D29A4A' stroke-width='1.6'/%3E%3Cpolyline class='seal' points='24,12 22,18 25,24 22.5,30 24,32' fill='none' stroke='%23B23A2A' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle class='seal' cx='24' cy='22' r='2' fill='%23B23A2A' stroke='none'/%3E%3C/svg%3E");
+  display: block;
+  position: absolute;
+  top: -2.9em;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+/* Keep the book 'raid NN' labels, re-offset for pip width. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::after {
+  left: 2rem;
+}
+/* Movement heads sound on an ember hairline. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="01"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="06"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="13"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="16"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="19"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="22"] {
+  border-top-color: color-mix(in srgb, var(--tw-ember, #B23A2A) 38%, transparent);
+}
+/* Signature close: the Zarathustra valediction (idx 60), right-aligned ash. */
+body[data-chapter="p1c10"] .chapter-text > p:nth-of-type(61) {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--tw-ash, #A89A80);
+  margin-top: 3rem;
+}
+
+/* ── 6. p1c11: the Thucydides verdict stone, then the Dionysian close ── */
+body[data-chapter="p1c11"] .chapter-text > p:nth-of-type(3) {
+  text-align: center;
+  max-width: 54ch;
+  margin: 2.4em auto;
+}
+body[data-chapter="p1c11"] .chapter-text > p:nth-of-type(7) {
+  margin-top: 2.2em;
+}
+
+/* ── 7. p1c12 POSTER end-state (whisper title already in book.css: air only) ── */
+body[data-chapter="p1c12"] .chapter-meta {
+  padding-top: 2.5rem;
+}
+/* No drop-cap: P1 is the '(Thus Spake Zarathustra, III)' attribution line. */
+body[data-chapter="p1c12"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(1) {
+  text-align: center;
+  font-size: 0.95em;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+/* Verses centred and airy. */
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(2),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(3),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(4),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(5),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(6),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(8) {
+  text-align: center;
+  max-width: 56ch;
+  margin-inline: auto;
+}
+/* Bronze inscription verse: 'Bliss to write upon the will of millennia…'. */
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7)::first-line {
+  color: var(--tw-bronze, #D29A4A);
+}
+/* Verdict line: 'become hard!' — Cormorant bone, never Cinzel body. */
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(8) {
+  color: var(--tw-bone, #EDE2CC);
+  font-size: 1.15em;
+  letter-spacing: 0.06em;
+}
+
+/* ── 8. 820px tablet: emblems step down the crescendo ── */
+@media (max-width: 1100px) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg { width: 240px; }
+  body[data-chapter="p1c10"] #chapter-art.motif svg { width: 270px; }
+  body[data-chapter="p1c11"] #chapter-art.motif svg { width: min(300px, 78vw); }
+  body[data-chapter="p1c12"] #chapter-art.motif svg { width: min(280px, 76vw); }
+}
+
+/* ── 9. 390px phone: full-bleed emblems, smaller pips, legible labels ── */
+@media (max-width: 560px) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] #chapter-art.motif svg,
+  body[data-chapter="p1c11"] #chapter-art.motif svg,
+  body[data-chapter="p1c12"] #chapter-art.motif svg {
+    width: 100%;
+    max-width: 480px;
+  }
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::before {
+    width: 20px;
+    height: 20px;
+  }
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="01"]:first-of-type::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="06"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="13"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="16"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="19"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="22"]::before {
+    width: 24px;
+    height: 24px;
+  }
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::after {
+    left: 1.8rem;
+  }
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(2),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(3),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(4),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(5),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(6),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(8) {
+    max-width: 100%;
+  }
+}
+
+/* ── 10. Overflow guard: emblems clip to the viewport at small widths ── */
+@media (max-width: 480px) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] #chapter-art.motif svg,
+  body[data-chapter="p1c11"] #chapter-art.motif svg,
+  body[data-chapter="p1c12"] #chapter-art.motif svg {
+    overflow: hidden;
+  }
+}
+
+/* ── 11. Reduced motion: rings are static SVG; backstop kills any animation/filter ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] #chapter-art.motif svg,
+  body[data-chapter="p1c11"] #chapter-art.motif svg,
+  body[data-chapter="p1c12"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::before,
+  body[data-chapter="p1c9"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c10"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c11"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c12"] .chapter-text > p:last-child::after {
+    animation: none;
+    filter: none;
+  }
+}
+
+/* ── 12. Print: book hides slots; labels drop, structure keeps ── */
+@media print {
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::after {
+    display: none;
+  }
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7)::first-line {
+    color: inherit;
+  }
+}

@@ -1,0 +1,1202 @@
+/* =====================================================================
+   INFINITE JEST — Cohort E · Ennet House (p1c54–p1c66)
+   Engineering. UNLAYERED (wins over shared layer). Scoped to
+   body[data-book="infinite-jest"][data-chapter="pNcM"]; ij-* classes only.
+   Explicit researched nth-of-type indices only — no modulo tinting.
+   Part I GOLD note register (J5: no violet). Marginalia collapse < 720px.
+   p1c60 dividers are pure-CSS bounded blocks (Chromium cannot paint SVG
+   sprite fragments via CSS content/background, per the cohort-C probe).
+   Build spec: local://cohort-e-design.md. p1c60 built FIRST (J8).
+   Inventory Blue: scoped --ij-inventory, plates 54/66 + their ticks ONLY.
+   ===================================================================== */
+
+/* ---- E0. Cohort-wide: Part I gold note register + phosphor focus ---- */
+/* reader.js wraps the FULL match phrase in a.reader-noteref, so cohort CSS
+   keeps the phrase legible: gold underline treatment, no pill/raise. */
+body[data-book="infinite-jest"][data-chapter="p1c54"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c55"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c56"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c57"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c58"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c59"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c60"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c61"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c62"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c63"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c64"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c65"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p1c66"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c54"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c55"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c56"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c57"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c58"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c59"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c60"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c61"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c62"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c63"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c64"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c65"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p1c66"] .reader-noteref:hover {
+  color: var(--text);
+  text-decoration-color: var(--ij-seal);
+}
+body[data-book="infinite-jest"][data-chapter="p1c54"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c55"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c56"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c57"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c58"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c59"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c60"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c61"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c62"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c63"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c64"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c65"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p1c66"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c54"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c55"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c56"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c57"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c58"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c59"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c60"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c61"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c62"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c63"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c64"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c65"] .note-return-chip,
+body[data-book="infinite-jest"][data-chapter="p1c66"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+
+/* Inventory Blue: scoped per-chapter so it flips to fallback cleanly.
+   Used ONLY in plates 54/66 + their ticks. */
+body[data-book="infinite-jest"][data-chapter="p1c54"],
+body[data-book="infinite-jest"][data-chapter="p1c66"] {
+  --ij-inventory: #5b7fa6;
+}
+
+/* Plates: composed scale per aspect; never display:none (P1). */
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p1c65"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-art {
+  width: min(30rem, 94vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-art {
+  width: min(64rem, 100%);
+}
+@media (max-width: 560px) {
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c65"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-art svg {
+    min-height: 200px;
+  }
+}
+
+/* ---- E60 · gately-centerpiece: the long night, 8 braid dividers FIRST (J8) ----
+   Corrected map (design §0, verified): 408 paras P0–P407. Dividers BEFORE
+   1-based 49/53/180/194/205/214/275/399. Pure-CSS bounded blocks: hairline
+   rules top/bottom, Plex 0.72rem label left + range right, centered glyph
+   ornament, 1.6em margins, static under reduced-motion. */
+/* Divider labels: bounded block — top/bottom hairlines, label + range line,
+   centered glyph ornament second line. Single content string per anchor. */
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(49)::before,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(53)::before,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(180)::before,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(194)::before,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(205)::before,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(214)::before,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(275)::before,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(399)::before {
+  display: block;
+  max-width: 36rem;
+  margin: 1.6em auto 1.6em;
+  padding: 0.9em 1em;
+  border-top: 1px solid var(--border-strong);
+  border-bottom: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  text-align: center;
+  white-space: pre-line;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-seal);
+}
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(49)::before { content: "ORIN · RENTED ROOM — P48–P51 · HAND-MODEL\A ◍"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(53)::before { content: "E.T.A. BRAID · THREE VOICES — P52–P178 · PEMULIS/ID/ARS\A ⋮⋮⋮"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(180)::before { content: "THE WALK · MARKET ST. — P179–P192 · LENZ/GREEN\A ····●"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(194)::before { content: "MARIO · NIGHT WALK — P193–P203 · LIT WINDOWS\A ▢"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(205)::before { content: "DUTY LITANY · DAILY LOG — P204–P212 · PICAYUNE\A ||||/"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(214)::before { content: "ORIN RETURNS · THE SURVEYOR — P213–P273 · SURVEY\A ▬+○"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(275)::before { content: "CURFEW 2330H · HEAD-COUNT — P274–P397 · THE STREET\A ○"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(399)::before { content: "SPECT-OP CODA · POND → HILL — P398–P407 · WITNESS\A ◯↘●"; }
+
+/* ---- E60b · p1c60 in-chapter treatments (design §5c) ---- */
+/* Litany P204–212 (nth 205–213): ledger styling — uniform left hairline;
+   LOG hanging kicker on P204 (nth 205) only via ::after (below the divider
+   ::before). P207 (nth 208) gets the stamp-red 5-EAST tick. */
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(205),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(206),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(207),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(208),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(209),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(210),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(211),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(212),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(213) {
+  border-left: 1px solid var(--border-strong);
+  padding-left: 1.25rem;
+}
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(205)::after {
+  content: "LOG · EVENING DUTIES";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-faint);
+}
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(208)::after {
+  content: "▬ 5-EAST · ST. E'S";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-stamp);
+}
+/* Fight P302–308 (nth 303–309): tightened measure, compressed leading;
+   P308 (nth 309) Flesh-wound isolated with white space. */
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(303),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(304),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(305),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(306),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(307),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(308),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(309) {
+  max-width: min(32rem, 62ch);
+  line-height: 1.6;
+}
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(309) {
+  margin-top: 2.2em;
+  margin-bottom: 2.2em;
+  padding: 1.2em 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+/* Authority P370 (nth 371): seal-gold left rule + IN CHARGE tick. */
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(371) {
+  border-left: 3px solid var(--ij-seal);
+  padding-left: 1.25rem;
+}
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(371)::after {
+  content: "≡ IN CHARGE · MADAME PSYCHOSIS";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-seal);
+}
+/* Coda P398–407 (nth 399–408): widened measure, airier leading. */
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(399),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(400),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(401),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(402),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(403),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(404),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(405),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(406),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(407),
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(408) {
+  max-width: min(40rem, 70ch);
+  line-height: 1.85;
+}
+/* ---- E60c · p1c60 margin ticks (design §4, explicit anchors) ---- */
+/* Base: narrow = block below paragraph; ≥1100px = absolute left margin. */
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(181)::after,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(275)::after,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(372)::after,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(191)::after,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(304)::after,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(306)::after,
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(408)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(181)::after { content: "‖ VEIL · ONE-EYE"; }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(275)::after { content: "— 2330H · ||||/ HEAD-COUNT"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(372)::after { content: "○ CURFEW KEYS"; color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(191)::after { content: "✦ FUGUE · BEHEMOTHS"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(304)::after { content: "✦ RUCKUS · WATERCOLOR"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(306)::after { content: "✦ BODYCHECK"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(408)::after { content: "✦ DOWNHILL · WHEELCHAIR"; color: var(--ij-phosphor); }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(181)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(275)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(372)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(191)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(304)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(306)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(408)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(205)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(208)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p:nth-of-type(371)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E54 · waiting-room: blue-inventory overture + Clenette stare ---- */
+/* P0 opener: blue-checked overture — blue left rule + inventory kicker. */
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(1) {
+  border-left: 3px solid var(--ij-inventory);
+  padding-left: 1.25rem;
+}
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(1)::after {
+  content: "▦ THE FOLLOWING THINGS WERE BLUE";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-inventory);
+}
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(7)::after,
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(66)::after,
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(95)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-inventory);
+}
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(7)::after { content: "— DIDDLE-CHECK · BLUE SOCK"; }
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(66)::after { content: "— POLITENESS ROULETTE · APPLE"; }
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(95)::after { content: "— CLINKERS · ETYMOLOGY"; }
+body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(113)::after {
+  content: "◉ STARE · CLENETTE";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-inventory);
+}
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(1)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(7)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(66)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(95)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p:nth-of-type(113)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E55 · outcropping-dawn: airy desert dialogue ---- */
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p {
+  line-height: 1.85;
+}
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(9)::after,
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(27)::after,
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(30)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(9)::after { content: "✦ INSECTS · BIOLUMINESCENT"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(27)::after { content: "≋ SICK-PINK · UNHEALED BURN"; }
+body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(30)::after { content: "▦ GRIP · PEBBLED STERLING"; }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(9)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(27)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p:nth-of-type(30)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E56 · front-office: veil triptych + Browning interval + no locks ---- */
+/* Timestamp echo on P0 (nth 1): night phosphor. */
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(1)::after {
+  content: "— 0450H · THE UNDEFENDED HOUR";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(40)::after,
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(73)::after,
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(92)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(40)::after { content: "‖ VEIL · TYPE & SYMBOL"; }
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(73)::after { content: "‖ VEIL · HIDE OPENLY"; }
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(92)::after { content: "‖ VEIL · BEAUTY"; }
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(116)::after {
+  content: "◷ 2216–2226H · BROWNING INTERVAL";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(131) {
+  border-left: 3px solid var(--ij-seal);
+  padding-left: 1.25rem;
+}
+body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(131)::after {
+  content: "○ NO LOCKS · THE HOUSE RULE";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-seal);
+}
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(1)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(40)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(73)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(92)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(116)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p:nth-of-type(131)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E57 · metric-ruler: dossier body, no drop cap ---- */
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(1),
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(2) {
+  max-width: min(34rem, 64ch);
+  text-align: justify;
+  font-size: 0.98em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(1)::first-letter {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  float: none;
+  line-height: inherit;
+  margin: 0;
+}
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(1)::before {
+  content: "FILE STAMP · O.U.S. — BERKELEY · VANISHED / TEMPE";
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--ij-stamp);
+  border-radius: 2px;
+  transform: rotate(-1deg);
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-stamp);
+}
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(1)::after,
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(2)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(1)::after { content: "▬ RULER · BLACKMAILABLE"; }
+body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(2)::after { content: "✕ MOTH-ENERGY · BODY COUNT"; }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(1)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(2)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+  /* File-stamp kicker hangs left of the dossier measure on desktop. */
+  body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p:nth-of-type(1)::before {
+    position: absolute;
+    right: calc(100% + 1.25rem);
+    top: 0.2em;
+    width: 11rem;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+
+/* ---- E58 · doorless-office: eavesdrop blocks + chant ---- */
+/* Overheard dialogue P0–P11 (nth 1–12): inset, reduced contrast; restores at
+   the crossing (nth 13 = P12 lobby). */
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(1),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(4),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(12) {
+  margin-left: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.97em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(3)::after,
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(13)::after,
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(14)::after,
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(25)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(3)::after { content: "◁ COUNTERPHOBIA · LINOLEUM"; }
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(13)::after { content: "— 2100H · ✦ ANOMALY · VEHICULAR"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(14)::after { content: "≋ CHANT · TOTAL WORRY"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(25)::after { content: "○ WHISTLE · NO PELLET"; }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(3)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(13)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(14)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p:nth-of-type(25)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E59 · streetlamp: walking rhythm + ELSEWHERE inset ---- */
+/* P6 soundscape (nth 7): distinct indent. Green's one-liners get air via
+   margin (nth 25 = P24 labial writhing beat). */
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(7) {
+  margin-left: 2rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+/* Hal interlude P28–35 (nth 29–36): bounded ELSEWHERE inset. */
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(36) {
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--ij-seal);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  padding: 0.9rem 1.1rem;
+  font-size: 0.96em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(29)::before {
+  content: "▭ ELSEWHERE · LUNCHTIME · HAL PHOTOSYNTHESIZING";
+  display: block;
+  margin-bottom: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-seal);
+}
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(4)::after,
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(7)::after,
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(19)::after,
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(37)::after,
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(49)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(4)::after { content: "◐ MOON · DOESN'T FEEL WELL"; }
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(7)::after { content: "≋ SOUNDSCAPE · HARBOR WIND"; }
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(19)::after { content: "○ RECURVE · CANE CHAIR DREAM"; }
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(37)::after { content: "✦ SEPTUM · UNDER THE LAMP"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(49)::after { content: "○ WASHING · BRAINWASH CODA"; }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(4)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(7)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(19)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(37)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p:nth-of-type(49)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E61 · dining-hall: clamor, milk assay, Ingersoll lull ---- */
+/* Tight exchange spacing across the canteen body (nth 2–53), then the lull. */
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p {
+  margin-bottom: 0.85em;
+}
+/* Milk assay P6–23 (nth 7–24): lab-note inset. */
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(24) {
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--ij-seal);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  padding: 0.9rem 1.1rem;
+  font-size: 0.96em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(7)::before {
+  content: "ASSAY · BAG vs. POWDERED — BLUISH CAST, TELLTALE FOAM";
+  display: block;
+  margin-bottom: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-seal);
+}
+/* Ingersoll P48 (nth 49): full white-space lull beat. */
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(49) {
+  margin-top: 2.4em;
+  margin-bottom: 2.4em;
+  padding: 1.4em 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(1)::after,
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(12)::after,
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(19)::after,
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(25)::after,
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(49)::after,
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(52)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(1)::after { content: "— 1810H · 133 + 13"; color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(12)::after { content: "▢ MILK-BAG · LOADING"; }
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(19)::after { content: "≋ TELLTALE FOAM · BLUISH CAST"; }
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(25)::after { content: "✦ MIGRATIONS · FALLING TILES"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(49)::after { content: "○ CAST · UNSIGNED · LULL"; }
+body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(52)::after { content: "≋ PRE-MIXED ×4Y"; color: var(--ij-stamp); }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(1)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(12)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(19)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(25)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(49)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p:nth-of-type(52)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E62 · recliner: slow confession; Marathe replies isolated ---- */
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p {
+  max-width: min(40rem, 70ch);
+  line-height: 1.85;
+}
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(1)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(21)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(31)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(43)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(86)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(91)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(120)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(121)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(1)::after { content: "○ PALLOR · ANNULAR · MISSING RING"; }
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(21)::after { content: "▭ SMALL TV · DISTRIBUTORSHIP"; }
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(31)::after { content: "◐ SMEAR · THUMB + FOREFINGER"; }
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(43)::after { content: "▭ SWAMP · MESS TENT"; }
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(86)::after { content: "○ DEATH IN THE CHAIR"; }
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(91)::after { content: "▬ NOTEBOOKS · SCORES · CODED"; }
+/* Closing pair: quietest ticks in the cohort. */
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(120)::after,
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(121)::after {
+  color: var(--text-faint);
+  font-weight: 400;
+}
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(120)::after { content: "— MISPLACED."; }
+body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(121)::after { content: "— AS YOU WISH."; }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(1)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(21)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(31)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(43)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(86)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(91)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(120)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p:nth-of-type(121)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E63 · wing-shadow: containment wells (design §9, static always) ---- */
+/* Deep well P7–P28 (nth 8–29): bg-elevated + left containment rule +
+   hairlines closing top (P7) and bottom (P28). In-flow only. */
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(24),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(25),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(26),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(27),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(29) {
+  background: var(--bg-elevated);
+  border-left: 1px solid var(--border-strong);
+  padding: 0.6rem 1.1rem 0.6rem 1.25rem;
+  margin-bottom: 0;
+}
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(8) {
+  border-top: 1px solid var(--border-strong);
+  padding-top: 1.1rem;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(29) {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.15em;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+/* Shallow well P30–P36 (nth 31–37): left rule only. */
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(37) {
+  border-left: 1px solid var(--border-strong);
+  padding-left: 1.25rem;
+}
+/* P29 (nth 30) Green cries: spaced-italic isolation, no well. */
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(30) {
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  padding: 1.2em 0;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(1)::after,
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(9)::after,
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(13)::after,
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(29)::after,
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(30)::after,
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(37)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(1)::after { content: "— 0245H · THE TRULY WEE"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(9)::after { content: "≋ RESONANCE · VIOLIN + FAN"; }
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(13)::after { content: "◠ HORROR, DISTILLED"; }
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(29)::after { content: "— PIECE OF STRING"; color: var(--text-faint); font-weight: 400; }
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(30)::after { content: "… GREEN CRIES · HO, DON'T LIGHT IT"; color: var(--text-faint); font-weight: 400; font-style: italic; }
+body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(37)::after { content: "◠ SHADOW OF THE WING"; }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(1)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(9)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(13)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(29)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(30)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p:nth-of-type(37)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E64 · west-courts: spectacle over a horror basement ---- */
+/* Tunnel P100–187 (nth 101–188): compressed darker bounded blocks. */
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(101),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(102),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(103),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(104),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(105),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(106),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(107),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(108),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(109),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(110),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(111),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(112),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(113),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(114),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(115),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(116),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(117),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(118),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(119),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(120),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(121),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(122),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(123),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(124),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(125),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(126),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(127),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(128),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(129),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(130),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(131),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(132),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(133),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(134),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(135),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(136),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(137),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(138),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(139),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(140),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(141),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(142),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(143),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(144),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(145),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(146),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(147),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(148),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(149),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(150),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(151),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(152),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(153),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(154),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(155),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(156),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(157),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(158),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(159),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(160),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(161),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(162),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(163),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(164),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(165),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(166),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(167),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(168),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(169),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(170),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(171),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(172),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(173),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(174),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(175),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(176),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(177),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(178),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(179),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(180),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(181),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(182),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(183),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(184),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(185),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(186),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(187),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(188) {
+  border-left: 2px solid var(--ij-phosphor);
+  padding: 0.4rem 0 0.4rem 1.1rem;
+  margin-bottom: 0;
+  font-size: 0.97em;
+  line-height: 1.65;
+}
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(101) {
+  border-top: 1px solid var(--border-strong);
+  padding-top: 1.1rem;
+  margin-top: 1.6em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(188) {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.6em;
+}
+/* Ephebic P188–223 (nth 189–224): hairlined set-piece aside. */
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(189),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(190),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(191),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(192),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(193),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(194),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(195),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(196),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(197),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(198),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(199),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(200),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(201),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(202),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(203),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(204),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(205),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(206),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(207),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(208),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(209),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(210),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(211),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(212),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(213),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(214),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(215),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(216),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(217),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(218),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(219),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(220),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(221),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(222),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(223) {
+  border-left: 1px solid var(--border-strong);
+  padding-left: 1.5rem;
+  font-size: 0.98em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(189)::before {
+  content: "ASIDE · THE EPH-EBIC QUESTION — TEMPERED, OVEN-TOUGHENED";
+  display: block;
+  margin-bottom: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-faint);
+}
+/* Broadcast parody P224–243 (nth 225–244): ON AIR inset, phosphor rule. */
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(225),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(226),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(227),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(228),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(229),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(230),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(231),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(232),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(233),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(234),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(235),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(236),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(237),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(238),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(239),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(240),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(241),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(242),
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(243) {
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--ij-phosphor);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  padding: 0.9rem 1.1rem;
+  font-size: 0.96em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(225)::before {
+  content: "◉ ON AIR · BUD MATCH OF THE WEEK";
+  display: block;
+  margin-bottom: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(1)::after,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(3)::after,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(21)::after,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(82)::after,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(118)::after,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(172)::after,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(211)::after,
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(238)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(1)::after { content: "○-○ VESPA · LITTLE YELLOW"; color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(3)::after { content: "◐ POORLY WIRED · FLUTTERING SUN"; }
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(21)::after { content: "≡ TAKE-TWO · SPORTING CODE"; color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(82)::after { content: "▬ SAPROGENIC GREETINGS"; }
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(118)::after { content: "≋ MERCURIC · TUNNEL LIGHTS"; color: var(--ij-phosphor); }
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(172)::after { content: "▢ OJ! · BALLOONING CARTON"; }
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(211)::after { content: "— EPHEBIC · FORMIDABLE EDGE"; color: var(--text-faint); font-weight: 400; }
+body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(238)::after { content: "▭ BUD MATCH · PARODY CAST"; }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(1)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(3)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(21)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(82)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(118)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(172)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(211)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p:nth-of-type(238)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E65 · grille-window: MAXIMUM RESTRAINT (design §10) ---- */
+/* Opener object only. ONE unmarked hairline above P5 (nth 6). Zero ticks,
+   zero insets, zero wells, zero special measures. Nothing else. */
+body[data-book="infinite-jest"][data-chapter="p1c65"] #chapter-text > p:nth-of-type(6) {
+  border-top: 1px solid var(--border-strong);
+  padding-top: 1.6em;
+  margin-top: 1.6em;
+}
+
+/* ---- E66 · viewing-room: solitary close ---- */
+/* P1 (nth 2) chill line isolated. */
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(2) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1.2em 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+/* P9 (nth 10) Blood Sister reveal: quiet footnote-style block. */
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(10) {
+  border-top: 1px solid var(--border-strong);
+  padding-top: 1.1em;
+  font-size: 0.95em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(10)::before {
+  content: "▭ QUEUE · FUN WITH TEETH / BLOOD SISTER — SELF-PUNISHMENT";
+  display: block;
+  margin-bottom: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(2)::after,
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(3)::after,
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(6)::after,
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(8)::after {
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(2)::after { content: "— NONOCCURRENCE · NEVER QUITE OCCURRED"; color: var(--text-faint); font-weight: 400; }
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(3)::after { content: "▭ V.R.6 · STUDY PERIOD"; }
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(6)::after { content: "≋ BURNT DUST · FURNACES"; }
+body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(8)::after { content: "✦ WAVING CHILD · 0816 REAR CAM"; color: var(--ij-inventory); }
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(2)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(3)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(6)::after,
+  body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p:nth-of-type(8)::after {
+    position: absolute;
+    left: calc(100% + 1.25rem);
+    top: 0.25em;
+    margin-top: 0;
+    width: max-content;
+    max-width: 13rem;
+    white-space: normal;
+  }
+}
+
+/* ---- E-RM · reduced motion: static always (wells, dividers, viewer) ---- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c54"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c55"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c56"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c57"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c58"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c59"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c60"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c61"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c62"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c63"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c64"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c65"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c65"] #chapter-text > p::after,
+  body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c66"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,797 @@
+{
+ "artDirection": "books/being-and-time/design/ART-DIRECTION.md (binding incl. §9 reader-contract conformance + §10 v1.1/conformance ArtDirector verdict); READER-CONTRACT.md v1.1 STABLE; ArtDirector verdict PROVISIONAL PASS with binding conditions B1-B8 (see bindingConditions)",
+ "book": "being-and-time",
+ "chapters": [
+  "p3c28",
+  "p3c29",
+  "p3c30",
+  "p3c31",
+  "p3c32",
+  "p3c33",
+  "p3c34",
+  "p3c35",
+  "p3c36",
+  "p3c37",
+  "p3c38",
+  "p3c39"
+ ],
+ "cohort": "historicity-finale",
+ "cohortBeat": "strata → CLEARING → finale. Flecks settle into sediment lines (§§72-77); the 4-paragraph hinge (§78) exhales; datability/clock/now-time instruments cross the widening gap (§§79-81); Hegel refuted as the now-series scatters (§82); the forest falls to 100% clearing glow with the three ecstasis horizons returning as the finale chord (§83).",
+ "phase": "Phase 2 conformant + v1.1 symbol-keyed (all 12 chapters read from data/chapters/*.json; titles/counts verified against toc.json; prose NEVER edited)",
+ "tocAuthority": "books/being-and-time/data/toc.json — 12/12 IDs verified: p3c28 §72 2330w/20p, p3c29 §73 1777w/17p, p3c30 §74 1966w/15p, p3c31 §75 1913w/12p, p3c32 §76 2088w/18p, p3c33 §77 2478w/22p, p3c34 §78 895w/4p, p3c35 §79 2287w/16p, p3c36 §80 3802w/29p, p3c37 §81 3078w/16p, p3c38 §82 2539w/13p, p3c39 §83 11324w/378p",
+ "part": {
+  "id": "part-3",
+  "name": "Division Two",
+  "roman": "3",
+  "subtitle": "Dasein and Temporality"
+ },
+ "entries": {
+  "p3c28": {
+   "title": "The Existential and Ontological Exposition of the Problem of History",
+   "numberLabel": "§ 72",
+   "order": "§72 (Division Two sequence 28 of 39)",
+   "words": 2330,
+   "minutes": 12,
+   "contentRationale": "Hinge into history (20 paras): death was only one 'end' of Dasein — birth is the other, and the birth-death 'connection' is ontologically obscure (p3-p4). The 'more simple' life-connection of successive experiences is unmasked as the vulgar now-series (p5). Opener stages the cohort's founding event: flecks SETTLE into the first strata — the past gaining sediment layers — under a shaft widened to 75%. The threshold well carries p0's return to 'the one goal' (the question of the meaning of being in general).",
+   "gapWidth": "75%",
+   "motif": "first strata under a widening shaft",
+   "paletteRole": "Cohort ground established: humus ground, bark strata, shaft band at 16% core, text mist. No ember (binding).",
+   "svgRegion": "hf-72",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-72",
+    "class": "plate",
+    "motif": "hf-72"
+   },
+   "tocTick": "75%",
+   "kicker": "Part 3 · § 72 · 2330 words · ≈12 min",
+   "ghost": {
+    "content": "72",
+    "placement": "top-crop",
+    "size": "22vw",
+    "opacity": "8%"
+   },
+   "openerComposition": "Ledger. G: top-crop '72' left 6%. S (slot plate hf-72): two edge trunk silhouettes frame a 75% shaft; four uneven sediment lines settle across the floor; one dimmed horizon band crosses above them. T: title flush-left. R: gloss 'Geburt und Tod' (birth and death, the two ends, p3-p4) + micro-caption 'the other end'.",
+   "railInscription": {
+    "para": "p5",
+    "text": "What seems “more simple” than the nature of the “connection of life” between birth and death?",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Calm body; one strata fleck divider low in the column (explicit rule). No mini-map (short chapter).",
+   "flecks": "Sparse single strata-row low in the text column; sediment register begins.",
+   "ending": {
+    "motif": "first sediment",
+    "composition": "four short horizontal bark hairlines, uneven, the lowest slightly longer, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c29": {
+   "title": "The Vulgar Understanding of History and the Occurrence of Dasein",
+   "numberLabel": "§ 73",
+   "order": "§73 (Division Two sequence 29 of 39)",
+   "words": 1777,
+   "minutes": 9,
+   "contentRationale": "The vulgar concept anatomized (17 paras): history as what is past, 'already belongs to history' (p3), derivation [Herkunft] from the past, 'epoch making' and the 'productive nexus' moving through past/present/future (p5). Opener argues back by SHOWING the leveling: strata lines go unnaturally straight and evenly spaced — the administered past — against which the bending lived strata of §74 will read as authentic. Ghost shifts right of gutter (first positional move).",
+   "gapWidth": "77%",
+   "motif": "leveled strata: the administered past",
+   "paletteRole": "Same ground; bark strata ruled even; shaft band at 18% core. No ember.",
+   "svgRegion": "hf-73",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-73",
+    "class": "plate",
+    "motif": "hf-73"
+   },
+   "tocTick": "77%",
+   "kicker": "Part 3 · § 73 · 1777 words · ≈9 min",
+   "ghost": {
+    "content": "73",
+    "placement": "top-crop",
+    "size": "20vw",
+    "opacity": "7%"
+   },
+   "openerComposition": "Ledger. G: top-crop '73' left 12%. S (slot plate hf-73): two thinner edge trunks; four strata lines drawn straight and evenly spaced (deliberate contrast to hf-72's uneven settle); horizon band slightly brighter. T: title flush-left. R: gloss 'Herkunft' (derivation from the past, p5) + micro-caption 'the past as no-longer-now'.",
+   "railInscription": {
+    "para": "p3",
+    "text": "“this or that already belongs to history”",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Calm body; the even strata divider does the arguing, prose untouched.",
+   "flecks": "Single even strata-row divider (ruled, not settled).",
+   "ending": {
+    "motif": "ruled past",
+    "composition": "four short horizontal hairlines perfectly even and straight, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c30": {
+   "title": "The Essential Constitution of Historicity",
+   "numberLabel": "§ 74",
+   "order": "§74 (Division Two sequence 30 of 39)",
+   "words": 1966,
+   "minutes": 10,
+   "contentRationale": "Cohort PEAK (15 paras): fate [Schicksal] (p5-p8), destiny [Geschick] as occurrence-with of a people (p7: 'If Dasein, anticipating, lets death become powerful in itself...'), repetition [Wiederholung] fetching heritage (p9-p10: 'choose its hero', kampfende Nachfolge), the Moment (p9: 'be in the Moment for its time'), authentic historicity rooted in the future (p11-p12). Opener stages repetition structurally: strata BEND upward toward a bright horizontal Moment-line while retrieval threads rise from layer to line — fetching, not copying. Largest ghost in cohort.",
+   "gapWidth": "79%",
+   "motif": "the Moment line: strata bend, threads rise",
+   "paletteRole": "Moment-line brightest shaft element before the finale (55% core); threads 30%; bark strata. No ember.",
+   "svgRegion": "hf-74",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-74",
+    "class": "plate",
+    "motif": "hf-74"
+   },
+   "tocTick": "79%",
+   "kicker": "Part 3 · § 74 · 1966 words · ≈10 min",
+   "ghost": {
+    "content": "74",
+    "placement": "top-crop",
+    "size": "24vw",
+    "opacity": "9%"
+   },
+   "openerComposition": "Ledger. G: top-crop '74' right 8% (cohort's largest ghost). S (slot plate hf-74): one left trunk remnant; a single bright horizontal Moment-line crosses the full gap; four strata lines below bend upward toward it; five faint vertical retrieval threads rise from strata to line. T: title flush-left. R: gloss 'Schicksal · Geschick · Wiederholung' (fate/destiny/repetition) + micro-caption 'the Moment'.",
+   "railInscription": {
+    "para": "p9",
+    "text": "be in the Moment for “its time”",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Breather (1.8em margin-top, explicit rule) before p7 (fate-to-destiny turn) and before p11 (repetition-as-fate hinge). Calm body otherwise.",
+   "flecks": "Single divider with one thread rising through it (repetition register).",
+   "ending": {
+    "motif": "heritage fetched",
+    "composition": "three short bark lines with one vertical shaft thread rising from the middle line through the others, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c31": {
+   "title": "The Historicity of Dasein and World History",
+   "numberLabel": "§ 75",
+   "order": "§75 (Division Two sequence 31 of 39)",
+   "words": 1913,
+   "minutes": 10,
+   "contentRationale": "World history (12 paras): Dasein understands itself via what it takes care of (p0-p1); the ring 'presented' and 'worn' whose movement is not change of location (p3); dispersion pulled together [Zusammenholen] (p5); the chapter closes 'caught up unexpectedly in shadows' (p11) — the darkest sentence in the cohort, bridging to historiography. Opener: three bright shards ride the uppermost stratum — encountered world-historical things catching light, neither buried nor free. Ghost mid-gutter.",
+   "gapWidth": "81%",
+   "motif": "bright shards riding the strata: the worn ring",
+   "paletteRole": "Shaft shards at 50% on bark strata; otherwise cohort ground. No ember.",
+   "svgRegion": "hf-75",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-75",
+    "class": "plate",
+    "motif": "hf-75"
+   },
+   "tocTick": "81%",
+   "kicker": "Part 3 · § 75 · 1913 words · ≈10 min",
+   "ghost": {
+    "content": "75",
+    "placement": "top-crop",
+    "size": "19vw",
+    "opacity": "7%"
+   },
+   "openerComposition": "Ledger. G: top-crop '75' left 18%. S (slot plate hf-75): one trunk; four strata continue; three small bright lozenge shards sit ON the upper stratum catching shaft light. T: title flush-left. R: gloss 'Zusammenholen' (pulling-together from dispersion, p5) + micro-caption 'the ring that is worn'.",
+   "railInscription": {
+    "para": "p3",
+    "text": "a ring that is “presented” and “worn”",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Explicit breather before p11 (the 'shadows' close) so the darkest sentence lands with air. Calm body.",
+   "flecks": "Single strata divider with one bright fleck (the encountered thing).",
+   "ending": {
+    "motif": "the worn ring",
+    "composition": "one small open shaft ring resting on a single bark hairline, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c32": {
+   "title": "The Existential Origin of Historiography from the Historicity of Dasein",
+   "numberLabel": "§ 76",
+   "order": "§76 (Division Two sequence 32 of 39)",
+   "words": 2088,
+   "minutes": 11,
+   "contentRationale": "Historiography derived (18 paras): science constituted by thematization (p4: 'Every science is primarily constituted by thematization'); the 'silent power of the possible' (p9); historiographical thematization disclosing what-has-been-there in repetition (p17). Opener: a lens-ring of attention laid over five finer strata — thematization as focused circle, brighter than bark but dimmer than the Moment line, because science is founded, not primordial.",
+   "gapWidth": "83%",
+   "motif": "lens-ring of thematization over fine strata",
+   "paletteRole": "Lens ring shaft 50%; strata finer and dimmer (five lines); cohort ground. No ember.",
+   "svgRegion": "hf-76",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-76",
+    "class": "plate",
+    "motif": "hf-76"
+   },
+   "tocTick": "83%",
+   "kicker": "Part 3 · § 76 · 2088 words · ≈11 min",
+   "ghost": {
+    "content": "76",
+    "placement": "top-crop",
+    "size": "21vw",
+    "opacity": "8%"
+   },
+   "openerComposition": "Ledger. G: top-crop '76' left 4% (nearest the edge in cohort). S (slot plate hf-76): one trunk; five fine strata lines; a thin open lens-ring in shaft color rests over the middle strata with faint radial selection ticks inside. T: title flush-left. R: gloss 'Thematisierung' (thematization, p4/p17) + micro-caption 'the silent power of the possible'.",
+   "railInscription": {
+    "para": "p9",
+    "text": "the silent power of the possible",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Explicit breather before p9 (the 'silent power' hinge). Calm body.",
+   "flecks": "Single fine-strata divider with a partial ring arc.",
+   "ending": {
+    "motif": "thematized region",
+    "composition": "one thin open shaft circle with a single bark hairline passing beneath it, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c33": {
+   "title": "The Connection of the Foregoing Exposition of the Problem of Historicity with the Investigations of Dilthey and the Ideas of Count Yorck",
+   "numberLabel": "§ 77",
+   "order": "§77 (Division Two sequence 33 of 39)",
+   "words": 2478,
+   "minutes": 13,
+   "contentRationale": "The archive chapter (22 paras): Dilthey's three areas of investigation (p2), Yorck's letters quoted at length — Ranke the 'great ocularist' (p8), the 'cabinet of antiquities' (p10), 'all written history that is alive... is critique' (p11), 'I am history as well as nature' (p12), the generic difference of ontic vs historical (p18) closing on 'the spirit of Count Yorck in the service of Dilthey's work' (p21). Opener turns archival: binding-tapes replace trunks; stacked letter-ticks run the right band — correspondence, not forest. Long-quotation relief in the reading treatment.",
+   "gapWidth": "85%",
+   "motif": "letters plate: binding-bands and stacked letter-ticks",
+   "paletteRole": "Binding-bands bark; letter-ticks shaft 40%; strata continue beneath. No ember.",
+   "svgRegion": "hf-77",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-77",
+    "class": "plate",
+    "motif": "hf-77"
+   },
+   "tocTick": "85%",
+   "kicker": "Part 3 · § 77 · 2478 words · ≈13 min",
+   "ghost": {
+    "content": "77",
+    "placement": "top-crop",
+    "size": "20vw",
+    "opacity": "7%"
+   },
+   "openerComposition": "Ledger. G: top-crop '77' right 14%. S (slot plate hf-77): two thin upright archival binding-bands replace trunks at the gap edges; four strata run beneath; seven short indented shaft letter-ticks stack along the right band (the quoted letters). T: title flush-left (longest title in cohort, wraps 3 lines max at 40px min clamp). R: gloss 'das Ontische und das Historische' (the ontic and the historical, p18) + micro-caption 'Dilthey-Yorck letters'.",
+   "railInscription": {
+    "para": "p12",
+    "text": "I am history as well as nature",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Long-quotation relief: explicit breathers before p6 (comparison-procedure letter), p8 (Ranke ocularist letter), p10 (cabinet of antiquities), p12 (virtuality letter), and p18 (generic-difference turn) — enumerated rules pacing the quoted-letter run. Calm measure, no wells (paragraphs-only rule).",
+   "flecks": "Stacked-tick divider (letter rhythm) at the chapter's middle joint.",
+   "ending": {
+    "motif": "correspondence bound",
+    "composition": "two short vertical bark bands with three small shaft ticks stacked between them, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c34": {
+   "title": "The Incompleteness of the Foregoing Temporal Analysis of Dasein",
+   "numberLabel": "§ 78",
+   "order": "§78 (Division Two sequence 34 of 39)",
+   "words": 895,
+   "minutes": 5,
+   "contentRationale": "The 4-paragraph hinge of Division Two: reckoning with time must be clarified (p1: 'The elemental mode of behavior of reckoning with time'), the vulgar concept comes from leveling down primordial time (p2), and the coming program is named — subjective/objective vacillation, Hegel's time-spirit unity (p3). Smallest plate in cohort: strata fall to three thin lines, the upper field empties, one full-width hairline rule marks the turn from history to time. Smallness is the content: a hinge, not a hall. Smallest ghost; no dividers; no breathers — four paragraphs breathe as one held thought.",
+   "gapWidth": "87%",
+   "motif": "the hinge: hairline rule between strata and clock",
+   "paletteRole": "Quietest plate: shaft at 20% except the hairline rule at 50%; bark strata thinned. No ember.",
+   "svgRegion": "hf-78",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-78",
+    "class": "plate",
+    "motif": "hf-78"
+   },
+   "tocTick": "87%",
+   "kicker": "Part 3 · § 78 · 895 words · ≈5 min",
+   "ghost": {
+    "content": "78",
+    "placement": "top-crop",
+    "size": "18vw",
+    "opacity": "7%"
+   },
+   "openerComposition": "Ledger. G: top-crop '78' left 30% (cohort's smallest ghost — the gap speaks). S (slot plate hf-78): one hairline trunk at far left; three thin strata lines in the lower third; upper field bare glow; a single full-width hairline rule divides lower strata from upper emptiness. T: title flush-left. R: gloss 'Rechnen mit der Zeit' (reckoning with time, p1) + micro-caption 'hinge: primordial time faces clock time'.",
+   "railInscription": {
+    "para": "p2",
+    "text": "The vulgar concept of time owes its provenance to a leveling down of primordial time",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p0 only; no breathers, no dividers; generous after-spacing so the four paragraphs read as one held thought.",
+   "flecks": "NONE. The hinge exhales; the only chapter in the cohort with a fully clean text column.",
+   "ending": {
+    "motif": "the turn",
+    "composition": "a single horizontal shaft hairline, full micro-scene width, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c35": {
+   "title": "The Temporality of Dasein and Taking Care of Time",
+   "numberLabel": "§ 79",
+   "order": "§79 (Division Two sequence 35 of 39)",
+   "words": 2287,
+   "minutes": 12,
+   "contentRationale": "Datability (16 paras): the 'then'/'on that former occasion'/'now' structure (p2), the coined term — 'We shall call this... datability' [Datierbarkeit] (p3) — public time made in being-with ('several people can say now together', p15). Opener revives §74's horizontal-line grammar one level down: a now-line with three hanging date-ticks ('now that', 'then when', 'on that former occasion when'). The Moment has become the datable now.",
+   "gapWidth": "90%",
+   "motif": "datability: now-line with three speaking ticks",
+   "paletteRole": "Now-line shaft 50%, ticks 60%; strata reduced to two faint floor lines. No ember.",
+   "svgRegion": "hf-79",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-79",
+    "class": "plate",
+    "motif": "hf-79"
+   },
+   "tocTick": "90%",
+   "kicker": "Part 3 · § 79 · 2287 words · ≈12 min",
+   "ghost": {
+    "content": "79",
+    "placement": "top-crop",
+    "size": "21vw",
+    "opacity": "8%"
+   },
+   "openerComposition": "Ledger. G: top-crop '79' left 9%. S (slot plate hf-79): one trunk; a full-width now-line with three shaft date-ticks hung beneath at composed positions; two faint strata lines at the floor. T: title flush-left. R: gloss 'Datierbarkeit' (datability, p3) + micro-caption 'now that, then when'.",
+   "railInscription": {
+    "para": "p15",
+    "text": "several people can say “now” together",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Explicit breather before p3 (the datability definition) so the coined term lands with air. Calm body.",
+   "flecks": "Single divider: now-line with one tick.",
+   "ending": {
+    "motif": "the dated now",
+    "composition": "one short horizontal shaft line with three small ticks hung beneath it, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c36": {
+   "title": "Time Taken Care of and Within-Timeness",
+   "numberLabel": "§ 80",
+   "order": "§80 (Division Two sequence 36 of 39)",
+   "words": 3802,
+   "minutes": 19,
+   "contentRationale": "The clock chapter (29 paras, longest before the finale): astronomical/calendrical reckoning (p3), within-timeness defined (p4: beings 'unlike Dasein' are 'within-time'), the natural clock (p14), measuring the shadow and the public sundial (p16-p18: 'When the shadow is so many footsteps long'). Opener: the horology ring — Diderot-plate instrument grammar (double circle, twelve ticks, fixed pointer), a reckoning instrument rather than a kitsch clock face, matching the claim that reckoning belongs to care.",
+   "gapWidth": "92%",
+   "motif": "horology ring: the reckoning instrument",
+   "paletteRole": "Ring and ticks shaft 55%; radial glow behind; two faint floor strata. No ember.",
+   "svgRegion": "hf-80",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-80",
+    "class": "plate",
+    "motif": "hf-80"
+   },
+   "tocTick": "92%",
+   "kicker": "Part 3 · § 80 · 3802 words · ≈19 min",
+   "ghost": {
+    "content": "80",
+    "placement": "top-crop",
+    "size": "22vw",
+    "opacity": "8%"
+   },
+   "openerComposition": "Ledger. G: top-crop '80' right 6%. S (slot plate hf-80): one trunk at far left edge; center holds the horology ring — thin double circle with twelve composed ticks and one fixed pointer-line at a composed angle; two faint strata ground the floor; radial glow gathers behind the ring (largest glow short of the finale). T: title flush-left. R: gloss 'die naturliche Uhr' (the natural clock, p14) + micro-caption 'making time public'.",
+   "railInscription": {
+    "para": "p17",
+    "text": "“When the shadow is so many footsteps long”",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Three explicit breathers at enumerated joints: before p3 (astronomical-reckoning turn), before p14 (natural clock), before p18 (public sundial). Calm body, 34rem.",
+   "flecks": "Single divider: partial ring arc with three ticks.",
+   "ending": {
+    "motif": "time read off",
+    "composition": "a small open shaft circle with one fixed pointer tick at two o'clock, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c37": {
+   "title": "Within-Timeness and the Genesis of the Vulgar Concept of Time",
+   "numberLabel": "§ 81",
+   "order": "§81 (Division Two sequence 37 of 39)",
+   "words": 3078,
+   "minutes": 16,
+   "contentRationale": "The vulgar genesis (16 paras): Aristotle's definition — time as 'what is counted' in the making-present of the moving pointer (p1), the succession of sheer nows, flight from death as the ground of leveling (p8), the final verdict that the ecstatic Moment can never be derived from the now (p15). Content demands the cohort's starkest beat: the LAST TRUNKS FALL HERE — the forest leveled into eleven countable now-dots. Nadir-by-design: maximal gap (94%) with minimal warmth, so §83's flood reads as reclamation.",
+   "gapWidth": "94%",
+   "motif": "the now-series: eleven leveled dots, sagging line",
+   "paletteRole": "Now-dots shaft 45%; sagging line dimmed 30%; NO bark verticals — first trunkless view. No ember.",
+   "svgRegion": "hf-81",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-81",
+    "class": "plate",
+    "motif": "hf-81"
+   },
+   "tocTick": "94%",
+   "kicker": "Part 3 · § 81 · 3078 words · ≈16 min",
+   "ghost": {
+    "content": "81",
+    "placement": "top-crop",
+    "size": "20vw",
+    "opacity": "7%"
+   },
+   "openerComposition": "Ledger. G: top-crop '81' left 15%. S (slot plate hf-81): FIRST TRUNKLESS VIEW — no verticals. Eleven small even shaft dots cross the upper field (the leveled now-series); beneath, the now-line from §79 sags and dims; strata gone. T: title flush-left. R: gloss 'das Gezahlte' (what is counted — Aristotle's definition, p1) + micro-caption 'time as what is counted'.",
+   "railInscription": {
+    "para": "p1",
+    "text": "time: that which is counted in the motion encountered",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Explicit breathers before p1 (Aristotle definition) and before p15 (Moment-vs-now verdict). Calm body.",
+   "flecks": "Single divider: row of five small even dots (now-register).",
+   "ending": {
+    "motif": "leveled succession",
+    "composition": "seven small even shaft dots in a row, the middle dot dimmed, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c38": {
+   "title": "The Contrast of the Existential and Ontological Connection of Temporality, Dasein, and World Time with Hegel 's Conception of the Relation between Time and Spirit",
+   "numberLabel": "§ 82",
+   "order": "§82 (Division Two sequence 38 of 39)",
+   "words": 2539,
+   "minutes": 13,
+   "contentRationale": "Against Hegel (13 paras): spirit 'falls into time' (p0), punctuality and the now (p2-p4), Hegel 'wholly moving in the direction of the vulgar understanding' (p4), the negation of negation (p6), closing verdict — 'Spirit does not fall into time' (p12). Opener stages the refutation: the eleven now-dots SCATTER (composed irregular drift, dimming) while one line holds bright — the disputed fall shown as what does NOT happen. Nascent radial glow anticipates §83 without spending it.",
+   "gapWidth": "97%",
+   "motif": "refutation: scattered dots, one held line",
+   "paletteRole": "Held line shaft 60% (brightest single line before finale); scattered dots 25%; nascent radial 12%. No ember.",
+   "svgRegion": "hf-82",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-82",
+    "class": "plate",
+    "motif": "hf-82"
+   },
+   "tocTick": "97%",
+   "kicker": "Part 3 · § 82 · 2539 words · ≈13 min",
+   "ghost": {
+    "content": "82",
+    "placement": "top-crop",
+    "size": "19vw",
+    "opacity": "7%"
+   },
+   "openerComposition": "Ledger. G: top-crop '82' right 18%. S (slot plate hf-82): trunkless. Eleven now-dots scatter in composed irregular drift upward-right, dimming; beneath them a single steady horizontal line holds at full shaft brightness; faint radial glow gathers behind the line. T: title flush-left (wraps 3 lines max at 40px min clamp). R: gloss 'der Geist fallt nicht in die Zeit' (spirit does not fall into time, p12) + micro-caption 'Hegel refused'.",
+   "railInscription": {
+    "para": "p12",
+    "text": "Spirit does not fall into time",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "readingTreatment": "Threshold well on p:first-of-type. Explicit breather before p12 (the closing verdict). Calm body.",
+   "flecks": "Single divider: one bright line with three scattered dots above.",
+   "ending": {
+    "motif": "the held line",
+    "composition": "one steady horizontal shaft line with two small dimmed dots drifting above it, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  },
+  "p3c39": {
+   "title": "The Existential and Temporal Analytic of Dasein and the Fundamental",
+   "numberLabel": "§ 83",
+   "order": "§83 (Division Two sequence 39 of 39 — FINALE)",
+   "words": 11324,
+   "minutes": 57,
+   "contentRationale": "FINALE (378 paras: p0-p3 genuine closing, p4+ served lexicon/back-matter — styled as served, NEVER edited). Temporality reclaimed as ground (p0), reification unmasked as the standing danger (p1), the conflict 'not yet even kindled' (p2), disclosive understanding grounded in ecstatic temporality (p3). Opener spends the whole book arc: 100% gap, full clearing glow, the three ecstasis horizons from §65 returning as the finale chord, strata reduced to sediment-memory. Title and ghost in SHAFT color mark arrival; NO closing ornament — silence is the ending (binding B6). Phase B prototype chapter: exemplary is the floor.",
+   "gapWidth": "100%",
+   "motif": "the clearing: full glow, three horizons, sediment-memory",
+   "paletteRole": "Arrival: shaft title + shaft ghost (sole exception); radial glow 50% core; horizons 35-55%; bark retired to sediment-memory at 12%. No ember.",
+   "svgRegion": "hf-83",
+   "manifest": {
+    "src": "art/historicity-finale.svg",
+    "symbol": "hf-83",
+    "class": "plate",
+    "motif": "hf-83"
+   },
+   "tocTick": "100%",
+   "kicker": "Part 3 · § 83 · 11324 words · ≈57 min",
+   "ghost": {
+    "content": "83",
+    "placement": "top-crop",
+    "size": "24vw",
+    "opacity": "10%"
+   },
+   "openerComposition": "FINALE ledger. G: top-crop '83' left 38% (off-center by binding rule — badge-centering avoided) in SHAFT color at 10% (sole shaft ghost in the book; B2 band kept). Title set in shaft color per ART-DIRECTION. S (slot plate hf-83): no trunks; full radial clearing-glow; three ecstasis horizon lines (future brightest upper, having-been middle, present lower) spanning the field; below, two sediment-memory hairlines at 12% — the strata remembered, not depicted. NO closing ornament anywhere: silence is the ending. T: title flush-left in shaft. R: mini-map rail (see giantsRelief).",
+   "railInscription": {
+    "para": "p2",
+    "text": "the conflict with respect to the interpretation of being cannot be settled because it has not yet even been kindled",
+    "visibility": "margin rail only (>=1100px), set above the mini-map; hidden when rail folds; Fraunces italic 15px/1.5 shaft-lichen"
+   },
+   "readingTreatment": "FINALE RELIEF (see giantsRelief): threshold well on p0 (glow-tinted); 38rem for p0-p3; archive-threshold + archive-region rules from p4; five content-borne breathers at p18/p46/p127/p164/p244 (section-head, thanks, citation-turn, long-note x2); sediment-memory divider once after p3. NO end seal (binding B6).",
+   "flecks": "One sediment-memory divider after the genuine closing (two hairlines); archive region breathes by spacing only.",
+   "ending": {
+    "motif": "NONE — silence is the ending",
+    "composition": "no nav coda for p3c39; the chapter ends in silence per binding B6",
+    "implementation": "engineer implements NO #chapter-nav::before rule for body[data-chapter='p3c39']"
+   },
+   "cohort": "historicity-finale",
+   "part": "part-3"
+  }
+ },
+ "gapRamp": [
+  [
+   "p3c28",
+   "75%"
+  ],
+  [
+   "p3c29",
+   "77%"
+  ],
+  [
+   "p3c30",
+   "79%"
+  ],
+  [
+   "p3c31",
+   "81%"
+  ],
+  [
+   "p3c32",
+   "83%"
+  ],
+  [
+   "p3c33",
+   "85%"
+  ],
+  [
+   "p3c34",
+   "87%"
+  ],
+  [
+   "p3c35",
+   "90%"
+  ],
+  [
+   "p3c36",
+   "92%"
+  ],
+  [
+   "p3c37",
+   "94%"
+  ],
+  [
+   "p3c38",
+   "97%"
+  ],
+  [
+   "p3c39",
+   "100%"
+  ]
+ ],
+ "directions": {
+  "exploredWithin": "Book identity is binding (ART-DIRECTION.md); the three directions below explore within the Clearing grammar per cohort-designer role.",
+  "chosen": {
+   "name": "D1 'Sediment and Signal' (CHOSEN)",
+   "evolution": "p3c28 settle (4 uneven strata) → p3c29 ruled (4 even strata) → p3c30 Moment-line (strata bend + threads rise) → p3c31 shards ride → p3c32 lens-ring → p3c33 letter-ticks → p3c34 hinge rule → p3c35 now-line + 3 ticks → p3c36 horology ring → p3c37 now-dots (trunks fall) → p3c38 scatter + held line → p3c39 full clearing + 3 horizons.",
+   "why": "The cohort's own two movements — history sedimenting into layers, then time reckoned into instruments — become two legible art registers (strata §§72-78, instruments §§79-82) unified by the horizontal-line grammar that peaks at §74 (Moment), hollows at §81 (leveled nows), and resolves at §83 (ecstasis horizons). Every plate argues its chapter; title-swap test: Moment-lines bending strata, Dilthey-Yorck letter-ticks, and a horology ring mean nothing on any other book."
+  },
+  "considered": [
+   {
+    "name": "D2 'Clockwork Forest'",
+    "rejectedWhy": "Gears, pendulums, and escapements across all 12 would over-claim the clock motif (§80 alone earns an instrument; §§72-77 are sediment, not mechanism) and collide with the temporality cohort's tick/notch register. Self-critique: horology-everywhere is the generic 'time chapter = clock picture' default — revised to ONE instrument chapter (hf-80) plus the abstracted now-dot grammar (§§81-82).",
+    "salvage": "Single horology ring kept exactly once, at p3c36, where the prose earns it; tick-mark discipline informs the letter-ticks (hf-77) and date-ticks (hf-79)."
+   },
+   {
+    "name": "D3 'Archive Wall'",
+    "rejectedWhy": "Openers as document facsimiles — ruled finding-aid boxes, stamp marks, ledger lines — fits §77 (letters) and the §83 lexicon tail but fights §§72-76 (existential argument, not documents) and §§79-82 (time, not paper). Self-critique: ruled-box openers are the generic 'history chapter = old paper' default — revised to finding-aid STRUCTURE (enumerated joints, section turns) rather than paper texture.",
+    "salvage": "Finding-aid structure survives in the §83 breather plan (content joints, not decoration) and the §77 binding-band plate."
+   }
+  ]
+ },
+ "openerGrammar": {
+  "ledger": "Ghost gutter 22% + title 52% + margin rail 26% (≥1100px); rail folds under title <1100px; single column + cropped ghost <640px. Title flush-left ALWAYS (shaft color ONLY at p3c39). Slot art (#chapter-art, treatment plate for all 12) sits ABOVE #chapter-meta, terminates above first paragraph, never behind body text.",
+  "ghostNumerals": "Fraunces 300, mist 7-10%, TOP-CROP all 12 (binding cohort placement), sizes 18-24vw per entry (explicit per-ID #chapter-meta::before content rules; §74 + §83 largest, §78 smallest). §83 ghost in SHAFT at 10% (sole exception; off-center left 38% — badge-centering avoided).",
+  "kicker": "ONE line per opener: 'Part 3 · § N · W words · ≈M min' (Source Serif 4 12px, 0.22em, lichen). No other eyebrows.",
+  "shaftRule": "Horizontal-line grammar throughout: horizon bands (§§72-73), Moment-line (§74), held/sagging lines (§§79-82), ecstasis chord (§83). Verticals fall 2/2/1/1/1/2-bands/1/1/1/0/0/0 — true trunks only §§72-76,78-80; §77 uprights are binding-bands; §81 falls trunkless by content. No ember anywhere (binding B5)."
+ },
+ "readingGrammar": {
+  "threshold": "First paragraph = threshold: Fraunces 21px/1.6 on --bt-under well, full measure (p3c39's well glow-tinted). NO drop caps (firewall).",
+  "body": "Source Serif 4 19px/1.75, LEFT-aligned ragged right, 34rem (38rem for p3c39 p0-p3 genuine closing). Paragraph spacing 1.1em. Mist on humus.",
+  "dividers": "#chapter-text CSS background fleck bands keyed per chapter (explicit rules): p3c34 NONE + p3c39-archive NONE (content-driven absences); strata rows (§§72-76), letter ticks (§77), instrument marks (§§79-82), one sediment-memory band (§83 after p3). Data-URI SVG, ≤25% opacity, gated like grain.",
+  "breathers": "Explicit per-ID paragraph-margin rules ONLY at enumerated content joints (fate/destiny turn, coined terms, letter boundaries, verdict paras, lexicon joints) — no modulo, no formula. Full index table in design/historicity-finale-DESIGN.md §6."
+ },
+ "giantsRelief": {
+  "measure": "38rem for p3c39 p0-p3 (genuine closing); 34rem for the archive region (p4+) and all other chapters.",
+  "archiveThreshold": "Explicit rule on body[data-chapter='p3c39'] #chapter-text p:nth-of-type(5) (first lexicon para, 0-based p4 'On the Composition of the Lexicon'): 2.2em top margin — the finding-aid joint between closing and back-matter. Prose NEVER edited.",
+  "archiveRegion": "Explicit rules for p:nth-of-type(n+5): 0.94em size, mist-lichen tint, 34rem — reference-room voice; validator computes contrast (tint must keep ≥7:1 on humus or it ships at full mist).",
+  "breathers": "FIVE content-borne breathers (explicit indices, no formula): p18 (Latin Expressions — glossary begins), p46 (Husserl thanks — front-matter ends), p127 (Aristotle Rhetoric citation — citation register turns), p164 (Hartmann long note), p244 (Schuldigsein gloss). Each 1.6em top margin. Even spacing is coincidence of content, not a formula.",
+  "railMiniMap": "Margin-rail strip (supervisor ledger rail ≥1100px; horizontal strip <1100px; hidden <640px): CSS background on the rail region keyed to p3c39 — the twelve cohort § numerals 72-83 as a vertical tick column with micro-labels via the rail gloss element the supervisor wires; 'you are here' marker = 6px shaft dot at the §83 tick (static — the reader IS at the finale; no scroll animation needed). Pure CSS, no JS, no reader-* classes. Under prefers-reduced-motion nothing changes (already static).",
+  "silence": "No floor-breaks inside the archive region — breathers only. NO end seal for p3c39 (binding B6)."
+ },
+ "palette": {
+  "--bt-humus": {
+   "hex": "#0C0F0A",
+   "role": "page ground; opener ground throughout cohort"
+  },
+  "--bt-canopy": {
+   "hex": "#141B12",
+   "role": "elevated surfaces (TOC panel, mini-map strip ground)"
+  },
+  "--bt-under": {
+   "hex": "#1D2619",
+   "role": "threshold wells (p3c39's well glow-tinted)"
+  },
+  "--bt-ink": {
+   "hex": "#060805",
+   "role": "deepest black (slot plate grounds)"
+  },
+  "--bt-mist": {
+   "hex": "#C9D4C3",
+   "role": "body text (≥7:1 on humus — validator computes); ghost numerals at 7-10%"
+  },
+  "--bt-lichen": {
+   "hex": "#9DB89A",
+   "role": "secondary line-work (threads, ticks, shard edges); meta/kicker text; rail inscriptions"
+  },
+  "--bt-shaft": {
+   "hex": "#E9D488",
+   "role": "THE accent: Moment/now/held lines, rings, dots, horizons, clearing glow, §83 title+ghost, focus, progress. NEVER paragraph text."
+  },
+  "--bt-bark": {
+   "hex": "#3E4A34",
+   "role": "hairlines; strata lines; trunk silhouettes; binding-bands"
+  },
+  "lightSepia": "Light: ground #F5F1E4, text #1C231A, accent #7A6414, muted #5A6B54, ember #A34E22, hairline #C9BFA4. Sepia: ground #EFE6D0, text #232B1F, accent #6E5A10, muted #5F6B53, ember #A34E22, hairline #C4B78F. All SVG strokes currentColor/CSS vars → automatic re-ink; translucent shaft fills bind to accent var."
+ },
+ "type": {
+  "display": "Fraunces variable (supervisor wires; fallback Georgia) — chapter titles 40-64px clamp, opsz 100, wght 400, leading 1.05, -0.01em, flush-left (shaft color ONLY p3c39); threshold first-paras 21px/1.6; ghost numerals 300.",
+  "body": "Source Serif 4 (supervisor wires; fallback Georgia) 19px/1.75, left ragged, hyphenation on. Scale 12/15/19/24/32/48/72/112.",
+  "railGloss": "One attested German landmark term per chapter (Fraunces italic 1.02em) + English micro-caption; prose never edited."
+ },
+ "references": [
+  {
+   "cite": "Wellcome Collection — 'Geology: comparative heights of mountains, with a pyramid for scale. Coloured engraving by S. Hall, 1817' (https://wellcomecollection.org/works/xhfjjhgm) + Sidney Hall (https://en.wikipedia.org/wiki/Sidney_Hall) + William Smith 'Strata Identified by Organized Fossils' (https://ceps.unh.edu/earth-sciences/william-smiths-strata-identified-organized-fossils)",
+   "takeaway": "Hand-ruled stratigraphic bands with uneven, settled edges → hf-72/hf-73 strata line-work (uneven settle vs ruled-even contrast); comparative-plate discipline (one plate, one argument) → one symbol per chapter, no shared generic background."
+  },
+  {
+   "cite": "ARTFL Encyclopedie plate search — HORLOGERIE PREMIERE SECTION, 51 plates (https://artfl-iiif.uchicago.edu/cgi-bin/encyc_plate_search/planches_db_query.py?group=HORLOGERIE.+%7C+PREMIERE+SECTION.&keyword=&sort_by=&start_hit=1); Diderot CTP Horloge (https://www.encyclopediaofdiderot.org/s/diderot/item/189197 — connection reset at read time, catalog entry verified via search)",
+   "takeaway": "Fine instrument engraving: double-ruled circles, graduated ticks, fixed pointers, parts laid flat for inspection → hf-80 horology ring (double circle + twelve ticks + fixed pointer, no kitsch hands); instrument-not-picture discipline → hf-79 date-ticks and hf-81 now-dots as abstracted reckoning marks."
+  },
+  {
+   "cite": "Library of Congress — EAD Application Guidelines Ch.5 'Publishing EAD Documents' (https://www.loc.gov/ead/ag/agpub.html); AAA processing guidelines ch.4 (HTTP 403 at read time, LoC text read in full as substitute)",
+   "takeaway": "Finding-aid STRUCTURE over paper texture: enumerated joints, section turns, and threshold markers pace long reference text → §83 breather plan at content joints (glossary begins/front-matter ends/citation turns) + archive-threshold rule; correspondence-as-structure → hf-77 binding-bands + letter-ticks."
+  },
+  {
+   "cite": "Caspar David Friedrich — 'Forest Interior by Moonlight' chronicle (https://cdfriedrich.de/en/chronicle/waldinneres-bei-mondschein/ — timed out at read time; search-verified via smb.museum/artsandculture.google.com); EPOD 'Sunlight Through Foggy Canopy' (connection reset at read time)",
+   "takeaway": "Attempted but UNREAD (both fetches failed; recorded honestly per evidence discipline). Clearing-light composition therefore grounded in the prose-internal Lichtung imagery (§§28/40/69, per directions.md) and the validated prototype render (viewed in-session) rather than claimed reference study — no pixels borrowed, no study claimed."
+  }
+ ],
+ "skills": {
+  "frontend-design": "received via injected content (no fallback needed)",
+  "frontend-workflow": "received via injected content (no fallback needed)",
+  "reference-study": "received via injected content (no fallback needed)"
+ },
+ "svgPlan": {
+  "file": "art/historicity-finale.svg",
+  "viewBox": "0 0 1600 520",
+  "note": "One <symbol id='hf-NN' viewBox='0 0 1600 520'> per chapter treatment (+ shared defs), per READER-CONTRACT v1.1 explicit-symbol rule: manifest entries use {src:'art/historicity-finale.svg', symbol:'hf-NN'} and reader.js inlines the referenced symbol into #chapter-art. Fragment-URL src form superseded. Strokes currentColor/CSS vars only — no fixed fills except var-bound shaft translucents.",
+  "defs": [
+   "hf-glowGrad: radialGradient shaft→transparent (clearing glow; core ≤0.5, used hf-80/hf-82/hf-83 only)",
+   "hf-shaftGrad: linearGradient shaft→transparent (band falloffs hf-72/hf-73)",
+   "hf-grain: feTurbulence filter, opacity ≤0.06, class 'hf-grain' (gated off <640px + reduced-motion)",
+   "hf-trunk-l / hf-trunk-r: shared hand-plotted trunk silhouettes referenced by <use> in hf-72..hf-80 (each chapter positions/scales its own instances — no two plates share a skyline)",
+   "hf-stratum: single sediment-line path template, chapters place 2-5 transformed instances with authored d-variants (NOT identical copies)"
+  ],
+  "regions": [
+   {
+    "id": "hf-72",
+    "spec": "gap 75%; two edge trunks frame shaft",
+    "paths": "trunk-l + trunk-r instances + 4 uneven sediment lines (authored d-variants, lower third) + 1 dimmed horizon band (12°, shaft 16%)"
+   },
+   {
+    "id": "hf-73",
+    "spec": "gap 77%; ruled-even contrast to hf-72",
+    "paths": "2 thinner edge trunks + 4 STRAIGHT evenly-spaced strata lines + 1 horizon band (12°, shaft 18%)"
+   },
+   {
+    "id": "hf-74",
+    "spec": "gap 79%; cohort peak — Moment line",
+    "paths": "1 left trunk remnant + 1 full-width horizontal Moment-line (shaft 55%) + 4 strata bending upward toward it + 5 vertical retrieval threads (lichen/shaft 30%)"
+   },
+   {
+    "id": "hf-75",
+    "spec": "gap 81%; encountered things ride",
+    "paths": "1 trunk + 4 strata + 3 small bright lozenge shards ON the upper stratum (shaft 50%)"
+   },
+   {
+    "id": "hf-76",
+    "spec": "gap 83%; thematization focuses",
+    "paths": "1 trunk + 5 fine strata lines + 1 open lens-ring (shaft 50%) over middle strata + faint radial selection ticks inside ring"
+   },
+   {
+    "id": "hf-77",
+    "spec": "gap 85%; archival turn — bands not trunks",
+    "paths": "2 upright binding-bands (bark) at gap edges + 4 strata beneath + 7 short indented letter-ticks (shaft 40%) stacked along right band"
+   },
+   {
+    "id": "hf-78",
+    "spec": "gap 87%; quietest plate — hinge",
+    "paths": "1 hairline trunk far left + 3 thin strata (lower third) + bare upper glow + 1 full-width hairline rule (shaft 50%) dividing lower/upper"
+   },
+   {
+    "id": "hf-79",
+    "spec": "gap 90%; datability instrument",
+    "paths": "1 trunk + 1 full-width now-line (shaft 50%) + 3 date-ticks hung beneath at composed positions (shaft 60%) + 2 faint floor strata"
+   },
+   {
+    "id": "hf-80",
+    "spec": "gap 92%; horology ring center",
+    "paths": "1 trunk far left + double-circle ring (shaft 55%) + 12 composed ticks + 1 fixed pointer-line + radial glow behind (hf-glowGrad) + 2 faint floor strata"
+   },
+   {
+    "id": "hf-81",
+    "spec": "gap 94%; FIRST TRUNKLESS — leveling",
+    "paths": "NO verticals; 11 small even shaft dots (45%) across upper field + 1 sagging dimmed now-line (30%) beneath; strata gone"
+   },
+   {
+    "id": "hf-82",
+    "spec": "gap 97%; refutation — scatter + hold",
+    "paths": "trunkless; 11 dots scattered in composed irregular drift (25%) + 1 steady full-brightness held line (shaft 60%) + nascent radial glow (12%)"
+   },
+   {
+    "id": "hf-83",
+    "spec": "gap 100%; FINALE — full clearing",
+    "paths": "no trunks; full radial clearing-glow (hf-glowGrad, 50% core) + 3 ecstasis horizons (future upper brightest 55%, having-been middle 45%, present lower 35%) + 2 sediment-memory hairlines (12%)"
+   }
+  ],
+  "symbolRule": "v1.1: 12 <symbol> regions (hf-72..hf-83) + shared defs; supervisor merges entries.*.manifest {src,symbol,class,motif} into design/chapters.json; motif sets body[data-art]."
+ },
+ "neighborCheck": [
+  "p3c28/p3c29: settled-uneven vs ruled-even strata — lived past vs administered past (deliberate rhyme, inverted).",
+  "p3c29/p3c30: even strata vs bending strata + Moment-line — leveling vs repetition (quietest-to-peak adjacent step).",
+  "p3c30/p3c31: threads rising vs shards riding — fetching heritage vs encountering things (vertical vs resting).",
+  "p3c31/p3c32: shards on strata vs lens-ring over strata — encounter vs thematization (thing vs science).",
+  "p3c32/p3c33: lens-ring vs binding-bands + letter-ticks — instrument vs archive (circle vs correspondence).",
+  "p3c33/p3c34: stacked ticks vs single hairline rule — letters vs hinge (busiest-to-quietest adjacent step, intentional).",
+  "p3c34/p3c35: hairline rule vs now-line + 3 ticks — hinge vs datability (line returns, now speaking).",
+  "p3c35/p3c36: now-line + ticks vs horology ring — date-marks vs instrument (line vs circle antithesis).",
+  "p3c36/p3c37: ring + glow vs now-dots, no trunks — reckoning vs leveling (composed vs stark; trunks fall).",
+  "p3c37/p3c38: even dots vs scattered dots + held line — leveling vs refutation (strongest adjacent contrast after §74, intentional).",
+  "p3c38/p3c39: nascent glow vs full clearing + horizons — anticipation vs arrival (the book's last turn)."
+ ],
+ "implementationBriefForEngineer": [
+  "1. Author art/historicity-finale.svg per svgPlan (12 <symbol> regions hf-72..hf-83 + shared defs; strokes currentColor/CSS vars ONLY; shaft fills via var(--bt-shaft) with gradient falloffs). feTurbulence grain: include at ≤0.06 opacity inside slot art ONLY; gate OFF under prefers-reduced-motion and <640px (media query hides .hf-grain).",
+  "2. Author design/historicity-finale.css: ONLY body[data-book='being-and-time'][data-chapter='<own-id>']-scoped rules (+ body[data-part-id='part-3'] cohort-shared selectors listing own IDs). Slot art arrives via reader.js inlining entries.*.manifest {src,symbol} into #chapter-art (v1.1 — no fragment URLs). Ghost numerals: explicit per-ID #chapter-meta::before{content:'NN'} top-crop rules per ghost specs (§83: shaft color, off-center left 38%). Threshold wells: p:first-of-type Fraunces 21px/1.6 on --bt-under (p3c39 glow-tinted). Breathers: explicit per-ID p:nth-of-type rules per readingTreatment indices (0-based para + 1). Giants: §83 relief per giantsRelief. Print: hide slot art per theme print precedent.",
+  "3. Supervisor merges entries.*.manifest into design/chapters.json (src/symbol/class/motif per chapter; motif sets body[data-art]). Supervisor wires rail glosses + railInscription texts + mini-map rail element; this package specifies all content.",
+  "4. Prototype FIRST: p3c30 (cohort peak), p3c34 (hinge), p3c39 (FINALE — Phase B exemplar) at 1440×1000 / 820×1180 / 390×844; ArtDirector review before expanding to all 12.",
+  "5. Firewall re-check before delivery: no drop caps, no centered titles, no justified text, no glyph ornaments, no cartouche badges, no modulo/hash rules, no reader-* classes, shaft never on paragraph text, contrast mist-on-humus ≥7:1 computed, NO end seal for p3c39.",
+  "6. Rail inscriptions: render entries.*.railInscription in the margin rail under the gloss (>=1100px only); Fraunces italic 15px/1.5 lichen (p3c39 shaft-lichen, above mini-map); max 3 lines.",
+  "7. Nav codas: implement entries.*.ending (p3c28-p3c38 ONLY) as body[data-chapter]-scoped #chapter-nav::before data-URI SVG micro-scenes (static, print-hidden); keep prev/next quiet text links per ART-DIRECTION 4.6. p3c39 gets NO nav rule — silence is the ending.",
+  "8. TOC ticks: per-entry tocTick = gapRamp values for the supervisor's arc-in-miniature TOC."
+ ],
+ "bindingConditions": {
+  "B1": "Shafts are SVG art (authored polygons + grain inlined into #chapter-art), never CSS stripes — no linear-gradient bar in #chapter-meta.",
+  "B2": "Ghost numerals authored + verified: Fraunces 300, 18-24vw, 7-10%, top-crop per-entry table (explicit content rules); §83 shaft at 10% off-center — no badge-like centering anywhere.",
+  "B3": "Light NEVER behind body text: slot art terminates above first para; flecks only opener zones + explicit breather rules; mist-on-humus ≥7:1 composited (validator computes).",
+  "B4": "Threshold must read designed: Fraunces 21px well with confident inset + size step; fallback (if prototype review fails): quiet Source Serif + shaft tick in margin.",
+  "B5": "Ember discipline: NO ember anywhere in historicity-finale cohort (ember = §40 + p3c3-p3c9 only).",
+  "B6": "Finale silence: p3c39 = 100% clearing, no trunks, shaft-color title, NO closing ornament, NO end seal, NO nav coda. Prose styled as served.",
+  "B7": "Long-chapter relief mandatory: p3c39 gets 38rem (p0-p3) + archive-threshold + archive-region voice + five content breathers + rail mini-map (see giantsRelief).",
+  "B8": "Fraunces registry: hold light 300-400 + opsz + WONK 1 + flush-left ledger + straw light; never drift to black/poster/masthead voices."
+ },
+ "benchmarkResponse": {
+  "source": ".omp/design/USER-FEEDBACK.md — homepage creative-quality benchmark (Main broadcast via lead relay)",
+  "strengthened": [
+   "Rail inscriptions: one attested short quote per chapter (para-cited) in the margin rail (hidden <1100px)",
+   "Nav codas: authored ending motif per chapter (p3c28-p3c38) in the #chapter-nav zone (scoped ::before micro-scenes); p3c39 deliberately uncapped",
+   "Enriched slot scenes: retrieval threads (hf-74), shard riders (hf-75), lens selection ticks (hf-76), letter-tick stacks (hf-77), date-ticks (hf-79), ring ticks + pointer (hf-80), now-dot series (hf-81/82), sediment-memory (hf-83)",
+   "TOC ticks: per-entry tocTick = gapRamp values for the supervisor's arc-in-miniature TOC"
+  ],
+  "deliberatelyQuiet": [
+   "p3c34 hinge (quietest plate, zero dividers, no breathers — a hinge, not a hall)",
+   "p3c39 archive region (breathers only, no floor-breaks — silence preserved)",
+   "Reading body throughout: calm mist-on-humus; ambition in openers/margins/endings, never text effects"
+  ]
+ }
+}

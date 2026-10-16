@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">The Sovereign Individual — a private banknote: guilloche rosette and denomination cartouche</title>
+<defs>
+<pattern id="lathe" width="36" height="18" patternUnits="userSpaceOnUse">
+<path d="M0,18 A18,18 0 0 1 36,18" fill="none" stroke="#b26a3b" stroke-width="1.6"/>
+</pattern>
+<pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="10" stroke="#b26a3b" stroke-width="1" opacity=".55"/>
+</pattern>
+</defs>
+<!-- Vault #0B100E -->
+<rect width="800" height="1000" fill="#0b100e"/>
+<!-- the note -->
+<rect x="70" y="110" width="660" height="780" fill="#10160f"/>
+<rect x="70" y="110" width="660" height="780" fill="none" stroke="#d2a72c" stroke-width="3"/>
+<rect x="86" y="126" width="628" height="748" fill="none" stroke="#b26a3b" stroke-width="1.4"/>
+<rect x="86" y="126" width="628" height="40" fill="url(#lathe)" opacity=".8"/>
+<rect x="86" y="834" width="628" height="40" fill="url(#lathe)" opacity=".8"/>
+<!-- guilloche rosette: layered hypotrochoid petals -->
+<g transform="translate(400,480)">
+<g fill="none" stroke="#d2a72c">
+<ellipse rx="200" ry="64" stroke-width="1.8"/>
+<ellipse rx="200" ry="64" stroke-width="1.8" transform="rotate(30)"/>
+<ellipse rx="200" ry="64" stroke-width="1.8" transform="rotate(60)"/>
+<ellipse rx="200" ry="64" stroke-width="1.8" transform="rotate(90)"/>
+<ellipse rx="200" ry="64" stroke-width="1.8" transform="rotate(120)"/>
+<ellipse rx="200" ry="64" stroke-width="1.8" transform="rotate(150)"/>
+<ellipse rx="150" ry="44" stroke-width="1.4" stroke="#b26a3b"/>
+<ellipse rx="150" ry="44" stroke-width="1.4" stroke="#b26a3b" transform="rotate(45)"/>
+<ellipse rx="150" ry="44" stroke-width="1.4" stroke="#b26a3b" transform="rotate(90)"/>
+<ellipse rx="150" ry="44" stroke-width="1.4" stroke="#b26a3b" transform="rotate(135)"/>
+<ellipse rx="100" ry="30" stroke-width="1.4"/>
+<ellipse rx="100" ry="30" stroke-width="1.4" transform="rotate(60)"/>
+<ellipse rx="100" ry="30" stroke-width="1.4" transform="rotate(120)"/>
+</g>
+<circle r="34" fill="#10160f" stroke="#d2a72c" stroke-width="2.4"/>
+<!-- asymptote motif: curve escaping its axis -->
+<g stroke="#5da88a" stroke-width="3" fill="none">
+<line x1="-22" y1="-22" x2="-22" y2="22"/><line x1="-22" y1="22" x2="22" y2="22"/>
+<path d="M-18,-2 C-6,-14 8,-18 20,-19"/>
+</g>
+</g>
+<!-- denomination cartouche -->
+<g transform="translate(400,760)">
+<rect x="-120" y="-44" width="240" height="88" fill="#10160f" stroke="#d2a72c" stroke-width="2.4"/>
+<rect x="-108" y="-32" width="216" height="64" fill="none" stroke="#b26a3b" stroke-width="1.2"/>
+<g stroke="#d2a72c" stroke-width="6" fill="none" stroke-linecap="round">
+<line x1="-34" y1="-24" x2="-34" y2="24"/><line x1="-46" y1="-24" x2="-22" y2="-24"/><line x1="-46" y1="24" x2="-22" y2="24"/>
+<line x1="34" y1="-24" x2="34" y2="24"/><line x1="22" y1="-24" x2="46" y2="-24"/><line x1="22" y1="24" x2="46" y2="24"/>
+</g>
+<circle cx="-132" cy="0" r="8" fill="none" stroke="#d2a72c" stroke-width="2"/>
+<circle cx="132" cy="0" r="8" fill="none" stroke="#d2a72c" stroke-width="2"/>
+</g>
+<!-- cross-hatch shading fields -->
+<rect x="110" y="200" width="130" height="90" fill="url(#hatch)" opacity=".7"/>
+<rect x="560" y="200" width="130" height="90" fill="url(#hatch)" opacity=".7"/>
+<!-- microtext rings -->
+<g transform="translate(175,640)" fill="none" stroke="#5da88a" stroke-width="1.4">
+<circle r="44"/><circle r="36"/><circle r="28"/>
+</g>
+<g transform="translate(625,640)" fill="none" stroke="#b26a3b" stroke-width="1.4">
+<circle r="44"/><circle r="36"/><circle r="28"/>
+</g>
+<!-- seal stamp -->
+<g transform="translate(625,240)">
+<circle r="40" fill="none" stroke="#9e3b2e" stroke-width="3"/>
+<circle r="30" fill="none" stroke="#9e3b2e" stroke-width="1.4"/>
+<path d="M-14,8 Q0,-12 14,8 M-14,8 Q0,2 14,8" stroke="#9e3b2e" stroke-width="2.2" fill="none"/>
+</g>
+<!-- serial ticks -->
+<g stroke="#a89c7c" stroke-width="2">
+<line x1="110" y1="170" x2="200" y2="170"/><line x1="600" y1="170" x2="690" y2="170"/>
+<line x1="110" y1="800" x2="200" y2="800"/><line x1="600" y1="800" x2="690" y2="800"/>
+</g>
+<!-- assay bar -->
+<rect x="110" y="830" width="580" height="14" fill="none" stroke="#d2a72c" stroke-width="1.6"/>
+<rect x="114" y="834" width="330" height="6" fill="#d2a72c"/>
+<rect x="14" y="14" width="772" height="972" fill="none" stroke="#d2a72c" stroke-width="2.4" opacity=".7"/>
+</svg>

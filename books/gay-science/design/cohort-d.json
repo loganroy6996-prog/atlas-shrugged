@@ -1,0 +1,3300 @@
+{
+ "cohort": "D",
+ "parts": [
+  "part-5"
+ ],
+ "chapters": [
+  {
+   "id": "p5c1",
+   "part": "part-5",
+   "order": 1,
+   "title": "108. New battles.",
+   "word_count": 57,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "God's shadow still shown in caves; we must defeat it too",
+   "rationale": "Seed (57w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c2",
+   "part": "part-5",
+   "order": 2,
+   "title": "109. Let us beware.",
+   "word_count": 529,
+   "weight": "branch",
+   "kind": "knowledge",
+   "gist": "beware deifying nature: chaos, no laws, no purposes",
+   "rationale": "essay: the de-deified cosmos needs the chaos banner",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-chaos",
+    "composition": "lens emblem + cracked celestial dial, scattered stars"
+   },
+   "caption": "When will we have de-deified nature?",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c3",
+   "part": "part-5",
+   "order": 3,
+   "title": "110. Origin of knowledge.",
+   "word_count": 781,
+   "weight": "branch",
+   "kind": "knowledge",
+   "gist": "knowledge from life-preserving error; can truth be incorporated?",
+   "rationale": "longest essay: Eleatic sage + truth-ray banner",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-sage",
+    "composition": "lens emblem + seated sage + gold truth-ray"
+   },
+   "caption": "To what extent can truth stand to be incorporated?",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c4",
+   "part": "part-5",
+   "order": 4,
+   "title": "111. The origin of the logical.",
+   "word_count": 323,
+   "weight": "branch",
+   "kind": "knowledge",
+   "gist": "logic born of the illogical; identity-guessing beasts",
+   "rationale": "essay: twin identity-discs over flux lines",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-identity",
+    "composition": "lens emblem + twin gold discs + flux waves"
+   },
+   "caption": "Logic arose out of the illogical.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c5",
+   "part": "part-5",
+   "order": 5,
+   "title": "112. Cause and effect.",
+   "word_count": 323,
+   "weight": "branch",
+   "kind": "knowledge",
+   "gist": "cause/effect as carved continuum; science describes",
+   "rationale": "essay: the stream band dissolving into dots",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-stream",
+    "composition": "lens emblem + vermilion continuum band + inferred dots"
+   },
+   "caption": "Cause and effect: never such a duality — a continuum.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c6",
+   "part": "part-5",
+   "order": 6,
+   "title": "113. On the doctrine of poisons.",
+   "word_count": 173,
+   "weight": "shoot",
+   "kind": "knowledge",
+   "gist": "poisons of scientific thought; drives as one force",
+   "rationale": "shoot: poison-drives medallion",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lens",
+    "composition": "lens medallion + noon-tick"
+   },
+   "caption": "Drives learned coexistence — or poison.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c7",
+   "part": "part-5",
+   "order": 7,
+   "title": "114. The scope of the moral.",
+   "word_count": 55,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "all experience is moral, even sense perception",
+   "rationale": "Seed (55w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c8",
+   "part": "part-5",
+   "order": 8,
+   "title": "115. The four errors.",
+   "word_count": 100,
+   "weight": "shoot",
+   "kind": "knowledge",
+   "gist": "man educated by his four errors",
+   "rationale": "shoot: four-error lens medallion",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lens",
+    "composition": "lens medallion + noon-tick"
+   },
+   "caption": "Four errors — and humanity with them.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c9",
+   "part": "part-5",
+   "order": 9,
+   "title": "116. Herd instinct.",
+   "word_count": 140,
+   "weight": "shoot",
+   "kind": "herd",
+   "gist": "morality is herd-instinct in the individual",
+   "rationale": "herd thesis: head-arcs medallion",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-herd",
+    "composition": "herd medallion + noon-tick"
+   },
+   "caption": "Morality is herd-instinct in the individual.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-herd end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c10",
+   "part": "part-5",
+   "order": 10,
+   "title": "117. Herd pangs of conscience.",
+   "word_count": 285,
+   "weight": "shoot",
+   "kind": "herd",
+   "gist": "ancient terror of being alone; herd conscience",
+   "rationale": "herd diptych: lone spark vs arcs",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-herd",
+    "composition": "herd medallion + noon-tick"
+   },
+   "caption": "Nothing more frightful than feeling alone.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-herd end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c11",
+   "part": "part-5",
+   "order": 11,
+   "title": "118. Benevolence.",
+   "word_count": 152,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "benevolence: drive to appropriate vs submit",
+   "rationale": "virtue: tablet medallion",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "Strong and weak are relative concepts.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c12",
+   "part": "part-5",
+   "order": 12,
+   "title": "119. No altruism!",
+   "word_count": 98,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "no altruism: surplus strength wanting function",
+   "rationale": "virtue: tablet medallion",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "Wanting to become a function.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c13",
+   "part": "part-5",
+   "order": 13,
+   "title": "120. Health of the soul.",
+   "word_count": 266,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "your virtue is your soul's health; innumerable healths",
+   "rationale": "virtue essay: tablet medallion",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "Your virtue is the health of your soul.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c14",
+   "part": "part-5",
+   "order": 14,
+   "title": "121. Life not an argument.",
+   "word_count": 63,
+   "weight": "shoot",
+   "kind": "knowledge",
+   "gist": "life is not an argument; conditions may include error",
+   "rationale": "knowledge: lens medallion",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lens",
+    "composition": "lens medallion + noon-tick"
+   },
+   "caption": "Life is not an argument.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c15",
+   "part": "part-5",
+   "order": 15,
+   "title": "122. Moral scepticism in Christianity.",
+   "word_count": 244,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "Christianity's moral scepticism; toreador ancients",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "The dignity of a toreador.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c16",
+   "part": "part-5",
+   "order": 16,
+   "title": "123. Knowledge more than a means.",
+   "word_count": 388,
+   "weight": "branch",
+   "kind": "knowledge",
+   "gist": "knowledge wanting to be more than a means; Leo",
+   "rationale": "essay: raised lamp + discarded tiara",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-lamp",
+    "composition": "lens emblem + lamp hand + papal tiara aside"
+   },
+   "caption": "Knowledge wants to be more than a means.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c17",
+   "part": "part-5",
+   "order": 17,
+   "title": "124. In the horizon of the infinite.",
+   "word_count": 127,
+   "weight": "shoot",
+   "kind": "sea",
+   "gist": "the little ship on the infinite sea; no more land",
+   "rationale": "sea hinge before the madman: ship medallion",
+   "palette_role": "zenith horizon — gold silk waves",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-ship",
+    "composition": "ship medallion + noon-tick"
+   },
+   "caption": "No more land!",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "ship"
+  },
+  {
+   "id": "p5c18",
+   "part": "part-5",
+   "order": 18,
+   "title": "125. The madman.",
+   "word_count": 555,
+   "weight": "landmark",
+   "kind": "godshadow",
+   "gist": "THE MADMAN: God dies at bright morning, lantern lit",
+   "rationale": "BOOK CLIMAX: maximal fan + inverted lantern + marketplace",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-zenith-lantern",
+    "composition": "24-ray edge-to-edge fan, inverted lit lantern, madman, crowd, church-tombs, shards"
+   },
+   "caption": "I seek God! I seek God! — cried at bright morning, lantern lit.",
+   "reading_treatment": "landmark: gold title + full tableau, numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c19",
+   "part": "part-5",
+   "order": 19,
+   "title": "126. Mystical explanations",
+   "word_count": 17,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "mystical explanations are not even shallow",
+   "rationale": "Seed (17w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c20",
+   "part": "part-5",
+   "order": 20,
+   "title": "127. Aftereffects of the oldest religiosity.",
+   "word_count": 480,
+   "weight": "branch",
+   "kind": "knowledge",
+   "gist": "will as magic; aftereffect of oldest religiosity",
+   "rationale": "essay: striking fist + magic arcs",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-will",
+    "composition": "lens emblem + fist + impact burst"
+   },
+   "caption": "The will is a force that works by magic.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c21",
+   "part": "part-5",
+   "order": 21,
+   "title": "128. The value of prayer.",
+   "word_count": 322,
+   "weight": "branch",
+   "kind": "godshadow",
+   "gist": "prayer-mills for the poor in spirit",
+   "rationale": "essay: prayer-mill + bead arc",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-prayer",
+    "composition": "lantern emblem + prayer-mill + beads"
+   },
+   "caption": "Prayer-rattling for the poor in spirit.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c22",
+   "part": "part-5",
+   "order": 22,
+   "title": "129. The conditions for God.",
+   "word_count": 36,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "God needs the unwise even more than the wise",
+   "rationale": "Seed (36w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c23",
+   "part": "part-5",
+   "order": 23,
+   "title": "130. A dangerous decision.",
+   "word_count": 22,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "finding the world ugly made it ugly",
+   "rationale": "Seed (22w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c24",
+   "part": "part-5",
+   "order": 24,
+   "title": "131. Christianity and suicide.",
+   "word_count": 62,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "Christianity's suicide lever: martyrdom, asceticism",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "Two permitted suicides.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c25",
+   "part": "part-5",
+   "order": 25,
+   "title": "132. Against Christianity.",
+   "word_count": 15,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "taste, not reasons, decides against Christianity",
+   "rationale": "Seed (15w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c26",
+   "part": "part-5",
+   "order": 26,
+   "title": "133. Principle.",
+   "word_count": 47,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "an inescapable hypothesis outlasts any faith",
+   "rationale": "Seed (47w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c27",
+   "part": "part-5",
+   "order": 27,
+   "title": "134. Pessimists as victims.",
+   "word_count": 129,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "pessimism as diet: rice, alcohol poisoning",
+   "rationale": "virtue: diet-valuation tablet",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "The middle ages: alcohol poisoning of Europe.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c28",
+   "part": "part-5",
+   "order": 28,
+   "title": "135. Origin of sin.",
+   "word_count": 408,
+   "weight": "branch",
+   "kind": "godshadow",
+   "gist": "origin of sin: Jewish feeling; Prometheus; tragedy",
+   "rationale": "essay: serpent + shattered tablets",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-serpent",
+    "composition": "lantern emblem + vermilion serpent + shards"
+   },
+   "caption": "Sin is a Jewish feeling and a Jewish invention.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c29",
+   "part": "part-5",
+   "order": 29,
+   "title": "136. The chosen people.",
+   "word_count": 176,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "chosen people; Louis XIV nobility pleasure",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "The tower of royal power.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c30",
+   "part": "part-5",
+   "order": 30,
+   "title": "137. Speaking in a parable.",
+   "word_count": 100,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "Jesus possible only under Jehovah thunderclouds",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "One sunbeam through perpetual day-night.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c31",
+   "part": "part-5",
+   "order": 31,
+   "title": "138. Christ’s error.",
+   "word_count": 88,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "Christ's error: sin-torment was rare",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "His error — sanctified into truth.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c32",
+   "part": "part-5",
+   "order": 32,
+   "title": "139. The colour of the passions.",
+   "word_count": 105,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "Paul's evil eye vs Greek gilded passions",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "The Greeks gilded the passions.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c33",
+   "part": "part-5",
+   "order": 33,
+   "title": "140. Too Jewish.",
+   "word_count": 51,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "a judging god cannot be an object of love",
+   "rationale": "Seed (51w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c34",
+   "part": "part-5",
+   "order": 34,
+   "title": "141. Too oriental.",
+   "word_count": 83,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "a conditional almighty love — how oriental",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "If I love you, what does that concern you?",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c35",
+   "part": "part-5",
+   "order": 35,
+   "title": "142. Incense.",
+   "word_count": 26,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "Buddha's line would clear any church of Christianity",
+   "rationale": "Seed (26w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c36",
+   "part": "part-5",
+   "order": 36,
+   "title": "143. The greatest advantage of polytheism.",
+   "word_count": 409,
+   "weight": "branch",
+   "kind": "godshadow",
+   "gist": "polytheism: plurality of norms, new eyes, overmen",
+   "rationale": "counter-ideal essay: god-disc arc + new eye",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-gods",
+    "composition": "lantern emblem + five god-discs + eye"
+   },
+   "caption": "One god was not the denial of another god.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c37",
+   "part": "part-5",
+   "order": 37,
+   "title": "144. Religious wars.",
+   "word_count": 75,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "religious war: the mass learns to treat concepts",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "The mob becomes subtle.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c38",
+   "part": "part-5",
+   "order": 38,
+   "title": "145. Danger for vegetarians.",
+   "word_count": 101,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "vegetarian diet breeds narcotic thinking",
+   "rationale": "virtue: diet-valuation tablet",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "A need they are able to satisfy.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c39",
+   "part": "part-5",
+   "order": 39,
+   "title": "146. German hopes.",
+   "word_count": 148,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "Germans as first un-Christian nation; Luther",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "Here I stand! I can do no other!",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c40",
+   "part": "part-5",
+   "order": 40,
+   "title": "147. Question and answer.",
+   "word_count": 36,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "savages take liquor and Christianity; perish of both",
+   "rationale": "Seed (36w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c41",
+   "part": "part-5",
+   "order": 41,
+   "title": "148. Where reformations arise.",
+   "word_count": 93,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "reformations arise where corruption was least",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "The storm that put an end to everything.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c42",
+   "part": "part-5",
+   "order": 42,
+   "title": "149. The failure of reformations.",
+   "word_count": 363,
+   "weight": "branch",
+   "kind": "godshadow",
+   "gist": "failure of reformations; eggshell; ruling/masses",
+   "rationale": "essay: breaking egg over herd arcs",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-branch-zenith-egg",
+    "composition": "lantern emblem + cracked egg + yolk-spark"
+   },
+   "caption": "Where there is ruling, there are masses.",
+   "reading_treatment": "branch: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c43",
+   "part": "part-5",
+   "order": 43,
+   "title": "150. Towards a critique of saints.",
+   "word_count": 70,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "brutal saints; virtue that crushes witnesses",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "A virtue with such an effect I call brutal.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c44",
+   "part": "part-5",
+   "order": 44,
+   "title": "151. On the origin of religion.",
+   "word_count": 113,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "origin of religion: interpretation-error, not need",
+   "rationale": "godshadow: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "An embarrassing lapse of the intellect.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c45",
+   "part": "part-5",
+   "order": 45,
+   "title": "152. The greatest change.",
+   "word_count": 233,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "the greatest change: lighting and colours changed",
+   "rationale": "godshadow hinge: lantern medallion",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lantern",
+    "composition": "lantern medallion + noon-tick"
+   },
+   "caption": "We have given things a new colour.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c46",
+   "part": "part-5",
+   "order": 46,
+   "title": "153. Homo poeta.27",
+   "word_count": 86,
+   "weight": "shoot",
+   "kind": "godshadow",
+   "gist": "homo poeta: slain all gods; fifth act?",
+   "rationale": "maxim-field hinge: toppled god-discs",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-actor-toppled",
+    "composition": "three fallen god-discs + crack line"
+   },
+   "caption": "I have slain all gods — what of the fifth act?",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-lantern end-seal",
+   "motif": "lantern"
+  },
+  {
+   "id": "p5c47",
+   "part": "part-5",
+   "order": 47,
+   "title": "154. Different types of danger in life.",
+   "word_count": 102,
+   "weight": "shoot",
+   "kind": "self",
+   "gist": "glass men vs the drunk; danger of bumping",
+   "rationale": "self: star medallion",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-star",
+    "composition": "star medallion + noon-tick"
+   },
+   "caption": "We are made of glass.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c48",
+   "part": "part-5",
+   "order": 48,
+   "title": "155. What we lack.",
+   "word_count": 43,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "Greeks lacked great men, we lack them — reversed nature-feeling",
+   "rationale": "Seed (43w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c49",
+   "part": "part-5",
+   "order": 49,
+   "title": "156. The most influential.",
+   "word_count": 40,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "resisting one's age exercises influence",
+   "rationale": "Seed (40w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c50",
+   "part": "part-5",
+   "order": 50,
+   "title": "157. Mentiri.29",
+   "word_count": 38,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "thinking as lying; mentiri",
+   "rationale": "Seed (38w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c51",
+   "part": "part-5",
+   "order": 51,
+   "title": "158. An uncomfortable trait.",
+   "word_count": 34,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "finding everything deep strains the eyes",
+   "rationale": "Seed (34w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c52",
+   "part": "part-5",
+   "order": 52,
+   "title": "159. Every virtue has its age.",
+   "word_count": 33,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "unyieldingness and candour belong to different ages",
+   "rationale": "Seed (33w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c53",
+   "part": "part-5",
+   "order": 53,
+   "title": "160. Dealing with virtues.",
+   "word_count": 15,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "one can be undignified even toward a virtue",
+   "rationale": "Seed (15w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c54",
+   "part": "part-5",
+   "order": 54,
+   "title": "161. To the lovers of the age.",
+   "word_count": 61,
+   "weight": "shoot",
+   "kind": "herd",
+   "gist": "ex-priest faces; lovers of the age",
+   "rationale": "herd: head-arcs medallion",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-herd",
+    "composition": "herd medallion + noon-tick"
+   },
+   "caption": "A face without a future.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-herd end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c55",
+   "part": "part-5",
+   "order": 55,
+   "title": "162. Egoism.",
+   "word_count": 30,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "egoism: the perspectival law of feeling",
+   "rationale": "Seed (30w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c56",
+   "part": "part-5",
+   "order": 56,
+   "title": "163. After a great victory.",
+   "word_count": 41,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "victory takes the fear of defeat from the victor",
+   "rationale": "Seed (41w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c57",
+   "part": "part-5",
+   "order": 57,
+   "title": "164. The seekers of rest.",
+   "word_count": 55,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "rest-seekers surround themselves with dark objects",
+   "rationale": "Seed (55w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c58",
+   "part": "part-5",
+   "order": 58,
+   "title": "165. On the happiness of those who renounce something.",
+   "word_count": 52,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "renouncing rediscovers; be wiser than snakes in sun",
+   "rationale": "Seed (52w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c59",
+   "part": "part-5",
+   "order": 59,
+   "title": "166. Always in our company.",
+   "word_count": 44,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "we are always only in our own company",
+   "rationale": "Seed (44w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c60",
+   "part": "part-5",
+   "order": 60,
+   "title": "167. Misanthropy and love.",
+   "word_count": 54,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "misanthropy as greedy love; swallowing men like oysters",
+   "rationale": "Seed (54w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c61",
+   "part": "part-5",
+   "order": 61,
+   "title": "168. About a sick man.",
+   "word_count": 150,
+   "weight": "shoot",
+   "kind": "herd",
+   "gist": "the sick man deaf to all praise",
+   "rationale": "herd: praise-crowd medallion",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-herd",
+    "composition": "herd medallion + noon-tick"
+   },
+   "caption": "A bad ear for praise.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-herd end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c62",
+   "part": "part-5",
+   "order": 62,
+   "title": "169. Open enemies.",
+   "word_count": 59,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "open enemies lift some to their own virtue",
+   "rationale": "Seed (59w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c63",
+   "part": "part-5",
+   "order": 63,
+   "title": "170. With the crowd.",
+   "word_count": 77,
+   "weight": "shoot",
+   "kind": "herd",
+   "gist": "running with the crowd out of laziness",
+   "rationale": "herd: head-arcs medallion",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-herd",
+    "composition": "herd medallion + noon-tick"
+   },
+   "caption": "The crowd is not lazy enough for him.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-herd end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c64",
+   "part": "part-5",
+   "order": 64,
+   "title": "171. Fame.",
+   "word_count": 16,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "fame: gratitude throwing away shame",
+   "rationale": "Seed (16w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c65",
+   "part": "part-5",
+   "order": 65,
+   "title": "172. The spoiler of taste.",
+   "word_count": 38,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "spoiling everyone's taste for his own party",
+   "rationale": "Seed (38w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c66",
+   "part": "part-5",
+   "order": 66,
+   "title": "173. Being deep and seeming deep.",
+   "word_count": 54,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "the deep seek clarity; the seeming-deep, obscurity",
+   "rationale": "Seed (54w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c67",
+   "part": "part-5",
+   "order": 67,
+   "title": "174. Aside.",
+   "word_count": 77,
+   "weight": "shoot",
+   "kind": "herd",
+   "gist": "five permitted opinions; stepping aside",
+   "rationale": "herd: head-arcs medallion",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-herd",
+    "composition": "herd medallion + noon-tick"
+   },
+   "caption": "The whole herd against him.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-herd end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c68",
+   "part": "part-5",
+   "order": 68,
+   "title": "175. On eloquence.",
+   "word_count": 36,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "the drum roll is the most convincing eloquence",
+   "rationale": "Seed (36w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c69",
+   "part": "part-5",
+   "order": 69,
+   "title": "176. Compassion.",
+   "word_count": 66,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "poor princes; claims turned presumptions",
+   "rationale": "virtue: tablet medallion",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "Les souverains rangent aux parvenus.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c70",
+   "part": "part-5",
+   "order": 70,
+   "title": "177. On ‘the educational establishment’.",
+   "word_count": 28,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "Germany lacks the laughter of higher men",
+   "rationale": "Seed (28w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c71",
+   "part": "part-5",
+   "order": 71,
+   "title": "178. On moral enlightenment.",
+   "word_count": 28,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "talk Germans out of Mephistopheles and Faust",
+   "rationale": "Seed (28w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c72",
+   "part": "part-5",
+   "order": 72,
+   "title": "179. Thoughts.",
+   "word_count": 15,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "thoughts are shadows of sensations",
+   "rationale": "Seed (15w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c73",
+   "part": "part-5",
+   "order": 73,
+   "title": "180. The good age for free spirits.",
+   "word_count": 44,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "free spirits have their good age while the Church stands",
+   "rationale": "Seed (44w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c74",
+   "part": "part-5",
+   "order": 74,
+   "title": "181. Following and leading.",
+   "word_count": 58,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "following and leading; fit secundum regulam",
+   "rationale": "Seed (58w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c75",
+   "part": "part-5",
+   "order": 75,
+   "title": "182. In solitude.",
+   "word_count": 37,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "in solitude all voices sound different",
+   "rationale": "Seed (37w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c76",
+   "part": "part-5",
+   "order": 76,
+   "title": "183. The music of the best future.",
+   "word_count": 40,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "the foremost musician knows only happy sadness",
+   "rationale": "Seed (40w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c77",
+   "part": "part-5",
+   "order": 77,
+   "title": "184. Justice.",
+   "word_count": 32,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "robbed rather than ringed by scarecrows — taste",
+   "rationale": "Seed (32w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c78",
+   "part": "part-5",
+   "order": 78,
+   "title": "185. Poor.",
+   "word_count": 43,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "voluntary poverty misunderstood by the poor",
+   "rationale": "Seed (43w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c79",
+   "part": "part-5",
+   "order": 79,
+   "title": "186. Bad conscience.",
+   "word_count": 26,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "bad conscience: the extraordinary is his task",
+   "rationale": "Seed (26w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c80",
+   "part": "part-5",
+   "order": 80,
+   "title": "187. What is offensive in the presentation.",
+   "word_count": 60,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "mob-persuasion in art is bad company",
+   "rationale": "Seed (60w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c81",
+   "part": "part-5",
+   "order": 81,
+   "title": "188. Work.",
+   "word_count": 43,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "we are all workers — once cynicism",
+   "rationale": "Seed (43w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c82",
+   "part": "part-5",
+   "order": 82,
+   "title": "189. The thinker.",
+   "word_count": 20,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "the thinker simplifies things",
+   "rationale": "Seed (20w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c83",
+   "part": "part-5",
+   "order": 83,
+   "title": "190. Against those who praise.",
+   "word_count": 26,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "praise declares peerage",
+   "rationale": "Seed (26w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c84",
+   "part": "part-5",
+   "order": 84,
+   "title": "191. Against many a defence.",
+   "word_count": 22,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "defending with faulty arguments damages most",
+   "rationale": "Seed (22w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c85",
+   "part": "part-5",
+   "order": 85,
+   "title": "192. The good-natured.",
+   "word_count": 84,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "good-natured: wish, appropriation, delight",
+   "rationale": "virtue: tablet medallion",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "I like him.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c86",
+   "part": "part-5",
+   "order": 86,
+   "title": "193. Kant’s joke.",
+   "word_count": 49,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "Kant's joke: proving the world right, for scholars",
+   "rationale": "Seed (49w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c87",
+   "part": "part-5",
+   "order": 87,
+   "title": "194. The ‘openhearted’ one.",
+   "word_count": 29,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "the openhearted act on secret reasons",
+   "rationale": "Seed (29w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c88",
+   "part": "part-5",
+   "order": 88,
+   "title": "195. Laughable.",
+   "word_count": 31,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "fleeing the herd leads it — they follow ahead-runners",
+   "rationale": "Seed (31w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c89",
+   "part": "part-5",
+   "order": 89,
+   "title": "196. Limits of our sense of hearing.",
+   "word_count": 22,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "we hear only questions we can answer",
+   "rationale": "Seed (22w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c90",
+   "part": "part-5",
+   "order": 90,
+   "title": "197. Better be careful!",
+   "word_count": 28,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "we love imparting the seal of secrecy — with contents",
+   "rationale": "Seed (28w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c91",
+   "part": "part-5",
+   "order": 91,
+   "title": "198. Chagrin of the proud one.",
+   "word_count": 29,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "the proud begrudge even their helpers",
+   "rationale": "Seed (29w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c92",
+   "part": "part-5",
+   "order": 92,
+   "title": "199. Generosity.",
+   "word_count": 14,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "rich generosity is often shyness",
+   "rationale": "Seed (14w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c93",
+   "part": "part-5",
+   "order": 93,
+   "title": "200. Laughter.",
+   "word_count": 12,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "laughter: gloating with a good conscience",
+   "rationale": "Seed (12w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c94",
+   "part": "part-5",
+   "order": 94,
+   "title": "201. Applause.",
+   "word_count": 20,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "applause always contains noise",
+   "rationale": "Seed (20w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c95",
+   "part": "part-5",
+   "order": 95,
+   "title": "202. A squanderer.",
+   "word_count": 36,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "squandering spirit before counting treasure",
+   "rationale": "Seed (36w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c96",
+   "part": "part-5",
+   "order": 96,
+   "title": "203. Hic niger est.34",
+   "word_count": 20,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "usually thoughtless; rarely, bad thoughts",
+   "rationale": "Seed (20w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c97",
+   "part": "part-5",
+   "order": 97,
+   "title": "204. Beggars and courtesy.",
+   "word_count": 44,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "beggars knock with stones; none grant the right",
+   "rationale": "Seed (44w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c98",
+   "part": "part-5",
+   "order": 98,
+   "title": "205. Need.",
+   "word_count": 29,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "need is often effect, not cause",
+   "rationale": "Seed (29w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c99",
+   "part": "part-5",
+   "order": 99,
+   "title": "206. When it rains.",
+   "word_count": 62,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "poverty of the poor in the rain",
+   "rationale": "virtue: tablet medallion",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "The poverty of the poor.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c100",
+   "part": "part-5",
+   "order": 100,
+   "title": "207. The envious one.",
+   "word_count": 28,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "the envious shouldn't have children",
+   "rationale": "Seed (28w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c101",
+   "part": "part-5",
+   "order": 101,
+   "title": "208. Great man!",
+   "word_count": 40,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "great men may be boys, chameleons, bewitched women",
+   "rationale": "Seed (40w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c102",
+   "part": "part-5",
+   "order": 102,
+   "title": "209. A way of asking for reasons.",
+   "word_count": 54,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "tyrants' questioning kills our best reasons",
+   "rationale": "Seed (54w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c103",
+   "part": "part-5",
+   "order": 103,
+   "title": "210. Moderation in diligence.",
+   "word_count": 19,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "don't outdo father in diligence — sickens",
+   "rationale": "Seed (19w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c104",
+   "part": "part-5",
+   "order": 104,
+   "title": "211. Secret enemies.",
+   "word_count": 30,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "a secret enemy is a luxury of the rich-spirited",
+   "rationale": "Seed (30w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c105",
+   "part": "part-5",
+   "order": 105,
+   "title": "212. Not to let oneself be deceived.",
+   "word_count": 38,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "rough spirit, robust soul — don't be deceived",
+   "rationale": "Seed (38w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c106",
+   "part": "part-5",
+   "order": 106,
+   "title": "213. The road to happiness.",
+   "word_count": 69,
+   "weight": "shoot",
+   "kind": "virtue",
+   "gist": "sage and fool on the road to happiness",
+   "rationale": "virtue: tablet medallion",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-tablet",
+    "composition": "tablet medallion + noon-tick"
+   },
+   "caption": "Admire yourself — and contempt?",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-tablet end-seal",
+   "motif": "tablet"
+  },
+  {
+   "id": "p5c107",
+   "part": "part-5",
+   "order": 107,
+   "title": "214. Faith makes blessed.",
+   "word_count": 58,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "faith, not virtue, makes blessed",
+   "rationale": "Seed (58w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c108",
+   "part": "part-5",
+   "order": 108,
+   "title": "215. Ideal and material.",
+   "word_count": 43,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "are you noble stone for your noble ideal?",
+   "rationale": "Seed (43w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c109",
+   "part": "part-5",
+   "order": 109,
+   "title": "216. Danger in the voice.",
+   "word_count": 22,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "a loud voice can't think subtly",
+   "rationale": "Seed (22w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c110",
+   "part": "part-5",
+   "order": 110,
+   "title": "217. Cause and effect.",
+   "word_count": 21,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "causes believed differ before and after the effect",
+   "rationale": "Seed (21w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c111",
+   "part": "part-5",
+   "order": 111,
+   "title": "218. My antipathy.",
+   "word_count": 39,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "antipathy for human bombs",
+   "rationale": "Seed (39w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c112",
+   "part": "part-5",
+   "order": 112,
+   "title": "219. The purpose of punishment.",
+   "word_count": 27,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "punishment improves the punisher",
+   "rationale": "Seed (27w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c113",
+   "part": "part-5",
+   "order": 113,
+   "title": "220. Sacrifice.",
+   "word_count": 22,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "the sacrificial animal was never asked",
+   "rationale": "Seed (22w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c114",
+   "part": "part-5",
+   "order": 114,
+   "title": "221. Forbearance.",
+   "word_count": 17,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "fathers/sons forbear more than mothers/daughters",
+   "rationale": "Seed (17w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c115",
+   "part": "part-5",
+   "order": 115,
+   "title": "222. Poet and liar.",
+   "word_count": 43,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "the poet drank the liar's milk",
+   "rationale": "Seed (43w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c116",
+   "part": "part-5",
+   "order": 116,
+   "title": "223. Vicariousness of the senses.",
+   "word_count": 34,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "eyes for hearing; the long-eared king of the blind",
+   "rationale": "Seed (34w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c117",
+   "part": "part-5",
+   "order": 117,
+   "title": "224. Animals’ criticism.",
+   "word_count": 42,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "animals see man as the insane animal",
+   "rationale": "Seed (42w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c118",
+   "part": "part-5",
+   "order": 118,
+   "title": "225. The natural.",
+   "word_count": 43,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "be natural — the effect-artists' secret reasoning",
+   "rationale": "Seed (43w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c119",
+   "part": "part-5",
+   "order": 119,
+   "title": "226. The distrustful and style.",
+   "word_count": 39,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "strength speaks simply; distrust, emphatically",
+   "rationale": "Seed (39w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c120",
+   "part": "part-5",
+   "order": 120,
+   "title": "227. Bad inference; bad shot.",
+   "word_count": 39,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "bad inference, bad shot: the net and the slave",
+   "rationale": "Seed (39w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c121",
+   "part": "part-5",
+   "order": 121,
+   "title": "228. Against mediators.",
+   "word_count": 41,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "mediators lack an eye for the unique",
+   "rationale": "Seed (41w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c122",
+   "part": "part-5",
+   "order": 122,
+   "title": "229. Obstinacy and faithfulness.",
+   "word_count": 22,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "obstinacy renamed faithfulness",
+   "rationale": "Seed (22w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c123",
+   "part": "part-5",
+   "order": 123,
+   "title": "230. Lack of silence.",
+   "word_count": 26,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "unpraiseworthy: never silent about good deeds",
+   "rationale": "Seed (26w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c124",
+   "part": "part-5",
+   "order": 124,
+   "title": "231. The ‘thorough’.",
+   "word_count": 18,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "the slow mistake slowness for knowledge",
+   "rationale": "Seed (18w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c125",
+   "part": "part-5",
+   "order": 125,
+   "title": "232. Dreaming.",
+   "word_count": 29,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "don't dream — or dream interestingly",
+   "rationale": "Seed (29w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c126",
+   "part": "part-5",
+   "order": 126,
+   "title": "233. The most dangerous point of view.",
+   "word_count": 47,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "the most dangerous point of view: every act immense",
+   "rationale": "Seed (47w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c127",
+   "part": "part-5",
+   "order": 127,
+   "title": "234. Words of comfort for a musician.",
+   "word_count": 80,
+   "weight": "shoot",
+   "kind": "self",
+   "gist": "comfort for the unheard musician",
+   "rationale": "self: star medallion",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-star",
+    "composition": "star medallion + noon-tick"
+   },
+   "caption": "He who has ears to hear.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c128",
+   "part": "part-5",
+   "order": 128,
+   "title": "235. Spirit and character.",
+   "word_count": 29,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "spirit and character peak at different heights",
+   "rationale": "Seed (29w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c129",
+   "part": "part-5",
+   "order": 129,
+   "title": "236. In order to move the crowd.",
+   "word_count": 48,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "moving the crowd requires self-caricature",
+   "rationale": "Seed (48w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c130",
+   "part": "part-5",
+   "order": 130,
+   "title": "237. The polite one.",
+   "word_count": 36,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "politeness as cake for every Cerberus",
+   "rationale": "Seed (36w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c131",
+   "part": "part-5",
+   "order": 131,
+   "title": "238. Without envy.",
+   "word_count": 33,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "without envy — conquering an unseen country",
+   "rationale": "Seed (33w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c132",
+   "part": "part-5",
+   "order": 132,
+   "title": "239. The joyless one.",
+   "word_count": 47,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "one joyless person darkens a household",
+   "rationale": "Seed (47w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c133",
+   "part": "part-5",
+   "order": 133,
+   "title": "240. At the sea.",
+   "word_count": 55,
+   "weight": "seed",
+   "kind": "sea",
+   "gist": "a house built into the sea, sharing its secrets",
+   "rationale": "Seed (55w): no art; gold marginal spark (sea)",
+   "palette_role": "zenith horizon — gold silk waves",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c134",
+   "part": "part-5",
+   "order": 134,
+   "title": "241. Work and artist.",
+   "word_count": 27,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "ambitious work as magnifying glass",
+   "rationale": "Seed (27w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c135",
+   "part": "part-5",
+   "order": 135,
+   "title": "242. Suum cuique?37",
+   "word_count": 48,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "we take only what is ours from things",
+   "rationale": "Seed (48w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c136",
+   "part": "part-5",
+   "order": 136,
+   "title": "243. Origin of ‘good’ and ‘bad’.",
+   "word_count": 23,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "good/bad invented by felt lack",
+   "rationale": "Seed (23w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c137",
+   "part": "part-5",
+   "order": 137,
+   "title": "244. Thoughts and words.",
+   "word_count": 14,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "thoughts exceed words",
+   "rationale": "Seed (14w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c138",
+   "part": "part-5",
+   "order": 138,
+   "title": "245. Praise by choice.",
+   "word_count": 16,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "the artist praises by choosing",
+   "rationale": "Seed (16w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c139",
+   "part": "part-5",
+   "order": 139,
+   "title": "246. Mathematics.",
+   "word_count": 60,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "mathematics as final knowledge of humanity",
+   "rationale": "Seed (60w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c140",
+   "part": "part-5",
+   "order": 140,
+   "title": "247. Habit.",
+   "word_count": 15,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "habit: witty hands, unwitty wit",
+   "rationale": "Seed (15w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c141",
+   "part": "part-5",
+   "order": 141,
+   "title": "248. Books.",
+   "word_count": 17,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "a book must carry beyond all books",
+   "rationale": "Seed (17w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c142",
+   "part": "part-5",
+   "order": 142,
+   "title": "249. The sigh of the one who comes to",
+   "word_count": 100,
+   "weight": "shoot",
+   "kind": "knowledge",
+   "gist": "the knower's greed; reborn into a hundred beings",
+   "rationale": "knowledge: lens medallion",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-shoot-zenith-lens",
+    "composition": "lens medallion + noon-tick"
+   },
+   "caption": "Oh, this flame of my greed!",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c143",
+   "part": "part-5",
+   "order": 143,
+   "title": "250. Guilt.",
+   "word_count": 34,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "guilt doesn't exist — witches proved it",
+   "rationale": "Seed (34w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c144",
+   "part": "part-5",
+   "order": 144,
+   "title": "251. Misunderstood sufferers.",
+   "word_count": 86,
+   "weight": "shoot",
+   "kind": "self",
+   "gist": "great souls suffer from self-doubt, not martyrdom",
+   "rationale": "self: bowed Prometheus + cracked star",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "art/cohort-d.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-actor-prometheus",
+    "composition": "bowed figure + split star"
+   },
+   "caption": "Their doubts about their own greatness.",
+   "reading_treatment": "shoot: numeral opener intact, no cap (GR6); gs-seal-spark-gold end-seal",
+   "motif": "zenith"
+  },
+  {
+   "id": "p5c145",
+   "part": "part-5",
+   "order": 145,
+   "title": "252. Better in debt.",
+   "word_count": 25,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "better in debt than paying in foreign coin",
+   "rationale": "Seed (25w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c146",
+   "part": "part-5",
+   "order": 146,
+   "title": "253. Always at home.",
+   "word_count": 51,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "we travel far by always feeling at home",
+   "rationale": "Seed (51w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c147",
+   "part": "part-5",
+   "order": 147,
+   "title": "254. Against embarrassment.",
+   "word_count": 13,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "deep occupation ends embarrassment",
+   "rationale": "Seed (13w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c148",
+   "part": "part-5",
+   "order": 148,
+   "title": "255. Imitators.",
+   "word_count": 33,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "want no imitators — want self-examples",
+   "rationale": "Seed (33w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c149",
+   "part": "part-5",
+   "order": 149,
+   "title": "256. Skinnedness.",
+   "word_count": 41,
+   "weight": "seed",
+   "kind": "sea",
+   "gist": "depth loves surface; flying-fish skinnedness",
+   "rationale": "Seed (41w): no art; gold marginal spark (sea)",
+   "palette_role": "zenith horizon — gold silk waves",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c150",
+   "part": "part-5",
+   "order": 150,
+   "title": "257. From experience.",
+   "word_count": 24,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "riches revealed by rich thieves",
+   "rationale": "Seed (24w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c151",
+   "part": "part-5",
+   "order": 151,
+   "title": "258. Those who deny chance.",
+   "word_count": 11,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "no victor believes in chance",
+   "rationale": "Seed (11w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c152",
+   "part": "part-5",
+   "order": 152,
+   "title": "259. From paradise.",
+   "word_count": 16,
+   "weight": "seed",
+   "kind": "godshadow",
+   "gist": "good and evil are the prejudices of God — snake",
+   "rationale": "Seed (16w): no art; vermilion marginal spark (godshadow)",
+   "palette_role": "zenith shadow — lantern amber on Deep Night",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-lantern end-seal"
+  },
+  {
+   "id": "p5c153",
+   "part": "part-5",
+   "order": 153,
+   "title": "260. One times one.",
+   "word_count": 25,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "one is always wrong; with two, truth begins",
+   "rationale": "Seed (25w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c154",
+   "part": "part-5",
+   "order": 154,
+   "title": "261. Originality.",
+   "word_count": 52,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "originality: seeing the unnamed before all eyes",
+   "rationale": "Seed (52w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c155",
+   "part": "part-5",
+   "order": 155,
+   "title": "262. Sub specie aeterni.39",
+   "word_count": 48,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "leaving the living joins the privilege of the dead",
+   "rationale": "Seed (48w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c156",
+   "part": "part-5",
+   "order": 156,
+   "title": "263. Without vanity.",
+   "word_count": 40,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "love hides defects — not from vanity",
+   "rationale": "Seed (40w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c157",
+   "part": "part-5",
+   "order": 157,
+   "title": "264. What we do.",
+   "word_count": 17,
+   "weight": "seed",
+   "kind": "herd",
+   "gist": "deeds are never understood, only praised/blamed",
+   "rationale": "Seed (17w): no art; vermilion marginal spark (herd)",
+   "palette_role": "zenith dust — vermilion crowd marks",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-herd end-seal"
+  },
+  {
+   "id": "p5c158",
+   "part": "part-5",
+   "order": 158,
+   "title": "265. Ultimate doubt.",
+   "word_count": 18,
+   "weight": "seed",
+   "kind": "knowledge",
+   "gist": "man's truths are his irrefutable errors",
+   "rationale": "Seed (18w): no art; gold marginal spark (knowledge)",
+   "palette_role": "zenith glare — harshest gold",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c159",
+   "part": "part-5",
+   "order": 159,
+   "title": "266. Where cruelty is needed.",
+   "word_count": 18,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "greatness is cruel to its own virtues",
+   "rationale": "Seed (18w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c160",
+   "part": "part-5",
+   "order": 160,
+   "title": "267. With a great goal.",
+   "word_count": 23,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "a great goal stands above even justice",
+   "rationale": "Seed (23w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c161",
+   "part": "part-5",
+   "order": 161,
+   "title": "268. What makes one heroic?",
+   "word_count": 19,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "heroic: highest suffering with highest hope",
+   "rationale": "Seed (19w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c162",
+   "part": "part-5",
+   "order": 162,
+   "title": "269. What do you believe in?",
+   "word_count": 19,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "believe: all weights must be determined anew",
+   "rationale": "Seed (19w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c163",
+   "part": "part-5",
+   "order": 163,
+   "title": "270. What does your conscience say?",
+   "word_count": 13,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "conscience: become who you are",
+   "rationale": "Seed (13w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c164",
+   "part": "part-5",
+   "order": 164,
+   "title": "271. Where lie your greatest dangers?",
+   "word_count": 9,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "greatest dangers lie in compassion",
+   "rationale": "Seed (9w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c165",
+   "part": "part-5",
+   "order": 165,
+   "title": "272. What do you love in others?",
+   "word_count": 10,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "loving one's hopes in others",
+   "rationale": "Seed (10w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  },
+  {
+   "id": "p5c166",
+   "part": "part-5",
+   "order": 166,
+   "title": "273. Whom do you call bad?",
+   "word_count": 16,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "bad: whoever always shames",
+   "rationale": "Seed (16w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c167",
+   "part": "part-5",
+   "order": 167,
+   "title": "274. What is most human to you?",
+   "word_count": 12,
+   "weight": "seed",
+   "kind": "virtue",
+   "gist": "most human: sparing someone shame",
+   "rationale": "Seed (12w): no art; vermilion marginal spark (virtue)",
+   "palette_role": "zenith tables — vermilion on bone",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px vermilion spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-tablet end-seal"
+  },
+  {
+   "id": "p5c168",
+   "part": "part-5",
+   "order": 168,
+   "title": "275. What is the seal of having become free’?",
+   "word_count": 17,
+   "weight": "seed",
+   "kind": "self",
+   "gist": "freedom's seal: no shame before oneself",
+   "rationale": "Seed (17w): no art; gold marginal spark (self)",
+   "palette_role": "zenith spark — single gold star",
+   "motif_asset": "NONE — spark class (CSS-only, no manifest entry)",
+   "opener": {
+    "treatment": "spark",
+    "symbol": "NONE",
+    "composition": "CSS-only 26px gold spark left of first line; no manifest entry"
+   },
+   "reading_treatment": "no drop-cap; gs-seal-spark-gold end-seal"
+  }
+ ],
+ "grammar_notes": "Zenith full-width tableaux per weight; Branch = disc + steep-16 fan + shadow band + kind emblem + chapter actor + noon-line; p5c18 landmark = maximal 24-ray edge-to-edge fan + inverted lit lantern + madman/marketplace/church-tombs/shards. HTML figcaptions only (GR5); margin-bleed banners + overflow-x clip (GR3); letter drop-caps via shared fix (GR6); kind-derived gold/vermilion sparks 84/84, never modulo; tablet = new §10b motif proposal; flat-only (G4); zero Aubergine (G5).",
+ "landmarks": [
+  "p5c18"
+ ]
+}

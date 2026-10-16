@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="c4t c4d">
+<title id="c4t">Dose IV — The cornerstone: a dark three-bay nave wall above a lit foundation course; one proud stone carries a single candle</title>
+<desc id="c4d">Nave plate. Night field; an ashlar side-elevation wall with three dark receding arch bays; beneath it a full-width foundation course of great drafted blocks. One central cornerstone stands proud of the course, washed in candlelight, a single sanctuary candle burning on it; stepped wedges of light fall to the plate base. The wall above stays dark: the base is laid before the walls rise.</desc>
+<defs>
+<linearGradient id="c4night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".6" stop-color="#100F0D"/><stop offset="1" stop-color="#171410"/>
+</linearGradient>
+<linearGradient id="c4stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="c4flame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<pattern id="c4hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="14" stroke="#9C917E" stroke-width="1.6"/>
+</pattern>
+<filter id="c4grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#c4grain)">
+<rect x="0" y="0" width="1600" height="900" fill="url(#c4night)"/>
+<!-- stars: sparse, cold; the wall zone stays clear -->
+<g fill="#ECE2CE">
+<circle cx="120" cy="120" r="2" opacity=".55"/><circle cx="260" cy="250" r="1.5" opacity=".35"/>
+<circle cx="90" cy="420" r="1.6" opacity=".35"/><circle cx="420" cy="80" r="1.8" opacity=".5"/>
+<circle cx="700" cy="70" r="1.4" opacity=".35"/><circle cx="1100" cy="90" r="1.6" opacity=".45"/>
+<circle cx="1460" cy="120" r="2" opacity=".55"/><circle cx="1330" cy="220" r="1.4" opacity=".35"/>
+<circle cx="1520" cy="340" r="1.5" opacity=".4"/><circle cx="1560" cy="520" r="1.3" opacity=".3"/>
+</g>
+<!-- the nave side-elevation: c3's lancet wall turned the corner, now dark -->
+<rect x="400" y="140" width="800" height="500" fill="url(#c4stone)" stroke="#3A332A" stroke-width="3"/>
+<rect x="400" y="140" width="800" height="500" fill="url(#c4hatch)" opacity=".12"/>
+<rect x="390" y="126" width="820" height="16" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<g stroke="#2C2721" stroke-width="2">
+<line x1="400" y1="300" x2="460" y2="300"/><line x1="1060" y1="300" x2="1200" y2="300"/>
+<line x1="400" y1="420" x2="460" y2="420"/><line x1="1060" y1="420" x2="1200" y2="420"/>
+<line x1="400" y1="540" x2="460" y2="540"/><line x1="1060" y1="540" x2="1200" y2="540"/>
+</g>
+<!-- three receding bays, diminishing toward center-right; unlit interiors -->
+<g>
+<path d="M470,640 V330 A80,80 0 0 1 630,330 V640 Z" fill="#0A0908" stroke="#5A5142" stroke-width="4"/>
+<path d="M486,640 V336 A64,64 0 0 1 614,336 V640" fill="none" stroke="#4A4335" stroke-width="2.5"/>
+<path d="M730,640 V350 A65,65 0 0 1 860,350 V640 Z" fill="#0A0908" stroke="#5A5142" stroke-width="4"/>
+<path d="M744,640 V356 A51,51 0 0 1 846,356 V640" fill="none" stroke="#4A4335" stroke-width="2.5"/>
+<path d="M950,640 V370 A50,50 0 0 1 1050,370 V640 Z" fill="#0A0908" stroke="#5A5142" stroke-width="4"/>
+<path d="M962,640 V376 A38,38 0 0 1 1038,376 V640" fill="none" stroke="#4A4335" stroke-width="2.5"/>
+</g>
+<!-- the foundation course: full-width band of great drafted blocks -->
+<rect x="0" y="640" width="1600" height="130" fill="#242019"/>
+<line x1="0" y1="640" x2="1600" y2="640" stroke="#4A4335" stroke-width="2"/>
+<g stroke="#14120E" stroke-width="4">
+<line x1="200" y1="640" x2="200" y2="770"/><line x1="400" y1="640" x2="400" y2="770"/>
+<line x1="600" y1="640" x2="600" y2="770"/><line x1="1000" y1="640" x2="1000" y2="770"/>
+<line x1="1200" y1="640" x2="1200" y2="770"/><line x1="1400" y1="640" x2="1400" y2="770"/>
+</g>
+<g fill="none" stroke="#3A332A" stroke-width="1.5">
+<rect x="14" y="652" width="172" height="106"/><rect x="214" y="652" width="172" height="106"/>
+<rect x="414" y="652" width="172" height="106"/><rect x="614" y="652" width="72" height="106"/>
+<rect x="914" y="652" width="72" height="106"/><rect x="1014" y="652" width="172" height="106"/>
+<rect x="1214" y="652" width="172" height="106"/><rect x="1414" y="652" width="172" height="106"/>
+</g>
+<!-- the ONE proud stone: drafted, tooled, washed in candlelight -->
+<rect x="700" y="610" width="200" height="160" fill="#242019" stroke="#5A5142" stroke-width="3"/>
+<rect x="700" y="610" width="200" height="160" fill="#DFA050" opacity=".28"/>
+<rect x="712" y="622" width="176" height="136" fill="none" stroke="#4A4335" stroke-width="2"/>
+<rect x="722" y="632" width="156" height="116" fill="none" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="700" y1="610" x2="900" y2="610" stroke="#6B5B3E" stroke-width="2"/>
+<!-- the sanctuary candle stands directly on the cornerstone (GI5 grammar) -->
+<ellipse cx="800" cy="610" rx="18" ry="6" fill="#E8DCC2"/>
+<rect x="795" y="527" width="10" height="83" fill="#E8DCC2"/>
+<line x1="800" y1="527" x2="800" y2="521" stroke="#14120E" stroke-width="2"/>
+<!-- foreground ground -->
+<rect x="0" y="770" width="1600" height="130" fill="#0B0A08"/>
+<line x1="0" y1="770" x2="1600" y2="770" stroke="#2C2721" stroke-width="2"/>
+<!-- drawn light: three stepped wedges from the stone to the base -->
+<path d="M720,770 H880 L940,900 H660 Z" fill="#DFA050" opacity=".4"/>
+<path d="M710,770 H890 L980,900 H620 Z" fill="#DFA050" opacity=".2"/>
+<path d="M700,770 H900 L1020,900 H580 Z" fill="#DFA050" opacity=".1"/>
+<!-- the flame: the plate's peak value -->
+<path d="M800,527 C793.9,516 795,507 800,498 C805,507 806.1,516 800,527 Z" fill="url(#c4flame)"/>
+<!-- (no in-SVG caption strip: the manifest caption covers it) -->
+</g>
+</svg>

@@ -1,0 +1,199 @@
+{
+  "book": "sovereign-individual",
+  "chapter_order": [
+    "p1c1",
+    "p1c2",
+    "p1c3",
+    "p1c4",
+    "p1c5",
+    "p1c6",
+    "p1c7",
+    "p1c8",
+    "p1c9",
+    "p1c10",
+    "p1c11"
+  ],
+  "chapters": {
+    "p1c1": {
+      "asset": "art/plate-p1c1.svg",
+      "cohort": "A-rupture",
+      "motif": "asymptote",
+      "opener": "Plate left (asymptote rosette, 12 petals, gold); denomination I cartouche; epigraph from Hillis set as plate caption",
+      "palette_role": "Gold-dominant (announcement ink); verdigris microtext ring",
+      "rationale": "Opens on the year-2000 asymptote (Hillis epigraph, Newton/Nostradamus/Jung forecasts). The curve-to-vertical is the chapter's own central graph.",
+      "reading": "Drop cap in Bodoni; section heads letterspaced small caps; pull-epigraphs in copper rule frame",
+      "title": "The Transition in the Year 2000",
+      "class": "plate",
+      "caption": "Plate I · The millennium asymptote"
+    },
+    "p1c10": {
+      "asset": "art/plate-p1c10.svg",
+      "cohort": "C-reckoning",
+      "motif": "sundial",
+      "opener": "Plate left (shadow rosette, 10 petals, copper/oxide); denomination X; Quigley weapons-conditions list set as assay table",
+      "palette_role": "Copper/oxide dominant; bone text on deepened vault ground",
+      "rationale": "Democracy's rarity and its megapolitical preconditions (Quigley); twilight = long shadows. The sundial literalizes the title without cliché sunset gradients.",
+      "reading": "Numbered conditions as engraved list; marginal hour-ticks mark section breaks",
+      "title": "The Twilight of Democracy",
+      "class": "plate",
+      "caption": "Plate X · Sundial at dusk"
+    },
+    "p1c11": {
+      "asset": "art/plate-p1c11.svg",
+      "cohort": "C-reckoning",
+      "motif": "double-seal",
+      "opener": "Plate left (twin 11-petal rosettes, gold vs seal-red, misregistered); denomination XI; Tanzi corruption epigraph as stamped finding",
+      "palette_role": "Seal-red dominant — the only chapter where red leads; gold demoted to the 'official' layer",
+      "rationale": "Finale on covert criminal capture of the state ('barbarians in disguise', Body Snatchers). A misregistered second seal is the honest visual pun: counterfeit sovereignty.",
+      "reading": "Blockquote findings in seal-red left rule; end-mark is the counterfeit seal glyph",
+      "title": "Morality and Crime in the “Natural Economy” of the Information Age",
+      "class": "plate",
+      "caption": "Plate XI · The counterfeit seal"
+    },
+    "p1c2": {
+      "asset": "art/plate-p1c2.svg",
+      "cohort": "A-rupture",
+      "motif": "strata",
+      "opener": "Plate left (strata rosette, 4-layer concentric, copper); denomination II; Huizinga epigraph as stratum label",
+      "palette_role": "Copper-dominant (earth/archive ink); gold reserved for the fourth band",
+      "rationale": "'Waning of the Modern Age' via megapolitical stages; the four-stage stack is the book's load-bearing diagram (stated in ch.1, historicized here).",
+      "reading": "Stage names as margin labels; timeline rule down the left of historical passages",
+      "title": "Megapolitical Transformations in Historical Perspective",
+      "class": "plate",
+      "caption": "Plate II · Four stages of society"
+    },
+    "p1c3": {
+      "asset": "art/plate-p1c3.svg",
+      "cohort": "A-rupture",
+      "motif": "furrow",
+      "opener": "Plate left (furrow rosette, 8 petals stretched, verdigris); denomination III; Genesis epigraph as field inscription",
+      "palette_role": "Verdigris-dominant (first green chapter — agriculture); bone microtext",
+      "rationale": "The Agricultural Revolution as slow-motion violence-logic shift; furrows are the chapter's own paradigm image for how work reshapes power.",
+      "reading": "Agrarian passages carry furrow section-marks; population-density figures in mono",
+      "title": "East of Eden",
+      "class": "plate",
+      "caption": "Plate III · The first furrow"
+    },
+    "p1c4": {
+      "asset": "art/plate-p1c4.svg",
+      "cohort": "A-rupture",
+      "motif": "fallen-capital",
+      "opener": "Plate left (fracture rosette, 9 petals with one displaced, copper/oxide); denomination IV; scandal-roll call set as ledger entries",
+      "palette_role": "Copper/oxide dominant (decay inks); gold only in the intact fragment",
+      "rationale": "'Death of politics' paralleled with the senile Church; scandal catalogue (ch.4's long roll call) is literally ledger material.",
+      "reading": "Scandal entries as ledger rows (name — charge — fall); politics-etymology passage as gloss plate",
+      "title": "The Last Days of Politics",
+      "class": "plate",
+      "caption": "Plate IV · The fallen capital"
+    },
+    "p1c5": {
+      "asset": "art/plate-p1c5.svg",
+      "cohort": "B-dissolution",
+      "motif": "rubble-courses",
+      "opener": "Plate left (rubble rosette, 7 petals irregular, bone/copper); denomination V; de Balsac 1502 money-and-war maxim as foundation stone",
+      "palette_role": "Bone-dominant (concrete/rubble ink); seal-red date stamps 1495 / 1989",
+      "rationale": "The chapter pivots on two demolitions (San Giovanni, Berlin Wall) as megapolitical watersheds; coursed rubble draws both at once.",
+      "reading": "Date stamps in seal red; wall-fall passages in wide measure with rubble break-marks",
+      "title": "The Life and Health of the Nation-State",
+      "class": "plate",
+      "caption": "Plate V · Two demolitions: 1495 / 1989"
+    },
+    "p1c6": {
+      "asset": "art/plate-p1c6.svg",
+      "cohort": "B-dissolution",
+      "motif": "severed-belt",
+      "opener": "Plate left (severed rosette, 12 petals with a cut gap, copper/gold); denomination VI; Munro cyberspace epigraph as the far side of the cut",
+      "palette_role": "Copper/gold split across the cut; verdigris on the information side",
+      "rationale": "Opens at Flint (sit-down strike) to declare industrial coercion anachronistic; the snapped belt stages 'no Chevrolets on the Information Superhighway'.",
+      "reading": "Industrial-age passages in tighter measure; 'Information Age' turn marked by a cut-rule ornament",
+      "title": "The Megapolitics of the Information Age",
+      "class": "plate",
+      "caption": "Plate VI · The severed belt"
+    },
+    "p1c7": {
+      "asset": "art/plate-p1c7.svg",
+      "cohort": "B-dissolution",
+      "motif": "knot-mesh",
+      "opener": "Plate left (knot rosette, 16 petals interlaced, verdigris/gold); denomination VII; Barlow control epigraph as knot legend",
+      "palette_role": "Verdigris/gold — the cybereconomy chapter glows patina, not neon",
+      "rationale": "'Cyberspace transcends locality'; Barlow's seamless anti-sovereign zone. Knotwork keeps it engraved and avoids the generic node-graph cliché.",
+      "reading": "Network passages with knot section-marks; URLs/hosts (e.g. ibm.com) in mono on copper",
+      "title": "Transcending Locality",
+      "class": "plate",
+      "caption": "Plate VII · The anti-sovereign knot"
+    },
+    "p1c8": {
+      "asset": "art/plate-p1c8.svg",
+      "cohort": "B-dissolution",
+      "motif": "pareto-spire",
+      "opener": "Plate left (spire rosette, 8 petals rising asymmetric, gold); denomination VIII; performance-profession analogy as prize table",
+      "palette_role": "Gold-dominant (returns-to-talent chapter); copper for the falling median",
+      "rationale": "Winner-take-most earnings (athletics/opera analogy); the spire curve is the chapter's single quantitative image.",
+      "reading": "Distribution claims in mono figures; 'sow/reap' refrain as recurring rubric",
+      "title": "The End of Egalitarian Economics",
+      "class": "plate",
+      "caption": "Plate VIII · The earnings spire"
+    },
+    "p1c9": {
+      "asset": "art/plate-p1c9.svg",
+      "cohort": "C-reckoning",
+      "motif": "broken-shuttle",
+      "opener": "Plate left (loom rosette, 9 petals rectilinear warp/weft, copper/seal); denomination IX; 'small planet' IBM passage as trade card",
+      "palette_role": "Copper/seal — Luddite chapter runs hot; longest chapter (29k words) gets the densest plate",
+      "rationale": "New Luddites + nationalist reaction to the 'small planet'; the loom is the honest Luddite artifact, and warp/weft suits engraving.",
+      "reading": "Reaction episodes as dated broadsides; Billig nationhood passages in quoted display",
+      "title": "Nationalism, Reaction, and the New Luddites",
+      "class": "plate",
+      "caption": "Plate IX · The broken shuttle"
+    }
+  },
+  "cohorts": {
+    "A-rupture": {
+      "arc": "The old order breaks: millennium dread, stage theory, the agrarian precedent, politics dying.",
+      "chapters": [
+        "p1c1",
+        "p1c2",
+        "p1c3",
+        "p1c4"
+      ],
+      "ink": "Gold → copper → verdigris → oxide: announcement decaying into ruin."
+    },
+    "B-dissolution": {
+      "arc": "The nation-state is assayed and found wanting: its health, its megapolitics, its locality, its economics.",
+      "chapters": [
+        "p1c5",
+        "p1c6",
+        "p1c7",
+        "p1c8"
+      ],
+      "ink": "Bone → copper → verdigris → gold: rubble giving way to the cybereconomy gleam."
+    },
+    "C-reckoning": {
+      "arc": "Reaction, twilight, and the criminal interregnum: what fills the vacuum.",
+      "chapters": [
+        "p1c9",
+        "p1c10",
+        "p1c11"
+      ],
+      "ink": "Copper/seal → copper/oxide → seal-red: the metal runs hot, then counterfeit."
+    }
+  },
+  "identity": "SPECIE — The Private Banknote",
+  "spec": "design/ART-DIRECTION-DRAFT.md",
+  "contract": {
+    "version": 1,
+    "slots": [
+      "#cover-art",
+      "#chapter-art"
+    ],
+    "cover": {
+      "src": "art/cover.svg",
+      "class": "plate",
+      "caption": "Specimen · The Private Banknote · Series 1997"
+    },
+    "default": {
+      "class": "plate"
+    },
+    "note": "Supervisor: merge per-chapter src(=asset)/class/motif/caption into design/chapters.json per READER-CONTRACT §4."
+  }
+}

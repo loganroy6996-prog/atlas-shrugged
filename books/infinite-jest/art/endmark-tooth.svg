@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- A.0 endmark glyph · cohort-D p1c49 "shale-tooth" — single cracked-tooth outline,
+       phosphor-gray with one red rot fleck (cohort-d.json endmarks_a0): the rest beat
+       gets the smallest mark. Engraved-line geometry, explicit strokes, no external refs. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 58 L138 58 L142 96 Q142 104 134 106 L134 138 Q134 148 126 148 Q118 148 118 140 L114 108 L86 108 L82 140 Q82 148 74 148 Q66 148 66 138 L66 106 Q58 104 58 96 Z"
+          stroke="#9FE870" stroke-width="3" opacity="0.62"/>
+    <path d="M96 58 L99 78 L94 92 L100 106" stroke="#9FE870" stroke-width="2.2" opacity="0.55"/>
+    <circle cx="127" cy="126" r="4.5" fill="#E05238" stroke="none" opacity="0.85"/>
+  </g>
+</svg>

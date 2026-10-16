@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Forty Ways to Look at Churchill — forty facet shards mid-scatter around a void</title>
+<defs>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .5 0"/></filter>
+</defs>
+<!-- Lampblack #14110B -->
+<rect width="800" height="1000" fill="#14110b"/>
+<!-- gallery bed -->
+<rect x="60" y="60" width="680" height="880" fill="#211b13"/>
+<!-- the void where a face would be -->
+<ellipse cx="400" cy="470" rx="120" ry="150" fill="#0a0806"/>
+<!-- forty authored shards: ochre heroic, vermilion confrontation, slate doubt, bone record -->
+<g stroke="#0a0806" stroke-width="3">
+<polygon points="400,150 470,260 340,250" fill="#c8984a"/>
+<polygon points="480,270 620,250 560,360" fill="#ece1cb"/>
+<polygon points="330,260 250,350 350,370" fill="#5e6e93"/>
+<polygon points="200,200 280,190 250,300" fill="#c8984a"/>
+<polygon points="560,180 660,160 640,280" fill="#5e6e93"/>
+<polygon points="120,330 220,310 190,430" fill="#ece1cb"/>
+<polygon points="600,380 700,360 680,470" fill="#c4502c"/>
+<polygon points="250,400 330,430 270,520" fill="#c8984a"/>
+<polygon points="520,420 600,460 540,540" fill="#5e6e93"/>
+<polygon points="100,470 180,450 160,560" fill="#c4502c"/>
+<polygon points="640,500 720,490 700,600" fill="#c8984a"/>
+<polygon points="300,560 390,590 320,680" fill="#ece1cb"/>
+<polygon points="470,580 560,610 500,690" fill="#c4502c"/>
+<polygon points="180,600 270,620 220,710" fill="#5e6e93"/>
+<polygon points="590,640 680,660 630,740" fill="#ece1cb"/>
+<polygon points="340,710 440,730 390,810" fill="#c8984a"/>
+<polygon points="150,750 240,770 190,850" fill="#c8984a"/>
+<polygon points="470,740 570,760 520,840" fill="#5e6e93"/>
+<polygon points="600,780 690,800 650,870" fill="#c4502c"/>
+<polygon points="280,850 370,870 320,930" fill="#5e6e93"/>
+<!-- second air: small collage tiles -->
+<polygon points="120,120 180,110 150,170" fill="#5e6e93"/>
+<polygon points="640,90 700,90 670,150" fill="#ece1cb"/>
+<polygon points="90,620 140,610 115,670" fill="#c8984a"/>
+<polygon points="680,300 730,290 705,350" fill="#5e6e93"/>
+<polygon points="230,470 280,460 255,510" fill="#ece1cb"/>
+<polygon points="540,330 590,322 565,372" fill="#c8984a"/>
+<polygon points="360,330 410,322 385,372" fill="#c4502c"/>
+<polygon points="420,620 470,612 445,662" fill="#5e6e93"/>
+<polygon points="90,820 150,812 120,872" fill="#ece1cb"/>
+<polygon points="700,700 745,695 722,750" fill="#c8984a"/>
+<polygon points="330,120 390,112 360,172" fill="#c4502c"/>
+<polygon points="500,110 560,105 530,165" fill="#5e6e93"/>
+<polygon points="200,880 260,875 230,925" fill="#c4502c"/>
+<polygon points="540,880 600,875 570,925" fill="#ece1cb"/>
+<polygon points="400,880 450,875 425,920" fill="#c4502c"/>
+<polygon points="90,230 140,222 115,272" fill="#c8984a"/>
+<polygon points="700,420 745,412 722,462" fill="#ece1cb"/>
+<polygon points="270,300 320,292 295,342" fill="#c8984a"/>
+<polygon points="480,240 530,232 505,282" fill="#ece1cb"/>
+<polygon points="150,520 200,512 175,562" fill="#5e6e93"/>
+</g>
+<!-- void rim: shards lean inward, never closing -->
+<g fill="none" stroke="#c8984a" stroke-width="2" opacity=".6">
+<path d="M290,470 C300,380 350,330 400,325"/>
+<path d="M510,470 C500,380 450,330 400,325"/>
+</g>
+<!-- destiny vector: shards converge page-right toward the foot -->
+<g fill="#c4502c" opacity=".85">
+<polygon points="560,860 640,845 640,875"/>
+<polygon points="650,842 710,832 710,858"/>
+</g>
+<rect x="60" y="60" width="680" height="880" fill="none" stroke="#c8984a" stroke-width="3" opacity=".7"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".1"/>
+</svg>

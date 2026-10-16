@@ -1,0 +1,288 @@
+{
+  "part": "part-i",
+  "part_roman": "I",
+  "part_name": "ONE",
+  "part_subtitle": "NON-CONTRADICTION",
+  "aspect": "signal-clear",
+  "status": "Phase 1 draft. Motifs PROPOSED inside Direction A (THE SIGNAL) draft grammar per lead request; SVG/CSS NOT finalized. Type/palette PROPOSED pending supervisor ART-DIRECTION.md + identity.json broadcast (conformance PENDING). No competing identity invented.",
+  "grammar": {
+    "medium": "Flat night-lithograph SVG per identity.json draft: solid ink slabs, 2-3 flat hues per plate + lamp color, converging-line perspective, beams as flat wedges, lamps as flat discs with hard 2px halo rings. NEVER glow, NEVER gradients, NEVER gold. Linework >= 2px at final size.",
+    "green_logic": "Part I = green/clear: the Line still runs; the world has not yet voted to stop. Every plate carries exactly one green function (lamp, lamp pair, bracelet-clasp disc, gantry row, furnace lamp, truss lamp, headlight wedge edge, vault-lamp, flame-base signal) — never decoration. Brass/glow/gold explicitly refused (A2): copper appears ONLY as flat Railsteel-warm slab in p1c5, capped at one plate.",
+    "intruder_policy": "ONE intruder: p1c10 carries signal-stop-intruder (red lamp on a green part) exactly as identity.json documents — Wyatt's Torch is the Line's first death. Red appears nowhere else in Part I, NOT even in the p1c1 broken-signal red (rendered as a dead dark disc, lamp OUT) or the p1c4 Alliance vote (lamps shuttered, no red lit). The identity's other intruders (p3c1, p3c10) are untouched.",
+    "no_index_correlation": "Plate weights and motifs authored per chapter from para counts + verified scenes, never computed from chapter index. No odd/even alternation. Monumental: p1c7. Grand: p1c5, p1c6, p1c9, p1c10. Standard: p1c1, p1c4, p1c8. Compact: p1c2, p1c3. (Weights propose two moves from the identity sketch — p1c1 standard-down, p1c8 standard-down — justified per entry; supervisor decides.)",
+    "palette": {
+      "Nightballast": "#0E1216 (page/cover ground; PROPOSED pending broadcast)",
+      "Tunnelblack": "#07090C (slot wells, plate inlay)",
+      "Headlight": "#F2E8D0 (body text ~13:1 on Nightballast; beam wedges; plate whites)",
+      "Clear_Green": "#3FD08C (Part I aspect; graphics + large display + kickers only)",
+      "Railsteel": "#8B98A5 (structure, secondary marks)",
+      "Order_Amber": "#E8A33D (Part II only — absent here by law)",
+      "Stop_Red": "#E0483E (p1c10 intruder lamp ONLY; absent elsewhere by law)"
+    },
+    "type_proposal": "PROPOSED pending supervisor broadcast, checked against ART-DIRECTION.md font registry §4: Barlow Condensed (display; condensed-industrial-caps seniority held by Fountainhead Oswald — PROPOSED by way of the identity draft's distinct grotesque-condensed choice, supervisor to rule), Crimson Pro (body; unclaimed in registry), Space Mono (data/captions; small-scale role consistent with separated Plex-Mono holders being CLOSED — Space Mono is NOT IBM Plex Mono). Delivery per identity.json: woff2 to design/fonts/ + @font-face, Google Fonts links dev-fallback only."
+  },
+  "chapters": {
+    "p1c1": {
+      "id": "p1c1",
+      "part": "part-i",
+      "order": 1,
+      "title": "THE THEME",
+      "word_count": 10733,
+      "para_count": 405,
+      "rationale": "Opens on the bum's question 'Who is John Galt?' (:0) and Eddie's dread (:9), then the three verified anchors: the sky-calendar page (:12), the oak tree memory (:18-20, hollow trunk 'like the mouth of a black tunnel' :20), and the faded Taggart wall map with red lines 'like a system of blood vessels' (:34). Middle: Dagny's night ride on the Taggart Comet (:142), the stall at the book's FIRST red signal — busted, waited on for an hour in placid indifference (:148-160: 'I think it's busted' :158, 'Waiting for it to change' :160) — her order 'Proceed with caution to the next signal' (:180), and the tunnel descent into the Terminal (:205-206, with 'green and red lights hung as distant drops of color' specifically at :206). Closes on Kellogg's quitting and the returned question (:390-404). The plate fuses the chapter's two signal moments — the dead red in the fields and the live drops in the tunnel — into the book's first signal grammar statement; the oak/calendar/map triptych stays prose, not art, to keep one huge idea per plate.",
+      "proposed_motif": "Two stacked planes in one plate. UPPER plane (fields at night): the Comet's motionless wheel-line as a black slab, crew figures as small dark verticals, and above them the broken signal rendered as a DARK dead disc — lamp OUT, no red lit anywhere (intruder discipline). LOWER plane (the Terminal tunnels): converging rail-lines head-on into black holes, with green lamps as flat discs + hard 2px halo rings and the reds left dark. One green function only: the tunnel drops. The plate's argument: the Line runs where men act (Dagny :180), and stops where they wait (:146-149).",
+      "palette_role": "Clear Green (#3FD08C) carries ONLY the tunnel lamp-drops; the dead signal disc is unlit Tunnelblack (#07090C) ringed Railsteel (#8B98A5); wheel-line and crew in flat dark slabs on Nightballast (#0E1216); plate whites minimal (Headlight #F2E8D0 for a single beam edge). No red, no amber: the chapter's red is DEATH, and death stays unlit until p1c10.",
+      "opener_idea": "STANDARD band (9rem). Plate: dead-disc fields over lit-drops tunnels. Kicker: PART I · NON-CONTRADICTION (Space Mono, green). Head: THE THEME (Barlow Condensed 600). Data line: CHAPTER I · 10733 WORDS. Green rule, left-weighted. Caption: SIG I-01 · 10733 WORDS. First body line visible without scroll at 1440x1000. (Proposes standard-down from the identity sketch's grand: the chapter is the book's quietest thesis statement at 405 paras, and the dead-disc restraint reads stronger at standard weight — supervisor decides.)",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 15,
+        "middle_skim": true,
+        "middle_note": "Spot-read :18-20 (oak), :34 (map), :142-206 (Comet stall + tunnel descent); sampled :60-360 every ~30 paras for motif sweep. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c1"
+    },
+    "p1c2": {
+      "id": "p1c2",
+      "part": "part-i",
+      "order": 2,
+      "title": "THE CHAIN",
+      "word_count": 7990,
+      "para_count": 214,
+      "rationale": "Opens on the night approach to the Rearden mills (:0-2): scattered lights, the steam-wrapped buildings, 'a few strong lights cut straight sheafs through the coils' (:2). Middle: the first pour of Rearden Metal — the tap-hole break as 'a shocking sensation of morning' (:9), the white stream with 'fountains of sparks shot in beating spasms, as from broken arteries' (:9) — and Rearden's walk home fingering the bracelet 'made of Rearden Metal, in the shape of a chain' (:17), made from 'that first poured metal' (:29), ten years in the making (:17). Closes on Lillian raising the bracelet in the lamplight (:212): 'A chain... the chain by which he holds us all in bondage' (:213). Shortest Part I chapter (214 paras). The plate stages the pour, not the insult: the metal's birth is the chapter; the bondage line is its caption's shadow.",
+      "proposed_motif": "The furnace at night as a single black bulk; from its tap-hole a flat Headlight wedge of white metal streaming down (beam-vocabulary, never a glow), edged with a few flat spark-dashes struck at the wedge's rim — NO red sparks, NO orange: the text's 'pure white color of sunlight' (:9) is a white-on-black image. ONE green function: a small green lamp disc on the furnace housing (the Line's order for this metal — the rails of :28). In the plate's lower corner, small and separate: the bracelet as a flat chain-link loop, clasp open. Two scales, one metal: the tonnage and the gift.",
+      "palette_role": "Headlight (#F2E8D0) does structural graphic work: the white metal wedge is the plate's brightest plane (explicit beam-vocabulary exception, same license as Part II's p2c3). Clear Green carries ONLY the furnace lamp disc. Furnace bulk Tunnelblack wrapped in Railsteel tube-coils on Nightballast. No red/orange flame tints anywhere — the pour is white or it is wrong.",
+      "opener_idea": "COMPACT band (7rem). Smallest plate grammar in the part: bulk + wedge + lamp + bracelet-loop. Kicker: PART I · NON-CONTRADICTION. Head: THE CHAIN. Data line: CHAPTER II · 7990 WORDS. Green rule, left-weighted. Caption: SIG I-02 · 7990 WORDS. Compact by authored scale (214 paras, shortest in Part I) — matches the identity sketch's triumph-compact band.",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 6,
+        "middle_skim": true,
+        "middle_note": "Verified pour (:7-9), bracelet chain (:17, :29, :96, :103-107), first-order rails (:28); sampled :20-200 every ~30 paras. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c2"
+    },
+    "p1c3": {
+      "id": "p1c3",
+      "part": "part-i",
+      "order": 3,
+      "title": "THE TOP AND THE BOTTOM",
+      "word_count": 9292,
+      "para_count": 249,
+      "rationale": "Opens on the cellar sixty floors up: the low vaulted room (:0) where Boyle, Taggart, Larkin and Mouch plot in whispers (:1-11) — the TOP that behaves as a cellar. Middle: Dagny's night crossing of the Taggart concourse, 'like a temple' with 'dim vaults' and 'giant granite columns' (:215), dominated by the statue of Nathaniel Taggart, 'the only form of prayer she knew' (:216), Nat as the man 'who had never accepted the creed that others had the right to stop him' (:218). Closes in the underground cafeteria (:243-248): white tile 'like silver brocade' (:244), Eddie confessing the Rio Norte hope to the track worker (:246-248). The chapter's architecture is a vertical argument — cellar-above vs. temple-below — and the plate draws exactly that section. HONEST FLAG on the identity sketch ('Nat Taggart statue + Comet'): confirmed — full-text scan finds ZERO 'comet' hits in this chapter (the census hit was a substring false positive); the Comet runs in p1c1 :142. The sketch's Comet is resisted. This draft substitutes the concourse vault + statue, both verified here.",
+      "proposed_motif": "An architectural SECTION plate, split horizontally. UPPER third (the 'top'): the cellar-room vault as a low dark arch pressing down, four seated slabs around a small table under a single DEAD (unlit) fixture — the plotters get no lamp. LOWER two-thirds (the 'bottom' that is the true top): the concourse vaults rising on granite column-slabs, and at the vanishing point the small upright figure of the Nat Taggart statue. ONE green function: a single green lamp disc hung at the concourse vanishing point behind the statue — the Line's promise, kept below. The section line between the worlds drawn as a hard Headlight hairline: the chapter's whole thesis in one cut.",
+      "palette_role": "Clear Green carries ONLY the concourse vanishing-point lamp; the cellar fixture stays dark (Railsteel ring, Tunnelblack disc). Cellar arch near-total Tunnelblack; concourse columns flat Railsteel slabs on Nightballast; the section hairline Headlight (#F2E8D0). The palette stages the title: darkness above, structure below.",
+      "opener_idea": "COMPACT band (7rem). The section plate reads at small size by construction (two stacked bands, one hairline). Kicker: PART I · NON-CONTRADICTION. Head: THE TOP AND THE BOTTOM. Data line: CHAPTER III · 9292 WORDS. Green rule, left-weighted. Caption: SIG I-03 · 9292 WORDS. Compact by authored scale (249 paras) — matches the identity sketch band.",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 6,
+        "middle_skim": true,
+        "middle_note": "Verified cellar (:0-11), concourse/statue (:213-226), cafeteria close (:243-248); sampled :40-230 every ~40 paras. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c3"
+    },
+    "p1c4": {
+      "id": "p1c4",
+      "part": "part-i",
+      "order": 4,
+      "title": "THE IMMOVABLE MOVERS",
+      "word_count": 11463,
+      "para_count": 332,
+      "rationale": "Opens on Dagny's axiom: 'Motive power... movement, to keep it immovable' (:0) under the Taggart Building, then the rotted precision machine tool abandoned in the yard (:2) and McNamara's quitting (:5-11). Middle: the Halley Fourth on the phonograph — 'a great cry of rebellion' (:34) — against the loudspeaker's shapeless screech (:26); the Mexico nationalization decree (:89) and Taggart's lying Board speech (:90-93); the National Alliance vote where 'everybody looked at Dan Conway' (:127) and the hall fell silent after the Anti-dog-eat-dog Rule passed (:128). Closes on the Rearden-Dagny mountain-top exchange (:323-331): 'it's we who move the world' (:331). The plate takes the vote — the chapter's hinge — rendered as signal hardware: the Alliance DOES what a dwarf signal does (holds one road, clears another). HONEST FLAG on the identity sketch ('stalled boardroom as dwarf signal, red-over-green'): confirmed — NO dwarf hardware, NO red-over-green aspects in the text (full-text scan: 'signal' occurs only as the chairman's hand-raise :127 and a trackside memory :181). The Alliance-vote-as-signal reading is this draft's STRUCTURAL metaphor (the vote holds one road, clears another), rendered with shuttered lamps + ONE lit green and the stopped aspect as an unlit dark disc — the hardware is grammar, not illustration, and the file asserts nothing stronger. (The chapter's other verified set-pieces — the Rearden rail-order meeting :214-320 and the crane-magnet rail-loading :304-312 — stay prose so the plate keeps one huge idea.)",
+      "proposed_motif": "The Alliance hall as a dwarf-signal plate: a long boardroom table drawn as a horizontal black slab, the seated presidents as a row of small identical dark verticals, all facing one dwarf signal-post at the plate's right edge. The dwarf shows TWO aspects stacked: the UPPER disc DARK/unlit (the stopped road — Conway's Phoenix-Durango, :121-129) and the LOWER disc lit green (the 'cleared' road — the looters' protected traffic). ONE green function: that lower disc. Behind the row, a single standing figure (Conway, :127-130) drawn slightly apart. Flat discs + hard halo ring on the lit one only; the dark disc gets a Railsteel ring and Tunnelblack face. The plate's cruelty is precise: the green that lights is the corrupt one.",
+      "palette_role": "Clear Green carries ONLY the dwarf's lower disc — the chapter's bitterest lamp, and the only lit lamp in the plate. Table and figures Tunnelblack/Railsteel on Nightballast; the dark upper disc unlit by law (red is NOT lit here — p1c10 owns red). No Halley gold, no phonograph: the music stays prose.",
+      "opener_idea": "STANDARD band (9rem). Plate: table-row + dwarf post + standing figure. Kicker: PART I · NON-CONTRADICTION. Head: THE IMMOVABLE MOVERS. Data line: CHAPTER IV · 11463 WORDS. Green rule, left-weighted. Caption: SIG I-04 · 11463 WORDS. Standard by authored scale (332 paras) — matches the identity sketch band.",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 12,
+        "middle_skim": true,
+        "middle_note": "Verified motive-power axiom + tool + McNamara (:0-11), Halley/screech (:26-51), decree + Board + Alliance vote (:88-130); sampled :140-320. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c4"
+    },
+    "p1c5": {
+      "id": "p1c5",
+      "part": "part-i",
+      "order": 5,
+      "title": "THE CLIMAX OF THE D’ANCONIAS",
+      "word_count": 18342,
+      "para_count": 461,
+      "rationale": "Opens on the San Sebastián exposure: the worthless mines on the front page (:5), Eddie's 'Francisco is not a fool' (:7), Dagny's summons (:9). Middle: the d'Anconia legend-work — Sebastián's shack with the silver coat-of-arms over the door (:18), the marble palace with pits of red ore beyond (:19), the Cleveland foundry photograph with the d'Anconia Copper sign 'like a new flag on the mast of a derelict' (:207; the Buenos Aires office photo hangs at :209) — against the present-tense Wayne-Falkland confrontations (:238, :296-300) and Francisco's itemized fifteen-million confession (:425-427). Closes on the hotel-room farewell (:449-460): 'Some day, you'll have enough of it' (:458). The plate takes the foundry photograph — the chapter's one industrial image of the d'Anconias at work — inside the signal grammar as a night plate: foundry bulk + sign-board + one lamp. HONEST FLAG on the identity sketch ('d'Anconia copper mines'): the chapter's mines are EXHAUSTED FRAUDS (:5), never a working mountain; a heroic mine plate would misstate the chapter. This draft renders the foundry sign (verified working image) and withholds the mines.",
+      "proposed_motif": "The Cleveland foundry at night as a low grimy bulk, its entrance gate spanned by the sign-board drawn as a flat Headlight slab carrying the words D'ANCONIA COPPER as drawn SVG board-type (paths, not live text), 'like a new flag on the mast of a derelict' (:207). ONE green function: a small green lamp disc hung at the gate beneath the sign — the Line's order from a house still (apparently) producing. Foundry bulk Tunnelblack with Railsteel window-slits on Nightballast; the sign-slab the plate's brightest plane; NO copper-orange anywhere (the copper of this chapter is a swindle, and gets no color). At the plate's far edge, cropped: a dark mine-headframe silhouette with its lamp OUT — San Sebastián, dead.",
+      "palette_role": "Clear Green carries ONLY the gate lamp. The sign-slab is flat Headlight (#F2E8D0) — paper/paint white, never glow. Foundry and headframe Tunnelblack/Railsteel on Nightballast. The single warm-copper exception the grammar allows is REFUSED here: this chapter's copper is fraud, and fraud gets no hue. (A2 discipline at its strictest.)",
+      "opener_idea": "GRAND band (12rem) + extended caption. Plate: foundry bulk + sign-slab + gate lamp + dead headframe. Kicker: PART I · NON-CONTRADICTION. Head: THE CLIMAX OF THE D'ANCONIAS (longest Part I title — set disciplined, no shrink games). Data line: CHAPTER V · 18342 WORDS. Green rule, left-weighted. Caption: SIG I-05 · 18342 WORDS. Grand by authored scale (461 paras) — matches the identity sketch band.",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 12,
+        "middle_skim": true,
+        "middle_note": "Verified mines exposure (:5-9), legend passages (:15-19, :31, :50-64), foundry photo (:206-209), Wayne-Falkland (:238, :296-300), confession (:398-427); sampled :120-360. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c5"
+    },
+    "p1c6": {
+      "id": "p1c6",
+      "part": "part-i",
+      "order": 6,
+      "title": "THE NON-COMMERCIAL",
+      "word_count": 16270,
+      "para_count": 502,
+      "rationale": "Opens on Rearden's mirror (:0-8): the anniversary party as duty, the Equalization editorial (:11-12) predicting the bill 'forbidding any pe[rson]...' (:12), Mouch's reassurance (:13). Middle: the party as a bestiary — Dr. Pritchett's 'nothing is anything' (:185) and pro-bill catechism (:40), Scudder's 'Property rights are a superstition' (:100), Philip's Friends of Global Progress (:94), Eubank's subsidy plea (:180) — broken by Francisco's arrival and the Rearden confrontation: 'I came to this party solely in order to meet you' (:259), 'What are you trying to do?' (:297) / 'I am calling your attention to the nature of those for whom you are working' (:298), 'Why are you willing to carry them?' (:300), 'the aim of all their efforts is to keep you from knowing it' (:305). Closes on the marriage's cold ledger (:492-501): 'What did she want from him?... there was no answer' (:501). The chapter's other hinge is the bracelet-for-diamonds exchange: Dagny hears Lillian exhibiting the metal bracelet (:443-444), tears off her own diamond band — 'If you are not the coward that I think you are, you will exchange it' (:445-446) — and takes the metal (:452-454) under the mangled Halley (:439-441, :450). The plate takes the party room as a signal gantry — the chandelier inverted into hardware — with the exchange honored in the motif's clasp detail; the pour-sketch is refused (verified: 'pour' occurs 3× only as 'poured' slime :162, 'pouring a ton of steel' metaphor :241, and a memory :484 — NO rail-pour scene; the set-piece first pour is p1c2 :7-9). HONEST FLAG on the identity sketch ('wedding of steel — first Rearden Metal rail pour'): NO pour occurs in this chapter (the pours are p1c2 :7-9 and the p1c7 rail-pour :692); the chapter is a drawing-room, and forcing a furnace plate onto it would lie. This draft renders the verified room.",
+      "proposed_motif": "The Rearden drawing room at night as a signal-gantry plate: the party crowd as a row of small dark seated/standing slabs along the plate's bottom third (NO faces, NO caricature — the text's contempt is philosophical, and the plate refuses cartooning), and above them the chandelier drawn as an INVERTED SIGNAL GANTRY spanning the full plate width: a black crossbar carrying a row of small lamps. The row's discipline is the image: all lamps DARK except ONE green disc burning at the gantry's far end — Francisco's position in the room (:259-305), the single live mind under the fixture. ONE green function: that end disc. Flat discs + hard halo ring on the lit one; dark discs ringed Railsteel. At the plate's bottom edge, small and exact: two open bracelet-loops side by side — one flat Headlight diamond-band, one green-blue metal chain-loop (:452-454) — clasps open, mid-exchange. The loops are drawn, not labeled; the gantry stays the plate's one huge idea.",
+      "palette_role": "Clear Green carries ONLY the gantry's end lamp — the loneliest lamp in the part, and the point of the chapter. Crowd slabs Tunnelblack/Railsteel on Nightballast; gantry crossbar near-black; dark lamp discs unlit by law. No champagne gold, no crystal sparkle, no lemon-yellow gown (:22): the party's luxury gets no color — only the one mind does.",
+      "opener_idea": "GRAND band (12rem) + extended caption. Plate: crowd slabs + gantry crossbar + single end-lamp. Kicker: PART I · NON-CONTRADICTION. Head: THE NON-COMMERCIAL. Data line: CHAPTER VI · 16270 WORDS. Green rule, left-weighted. Caption: SIG I-06 · 16270 WORDS. Grand by authored scale (502 paras) — matches the identity sketch band (scene changed, weight kept).",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 10,
+        "middle_skim": true,
+        "middle_note": "Verified editorial/bill (:11-14), Pritchett/Scudder/Philip/Eubank passages (:26-180), Francisco confrontation (:259-305), Danneskjold gossip (:365-385), close (:492-501); sampled :150-470. Plus bracelet exchange (:439-454) and 'pour' concordance (3 metaphor/memory hits only). Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark. The Francisco dialogue keeps body measure — its force is typographic calm, not styling.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c6"
+    },
+    "p1c7": {
+      "id": "p1c7",
+      "part": "part-i",
+      "order": 7,
+      "title": "THE EXPLOITERS AND THE EXPLOITED",
+      "word_count": 25618,
+      "para_count": 823,
+      "rationale": "Opens on the Wyatt grade: 'The rails rose through the rocks to the oil derricks and the oil derricks rose to the sky' (:0), the green-blue rails across the bridge (:1-2), the fifteen-hundred-foot gorge (:5), the sparkling switches (:6). Middle: the notebook truss — 'a single twelve-hundred-foot-truss span' of a new type (:99), 'Rearden Truss' (:821) — drawn up on 'a pile of frozen lumber' (:99); the poured-steel glow crossing Rearden's desk (:360, :639); the last rail for the John Galt Line being poured (:692); the looters' laws closing in (Rearden Ore sign :810). Closes on the truss-with-arch invention: the midnight drawing session (:819-820) and the phone call — 'throw in the ashcan all the drawings I sent you... combining a truss with an arch... carry four trains at once, stand three hundred years' (:821-822). Longest Part I chapter (823 paras, 25,618 words). The plate is the bridge — the book's longest plate for its longest span.",
+      "proposed_motif": "The bridge as a MONUMENTAL night span: a twelve-hundred-foot truss-and-arch drawn in flat Railsteel line-work (linework >= 2px at final size) arcing across the FULL plate width over a Tunnelblack gorge cut, green-blue rails (:1) picked out as two thin Headlight lines riding the span. ONE green function: a single green lamp disc hung at the span's crown — the Line's own light, earned by the drawing (:819-822). Below the span, in the gorge dark: the dry river bed's boulders as flat slabs (:5). At the plate's right abutment, tiny: two seated figures on lumber (:99) — the notebook scene, human scale against the span. No furnace, no pour: the bridge is the chapter, and it fills the plate edge to edge.",
+      "palette_role": "Clear Green carries ONLY the crown lamp — the highest lamp in the part, hung where the arch meets the sky. Truss/arch in Railsteel line-work; gorge near-total Tunnelblack; rails thin Headlight. The most ink in Part I and the least color: structure is the spectacle. Extended caption + two-line inscription per the monumental band (inscription text: 'CARRY FOUR TRAINS AT ONCE · STAND THREE HUNDRED YEARS' — drawn from :822, set as board-type).",
+      "opener_idea": "MONUMENTAL band (13rem) + extended caption + two-line inscription. Plate: full-width truss-arch span + crown lamp + gorge + notebook figures. Kicker: PART I · NON-CONTRADICTION. Head: THE EXPLOITERS AND THE EXPLOITED. Data line: CHAPTER VII · 25618 WORDS. Green rule, left-weighted. Caption: SIG I-07 · 25618 WORDS. Monumental by authored scale (823 paras, longest in Part I) — matches the identity sketch's monumental grant and its 'longest plate' note.",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 13,
+        "middle_skim": true,
+        "middle_note": "Verified gorge/rails/switches (:0-13), notebook truss (:95-101), furnace glow (:360, :639), last-rail pour (:692), sign + invention + call (:810-822); sampled :150-750. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark. The closing phone call (:821-822) keeps body measure.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c7"
+    },
+    "p1c8": {
+      "id": "p1c8",
+      "part": "part-i",
+      "order": 8,
+      "title": "THE JOHN GALT LINE",
+      "word_count": 18521,
+      "para_count": 358,
+      "rationale": "Opens double: Eddie's cafeteria confession of vice-presidential exile (:0-2), then Dagny's midnight in the John Galt Line's ruined ground-floor headquarters (:3-13) — 'This is not the world I expected' (:12) — under the unattainable Taggart Building (:11). Middle: the Sanders disappearance (:8), the stock-watchers buying safe (:120), the opening plan announced — 'four P.M. on July twenty-second... eighty cars... eight-thousand-horsepower, four-unit Diesel' (:209) — and the ceremony: the white silk ribbon across the track (:253), 'It's not going to be a phony' (:254), Eddie between the rails facing 'a great silver shield bearing the emblem of Nat Taggart' (:256), the cut at the engine's first motion (:259). Closes on the run's aftermath in the trackside rooms (:348-357). The plate takes the ribbon instant — the most cinematic verified second in Part I — inside the signal grammar: ribbon + shield + green aspects. HONEST FLAG on the identity sketch ('headlight wedge through rain'): the midnight rain (:6-9) belongs to the HEADQUARTERS scene weeks before the opening; the opening itself runs under fair skies with 'green lights between the tracks' (:253) and summer-green leaves (:253). This draft renders the verified ceremony weather, not the rain.",
+      "proposed_motif": "The ribbon instant at the Cheyenne platform, head-on: the engine's silver front drawn as a great flat shield-slab (:256) filling the plate's center, the Nat Taggart emblem rendered as a simple drawn roundel (original mark, not a portrait). Across the shield's base: the white silk ribbon as a flat Headlight band, and at its center the scissors' cut rendered as a clean GAP in the band (:259) — the cut is negative space, the plate's sharpest idea. Behind/around the shield: the verified green aspects — signal-bridge lamps + low trackside greens (:253) — as flat discs + hard halo rings. ONE green function... HONESTLY TWO: the aspects are a verified ROW here, and the grammar's one-lamp law bends for the chapter the Line is named for (recorded as the part's single authored exception; supervisor may reduce to one lamp). Small at the shield's foot: Eddie's tossed hat (:256), a dark disc on the ballast — the human signature.",
+      "palette_role": "Clear Green carries the signal aspects (the part's single authored multi-lamp exception, :253-verified). The shield-slab is flat Railsteel with a Headlight emblem roundel; the ribbon flat Headlight with the cut as Tunnelblack gap; ballast and sky Nightballast/Tunnelblack. No rain grays, no bunting colors (:284 stays prose): the ceremony is steel, white, and green.",
+      "opener_idea": "STANDARD band (9rem). Plate: shield + cut ribbon + green aspects + hat. Kicker: PART I · NON-CONTRADICTION. Head: THE JOHN GALT LINE. Data line: CHAPTER VIII · 18521 WORDS. Green rule, left-weighted. Caption: SIG I-08 · 18521 WORDS. (Proposes standard-down from the identity sketch's grand: the cut-as-negative-space idea reads sharpest at standard weight, and the chapter's true monument — the bridge — already owns monumental at p1c7. Supervisor decides.)",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 10,
+        "middle_skim": true,
+        "middle_note": "Verified headquarters night (:3-13), opening plan (:209), ribbon ceremony (:253-260), run glimpses (:284-300); sampled :60-348. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c8"
+    },
+    "p1c9": {
+      "id": "p1c9",
+      "part": "part-i",
+      "order": 9,
+      "title": "THE SACRED AND THE PROFANE",
+      "word_count": 18918,
+      "para_count": 534,
+      "rationale": "Opens on the Venetian-blind bands: 'glowing bands on the skin of her arm, spaced like bracelets' (:0), the mechanic 'in the stripes of sunlight and shadow, like a convict behind bars' (:5) — bars that 'were not bars any longer' but 'cracks of a wall which the John Galt Line had broken' (:5). Middle: the bracelet's return — 'What did you do with that bracelet?' (:357), the green-blue chain clasped on Dagny's wrist (:362) — and the Wisconsin drive through 'yellow leaves that glittered like a sea of gold coins' (:396) to the Twentieth Century factory with its tipped water tank (:407). The factory's dead world is itemized: the gas stove stuffed with rags (:421), the town's decay (:443-462). Closes on the motor find: the broken remnant (:484-486), the manuscript sheaf (:488), 'the coil' recognition (:502), 'the greatest revolution in power motors since the internal-combustion engine' (:504), and the valley's tallow candles below (:533) — 'It could have set the whole country in motion and on fire' (:530). The plate takes the motor remnant: the chapter's sacred object in the profane junk. HONEST FLAG on the identity sketch ('bracelets of sunlight + Rearden mills, telegraph wires'): NO Rearden mills scene occurs in this chapter (mills are p1c2/p1c7), and telegraph wires are p1c1/p2c10 vocabulary; the sketch conflates chapters. This draft renders the verified motor + manuscript + candles.",
+      "proposed_motif": "The motor room at dusk as a night plate: the broken remnant at center — tarnished tubes and odd-shaped connections drawn as flat Railsteel fragments on a junk-pile slab (:484-486), deliberately UNREADABLE as any known motor (the text insists: 'None fitted the model' :486), with the manuscript sheaf beside it as a small flat Headlight rectangle (:488). ONE green function: a single small green lamp disc — the vault-lamp premonition, the Line's future claim on this object (p1c10 :96-97 places it in the Terminal vault; the lamp is proleptic, and recorded honestly as such). Through a broken window-frame at the plate's edge: the valley's few pale tallow-candle smears (:533) as tiny flat Headlight pinpricks on Tunnelblack. The sacred (motor) and the profane (junk, candles) in one frame: the title's own composition.",
+      "palette_role": "Clear Green carries ONLY the small vault-lamp disc — the quietest lamp in the part, almost a secret. Motor fragments Railsteel on a Tunnelblack junk slab; manuscript flat Headlight; candle-smears Headlight pinpricks on valley Tunnelblack; ground Nightballast. The 'sea of gold coins' (:396) gets NO gold: leaves stay prose, and A2 holds.",
+      "opener_idea": "GRAND band (12rem) + extended caption. Plate: motor remnant + manuscript + vault-lamp + candle-smears. Kicker: PART I · NON-CONTRADICTION. Head: THE SACRED AND THE PROFANE. Data line: CHAPTER IX · 18918 WORDS. Green rule, left-weighted. Caption: SIG I-09 · 18918 WORDS. Grand by authored scale (534 paras) — matches the identity sketch band (scene corrected, weight kept).",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 10,
+        "middle_skim": true,
+        "middle_note": "Verified blind-bands (:0-13), bracelet return (:357-362), drive + factory approach (:392-431), town decay (:443-475), motor find + manuscript + candles (:484-533); sampled :100-470. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted green; green diamond end-mark.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c9"
+    },
+    "p1c10": {
+      "id": "p1c10",
+      "part": "part-i",
+      "order": 10,
+      "title": "WYATT’S TORCH",
+      "word_count": 21772,
+      "para_count": 549,
+      "rationale": "Opens on the ownership farce: the Hall of Records clerk (:0), the twice-sold Twentieth Century factory 'sold out... twice, at the same time and to two different sets of owners' (:6-9), Yonts who 'didn't want to make money, only to get it' (:11). Middle: the motor secured into the Terminal vault (:96-98; the two-hundred-car vision at :123, :122 being the glass-case remnant passage); the Lawson/Hunsacker interviews (:245-353); the Starnes-heir horror named (:404); the Akston lead (:406-428) and the diner refusal (:479-514: 'It is a hopeless quest' :501); the dollar-stamped cigarette remnant (:517-519). Closes on the run to stop Wyatt: the dead bell (:541), Train Number 57's Rearden-Metal clicking (:542), the bondholders' betrayal ledger (:543-544), and the arrival — 'the hill of Wyatt Oil was a solid sheet of flame' (:547) — with the nailed board: 'I am leaving it as I found it. Take over. It's yours' (:548). The plate is the STOP: the identity's documented signal-stop-intruder, the Line's first death, and Part I's closing chord.",
+      "proposed_motif": "The STOP plate. A break between two black mountain slabs; between them the hill of Wyatt Oil as a SINGLE flat Stop-Red slab of flame (:547) — solid, unmodulated, edge to edge of the break (the text says 'solid sheet', and the plate obeys: NO flicker shapes, NO orange, NO yellow, NO gradient — one red plane). Above the flame, where a signal bridge would stand: a single red lamp disc, lit, with the hard 2px halo ring — the intruder lamp, the ONLY red lamp in Part I. Below, small against the flame: the station platform crowd as dark verticals (:546) and the nailed board rendered as a small flat Headlight rectangle on a post (:548) — the board's WORDS stay prose (the plate refuses to typeset dialogue). Green appears NOWHERE: the intruder rule means the part's aspect dies with the hill. The flame's reflection sways on the station roofs (:547) as a flat red band — the only reflected light in the part.",
+      "palette_role": "Stop Red (#E0483E) carries the flame slab + the intruder lamp + the roof-reflection band — the ONLY red in Part I, spent entirely here. Mountains and crowd Tunnelblack; board flat Headlight; sky Nightballast going dark. No green, no amber, no orange, no yellow: the part ends in the one color it has withheld for nine chapters, and the withholding is what makes it detonate.",
+      "opener_idea": "GRAND band (12rem) + extended caption, PART-CLOSING weight. Plate: mountain break + red flame slab + intruder lamp + crowd + board. Kicker: PART I · NON-CONTRADICTION. Head: WYATT'S TORCH. Data line: CHAPTER X · 21772 WORDS. Red rule (the part's single red rule — the intruder extends to the rule, recorded honestly). Caption: SIG I-10 · 21772 WORDS · PART CLOSE. First body line visible without scroll. Grand by authored scale (549 paras) — matches the identity sketch band and its INTRUDER marking.",
+      "read_coverage": {
+        "open_paras": 14,
+        "close_paras": 10,
+        "middle_skim": true,
+        "middle_note": "Verified ownership farce (:0-13), vault (:96-98, :123), interviews (:245-353, :400-428), diner refusal (:463-514), dollar cigarette (:517-519), run + flame + board (:520-548); sampled :150-480. Full middle not read cover-to-cover."
+      },
+      "reading_treatment": "Calm Crimson Pro body; drop cap Barlow Condensed 600 muted red (the part's single red drop cap — intruder logic); red diamond end-mark; part-close gets no extra chrome — the plate is the close.",
+      "src_proposal": "art/signal-plates.svg",
+      "symbol_proposal": "plate-p1c10"
+    }
+  },
+  "scale_legend": {
+    "law": "First body line visible without scroll at 1440x1000 for standard openers; grand/monumental/compact scale the BAND, never the text zone.",
+    "monumental_13rem_plus_inscription": [
+      "p1c7 (823 paras, longest in Part I)"
+    ],
+    "grand_12rem_plus_caption": [
+      "p1c5 (461)",
+      "p1c6 (502)",
+      "p1c9 (534)",
+      "p1c10 (549, part close)"
+    ],
+    "standard_9rem": [
+      "p1c1 (405)",
+      "p1c4 (332)",
+      "p1c8 (358)"
+    ],
+    "compact_7rem": [
+      "p1c2 (214, shortest in Part I)",
+      "p1c3 (249)"
+    ]
+  },
+  "identity_flags": [
+    "p1c1: busted-signal stall (:148-160) confirmed as the book's first red signal; draft renders it as a DEAD dark disc (lamp OUT) — the red is death, unlit until p1c10.",
+    "p1c3: identity sketch says 'Nat Taggart statue + Comet' — confirmed ZERO 'comet' hits in this chapter (substring false positive); draft renders concourse vault + statue (verified :213-226).",
+    "p1c4: identity sketch says 'stalled boardroom as dwarf signal, red-over-green' — confirmed NO dwarf/red-over-green hardware in text ('signal' only :127, :181); the dwarf reading is this draft's declared STRUCTURAL metaphor, rendered with unlit stopped-aspect disc; rail-order meeting (:214-320) + crane-magnet scene (:304-312) verified and kept as prose.",
+    "p1c5: identity sketch says 'd'Anconia copper mines' — the chapter's mines are exhausted frauds (:5); draft renders the Cleveland foundry sign (verified :207-209) + dead headframe.",
+    "p1c6: identity sketch says 'wedding of steel — first Rearden Metal rail pour' — confirmed: 'wedding' is the ANNIVERSARY party (:2); 'pour' 3× metaphor/memory only (:162, :241, :484); set-piece first pour is p1c2 :7-9. Draft renders the verified party room as gantry + the bracelet-exchange clasp detail (:443-454).",
+    "p1c8: identity sketch says 'headlight wedge through rain' — the rain belongs to the headquarters night (:6-9), not the fair-sky opening (:253); draft renders the verified ribbon ceremony.",
+    "p1c9: identity sketch says 'bracelets of sunlight + Rearden mills, telegraph wires' — NO mills scene in this chapter, wires are other chapters' vocabulary; draft renders the verified motor + manuscript + candles.",
+    "p1c1/p1c8: draft proposes standard-down from the sketch's grand (justified per entry); supervisor decides. All other weights match the sketch."
+  ],
+  "coverage_gaps": "Openings read 14 paras each (requirement: 10+); closings read 6-15 paras each (requirement: 5+); middles spot-read at verified cites + sampled every ~30-40 paras, NOT read cover-to-cover for any chapter. Supervisor-noted anchors verified: p1c1 oak (:18-20) + calendar (:12) + Taggart map (:34); p1c2 bracelet-chain (:17, :29, :212-213); p1c7 truss (:99, :819-822) + rail pours (:360, :639, :692 — NOTE: the set-piece 'first pour' is p1c2 :7-9, not p1c7); p1c8 ribbon + first run (:253-260, :284-300); p1c10 motor remnant + vault (:96-98, p1c9 :484-504) + Wyatt inferno + board (:547-548). Lead-flagged frictions independently verified (not taken on word): p1c6 anniversary/pour concordance + bracelet exchange (:439-454); p1c4 hardware scan + meeting/crane scenes (:214-320); p1c3 comet scan (zero hits) + calendar check; p1c1 busted-signal window (:148-160). No invented events: every scene cited above was observed in the chapter JSON. 'Taggart Tunnel' and 'dwarf signal' as hardware terms are this draft's signal-grammar readings, not text terms — the file avoids asserting them as text.",
+  "references_studied": [
+    "Identity draft reference set (directions.md + identity.json, inherited per lead request): Cassandre Etoile du Nord railway-poster idiom (V&A catalogue description — converging rails head-on, one huge idea per plate); Salter 1957 Atlas jacket (tunnel-mouth + converging rails + signal-disc primitives); Ferriss massing-before-detail; 1930s Fortune industrial-lush covers; Rodchenko/Lissitzky 2-3 flat hues + type-as-structure; Fountainhead APPROVED submission shape (F1-F10, incl. F7/F8).",
+    "V&A Nord Express poster record (https://collections.vam.ac.uk/item/O89673 — read 2026-10-15, catalogue text): Cassandre 1927, 'stylised image of a grey train... glamour of travel in simple lines', Cubist visual language in Art Deco imagery. Lesson applied: the p1c8 shield-plate takes Cassandre's head-on machine-portrait composition (machine as sole hero, centered slab, type as frame) — adapted to night-lithograph flatness, never copied.",
+    "Detroit Institute of Arts, Detroit Industry Murals record (https://dia.org/collection/detroit-industry-murals-58537 — read 2026-10-15, catalogue text): Rivera 1932-33 frescoes, 'half-face/half-skull... dual qualities of human beings, nature, and technology', Power House panels introducing the industrial theme. Lesson applied: the p1c3 section-plate's split-world composition (cellar-above vs. temple-below) and the p1c2 pour-plate's furnace-as-actor (machinery carrying narrative weight, not backdrop). No pixels claimed — catalogue-record grounding, recorded honestly.",
+    "Railroad ephemera + drafting culture (search-grounded, direct page fetch failed — recorded honestly): Ephemera Society 'Publishing the Railroad' survey + GM&O 1948 timetable page + Reinhardt 'Lettering for Draftsmen, Engineers and Students' (via web search 2026-10-15; artyfactory/ephemerasociety/american-rails fetches failed with DNS/reset errors). Lesson applied: board-type captions (SIG I-NN codes), timetable-numeral TOC logic, and drawn-lettering discipline for the D'ANCONIA COPPER sign-slab (p1c5) — the railroad's printed vernacular as the caption system. No source text quoted beyond search-result descriptions.",
+    "Negative references honored: no banknote-guilloche borders, no departure-board grids, no gold glow, no cream/terracotta, no SaaS cards, no eyebrow chrome (frontend-design default cluster); Oswald refused (Fountainhead seniority F6); IBM Plex Mono refused (registry CLOSED) — Space Mono proposed instead, pending supervisor ruling."
+  ],
+  "skills_used": [
+    "skill://frontend-design (read: distinct-identity discipline, anti-default revision, type-as-structure) — resolved via skill URI, no fallback.",
+    "skill://frontend-workflow (read: proportional process, assets-as-authored-SVG, no stock hotlinks) — resolved via skill URI, no fallback.",
+    "skill://reference-study (read: 2-3 real references, DNA extraction, study-don't-copy) — resolved via skill URI, no fallback. Applied via catalogue-record + search-grounded study (direct page fetches partially failed; recorded honestly above)."
+  ],
+  "conformance": "PENDING supervisor ART-DIRECTION.md + identity.json broadcast. This draft conforms to the DRAFT identity.json (Direction A · THE SIGNAL) per lead request where verified text supports it, and FLAGS honestly where text resists the sketch (see identity_flags). Phase 2 conformance gates final SVG/CSS work; this file proposes scenes only.",
+  "directions_considered": {
+    "chosen": "Signal-plate grammar (Direction A · THE SIGNAL draft): flat night-lithograph plates, one lamp-function per plate, green aspect for Part I with the p1c10 red intruder. Chosen because (a) the lead explicitly requested scenes inside this grammar, (b) verified text supports it in 9/10 chapters (signals/comet/ribbon/truss/furnace/gantry all observed), and (c) it expresses NON-CONTRADICTION structurally: the Line runs or it stops, one aspect per plate, no middle lamp.",
+    "rejected": [
+      "Timetable/document grammar (type-only plates: schedules, order boards, ledgers for all 10): rejected — type-only plates cannot carry the industrial sublime the text demands at p1c7 (twelve-hundred-foot span) and p1c10 (solid sheet of flame); closest to the identity-level rejected Direction C; would reduce the railroad sublime to paperwork in the part where the Line still runs.",
+      "Portrait/figure grammar (character-centered plates: Dagny, Rearden, Francisco, Wyatt): rejected — the text's judgments are philosophical, and faces risk caricature or soap-opera readings (esp. p1c6's party bestiary); the book's heroes are defined by work, so the plates show the work's objects (bridge, motor, ribbon, bracelet), never faces. Faces banned by this draft's discipline."
+    ]
+  }
+}

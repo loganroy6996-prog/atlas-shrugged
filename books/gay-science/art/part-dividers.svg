@@ -1,0 +1,422 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 1060" role="img" aria-label="Eight sun-altitude motifs for the eight parts of The Gay Science">
+<!-- SPRITE SHEET (supervisor-repaired 2026-10-15): 8 self-contained <symbol> panels (own viewBox + local defs copy; zero cross-symbol refs; labels stripped per GR5). Manifest: {src art/part-dividers.svg, symbol gs-part-i … gs-part-viii}. -->
+
+  <rect x="0" y="0" width="1360" height="1060" fill="#04161d"/>
+
+  <!-- ══ PANEL I · Preface — sun below horizon, glow only ══ -->
+  <symbol id="gs-part-i" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <path d="M-62,52 A62,62 0 0 1 62,52" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.4"/>
+    <path d="M-78,52 A78,78 0 0 1 78,52" fill="none" stroke="#f5b301" stroke-width="1.5" opacity="0.25"/>
+    <circle cx="0" cy="70" r="46" fill="#f8c51c" opacity="0.92"/>
+    <rect x="-130" y="52" width="260" height="90" fill="#04161d" opacity="0.88"/>
+    <line x1="-115" y1="52" x2="115" y2="52" stroke="#f3ead8" stroke-width="2.5" opacity="0.45"/>
+    <use href="#pd-wave" transform="translate(0,96)" stroke="#f3ead8" stroke-width="2" opacity="0.3"/>
+    <use href="#pd-spark" transform="translate(-92,-72) scale(0.8)" opacity="0.8"/>
+    <use href="#pd-spark" transform="translate(88,-96) scale(0.55)" opacity="0.6"/>
+
+
+  </g>
+  </symbol>
+
+  <!-- ══ PANEL II · Prelude — sunrise sparkle, two dancers ══ -->
+  <symbol id="gs-part-ii" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <path d="M-58,52 A58,58 0 0 1 58,52" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.4"/>
+    <path d="M-74,52 A74,74 0 0 1 74,52" fill="none" stroke="#f5b301" stroke-width="1.5" opacity="0.25"/>
+    <use href="#pd-rays" transform="translate(0,60) scale(0.85)" opacity="0.55"/>
+    <circle cx="0" cy="60" r="46" fill="#f8c51c"/>
+    <rect x="-130" y="52" width="260" height="90" fill="#04161d" opacity="0.88"/>
+    <line x1="-115" y1="52" x2="115" y2="52" stroke="#f3ead8" stroke-width="2.5" opacity="0.45"/>
+    <use href="#pd-wave" transform="translate(0,96)" stroke="#7dd3fc" stroke-width="2" opacity="0.4"/>
+    <g transform="translate(-58,34) rotate(-18) scale(0.8)">
+      <use href="#pd-leaper"/>
+      <circle cx="-9" cy="-42" r="7" fill="#e4572e"/>
+    </g>
+    <g transform="translate(58,34) rotate(18) scale(0.8)">
+      <use href="#pd-leaper"/>
+      <circle cx="-9" cy="-42" r="7" fill="#e4572e"/>
+    </g>
+    <circle cx="0" cy="-78" r="5" fill="#e4572e" opacity="0.8"/>
+
+
+  </g>
+  </symbol>
+
+  <!-- ══ PANEL III · Book One — climbing morning sun ══ -->
+  <symbol id="gs-part-iii" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <circle cx="0" cy="30" r="105" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.35"/>
+    <use href="#pd-rays" transform="translate(0,30)" opacity="0.8"/>
+    <circle cx="0" cy="30" r="46" fill="#f8c51c"/>
+    <line x1="-115" y1="108" x2="115" y2="108" stroke="#f3ead8" stroke-width="2.5" opacity="0.45"/>
+    <use href="#pd-wave" transform="translate(0,132)" stroke="#f3ead8" stroke-width="2" opacity="0.3"/>
+    <use href="#pd-gull" transform="translate(-96,-40)"/>
+    <use href="#pd-gull" transform="translate(64,-66) scale(0.7)"/>
+
+
+  </g>
+  </symbol>
+
+  <!-- ══ PANEL IV · Book Two — high morning, masks of art ══ -->
+  <symbol id="gs-part-iv" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <circle cx="0" cy="10" r="105" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.35"/>
+    <use href="#pd-rays" transform="translate(0,10)" opacity="0.85"/>
+    <circle cx="0" cy="10" r="46" fill="#f8c51c"/>
+    <!-- theatre masks under the high sun -->
+    <g transform="translate(-40,96)">
+      <path d="M-22,-8 C-22,14 -12,26 0,26 C12,26 22,14 22,-8 C10,-14 -10,-14 -22,-8 Z" fill="none" stroke="#f3ead8" stroke-width="3"/>
+      <path d="M-11,2 Q0,13 11,2" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="-8" cy="-4" r="2.4" fill="#f3ead8"/>
+      <circle cx="8" cy="-4" r="2.4" fill="#f3ead8"/>
+    </g>
+    <g transform="translate(40,96)">
+      <path d="M-22,-8 C-22,14 -12,26 0,26 C12,26 22,14 22,-8 C10,-14 -10,-14 -22,-8 Z" fill="none" stroke="#f3ead8" stroke-width="3"/>
+      <path d="M-11,12 Q0,1 11,12" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="-8" cy="-2" r="2.4" fill="#f3ead8"/>
+      <circle cx="8" cy="-2" r="2.4" fill="#f3ead8"/>
+    </g>
+
+
+  </g>
+  </symbol>
+
+  <!-- ══ PANEL V · Book Three — ZENITH: lantern lit at noon ══ -->
+  <symbol id="gs-part-v" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <circle cx="0" cy="-30" r="120" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.35"/>
+    <use href="#pd-rays" transform="translate(0,-30) scale(1.1)" opacity="1"/>
+    <circle cx="0" cy="-30" r="52" fill="#f8c51c"/>
+    <circle cx="0" cy="-30" r="52" fill="none" stroke="#ffedbe" stroke-width="2.5" opacity="0.7"/>
+    <!-- the madman's lantern, lit in broad daylight -->
+    <g transform="translate(0,76)">
+      <circle cx="0" cy="0" r="30" fill="none" stroke="#ffb84d" stroke-width="2" opacity="0.6"/>
+      <line x1="0" y1="-34" x2="0" y2="-20" stroke="#f3ead8" stroke-width="3"/>
+      <path d="M-16,-20 L16,-20 L12,24 L-12,24 Z" fill="#ffcf6e"/>
+      <path d="M-16,-20 L16,-20 L12,24 L-12,24 Z" fill="none" stroke="#f3ead8" stroke-width="3"/>
+      <line x1="-14" y1="-12" x2="14" y2="-12" stroke="#b4761a" stroke-width="2"/>
+      <line x1="-18" y1="24" x2="18" y2="24" stroke="#f3ead8" stroke-width="3"/>
+      <circle cx="0" cy="4" r="6" fill="#fff3d0"/>
+    </g>
+
+
+  </g>
+  </symbol>
+
+  <!-- ══ PANEL VI · Book Four — golden applause of rays, wave ══ -->
+  <symbol id="gs-part-vi" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <circle cx="0" cy="10" r="115" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.35"/>
+    <use href="#pd-rays" transform="translate(0,10) scale(1.05)" opacity="0.8"/>
+    <circle cx="0" cy="10" r="48" fill="#f8c51c"/>
+    <use href="#pd-wave" transform="translate(0,96)" stroke="#f5b301" stroke-width="3" opacity="0.55"/>
+    <use href="#pd-wave" transform="translate(0,122)" stroke="#f3ead8" stroke-width="2" opacity="0.3"/>
+    <!-- ship of St Januarius -->
+    <g transform="translate(66,72) scale(0.62)" opacity="0.95">
+      <line x1="0" y1="0" x2="0" y2="-52" stroke="#02090d" stroke-width="7"/>
+      <path d="M0,-48 L-40,0 L0,0 Z" fill="#0a1016" stroke="#f3ead8" stroke-width="2"/>
+      <path d="M5,-42 L36,0 L5,0 Z" fill="#0a1016" stroke="#f3ead8" stroke-width="2"/>
+      <path d="M-48,2 L48,2 L34,22 L-34,22 Z" fill="#02090d" stroke="#f3ead8" stroke-width="2"/>
+      <line x1="-48" y1="2" x2="48" y2="2" stroke="#f3ead8" stroke-width="2" opacity="0.5"/>
+    </g>
+
+
+  </g>
+  </symbol>
+
+  <!-- ══ PANEL VII · Book Five — long fearless afternoon ══ -->
+  <symbol id="gs-part-vii" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <circle cx="-30" cy="30" r="110" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.35"/>
+    <use href="#pd-rays" transform="translate(-30,30) scale(0.95)" opacity="0.7"/>
+    <circle cx="-30" cy="30" r="48" fill="#f8c51c"/>
+    <!-- long shadows raking right -->
+    <g stroke="#e4572e" stroke-linecap="round" opacity="0.7">
+      <line x1="30" y1="60" x2="115" y2="60" stroke-width="4"/>
+      <line x1="40" y1="84" x2="115" y2="84" stroke-width="4"/>
+      <line x1="48" y1="108" x2="115" y2="108" stroke-width="4"/>
+    </g>
+    <use href="#pd-wave" transform="translate(0,140)" stroke="#f3ead8" stroke-width="2" opacity="0.3"/>
+
+
+  </g>
+  </symbol>
+
+  <!-- ══ PANEL VIII · Appendix — sunset disc, black sea, outlaw ship ══ -->
+  <symbol id="gs-part-viii" viewBox="-150 -195 300 410">
+  <defs>
+    <!-- one ray fan, reused by all eight panels -->
+    <g id="pd-rays" stroke-linecap="round">
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(22.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(45)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(67.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(90)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(112.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(135)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(157.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(180)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(202.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(225)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(247.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(270)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(292.5)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#f5b301" stroke-width="4" transform="rotate(315)"/>
+      <line x1="0" y1="-62" x2="0" y2="-118" stroke="#e4572e" stroke-width="3" transform="rotate(337.5)"/>
+    </g>
+    <path id="pd-wave" d="M-115,0 q28,-12 57.5,0 t57.5,0 t57.5,0 t57.5,0" fill="none" stroke-linecap="round"/>
+    <path id="pd-leaper" d="M0,-34 C10,-19 12,-6 6,12" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+    <path id="pd-arc" d="M-40,0 A40,40 0 0 1 40,0" fill="none" stroke-linecap="round"/>
+    <g id="pd-gull" fill="none" stroke="#f3ead8" stroke-width="3" stroke-linecap="round">
+      <path d="M0,0 Q8,-8 16,0 Q24,-8 32,0"/>
+    </g>
+    <g id="pd-spark" fill="#f3ead8">
+      <path d="M0,-11 C1.8,-3 3,-1.8 11,0 C3,1.8 1.8,3 0,11 C-1.8,3 -3,1.8 -11,0 C-3,-1.8 -1.8,-3 0,-11 Z"/>
+    </g>
+  </defs>
+  <g>
+    <path d="M-58,72 A58,58 0 0 1 58,72" fill="none" stroke="#e4572e" stroke-width="2" opacity="0.45"/>
+    <path d="M-74,72 A74,74 0 0 1 74,72" fill="none" stroke="#e4572e" stroke-width="1.5" opacity="0.3"/>
+    <g stroke-linecap="round" opacity="0.5">
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(30)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(60)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(90)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(120)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(150)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(180)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(210)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(240)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(270)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(300)"/>
+      <line x1="0" y1="-2" x2="0" y2="-58" stroke="#e4572e" stroke-width="5" transform="translate(0,60) rotate(330)"/>
+    </g>
+    <circle cx="0" cy="60" r="46" fill="#e4572e"/>
+    <circle cx="0" cy="60" r="46" fill="none" stroke="#f5b301" stroke-width="2" opacity="0.6"/>
+    <rect x="-130" y="72" width="260" height="70" fill="#04161d" opacity="0.9"/>
+    <line x1="-115" y1="72" x2="115" y2="72" stroke="#e4572e" stroke-width="2.5" opacity="0.6"/>
+    <use href="#pd-wave" transform="translate(0,108)" stroke="#e4572e" stroke-width="2.5" opacity="0.5"/>
+    <use href="#pd-wave" transform="translate(0,132)" stroke="#f3ead8" stroke-width="2" opacity="0.25"/>
+    <use href="#pd-spark" transform="translate(-80,-60) scale(0.7)" opacity="0.85"/>
+    <use href="#pd-spark" transform="translate(84,-90) scale(0.5)" opacity="0.7"/>
+    <g transform="translate(70,64)" opacity="0.95">
+      <line x1="0" y1="0" x2="0" y2="-30" stroke="#02090d" stroke-width="5"/>
+      <path d="M0,-27 L-24,0 L0,0 Z" fill="#0a1016" stroke="#f3ead8" stroke-width="1.2"/>
+      <path d="M-28,2 L28,2 L18,14 L-18,14 Z" fill="#02090d" stroke="#f3ead8" stroke-width="1.2"/>
+    </g>
+
+
+  </g>
+  </symbol>
+</svg>

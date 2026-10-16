@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "cover": {
+  "src": "art/cover.svg",
+  "class": "plate",
+  "caption": "The broken ring of recurrence, struck through."
+ },
+ "default": {
+  "class": "motif"
+ },
+ "chapters": {
+  "p1c1": {
+   "src": "art/early.svg",
+   "symbol": "early-p1c1",
+   "class": "plate",
+   "motif": "sealed-tablet",
+   "caption": "Sealed tablet, hairline-cracked: 'like a torrent rushing to its end.'"
+  },
+  "p2c1": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c1",
+   "class": "plate",
+   "motif": "ring-guest",
+   "caption": "Ring with one gap, one escaping chip: 'Nihilism stands at the door.'"
+  },
+  "p2c2": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c2",
+   "class": "plate",
+   "motif": "ring-tablets",
+   "caption": "Ring split into three staggered arcs: 'the highest values devalue themselves.'"
+  },
+  "p2c3": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c3",
+   "class": "plate",
+   "motif": "ring-fumes",
+   "caption": "Ring dissolving into five fumes: 'the attempt to surmount it by means of intoxication.'"
+  },
+  "p2c4": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c4",
+   "class": "plate",
+   "motif": "ring-inverted",
+   "caption": "Ring inverted, one segment quarantined: 'what have been considered its causes are in fact its consequences.'"
+  },
+  "p2c5": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c5",
+   "class": "plate",
+   "motif": "ring-gauge",
+   "caption": "Ring opened widest, gauge-ticked: 'nothingness (that is, meaninglessness) for ever.'"
+  },
+  "p2c6": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c6",
+   "class": "plate",
+   "motif": "ring-vanished",
+   "caption": "Ring barely pressed on cracked ice: 'where we tread, soon no one will be able to follow.'"
+  },
+  "p2c7": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c7",
+   "class": "plate",
+   "motif": "ring-centuries",
+   "caption": "One ring in three centuries: 'the age of aristocratism, of feminism, of animalism.'"
+  },
+  "p2c8": {
+   "src": "art/early.svg",
+   "symbol": "early-p2c8",
+   "class": "plate",
+   "motif": "ring-rising",
+   "caption": "Ring broken open, one end rising past the rule: 'the same symptoms might indicate either decline or strength.'"
+  },
+  "p3c1": {
+   "src": "art/critique.svg",
+   "symbol": "cri-tablet-crack",
+   "class": "tablet",
+   "motif": "cri-tablet-crack"
+  },
+  "p3c10": {
+   "src": "art/critique.svg",
+   "symbol": "cri-warp-slash",
+   "class": "quiet",
+   "motif": "cri-warp-slash"
+  },
+  "p3c11": {
+   "src": "art/critique.svg",
+   "symbol": "cri-seal-devoured",
+   "class": "plate",
+   "motif": "cri-seal-devoured"
+  },
+  "p3c12": {
+   "src": "art/critique.svg",
+   "symbol": "cri-seven-wedges",
+   "class": "plate",
+   "motif": "cri-seven-wedges"
+  },
+  "p3c13": {
+   "src": "art/critique.svg",
+   "symbol": "cri-stele-band",
+   "class": "plate",
+   "motif": "cri-stele-band"
+  },
+  "p3c14": {
+   "src": "art/critique.svg",
+   "symbol": "cri-arc-vine",
+   "class": "plate",
+   "motif": "cri-arc-vine"
+  },
+  "p3c15": {
+   "src": "art/critique.svg",
+   "symbol": "cri-hermit-lamp",
+   "class": "plate",
+   "motif": "cri-hermit-lamp"
+  },
+  "p3c2": {
+   "src": "art/critique.svg",
+   "symbol": "cri-crack-light",
+   "class": "tablet",
+   "motif": "cri-crack-light"
+  },
+  "p3c3": {
+   "src": "art/critique.svg",
+   "symbol": "cri-split-self",
+   "class": "plate",
+   "motif": "cri-split-self"
+  },
+  "p3c4": {
+   "src": "art/critique.svg",
+   "symbol": "cri-altar-slabs",
+   "class": "quiet",
+   "motif": "cri-altar-slabs"
+  },
+  "p3c5": {
+   "src": "art/critique.svg",
+   "symbol": "cri-eroded-word",
+   "class": "plate",
+   "motif": "cri-eroded-word"
+  },
+  "p3c6": {
+   "src": "art/critique.svg",
+   "symbol": "cri-specimen-slab",
+   "class": "plate",
+   "motif": "cri-specimen-slab"
+  },
+  "p3c7": {
+   "src": "art/critique.svg",
+   "symbol": "cri-herd-band",
+   "class": "plate",
+   "motif": "cri-herd-band"
+  },
+  "p3c8": {
+   "src": "art/critique.svg",
+   "symbol": "cri-snapped-chain",
+   "class": "plate",
+   "motif": "cri-snapped-chain"
+  },
+  "p3c9": {
+   "src": "art/critique.svg",
+   "symbol": "cri-stage-flat",
+   "class": "plate",
+   "motif": "cri-stage-flat"
+  },
+  "p4c1": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c1",
+   "class": "plate-mark",
+   "motif": "lens-eye-sealed",
+   "caption": "Plate 1 \u00b7 The sealed eye"
+  },
+  "p4c10": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c10",
+   "class": "plate-mark",
+   "motif": "lens-eye-withheld",
+   "caption": "Plate 10 \u00b7 The withheld pupil"
+  },
+  "p4c11": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c11",
+   "class": "plate-mark",
+   "motif": "lens-eye-vapor",
+   "caption": "Plate 11 \u00b7 Vapor and the ghost"
+  },
+  "p4c12": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c12",
+   "class": "plate-mark",
+   "motif": "lens-eye-nicked",
+   "caption": "Plate 12 \u00b7 One nick on the rim"
+  },
+  "p4c13": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c13",
+   "class": "plate-mark",
+   "motif": "lens-eye-prism",
+   "caption": "Plate 13 \u00b7 The prism-slit"
+  },
+  "p4c14": {
+   "src": "art/nature.svg",
+   "symbol": "plate-c14",
+   "class": "plate",
+   "motif": "plate-c14"
+  },
+  "p4c15": {
+   "src": "art/nature.svg",
+   "symbol": "plate-c15",
+   "class": "plate",
+   "motif": "plate-c15"
+  },
+  "p4c16": {
+   "src": "art/nature.svg",
+   "symbol": "plate-c16",
+   "class": "plate",
+   "motif": "plate-c16"
+  },
+  "p4c17": {
+   "src": "art/nature.svg",
+   "symbol": "plate-c17",
+   "class": "plate",
+   "motif": "plate-c17"
+  },
+  "p4c18": {
+   "src": "art/nature.svg",
+   "symbol": "plate-c18",
+   "class": "plate",
+   "motif": "plate-c18"
+  },
+  "p4c19": {
+   "src": "art/nature.svg",
+   "symbol": "plate-c19",
+   "class": "plate plate-finale",
+   "motif": "plate-c19"
+  },
+  "p4c2": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c2",
+   "class": "plate-mark",
+   "motif": "lens-eye-caliper",
+   "caption": "Plate 2 \u00b7 The method mount"
+  },
+  "p4c3": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c3",
+   "class": "plate-mark",
+   "motif": "lens-eye-inward",
+   "caption": "Plate 3 \u00b7 The inward pit"
+  },
+  "p4c4": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c4",
+   "class": "plate-mark",
+   "motif": "lens-eye-seven-cut",
+   "caption": "Plate 4 \u00b7 Seven cuts for seven needs"
+  },
+  "p4c5": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c5",
+   "class": "plate-mark",
+   "motif": "lens-eye-cell",
+   "caption": "Plate 5 \u00b7 The need-ward cell"
+  },
+  "p4c6": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c6",
+   "class": "plate-mark",
+   "motif": "lens-eye-lattice",
+   "caption": "Plate 6 \u00b7 Chaos learning the grid"
+  },
+  "p4c7": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c7",
+   "class": "plate-mark",
+   "motif": "lens-eye-meniscus",
+   "caption": "Plate 7 \u00b7 A meniscus of light"
+  },
+  "p4c8": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c8",
+   "class": "plate-mark",
+   "motif": "lens-eye-split",
+   "caption": "Plate 8 \u00b7 True, false, one stitch out"
+  },
+  "p4c9": {
+   "src": "art/knowledge.svg",
+   "symbol": "k-p4c9",
+   "class": "plate-mark",
+   "motif": "lens-eye-snapped-arrow",
+   "caption": "Plate 9 \u00b7 The snapped arrow"
+  },
+  "p5c1": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c1",
+   "class": "tablet-plate",
+   "motif": "crown-p5c1",
+   "caption": "Threshold tablet \u2014 the book's fourth door"
+  },
+  "p5c2": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c2",
+   "class": "motif-plate",
+   "motif": "crown-p5c2",
+   "caption": "The doctrine of hierarchy \u2014 rank by quantities of power"
+  },
+  "p5c3": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c3",
+   "class": "quiet-plate",
+   "motif": "crown-p5c3",
+   "caption": "The strong and the weak \u2014 a 198-fragment braid"
+  },
+  "p5c4": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c4",
+   "class": "motif-plate",
+   "motif": "crown-p5c4",
+   "caption": "The noble man \u2014 thou-shalt, I-will, I-am"
+  },
+  "p5c5": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c5",
+   "class": "motif-plate",
+   "motif": "crown-p5c5",
+   "caption": "The lords of the earth \u2014 the opposite type, deliberately cultivated"
+  },
+  "p5c6": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c6",
+   "class": "motif-plate",
+   "motif": "crown-p5c6",
+   "caption": "The great man \u2014 a building in the grand style"
+  },
+  "p5c7": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c7",
+   "class": "motif-plate",
+   "motif": "crown-p5c7",
+   "caption": "The legislator of the future \u2014 thus shall it be"
+  },
+  "p5c8": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c8",
+   "class": "motif-plate",
+   "motif": "crown-p5c8",
+   "caption": "Discipline as selective life \u2014 the bird's-eye view"
+  },
+  "p5c9": {
+   "src": "art/crown.svg",
+   "symbol": "crown-p5c9",
+   "class": "motif-plate",
+   "motif": "crown-p5c9",
+   "caption": "The closing hammer \u2014 eternal recurrence, the monster of energy"
+  }
+ }
+}

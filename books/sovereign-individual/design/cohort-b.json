@@ -1,0 +1,462 @@
+{
+ "book": "sovereign-individual",
+ "chapters": {
+  "p1c5": {
+   "asset": "art/plate-p1c5.svg",
+   "caption": "Plate V · Two demolitions: 1495 / 1989",
+   "class": "plate",
+   "cohort": "B-dissolution",
+   "heading_index_map": {
+    "attribution_not_heads": [
+     99,
+     140
+    ],
+    "attribution_not_heads_labels": {
+     "140": "ALBERTO FUJIMORI, president of Peru [attribution for the [138] Fujimori pull-quote — NOT a head]",
+     "99": "TILLY [attribution tail of the [97] Charles Tilly warmaking quote — NOT a head]"
+    },
+    "colon_lede_not_head": [
+     119
+    ],
+    "epigraph": [
+     1
+    ],
+    "epigraph_note": "[1] is the de Balsac epigraph (0-based [0]): title-case lead 'Democracy and Nationalism as Resource Strategies in the Age of Violence' + the 1502 money-and-war maxim + 'ROBERT DE BALSAC, 1502'. Frame as epigraph; drop cap suppressed (quote-led .no-drop).",
+    "index_convention": "1-based nth-of-type into #chapter-text > p (JSON paragraph index + 1). Prose discussion in cohort-b.design.md uses 0-based indices. Verified against data/chapters/p1c5.json (164 paragraphs, 10541 words).",
+    "major_all_caps": [
+     2,
+     18,
+     39,
+     56
+    ],
+    "major_labels": {
+     "18": "THE LIFE AND DEATH OF THE NATIONSTATE",
+     "2": "THE RUBBLE OF HISTORY",
+     "39": "WHO CONTROLS GOVERNMENT?",
+     "56": "THE ROLE OF DEMOCRACY: VOTERS AS EMPLOYEES AND CUSTOMERS"
+    },
+    "minor_labels": {
+     "104": "After the French Revolution",
+     "128": "Nationalism",
+     "147": "Peru in Ruins",
+     "155": "The 70 Percent Solution",
+     "158": "Deflation of Political Promises",
+     "24": "Magnitude over Efficiency",
+     "27": "The Great Unanswered Question",
+     "31": "Unimpeded Control",
+     "44": "Proprietors",
+     "88": "Why Customers Could Not Dominate",
+     "90": "Industrialism and Democracy"
+    },
+    "minor_title_case": [
+     24,
+     27,
+     31,
+     44,
+     88,
+     90,
+     104,
+     128,
+     147,
+     155,
+     158
+    ],
+    "not_heads_body_short": [
+     74,
+     132,
+     157
+    ],
+    "not_heads_body_short_note": "[74] 'It was a result dictated by the megapolitical logic of the industrial age.' / [132] 'Seen in a longer perspective, nationalism is as much an anomaly as the state itself.' / [157] 'In 1994, real economic growth in Peru reached 12.9 percent, the highest on the planet.' — short body sentences (terminal periods), never head-styled. [157] doubles as a date-stamp ledger row.",
+    "not_heads_wrap_fragments": [
+     49,
+     60,
+     162
+    ],
+    "not_heads_wrap_fragments_note": "[49] 'resources are freed. ...' (sentence wrap) / [60] 'actually have.' (wrap tail) / [162] 'Whether these contradictions ... their 109' (page-break wrap, joins [163]) — never head-styled.",
+    "note": "1-based nth-of-type indices into #chapter-text p. MAJOR = ALL-CAPS heads; minor = Title Case subheads; attributions/wraps/run-ins must NEVER be head-styled.",
+    "pull_quote": [
+     139
+    ],
+    "pull_quote_note": "[139] (0-based [138]) Fujimori 'Congress was not a temple of democracy...' pairs with attribution [140] as one framed pull.",
+    "run_in_heads": {
+     "7": "\"Love It or Leave It\" (Unless You Are Rich) [run-in head opening body para [7] (0-based [6]) — optional bold lead only, never a head block]"
+    },
+    "special_date_stamp_rows": [
+     141,
+     144,
+     148,
+     157
+    ],
+    "special_date_stamp_rows_note": "One calm special: seal-red stamp frames (graphics) + Bone numerals in the right margin (or run-in ≤1100px). Dates used: [141]→1993 (padlocked congress, 0-based [140]) / [144]→1993 (sovereignty-collapsed-by-1993, 0-based [143]) / [148]→1993 (no-longer-a-nationstate, 0-based [147]) / [157]→1994 (12.9% growth, 0-based [156]). Minor head [147] 'Peru in Ruins' carries a '· 1993' stamp suffix via ::after (its successor para supplies the date)."
+   },
+   "index": 5,
+   "motif": "rubble-courses",
+   "opener": "Plate left (class plate): coursed-rubble vignette — San Giovanni ashlar wall (left, breached) vs Berlin prefab wall (right, breached), fallen-block rubble field, de Balsac foundation band ('MONEY · WAR · 1502'), twin seal-red date stamps 1495/1989 overprinting the rosette field; 5-petal twin Bone guilloche; de Balsac maxim microtext ring; V cartouches. Right: part line, Bodoni title, de Balsac epigraph [1] in copper rule frame.",
+   "order": 5,
+   "palette_role": "Bone-dominant (concrete/rubble ink — the demolition chapter is drawn in the color of broken concrete); Copper carries vignette rules and frames; Seal #9E3B2E carries the 1495/1989 stamp FRAMES and plate furniture only (graphics, never text — S3); Specie holds lockups, cartouche numerals, assay.",
+   "part": "part-1",
+   "part_id": "part-1",
+   "part_roman": "I",
+   "rationale": "The chapter pivots on two demolitions as megapolitical watersheds: San Giovanni blasted 'almost five centuries earlier in February 1495' [3] and the Berlin Wall dismantled November 9–10, 1989 [3] — 'the most important pile of historical rubble' since. [4] states the thesis the plate stages: San Giovanni proved returns to violence had RISEN; the Berlin Wall proves they are now FALLING. The de Balsac 1502 maxim [1] ('success in war depends on having enough money') is the foundation stone because the chapter's economics of violence rests on it; the exit-tax 'Berlin Wall for Capital' [8] and the 1989→[164] closing recap make the stamps load-bearing, not decorative.",
+   "reading": "Date-stamp ledger rows (the one special, see heading_index_map); Fujimori pull-quote [139–140] framed; hidden-reasons colon lede [119] as rubric over body paras [120–123] (no list restyle — prose untouched); Peru sequence [141–157] keeps chronological calm; end-mark 'V — ASSAYED'.",
+   "src": "art/plate-p1c5.svg",
+   "symbol": "rubble",
+   "title": "The Life and Health of the Nation-State"
+  },
+  "p1c6": {
+   "asset": "art/plate-p1c6.svg",
+   "caption": "Plate VI · The severed belt",
+   "class": "plate",
+   "cohort": "B-dissolution",
+   "heading_index_map": {
+    "attribution_not_heads": [
+     9,
+     17,
+     184,
+     265,
+     266
+    ],
+    "attribution_not_heads_labels": {
+     "17": "-ISAIAH 60:1 [attribution for the [16] Isaiah quote — NOT a head]",
+     "184": "NORBERT BLIAS [attribution tail of the [183] monopolization quote — NOT a head]",
+     "265": "COL. ALAN CAMPEN, [attribution line 1 of 2 for the [264] blind-and-deafen quote — NOT a head]",
+     "266": "U.S.A.F (Ret.) [sic — attribution line 2 of 2 — NOT a head]",
+     "9": "-THOMAS HOBBES [attribution for the [8] Hobbes quote — NOT a head]"
+    },
+    "cut_rule_special": {
+     "anchor": 222,
+     "note": "One calm special: the minor head [222] 'The Information Age' (0-based [221]) takes the cut-rule ornament — a severed-belt rule (copper left half, gold right half, center gap with verdigris ticks) replacing the standard short copper rule. It marks the chapter's hinge: [222]→[223] 'a fifth stage ... not anticipated by Lane' → [224] 'competition in cyberspace'. No other head takes the cut-rule."
+    },
+    "enum_industrial_1_to_8": [
+     84,
+     85,
+     87,
+     90,
+     93,
+     95,
+     97,
+     98
+    ],
+    "enum_industrial_note": "0-based [83,84,86,89,92,94,96,97]: the eight numbered megapolitical conditions that made the sit-down strike work. Plex Mono Specie run-in numerals; body serif untouched.",
+    "enum_information_1_to_6": [
+     108,
+     109,
+     111,
+     112,
+     113,
+     115
+    ],
+    "enum_information_note": "0-based [107,108,110,111,112,114]: the six counter-conditions ('Information technology has negligible natural-resource content...'). Same enumeration treatment; the 8-vs-6 asymmetry is the argument — never renumbered.",
+    "epigraph": [
+     2
+    ],
+    "epigraph_note": "[2] is the Munro epigraph (0-based [1]): cyberspace quote + inline 'NEIL MUNRO'. Frame as epigraph; drop cap suppressed (quote-led .no-drop). Title head [1] stands above the frame.",
+    "index_convention": "1-based nth-of-type into #chapter-text > p (JSON paragraph index + 1). Prose discussion in cohort-b.design.md uses 0-based indices. Verified against data/chapters/p1c6.json (287 paragraphs, 16687 words).",
+    "list_intro_not_head": [
+     83
+    ],
+    "list_intro_not_head_note": "[83] 'Consider:' (0-based [82]) introduces the industrial enumeration — body text, never head-styled.",
+    "major_all_caps": [
+     38,
+     49,
+     58,
+     185,
+     227,
+     267
+    ],
+    "major_labels": {
+     "185": "THE EVOLUTION OF PROTECTION",
+     "227": "COMPETITION WITHOUT ANARCHY",
+     "267": "SUPERPOWERS OF VIRTUAL WARFARE",
+     "38": "THE LOGIC OF VIOLENCE",
+     "49": "EXPLOITATION OF THE CAPITALISTS BY THE WORKERS",
+     "58": "DECIPHERING THE LOGIC OF EXTORTION"
+    },
+    "minor_labels": {
+     "10": "Extortion and Protection",
+     "138": "The Individual as an Ensemble",
+     "141": "Insights for the Information Age",
+     "144": "New Alternatives in Protection",
+     "152": "The Paradoxes of Power",
+     "156": "Monopoly and Anarchy",
+     "165": "Government as a Seller of Protection",
+     "171": "A Natural Monopoly on Land",
+     "174": "Monopoly and Plunder",
+     "18": "The Mathematics of Protection",
+     "193": "Feudalism",
+     "200": "The Factory Age",
+     "204": "Plunder with a Smile",
+     "209": "The Rise of Incomes Under Industrialism",
+     "218": "Protecting What?",
+     "22": "The Logic of Complex Systems",
+     "222": "The Information Age",
+     "232": "The Analogy with the Frontier",
+     "25": "Command-and-Control Systems Are Primitive",
+     "254": "The Diminished Utility of Violence",
+     "259": "Vulnerability of Large-Scale Systems",
+     "281": "Protection by Stealth",
+     "43": "The Close of an Age",
+     "53": "Defying Supply and Demand",
+     "62": "Workplace Extortion Before the Twentieth Century",
+     "76": "Blackmail Made Easy"
+    },
+    "minor_title_case": [
+     10,
+     18,
+     22,
+     25,
+     43,
+     53,
+     62,
+     76,
+     138,
+     141,
+     144,
+     152,
+     156,
+     165,
+     171,
+     174,
+     193,
+     200,
+     204,
+     209,
+     218,
+     222,
+     232,
+     254,
+     259,
+     281
+    ],
+    "not_heads_body_short": [
+     106,
+     205,
+     212,
+     241,
+     279,
+     282
+    ],
+    "not_heads_body_short_note": "Short body sentences (terminal periods) — never head-styled: [106] Simons-wrong / [205] delightful-monopoly / [212] policies-meandered / [241] practical-difficulties / [279] encryption-not-daydreams / [282] vast-resources.",
+    "not_heads_wrap_fragments": [
+     192,
+     235,
+     278
+    ],
+    "not_heads_wrap_fragments_note": "[192] 'for their customers.' / [235] Andorra militia wrap / [278] NSA/KGB wrap — never head-styled.",
+    "note": "1-based nth-of-type indices into #chapter-text p. MAJOR = ALL-CAPS heads; minor = Title Case subheads; quote-minor styled per §9.2; attributions/wraps/trailer must NEVER be head-styled.",
+    "pull_flint": [
+     5
+    ],
+    "pull_flint_note": "[5] (0-based [4]) 'produced only 153 automobiles in the United States.' — the Flint payoff line, styled as a copper-rule pull (the chapter's opening detonation), never a head.",
+    "quote_minor_heads": [
+     135
+    ],
+    "quote_minor_labels": {
+     "135": "\"Tools with a Voice\" [quoted minor head — Bodoni italic display per §9.2]"
+    },
+    "title_head": [
+     1
+    ],
+    "title_head_note": "[1] (0-based [0]) 'The Triumph of Efficiency over Power' is the chapter-title line standing above the Munro epigraph — minor-tier style, flagged so the classifier's title-case rule keeps it (it would otherwise match minor anyway; explicit for safety).",
+    "trailer_not_heads": [
+     286,
+     287
+    ],
+    "trailer_not_heads_note": "[286] '\"The Sovereign Individual\"' + [287] 'by James Dale Davidson & Lord William Rees-Mogg Simon & Schuster 1997' (0-based [285–286]) — imprint trailer, colophon-small, never heads."
+   },
+   "index": 6,
+   "motif": "severed-belt",
+   "opener": "Plate left (class plate): severed-belt vignette — stopped copper drive pulley + frayed belt runs (left, industrial) cut at a center gap with seal-red sever ticks; gold lane-marker dashes + verdigris node diamond + signal ticks (right, information side); '153' Flint figure left, '500 TV CHANNELS' Munro figure right; 7-petal split-ink (copper/gold) guilloche + verdigris dashed echo; no-Chevrolets microtext ring; VI cartouches. Right: part line, Bodoni title, Munro epigraph [2] in copper rule frame.",
+   "order": 6,
+   "palette_role": "Copper/gold split across the cut: Copper #B26A3B leads the industrial half (pulley, belt, rosette west), Specie gold leads the information half (lane marker, rosette east, assay). Verdigris appears ONLY as information-side accents (dashed rosette echo, node diamond, signal ticks — graphics only, never text). This is the one cohort-B plate where verdigris is sanctioned, and only as accent, never lead (S3).",
+   "part": "part-1",
+   "part_id": "part-1",
+   "part_roman": "I",
+   "rationale": "Opens at Flint (sit-down seizure of GM's Chevrolet plant, Dec 30 1936 [3–4]) to declare industrial coercion anachronistic; the payoff sentence 'There will be no Chevrolets and no UAW to strike on the Information Superhighway' [6] (0-based [5]) is the plate's microtext ring verbatim. The snapped belt stages the 8-condition industrial enumeration [84–98] vs the 6-condition information counter-list [108–115]: the power-transmission belt of the factory age, cut. Munro's cyberspace epigraph [2] is the far side of the cut ('500 TV channels' figure). The hinge minor head 'The Information Age' [222] announces 'a fifth stage ... not anticipated by Lane' [223] — competition in cyberspace [224].",
+   "reading": "Flint pull [5] as copper-rule detonation; industrial vs information enumerations with Plex Mono run-in numerals; cut-rule ornament at the hinge head [222] (the one special); trailer [286–287] as colophon-small imprint; end-mark 'VI — ASSAYED'.",
+   "src": "art/plate-p1c6.svg",
+   "symbol": "severed-belt",
+   "title": "The Megapolitics of the Information Age"
+  },
+  "p1c8": {
+   "asset": "art/plate-p1c8.svg",
+   "caption": "Plate VIII · The earnings spire",
+   "class": "plate",
+   "cohort": "B-dissolution",
+   "heading_index_map": {
+    "attribution_not_heads": [
+     43,
+     86
+    ],
+    "attribution_not_heads_labels": {
+     "43": "SHERMAN [attribution tail of the [42] Jenkins-and-Barrie unemployment quote — NOT a head]",
+     "86": "DAVIDSON [attribution tail of the [85] postcolonial-state quote — NOT a head]"
+    },
+    "epigraph": [
+     1
+    ],
+    "epigraph_note": "[1] is the Galatians epigraph (0-based [0]): title-case lead 'The Revolution in Earnings Capacity in a World Without Jobs' + 'whatsoever a man soweth, that shall he also reap' + 'GALATIANS 6:7'. Frame as epigraph; the sow/reap refrain rule would also match [1] but the epigraph frame takes precedence.",
+    "index_convention": "1-based nth-of-type into #chapter-text > p (JSON paragraph index + 1). Prose discussion in cohort-b.design.md uses 0-based indices. Verified against data/chapters/p1c8.json (236 paragraphs, 13048 words).",
+    "major_all_caps": [
+     6,
+     18,
+     44,
+     56,
+     62,
+     79,
+     129,
+     167
+    ],
+    "major_labels": {
+     "129": "AFTER THE NATIONSTATE",
+     "167": "NEW ORGANIZATIONAL IMPERATIVES",
+     "18": "AMMON'S TURNIP",
+     "44": "FEWER PEOPLE WILL DO MORE WORK",
+     "56": "MOST PEOPLE WILL GAIN FROM THE DEATH OF POLITICS",
+     "6": "A MAGNITUDE BEYOND PARETO'S LAW",
+     "62": "SHIFTING LOCATIONAL ADVANTAGES",
+     "79": "DISECONOMIES OF SCALE AND RETARDED GROWTH"
+    },
+    "minor_labels": {
+     "100": "Higher Returns in Poor Areas",
+     "102": "Positive Reinforcement",
+     "107": "The New Paradigm",
+     "113": "No Customs House in Cyberspace",
+     "116": "Death Watch for NationStates",
+     "13": "The Megapolitics of Innovation",
+     "133": "Non citizens of the Pale [sic — render as served]",
+     "156": "Country States",
+     "160": "The Inequivalence Theorem",
+     "164": "The Erosion of Local Price Anomalies",
+     "169": "Why Firms?",
+     "171": "Information and Transaction Costs",
+     "173": "Coordination Problems",
+     "176": "The Authority to Act",
+     "179": "Unnecessary Negotiation",
+     "182": "Incentive Traps",
+     "187": "The Firm Solution",
+     "202": "New Imperatives",
+     "206": "The Disappearance of Good Jobs",
+     "215": "Hollywood Takes Over",
+     "32": "Traits and Incomes",
+     "38": "The Shape of the Turnip",
+     "69": "A Century of Rising Income Inequality",
+     "76": "The Paradox of Industrial Wealth",
+     "82": "Better Government Could Not Be Imported",
+     "92": "Lightening the Burden of Bad Government",
+     "95": "Equal Opportunity in the Information Age"
+    },
+    "minor_title_case": [
+     13,
+     32,
+     38,
+     69,
+     76,
+     82,
+     92,
+     95,
+     100,
+     102,
+     107,
+     113,
+     116,
+     133,
+     156,
+     160,
+     164,
+     169,
+     171,
+     173,
+     176,
+     179,
+     182,
+     187,
+     202,
+     206,
+     215
+    ],
+    "not_heads_body_short": [
+     67,
+     84,
+     157,
+     165,
+     184,
+     192,
+     212
+    ],
+    "not_heads_body_short_note": "Short body sentences (terminal periods) — never head-styled: [67] greatest-inequalities / [84] withdrew-to-enclaves / [157] enclaves-no-cities / [165] reduced-information-costs / [184] small-exploit-great / [192] contributed-to-slack / [212] AT&T eliminated-categories.",
+    "not_heads_enum_fragments": [
+     22,
+     24,
+     27,
+     35
+    ],
+    "not_heads_enum_fragments_note": "Ammon trait-list numerals '2 .' [22] / '3 .' [24] / '4 .' [27] and Booth wrap '5 The two highest...' [35] — list furniture, never heads.",
+    "not_heads_wrap_fragments": [
+     51,
+     66
+    ],
+    "not_heads_wrap_fragments_note": "[51] turnip-1750 wrap / [66] redistribution wrap — never head-styled. ([8] is the 1828 wrap line but doubles as prize-table row (a) — styled by the prize rule, never as a head.)",
+    "note": "1-based nth-of-type indices into #chapter-text p. MAJOR = ALL-CAPS heads; minor = Title Case subheads; quote-minor styled per §9.2; attributions/wraps/enum-furniture must NEVER be head-styled.",
+    "prize_table_special": {
+     "note": "One calm special: the three prize figures (tabular numerals + hairline rules, body serif untouched). Row (a): pair [7,8] (0-based [6,7]) — 1828, top 4% owned 81% (NYC). Row (b): [9] (0-based [8]) — 1845, top 4% owned 81% (NYC corporate wealth). Row (c): [10] (0-based [9]) — 1890, Pareto's 80-20 + immigration adjustment. [8] is a wrap fragment: the prize rule styles it, the wrap rule never head-styles it.",
+     "row_a_pair": [
+      7,
+      8
+     ],
+     "row_b": 9,
+     "row_c": 10
+    },
+    "quote_minor_heads": [
+     132,
+     190,
+     197
+    ],
+    "quote_minor_labels": {
+     "132": "\"Town air brings freedom.\" MEDIEVAL ADAGE [quoted minor head — Bodoni italic display per §9.2; pairs with minor [133] 'Non citizens of the Pale']",
+     "190": "\"Organizational Slack\" [quoted minor head — Bodoni italic display]",
+     "197": "\"That's Not My Job\" [quoted minor head — Bodoni italic display]"
+    },
+    "refrain_sow_reap": {
+     "matches": [
+      1
+     ],
+     "note": "Tier-B refrain rule ('sow'/'reap' verbatim, case-insensitive): matches only the Galatians epigraph [1], where the epigraph frame takes precedence — recorded honestly as EFFECTIVELY DORMANT in served prose. No body para takes the rubric.",
+     "precedence": "epigraph frame wins over refrain rubric"
+    },
+    "run_in_heads": {
+     "21": "Intellectual traits [run-in head opening Ammon list item [21] (0-based [20])]",
+     "23": "Moral traits [run-in head opening [23] (0-based [22])]",
+     "25": "Economic traits [run-in head opening [25] (0-based [24])]",
+     "28": "Bodily traits [run-in head opening [28] (0-based [27])"
+    },
+    "run_in_heads_note": "Ammon's four trait heads are run into their list items (semicolon-led bodies) — optional bold-lead styling only, never head blocks.",
+    "special_dray_triptych": [
+     194,
+     195,
+     196
+    ],
+    "special_dray_triptych_note": "Part of the one prize-table special's verse allowance: [194,195] (0-based [193,194]) 'Whether you produce/work hard or not...' + [196] (0-based [195]) 'Whether you care or not...' + CHRIS DRAY attribution — set as one indented verse block with Plex Mono attribution, inside the [190]→[197] slack sequence."
+   },
+   "index": 8,
+   "motif": "pareto-spire",
+   "opener": "Plate left (class plate): earnings-spire vignette — gold spire curve rising to near-vertical (winner-take-most) against a copper falling-median line over the turnip base band; figure labels '1%', '80/20', '1890'; 13-petal twin gold guilloche; sow/reap microtext ring; VIII cartouches (20px fit rule). Right: part line, Bodoni title, Galatians epigraph [1] in copper rule frame.",
+   "order": 8,
+   "palette_role": "Gold-dominant (the returns-to-talent chapter is drawn in specie — the cohort's gleam arrives here); Copper carries the falling median + turnip base (graphics); Bone microtext ring; Muted figure labels; no verdigris, no seal in this plate.",
+   "part": "part-1",
+   "part_id": "part-1",
+   "part_roman": "I",
+   "rationale": "Winner-take-most earnings: the distribution of earnings capacity 'will take much the shape it does now in the performance professions like athletics and opera' [5] (0-based [4]) — the spire curve is the chapter's single quantitative image, reinforced by Ammon's 'like the spire of a cathedral, rise the men of high talent' [31] (0-based [30]). Pareto's Law (80/20 [7], 1%-pays-28.7% [7]) with the 1828/1845/1890 prize figures [7–10] supplies the vignette's three figure labels. The sow/reap refrain (Galatians [1]) rings the plate because the chapter's moral is desert: televangelist-grade egalitarianism gives way to reaping what one sows.",
+   "reading": "Prize-table figures (the one special: tabular numerals + hairlines on [7–10]); Dray triptych [194–196] as verse block; 'Town air' [132] + 'Non citizens' [133] as paired minor heads; end-mark 'VIII — ASSAYED'.",
+   "src": "art/plate-p1c8.svg",
+   "symbol": "spire",
+   "title": "The End of Egalitarian Economics"
+  }
+ },
+ "cohort": "B-dissolution",
+ "cohort_arc": "The nation-state is assayed and found wanting: its health (p1c5 rubble), its megapolitics (p1c6 severed belt), its economics (p1c8 earnings spire). Ink arc bone → copper/gold → gold: rubble giving way to the cybereconomy gleam. (p1c7 knot-mesh, the cohort's verdigris third, ships from the sibling plate — this manifest covers p1c5/p1c6/p1c8.)",
+ "identity": "SPECIE — The Private Banknote",
+ "identity_spec": "design/ART-DIRECTION.md",
+ "manifest_note": "Supervisor: merge per-chapter src/class/motif/caption (+symbol) into design/chapters.json per READER-CONTRACT §4. Plate files art/plate-p1c5.svg, art/plate-p1c6.svg, art/plate-p1c8.svg are the engineer's build target from cohort-b.design.md §8; this manifest records the contract fields plus heading_index_map (1-based nth-of-type, sic preserved) and reading specials. All paragraph indices verified programmatically against served data/chapters/*.json.",
+ "version": 1
+}

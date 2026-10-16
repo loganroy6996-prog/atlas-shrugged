@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- Forty Facets: shared primitive defs. Compositions live in cohort SVGs
+       and cover.svg; fills ALWAYS via CSS vars so all 8 themes recolor.
+       NO hardcoded fills or strokes on composed art. Grain opacity max 0.16. -->
+  <defs>
+    <path id="shard-long" d="M0 0 L188 34 L164 128 L-24 96 Z"/>
+    <path id="shard-tri" d="M0 0 L120 18 L44 104 Z"/>
+    <path id="shard-quad" d="M0 0 L132 8 L118 92 L-14 84 Z"/>
+    <path id="shard-blade" d="M0 0 L210 12 L36 44 Z"/>
+    <path id="shard-tooth" d="M0 0 L64 6 L40 78 L-8 40 Z"/>
+    <path id="tile-ledger" d="M0 0 L240 0 L240 44 L0 44 Z"/>
+    <path id="tile-square" d="M0 0 L96 0 L96 96 L0 96 Z"/>
+    <path id="frame-sepia" d="M0 0 L150 0 L150 110 L0 110 Z M10 10 L10 100 L140 100 L140 10 Z"/>
+    <path id="chevron" d="M0 0 L26 20 L0 40 L9 40 L35 20 L9 0 Z"/>
+    <path id="point" d="M0 -7 L6 0 L0 7 L-6 0 Z"/>
+    <path id="tear" d="M0 -26 C12 -8 20 4 20 16 A20 22 0 1 1 -20 16 C-20 4 -12 -8 0 -26 Z"/>
+    <path id="lens" d="M0 -80 C44 -80 78 -44 78 0 C78 44 44 80 0 80 C-44 80 -78 44 -78 0 C-78 -44 -44 -80 0 -80 Z"/>
+    <g id="seal-part">
+      <rect x="-46" y="-30" width="92" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="-40" y="-24" width="80" height="48" fill="none" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+    </g>
+    <g id="shard-mask">
+      <rect x="0" y="0" width="120" height="120" fill="currentColor"/>
+      <path d="M18 60 L48 24 L60 40 L30 76 Z M62 44 L92 24 L102 40 L72 76 Z" fill="var(--fw-lampblack, #14110B)"/>
+    </g>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="grain-soft" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.22 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+</svg>

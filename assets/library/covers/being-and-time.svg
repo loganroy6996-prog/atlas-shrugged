@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Being and Time — a straw-light shaft widening from slit to clearing between dark trunks</title>
+<defs>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .45 0"/></filter>
+</defs>
+<!-- Humus #0C0F0A -->
+<rect width="800" height="1000" fill="#0c0f0a"/>
+<!-- hand-plotted trunk silhouettes, parting -->
+<g fill="#060805">
+<polygon points="0,0 90,0 70,1000 0,1000"/>
+<polygon points="120,0 180,0 175,1000 105,1000"/>
+<polygon points="620,0 690,0 695,1000 625,1000"/>
+<polygon points="710,0 800,0 800,1000 725,1000"/>
+<polygon points="230,0 268,0 280,620 235,620" opacity=".9"/>
+<polygon points="532,0 570,0 565,620 540,620" opacity=".9"/>
+</g>
+<g stroke="#3e4a34" stroke-width="2" opacity=".8">
+<line x1="90" y1="0" x2="70" y2="1000"/><line x1="620" y1="0" x2="625" y2="1000"/>
+</g>
+<!-- the shaft: 4% slit at top widening to full clearing at foot -->
+<polygon points="392,60 408,60 640,980 160,980" fill="#e9d488" opacity=".92"/>
+<polygon points="396,60 404,60 470,980 330,980" fill="#f7efcf" opacity=".8"/>
+<!-- braided care-shafts ghosted mid-fall -->
+<g stroke="#0c0f0a" stroke-width="6" opacity=".35">
+<path d="M398,300 C390,450 406,600 398,750"/>
+<path d="M404,300 C412,450 396,600 404,750"/>
+</g>
+<!-- floor flecks in the light -->
+<g fill="#e9d488" opacity=".8">
+<ellipse cx="360" cy="860" rx="26" ry="7" transform="rotate(-12 360 860)"/>
+<ellipse cx="450" cy="900" rx="34" ry="8" transform="rotate(8 450 900)"/>
+<ellipse cx="400" cy="940" rx="22" ry="6"/>
+<ellipse cx="520" cy="850" rx="16" ry="5" transform="rotate(14 520 850)"/>
+<ellipse cx="290" cy="910" rx="14" ry="5" transform="rotate(-8 290 910)"/>
+</g>
+<!-- ghost section numeral, drawn strokes (graphic, no text) -->
+<g stroke="#c9d4c3" stroke-width="10" fill="none" opacity=".12" stroke-linecap="round">
+<path d="M60,150 C40,180 40,210 65,225 C90,240 90,270 65,285 C45,297 35,315 45,335"/>
+<line x1="120" y1="150" x2="120" y2="335"/>
+</g>
+<!-- tool shadows lying in the light: hammer, signpost -->
+<g stroke="#0c0f0a" stroke-width="7" opacity=".75" stroke-linecap="round">
+<line x1="330" y1="700" x2="400" y2="700"/><line x1="345" y1="686" x2="345" y2="714"/>
+<line x1="470" y1="730" x2="470" y2="780"/><line x1="470" y1="744" x2="505" y2="744"/>
+</g>
+<!-- ecstasis horizons: three lines entering low -->
+<g stroke="#9db89a" stroke-width="2.4" opacity=".7">
+<line x1="230" y1="660" x2="570" y2="660"/>
+<line x1="250" y1="686" x2="550" y2="686"/>
+<line x1="270" y1="712" x2="530" y2="712"/>
+</g>
+<!-- ember floor tick: death cohort only -->
+<rect x="560" y="950" width="60" height="8" fill="#c96f3b" opacity=".9"/>
+<rect x="14" y="14" width="772" height="972" fill="none" stroke="#3e4a34" stroke-width="3"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".07"/>
+</svg>

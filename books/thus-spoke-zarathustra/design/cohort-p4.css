@@ -1,0 +1,436 @@
+/* ==========================================================================
+   Thus Spoke Zarathustra — cohort P4 (Part Four, roman IV) chapter CSS.
+   "The Carnival of Higher Men" conformed to THE SOLAR GOSPEL.
+   Supervisor-integrated from design/cohort-p4.json (20 entries, all
+   pull-lines verbatim-verified; supervisor rulings recorded in the JSON).
+   Scope: CLOSES + DROP CAPS + SONG lyric treatments + verse/exchange
+   treatments + p4c13 dance-call breaks ONLY. Global shell (tokens,
+   fonts, slot sizing, meta typography, TOC, progress, part accents,
+   Z6 ember pivot) lives in theme.css. NEVER duplicate theme.css here.
+   Contract: READER-CONTRACT v1.1 + A.0 chapter-end ruling + A.2 symbols.
+   Director verdict Z1–Z7 binding (Z6: ember pivot EXACT at p4c10;
+   p4c10 quietest opener — hold it). Z1 AUDIT: no text-shadow, no
+   radial/conic-gradient, no drop-shadow, no blur() in any rule body.
+   Unlayered: wins over @layer shared; NO !important anywhere.
+   NOTE: P4 art ships ONLY as <symbol> cells (no positioned <view>
+   crops), so closes/crowns below are data: URIs traced from the
+   cohort-p4.svg drafts (p4-close-ember, p4-close-lion-doves); stanza
+   crowns are flat engraved rules (harp-string / desert-diamond / bell
+   ticks) — authored line-work, never glyphs.
+   ========================================================================== */
+
+/* ---- P4 closes (A.0 path): 24px ember-ring mini-seal for p4c1–p4c10
+   (pivot HOLDS ember); rekindled-dawn close for p4c11–p4c19 (Z6 gold
+   returns); lion-and-doves special close for p4c20 ONLY. Inline-block
+   tail, no margin changes on the paragraph (A.0 no-layout-shift). */
+body[data-book="thus-spoke-zarathustra"][data-part="IV"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13.5' fill='none' stroke='%23C8502E' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23E8A93D' stroke-width='1.2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23E8A93D'/%3E%3Cpath d='M16 1.5v3M16 27.5v3M1.5 16h3M27.5 16h3' stroke='%23C8502E' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E");
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 0.75em;
+  vertical-align: -4px;
+}
+/* Z6 close migration (designer §9/§10, supervisor-adopted): p4c11+ closes
+   rekindle to the dawn mini-seal (morning gold returns); p4c1–p4c10 hold
+   ember; p4c20 keeps the lion-and-doves special. Data URI traces the
+   seals.svg #mini-dawn master (ring + cresting sun + rays). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c11"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c12"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c13"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c15"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c18"] .chapter-text > p:last-child::after,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14.5' fill='none' stroke='%23F2E7CF' stroke-width='1.4'/%3E%3Cpath d='M5 20a11 11 0 0 0 22 0' fill='none' stroke='%23F2E7CF' stroke-width='1' opacity='0.7'/%3E%3Cpath d='M8.5 20a7.5 7.5 0 0 1 15 0' fill='%23E8A93D'/%3E%3Cpath d='M16 9V6.4M21 10.5l1.8-2.2M11 10.5l-1.8-2.2M24.5 15l2.6-.7M7.5 15l-2.6-.7' fill='none' stroke='%23E8A93D' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c20"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='11' cy='19' r='6' fill='none' stroke='%23E8A93D' stroke-width='1.6'/%3E%3Cpath d='M7 15l-2-3M11 13V9M15 15l2-3M6 19H3M16 19h3' stroke='%23E8A93D' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M20 10c3-3 7-3 9 0-2 3-6 3-9 0zM23 16c2.4-2.4 5.6-2.4 7.4 0-1.8 2.4-5 2.4-7.4 0z' fill='none' stroke='%23F2E7CF' stroke-width='1.2'/%3E%3C/svg%3E");
+}
+
+/* ---- P4 drop caps: Cinzel solar for sermons + visions ONLY (rule 7):
+   c2 (threshold), c10 (still-vision pivot), c13 + c15 (sermons).
+   Songs (c14/c16/c19), festival (c18), emblems, assembly, feast,
+   finale open WITHOUT. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c2"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c10"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c13"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c15"] .chapter-text > p:first-of-type::first-letter {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  font-weight: 600;
+  color: var(--z-solar, #E8A93D);
+  background: none;
+}
+
+/* ---- Shared P4 song lyric: centered Spectral italic, 26–30rem, no cap.
+   True songs: c14 (verses ¶11–26), c16 (burlesque ¶8–56), c19 (midnight
+   song ¶10–42 + roundelay ¶43–47). Frames stay calm left prose. */
+/* No-drop reset (rule 7): songs + festival open WITHOUT the shared cap.
+   Shared reader.css applies its drop-cap unconditionally; these resets win
+   by book-scope specificity (unlayered, no !important). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c18"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  float: none;
+  font-family: Spectral, Georgia, serif;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  padding: 0;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(n+12):nth-of-type(-n+27),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(n+9):nth-of-type(-n+57),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(n+11):nth-of-type(-n+43) {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Spectral, Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2.0;
+  color: var(--z-bone, #F2E7CF);
+}
+/* p4c14 harp-string stanza crown above the first verse (¶11, nth 12). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(12)::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 36'%3E%3Cpath d='M6 32C14 20 22 12 36 10c14-2 24 6 30 22' fill='none' stroke='%23E8A93D' stroke-width='1.6'/%3E%3Cpath d='M14 28V16M22 24V12M30 22V10M38 22V10M46 24V12M54 28V16' stroke='%23E8A93D' stroke-width='1' opacity='0.8'/%3E%3C/svg%3E");
+  display: block;
+  width: 72px;
+  height: 36px;
+  margin: 0 auto 0.9rem;
+}
+/* p4c14 'Only a…' anaphora (¶12/14/16/25/26 → nth 13/15/17/26/27):
+   bone italic + air (rule 14: gold graphic-only at verse size). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(13),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(15),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(17),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(26),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(27) {
+  letter-spacing: 0.15em;
+  margin-top: 1.6em;
+}
+/* p4c16 desert-diamond stanza crown above the first burlesque (¶8, nth 9). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(9)::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32'%3E%3Cpath d='M32 3l9 13-9 13-9-13z' fill='none' stroke='%23E8A93D' stroke-width='1.6'/%3E%3Cpath d='M4 16h16M44 16h16' stroke='%23E8A93D' stroke-width='1.2'/%3E%3Ccircle cx='32' cy='16' r='2' fill='%23C8502E'/%3E%3C/svg%3E");
+  display: block;
+  width: 64px;
+  height: 32px;
+  margin: 0 auto 0.9rem;
+}
+/* p4c16 'Deserts grow' bookends (¶8/56 → nth 9/57): 1.35em display. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(9),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(57) {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+/* p4c16 Selah closers right-italic; Amen! (¶20/26/55 → nth 21/27/56)
+   centered Cinzel small display. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(21),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(27),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(56) {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  font-style: normal;
+  font-size: 1rem;
+}
+/* p4c16 leg-search farce (¶28–38 → nth 29–39): indent staircase. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(29) { margin-left: calc(50% - 12rem); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(31) { margin-left: calc(50% - 10rem); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(33) { margin-left: calc(50% - 8rem); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(35) { margin-left: calc(50% - 6rem); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(37),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(39) { margin-left: calc(50% - 4rem); }
+/* p4c16 virtue-bellows climax (¶48–53 → nth 49–54): largest verse in P4. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(n+49):nth-of-type(-n+54) {
+  font-size: 1.3rem;
+}
+
+/* ---- p4c19 GOLD ROUNDELAY (climax): 'O Man! Attend!' calls (¶9/43 →
+   nth 10/44) as Cinzel display; roundelay (¶43–47 → nth 44–48) in
+   Cinzel-liturgical bold 1.5rem+ — P4's single large-text gold moment
+   (rule 14 passes); bell-crown above the roundelay. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(10),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(44) {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(44)::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cpath d='M20 34V18a12 12 0 0 1 24 0v16' fill='none' stroke='%23E8A93D' stroke-width='1.8'/%3E%3Cpath d='M14 34h36' stroke='%23E8A93D' stroke-width='1.8'/%3E%3Ccircle cx='32' cy='37' r='2' fill='%23E8A93D'/%3E%3Cpath d='M32 2v4M20 5l2 3M44 5l-2 3' stroke='%23F5C96B' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+  display: block;
+  width: 64px;
+  height: 40px;
+  margin: 0 auto 1rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(45),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(46),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(47),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(48) {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #F5C96B;
+}
+/* 'Wants deep, deep, deep eternity!' (nth 48): cohort's largest verse line. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(48) {
+  font-size: 1.7rem;
+}
+
+/* ---- p4c5 lament (52 of 86 paras verse; SUPERVISOR: left-measure lyric,
+   option a): lament ¶1–52 (nth 2–53) as indented italic stanzas with
+   hanging indent; refrain size-steps. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c5"] .chapter-text > p:nth-of-type(n+2):nth-of-type(-n+53) {
+  font-style: italic;
+  margin-left: 2rem;
+  text-indent: -1rem;
+}
+/* 'You – Hangman-god!' (¶26 → nth 27): largest refrain step. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c5"] .chapter-text > p:nth-of-type(27) {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+
+/* ---- p4c1 rod-casting (¶7 → nth 8): solar left rule; closing eye
+   (¶21 → nth 22) as 1.15em benediction. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c1"] .chapter-text > p:nth-of-type(8) {
+  border-left: 2px solid var(--z-solar, #E8A93D);
+  padding-left: 1rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c1"] .chapter-text > p:nth-of-type(22) {
+  font-size: 1.15em;
+  font-style: italic;
+}
+/* ---- p4c2 cry passages (¶3–5 → nth 4–6): quoted cries italic + ember rule. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c2"] .chapter-text > p:nth-of-type(n+4):nth-of-type(-n+6) {
+  font-style: italic;
+  border-left: 2px solid var(--z-ember, #C8502E);
+  padding-left: 1rem;
+}
+/* ---- p4c3 Sybil verse (¶18–20 → nth 19–21): LEFT-measure indented
+   italic with thin sun-rule above (rule 2: centered reserved for songs). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c3"] .chapter-text > p:nth-of-type(n+19):nth-of-type(-n+21) {
+  font-style: italic;
+  margin-left: 2rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c3"] .chapter-text > p:nth-of-type(19)::before {
+  content: "";
+  display: block;
+  width: 6rem;
+  border-top: 1px solid var(--z-solar, #E8A93D);
+  margin-bottom: 1rem;
+}
+/* ---- p4c4 leech-brain boast (¶16 → nth 17): serpent left rule. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c4"] .chapter-text > p:nth-of-type(17) {
+  border-left: 2px solid var(--z-serpent, #7A8B5A);
+  padding-left: 1rem;
+}
+/* ---- p4c6 god-history (¶22–24 → nth 23–25): soft bone left rule. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c6"] .chapter-text > p:nth-of-type(n+23):nth-of-type(-n+25) {
+  border-left: 2px solid var(--z-bone, #F2E7CF);
+  padding-left: 1rem;
+}
+/* ---- p4c7 riddle dialogue (¶3–6 → nth 4–7): ugliest man's lines
+   indented; murder confession (¶30–32 → nth 31–33) bordered inset. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c7"] .chapter-text > p:nth-of-type(n+4):nth-of-type(-n+7) {
+  margin-left: 0.95em;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c7"] .chapter-text > p:nth-of-type(n+31):nth-of-type(-n+33) {
+  border: 1px solid var(--z-ember, #C8502E);
+  padding: 1rem 1.2rem;
+}
+/* ---- p4c8 rumination lesson (¶8–10 → nth 9–11): left-measure block
+   with leader spacing; pasture air via +10% paragraph spacing. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c8"] .chapter-text > p:nth-of-type(n+9):nth-of-type(-n+11) {
+  margin-left: 2rem;
+  margin-bottom: 1.4em;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c8"] .chapter-text > p {
+  margin-bottom: 1.32em;
+}
+/* ---- p4c9 lost-and-found: confession (¶9–24 → nth 10–25) ragged with
+   increasing right indent toward 'Vanity!'; answer (¶25–31 → nth
+   26–32) snaps back to full measure. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c9"] .chapter-text > p:nth-of-type(n+10):nth-of-type(-n+25) {
+  margin-right: 2em;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c9"] .chapter-text > p:nth-of-type(n+26):nth-of-type(-n+32) {
+  margin-right: 0;
+}
+/* ---- p4c10 sleep-song (¶3–14 → nth 4–15): LEFT-measure breath-lines
+   2.1 leading (rule 2); 'golden round ring' (¶15 → nth 16) 1.2em;
+   waking dialogue (¶17–21 → nth 18–22) alternating indent. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c10"] .chapter-text > p:nth-of-type(n+4):nth-of-type(-n+15) {
+  margin-left: 2rem;
+  line-height: 2.1;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c10"] .chapter-text > p:nth-of-type(16) {
+  font-family: Spectral, Georgia, serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c10"] .chapter-text > p:nth-of-type(18),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c10"] .chapter-text > p:nth-of-type(20),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c10"] .chapter-text > p:nth-of-type(22) {
+  margin-left: 2rem;
+}
+/* ---- p4c11 bridges verdict (¶28–29 → nth 29–30): 1.15em italic. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c11"] .chapter-text > p:nth-of-type(29),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c11"] .chapter-text > p:nth-of-type(30) {
+  font-style: italic;
+  font-size: 1.15em;
+}
+/* ---- p4c12 menu (¶8–9 → nth 9–10): left-measure indented with dish
+   leaders; protest (¶11–13 → nth 12–14) vs law (¶14–16 → nth 15–17)
+   facing indented exchange. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c12"] .chapter-text > p:nth-of-type(9),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c12"] .chapter-text > p:nth-of-type(10) {
+  margin-left: 2rem;
+  font-style: italic;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c12"] .chapter-text > p:nth-of-type(n+12):nth-of-type(-n+14) {
+  margin-left: 2rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c12"] .chapter-text > p:nth-of-type(n+15):nth-of-type(-n+17) {
+  margin-right: 2rem;
+}
+/* ---- p4c13 dance-call breaks (¶86/89/96 → nth 87/90/97): full-measure
+   1.2em italic with rose rules; 'greatest sin' (¶75–79 → nth 76–80)
+   bordered inset. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c13"] .chapter-text > p:nth-of-type(87),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c13"] .chapter-text > p:nth-of-type(90),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c13"] .chapter-text > p:nth-of-type(97) {
+  font-style: italic;
+  font-size: 1.2em;
+  border-top: 1px solid #B0503C;
+  border-bottom: 1px solid #B0503C;
+  padding: 0.8rem 0;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c13"] .chapter-text > p:nth-of-type(n+76):nth-of-type(-n+80) {
+  border: 1px solid var(--z-ember, #C8502E);
+  padding: 1rem 1.2rem;
+}
+/* ---- p4c15 fear/courage exchange (¶8–14 → nth 9–15): tight facing
+   dialogue, alternating indents. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c15"] .chapter-text > p:nth-of-type(9),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c15"] .chapter-text > p:nth-of-type(11),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c15"] .chapter-text > p:nth-of-type(13),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c15"] .chapter-text > p:nth-of-type(15) {
+  margin-left: 2rem;
+}
+/* ---- p4c17 stillness (¶17–19 → nth 18–20): +25% leading (held
+   breath); litany (¶20–34 → nth 21–35): romanic versicles left,
+   ass-responses (even nth 22–34) centered Cinzel bone display;
+   final thistle (nth 35) carries the feast-anticipation rule. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(n+18):nth-of-type(-n+20) {
+  line-height: 2.3;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(21),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(23),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(25),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(27),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(29),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(31),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(33) {
+  margin-left: 2rem;
+}
+/* Final thistle (¶34 → nth 35): feast-anticipation rule above. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(35)::before {
+  content: "";
+  display: block;
+  width: 6rem;
+  border-top: 1px solid var(--z-ember, #C8502E);
+  margin-bottom: 1rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(22),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(24),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(26),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(28),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(30),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(32),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c17"] .chapter-text > p:nth-of-type(34) {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  text-align: center;
+  color: var(--z-bone, #F2E7CF);
+}
+/* ---- p4c18 interrogation (¶0–26 → nth 1–27): quick alternating
+   indents (comic pace); doctrine (¶26 → nth 27) centered Cinzel
+   display; benediction (¶32–35 → nth 33–36) 1.15em italic. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c18"] .chapter-text > p:nth-of-type(odd):nth-of-type(-n+25) {
+  margin-left: 1.5rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c18"] .chapter-text > p:nth-of-type(even):nth-of-type(-n+26) {
+  margin-right: 1.5rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c18"] .chapter-text > p:nth-of-type(27) {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  text-align: center;
+  font-size: 1.15rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c18"] .chapter-text > p:nth-of-type(n+33):nth-of-type(-n+36) {
+  font-style: italic;
+  font-size: 1.15em;
+}
+/* ---- p4c20 sign passage (¶10–15 → nth 11–16): +15% leading
+   (timelessness); closing charge (¶21–23 → nth 22–24) 1.2em italic. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c20"] .chapter-text > p:nth-of-type(n+11):nth-of-type(-n+16) {
+  line-height: 2.1;
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p4c20"] .chapter-text > p:nth-of-type(n+22):nth-of-type(-n+24) {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* ---- P4 responsive: indented treatments compress on phones; the
+   roundelay holds large-text gold; staircase indents release. */
+@media (max-width: 560px) {
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(n+12):nth-of-type(-n+27),
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(n+9):nth-of-type(-n+57),
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(n+11):nth-of-type(-n+43) {
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(n+29):nth-of-type(-n+39) {
+    margin-left: 1rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(45),
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(46),
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(47) {
+    font-size: 1.35rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(48) {
+    font-size: 1.5rem;
+  }
+}
+
+/* ---- Print + reduced-motion guards (art is static; declared no-op). */
+@media print {
+  body[data-book="thus-spoke-zarathustra"][data-part="IV"] .chapter-text > p:last-child::after,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c14"] .chapter-text > p:nth-of-type(12)::before,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c16"] .chapter-text > p:nth-of-type(9)::before,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p4c19"] .chapter-text > p:nth-of-type(44)::before {
+    content: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="thus-spoke-zarathustra"][data-part="IV"] .chapter-text > p:last-child::after,
+  body[data-book="thus-spoke-zarathustra"][data-part="IV"] .chapter-text > p::before {
+    animation: none;
+    transition: none;
+  }
+}

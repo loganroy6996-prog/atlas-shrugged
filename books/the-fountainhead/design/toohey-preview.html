@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- TOOHEY cohort scratch preview harness (supervisor may delete after integration).
+     Renders all 15 Part 2 openers with the FURNACE banner + cohort CSS for screenshots. -->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toohey cohort preview — The Fountainhead Part 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/reader.css">
+<link rel="stylesheet" href="../theme.css">
+<link rel="stylesheet" href="cohort-toohey.css">
+<style>
+  body { margin: 0; padding: 0; background: var(--bg); }
+  #pv-root { max-width: 72rem; margin: 0 auto; padding: 2rem 1.5rem 6rem; }
+  /* R1: replicate reader geometry — .reader-body + centered meta + 65ch text */
+  .pv-chapter .reader-body { max-width: calc(var(--reader-max) + 5rem); margin: 0 auto; padding: 3rem 2rem 6rem; }
+  .pv-chapter .chapter-meta { text-align: center; margin-bottom: 3.5rem; }
+  @media (max-width: 560px) { .pv-chapter .reader-body { padding: 2rem 1.15rem 4rem; } }
+  .pv-nav { position: sticky; top: 0; z-index: 10; background: #0d0a08; padding: 0.8rem 0; border-bottom: 1px solid #3a2c22; margin-bottom: 2rem; overflow-x: auto; white-space: nowrap; }
+  .pv-nav a { font: 500 0.75rem/2.2 "IBM Plex Mono", monospace; letter-spacing: 0.12em; color: #e4572e; margin-right: 1rem; text-decoration: none; }
+  .pv-chapter { margin-bottom: 5rem; scroll-margin-top: 4rem; }
+  .pv-note { font: 400 0.75rem/1.6 "IBM Plex Mono", monospace; color: #7a6a58; margin-bottom: 0.6rem; }
+  .chapter-text { font-family: "Source Serif 4", Georgia, serif; }
+</style>
+</head>
+<body data-book="the-fountainhead" data-part="II" data-part-id="part-2" data-view="reader">
+<nav class="pv-nav" aria-label="Preview chapters">
+<a href="#pv-p2c1">p2c1</a><a href="#pv-p2c2">p2c2</a><a href="#pv-p2c3">p2c3</a><a href="#pv-p2c4">p2c4</a><a href="#pv-p2c5">p2c5</a><a href="#pv-p2c6">p2c6</a><a href="#pv-p2c7">p2c7</a><a href="#pv-p2c8">p2c8</a><a href="#pv-p2c9">p2c9</a><a href="#pv-p2c10">p2c10</a><a href="#pv-p2c11">p2c11</a><a href="#pv-p2c12">p2c12</a><a href="#pv-p2c13">p2c13</a><a href="#pv-p2c14">p2c14</a><a href="#pv-p2c15">p2c15</a>
+</nav>
+<div id="pv-root"><p>Loading…</p></div>
+<script>
+fetch('../data/toc.json').then(r => r.json()).then(toc => {
+  const p2 = toc.parts.find(p => p.id === 'part-2');
+  return Promise.all(p2.chapters.map(c =>
+    fetch('../data/chapters/' + c.id + '.json').then(r => r.json()).then(ch => ({meta: c, ch}))
+  ));
+}).then(items => fetch('cohort-toohey.json').then(r => r.json()).then(manifest => ({items, manifest})))
+.then(({items, manifest}) => fetch('../art/toohey-banner.svg').then(r => r.text()).then(svg => ({items, manifest, svg})))
+.then(({items, manifest, svg}) => {
+  const root = document.getElementById('pv-root');
+  root.innerHTML = '';
+  items.forEach(({meta, ch}) => {
+    const e = manifest.chapters[ch.id];
+    const sec = document.createElement('section');
+    sec.className = 'pv-chapter';
+    sec.id = 'pv-' + ch.id;
+    sec.dataset.chapter = ch.id;
+    const wrap = document.createElement('article');
+    wrap.className = 'reader-body';
+    wrap.setAttribute('data-chapter-scope', ch.id);
+    const fig = document.createElement('figure');
+    fig.className = 'chapter-art banner';
+    fig.id = 'chapter-art-' + ch.id;
+    fig.setAttribute('aria-hidden', 'true');
+    fig.innerHTML = svg + '<figcaption>' + e.caption + '</figcaption>';
+    // show only this chapter's panel
+    fig.querySelectorAll('.t2-panel').forEach(p => p.setAttribute('data-off','1'));
+    const panel = fig.querySelector('#t2-c' + e.order);
+    if (panel) panel.removeAttribute('data-off');
+    const note = document.createElement('p');
+    note.className = 'pv-note';
+    note.textContent = ch.id + ' · numeral ' + e.numeral_fill + '% · bars ' + e.bars + ' · dropcap ' + e.dropcap;
+    const header = document.createElement('div');
+    header.className = 'chapter-meta';
+    header.innerHTML = '<p class="meta-part">Part 2 · Ellsworth M. Toohey</p>' +
+      '<h1 class="meta-title">' + meta.title + '</h1>' +
+      '<div class="meta-rule" aria-hidden="true"><span></span></div>';
+    const text = document.createElement('div');
+    text.className = 'chapter-text';
+    ch.paragraphs.slice(0, 6).forEach(p => {
+      const el = document.createElement('p');
+      el.textContent = p;
+      text.appendChild(el);
+    });
+    wrap.append(fig, header, text);
+    sec.append(note, wrap);
+    root.appendChild(sec);
+  });
+  // apply per-chapter drop-cap heat by setting body attr on scroll is overkill;
+  // paint COLD caps directly for p2c4/p2c7/p2c14 sections:
+  ['p2c4','p2c7','p2c14'].forEach(id => {
+    const first = document.querySelector('#pv-' + id + ' .chapter-text > p:first-of-type');
+    if (first) first.classList.add('pv-cold');
+  });
+  const st = document.createElement('style');
+  st.textContent = '.pv-cold::first-letter{color:#c8a06a !important;border-left-color:#c8a06a !important;}' +
+    '.chapter-art.banner .t2-panel[data-off]{display:none;}';
+  document.head.appendChild(st);
+}).catch(err => {
+  document.getElementById('pv-root').innerHTML = '<p>Preview failed: ' + err + '</p>';
+});
+</script>
+</body>
+</html>

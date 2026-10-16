@@ -142,9 +142,25 @@ def write_book(slug: str, meta: dict, parts: list[dict]) -> None:
                 "index": ci + 1,
                 "paragraphs": ch["paragraphs"],
             }
+            if ch.get("note_refs"):
+                payload["note_refs"] = ch["note_refs"]
             (chap_dir / f"{cid}.json").write_text(
                 json.dumps(payload, ensure_ascii=False), encoding="utf-8"
             )
+            if slug == "infinite-jest" and payload["part"] == "part-2":
+                notes_index = json.loads(
+                    (out / "data" / "notes-index.json").read_text(encoding="utf-8")
+                    if (out / "data" / "notes-index.json").exists()
+                    else "{}"
+                )
+                for p in ch["paragraphs"]:
+                    m = re.match(r"^(\d{1,3})\.\s", p)
+                    if m:
+                        notes_index[m.group(1)] = cid
+                (out / "data" / "notes-index.json").write_text(
+                    json.dumps(notes_index, ensure_ascii=False, indent=1),
+                    encoding="utf-8",
+                )
             toc_chs.append(
                 {
                     "id": cid,
@@ -1334,9 +1350,565 @@ def _ij_up_ratio(s: str) -> float:
     return sum(1 for c in letters if c.isupper()) / len(letters)
 
 
-def _ij_is_caps_line(s: str) -> bool:
+def _ij_is_caps_line(s: str, lim: int = 110) -> bool:
     s = _ij_scrub(s)
-    return bool(s) and len(s) <= 85 and _ij_up_ratio(s) > 0.7
+    return bool(s) and len(s) <= lim and _ij_up_ratio(s) > 0.7
+
+
+def _ij_indented(s: str) -> bool:
+    """True if a raw line carries print paragraph-indent (layout extraction)."""
+    t = s.replace("\u00ad", "").replace("\ufeff", "").replace("\x0c", "")
+    return bool(t.strip()) and (len(t) - len(t.lstrip())) >= 3
+
+
+def _ij_reflow(lines: list[str]) -> list[str]:
+    """IJ-only reflow for pdftotext-layout source (keeps indent + blanks).
+
+    The layout extraction preserves the print edition's two paragraph cues:
+    leading indent and blank lines. Single blanks are page breaks as often
+    as paragraph breaks, so a blank only splits when the previous text ends
+    a sentence; anything else is a wrap and gets glued. Without a blank,
+    an indented line (dialogue turn, list item) or a short completed line
+    followed by a new sentence starts a paragraph; wrapped lines join
+    (hyphen wraps without the space).
+    """
+    items: list[tuple[str, bool, bool, bool]] = []  # (text, ind, blank, bbl)
+    prev_blank = True
+    prevprev_blank = True
+    for raw in lines:
+        t = _ij_scrub(raw)
+        if not t:
+            prevprev_blank = prev_blank
+            prev_blank = True
+            continue
+        if is_junk(t):
+            continue
+        items.append((t, _ij_indented(raw), prev_blank, prevprev_blank))
+        prevprev_blank = False
+        prev_blank = False
+
+    paragraphs: list[str] = []
+    buf: list[str] = []
+
+    def flush() -> None:
+        if not buf:
+            return
+        result = buf[0]
+        for p in buf[1:]:
+            if result.endswith("-") and not result.endswith("—") and not result.endswith("--"):
+                result = result + p
+            else:
+                result = result + " " + p
+        result = re.sub(r"[ \t]+", " ", result).strip()
+        if result and not re.fullmatch(r"[\d\W]+", result):
+            paragraphs.append(result)
+        buf.clear()
+
+    prev = ""
+    for t, ind, bb, bbl in items:
+        note_head = bool(_IJ_NOTE_RE.match(t))
+        sub_head = bool(_IJ_SUBNOTE_RE.match(t))
+        if not buf:
+            buf = [t]
+            prev = t
+            continue
+        if bb:
+            # Blank line: real break (double blank, indent, finished
+            # sentence, display head going into prose, or a note /
+            # lettered-sub-note head starting a new entry) vs page-break
+            # wrap mid-sentence.
+            if (
+                bbl
+                or ind
+                or SENT_END.search(prev)
+                or note_head
+                or sub_head
+                or (
+                    not _ij_is_caps_line(t)
+                    and len(prev) < 60
+                    and _ij_up_ratio(prev) > 0.5
+                )
+            ):
+                flush()
+                buf = [t]
+                prev = t
+            else:
+                buf.append(t)
+                prev = t
+            continue
+        if ind:
+            if buf and not SENT_END.search(prev) and not _ij_is_caps_line(t):
+                buf.append(t)  # indented wrap of an unfinished line (speech, list)
+                prev = t
+                continue
+            if buf and t[:1].islower() and not _ij_is_caps_line(t):
+                buf.append(t)  # wrapped continuation (lowercase can never open
+                prev = t      # a print paragraph; cf. 'intra-O.N.A.N. / interdependence.')
+                continue
+            if _ij_is_caps_line(t) and not SENT_END.search(prev):
+                buf.append(t)  # centered display continuation (deck, list head)
+                prev = t
+                continue
+            flush()
+            buf = [t]
+            prev = t
+            continue
+        if note_head or sub_head:
+            flush()  # endnote / lettered-sub-note head (heads are unique line
+            buf = [t]  # starts in this source: never a mid-sentence wrap)
+            prev = t
+            continue
+        if t[:1] in "'\"‘“" and SENT_END.search(prev) and len(prev) < 70:
+            flush()  # dialogue turn
+            buf = [t]
+            prev = t
+            continue
+        if SENT_END.search(prev) and t[:1].isupper() and len(prev) < 65:
+            flush()  # short completed line, new sentence
+            buf = [t]
+            prev = t
+            continue
+        buf.append(t)
+        prev = t
+    flush()
+    return paragraphs
+
+
+_IJ_NOTE_RE = re.compile(r"^\d{1,3}\.\s")
+_IJ_SUBNOTE_RE = re.compile(r"^[a-uw-z]\.\s")
+
+# Body→endnote callouts, curated from the source PDF (TextCurator audit
+# 2026-10-15): (0-based para index, verbatim match incl. the printed
+# callout number, note number). Only callouts verified against the PDF's
+# own extracted digits are listed; ambiguous measures/dates are excluded.
+# Coverage: 299 of 388 notes. Validated at build: every entry must match
+# its paragraph exactly once, else the build fails loudly.
+_IJ_NOTE_REFS: dict[str, list[tuple[int, str, int]]] = {
+    "p1c2": [
+        (3, "methamphetamine hydrochloride 1 is what", 1),
+    ],
+    "p1c8": [
+        (16, "out of. 2 In the", 2),
+    ],
+    "p1c9": [
+        (10, "its stomach. 3 Two sets", 3),
+        (10, "various prorectors’ 4 private rooms.", 4),
+        (14, "low-volt methedrine 5 before matches", 5),
+        (14, "Ave. nightspot 7 or beers", 7),
+        (16, "multiple vectors. 10 And since", 10),
+        (18, "playing Narjees 11 and all", 11),
+    ],
+    "p1c10": [
+        (1, "trusted associate 13 paid a", 13),
+        (1, "his hat 14 and reconstructed", 14),
+        (1, "at A.T.F. 15 and his", 15),
+        (5, "of NyQuil 17 and a", 17),
+        (5, "is piled 18 just off", 18),
+        (5, "a ‘P.I.T.,’ 19 in French,", 19),
+    ],
+    "p1c11": [
+        (0, "paranoid king 21 that you", 21),
+    ],
+    "p1c12": [
+        (0, "prestigious O.N.R. 23 financed his", 23),
+    ],
+    "p1c13": [
+        (11, "of the 16 and Unders", 16),
+        (11, "then enkephaline 26 after, which", 26),
+        (11, "Bob Hope 27 until fifteen,", 27),
+    ],
+    "p1c14": [
+        (9, "an MAOI 28 will kill", 28),
+        (23, "20 x 25 glossy of", 25),
+        (52, "me ECT 29 again, or", 29),
+        (72, "up Collyrium 30 by the", 30),
+        (87, "these Lebensgefährtins 31 and prorectors", 31),
+        (102, "NEFAS EST 32—and had replaced", 32),
+        (104, "‘Extra-Linear Dynamics.’ 34 And Schtitt,", 34),
+        (104, "a Cantorian 35 continuum of", 35),
+        (109, "Lonely. Verstiegenheit.’ 36 ‘Bless you.’", 36),
+    ],
+    "p1c16": [
+        (2, "de rollent 37 on a", 37),
+        (2, "‘Bröckengespenst’ phenomenon 38 enlarged and", 38),
+        (6, "M. Fortier 39 had wished", 39),
+        (8, "to B.S.S. 40—once this decision,", 40),
+        (41, "he ‘doubled’ 41 for Québec", 41),
+    ],
+    "p1c17": [
+        (162, "his legs. 45 He attempted", 45),
+    ],
+    "p1c20": [
+        (4, "ventricular restenosis. 48 He thought:", 48),
+    ],
+    "p1c22": [
+        (30, "Recovery House 49 was founded", 49),
+        (33, "Boston galoots. 50 He sometimes,", 50),
+        (36, "Or Mobile, 51 the nameless", 51),
+    ],
+    "p1c27": [
+        (17, "American GC/MS 52 urine scan.", 52),
+        (28, "finest Eschatonic 53 marksman off", 53),
+        (29, "required Grammars 54 and Soma", 54),
+    ],
+    "p1c29": [
+        (1, "or Cylert 56; DMZ resembling", 56),
+        (1, "head) altered. 57 The incredibly", 57),
+    ],
+    "p1c31": [
+        (2, "me Percocet 59 at the", 59),
+    ],
+    "p1c32": [
+        (25, "‘aesthetically challenged.’ 62 She sometimes", 62),
+        (25, "anything else. 63 The student", 63),
+        (28, "the HmH 65 with C.T.", 65),
+        (31, "terribly obscure 66 but often", 66),
+        (50, "The Shed. 67 It is,", 67),
+    ],
+    "p1c33": [
+        (0, "Viking’) Freer 68 and the", 68),
+        (41, "help you. 69 That, pace", 69),
+        (44, "linty mitten. 70 That you", 70),
+        (66, "or amended. 71 Felonies are", 71),
+        (71, "his arms. 72 McDade also", 72),
+        (129, "a luminescence. 76 Halation, Axford", 76),
+        (130, "like that. 77 Mario will", 77),
+    ],
+    "p1c35": [
+        (2, "a note. 79 Her mental", 79),
+    ],
+    "p1c36": [
+        (39, "film-theory monograph. 81 Joelle can", 81),
+        (46, "part of 75 hectares of", 75),
+    ],
+    "p1c37": [
+        (0, "of bedding 82 as Hal", 82),
+        (172, "‘The B.P.D. 83 field pathologist", 83),
+    ],
+    "p1c38": [
+        (4, "an Independent 85 down in", 85),
+        (6, "during breaks. 86 His serve", 86),
+        (8, "the title. 87 On 1,", 87),
+        (32, "Free List 88 but gets", 88),
+        (48, "at all. 89 Schacht does", 89),
+        (65, "their butthole. 91 The unscreening", 91),
+        (91, "doubles partner 92 came all", 92),
+        (93, "awful time. 93 E.T.A. tries", 93),
+        (93, "of prorectors 94 in exchange", 94),
+        (97, "sports-budget marginality. 97 Orin signed", 97),
+        (97, "the Academy 98 in a", 98),
+        (105, "his life: 100 i.e. almost", 100),
+        (115, "blows up.’ 101 Orin in", 101),
+    ],
+    "p1c39": [
+        (1, "the I.B.P.W.D.W. 102 Local #4", 102),
+        (9, "a seizure. 103 The floor", 103),
+    ],
+    "p1c41": [
+        (6, "volume down; 106 the kind", 106),
+        (7, "last broadcast. 108 Troeltsch, who", 108),
+        (14, "Levesque-Parti-and-Bloc Québecois 109 and early", 109),
+        (16, "terrorist cell 112 that apparently", 112),
+        (25, "same material. 113 He was", 113),
+        (25, "From Glad 114 in sandwich-bag", 114),
+        (26, "Volkmann’s contracture 115 curled out", 115),
+        (30, "oversized face 117 like a", 117),
+        (32, "his job. 118 Plus of", 118),
+        (33, "saurian homodontic 119 Mario floats,", 119),
+    ],
+    "p1c43": [
+        (0, "even knew 120—maybe a dozen", 120),
+        (2, "the World. 122 Practical distribution", 122),
+        (2, "elegant EndStat 124 stats-cruncher software", 124),
+        (4, "for drill-balls 125—there can be", 125),
+        (6, "their knee. 126 Then two", 126),
+        (6, "AMNAT’s wattle-chinned 127 president on", 127),
+        (13, "Eschaton MVL 128 for the", 128),
+        (17, "fall off. 129 ‘It’s snowing", 129),
+        (45, "of Eschaton. 130 Players themselves", 130),
+    ],
+    "p1c44": [
+        (0, "and hope.’ 131 And the", 131),
+        (0, "Boston Group. 132 Every night", 132),
+        (2, "Truman Capote 133 except this", 133),
+        (5, "seen there. 134 The residents’", 134),
+        (12, "in yourself; 135 and now", 135),
+        (13, "phentermine-hydrochloride bottle 136 and stop", 136),
+        (19, "The Spider. 139 You have", 139),
+        (21, "banally trite. 140 In the", 140),
+        (33, "other blacks. 141 The Diehl", 141),
+        (44, "limbic system 142 to leg", 142),
+    ],
+    "p1c45": [
+        (2, "you along. 144 Mario and", 144),
+        (2, "Found Drama 145 and anticonfluentialism", 145),
+    ],
+    "p1c46": [
+        (0, "festive fiat 147 everybody gets", 147),
+        (0, "etc. etc. 148—and Mario, as", 148),
+        (4, "‘Live Silence,’ 149 the total", 149),
+        (4, "our terrible 151 internal troubles.", 151),
+        (28, "knowledge learned. 152 The thing", 152),
+        (35, "and can-do. 153 Ten-year-old Kent", 153),
+        (36, "plus over 150 very fit", 150),
+        (58, "of eyeballs. 154 But this", 154),
+        (59, "cream-complected backs 155 to the", 155),
+        (89, "convince you 156 to authorize", 156),
+        (108, "or scenaria? 157 Marty’s on-task", 157),
+        (145, "blue blazer 158 sits in", 158),
+        (146, "left temple; 159 and his", 159),
+        (146, "Eric Clipperton 160—from the preponderance", 160),
+        (147, "remotely filmic 161 was a", 161),
+        (149, "mild one. 162 The ads", 162),
+        (151, "Fortune 500. 163 Stylistically reminiscent", 163),
+        (158, "wide for. 164 And so", 164),
+        (161, "down markedly; 165 and then", 165),
+        (161, "InterLace-designed R.I.S.C. 166-grade High-Def-screen PCs", 166),
+        (161, "even more. 167 But there", 167),
+    ],
+    "p1c47": [
+        (4, "cult-fronted 3-amino-8-hydroxytetralin 169-import ring in", 169),
+        (40, "la pression’: 170 ‘The little", 170),
+        (66, "à Servir.’ 171 ‘What is", 171),
+        (69, "le bonheur,” 172 then, who", 172),
+        (85, "marriageable age; 173 Marathe had", 173),
+        (89, "de bonk.” 174 But this", 174),
+        (108, "the other. 175 And so", 175),
+        (119, "and digressive. 176 Plus there’s", 176),
+        (132, "of O.N.A.N. 177 has been", 177),
+    ],
+    "p1c48": [
+        (10, "turns out. 178 It starts", 178),
+        (18, "to Meetings 179 for a", 179),
+    ],
+    "p1c49": [
+        (0, "to agitate. 180 Now WYYY", 180),
+    ],
+    "p1c50": [
+        (14, "time listening. 181 The whole", 181),
+        (14, "conditioning drills. 182 First are", 182),
+        (14, "janitorial bucket 183 placed in", 183),
+        (15, "like Side-to-Sides 184 that Hal", 184),
+        (16, "his aunts. 185 But anyway", 185),
+        (17, "up balls. 186 It is", 186),
+        (47, "of Demerol 189 in a", 189),
+        (48, "botched burglary 190 had been", 190),
+        (50, "to end. 192 Gately said", 192),
+        (51, "of semi-claw 194 and the", 194),
+        (53, "against it. 195 White Flagger", 195),
+        (53, "all used 196—F.F. had taken", 196),
+        (55, "an hour. 197 None but", 197),
+    ],
+    "p1c51": [
+        (33, "U.S.A.’s MK-Ultra.’ 198 Steeply elected", 198),
+        (74, "the Xanax 199; she has", 199),
+        (76, "but stay. 200 Nobody that", 200),
+        (76, "floors’ windows 201 ever goes", 201),
+        (81, "‘Antitoi Entertainent’ 203 on the", 203),
+        (82, "as well. 204 Flanking another", 204),
+        (82, "Lucien’s disgust. 205 Through the", 205),
+        (82, "truly squeak. 206 But Lucien", 206),
+        (89, "form words. 207 Words that", 207),
+    ],
+    "p1c53": [
+        (0, "I remember 208 I was", 208),
+    ],
+    "p1c54": [
+        (3, "the walls; 209 the chassis", 209),
+        (5, "waiting room. 210 Though it’s", 210),
+        (8, "or worse. 211 Avril is", 211),
+        (13, "his Buddies. 212 The only", 212),
+        (13, "go astray. 213 Pemulis has", 213),
+        (29, "& Whack 214 are known", 214),
+        (29, "and police 215 alike as", 215),
+        (32, "‘Coatlicue Complex.’ 216 Hal’s maternal", 216),
+        (38, "is receding. 218 This weird", 218),
+        (40, "Mr. Bouncety-Bounce 219 no-pierce earring", 219),
+        (99, "play Slobodan 221 and Hartigan", 221),
+    ],
+    "p1c55": [
+        (9, "despite language. 222 The A.F.R.", 222),
+    ],
+    "p1c56": [
+        (105, "scanning for. 224 He moves", 224),
+        (108, "of Hefty 225 bags that", 225),
+        (113, "Hefty SteelSak 226 trashbags, fiber-reinforced", 226),
+        (115, "of Haldol 227 and tapioca,", 227),
+    ],
+    "p1c57": [
+        (0, "no N.S.A. 228 as such.", 228),
+        (1, "Activities’ Agency’s 229 special province.", 229),
+    ],
+    "p1c59": [
+        (1, "five mitts 230 away pointing", 230),
+        (3, "with Inositol. 231 Or if", 231),
+        (7, "Bing’s hydrolysis 232 will have,", 232),
+    ],
+    "p1c60": [
+        (48, "inappropriateness of 234—that, as he", 234),
+        (76, "player’s VAPS 236 in more", 236),
+        (127, "right triangle. 237 You’ve got", 237),
+        (185, "Mauna Loa-brand 240 macadamia nuts,", 240),
+        (190, "Bioavailable Five 241 in the", 241),
+        (200, "Avril’s worry. 243 He’ll sometimes", 243),
+        (200, "yellow lamplight 244 and he", 244),
+        (274, "from Footprints 246 around 2315", 246),
+        (274, "House Restriction 247 in such", 247),
+        (274, "clinic’s closed 248 have to", 248),
+        (279, "his car. 251 The 2-Man", 251),
+        (279, "everybody else. 252 The street", 252),
+        (302, "walks briskly 254 in Green’s", 254),
+        (306, "Erdedy notes. 256 She gets", 256),
+        (404, "Tine Jr. 257 and Hugh", 257),
+        (404, "Hugh Steeply 258 all sit", 258),
+    ],
+    "p1c61": [
+        (5, "the squeegees 259 taken down", 259),
+        (17, "obvious person. 260 The line", 260),
+        (48, "the W.T.A. 262 Show’ll probably", 262),
+    ],
+    "p1c62": [
+        (51, "of recircling 264 of newspapers.’", 264),
+    ],
+    "p1c64": [
+        (5, "ten-level R.A.S.U. 265 from the", 265),
+        (99, "Q (Q), Q, Q. 269", 269),
+        (101, "Glad Handle-Tie 270 trashbags and", 270),
+        (103, "are uninjured 271 and not", 271),
+        (105, "Club’s charter. 272 With the", 272),
+        (252, "other out,’ 275 Poutrincourt said", 275),
+        (261, "are doomed 276 if you", 276),
+    ],
+    "p1c66": [
+        (6, "bow-tie askew. 279 The bureaucrat", 279),
+    ],
+    "p1c67": [
+        (7, "called anhedonia 280 or simple", 280),
+        (11, "mask, anhedonia. 281 The American", 281),
+    ],
+    "p1c68": [
+        (3, "the Clonidine 285 it received", 285),
+        (3, "speculate about. 286 The father", 286),
+        (40, "of TCBY 288 toward Longley", 288),
+        (42, "going on. 289 Jennie Bash", 289),
+        (44, "stelliform coiffure. 290 But so", 290),
+        (46, "fearful sentiment 292 of Don", 292),
+        (49, "other Holmeses 293 in Riveting", 293),
+        (50, "sang, Jim. 294 The man’s", 294),
+        (58, "potassium thiocyanate 296 later, the", 296),
+        (59, "asks for. 298 On-screen, we’re", 298),
+        (68, "weather-bleached GIGABUCKS 299 ticket on", 299),
+    ],
+    "p1c70": [
+        (1, "young burglar 300 whose electrical-surge-tolerance", 300),
+        (4, "Master cartridge. 301 Unlike the", 301),
+        (4, "fatal pleasures. 302 Fortier bid", 302),
+    ],
+    "p1c71": [
+        (5, "was Read-Only. 303 Philosophical, Fortier", 303),
+        (46, "Prochain Train. 304 The pallor", 304),
+        (92, "to say. 306 ‘The Medusa", 306),
+        (94, "male-female way. 307 The first", 307),
+        (99, "in Brookline 309 betrayed nothing", 309),
+        (99, "in F&C 310—Jim’d told her", 310),
+        (138, "and Y.E.T.s 312 and owning", 312),
+        (146, "son coeur,’ 314 and it", 314),
+        (169, "she’s living 315 staff. We’ve", 315),
+    ],
+    "p1c72": [
+        (9, "Someone in 311 is yelling", 311),
+        (57, "all parties. 316 If you", 316),
+        (75, "U.S.A. flag. 318 ‘I had", 318),
+        (83, "Many Wonders. 319 Turkey cartilage.", 319),
+        (218, "the Hayden 320 that wouldn’t", 320),
+        (437, "and functional. 321 It seems", 321),
+    ],
+    "p1c73": [
+        (2, "of police 322 that wore", 322),
+        (3, "Ennet House 323 was nearby,", 323),
+        (5, "G.’) Tine 325 really do", 325),
+        (5, "she knew: 326 —Molly Notkin", 326),
+        (5, "her naked. 329 —Molly Notkin", 329),
+        (18, "and anti-Picaresque 331 narrative stasis—or", 331),
+        (29, "Recovery Options 333 booklet the", 333),
+        (29, "All Hope. 334 It wasn’t", 334),
+        (77, "wore off. 335 The Kevin", 335),
+        (77, "wild time 336 had been", 336),
+        (123, "prescribed Toradol-IM 338 but had", 338),
+        (124, "the I.B.E.W. 339 account under", 339),
+        (127, "with Doryx. 340 ‘I don’t", 340),
+        (132, "maybe Percoset 341 or maybe", 341),
+        (144, "the babble 342 of crowds", 342),
+        (148, "it White-Knuckle? 343 Did you", 343),
+    ],
+    "p1c75": [
+        (2, "and A.P.s 344 were three", 344),
+        (2, "the C.B.S. 345 auditorium at", 345),
+        (9, "from M.I.A.-D’Orval 346 was keenly", 346),
+        (13, "of perfume. 347 To amuse", 347),
+        (16, "St. Columbkill’s 348 Meeting, where", 348),
+        (17, "the niggers 349 that sold", 349),
+        (46, "or something. 350 So the", 350),
+        (47, "called 13th-Stepping 351 and is", 351),
+    ],
+    "p1c76": [
+        (161, "Category C-III 354 for dependence.’", 354),
+        (168, "Hydrocodone bitartrate 355—C-III. Levorphanol tartrate", 355),
+        (168, "Levorphanol tartrate 356 —C-III. Oxymorphone", 356),
+        (168, "Oxymorphone hydrochloride 357—admittedly, yes, C-II,", 357),
+        (171, "him Librium 359 to help", 359),
+        (173, "like Percocet 360 except without", 360),
+        (186, "a Levsin 361-codeine diverticulitis compound,", 361),
+        (205, "first Quaalude 362 at age", 362),
+        (206, "methylenedioxy psychedelics 364 from nutmeg", 364),
+        (208, "Medicaid L.T.I. 365 out across", 365),
+        (274, "turgid-sounding shit 366—‘For while clinamen", 366),
+        (277, "cellular phones. 367 And while", 367),
+        (277, "of Cafergot 368 spansules and", 368),
+        (277, "shallow sadism. 369 W. Sorkin,", 369),
+        (277, "Medicaid Iletin 370 I.D. for", 370),
+        (280, "Andover Academy 371 kids for", 371),
+        (283, "plus vig 372 from the", 372),
+        (285, "20% Mucomyst 373 q. 2", 373),
+        (288, "termed ‘chivalrous’ 374 enough to", 374),
+        (298, "represented like 375 sky-blue grams", 375),
+        (298, "hydromorphone hydrochloride 376 or like", 376),
+        (305, "anti-hangover breakfast 377 and watching", 377),
+        (407, "to self-forgetting 378 that he", 378),
+        (413, "as conundra. 379 From my", 379),
+        (415, "and rasters 380 at first,", 380),
+        (418, "in 1924. 381 A hulking", 381),
+        (447, "each breath. 382 Of us", 382),
+        (465, "through Choices 383 last winter", 383),
+    ],
+    "p1c77": [
+        (8, "daily Ativan 384 and just", 384),
+        (20, "to Narcan. 386 The pharmacist", 386),
+        (25, "pharm-grade Sunshine,’ 387 the assistant", 387),
+        (28, "U.S. Talwin’s 388 got .5", 388),
+    ],
+}
+
+
+# Print-grounded subsection openers that carry no dateline: each matched at
+# the start of a blank-preceded line (apostrophes are U+2019 in the source).
+_IJ_SUB_CUES = (
+    "MARIO INCANDENZA’S FIRST",
+    "HAL INCANDENZA’S FIRST EXTANT",
+    "ENORMOUS, ELECTROLYSIS",
+    "ALPHABETICAL TALLY",
+    "WHY—THOUGH IN THE EARLY DAYS",
+    "TENNIS AND THE FERAL PRODIGY",
+    "SELECTED TRANSCRIPTS OF THE RESIDENT",
+    "FROM INTERNAL INTERLACE-SYSTEM",
+    "CHRONOLOGY OF ORGANIZATION",
+    "PUTATIVE CURRICULUM VITAE",
+    "The Personal Is the Political",
+    "KEEP YOUR ANSWERS",
+    "SELECTED SNIPPETS FROM THE INDIVIDUAL",
+    "PARTIAL TRANSCRIPT OF",
+    "SELECTED SNIPPET FROM THE INDIVIDUAL",
+)
 
 
 # First line of a section header must carry a dateline cue. This keeps
@@ -1408,81 +1980,117 @@ def parse_infinite_jest() -> tuple[dict, list]:
     body = lines[start:about]
     n = len(body)
 
-    # Section breaks: blank-delimited all-caps blocks (<=4 lines) whose first
-    # line carries a dateline cue, plus immediately following all-caps tail
-    # blocks (INTERDEPENDENCE DAY / GAUDEAMUS IGITUR, FRONT OFFICE ...).
-    # Mixed-case scene-setters (1610h. E.T.A. Weight Room ...) stay in the body.
-    bounds: list[tuple[int, int, list[str]]] = []  # (hdr_first, body_start, run)
-    def _ij_take(s: int) -> tuple[list[str], int] | None:
-        """Gather a header run at caps line s; None if not a section break."""
+    # Section breaks (print-grounded; the layout extraction keeps indents):
+    # dateline display headers (YEAR OF ... / 3 NOVEMBER ... / TUCSON AZ ...)
+    # plus cue-listed subsection openers (film credits, the E.T.A. exam, Gately
+    # transcripts, memo inserts ...). Headline montages, sign text and the
+    # videophony essay's caps opening stay in the body. Header runs gather
+    # contiguous caps lines plus single-blank-bridged tails (page-split
+    # datelines, GAUDEAMUS IGITUR / FRONT OFFICE tails).
+    bounds: list[tuple[int, int, list[str], bool]] = []  # (hdr, start, run, sub)
+    def _ij_take(s: int, lim: int = 10, bridge: str | None = None) -> tuple[list[str], int]:
+        """Gather a header run at line s; returns (run, body_start)."""
         j = s
         run: list[str] = []
-        while j < n and len(run) < 4 and body[j].strip() and _ij_is_caps_line(body[j]):
+        while j < n and len(run) < lim and body[j].strip() and _ij_is_caps_line(body[j]):
             run.append(_ij_scrub(body[j]))
             j += 1
-        k = j
-        while len(run) < 6:
-            k2 = k
-            while k2 < n and not body[k2].strip():
-                k2 += 1
-            if k2 >= n or not _ij_is_caps_line(body[k2]):
+            if j < n and not body[j].strip():
+                # single-blank bridge (page-split header or caps tail block)
+                if (
+                    j + 1 < n
+                    and body[j + 1].strip()
+                    and _ij_is_caps_line(body[j + 1])
+                    and (
+                        (
+                            bridge is not None
+                            and not re.match(r"ITEM\s+\d", _ij_scrub(body[j + 1]))
+                        )
+                        or re.search(
+                            r"YEAR OF|Y\.D\.A\.U|UNDERGARMENT|GAUDEAMUS|INTERDEPENDENCE|"
+                            r"FRONT OFFICE|ENNET HOUSE|ENFIELD MA|DAY\b",
+                            _ij_scrub(body[j + 1]),
+                            re.I,
+                        )
+                    )
+                ):
+                    j += 1
+                    continue
                 break
-            tail: list[str] = []
-            q = k2
-            while q < n and len(tail) < 2 and body[q].strip() and _ij_is_caps_line(body[q]):
-                tail.append(_ij_scrub(body[q]))
-                q += 1
-            if not tail:
-                break
-            run.extend(tail)
-            k = q
-        if not re.search(r"YEAR OF|Y\.D\.A\.U|B\.S\.", " // ".join(run)):
-            return None  # all-caps prose (essay, headlines, exam) is body text
-        return run, k
+        return run, j
+    def _ij_scan_at(s: int) -> tuple[list[str], int, bool] | None:
+        """Section break at body line s -> (run, body_start, is_sub)."""
+        first = _ij_scrub(body[s])
+        sub = next((c for c in _IJ_SUB_CUES if first.startswith(c)), None)
+        if sub is not None:
+            run, k = _ij_take(s, lim=16, bridge="sub")
+            if not run:
+                return None
+            # Title: first line, plus the second when it reads as one head.
+            # The whole contiguous caps deck belongs to the header: consume
+            # it so tail lines (film credits, mastheads, exam heads) never
+            # leak into the body as all-caps paragraphs. Exception: the
+            # WHY videophony essay, whose opening sentence itself runs in
+            # display caps for a page — only its two-line head is consumed.
+            keep = 1
+            if (
+                len(run) > 1
+                and len(run[1]) >= 15
+                and len(run[0]) + 3 + len(run[1]) <= 120
+            ):
+                keep = 2
+            if sub.startswith("WHY"):
+                return run[:keep], s + keep, True
+            return run[:keep], k, True
+        if _ij_is_caps_line(body[s]) and _IJ_FIRST_RE.search(first):
+            run, k = _ij_take(s)
+            if re.search(r"YEAR OF|Y\.D\.A\.U|B\.S\.", " // ".join(run)):
+                return run, k, False
+        return None
     if _ij_is_caps_line(body[0]) and _IJ_FIRST_RE.search(_ij_scrub(body[0])):
-        first = _ij_take(0)
-        if first is not None:
-            bounds.append((0, first[1], first[0]))
-            i = first[1]
+        taken0 = _ij_scan_at(0)
+        if taken0 is not None:
+            bounds.append((0, taken0[1], taken0[0], taken0[2]))
+            i = taken0[1]
         else:
             i = 0
     else:
         i = 0
     while i < n:
-        if (
-            body[i].strip() == ""
-            and i + 1 < n
-            and _ij_is_caps_line(body[i + 1])
-            and _IJ_FIRST_RE.search(_ij_scrub(body[i + 1]))
-        ):
-            taken = _ij_take(i + 1)
+        if body[i].strip() == "" and i + 1 < n and body[i + 1].strip():
+            taken = _ij_scan_at(i + 1)
             if taken is not None:
-                run, k = taken
-                bounds.append((i + 1, k, run))
+                run, k, is_sub = taken
+                bounds.append((i + 1, k, run, is_sub))
                 i = k
                 continue
         i += 1
 
     novel = []
-    for idx, ( _hf, ks, run) in enumerate(bounds):
+    for idx, (_hf, ks, run, is_sub) in enumerate(bounds):
         ks_next = bounds[idx + 1][0] if idx + 1 < len(bounds) else n
-        paras = reflow(body[ks:ks_next], fill_width=72)
+        paras = _ij_reflow(body[ks:ks_next])
         if not paras:
             continue
+        title = _ij_title_case(" ".join(run)) if is_sub else _ij_header_title(run)
         novel.append(
             {
                 "number_label": f"§ {len(novel) + 1}",
                 "roman": str(len(novel) + 1),
-                "title": _ij_header_title(run),
+                "title": title,
                 "paragraphs": paras,
             }
         )
-    # Dedupe genuinely undated repeats: "Year of ..." -> "Year of ... (2)".
+    # Disambiguate repeat datelines with an incipit from the section's own
+    # first line, so undated sections stay distinguishable in the reader ToC.
     seen: dict[str, int] = {}
     for ch in novel:
         seen[ch["title"]] = seen.get(ch["title"], 0) + 1
         if seen[ch["title"]] > 1:
-            ch["title"] = f"{ch['title']} ({seen[ch['title']]})"
+            words = (ch["paragraphs"][0].split() if ch["paragraphs"] else [])[:7]
+            incipit = " ".join(words).rstrip(" ,;:")
+            ch["title"] = f"{ch['title']} ({seen[ch['title']]}) \u2014 {incipit}\u2026"
+
 
     # ── Endnotes: numbered notes 1–388, filmography embedded in note 24 ──
     notes_at = next(
@@ -1521,6 +2129,10 @@ def parse_infinite_jest() -> tuple[dict, list]:
             cur = int(m.group(1))
             buf = [ln]
         else:
+            # Unnumbered tail apparatus (pp. 1225-1229: *, 4, 5, 6): each
+            # starts a new paragraph so entries never merge into one.
+            if cur == 388 and ln.strip() and re.match(r"^[*] |^[456] ", ln.strip()):
+                buf.append("")
             buf.append(ln)
     if cur is not None:
         notes.append((cur, buf))
@@ -1538,7 +2150,9 @@ def parse_infinite_jest() -> tuple[dict, list]:
         chunk: list[str] = []
         for num in range(a, b + 1):
             chunk.extend(by_num[num])
-        paras = reflow(chunk, fill_width=72)
+        paras = _ij_reflow(chunk)
+        if a == b == 24 and paras:
+            paras[0] = re.sub(r"^24\.\s+JAMES O\. INCANDENZA: A FILMOGRAPHY\s+[a-z]$", "24. JAMES O. INCANDENZA: A FILMOGRAPHY", paras[0])
         if not paras:
             continue
         if a == b == 24:
@@ -1553,6 +2167,19 @@ def parse_infinite_jest() -> tuple[dict, list]:
         note_chs.append(
             {"number_label": label, "roman": label, "title": title, "paragraphs": paras}
         )
+
+    # Attach curated body→note callouts (validated; build fails on drift).
+    for _ci, _ch in enumerate(novel):
+        _cid = f"p1c{_ci + 1}"
+        _refs = _IJ_NOTE_REFS.get(_cid)
+        if not _refs:
+            continue
+        _out = []
+        for _para, _match, _note in _refs:
+            assert 0 <= _para < len(_ch["paragraphs"]), (_cid, _para, _note)
+            assert _ch["paragraphs"][_para].count(_match) == 1, (_cid, _para, _note)
+            _out.append({"para": _para, "match": _match, "note": _note})
+        _ch["note_refs"] = _out
 
     parts = [
         {"roman": "I", "name": "Infinite Jest", "subtitle": "The Novel", "chapters": novel},

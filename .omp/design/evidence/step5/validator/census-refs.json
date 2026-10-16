@@ -1,0 +1,130 @@
+{
+ "atlas-shrugged": {
+  "refs_checked": 16,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": [
+   "inscr",
+   "plate",
+   "signal",
+   "speech",
+   "std",
+   "valley"
+  ]
+ },
+ "being-and-time": {
+  "refs_checked": 28,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": []
+ },
+ "beyond-good-and-evil": {
+  "refs_checked": 10,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": [
+   "ledger-cover",
+   "maxim",
+   "summit"
+  ]
+ },
+ "forty-ways-to-look-at-churchill": {
+  "refs_checked": 4,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": [
+   "motif",
+   "plate"
+  ]
+ },
+ "gay-science": {
+  "refs_checked": 5,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": [
+   "gs-b-read-dramatic",
+   "gs-b-read-essay",
+   "gs-b-read-grand",
+   "gs-b-read-luminous",
+   "gs-b-read-shadowed",
+   "gs-b-read-visionary",
+   "gs-b-tone-morning"
+  ]
+ },
+ "gentle-introduction": {
+  "refs_checked": 4,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": []
+ },
+ "infinite-jest": {
+  "refs_checked": 10,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": [
+   "banner",
+   "diptych",
+   "dossier",
+   "graded",
+   "hardcut",
+   "horizon",
+   "ij-cover-grid",
+   "ij-seal-plate",
+   "ledger",
+   "litany",
+   "memo",
+   "miniature",
+   "night-triptych",
+   "nocturne",
+   "panorama",
+   "plate",
+   "plate-small",
+   "prospectus",
+   "split-line",
+   "tabloid",
+   "treatise",
+   "walk"
+  ]
+ },
+ "open-letter": {
+  "refs_checked": 19,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": [
+   "plate-cover"
+  ]
+ },
+ "sovereign-individual": {
+  "refs_checked": 4,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": []
+ },
+ "the-fountainhead": {
+  "refs_checked": 3,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": []
+ },
+ "thus-spoke-zarathustra": {
+  "refs_checked": 8,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": []
+ },
+ "twilight-of-the-idols": {
+  "refs_checked": 9,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": []
+ },
+ "will-to-power": {
+  "refs_checked": 10,
+  "missing_refs": [],
+  "missing_frag_ids": [],
+  "class_treatment_gaps": [
+   "motif",
+   "plate-finale"
+  ]
+ }
+}

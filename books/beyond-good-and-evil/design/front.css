@@ -1,0 +1,660 @@
+/* Beyond Good and Evil — FRONT cohort: The Numbered Ledger (Direction A, APPROVED).
+ * Prototype scope (E7): p1c1 (silence) + p1c2 (full ledger) + p1c5 (maxim-set).
+ * Verbatim-mergeable into theme.css: every rule is body[data-chapter]-qualified
+ * (TOC rows key off .toc-chapter[data-chapter-id]); art paths are book-root-
+ * relative url("art/..."). Unlayered by contract — always wins over @layer shared.
+ * Hooks consumed (all real today): body[data-chapter]/[data-book]/[data-view]/
+ * [data-art] (reader.js paintBodyHooks), figure#chapter-art.ledger-seal/
+ * .ledger-fleuron (manifest class fill), .range-figures + #meta-gloss +
+ * .kicker-range + .toc-range + .sec-num/.sec-start/.sec-marked (ledger.js).
+ * Every hook degrades cleanly when absent: hidden slots shift nothing, the
+ * opener reads without figures/gloss, numerals style only what is wrapped.
+ * Tokens: --bge-* live on :root so BACK can share them at merge time. */
+
+/* ── 0. Ledger tokens ─────────────────────────────────────────── */
+:root {
+  --bge-black: #12100b;
+  --bge-raised: #1e1a12;
+  --bge-ink: #ede4d3;
+  --bge-brass: #d9a441;
+  --bge-blood: #b3402a;
+  --bge-faded: #8a7d63;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-ledger: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+/* Light-theme guards: accents deepen so figures never drop below 4.5:1. */
+html[data-theme="light"] body[data-book="beyond-good-and-evil"],
+html[data-theme="sepia"] body[data-book="beyond-good-and-evil"] {
+  --bge-brass: #8a5e14;
+  --bge-blood: #93301d;
+}
+
+/* ── 1. Chapter-art slot: the ledger plate ────────────────────── */
+/* The slot is hidden until the manifest inlines a seal SVG; these rules only
+ * shape a filled slot. Composition I (p1c2): seal right of the meta block is
+ * handled by the meta grid in §2; the slot itself stays centered and quiet. */
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art {
+  text-align: center;
+}
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art.ledger-seal:not([hidden]) {
+  display: block;
+  margin: 0 auto 1.75rem;
+  max-width: 12rem;
+  color: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art.ledger-seal svg {
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
+  margin: 0 auto;
+}
+/* Composition IV (p1c5): the sorts seal runs smaller — the maxim field below
+ * is the chapter's real mass, the seal only its colophon. */
+body[data-chapter="p1c5"] #chapter-art.ledger-seal:not([hidden]) {
+  max-width: 8.5rem;
+}
+body[data-chapter="p1c5"] #chapter-art.ledger-seal svg {
+  max-width: 8.5rem;
+}
+/* Preface fleuron: the single Sanguine veil-line (E4: the ONLY mark). */
+body[data-chapter="p1c1"] #chapter-art.ledger-fleuron:not([hidden]) {
+  display: block;
+  margin: 0 auto 2rem;
+  max-width: 17rem;
+  color: var(--bge-blood);
+}
+body[data-chapter="p1c1"] #chapter-art.ledger-fleuron svg {
+  width: 100%;
+  max-width: 17rem;
+  height: auto;
+  margin: 0 auto;
+}
+/* Manifest captions become ledger captions: small, tracked, brass. */
+body[data-book="beyond-good-and-evil"] #chapter-art figcaption {
+  margin-top: 0.9rem;
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+
+/* ── 2. Opener grammar: kicker → title → figures → rule → gloss ─ */
+/* Plex Mono kicker. The supervisor's .kicker-range ("· §§1–23") inherits it. */
+body[data-chapter="p1c1"] .chapter-meta .meta-part,
+body[data-chapter="p1c2"] .chapter-meta .meta-part,
+body[data-chapter="p1c5"] .chapter-meta .meta-part {
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--bge-brass);
+}
+/* Fraunces titles, engraved register (E6): 400/600, no glow, no italic. */
+body[data-chapter="p1c1"] .chapter-meta .meta-title,
+body[data-chapter="p1c2"] .chapter-meta .meta-title,
+body[data-chapter="p1c5"] .chapter-meta .meta-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.6vw, 2.9rem);
+  line-height: 1.08;
+  letter-spacing: 0.005em;
+  color: var(--bge-ink);
+  text-shadow: none;
+}
+/* Giant archival range figures — the ledger voice at full size. */
+body[data-chapter="p1c2"] .chapter-meta .range-figures,
+body[data-chapter="p1c5"] .chapter-meta .range-figures {
+  margin: 1.1rem 0 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(3.2rem, 10vw, 6rem);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--bge-brass);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+/* Composition IV: p1c5 figures run smaller and wider-tracked — a field of
+ * small figures, not a monument; the chapter holds 125 of them. */
+body[data-chapter="p1c5"] .chapter-meta .range-figures {
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  letter-spacing: 0.12em;
+}
+/* E4: no figures on the Preface, ever — even if a manifest adds them. */
+body[data-chapter="p1c1"] .chapter-meta .range-figures {
+  display: none;
+}
+/* The meta number line ("Chapter I") goes quiet: small mono, faded. */
+body[data-chapter="p1c1"] .chapter-meta .meta-number,
+body[data-chapter="p1c2"] .chapter-meta .meta-number,
+body[data-chapter="p1c5"] .chapter-meta .meta-number {
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+/* Kill the shared diamond trailer on the number line — ledger has no gems. */
+body[data-chapter="p1c1"] .chapter-meta .meta-number::after,
+body[data-chapter="p1c2"] .chapter-meta .meta-number::after,
+body[data-chapter="p1c5"] .chapter-meta .meta-number::after {
+  content: none;
+}
+/* Kill the shared fleuron seal under the heading block on prototype chapters:
+ * the ledger's seals live in #chapter-art, not in pseudo-elements. */
+body[data-chapter="p1c1"] .chapter-meta::after,
+body[data-chapter="p1c2"] .chapter-meta::after,
+body[data-chapter="p1c5"] .chapter-meta::after {
+  content: none;
+}
+/* Double rule: 2px brass over 1px faded. The span is the brass bar; the
+ * container draws the faded hairline beneath it. */
+body[data-chapter="p1c1"] .chapter-meta .meta-rule,
+body[data-chapter="p1c2"] .chapter-meta .meta-rule,
+body[data-chapter="p1c5"] .chapter-meta .meta-rule {
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin-top: 1.75rem;
+}
+body[data-chapter="p1c1"] .chapter-meta .meta-rule span,
+body[data-chapter="p1c2"] .chapter-meta .meta-rule span,
+body[data-chapter="p1c5"] .chapter-meta .meta-rule span {
+  width: 7rem;
+  height: 2px;
+  background: var(--bge-brass);
+  opacity: 1;
+  transform: none;
+  box-shadow: none;
+}
+body[data-chapter="p1c1"] .chapter-meta .meta-rule::after,
+body[data-chapter="p1c2"] .chapter-meta .meta-rule::after,
+body[data-chapter="p1c5"] .chapter-meta .meta-rule::after {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 1px;
+  background: var(--bge-faded);
+  opacity: 0.8;
+}
+/* Italic gloss line under the rule (supervisor-owned element + map). */
+body[data-chapter="p1c1"] .chapter-meta .meta-gloss,
+body[data-chapter="p1c2"] .chapter-meta .meta-gloss,
+body[data-chapter="p1c5"] .chapter-meta .meta-gloss {
+  margin: 1.25rem auto 0;
+  max-width: 34rem;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--bge-faded);
+}
+body[data-chapter="p1c1"] .chapter-meta .meta-gloss[hidden],
+body[data-chapter="p1c2"] .chapter-meta .meta-gloss[hidden],
+body[data-chapter="p1c5"] .chapter-meta .meta-gloss[hidden] {
+  display: none;
+}
+/* Reading-time line under the number: quiet mono, inherits the row. */
+body[data-chapter="p1c1"] .chapter-meta .meta-sub,
+body[data-chapter="p1c2"] .chapter-meta .meta-sub,
+body[data-chapter="p1c5"] .chapter-meta .meta-sub {
+  font-family: var(--font-ledger);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+ * opener plate. The meta block left-aligns and reserves the seal's column. */
+@media (min-width: 900px) {
+  body[data-chapter="p1c2"] .reader-body {
+    position: relative;
+  }
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal:not([hidden]) {
+    position: absolute;
+    top: 3rem;
+    right: clamp(1rem, 6vw, 5rem);
+    margin: 0;
+    max-width: 9rem;
+    z-index: 1;
+  }
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal svg {
+    max-width: 9rem;
+  }
+  body[data-chapter="p1c2"] .chapter-meta {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: min(var(--reader-max), 65ch);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 12rem;
+  }
+  body[data-chapter="p1c2"] .chapter-meta .meta-rule {
+    align-items: flex-start;
+  }
+  body[data-chapter="p1c2"] .chapter-meta .meta-gloss {
+    margin-left: 0;
+  }
+  /* Widen the reading column's left margin so the 4.5rem numeral gutter fits. */
+  body[data-chapter="p1c2"] #chapter-text > p,
+  body[data-chapter="p1c5"] #chapter-text > p {
+    max-width: min(var(--reader-max), 60ch);
+  }
+  body[data-chapter="p1c2"] #chapter-text > p.sec-start,
+  body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+    margin-left: max(auto, 0px);
+  }
+}
+
+/* ── 3. Margin numerals: the signature (E1) ───────────────────── */
+/* ledger.js wraps each section-start's leading number in .sec-num and marks
+ * the paragraph .sec-start. Styling ONLY — no numeral content anywhere here. */
+body[data-chapter="p1c2"] #chapter-text > p.sec-start,
+body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+  position: relative;
+}
+body[data-chapter="p1c2"] #chapter-text .sec-num,
+body[data-chapter="p1c5"] #chapter-text .sec-num {
+  font-family: var(--font-ledger);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--bge-brass);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+/* Desktop: numerals hang in a 4.5rem left margin, top-aligned to the entry. */
+@media (min-width: 900px) {
+  body[data-chapter="p1c2"] #chapter-text > p.sec-start,
+  body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+    scroll-margin-top: calc(var(--header-h) + 1rem);
+  }
+  body[data-chapter="p1c2"] #chapter-text .sec-num,
+  body[data-chapter="p1c5"] #chapter-text .sec-num {
+    position: absolute;
+    right: calc(100% + 1.25rem);
+    top: 0.55em;
+    width: 3.25rem;
+    text-align: right;
+    line-height: 1.2;
+  }
+}
+/* Below 900px: inline brass prefix with a hanging indent — no overlap, no
+ * horizontal scroll. The space ledger.js inserts after the span is the gap. */
+@media (max-width: 899px) {
+  body[data-chapter="p1c2"] #chapter-text > p.sec-start,
+  body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+    padding-left: 3.25rem;
+    text-indent: -3.25rem;
+  }
+  body[data-chapter="p1c2"] #chapter-text > p.sec-start .sec-num,
+  body[data-chapter="p1c5"] #chapter-text > p.sec-start .sec-num {
+    display: inline-block;
+    min-width: 2.75rem;
+    margin-right: 0.5rem;
+    text-indent: 0;
+  }
+}
+/* E3: the single Sanguine numeral in FRONT — §146, the abyss gazes back. */
+body[data-chapter="p1c5"] #chapter-text .sec-num.sec-red {
+  color: var(--bge-blood);
+  font-weight: 500;
+}
+/* The marked maxim gets air, not a badge: a touch more room above. */
+body[data-chapter="p1c5"] #chapter-text > p.sec-marked {
+  margin-top: 2.25em;
+}
+
+/* ── 4. p1c2 reading treatment: long-essay relief ─────────────── */
+body[data-chapter="p1c2"] #chapter-text {
+  font-family: var(--font-body);
+}
+/* Extra air above each section start — the scanning anchors breathe. */
+body[data-chapter="p1c2"] #chapter-text > p.sec-start {
+  margin-top: 2.1em;
+}
+body[data-chapter="p1c2"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+/* No drop cap on numbered chapters: the margin numeral is the entry. */
+body[data-chapter="p1c2"] #chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+  background: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+/* Chapter-end mark §23: ledger entry, centered, Plex Mono brass. */
+body[data-chapter="p1c2"] #chapter-text > p:last-child::after {
+  content: "§ 23";
+  display: block;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: var(--font-ledger);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--bge-brass);
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* ── 5. p1c5 maxim-set: the cohort centerpiece (E5) ───────────── */
+body[data-chapter="p1c5"] #chapter-text {
+  font-family: var(--font-body);
+}
+/* Each maxim a discrete block with air, number first, never run-on. */
+body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+  margin-bottom: 1.6em;
+  margin-top: 0;
+}
+/* Continuation paragraphs tuck under their maxim, slightly inset. */
+body[data-chapter="p1c5"] #chapter-text > p:not(.sec-start) {
+  margin-top: -0.9em;
+  margin-bottom: 1.6em;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--bge-faded);
+}
+/* Hairlines every ~5 maxims: positional rules on wrapped section starts. The
+ * 25 paragraph indices below are every 5th maxim start derived from the §5.1
+ * oracle (continuations at paras 8/47/50/75 shift the count, hence the
+ * irregular steps — none collide with a continuation). The .sec-start guard
+ * means prose drift only moves a rule, never mis-numbers (E1: these carry no
+ * numeral content — layout only). */
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(5),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(11),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(16),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(21),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(26),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(31),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(36),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(41),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(46),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(53),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(58),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(63),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(68),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(73),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(79),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(84),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(89),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(94),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(99),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(104),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(109),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(114),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(119),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(124),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(129) {
+  border-bottom: 1px solid var(--bge-faded);
+  padding-bottom: 1.6em;
+}
+/* No drop cap: maxims don't take caps — restraint. */
+body[data-chapter="p1c5"] #chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+  background: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+/* Chapter-end mark §185. */
+body[data-chapter="p1c5"] #chapter-text > p:last-child::after {
+  content: "§ 185";
+  display: block;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: var(--font-ledger);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--bge-brass);
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* ── 6. p1c1 Preface: total silence (E4) ──────────────────────── */
+/* No figures, no seals, no numerals — verse typography, one Sanguine fleuron
+ * in #chapter-art, a brass drop cap, a signed colophon. Any "§" glyph in
+ * this chapter fails review, so this section mints no marks at all. */
+body[data-chapter="p1c1"] #chapter-text {
+  font-family: var(--font-body);
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* The single drop cap in FRONT: brass "S", Fraunces, flat. */
+body[data-chapter="p1c1"] #chapter-text > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--bge-brass);
+  background: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+/* Dateline colophon: the author's signature line, right-aligned italic. */
+body[data-chapter="p1c1"] #chapter-text > p:last-child {
+  margin-top: 2.5em;
+  text-align: right;
+  font-style: italic;
+  color: var(--bge-faded);
+}
+/* Silence the shared chapter-end fleuron: unnumbered chapters end wordless. */
+body[data-chapter="p1c1"] #chapter-text > p:last-child::after {
+  content: none;
+}
+/* Belt and braces for E4: if a sec-num ever lands in the Preface (it can't —
+ * ledger.js ignores p1c1), hide it rather than show a stray numeral. */
+body[data-chapter="p1c1"] #chapter-text .sec-num {
+  display: none;
+}
+
+/* ── 7. TOC ledger rows ───────────────────────────────────────── */
+/* Works today (roman + name + sub + check) and activates .toc-range when the
+ * supervisor's spans land. Rows keyed by chapter id; deferred p1c3/p1c4 rows
+ * get the same ledger voice so the drawer reads as one instrument. */
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-num {
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--bge-faded);
+  width: 2rem;
+}
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: 0.01em;
+}
+/* Dotted brass leader between the name and the range column. */
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-main::after {
+  content: "";
+  display: block;
+  margin: 0.3rem 0 0.1rem;
+  border-bottom: 1px dotted var(--bge-brass);
+  opacity: 0.55;
+}
+/* The range column: fixed-width, right-aligned, tabular Plex Mono. */
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-range {
+  flex-shrink: 0;
+  min-width: 4.75rem;
+  margin-left: 0.5rem;
+  align-self: center;
+  text-align: right;
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--bge-brass);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+#toc-list .toc-chapter[data-chapter-id="p1c1"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c2"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c3"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c4"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c5"].active .toc-num {
+  color: var(--bge-brass);
+}
+
+/* ── 8. Progress, nav, selection: ledger furniture ────────────── */
+/* Flat brass progress fill — no gradient (E2). */
+body[data-chapter="p1c1"] .progress-fill,
+body[data-chapter="p1c2"] .progress-fill,
+body[data-chapter="p1c5"] .progress-fill {
+  background: var(--bge-brass);
+}
+/* Prev/next cards: ledger entries — mono labels, Fraunces titles. */
+body[data-chapter="p1c1"] .chapter-nav .nav-label,
+body[data-chapter="p1c2"] .chapter-nav .nav-label,
+body[data-chapter="p1c5"] .chapter-nav .nav-label {
+  font-family: var(--font-ledger);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--bge-brass);
+}
+body[data-chapter="p1c1"] .chapter-nav .nav-title,
+body[data-chapter="p1c2"] .chapter-nav .nav-title,
+body[data-chapter="p1c5"] .chapter-nav .nav-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+body[data-chapter="p1c1"] .chapter-nav .nav-btn,
+body[data-chapter="p1c2"] .chapter-nav .nav-btn,
+body[data-chapter="p1c5"] .chapter-nav .nav-btn {
+  border-radius: 2px;
+}
+/* Selection stays legible brass-on-black in every theme. */
+body[data-chapter="p1c1"] #chapter-text::selection,
+body[data-chapter="p1c2"] #chapter-text::selection,
+body[data-chapter="p1c5"] #chapter-text::selection {
+  background: var(--bge-brass);
+  color: #12100b;
+}
+html[data-theme="light"] body[data-chapter="p1c1"] #chapter-text::selection,
+html[data-theme="light"] body[data-chapter="p1c2"] #chapter-text::selection,
+html[data-theme="light"] body[data-chapter="p1c5"] #chapter-text::selection,
+html[data-theme="sepia"] body[data-chapter="p1c1"] #chapter-text::selection,
+html[data-theme="sepia"] body[data-chapter="p1c2"] #chapter-text::selection,
+html[data-theme="sepia"] body[data-chapter="p1c5"] #chapter-text::selection {
+  color: #faf7ef;
+}
+/* Reader header labels take the ledger voice on prototype chapters. */
+body[data-chapter="p1c1"] .reader-header .header-part,
+body[data-chapter="p1c2"] .reader-header .header-part,
+body[data-chapter="p1c5"] .reader-header .header-part {
+  font-family: var(--font-ledger);
+  color: var(--bge-brass);
+}
+body[data-chapter="p1c1"] .reader-header .header-chapter,
+body[data-chapter="p1c2"] .reader-header .header-chapter,
+body[data-chapter="p1c5"] .reader-header .header-chapter {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* ── 9. Responsive ────────────────────────────────────────────── */
+@media (max-width: 899px) {
+  /* The seal returns to the centered stack below the desktop composition. */
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal:not([hidden]) {
+    max-width: 9rem;
+  }
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal svg {
+    max-width: 9rem;
+  }
+}
+@media (max-width: 560px) {
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal:not([hidden]),
+  body[data-chapter="p1c5"] #chapter-art.ledger-seal:not([hidden]) {
+    max-width: 7.5rem;
+  }
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal svg,
+  body[data-chapter="p1c5"] #chapter-art.ledger-seal svg {
+    max-width: 7.5rem;
+  }
+  body[data-chapter="p1c1"] #chapter-art.ledger-fleuron:not([hidden]) {
+    max-width: 13rem;
+  }
+  body[data-chapter="p1c1"] #chapter-art.ledger-fleuron svg {
+    max-width: 13rem;
+  }
+  /* Tighter hanging indent on phones; still no overlap, no scroll. */
+  body[data-chapter="p1c2"] #chapter-text > p.sec-start,
+  body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+    padding-left: 2.9rem;
+    text-indent: -2.9rem;
+  }
+  body[data-chapter="p1c2"] #chapter-text > p.sec-start .sec-num,
+  body[data-chapter="p1c5"] #chapter-text > p.sec-start .sec-num {
+    min-width: 2.4rem;
+  }
+  #toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-range {
+    min-width: 0;
+  }
+}
+
+/* ── 10. Motion: one calm settle, then stillness ──────────────── */
+/* A single opener settle (opacity only — figures never drift). Shared CSS
+ * already kills all animation under prefers-reduced-motion; this block adds
+ * nothing beyond one 400ms fade on the art slot, and repeats the guard. */
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art:not([hidden]) {
+  animation: bge-ledger-settle 400ms ease-out both;
+}
+@keyframes bge-ledger-settle {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="beyond-good-and-evil"] #chapter-art {
+    animation: none;
+  }
+}
+
+/* ── 11. Print: the ledger on paper ───────────────────────────── */
+@media print {
+  body[data-chapter="p1c1"] #chapter-art,
+  body[data-chapter="p1c2"] #chapter-art,
+  body[data-chapter="p1c5"] #chapter-art {
+    color: #000;
+  }
+  body[data-chapter="p1c2"] #chapter-text > p.sec-start,
+  body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+    padding-left: 0;
+    text-indent: 0;
+  }
+  body[data-chapter="p1c2"] #chapter-text .sec-num,
+  body[data-chapter="p1c5"] #chapter-text .sec-num {
+    position: static;
+    display: inline;
+  }
+}

@@ -1,0 +1,1288 @@
+{
+ "cohort": "F",
+ "cohort_title": "November Ascent",
+ "ids_provisional": false,
+ "note": "Chapter IDs p1c1–p1c77/p2c1–p2c12 are PROVISIONAL per TextCurator PDF audit. Each entry records part + sequential index + full title for cheap remap. Draft Phase 1 manifest — not locked until supervisor freeze notice.",
+ "range": "p1c67–p1c77 (sequential index 67–77, part-1 / The Novel)",
+ "shared_grammar": "Cohort arc: 14-November night corridor (67–71: Prospect St./Inman Sq. pursuit-and-flight under sodium light) → lens-eye breather (72: Mario's Bolex tour) → deposition and fever (73–74: Notkin interrogation, Inner Infant farce, Gately hospital epic) → snow and gala (75–77: first snow, fundraiser run-up, transcript, abrupt finale). Shared grammar: night-corridor opener band (street-name + time-stamp) for 67–71; found-form transcript/deposition set for 73/76; recurring Gately-hospital thread (dextral pain, Abiding, visitors, wraith) with a quiet chart-and-lamp motif; accumulating snow from 75 through the gala; the finale (77) closes the book rather than ending text — the mid-sentence cutoff is honored as a designed ending with a bridge to the endnotes. Neighboring chapters share the grammar (corridor band, deposition set, snow) without cloning compositions.",
+ "entries": [
+  {
+   "id": "p1c67",
+   "index": 67,
+   "mood": "False post-seizure euphoria curdling into the book's bleakest essay; compassion inside clinical horror.",
+   "motif_asset": "Two-plate opener object: ambulance Minimal Mambo silhouette (skinny arms, boa) against purple twilight brick; and the Feaster Xmas card — small watercolor locomotive, excruciating, held apart from the prose like evidence.",
+   "motifs": [
+    "post-seizure well-being high, Minimal Mambo in ambulance",
+    "expired Health Card, inverted hospital respect",
+    "purple twilight, big brick cake of hospital",
+    "Kate Gompert psychotic-depression treatise: 'It', anhedonia-vs-anguish",
+    "Suicide Contract absurdity; Ernest Feaster Xmas locomotives"
+   ],
+   "n_paras": 21,
+   "opener_composition": "Split-register opener: upper band night-corridor (ambulance red pulse, 'N. CAMBRIDGE / POST-SEIZURE' stamp); lower register drops into bruise-purple for the depression essay, title's essay half set like a clinical heading. The locomotive Xmas card appears as a small tipped-in plate before the essay movement.",
+   "palette_role": "Ambulance-interior clinical white and cross-red collapsing into bruise-purple twilight; the essay movement stays in drained gray-violet — the cohort's darkest sustained tint.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Two-movement set: flight narrative in standard night-corridor set; the Kate essay (P7+) in a slower, wider, more luminous set with extra paragraph air — the essay must feel like a different room the reader walks into. Hinge paragraphs (Day bridge, E.T.A. anhedonia takes) get transitional spacing.",
+   "structure_note": "P0–P5 Poor Tony flight (ambulance → release → twilight walk → Antitoi adjuncts backstory); P6 Geoffrey Day genital-cognomen bridge; P7–P20 Kate essay (E.T.A. takes → Hal anhedonia → 'It' phenomenology → psychotic loneliness → Suicide Contract → Feaster anecdote → Xmas cards). Hinge at P6/P7 must be felt, not labeled.",
+   "subject": "Poor Tony Krause's post-seizure ambulance ride and release (Minimal Mambo, expired Health Card), pivoting mid-chapter into the great Kate Gompert psychotic-depression essay — anhedonia vs. 'It', the loneliness of the psychotic part, the Suicide Contract, the Feasters' locomotive Xmas cards.",
+   "title": "14 November — Year of the Depend Adult Undergarment (3) — P. T. Krause: N. Cambridge: that infamous…",
+   "words": 4374,
+   "order": 67,
+   "part_roman": "I",
+   "number_label": "§ 67",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "banner",
+    "motif": "krause-mambo",
+    "caption": "Plate F-1 · Ambulance mambo; locomotive card tipped in",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "krause-mambo"
+   },
+   "ledger_conform": {
+    "stamp_band": "PLATE A — AMBULANCE / PLATE B — LOCOMOTIVE CARD",
+    "filing_line": "N. CAMBRIDGE · POST-SEIZURE · AMBULANCE → ESSAY",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Ambulance Minimal Mambo silhouette against brick twilight; tipped-in locomotive Xmas card as second register."
+   }
+  },
+  {
+   "id": "p1c68",
+   "index": 68,
+   "mood": "Exhausted psychotic-depression night walk; urban phantasmagoria glimpsed through sleepless eyes.",
+   "motif_asset": "Stuttering sodium streetlight study: orange lamp flickering over a Prospect St. sidewalk, darkened shop windows carrying disconnected floating heads; violet mist pooling at the base with a pale lottery ticket.",
+   "motifs": [
+    "Ruth van Cleve: spike heels, brass lipstick, insectile Ice face, big-hair cloud",
+    "sodium streetlights stuttering off/on with loose-connection hum",
+    "floating heads in darkened shop windows; stem-artists at sidewalk edges",
+    "Kate's concussion at the lightpost; bruised-brain dread",
+    "violet fungal palm; GIGABUCKS 299 ticket receding into violet mist; shouting eyewitness"
+   ],
+   "n_paras": 69,
+   "opener_composition": "Night-corridor opener band ('PROSPECT ST. / 2200H / SATURDAY') over the stuttering-lamp plate; title set small against the lamp glare. The corridor band is the shared 67–71 grammar — here at its most hallucinatory.",
+   "palette_role": "Sodium-vapor orange key light on wet asphalt black; violet mist accent (palm, ticket, aura); shop-window green-black for the floating heads.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Street-level set: long observational paragraphs keep walking pace; the concussion passage slows with wider spacing and a violet marginal glow; the closing eyewitness harangue runs breathless-tight. Sleeplessness rendered as pacing, not blur.",
+   "structure_note": "Continuous walk P0–P66 (Ruth's yammer → street phantasmagoria → meeting-house interior voices) then the lightpost concussion and eyewitness coda (P67–P68); the two long closing paras are the fall and its aftermath — give them landing room.",
+   "subject": "Ruth van Cleve's first day off House Restriction: spike-heeled night walk up Prospect with the sleepless psychotically depressed Kate Gompert — stuttering sodium lights, floating heads in shop windows — ending in Kate's concussion at a lightpost and a violet-palmed eyewitness harangue.",
+   "title": "14 November — Year of the Depend Adult Undergarment (4) — Ms. Ruth van Cleve’s first day off…",
+   "words": 8739,
+   "order": 68,
+   "part_roman": "I",
+   "number_label": "§ 68",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "banner",
+    "motif": "van-cleve-lamp",
+    "caption": "Plate F-2 · Sodium lamp over Prospect St., 2200h.",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "van-cleve-lamp"
+   },
+   "ledger_conform": {
+    "stamp_band": "PROSPECT ST. / 2200H / SATURDAY",
+    "filing_line": "PROSPECT ST. · 2200H SAT · RUTH + KATE WALK",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Stuttering sodium lamp over Prospect sidewalk; floating heads in dark shop windows; violet ticket mist at base."
+   }
+  },
+  {
+   "id": "p1c69",
+   "index": 69,
+   "mood": "Predatory, frozen, paranoid farce; interstellar cold inside a manic body.",
+   "motif_asset": "Frost-crystal macro plate: sinuses hung with crystal frost, breath-fog on frozen air — slashed by one violent fluorescent-yellow snowpant leg and a sombrero brim with wooden balls.",
+   "motifs": [
+    "interstellar nasal cold past the euphoric crest; frost-hung sinuses",
+    "two tiny Chinese women, twine-handled shopping bags = carried wealth",
+    "Lenz's stolen ensemble: fluorescent-yellow snowpants, tux coat, sombrero, mannequin mustache",
+    "Browning X444 in sock; Gifford Lectures hollowed heart; overhead bank clocks",
+    "closing A.F.R. paragraph: the two ways of going (indirect route held abeyant)"
+   ],
+   "n_paras": 6,
+   "opener_composition": "Coldest opener in the cohort: near-white frost field, title set in ice-cracked letterforms; the fluorescent-yellow slash enters only with the ensemble paragraph. The A.F.R. coda para gets a chrome-cold rule above it — a different world's weather.",
+   "palette_role": "Frostbite blue-white and breath-fog gray; single fluorescent-yellow accent (snowpants); mannequin-mustache gloss black. The cohort's only near-white opener — cold as subject, not as absence.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Six dense paras in tight stalking cadence; the stalking passages stay clenched while the Little Lisbon alley-catalog paragraph breathes slightly wider (territory mapped = control). Coda para in A.F.R. chrome set, visually quarantined.",
+   "structure_note": "6 paras: P0–P1 stalk and freeze; P2 ensemble; P3 Little Lisbon territory/weapons; P4 snatch-and-sprint economics; P5 A.F.R. two-routes coda — a different strand's paragraph grafted on, must feel spliced, not smoothed.",
+   "subject": "Randy Lenz, frozen past cocaine's euphoric crest into interstellar nasal cold, stalks two tiny shopping-bag-laden Chinese women toward Inman Square in a stolen tux/sombrero/snowpants ensemble — closing with a grafted A.F.R. paragraph on the two routes to the Entertainment.",
+   "title": "14 November — Year of the Depend Adult Undergarment (5) — A disadvantage of your nasally ingested cocaine…",
+   "words": 1643,
+   "order": 69,
+   "part_roman": "I",
+   "number_label": "§ 69",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "banner",
+    "motif": "lenz-frost",
+    "caption": "Plate F-3 · Frost study; fluorescent slash",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "lenz-frost"
+   },
+   "ledger_conform": {
+    "stamp_band": "FROST FIELD / SATCHEL LEDGER",
+    "filing_line": "FROST · SATCHEL STALK · SNOWPANT SLASH",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Frost-crystal macro field; single fluorescent-yellow snowpant slash; chrome coda rule for the A.F.R. graft."
+   }
+  },
+  {
+   "id": "p1c70",
+   "index": 70,
+   "mood": "Slapstick terror at sprint pace, then cold procedural dread in a dismantled shop.",
+   "motif_asset": "Chase plate: trailing boa whipping around a Prospect corner, clutching hand millimeters behind, two purses tucked like a football; second plate: the Antitois' shelf wall with every mirror intact and one consumer TP glowing in the storage room.",
+   "motifs": [
+    "high-heel sprint technique: toes, forward incline, momentum",
+    "trailing boa; two purses tucked like a football; odor as shock-wave",
+    "the pursuing Creature's clutching hand",
+    "A.F.R. search: no mirrors broken, methodical cartridges, coffre d'amas",
+    "Tassigny volunteer viewing with EEG wires; Fortier's flesh-tone prostheses unworn"
+   ],
+   "n_paras": 7,
+   "opener_composition": "Fastest opener in the cohort: diagonal chase composition, title set at a forward incline as if itself sprinting. The A.F.R. movement gets a hard cut — full-bleed stop, chrome rule, then the shop's stillness. Speed then procedure.",
+   "palette_role": "Night-chase sodium and asphalt with a feather-boa accent (dyed plume color); A.F.R. movement in wheelchair-chrome and storage-room dark. Motion vs. method as palette contrast.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "P0's 6.6k-word chase para runs unbroken at full measure — no art interrupts the sprint. A.F.R. paras in cool procedural set with wider margins, like a field report. The cut between them is the chapter's main event; make it physical.",
+   "structure_note": "P0 is the entire chase (6.6k words, one para); P1–P6 are the A.F.R. Antitoi-shop history (trace → search method → F.L.Q. cartridge → Tassigny viewing → Fortier absence → prostheses). Single hinge after P0 — the hardest cut in the cohort.",
+   "subject": "Poor Tony's high-heeled sprint up Prospect with the Creature's hand at his trailing boa — then a hard cut to the A.F.R. history: tracing the Entertainment to the Antitois' shop, the methodical unbroken-mirror search, Tassigny's volunteer viewing, Fortier's politics of the wheelchair.",
+   "title": "14 November — Year of the Depend Adult Undergarment (6) — The secret to sprinting in high heels…",
+   "words": 2004,
+   "order": 70,
+   "part_roman": "I",
+   "number_label": "§ 70",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "banner",
+    "motif": "tony-sprint",
+    "caption": "Plate F-4 · The sprint; the unbroken mirrors",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "tony-sprint"
+   },
+   "ledger_conform": {
+    "stamp_band": "CHASE INCLINE / ANTITOI FIELD REPORT",
+    "filing_line": "SPRINT · BOA PURSUIT → ANTITOI FIELD REPORT",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Diagonal chase: trailing boa, clutching hand, purses-as-football; hard-cut second register: mirrored shelf wall + storage-room TP glow."
+   }
+  },
+  {
+   "id": "p1c71",
+   "index": 71,
+   "mood": "Sobriety-anxiety triptych: dental dread, hunter's patience, sanctuary breached. The cohort's tensest chapter.",
+   "motif_asset": "Three small plates sharing one wall: dental instrument tray gleaming beside a veil's selvage; EEG-wire viewing chair in a storage room; Marathe's blanket-draped wheelchair at Ennet's lit doorway, machine pistol a shadow under wool.",
+   "motifs": [
+    "Joelle's teeth: 'base corrosion, traveller's brush, enamel-revitalizers",
+    "Dr. Don dental-chair dream: bibbed Gately, gloveless warm fingers",
+    "A.F.R. losses: Desjardins and Joubet in the viewing rotation; Read-Only copy",
+    "radio engineer acquired; indirect route: taking the auteur's associates",
+    "Marathe at Ennet intake: 'residing alien addicted to smack', gangrene-legs cover story, veil inhaling"
+   ],
+   "n_paras": 173,
+   "opener_composition": "Triptych opener: three narrow vertical panels (tray / chair / doorway) with the title spanning — the chapter announces its three braids at once. Each braid keeps its panel motif as a marginal marker so the reader always knows which strand they're in.",
+   "palette_role": "Dental-chair green-white, veil gauze gray, viewing-room dark, Ennet doorway lamplight amber. Clinical whites vs. woolen ambers — the hunter wrapped in the patient's blanket.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Braid-aware set: Joelle interior in close first-person warmth; A.F.R. passages in chrome procedural; Marathe intake dialogue in slow ceremonial cadence with the veil-breath moments given held air. Marginal braid markers (tray/chair/doorway ticks) throughout the 173-para weave.",
+   "structure_note": "Three braids intercut across 173 paras: Joelle teeth/dream/cleaning/Orin/Daddy memories (P0–P1, P80–P100 region, P171–P172); A.F.R. Entertainment-find aftermath (P2–P10, P110–P170 region); Marathe Ennet infiltration (P50 region, P120–P170). Short dialogue paras dominate the intake scenes — velocity against the long memory paras.",
+   "subject": "Sobriety-anxiety triptych: Joelle's obsessive teeth-worry and Dr. Don dental dream braided with the A.F.R.'s Entertainment-find losses (Desjardins, Joubet; Read-Only copy) and Marathe's infiltration of Ennet House posing as a Swiss heroin addict seeking treatment.",
+   "title": "14 November — Year of the Depend Adult Undergarment (7) — After so long not caring, and then…",
+   "words": 15654,
+   "order": 71,
+   "part_roman": "I",
+   "number_label": "§ 71",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "triptych",
+    "motif": "triptych-care",
+    "caption": "Plate F-5 · Tray, chair, doorway",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "triptych-care"
+   },
+   "ledger_conform": {
+    "stamp_band": "TRIPTYCH: TRAY / CHAIR / DOORWAY",
+    "filing_line": "TRIPTYCH · TRAY / CHAIR / DOORWAY",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Three narrow panels: dental tray gleam, viewing chair with EEG wires, lit doorway with blanketed wheelchair."
+   }
+  },
+  {
+   "id": "p1c72",
+   "index": 72,
+   "mood": "Tender, nocturnal, lens-mediated love; the book's gentlest chapter — a breather before the ascent's hard end.",
+   "motif_asset": "Bolex H64 head-camera study: strap lines, coax cable to the foot-treadle held at the sweatered chest; viewfinder corner-brackets as a recurring frame device; Center Courts floodlight panel glowing over cold dark.",
+   "motifs": [
+    "Bolex H64 strapped to head; coax; foot-treadle at chest",
+    "Schtitt asleep in cane chair: dead pipe, varicoceles sprawl, climbing duet",
+    "dorm tour: crutches, 'Boner check!', Chu at the viewfinder",
+    "Avril interview: 'I'm right here', white cowlick, existential persons",
+    "late dialogues; Hal–Mario coda: 'Tell me what I should do' / 'I think you just did'"
+   ],
+   "n_paras": 453,
+   "opener_composition": "Viewfinder opener: the whole composition inside Bolex corner-brackets with a REC-adjacent humility (no gimmick glow) — Schtitt's sleeping face centered, title set as a documentary slate ('E.T.A. / FALL / M. INCANDENZA'). The brackets recur as section frames, never as decoration elsewhere in the cohort.",
+   "palette_role": "Viewfinder green-black, floodlight white, acoustic-tile gray, sweater-wool brown, Avril's hair-comber white. Warmest sustained palette since p1c67's opening — tenderness as light temperature.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Documentary set: station cards (ROOM 106 / DORMS / AVIRL'S OFFICE / LATE) as quiet slate dividers across the 453-para mosaic; long Avril passages in full interview measure; dialogue staccato kept tight and fast; the Hal–Mario coda given closing-air — the chapter lands, doesn't stop.",
+   "structure_note": "453 paras, dialogue-mosaic: P0–P4 Schtitt station; P5–P60 dorm tour; P60–P180 Avril interview (long anchor paras P152/P156 on fragile persons and Avril's aging beauty); P180–P450 late dialogues mosaic; P451–P452 Hal–Mario coda. Slate dividers must be quiet — this chapter whispers.",
+   "subject": "Mario's head-strapped Bolex documentary tour of E.T.A. at night — Schtitt asleep to a climbing duet, the dorms' comic stations, the long tender Avril interview on fragile personhood, dissolving into late-night dialogue mosaic and a Hal–Mario coda.",
+   "title": "11 November — Year of the Depend Adult Undergarment (4) — Part of Mario’s footage for the documentary…",
+   "words": 14134,
+   "order": 72,
+   "part_roman": "I",
+   "number_label": "§ 72",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "slate",
+    "motif": "bolex-viewfinder",
+    "caption": "Plate F-6 · Bolex slate: E.T.A. at night",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "bolex-viewfinder"
+   },
+   "ledger_conform": {
+    "stamp_band": "E.T.A. / FALL / M. INCANDENZA",
+    "filing_line": "E.T.A. · FALL · M. INCANDENZA BOLEX TOUR",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Bolex corner-bracket slate: Schtitt asleep in cane chair centered; documentary slate lettering below."
+   }
+  },
+  {
+   "id": "p1c73",
+   "index": 73,
+   "mood": "Deposition dread → therapeutic farce → fever epic; the cohort's great long-haul chapter before the transcript.",
+   "motif_asset": "EXCEPTIONAL multi-plate: (1) interrogation lamp blazing on Notkin's glabrous face, deposition card with em-dash 'That…' litany; (2) Inner Infant circle: grown men with teddy bears, 'Please, Mommy and Daddy' breath-fog; (3) Gately hospital chart: DEXTRAL stamp, wraith-speed lines, steno notebook.",
+   "motifs": [
+    "Johnette F. Dream Duty Log; scalding-coffee finger; upscale kid with frozen hair",
+    "Tine's high-watt lamp; Notkin's 'That…' deposition litany",
+    "Bolex H32 crib-lens; Madame Psychosis as Death-Mother; funeral at L'Islet",
+    "Inner Infant men's group: Kevin Bain, Harv, teddy bears, 'Please, Mommy and Daddy'",
+    "Gately fever epic: bank-story Ewell, wraith, tiny-woman dream (25k-word mega-para), Flaggers' CPR jokes"
+   ],
+   "n_paras": 167,
+   "opener_composition": "EXCEPTIONAL: triple-gate opener — Log book, lamp, and hospital chart as three descending registers, title stamped like a case file ('17 NOVEMBER / DEPOSITION + DREAM DUTY + DEXTRAL'). Each movement gets its own sub-opener plate; the mega-para P144 gets a full-bleed fever field it bleeds into.",
+   "palette_role": "Case-file palette: Log-book paper, interrogation-lamp white, hospital gray-green, fever amber deepening across the Gately movement. The longest sustained read in the cohort — palette must carry 31k words without fatigue.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Marathon set with movement relief: Log/deposition in found-document set (em-dash litany with hanging 'That' cadence); Inner Infant in tight farcical dialogue; Gately epic in widening fever measure with the mega-para P144 set as one continuous breath (generous leading, no interruptions, fever-field background). Flaggers' jokes land dry and quick at the close.",
+   "structure_note": "P0–P4 Johnette/Log + upscale kid; P5–~P29 Notkin deposition litany; P30–~P119 Hal/Route 9 + Inner Infant meeting; P120–P166 Gately hospital epic (Ewell bank story → fever dreams → Thrust visit → P144 25k-word mega-para → wraith → Flaggers). Four movements; the deposition→farce→fever escalation is the chapter's shape.",
+   "subject": "EXCEPTIONAL (31k words): Johnette's Dream Duty Log and the upscale kid at Ennet's door; Molly Notkin's lamp-lit technical-interview deposition (the 'That…' litany on Madame Psychosis, the crib-lens, the funeral); the Inner Infant men's-group farce; and the Gately hospital fever epic crowned by the 25k-word mega-paragraph.",
+   "title": "17 November — Year of the Depend Adult Undergarment",
+   "words": 31053,
+   "order": 73,
+   "part_roman": "I",
+   "number_label": "§ 73",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "broadsheet",
+    "motif": "notkin-lamp",
+    "caption": "Plate F-7 · Log, lamp, chart (triple gate)",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "notkin-lamp"
+   },
+   "ledger_conform": {
+    "stamp_band": "17 NOVEMBER / DEPOSITION + DREAM DUTY + DEXTRAL",
+    "filing_line": "DEPOSITION + DREAM DUTY + DEXTRAL · 31K",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Triple gate: Dream Duty Log book, interrogation lamp on glabrous face, DEXTRAL hospital chart; fever field for P144."
+   }
+  },
+  {
+   "id": "p1c74",
+   "index": 74,
+   "mood": "Cold operational French giving way to hot fever surrealism; the shortest fuse in the cohort's back half.",
+   "motif_asset": "Door-and-kitchen diptych: storage-room door with a sliver of dark beneath (restrained, no gore — dread by omission); Mrs. Waite's kitchen light-fixture choked with dried bugs over a hemorrhoid-pillow chair, faucet dripping arrhythmically.",
+   "motifs": [
+    "drastic operation: acquiring the auteur's immediate family, perhaps in public",
+    "test-subject horror: severed digits pushed under the storage-room door",
+    "white-wig street man; gauche-woman-clad addict; foreign cookware and tiny undergarments",
+    "EAT motel dream: veil licking sweat, four-poster, ceiling fan at second-hand rate",
+    "Mrs. Waite's kitchen: dried-bug fixture, stacked Globes, mildew-and-putrid-fruit, pink doughnut"
+   ],
+   "n_paras": 6,
+   "opener_composition": "Diptych opener: left panel chrome-cold (operation order stamped '19 NOVEMBRE' — the French intrusion deliberate), right panel fever-green (kitchen fixture glow). Title spans the split. Six paras, two weathers, one gutter between them.",
+   "palette_role": "Storage-room dark and wheelchair-chrome vs. fever-kitchen mildew green and EAT-sign red. The cohort's sharpest cold/hot split inside a single chapter.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Six long paras in alternating weather: operational paras in tight procedural set; dream paras in humid widening set with the kitchen paragraph given the chapter's slowest air. The gutter between P2 and P3 is the chapter's hinge — a full divider, the only one this chapter needs.",
+   "structure_note": "6 paras: P0–P2 Marathe/A.F.R. (drastic operation → test-subject atrocity → Québec-children interception plan); P3–P5 Gately fever dreams (EAT motel → Mrs. Waite memory → Mrs. Waite kitchen dream). Single hinge after P2.",
+   "subject": "Marathe's drastic operation (acquiring the auteur's family; the test-subject atrocity under the storage-room door) cut against Gately's Joelle-and-Mrs.-Waite fever dreams — the EAT motel's veiled pleasures and the dried-bug horror of Mrs. Waite's kitchen.",
+   "title": "19 November — Year of the Depend Adult Undergarment",
+   "words": 3266,
+   "order": 74,
+   "part_roman": "I",
+   "number_label": "§ 74",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "banner",
+    "motif": "door-kitchen",
+    "caption": "Plate F-8 · Operation order; kitchen fixture",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "door-kitchen"
+   },
+   "ledger_conform": {
+    "stamp_band": "19 NOVEMBRE / OPERATION + FEVER",
+    "filing_line": "OPERATION + FEVER · DOOR / KITCHEN",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Diptych: chrome operation order stamped 19 NOVEMBRE; fever-green kitchen fixture choked with dried bugs."
+   }
+  },
+  {
+   "id": "p1c75",
+   "index": 75,
+   "mood": "Snow-muffled pre-gala dread with tenderness (photo album, brownies) inside institutional cold; the ascent's quietest morning.",
+   "motif_asset": "Frozen-window plate: breath-fogged subdorm glass with a forehead-shaped clear patch and stuck silhouette; beyond it virgin-white falling snow over purple-cast ground; small inset: Joelle's photo album page (Daddy, Mr. Man the bull).",
+   "motifs": [
+    "zoo dream without animals; Mario folded hands awaiting a lily",
+    "one-foot ankle therapy; Boards dread; night-custodial mop-bucket",
+    "purple ground snow, virgin-white falling snow; dinner-mint blue halls",
+    "Stice stuck by sweated forehead to window; thaw-or-yank operation",
+    "Kenkle/Brandt custodial: 'mirthful' diagnosis; Joelle's visit: brownies, album, Abiding"
+   ],
+   "n_paras": 185,
+   "opener_composition": "First-light opener: the frozen window fills the frame, title set as frost-writing ('20 NOVEMBER / GAUDEAMUS IGITUR') with the gala's Latin given ceremonial weight. The Gaudeamus thread starts here and runs through 76–77 — its typography must be consistent across all three.",
+   "palette_role": "Snow violet-white and purple-cast ground; dinner-mint blue halls; custodian-mop gray; photo-album sepia for the Joelle inset. First sustained snow palette — winter has arrived in the book.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Dawn set: Hal's pre-dawn interior in hushed narrow measure; the Gately/Joelle visit in warmer album-sepia inset blocks; Stice operation and custodial scenes in quick dialogue cadence; closing mirror-ghost passage ('tentative and ghostly against all that blazing white') given the chapter's final held breath.",
+   "structure_note": "P0–P12 Hal dawn (dream → snow → window → gala exposition); P13–P49 Gately/Joelle hospital visit (brownies → album → Abiding → fantasy-shame); P50–P184 Hal/Stice/custodial (halls → stuck forehead → Kenkle/Brandt → mirror ghost). Two Hal brackets around one warm visit — the visit is the chapter's heart.",
+   "subject": "Gaudeamus morning: Hal's pre-dawn snow watch (zoo dream, one-foot therapy, Boards dread) brackets Joelle's tender hospital visit to Gately (brownies, photo album, Abiding the pain), closing with Stice stuck by his forehead to the window and the custodians' 'mirthful' diagnosis.",
+   "title": "20 November — Year of the Depend Adult Undergarment Gaudeamus Igitur",
+   "words": 12840,
+   "order": 75,
+   "part_roman": "I",
+   "number_label": "§ 75",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "banner",
+    "motif": "frozen-window",
+    "caption": "Plate F-9 · Frozen window; first snow",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "frozen-window"
+   },
+   "ledger_conform": {
+    "stamp_band": "20 NOVEMBER / GAUDEAMUS IGITUR (I)",
+    "filing_line": "GAUDEAMUS IGITUR (I) · FIRST SNOW · DAWN",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Frozen window with forehead-shaped clear patch; virgin-white fall over purple ground; sepia album inset."
+   }
+  },
+  {
+   "id": "p1c76",
+   "index": 76,
+   "mood": "Bureaucratic farce → suffering epic → snowbound dread → confessional close; the book's longest chapter must feel inexhaustible, not exhausting.",
+   "motif_asset": "EXCEPTIONAL multi-plate: (1) State House Annex conference table with Fully Functional Phil storyboard (thought-bubble, Warning Dance, plaid cap); (2) steno notebook held up: 'YO!' in block caps; (3) crib-camera with extrusive astigmatic lens, apologizing gown figure leaning in; (4) blizzard window; (5) mismatched socks.",
+   "motifs": [
+    "weather-delayed meeting: Tine Sr./Hooley/Yee/Tine Jr./Veals; 'Frankie the Hankie' failure",
+    "Fully Functional Phil: thought-bubble at fourteen seconds, Warning Dance, Yee's fit",
+    "Gately hospital: steno notebook, Talwin education, Fackelmann Dilaudid saga, pain theory",
+    "Hal blizzard day: Viewing Room 5 Kevlon, panic attack, Pemulis, Stice/Coyle dorm",
+    "Joelle 'Q' interview: revolving door, crib apology ('I'm so sorry'), Masters buried with him; A.D.A. amends, mismatched socks"
+   ],
+   "n_paras": 504,
+   "opener_composition": "EXCEPTIONAL: the opener is the meeting's name-placard row — five placards (TINE SR. / HOOLEY / YEE / TINE JR. / VEALS) above a storm-window, title stamped as minutes ('PARTIAL TRANSCRIPT / WEATHER-DELAYED MEETING / 20 NOVEMBER'). The narrative braid gets its own second opener at P147: the steno notebook. Strand dividers (placard / chart / viewfinder / Q / podium / socks) orient the 44k-word read.",
+   "palette_role": "Conference-room palette: State House terrazzo, fluorescent tube-light, storyboard-marker primaries (Phil's plaid, thought-bubble blue); narrative braid in hospital gray-green, blizzard white, AA-basement smoke. The transcript world is flat-lit; the braid world has weather.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "Transcript set for P0–P146: speaker rails (name-plates in margin), stage directions in brackets kept quiet, Yee's fit passage given held air. Narrative braid P147–P503 in marathon set with strand dividers and relief: Fackelmann saga in unbroken long-haul measure; Joelle 'Q' interview as bare two-voice exchange (answers vs. lone 'Q.' ticks); A.D.A. close in slow confessional cadence. Progress motif essential — 44k words needs orientation.",
+   "structure_note": "P0–P146 meeting transcript (placards → greetings → limo 180 → spot post-mortem → Phil storyboard → Warning Dance → Yee fit → cue-and-ready); P147–P503 mega-braid: Gately hospital/Fackelmann saga (P147–P195, P203–P216, P279–P330), Hal blizzard (P193–P202, P217–P278, P366–P454), Joelle Q-interview (P331–P365), AA round-robin (P455–P458), A.D.A./Pat amends (P459–P503). Five strands; dividers carry strand identity.",
+   "subject": "EXCEPTIONAL (44k words, the book's longest): the weather-delayed ad-meeting transcript (designing the 'Fully Functional Phil' anti-Entertainment children's spot) followed by the mega-braid — Gately's hospital/Fackelmann saga, Hal's blizzard day, Joelle's 'Q' interview on filming Infinite Jest, an AA round-robin, and the A.D.A.'s amends visit to Pat.",
+   "title": "Partial Transcript of Weather-Delayed Meeting",
+   "words": 43905,
+   "order": 76,
+   "part_roman": "I",
+   "number_label": "§ 76",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "broadsheet",
+    "motif": "placard-row",
+    "caption": "Plate F-10 · Placard row over storm window",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "placard-row"
+   },
+   "ledger_conform": {
+    "stamp_band": "PARTIAL TRANSCRIPT / WEATHER-DELAYED / 20 NOVEMBER",
+    "filing_line": "WEATHER-DELAYED MEETING · TRANSCRIPT + BRAID · 44K",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Five name-placard row over storm window; storyboard Phil strip; second gate: steno YO! notebook at P147."
+   }
+  },
+  {
+   "id": "p1c77",
+   "index": 77,
+   "mood": "Ritual → interrogation → dissolution; the book stops rather than ends — the cutoff is the content.",
+   "motif_asset": "FINALE plates: (1) gala arrival frieze: claret Volvo, designer canes, coin rolling over knuckles; (2) the inverted green tumbler: pebbled bottom, CO2 steam, green distorted faces, smeared footprints; (3) the unfinished sentence: 'The…' set as a typographic monument on an otherwise empty field.",
+   "motifs": [
+    "gala arrivals: Warshavers, Buckmans' claret Volvo, Mrs. Warshaver's canes",
+    "locker-room ritual: Gauze-Tex, Frankenstein Schacht, Loach wingless-fly saga",
+    "Québec wheelchair-rumor; O.P.L. return with choker bandage",
+    "Orin in the inverted tumbler: 'Where Is The Master Buried', roaches, Luria P______",
+    "Gately Sunshine flashback: Talwin-PX, eye sewn open, 'Hold on to your hat' → 'The…'"
+   ],
+   "n_paras": 31,
+   "opener_composition": "FINALE: arrival-frieze opener — the gala guests streaming in along a horizontal band, title set as the fête program ('GAUDEAMUS IGITUR / IMMEDIATELY PRE-FUNDRAISER-EXHIBITION-FÊTE'). The tumbler gets its own towering sub-opener. The final paragraph is set on a dedicated closing field: full measure, held air, and then the book's last mark — 'The…' — standing alone, followed by the endnotes bridge, not by more prose.",
+   "palette_role": "Gala palette: white-jacket tray silver, claret Volvo red, gala-gold — curdling into tumbler green (watery ocean-depths) and Sunshine overclear glycerine glare for the close. Celebration rotting into interrogation: the cohort's final color statement.",
+   "part": "part-1",
+   "part_subtitle": "The Novel",
+   "reading_treatment": "FINALE treatment: locker-room ritual in warm ceremonial cadence; Loach saga in fireside-story measure; tumbler sequence in green submersed set with the interrogation voice set apart; hospital bridge in fever gray; Sunshine flashback accelerating then SLOWING into the final paragraph — which gets its own screen/field, generous leading, and no ornament but the cutoff itself. A colophon-like closer follows: book's end acknowledged, endnotes (Part II) offered as continuation. The finale must CLOSE the book: arrival → ritual → interrogation → dissolution → silence → bridge.",
+   "structure_note": "P0–P8 gala/locker room (arrivals → audience-become-performers → ritual → O.P.L. → wheelchair rumor → Female side/Schacht → Loach saga P7–P8); P9–P15 Orin tumbler (glass → vent → faces → denial → Luria/roaches); P16–P18 Gately hospital bridge; P19–P30 Sunshine flashback (dawn window → C's entourage → Narcan-that-isn't → injection → hydrochloride taste → overclear air → 'The…'). The last word of Part I is 'The' — the design must not resolve it.",
+   "subject": "FINALE: the Gaudeamus gala's locker-room rituals (arrivals, O.P.L.'s return, the Loach saga) intercut with Orin's interrogation inside the inverted green tumbler ('Where Is The Master Buried') and Gately's Sunshine flashback — ending famously mid-sentence on 'The…'.",
+   "title": "20 November — Year of the Depend Adult Undergarment Immediately Pre-Fundraiser-Exhibition-Fête Gaudeamus Igitur",
+   "words": 9055,
+   "order": 77,
+   "part_roman": "I",
+   "number_label": "§ 77",
+   "contract_manifest": {
+    "src": "art/cohort-f.svg",
+    "class": "finale",
+    "motif": "gala-tumbler",
+    "caption": "Plate F-11 · Arrival frieze; the inverted tumbler",
+    "slot": "#chapter-art",
+    "note": "v1.1 symbol-key form (A.2, sanctioned): reader.js fetches art/cohort-f.svg once (cached per file), clones #<symbol> into #chapter-art wrapped in <svg> with the source viewBox. Missing id → hidden slot + console warning, never fatal. Footnote fallback: split to art/cohort-f/<motif>.svg with identical ids if ever needed.",
+    "symbol": "gala-tumbler"
+   },
+   "ledger_conform": {
+    "stamp_band": "GAUDEAMUS IGITUR / PRE-FUNDRAISER-EXHIBITION-FÊTE",
+    "filing_line": "GAUDEAMUS FINALE · GALA → TUMBLER → SUNSHINE · THE…",
+    "seal": "Year of the Depend Adult Undergarment (undergarment seal, Seal Gold)",
+    "plate": "Arrival frieze band (claret Volvo, canes, coin); towering inverted tumbler; closing field holding the lone The…"
+   }
+  }
+ ],
+ "reader_contract": "v1.1",
+ "integration": "Opener plates render declaratively into #chapter-art via design/chapters.json (merged by supervisor): src art/cohort-f.svg#<motif>, class=treatment, motif→body[data-art]. All other variation via body[data-chapter] CSS + margin/gutter ticks (Plex Mono + Phosphor); prose untouched; no reader-* classes minted.",
+ "status": "locked-frozen",
+ "contract_conformance": {
+  "contract": "READER-CONTRACT v1.1 STABLE + SupIJ-2 IJ relay + Cohort A rev5 field standard",
+  "slots": "All 11 plates target #chapter-art (injected above #chapter-meta) via {src + symbol} (A.2); prose untouched, pure CSS via body[data-chapter]/[data-part]/[data-art] + #chapter-text[data-paras]; no reader-* classes minted (all motif/plate names are book-owned).",
+  "css_cascade": "Cohort CSS (design/cohort-f.css) unlayered → always wins over @layer shared; scoped to body[data-book='infinite-jest'] + per-chapter hooks.",
+  "manifest_merge": "Supervisor merges entries’ contract_manifest blocks into design/chapters.json sequentially; cohort JSON stays the source of truth with part+order+title for the provisional-ID remap.",
+  "fonts": "No cohort font loading (book-level: theme.css/index.html via supervisor); cohort CSS references --font-* tokens only.",
+  "endnotes": "Cohort F has no notes-part chapters; p1c77 closing field offers the Part II bridge as navigation, not prose — body→note refs activate only if TextCurator supplies note_refs; no guessing."
+ },
+ "art_direction": "FINAL (SupIJ-2 + ArtDirector J1–J8); READER-CONTRACT v1.1",
+ "binding_conditions": {
+  "J2": "Plates in #chapter-art above title only; p1c77 multi-plate dividers as bounded blocks clearing the measure, never full-bleed mid-paragraph interruptions.",
+  "J3": "Archivo Black display only; p1c77 longest-title clamp must survive 390px — prototype proves.",
+  "J4": "p1c73/p1c76 transcript/deposition passages as BOUNDED found-paper blocks (lifted surface + ledger rules + mono), prose untouched.",
+  "J5": "No violet in Cohort F (Part I): gold register throughout; p1c77 closing bridge to Part II is navigation chrome, not violet leakage.",
+  "registry": "Newsreader at text optical sizes in Manila; Plex Mono at DISPLAY scale (stamp bands, filing lines, broadsheet labels) — never small-scale apparatus."
+ },
+ "prototype_role": "Cohort F contributes p1c77 (finale program + final stamp) to the J8 prototype scope; cohort expansion follows prototype approval. p1c73/p1c76 broadsheets conform to J4 bounded-block rule.",
+ "benchmark": "USER-FEEDBACK.md (Main order): the new homepage (:8123) is the creative-quality bar — p1c77 finale + full 11 plates compared side-by-side. Ambition THROUGH THE LEDGER IDENTITY (engraving, seals, found-paper, docket composition, marginalia, bounded blocks), NEVER by copying the homepage look. Quiet reading stays calm; J1–J8 still bind; benchmark raises finish, not design.",
+ "id_freeze": {
+  "source": "TextCurator audit, .omp/design/infinite-jest-text-audit.md; confirmed by SupIJ-2 + Main",
+  "result": "p1c1-p1c77/p2c1-p2c12 FINAL, no splits/merges/renames, titles unchanged",
+  "provenance": "part+order+title keys retained permanently per entry"
+ },
+ "note_refs": {
+  "cohort_total": 87,
+  "by_chapter": {
+   "p1c67": 2,
+   "p1c68": 11,
+   "p1c69": 0,
+   "p1c70": 3,
+   "p1c71": 9,
+   "p1c72": 6,
+   "p1c73": 16,
+   "p1c74": 0,
+   "p1c75": 8,
+   "p1c76": 28,
+   "p1c77": 4
+  },
+  "note": "388/388 notes-index shipped; reader activates body→note links from note_refs ONLY; round-trips testable on rebuild (validator exercises p1c73/p1c76)"
+ },
+ "design": {
+  "designer": "JestCohortFDesigner",
+  "date": "2026-10-15",
+  "status": "design-complete",
+  "spec": "local://jest-cohort-f-design.md",
+  "skills": [
+   "skill://frontend-design",
+   "skill://frontend-workflow",
+   "skill://reference-study"
+  ],
+  "skill_fallback_used": false,
+  "engraving": "Manila line ink on --ij-plate-bg; ruled frame + caption strip; ONE spot color per plate from six tokens; 45deg hatch, stipple snow/steam; Plex Mono stencil lettering; 800x450 symbols, 800x280 sub-plates; explicit hex strokes; seals by <use> only",
+  "j5_violet_audit": "ZERO violet ink in cohort F; violet prose words stay prose; p1c75 snow-ground cool tint is depicted content only; Part II bridge is gold navigation chrome",
+  "chapters": {
+   "p1c67": {
+    "plate": {
+     "symbol": "krause-mambo",
+     "composition": "Two registers: ambulance mambo silhouette (skinny arms, boa, red-cross roundel, Stamp Red spot) / brick-hospital twilight walk with tipped-in Feaster locomotive card (rotated rect, Manila wash, micro-caption)",
+     "spot": "Stamp Red",
+     "caption": "Plate F-1 · Ambulance mambo; locomotive card tipped in"
+    },
+    "stamp_band": "ledger: 14 NOVEMBER — Y.D.A.U. (3)",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 7,
+      "label": "THE ESSAY — KATE GOMPERT ON DEPRESSION"
+     }
+    ],
+    "ticks": [],
+    "reading": "P0-P6 flight set; P7-P20 essay set (measure+2rem, leading 1.85); P20 closing air"
+   },
+   "p1c68": {
+    "plate": {
+     "symbol": "van-cleve-lamp",
+     "composition": "Rust-pocked lightpost, triple-broken stutter cone in Stamp Red, floating-head shop windows, GIGABUCKS 299 ticket at base, PROSPECT ST 2200H strip",
+     "spot": "Stamp Red",
+     "caption": "Plate F-2 · Sodium lamp over Prospect St., 2200h."
+    },
+    "stamp_band": "ledger: 14 NOVEMBER — Y.D.A.U. (4)",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 7,
+      "label": "ELSEWHERE — E.T.A. / V.R. 6 / C.A."
+     },
+     {
+      "before_P": 61,
+      "label": "PROSPECT ST. — THE LIGHTPOST"
+     }
+    ],
+    "ticks": [],
+    "reading": "P0-P6 walk; P7-P60 montage pace; P61-P68 concussion coda (leading 1.9, phosphor @0.15 wash P63/P68)"
+   },
+   "p1c69": {
+    "plate": {
+     "symbol": "lenz-frost",
+     "composition": "Near-white frost-crystal macro field; Phosphor snowpant slash; sombrero brim + wooden balls; glasses + gloss mustache evidence row; chrome A.F.R. coda band",
+     "spot": "Cartridge Phosphor",
+     "caption": "Plate F-3 · Frost study; fluorescent slash"
+    },
+    "stamp_band": "ledger: 14 NOVEMBER — Y.D.A.U. (5)",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 5,
+      "label": "A.F.R. — TWO WAYS OF GOING"
+     }
+    ],
+    "ticks": [],
+    "reading": "P0-P4 clenched (measure-2rem); P2 phosphor slash rule; P5 quarantined coda"
+   },
+   "p1c70": {
+    "plate": {
+     "symbol": "tony-sprint",
+     "composition": "15deg diagonal chase: S-curve boa, mm-gap clutching hand, purses-football, bold-print sign fragments, footfall ticks; gold-rule lower register: intact-mirror shelf wall + TP glow + CLOSED/ROPAS/RELACHE",
+     "spot": "Stamp Red",
+     "caption": "Plate F-4 · The sprint; the unbroken mirrors"
+    },
+    "stamp_band": "ledger: 14 NOVEMBER — Y.D.A.U. (6)",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 1,
+      "label": "FIELD REPORT — ANTITOI SHOP",
+      "register": "Stamp Red"
+     }
+    ],
+    "ticks": [],
+    "reading": "P0 unbroken sprint; P1-P6 procedural (measure-1rem, cool)"
+   },
+   "p1c71": {
+    "plate": {
+     "symbol": "triptych-care",
+     "composition": "Three panels TRAY (dental instruments, gold tray edge) / CHAIR (storage-room viewer + cartridge stack) / DOORWAY (lit door, blanketed wheelchair, veil triangle, pistol shadow)",
+     "spot": "Seal Gold",
+     "caption": "Plate F-5 · Tray, chair, doorway"
+    },
+    "stamp_band": "ledger: 14 NOVEMBER — Y.D.A.U. (7)",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 2,
+      "label": "CHAIR — THE VIEWING ROTATION"
+     },
+     {
+      "before_P": 16,
+      "label": "CULT DIALOGUE — TEETH FOR GNAWING"
+     },
+     {
+      "before_P": 35,
+      "label": "DOORWAY — HENRI ARRIVES"
+     },
+     {
+      "before_P": 79,
+      "label": "TRAY — CLEANING / ORIN / THE WORK"
+     },
+     {
+      "before_P": 110,
+      "label": "DOORWAY — THE INTERVIEW"
+     },
+     {
+      "before_P": 143,
+      "label": "TRAY — SECRETS"
+     },
+     {
+      "before_P": 145,
+      "label": "DOORWAY — THE CONVERTISOFA"
+     }
+    ],
+    "ticks": [
+     {
+      "kind": "braid",
+      "map": {
+       "TRAY": [
+        0,
+        79,
+        103,
+        143
+       ],
+       "CHAIR": [
+        2,
+        11,
+        13,
+        14
+       ],
+       "DOORWAY": [
+        35,
+        48,
+        55,
+        71,
+        114,
+        120,
+        125,
+        131,
+        141,
+        147,
+        154,
+        160,
+        164,
+        171
+       ]
+      }
+     }
+    ],
+    "reading": "Joelle warmth / A.F.R. chrome / Marathe ceremonial; cult staccato P16-34; veil-breath air P171-172"
+   },
+   "p1c72": {
+    "plate": {
+     "symbol": "bolex-viewfinder",
+     "composition": "Phosphor corner-bracket frame: Schtitt asleep in cane chair (cane crosshatch, pipe rack, dead pipe), coax to foot-treadle at sweatered chest; slate strip E.T.A./FALL/M. INCANDENZA + ROOM 106; floodlight glare",
+     "spot": "Cartridge Phosphor",
+     "caption": "Plate F-6 · Bolex slate: E.T.A. at night"
+    },
+    "stamp_band": "ledger: 11 NOVEMBER — Y.D.A.U. (4)",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 1,
+      "label": "ROOM 106 — SCHTITT ASLEEP"
+     },
+     {
+      "before_P": 5,
+      "label": "DORMS — THE TOUR"
+     },
+     {
+      "before_P": 56,
+      "label": "AVIRL'S OFFICE — THE INTERVIEW"
+     },
+     {
+      "before_P": 184,
+      "label": "LATE — DIALOGUE MOSAIC"
+     },
+     {
+      "before_P": 451,
+      "label": "CODA — HAL + MARIO"
+     }
+    ],
+    "ticks": [
+     {
+      "kind": "station",
+      "map": {
+       "106": [
+        1
+       ],
+       "DORM": [
+        9,
+        19,
+        34,
+        48
+       ],
+       "AVIRL": [
+        60,
+        132,
+        142,
+        152,
+        156,
+        159,
+        160,
+        168,
+        170,
+        180
+       ],
+       "LATE": [
+        186,
+        214,
+        242,
+        270,
+        298,
+        326,
+        334,
+        340,
+        344,
+        359,
+        396,
+        403,
+        424
+       ],
+       "CODA": [
+        444,
+        451
+       ]
+      }
+     }
+    ],
+    "reading": "Station slates; Avril anchors full measure (P152/P156/P157/P163); staccato tight; closing air P183/P451-452"
+   },
+   "p1c73": {
+    "plate": {
+     "symbol": "notkin-lamp",
+     "composition": "Triple gate LOG (open book, synonyms-for-boredom lines, coffee finger-dip, frozen-hair boy) / LAMP (high-watt cone on glabrous face, homburg+eyebrows confiscated, THAT… litany cascade, higher-wattage note) / CHART (DEXTRAL stamp, breathing-ceiling sine, fever wash, YO! chip)",
+     "spot": "Stamp Red",
+     "caption": "Plate F-7 · Log, lamp, chart (triple gate)",
+     "sub_plates": [
+      "notkin-log",
+      "notkin-lamp-movement",
+      "notkin-chart",
+      "notkin-fever"
+     ]
+    },
+    "stamp_band": "ledger: 17 NOVEMBER — Y.D.A.U.",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 5,
+      "label": "DEPOSITION — THE HIGH-WATT LAMP",
+      "register": "Stamp Red"
+     },
+     {
+      "before_P": 29,
+      "label": "Q.R.S.–32A — THE DRIVE OUT"
+     },
+     {
+      "before_P": 47,
+      "label": "32A — INNER INFANT CIRCLE"
+     },
+     {
+      "before_P": 115,
+      "label": "ST. ELIZABETH'S — DEXTRAL"
+     },
+     {
+      "before_P": 144,
+      "label": "FEVER FIELD — THE TINY WOMAN (bounded wash, para untouched)"
+     }
+    ],
+    "ticks": [
+     {
+      "kind": "movement",
+      "map": {
+       "LOG": [
+        0
+       ],
+       "LAMP": [
+        6
+       ],
+       "32A": [
+        47
+       ],
+       "DEXTRAL": [
+        115,
+        128,
+        136
+       ],
+       "FEVER": [
+        144
+       ]
+      }
+     }
+    ],
+    "reading": "Litany hanging-That P6-28; farce tight P47-114; fever epic P115-166; P144 one breath (leading 1.9); Flaggers dry P156-166"
+   },
+   "p1c74": {
+    "plate": {
+     "symbol": "door-kitchen",
+     "composition": "Diptych: chrome door + dark sliver + 19 NOVEMBRE stamp / bug-choked fixture + pink doughnut ring + Globes bar graph + arrhythmic drips; gold gutter split",
+     "spot": "Stamp Red (doughnut @0.5)",
+     "caption": "Plate F-8 · Operation order; kitchen fixture"
+    },
+    "stamp_band": "ledger: 19 NOVEMBER — Y.D.A.U.",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 3,
+      "label": "FEVER DREAMS — EAT / WAITE",
+      "register": "Phosphor"
+     }
+    ],
+    "ticks": [],
+    "reading": "P0-P2 operational tight; P3-P5 humid widening (leading 1.85)"
+   },
+   "p1c75": {
+    "plate": {
+     "symbol": "frozen-window",
+     "composition": "Fogged subdorm glass, frost dendrites, forehead clear patch over snow (cool depicted ground), stuck silhouette, 11-18-EST0456 chip; sepia album inset (Daddy, pointer, MR. MAN bull)",
+     "spot": "Seal Gold",
+     "caption": "Plate F-9 · Frozen window; first snow"
+    },
+    "stamp_band": "ledger: 20 NOV — Y.D.A.U. · GAUDEAMUS",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 13,
+      "label": "THE VISIT — BROWNIES + ALBUM"
+     },
+     {
+      "before_P": 50,
+      "label": "SUBDORM HALLS — DINNER-MINT BLUE"
+     },
+     {
+      "before_P": 164,
+      "label": "KENKLE + BRANDT — MIRTHFUL"
+     }
+    ],
+    "ticks": [
+     {
+      "kind": "album",
+      "map": {
+       "PHOTO": [
+        37,
+        38,
+        42
+       ],
+       "GAUDEAMUS": [
+        8
+       ]
+      }
+     }
+    ],
+    "reading": "Hal brackets hushed narrow; visit sepia insets P13-49; P184 mirror-ghost held breath"
+   },
+   "p1c76": {
+    "plate": {
+     "symbol": "placard-row",
+     "composition": "Five tented placards TINE SR/HOOLEY/YEE/TINE JR/VEALS (Jr askew, ruler taps) before storm window (snow slash, LOGAN 180); table strip: Infernatron 210-Y, pointer diagonal, Phil storyboard (burro + bubble@14s + Warning Dance + NO-HO-HO-HO WAY)",
+     "spot": "Seal Gold",
+     "caption": "Plate F-10 · Placard row over storm window",
+     "sub_plates": [
+      "placard-phil",
+      "placard-yo",
+      "placard-crib",
+      "placard-socks"
+     ]
+    },
+    "stamp_band": "ledger: PARTIAL TRANSCRIPT · MTG DELAYED",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 101,
+      "label": "YEE DOWN — FIRST FIT"
+     },
+     {
+      "before_P": 124,
+      "label": "YEE DOWN — SECOND FIT"
+     },
+     {
+      "before_P": 147,
+      "label": "NOTEBOOK — YO!",
+      "register": "Phosphor"
+     },
+     {
+      "before_P": 191,
+      "label": "BLIZZARD — VIEWING ROOM 5"
+     },
+     {
+      "before_P": 201,
+      "label": "CHART — BIMMY"
+     },
+     {
+      "before_P": 209,
+      "label": "BLIZZARD — PEMULIS"
+     },
+     {
+      "before_P": 275,
+      "label": "CHART — FACKELMANN SAGA"
+     },
+     {
+      "before_P": 329,
+      "label": "Q — THE CRIB INTERVIEW"
+     },
+     {
+      "before_P": 364,
+      "label": "BLIZZARD — DORM + TRACKS"
+     },
+     {
+      "before_P": 450,
+      "label": "CHART — JOELLE'S NIGHT TRAIN"
+     },
+     {
+      "before_P": 452,
+      "label": "PODIUM — MIKEY"
+     },
+     {
+      "before_P": 457,
+      "label": "SOCKS — THE A.D.A.'S AMENDS"
+     }
+    ],
+    "ticks": [
+     {
+      "kind": "speaker_rail",
+      "note": "left-gutter name rails on speaker-change paras P0-144; STENO for unattributed/stage paras",
+      "speakers": {
+       "TINE SR": [
+        0,
+        3,
+        5,
+        7,
+        14,
+        21,
+        24,
+        28,
+        31,
+        39,
+        41,
+        47,
+        50,
+        89,
+        95,
+        103,
+        107,
+        108,
+        109,
+        110,
+        123,
+        132,
+        136,
+        139,
+        144
+       ],
+       "VEALS": [
+        1,
+        8,
+        12,
+        18,
+        20,
+        25,
+        27,
+        33,
+        42,
+        44,
+        49,
+        54,
+        58,
+        62,
+        65,
+        67,
+        69,
+        72,
+        80,
+        83,
+        85,
+        88,
+        93,
+        98,
+        100,
+        113,
+        115,
+        130,
+        135,
+        140,
+        143
+       ],
+       "YEE": [
+        2,
+        9,
+        11,
+        16,
+        22,
+        34,
+        37,
+        40,
+        42,
+        43,
+        46,
+        63,
+        68,
+        84,
+        92,
+        101,
+        106,
+        112,
+        119,
+        122,
+        124,
+        128,
+        133,
+        140,
+        142
+       ],
+       "HOOLEY": [
+        6,
+        15,
+        17,
+        19,
+        29,
+        32,
+        35,
+        36,
+        38,
+        45,
+        52,
+        57,
+        60,
+        64,
+        73,
+        75,
+        76,
+        78,
+        79,
+        81,
+        82,
+        86,
+        90,
+        91,
+        96,
+        99,
+        104,
+        105,
+        111,
+        114,
+        117,
+        121,
+        125,
+        126,
+        127,
+        129,
+        137
+       ],
+       "TINE JR": [
+        4,
+        13,
+        23,
+        26,
+        47,
+        53,
+        66,
+        71,
+        74,
+        77,
+        87,
+        94,
+        102,
+        108,
+        109,
+        118,
+        120,
+        131,
+        138,
+        139,
+        141
+       ],
+       "STENO": [
+        10,
+        14,
+        30,
+        36,
+        48,
+        55,
+        56,
+        70,
+        97,
+        105,
+        110,
+        116,
+        134
+       ]
+      }
+     },
+     {
+      "kind": "strand",
+      "suppression": "ticks suppressed on note-ref paras (ledger gold owns): 161,168,171,173,186,205,206,208,274,277,280,283,285,288,298,305,407,413,415,418,447,465",
+      "map": {
+       "CHART": [
+        147,
+        148,
+        154,
+        185,
+        186,
+        201,
+        275,
+        284,
+        290,
+        295,
+        300,
+        310,
+        315,
+        320,
+        325,
+        326,
+        327,
+        450
+       ],
+       "BLIZZARD": [
+        191,
+        192,
+        193,
+        194,
+        195,
+        209,
+        210,
+        219,
+        235,
+        243,
+        251,
+        259,
+        267,
+        270,
+        271,
+        272,
+        273,
+        364,
+        365,
+        371,
+        379,
+        387,
+        395,
+        405,
+        410,
+        411,
+        412,
+        416,
+        417,
+        419,
+        420,
+        425,
+        430,
+        435,
+        440,
+        443,
+        445,
+        446,
+        448,
+        449
+       ],
+       "Q": [
+        329,
+        331,
+        333,
+        334,
+        336,
+        337,
+        339,
+        341,
+        343,
+        345,
+        347,
+        349,
+        351,
+        352,
+        354,
+        355,
+        357,
+        359,
+        360,
+        363
+       ],
+       "PODIUM": [
+        452,
+        453,
+        454,
+        455,
+        456
+       ],
+       "SOCKS": [
+        457,
+        458,
+        459,
+        461,
+        463,
+        467,
+        469,
+        471,
+        473,
+        474,
+        477,
+        479,
+        481,
+        483,
+        485,
+        486,
+        488,
+        490,
+        492,
+        494,
+        495,
+        497,
+        499,
+        501
+       ]
+      }
+     }
+    ],
+    "reading": "Transcript set P0-144 (rails, quiet stage directions, fit air); P145-147 bridge; braid marathon; Q bare two-voice; ADA confessional P457-501"
+   },
+   "p1c77": {
+    "plate": {
+     "symbol": "gala-tumbler",
+     "composition": "Arrival frieze band (claret Volvo, canes, coin, tray, Gauze-Tex) / towering inverted tumbler (pebbled bottom, CO2 stipple, vent + WITMB stencil, green faces, footprints, roach dots, ocean-depth hatch); phosphor glass + red frieze spots",
+     "spot": "Cartridge Phosphor + Stamp Red",
+     "caption": "Plate F-11 · Arrival frieze; the inverted tumbler",
+     "sub_plates": [
+      "gala-arrivals",
+      "gala-tumbler-glass",
+      "gala-sunshine"
+     ]
+    },
+    "stamp_band": "ledger: 20 NOV — PRE-FÊTE · GAUDEAMUS",
+    "seal": "seal-8 Depend gold",
+    "dividers": [
+     {
+      "before_P": 9,
+      "label": "THE INVERTED GLASS",
+      "register": "Phosphor"
+     },
+     {
+      "before_P": 16,
+      "label": "ST. ELIZABETH'S — GLOWING GRAY"
+     },
+     {
+      "before_P": 19,
+      "label": "SUNSHINE — THE FLASHBACK",
+      "register": "Stamp Red"
+     }
+    ],
+    "ticks": [
+     {
+      "kind": "finale",
+      "map": {
+       "TUMBLER": [
+        9,
+        14
+       ],
+       "GAUDEAMUS": [
+        0
+       ]
+      }
+     }
+    ],
+    "reading": "Ceremonial P0-8; fireside Loach P7-8; submersed tumbler P9-15; bridge P16-18; Sunshine P19-30 slowing into closing field",
+    "closing_field": "After P30 (verified: beach coda on freezing sand): held-air block + colophon PART I ENDS — THE FILE CONTINUES IN ENDNOTES & ERRATA + Part II bridge link (gold navigation chrome, J5-clean); title Gaudeamus Igitur on own gold line; 390px clamp prototype-verified"
+   }
+  },
+  "gaudeamus_rule": "Plex Mono 600 Seal Gold 0.14em tracking: stamp-band suffix (ledger) + gold line under Archivo title (p1c75/p1c77) + margin tick; p1c76 deliberate absence",
+  "responsive": "Plates >=200px at 390px never display:none; triptych stacks <=560px; gates stack labels <=720px; marginalia collapse <=1100px (theme reunified); phosphor focus rings; zero animation (reduced-motion clean)"
+ }
+}

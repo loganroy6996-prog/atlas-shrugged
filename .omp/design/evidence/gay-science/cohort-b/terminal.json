@@ -1,0 +1,258 @@
+{
+ "conformance_summary": "CONFORMED to ART-DIRECTION.md \u00a76-\u00a710: bands drive all 56 (1 Seed / 41 Shoots / 14 Branch, 0 landmarks); class vocab banner|motif|spark; runtime motif=morning; Fraunces-joyful + Source Serif type; flat-only art (G4); dusk purged (G5); zero chapter landmark rules (only A.0 seed seal); GR4 full-width compositions; GR5 no inscriptions; GR6 numerals-never-drop-caps (reader auto-no-drop verified); chrome per \u00a78 (TOC book-wide\u2192supervisor); motion = \u00a79 rise; P11 benchmark via compositional authorship (55 distinct tableaux) not control-chrome invention. v1 withdrawn: 6 landmark panels/rules, tone/read class axes, overhead noon sun, dusk usages, washes, italic/gold/large titles, chapter-conditional TOC. v1 kept: 62 emblem atoms (retuned), prose-grounded content-kind assignment, stage-content family, eye-rhyme (standard tableaux), \u00a745 paleness (morning altitude), flat mural hand.",
+ "grammar_notes": [
+  "CG1 Cohort-B.svg is SUPPLEMENTARY cohort weather (\u00a77B + \u00a710a opener.composition), not \u00a75 sprite-clone literalism: 55 entries point src=art/cohort-b.svg with composed tableau symbols. Literal-fallback offer stands: supervisor may collapse any/all entries to {src:art/part-dividers.svg,symbol:gs-part-iii} with zero other changes. Rationale: prototype banners are authored originals, not clones; Prelude sets per-chapter-distinctness precedent; GR4 demands full-width authored composition which one sprite cannot supply at 55 scales; P5 content-kind assignment.",
+  "CG2 motif field: provisional \u00a710a shape carries NO motif key (verified in schema example); merge instruction: supervisor sets runtime motif='morning' on all 55 slot entries (altitude truth; B = climbing morning). No content-mark motif (lantern/masks/wave...) on B entries: B's stage/sea content lives INSIDE morning tableaux (separation rule vs C/D/E proposed: C owns standalone mask motifs, D owns lantern, E owns ship/wave; B's emblems never set data-art content-marks). Re-key point if supervisor wants content-marks.",
+  "CG3 SEED THRESHOLD: p3c51 (55w) is the ONLY \u226460w chapter in B; p3c52 (64w) is nearest Shoot. If ArtDirector adjusts the 60w line, p3c52/p3c26(67)/p3c33/p3c34(67) are the boundary candidates \u2014 all currently Shoot tableaux, downgradable to spark-seals without art rework (C8 pattern).",
+  "CG4 STRIPE BANNER is the one bold reading of \u00a77B: five 300-340w chapters share one compositional system (distinct per-chapter stripe order recorded in engineer brief: p3c2 scales-first, p3c5 drum-first, p3c12 strand-first, p3c40 swordfire-first, p3c24 twocups-first). If supervisor prefers 5 fully distinct banners, the stripe file already contains all 5 emblems \u2014 re-compose order only, no new drawing.",
+  "CG5 GR6 EVIDENCE: reader.js lines ~1090-1094 verified: first <p> gets no-drop when text<80 chars OR /^[^A-Za-z\u00c0-\u024f]/ \u2014 ALL 56 B chapters open with digits ('1. The teachers...') so drop-cap NEVER renders in B regardless of CSS. Validator must confirm no-drop class on all 56 + first-letter inheritance (no furniture bug). GS-wide note: same numeral-open form in Books 2-5 means cohort C/D/E inherit this behavior.",
+  "CG6 GULL MARGINALIA (\u00a77B 'gull marginalia for Seeds'): B has exactly ONE Seed; marginal gull specified as supervisor-merge option, NOT cohort-b.css: body[data-chapter='p3c51'] .chapter-text::after{content:url(gull data-uri);float:right;...} \u2014 declined as default because the spark (C8) already fills the marginal role and a second marginal mark crowds 55 words. Supervisor may add.",
+  "CG7 End-seals (A.0 + \u00a78): ONLY p3c51 earns an authored seal (spark, \u226432px, no layout shift). All other 55 chapters keep art.css fleuron end-mark (complement-don't-fight; \u00a78's seal list names no B content-kind). If supervisor wants B arc-chord/wave seals, the atoms exist (gs-b-sparkline, gs-b-seabands).",
+  "CG8 Type \u00a73 conformance: Fraunces SOFT 100 / WONK 1 / 560-600 / leading 1.12 / clamp(2.1rem,6vw,3.4rem); kickers .28em; NO Wonk-0 solemnity, NO italic/gold/size landmark titles (B has none \u2014 uniform voice). Font URL per \u00a73 link (supervisor adds to index.html); fallbacks Georgia,'Times New Roman',serif REQUIRED.",
+  "CG9 Theme discipline: tokens.css verbatim merge (supervisor); cohort art uses --gs-* vars only (fixed jacket art persists per P8); sepia/light deepen sun for text (token construction); validator screenshots sepia/light + 390px overflow probe (GR3: scrollWidth \u2264 390).",
+  "CG10 Cascade: book CSS unlayered wins over @layer shared; C-rules twin-scoped (part-id + part-III backstop); zero !important; zero TOC selectors in cohort-b.css (TOC = supervisor-merge T block); zero cover selectors; zero reader-* classes; zero per-chapter rules except p3c51 seed pair (C8 + A.0 seal).",
+  "CG11 G6 gate: this package builds to approved grammar; final integration held for ArtDirector prototype PASS/REVISE; any REVISE repairs (GR1-GR7 + new) apply to cohort deliverables. Supervisor repair note (full-width openers) is baked into every composition recipe. Re-inspection items affecting B: GR3 overflow probe, GR4 full-width opener sample, GR6 numeral check."
+ ],
+ "landmarks_conformed": "ZERO Book-One landmarks. \u00a76 named list (p1c1, p5c18, p6c66, p6c67, p7c1, p7c41, p8c1) contains no p3c*; \u00a77B pins p3c1/p3c21/p3c23 as essay-Branch. My v1 six become: p3c1/p3c21/p3c23 = grand Branch banners (1200\u00d7380 originals); p3c22/p3c36/p3c45/p3c54 = Branch banners by word-band (p3c45 keeps paleness, loses noon altitude + gold title per G1). Zero landmark CSS rules; one chapter rule total (p3c51 seed seal). Conformance Finding CF-C (my \u00a722/\u00a736/\u00a745/\u00a754 landmark overreach) and CF-D (invented opener grammar) both closed by this reassignment.",
+ "map_43_56": [
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c43",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; lawtablet + wedge left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-lawtablet",
+    "treatment": "motif"
+   },
+   "order": 43,
+   "palette_role": "law \u2014 foreign wedge",
+   "part": "part-3",
+   "rationale": "Penal codes betray what a people finds foreign: Wahhabis, old Romans (263w).",
+   "reading_treatment": "Shoot",
+   "title": "43. What the laws betray.",
+   "word_count": 263
+  },
+  {
+   "delta": "Shoot motif; G5 shadow-hand retuned.",
+   "id": "p3c44",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; lever + sea-deep shadow-hand right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-lever",
+    "treatment": "motif"
+   },
+   "order": 44,
+   "palette_role": "motive \u2014 imagined lever",
+   "part": "part-3",
+   "rationale": "Believed-in motives outweigh motives: imagined levers of happiness/misery (87w).",
+   "reading_treatment": "Shoot",
+   "title": "44. The supposed motives.",
+   "word_count": 87
+  },
+  {
+   "delta": "v1 landmark KILLED per G1: Branch banner, LOW sun, uniform title. Paleness kept.",
+   "id": "p3c45",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Whitesea bands + rocks + fish; calm eye CENTER; LOW sun + fan (altitude fixed morning); 5 water-light sparks.",
+    "symbol": "gs-b-banner-epicurean",
+    "treatment": "banner"
+   },
+   "order": 45,
+   "palette_role": "epicurean \u2014 still brightness",
+   "part": "part-3",
+   "rationale": "Afternoon of antiquity: calm eye, whitish sea, sun-bathed rocks, still existence (123w Shoot-by-band \u2192 Branch by \u00a77B essay-chapter spirit? NO: 123w is SHOOT band. CORRECTION: p3c45 is 123w = SHOOT. Banner treatment here must be justified: CONFORMANCE OVERRIDE \u2014 \u00a77B names no p3c45 exception. RESOLUTION: p3c45 stays SHOOT with gs-b-motif-epicurean (480\u00d7300: whitesea base + calm eye + low sun + 5 sparks). The v1 banner-epicurean composition is offered as supervisor-opt-in ONLY. REVISED symbol: gs-b-motif-epicurean, treatment motif.",
+   "reading_treatment": "Shoot",
+   "title": "45. Epicurus.34",
+   "word_count": 123
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c46",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; clamp (one jaw sprung) right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-clamp",
+    "treatment": "motif"
+   },
+   "order": 46,
+   "palette_role": "science \u2014 standing results",
+   "part": "part-3",
+   "rationale": "Voluptuous amazement science's results stand; shipwrecked men on firm earth (213w).",
+   "reading_treatment": "Shoot",
+   "title": "46. Our amazement.",
+   "word_count": 213
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c47",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; muzzled court mouth left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-muzzle",
+    "treatment": "motif"
+   },
+   "order": 47,
+   "palette_role": "passion \u2014 suppressed expression",
+   "part": "part-3",
+   "rationale": "Forbidding passion's expression (Louis XIV) atrophies passion into graceful shallowness (218w).",
+   "reading_treatment": "Shoot",
+   "title": "47. On the suppression of the passions.",
+   "word_count": 218
+  },
+  {
+   "delta": "essay-opener\u2192Branch banner.",
+   "id": "p3c48",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Manacle large center on darkened bands; fan opacity .35; 1 guttering spark; night (G5).",
+    "symbol": "gs-b-banner-manacle",
+    "treatment": "banner"
+   },
+   "order": 48,
+   "palette_role": "essay \u2014 distress shadow",
+   "part": "part-3",
+   "rationale": "Darkest essay: ages divided by knowledge of distress; age of fear; recipe: distress (462w).",
+   "reading_treatment": "Branch",
+   "title": "48. Knowledge of distress.",
+   "word_count": 462
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c49",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; flinging wheel right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-wheel",
+    "treatment": "motif"
+   },
+   "order": 49,
+   "palette_role": "magnanimity \u2014 centrifugal",
+   "part": "part-3",
+   "rationale": "Magnanimity centrifugal: satiety/nausea fling feeling to opposites with revenge's egoism (258w).",
+   "reading_treatment": "Shoot",
+   "title": "49. Magnanimity and related things.",
+   "word_count": 258
+  },
+  {
+   "delta": "Shoot motif; iron tone killed.",
+   "id": "p3c50",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; ringfaces left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-ringfaces",
+    "treatment": "motif"
+   },
+   "order": 50,
+   "palette_role": "herd \u2014 cold looks",
+   "part": "part-3",
+   "rationale": "Fear of a cold look outweighs conscience: dread of growing solitary is herd speaking (96w).",
+   "reading_treatment": "Shoot",
+   "title": "50. The argument from growing solitary.",
+   "word_count": 96
+  },
+  {
+   "delta": "ONLY Seed in B (55w \u2264 60). NO slot, NO runtime entry, CSS spark + A.0 seal.",
+   "id": "p3c51",
+   "motif_asset": "NONE \u2014 spark class (CSS-only, no manifest entry needed per \u00a710b)",
+   "opener": {
+    "composition": "C8 marginal 26px gold spark left of first line + A.0 26px spark end-seal.",
+    "symbol": "NONE",
+    "treatment": "spark"
+   },
+   "order": 51,
+   "palette_role": "truth \u2014 flint-strike",
+   "part": "part-3",
+   "rationale": "Shortest (55w): 'Let's try it!' or silence, where courage keeps its right. G2 scale proof for Book One.",
+   "reading_treatment": "Seed: marginal spark, shortened meta rule, no drop-cap",
+   "title": "51. The sense of truth.",
+   "word_count": 55
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c52",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; mouths + echo waves right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-echo",
+    "treatment": "motif"
+   },
+   "order": 52,
+   "palette_role": "reputation \u2014 arriving echo",
+   "part": "part-3",
+   "rationale": "What others know assails from outside; bad reputation outweighs bad conscience (64w; boundary above Seed).",
+   "reading_treatment": "Shoot",
+   "title": "52. What others know about us.",
+   "word_count": 64
+  },
+  {
+   "delta": "Shoot motif; dim tone killed; eye-rhyme via standard tableau.",
+   "id": "p3c53",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: LOW sun SMALL left (dulled, fewer rays); dim eye right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-dimeye",
+    "treatment": "motif"
+   },
+   "order": 53,
+   "palette_role": "goodness \u2014 dulled eye",
+   "part": "part-3",
+   "rationale": "Duller the eye, more extensive the good: cheerful common vs gloomy thinkers (111w); closes eye-rhyme \u00a711/\u00a745.",
+   "reading_treatment": "Shoot",
+   "title": "53. Where the good begins.",
+   "word_count": 111
+  },
+  {
+   "delta": "v1 landmark\u2192Branch banner (265w band \u2014 Branch by band? 265 < 300 = SHOOT band. CORRECTION like p3c45: 265w is SHOOT. RESOLUTION: p3c54 stays SHOOT with gs-b-motif-sleepwalker (480\u00d7300: ridge + dreamer + morning fan + 1 leaper + masks-pair tiny + 3 sparks). v1 banner-sleepwalker offered as supervisor-opt-in ONLY (philosophical-climax argument available but NOT in \u00a76/\u00a77B). REVISED symbol: gs-b-motif-sleepwalker, treatment motif.",
+   "id": "p3c54",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300 Shoot tableau: night ridge + dreamer center; morning fan; 1 leaper margin; masks-pair tiny; 3 will-o-wisp sparks; foam dream-arcs (G5).",
+    "symbol": "gs-b-motif-sleepwalker",
+    "treatment": "motif"
+   },
+   "order": 54,
+   "palette_role": "appearance \u2014 held dream",
+   "part": "part-3",
+   "rationale": "Philosophical climax by content (sleepwalker must dream lest fall; knower joins the dance) but 265w = Shoot band; \u00a76/\u00a77B name no exception, so Shoot tableau (self-corrected).",
+   "reading_treatment": "Shoot",
+   "title": "54. The consciousness of appearance.",
+   "word_count": 265
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c55",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; altar + lone flame left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-altar",
+    "treatment": "motif"
+   },
+   "order": 55,
+   "palette_role": "nobility \u2014 unknown altar",
+   "part": "part-3",
+   "rationale": "Nobility = singularity: heat in cold things, altars of unknown god, courage without honours (213w).",
+   "reading_treatment": "Shoot",
+   "title": "55. The ultimate noblemindedness.",
+   "word_count": 213
+  },
+  {
+   "delta": "Shoot motif; closing tone killed \u2192 standard tableau (closer-weight via composition, not chrome).",
+   "id": "p3c56",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun LOW left near horizon (handing toward Book Two); conjured monster right on horizon; crowd ticks; gull + 2 sparks.",
+    "symbol": "gs-b-motif-monster",
+    "treatment": "motif"
+   },
+   "order": 56,
+   "palette_role": "closing \u2014 conjured monster",
+   "part": "part-3",
+   "rationale": "Closer: bored young Europe invents emergencies, conjures a horizon monster to fight (231w).",
+   "reading_treatment": "Shoot",
+   "title": "56. The desire for suffering.",
+   "word_count": 231
+  }
+ ],
+ "override_correction": "Self-audit caught two band errors in this section: p3c45 (123w) and p3c54 (265w) are SHOOT by the 60-300 band, NOT Branch \u2014 my draft above initially carried them as Branch (v1 landmark hangover). CORRECTED in-rationale to Shoot tableaux (gs-b-motif-epicurean, gs-b-motif-sleepwalker). FINAL conformed counts: Seed 1 (p3c51) / Shoot 43 / Branch 12 (p3c1,2,3,5,7,12,13,14,21,22,23,24,40,48 \u2014 count: p3c1,p3c2,p3c3,p3c5,p3c7,p3c12,p3c13,p3c14,p3c21,p3c22,p3c23,p3c24,p3c40,p3c48 = 14 Branch; 56-1-14 = 41 Shoot). Recount: Branch = {1,2,3,5,7,12,13,14,21,22,23,24,40,48} = 14; Seed = {51} = 1; Shoot = remaining 41. p3c36 (224w) = SHOOT band \u2014 CORRECTION: my c_map_c lists p3c36 as Branch banner; 224 < 300 so SHOOT. REVISED: p3c36 \u2192 Shoot with gs-b-motif-lastwords (480\u00d7300: mask-fall left + laurel right + pillows base + low sun + fan). Branch = 13 (remove p3c36). Final: Seed 1 / Shoot 42 / Branch 13. Branch list: p3c1, p3c2, p3c3, p3c5, p3c7, p3c12, p3c13, p3c14, p3c21, p3c22, p3c23, p3c24, p3c40, p3c48 \u2014 that is 14. Recount carefully: {1,2,3,5,7,12,13,14,21,22,23,24,40,48}: 1,2,3,5,7,12,13,14,21,22,23,24,40,48 = 14 entries. p3c36 excluded (Shoot). So Branch=14, Seed=1, Shoot=41. 14+1+41=56. CORRECT FINAL: Seed 1 / Shoot 41 / Branch 14. (p3c36 Shoot correction stands: gs-b-motif-lastwords.)"
+}

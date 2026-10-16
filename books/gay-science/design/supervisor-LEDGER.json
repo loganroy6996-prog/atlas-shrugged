@@ -1,0 +1,132 @@
+{
+ "book": "gay-science",
+ "supervisor": "SupGayScience-3",
+ "preview": "http://127.0.0.1:8123 (repo root, supervisor-owned)",
+ "live": "http://127.0.0.1:8099/books/gay-science/index.html (_site build)",
+ "shell_verified": [
+  {
+   "what": "cover mural slot",
+   "viewport": "1440x1000 + 390x844",
+   "result": "PASS (full-bleed, Fraunces computed, veil legible, zero overflow)"
+  },
+  {
+   "what": "p1c1 Preface landmark",
+   "viewport": "1440x1000 + 390x844",
+   "result": "PASS (gs-preface-glow full-bleed, dawn-glow motif, gold cap rgb245,179,1, 7rem ray, colophon)"
+  },
+  {
+   "what": "p2c13 rhyme seed",
+   "viewport": "1440x1000",
+   "result": "PASS (slot hidden, vermilion italic song-voice, arc-spark marginal)"
+  },
+  {
+   "what": "p5c18 \u00a7125 zenith",
+   "viewport": "1440x1000 + 390x844",
+   "result": "PASS (cohort-D tableau, lantern lit at noon, caption, full-bleed desktop)"
+  },
+  {
+   "what": "p5c168 \u00a7275 seed",
+   "viewport": "1440x1000",
+   "result": "PASS (slot hidden, lantern end-seal url(), numeral intact GR6)"
+  },
+  {
+   "what": "p3c1 Book-One landmark",
+   "viewport": "1440x1000",
+   "result": "PASS (contained grand plate per accepted B voice ruling)"
+  },
+  {
+   "what": "p4c43 Branch+ plate",
+   "viewport": "1440x1000",
+   "result": "PASS (master vs barbarians, caption; C re-verify PASS on masks repair)"
+  },
+  {
+   "what": "\u00a7341 Aubergine hourglass",
+   "viewport": "1440x1000 + 390x844",
+   "result": "PASS (sole Aubergine use, full-bleed)"
+  },
+  {
+   "what": "\u00a7342 sunrise-forth",
+   "viewport": "1440x1000",
+   "result": "PASS (walkers + eagle + sun-road, full-bleed)"
+  },
+  {
+   "what": "p7c41 epilogue v2",
+   "viewport": "1440x1000",
+   "result": "PASS (chunky dancers ON ring + haloed piper, full-bleed)"
+  },
+  {
+   "what": "p6c60 physics v2",
+   "viewport": "1440x1000",
+   "result": "PASS (prism+lens+table+fox, no dead void, full-bleed)"
+  },
+  {
+   "what": "p7c15 german plate",
+   "viewport": "1440x1000",
+   "result": "PASS (L-shadow bars + raking meta rule)"
+  },
+  {
+   "what": "p8c1 Appendix songbook",
+   "viewport": "1440x1000 + 390x844",
+   "result": "PASS (composed farewell tableau, 14/14 titles rubricated vermilion, computed-color census)"
+  },
+  {
+   "what": "TOC horizons",
+   "viewport": "820x1180",
+   "result": "PASS (8 altitude discs, Part V zenith crowns, gold landmark numerals rgb245,179,1 vs quiet rows)"
+  },
+  {
+   "what": "themes sepia/light/dark",
+   "viewport": "1440x1000",
+   "result": "PASS (body+text sync per theme, no stale-inline race)"
+  },
+  {
+   "what": "keyboard j/t/Esc",
+   "viewport": "1440x1000",
+   "result": "PASS (j p1c1->p2c1, t opens drawer aria-hidden=false, Esc closes)"
+  },
+  {
+   "what": "phone overflow GR3",
+   "viewport": "390x844 cover+p1c1+zenith+hourglass+appendix",
+   "result": "PASS (scrollWidth<=390 all five)"
+  }
+ ],
+ "census": {
+  "toc": 448,
+  "manifest": 259,
+  "seeds": 189,
+  "cohort_authored": "448/448",
+  "extra_ids": 0,
+  "seeds_over_60w": 0
+ },
+ "pending": [],
+ "final_validator": {
+  "verdict": "PASS",
+  "report": "books/gay-science/design/VALIDATION.md",
+  "evidence": ".omp/design/evidence/gay-science/final/01-32",
+  "live": "http://127.0.0.1:8099",
+  "minor1_phone_floor": "FIXED + re-shot (p1c1/p5c18 h=200 clean @390px)"
+ },
+ "post_verdict_rulings": [
+  "G5 dusk grep CLOSED: var(--gs-dusk consumed 0\u00d7 across theme+cohort CSS (8 inert token definitions only); #2A1540 renders solely in gs-hourglass-night (\u00a7341).",
+  "L3 p7c27 CLOSED by supervisor live recompute: root 16px, .meta-rule::after = 208px = 13rem = L3 CORRECT. Validator's 160px was their-harness misread (likely stale CSS per their \u00a78 obs 5). No defect.",
+  "EF prose-gloss para (p8c1 para[4]) stays body voice per EF \u00a73.8 \u2014 shell rubricates only the 14 title indices; verified no rule touches para 5."
+ ],
+ "d_sync": "D lead synced min-height one-liner into owned cohort-d.css + ledger (post-verdict).",
+ "cohorts": {
+  "A": "DELIVERED + validator REVISE triaged (MAJOR-2 fixed by lead, shell-side MAJOR-1/MINOR-2 fixed by supervisor, MINOR-1 accepted as-is); lead closed.",
+  "B": "DELIVERED + validator PASS (R1/R2/O3 repaired, O2 deleted per ruling); merged block refreshed; p3c1 symmetric L296/R296 live; lead closed.",
+  "C": "DELIVERED + re-verify PASS (masks impassive, p4c51 grounded); GR4 letterbox fixed in shell; numeral-cap ruling absorbed; lead complete.",
+  "D": "DELIVERED + validator REVISE\u2192PASS (seed-tint per-chapter list + sage ray); D-seed anchor bridge added by supervisor + verified live (p5c168 gold / p5c1 vermilion); lead closed.",
+  "EF": "DELIVERED v3 + validator R1 REVISE\u2192R2 PASS on merged live (EF.5 re-key, seals, farewell crossing, 9-ray, sepia captions); lead complete."
+ },
+ "final_validator_r2": {
+  "verdict": "REVISE (1 book defect: SIZE+SANS prefs dead)",
+  "evidence": ".omp/design/evidence/integration/wave3/gay-science/REVIEW-R2.md",
+  "fix": "shell .chapter-text now honors shared chain: font-size var(--text-size,1.3rem), line-height var(--leading,1.85), html[data-font=sans] override to var(--font-sans); verse/phone sizes proportional via calc (md/phone-md pixel-identical); cohort CSS grep-clean of prose size pins",
+  "live_reverify": "md default 20.8px Source Serif 4 lh 43.68px; sm 18.4px; lg 24px; sans DM Sans; serif restore 20.8px Source Serif 4 \u2014 all on :8099 p1c1 this session"
+ },
+ "final_validator_r3": {
+  "verdict": "CONDITIONAL PASS",
+  "detail": "R2 item FIXED live: size ladder sm/md/lg/xl 18.4/20.8/24.0/27.2px exact, sans DM Sans, serif restore exact, defaults pixel-identical, verse proportional. Headless note: poll past 240ms transition settle, don't fail fast. No further GS action."
+ }
+}

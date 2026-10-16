@@ -1,0 +1,1465 @@
+/* Being and Time — cohort intro-world (p1c1–p1c8 + p2c1–p2c6) — The Clearing.
+ * Owner: BTIntroWorldEngineer. Scope: ONLY body[data-chapter="<own-id>"] rules
+ * (+ body[data-art] motif keying). NEVER touches theme.css, index.html,
+ * shared/**, prose, or other cohorts' files.
+ * Tokens: var(--bt-*) WITH hex fallbacks (ART-DIRECTION.md §2). Supervisor
+ * wires --bt-* + Fraunces/Source Serif 4 links; this file degrades gracefully.
+ * Ghost numerals: 14 explicit per-ID #chapter-meta::before rules (authored
+ * table — top-crop Intro, left-bleed Div One). Shaft = inlined SVG art in
+ * #chapter-art (B1); NEVER a linear-gradient bar. Light NEVER behind body
+ * text (B3): fleck fields live in opener zones + explicit breather rules. */
+
+/* ============ 0. Shared cohort spine (own 14 IDs only) ============ */
+body[data-chapter="p1c1"] #reader-body,
+body[data-chapter="p1c2"] #reader-body,
+body[data-chapter="p1c3"] #reader-body,
+body[data-chapter="p1c4"] #reader-body,
+body[data-chapter="p1c5"] #reader-body,
+body[data-chapter="p1c6"] #reader-body,
+body[data-chapter="p1c7"] #reader-body,
+body[data-chapter="p1c8"] #reader-body,
+body[data-chapter="p2c1"] #reader-body,
+body[data-chapter="p2c2"] #reader-body,
+body[data-chapter="p2c3"] #reader-body,
+body[data-chapter="p2c4"] #reader-body,
+body[data-chapter="p2c5"] #reader-body,
+body[data-chapter="p2c6"] #reader-body {
+  max-width: 76rem;
+  padding-left: clamp(1.25rem, 4vw, 3rem);
+  padding-right: clamp(1.25rem, 4vw, 3rem);
+}
+
+/* Opener ledger: ghost gutter 22% + title 52% + margin rail 26% (≥1100px).
+ * The reader renders #chapter-art (slot) then #chapter-meta then #chapter-text;
+ * the ledger grid is composed on #chapter-meta; the rail is #chapter-meta::after
+ * (gloss + micro-caption via authored per-ID content). */
+body[data-chapter="p1c1"] #chapter-meta,
+body[data-chapter="p1c2"] #chapter-meta,
+body[data-chapter="p1c3"] #chapter-meta,
+body[data-chapter="p1c4"] #chapter-meta,
+body[data-chapter="p1c5"] #chapter-meta,
+body[data-chapter="p1c6"] #chapter-meta,
+body[data-chapter="p1c7"] #chapter-meta,
+body[data-chapter="p1c8"] #chapter-meta,
+body[data-chapter="p2c1"] #chapter-meta,
+body[data-chapter="p2c2"] #chapter-meta,
+body[data-chapter="p2c3"] #chapter-meta,
+body[data-chapter="p2c4"] #chapter-meta,
+body[data-chapter="p2c5"] #chapter-meta,
+body[data-chapter="p2c6"] #chapter-meta {
+  position: relative;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  padding-top: clamp(3.5rem, 9vw, 7rem);
+}
+
+/* Title column: flush-left Fraunces, NEVER centered. */
+body[data-chapter="p1c1"] .meta-title,
+body[data-chapter="p1c2"] .meta-title,
+body[data-chapter="p1c3"] .meta-title,
+body[data-chapter="p1c4"] .meta-title,
+body[data-chapter="p1c5"] .meta-title,
+body[data-chapter="p1c6"] .meta-title,
+body[data-chapter="p1c7"] .meta-title,
+body[data-chapter="p1c8"] .meta-title,
+body[data-chapter="p2c1"] .meta-title,
+body[data-chapter="p2c2"] .meta-title,
+body[data-chapter="p2c3"] .meta-title,
+body[data-chapter="p2c4"] .meta-title,
+body[data-chapter="p2c5"] .meta-title,
+body[data-chapter="p2c6"] .meta-title {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 1.6rem + 3vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 100, "SOFT" 50, "WONK" 1;
+  font-optical-sizing: auto;
+  text-align: left;
+  max-width: 52%;
+  color: var(--bt-mist, #C9D4C3);
+}
+
+/* ONE kicker line per opener: meta-part + meta-number + meta-sub composed as the
+ * single 12px lichen line (Part · § N · words · min). */
+body[data-chapter="p1c1"] .meta-part,
+body[data-chapter="p1c2"] .meta-part,
+body[data-chapter="p1c3"] .meta-part,
+body[data-chapter="p1c4"] .meta-part,
+body[data-chapter="p1c5"] .meta-part,
+body[data-chapter="p1c6"] .meta-part,
+body[data-chapter="p1c7"] .meta-part,
+body[data-chapter="p1c8"] .meta-part,
+body[data-chapter="p2c1"] .meta-part,
+body[data-chapter="p2c2"] .meta-part,
+body[data-chapter="p2c3"] .meta-part,
+body[data-chapter="p2c4"] .meta-part,
+body[data-chapter="p2c5"] .meta-part,
+body[data-chapter="p2c6"] .meta-part {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bt-lichen, #9DB89A);
+  margin: 0 0 0.9rem;
+  max-width: 52%;
+}
+body[data-chapter="p1c1"] .meta-number,
+body[data-chapter="p1c2"] .meta-number,
+body[data-chapter="p1c3"] .meta-number,
+body[data-chapter="p1c4"] .meta-number,
+body[data-chapter="p1c5"] .meta-number,
+body[data-chapter="p1c6"] .meta-number,
+body[data-chapter="p1c7"] .meta-number,
+body[data-chapter="p1c8"] .meta-number,
+body[data-chapter="p2c1"] .meta-number,
+body[data-chapter="p2c2"] .meta-number,
+body[data-chapter="p2c3"] .meta-number,
+body[data-chapter="p2c4"] .meta-number,
+body[data-chapter="p2c5"] .meta-number,
+body[data-chapter="p2c6"] .meta-number {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bt-lichen, #9DB89A);
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0.9rem 0 0;
+  max-width: 52%;
+}
+body[data-chapter="p1c1"] .meta-number::before,
+body[data-chapter="p1c2"] .meta-number::before,
+body[data-chapter="p1c3"] .meta-number::before,
+body[data-chapter="p1c4"] .meta-number::before,
+body[data-chapter="p1c5"] .meta-number::before,
+body[data-chapter="p1c6"] .meta-number::before,
+body[data-chapter="p1c7"] .meta-number::before,
+body[data-chapter="p1c8"] .meta-number::before,
+body[data-chapter="p2c1"] .meta-number::before,
+body[data-chapter="p2c2"] .meta-number::before,
+body[data-chapter="p2c3"] .meta-number::before,
+body[data-chapter="p2c4"] .meta-number::before,
+body[data-chapter="p2c5"] .meta-number::before,
+body[data-chapter="p2c6"] .meta-number::before {
+  content: none;
+}
+body[data-chapter="p1c1"] .meta-sub,
+body[data-chapter="p1c2"] .meta-sub,
+body[data-chapter="p1c3"] .meta-sub,
+body[data-chapter="p1c4"] .meta-sub,
+body[data-chapter="p1c5"] .meta-sub,
+body[data-chapter="p1c6"] .meta-sub,
+body[data-chapter="p1c7"] .meta-sub,
+body[data-chapter="p1c8"] .meta-sub,
+body[data-chapter="p2c1"] .meta-sub,
+body[data-chapter="p2c2"] .meta-sub,
+body[data-chapter="p2c3"] .meta-sub,
+body[data-chapter="p2c4"] .meta-sub,
+body[data-chapter="p2c5"] .meta-sub,
+body[data-chapter="p2c6"] .meta-sub {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bt-lichen, #9DB89A);
+  margin: 0.35rem 0 0;
+  max-width: 52%;
+}
+/* Kill the inherited centered rule + part ornaments on our chapters (firewall). */
+body[data-chapter="p1c1"] .meta-rule,
+body[data-chapter="p1c2"] .meta-rule,
+body[data-chapter="p1c3"] .meta-rule,
+body[data-chapter="p1c4"] .meta-rule,
+body[data-chapter="p1c5"] .meta-rule,
+body[data-chapter="p1c6"] .meta-rule,
+body[data-chapter="p1c7"] .meta-rule,
+body[data-chapter="p1c8"] .meta-rule,
+body[data-chapter="p2c1"] .meta-rule,
+body[data-chapter="p2c2"] .meta-rule,
+body[data-chapter="p2c3"] .meta-rule,
+body[data-chapter="p2c4"] .meta-rule,
+body[data-chapter="p2c5"] .meta-rule,
+body[data-chapter="p2c6"] .meta-rule {
+  display: none;
+}
+body[data-chapter="p2c1"] .meta-title::after,
+body[data-chapter="p2c2"] .meta-title::after,
+body[data-chapter="p2c3"] .meta-title::after,
+body[data-chapter="p2c4"] .meta-title::after,
+body[data-chapter="p2c5"] .meta-title::after,
+body[data-chapter="p2c6"] .meta-title::after {
+  content: none;
+}
+
+/* ============ 1. Ghost numerals: 14 explicit per-ID rules ============ */
+/* Shared ghost voice (placement per rule below). Fraunces 300, cropped. */
+body[data-chapter="p1c1"] #chapter-meta::before,
+body[data-chapter="p1c2"] #chapter-meta::before,
+body[data-chapter="p1c3"] #chapter-meta::before,
+body[data-chapter="p1c4"] #chapter-meta::before,
+body[data-chapter="p1c5"] #chapter-meta::before,
+body[data-chapter="p1c6"] #chapter-meta::before,
+body[data-chapter="p1c7"] #chapter-meta::before,
+body[data-chapter="p1c8"] #chapter-meta::before {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 300;
+  font-size: 22vw;
+  line-height: 1;
+  font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 1;
+  color: var(--bt-mist, #C9D4C3);
+  opacity: 0.08;
+  position: absolute;
+  top: -0.32em;
+  left: -0.04em;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+body[data-chapter="p2c1"] #chapter-meta::before,
+body[data-chapter="p2c2"] #chapter-meta::before,
+body[data-chapter="p2c3"] #chapter-meta::before,
+body[data-chapter="p2c4"] #chapter-meta::before,
+body[data-chapter="p2c5"] #chapter-meta::before,
+body[data-chapter="p2c6"] #chapter-meta::before {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 300;
+  font-size: 20vw;
+  line-height: 1;
+  font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 1;
+  color: var(--bt-mist, #C9D4C3);
+  opacity: 0.08;
+  position: absolute;
+  top: -0.18em;
+  left: -0.28em;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+/* Authored content table (explicit, never generated). */
+body[data-chapter="p1c1"] #chapter-meta::before { content: "1"; }
+body[data-chapter="p1c2"] #chapter-meta::before { content: "2"; }
+body[data-chapter="p1c3"] #chapter-meta::before { content: "3"; }
+body[data-chapter="p1c4"] #chapter-meta::before { content: "4"; }
+body[data-chapter="p1c5"] #chapter-meta::before { content: "5"; }
+body[data-chapter="p1c6"] #chapter-meta::before { content: "6"; }
+body[data-chapter="p1c7"] #chapter-meta::before { content: "7"; }
+body[data-chapter="p1c8"] #chapter-meta::before { content: "8"; }
+body[data-chapter="p2c1"] #chapter-meta::before { content: "9"; font-size: 22vw; }
+body[data-chapter="p2c2"] #chapter-meta::before { content: "10"; }
+body[data-chapter="p2c3"] #chapter-meta::before { content: "11"; opacity: 0.07; }
+body[data-chapter="p2c4"] #chapter-meta::before { content: "12"; }
+body[data-chapter="p2c5"] #chapter-meta::before { content: "13"; }
+body[data-chapter="p2c6"] #chapter-meta::before { content: "14"; }
+/* Title/kicker sit above the ghost. */
+body[data-chapter="p1c1"] #chapter-meta > *,
+body[data-chapter="p1c2"] #chapter-meta > *,
+body[data-chapter="p1c3"] #chapter-meta > *,
+body[data-chapter="p1c4"] #chapter-meta > *,
+body[data-chapter="p1c5"] #chapter-meta > *,
+body[data-chapter="p1c6"] #chapter-meta > *,
+body[data-chapter="p1c7"] #chapter-meta > *,
+body[data-chapter="p1c8"] #chapter-meta > *,
+body[data-chapter="p2c1"] #chapter-meta > *,
+body[data-chapter="p2c2"] #chapter-meta > *,
+body[data-chapter="p2c3"] #chapter-meta > *,
+body[data-chapter="p2c4"] #chapter-meta > *,
+body[data-chapter="p2c5"] #chapter-meta > *,
+body[data-chapter="p2c6"] #chapter-meta > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============ 2. Margin rail: 14 explicit per-ID rules ============ */
+/* Rail = #chapter-meta::after at ≥1100px (gloss + micro-caption, authored text).
+ * Below 1100px the rail folds under the title as a horizontal strip. */
+@media (min-width: 1100px) {
+  body[data-chapter="p1c1"] #chapter-meta,
+  body[data-chapter="p1c2"] #chapter-meta,
+  body[data-chapter="p1c3"] #chapter-meta,
+  body[data-chapter="p1c4"] #chapter-meta,
+  body[data-chapter="p1c5"] #chapter-meta,
+  body[data-chapter="p1c6"] #chapter-meta,
+  body[data-chapter="p1c7"] #chapter-meta,
+  body[data-chapter="p1c8"] #chapter-meta,
+  body[data-chapter="p2c1"] #chapter-meta,
+  body[data-chapter="p2c2"] #chapter-meta,
+  body[data-chapter="p2c3"] #chapter-meta,
+  body[data-chapter="p2c4"] #chapter-meta,
+  body[data-chapter="p2c5"] #chapter-meta,
+  body[data-chapter="p2c6"] #chapter-meta {
+    display: grid;
+    grid-template-columns: 22% 52% 26%;
+    column-gap: 0;
+    align-items: start;
+  }
+  body[data-chapter="p1c1"] #chapter-meta > *,
+  body[data-chapter="p1c2"] #chapter-meta > *,
+  body[data-chapter="p1c3"] #chapter-meta > *,
+  body[data-chapter="p1c4"] #chapter-meta > *,
+  body[data-chapter="p1c5"] #chapter-meta > *,
+  body[data-chapter="p1c6"] #chapter-meta > *,
+  body[data-chapter="p1c7"] #chapter-meta > *,
+  body[data-chapter="p1c8"] #chapter-meta > *,
+  body[data-chapter="p2c1"] #chapter-meta > *,
+  body[data-chapter="p2c2"] #chapter-meta > *,
+  body[data-chapter="p2c3"] #chapter-meta > *,
+  body[data-chapter="p2c4"] #chapter-meta > *,
+  body[data-chapter="p2c5"] #chapter-meta > *,
+  body[data-chapter="p2c6"] #chapter-meta > * {
+    grid-column: 2;
+    max-width: none;
+  }
+  body[data-chapter="p1c1"] #chapter-meta::after,
+  body[data-chapter="p1c2"] #chapter-meta::after,
+  body[data-chapter="p1c3"] #chapter-meta::after,
+  body[data-chapter="p1c4"] #chapter-meta::after,
+  body[data-chapter="p1c5"] #chapter-meta::after,
+  body[data-chapter="p1c6"] #chapter-meta::after,
+  body[data-chapter="p1c7"] #chapter-meta::after,
+  body[data-chapter="p1c8"] #chapter-meta::after,
+  body[data-chapter="p2c1"] #chapter-meta::after,
+  body[data-chapter="p2c2"] #chapter-meta::after,
+  body[data-chapter="p2c3"] #chapter-meta::after,
+  body[data-chapter="p2c4"] #chapter-meta::after,
+  body[data-chapter="p2c5"] #chapter-meta::after,
+  body[data-chapter="p2c6"] #chapter-meta::after {
+    grid-column: 3;
+    grid-row: 1 / span 4;
+    align-self: start;
+    margin: 0.4rem 0 0 2rem;
+    padding: 0.9rem 0 0.9rem 1.1rem;
+    border-left: 1px solid var(--bt-bark, #3E4A34);
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic;
+    font-size: 1.02em;
+    line-height: 1.55;
+    color: var(--bt-lichen, #9DB89A);
+    white-space: pre-line;
+    z-index: 1;
+  }
+  /* p1c1: widest rail in cohort (binding) — Sophist epigraph + gloss. */
+  body[data-chapter="p1c1"] #chapter-meta::after {
+    font-size: 0.95rem;
+    border-left-width: 2px;
+    border-left-color: var(--bt-shaft, #E9D488);
+    padding-left: 1.25rem;
+  }
+}
+/* Rail content table (authored per-ID gloss + micro-caption). */
+body[data-chapter="p1c1"] #chapter-meta::after {
+  content: "“a battle of giants concerning Being”\a— Plato, Sophist 245e–246e\a\aThe forgotten question";
+}
+body[data-chapter="p1c2"] #chapter-meta::after {
+  content: "Gefragtes · Befragtes · Erfragtes\athe loop that is not a circle";
+}
+body[data-chapter="p1c3"] #chapter-meta::after {
+  content: "crisis in basic concepts\athe plumb line through the crack";
+}
+body[data-chapter="p1c4"] #chapter-meta::after {
+  content: "Existenz — to be its being\athree roots, one trunk";
+}
+body[data-chapter="p1c5"] #chapter-meta::after {
+  content: "Zeitlichkeit — the horizon\anearest below, farthest above";
+}
+body[data-chapter="p1c6"] #chapter-meta::after {
+  content: "Destruktion — positive return\atradition tilted −4°";
+}
+body[data-chapter="p1c7"] #chapter-meta::after {
+  content: "tà phainómena — to the things themselves!\athe point where light lands";
+}
+body[data-chapter="p1c8"] #chapter-meta::after {
+  content: "two parts, three divisions\aenter at Dasein, exit at Zeit";
+}
+body[data-chapter="p2c1"] #chapter-meta::after {
+  content: "Jemeinigkeit — always mine\athe eccentric center";
+}
+body[data-chapter="p2c2"] #chapter-meta::after {
+  content: "the undiscussed sum\athree refusals, one point";
+}
+body[data-chapter="p2c3"] #chapter-meta::after {
+  content: "ursprünglich — primordial\aless hidden, less adorned";
+}
+body[data-chapter="p2c4"] #chapter-meta::after {
+  content: "ich bin — I dwell\aheld, never contained";
+}
+body[data-chapter="p2c5"] #chapter-meta::after {
+  content: "always already outside\ano return path";
+}
+body[data-chapter="p2c6"] #chapter-meta::after {
+  content: "Weltlichkeit — the around\afour ticks, one gap";
+}
+@media (max-width: 1099.98px) {
+  /* Rail folds under the title as a horizontal strip. */
+  body[data-chapter="p1c1"] #chapter-meta::after,
+  body[data-chapter="p1c2"] #chapter-meta::after,
+  body[data-chapter="p1c3"] #chapter-meta::after,
+  body[data-chapter="p1c4"] #chapter-meta::after,
+  body[data-chapter="p1c5"] #chapter-meta::after,
+  body[data-chapter="p1c6"] #chapter-meta::after,
+  body[data-chapter="p1c7"] #chapter-meta::after,
+  body[data-chapter="p1c8"] #chapter-meta::after,
+  body[data-chapter="p2c1"] #chapter-meta::after,
+  body[data-chapter="p2c2"] #chapter-meta::after,
+  body[data-chapter="p2c3"] #chapter-meta::after,
+  body[data-chapter="p2c4"] #chapter-meta::after,
+  body[data-chapter="p2c5"] #chapter-meta::after,
+  body[data-chapter="p2c6"] #chapter-meta::after {
+    display: block;
+    margin: 1.4rem 0 0;
+    padding: 0.7rem 0 0;
+    border-top: 1px solid var(--bt-bark, #3E4A34);
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--bt-lichen, #9DB89A);
+    white-space: pre-line;
+  }
+}
+@media (max-width: 639.98px) {
+  /* Single column + cropped ghost backdrop. */
+  body[data-chapter="p1c1"] #chapter-meta,
+  body[data-chapter="p1c2"] #chapter-meta,
+  body[data-chapter="p1c3"] #chapter-meta,
+  body[data-chapter="p1c4"] #chapter-meta,
+  body[data-chapter="p1c5"] #chapter-meta,
+  body[data-chapter="p1c6"] #chapter-meta,
+  body[data-chapter="p1c7"] #chapter-meta,
+  body[data-chapter="p1c8"] #chapter-meta,
+  body[data-chapter="p2c1"] #chapter-meta,
+  body[data-chapter="p2c2"] #chapter-meta,
+  body[data-chapter="p2c3"] #chapter-meta,
+  body[data-chapter="p2c4"] #chapter-meta,
+  body[data-chapter="p2c5"] #chapter-meta,
+  body[data-chapter="p2c6"] #chapter-meta {
+    padding-top: 2.2rem;
+  }
+  body[data-chapter="p1c1"] .meta-title,
+  body[data-chapter="p1c2"] .meta-title,
+  body[data-chapter="p1c3"] .meta-title,
+  body[data-chapter="p1c4"] .meta-title,
+  body[data-chapter="p1c5"] .meta-title,
+  body[data-chapter="p1c6"] .meta-title,
+  body[data-chapter="p1c7"] .meta-title,
+  body[data-chapter="p1c8"] .meta-title,
+  body[data-chapter="p2c1"] .meta-title,
+  body[data-chapter="p2c2"] .meta-title,
+  body[data-chapter="p2c3"] .meta-title,
+  body[data-chapter="p2c4"] .meta-title,
+  body[data-chapter="p2c5"] .meta-title,
+  body[data-chapter="p2c6"] .meta-title,
+  body[data-chapter="p1c1"] .meta-part,
+  body[data-chapter="p1c2"] .meta-part,
+  body[data-chapter="p1c3"] .meta-part,
+  body[data-chapter="p1c4"] .meta-part,
+  body[data-chapter="p1c5"] .meta-part,
+  body[data-chapter="p1c6"] .meta-part,
+  body[data-chapter="p1c7"] .meta-part,
+  body[data-chapter="p1c8"] .meta-part,
+  body[data-chapter="p2c1"] .meta-part,
+  body[data-chapter="p2c2"] .meta-part,
+  body[data-chapter="p2c3"] .meta-part,
+  body[data-chapter="p2c4"] .meta-part,
+  body[data-chapter="p2c5"] .meta-part,
+  body[data-chapter="p2c6"] .meta-part,
+  body[data-chapter="p1c1"] .meta-number,
+  body[data-chapter="p1c2"] .meta-number,
+  body[data-chapter="p1c3"] .meta-number,
+  body[data-chapter="p1c4"] .meta-number,
+  body[data-chapter="p1c5"] .meta-number,
+  body[data-chapter="p1c6"] .meta-number,
+  body[data-chapter="p1c7"] .meta-number,
+  body[data-chapter="p1c8"] .meta-number,
+  body[data-chapter="p2c1"] .meta-number,
+  body[data-chapter="p2c2"] .meta-number,
+  body[data-chapter="p2c3"] .meta-number,
+  body[data-chapter="p2c4"] .meta-number,
+  body[data-chapter="p2c5"] .meta-number,
+  body[data-chapter="p2c6"] .meta-number,
+  body[data-chapter="p1c1"] .meta-sub,
+  body[data-chapter="p1c2"] .meta-sub,
+  body[data-chapter="p1c3"] .meta-sub,
+  body[data-chapter="p1c4"] .meta-sub,
+  body[data-chapter="p1c5"] .meta-sub,
+  body[data-chapter="p1c6"] .meta-sub,
+  body[data-chapter="p1c7"] .meta-sub,
+  body[data-chapter="p1c8"] .meta-sub,
+  body[data-chapter="p2c1"] .meta-sub,
+  body[data-chapter="p2c2"] .meta-sub,
+  body[data-chapter="p2c3"] .meta-sub,
+  body[data-chapter="p2c4"] .meta-sub,
+  body[data-chapter="p2c5"] .meta-sub,
+  body[data-chapter="p2c6"] .meta-sub {
+    max-width: none;
+  }
+  body[data-chapter="p1c1"] #chapter-meta::before,
+  body[data-chapter="p1c2"] #chapter-meta::before,
+  body[data-chapter="p1c3"] #chapter-meta::before,
+  body[data-chapter="p1c4"] #chapter-meta::before,
+  body[data-chapter="p1c5"] #chapter-meta::before,
+  body[data-chapter="p1c6"] #chapter-meta::before,
+  body[data-chapter="p1c7"] #chapter-meta::before,
+  body[data-chapter="p1c8"] #chapter-meta::before,
+  body[data-chapter="p2c1"] #chapter-meta::before,
+  body[data-chapter="p2c2"] #chapter-meta::before,
+  body[data-chapter="p2c3"] #chapter-meta::before,
+  body[data-chapter="p2c4"] #chapter-meta::before,
+  body[data-chapter="p2c5"] #chapter-meta::before,
+  body[data-chapter="p2c6"] #chapter-meta::before {
+    font-size: 34vw;
+    top: -0.42em;
+    left: auto;
+    right: -0.1em;
+    opacity: 0.07;
+  }
+}
+
+/* ============ 3. #chapter-art treatments (banner|plate|motif) ============ */
+/* Shaft art enters top-right and terminates ABOVE the first paragraph. */
+body[data-chapter="p1c1"] #chapter-art,
+body[data-chapter="p1c2"] #chapter-art,
+body[data-chapter="p1c3"] #chapter-art,
+body[data-chapter="p1c4"] #chapter-art,
+body[data-chapter="p1c5"] #chapter-art,
+body[data-chapter="p1c6"] #chapter-art,
+body[data-chapter="p1c7"] #chapter-art,
+body[data-chapter="p1c8"] #chapter-art,
+body[data-chapter="p2c1"] #chapter-art,
+body[data-chapter="p2c2"] #chapter-art,
+body[data-chapter="p2c3"] #chapter-art,
+body[data-chapter="p2c4"] #chapter-art,
+body[data-chapter="p2c5"] #chapter-art,
+body[data-chapter="p2c6"] #chapter-art {
+  margin: 0 0 1.5rem auto;
+  padding: 0;
+  max-width: 100%;
+  color: var(--bt-mist, #C9D4C3);
+}
+/* Banner: full shaft-region scenes (p1c5/p1c6/p1c7/p2c4). */
+body[data-chapter="p1c5"] #chapter-art.banner,
+body[data-chapter="p1c6"] #chapter-art.banner,
+body[data-chapter="p1c7"] #chapter-art.banner,
+body[data-chapter="p2c4"] #chapter-art.banner {
+  width: 100%;
+}
+body[data-chapter="p1c5"] #chapter-art.banner svg,
+body[data-chapter="p1c6"] #chapter-art.banner svg,
+body[data-chapter="p1c7"] #chapter-art.banner svg,
+body[data-chapter="p2c4"] #chapter-art.banner svg {
+  width: 100%;
+  height: auto;
+  max-height: 46vh;
+}
+/* Plate: legibility emblems (p1c1/p1c8) — humus ground, hairline frame. */
+body[data-chapter="p1c1"] #chapter-art.plate,
+body[data-chapter="p1c8"] #chapter-art.plate {
+  width: min(100%, 46rem);
+  background: var(--bt-humus, #0C0F0A);
+  border: 1px solid var(--bt-bark, #3E4A34);
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+body[data-chapter="p1c1"] #chapter-art.plate svg,
+body[data-chapter="p1c8"] #chapter-art.plate svg {
+  width: 100%;
+  height: auto;
+}
+/* Motif: rail-emblem scenes (p1c2/p1c3/p1c4/p2c1/p2c2/p2c3/p2c5/p2c6)
+ * floated top-right at emblem scale. */
+body[data-chapter="p1c2"] #chapter-art.motif,
+body[data-chapter="p1c3"] #chapter-art.motif,
+body[data-chapter="p1c4"] #chapter-art.motif,
+body[data-chapter="p2c1"] #chapter-art.motif,
+body[data-chapter="p2c2"] #chapter-art.motif,
+body[data-chapter="p2c3"] #chapter-art.motif,
+body[data-chapter="p2c5"] #chapter-art.motif,
+body[data-chapter="p2c6"] #chapter-art.motif {
+  width: min(30%, 19rem);
+  float: right;
+  margin-left: 2rem;
+}
+body[data-chapter="p1c2"] #chapter-art.motif svg,
+body[data-chapter="p1c3"] #chapter-art.motif svg,
+body[data-chapter="p1c4"] #chapter-art.motif svg,
+body[data-chapter="p2c1"] #chapter-art.motif svg,
+body[data-chapter="p2c2"] #chapter-art.motif svg,
+body[data-chapter="p2c3"] #chapter-art.motif svg,
+body[data-chapter="p2c5"] #chapter-art.motif svg,
+body[data-chapter="p2c6"] #chapter-art.motif svg {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1099.98px) {
+  body[data-chapter="p1c2"] #chapter-art.motif,
+  body[data-chapter="p1c3"] #chapter-art.motif,
+  body[data-chapter="p1c4"] #chapter-art.motif,
+  body[data-chapter="p2c1"] #chapter-art.motif,
+  body[data-chapter="p2c2"] #chapter-art.motif,
+  body[data-chapter="p2c3"] #chapter-art.motif,
+  body[data-chapter="p2c5"] #chapter-art.motif,
+  body[data-chapter="p2c6"] #chapter-art.motif {
+    float: none;
+    width: min(100%, 26rem);
+    margin-left: 0;
+  }
+}
+/* Figcaptions: quiet micro-caption voice (contract §4 caption). */
+body[data-chapter="p1c1"] #chapter-art figcaption,
+body[data-chapter="p1c2"] #chapter-art figcaption,
+body[data-chapter="p1c3"] #chapter-art figcaption,
+body[data-chapter="p1c4"] #chapter-art figcaption,
+body[data-chapter="p1c5"] #chapter-art figcaption,
+body[data-chapter="p1c6"] #chapter-art figcaption,
+body[data-chapter="p1c7"] #chapter-art figcaption,
+body[data-chapter="p1c8"] #chapter-art figcaption,
+body[data-chapter="p2c1"] #chapter-art figcaption,
+body[data-chapter="p2c2"] #chapter-art figcaption,
+body[data-chapter="p2c3"] #chapter-art figcaption,
+body[data-chapter="p2c4"] #chapter-art figcaption,
+body[data-chapter="p2c5"] #chapter-art figcaption,
+body[data-chapter="p2c6"] #chapter-art figcaption {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--bt-lichen, #9DB89A);
+  margin-top: 0.6rem;
+  text-align: right;
+}
+
+/* ============ 4. SVG ink (currentColor / bt vars ONLY) ============ */
+/* Dark-first ink. Light/sepia re-ink below. Shaft vars are display-only. */
+body[data-chapter="p1c1"] #chapter-art .iw-trunk,
+body[data-chapter="p1c2"] #chapter-art .iw-trunk,
+body[data-chapter="p1c3"] #chapter-art .iw-trunk,
+body[data-chapter="p1c4"] #chapter-art .iw-trunk,
+body[data-chapter="p1c5"] #chapter-art .iw-trunk,
+body[data-chapter="p1c6"] #chapter-art .iw-trunk,
+body[data-chapter="p1c7"] #chapter-art .iw-trunk,
+body[data-chapter="p1c8"] #chapter-art .iw-trunk,
+body[data-chapter="p2c1"] #chapter-art .iw-trunk,
+body[data-chapter="p2c2"] #chapter-art .iw-trunk,
+body[data-chapter="p2c3"] #chapter-art .iw-trunk,
+body[data-chapter="p2c4"] #chapter-art .iw-trunk,
+body[data-chapter="p2c5"] #chapter-art .iw-trunk,
+body[data-chapter="p2c6"] #chapter-art .iw-trunk,
+body[data-chapter="p1c1"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c2"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c3"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c4"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c5"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c6"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c7"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c8"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p2c1"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p2c2"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p2c3"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p2c4"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p2c5"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p2c6"] #chapter-art .iw-trunk-dense,
+body[data-chapter="p1c1"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c2"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c3"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c4"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c5"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c6"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c7"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c8"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p2c1"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p2c2"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p2c3"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p2c4"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p2c5"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p2c6"] #chapter-art .iw-trunk-strong,
+body[data-chapter="p1c1"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c2"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c3"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c4"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c5"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c6"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c7"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c8"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p2c1"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p2c2"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p2c3"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p2c4"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p2c5"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p2c6"] #chapter-art .iw-trunk-onbeam,
+body[data-chapter="p1c1"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p1c2"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p1c3"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p1c4"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p1c5"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p1c6"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p1c7"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p1c8"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p2c1"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p2c2"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p2c3"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p2c4"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p2c5"] #chapter-art .iw-trunk-curve,
+body[data-chapter="p2c6"] #chapter-art .iw-trunk-curve {
+  fill: var(--bt-bark, #3E4A34);
+  stroke: none;
+}
+body[data-chapter="p1c6"] #chapter-art .iw-lean-trunk {
+  fill: none;
+  stroke: var(--bt-lichen, #9DB89A);
+  stroke-width: 30;
+}
+/* Shaft beams: translucent straw; cores brighter. Washed variants dimmed. */
+body[data-chapter="p1c1"] #chapter-art .iw-beam,
+body[data-chapter="p1c2"] #chapter-art .iw-beam,
+body[data-chapter="p1c3"] #chapter-art .iw-beam,
+body[data-chapter="p1c4"] #chapter-art .iw-beam,
+body[data-chapter="p1c6"] #chapter-art .iw-beam,
+body[data-chapter="p1c7"] #chapter-art .iw-beam,
+body[data-chapter="p1c8"] #chapter-art .iw-beam,
+body[data-chapter="p2c1"] #chapter-art .iw-beam,
+body[data-chapter="p2c2"] #chapter-art .iw-beam,
+body[data-chapter="p2c4"] #chapter-art .iw-beam,
+body[data-chapter="p2c6"] #chapter-art .iw-beam {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.34;
+  stroke: none;
+}
+body[data-chapter="p1c1"] #chapter-art .iw-beam-core,
+body[data-chapter="p1c2"] #chapter-art .iw-beam-core,
+body[data-chapter="p1c3"] #chapter-art .iw-beam-core,
+body[data-chapter="p1c4"] #chapter-art .iw-beam-core,
+body[data-chapter="p1c5"] #chapter-art .iw-beam-core,
+body[data-chapter="p1c6"] #chapter-art .iw-beam-core,
+body[data-chapter="p1c7"] #chapter-art .iw-beam-core,
+body[data-chapter="p1c8"] #chapter-art .iw-beam-core,
+body[data-chapter="p2c1"] #chapter-art .iw-beam-core,
+body[data-chapter="p2c2"] #chapter-art .iw-beam-core,
+body[data-chapter="p2c6"] #chapter-art .iw-beam-core {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.6;
+  stroke: none;
+}
+/* p1c5 horizon-lying beam + sun disc. */
+body[data-chapter="p1c5"] #chapter-art .iw-horizon-beam {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.34;
+  stroke: none;
+}
+body[data-chapter="p1c5"] #chapter-art .iw-sun {
+  fill: var(--bt-shaft, #E9D488);
+  stroke: none;
+}
+body[data-chapter="p1c5"] #chapter-art .iw-horizon-line {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+body[data-chapter="p1c5"] #chapter-art .iw-hatch {
+  stroke: var(--bt-bark, #3E4A34);
+}
+/* p1c7 noon core: brightest in cohort (explicit, not a formula). */
+body[data-chapter="p1c7"] #chapter-art .iw-beam { fill-opacity: 0.42; }
+body[data-chapter="p1c7"] #chapter-art .iw-beam-core { fill-opacity: 0.75; }
+body[data-chapter="p1c7"] #chapter-art .iw-point {
+  fill: var(--bt-shaft, #E9D488);
+  stroke: none;
+}
+body[data-chapter="p1c7"] #chapter-art .iw-landing {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.28;
+  stroke: none;
+}
+/* p2c3 soft beam; p2c5 washed beam (privation register). */
+body[data-chapter="p2c3"] #chapter-art .iw-beam-soft {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.26;
+  stroke: none;
+}
+body[data-chapter="p2c3"] #chapter-art .iw-beam-core-soft {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.4;
+  stroke: none;
+}
+body[data-chapter="p2c5"] #chapter-art .iw-beam-washed {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.16;
+  stroke: none;
+}
+body[data-chapter="p2c5"] #chapter-art .iw-beam-core-washed {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.24;
+  stroke: none;
+}
+/* p2c4 widest core (dwelling warmth, same hue). */
+body[data-chapter="p2c4"] #chapter-art .iw-beam-core-wide {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.55;
+  stroke: none;
+}
+/* p2c6 landing pool. */
+body[data-chapter="p2c6"] #chapter-art .iw-pool {
+  fill: var(--bt-shaft, #E9D488);
+  fill-opacity: 0.25;
+  stroke: none;
+}
+/* Beam edge accents. */
+body[data-chapter="p1c4"] #chapter-art .iw-beam-edge2,
+body[data-chapter="p1c8"] #chapter-art .iw-measure,
+body[data-chapter="p2c2"] #chapter-art .iw-boundary-edge {
+  stroke: var(--bt-shaft, #E9D488);
+  fill: none;
+}
+/* Motif line-work: bark structures, lichen secondaries, shaft events. */
+body[data-chapter="p1c1"] #chapter-art .iw-bar {
+  fill: none;
+  stroke: var(--bt-bark, #3E4A34);
+  stroke-width: 10;
+}
+body[data-chapter="p1c1"] #chapter-art .iw-query {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+body[data-chapter="p1c1"] #chapter-art .iw-dot {
+  fill: var(--bt-shaft, #E9D488);
+  stroke: none;
+}
+body[data-chapter="p1c2"] #chapter-art .iw-loop-line {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p1c2"] #chapter-art .iw-node {
+  fill: none;
+  stroke: var(--bt-lichen, #9DB89A);
+  stroke-width: 5;
+}
+body[data-chapter="p1c2"] #chapter-art .iw-return {
+  stroke: var(--bt-shaft, #E9D488);
+}
+body[data-chapter="p1c3"] #chapter-art .iw-stone,
+body[data-chapter="p1c3"] #chapter-art .iw-stone-crack {
+  fill: none;
+  stroke: var(--bt-bark, #3E4A34);
+  stroke-width: 3;
+}
+body[data-chapter="p1c3"] #chapter-art .iw-cracklip {
+  stroke: var(--bt-shaft, #E9D488);
+}
+body[data-chapter="p1c3"] #chapter-art .iw-plumb {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+body[data-chapter="p1c3"] #chapter-art .iw-plumb-bob {
+  fill: var(--bt-shaft, #E9D488);
+  stroke: none;
+}
+body[data-chapter="p1c4"] #chapter-art .iw-root1,
+body[data-chapter="p1c4"] #chapter-art .iw-root2a,
+body[data-chapter="p1c4"] #chapter-art .iw-root2b,
+body[data-chapter="p1c4"] #chapter-art .iw-root3 {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+body[data-chapter="p1c4"] #chapter-art .iw-root-ring {
+  stroke: var(--bt-shaft, #E9D488);
+}
+body[data-chapter="p1c6"] #chapter-art .iw-stratum {
+  fill: var(--bt-under, #1D2619);
+  stroke: none;
+}
+body[data-chapter="p1c6"] #chapter-art .iw-stratum-seam {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p1c6"] #chapter-art .iw-stratum-label {
+  fill: var(--bt-lichen, #9DB89A);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 26px;
+  letter-spacing: 6px;
+}
+body[data-chapter="p1c8"] #chapter-art .iw-tablet {
+  fill: none;
+  stroke: var(--bt-bark, #3E4A34);
+  stroke-width: 3;
+}
+body[data-chapter="p1c8"] #chapter-art .iw-tablet-div {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p1c8"] #chapter-art .iw-tablet-num {
+  fill: var(--bt-lichen, #9DB89A);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 44px;
+}
+body[data-chapter="p1c8"] #chapter-art .iw-tablet-tick {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+body[data-chapter="p1c8"] #chapter-art .iw-path {
+  stroke: var(--bt-shaft, #E9D488);
+}
+body[data-chapter="p1c8"] #chapter-art .iw-path-label {
+  fill: var(--bt-lichen, #9DB89A);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  font-size: 24px;
+}
+body[data-chapter="p2c1"] #chapter-art .iw-mine-ring {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c1"] #chapter-art .iw-mine-center {
+  fill: var(--bt-shaft, #E9D488);
+  stroke: none;
+}
+body[data-chapter="p2c2"] #chapter-art .iw-boundary-line {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c2"] #chapter-art .iw-refused {
+  fill: var(--bt-lichen, #9DB89A);
+  opacity: 0.45;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 44px;
+}
+body[data-chapter="p2c2"] #chapter-art .iw-near-point {
+  fill: var(--bt-mist, #C9D4C3);
+  stroke: none;
+}
+body[data-chapter="p2c3"] #chapter-art .iw-sherd {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c3"] #chapter-art .iw-sherd-hatch,
+body[data-chapter="p2c3"] #chapter-art .iw-ground {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c4"] #chapter-art .iw-hut {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c4"] #chapter-art .iw-hut-door {
+  fill: var(--bt-shaft, #E9D488);
+  stroke: none;
+}
+body[data-chapter="p2c4"] #chapter-art .iw-hut-base {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c4"] #chapter-art .iw-hold-ring {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+body[data-chapter="p2c5"] #chapter-art .iw-cabinet {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c5"] #chapter-art .iw-out-arrow {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+body[data-chapter="p2c5"] #chapter-art .iw-out-tip {
+  fill: var(--bt-shaft, #E9D488);
+  stroke: none;
+}
+body[data-chapter="p2c6"] #chapter-art .iw-ring {
+  stroke: var(--bt-bark, #3E4A34);
+}
+body[data-chapter="p2c6"] #chapter-art .iw-ring-tick {
+  stroke: var(--bt-lichen, #9DB89A);
+}
+/* Grain: gated — off under reduced-motion / narrow (see §8). */
+body[data-chapter="p1c1"] #chapter-art .iw-grain,
+body[data-chapter="p1c2"] #chapter-art .iw-grain,
+body[data-chapter="p1c3"] #chapter-art .iw-grain,
+body[data-chapter="p1c4"] #chapter-art .iw-grain,
+body[data-chapter="p1c5"] #chapter-art .iw-grain,
+body[data-chapter="p1c6"] #chapter-art .iw-grain,
+body[data-chapter="p1c7"] #chapter-art .iw-grain,
+body[data-chapter="p1c8"] #chapter-art .iw-grain,
+body[data-chapter="p2c1"] #chapter-art .iw-grain,
+body[data-chapter="p2c2"] #chapter-art .iw-grain,
+body[data-chapter="p2c3"] #chapter-art .iw-grain,
+body[data-chapter="p2c4"] #chapter-art .iw-grain,
+body[data-chapter="p2c5"] #chapter-art .iw-grain,
+body[data-chapter="p2c6"] #chapter-art .iw-grain {
+  fill: #ffffff;
+}
+
+/* ============ 5. Reading body: calm text + threshold wells ============ */
+body[data-chapter="p1c1"] #chapter-text,
+body[data-chapter="p1c2"] #chapter-text,
+body[data-chapter="p1c3"] #chapter-text,
+body[data-chapter="p1c4"] #chapter-text,
+body[data-chapter="p1c5"] #chapter-text,
+body[data-chapter="p1c6"] #chapter-text,
+body[data-chapter="p1c7"] #chapter-text,
+body[data-chapter="p1c8"] #chapter-text,
+body[data-chapter="p2c1"] #chapter-text,
+body[data-chapter="p2c2"] #chapter-text,
+body[data-chapter="p2c3"] #chapter-text,
+body[data-chapter="p2c4"] #chapter-text,
+body[data-chapter="p2c5"] #chapter-text,
+body[data-chapter="p2c6"] #chapter-text {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: var(--text-size, 1.19rem);
+  line-height: var(--leading, 1.75);
+  color: var(--bt-mist, #C9D4C3);
+}
+body[data-chapter="p1c1"] #chapter-text p,
+body[data-chapter="p1c2"] #chapter-text p,
+body[data-chapter="p1c3"] #chapter-text p,
+body[data-chapter="p1c4"] #chapter-text p,
+body[data-chapter="p1c5"] #chapter-text p,
+body[data-chapter="p1c6"] #chapter-text p,
+body[data-chapter="p1c7"] #chapter-text p,
+body[data-chapter="p1c8"] #chapter-text p,
+body[data-chapter="p2c1"] #chapter-text p,
+body[data-chapter="p2c2"] #chapter-text p,
+body[data-chapter="p2c3"] #chapter-text p,
+body[data-chapter="p2c4"] #chapter-text p,
+body[data-chapter="p2c5"] #chapter-text p,
+body[data-chapter="p2c6"] #chapter-text p {
+  text-align: left;
+  hyphens: auto;
+  max-width: 34rem;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 1.1em;
+}
+/* NO drop caps anywhere in this cohort (firewall) — neutralize inherited caps. */
+body[data-chapter="p1c1"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p1c2"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p1c3"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p1c4"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p1c5"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p1c6"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p1c7"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p1c8"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p2c1"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p2c2"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p2c3"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p2c4"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p2c5"] #chapter-text > p:first-of-type::first-letter,
+body[data-chapter="p2c6"] #chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  transform: none;
+}
+/* Threshold wells (B4: must read confident — clear inset + clear size step).
+ * First paragraph: Fraunces 21px/1.6 on a --bt-under well, full measure. */
+body[data-chapter="p1c1"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c2"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c3"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c4"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c5"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c6"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c7"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c8"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c1"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c2"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c3"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c4"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c5"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c6"] #chapter-text > p:first-of-type {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 340;
+  font-size: calc(var(--text-size, 1.19rem) * 1.1026);
+  line-height: 1.6;
+  font-variation-settings: "opsz" 100, "SOFT" 50, "WONK" 1;
+  background: var(--bt-under, #1D2619);
+  border-left: 2px solid var(--bt-shaft, #E9D488);
+  padding: 1.25rem 1.5rem 1.25rem 1.25rem;
+  margin-bottom: 2.2em;
+  max-width: 34rem;
+  color: var(--bt-mist, #C9D4C3);
+}
+/* Anchor chapters get an extra-deep well + bottom breather. */
+body[data-chapter="p1c5"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c7"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c4"] #chapter-text > p:first-of-type {
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.8em;
+}
+/* Compact wells for the short map/fragment chapters. */
+body[data-chapter="p1c8"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c3"] #chapter-text > p:first-of-type {
+  padding: 1rem 1.25rem 1rem 1.1rem;
+  margin-bottom: 1.8em;
+}
+
+/* ============ 6. Fleck fields: 14 explicit per-ID rules ============ */
+/* Authored fleck backgrounds on #chapter-text + breather spacing. Explicit
+ * positions only (no modulo). Flecks sit in the gutter OUTSIDE the 34rem
+ * measure (B3: light never behind body text). */
+body[data-chapter="p1c1"] #chapter-text,
+body[data-chapter="p1c2"] #chapter-text,
+body[data-chapter="p1c3"] #chapter-text,
+body[data-chapter="p1c4"] #chapter-text,
+body[data-chapter="p1c5"] #chapter-text,
+body[data-chapter="p1c6"] #chapter-text,
+body[data-chapter="p1c7"] #chapter-text,
+body[data-chapter="p1c8"] #chapter-text,
+body[data-chapter="p2c1"] #chapter-text,
+body[data-chapter="p2c2"] #chapter-text,
+body[data-chapter="p2c3"] #chapter-text,
+body[data-chapter="p2c4"] #chapter-text,
+body[data-chapter="p2c5"] #chapter-text,
+body[data-chapter="p2c6"] #chapter-text {
+  background-repeat: no-repeat;
+}
+/* p1c1 — sparsest: two faint ticks (30%, 62%), then silence to the end. */
+body[data-chapter="p1c1"] #chapter-text {
+  background-image:
+    radial-gradient(circle 3px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 2px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%);
+  background-size: 12px 12px, 9px 9px;
+  background-position: right 6% top 30%, right 9% top 62%;
+}
+body[data-chapter="p1c1"] #chapter-text > p:nth-of-type(6) {
+  margin-bottom: 2.6em;
+}
+body[data-chapter="p1c1"] #chapter-nav {
+  margin-top: 4.5rem;
+}
+/* p1c2 — three clusters, one per structural moment (18/52/78%). */
+body[data-chapter="p1c2"] #chapter-text {
+  background-image:
+    radial-gradient(circle 3px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 2px at 50% 50%, var(--bt-lichen, #9DB89A) 98%, transparent 100%),
+    radial-gradient(circle 3px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%);
+  background-size: 14px 14px, 10px 10px, 14px 14px;
+  background-position: right 5% top 18%, right 8% top 52%, right 5% top 78%;
+}
+body[data-chapter="p1c2"] #chapter-text > p:nth-of-type(4),
+body[data-chapter="p1c2"] #chapter-text > p:nth-of-type(9) {
+  margin-bottom: 2.2em;
+}
+/* p1c3 — four science bands (30/45/58/72%): math/physics/biology/history. */
+body[data-chapter="p1c3"] #chapter-text {
+  background-image:
+    linear-gradient(var(--bt-bark, #3E4A34), var(--bt-bark, #3E4A34)),
+    linear-gradient(var(--bt-bark, #3E4A34), var(--bt-bark, #3E4A34)),
+    linear-gradient(var(--bt-bark, #3E4A34), var(--bt-bark, #3E4A34)),
+    linear-gradient(var(--bt-lichen, #9DB89A), var(--bt-lichen, #9DB89A));
+  background-size: 44px 2px, 44px 2px, 44px 2px, 44px 2px;
+  background-position: right 4% top 30%, right 4% top 45%, right 4% top 58%, right 4% top 72%;
+}
+body[data-chapter="p1c3"] #chapter-text > p:nth-of-type(3),
+body[data-chapter="p1c3"] #chapter-text > p:nth-of-type(5),
+body[data-chapter="p1c3"] #chapter-text > p:nth-of-type(7) {
+  margin-bottom: 2.2em;
+}
+/* p1c4 — root-hair stops: sparse 25%, medium 55%, dense 75–85%. */
+body[data-chapter="p1c4"] #chapter-text {
+  background-image:
+    radial-gradient(circle 2px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 3px at 40% 40%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 3px at 60% 60%, var(--bt-lichen, #9DB89A) 98%, transparent 100%),
+    radial-gradient(circle 4px at 50% 50%, var(--bt-lichen, #9DB89A) 98%, transparent 100%);
+  background-size: 10px 10px, 26px 26px, 26px 26px, 16px 16px;
+  background-position: right 7% top 25%, right 5% top 55%, right 6% top 75%, right 5% top 85%;
+}
+body[data-chapter="p1c4"] #chapter-text > p:nth-of-type(10) {
+  margin-bottom: 2.4em;
+}
+/* p1c5 — hatch gradient: dense early (nearness) → bare (distance). */
+body[data-chapter="p1c5"] #chapter-text {
+  background-image:
+    repeating-linear-gradient(72deg, var(--bt-bark, #3E4A34) 0 2px, transparent 2px 9px),
+    repeating-linear-gradient(72deg, var(--bt-bark, #3E4A34) 0 1px, transparent 1px 14px);
+  background-size: 120px 22%, 120px 18%;
+  background-position: right 3% top 8%, right 3% top 34%;
+}
+body[data-chapter="p1c5"] #chapter-text > p:nth-of-type(6),
+body[data-chapter="p1c5"] #chapter-text > p:nth-of-type(12) {
+  margin-bottom: 2.2em;
+}
+body[data-chapter="p1c5"] #chapter-nav {
+  margin-top: 5rem;
+}
+/* p1c6 — three sediment bands: Kant 50%, Descartes 68%, Aristotle 82%. */
+body[data-chapter="p1c6"] #chapter-text {
+  background-image:
+    linear-gradient(var(--bt-bark, #3E4A34), var(--bt-bark, #3E4A34)),
+    linear-gradient(var(--bt-bark, #3E4A34), var(--bt-bark, #3E4A34)),
+    linear-gradient(var(--bt-lichen, #9DB89A), var(--bt-lichen, #9DB89A));
+  background-size: 64px 3px, 64px 3px, 64px 3px;
+  background-position: right 4% top 50%, right 4% top 68%, right 4% top 82%;
+}
+body[data-chapter="p1c6"] #chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c6"] #chapter-text > p:nth-of-type(13),
+body[data-chapter="p1c6"] #chapter-text > p:nth-of-type(18),
+body[data-chapter="p1c6"] #chapter-text > p:nth-of-type(21) {
+  margin-bottom: 2.2em;
+}
+/* p1c7 — veil rhythm at A/B/C: dense→parted→dense→parted (explicit). */
+body[data-chapter="p1c7"] #chapter-text {
+  background-image:
+    repeating-linear-gradient(72deg, var(--bt-bark, #3E4A34) 0 2px, transparent 2px 8px),
+    repeating-linear-gradient(72deg, var(--bt-bark, #3E4A34) 0 2px, transparent 2px 8px),
+    repeating-linear-gradient(72deg, var(--bt-lichen, #9DB89A) 0 1px, transparent 1px 12px);
+  background-size: 110px 12%, 110px 10%, 110px 14%;
+  background-position: right 3% top 20%, right 3% top 44%, right 3% top 70%;
+}
+body[data-chapter="p1c7"] #chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c7"] #chapter-text > p:nth-of-type(17),
+body[data-chapter="p1c7"] #chapter-text > p:nth-of-type(27),
+body[data-chapter="p1c7"] #chapter-text > p:nth-of-type(33) {
+  margin-bottom: 2.4em;
+}
+/* p1c8 — two ticks (the two parts), then silence. */
+body[data-chapter="p1c8"] #chapter-text {
+  background-image:
+    linear-gradient(var(--bt-lichen, #9DB89A), var(--bt-lichen, #9DB89A)),
+    linear-gradient(var(--bt-lichen, #9DB89A), var(--bt-lichen, #9DB89A));
+  background-size: 34px 2px, 34px 2px;
+  background-position: right 5% top 30%, right 5% top 55%;
+}
+/* p2c1 — everydayness: even medium ticks, abrupt stop at 80%. */
+body[data-chapter="p2c1"] #chapter-text {
+  background-image:
+    repeating-linear-gradient(to bottom, var(--bt-bark, #3E4A34) 0 2px, transparent 2px 34px);
+  background-size: 30px 72%;
+  background-position: right 5% top 6%;
+}
+body[data-chapter="p2c1"] #chapter-text > p:nth-of-type(5),
+body[data-chapter="p2c1"] #chapter-text > p:nth-of-type(10) {
+  margin-bottom: 2em;
+}
+/* p2c2 — near-side only: flecks left 60% of the gutter, right bare. */
+body[data-chapter="p2c2"] #chapter-text {
+  background-image:
+    radial-gradient(circle 3px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 2px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 3px at 50% 50%, var(--bt-lichen, #9DB89A) 98%, transparent 100%);
+  background-size: 14px 14px, 10px 10px, 14px 14px;
+  background-position: left 58% top 22%, left 56% top 48%, left 58% top 74%;
+}
+/* p2c3 — near-empty: ONE cluster mid-chapter (50%). */
+body[data-chapter="p2c3"] #chapter-text {
+  background-image:
+    radial-gradient(circle 3px at 40% 40%, var(--bt-lichen, #9DB89A) 98%, transparent 100%);
+  background-size: 30px 30px;
+  background-position: right 7% top 50%;
+}
+/* p2c4 — care rhythm: regular ticks in the Besorgen region (55–75%). */
+body[data-chapter="p2c4"] #chapter-text {
+  background-image:
+    repeating-linear-gradient(to bottom, var(--bt-lichen, #9DB89A) 0 2px, transparent 2px 26px),
+    radial-gradient(circle 2px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%);
+  background-size: 26px 22%, 10px 10px;
+  background-position: right 5% top 55%, right 7% top 20%;
+}
+body[data-chapter="p2c4"] #chapter-text > p:nth-of-type(7),
+body[data-chapter="p2c4"] #chapter-text > p:nth-of-type(13) {
+  margin-bottom: 2.4em;
+}
+/* p2c5 — outside-lean: density drifts right down the chapter. */
+body[data-chapter="p2c5"] #chapter-text {
+  background-image:
+    radial-gradient(circle 2px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 3px at 50% 50%, var(--bt-bark, #3E4A34) 98%, transparent 100%),
+    radial-gradient(circle 3px at 50% 50%, var(--bt-lichen, #9DB89A) 98%, transparent 100%);
+  background-size: 10px 10px, 14px 14px, 14px 14px;
+  background-position: right 22% top 25%, right 12% top 55%, right 4% top 85%;
+}
+/* p2c6 — four arcs at the four-senses region (35–70%), then open run. */
+body[data-chapter="p2c6"] #chapter-text {
+  background-image:
+    radial-gradient(circle 22px at 50% 50%, transparent 20px, var(--bt-bark, #3E4A34) 21px, transparent 23px),
+    radial-gradient(circle 22px at 50% 50%, transparent 20px, var(--bt-bark, #3E4A34) 21px, transparent 23px),
+    radial-gradient(circle 22px at 50% 50%, transparent 20px, var(--bt-lichen, #9DB89A) 21px, transparent 23px),
+    radial-gradient(circle 22px at 50% 50%, transparent 20px, var(--bt-lichen, #9DB89A) 21px, transparent 23px);
+  background-size: 48px 48px, 48px 48px, 48px 48px, 48px 48px;
+  background-position: right 6% top 35%, right 6% top 45%, right 6% top 56%, right 6% top 66%;
+}
+body[data-chapter="p2c6"] #chapter-text > p:nth-of-type(12) {
+  margin-bottom: 2.2em;
+}
+/* Gutter flecks need room: hide them where the measure fills the viewport. */
+@media (max-width: 1099.98px) {
+  body[data-chapter="p1c1"] #chapter-text,
+  body[data-chapter="p1c2"] #chapter-text,
+  body[data-chapter="p1c3"] #chapter-text,
+  body[data-chapter="p1c4"] #chapter-text,
+  body[data-chapter="p1c5"] #chapter-text,
+  body[data-chapter="p1c6"] #chapter-text,
+  body[data-chapter="p1c7"] #chapter-text,
+  body[data-chapter="p1c8"] #chapter-text,
+  body[data-chapter="p2c1"] #chapter-text,
+  body[data-chapter="p2c2"] #chapter-text,
+  body[data-chapter="p2c3"] #chapter-text,
+  body[data-chapter="p2c4"] #chapter-text,
+  body[data-chapter="p2c5"] #chapter-text,
+  body[data-chapter="p2c6"] #chapter-text {
+    background-image: none;
+  }
+}
+
+/* ============ 7. Chapter nav: quiet text links (own chapters) ============ */
+body[data-chapter="p1c1"] #chapter-nav,
+body[data-chapter="p1c2"] #chapter-nav,
+body[data-chapter="p1c3"] #chapter-nav,
+body[data-chapter="p1c4"] #chapter-nav,
+body[data-chapter="p1c5"] #chapter-nav,
+body[data-chapter="p1c6"] #chapter-nav,
+body[data-chapter="p1c7"] #chapter-nav,
+body[data-chapter="p1c8"] #chapter-nav,
+body[data-chapter="p2c1"] #chapter-nav,
+body[data-chapter="p2c2"] #chapter-nav,
+body[data-chapter="p2c3"] #chapter-nav,
+body[data-chapter="p2c4"] #chapter-nav,
+body[data-chapter="p2c5"] #chapter-nav,
+body[data-chapter="p2c6"] #chapter-nav {
+  border-top: 1px solid var(--bt-bark, #3E4A34);
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+}
+/* Visible keyboard focus (shaft color, display-only — never body text). */
+body[data-chapter="p1c1"] #chapter-nav button:focus-visible,
+body[data-chapter="p1c2"] #chapter-nav button:focus-visible,
+body[data-chapter="p1c3"] #chapter-nav button:focus-visible,
+body[data-chapter="p1c4"] #chapter-nav button:focus-visible,
+body[data-chapter="p1c5"] #chapter-nav button:focus-visible,
+body[data-chapter="p1c6"] #chapter-nav button:focus-visible,
+body[data-chapter="p1c7"] #chapter-nav button:focus-visible,
+body[data-chapter="p1c8"] #chapter-nav button:focus-visible,
+body[data-chapter="p2c1"] #chapter-nav button:focus-visible,
+body[data-chapter="p2c2"] #chapter-nav button:focus-visible,
+body[data-chapter="p2c3"] #chapter-nav button:focus-visible,
+body[data-chapter="p2c4"] #chapter-nav button:focus-visible,
+body[data-chapter="p2c5"] #chapter-nav button:focus-visible,
+body[data-chapter="p2c6"] #chapter-nav button:focus-visible {
+  outline: 2px solid var(--bt-shaft, #E9D488);
+  outline-offset: 3px;
+}
+
+/* ============ 8. Gates: grain, motion, narrow ============ */
+/* Grain OFF under reduced-motion or narrow widths (GPU note, §4.7). */
+@media (prefers-reduced-motion: reduce) {
+  body[data-chapter="p1c1"] #chapter-art .iw-grain,
+  body[data-chapter="p1c2"] #chapter-art .iw-grain,
+  body[data-chapter="p1c3"] #chapter-art .iw-grain,
+  body[data-chapter="p1c4"] #chapter-art .iw-grain,
+  body[data-chapter="p1c5"] #chapter-art .iw-grain,
+  body[data-chapter="p1c6"] #chapter-art .iw-grain,
+  body[data-chapter="p1c7"] #chapter-art .iw-grain,
+  body[data-chapter="p1c8"] #chapter-art .iw-grain,
+  body[data-chapter="p2c1"] #chapter-art .iw-grain,
+  body[data-chapter="p2c2"] #chapter-art .iw-grain,
+  body[data-chapter="p2c3"] #chapter-art .iw-grain,
+  body[data-chapter="p2c4"] #chapter-art .iw-grain,
+  body[data-chapter="p2c5"] #chapter-art .iw-grain,
+  body[data-chapter="p2c6"] #chapter-art .iw-grain {
+    display: none;
+  }
+  /* ALL shaft/grain animation OFF; static art remains (no animations shipped). */
+  body[data-chapter="p1c1"] #chapter-art svg,
+  body[data-chapter="p1c2"] #chapter-art svg,
+  body[data-chapter="p1c3"] #chapter-art svg,
+  body[data-chapter="p1c4"] #chapter-art svg,
+  body[data-chapter="p1c5"] #chapter-art svg,
+  body[data-chapter="p1c6"] #chapter-art svg,
+  body[data-chapter="p1c7"] #chapter-art svg,
+  body[data-chapter="p1c8"] #chapter-art svg,
+  body[data-chapter="p2c1"] #chapter-art svg,
+  body[data-chapter="p2c2"] #chapter-art svg,
+  body[data-chapter="p2c3"] #chapter-art svg,
+  body[data-chapter="p2c4"] #chapter-art svg,
+  body[data-chapter="p2c5"] #chapter-art svg,
+  body[data-chapter="p2c6"] #chapter-art svg {
+    animation: none;
+  }
+}
+@media (max-width: 639.98px) {
+  body[data-chapter="p1c1"] #chapter-art .iw-grain,
+  body[data-chapter="p1c2"] #chapter-art .iw-grain,
+  body[data-chapter="p1c3"] #chapter-art .iw-grain,
+  body[data-chapter="p1c4"] #chapter-art .iw-grain,
+  body[data-chapter="p1c5"] #chapter-art .iw-grain,
+  body[data-chapter="p1c6"] #chapter-art .iw-grain,
+  body[data-chapter="p1c7"] #chapter-art .iw-grain,
+  body[data-chapter="p1c8"] #chapter-art .iw-grain,
+  body[data-chapter="p2c1"] #chapter-art .iw-grain,
+  body[data-chapter="p2c2"] #chapter-art .iw-grain,
+  body[data-chapter="p2c3"] #chapter-art .iw-grain,
+  body[data-chapter="p2c4"] #chapter-art .iw-grain,
+  body[data-chapter="p2c5"] #chapter-art .iw-grain,
+  body[data-chapter="p2c6"] #chapter-art .iw-grain {
+    display: none;
+  }
+}
+
+/* ============ 9. Light + sepia behavior (binding §2 values) ============ */
+/* The supervisor wires --bt-* per theme; these rules re-ink HARD assumptions
+ * (ghost opacity, beam strength, well ground) so light/sepia degrade sanely
+ * even where OS-level color-scheme differs. Hex values from ART-DIRECTION §2. */
+html[data-theme="light"] body[data-chapter="p1c1"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p1c2"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p1c3"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p1c4"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p1c5"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p1c6"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p1c7"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p1c8"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p2c1"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p2c2"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p2c3"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p2c4"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p2c5"] #chapter-meta::before,
+html[data-theme="light"] body[data-chapter="p2c6"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c1"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c2"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c3"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c4"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c5"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c6"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c7"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p1c8"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p2c1"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p2c2"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p2c3"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p2c4"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p2c5"] #chapter-meta::before,
+html[data-theme="sepia"] body[data-chapter="p2c6"] #chapter-meta::before {
+  opacity: 0.1;
+}
+html[data-theme="light"] body[data-chapter="p1c1"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p1c2"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p1c3"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p1c4"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p1c5"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p1c6"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p1c7"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p1c8"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p2c1"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p2c2"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p2c3"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p2c4"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p2c5"] #chapter-text > p:first-of-type,
+html[data-theme="light"] body[data-chapter="p2c6"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c1"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c2"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c3"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c4"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c5"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c6"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c7"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p1c8"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p2c1"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p2c2"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p2c3"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p2c4"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p2c5"] #chapter-text > p:first-of-type,
+html[data-theme="sepia"] body[data-chapter="p2c6"] #chapter-text > p:first-of-type {
+  background: transparent;
+  border-left-width: 3px;
+}
+
+/* Supervisor integration addendum (ArtDirector BT4): threshold wells never
+   hyphenate — mid-word breaks ("forgot-ten-although") read fussy at the
+   book's front door. Chapter-scoped so it wins over the cohort body rule. */
+body[data-chapter="p1c1"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c2"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c3"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c4"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c5"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c6"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c7"] #chapter-text > p:first-of-type,
+body[data-chapter="p1c8"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c1"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c2"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c3"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c4"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c5"] #chapter-text > p:first-of-type,
+body[data-chapter="p2c6"] #chapter-text > p:first-of-type {
+  hyphens: none;
+}

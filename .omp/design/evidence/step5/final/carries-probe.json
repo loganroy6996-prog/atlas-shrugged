@@ -1,0 +1,40 @@
+{
+  "sh1": {
+    "tocOpenAfterTypeInField": true,
+    "searchValue": "t",
+    "tocOpenAfterOutlineT": true,
+    "consoleErrors": []
+  },
+  "sh2": {
+    "targets": [
+      {
+        "sel": "#btn-toc",
+        "w": 44,
+        "h": 44,
+        "padding": "0px",
+        "visible": true
+      },
+      {
+        "sel": "#btn-settings",
+        "w": 44,
+        "h": 44,
+        "padding": "0px",
+        "visible": true
+      },
+      {
+        "sel": "#btn-prev",
+        "w": 353.2,
+        "h": 85.6,
+        "padding": "19.2px 20.8px",
+        "visible": true
+      },
+      {
+        "sel": "#btn-next",
+        "w": 353.2,
+        "h": 85.6,
+        "padding": "19.2px 20.8px",
+        "visible": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "accessibility": {
+    "body_contrast": "Bone #EDE4D3 on Inkblack #0B0A08 ≈ 13.5:1; Ash ≈ 6.5:1 for muted; Sulphur ≈ 7:1 for large/UI only",
+    "focus": "2px Sulphur outline offset 3px on all interactive elements",
+    "part_inks_never_body_text": true,
+    "reduced_motion": "cover plate reveal disabled; no essential information conveyed by motion alone",
+    "validator_checks": [
+      "no part ink takes an interactive role (Sulphur owns progress/links/focus)",
+      "no part ink appears on two different interactive roles in one chapter",
+      "Verdigris desaturated lens-like, never neon"
+    ]
+  },
+  "book": "will-to-power",
+  "chapter_opener_contract": {
+    "fleurons": "small sulphur '·' fleuron at authored paragraph boundaries only; cohort JSON MUST list exact paragraph indices; NEVER modulo/nth-child generated",
+    "fragments": {
+      "apparatus": "NB. paragraphs: sulphur (Bloodline in Book II) left margin-bar + mono NB. marker via frozen p.reader-nb hook. Never recolor whole paragraphs.",
+      "sub_notes": "(a)/(b)/numbered sub-note paragraphs: slight left indent + part-ink tick in Book III; quiet indent elsewhere"
+    },
+    "long_chapters": "chapters >120 paragraphs (p3c4, p3c10, p4c15, p5c3): mid-reading relief — one full-width part-motif band at an authored paragraph index (in cohort JSON), art only, never behind text",
+    "reading_body": {
+      "background": "Inkblack; no art behind prose",
+      "font": "Newsreader 1.0625-1.125rem, line-height 1.65-1.75, measure 34-38rem",
+      "text_color": "Bone"
+    },
+    "required_layers": [
+      "mono part eyebrow: 'BOOK <ROMAN> — <SUBTITLE>'",
+      "gouged part plate-mark (~120px) per part grammar placement",
+      "Fraunces chapter title clamp(2.2rem,5.5vw,3.6rem)",
+      "sulphur rule with fragment-count inscription '<N> FRAGMENTS · <W> WORDS'",
+      "Fraunces 900 drop cap on first paragraph (standard chapters)"
+    ],
+    "short_tablet_chapters": {
+      "applies_to": [
+        "p3c1",
+        "p3c2",
+        "p4c1",
+        "p5c1"
+      ],
+      "composition": "title set huge centered, plate-mark above, no drop cap, no fragment inscription"
+    },
+    "tablet_spacing_titles": "p3c1/p4c1/p5c1 single spaced-title paragraphs are part-title tablets: render centered Fraunces 900, letterspaced, as section monuments",
+    "hooks": {
+      "art_slots": "cover plate -> #cover-art via manifest cover.src; chapter plates -> #chapter-art via per-chapter src/class/motif (READER-CONTRACT §3-§4)",
+      "fragment_counts": "#chapter-text[data-paras] + reader:chapter.detail (never hardcoded counts)",
+      "nb": "#chapter-text > p.reader-nb (frozen shared classifier, §7; books MUST NOT mint reader-* classes)",
+      "view_part": "body[data-view], body[data-book], body[data-part-id], body[data-chapter], body[data-art] (§2)"
+    },
+    "manifest": "cohort design/<cohort>.json entries carry src/class/motif per §4 schema; supervisor merges sequentially into design/chapters.json; WtP IDs stable (only IJ provisional)",
+    "quiet_variant": {
+      "applies_to": [
+        "p3c4",
+        "p3c10",
+        "p4c19",
+        "p5c3"
+      ],
+      "rule": "Fraunces 700 (not 900), smaller clamp, plate-mark above title — never overlapping the title edge at polemic scale"
+    }
+  },
+  "cover": {
+    "buttons": "quiet ghost buttons; primary Begin Reading in Sulphur-on-Inkblack",
+    "composition": "left-aligned monumental Fraunces title (THE / WILL TO POWER, clamp(3.5rem,11vw,7rem)); authored ring+hammer gouge plate right 40% desktop / stacked above title on phone; mono eyebrow; sulphur rule; single soft vignette, no gradient washes",
+    "eyebrow": "FRIEDRICH NIETZSCHE · NOTEBOOKS OF THE 1880s (IBM Plex Mono, tracked)",
+    "motion": "one plate draw-in reveal ≤900ms; disabled under prefers-reduced-motion",
+    "slot": "#cover-art via manifest cover.src art/cover.svg (declarative; no book JS required)"
+  },
+  "fonts": {
+    "body": {
+      "fallbacks": [
+        "Georgia",
+        "Iowan Old Style",
+        "serif"
+      ],
+      "family": "Newsreader",
+      "roles": [
+        "reading prose",
+        "TOC chapter names"
+      ],
+      "source": "Google Fonts variable ital,opsz,wght (reference) or design/fonts/ woff2 (preferred)",
+      "weight_range": "300-600"
+    },
+    "display": {
+      "fallbacks": [
+        "Georgia",
+        "Times New Roman",
+        "serif"
+      ],
+      "family": "Fraunces",
+      "roles": [
+        "cover title",
+        "chapter-opener titles",
+        "part numerals"
+      ],
+      "source": "Google Fonts variable ital,opsz,wght",
+      "tracking": "-0.02em",
+      "weight_range": "300-900, display at 700-900 with opsz 144"
+    },
+    "mono": {
+      "fallbacks": [
+        "ui-monospace",
+        "SFMono-Regular",
+        "Menlo",
+        "monospace"
+      ],
+      "family": "IBM Plex Mono",
+      "roles": [
+        "fragment numerals",
+        "NB. markers",
+        "part eyebrows",
+        "meta strings",
+        "buttons/labels"
+      ],
+      "source": "Google Fonts 400/500",
+      "tracking_small": "+0.08em"
+    },
+    "loading": {
+      "primary": "book-relative @font-face in design/fonts/ (preferred, ships via build §11)",
+      "reference_remote": "Google Fonts <link> (verified HTTP 200 2026-10-15); acceptable fallback",
+      "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+      "verified": "2026-10-15 HTTP 200, 5716 bytes CSS"
+    }
+  },
+  "forbidden": [
+    "modulo/hash/nth-child tint or motif rotation",
+    "repeated pseudo-element-only restyle of the baseline shell",
+    "gradients behind or around prose",
+    "new illustration media outside the gouge-plate grammar",
+    "hotlinked stock or claimed-but-unavailable generated images",
+    "part inks used for body prose",
+    "editing chapter prose to suit art",
+    "minting reader-* classes (shared-reserved, §7)",
+    "sniffing view state from classes (use body[data-view], §2)"
+  ],
+  "identity": "The Black Notebook — a posthumous archival object: ink-black paper, bone-white ink, one sulphur-gold accent like a match struck in a dark room. Fragments exhibited as numbered evidence; per-part woodcut-gouge plates.",
+  "illustration_medium": {
+    "method": "knockout masks, torn/gouge edges, hatch texture; tinted with part ink at ~85% + Sulphur accents",
+    "type": "authored inline SVG gouge plates (woodcut-inspired, original art)"
+  },
+  "navigation": {
+    "current_chapter": "sulphur margin bar",
+    "header": "part + chapter in mono",
+    "prev_next": "quiet labeled buttons with chapter titles; Book IV next-button carries ladder tick",
+    "progress": "thin Sulphur bar",
+    "toc": "part headers as book plates (Fraunces 900 roman numeral 2rem + mono subtitle, generous whitespace); chapter rows with mono numerals in part ink + Newsreader titles"
+  },
+  "palette": {
+    "Ash": "#A89C86",
+    "Bloodline": "#8E2F32",
+    "Bone": "#EDE4D3",
+    "Faint_Pencil": "#6B6257",
+    "Gloom_Violet": "#5A4E6E",
+    "Heights_Blue": "#5B7A99",
+    "Inkblack": "#0B0A08",
+    "Notebook": "#14120E",
+    "Sulphur": "#E3A82B",
+    "Sulphur_Deep": "#9A6B1A",
+    "Vellum_Deep": "#1D1A14",
+    "Verdigris": "#4E7C6B"
+  },
+  "parts": {
+    "0": {
+      "body": "standard calm",
+      "ink": "Faint Pencil #6B6257 + Bone",
+      "mood": "hushed",
+      "motif": "sealed tablet / unbroken envelope",
+      "opener": "centered, small plate, generous silence"
+    },
+    "I": {
+      "body": "fragment numerals in Gloom Violet",
+      "chapters": [
+        "p2c1",
+        "p2c2",
+        "p2c3",
+        "p2c4",
+        "p2c5",
+        "p2c6",
+        "p2c7",
+        "p2c8"
+      ],
+      "ink": "Gloom Violet #5A4E6E",
+      "mood": "heavy, low",
+      "motif": "broken ring (recurrence cracking)",
+      "name": "European Nihilism",
+      "opener": "ring large behind/above eyebrow"
+    },
+    "II": {
+      "body": "NB. bars + blockquote edges in Bloodline",
+      "chapters": [
+        "p3c1",
+        "p3c2",
+        "p3c3",
+        "p3c4",
+        "p3c5",
+        "p3c6",
+        "p3c7",
+        "p3c8",
+        "p3c9",
+        "p3c10",
+        "p3c11",
+        "p3c12",
+        "p3c13",
+        "p3c14",
+        "p3c15"
+      ],
+      "ink": "Bloodline #8E2F32",
+      "mood": "aggressive",
+      "motif": "shattered tablet / hammer-fracture",
+      "name": "Critique of the Highest Values Hitherto",
+      "opener": "plate-mark overlaps title edge"
+    },
+    "III": {
+      "body": "fragment numerals Verdigris; (a)/(b) sub-notes indented with green tick",
+      "chapters": [
+        "p4c1",
+        "p4c2",
+        "p4c3",
+        "p4c4",
+        "p4c5",
+        "p4c6",
+        "p4c7",
+        "p4c8",
+        "p4c9",
+        "p4c10",
+        "p4c11",
+        "p4c12",
+        "p4c13",
+        "p4c14",
+        "p4c15",
+        "p4c16",
+        "p4c17",
+        "p4c18",
+        "p4c19"
+      ],
+      "ink": "Verdigris #4E7C6B",
+      "mood": "curious, clinical-warm",
+      "motif": "lens-eye / cell",
+      "name": "Principle of a New Determination of Values",
+      "opener": "plate-mark right-floated on wide screens"
+    },
+    "IV": {
+      "body": "opener rule becomes 3 ascending steps; next-button ladder tick",
+      "chapters": [
+        "p5c1",
+        "p5c2",
+        "p5c3",
+        "p5c4",
+        "p5c5",
+        "p5c6",
+        "p5c7",
+        "p5c8",
+        "p5c9"
+      ],
+      "ink": "Heights Blue #5B7A99",
+      "mood": "airy, ascending",
+      "motif": "ladder / ascending steps to a star",
+      "name": "Discipline and Cultivation",
+      "opener": "generous top space, ascending rhythm"
+    }
+  },
+  "scale": {
+    "body": "1.0625-1.125rem, lh 1.65-1.75, measure 34-38rem",
+    "cover_title": "clamp(3.5rem, 11vw, 7rem)",
+    "eyebrows": "0.72rem mono tracked",
+    "fragment_numeral": "0.8rem mono margin; 2.6rem opener plate-mark",
+    "opener_title": "clamp(2.2rem, 5.5vw, 3.6rem)",
+    "part_numeral": "clamp(4rem, 10vw, 7rem) Fraunces 900"
+  },
+  "signature_idea": "The fragment as exhibit: gouged plate-mark chapter numerals + per-part woodcut motifs (ring / shattered tablet / lens-eye / ladder), one sulphur match-flame accent in an ink-black notebook.",
+  "title_swap_test": "Swap in another Nietzsche title and the design lies: gouged fragment-numerals, NB. margin-cries, recurrence/tablet/eye/ladder plates and the bound-after-death apparatus belong to a fragment collection, not to polished aphorism-books.",
+  "reader_contract": "READER-CONTRACT v1.0 STABLE (2026-10-15)",
+  "art_director_verdict": {
+    "conditions": [
+      "W1: gouge TORN/irregular/knockout-violent; WtP goes rougher never cleaner (vs Sovereign intaglio, Churchill shards)",
+      "W2: Sulphur match-logic — small/hot/sparse, never large glowing fields",
+      "W3: authored fleuron indices + census; nth-child = automatic REVISE",
+      "W4: .reader-nb contract hook; body[data-chapter] fallback only with explicit per-chapter selector table",
+      "W5: tablet openers (p3c1/p4c1/p5c1) must read intentional not empty",
+      "W6: prototype scope = cover plate + 5 part plates + p1c1/p3c4/p3c10/p4c15/p5c3 openers + NB-heavy spread @ 3 viewports"
+    ],
+    "source": ".omp/design/critiques/will-to-power.md",
+    "verdict": "PROVISIONAL PASS"
+  },
+  "benchmark_addendum": {
+    "chapter_endings": {
+      "0": "small sealed diamond",
+      "I": "broken-ring arc gap",
+      "II": "double fracture slash",
+      "III": "lens-dot (ring + center point)",
+      "IV": "three ascending steps",
+      "rule": "authored per-part end-mark in part ink, declared per chapter in cohort JSON; never shared default, never modulo-chosen"
+    },
+    "header": "part + chapter in Plex Mono, part numeral in part ink; 1px Faint-Pencil rule with 24px Sulphur position segment",
+    "prev_next": "mono PREVIOUS/NEXT FRAGMENT-BOOK eyebrows in ADJACENT chapter part ink; Newsreader titles; Sulphur hairline on travel side; Book IV next-card ladder tick",
+    "progress_resume": "thin Sulphur bar with gouge-textured leading edge; cover Continue in Plex Mono with part-ink numeral + Sulphur arrow",
+    "settings": "mono labels, Sulphur selected states, part-ink neutral (book-chrome, not content)",
+    "source": ".omp/design/USER-FEEDBACK.md — homepage creativity bar expressed through each book's own identity",
+    "toc_filter": "mono SEARCH THE FRAGMENTS placeholder, Sulphur caret; Sulphur progress line; current = margin bar + part-ink numeral",
+    "translator_numerals": "201 paragraphs carry inline edition numerals: superscript Plex Mono Ash 0.72em, no Sulphur, no links; no notes apparatus exists (notes_part null, zero note_refs/epigraph keys)"
+  }
+}

@@ -1,0 +1,47 @@
+/* Cohort A — Doors & Rhymes (part-1 + part-2) · gs-a- vocabulary only.
+   Lead-executed from designer spec local://gs-cohort-a-design.md §6 + §11 A5
+   (colophon-only inventory: reader shell already implements slots, verse,
+   rubrication, drop-caps, seals, figcaption voice, containment).
+   Scoped: body[data-book="gay-science"] + body[data-chapter="p1c1"] hooks only.
+   No reader-* classes, no !important, no layout restructure. */
+
+/* ---------- Preface colophon: "Ruta near Genoa · Autumn, 1886" ---------- */
+/* Styles the served last paragraph in place (P6-safe, no prose edit). */
+body[data-book="gay-science"][data-chapter="p1c1"] .chapter-text > p:last-child {
+  text-align: center;
+  font-family: var(--gs-display, Fraunces, Georgia, serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  letter-spacing: 0.32em;
+  text-indent: 0.32em; /* recenter letterspaced line */
+  color: var(--gs-foam, #f3ead8);
+  margin: 3.5rem auto 0;
+  max-width: 100%;
+}
+
+/* Short gold horizon rule above the colophon (gs-a- hook, ::before). */
+body[data-book="gay-science"][data-chapter="p1c1"] .chapter-text > p:last-child::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  margin: 0 auto 1.4rem;
+  border-top: 2px solid var(--gs-sun, #f5b301);
+  opacity: 0.8;
+}
+
+/* Companion class if the supervisor prefers an explicit rule element. */
+body[data-book="gay-science"] .gs-a-colophon-rule {
+  width: 4rem;
+  margin: 3.5rem auto 1.4rem;
+  border: 0;
+  border-top: 2px solid var(--gs-sun, #f5b301);
+  opacity: 0.8;
+}
+
+@media (max-width: 560px) {
+  body[data-book="gay-science"][data-chapter="p1c1"] .chapter-text > p:last-child {
+    font-size: 0.95rem;
+    letter-spacing: 0.22em;
+    text-indent: 0.22em;
+  }
+}

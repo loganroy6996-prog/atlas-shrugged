@@ -1,26 +1,1408 @@
-/* Twilight of the Idols — hammer, bronze, ash */
-:root, html[data-theme="dark"] {
-  --bg: #12100e;
-  --bg-elevated: #1c1814;
-  --bg-soft: #26201a;
-  --surface: #2e261e;
-  --border: rgba(196, 165, 116, 0.16);
-  --border-strong: rgba(196, 165, 116, 0.3);
-  --text: #f0e6d6;
-  --text-muted: #a89880;
-  --text-faint: #706050;
-  --accent: #c4a574;
-  --accent-soft: rgba(196, 165, 116, 0.12);
-  --accent-hover: #ddc09a;
-  --copper: #a16207;
+/* Twilight of the Idols — STRUCK BRONZE / sounding-out (theme.css).
+   Supervisor-integrated 2026-10-15 from design/book.css + hammerfall.css +
+   idolsmasher.css + untimelydusk.css (sequential merge; §0 supervisor shell).
+   Replaces the rejected FALLING DUSK glyph shell (R-I1: old glyph ticks,
+   glyph end-marks, dusk band/glow/grid deleted, not overridden).
+   Identity: twelve strikes, one hammer-touch each — an idol-form, an impact
+   crack, and N concentric sounding-rings (T1: N = chapter index).
+   Palette: forge #100D0A / anvil #1B1510 / ash #A89A80 / bone #EDE2CC /
+   bronze #D29A4A / ember #B23A2A. Display Cinzel via --font-display;
+   body Cormorant Garamond (T2 deliberate reclamation); chrome DM Sans.
+   Zero border-radius on identity furniture. Unlayered (beats @layer shared).
+   Art delivery: opener emblems via reader.js {src,symbol} child-splice
+   (contract A.2); seals/pips/dividers as data-URI SVG — NO file-fragment
+   url() ships (F1: <symbol> fragments paint blank in Chromium sinks). */
+
+/* ════════════ §0. Supervisor shell: tokens, cover, TOC, opener grammar,
+   end grammar, nav, guards. Book.css §0–§2 lives in §1; this section adds
+   the R2 repairs (numeral line, contrast floor) and the cover/TOC/nav
+   treatments the cohorts key off. ════════════ */
+
+/* ── Book tokens, all 8 themes (contract §8 scoping) ── */
+/* Identity hues live on :root (theme-agnostic); every ground/text/accent
+   override is scoped per-theme so light/sepia/nocturne/verdant/oxblood/
+   slate/candlelight keep their shared grounds. */
+:root {
+  --tw-forge: #100d0a;
+  --tw-anvil: #1b1510;
+  --tw-ash: #a89a80;
+  --tw-bone: #ede2cc;
+  --tw-bronze: #d29a4a;
+  --tw-ember: #b23a2a;
+  --font-display: "Cinzel", "Times New Roman", serif;
   --reader-max: 48rem;
 }
-.cover-glow {
-  background: radial-gradient(ellipse, rgba(196, 165, 116, 0.16) 0%, transparent 60%);
+html[data-theme="dark"] {
+  --bg: var(--tw-forge);
+  --bg-elevated: var(--tw-anvil);
+  --bg-soft: #26201a;
+  --surface: #2e261e;
+  --border: rgba(210, 154, 74, 0.16);
+  --border-strong: rgba(210, 154, 74, 0.32);
+  --text: var(--tw-bone);
+  --text-muted: var(--tw-ash);
+  --text-faint: #8f8471;
+  --accent: var(--tw-bronze);
+  --accent-soft: rgba(210, 154, 74, 0.12);
+  --accent-hover: #e0aa5c;
+  --copper: var(--tw-ember);
+  --on-accent: #100d0a;
+  --font-display: "Cinzel", "Times New Roman", serif;
 }
-.cover-grid {
-  background-image: linear-gradient(90deg, rgba(196, 165, 116, 0.06) 1px, transparent 1px);
-  background-size: 32px 100%;
+/* R2-5 contrast floor: every --text-faint below meters ≥4.5:1 against its
+   theme ground (small muted text: meta-sub, toc-sub, cover footer). */
+html[data-theme="sepia"] {
+  --tw-bronze: #8a5a08;
+  --tw-ember: #93300f;
+  --accent: var(--tw-bronze);
+  --accent-soft: rgba(138, 90, 8, 0.12);
+  --accent-hover: #7c5108;
+  --copper: var(--tw-ember);
+  --text-faint: #5d4e36;
+  --font-display: "Cinzel", "Times New Roman", serif;
 }
-.title-line.accent { letter-spacing: 0.04em; font-style: normal; text-transform: uppercase; font-size: 0.55em; }
-.meta-title { text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(1.5rem, 4vw, 2.2rem); }
+html[data-theme="light"] {
+  --tw-bronze: #92600a;
+  --tw-ember: #93300f;
+  --accent: var(--tw-bronze);
+  --accent-soft: rgba(146, 96, 10, 0.1);
+  --accent-hover: #7c5108;
+  --copper: var(--tw-ember);
+  --text-faint: #5d4e36;
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="nocturne"] {
+  --text-faint: #8b98b8;
+  --accent: var(--tw-bronze);
+  --accent-hover: #e0aa5c;
+  --copper: var(--tw-ember);
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="verdant"] {
+  --text-faint: #93a87e;
+  --accent: var(--tw-bronze);
+  --accent-hover: #e0aa5c;
+  --copper: var(--tw-ember);
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="oxblood"] {
+  --text-faint: #a08a70;
+  --accent: #cfa96f;
+  --accent-hover: #e0aa5c;
+  --copper: var(--tw-ember);
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="slate"] {
+  --text-faint: #8d9fac;
+  --accent: var(--tw-bronze);
+  --accent-hover: #e0aa5c;
+  --copper: var(--tw-ember);
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="candlelight"] {
+  --text-faint: #a08a6a;
+  --accent: #ddc09a;
+  --accent-hover: #eed7b8;
+  --copper: #e8a54c;
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+
+/* ── Cover: monumental centered stack over the struck-disc plate ── */
+body:not([data-chapter]) #cover {
+  background:
+    radial-gradient(ellipse 60% 34% at 50% 20%, color-mix(in srgb, var(--tw-bronze) 12%, transparent), transparent 65%),
+    var(--bg);
+}
+/* Sunset-band remnants of the old shell stay buried: the shared cover
+   layers flatten to the forge ground so the struck disc owns the cover. */
+body:not([data-chapter]) .cover-bg,
+body:not([data-chapter]) .cover-grid,
+body:not([data-chapter]) .cover-glow {
+  background: none;
+  background-image: none;
+  animation: none;
+  opacity: 1;
+  mask-image: none;
+}
+body:not([data-chapter]) .cover-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  color: var(--text-muted);
+}
+/* TR6: one quiet mark above the eyebrow — the shared fleuron pair
+   collapses to a single leading diamond. */
+body:not([data-chapter]) .cover-eyebrow::before {
+  content: "\25C6  ";
+  color: var(--accent);
+  opacity: 0.7;
+}
+body:not([data-chapter]) .cover-eyebrow::after {
+  content: none;
+}
+body:not([data-chapter]) .cover-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 8vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-wrap: balance;
+}
+/* Lock the two title lines: "Twilight of" / "the Idols", never orphan "OF". */
+body:not([data-chapter]) .cover-title .title-line {
+  display: block;
+  white-space: nowrap;
+}
+body:not([data-chapter]) .title-line.accent {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.82em;
+  letter-spacing: 0.10em;
+  color: var(--accent);
+}
+body:not([data-chapter]) .cover-author {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: var(--text);
+}
+body:not([data-chapter]) .cover-quote {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+body:not([data-chapter]) .cover-footer {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+/* Resume line: shared reader.js now dedupes "number_label · title" when the
+   two match (Main fix, 2026-10-15) — the detail span stays visible as the
+   useful "continue in chapter X" line, set quiet in the muted floor. */
+body:not([data-chapter]) .cover-resume-detail {
+  display: inline;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+body:not([data-chapter]) .cover-rule { width: 16rem; }
+body:not([data-chapter]) .cover-rule::before,
+body:not([data-chapter]) .cover-rule::after {
+  background: linear-gradient(90deg, transparent, var(--accent));
+  opacity: 0.8;
+}
+body:not([data-chapter]) .cover-rule::after {
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+body:not([data-chapter]) .rule-diamond {
+  background: var(--copper);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--copper) 70%, transparent);
+}
+/* Cover plate slot: the struck disc, inlined from the manifest. */
+#cover-art {
+  margin: 0 auto 1.75rem;
+  text-align: center;
+}
+#cover-art.plate svg {
+  width: min(300px, 62vw);
+  height: auto;
+  filter: drop-shadow(0 0 42px color-mix(in srgb, var(--tw-bronze) 28%, transparent));
+}
+/* TR6: the cover caption is a whisper — quiet, lowercase, faint. */
+#cover-art figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: var(--text-faint);
+  opacity: 0.6;
+  margin-top: 0.5rem;
+}
+
+/* ── Contents drawer: the inscription wall ── */
+#toc-list > .toc-part:only-of-type .toc-part-header {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  border-top: 1px solid var(--border-strong);
+  border-bottom: 1px solid var(--border-strong);
+  padding: 0.7rem 0;
+}
+#toc-list .toc-part-sub {
+  font-family: var(--font-sans);
+  letter-spacing: 0.12em;
+}
+#toc-list .toc-num {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--accent);
+  min-width: 2rem;
+}
+#toc-list .toc-name { font-size: 1.08rem; }
+#toc-list .toc-chapter:hover .toc-name {
+  color: var(--text);
+  font-style: italic;
+}
+/* Read-state: the struck check burns bronze. */
+#toc-list .toc-chapter.read .toc-check {
+  color: var(--accent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent);
+  opacity: 1;
+}
+#toc-list .toc-chapter.active .toc-name { color: var(--text); }
+#toc-list .toc-chapter.active {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 70%);
+  border-left: 2px solid var(--accent);
+}
+
+/* ── Chapter openers: emblem → inscription → bronze rule ── */
+body[data-chapter] .chapter-meta { margin-bottom: 3rem; }
+body[data-chapter] .meta-part {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  color: var(--accent);
+}
+body[data-chapter] .meta-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: 0.04em;
+  text-wrap: balance;
+}
+/* Cinzel percent rule: aphorism/short chapters get small-clamp Cinzel 600
+   + wide tracking + air — monumentality through spacing, not size. */
+body[data-chapter="p1c5"] .meta-title,
+body[data-chapter="p1c12"] .meta-title {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.6vw, 2.1rem);
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+}
+/* TR5: p1c2 goes further — 30 stanzas need a whisper title, not a plaque. */
+body[data-chapter="p1c2"] .meta-title {
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  letter-spacing: 0.22em;
+  text-indent: 0.22em;
+  line-height: 1.4;
+}
+body[data-chapter="p1c2"] .chapter-meta,
+body[data-chapter="p1c5"] .chapter-meta,
+body[data-chapter="p1c12"] .chapter-meta {
+  margin-bottom: 4rem;
+  padding-top: 1.5rem;
+}
+/* R2-4: the opener numeral line. number_label == title in all 12 chapters,
+   so the shared italic repeat hides; the roman numeral (I–XII) takes its
+   place as the inscriptional element, flanked by bronze diamonds. */
+body[data-chapter] .meta-number {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  color: var(--accent);
+}
+body[data-chapter="p1c1"] .meta-number { font-size: 0; }
+body[data-chapter="p1c1"] .meta-number::before { font-size: 0.85rem; content: "\25C6  I  \25C6"; }
+body[data-chapter="p1c2"] .meta-number { font-size: 0; }
+body[data-chapter="p1c2"] .meta-number::before { font-size: 0.85rem; content: "\25C6  II  \25C6"; }
+body[data-chapter="p1c3"] .meta-number { font-size: 0; }
+body[data-chapter="p1c3"] .meta-number::before { font-size: 0.85rem; content: "\25C6  III  \25C6"; }
+body[data-chapter="p1c4"] .meta-number { font-size: 0; }
+body[data-chapter="p1c4"] .meta-number::before { font-size: 0.85rem; content: "\25C6  IV  \25C6"; }
+body[data-chapter="p1c5"] .meta-number { font-size: 0; }
+body[data-chapter="p1c5"] .meta-number::before { font-size: 0.85rem; content: "\25C6  V  \25C6"; }
+body[data-chapter="p1c6"] .meta-number { font-size: 0; }
+body[data-chapter="p1c6"] .meta-number::before { font-size: 0.85rem; content: "\25C6  VI  \25C6"; }
+body[data-chapter="p1c7"] .meta-number { font-size: 0; }
+body[data-chapter="p1c7"] .meta-number::before { font-size: 0.85rem; content: "\25C6  VII  \25C6"; }
+body[data-chapter="p1c8"] .meta-number { font-size: 0; }
+body[data-chapter="p1c8"] .meta-number::before { font-size: 0.85rem; content: "\25C6  VIII  \25C6"; }
+body[data-chapter="p1c9"] .meta-number { font-size: 0; }
+body[data-chapter="p1c9"] .meta-number::before { font-size: 0.85rem; content: "\25C6  IX  \25C6"; }
+body[data-chapter="p1c10"] .meta-number { font-size: 0; }
+body[data-chapter="p1c10"] .meta-number::before { font-size: 0.85rem; content: "\25C6  X  \25C6"; }
+body[data-chapter="p1c11"] .meta-number { font-size: 0; }
+body[data-chapter="p1c11"] .meta-number::before { font-size: 0.85rem; content: "\25C6  XI  \25C6"; }
+body[data-chapter="p1c12"] .meta-number { font-size: 0; }
+body[data-chapter="p1c12"] .meta-number::before { font-size: 0.85rem; content: "\25C6  XII  \25C6"; }
+body[data-chapter] .meta-number::after { content: none; }
+body[data-chapter] .meta-sub {
+  color: var(--text-faint);
+  font-size: 0.75rem;
+}
+/* Strike emblems: reader.js inlines the manifest SVG into the slots. */
+#chapter-art {
+  margin: 0 auto 1.6rem;
+  text-align: center;
+}
+#chapter-art.motif svg {
+  width: 148px;
+  height: 148px;
+}
+#chapter-art figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--text-faint);
+  margin-top: 0.6rem;
+  opacity: 0.75;
+}
+/* Fallback reserve: .chapter-meta::before is confirmed free (shared art.css
+   owns only ::after) but stays display:none — no empty gap ships. */
+body[data-chapter] .chapter-meta::before {
+  display: none;
+  content: none;
+}
+/* Opener seal under the heading: the struck ring (whole-file url art —
+   the one file-fragment form that paints, proven sink A). */
+body[data-chapter] .chapter-meta::after {
+  content: url("art/seal-ring.svg");
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 1.4rem auto 0;
+  line-height: 0;
+  opacity: 0.9;
+}
+body[data-chapter] .meta-rule { margin-top: 1.4rem; }
+body[data-chapter] .meta-rule span {
+  width: 5rem;
+  height: 1px;
+  transform: none;
+  background: linear-gradient(90deg, var(--copper), var(--accent));
+  opacity: 0.9;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+/* Chapter-end grammar: the struck ring seals every finale (cohorts swap
+   their own seals over this default via the sanctioned A.0 override). */
+body[data-chapter] .chapter-text > p:last-child::after {
+  content: url("art/seal-ring.svg");
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+/* TR5: maxims breathe — short grafs get air between volleys. */
+body[data-chapter="p1c2"] .chapter-text p {
+  max-width: min(var(--reader-max), 56ch);
+  margin-bottom: 1.6em;
+}
+/* TR3/T3 — Raid markers for p1c10 (61 served paras, 22 titled raids).
+   Book-owned JS tags raid starts with .raid-start + data-raid (contract
+   reader:chapter hook); CSS renders the marginal sounding-tick. Pure-CSS
+   fallback: without JS the chapter reads as clean prose. */
+body[data-chapter="p1c10"] .chapter-text {
+  --raid-tick: var(--accent);
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start {
+  position: relative;
+  margin-top: 2.2em;
+  padding-top: 0.4em;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+}
+/* First graf doubles as raid 01: label floats clear above the drop cap. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start:first-of-type {
+  margin-top: 3.4em;
+  padding-top: 0;
+  border-top: none;
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start:first-of-type::before {
+  display: none;
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start:first-of-type::after {
+  top: -2.6em;
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid var(--raid-tick);
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start::after {
+  content: "raid " attr(data-raid);
+  position: absolute;
+  top: -1.55em;
+  left: 1.2rem;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+/* Calm body: bronze drop-cap, quiet measure. */
+body[data-chapter] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  color: var(--accent);
+}
+body[data-chapter] .chapter-text blockquote {
+  border-left: 2px solid var(--copper);
+  font-style: italic;
+}
+
+/* ── Reader chrome: progress + nav plates ── */
+.progress-fill {
+  background: linear-gradient(90deg, var(--copper), var(--accent));
+}
+.nav-label {
+  font-family: var(--font-display);
+  letter-spacing: 0.22em;
+}
+.nav-btn:hover:not(:disabled) { border-color: var(--accent); }
+
+@media (max-width: 560px) {
+  #cover-art.plate svg { width: min(220px, 70vw); }
+  #chapter-art.motif svg { width: 112px; height: 112px; }
+  body[data-chapter] .meta-part { letter-spacing: 0.22em; text-indent: 0.22em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #cover-art.plate svg { filter: none; }
+}
+@media print {
+  #chapter-art, #cover-art { display: none; }
+}
+
+/* ════════════ §1. HAMMERFALL cohort (p1c1–p1c4) — design/hammerfall.css, R-I2 applied ════════════ */
+/* ── Emblem sizes: beat book 148px via higher specificity ── */
+body[data-chapter="p1c1"] #chapter-art.motif svg { width: 300px; height: auto; }
+body[data-chapter="p1c2"] #chapter-art.motif svg { width: 340px; height: auto; }
+body[data-chapter="p1c3"] #chapter-art.motif svg { width: min(420px, 80vw); height: auto; }
+body[data-chapter="p1c4"] #chapter-art.motif svg { width: 340px; height: auto; }
+body[data-chapter="p1c1"] #chapter-art,
+body[data-chapter="p1c2"] #chapter-art,
+body[data-chapter="p1c3"] #chapter-art,
+body[data-chapter="p1c4"] #chapter-art { margin: 0 auto 2rem; }
+body[data-chapter="p1c1"] #chapter-art.motif svg,
+body[data-chapter="p1c2"] #chapter-art.motif svg,
+body[data-chapter="p1c3"] #chapter-art.motif svg,
+body[data-chapter="p1c4"] #chapter-art.motif svg { display: block; margin-inline: auto; }
+
+/* ── Figcaptions: the only in-slot text (colophon / count strip / equation) ── */
+body[data-chapter="p1c1"] #chapter-art figcaption {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .72rem; letter-spacing: .28em; text-indent: .28em;
+  color: var(--tw-ash, #A89A80); text-align: center; margin-top: 1rem;
+}
+body[data-chapter="p1c2"] #chapter-art figcaption,
+body[data-chapter="p1c4"] #chapter-art figcaption {
+  font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
+  font-size: .72rem; letter-spacing: .22em; text-indent: .22em;
+  color: var(--tw-ash, #A89A80); text-align: center; margin-top: 1rem;
+}
+body[data-chapter="p1c3"] #chapter-art figcaption {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .95rem; letter-spacing: .18em; text-indent: .18em;
+  color: var(--tw-bronze, #D29A4A); text-align: center; margin-top: 1rem;
+}
+
+/* ── p1c1: shadow-bar under the eyebrow (meta-part::after verified free) ── */
+body[data-chapter="p1c1"] .meta-part::after {
+  content: ""; display: block; width: 64px; height: 4px; margin: 1.4rem auto 1.6rem;
+  background: #000; box-shadow: 10px 10px 0 rgba(0, 0, 0, .45);
+}
+/* p1c1: number label duplicates the title */
+body[data-chapter="p1c1"] #meta-number { display: none; }
+/* p1c1: signature close — a letter ending */
+body[data-chapter="p1c1"] .chapter-text > p:last-of-type {
+  text-align: right; font-style: italic; font-size: 1.1rem;
+  color: var(--tw-ash, #A89A80); margin-top: 3rem;
+}
+
+/* ── p1c2: small-end Cinzel title (percent rule) + air ── */
+body[data-chapter="p1c2"] .chapter-meta { margin-bottom: 4rem; }
+/* R-I2: font-size cut — book.css TR5 whisper (clamp 1.15–1.6rem) wins. */
+body[data-chapter="p1c2"] .meta-title {
+  font-weight: 600; letter-spacing: .14em;
+}
+/* p1c2: staccato stanzas + bare content-true numerals (p::before verified free) */
+body[data-chapter="p1c2"] .chapter-text { counter-reset: barb; }
+body[data-chapter="p1c2"] .chapter-text > p {
+  max-width: 44ch; margin: 0 auto 1.9em; position: relative;
+  font-size: 1.12rem; line-height: 1.7;
+}
+body[data-chapter="p1c2"] .chapter-text > p::before {
+  counter-increment: barb; content: counter(barb, decimal-leading-zero);
+  position: absolute; left: -3.4rem; top: .35em;
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .68rem; letter-spacing: .08em; color: var(--tw-ash, #A89A80);
+}
+/* p1c2: the Formula — closing stanza set larger, bronze lead line */
+body[data-chapter="p1c2"] .chapter-text > p:last-of-type { font-size: 1.25rem; text-align: center; }
+body[data-chapter="p1c2"] .chapter-text > p:last-of-type::first-line { color: var(--tw-bronze, #D29A4A); }
+
+/* ── p1c3: pivot air + authored arc dividers (curves, never rails) ── */
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(12) { margin-top: 2.6em; }
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(7)::before,
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(12)::before {
+  content: ""; display: block; width: 160px; height: 24px; margin: 0 auto 1.6em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 24'%3E%3Cpath d='M8 21 A76 76 0 0 1 70 6.2 M90 6.2 A76 76 0 0 1 152 21' fill='none' stroke='%23D29A4A' stroke-width='1.5' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* ── p1c4: proposition tablets (square, no shadow — tablets, not cards) ── */
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9) {
+  background: var(--tw-anvil, #1B1510);
+  outline: 1px solid color-mix(in srgb, var(--tw-bone, #EDE2CC) 18%, transparent);
+  outline-offset: 0; padding: 1.4em 1.6em; font-size: 1.06em;
+  border-radius: 0; margin-top: 2.4em;
+}
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7)::first-line,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8)::first-line,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9)::first-line {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .95rem; letter-spacing: .1em; color: var(--tw-bronze, #D29A4A);
+}
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7)::before,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8)::before,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9)::before {
+  content: ""; display: block; width: 160px; height: 24px; margin: -.2em auto 1.4em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 24'%3E%3Cpath d='M8 21 A76 76 0 0 1 70 6.2 M90 6.2 A76 76 0 0 1 152 21' fill='none' stroke='%23D29A4A' stroke-width='1.5' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+/* p1c4: Third + Fourth share served para 9 — one breath, two blows.
+   The merged-caption tag occupies ::after, so the book end seal (which
+   also targets p:last-child::after) yields; the seal re-anchors below
+   the tablet via the chapter-nav lead margin — no, simpler and honest:
+   the nav margin below carries a centered seal through .chapter-nav::before. */
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9)::after {
+  content: "THIRD + FOURTH \2014 ONE BREATH, TWO BLOWS"; display: block; margin-top: 1.2em;
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .65rem; letter-spacing: .22em; text-indent: .22em;
+  color: var(--tw-ash, #A89A80); text-align: center;
+}
+body[data-chapter="p1c4"] .chapter-nav::before {
+  content: url("art/seal-ring.svg");
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 2rem;
+  line-height: 0;
+  grid-column: 1 / -1;
+}
+
+/* ── Sound-ring draw-in: the one orchestrated moment (P9) ── */
+@keyframes hf-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+body[data-chapter="p1c1"] #chapter-art.motif .hf-ring,
+body[data-chapter="p1c2"] #chapter-art.motif .hf-ring,
+body[data-chapter="p1c3"] #chapter-art.motif .hf-ring,
+body[data-chapter="p1c4"] #chapter-art.motif .hf-ring {
+  stroke-dasharray: 1; stroke-dashoffset: 0; animation: hf-draw .9s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-chapter="p1c1"] #chapter-art.motif .hf-ring,
+  body[data-chapter="p1c2"] #chapter-art.motif .hf-ring,
+  body[data-chapter="p1c3"] #chapter-art.motif .hf-ring,
+  body[data-chapter="p1c4"] #chapter-art.motif .hf-ring { animation: none; }
+}
+
+/* ── 820px tablet ── */
+@media (max-width: 1100px) {
+  body[data-chapter="p1c1"] #chapter-art.motif svg { width: 240px; }
+  body[data-chapter="p1c2"] #chapter-art.motif svg { width: 270px; }
+  body[data-chapter="p1c3"] #chapter-art.motif svg { width: min(340px, 80vw); }
+  body[data-chapter="p1c4"] #chapter-art.motif svg { width: 270px; }
+  body[data-chapter="p1c2"] .chapter-text > p::before { left: -2.6rem; }
+}
+
+/* ── 390px phone ── */
+@media (max-width: 560px) {
+  body[data-chapter="p1c1"] #chapter-art.motif svg,
+  body[data-chapter="p1c2"] #chapter-art.motif svg,
+  body[data-chapter="p1c3"] #chapter-art.motif svg,
+  body[data-chapter="p1c4"] #chapter-art.motif svg { width: 100%; max-width: 480px; }
+  body[data-chapter="p1c2"] .chapter-text > p::before {
+    position: static; display: block; margin-bottom: .4em;
+  }
+  body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7),
+  body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8),
+  body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9) { padding: 1.1em; }
+}
+
+/* ── Overflow guard: rings clip to the viewport at small widths ── */
+@media (max-width: 480px) {
+  body[data-chapter="p1c1"] #chapter-art.motif svg,
+  body[data-chapter="p1c2"] #chapter-art.motif svg,
+  body[data-chapter="p1c3"] #chapter-art.motif svg,
+  body[data-chapter="p1c4"] #chapter-art.motif svg { overflow: hidden; }
+}
+
+/* ── Print: book hides slots; structural dividers/captions/numerals keep ── */
+@media print {
+  body[data-chapter="p1c1"] .meta-part::after { box-shadow: 6px 6px 0 rgba(0, 0, 0, .35); }
+}
+
+/* ════════════ §2. IDOLSMASHER cohort (p1c5–p1c8) — design/idolsmasher.css, R-U1/F1 data-URIs ════════════ */
+/* ── 0. Cohort tokens (scoped; fall back to book tokens) ── */
+body[data-chapter="p1c5"], body[data-chapter="p1c6"],
+body[data-chapter="p1c7"], body[data-chapter="p1c8"] {
+  --idol-bone: var(--tw-bone, #ede2cc);
+  --idol-bronze: var(--tw-bronze, #d29a4a);
+  --idol-ember: var(--tw-ember, #b23a2a);
+  --idol-ash: var(--tw-ash, #a89a80);
+  --idol-forge: var(--tw-forge, #100d0a);
+  --idol-display: var(--font-display, "Cinzel", "Cormorant Garamond", "Palatino Linotype", serif);
+}
+
+/* ── 1. Opener emblem sizes (reader.js inlines the manifest symbol into
+   #chapter-art; class comes from the manifest entry) ── */
+body[data-chapter="p1c5"] #chapter-art.cadence svg {
+  width: min(270px, 72vw);
+  height: auto;
+  margin-inline: auto;
+}
+body[data-chapter="p1c6"] #chapter-art.emblem svg {
+  width: min(215px, 60vw);
+  height: auto;
+  margin-inline: auto;
+}
+body[data-chapter="p1c7"] #chapter-art.plate svg {
+  width: min(210px, 58vw);
+  height: auto;
+  margin-inline: auto;
+}
+body[data-chapter="p1c8"] #chapter-art.emblem svg {
+  width: min(210px, 58vw);
+  height: auto;
+  margin-inline: auto;
+}
+
+/* ── 2. p1c5 POSTER (T4): airy opener, small Cinzel title, cadence strip ── */
+body[data-chapter="p1c5"] .chapter-meta {
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+body[data-chapter="p1c5"] .meta-title {
+  font-family: var(--idol-display);
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.8vw, 1.6rem);
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+/* The 256-word chapter reads finished: air under the body, seal below. */
+body[data-chapter="p1c5"] #chapter-text {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+/* Six-diamond cadence strip under the meta-rule: five ash outlines, sixth
+   bronze-filled with halo — the six stages echoed inside the reading flow.
+   Glyphs here are typographic furniture (like a fleuron), not the emblem.
+   book.css stretches .meta-rule span to an 84px block; this cohort restores
+   the hairline and hangs the strip below it via a wrapping row flex. */
+body[data-chapter="p1c5"] .meta-rule {
+  flex-wrap: wrap;
+  row-gap: 1.1rem;
+}
+body[data-chapter="p1c5"] .meta-rule span {
+  flex: 0 0 5rem;
+  width: 5rem;
+  height: 1px;
+}
+body[data-chapter="p1c5"] .meta-rule::after {
+  content: "◇ ◇ ◇ ◇ ◇ ◆";
+  flex: 0 0 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  color: var(--idol-ash);
+}
+/* p1c5 is a poster: no drop cap (P1 'History of an Error' is a subtitle). */
+body[data-chapter="p1c5"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+/* P1 subtitle treatment: centered, letterspaced, ash. */
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(1) {
+  text-align: center;
+  letter-spacing: 0.18em;
+  text-indent: 0.18em;
+  color: var(--text-muted);
+  font-size: 1.05em;
+  margin-bottom: 2rem;
+}
+/* TWO VOICES (pure-CSS reachability — see gap G2): stage sentences upright
+   (odd-indexed numbered paras), asides italic + indented (even-indexed). */
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(3),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(5),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(10) {
+  font-style: italic;
+  color: var(--text-muted);
+  padding-left: 1.5rem;
+  border-left: 1px solid color-mix(in srgb, var(--idol-bronze) 45%, transparent);
+}
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(9) {
+  font-style: italic;
+  color: var(--text-muted);
+  padding-left: 1.5rem;
+  border-left: 1px solid color-mix(in srgb, var(--idol-bronze) 45%, transparent);
+}
+/* Stage numerals / INCIPIT styling needs supervisor spans (gap G1/G3) —
+   ::first-letter cannot isolate 'N.' or the closing caps without them. */
+/* p1c5 end seal: engraved noon disc below the final paragraph (T4). */
+body[data-chapter="p1c5"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%2218%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.95%22%2F%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%2213%22%20stroke-width%3D%221.2%22%20stroke-opacity%3D%220.8%22%2F%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%228%22%20stroke-width%3D%221%22%20stroke-opacity%3D%220.7%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%222%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Cline%20x1%3D%2217%22%20y1%3D%2241%22%20x2%3D%2231%22%20y2%3D%2241%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.9%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 3. p1c6: drop cap + 'peace of soul' catalogue + flame seal ── */
+body[data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--idol-display);
+  font-weight: 600;
+  color: var(--idol-bronze);
+}
+/* Catalogue litany (gap G4): P5 reads as the catalogue block; true per-'Or'
+   hanging lines need supervisor spans. Closest honest form: hanging indent
+   + dimmed rhythm so the anaphoric clauses scan as a litany. */
+body[data-chapter="p1c6"] .chapter-text > p:nth-of-type(5) {
+  padding-left: 2rem;
+  text-indent: -1.25rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+body[data-chapter="p1c6"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.95%22%2F%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2214%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%223%202%22%20stroke-opacity%3D%220.8%22%2F%3E%20%3Cpath%20d%3D%22M24%2C14%20C28%2C19%2030%2C22%2030%2C26%20C30%2C31%2027%2C34%2024%2C34%20C21%2C34%2018%2C31%2018%2C26%20C18%2C23%2019%2C21%2021%2C19%20C20%2C22%2021%2C24%2022%2C25%20C21%2C22%2022%2C18%2024%2C14%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3Cline%20x1%3D%2235%22%20y1%3D%2235%22%20x2%3D%2240%22%20y2%3D%2240%22%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 4. p1c7: ruled plates + phase-disc plate-heads + quarters seal ── */
+body[data-chapter="p1c7"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+/* Ruled plates: each error/interlude head-paragraph opens a plate. */
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9) {
+  border-top: 1px solid color-mix(in srgb, var(--idol-bronze) 40%, transparent);
+  padding-top: 1.6rem;
+  margin-top: 2.6rem;
+}
+/* Phase-disc markers (gap G5): engraved SVG minis leading each plate via
+   content:url(#fragment) — honest art, wrong position only until the
+   supervisor splits heads onto their own line. */
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%200%201%2020%2C12%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%200%201%2012%2C20%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%201%201%204%2C12%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%222.5%22%20fill%3D%22%23100D0A%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+/* G5 closed by the supervisor split: the phase disc docks onto the head
+   line itself (the ::before art re-anchors from the paragraph to the
+   .plate-head span), so disc + head read as one plate title. */
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1)::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3)::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6)::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8)::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9)::before {
+  content: none;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1) .plate-head::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3) .plate-head::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6) .plate-head::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8) .plate-head::before,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9) .plate-head::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1) .plate-head::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%200%201%2020%2C12%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3) .plate-head::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%200%201%2012%2C20%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6) .plate-head::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8) .plate-head::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%201%201%204%2C12%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9) .plate-head::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%222.5%22%20fill%3D%22%23100D0A%22%2F%3E%3C%2Fsvg%3E");
+}
+body[data-chapter="p1c7"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.95%22%2F%3E%20%3Cg%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221%22%20stroke-opacity%3D%220.8%22%3E%20%3Cline%20x1%3D%2224%22%20y1%3D%228%22%20x2%3D%2224%22%20y2%3D%2240%22%2F%3E%20%3Cline%20x1%3D%228%22%20y1%3D%2224%22%20x2%3D%2240%22%20y2%3D%2224%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%2233%22%20y1%3D%2215%22%20x2%3D%2239%22%20y2%3D%229%22%2F%3E%20%3Cline%20x1%3D%2233%22%20y1%3D%2233%22%20x2%3D%2239%22%20y2%3D%2239%22%2F%3E%20%3Cline%20x1%3D%2215%22%20y1%3D%2233%22%20x2%3D%229%22%20y2%3D%2239%22%2F%3E%20%3Cline%20x1%3D%2215%22%20y1%3D%2215%22%20x2%3D%229%22%20y2%3D%229%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%222%22%20fill%3D%22%23D29A4A%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 5. p1c8: centered maxim + margin seals + fraus seal ── */
+body[data-chapter="p1c8"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--idol-display);
+  font-weight: 600;
+  color: var(--idol-bronze);
+}
+/* P2 thesis maxim: centered, italic, bone. */
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(2) {
+  text-align: center;
+  font-style: italic;
+  color: var(--idol-bone);
+  max-width: 34rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-wrap: balance;
+}
+/* Margin seals: engraved SVG minis floated into the left margin on wide
+   screens; inline before text on phone (see §7). */
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(3)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%3E%20%3Crect%20x%3D%225%22%20y%3D%225%22%20width%3D%2214%22%20height%3D%2214%22%20stroke-width%3D%221.5%22%2F%3E%20%3Cline%20x1%3D%2212%22%20y1%3D%225%22%20x2%3D%2212%22%20y2%3D%2219%22%20stroke-width%3D%221%22%2F%3E%20%3Cline%20x1%3D%225%22%20y1%3D%2212%22%20x2%3D%2219%22%20y2%3D%2212%22%20stroke-width%3D%221%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(5)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%3E%20%3Cpath%20d%3D%22M12%2C5%20L19%2C19%20L5%2C19%20Z%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3Cline%20x1%3D%228.5%22%20y1%3D%2212%22%20x2%3D%2215.5%22%20y2%3D%2212%22%20stroke-width%3D%221%22%2F%3E%20%3Cline%20x1%3D%226.75%22%20y1%3D%2215.5%22%20x2%3D%2217.25%22%20y2%3D%2215.5%22%20stroke-width%3D%221%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(7)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221.5%22%2F%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%228%22%20y1%3D%228%22%20x2%3D%2216%22%20y2%3D%2216%22%2F%3E%20%3Cline%20x1%3D%228%22%20y1%3D%2216%22%20x2%3D%2216%22%20y2%3D%228%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(8)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221.5%22%2F%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%228%22%20y1%3D%228%22%20x2%3D%2216%22%20y2%3D%2216%22%2F%3E%20%3Cline%20x1%3D%228%22%20y1%3D%2216%22%20x2%3D%2216%22%20y2%3D%228%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20d%3D%22M31.6%2C7.7%20A18%2C18%200%201%201%2016.4%2C7.7%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.6%22%20stroke-opacity%3D%220.95%22%20stroke-linecap%3D%22round%22%2F%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%2217%22%20y1%3D%2217%22%20x2%3D%2231%22%20y2%3D%2231%22%2F%3E%20%3Cline%20x1%3D%2217%22%20y1%3D%2231%22%20x2%3D%2231%22%20y2%3D%2217%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%229%22%20r%3D%221.8%22%20fill%3D%22%23D29A4A%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 6. Motif-scoped treatments (body[data-art] from the manifest) ── */
+body[data-art="noon-collapse"] .meta-rule span {
+  background: linear-gradient(90deg, transparent, var(--idol-bronze), transparent);
+  width: 7rem;
+}
+body[data-art="fourfold-knot"] .meta-rule span {
+  background: linear-gradient(90deg, var(--idol-ember), var(--idol-bronze), var(--idol-ember));
+  width: 7rem;
+}
+body[data-art="veil-tablets"] .meta-rule span {
+  background: linear-gradient(90deg, var(--idol-ash), var(--idol-ember), var(--idol-ash));
+  width: 7rem;
+}
+
+/* ── 7. Small screens: emblems shrink, margin seals go inline ── */
+@media (max-width: 560px) {
+  body[data-chapter="p1c5"] #chapter-art.cadence svg {
+    width: min(220px, 78vw);
+  }
+  body[data-chapter="p1c6"] #chapter-art.emblem svg,
+  body[data-chapter="p1c7"] #chapter-art.plate svg,
+  body[data-chapter="p1c8"] #chapter-art.emblem svg {
+    width: min(168px, 62vw);
+  }
+  body[data-chapter="p1c5"] .chapter-meta {
+    padding-top: 1.25rem;
+  }
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(3)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(5)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(7)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(8)::before {
+    float: none;
+    display: inline-block;
+    margin: 0 0.6em 0 0;
+    vertical-align: -0.15em;
+  }
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(3),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(5),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(7),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(8),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(9),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(10) {
+    padding-left: 1rem;
+  }
+}
+
+/* ── 8. Guards: reduced motion + print ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-chapter="p1c5"] #chapter-art.cadence svg,
+  body[data-chapter="p1c6"] #chapter-art.emblem svg,
+  body[data-chapter="p1c7"] #chapter-art.plate svg,
+  body[data-chapter="p1c8"] #chapter-art.emblem svg {
+    filter: none;
+  }
+}
+@media print {
+  body[data-chapter="p1c5"] #chapter-art.cadence,
+  body[data-chapter="p1c6"] #chapter-art.emblem,
+  body[data-chapter="p1c7"] #chapter-art.plate,
+  body[data-chapter="p1c8"] #chapter-art.emblem,
+  body[data-chapter="p1c5"] .meta-rule::after,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(3)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(5)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(7)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(8)::before {
+    display: none;
+  }
+  body[data-chapter="p1c5"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c6"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c7"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c8"] .chapter-text > p:last-child::after {
+    content: none;
+  }
+}
+
+/* ════════════ §3. UNTIMELYDUSK cohort (p1c9–p1c12) — design/untimelydusk.css ════════════ */
+/* ── 1. Opener emblem sizes (beat book 148px/112px via higher specificity) ── */
+body[data-chapter="p1c9"] #chapter-art.motif svg {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c10"] #chapter-art.motif svg {
+  width: 340px;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c11"] #chapter-art.motif svg {
+  width: min(360px, 78vw);
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c12"] #chapter-art.motif svg {
+  width: min(340px, 76vw);
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+body[data-chapter="p1c9"] #chapter-art,
+body[data-chapter="p1c10"] #chapter-art,
+body[data-chapter="p1c11"] #chapter-art,
+body[data-chapter="p1c12"] #chapter-art {
+  margin: 0 auto 2rem;
+}
+
+/* ── 2. Figcaptions: DM Sans ash p1c9–p1c11, Cinzel bronze inscription p1c12 ── */
+body[data-chapter="p1c9"] #chapter-art figcaption,
+body[data-chapter="p1c10"] #chapter-art figcaption,
+body[data-chapter="p1c11"] #chapter-art figcaption {
+  font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--tw-ash, #A89A80);
+  text-align: center;
+}
+body[data-chapter="p1c12"] #chapter-art figcaption {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: var(--tw-bronze, #D29A4A);
+  text-align: center;
+}
+
+/* ── 3. Cohort end seals (sanctioned A.0 p:last-child::after swap ONLY, 28px) ── */
+body[data-chapter="p1c9"] .chapter-text > p:last-child::after,
+body[data-chapter="p1c10"] .chapter-text > p:last-child::after,
+body[data-chapter="p1c11"] .chapter-text > p:last-child::after,
+body[data-chapter="p1c12"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EStruck-disc end seal%3C/title%3E%3Ccircle class='seal' cx='16' cy='16' r='10' fill='none' stroke='%23D29A4A' stroke-width='2' stroke-opacity='0.95'/%3E%3Ccircle class='seal' cx='16' cy='16' r='5.5' fill='none' stroke='%23D29A4A' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpolyline class='seal' points='16,7 14.6,12 16.4,17 15,21.5 16,25' fill='none' stroke='%23B23A2A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle class='seal' cx='16' cy='16' r='1.8' fill='%23B23A2A' stroke='none'/%3E%3C/svg%3E");
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 4. p1c9: honest narrow dancing-baseline (turn arc + centred finale) ── */
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(8) {
+  margin-top: 2.6em;
+}
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(8)::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 24px;
+  margin: 0 auto 1.6em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 24'%3E%3Cpath d='M8 21 A76 76 0 0 1 70 6.2 M90 6.2 A76 76 0 0 1 152 21' fill='none' stroke='%23D29A4A' stroke-width='1.5' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(10) {
+  text-align: center;
+}
+body[data-chapter="p1c9"] .chapter-text > p:nth-of-type(10)::first-line {
+  color: var(--tw-bronze, #D29A4A);
+}
+
+/* ── 5. p1c10: raid family pips over the book ring-on-hairline grammar ── */
+/* Shared pip reset + geometry: every pip rule resets the book 9px ring. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::before {
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 22px;
+  height: 22px;
+  top: -5px;
+  left: 0;
+}
+/* Literary pen: raids 02/03/04/07. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="02"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="03"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="04"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="07"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3ELiterary raid marker: quill nib%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M16 25 L12 12 Q16 7 20 12 Z' fill='none' stroke='%23D29A4A' stroke-width='1.4'/%3E%3Cline x1='16' y1='25' x2='16' y2='14' stroke='%23D29A4A' stroke-width='1'/%3E%3Ccircle cx='16' cy='10' r='1.2' fill='%23D29A4A' stroke='none'/%3E%3C/svg%3E");
+}
+/* Psychology eye: raids 05/08/09/11/14/17/18. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="05"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="08"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="09"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="11"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="14"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="17"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="18"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EPsychology raid marker: almond eye%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M8 16 Q16 9 24 16 Q16 23 8 16 Z' fill='none' stroke='%23A89A80' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23D29A4A' stroke='none'/%3E%3C/svg%3E");
+}
+/* Art mask: raid 10. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="10"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EArt raid marker: miniature mask%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M10 10 Q16 8 22 10 L21 20 Q16 24 11 20 Z' fill='none' stroke='%23D29A4A' stroke-width='1.4'/%3E%3Cpath d='M12.5 15 h2.4 M17.1 15 h2.4 M14.5 20 h3' stroke='%23EDE2CC' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+/* Politics sword: raids 12/15/20/21. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="12"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="15"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="20"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="21"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctitle%3EPolitics raid marker: short blade%3C/title%3E%3Cpath class='arc-deco' d='M5 22 A 13 13 0 0 1 27 22' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.6'/%3E%3Cpath d='M16 6 L18 18 L16 24 L14 18 Z' fill='none' stroke='%23A89A80' stroke-width='1.4' stroke-linejoin='round'/%3E%3Cline x1='12' y1='19' x2='20' y2='19' stroke='%23D29A4A' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+/* Movement heads: raids 06/13/16/19/22 ride the hairline at 26px. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="06"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="13"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="16"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="19"]::before,
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="22"]::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ctitle%3EMovement-head marker: cracked disc with ember core%3C/title%3E%3Cpath class='arc-deco' d='M6 32 A 20 20 0 0 1 42 32' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.55'/%3E%3Ccircle class='seal' cx='24' cy='22' r='11' fill='none' stroke='%23D29A4A' stroke-width='1.6'/%3E%3Cpolyline class='seal' points='24,12 22,18 25,24 22.5,30 24,32' fill='none' stroke='%23B23A2A' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle class='seal' cx='24' cy='22' r='2' fill='%23B23A2A' stroke='none'/%3E%3C/svg%3E");
+  width: 26px;
+  height: 26px;
+}
+/* Raid 01 is :first-of-type (book hides its ring): re-show as the major pip
+   floating clear above the drop-cap line; its label keeps top:-2.6em. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="01"]:first-of-type::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ctitle%3EMovement-head marker: cracked disc with ember core%3C/title%3E%3Cpath class='arc-deco' d='M6 32 A 20 20 0 0 1 42 32' fill='none' stroke='%23EDE2CC' stroke-width='1' stroke-opacity='0.55'/%3E%3Ccircle class='seal' cx='24' cy='22' r='11' fill='none' stroke='%23D29A4A' stroke-width='1.6'/%3E%3Cpolyline class='seal' points='24,12 22,18 25,24 22.5,30 24,32' fill='none' stroke='%23B23A2A' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle class='seal' cx='24' cy='22' r='2' fill='%23B23A2A' stroke='none'/%3E%3C/svg%3E");
+  display: block;
+  position: absolute;
+  top: -2.9em;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+/* Keep the book 'raid NN' labels, re-offset for pip width. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::after {
+  left: 2rem;
+}
+/* Movement heads sound on an ember hairline. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="01"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="06"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="13"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="16"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="19"],
+body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="22"] {
+  border-top-color: color-mix(in srgb, var(--tw-ember, #B23A2A) 38%, transparent);
+}
+/* Signature close: the Zarathustra valediction (idx 60), right-aligned ash. */
+body[data-chapter="p1c10"] .chapter-text > p:nth-of-type(61) {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--tw-ash, #A89A80);
+  margin-top: 3rem;
+}
+
+/* ── 6. p1c11: the Thucydides verdict stone, then the Dionysian close ── */
+body[data-chapter="p1c11"] .chapter-text > p:nth-of-type(3) {
+  text-align: center;
+  max-width: 54ch;
+  margin: 2.4em auto;
+}
+body[data-chapter="p1c11"] .chapter-text > p:nth-of-type(7) {
+  margin-top: 2.2em;
+}
+
+/* ── 7. p1c12 POSTER end-state (whisper title already in book.css: air only) ── */
+body[data-chapter="p1c12"] .chapter-meta {
+  padding-top: 2.5rem;
+}
+/* No drop-cap: P1 is the '(Thus Spake Zarathustra, III)' attribution line. */
+body[data-chapter="p1c12"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(1) {
+  text-align: center;
+  font-size: 0.95em;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+/* Verses centred and airy. */
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(2),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(3),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(4),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(5),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(6),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(8) {
+  text-align: center;
+  max-width: 56ch;
+  margin-inline: auto;
+}
+/* Bronze inscription verse: 'Bliss to write upon the will of millennia…'. */
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7)::first-line {
+  color: var(--tw-bronze, #D29A4A);
+}
+/* Verdict line: 'become hard!' — Cormorant bone, never Cinzel body. */
+body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(8) {
+  color: var(--tw-bone, #EDE2CC);
+  font-size: 1.15em;
+  letter-spacing: 0.06em;
+}
+
+/* ── 8. 820px tablet: emblems step down the crescendo ── */
+@media (max-width: 1100px) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg { width: 240px; }
+  body[data-chapter="p1c10"] #chapter-art.motif svg { width: 270px; }
+  body[data-chapter="p1c11"] #chapter-art.motif svg { width: min(300px, 78vw); }
+  body[data-chapter="p1c12"] #chapter-art.motif svg { width: min(280px, 76vw); }
+}
+
+/* ── 9. 390px phone: full-bleed emblems, smaller pips, legible labels ── */
+@media (max-width: 560px) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] #chapter-art.motif svg,
+  body[data-chapter="p1c11"] #chapter-art.motif svg,
+  body[data-chapter="p1c12"] #chapter-art.motif svg {
+    width: 100%;
+    max-width: 480px;
+  }
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::before {
+    width: 20px;
+    height: 20px;
+  }
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="01"]:first-of-type::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="06"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="13"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="16"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="19"]::before,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid="22"]::before {
+    width: 24px;
+    height: 24px;
+  }
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::after {
+    left: 1.8rem;
+  }
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(2),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(3),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(4),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(5),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(6),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7),
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(8) {
+    max-width: 100%;
+  }
+}
+
+/* ── 10. Overflow guard: emblems clip to the viewport at small widths ── */
+@media (max-width: 480px) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] #chapter-art.motif svg,
+  body[data-chapter="p1c11"] #chapter-art.motif svg,
+  body[data-chapter="p1c12"] #chapter-art.motif svg {
+    overflow: hidden;
+  }
+}
+
+/* ── 11. Reduced motion: rings are static SVG; backstop kills any animation/filter ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-chapter="p1c9"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] #chapter-art.motif svg,
+  body[data-chapter="p1c11"] #chapter-art.motif svg,
+  body[data-chapter="p1c12"] #chapter-art.motif svg,
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::before,
+  body[data-chapter="p1c9"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c10"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c11"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c12"] .chapter-text > p:last-child::after {
+    animation: none;
+    filter: none;
+  }
+}
+
+/* ── 12. Print: book hides slots; labels drop, structure keeps ── */
+@media print {
+  body[data-chapter="p1c10"] .chapter-text p.raid-start[data-raid]::after {
+    display: none;
+  }
+  body[data-chapter="p1c12"] .chapter-text > p:nth-of-type(7)::first-line {
+    color: inherit;
+  }
+}
+
+/* ════════════ §4. Supervisor: book-JS span treatments (twilight-book.js) ════════════ */
+/* Without JS these spans never exist — the pure-CSS cohort treatments above
+   (G2/G4/G5 disclosed forms) are the graceful fallback. */
+/* p1c5 two voices, split honestly: upright stages, hushed asides. The
+   cohort's whole-para aside rule still supplies indent + bronze border;
+   the spans re-voice the two halves (span color/font-style beat the
+   inherited para values; border/padding stay on the paragraph). */
+body[data-chapter="p1c5"] .chapter-text > p[data-split="1"] {
+  font-style: normal;
+  color: var(--text);
+}
+body[data-chapter="p1c5"] .chapter-text .fable-stage {
+  font-style: normal;
+  color: var(--text);
+}
+body[data-chapter="p1c5"] .chapter-text .fable-aside {
+  font-style: italic;
+  color: var(--text-muted);
+}
+body[data-chapter="p1c5"] .chapter-text .fable-incipit {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95em;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+/* p1c7 plate heads: the error names stand on their own Cinzel line. */
+body[data-chapter="p1c7"] .chapter-text .plate-head {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: 0.08em;
+  color: var(--tw-bone, #ede2cc);
+  margin-bottom: 0.9em;
+}
+body[data-chapter="p1c7"] .chapter-text .plate-body {
+  display: block;
+}
+@media print {
+  body[data-chapter="p1c5"] .chapter-text .fable-incipit { color: inherit; }
+  body[data-chapter="p1c7"] .chapter-text .plate-head { color: inherit; }
+}

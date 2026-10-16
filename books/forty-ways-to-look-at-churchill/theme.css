@@ -1,46 +1,1772 @@
-/* Forty Ways — wartime brass, newsprint, cigar smoke */
+/* Forty Ways to Look at Winston Churchill — "Forty Facets" theme.
+   Cubist dossier portrait: every Way one shard of an unfinishable portrait.
+   Binds READER-CONTRACT v1/v1.1 hooks; book CSS is UNLAYERED (wins over
+   @layer shared). ART-DIRECTION.md v1.1 + ArtDirector C1–C9 binding.
+   Baseline crosshair/smoke/reticle/pseudo-art: DELETED, not restyled. */
+
+/* ── 0. Facet tokens (dark-first; scoped per theme below) ── */
+:root {
+  --fw-lampblack: #14110b;
+  --fw-gallery: #211b13;
+  --fw-bone: #ece1cb;
+  --fw-faded: #b7a98f;
+  --fw-ochre: #c8984a;
+  --fw-vermilion: #c4502c;
+  --fw-slate: #5e6e93;
+  --fw-measure: 37rem;
+  --fw-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --fw-body: "Newsreader", Georgia, serif;
+}
+
+/* Dark "Lampblack" (default) */
 :root, html[data-theme="dark"] {
-  --bg: #0f1410;
-  --bg-elevated: #161c16;
-  --bg-soft: #1e261e;
-  --surface: #243024;
-  --border: rgba(166, 140, 107, 0.16);
-  --border-strong: rgba(166, 140, 107, 0.32);
-  --text: #f0e8d8;
-  --text-muted: #b8a898;
-  --text-faint: #7a7060;
-  --accent: #a68c6b;
-  --accent-soft: rgba(166, 140, 107, 0.12);
-  --accent-hover: #c4a882;
-  --copper: #c9a86a;
-  --reader-max: 50rem;
+  --bg: #14110b;
+  --bg-elevated: #211b13;
+  --bg-soft: #241d14;
+  --surface: #2a2216;
+  --border: rgba(236, 225, 203, 0.14);
+  --border-strong: rgba(200, 152, 74, 0.42);
+  --text: #ece1cb;
+  --text-muted: #b7a98f;
+  --text-faint: #8a7d63;
+  --accent: #c8984a;
+  --accent-soft: rgba(200, 152, 74, 0.13);
+  --accent-hover: #d9ac5e;
+  --copper: #c4502c;
+  --on-accent: #14110b;
+  --reader-max: 37rem;
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
 }
 html[data-theme="sepia"] {
-  --bg: #f4efe2;
-  --bg-elevated: #ede6d3;
-  --bg-soft: #e0d8c0;
-  --surface: #ffffff;
-  --text: #2a2418;
-  --text-muted: #6b6254;
-  --accent: #8a7040;
-  --border: rgba(138, 112, 64, 0.18);
+  --bg: #ece1cb;
+  --bg-elevated: #e2d4b8;
+  --bg-soft: #d8c6a4;
+  --surface: #f4ecda;
+  --text: #241c10;
+  --text-muted: #5d5138;
+  --text-faint: #7c6f53;
+  --accent: #7a5c1e;
+  --accent-soft: rgba(122, 92, 30, 0.12);
+  --accent-hover: #644a17;
+  --copper: #9c3a1e;
+  --on-accent: #fbf6e9;
+  --border: rgba(60, 48, 22, 0.2);
+  --border-strong: rgba(122, 92, 30, 0.4);
+  --fw-lampblack: #ece1cb;
+  --fw-gallery: #e2d4b8;
+  --fw-bone: #241c10;
+  --fw-faded: #5d5138;
+  --fw-ochre: #7a5c1e;
+  --fw-vermilion: #9c3a1e;
+  --fw-slate: #46537a;
 }
 html[data-theme="light"] {
-  --bg: #fafaf8;
-  --text: #1a1814;
-  --accent: #8a7040;
-  --bg-elevated: #ffffff;
+  --bg: #f7f2e6;
+  --bg-elevated: #efe7d4;
+  --bg-soft: #e4d8bd;
+  --surface: #fffdf6;
+  --text: #1d1810;
+  --text-muted: #57503c;
+  --text-faint: #837763;
+  --accent: #7a5c1e;
+  --accent-soft: rgba(122, 92, 30, 0.1);
+  --accent-hover: #644a17;
+  --copper: #9c3a1e;
+  --on-accent: #ffffff;
+  --border: rgba(60, 48, 22, 0.16);
+  --border-strong: rgba(122, 92, 30, 0.36);
+  --fw-lampblack: #f7f2e6;
+  --fw-gallery: #e9dfc7;
+  --fw-bone: #1d1810;
+  --fw-faded: #57503c;
+  --fw-ochre: #7a5c1e;
+  --fw-vermilion: #9c3a1e;
+  --fw-slate: #46537a;
 }
-.cover-grid {
-  background-image:
-    linear-gradient(rgba(166, 140, 107, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(166, 140, 107, 0.06) 1px, transparent 1px);
-  background-size: 48px 48px;
+html[data-theme="nocturne"] {
+  --bg: #0c0f18;
+  --bg-elevated: #121828;
+  --bg-soft: #162033;
+  --surface: #1a2438;
+  --text: #dfe4f2;
+  --text-muted: #9aa5c2;
+  --text-faint: #66718c;
+  --accent: #c8984a;
+  --accent-soft: rgba(200, 152, 74, 0.13);
+  --accent-hover: #d9ac5e;
+  --copper: #c4502c;
+  --on-accent: #14110b;
+  --border: rgba(200, 152, 74, 0.16);
+  --border-strong: rgba(200, 152, 74, 0.36);
+  --fw-lampblack: #0c0f18;
+  --fw-gallery: #121828;
+  --fw-bone: #dfe4f2;
+  --fw-faded: #9aa5c2;
 }
-.cover-glow {
-  background: radial-gradient(ellipse at 50% 35%, rgba(166, 140, 107, 0.18) 0%, rgba(120, 140, 110, 0.06) 42%, transparent 70%);
+html[data-theme="verdant"] {
+  --bg: #0e130d;
+  --bg-elevated: #152016;
+  --bg-soft: #1a291c;
+  --surface: #203123;
+  --text: #e8efdb;
+  --text-muted: #a9bd93;
+  --text-faint: #6f7f63;
+  --accent: #c8984a;
+  --accent-soft: rgba(200, 152, 74, 0.13);
+  --accent-hover: #d9ac5e;
+  --copper: #c4502c;
+  --on-accent: #14110b;
+  --border: rgba(200, 152, 74, 0.16);
+  --border-strong: rgba(200, 152, 74, 0.36);
+  --fw-lampblack: #0e130d;
+  --fw-gallery: #152016;
+  --fw-bone: #e8efdb;
+  --fw-faded: #a9bd93;
 }
-.title-line.accent { color: var(--accent); font-style: italic; font-weight: 400; }
-.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
-.meta-title { text-transform: none; letter-spacing: -0.01em; }
-.chapter-text blockquote { border-left-color: var(--accent); }
+html[data-theme="oxblood"] {
+  --bg: #150d0b;
+  --bg-elevated: #221312;
+  --bg-soft: #2b1816;
+  --surface: #321c19;
+  --text: #f1e4d3;
+  --text-muted: #c2a68c;
+  --text-faint: #82705c;
+  --accent: #c8984a;
+  --accent-soft: rgba(200, 152, 74, 0.13);
+  --accent-hover: #d9ac5e;
+  --copper: #c4502c;
+  --on-accent: #1a0f06;
+  --border: rgba(200, 152, 74, 0.16);
+  --border-strong: rgba(200, 152, 74, 0.36);
+  --fw-lampblack: #150d0b;
+  --fw-gallery: #221312;
+  --fw-bone: #f1e4d3;
+  --fw-faded: #c2a68c;
+}
+html[data-theme="slate"] {
+  --bg: #101318;
+  --bg-elevated: #181e26;
+  --bg-soft: #1e2631;
+  --surface: #242e3a;
+  --text: #e2e7ee;
+  --text-muted: #a3b0c0;
+  --text-faint: #6c798c;
+  --accent: #c8984a;
+  --accent-soft: rgba(200, 152, 74, 0.13);
+  --accent-hover: #d9ac5e;
+  --copper: #c4502c;
+  --on-accent: #131007;
+  --border: rgba(200, 152, 74, 0.16);
+  --border-strong: rgba(200, 152, 74, 0.36);
+  --fw-lampblack: #101318;
+  --fw-gallery: #181e26;
+  --fw-bone: #e2e7ee;
+  --fw-faded: #a3b0c0;
+}
+html[data-theme="candlelight"] {
+  --bg: #140d06;
+  --bg-elevated: #1f1410;
+  --bg-soft: #281a12;
+  --surface: #2f1f14;
+  --text: #f7e9d4;
+  --text-muted: #c9ad86;
+  --text-faint: #847052;
+  --accent: #d4ac72;
+  --accent-soft: rgba(212, 172, 114, 0.13);
+  --accent-hover: #e2bd86;
+  --copper: #c97f35;
+  --on-accent: #1c1005;
+  --border: rgba(212, 172, 114, 0.16);
+  --border-strong: rgba(212, 172, 114, 0.36);
+  --fw-lampblack: #140d06;
+  --fw-gallery: #1f1410;
+  --fw-bone: #f7e9d4;
+  --fw-faded: #c9ad86;
+  --fw-ochre: #d4ac72;
+}
+
+/* Cover: plate band on top, left lockup below — flex column, no overlap. */
+body[data-book="forty-ways-to-look-at-churchill"] #cover {
+  justify-content: flex-start;
+  padding: 0 0 5rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-view="cover"] {
+  background: var(--bg);
+}
+/* Retire the baseline pseudo-art vocabulary entirely: the three background
+   layers go fully transparent so only the cover plate shows. */
+body[data-book="forty-ways-to-look-at-churchill"] .cover-bg,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-grid,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-glow {
+  background: none !important;
+  background-image: none !important;
+  opacity: 0 !important;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-bg::before,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-bg::after,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-grid::before,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-grid::after,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-glow::after {
+  content: none !important;
+  background: none !important;
+}
+body[data-book="forty-ways-to-look-at-churchill"] #cover-art:not([hidden]) {
+  display: block;
+  width: 100%;
+  max-height: 46vh;
+  min-height: 240px;
+  overflow: hidden;
+  margin: 0;
+}
+body[data-book="forty-ways-to-look-at-churchill"] #cover-art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-content {
+  text-align: left;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-eyebrow {
+  color: var(--fw-faded);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-eyebrow::before,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-eyebrow::after {
+  content: none;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-title {
+  font-family: var(--fw-display);
+  font-variation-settings: "opsz" 72, "SOFT" 60, "WONK" 1;
+  font-weight: 560;
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  line-height: 1.04;
+  color: var(--fw-bone);
+  margin: 1.5rem 0 0;
+  text-transform: none;
+}
+/* Cover title lines: book-owned lockup — bone roman + ochre italic shard. */
+body[data-book="forty-ways-to-look-at-churchill"] .cover-title .title-line.accent {
+  color: var(--fw-ochre);
+  font-style: italic;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-rule {
+  justify-content: flex-start;
+  margin: 1.75rem 0;
+  width: 9rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-rule::before,
+body[data-book="forty-ways-to-look-at-churchill"] .cover-rule::after {
+  background: var(--fw-ochre);
+  opacity: 0.6;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .rule-diamond {
+  background: var(--fw-ochre);
+  box-shadow: none;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-dedication {
+  color: var(--fw-faded);
+  font-style: italic;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-quote {
+  color: var(--fw-bone);
+  font-family: var(--fw-body);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-quote::after {
+  content: none;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .cover-actions {
+  justify-content: flex-start;
+}
+
+/* ── 2. Chapter opener: facet plate + occluded numeral (C1) ── */
+body[data-book="forty-ways-to-look-at-churchill"] .reader-body {
+  max-width: 72rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] #chapter-art:not([hidden]) {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  margin: 0 0 2.5rem;
+  overflow: hidden;
+  background: var(--fw-gallery);
+}
+body[data-book="forty-ways-to-look-at-churchill"] #chapter-art svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Plate inscription: manifest caption as a pinned gallery label over the
+   plate's lower-left (absolute; never a body-text block above the art). */
+body[data-book="forty-ways-to-look-at-churchill"] #chapter-art figcaption {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 0.9rem;
+  z-index: 2;
+  margin: 0;
+  font-family: var(--fw-display);
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: var(--fw-bone);
+  background: rgba(20, 17, 11, 0.72);
+  padding: 0.4rem 0.9rem 0.45rem;
+  max-width: min(26rem, calc(100% - 2.5rem));
+}
+html[data-theme="sepia"] body[data-book="forty-ways-to-look-at-churchill"] #chapter-art figcaption,
+html[data-theme="light"] body[data-book="forty-ways-to-look-at-churchill"] #chapter-art figcaption {
+  background: rgba(36, 28, 16, 0.78);
+  color: #f4ecda;
+}
+/* Light-paper themes: PIN the gallery plates + TOC chips to dark-facet
+   values. Inverted --fw-* tokens serve prose/chrome (bone-ink on paper),
+   but plates are composed for dark beds — recoloring their fills melts the
+   occluded numerals. Scoped re-declaration: only the slots + chips. */
+html[data-theme="sepia"] body[data-book="forty-ways-to-look-at-churchill"] #chapter-art,
+html[data-theme="sepia"] body[data-book="forty-ways-to-look-at-churchill"] #cover-art,
+html[data-theme="light"] body[data-book="forty-ways-to-look-at-churchill"] #chapter-art,
+html[data-theme="light"] body[data-book="forty-ways-to-look-at-churchill"] #cover-art {
+  --fw-lampblack: #14110b;
+  --fw-gallery: #211b13;
+  --fw-bone: #ece1cb;
+  --fw-faded: #b7a98f;
+  --fw-ochre: #c8984a;
+  --fw-vermilion: #c4502c;
+  --fw-slate: #5e6e93;
+}
+html[data-theme="sepia"] body[data-book="forty-ways-to-look-at-churchill"] .toc-num,
+html[data-theme="light"] body[data-book="forty-ways-to-look-at-churchill"] .toc-num {
+  --fw-lampblack: #14110b;
+  --fw-bone: #ece1cb;
+  --fw-ochre: #c8984a;
+  --fw-vermilion: #c4502c;
+  --fw-slate: #5e6e93;
+}
+/* Occluded Way numeral: SVG <text class="fw-num"> INSIDE each plate symbol,
+   painted BEFORE (under) the dark occluders — paint order = z-order (C1).
+   Theme sets font ONLY; cohorts own position/size/fill per plate. */
+body[data-book="forty-ways-to-look-at-churchill"] #chapter-art text.fw-num {
+  font-family: var(--fw-display);
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  font-weight: 600;
+  fill: var(--fw-bone);
+  opacity: 0.92;
+}
+/* BRIDGE (retire when ReaderLead fixes fillArtSlot symbol sizing): a
+   <symbol> nested in <svg> without width/height renders 0x0 — size it. */
+body[data-book="forty-ways-to-look-at-churchill"] #chapter-art svg > symbol,
+body[data-book="forty-ways-to-look-at-churchill"] #cover-art svg > symbol {
+  width: 100%;
+  height: 100%;
+}
+/* C1 corollary: only lampblack/gallery-deep/vermilion may cross Bone
+   strokes; slate (3.9) + ochre (2.7) NEVER cross. Numeral beds >= 3:1. */
+/* Sticky ledger mini-index (facets.js injects .fw-index for p4c2/p3c4). */
+body[data-book="forty-ways-to-look-at-churchill"] .fw-index {
+  position: sticky;
+  top: calc(var(--header-h) + 0.5rem);
+  float: right;
+  width: 11rem;
+  margin: 0 0 1rem 2rem;
+  font-size: 0.8rem;
+  z-index: 5;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .fw-index ol {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: var(--bg-elevated);
+  border-left: 2px solid var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"] .fw-index li {
+  margin: 0.3rem 0;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .fw-index a {
+  color: var(--fw-faded);
+  text-decoration: none;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .fw-index a:hover,
+body[data-book="forty-ways-to-look-at-churchill"] .fw-index a:focus-visible {
+  color: var(--fw-ochre);
+  text-decoration: underline;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-meta {
+  text-align: left;
+  max-width: var(--fw-measure);
+  margin: 0 0 2.5rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-meta::after {
+  content: none;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-part {
+  display: inline-block;
+  font-family: var(--fw-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--fw-ochre);
+  border: 1px solid var(--border-strong);
+  padding: 0.35rem 0.8rem 0.35rem 0.9rem;
+  transform: rotate(-4deg);
+  margin-bottom: 1.25rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-title {
+  font-family: var(--fw-display);
+  font-variation-settings: "opsz" 72, "SOFT" 60, "WONK" 1;
+  font-weight: 560;
+  font-size: clamp(2rem, 4.6vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--fw-bone);
+  text-wrap: balance;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-number {
+  color: var(--fw-faded);
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-number::after {
+  content: none;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-rule {
+  justify-content: flex-start;
+  gap: 0;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-rule::before,
+body[data-book="forty-ways-to-look-at-churchill"] .meta-rule::after {
+  content: none;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-rule span {
+  width: 5rem;
+  height: 2px;
+  transform: none;
+  background: var(--fw-ochre);
+  opacity: 1;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .meta-rule span::before {
+  content: none;
+}
+
+/* ── 3. Calm reading body (Newsreader, narrow measure) ── */
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-text {
+  font-family: var(--fw-body);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+/* Sans reading preference (R2 fix): shared html[data-font="sans"] rewrites
+   --font-serif to the DM Sans stack — honor it for the reading body. */
+html[data-font="sans"] body[data-book="forty-ways-to-look-at-churchill"] .chapter-text {
+  font-family: var(--font-sans);
+}
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-text p {
+  max-width: var(--fw-measure);
+  margin-left: 0;
+  margin-right: auto;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--fw-display);
+  font-size: 3.2em;
+  color: var(--fw-ochre);
+  background: none;
+}
+/* No drop cap on quiz/timeline/list chapters. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c10"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c10"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+/* Baseline blockquote/h2/h3 card rules: retired (reader emits <p> only). */
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-text blockquote,
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-text h2,
+body[data-book="forty-ways-to-look-at-churchill"] .chapter-text h3 {
+  all: revert;
+}
+
+/* ── 4. Shared data-fw role treatments (closed 22-role vocabulary) ── */
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="quote"],
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="quip"] {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="verse"] {
+  font-style: italic;
+  text-align: left;
+  max-width: 30rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="speech"] {
+  font-size: 1.2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--accent-soft);
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="letter"] {
+  font-style: italic;
+  padding-left: 1.5rem;
+  max-width: 33rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="letter-signoff"] {
+  font-style: italic;
+  text-align: right;
+  max-width: 33rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="head"],
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="ledger-head"] {
+  font-family: var(--fw-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fw-ochre);
+  margin-top: 2.25rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="verdict"],
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="thesis"] {
+  font-family: var(--fw-display);
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: var(--fw-bone);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="caption"] {
+  font-size: 0.95rem;
+  color: var(--fw-faded);
+  text-align: center;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="ledger-row"] {
+  font-variant-numeric: tabular-nums;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.55em;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="list-head"] {
+  font-family: var(--fw-display);
+  letter-spacing: 0.1em;
+  color: var(--fw-bone);
+  margin-top: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="list-item"] {
+  padding-left: 1.5rem;
+  margin-bottom: 0.55em;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="setup"] {
+  color: var(--fw-faded);
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="symbol"] {
+  font-family: var(--fw-display);
+  font-size: 1.25rem;
+  color: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="memo"] {
+  padding: 1rem 1.25rem;
+  background: var(--accent-soft);
+  font-size: 1rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="date-beat"] {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="coda"] {
+  font-style: italic;
+  color: var(--fw-faded);
+  margin-top: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="epitaph"] {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Quiz masks (C5): answers masked until tapped; keyboard-honest. */
+body[data-book="forty-ways-to-look-at-churchill"] p[data-fw="mask-q"] {
+  font-weight: 600;
+}
+body[data-book="forty-ways-to-look-at-churchill"] details.fw-mask {
+  max-width: var(--fw-measure);
+  margin: 0 0 1.15em;
+  border: 1px solid var(--border-strong);
+  padding: 0.85rem 1.1rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] details.fw-mask summary {
+  cursor: pointer;
+  font-family: var(--fw-display);
+  letter-spacing: 0.08em;
+  color: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"] details.fw-mask summary:focus-visible {
+  outline: 2px solid var(--fw-ochre);
+  outline-offset: 2px;
+}
+
+/* ── 5. TOC gallery wall + shard progress (C7) ── */
+/* Shard thumbnails: each Way a clipped facet keyed by part (paint-cheap
+   clip-path + flat fills; small on phones, never dropped). */
+body[data-book="forty-ways-to-look-at-churchill"] .toc-num {
+  font-family: var(--fw-display);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.95rem;
+  color: var(--fw-lampblack);
+  background: var(--fw-ochre);
+  clip-path: polygon(0 0, 100% 8%, 88% 100%, 6% 92%);
+  min-width: 2.6rem;
+  height: 2.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.4rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .toc-part:nth-of-type(2) .toc-num {
+  background: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"] .toc-part:nth-of-type(3) .toc-num {
+  background: var(--fw-slate);
+  color: var(--fw-bone);
+}
+body[data-book="forty-ways-to-look-at-churchill"] .toc-part:nth-of-type(4) .toc-num {
+  background: var(--fw-bone);
+}
+body[data-book="forty-ways-to-look-at-churchill"] .toc-part:nth-of-type(5) .toc-num {
+  background: var(--fw-vermilion);
+  color: var(--fw-bone);
+}
+body[data-book="forty-ways-to-look-at-churchill"] .toc-chapter.active .toc-num {
+  outline: 2px solid var(--fw-bone);
+  outline-offset: 2px;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .toc-part-header {
+  font-family: var(--fw-display);
+  letter-spacing: 0.14em;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .toc-chapter {
+  align-items: center;
+}
+/* Progress as shard-fill: flat ochre mass + shard tip (reads AS progress). */
+body[data-book="forty-ways-to-look-at-churchill"] .progress-track {
+  height: 4px;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .progress-fill {
+  background: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"] .progress-fill::after {
+  width: 10px;
+  height: 10px;
+  right: -5px;
+  background: var(--fw-ochre);
+  box-shadow: none;
+  clip-path: polygon(0 0, 100% 20%, 70% 100%, 0 80%);
+  transform: translateY(-50%);
+}
+/* Shard chevrons on prev/next (never "→" text). */
+body[data-book="forty-ways-to-look-at-churchill"] .nav-label {
+  color: var(--fw-ochre);
+  border-bottom: none;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .nav-btn.prev .nav-label::before,
+body[data-book="forty-ways-to-look-at-churchill"] .nav-btn.next .nav-label::after {
+  content: "";
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: var(--fw-ochre);
+  vertical-align: baseline;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .nav-btn.prev .nav-label::before {
+  clip-path: polygon(70% 0, 20% 50%, 70% 100%, 100% 100%, 50% 50%, 100% 0);
+  margin-right: 0.6rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"] .nav-btn.next .nav-label::after {
+  clip-path: polygon(30% 0, 0 0, 50% 50%, 0 100%, 30% 100%, 80% 50%);
+  margin-left: 0.6rem;
+}
+
+/* ── 6. Prototype-only per-chapter openers (cohorts supersede) ── */
+/* Way 40 colophon finish (C6). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c10"] #chapter-art {
+  min-height: 220px;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c10"] .chapter-text p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 34rem;
+}
+/* p4c10 single-para coda rhymes with Way 40 (slate, backward-facing). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c10"] .chapter-text > p:only-child {
+  font-size: 1.35rem;
+  line-height: 1.9;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c10"] .chapter-text > p:only-child::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+}
+
+/* ── 7. Responsive / motion / print ── */
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"] #chapter-art {
+    min-height: 220px;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"] .chapter-text p {
+    max-width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="forty-ways-to-look-at-churchill"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"] #cover-art {
+    animation: none;
+  }
+}
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"] #cover-art {
+    display: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"] details.fw-mask {
+    border: none;
+    padding: 0;
+  }
+}
+
+
+/* ══ COHORT-INTEGRATION (supervisor-merged; cohort files remain source of truth) ══ */
+/* ── Cohort A · Part II Ways 3-10 ── */
+/* ── Way 3 · p2c3 — salon-wall register, two columns of name pins ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] .chapter-text {
+  columns: 2;
+  column-gap: 3rem;
+  max-width: 62rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] .chapter-text > p:first-of-type {
+  column-span: all;
+  font-style: italic;
+  color: var(--fw-faded);
+  max-width: 34rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] p[data-fw="list-head"] {
+  column-span: all;
+  font-size: 1.25rem;
+  margin: 2rem 0 1.5rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] p[data-fw="list-item"] {
+  break-inside: avoid;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 1.1em;
+  font-size: 1.02rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] p[data-fw="list-item"]::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: 0 auto 0.5rem;
+  background: var(--fw-bone);
+  opacity: 0.55;
+  transform: rotate(45deg);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] p[data-fw-label="glue-a"] {
+  break-after: avoid;
+  margin-bottom: 0;
+  padding-bottom: 0.15em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] p[data-fw-label="glue-b"] {
+  margin-top: 0;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] p[data-fw-label="glue-b"]::before {
+  display: none;
+}
+
+/* ── Way 4 · p2c4 — ochre shard-ticks on speech and memo ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] p[data-fw="speech"] {
+  position: relative;
+  padding-left: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] p[data-fw="speech"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  width: 0.55rem;
+  height: 1.1rem;
+  background: var(--fw-ochre);
+  clip-path: polygon(0 0, 100% 12%, 82% 100%, 0 88%);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] p[data-fw="memo"] {
+  position: relative;
+  padding-left: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] p[data-fw="memo"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.35em;
+  width: 0.55rem;
+  height: 1.1rem;
+  background: var(--fw-ochre);
+  clip-path: polygon(0 0, 100% 12%, 82% 100%, 0 88%);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] p[data-fw="thesis"] {
+  margin-top: 2.5rem;
+}
+
+/* ── Way 5 · p2c5 — debate diptych with center spine ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text {
+  columns: 2;
+  column-gap: 3.5rem;
+  max-width: 66rem;
+  position: relative;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="head"] {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  break-inside: avoid;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="head"][data-fw-label="side-b"] {
+  break-before: column;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"] {
+  break-inside: avoid;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"]::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin-bottom: 1rem;
+  background: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"][data-fw-label="side-a"] {
+  text-align: left;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"][data-fw-label="side-b"] {
+  text-align: right;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"][data-fw-label="side-b"]::before {
+  margin-left: auto;
+}
+
+/* ── Way 6 · p2c6 — letter glue, broadcast tick, verdict rule ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="letter"] {
+  margin-bottom: 0.3em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="letter"] + p[data-fw="letter"],
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="letter"] + p[data-fw="letter-signoff"] {
+  margin-top: 0.3em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="letter-signoff"] {
+  margin-top: 0.3em;
+  margin-bottom: 1.5em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="speech"] {
+  position: relative;
+  padding-left: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="speech"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  width: 0.55rem;
+  height: 1.1rem;
+  background: var(--fw-ochre);
+  clip-path: polygon(0 0, 100% 12%, 82% 100%, 0 88%);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="verdict"] {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 3px solid var(--fw-ochre);
+}
+
+/* ── Way 7 · p2c7 — two-voice flood: dated rail + wartime set-plates ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="thesis"] {
+  margin-bottom: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="setup"] {
+  font-size: 1.02rem;
+  max-width: 33rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="quote"] {
+  border-left: none;
+  padding-left: 1.5rem;
+  position: relative;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="quote"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.55rem;
+  height: 1.1rem;
+  background: var(--fw-ochre);
+  clip-path: polygon(0 0, 100% 12%, 82% 100%, 0 88%);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="speech"] {
+  max-width: none;
+  background: var(--bg-elevated);
+  padding: 2.25rem clamp(1.25rem, 4vw, 3rem);
+  font-size: 1.22rem;
+  font-style: italic;
+  border-top: 2px solid var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="speech"] + p[data-fw="speech"] {
+  margin-top: -1.15em;
+  border-top: none;
+  padding-top: 0;
+}
+/* Dated rail: labels fly left of the measure on wide screens. */
+@media (min-width: 1000px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] .chapter-text > p {
+    margin-left: 9rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="thesis"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="speech"] {
+    margin-left: 0;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw-label] {
+    position: relative;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw-label]::after {
+    content: attr(data-fw-label);
+    position: absolute;
+    left: -9.5rem;
+    top: 0.15em;
+    width: 8.5rem;
+    text-align: right;
+    font-family: var(--fw-display);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fw-faded);
+  }
+}
+
+/* ── Way 8 · p2c8 — emblem tags over calm Bone body ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c8"] p[data-fw="symbol"] {
+  font-family: var(--fw-body);
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-style: normal;
+  color: var(--fw-bone);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c8"] p[data-fw="symbol"]::before {
+  content: attr(data-fw-label);
+  display: block;
+  font-family: var(--fw-display);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--fw-ochre);
+  border-left: 3px solid var(--fw-ochre);
+  padding-left: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+/* ── Way 9 · p2c9 — engraved quote blocks + centered verse ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] p[data-fw="quote"] {
+  border-left: none;
+  background: var(--bg-elevated);
+  padding: 1.5rem 2rem;
+  font-size: 1.12rem;
+  max-width: 34rem;
+  position: relative;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] p[data-fw="quote"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--fw-ochre);
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] p[data-fw="verse"] {
+  text-align: center;
+  font-size: 1.3rem;
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+
+/* ── Way 10 · p2c10 — vermilion claw-mark over the fame thesis ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c10"] p[data-fw="thesis"]::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 0.4rem;
+  margin-bottom: 0.9rem;
+  background: var(--fw-vermilion);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 78% 100%, 70% 35%, 62% 100%, 40% 100%, 32% 35%, 24% 100%, 0 100%);
+}
+
+/* ── Rail stack: p2c7 dated rail collapses below 1000px ── */
+@media (max-width: 1000px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] .chapter-text > p {
+    margin-left: 0;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw-label]::after {
+    content: attr(data-fw-label);
+    display: block;
+    position: static;
+    width: auto;
+    text-align: left;
+    font-family: var(--fw-display);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fw-faded);
+    margin-bottom: 0.35rem;
+  }
+}
+
+/* ── Phones: single columns, no spine, tighter plates ── */
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] .chapter-text,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text {
+    columns: 1;
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text::before {
+    display: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="head"][data-fw-label="side-b"] {
+    break-before: auto;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"][data-fw-label="side-b"] {
+    text-align: left;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"][data-fw-label="side-b"]::before {
+    margin-left: 0;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="speech"] {
+    padding: 1.5rem 1.25rem;
+    font-size: 1.1rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] p[data-fw="quote"] {
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+    max-width: 100%;
+  }
+}
+
+/* ── Print: flatten columns and grounds, keep flat ticks ── */
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] .chapter-text,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text {
+    columns: 1;
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text::before {
+    display: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="head"][data-fw-label="side-b"] {
+    break-before: auto;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"][data-fw-label="side-b"] {
+    text-align: left;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] p[data-fw="verdict"][data-fw-label="side-b"]::before {
+    margin-left: 0;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] .chapter-text > p {
+    margin-left: 0;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw-label]::after {
+    content: attr(data-fw-label);
+    display: block;
+    position: static;
+    width: auto;
+    text-align: left;
+    font-family: var(--fw-display);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fw-faded);
+    margin-bottom: 0.35rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] p[data-fw="speech"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] p[data-fw="speech"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] p[data-fw="memo"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="speech"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] p[data-fw="quote"] {
+    background: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] p[data-fw="speech"] {
+    padding: 0;
+    border-top: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] p[data-fw="quote"] {
+    padding: 0 0 0 1.25rem;
+  }
+}
+
+/* ── Reduced motion: nothing authored moves; re-assert the kill ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] .chapter-text,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c8"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c10"] .chapter-text p,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c3"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c4"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c5"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c6"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c7"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c8"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c9"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p2c10"] #chapter-art {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ── Cohort B · Part III Ways 12-20 ── */
+/* ── p3c2 Way 12: memo cluster — glue the mock minute ([3]+[4]) into one
+   block with a shared ochre tick; first line as small-caps display. ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"] {
+  margin-bottom: 0;
+  border-left: 3px solid var(--fw-ochre);
+  border-radius: 0;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"]:last-of-type {
+  margin-bottom: 1.15em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"]:not(p[data-fw="memo"] ~ p[data-fw="memo"])::first-line {
+  font-family: var(--fw-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ── p3c4 Way 14: ledger rows with separators; [1] head in bone (a name,
+   not a section flag — cohort-c p4c2 precedent) + ochre tick echoing the
+   plate's year ticks. No .fw-index: reading.ledger is false (S3). ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-head"] {
+  color: var(--fw-bone);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-head"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.35em;
+  background: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-row"] {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.55em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-row"]:last-of-type {
+  border-bottom: 0;
+}
+
+/* ── p3c5 Way 15 / p3c8 Way 18 letters: theme letter base suffices (italic
+   indent). Intentionally unchanged — body calm, the hinge / vessel plates
+   do the work. ── */
+
+/* ── p3c6 Way 16: verdict diptych — opposing shard ticks keyed to labels;
+   drop cap suppressed on the [0] verdict head (verdict heads never take
+   drop caps — same guard theme uses for list chapters). ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.35em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"][data-fw-label="for"]::before {
+  background: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"][data-fw-label="against"]::before {
+  background: var(--fw-vermilion);
+}
+
+/* ── p3c9 Way 19: witness triads — glue each setup/quote/caption triad;
+   quotes keep the theme ochre shard-tick ONLY (C4 forbids vermilion/slate
+   body ticks even though the plate is mixed); attributions read as
+   signoffs, not photo captions (caption role per S4). ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="setup"] {
+  margin-bottom: 0.3em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="setup"]:first-of-type {
+  margin-top: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="quote"] {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="caption"] {
+  margin-top: 0;
+  margin-bottom: 2.25em;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: var(--fw-measure);
+  text-align: right;
+  font-family: var(--fw-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] .chapter-text > p:last-child {
+  margin-bottom: 0;
+}
+/* No drop cap on p3c9: theme already kills it. */
+
+/* ── p3c10 Way 20: theme quote (Blitz [6]) + coda ([9]) bases suffice.
+   Intentionally unchanged. ── */
+
+/* ── Shared cohort guards: responsive / reduced-motion / print. No ledger
+   index in this cohort (p3c4 reading.ledger is false), so no index rules. */
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"]::before {
+    width: 1.25rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="quote"] {
+    padding-left: 0.75rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="caption"] {
+    margin-bottom: 1.5em;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Plates are static — conformance guard only, no motion to kill. */
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c3"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c5"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c8"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c10"] #chapter-art {
+    animation: none;
+  }
+}
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"] {
+    border-left-color: var(--fw-bone);
+    background: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-row"] {
+    border-bottom: 0;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-head"]::before,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"]::before {
+    background: var(--fw-bone);
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="caption"] {
+    margin-bottom: 1.15em;
+  }
+}
+
+/* ── Cohort C · Part IV Way 22 ledger (pre-existing p4c2) ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .chapter-text > p:first-of-type {
+  font-style: italic;
+  color: var(--fw-faded);
+  max-width: 34rem;
+}
+
+/* Ledger heads: bone display caps with the plate's ochre tick repeated. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-head"] {
+  color: var(--fw-bone);
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-head"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.3em;
+  background: var(--fw-ochre);
+}
+
+/* Ledger rows: tabular rhythm; the Wilderness-years row is the ledger's joke. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-row"] {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.55em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-row"]:last-of-type {
+  border-bottom: 0;
+}
+
+/* Bullet rows keep their verbatim • (hanging indent only — no added tick). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="list-item"] {
+  text-indent: -1.5rem;
+}
+
+/* Clough verse [95–102]: centered stanza, tight leading, air around the block. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="verse"] {
+  text-align: center;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.15em;
+  line-height: 1.55;
+}
+
+/* Explainer prose (peerage [33–34], gov notes [104–108]) stays calm prose. */
+
+/* Sticky mini-index (facets.js injects nav.fw-index; theme ships the base).
+   Cohort extends: ledger typography + ochre index flags echoing the plate. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index {
+  font-family: var(--fw-display);
+  letter-spacing: 0.06em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index ol {
+  border-left: 0;
+  border-top: 2px solid var(--fw-ochre);
+  background: var(--bg-elevated);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index a::before {
+  content: "";
+  display: inline-block;
+  width: 0.9rem;
+  height: 2px;
+  margin-right: 0.5rem;
+  vertical-align: 0.25em;
+  background: var(--fw-ochre);
+  opacity: 0.7;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index a:hover::before,
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index a:focus-visible::before {
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index {
+    float: none;
+    position: static;
+    width: auto;
+    margin: 0 0 1.5rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    border-top: 2px solid var(--fw-ochre);
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index li {
+    margin: 0;
+  }
+}
+
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] .fw-index {
+    display: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c2"] p[data-fw="ledger-row"] {
+    border-bottom: 0;
+  }
+}
+
+/* ── Cohort C2 · Part IV Ways 21/23-30 ── */
+/* p4c6: gallery-hang captions — number rail + sepia frame-edge tick.
+   Labels come from data-fw-label (facets.js); numbers tabular. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"] {
+  position: relative;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 34rem;
+  padding: 0.9rem 1rem 0.9rem 4.25rem;
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::before {
+  content: attr(data-fw-label);
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 3.25rem;
+  text-align: right;
+  font-family: var(--fw-display);
+  font-size: 1.05rem;
+  color: var(--fw-bone);
+  font-variant-numeric: tabular-nums;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::after {
+  content: "";
+  position: absolute;
+  left: 3.75rem;
+  top: 1.05rem;
+  bottom: 1.05rem;
+  width: 6px;
+  background: var(--fw-faded);
+  opacity: 0.5;
+}
+/* Setup breathes above the hang; last caption closes without a rule. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="setup"] {
+  margin-bottom: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]:last-of-type {
+  border-bottom: 0;
+}
+
+/* p4c6: no drop cap — captions list, not a prose opener (reading.drop_cap
+   false; facets.js does not enforce it, so the kill lives here, mirroring
+   the theme §3 kill pattern). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* p4c10: colophon air above Part IV's closing benediction. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c10"] .chapter-text > p:only-child {
+  margin-top: 3rem;
+}
+
+/* p4c5: Richard II stanza — centered column, glued lines, air around. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c5"] p[data-fw="verse"] {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.15em;
+  line-height: 1.55;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c5"] p[data-fw="verse"]:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* p4c8: survival catalogue — tightened stack, tabular dates. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c8"] p[data-fw="list-item"] {
+  margin-bottom: 0.35em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* p4c1/p4c4 verdicts, p4c4 letters/captions, p4c9 speech/thesis, p4c7 quote,
+   p4c3 thesis: shared bases serve these exactly — no differential. */
+
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"] {
+    padding-left: 3.5rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::before {
+    width: 2.5rem;
+    font-size: 1rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::after {
+    left: 3rem;
+  }
+}
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"] {
+    border-bottom: 0;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c1"] p[data-fw="verdict"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c4"] p[data-fw="verdict"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c3"] p[data-fw="thesis"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c9"] p[data-fw="thesis"] {
+    break-after: avoid;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* C2 ships no plate motion; nothing to kill. Placemarker so the
+     validator can confirm the axis was considered. */
+}
+
+
+/* ── Cohort D · Intro + Part V Ways 31/32/34/35/37/38/39 ── */
+/* Note 1 — Intro lens opener (p1c1 ¶0 head is the served duplicate heading;
+   styled as the lens label; NEVER "§ · <subtitle>" — the part subtitle must
+   not be duplicated here). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="head"] {
+  color: var(--fw-bone);
+  letter-spacing: 0.22em;
+}
+/* p1c1 ¶16 speech: the book's first full peroration — widest measure in the
+   cohort with an ochre shard-tick spine (rule, not text — C4-legal). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="speech"] {
+  max-width: 40rem;
+  border-left: 3px solid var(--fw-ochre);
+}
+/* p1c1 ¶32 coda: extra top air; theme italic stands (no override). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="coda"] {
+  margin-top: 3rem;
+}
+
+/* ¶0 warm head: bone text, ochre left spine. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c1"] p[data-fw="verdict"] {
+  padding-left: 1rem;
+  border-left: 3px solid var(--fw-ochre);
+}
+/* ¶6 cold head: a verdict that FOLLOWS warm-case prose — keyed by sibling
+   context (content-addressed, not positional: the cold head always follows
+   a paragraph, the warm head opens the chapter). Bone text with a lampblack
+   inset panel (NOT slate/vermilion text — C4). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c1"] p + p[data-fw="verdict"] {
+  border-left: 0;
+  padding: 1rem 1.25rem;
+  background: var(--fw-lampblack);
+}
+/* First para of each half: small-caps lead line via ::first-line (no art
+   behind prose — a #chapter-text background split is FORBIDDEN). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c1"] p[data-fw="verdict"] + p::first-line {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+
+/* Note 3 — Inscription verse (p5c2 ¶¶5–17): ONE monumental centered block.
+   Served caps are already monumental — no added small-caps. Air lives on the
+   serving setup (¶4) and natural flow, never on verse-run position. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="verse"] {
+  text-align: center;
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.1em;
+  line-height: 1.6;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="setup"] {
+  margin-bottom: 2.5rem;
+}
+/* Memo ¶¶20–21: theme base + tabular routing rhythm on BOTH memos alike
+   (keying the routing line alone would need a positional selector — the
+   routing line is distinguished by content, not CSS). No slate/vermilion
+   chip — C4. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="memo"] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Note 4 — Dossier quote (p5c4 ¶8 Boneless Wonder): theme shard-tick stands;
+   cohort adds a bone double-bar spine (4px + 1px gap) marking the chapter's
+   single lifted voice. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] p[data-fw="quote"] {
+  border-left: 4px solid var(--fw-bone);
+  outline: 1px solid var(--fw-bone);
+  outline-offset: 5px;
+}
+/* p5c4 ¶11 thesis: theme size stands — centered as the Both-verdict plaque. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] p[data-fw="thesis"] {
+  text-align: center;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Note 5 — Quiz engine (p5c5). mask-q rows: tabular numerals, letterspaced
+   True/False pair, air-separated (hairline separators FORBIDDEN — no
+   hairline-box grammar). Ochre tick is a decorative rule — C4-legal. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] p[data-fw="mask-q"] {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] p[data-fw="mask-q"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.35em;
+  background: var(--fw-ochre);
+}
+/* Quiz-quotations (¶¶97–127) are SMALLER than chapter-quotations — a p5c5-only
+   refinement distinguishing statements-to-attribute from lifted voices. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] p[data-fw="quote"] {
+  font-size: 1.05rem;
+}
+/* Answers disclosure (facets.js wraps mask-a in details.fw-mask "Answers"):
+   vermilion left spine (large-display-adjacent rule — C4-legal); answers are
+   record, not voice — bone, non-italic. Instant toggle only (no reveal
+   animation — see reduced-motion note 10). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask {
+  border-left: 4px solid var(--fw-vermilion);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask p[data-fw="mask-a"] {
+  color: var(--fw-bone);
+  font-style: normal;
+}
+
+/* Note 6 — Portrait captions (p5c7 ¶8/¶9 closing pair): sepia-plate framing
+   echoing the p4c6 photo grammar WITHOUT copying it (rule only, no
+   frame-sepia tile). p5c7 ¶5 (braced-figure narration) stays prose — MUST NOT
+   be pulled as a quote. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c7"] p[data-fw="caption"] {
+  border: 1px solid var(--border-strong);
+  padding: 0.6rem 1rem;
+  max-width: 34rem;
+}
+
+/* Note 7 — Elegy pair (p5c8): ¶4 last words keep theme italic (served text
+   already quotes — NO added quote glyphs). ¶11 tablet is the stone
+   inscription — letterspaced small-caps. The 3rem air keys :last-of-type on
+   the ROLE: content-addressed (the tablet epitaph is always last), not
+   positional nth-child — legal. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c8"] p[data-fw="epitaph"]:last-of-type {
+  margin-top: 3rem;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  font-size: 1.1rem;
+}
+
+/* Note 8 — Verdict address (p5c9): ¶1 thesis speaks TO the reader — the only
+   italic thesis in the cohort (second-person emphasis WITHOUT color). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="thesis"] {
+  font-style: italic;
+}
+/* ¶¶9–10 epitaph vision pair: alive, not inscribed — staged line-height, NO
+   small-caps (deliberate contrast with p5c8 ¶11). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="epitaph"] {
+  line-height: 1.9;
+}
+/* ¶12 coda: the book-closing lens image as colophon. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="coda"] {
+  text-align: center;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Note 9 — Per-motif plate responsive. facets.js sets preserveAspectRatio
+   slice on the inline <svg>; at ≤560px slice crops edges. The four
+   left/right-weighted plates (p5c2 column x≈100–220, p5c4 right sheet,
+   p5c8 tablet x≈980–1100, p5c9 chair x≈670–860) switch to meet with a
+   lampblack letterbox so the motif stays whole; numerals stay ≥120px
+   effective. All other plates keep slicing. Plates NEVER hidden on phones
+   (ART-DIRECTION §4.1); theme guarantees min-height 220px. */
+@media (max-width: 560px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c8"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] #chapter-art {
+    background: var(--fw-lampblack);
+  }
+  /* preserveAspectRatio is a presentation attribute on the inline <svg>;
+     facets.js stamps slice at clone time; the meet switch for these four
+     plates is a one-line supervisor ruling at integration (facets.js reads
+     the manifest motif for the meet-list). Until then the lampblack
+     letterbox above keeps any slice-crop composited on the plate bed. */
+}
+
+/* ≤720px responsive: captions go full-width; wide openers collapse to the
+   shared measure (theme already caps .chapter-text p at 100%). */
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c7"] p[data-fw="caption"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p1c1"] p[data-fw="speech"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c2"] p[data-fw="verse"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c4"] p[data-fw="thesis"] {
+    max-width: 100%;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c9"] p[data-fw="coda"] {
+    max-width: 100%;
+  }
+}
+
+/* Note 10 — Reduced-motion / print. Plates are static SVG: NO plate motion
+   is specified anywhere in this cohort, so there is nothing to kill. The
+   answers disclosure toggles instantly (no reveal animation authored). */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask summary {
+    animation: none;
+    transition: none;
+  }
+}
+/* Print (note 5): answers must print — disclosure forced open, summary
+   retired; theme already hides plates and flattens the mask border. */
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask {
+    display: block;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask > summary {
+    display: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p5c5"] details.fw-mask p[data-fw="mask-a"] {
+    display: block;
+  }
+}

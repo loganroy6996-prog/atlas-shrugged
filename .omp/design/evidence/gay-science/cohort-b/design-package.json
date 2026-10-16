@@ -1,0 +1,1122 @@
+{
+ "direction": {
+  "chosen_direction": {
+   "belongs_to_book_one": "(1) Morning-climb: every panel sun sits low with an upward fan (Panel III grammar); Book One never reaches zenith. (2) Herd-vs-noble skirmishes (p3c1 herd/ebb-flood, p3c3 wink, p3c21 tablets, p3c50 ringfaces, p3c53 dim eye, p3c55 altar) are staged as emblems under ONE climbing sun: skirmish is content, morning is arena. (3) Theatrical set-pieces p3c22 (staged court-day), p3c30 (comedy of famous), p3c36 (falling Roman masks) + p3c29 (French unities) share the Footlights family + stage tone, framed by p3c1 comedy/tragedy and p3c54 dead mask. (4) Epicurean noon-flash p3c45 (afternoon of antiquity, whitish sea) breaks cohort light exactly once: a noon flash-forward legible only against 55 mornings. (5) Sleepwalker climax p3c54 resolves into DANCE (dance of spirits, earthly dance, master of ceremony): landmark panel reintroduces cover vermilion leapers, handing Book One to the book dance grammar; p3c56 conjured monster faces the horizon toward Book Two masks (Panel IV).",
+   "color": "NOON tokens per book brief (brief wins): Abyssal Sea #06222B, Noon Gold #F5B301, Dance Vermilion #E4572E, Wave Ultramarine #173A8F, Foam Bone #F3EAD8, Dusk Aubergine #2A1540. Cohort adds no hues; 12 light-keys recombine these six.",
+   "layout": "Calm centered reading column (Source Serif, 65ch). #chapter-art ABOVE #chapter-meta (verified) carries all art in 3 geometries: MARK (centered emblem 72-128px, quiet/standard/duet/closing), ESSAY plate (56rem mural, horizon+sun+fan+emblem), LANDMARK plate (72rem composition; p3c1 76rem). Square-edged plates with horizon hairlines; zero radius/shadow/cards. Benchmark: nav/progress/TOC/meta-rule carry NOON authorship; body text untouched.",
+   "name": "C \u2014 Morning Field-Work: the Emblem Cabinet (CHOSEN, within NOON)",
+   "principles": [
+    "One mural hand: flat fills, round-cap strokes, Matisse-grammar gestures; no gradients (theme-safe x8).",
+    "Fixed morning light: sun always climbs low; only p3c45 breaks it (noon), p3c48 dims it (distress). Light is narrative.",
+    "Content-assigned everything: every symbol/tone/scale from observed prose; zero index-derived variation.",
+    "Boldness in one place: authored art + designed controls. Zero cohort animation (art.css owns meta motion).",
+    "Theatre as family not house: Footlights motifs serve stage chapters inside NOON."
+   ],
+   "type": "Fraunces 600 (var(--gs-display)) chapter titles, mural inscription; Source Serif 4 (var(--gs-body)) body 1.3rem/1.85; meta-part letterspaced small-caps Source Serif gold. No sans in cohort scope. Fraunces italic ONLY p3c22+p3c54 landmark titles; gold title ONLY p3c45."
+  },
+  "direction_comparison": [
+   {
+    "name": "A \u2014 Continuous Climb (literal NOON)",
+    "summary": "Opener sun rises fractionally p3c1 (low) to p3c56 (high morning); shorts get ray-tick at altitude, essays horizon bands.",
+    "verdict": "REJECTED: (1) altitude-by-index is order-derived, modulo/hash-adjacent, violates RELAUNCH spirit; (2) 56 imperceptible variants = the rejected weak-change failure; (3) 56 variants are 56 illustrations, not a one-file symbol system."
+   },
+   {
+    "name": "B \u2014 Footlights (against NOON: stagecraft house)",
+    "summary": "Full theatre rebuild: footlight rows, valances, masks, prompter box, applause fans; sun becomes spotlight, sea the dark house. True to p3c22/p3c30/p3c36 + comedy/tragedy frame (p3c1, p3c54 dead mask).",
+    "verdict": "REJECTED as lead, ADOPTED as family: full identity fights supervisor NOON + Panel III part motif (reads as another book). Its symbols (curtain/bell/slip/pillow/laurel/masks/prompter/plumes) + stage tone serve stage chapters inside NOON."
+   },
+   {
+    "name": "C \u2014 Morning Field-Work: Emblem Cabinet (within NOON)",
+    "summary": "NOON tokens + mural hand + fixed climbing-morning light + ~64 emblem/light atoms recombined into 6 essay panels, 6 landmark panels, 2 duet marks. Moral-psychology field labor (p3c7 field, p3c41 experiments, p3c8 lens) as emblems under one sun.",
+    "verdict": "CHOSEN: fits 3 files (atoms+panels/1 SVG; twin part-systems+6 landmarks/1 CSS; 56 explicit entries/1 JSON); all assignment from prose; harmonizes with cover leaper/gull/ray hand, Panel III climbing morning, day-cycle arc."
+   }
+  ],
+  "skills_note": "skill://frontend-design + skill://frontend-workflow + skill://reference-study all read FIRST via URIs; zero fallbacks; /designer OFF. Self-critique: brief tokens honored; no cream/terracotta, acid-black, broadsheet, SaaS cards, or template chrome (no added eyebrows/labels/arrows); motion zero."
+ },
+ "motifs_a": {
+  "atoms_light_stage": [
+   {
+    "box": "0 0 240 150, origin bottom-center",
+    "draws": "Upper-hemisphere morning fan: 9 round-cap rays alternating --gs-sun w5 / --gs-vermilion w4, -75..+75deg. Class gs-b-ray.",
+    "id": "gs-b-rayfan"
+   },
+   {
+    "box": "0 0 120 120",
+    "draws": "Climbing disc: --gs-sun fill + --gs-sun-core inner ring. Flat. Class gs-b-disc.",
+    "id": "gs-b-sunlow"
+   },
+   {
+    "box": "0 0 120 120",
+    "draws": "Overhead noon disc: larger core + tight double halo. Brightest flats in file. p3c45 ONLY.",
+    "id": "gs-b-sunhigh"
+   },
+   {
+    "box": "0 0 300 24",
+    "draws": "Horizon rule --gs-horizon w2.5 + one wave tick (pd-wave grammar) foam.",
+    "id": "gs-b-horizon"
+   },
+   {
+    "box": "0 0 720 120",
+    "draws": "3 flat bands sea-deep/sea/wave(.8) + crest ticks. Class gs-b-ground.",
+    "id": "gs-b-seabands"
+   },
+   {
+    "box": "0 0 60 24",
+    "draws": "Double-arc gull, foam w3.5 round (gs-gull hand, own id).",
+    "id": "gs-b-gull"
+   },
+   {
+    "box": "0 0 40 40",
+    "draws": "4-point star, foam. Self-contained (cover #gs-spark undefined). p3c51 solo.",
+    "id": "gs-b-spark"
+   },
+   {
+    "box": "0 0 120 120",
+    "draws": "Vermilion leaper, gs-dancer hand simplified: head + 3 gesture paths + 2 dots.",
+    "id": "gs-b-leaper"
+   },
+   {
+    "box": "0 0 120 120",
+    "draws": "Comedy mask tilted 20deg, 3 falling ticks, foam line + vermilion mouth.",
+    "id": "gs-b-mask-fall"
+   },
+   {
+    "box": "0 0 200 120",
+    "draws": "Comedy+tragedy small pair, foam strokes.",
+    "id": "gs-b-masks-pair"
+   },
+   {
+    "box": "0 0 300 160",
+    "draws": "Valance + 2 parted drapes, vermilion masses, gold tiebacks, foam edge.",
+    "id": "gs-b-curtain"
+   },
+   {
+    "box": "0 0 120 120",
+    "draws": "Tower bell gold + 3 foam sound arcs. Class gs-b-disc on bell.",
+    "id": "gs-b-bell"
+   },
+   {
+    "box": "0 0 120 90",
+    "draws": "Torn programme slip, foam .9, 3 broken rules, torn edge.",
+    "id": "gs-b-slip"
+   },
+   {
+    "box": "0 0 140 90",
+    "draws": "2 stacked smothering pillows, foam + dusk seams. Heavy mass.",
+    "id": "gs-b-pillow"
+   },
+   {
+    "box": "0 0 120 120",
+    "draws": "Laurel sprig: stem + 7 gold leaves. Rome marker.",
+    "id": "gs-b-laurel"
+   }
+  ],
+  "file": "art/cohort-b.svg: ONE self-contained sprite, 62 atoms + 14 panels = 76 symbols, all gs-b-* ids, plain ids (reader clones by getElementById). Zero cross-file refs. Atoms carry classes gs-b-ray/gs-b-disc/gs-b-ink/gs-b-ground/gs-b-ember for tone modulation.",
+  "shared_hand": "Flat fills ONLY (no gradients, theme-safe x8); round-cap strokes; gold=sun/light, core=pale maxima, vermilion=bodies, foam=linework, sea/deep/wave=grounds, dusk=shadow/dream, horizon=rules. Emblem boxes 120-260px; strokes 5-7px; min feature 4px (legible at 72px). Inherits cover gs-dancer / pd-rays / pd-wave gesture language; all paths cohort-original."
+ },
+ "motifs_b": {
+  "atoms_content": [
+   {
+    "draws": "9 overlapping back-arcs alternating sea/foam(.5), one vermilion bellwether hump.",
+    "id": "gs-b-herd"
+   },
+   {
+    "draws": "Ebb/flood double wave: opposed sine bands gold+foam.",
+    "id": "gs-b-tide"
+   },
+   {
+    "draws": "Balance beam tilted 12deg, one pan low (underweight), one high. Gold beam, foam pans.",
+    "id": "gs-b-scales"
+   },
+   {
+    "draws": "Half-closed eye: lid + 3 lashes + corner spark. Lid gold.",
+    "id": "gs-b-wink"
+   },
+   {
+    "draws": "Open calm eye: foam almond, gold iris (gs-b-disc), deep pupil.",
+    "id": "gs-b-eye"
+   },
+   {
+    "draws": "3 flame tongues gold/vermilion/core over ember dots on ash line.",
+    "id": "gs-b-flame"
+   },
+   {
+    "draws": "Herald drum: foam head + vermilion shell + crossed sticks + beat ticks.",
+    "id": "gs-b-drum"
+   },
+   {
+    "draws": "Striding head profile, 3 gear teeth + spoke arcs inside skull.",
+    "id": "gs-b-headwheel"
+   },
+   {
+    "draws": "Furrows converging to horizon + rising sun tick. Gold on sea.",
+    "id": "gs-b-field"
+   },
+   {
+    "draws": "Gold lens ring over 3 reptile-scale arcs, one hatched.",
+    "id": "gs-b-lens"
+   },
+   {
+    "draws": "Stem + 2 vermilion leaves breaking soil line; root ticks.",
+    "id": "gs-b-seedling"
+   },
+   {
+    "draws": "Closed-eye ancestor oval, bone .85 on dusk crescent + ghost rim.",
+    "id": "gs-b-ancestor"
+   },
+   {
+    "draws": "2 sine paths crossing 3x, gold + vermilion.",
+    "id": "gs-b-strand"
+   },
+   {
+    "draws": "Extended open palm: mitt + 4 fingers + gold cuff arc.",
+    "id": "gs-b-hand-open"
+   },
+   {
+    "draws": "Hooked grasping fingers closing on a small dot it cannot hold.",
+    "id": "gs-b-hand-grasp"
+   },
+   {
+    "draws": "Mountain silhouette + vermilion climber dot at 2/3 + disenchantment tick.",
+    "id": "gs-b-mountain"
+   },
+   {
+    "draws": "Footbridge arc over torrent gap (3 zigzag ticks); one end broken.",
+    "id": "gs-b-bridge"
+   },
+   {
+    "draws": "3 wavy stream lines in a cradling laurel arc.",
+    "id": "gs-b-stream"
+   },
+   {
+    "draws": "Greek column stub + 4-step rank staircase.",
+    "id": "gs-b-column"
+   },
+   {
+    "draws": "Bent windswept tree on cliff + 5 streaked branches + 3 storm slashes.",
+    "id": "gs-b-tree"
+   },
+   {
+    "draws": "Jester cap (3 bells) over a snapped ledger line.",
+    "id": "gs-b-cap"
+   },
+   {
+    "draws": "2 tablets: UP chevron (shalt) + DOWN chevron (shalt not), cracked between.",
+    "id": "gs-b-tablets"
+   },
+   {
+    "draws": "Autumn branch + 3 falling vermilion apples + fall ticks; one seeding.",
+    "id": "gs-b-applefall"
+   },
+   {
+    "draws": "Wine cup (vermilion) vs medicine cup (foam + cross).",
+    "id": "gs-b-twocups"
+   },
+   {
+    "draws": "Profile turned from receding spark; heel-turn arc beneath.",
+    "id": "gs-b-turned"
+   },
+   {
+    "draws": "S-snake + discarded slough arc; eye dot on living curve only.",
+    "id": "gs-b-shed"
+   },
+   {
+    "draws": "Hooded rising triangle + 3 falling ballast stones.",
+    "id": "gs-b-hood"
+   },
+   {
+    "draws": "Prompter half-dome + head + 3 whisper dots.",
+    "id": "gs-b-prompter"
+   },
+   {
+    "draws": "3 fanned plumes gold/foam/vermilion with quills.",
+    "id": "gs-b-plumes"
+   },
+   {
+    "draws": "Hunter bow arc + string + nocked arrow.",
+    "id": "gs-b-bow"
+   },
+   {
+    "draws": "2 doors: open (light wedge) + ajar (slit).",
+    "id": "gs-b-twodoors"
+   },
+   {
+    "draws": "Sunbeam wedge into vault arcs; 3 secret-dots rising in beam.",
+    "id": "gs-b-sunbeam"
+   },
+   {
+    "draws": "Stake + flame + snapped halo (sprung arc ends).",
+    "id": "gs-b-pyre"
+   },
+   {
+    "draws": "3 candles tall/mid/short (Newton/Voltaire/Spinoza) before altar arc.",
+    "id": "gs-b-threecandles"
+   },
+   {
+    "draws": "Lit match diagonal over keg stave-arcs; spark about to land.",
+    "id": "gs-b-match"
+   },
+   {
+    "draws": "Tipped cup + taste-drop + spill arc + ridiculum slash.",
+    "id": "gs-b-cup"
+   },
+   {
+    "draws": "Sword crossed over factory chimney + smoke ticks.",
+    "id": "gs-b-swordfire"
+   },
+   {
+    "draws": "Flask triangle + bubbles + trial tick; gold liquor.",
+    "id": "gs-b-flask"
+   },
+   {
+    "draws": "Path to horizon + walker tick + bow-tip on skyline.",
+    "id": "gs-b-horizonpath"
+   },
+   {
+    "draws": "Law tablet cracked + dark foreign wedge driven in.",
+    "id": "gs-b-lawtablet"
+   },
+   {
+    "draws": "Lever on fulcrum gripped by dusk shadow-hand; effort arcs.",
+    "id": "gs-b-lever"
+   },
+   {
+    "draws": "Iron C-clamp + screw; one jaw sprung.",
+    "id": "gs-b-clamp"
+   },
+   {
+    "draws": "Muzzled court mouth: lip line + strap + Versailles bow.",
+    "id": "gs-b-muzzle"
+   },
+   {
+    "draws": "Iron manacle ring + chain link + strain ticks.",
+    "id": "gs-b-manacle"
+   },
+   {
+    "draws": "Wheel hub + 6 spokes + 5 flung drops on tangents.",
+    "id": "gs-b-wheel"
+   },
+   {
+    "draws": "1 figure tick ringed by 8 cold-dot face circles.",
+    "id": "gs-b-ringfaces"
+   },
+   {
+    "draws": "3 mouth arcs + 3 expanding echo waves.",
+    "id": "gs-b-echo"
+   },
+   {
+    "draws": "3 whitish sea bands (core .85/.6/.4) + 2 rock wedges + 3 fish arcs.",
+    "id": "gs-b-whitesea"
+   },
+   {
+    "draws": "Ridge + dreamer silhouette mid-step over void; 3 dream arcs above.",
+    "id": "gs-b-sleepwalker"
+   },
+   {
+    "draws": "Stone altar + lone tall flame + void tick (unknown god).",
+    "id": "gs-b-altar"
+   },
+   {
+    "draws": "Horizon monster: hump + 2 horns + 3 eyes; crowd ticks below.",
+    "id": "gs-b-monster"
+   }
+  ]
+ },
+ "motifs_c": {
+  "panels": [
+   {
+    "id": "gs-b-panel-wink",
+    "layout": "720x320: seabands base, horizon, sunlow left + fan, wink x1.6 right, 2 gulls, 3 sparks. Suspicion under morning.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-wink",
+     "gs-b-gull",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-panel-field",
+    "layout": "720x320: field lower half to horizon; sunlow + full fan upper-left; gull; gold furrows.",
+    "uses": [
+     "gs-b-field",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-horizon",
+     "gs-b-gull",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-panel-hand",
+    "layout": "720x320: hand-open large right over bands (dependents below); sunlow left + fan; 2 equal-dot ticks facing hand.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-hand-open",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-panel-grasp",
+    "layout": "720x320: grasp upper-center over PALED bands (tiring landscape); spark-triplet ideal-star above grasp (shared higher thirst).",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-hand-grasp",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-panel-applefall",
+    "layout": "720x320: branch upper-left, apples falling center over dusk-tinged bands; one apple seeding below.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-applefall",
+     "gs-b-gull"
+    ]
+   },
+   {
+    "id": "gs-b-panel-manacle",
+    "layout": "720x320: manacle large center on darkened bands; rayfan opacity .35 (lowest in file); no gulls; 1 guttering spark. Age of fear.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-manacle",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-land-herd",
+    "layout": "1200x420 WIDEST: bands+horizon+sunlow center r56+full fan+herd band+tide strip+masks-pair small right+4 gulls+6 sparks. Near-symmetrical Munch grammar. Grandest opener.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-herd",
+     "gs-b-tide",
+     "gs-b-masks-pair",
+     "gs-b-gull",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-land-tablets",
+    "layout": "960x420: tablets monumental center on herd arc below; fan stern/narrow; iron.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-tablets",
+     "gs-b-herd",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-land-court",
+    "layout": "960x420: curtain valance full-width top; bell large left + arcs; torn slip center-right; low sun + fan behind; vermilion-forward.",
+    "uses": [
+     "gs-b-curtain",
+     "gs-b-bell",
+     "gs-b-slip",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-seabands",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-land-lastwords",
+    "layout": "960x420: mask-fall large center-left; laurel right; pillows heavy bottom; low dusk sun.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-mask-fall",
+     "gs-b-laurel",
+     "gs-b-pillow"
+    ]
+   },
+   {
+    "id": "gs-b-land-epicurus",
+    "layout": "960x420 BRIGHTEST: sunhigh TOP-CENTER (only overhead sun); whitesea + rocks + fish below; calm eye small center over still surface; 5 sparks. No horizon darkness.",
+    "uses": [
+     "gs-b-sunhigh",
+     "gs-b-whitesea",
+     "gs-b-eye",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-land-sleepwalker",
+    "layout": "960x420: ridge+dreamer center over void; morning fan he must not wake to; 2 leapers margins; masks-pair tiny (no dead mask); 4 will-o-wisp sparks.",
+    "uses": [
+     "gs-b-seabands",
+     "gs-b-horizon",
+     "gs-b-sunlow",
+     "gs-b-rayfan",
+     "gs-b-sleepwalker",
+     "gs-b-leaper",
+     "gs-b-masks-pair",
+     "gs-b-spark"
+    ]
+   },
+   {
+    "id": "gs-b-m-plumemask",
+    "layout": "240x120 duet: plumes fanned left + mask-fall small right, shared baseline.",
+    "uses": [
+     "gs-b-plumes",
+     "gs-b-mask-fall"
+    ]
+   },
+   {
+    "id": "gs-b-m-bowscale",
+    "layout": "240x120 duet: bow crossed over scales, centered.",
+    "uses": [
+     "gs-b-bow",
+     "gs-b-scales"
+    ]
+   }
+  ],
+  "slot_per_class": "MARK: one atom (or duet) centered above meta at 72px quiet / 104px standard / 196px duet / 128px closing; no plate. ESSAY: 720x320 plate, max-width 56rem, horizon sun-road rules top/bottom. LANDMARK: 960x420 (p3c1 1200x420), max-width 72/76rem. Tone classes add light-keys; read classes set scale."
+ },
+ "css_a": {
+  "conventions": "P = twin selector body[data-part-id='part-3'] X, body[data-part='III'] X. part-id preferred (contract), part=III live (verified hook). Landmarks use body[data-chapter] (live). Merge: class=gs-b-opener-{opener} gs-b-tone-{palette_role} gs-b-read-{reading_treatment}; motif=motif_asset; src=art/cohort-b.svg; symbol=motif_asset; NO default. Zero reader-* classes; no !important; no TOC/cover selectors from cohort EXCEPT benchmark TOC part-III rule (see GN). All fills via --gs-* (8-theme safe).",
+  "guards": [
+   "max-width 560px: essay/landmark slot margins 2rem; marks quiet 60 / standard 88 / duet 160 / closing 104 / glare 104px; nav single-column inherits.",
+   "print: art backgrounds transparent, borders none; essay/landmark svg max-height 3.4in centered; marks 56px; nav/progress hidden by shared.",
+   "prefers-reduced-motion: no rule needed (cohort authors zero motion)."
+  ],
+  "part_systems": [
+   "P #chapter-art.gs-b-opener-mark{display:flex;justify-content:center;margin:0 auto 2.25rem} read-quiet svg 72px; read-standard 104px; read-duet width 196px; read-closing 128px.",
+   "P #chapter-art.gs-b-opener-essay{margin:0 auto 2.75rem;max-width:56rem;background:linear-gradient(180deg,color-mix(in srgb,var(--gs-sea-deep) 72%,transparent),color-mix(in srgb,var(--gs-sea-deep) 38%,transparent));border-top/bottom:1px solid var(--gs-horizon)} svg{display:block;width:100%}",
+   "P #chapter-art.gs-b-opener-landmark{margin:0 auto 3rem;max-width:72rem;background:linear-gradient(180deg,color-mix(in srgb,var(--gs-sea-deep) 60%,transparent),transparent 85%);border-top/bottom:1px solid var(--gs-horizon} svg full-width",
+   "TONES: essay{border-top:1px solid color-mix(sun 45%)} iron svg{saturate .8 contrast 1.06} stage{border-top 2px vermilion 65%; vermilion radial wash} autumn{dusk-to-vermilion wash; svg sepia .18} shadow{dusk wash; svg brightness .84 saturate .82} noon{sun-core wash 16%; border sun 55%; svg bright 1.06} dream{dusk radial 60%; svg saturate 1.12} dim svg{opacity .78 saturate .65} ember{vermilion radial wash} glare.mark svg{128px; brightness 1.28 saturate 1.12} closing{bottom sun wash; border-bottom sun 40%}; morning=default, no declarations.",
+   "P .meta-part{font-family:var(--gs-body);font-variant-caps:all-small-caps;letter-spacing:.24em;color:var(--gs-sun);opacity:.9}",
+   "P .meta-title{font-family:var(--gs-display);font-weight:600;font-size:clamp(2rem,5vw,3.25rem);line-height:1.08;letter-spacing:-.01em;color:var(--gs-foam);text-wrap:balance}",
+   "P .meta-rule span{width:7rem;height:2px;border-radius:0;background:linear-gradient(90deg,transparent,var(--gs-sun) 25%,var(--gs-vermilion) 75%,transparent);opacity:.9} \u2014 horizon sun-road; keeps art.css glow.",
+   "P .chapter-text{font-family:var(--gs-body)} \u2014 size/leading/measure inherit prefs.",
+   "FORWARD data-art drop-cap: body[data-art^='gs-b-panel-'] and [^='gs-b-land-'] p:first-of-type::first-letter{font-family:var(--gs-display);font-weight:600;color:var(--gs-sun)} \u2014 family-prefix grouped, not per-chapter, not modulo. art.css bg/glow + reader size/float untouched."
+  ],
+  "rule_counts": "Part: 9 blocks + benchmark 6 blocks. Landmark: 6 chapter values. Forward data-art: 1. Guards: 3. No new pseudos, no animations."
+ },
+ "css_b": {
+  "benchmark_controls": {
+   "note": "Per BENCHMARK RAISE (parent IRC) + USER-FEEDBACK.md: every control must show NOON authorship. All rules remain P-scoped (part twins) except B6 TOC (drawer persists across chapters; key on body[data-chapter^='p3c'] which is TRUE only while reading Book One \u2014 content-assigned, not index-derived).",
+   "rules": [
+    "B1 PROGRESS = sun-road sweep: P .progress-fill{background:linear-gradient(90deg,var(--gs-sea) 0%,var(--gs-sun) 55%,var(--gs-vermilion) 100%);box-shadow:0 0 12px color-mix(in srgb,var(--gs-sun) 45%,transparent)} \u2014 the day climbing left-to-right as you read.",
+    "B2 NAV = horizon tablets: P .nav-btn{border:1px solid var(--border-strong);border-radius:0;background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--gs-sea-deep) 45%,transparent));border-top:2px solid color-mix(in srgb,var(--gs-sun) 40%,transparent)} P .nav-btn:hover:not(:disabled){border-top-color:var(--gs-sun);background:color-mix(in srgb,var(--gs-sea-deep) 60%,transparent);transform:none} P .nav-label{font-family:var(--gs-body);letter-spacing:.22em;color:var(--gs-sun);opacity:.85} P .nav-title{font-family:var(--gs-display);font-style:italic} P .nav-btn.prev{text-align:left;border-left:2px solid color-mix(in srgb,var(--gs-vermilion) 45%,transparent)} P .nav-btn.next{border-right:2px solid color-mix(in srgb,var(--gs-vermilion) 45%,transparent)} \u2014 prev/next as facing tablets; italic Fraunces titles; no lift animation (calm).",
+    "B3 HEADER wordmark: P .header-chapter{font-family:var(--gs-display);font-style:italic} P .header-part{font-family:var(--gs-body);font-variant-caps:all-small-caps;letter-spacing:.2em;color:var(--gs-sun)} P .reader-header.scrolled{box-shadow:0 8px 24px rgba(0,0,0,.35),0 1px 0 color-mix(in srgb,var(--gs-sun) 25%,transparent)}",
+    "B4 SETTINGS = dipped controls: P .settings-card{border-top:2px solid var(--gs-sun);border-radius:0} P .settings-card h3,#settings-title{font-family:var(--gs-display);font-style:italic} P .seg-btn.active{background:color-mix(in srgb,var(--gs-sun) 18%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gs-sun) 45%,transparent)} \u2014 active pref glows sun-soft.",
+    "B5 TOC BOOK-ONE chapters: body[data-chapter^='p3c'] .toc-chapter[data-chapter-id^='p3c'] .toc-num{font-family:var(--gs-display);color:var(--gs-sun)} body[data-chapter^='p3c'] .toc-chapter[data-chapter-id^='p3c'].active{background:color-mix(in srgb,var(--gs-sun) 14%,transparent);border-left-color:var(--gs-sun)} body[data-chapter^='p3c'] .toc-chapter[data-chapter-id^='p3c'].read .toc-check{background:var(--gs-sun);border-color:var(--gs-sun);color:var(--gs-night)} \u2014 gold numerals, sun-washed active row, sun read-seals; other parts untouched.",
+    "B6 TOC PART-III header (benchmark override of lead constraint): body[data-chapter^='p3c'] .toc-part:nth-of-type(3) .toc-part-header{color:var(--gs-sun);letter-spacing:.24em;font-family:var(--gs-display);font-style:italic} \u2014 'Part III \u00b7 Book One' set as a gold inscription while reading Book One; MUST retire old theme.css nth-of-type TOC glyph rules at conform (GN5) so no double-claim."
+   ]
+  },
+  "landmark_rules": [
+   "L1 p3c1: .meta-title{font-size:clamp(2.6rem,7vw,4.25rem)} .meta-rule span{width:11rem} slot max-width 76rem + border-top sun 55%. Grandest title + widest plate.",
+   "L2 p3c21: .meta-title{letter-spacing:.01em} .meta-rule span{background:linear-gradient(90deg,transparent,var(--gs-vermilion) 30%,var(--gs-foam) 70%,transparent)} slot 72rem. Stern iron.",
+   "L3 p3c22: .meta-title{font-style:italic} slot 72rem + margin-bottom 3.25rem. Staged manners.",
+   "L4 p3c36: .meta-rule span{background:linear-gradient(90deg,transparent,var(--gs-dusk) 25%,var(--gs-vermilion) 75%,transparent)} slot 72rem. Dusk-to-vermilion for falling mask.",
+   "L5 p3c45: .reader-body{background:radial-gradient(90% 420px at 50% 0%,color-mix(in srgb,var(--gs-sun-core) 10%,transparent),transparent 70%)} .meta-title{color:var(--gs-sun)} slot 72rem. THE noon-flash: alpha-.10 wash + only gold title.",
+   "L6 p3c54: .meta-title{font-style:italic;letter-spacing:.005em} .meta-rule span{background:linear-gradient(90deg,transparent,var(--gs-dusk) 30%,var(--gs-sun) 70%,transparent)} slot 72rem. Visionary italic; dusk-to-gold."
+  ]
+ },
+ "map_a": {
+  "chapters_1_14": [
+   {
+    "id": "p3c1",
+    "motif": "gs-b-land-herd",
+    "o": "landmark-panel",
+    "r": "Programmatic opener, longest (1239w): herd instinct as species-essence, ebb-and-flood law, comedy/tragedy as preservation. Grandest panel.",
+    "rt": "grand",
+    "t": "essay",
+    "wc": 1239
+   },
+   {
+    "id": "p3c2",
+    "motif": "gs-b-scales",
+    "o": "mark",
+    "r": "Lonely conscience watches the majority handle scales with underweight weights; tilted balance is the one concrete image.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 340
+   },
+   {
+    "id": "p3c3",
+    "motif": "gs-b-panel-wink",
+    "o": "essay-opener",
+    "r": "Common natures wink at nobility, suspect advantage, laugh at the sparkle in the noble eye: the eternal injustice of the noble.",
+    "rt": "essay",
+    "t": "essay",
+    "wc": 644
+   },
+   {
+    "id": "p3c4",
+    "motif": "gs-b-flame",
+    "o": "mark",
+    "r": "Strongest evil spirits rekindle dozing passions, topple boundary stones; flame catching on cold embers.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 278
+   },
+   {
+    "id": "p3c5",
+    "motif": "gs-b-drum",
+    "o": "mark",
+    "r": "Pathos-merchants need the unconditional ought as drumbeat: Mazzini, categorical imperative, mouthed principles.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 303
+   },
+   {
+    "id": "p3c6",
+    "motif": "gs-b-headwheel",
+    "o": "mark",
+    "r": "Reflection lost ceremony; unstoppable head-machine thinks while walking. Striding head with works inside.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 165
+   },
+   {
+    "id": "p3c7",
+    "motif": "gs-b-panel-field",
+    "o": "essay-opener",
+    "r": "Immense unploughed field of moral study: unwritten histories of love/avarice/envy, toward future cyclops-buildings.",
+    "rt": "essay",
+    "t": "essay",
+    "wc": 440
+   },
+   {
+    "id": "p3c8",
+    "motif": "gs-b-lens",
+    "o": "mark",
+    "r": "Real virtues hide like sculptures on reptile scales, visible only under a microscope not yet invented.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 265
+   },
+   {
+    "id": "p3c9",
+    "motif": "gs-b-seedling",
+    "o": "mark",
+    "r": "Feeble traits erupt into light centuries later; hidden gardens within. Sprout breaking soil.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 154
+   },
+   {
+    "id": "p3c10",
+    "motif": "gs-b-ancestor",
+    "o": "mark",
+    "r": "Rare humans are late ghosts of past cultures to nurse and honour, at an andante tempo of development.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 217
+   },
+   {
+    "id": "p3c11",
+    "motif": "gs-b-eye",
+    "o": "mark",
+    "r": "Consciousness the latest unfinished organ; making knowledge instinctive only dawning on the human eye. Raw ember eye.",
+    "rt": "standard",
+    "t": "ember",
+    "wc": 295
+   },
+   {
+    "id": "p3c12",
+    "motif": "gs-b-strand",
+    "o": "mark",
+    "r": "Pleasure/displeasure intertwined: jubilation unto heaven requires grief unto death. Two crossing strands.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 312
+   },
+   {
+    "id": "p3c13",
+    "motif": "gs-b-panel-hand",
+    "o": "essay-opener",
+    "r": "Benefiting/hurting both power exercised; pain asks its cause, pleasure stops with itself. Extended hand over dependents and equals.",
+    "rt": "essay",
+    "t": "essay",
+    "wc": 558
+   },
+   {
+    "id": "p3c14",
+    "motif": "gs-b-panel-grasp",
+    "o": "essay-opener",
+    "r": "Greed/love one instinct named twice; outstretched hands while the most beautiful landscape tires in three months; friendship as higher thirst.",
+    "rt": "essay",
+    "t": "essay",
+    "wc": 611
+   }
+  ],
+  "key": "o=opener(mark/essay-opener/landmark-panel) t=palette_role(tone) rt=reading_treatment; part=part-3 for all; order=chapter number; full titles per TOC (verified). Engineer: class=gs-b-opener-{o} gs-b-tone-{t} gs-b-read-{rt}; motif+symbol=motif; src=art/cohort-b.svg; annotate part/order/title."
+ },
+ "map_b": {
+  "chapters_15_28": [
+   {
+    "id": "p3c15",
+    "motif": "gs-b-mountain",
+    "o": "mark",
+    "r": "Mountain enchants only from below and distance; climb it and magic dies. Silhouette + tiny climber.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 155
+   },
+   {
+    "id": "p3c16",
+    "motif": "gs-b-bridge",
+    "o": "mark",
+    "r": "'Do you want to cross the footbridge to me?' refused, until mountains and torrents divide. The bridge is the story.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 201
+   },
+   {
+    "id": "p3c17",
+    "motif": "gs-b-stream",
+    "o": "mark",
+    "r": "Wise gardener lays the poor stream in a nymph's arms to dignify it. Trickle cradled; quiet for 97w.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 97
+   },
+   {
+    "id": "p3c18",
+    "motif": "gs-b-column",
+    "o": "mark",
+    "r": "Ancient nobility's hue needed distance: the Greek barely saw the slave, not even Plato. Now flattened by equality.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 210
+   },
+   {
+    "id": "p3c19",
+    "motif": "gs-b-tree",
+    "o": "mark",
+    "r": "No proud tree without storms; poison killing the weak strengthens the strong. Windswept tree, quiet.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 93
+   },
+   {
+    "id": "p3c20",
+    "motif": "gs-b-cap",
+    "o": "mark",
+    "r": "Under coming tyranny of prudence, to be noble = entertain follies. Cap outlasting ledger.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 108
+   },
+   {
+    "id": "p3c21",
+    "motif": "gs-b-land-tablets",
+    "o": "landmark-panel",
+    "r": "'Teachers of...' pair with p3c1 (957w): virtues praised for society's use while dominating possessors; self-refuting Thou-shalt/Thou-shalt-not.",
+    "rt": "essay",
+    "t": "iron",
+    "wc": 957
+   },
+   {
+    "id": "p3c22",
+    "motif": "gs-b-land-court",
+    "o": "landmark-panel",
+    "r": "Most formally eccentric: staged court-day monologue, bad weather unspoken, Montaigne's stone, five-o'clock bell, world improvising.",
+    "rt": "dramatic",
+    "t": "stage",
+    "wc": 416
+   },
+   {
+    "id": "p3c23",
+    "motif": "gs-b-panel-applefall",
+    "o": "essay-opener",
+    "r": "Corruption as a people's autumn: colourful superstition vs pale faith, Napoleon's 'That is me,' apples as seed-bearers of future.",
+    "rt": "essay",
+    "t": "autumn",
+    "wc": 980
+   },
+   {
+    "id": "p3c24",
+    "motif": "gs-b-twocups",
+    "o": "mark",
+    "r": "Weak discontents take opiates (beautiful); strong take physicians (better). Wine cup vs medicine cup.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 301
+   },
+   {
+    "id": "p3c25",
+    "motif": "gs-b-turned",
+    "o": "mark",
+    "r": "Stupid humility turns on heel from the striking: 'too many old truths.' Averted profile, quiet.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 129
+   },
+   {
+    "id": "p3c26",
+    "motif": "gs-b-shed",
+    "o": "mark",
+    "r": "Life = continual shedding of what wants to die, against Moses' 'thou shalt not kill.' Slough, quiet 67w.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 67
+   },
+   {
+    "id": "p3c27",
+    "motif": "gs-b-hood",
+    "o": "mark",
+    "r": "Renouncer casts ballast to soar higher, hiding pride under the hood: secretly an affirmer.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 151
+   },
+   {
+    "id": "p3c28",
+    "motif": "gs-b-sunlow",
+    "o": "mark",
+    "r": "Strengths outrun weaknesses; the great destroy the weak precisely with their best (overly potent drink). The morning sun overexposed IS the blinding best.",
+    "rt": "standard",
+    "t": "glare",
+    "wc": 193
+   }
+  ]
+ },
+ "map_c": {
+  "chapters_29_42": [
+   {
+    "id": "p3c29",
+    "motif": "gs-b-prompter",
+    "o": "mark",
+    "r": "French unities quarrel: conservatives invent reasons for old habits after the fact. Prompter whispering excuses.",
+    "rt": "quiet",
+    "t": "stage",
+    "wc": 122
+   },
+   {
+    "id": "p3c30",
+    "motif": "gs-b-m-plumemask",
+    "o": "mark",
+    "r": "Famous men borrow splendour/fear/feigned idleness from a rotating cast whose surroundings die off. Plumes + mask duet.",
+    "rt": "duet",
+    "t": "stage",
+    "wc": 230
+   },
+   {
+    "id": "p3c31",
+    "motif": "gs-b-m-bowscale",
+    "o": "mark",
+    "r": "Trade common as reading, as hunting once was; nobles may one day trade as luxury of sentiment. Bow over scale duet.",
+    "rt": "duet",
+    "t": "morning",
+    "wc": 233
+   },
+   {
+    "id": "p3c32",
+    "motif": "gs-b-twodoors",
+    "o": "mark",
+    "r": "Corrupter rejects two disciples: cannot say no / says half-and-half; doctrine needs a warlike soul.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 112
+   },
+   {
+    "id": "p3c33",
+    "motif": "gs-b-wink",
+    "o": "mark",
+    "r": "Man became distrustful, more evil, late: 'because he now has a science.' Cold suspicion-wink rhymes p3c3.",
+    "rt": "quiet",
+    "t": "iron",
+    "wc": 77
+   },
+   {
+    "id": "p3c34",
+    "motif": "gs-b-sunbeam",
+    "o": "mark",
+    "r": "Great humans exert retroactive force: secrets crawl into his sunshine; past still undiscovered.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 67
+   },
+   {
+    "id": "p3c35",
+    "motif": "gs-b-pyre",
+    "o": "mark",
+    "r": "Thinking otherwise = heresy, witchcraft's adjunct; Reformation redoubled medieval spirit consciencelessly. Stake + snapped halo.",
+    "rt": "quiet",
+    "t": "shadow",
+    "wc": 116
+   },
+   {
+    "id": "p3c36",
+    "motif": "gs-b-land-lastwords",
+    "o": "landmark-panel",
+    "r": "Augustus lets mask fall (plaudite amici); Nero qualis artifex; Tiberius silent, smothered into double death. Roman theatre landmark.",
+    "rt": "dramatic",
+    "t": "stage",
+    "wc": 224
+   },
+   {
+    "id": "p3c37",
+    "motif": "gs-b-threecandles",
+    "o": "mark",
+    "r": "Science promoted through three errors: God (Newton), utility (Voltaire), innocence (Spinoza). Three candles, quiet.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 130
+   },
+   {
+    "id": "p3c38",
+    "motif": "gs-b-match",
+    "o": "mark",
+    "r": "Young men powder kegs thrilled by the burning match of zeal, never the cause.",
+    "rt": "quiet",
+    "t": "ember",
+    "wc": 94
+   },
+   {
+    "id": "p3c39",
+    "motif": "gs-b-cup",
+    "o": "mark",
+    "r": "Taste changes before opinions when shameless ones enforce hoc est ridiculum. Tipped cup.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 176
+   },
+   {
+    "id": "p3c40",
+    "motif": "gs-b-swordfire",
+    "o": "mark",
+    "r": "Military culture above industrial: workers sell selves to unknown employers. Sword vs chimney, stern iron.",
+    "rt": "standard",
+    "t": "iron",
+    "wc": 323
+   },
+   {
+    "id": "p3c41",
+    "motif": "gs-b-flask",
+    "o": "mark",
+    "r": "Thinker treats acts as experiments; success/failure are answers; remorse belongs to the ordered-about.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 69
+   },
+   {
+    "id": "p3c42",
+    "motif": "gs-b-horizonpath",
+    "o": "mark",
+    "r": "Against work-for-wages: rare ones (artists, hunters, travellers, lovers) for whom work is the reward of rewards.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 284
+   }
+  ]
+ },
+ "result": {
+  "acceptance_map": "direction+comparison(direction); motif system(motifs_a/b/c: 76 symbols); CSS spec(css_a/css_b: 9+6 systems, 6 landmarks, guards); 56-chapter map(map_a/b/c/d = 14+14+14+14); landmarks+grammar+refs+read-list(this section); no files written.",
+  "chapters_43_56": [
+   {
+    "id": "p3c43",
+    "motif": "gs-b-lawtablet",
+    "o": "mark",
+    "r": "Penal codes betray what a people finds foreign: Wahhabis' two mortal sins, old Romans. Tablet cracked by foreign wedge.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 263
+   },
+   {
+    "id": "p3c44",
+    "motif": "gs-b-lever",
+    "o": "mark",
+    "r": "Believed-in motives matter more than motives: imagined levers of happiness/misery. Lever gripped by shadow.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 87
+   },
+   {
+    "id": "p3c45",
+    "motif": "gs-b-land-epicurus",
+    "o": "landmark-panel",
+    "r": "Afternoon of antiquity: calm eye over whitish sea, sun-bathed rocks, creatures in light, existence grown still. The single noon-flash.",
+    "rt": "luminous",
+    "t": "noon",
+    "wc": 123
+   },
+   {
+    "id": "p3c46",
+    "motif": "gs-b-clamp",
+    "o": "mark",
+    "r": "Voluptuous amazement science's results stand: inner life once clamped with eternal necessity; now shipwrecked men on firm earth.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 213
+   },
+   {
+    "id": "p3c47",
+    "motif": "gs-b-muzzle",
+    "o": "mark",
+    "r": "Forbidding passion's expression (Louis XIV court) atrophies passion into graceful shallowness. Muzzled court mouth.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 218
+   },
+   {
+    "id": "p3c48",
+    "motif": "gs-b-panel-manacle",
+    "o": "essay-opener",
+    "r": "Darkest essay: ages divided by knowledge of distress, long age of fear, cruelty-to-self as training; recipe: distress. Dimmed rays, iron ring.",
+    "rt": "shadowed",
+    "t": "shadow",
+    "wc": 462
+   },
+   {
+    "id": "p3c49",
+    "motif": "gs-b-wheel",
+    "o": "mark",
+    "r": "Magnanimity centrifugal: sudden satiety/nausea flings feeling to opposites (cold/laughter/tears) with revenge's egoism.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 258
+   },
+   {
+    "id": "p3c50",
+    "motif": "gs-b-ringfaces",
+    "o": "mark",
+    "r": "Fear of a cold look outweighs conscience: dread of growing solitary is herd instinct speaking. One figure, ring of faces.",
+    "rt": "quiet",
+    "t": "iron",
+    "wc": 96
+   },
+   {
+    "id": "p3c51",
+    "motif": "gs-b-spark",
+    "o": "mark",
+    "r": "Shortest (55w): flint-strike 'Let's try it!' or silence, where courage keeps its right. Single spark, nothing more.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 55
+   },
+   {
+    "id": "p3c52",
+    "motif": "gs-b-echo",
+    "o": "mark",
+    "r": "What others know assails from outside; bad reputation outweighs bad conscience. Mouths + echo waves.",
+    "rt": "quiet",
+    "t": "morning",
+    "wc": 64
+   },
+   {
+    "id": "p3c53",
+    "motif": "gs-b-eye",
+    "o": "mark",
+    "r": "Duller the eye, more extensive the good: cheerful common vs gloomy thinkers. Dim eye closes eye-rhyme p3c11/p3c45.",
+    "rt": "quiet",
+    "t": "dim",
+    "wc": 111
+   },
+   {
+    "id": "p3c54",
+    "motif": "gs-b-land-sleepwalker",
+    "o": "landmark-panel",
+    "r": "Philosophical climax: ancient fabulating within; sleepwalker must dream lest fall; appearance no dead mask; knower joins dance of spirits as master of ceremony.",
+    "rt": "visionary",
+    "t": "dream",
+    "wc": 265
+   },
+   {
+    "id": "p3c55",
+    "motif": "gs-b-altar",
+    "o": "mark",
+    "r": "Nobility = singularity: heat in cold things, values without scale, altars of unknown god, courage without honours. Lone flame.",
+    "rt": "standard",
+    "t": "morning",
+    "wc": 213
+   },
+   {
+    "id": "p3c56",
+    "motif": "gs-b-monster",
+    "o": "mark",
+    "r": "Closer: bored young Europe invents emergencies, conjures a horizon monster to fight in advance. Ember horizon hands to Book Two.",
+    "rt": "closing",
+    "t": "closing",
+    "wc": 231
+   }
+  ],
+  "chapters_read": "ALL 56 chapter JSONs opened (p3c1..p3c56). Shorts (<150w, 19 chapters) read FULL. Mediums read head ~1500ch + tail ~500ch (most <1700ch = full). All 9 long essays (p3c1/3/7/13/14/21/22/23/48) read head ~2200ch + tail incl. closing lines (p3c1 'We, too, have our time!', p3c23 'autumn of a people'). All 6 landmarks read. npara=1 confirmed each. Lead content-map hooks verified accurate in every sampled case.",
+  "grammar_notes": [
+   "GN1 tokens.css PROPOSED: assume --gs-display/body/sun/sun-core/ray/sea-deep/sea/wave/vermilion/foam/dusk/night/horizon. ArtDirector rename => find-replace. Never edit tokens/theme from cohort lane.",
+   "GN2 FONTS NOT LOADED: index.html has Cormorant+DM Sans only. Supervisor must add Fraunces 600+italic, Source Serif 4 400+italic (book-relative @font-face per \u00a78); fallbacks Cormorant/Georgia specified throughout.",
+   "GN3 v1/v1.1 NOW LIVE (Main IRC: fresh _site :8000; verified reader.js lines 440-601, 650-760, slots/manifest/symbol/data-part-id/data-art/TOC markup all present). Design follows LANDING-CONFIRMED detail (parent IRC): art ABOVE meta; entry {src,symbol,class,motif,caption}; symbol cloned by id; motif=>data-art; class appended. Part twin data-part=III retained as harmless backstop only.",
+   "GN4 MERGE: class triple gs-b-opener-{o} gs-b-tone-{t} gs-b-read-{rt}; motif+symbol=motif_asset; src=art/cohort-b.svg; NO default; annotate part/order/title. Supervisor merges cohort JSON into design/chapters.json. Symbol ids case-sensitive; missing id hides slot + console warn.",
+   "GN5 RETIRE SUN-DANCE at conform (supervisor): theme.css modulo end-marks, .chapter-meta::before sun glyph, TOC nth-of-type glyph rules, progress gradient, TOC header letterspacing ladder \u2014 all contradict RELAUNCH + this spec. Cohort assumes their absence. p:last-child::after resolves to art.css fleuron alone; cohort deliberately declines the A.0 end-seal override (complement-don't-fight).",
+   "GN6 cover.svg #gs-spark undefined (supervisor file, untouched); cohort gs-b-spark is self-contained. cohort-b.svg ZERO cross-file refs (reader fetches per file).",
+   "GN7 Benchmark B5/B6 use attribute-prefix selectors ([data-chapter^=p3c], [data-chapter-id^=p3c]) + verified TOC structure (.toc-part:nth-of-type(3) = Part III; toc-chapter buttons with data-chapter-id). Content-assigned scope (Book One only), not index-derived art. Lead constraint 'must not target #toc-list' is SUPERSEDED for B6 ONLY by parent BENCHMARK RAISE order (TOC part-III headers explicitly named); all other cohort rules avoid #toc-list internals. If ReaderLead rebuilds TOC markup (\u00a712 chrome rebuild), re-key B5/B6 at conform.",
+   "GN8 color-mix washes (precedent: live theme.css). Alphas <=.16 slot, .10 page; validator must spot-check body contrast all 8 themes incl. sepia/light + noon wash.",
+   "GN9 Slots stay aria-hidden (decorative); no figcaptions. Contrast/motion/390px checks per guards.",
+   "GN10 Panels constrained to reader column (56/72/76rem); no vw-breakout. Inlined SVG scales at 390px.",
+   "GN11 data-art prefix rule assumes motif=full symbol id; re-key if merge alters motif values.",
+   "GN12 reading_treatment is slot-side (scale) + documents text intent; only 6 landmark rules touch text-side (titles/rules)."
+  ],
+  "landmarks": [
+   {
+    "css": "L1",
+    "decision": "CONFIRM lead-1",
+    "id": "p3c1",
+    "why": "Opener + longest (1239w) + programmatic (herd, ebb-flood, 'We, too, have our time!'). Grandest panel/title proportional to text."
+   },
+   {
+    "css": "L2",
+    "decision": "CONFIRM lead-2",
+    "id": "p3c21",
+    "why": "'Teachers of...' pair w/ p3c1, 957w; virtues dominate possessors; self-refuting ought. Monumental iron, formally unique."
+   },
+   {
+    "css": "L3",
+    "decision": "CONFIRM lead-3",
+    "id": "p3c22",
+    "why": "Most formally eccentric: staged court-day monologue. Formal, not length, motive."
+   },
+   {
+    "css": "L4",
+    "decision": "CONFIRM lead-4",
+    "id": "p3c36",
+    "why": "Roman masks: Augustus plaudite, Nero artifex, Tiberius smothered double death. 224w but densest theatre cluster: landmark by semantics."
+   },
+   {
+    "css": "L5",
+    "decision": "CONFIRM lead-5",
+    "id": "p3c45",
+    "why": "Most luminous image (123w): whitish sea, sun-bathed rocks, still existence. Rule exists to BREAK cohort light once: only noon panel + only gold title."
+   },
+   {
+    "css": "L6",
+    "decision": "CONFIRM lead-6",
+    "id": "p3c54",
+    "why": "Philosophical climax resolving into book's dance grammar (master of ceremony). Dream panel + leapers hand Book One onward."
+   },
+   {
+    "decision": "NOT landmark (nearest contender)",
+    "id": "p3c56",
+    "why": "Strong closer but single-emblem 231w; closing tone + 128px mark + ember wash give closer-weight without a chapter rule. Length-ranked landmarks (p3c23 980w) refused: landmarks are formal/semantic events."
+   }
+  ],
+  "references": [
+   "Munch Sun: Meyer, Isabella. 'The Sun by Edvard Munch \u2013 A Study in Radiance.' Art in Context, 4 Aug 2024. https://artincontext.org/the-sun-by-edvard-munch/ (read full). Cross-checked: Univ. of Oslo Aula https://www.uio.no/english/about/culture/collection/aula/the-sun.html; Munchmuseet Nietzsche link https://www.munch.no/en/our-collection/between-us-and-the-sun/. DNA: rays as organizing architecture (symmetric central sun, full-wall beams, flanking masses) => gs-b-rayfan + near-symmetrical landmarks; figures toward light => herd/leapers/dreamer face the sun. Rejected: impasto naturalism (flat vector for theme-safety).",
+   "Stripe Press: PageProofer teardown https://pageproofer.com/inspiration/warm-editorial/stripe-press/ (read full). DNA: chapters as pages of a made object (square plates, zero radius/shadow); serif-only hierarchy (italic/size/color; Fraunces italic reserved p3c22/p3c54; gold title p3c45 only); horizon hairline section-marks (meta-rule sun-road). Rejected: per-item bg sampling (NOON fixed), sticky renders."
+  ]
+ }
+}

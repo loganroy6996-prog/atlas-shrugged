@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="tlt td">
+<title id="tlt">Dose III — Three lancets: three tall windows in the narthex wall, lit one per case study</title>
+<desc id="td">Narthex plate. A dark stone wall pierced by three tall lancet windows; the first two burn ember and candle, the third stands half-lit. Three case studies, three lights, all glass intact.</desc>
+<defs>
+<linearGradient id="tlnight" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".6" stop-color="#100F0D"/><stop offset="1" stop-color="#171410"/>
+</linearGradient>
+<linearGradient id="tlstone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#26211A"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="tlflame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<filter id="tlgrain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#tlgrain)" font-family="Marcellus,'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif">
+<rect x="0" y="0" width="1600" height="900" fill="url(#tlnight)"/>
+<g fill="#ECE2CE">
+<circle cx="120" cy="140" r="2" opacity=".55"/><circle cx="250" cy="260" r="1.5" opacity=".35"/>
+<circle cx="1480" cy="140" r="2" opacity=".55"/><circle cx="1360" cy="260" r="1.4" opacity=".35"/>
+<circle cx="800" cy="70" r="1.6" opacity=".45"/>
+</g>
+<!-- wall -->
+<rect x="280" y="150" width="1040" height="590" fill="url(#tlstone)" stroke="#3A332A" stroke-width="3"/>
+<g stroke="#2C2721" stroke-width="2">
+<line x1="280" y1="280" x2="350" y2="280"/><line x1="1250" y1="280" x2="1320" y2="280"/>
+<line x1="280" y1="410" x2="350" y2="410"/><line x1="1250" y1="410" x2="1320" y2="410"/>
+<line x1="280" y1="540" x2="350" y2="540"/><line x1="1250" y1="540" x2="1320" y2="540"/>
+<line x1="280" y1="670" x2="350" y2="670"/><line x1="1250" y1="670" x2="1320" y2="670"/>
+</g>
+<!-- parapet -->
+<rect x="280" y="120" width="1040" height="30" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<g fill="#1E1B16" stroke="#3A332A" stroke-width="2">
+<rect x="300" y="96" width="40" height="26"/><rect x="380" y="96" width="40" height="26"/>
+<rect x="460" y="96" width="40" height="26"/><rect x="540" y="96" width="40" height="26"/>
+<rect x="620" y="96" width="40" height="26"/><rect x="700" y="96" width="40" height="26"/>
+<rect x="780" y="96" width="40" height="26"/><rect x="860" y="96" width="40" height="26"/>
+<rect x="940" y="96" width="40" height="26"/><rect x="1020" y="96" width="40" height="26"/>
+<rect x="1100" y="96" width="40" height="26"/><rect x="1180" y="96" width="40" height="26"/>
+</g>
+<!-- sill course -->
+<rect x="280" y="740" width="1040" height="22" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<!-- LANCET 1: ember-lit, full -->
+<g>
+<path d="M440,740 V380 Q440,300 520,250 Q600,300 600,380 V740 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="4"/>
+<path d="M458,740 V390 Q458,318 520,272 Q582,318 582,390 V740 Z" fill="none" stroke="#4A4335" stroke-width="2.5"/>
+<path d="M470,740 V398 Q470,330 520,288 Q570,330 570,398 V740 Z" fill="#A83A2C" opacity=".55"/>
+<path d="M470,740 V398 Q470,330 520,288 Q570,330 570,398 V740 Z" fill="none" stroke="#3A332A" stroke-width="2"/>
+<g stroke="#0B0A08" stroke-width="3" opacity=".85">
+<line x1="520" y1="288" x2="520" y2="740"/>
+<line x1="470" y1="470" x2="570" y2="470"/><line x1="470" y1="590" x2="570" y2="590"/>
+</g>
+<path d="M470,740 V660 Q495,640 520,640 Q545,640 570,660 V740 Z" fill="url(#tlflame)" opacity=".8"/>
+<path d="M470,740 H570 L590,794 H450 Z" fill="#A83A2C" opacity=".4"/>
+<path d="M462,740 H578 L602,794 H438 Z" fill="#A83A2C" opacity=".2"/>
+<text x="520" y="560" font-size="44" letter-spacing="4" fill="#ECE2CE" text-anchor="middle" opacity=".92">i</text>
+</g>
+<!-- LANCET 2: candle-lit, full -->
+<g>
+<path d="M720,740 V380 Q720,300 800,250 Q880,300 880,380 V740 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="4"/>
+<path d="M738,740 V390 Q738,318 800,272 Q862,318 862,390 V740 Z" fill="none" stroke="#4A4335" stroke-width="2.5"/>
+<path d="M750,740 V398 Q750,330 800,288 Q850,330 850,398 V740 Z" fill="#DFA050" opacity=".5"/>
+<path d="M750,740 V398 Q750,330 800,288 Q850,330 850,398 V740 Z" fill="none" stroke="#3A332A" stroke-width="2"/>
+<g stroke="#0B0A08" stroke-width="3" opacity=".85">
+<line x1="800" y1="288" x2="800" y2="740"/>
+<line x1="750" y1="470" x2="850" y2="470"/><line x1="750" y1="590" x2="850" y2="590"/>
+</g>
+<path d="M750,740 V660 Q775,640 800,640 Q825,640 850,660 V740 Z" fill="url(#tlflame)" opacity=".9"/>
+<path d="M750,740 H850 L870,794 H730 Z" fill="#DFA050" opacity=".4"/>
+<path d="M742,740 H858 L882,794 H718 Z" fill="#DFA050" opacity=".2"/>
+<text x="800" y="560" font-size="44" letter-spacing="4" fill="#0B0A08" text-anchor="middle" opacity=".9">ii</text>
+</g>
+<!-- LANCET 3: half-lit, lower lights ember, upper dark, glass intact -->
+<g>
+<path d="M1000,740 V380 Q1000,300 1080,250 Q1160,300 1160,380 V740 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="4"/>
+<path d="M1018,740 V390 Q1018,318 1080,272 Q1142,318 1142,390 V740 Z" fill="none" stroke="#4A4335" stroke-width="2.5"/>
+<path d="M1030,740 V398 Q1030,330 1080,288 Q1130,330 1130,398 V740 Z" fill="#060504" stroke="#3A332A" stroke-width="2"/>
+<path d="M1030,740 V590 H1130 V740 Z" fill="#A83A2C" opacity=".45"/>
+<path d="M1030,740 V680 Q1055,662 1080,662 Q1105,662 1130,680 V740 Z" fill="url(#tlflame)" opacity=".7"/>
+<g stroke="#0B0A08" stroke-width="3" opacity=".85">
+<line x1="1080" y1="288" x2="1080" y2="740"/>
+<line x1="1030" y1="470" x2="1130" y2="470"/><line x1="1030" y1="590" x2="1130" y2="590"/>
+</g>
+<path d="M1030,740 H1130 L1150,794 H1010 Z" fill="#A83A2C" opacity=".3"/>
+<text x="1080" y="700" font-size="44" letter-spacing="4" fill="#ECE2CE" text-anchor="middle" opacity=".9">iii</text>
+</g>
+<!-- ground -->
+<rect x="0" y="794" width="1600" height="106" fill="#0B0A08"/>
+<line x1="0" y1="794" x2="1600" y2="794" stroke="#2C2721" stroke-width="2"/>
+<!-- (no in-SVG dose strip: the manifest caption covers it — GI-A3) -->
+</g>
+</svg>

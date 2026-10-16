@@ -1,0 +1,923 @@
+{
+  "book": "thus-spoke-zarathustra",
+  "cohort": "cohort-p1",
+  "cohort_title": "Part One — Dawn (p1c1–p1c23)",
+  "directions_considered": [
+    {
+      "choice": true,
+      "name": "P1-A · DAWN TABLETS (sermon-tablet grammar)",
+      "palette": "Binding Solar Gospel tokens; solar lead, serpent secondary, bone text on lapis/night.",
+      "rejected_why": null,
+      "signature": "The Dawn-Ring seal + verbatim pull-line + sun-rule opener; 6 text-central artworks (1 scene, 1 triptych, 3 emblems, 1 finale) rise above 17 quiet tablets.",
+      "summary": "Conform to the adopted book identity: every P1 opener is seal/scene/emblem art, then Cinzel part line, Cinzel title, ONE verbatim pull-line, sun-rule. Sermon-dominant Part I (17 tablets) stays calm; the chapters whose prose stages a visual event earn authored art. Voice varies by content (satire, parable, aphorism, dialogue, threshold, dusk), never by position.",
+      "type": "Cinzel display / Newsreader body (pending collision ruling; stack swappable) / DM Sans chrome."
+    },
+    {
+      "choice": false,
+      "name": "P1-B · HORIZON SCROLL (sun climbs 1→23)",
+      "rejected_why": "Mechanical position-encoding (sun altitude = chapter index) is mod-N logic in a prettier coat; it forces near-identical adjacent openers (same horizon band, sun nudged) which the binding rules forbid; and sky-bands invite gradients-as-art. The dawn-to-noontide arc is real but must be carried by pull-line voices and content, not a sun-position gimmick.",
+      "signature": "One continuous dawn horizon band; the sun climbs a little every chapter from p1c1 to p1c23.",
+      "summary": "A single horizon frieze shared by all P1 openers, sun altitude encoding chapter order."
+    },
+    {
+      "choice": false,
+      "name": "P1-C · BESTIARY MARGINALIA (a creature per chapter)",
+      "rejected_why": "Overloads sermons: most P1 animals are passing metaphors (dogs, birds, scorpion, flies, sponge), not subjects — literalizing all of them flattens hierarchy, starves the 6 true visual events of emphasis, doubles the art load, and steals Part IV's parade-emblem thunder. Metaphors stay in prose and pull-lines; only text-central beasts are drawn.",
+      "signature": "Every chapter gets a marginal creature emblem in opener + TOC.",
+      "summary": "Illustrate every animal named anywhere in Part I (~15 emblems)."
+    }
+  ],
+  "entries": [
+    {
+      "caption": "“Man is a rope, fastened between animal and Superman – a rope over an abyss.” — §57",
+      "class": "scene",
+      "drop_cap": "Cinzel solar, epic scale (3.6em). Opens on a letter, long line — drop cap applies.",
+      "form": "vision-epic",
+      "id": "p1c1",
+      "manifest": {
+        "src": "art/cohort-p1.svg",
+        "class": "scene",
+        "motif": "rope-fall",
+        "caption": "“Man is a rope, fastened between animal and Superman – a rope over an abyss.” — §57",
+        "symbol": "rope-fall-scene"
+      },
+      "mood": "Dawn vastness collapsing into market-square noise, then night burial, then noon promise.",
+      "motif": "rope-fall",
+      "motif_asset": "cohort-p1.svg #rope-fall-scene — 3-beat engraved frieze (sun-address / rope-fall / hollow-tree burial + eagle-and-serpent sky). Reuses as Part I divider detail (rope beat only).",
+      "opener_composition": "Full-bleed scene (21:9, max-height 46vh, art above title, never behind text) → Cinzel part line 'Part the First · I' → Cinzel title (balanced, 2 lines) → pull-line in Spectral italic bone with gold § cite → sun-rule 14rem. No seal (scene replaces it per Rule 5). The only P1 opener with a horizon this wide — epic privilege, text-earned (150 paras, 5 movements).",
+      "opener_worthy": "The rope over the abyss; the buffoon's devil-cry leap; the corpse carried to the hollow tree; eagle and serpent coiled at noon.",
+      "order": 1,
+      "palette_role": "Full Dawn arc (night→lapis→solar) — the ONLY P1 chapter allowed the whole spectrum: dawn gold for the address, storm-bone for the fall, star-night for the burial, noon gold for the animals. Bone text ≥10:1 on lapis.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§57 (para 57)",
+        "text": "Man is a rope, fastened between animal and Superman – a rope over an abyss."
+      },
+      "rationale": "The book's overture (150 paras, 4766 words): dawn sun-address (§1–10), forest saint + 'God is dead' (§11–28), marketplace Superman/Ultimate-Man sermons (§29–100), tightrope walker and buffoon (§106–107), corpse carried and buried in a hollow tree (§108–126, §137), companions-not-corpses resolve + rainbow (§127–142), eagle and serpent at noon (§143–150). Lead summary verified; beats the lead omitted (saint, Ultimate Man, hollow-tree burial) are staged in the scene's third beat and sky. The rope line is both the chapter's thesis and the inherited Direction-B motif.",
+      "reading_treatment": "Epic measure 40rem, gap 1.2em, calm throughout; no mid-text decoration per Rule 2. The 'I love him who…' anaphora (§59–74) and Ultimate-Man sequence (§88–100) carry their own rhythm; the closing cresting-sun mini-seal (App. A.0) lands after 'Thus began Zarathustra's down-going.'",
+      "src": "art/cohort-p1.svg",
+      "subject": "Zarathustra descends at dawn, addresses the sun, meets the God-unaware saint, preaches Superman and the Ultimate Man to a laughing market square, witnesses the rope-walker's fall, buries him, resolves to seek companions, and is found at noon by his eagle and serpent.",
+      "title": "Zarathustra's Prologue",
+      "voice": "vision-epic: prophetic address layered over marketplace noise and night burial."
+    },
+    {
+      "caption": "“The child is innocence and forgetfulness, a new beginning, a sport, a self-propelling wheel, a first motion, a sacred Yes.” — §21",
+      "class": "emblem",
+      "drop_cap": "Cinzel solar. 'I name you…' — declarative opening, full drop cap.",
+      "form": "triptych-emblem",
+      "id": "p1c2",
+      "manifest": {
+        "src": "art/cohort-p1.svg",
+        "class": "emblem",
+        "motif": "camel-lion-child",
+        "caption": "“The child is innocence and forgetfulness, a new beginning, a sport, a self-propelling wheel, a first motion, a sacred Yes.” — §21",
+        "symbol": "triptych-metamorphoses"
+      },
+      "mood": "Desert weight lifting into play; gold scales giving way to a child's yes.",
+      "motif": "camel-lion-child",
+      "motif_asset": "cohort-p1.svg #triptych-metamorphoses — three engraved panels (laden camel kneeling / lion rampant over broken 'THOU SHALT' scale-fragment / child with self-propelling wheel), max-width 30rem.",
+      "opener_composition": "Triptych emblem centered (3 panels, hairline dividers, solar/serpent/bone) → part line → title → pull-line (the child's Yes; longest pull-line in P1, earned as the chapter's destination) → sun-rule. Triptych reads left-to-right as metamorphosis; on 390px panels stack with preserved order.",
+      "opener_worthy": "The scale-covered dragon glittering 'Thou shalt' on every scale; the lion's theft of freedom; the child's sacred Yes.",
+      "order": 2,
+      "palette_role": "Solar + serpent across the panels: camel in dimmed bone (burden), dragon-scale fragment in dense solar (the only P1 gold-field this saturated — greed of the old values), lion in solar/serpent, child in clear bone + solar wheel. Gold-field saturation is a one-chapter privilege.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§21 (para 21)",
+        "text": "The child is innocence and forgetfulness, a new beginning, a sport, a self-propelling wheel, a first motion, a sacred Yes."
+      },
+      "rationale": "The spirit's three stations — camel (reverent burden, desert), lion ('I will' vs the golden 'Thou shalt' dragon), child (innocence, play, self-propelling wheel). The chapter IS a triptych; the opener draws all three rather than choosing. Pull-line is the destination station, quoted whole.",
+      "reading_treatment": "Tablet measure 38rem; the 'What is heavy? / Or is it this…' litany (§3–10) reads as calm repeated verse — no special styling, gap 1.15em. Drop cap solar; mini-seal closes.",
+      "src": "art/cohort-p1.svg",
+      "subject": "Three metamorphoses of the spirit: the burden-bearing camel, the freedom-stealing lion facing the golden 'Thou shalt' dragon, the creating child.",
+      "title": "Of the Three Metamorphoses",
+      "voice": "catechism resolving into play: heavy questions, light answer."
+    },
+    {
+      "caption": "“Blessed are these drowsy men: for they shall soon drop off.” — §33",
+      "class": "seal",
+      "drop_cap": "Cinzel solar DIMMED to 70% (drowsy exception): 'Zarathustra heard a wise man praised…' still earns its cap, but sleepy.",
+      "form": "sermon-tablet",
+      "id": "p1c3",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“Blessed are these drowsy men: for they shall soon drop off.” — §33",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Warm academic torpor punctured by one bright laugh.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px dimmed → part line → title → pull-line (the blessing-as-dismissal; driest wit in P1, set roman-italic as usual but allowed its full stop to land like a door) → sun-rule 12rem at 70%. Neighbor contrast vs p1c2 triptych (maximal art) and p1c4 (serpent-led, full-strength seal): this opener is deliberately the quietest so far.",
+      "opener_worthy": "The forty thoughts rocking the wise man to sleep; virtues as 'pretty little women' quarreling; sleep stealing thoughts 'on soft soles'.",
+      "order": 3,
+      "palette_role": "Dimmed bone + muted solar (lowest-saturation opener in P1; text still ≥10:1, dimming applies to seal/rule/drop-cap only, never body). Sleep made visible by restraint.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§33 (para 33)",
+        "text": "Blessed are these drowsy men: for they shall soon drop off."
+      },
+      "rationale": "Zarathustra visits the celebrated sleeper-sage: ten overcomings, ten reconciliations, forty thoughts, 'opium virtues', wisdom as dreamless sleep. The satire lands in §25–33 (laughter in the heart, contagious sleep, 'already they are lying down'). Pull-line is the verdict disguised as a blessing. Art must NOT wake the chapter up — hence the dimmed seal.",
+      "reading_treatment": "Measure 38rem, gap 1.1em (slightly close-set: torpor). The wise man's numbered litany (§5–8, §19–20) flows as prose; no list styling (prose must not be restructured). Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "The praised wise man of the academic chair teaches sleep as the crown of virtue; Zarathustra laughs in his heart and diagnoses 'opium virtues'.",
+      "title": "Of the Chairs of Virtue",
+      "voice": "drowsy satire: a yawn with teeth."
+    },
+    {
+      "caption": "“Purer and more honest of speech is the healthy body, perfect and square-built: and it speaks of the meaning of the earth.” — §32",
+      "class": "seal",
+      "drop_cap": "Cinzel SERPENT (earth-led): 'Once Zarathustra too cast his deluded fancy…' — the convalescent's opening.",
+      "form": "sermon-tablet",
+      "id": "p1c4",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“Purer and more honest of speech is the healthy body, perfect and square-built: and it speaks of the meaning of the earth.” — §32",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Fever breaking: phantom gods dissolving into mountain air.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px full → part line → title → pull-line (the square-built body; architectural cadence, the chapter's cornerstone) → sun-rule 12rem. First serpent-led drop cap in P1 (earth chapters begin here) — neighbor contrast vs p1c3 (dimmed solar) and p1c5 (twin earth chapter, larger seal).",
+      "opener_worthy": "Coloured vapour before the creator's eyes; carrying one's own ashes to the mountains; the brighter flame that routs the phantom.",
+      "order": 4,
+      "palette_role": "Serpent-secondary lead (earth/body chapters): seal ring solar, drop cap serpent, pull-line bone. Ashes→flame carried by the Dawn-Ring's cresting sun, not by extra color.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§32 (para 32)",
+        "text": "Purer and more honest of speech is the healthy body, perfect and square-built: and it speaks of the meaning of the earth."
+      },
+      "rationale": "Zarathustra confesses his own afterworldsman past (suffering God, coloured vapour, world as fiction), then the cure: overcome oneself, carry ashes to the mountains, kindle a brighter flame; the Ego learns honesty and titles the body. Pull-line is the chapter's cornerstone sentence — 'perfect and square-built' also describes the tablet opener itself.",
+      "reading_treatment": "Measure 38rem, gap 1.15em. The 'Believe me, my brothers!' passages (§13) need no styling — Spectral carries the address. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "Against the afterworldsmen: gods are human work and madness; the convalescent carries his ashes to the mountains and learns a new pride from the healthy body.",
+      "title": "Of the Afterworldsmen",
+      "voice": "convalescent testimony: 'I too once…' becoming 'I teach…'."
+    },
+    {
+      "caption": "“The body is a great intelligence, a multiplicity with one sense, a war and a peace, a herd and a herdsman.” — §4",
+      "class": "seal",
+      "drop_cap": "Cinzel serpent: 'I wish to speak to the despisers of the body.' — twin to p1c4, deeper.",
+      "form": "sermon-tablet",
+      "id": "p1c5",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“The body is a great intelligence, a multiplicity with one sense, a war and a peace, a herd and a herdsman.” — §4",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Anatomical awe: the Self laughing at the clever little Ego.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 72px large → part line → title → pull-line (the great-intelligence sentence; four balanced pairs, set to breathe) → sun-rule 13rem. Neighbor contrast vs p1c4 (same earth family, smaller seal) and p1c6 (transformation warmth): scale + pull-line cadence differentiate, not color.",
+      "opener_worthy": "The Self as mighty commander behind thoughts; the Ego's leading-string; spirit as 'a little instrument and toy'.",
+      "order": 5,
+      "palette_role": "Serpent-secondary, deeper than p1c4 (seal 72px, drop cap serpent, pull-line bone). The herd/herdsman pair in the pull-line echoes the Prologue's herdsmen — palette stays earthbound, no solar field.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§4 (para 4)",
+        "text": "The body is a great intelligence, a multiplicity with one sense, a war and a peace, a herd and a herdsman."
+      },
+      "rationale": "The Self/Ego doctrine: soul is a word for something in the body; sense and spirit are the Self's instruments; the despisers serve a Self that wants to perish. Shortest metaphysical chapter in P1 (21 paras) — hence the large seal: small chapter, load-bearing idea. Pull-line is the doctrine in one sentence.",
+      "reading_treatment": "Measure 38rem, gap 1.2em (aphoristic air for short paras). The Self-says/commands sequence (§9–13) flows as calm decree. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "To the despisers of the body: the body is the great intelligence, the Self its unknown sage; spirit is the body's hand.",
+      "title": "Of the Despisers of the Body",
+      "voice": "physiological decree: short sentences, absolute claims."
+    },
+    {
+      "caption": "“Once you had fierce dogs in your cellar: but they changed at last into birds and sweet singers.” — §13",
+      "class": "seal",
+      "drop_cap": "Cinzel solar: 'My brother, if you have a virtue…' — warm return after two serpent caps.",
+      "form": "sermon-tablet",
+      "id": "p1c6",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“Once you had fierce dogs in your cellar: but they changed at last into birds and sweet singers.” — §13",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Cellar warmth rising: poison brewed into balsam, barking into song.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px → part line → title → pull-line (dogs→birds; the transformation image, alchemical and auditory at once) → sun-rule 12rem. Neighbor contrast vs p1c5 (large seal, decree voice) and p1c7 (palest opener): standard seal + warm solar cap + the only cellar-to-sky pull-line in P1.",
+      "opener_worthy": "Virtues grown from passions; the bird nested beneath the roof on golden eggs; milking the cow Affliction; the scorpion turning its sting on itself.",
+      "order": 6,
+      "palette_role": "Solar warmth returns (transformation chapter): solar drop cap, bone pull-line, seal full. The scorpion's jealousy (§21) is carried by prose, not color — no ember here (violence stays verbal until p1c7–p1c8).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§13 (para 13, final sentence)",
+        "text": "Once you had fierce dogs in your cellar: but they changed at last into birds and sweet singers."
+      },
+      "rationale": "Virtues must be one's own (unutterable, stammered), grown from passions: devils→angels, poison→balsam, dogs→birds — but jealous virtues turn scorpion-stings on the self, and one perishes by one's virtues. Pull-line is the chapter's miracle image. (Young-man echo: the fierce dogs return in p1c9 §20 — same cellar.)",
+      "reading_treatment": "Measure 38rem, gap 1.15em. The stammer passage (§5–6) and jealousy sequence (§18–22) read as-is; restraint lets the scorpion land. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "On having one virtue of one's own, grown from one's passions; on the jealousy of virtues and perishing by them.",
+      "title": "Of Joys and Passions",
+      "voice": "alchemical-pastoral: cellar, garden, milk, sting."
+    },
+    {
+      "caption": "“A knot of savage serpents that are seldom at peace among themselves – thus they go forth alone to seek prey in the world.” — §19",
+      "class": "seal",
+      "drop_cap": "Cinzel BONE-DIMMED (palest cap in P1): 'You do not intend to kill…' — the courtroom opens in winter light.",
+      "form": "parable",
+      "id": "p1c7",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“A knot of savage serpents that are seldom at peace among themselves – thus they go forth alone to seek prey in the world.” — §19",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Courtroom pallor: lead on the shoulders, chalk on the floor.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px withheld → part line → title → pull-line (the knot of serpents; darkest image in P1, set in bone without gold emphasis) → sun-rule 12rem at 60%. Neighbor contrast vs p1c6 (warm solar) and p1c8 (blood-ink fire): this is the cold hinge between them — palest opener, deliberate.",
+      "opener_worthy": "The bowed neck and great contempt; the scarlet judge's filth; lead of guilt; chalk-line charmed hen; madness before and after the deed.",
+      "order": 7,
+      "palette_role": "Bone-lead: desaturated bone-grey via color-mix (NOT a new hue) for seal-dim + drop cap; solar withheld to 60% in ring only. The scarlet judge stays verbal — no red drawn (Part I discipline; ember belongs to Part IV).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§19 (para 19, second sentence)",
+        "text": "A knot of savage serpents that are seldom at peace among themselves – thus they go forth alone to seek prey in the world."
+      },
+      "rationale": "Parable before judges (form verified in full text, not inference): the pale criminal judged himself — his supreme moment; killing must be mercy justifying life; thought/deed/image of the deed; madness before (soul thirsting for the knife) and after (the image endured); guilt as lead; man as knot of serpents. Pull-line is the chapter's anatomy — and a dark mirror of the book's serpent device, kept verbal for that reason.",
+      "reading_treatment": "Measure 38rem, gap 1.15em. The judge-address passages (§5–7, §11) read as spoken parable; no courtroom styling (no tint bands, no speaker labels). Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "The pale criminal who judged himself; on mercy vs revenge, the scarlet judge, madness before and after the deed, guilt like lead.",
+      "title": "Of the Pale Criminal",
+      "voice": "courtroom parable: address, image, verdict."
+    },
+    {
+      "caption": "“I should believe only in a God who understood how to dance.” — §21",
+      "class": "seal",
+      "drop_cap": "Cinzel EMBER (blood-ink exception, text-verified 'written with blood' §1, §6): 'Of all writings I love only that which is written with blood.' — the single ember drop cap in Part I.",
+      "form": "aphoristic-sermon",
+      "id": "p1c8",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“I should believe only in a God who understood how to dance.” — §21",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Thin mountain air, joyful wickedness, laughter as a weapon.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px full → part line → title → pull-line (the dancing God; shortest pull-line in P1, maximum memorability) → sun-rule 12rem. Neighbor contrast vs p1c7 (palest) and p1c9 (tree emblem): fire between frost and wood — ember cap + dancing pull-line + restored seal.",
+      "opener_worthy": "Aphorisms as peaks (long legs required); hobgoblins and courage; butterflies and soap-bubbles; killing the Spirit of Gravity by laughter; the god dancing within.",
+      "order": 8,
+      "palette_role": "Solar restored + ONE ember note (drop cap only, text-verified blood). The peaks (§7) stay verbal — no mountain drawn (rejected-theme territory; Part I is liturgy now, not mountaineering).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§21 (para 21)",
+        "text": "I should believe only in a God who understood how to dance."
+      },
+      "rationale": "Write with blood; aphorisms as peaks for the long-legged; courage making hobgoblins; looking down from exaltation; wisdom loving only warriors; love's madness and method; the dancing God; the Spirit of Gravity killed by laughter; learning to walk/run/fly. Pull-line is the chapter's creed and Part I's most quotable sentence. Blood-ink cap is the §81-spec exception.",
+      "reading_treatment": "Aphorism air: measure 38rem, gap 1.3em (widest paragraph rhythm in P1 — peaks need valleys). Short paras breathe; no styling per para (no mod-N anything). Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "On writing with blood, aphorisms as peaks, courage and laughter, the dancing God, and killing the Spirit of Gravity.",
+      "title": "Of Reading and Writing",
+      "voice": "aphoristic sermon: peaks, each paragraph a summit."
+    },
+    {
+      "caption": "“The more it wants to rise into the heights and the light, the more determinedly do its roots strive earthwards, downwards, into the darkness, into the depths – into evil.” — §4",
+      "class": "emblem",
+      "drop_cap": "Cinzel solar: 'Zarathustra had noticed that a young man was avoiding him.' — narrative opening, full cap.",
+      "form": "parable-emblem",
+      "id": "p1c9",
+      "manifest": {
+        "src": "art/cohort-p1.svg",
+        "class": "emblem",
+        "motif": "lone-tree",
+        "caption": "“The more it wants to rise into the heights and the light, the more determinedly do its roots strive earthwards, downwards, into the darkness, into the depths – into evil.” — §4",
+        "symbol": "lone-tree"
+      },
+      "mood": "Evening altitude: frost of solitude, envy like weather, lightning awaited.",
+      "motif": "lone-tree",
+      "motif_asset": "cohort-p1.svg #lone-tree — lone mountainside tree (curved trunk, sparse crown, mirrored root-wedge into dark, waiting lightning zigzag), ≤120px. NEW motif id 'lone-tree' — supervisor approval required; fallback: dawn-ring seal + tree via body[data-chapter='p1c9'] CSS if rejected.",
+      "opener_composition": "Tree emblem ≤120px → part line → title → pull-line (roots-into-evil; the chapter's law, quoted whole) → sun-rule. Neighbor contrast vs p1c8 (aphorism air, seal) and p1c10 (necrotic tablet): the only botanical emblem in P1; vertical tree against horizontal rules.",
+      "opener_worthy": "Invisible hands bending the tree; jumping over steps; the frost of solitude; the tree waiting for the first lightning; envy of Zarathustra confessed.",
+      "order": 9,
+      "palette_role": "Serpent + solar split (roots vs crown): root-wedge in night/serpent dark, crown in bone, waiting lightning in solar. The emblem stages the pull-line's law visibly: light above, evil below.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§4 (para 4; outer dialogue quotes trimmed)",
+        "text": "The more it wants to rise into the heights and the light, the more determinedly do its roots strive earthwards, downwards, into the darkness, into the depths – into evil."
+      },
+      "rationale": "The avoiding young man found leaning on a lone mountainside tree: invisible winds, roots striving into evil, distrust after ascent, contempt and desire climbing together, the tree waiting for lightning — the youth confesses envy of Zarathustra and is drawn along; then counsel (prisoners imagining freedom, noble vs good, keep holy the highest hope). Pull-line is the chapter's natural law; emblem draws its two directions.",
+      "reading_treatment": "Measure 38rem, gap 1.15em. Dialogue passages (§1–15) flow as narrative prose; the counsel (§17–29) likewise — no speaker styling. Mini-seal closes.",
+      "src": "art/cohort-p1.svg",
+      "subject": "The young climber and the lone tree: on rising into the heights while roots strive into evil, envy, solitude, and keeping holy the highest hope.",
+      "title": "Of the Tree on the Mountainside",
+      "voice": "evening parable: story first, counsel after."
+    },
+    {
+      "caption": "“There are preachers of death: and the earth is full of those to whom departure from life must be preached.” — §1",
+      "class": "seal",
+      "drop_cap": "Cinzel bone-dimmed: 'There are preachers of death…' — necrotic opening, second-dimmed cap after p1c7.",
+      "form": "sermon-tablet",
+      "id": "p1c10",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“There are preachers of death: and the earth is full of those to whom departure from life must be preached.” — §1",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Yellow-and-black weather: living coffins, snapped straws, shut teeth.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px dimmed → part line → title → pull-line (the opening sentence itself — a tolling bell; only P1 pull-line taken from §1 verbatim whole) → sun-rule 12rem at 70%. Neighbor contrast vs p1c9 (vertical emblem) and p1c11 (martial brightness): horizontal dim tablet between image and blaze.",
+      "opener_worthy": "Yellow men and black men; beasts of prey within; consumptives of the soul; living coffins; the straw of life clung to and mocked.",
+      "order": 10,
+      "palette_role": "Dimmed bone necrotic (rot, not sleep): seal/rule/cap at 70%, body full bone. Yellow/black men stay verbal — no yellow or black fields drawn (would need new hues; the dimming IS the rot).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§1 (para 1, whole)",
+        "text": "There are preachers of death: and the earth is full of those to whom departure from life must be preached."
+      },
+      "rationale": "Catalogue of death-preachers: the lustful/mortified, soul-consumptives, sweet-snatchers on straws, suffering-peddlers, anti-birth whisperers, pity-thieves, and the unrestrained-labour weary. Pull-line is the tolling opening sentence — the chapter's title restated as fact. Dimming distinguishes rot (p1c10) from pallor (p1c7, guilt) and torpor (p1c3, sleep): three different dims, three documented causes.",
+      "reading_treatment": "Measure 38rem, gap 1.1em (close-set catalogue air). The 'There are…' litany (§4–6, §9–13) reads as tolling prose. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "Against the preachers of death in all their colours: the lustful, the consumptive, the weary, and those ripe for the sermon.",
+      "title": "Of the Preachers of Death",
+      "voice": "necrotic catalogue: 'There are…' tolling."
+    },
+    {
+      "caption": "“You should love peace as a means to new wars. And the short peace more than the long.” — §7",
+      "class": "seal",
+      "drop_cap": "Cinzel solar martial: 'We do not wish to be spared…' — the blaze returns.",
+      "form": "sermon-tablet",
+      "id": "p1c11",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“You should love peace as a means to new wars. And the short peace more than the long.” — §7",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Drawn bowstring: enemies loved, peace sharpened into victory.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px full → part line → title → pull-line (short peace; the chapter's paradox engine) → sun-rule 12rem. Neighbor contrast vs p1c10 (dim catalogue) and p1c12 (cold-idol emblem): bright martial tablet between rot and ice — the only 'war' voice in P1.",
+      "opener_worthy": "Arrow and bow as precondition of silence; the good war hallowing causes; bravery over pity; the sublime mantle of the ugly; pride in one's enemy.",
+      "order": 11,
+      "palette_role": "Solar martial (brightest tablet since p1c8): full seal, solar cap, bone pull-line. No steel drawn (no new hue for blades); the bowstring is the sun-rule itself, read taut.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§7 (para 7, whole)",
+        "text": "You should love peace as a means to new wars. And the short peace more than the long."
+      },
+      "rationale": "To the brothers in war: don't spare enemies, seek them; love short peace; let work be battle and peace victory; silence needs arrow and bow; the good war hallows causes; bravery over pity; sublime ugliness; pride in enemies; obedience that commands; man overcome. Pull-line is the chapter's most portable paradox. Blaze placement is deliberate: war-dawn between rot (p1c10) and the cold state (p1c12).",
+      "reading_treatment": "Measure 38rem, gap 1.15em. Hortatory 'You should…' rhythm (§5–9, §17–19) needs no styling — imperatives carry. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "To the warriors: on enemies, short peace, the good war, bravery, and overcoming man.",
+      "title": "Of War and Warriors",
+      "voice": "martial hortatory: 'You should…' as drumbeat."
+    },
+    {
+      "caption": "“The state is the coldest of all cold monsters. Coldly it lies, too; and this lie creeps from its mouth: ‘I, the state, am the people.’” — §3",
+      "class": "emblem",
+      "drop_cap": "Cinzel solar (cold return): 'There are still peoples and herds…' — peoples warm, state cold.",
+      "form": "sermon-emblem",
+      "id": "p1c12",
+      "manifest": {
+        "src": "art/cohort-p1.svg",
+        "class": "emblem",
+        "motif": "smashed-idol",
+        "caption": "“The state is the coldest of all cold monsters. Coldly it lies, too; and this lie creeps from its mouth: ‘I, the state, am the people.’” — §3",
+        "symbol": "smashed-idol"
+      },
+      "mood": "Iron cold cracking open onto rainbow and bridges.",
+      "motif": "smashed-idol",
+      "motif_asset": "cohort-p1.svg #smashed-idol — blocky cold throne cracked through, toppled crown, falling fragments, rainbow hairlines + bridge lines emerging behind, ≤120px. NEW motif id 'smashed-idol' — supervisor approval required; fallback: dawn-ring seal + cold-dimmed tablet if rejected.",
+      "opener_composition": "Smashed-idol emblem ≤120px → part line → title → pull-line (the cold monster's lie, quoted with its own voice inside) → sun-rule. Neighbor contrast vs p1c11 (bright martial seal) and p1c13 (marketplace tablet): the coldest image in P1 with the warmest exit (rainbow) — ice between blaze and buzz.",
+      "opener_worthy": "The regulating finger of God; heroes ranged round the idol; the horse of death in divine trappings; poison-drinkers; clambering apes; the throne of filth; breaking the window into open air; rainbow and bridges to the Superman.",
+      "order": 12,
+      "palette_role": "Cold bone-grey idol (desaturated via color-mix) vs solar/serpent/ember rainbow hairlines — the ONLY rainbow in P1, text-verified §34. Idol cold, exit warm: the emblem stages the chapter's whole argument (cold lie → open air).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§3 (para 3, whole)",
+        "text": "The state is the coldest of all cold monsters. Coldly it lies, too; and this lie creeps from its mouth: ‘I, the state, am the people.’"
+      },
+      "rationale": "The state as cold monster: creators made peoples, destroyers made states; stolen teeth and belly; confusion of tongues; the superfluous devoured and re-chewed; heroes lured; slow suicide called life; culture-theft and newspaper-bile; throne-madness; idol-stink — then the exit: break the window, free earth for great souls, and where the state ceases, rainbow and bridges to the Superman. Emblem draws both poles (idol + rainbow); pull-line is the lie itself.",
+      "reading_treatment": "Measure 38rem, gap 1.15em. The 'Just look…' anaphora (§20–22) and 'Avoid…' commands (§27–29) read as prophetic catalogue; the closing rainbow (§34) lands on calm prose + mini-seal.",
+      "src": "art/cohort-p1.svg",
+      "subject": "Against the new idol, the state: the cold monster, the superfluous, throne-madness — and the rainbow where the state ceases.",
+      "title": "Of the New Idol",
+      "voice": "prophetic denunciation with an open-air exit."
+    },
+    {
+      "caption": "“The experience of all deep wells is slow: they must wait long until they know what has fallen into their depths.” — §14",
+      "class": "seal",
+      "drop_cap": "Cinzel solar: 'Flee, my friend, into your solitude!' — flight as dawn.",
+      "form": "sermon-tablet",
+      "id": "p1c13",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“The experience of all deep wells is slow: they must wait long until they know what has fallen into their depths.” — §14",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Buzzing noon market against well-deep silence.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px → part line → title → pull-line (the deep well; stillness quoted against a buzzing title — deliberate counterpoint) → sun-rule 12rem. Neighbor contrast vs p1c12 (cold emblem) and p1c14 (forest intimate): standard bright tablet; the pull-line's slowness IS the variation (only stillness pull-line in P1's middle third).",
+      "opener_worthy": "The tree leaning over the sea; great actors and poisonous flies; Yes-or-No assailants; raindrops hollowing stone; praise as importunity; smoke from a dying fire.",
+      "order": 13,
+      "palette_role": "Solar standard (marketplace noon): full seal, solar cap. Flies stay verbal — no speck texture drawn (would read as noise/grain, fighting the calm-body rule). The well-depth is the pull-line's, not a color.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§14 (para 14, whole)",
+        "text": "The experience of all deep wells is slow: they must wait long until they know what has fallen into their depths."
+      },
+      "rationale": "Flight from the market-place: uproar of great men, stings of small ones; actors vs inventors; overthrow-as-proof; solemn buffoons demanding Yes/No; deep wells slow; solitude and the raw breeze; the fly-swat fate refused; poisonous praise; small souls' vengeance. Pull-line answers the title's buzz with the chapter's quietest sentence (the well also anticipates the hermit-well of p1c20 §12).",
+      "reading_treatment": "Measure 38rem, gap 1.1em (breathless catalogue for the fly-passages §18–29, then the closing flight §35 exhales). No fly-speck styling — prose carries the swarm. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "Flight from the market-place: great actors, poisonous flies, small souls — and the slowness of deep wells.",
+      "title": "Of the Flies of the Market-place",
+      "voice": "protective admonition: 'Flee…' with entomological fury."
+    },
+    {
+      "caption": "“Do I exhort you to kill your senses? I exhort you to an innocence of the senses.” — §5",
+      "class": "seal",
+      "drop_cap": "Cinzel serpent (forest-led): 'I love the forest.' — the only 'I love…' opening in P1.",
+      "form": "sermon-tablet",
+      "id": "p1c14",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“Do I exhort you to kill your senses? I exhort you to an innocence of the senses.” — §5",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Forest shade: cool, close, quietly amused.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 56px small → part line → title → pull-line (the innocence distinction; question-and-answer in one breath) → sun-rule 11rem. Neighbor contrast vs p1c13 (bright standard tablet) and p1c15 (no-drop hermit tablet): smallest seal in P1's middle third + serpent cap + forest voice — shade between buzz and hermitage.",
+      "opener_worthy": "The forest loved, towns refused; the bitch Sensuality glaring from abstinence; devils driven into swine; the chaste who laugh.",
+      "order": 14,
+      "palette_role": "Serpent-led intimate (forest shade): serpent drop cap, small seal, bone pull-line. Sensuality's bitch stays verbal — no animal drawn (metaphor, not subject, per P1-C rejection).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§5 (para 5, whole)",
+        "text": "Do I exhort you to kill your senses? I exhort you to an innocence of the senses."
+      },
+      "rationale": "Forest vs lustful towns; filth with spirit; animal innocence; chastity as virtue for some, near-vice for many; the bitch Sensuality in abstinence's heights and cold depths; tragedy-lust mistrusted; devils entering swine; shallow vs dirty truth; the heart-chaste who laugh at chastity itself. Pull-line states the doctrine as a corrected question. Intimate scale (18 paras) earns the small seal.",
+      "reading_treatment": "Intimate measure 36rem, gap 1.15em. Parable-question rhythm (§11–12, §15–17) reads close and cool. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "On chastity: forest innocence vs town lust, the bitch Sensuality in abstinence, and those chaste from the heart who laugh.",
+      "title": "Of Chastity",
+      "voice": "forest-confessional: cool questions, warm laughter at the end."
+    },
+    {
+      "caption": "“In your friend you should possess your best enemy.” — §10",
+      "class": "seal",
+      "drop_cap": "NONE (shared .no-drop: quote-led opener ''One is always one too many…'). Per Rule 7 lyric-adjacent opening — the hermit's voice, uncapitalled.",
+      "form": "sermon-tablet",
+      "id": "p1c15",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“In your friend you should possess your best enemy.” — §10",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Hermit air: two voices in one skull making room for a third.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px → part line → title → pull-line (best enemy; the chapter's paradox, war-voice in a love chapter) → sun-rule 12rem. Neighbor contrast vs p1c14 (small seal, serpent cap) and p1c16 (large seal, ethnographic): standard seal + NO drop cap (only the second no-drop opening in P1) — the missing cap IS the variation, text-caused (quote-led).",
+      "opener_worthy": "I and Me in earnest conversation; the friend as cork against the depths; war waged for the friend; the rough imperfect mirror; pity under a hard shell.",
+      "order": 15,
+      "palette_role": "Bone standard (hermit clarity): full seal, bone pull-line, no cap color (no cap). The arrow (§13) and mirror (§14) stay verbal — drawn nowhere (metaphors, per discipline).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§10 (para 10, first sentence)",
+        "text": "In your friend you should possess your best enemy."
+      },
+      "rationale": "The hermit's arithmetic (one too many); I-and-Me needing the friend as third and cork; faith-in-others betraying self-faith; love leaping over envy; 'at least be my enemy'; war for the friend; honouring the enemy in him; nakedness feared; the arrow-longing; the sleeping friend's face as rough mirror; conjecturing pity; slave/tyrant unfit for friendship; comradeship→friendship. Pull-line fuses the war voice (p1c11) into love. No-drop opening is text-caused and recorded.",
+      "reading_treatment": "Measure 38rem, gap 1.15em. Opening without cap, then calm prose; the mirror passage (§14–15) needs no styling — the image holds. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "On the friend: the hermit's third, war for the friend, the best enemy, the rough mirror, and comradeship becoming friendship.",
+      "title": "Of the Friend",
+      "voice": "hermit dialectic: conversation overheard, then counsel."
+    },
+    {
+      "caption": "“A table of values hangs over every people.” — §5",
+      "class": "seal",
+      "drop_cap": "Cinzel solar monumental: 'Zarathustra has seen many lands…' — the traveled opening.",
+      "form": "sermon-tablet",
+      "id": "p1c16",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“A table of values hangs over every people.” — §5",
+        "symbol": "seal-dawn"
+      },
+      "mood": "High survey: many lands below, one missing goal ahead.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 72px large → part line → title → pull-line (the hanging table; the chapter's image-axiom, foreshadowing p3c12's shattered tablets) → sun-rule 13rem. Neighbor contrast vs p1c15 (no-drop standard) and p1c17 (admonitory standard): large seal + traveled opening + the only ethnographic voice in P1.",
+      "opener_worthy": "Good and evil per people; the Greek's jealous soul; bow-and-arrow truth of the name-givers; loyalty unto blood; evaluation as creation; the thousand necks awaiting fetters.",
+      "order": 16,
+      "palette_role": "Solar monumental (survey chapter): large seal, solar cap, bone pull-line. The thousand-necked beast stays verbal — no monster drawn (a beast here would pre-empt Part IV's bestiary and p1c12's idol).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§5 (para 5, first sentence)",
+        "text": "A table of values hangs over every people."
+      },
+      "rationale": "Many lands, many goods-and-evils: no people without evaluating, none evaluating as its neighbour; tables as overcomings and will to power; hard→praiseworthy→holy; Greek/Persian/germanic/loyalty tables; man the evaluator; evaluation as creation; creators must destroy; herd vs Ego; loving men naming good and evil; the praising/blaming monster with a thousand necks awaiting fetters and the one missing goal. Pull-line hangs the image over the whole chapter; large seal marks the hinge.",
+      "reading_treatment": "Measure 38rem, gap 1.15em. The quoted tables (§9–11) flow as prose (no blockquote styling in data — all <p>); the beast passage (§23–25) closes toward the mini-seal.",
+      "src": "art/seals.svg",
+      "subject": "On the thousand and one goals: peoples as value-creators, tables of overcoming, evaluation as creation, and the missing fetters.",
+      "title": "Of the Thousand and One Goals",
+      "voice": "ethnographic survey resolving into prophecy."
+    },
+    {
+      "caption": "“May the friend be to you a festival of the earth and a foretaste of the Superman.” — §13",
+      "class": "seal",
+      "drop_cap": "Cinzel solar: 'You crowd together…' — the crowd addressed at dawn.",
+      "form": "sermon-tablet",
+      "id": "p1c17",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“May the friend be to you a festival of the earth and a foretaste of the Superman.” — §13",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Crowded room aired out: flight, distance, overflow.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px → part line → title → pull-line (festival of the earth; the warmest sentence in P1's middle third) → sun-rule 12rem. Neighbor contrast vs p1c16 (large survey seal) and p1c18 (large threshold seal): standard seal between two larges — the calm step between survey and solitude.",
+      "opener_worthy": "The 'You' older than the 'I'; the fairer phantom behind; sponges and overflowing hearts; the vessel of the good; loving the Superman as principle in the friend.",
+      "order": 17,
+      "palette_role": "Solar admonitory (standard brightness): full seal, solar cap. The festival stays verbal — no festal styling (festival grammar belongs to p4c18; a foretaste must not dress as the feast).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§13 (para 13, second sentence)",
+        "text": "May the friend be to you a festival of the earth and a foretaste of the Superman."
+      },
+      "rationale": "Against neighbour-love as bad self-love: the consecrated You vs unconsecrated I; flight to the most distant; the fairer phantom; sponges for overflowing hearts; witnesses seduced into praise; lying about the unknown; solitude-as-prison; festivals of actors; the friend as festival and vessel; future-as-principle. Pull-line is the chapter's gift after its rebuke — and 'foretaste' disciplines the palette (no festal color).",
+      "reading_treatment": "Measure 38rem, gap 1.15em. Rebuke-then-gift rhythm (§1–12 vs §13–17) reads on calm prose; the closing exhortation (§17) lands into the mini-seal.",
+      "src": "art/seals.svg",
+      "subject": "Against love of the neighbour, for love of the most distant: flight, phantoms, sponges, and the friend as festival.",
+      "title": "Of Love of One's Neighbour",
+      "voice": "admonitory diagnosis with a festival prescription."
+    },
+    {
+      "caption": "“You must be ready to burn yourself in your own flame: how could you become new, if you had not first become ashes?” — §25",
+      "class": "seal",
+      "drop_cap": "Cinzel solar-deep (color-mix solar+night 12% — threshold fire, NOT ember): 'My brother, do you want to go apart…' — the way opens.",
+      "form": "sermon-tablet",
+      "id": "p1c18",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“You must be ready to burn yourself in your own flame: how could you become new, if you had not first become ashes?” — §25",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Cold threshold air with fire beyond: solitude that burns.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 72px large → part line → title → pull-line (burn in your own flame; the chapter's ordeal-stake, quoted whole with its question) → sun-rule 13rem. Neighbor contrast vs p1c17 (standard calm) and p1c19 (twilight dialogue, small seal, no cap): large threshold seal + deepened cap + flame pull-line before the book's quietest dialogue.",
+      "opener_worthy": "The herd's voice ringing within; the self-propelling wheel; stars compelled to revolve; free FOR what; the star thrown into empty space; the seven devils; creating a god from them.",
+      "order": 18,
+      "palette_role": "Solar threshold (deepened, not embered): large seal, solar-deep cap via color-mix, bone pull-line. The flame is dawn-fire (Part I), not dusk-ember (Part IV) — the mix ratio is documented so the engineer holds the line.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§25 (para 25, whole)",
+        "text": "You must be ready to burn yourself in your own flame: how could you become new, if you had not first become ashes?"
+      },
+      "rationale": "Threshold sermon of creator-solitude (form verified in full text): going apart, the herd's inner voice, affliction-as-way, new strength/new right, self-propelling wheel, free-for-what, hanging one's will as law, the star in empty space, weary solitude, contempt's anguish, flying hated, shining despite dirt, guarding against the good/holy-simplicity/love's assaults, the paw with claws, self as worst enemy, seven devils, heretic/witch/prophet/villain, burning to become new, creating a god from devils, lover's contempt, perishing beyond oneself. Pull-line is the ordeal. (Self-propelling wheel echoes p1c2 §21 — same image, hotter context.)",
+      "reading_treatment": "Measure 38rem, gap 1.2em (threshold air: questions need silence around them). The question-litany (§6–12) reads as trial; the closing tears (§30) into the mini-seal.",
+      "src": "art/seals.svg",
+      "subject": "The way of the creator: solitude, the herd's inner voice, free-for-what, the star in empty space, seven devils, and burning to become new.",
+      "title": "Of the Way of the Creator",
+      "voice": "threshold trial: questions as ordeals, fire as answer."
+    },
+    {
+      "caption": "“Are you visiting women? Do not forget your whip!” — §29",
+      "class": "seal",
+      "drop_cap": "NONE (shared .no-drop: quote-led opener ''Why do you slink…'). Twilight dialogue opens in a voice, not a capital — recorded, text-caused.",
+      "form": "dialogue",
+      "id": "p1c19",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“Are you visiting women? Do not forget your whip!” — §29",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Blue dusk under a cloak: a little truth carried carefully, then cracked like a whip.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 56px twilight-dimmed → part line → title → pull-line (the whip; the chapter's crack — quoted as the old woman's speech, cited) → sun-rule 11rem at 85%. Neighbor contrast vs p1c18 (large threshold blaze) and p1c20 (adder emblem): smallest, dimmest seal in P1's final third + no cap + dialogue voice — dusk between fire and fangs. DANCE-VOICE EXPLICITLY REJECTED per lead correction: this is twilight-dialogue/confessional, staged as frame-tale (walk → encounter → speech → thanks-gift), not dance.",
+      "opener_worthy": "Slinking through twilight under a cloak; the unruly little truth; sunset-hour encounter; pregnancy as the riddle's solution; danger and play; the child's plaything; iron speaking to the magnet; surface and torrent.",
+      "order": 19,
+      "palette_role": "Twilight bone (latest hour before p1c22's dusk): seal 56px at 85%, rule at 85%, no cap, bone pull-line. Content note: the chapter's gendered satire is Nietzsche's text, quoted verbatim with citation; design takes no editorial position beyond the twilight staging the prose itself gives (shy twilight walk, sunset hour, confessional frame).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§29 (para 29, the old woman's speech; outer quotes trimmed)",
+        "text": "Are you visiting women? Do not forget your whip!"
+      },
+      "rationale": "Twilight dialogue (form corrected per lead: NOT dance-voice): Zarathustra slinks through twilight hiding a little truth; an old woman at sunset asks for woman-spoken-to-women; his speech (riddle/pregnancy, means/child, danger/play, warrior's recreation, bitter sweetness, the child in man, plaything-precious-stone, bearing the Superman, bravery/honour in love, fear in love and hate, iron-to-magnet, I-will/He-will, perfected world, surface/torrent); her thanks-gift: the whip. Pull-line is the crack the whole chapter walks toward.",
+      "reading_treatment": "Confessional measure 36rem (narrow — twilight closeness), gap 1.2em. Frame-tale rhythm (walk §1–7, speech §8–25, thanks §26–29) reads on calm prose; no speaker styling. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "Twilight dialogue with the little old woman: the riddle of woman, danger and play, iron and magnet — and the whip.",
+      "title": "Of Old and Young Women",
+      "voice": "twilight-dialogue/confessional: frame-tale, speech, thanks-gift."
+    },
+    {
+      "caption": "“When did a dragon ever die from the poison of a snake?” — §1",
+      "class": "emblem",
+      "drop_cap": "Cinzel serpent: 'One day Zarathustra had fallen asleep under a fig tree…' — heat, shade, fangs.",
+      "form": "parable-emblem",
+      "id": "p1c20",
+      "manifest": {
+        "src": "art/cohort-p1.svg",
+        "class": "emblem",
+        "motif": "bestiary-adder",
+        "caption": "“When did a dragon ever die from the poison of a snake?” — §1",
+        "symbol": "adder"
+      },
+      "mood": "Fig-shade noon heat: a bite, a debt refused, a well too deep to fetch.",
+      "motif": "bestiary-adder",
+      "motif_asset": "cohort-p1.svg #adder — fig branch with lobed leaves, coiled adder (serpent body, scale ticks, solar eye, ember tongue-flick), heat sun-dot, ≤120px. Approved vocab motif 'bestiary-adder'.",
+      "opener_composition": "Adder emblem ≤120px → part line → title → pull-line (dragon vs snake; the chapter's riddle of rank) → sun-rule. Neighbor contrast vs p1c19 (dim twilight seal, no cap) and p1c21 (bright nuptial seal, solar cap): noon-heat emblem + serpent cap between dusk and wedding — fangs between cloak and torch.",
+      "opener_worthy": "Sleep under the fig tree; the bite in the neck; poison given back for poverty; little revenge over none; cold justice with the executioner's eye; justice as love with seeing eyes; the hermit as deep well.",
+      "order": 20,
+      "palette_role": "Serpent-led parable (second serpent emblem after the triptych's lion panel; first pure-creature emblem): serpent body, bone leaves, solar eye + heat-dot, ONE ember tongue-flick (text-verified bite; minimal). Fig shade = night-wash behind leaves, flat, no gradient.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§1 (para 1, Zarathustra's speech; outer quotes trimmed)",
+        "text": "When did a dragon ever die from the poison of a snake?"
+      },
+      "rationale": "Parable + moral: adder bites the sleeping Zarathustra, recognizes his eyes, would flee; thanked for waking at the right time; deathly poison refused ('take your poison back — not rich enough'); disciples ask the moral: don't shame enemies with good-for-evil, prove their good; anger over shaming; curse back a little; shared injustice as half justice; little revenge human; declaring oneself wrong when rich; cold justice refused; justice as seeing love; giving everyone what is mine; the hermit-well no stone returns from. Emblem draws the bite-scene; pull-line is the rank-riddle.",
+      "reading_treatment": "Measure 38rem, gap 1.15em. Long §1 (the whole bite-story in one para) then short morals (§3–13) — the shape IS the treatment (story, then verdicts). Mini-seal closes.",
+      "src": "art/cohort-p1.svg",
+      "subject": "The adder's bite under the fig tree: on enemies, revenge, cold vs seeing justice, and the hermit as deep well.",
+      "title": "Of the Adder's Bite",
+      "voice": "parable-then-morals: one long story, twelve short verdicts."
+    },
+    {
+      "caption": "“It is a torch which should light your way to higher paths.” — §21",
+      "class": "seal",
+      "drop_cap": "Cinzel solar nuptial: 'I have a question for you alone…' — the plummet drops.",
+      "form": "sermon-tablet",
+      "id": "p1c21",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“It is a torch which should light your way to higher paths.” — §21",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Clear interrogation air: plummet down, torch up.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px → part line → title → pull-line (the torch; upward answer to the plummet's downward question) → sun-rule 12rem. Neighbor contrast vs p1c20 (creature emblem, serpent cap) and p1c22 (dusk tablet, deepest gold): bright interrogative tablet between fangs and sunset — torch between shade and glow.",
+      "opener_worthy": "The plummet thrown into the soul; victory longing for a child; building beyond oneself; the garden of marriage; saint-and-goose convulsions; wives bought wrapped; brief follies and one long stupidity; the bitter cup arousing thirst for the Superman.",
+      "order": 21,
+      "palette_role": "Solar nuptial (standard brightness, torch-warmed): full seal, solar cap, bone pull-line. Plummet-depth and torch-height are both solar — one metal, two directions (no split palette: the chapter unites them).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§21 (para 21; torch sentence)",
+        "text": "It is a torch which should light your way to higher paths."
+      },
+      "rationale": "Marriage interrogated: the plummet-question (depth of soul); victor/self-conqueror fitness; animal/necessity/isolation/disharmony unfitness; victory longing for a child; building beyond, square-built; upward propagation; the garden; creating the creator; marriage as will-of-two for the more-than-two; superfluous marriage as filth/ease; heaven of the superfluous refused; saint-goose convulsions; dressed-up lies and wrapped wives; brief follies/long stupidity; best love as torch; bitter cup → Superman-thirst. Pull-line is the upward answer. (Self-propelling wheel §8 echoes p1c2/p1c18 — third toll of the image.)",
+      "reading_treatment": "Measure 38rem, gap 1.15em. Question-then-catalogue rhythm (§1–9 asking, §10–20 exhibiting, §21–23 hallowing) reads on calm prose. Mini-seal closes.",
+      "src": "art/seals.svg",
+      "subject": "On marriage and children: the plummet-question, building beyond oneself, the garden, and love as torch to higher paths.",
+      "title": "Of Marriage and Children",
+      "voice": "nuptial interrogation: one deep question, many exhibits, a hallowing."
+    },
+    {
+      "caption": "“In your death, your spirit and your virtue should still glow like a sunset glow around the earth: otherwise yours is a bad death.” — §32",
+      "class": "seal",
+      "drop_cap": "Cinzel DUSK-GOLD (color-mix solar 85% + ember 15% — text-verified 'sunset glow'; the ONLY ember-mixed cap in P1, documented exception): 'Many die too late…' — the latest hour.",
+      "form": "sermon-tablet",
+      "id": "p1c22",
+      "manifest": {
+        "src": "art/seals.svg",
+        "class": "seal",
+        "motif": "dawn-ring",
+        "caption": "“In your death, your spirit and your virtue should still glow like a sunset glow around the earth: otherwise yours is a bad death.” — §32",
+        "symbol": "seal-dawn"
+      },
+      "mood": "Long amber evening: ripe apples, shaken branches, a golden ball in the air.",
+      "motif": "dawn-ring",
+      "motif_asset": "seals.svg #seal-dawn (supervisor master; replaces P1 draft #dawn-ring per lead spec §A)",
+      "opener_composition": "Seal 64px dusk-gold → part line → title → pull-line (sunset glow; the longest pull-line after p1c2/p1c9 — evening needs room) → sun-rule 12rem dusk-gold. Neighbor contrast vs p1c21 (pure-solar torch tablet) and p1c23 (finale white-gold blaze): the dusk hinge — deepest gold in P1, exhaling into the finale's noon.",
+      "opener_worthy": "Dying at the right time; the consummating death as festival; rope-makers spinning backwards; sour autumn apples; the storm shaking rottenness; Jesus dying too early; the golden ball thrown to heirs.",
+      "order": 22,
+      "palette_role": "Dusk-gold derivation (solar 85/ember 15 via color-mix — text-verified sunset, §32; documented exception to P1's ember discipline, minimal and chapter-bound). Body stays bone-on-lapis; derivation touches seal/rule/cap only.",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§32 (para 32, whole)",
+        "text": "In your death, your spirit and your virtue should still glow like a sunset glow around the earth: otherwise yours is a bad death."
+      },
+      "rationale": "Voluntary death: dying at the right time (goal + heir); the hollow nut; death not yet a festival; consummating death with vows; battle-death second; grinning thief-death refused; no withered wreaths; rope-makers backwards; glory leaving honour in time; sour apples; poison-worm hearts; storm shaking the tree; preachers of speedy death; Jesus too early (desert, laughter, recanting unlived); child-in-man on life and death; free in death; sunset-glow death; becoming earth again; the golden ball thrown to friends. Pull-line states the test. Dusk-gold is the day's farewell before the finale's noon.",
+      "reading_treatment": "Measure 38rem, gap 1.2em (evening air). The death-catalogue (§13–20) then the Jesus passage (§23–29, handled as prose, no styling) then the ball-throw close (§34–35) into the mini-seal.",
+      "src": "art/seals.svg",
+      "subject": "On voluntary death: dying at the right time, the consummating festival, the shaken tree, and the golden ball.",
+      "title": "Of Voluntary Death",
+      "voice": "dusk sermon: ripeness, storm, glow — evening's counsel."
+    },
+    {
+      "caption": "“‘All gods are dead: now we want the Superman to live’ – let this be our last will one day at the great noontide!” — §51",
+      "class": "finale",
+      "drop_cap": "Cinzel solar WHITE-GOLD (color-mix solar + white 18% — text-verified 'great noontide'; finale privilege, foreshadowing Part III's blaze): 'When Zarathustra had taken leave…' — the farewell opens in noon.",
+      "form": "farewell-finale",
+      "id": "p1c23",
+      "manifest": {
+        "src": "art/cohort-p1.svg",
+        "class": "finale",
+        "motif": "sun-serpent",
+        "caption": "“‘All gods are dead: now we want the Superman to live’ – let this be our last will one day at the great noontide!” — §51",
+        "symbol": "staff-sun-serpent"
+      },
+      "mood": "Noon declared at dawn's end: gold bestowed, statues falling, friends released.",
+      "motif": "sun-serpent",
+      "motif_asset": "cohort-p1.svg #staff-sun-serpent — the staff-head: golden haft, rayed sun, serpent coiled about it, fountain-ripple base with bestowing gold-drops; ≤160px tall (finale privilege vs 120px emblem cap). Approved vocab motif 'sun-serpent'. THIS is the book's self-drawn emblem (p1c23 §2) — the identity's master device debuts here, in P1's closing slot, before ruling the cover.",
+      "opener_composition": "Staff emblem ≤160px (tallest art in P1) → part line → title → pull-line (the last will at the great noontide; the book's thesis in one sentence, quoted whole with its inner vow) → sun-rule 14rem. Neighbor contrast vs p1c22 (dusk tablet): dusk exhales, noon blazes — the part ends brighter than it began (dawn→noontide in 23 chapters; the solar-day arc kept). Class 'finale' (not 'emblem'): the slot treatment may carry extra air above/below per book CSS.",
+      "opener_worthy": "The Pied Cow farewell; the cross-road parting; gold's useless shining; the giver's glance; moon-sun peace; the fountain flowing back as gifts; healthy vs thieving selfishness; the upward way; the coiled staff; the falling statue; losing the teacher; the great noontide.",
+      "order": 23,
+      "palette_role": "Full solar + serpent + white-gold noon highlight (color-mix solar+white 18%, text-verified noontide §50–51; finale privilege shared with no other P1 chapter). Staff gold densest metal in P1; serpent holy here (contrast p1c7's verbal knot — the same animal redeemed).",
+      "part": "part-1",
+      "part_roman": "I",
+      "pull_line": {
+        "cite": "§51 (para 51, whole)",
+        "text": "‘All gods are dead: now we want the Superman to live’ – let this be our last will one day at the great noontide!"
+      },
+      "rationale": "Part finale (52 paras): farewell to the Pied Cow, cross-road solitude, the staff with serpent coiled about a sun; gold's value (uncommon, useless, shining, bestowing); giver's glance; bestowing virtue; thirst to heap soul-riches; the fountain; healthy vs sick selfishness; degeneration suspected where bestowing lacks; upward way; body through history, spirit as herald; image-names; virtue's origins (river-heart, exalted will, hard bed, single will); new virtue as power with golden sun + knowledge-serpent; loyalty to earth; flown-away virtue led back; chance fought; body purified by knowledge; thousand untrodden paths; solitaries→people→Superman; the staff balanced; going-alone commanded; hating friends; plucking laurels; the falling statue; losing/finding; denial-then-return; the great noontide (middle course, evening journey, new morning); the last will. Pull-line is the book's creed. The staff emblem debuts the master device.",
+      "reading_treatment": "Finale measure 40rem (widest, with p1c1), gap 1.2em. Three movements (gift §1–25, earth §26–38, farewell §39–51) read on calm prose — no dividers per Rule 2; the pull-line + staff + white-gold cap carry the ceremony. Closes with the cresting-sun mini-seal (App. A.0) — Part I's last mark before Part II's Night-Ring.",
+      "src": "art/cohort-p1.svg",
+      "subject": "The bestowing virtue: farewell at the cross-road, the serpent-and-sun staff, gold, the fountain, earth-loyalty, losing the teacher — and the great noontide.",
+      "title": "Of the Bestowing Virtue",
+      "voice": "farewell-finale: gift, earth, release — three blessings."
+    }
+  ],
+  "form_summary": {
+    "counts": "vision-epic 1 (p1c1) · triptych-emblem 1 (p1c2) · sermon-tablet 15 (p1c3–p1c6, p1c7 parable-voice, p1c8 aphoristic, p1c10–p1c11, p1c13–p1c18, p1c21–p1c22) · parable-emblem 2 (p1c9, p1c20) · sermon-emblem 1 (p1c12) · dialogue 1 (p1c19) · farewell-finale 1 (p1c23). No songs in Part I (binding).",
+    "slot_classes": "scene 1 · emblem 4 (p1c2 triptych counts as emblem) · finale 1 · seal 17."
+  },
+  "grammar": "Direction A — THE SOLAR GOSPEL (sun-serpent liturgy). Binding: directions.md §§binding rules 1–16 + ART-DIRECTION.md draft v0.1 + READER-CONTRACT v1.0. P1 = Dawn phase: Dawn-Ring seal, solar gold lead, cresting-sun mini-seal, no songs.",
+  "manifest_draft_note": "V1 LANDED (lead relay 2026-10-15): build MANIFEST-FIRST against the real slots (#chapter-art/#cover-art, body[data-art], contract §4 + v1.1 symbol keys). Supervisor merges each entry's manifest {src, class, motif, caption} into design/chapters.json. src 'art/cohort-p1.svg' = symbol library; symbol selected by motif id (see engineer_handoff for wiring + asset-list split mapping incl. v1.1 'symbol' key). Two motif ids ('lone-tree', 'smashed-idol') are NEW and need supervisor approval; fallbacks documented per entry.",
+  "new_motifs_pending": [
+    {
+      "fallback": "motif 'dawn-ring' + tree drawn via body[data-chapter='p1c9'] CSS background from #lone-tree symbol.",
+      "id": "lone-tree",
+      "used_by": "p1c9"
+    },
+    {
+      "fallback": "motif 'dawn-ring' + cold-dimmed tablet (no emblem).",
+      "id": "smashed-idol",
+      "used_by": "p1c12"
+    }
+  ],
+  "pull_line_method": "ONE verbatim pull-line per chapter from the chapter's own JSON paragraphs, cited as §N (para N). Excerpts are whole sentences (or whole speeches with outer dialogue quotes trimmed — noted per entry). No invented epigraphs. Full-sentence trims (trailing clauses kept or whole-sentence selections) are each noted in the cite field. Z4: every pull-line verbatim + §-cited; verified against chapter JSON in this spec.",
+  "references": [
+    "Henry van de Velde, deluxe Also sprach Zarathustra, Insel Verlag 1908 (Yale Art Gallery 1997.56.3; NGA 163764; Fonts In Use via Getty/Archive.org scan) — authored line + monumental title; ornament linear and architectural. Collection-record study.",
+    "William Blake, illuminated prophetic books esp. Jerusalem (V&A O901355; YCBA; Tate; 'infernal method' scholarship) — emblems fused with the text block; prophetic utterance with inscriptional weight. Record/scholarship study.",
+    "Shir-o-Khorshid Lion-and-Sun emblem of Persia (Wikipedia 'Lion and Sun'; BMITP continuity paper; WorldHistory.org Zoroaster) — historical root of the solar grammar; staff-head legitimacy. Record study.",
+    "Caspar David Friedrich, Wanderer above the Sea of Fog (Met 378) and Morning in the Riesengebirge (WGA; Nationalgalerie) — Rückenfigur before dawn ridges; Part I as 'first light over an abyss'. Record study.",
+    "Michael Maier, Atalanta Fugiens (1618, De Bry engravings; Frankfurt UB digitization; Hermetic School emblem archive) — circular pictura + motto structure as ancestor of the seal + pull-line opener; sun/serpent/eagle iconography. Record study.",
+    "Ferdinand Hodler, Parallelism (Rijksmuseum; Kunstmuseum Bern; National Galleries Scotland) — symmetric dawn-ridge friezes; informed the p1c1 3-beat scene rhythm. Record study.",
+    "Cinzel + Newsreader availability verified live via Google Fonts CSS2 (HTTP 200, @font-face woff2/ttf served; Cinzel 400–700, Newsreader ital/opsz 400–500). Supervisor self-hosts subsets per contract §8/§11; Google link stays as progressive enhancement."
+  ],
+  "status": "engineered-final-v1 (R1: p1c1 rope-fall-scene redraw by designer, figure-free emblem triptych; lone-tree + smashed-idol supervisor-approved)",
+  "svg_symbols": [
+    {
+      "id": "dawn-ring",
+      "role": "P1 draft of supervisor master art/seal-part-1.svg (Dawn-Ring). Opener seal for all 17 seal-class chapters.",
+      "viewBox": "0 0 96 96"
+    },
+    {
+      "id": "cresting-sun-mini",
+      "role": "P1 closing mini-seal (App. A.0): body[data-chapter]-qualified p:last-child::after SVG url(), ≤32px.",
+      "viewBox": "0 0 32 32"
+    },
+    {
+      "id": "sun-rule",
+      "role": "P1 draft of supervisor master art/rule-sun.svg: opener sun-rule with center sun-dot.",
+      "viewBox": "0 0 320 16"
+    },
+    {
+      "id": "rope-fall-scene",
+      "role": "p1c1 vision-epic scene (class scene). Also: rope-beat detail reusable as Part I divider.",
+      "viewBox": "0 0 960 420"
+    },
+    {
+      "id": "triptych-metamorphoses",
+      "role": "p1c2 triptych emblem (class emblem).",
+      "viewBox": "0 0 360 120"
+    },
+    {
+      "id": "lone-tree",
+      "role": "p1c9 parable emblem (class emblem).",
+      "viewBox": "0 0 120 120"
+    },
+    {
+      "id": "smashed-idol",
+      "role": "p1c12 sermon emblem (class emblem).",
+      "viewBox": "0 0 120 120"
+    },
+    {
+      "id": "adder",
+      "role": "p1c20 parable emblem (class emblem; motif bestiary-adder).",
+      "viewBox": "0 0 120 120"
+    },
+    {
+      "id": "staff-sun-serpent",
+      "role": "p1c23 finale emblem (class finale): the book's self-drawn master device.",
+      "viewBox": "0 0 120 160"
+    }
+  ],
+  "text_verification": "All 23 P1 chapter JSONs read in full (paras 1–N each). Lead summaries VERIFIED essentially correct. Corrections/additions: (1) p1c1 omits the forest saint + 'God is dead', the Ultimate Man sequence, and the hollow-tree burial — all staged in the 3-beat scene + rationale. (2) p1c7 confirmed parable-before-judges (not inference). (3) p1c18 confirmed creator-solitude threshold sermon (not inference). (4) p1c19 CONFIRMED twilight dialogue ending 'Do not forget your whip!' — dance-voice rejected per lead; designed as twilight-dialogue/confessional. (5) Recurring-image notes recorded: fierce-dogs cellar (p1c6→p1c9), self-propelling wheel (p1c2→p1c18→p1c21), deep-well hermit (p1c13→p1c20), arrow of longing (p1c1→p1c11→p1c15), tablets (p1c16→p3c12).",
+  "tokens_binding": {
+    "body": "Spectral 400/1.9 (400/500 + true italics; Spectral SC 500/600 available for speech labels) — DIRECTOR RULING 2026-10-15: Newsreader OUT (Churchill + WtP hold it; Zarathustra needs a distinct lyric italic). Metrics redesigned around Spectral. Fallback: Georgia, serif.",
+    "chrome": "DM Sans (shared, unchanged).",
+    "display": "Cinzel 400–700 (Google Fonts, verified live) — cover title, chapter titles (book title-case, NEVER forced uppercase), part lines, seal legends, TOC part headers. Fallback: 'Trajan Pro', Georgia, serif.",
+    "measure": "Prose 36–40rem per entry (intimate 36 / standard 38 / epic+finale 40); titles free; pull-lines max 44rem centered within tablet.",
+    "note": "Binding per adopted Direction A + ArtDirector verdict (Z1–Z4, Z7). Derived tints ONLY via color-mix; no new hues. Z1 GOLD FIREWALL: all gold is FLAT engraved SVG line-work — zero radial/conic glow discs, zero text-shadow halos on Cinzel; luminous = REVISE. Z2: Cinzel LITURGICAL (inscriptions, seals, pull-lines), never bronze-tablet minimalism (Twilight's). Pull-line text stays BONE; only the § cite is gold.",
+    "palette": {
+      "z-bone": "#F2E7CF",
+      "z-ember": "#C8502E",
+      "z-lapis": "#1B2350",
+      "z-night": "#0A0E21",
+      "z-serpent": "#7A8B5A",
+      "z-solar": "#E8A93D"
+    },
+    "scale": "Chapter title Cinzel 600 clamp(2rem,5vw,3.25rem) balanced ≤3 lines (verified at 390px: wraps to 2 lines, no overflow); part line Cinzel 400 0.85rem tracked 0.3em sentence case ('Part the First · I'; 0.72rem/0.22em ≤640px); pull-line Spectral italic 1.15rem/1.7 bone (1.02rem ≤640px); body Spectral 400 1.3rem/1.9 (1.12rem/1.8 ≤640px); sun-rule 11–14rem per entry (9–10rem ≤640px)."
+  },
+  "type": {
+    "body": "Spectral (director ruling; Newsreader rejected)",
+    "chrome": "DM Sans",
+    "display": "Cinzel"
+  },
+  "prototype": {
+    "file": "books/thus-spoke-zarathustra/design/prototype-p1.html",
+    "art": "books/thus-spoke-zarathustra/art/cohort-p1.svg (9 symbols; symbols inlined into prototype for review; production uses declarative manifest fill per contract §4)",
+    "server": "http://127.0.0.1:8899/books/thus-spoke-zarathustra/design/prototype-p1.html (designer's preview server; repo-root docroot)",
+    "verified": "3 openers (p1c1 scene, p1c9 emblem, p1c23 finale) screenshotted at 1440×1000, 820×1180, 390×844 via native Eval browser; live Spectral + Cinzel from Google Fonts; repairs applied from screenshots (beat-2 crowd/towers, beat-3 eagle/serpent/tree, tree line-weight, mobile type scale, seal sizing).",
+    "z1_check": "Zero gradients/filters/glow/text-shadow in art + prototype CSS (verified by construction)."
+  },
+  "engineer_handoff": {
+    "primary": "MANIFEST-FIRST declarative fill (v1 LANDED — no CSS-only fallback): supervisor merges per-entry {src, class, motif, caption} into design/chapters.json; reader.js inlines art/cohort-p1.svg symbols into #chapter-art and sets body[data-art]. Include the v1.1 'symbol' key per entry naming the symbol id (see symbol_map).",
+    "symbol_map": {
+      "p1c1": "rope-fall-scene",
+      "p1c2": "triptych-metamorphoses",
+      "p1c9": "lone-tree",
+      "p1c12": "smashed-idol",
+      "p1c20": "adder",
+      "p1c23": "staff-sun-serpent",
+      "seal_chapters": "dawn-ring (supervisor master art/seal-part-1.svg replaces this draft; P1 draft symbol ships meanwhile)",
+      "rule": "sun-rule (P1 draft of art/rule-sun.svg)",
+      "end_seal": "cresting-sun-mini (App. A.0 / Z7)"
+    },
+    "asset_list_split": "If the supervisor prefers one-file-per-asset over the symbol library (identity asset list names art/scene-prologue-rope.svg, art/emblem-bestiary-adder.svg etc.), each <symbol> in cohort-p1.svg extracts 1:1 into its own SVG file (copy symbol inner content into <svg viewBox='…'> with the palette comment); manifest src values then point at the split files. Symbol ids are stable across the split — motif ids and body[data-art] keying do not change.",
+    "css": "Cohort CSS (design/cohort-p1.css, engineer-owned) qualifies under body[data-part='I'] / body[data-chapter='p1cN'] / body[data-art]. Slot treatments: .chapter-art.seal (56–72px per entry) / .scene (21:9, max-height 46vh) / .emblem (≤120px; finale ≤160px). 17 seal chapters vary by seal size (56/64/72), dimming cause (sleep 70% p1c3 / rot 70% p1c10 / guilt 60% p1c7 / twilight 85% p1c19), drop-cap color (solar/serpent/dimmed/ember×1/dusk-mix×1/white-gold×1/none×2), measure (36/38/40rem), gap (1.1/1.15/1.2/1.3em), rule length — NEVER by position/mod-N. Pull-lines render from manifest caption (Spectral italic bone + gold § cite). Drop-cap exceptions are text-verified and documented per entry — do not normalize them.",
+    "end_seal": "Chapter-end ornament via Appendix A.0: body[data-chapter='p1cN']-qualified .chapter-text > p:last-child::after carrying authored SVG url() content (cresting-sun-mini, ≤32px — prototype uses 26px), no layout shift, never a bare glyph. One shared P1 rule + per-chapter qualification; Part I closes with the cresting sun on all 23 chapters.",
+    "fonts": "Supervisor self-hosts Cinzel 400–700 + Spectral 400/500/italics (+Spectral SC 500/600) as design/fonts/*.woff2 with @font-face (book-relative, build ships per §11); Google Fonts CSS2 link stays as progressive enhancement (display=swap). REQUIRED fallbacks: Cinzel→'Trajan Pro',Georgia,serif; Spectral→Georgia,serif. Verify HTTP + computed-style load before prototype review.",
+    "contrast": "Bone #F2E7CF on lapis #1B2350 / night #0A0E21 ≥10:1. Gold #E8A93D text ONLY for large text — part line + § cites are small gold; if the validator flags them, switch part line to bone and keep drop caps + pull-line cites gold. Dimmed seals/rules/caps never affect body text.",
+    "reduced_motion": "All seals/rays static. Any shimmer needs prefers-reduced-motion:no-preference AND ≤0.05Hz. No parallax on prose.",
+    "new_motifs": "lone-tree (p1c9), smashed-idol (p1c12) need supervisor approval; fallbacks documented in entries. All other motifs are approved vocab (dawn-ring, rope-fall, camel-lion-child, bestiary-adder, sun-serpent).",
+    "verify_in_site": "Verify in _site (not just source): art, fonts, manifest ship (§11). Prototype URL (source-live): http://127.0.0.1:8899/books/thus-spoke-zarathustra/design/prototype-p1.html."
+  },
+  "citation_scheme": "§N = 1-based paragraph number into books/thus-spoke-zarathustra/data/chapters/<id>.json paragraphs array (paragraphs[N-1]); e.g. p1c1 §57 = paragraphs[56]. Verified 23/23 verbatim by lead.",
+  "engineer_notes": "P1 engineer build 2026-10-15: (1) SVG rewritten to well-formed XML (illegal double-hyphen sequences removed from comments) + p1c1 symbol replaced with designer R1 redraw (design/p1c1-rope-fall-r1.svg); old paths deleted, not kept. (2) v1.1 symbol key added to every manifest entry. (3) New design/cohort-p1.css: scoped treatments under body[data-part=I]/[data-chapter]/[data-art]; A.0 end-seal override; Z1 firewall; static art; reduced-motion/print/390px guards. (4) R2 emblem chapter = p1c9.",
+  "supervisor_notes": [
+    "2026-10-15: 17 dawn-ring seal entries repointed to supervisor master art/seals.svg#seal-dawn per ZaraLeadP1 §A (P1 draft #dawn-ring superseded; P1 owns no seal master)."
+  ]
+}

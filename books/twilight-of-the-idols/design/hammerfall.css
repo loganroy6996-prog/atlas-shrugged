@@ -1,0 +1,161 @@
+/* HAMMERFALL cohort — Twilight of the Idols p1c1–p1c4 (STRUCK BRONZE / sounding-out).
+   Contract v1.1: unlayered, loads AFTER design/book.css (supervisor merge order).
+   Every rule is body[data-chapter]-scoped. Book tokens only (--tw-*); display via
+   var(--font-display). Zero border-radius. Never touches .chapter-meta::before
+   (reserve), .chapter-meta::after (book seal), p:last-child::after (book end seal). */
+
+/* ── Emblem sizes: beat book 148px via higher specificity ── */
+body[data-chapter="p1c1"] #chapter-art.motif svg { width: 300px; height: auto; }
+body[data-chapter="p1c2"] #chapter-art.motif svg { width: 340px; height: auto; }
+body[data-chapter="p1c3"] #chapter-art.motif svg { width: min(420px, 80vw); height: auto; }
+body[data-chapter="p1c4"] #chapter-art.motif svg { width: 340px; height: auto; }
+body[data-chapter="p1c1"] #chapter-art,
+body[data-chapter="p1c2"] #chapter-art,
+body[data-chapter="p1c3"] #chapter-art,
+body[data-chapter="p1c4"] #chapter-art { margin: 0 auto 2rem; }
+body[data-chapter="p1c1"] #chapter-art.motif svg,
+body[data-chapter="p1c2"] #chapter-art.motif svg,
+body[data-chapter="p1c3"] #chapter-art.motif svg,
+body[data-chapter="p1c4"] #chapter-art.motif svg { display: block; margin-inline: auto; }
+
+/* ── Figcaptions: the only in-slot text (colophon / count strip / equation) ── */
+body[data-chapter="p1c1"] #chapter-art figcaption {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .72rem; letter-spacing: .28em; text-indent: .28em;
+  color: var(--tw-ash, #A89A80); text-align: center; margin-top: 1rem;
+}
+body[data-chapter="p1c2"] #chapter-art figcaption,
+body[data-chapter="p1c4"] #chapter-art figcaption {
+  font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
+  font-size: .72rem; letter-spacing: .22em; text-indent: .22em;
+  color: var(--tw-ash, #A89A80); text-align: center; margin-top: 1rem;
+}
+body[data-chapter="p1c3"] #chapter-art figcaption {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .95rem; letter-spacing: .18em; text-indent: .18em;
+  color: var(--tw-bronze, #D29A4A); text-align: center; margin-top: 1rem;
+}
+
+/* ── p1c1: shadow-bar under the eyebrow (meta-part::after verified free) ── */
+body[data-chapter="p1c1"] .meta-part::after {
+  content: ""; display: block; width: 64px; height: 4px; margin: 1.4rem auto 1.6rem;
+  background: #000; box-shadow: 10px 10px 0 rgba(0, 0, 0, .45);
+}
+/* p1c1: number label duplicates the title */
+body[data-chapter="p1c1"] #meta-number { display: none; }
+/* p1c1: signature close — a letter ending */
+body[data-chapter="p1c1"] .chapter-text > p:last-of-type {
+  text-align: right; font-style: italic; font-size: 1.1rem;
+  color: var(--tw-ash, #A89A80); margin-top: 3rem;
+}
+
+/* ── p1c2: small-end Cinzel title (percent rule) + air ── */
+body[data-chapter="p1c2"] .chapter-meta { margin-bottom: 4rem; }
+/* R-I2: font-size cut — book.css TR5 whisper (clamp 1.15–1.6rem) wins. */
+body[data-chapter="p1c2"] .meta-title {
+  font-weight: 600; letter-spacing: .14em;
+}
+/* p1c2: staccato stanzas + bare content-true numerals (p::before verified free) */
+body[data-chapter="p1c2"] .chapter-text { counter-reset: barb; }
+body[data-chapter="p1c2"] .chapter-text > p {
+  max-width: 44ch; margin: 0 auto 1.9em; position: relative;
+  font-size: 1.12rem; line-height: 1.7;
+}
+body[data-chapter="p1c2"] .chapter-text > p::before {
+  counter-increment: barb; content: counter(barb, decimal-leading-zero);
+  position: absolute; left: -3.4rem; top: .35em;
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .68rem; letter-spacing: .08em; color: var(--tw-ash, #A89A80);
+}
+/* p1c2: the Formula — closing stanza set larger, bronze lead line */
+body[data-chapter="p1c2"] .chapter-text > p:last-of-type { font-size: 1.25rem; text-align: center; }
+body[data-chapter="p1c2"] .chapter-text > p:last-of-type::first-line { color: var(--tw-bronze, #D29A4A); }
+
+/* ── p1c3: pivot air + authored arc dividers (curves, never rails) ── */
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(12) { margin-top: 2.6em; }
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(7)::before,
+body[data-chapter="p1c3"] .chapter-text > p:nth-of-type(12)::before {
+  content: ""; display: block; width: 160px; height: 24px; margin: 0 auto 1.6em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 24'%3E%3Cpath d='M8 21 A76 76 0 0 1 70 6.2 M90 6.2 A76 76 0 0 1 152 21' fill='none' stroke='%23D29A4A' stroke-width='1.5' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* ── p1c4: proposition tablets (square, no shadow — tablets, not cards) ── */
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9) {
+  background: var(--tw-anvil, #1B1510);
+  outline: 1px solid color-mix(in srgb, var(--tw-bone, #EDE2CC) 18%, transparent);
+  outline-offset: 0; padding: 1.4em 1.6em; font-size: 1.06em;
+  border-radius: 0; margin-top: 2.4em;
+}
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7)::first-line,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8)::first-line,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9)::first-line {
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .95rem; letter-spacing: .1em; color: var(--tw-bronze, #D29A4A);
+}
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7)::before,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8)::before,
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9)::before {
+  content: ""; display: block; width: 160px; height: 24px; margin: -.2em auto 1.4em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 24'%3E%3Cpath d='M8 21 A76 76 0 0 1 70 6.2 M90 6.2 A76 76 0 0 1 152 21' fill='none' stroke='%23D29A4A' stroke-width='1.5' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+/* p1c4: Third + Fourth share served para 9 — one breath, two blows */
+body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9)::after {
+  content: "THIRD + FOURTH \2014 ONE BREATH, TWO BLOWS"; display: block; margin-top: 1.2em;
+  font-family: var(--font-display, "Cinzel", "Times New Roman", serif);
+  font-size: .65rem; letter-spacing: .22em; text-indent: .22em;
+  color: var(--tw-ash, #A89A80); text-align: center;
+}
+
+/* ── Sound-ring draw-in: the one orchestrated moment (P9) ── */
+@keyframes hf-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+body[data-chapter="p1c1"] #chapter-art.motif .hf-ring,
+body[data-chapter="p1c2"] #chapter-art.motif .hf-ring,
+body[data-chapter="p1c3"] #chapter-art.motif .hf-ring,
+body[data-chapter="p1c4"] #chapter-art.motif .hf-ring {
+  stroke-dasharray: 1; stroke-dashoffset: 0; animation: hf-draw .9s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-chapter="p1c1"] #chapter-art.motif .hf-ring,
+  body[data-chapter="p1c2"] #chapter-art.motif .hf-ring,
+  body[data-chapter="p1c3"] #chapter-art.motif .hf-ring,
+  body[data-chapter="p1c4"] #chapter-art.motif .hf-ring { animation: none; }
+}
+
+/* ── 820px tablet ── */
+@media (max-width: 1100px) {
+  body[data-chapter="p1c1"] #chapter-art.motif svg { width: 240px; }
+  body[data-chapter="p1c2"] #chapter-art.motif svg { width: 270px; }
+  body[data-chapter="p1c3"] #chapter-art.motif svg { width: min(340px, 80vw); }
+  body[data-chapter="p1c4"] #chapter-art.motif svg { width: 270px; }
+  body[data-chapter="p1c2"] .chapter-text > p::before { left: -2.6rem; }
+}
+
+/* ── 390px phone ── */
+@media (max-width: 560px) {
+  body[data-chapter="p1c1"] #chapter-art.motif svg,
+  body[data-chapter="p1c2"] #chapter-art.motif svg,
+  body[data-chapter="p1c3"] #chapter-art.motif svg,
+  body[data-chapter="p1c4"] #chapter-art.motif svg { width: 100%; max-width: 480px; }
+  body[data-chapter="p1c2"] .chapter-text > p::before {
+    position: static; display: block; margin-bottom: .4em;
+  }
+  body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(7),
+  body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(8),
+  body[data-chapter="p1c4"] .chapter-text > p:nth-of-type(9) { padding: 1.1em; }
+}
+
+/* ── Overflow guard: rings clip to the viewport at small widths ── */
+@media (max-width: 480px) {
+  body[data-chapter="p1c1"] #chapter-art.motif svg,
+  body[data-chapter="p1c2"] #chapter-art.motif svg,
+  body[data-chapter="p1c3"] #chapter-art.motif svg,
+  body[data-chapter="p1c4"] #chapter-art.motif svg { overflow: hidden; }
+}
+
+/* ── Print: book hides slots; structural dividers/captions/numerals keep ── */
+@media print {
+  body[data-chapter="p1c1"] .meta-part::after { box-shadow: 6px 6px 0 rgba(0, 0, 0, .35); }
+}

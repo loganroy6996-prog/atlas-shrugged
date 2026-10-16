@@ -1,0 +1,483 @@
+{
+  "book": "thus-spoke-zarathustra",
+  "cohort": "cohort-p3",
+  "cohort_title": "Part Three — Noon (p3c1–p3c16)",
+  "part": "part-3",
+  "partRoman": "III",
+  "directions_considered": [
+    {
+      "name": "P3-A · BLAZE TABLETS (noon-tablet grammar)",
+      "choice": true,
+      "summary": "Conform to Solar Gospel: monumental tablets + azure-bell/winter/vine/dance crowns for the five songs, gateway centerpiece scene, sickbed-wheel vision, seven distinct seal-rounds for the finale; emblems only where prose stages a visual event (doors, gates, scales, ladder).",
+      "type": "Cinzel liturgical / Spectral body+italic / DM Sans chrome.",
+      "palette": "Binding Solar Gospel tokens; white-gold blaze lead, serpent secondary, bone on lapis.",
+      "signature": "The Zenith-Ring blaze + seven seal-rounds + gateway Moment scene; songs crowned, sermons tableted.",
+      "rejected_why": null
+    },
+    {
+      "name": "P3-B · HOUR-DIAL (sun position = chapter index)",
+      "choice": false,
+      "summary": "A noon-dial arc with the sun climbing per chapter.",
+      "rejected_why": "Position-encoding is mod-N logic in disguise; forces near-identical adjacent openers; rejected per rule 12."
+    },
+    {
+      "name": "P3-C · TABLET PER SERMON (every sermon gets stone art)",
+      "choice": false,
+      "summary": "Draw stone tablets for all nine sermons.",
+      "rejected_why": "Flattens hierarchy: the great sermon p3c12 must tower; minor sermons stay quiet tablets with doors/gates/scales emblems where text-earned."
+    }
+  ],
+  "entries": [
+    {
+      "id": "p3c1",
+      "order": 1,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "The Wanderer",
+      "form": "travel-vision",
+      "class": "scene",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "In order to see much one must learn to look away from oneself – every mountain-climber needs this hardness.",
+        "cite": "¶12"
+      },
+      "caption": "“In order to see much one must learn to look away from oneself – every mountain-climber needs this hardness.” — ¶12",
+      "rationale": "Midnight ridge-crossing soliloquy: the wanderer hardens himself for the last summit; cold summit vs yearning sea.",
+      "palette_role": "Noon blaze cools to midnight ridge: white-gold path-light on deepened night; bone figure, ember-free.",
+      "opener_composition": "Full-bleed ridge scene above title; stacked (never overlaid) Cinzel title; mountain hardness voice.",
+      "reading_treatment": "Calm tablet prose; sea-yearning passages (¶18-26) carry their own rhythm, no styling.",
+      "motif_asset": "cohort-p3.svg #scene-ridge",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "scene-ridge",
+        "class": "scene",
+        "motif": "zenith-ring",
+        "caption": "“In order to see much one must learn to look away from oneself – every mountain-climber needs this hardness.” — ¶12"
+      }
+    },
+    {
+      "id": "p3c2",
+      "order": 2,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of the Vision and the Riddle",
+      "form": "vision",
+      "class": "scene",
+      "src": "art/cohort-p3.svg",
+      "motif": "gateway-moment",
+      "pull_line": {
+        "text": "This long lane behind us: it goes on for an eternity. And that long lane ahead of us – that is another eternity.",
+        "cite": "¶21"
+      },
+      "caption": "“This long lane behind us: it goes on for an eternity. And that long lane ahead of us – that is another eternity.” — ¶21",
+      "rationale": "BOOK CENTERPIECE: the gateway Moment with two eternal lanes; dwarf of gravity; shepherd biting the serpent's head; transformed laughter. The recurrence doctrine staged as vision.",
+      "palette_role": "Full blaze frame: white-gold MOMENT legend, solar gateway, serpent-green coils, bone shepherd transfigured.",
+      "opener_composition": "Gateway scene (portrait 400x500) above title; the two-lane pull-line; widest semantic opener in Part III.",
+      "reading_treatment": "Sermon-calm prose; courage anaphora (¶11-17) and shepherd transformation (¶40-41) unstylized — the vision carries them.",
+      "motif_asset": "cohort-p3.svg #scene-gateway",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "scene-gateway",
+        "class": "scene",
+        "motif": "gateway-moment",
+        "caption": "“This long lane behind us: it goes on for an eternity. And that long lane ahead of us – that is another eternity.” — ¶21"
+      }
+    },
+    {
+      "id": "p3c3",
+      "order": 3,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of Involuntary Bliss",
+      "form": "parable-vision",
+      "class": "emblem",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "When I have overcome myself in that, I will overcome myself in that which is greater; and a victory shall be the seal of my perfection!",
+        "cite": "¶25"
+      },
+      "caption": "“When I have overcome myself in that, I will overcome myself in that which is greater; and a victory shall be the seal of my perfection!” — ¶25",
+      "rationale": "Sea-voyage aftermath: afternoon bliss arrives unseasonably and is refused — Zarathustra stands ready for his deepest pain instead. Overcoming as the seal of perfection.",
+      "palette_role": "Afternoon gold held at bay: solar seal-voice against still luminous sea; refusal keeps the blaze framed, not flooding.",
+      "opener_composition": "Open-door emblem (bliss refused entry) + seal-of-perfection pull-line; threshold-door grammar shared with p3c5/p3c7.",
+      "reading_treatment": "Calm prose; the refused-hour passage (¶30) reads as spoken dismissal, no styling.",
+      "motif_asset": "cohort-p3.svg #emblem-open-door",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "emblem-open-door",
+        "class": "emblem",
+        "motif": "zenith-ring",
+        "caption": "“When I have overcome myself in that, I will overcome myself in that which is greater; and a victory shall be the seal of my perfection!” — ¶25"
+      }
+    },
+    {
+      "id": "p3c4",
+      "order": 4,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Before Sunrise",
+      "form": "hymn-song",
+      "class": "song-wide",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "To stand over everything as its own sky, as its round roof, its azure bell and eternal certainty: and happy is he who thus blesses!",
+        "cite": "¶16"
+      },
+      "caption": "“To stand over everything as its own sky, as its round roof, its azure bell and eternal certainty: and happy is he who thus blesses!” — ¶16",
+      "rationale": "HYMN-SONG to the sky: mute friendship with the heavens, blessing as standing-over, chance dancing. Azure-bell crowns per identity spec.",
+      "palette_role": "Azure blaze: white-gold blessing on open-sky lapis; the brightest lyric ground in the book.",
+      "opener_composition": "Azure-bell crown above centered lyric; sky-hymn voice; blessing pull-line.",
+      "reading_treatment": "CENTERED lyric: Spectral italic 1.15rem/2.0, 26-30rem; azure-bell stanza crowns; no drop cap (song).",
+      "motif_asset": "cohort-p3.svg #crown-azure-bell",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "crown-azure-bell",
+        "class": "song-wide",
+        "motif": "zenith-ring",
+        "caption": "“To stand over everything as its own sky, as its round roof, its azure bell and eternal certainty: and happy is he who thus blesses!” — ¶16"
+      }
+    },
+    {
+      "id": "p3c5",
+      "order": 5,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of the Virtue that Makes Small",
+      "form": "sermon-tablet",
+      "class": "emblem",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "Everywhere I see lower doors: anyone like me can still pass through them, but – he has to stoop!",
+        "cite": "¶5"
+      },
+      "caption": "“Everywhere I see lower doors: anyone like me can still pass through them, but – he has to stoop!” — ¶5",
+      "rationale": "Satire of the small: houses like toy-boxes, low doors, sand-grain frankness, submission doctrines. The low-doors emblem literalizes the chapter's master image.",
+      "palette_role": "Diminished blaze: solar doors shrinking across the emblem; satire keeps gold architectural, never celebratory.",
+      "opener_composition": "Low-doors emblem + stooping pull-line; satirical-tablet voice; doors grammar (p3c3/p3c5/p3c7).",
+      "reading_treatment": "Tablet prose with Cinzel solar drop cap; the grain-of-sand passage (¶30) unstylized.",
+      "motif_asset": "cohort-p3.svg #emblem-low-doors",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "emblem-low-doors",
+        "class": "emblem",
+        "motif": "zenith-ring",
+        "caption": "“Everywhere I see lower doors: anyone like me can still pass through them, but – he has to stoop!” — ¶5"
+      }
+    },
+    {
+      "id": "p3c6",
+      "order": 6,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "On the Mount of Olives",
+      "form": "winter-song",
+      "class": "song",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "In the meanwhile, I run with warm feet hither and thither upon my mount of olives: in the sunny corner of my mount of olives do I sing and mock all pity.",
+        "cite": "¶35"
+      },
+      "caption": "“In the meanwhile, I run with warm feet hither and thither upon my mount of olives: in the sunny corner of my mount of olives do I sing and mock all pity.” — ¶35",
+      "rationale": "Winter-song (closes 'Thus sang Zarathustra'): stern guest Winter, warm feet on the olive mount, silence that betrays nothing, mockery of pity. Olive-mount emblem per spec.",
+      "palette_role": "Snow-voice blaze: white-gold winter flame on olive-serpent; warmth inside cold, never ember.",
+      "opener_composition": "Winter-flame crown above centered lyric; snow-voice; warm-feet pull-line closes the arc it opens.",
+      "reading_treatment": "CENTERED lyric: Spectral italic, winter-flame crowns; prose-cold frame stanzas centered with the song (whole-chapter song); no drop cap.",
+      "motif_asset": "cohort-p3.svg #crown-winter-flame",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "crown-winter-flame",
+        "class": "song",
+        "motif": "zenith-ring",
+        "caption": "“In the meanwhile, I run with warm feet hither and thither upon my mount of olives: in the sunny corner of my mount of olives do I sing and mock all pity.” — ¶35"
+      }
+    },
+    {
+      "id": "p3c7",
+      "order": 7,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of Passing By",
+      "form": "parable",
+      "class": "emblem",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "By all that is luminous and strong and good in you, O Zarathustra! spit upon this city of shopkeepers and turn back!",
+        "cite": "¶15"
+      },
+      "caption": "“By all that is luminous and strong and good in you, O Zarathustra! spit upon this city of shopkeepers and turn back!” — ¶15",
+      "rationale": "The great-city parable: ape-fool's warning, verbal swill, hanging-soul rags, newspapers from rags; Zarathustra passes by. City-gate emblem: the gate spat upon.",
+      "palette_role": "Noon glare on commerce: hard solar gate-lines, bone contempt; the city gets no softening tint.",
+      "opener_composition": "City-gate emblem + spit-upon-the-gate pull-line; parable-contempt voice; third door/gate (p3c3/p3c5/p3c7).",
+      "reading_treatment": "Tablet prose, Cinzel solar drop cap; ape-dialogue exchanges read as spoken parable, no speaker styling.",
+      "motif_asset": "cohort-p3.svg #emblem-city-gate",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "emblem-city-gate",
+        "class": "emblem",
+        "motif": "zenith-ring",
+        "caption": "“By all that is luminous and strong and good in you, O Zarathustra! spit upon this city of shopkeepers and turn back!” — ¶15"
+      }
+    },
+    {
+      "id": "p3c8",
+      "order": 8,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of the Apostates",
+      "form": "sermon",
+      "class": "emblem",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "But it is a disgrace to pray! Not for everyone, but for you and me and for whoever else has his conscience in his head.",
+        "cite": "¶15"
+      },
+      "caption": "“But it is a disgrace to pray! Not for everyone, but for you and me and for whoever else has his conscience in his head.” — ¶15",
+      "rationale": "Lament over the pious-again apostates: meadow faded, dancers bent creeping to the cross, night-watchmen's dead gods. Disgrace-to-pray as the verdict.",
+      "palette_role": "Faded blaze: solar verdict against greyed meadow; elegiac gold, never festive.",
+      "opener_composition": "Open-door emblem (the door the apostates crept back through) + disgrace pull-line; elegiac-sermon voice.",
+      "reading_treatment": "Tablet prose, Cinzel solar drop cap; night-watchman dialogue (¶28) unstylized.",
+      "motif_asset": "cohort-p3.svg #emblem-open-door",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "emblem-open-door",
+        "class": "emblem",
+        "motif": "zenith-ring",
+        "caption": "“But it is a disgrace to pray! Not for everyone, but for you and me and for whoever else has his conscience in his head.” — ¶15"
+      }
+    },
+    {
+      "id": "p3c9",
+      "order": 9,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "The Home-Coming",
+      "form": "return-song",
+      "class": "song",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "O Solitude! Solitude, my home! have lived too long wildly in wild strange lands to come home to you without tears!",
+        "cite": "¶0"
+      },
+      "caption": "“O Solitude! Solitude, my home! have lived too long wildly in wild strange lands to come home to you without tears!” — ¶0",
+      "rationale": "Return-song: Solitude speaks as mother, crowd-noise confessed, poisonous flies of the good, soul sneezing sparkling wine. Vine-home warmth.",
+      "palette_role": "Home-fire blaze: white-gold vine arcade on hearth-warm lapis; tenderness the noon book rarely allows.",
+      "opener_composition": "Vine-arcade crown above centered lyric; home-coming voice; tearful pull-line.",
+      "reading_treatment": "CENTERED lyric: Spectral italic, vine crowns; Solitude's long speech centered as song (whole-chapter song); no drop cap.",
+      "motif_asset": "cohort-p3.svg #crown-vine-arcade",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "crown-vine-arcade",
+        "class": "song",
+        "motif": "zenith-ring",
+        "caption": "“O Solitude! Solitude, my home! have lived too long wildly in wild strange lands to come home to you without tears!” — ¶0"
+      }
+    },
+    {
+      "id": "p3c10",
+      "order": 10,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of the Three Evil Things",
+      "form": "triptych-sermon",
+      "class": "emblem",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "In a dream, in my last morning dream, I stood today upon a headland – beyond the world, I held a pair of scales and weighed the world.",
+        "cite": "¶0"
+      },
+      "caption": "“In a dream, in my last morning dream, I stood today upon a headland – beyond the world, I held a pair of scales and weighed the world.” — ¶0",
+      "rationale": "Triptych-sermon: the scales dream weighs sensual pleasure, lust for power, selfishness — and blesses all three. Scales-triad emblem literalizes the weighing.",
+      "palette_role": "Dream-morning blaze: solar scales over rolling sea; triptych gold balanced, never flooding.",
+      "opener_composition": "Scales-triad emblem + headland-dream pull-line; dream-weighing voice; triptych grammar echoes p1c2/p2c10 in noon hand.",
+      "reading_treatment": "Tablet prose, Cinzel solar drop cap; the three blessings (¶15+) read as calm decree.",
+      "motif_asset": "cohort-p3.svg #emblem-scales-triad",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "emblem-scales-triad",
+        "class": "emblem",
+        "motif": "zenith-ring",
+        "caption": "“In a dream, in my last morning dream, I stood today upon a headland – beyond the world, I held a pair of scales and weighed the world.” — ¶0"
+      }
+    },
+    {
+      "id": "p3c11",
+      "order": 11,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of the Spirit of Gravity",
+      "form": "sermon",
+      "class": "emblem",
+      "src": "art/cohort-p3.svg",
+      "motif": "dwarf-gravity",
+      "pull_line": {
+        "text": "He calls earth and life heavy: and so will the Spirit of Gravity have it! But he who wants to become light and a bird must love himself – thus do I teach.",
+        "cite": "¶10"
+      },
+      "caption": "“He calls earth and life heavy: and so will the Spirit of Gravity have it! But he who wants to become light and a bird must love himself – thus do I teach.” — ¶10",
+      "rationale": "The flying sermon: fool's hand, horse's foot, eagle's stomach; love of self against the Spirit of Gravity; the dwarf named and defied. Rope-ladder: the climb out of heaviness.",
+      "palette_role": "Ascent blaze: solar ladder-lines rising, serpent earth below; lightness rendered as line, not glow.",
+      "opener_composition": "Rope-ladder emblem + love-yourself pull-line; flying-sermon voice; dwarf-gravity motif keys the gravity thread (p3c2/p3c11).",
+      "reading_treatment": "Tablet prose, Cinzel solar drop cap; body-catalogue (¶0-5) and oyster passage (¶20) unstylized.",
+      "motif_asset": "cohort-p3.svg #emblem-rope-ladder",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "emblem-rope-ladder",
+        "class": "emblem",
+        "motif": "dwarf-gravity",
+        "caption": "“He calls earth and life heavy: and so will the Spirit of Gravity have it! But he who wants to become light and a bird must love himself – thus do I teach.” — ¶10"
+      }
+    },
+    {
+      "id": "p3c12",
+      "order": 12,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of Old and New Law-Tables",
+      "form": "tablet",
+      "class": "seal",
+      "src": "art/cohort-p3.svg",
+      "motif": "tablets",
+      "pull_line": {
+        "text": "For creators are hard. And it must seem bliss to you to press your hand upon millennia as upon wax, bliss to write upon the will of millennia as upon metal – harder than metal, nobler than metal. Only the noblest is perfectly hard.",
+        "cite": "¶174"
+      },
+      "caption": "“For creators are hard. And it must seem bliss to you to press your hand upon millennia as upon wax, bliss to write upon the will of millennia as upon metal – harder than metal, nobler than metal. Only the noblest is perfectly hard.” — ¶174",
+      "rationale": "THE GREAT SERMON (183 paras, longest chapter): shattered old tables, half-written new ones, laughing-lion sign awaited, Become-hard doctrine. Monumental tablets art; relief dividers ~every 30 paras.",
+      "palette_role": "Monumental blaze: full solar on shattered + half-written stone; the weightiest gold in Part III, earned by length.",
+      "opener_composition": "Monumental tablets (seal-class) + Become-hard pull-line; law-giving voice; longest title in the book balanced ≤3 lines.",
+      "reading_treatment": "Tablet prose, Cinzel solar drop cap; relief dividers (p3-relief) above ¶30/60/90/120/150 breaks; no mid-text color.",
+      "motif_asset": "cohort-p3.svg #tablets-monumental",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "tablets-monumental",
+        "class": "seal",
+        "motif": "tablets",
+        "caption": "“For creators are hard. And it must seem bliss to you to press your hand upon millennia as upon wax, bliss to write upon the will of millennia as upon metal – harder than metal, nobler than metal. Only the noblest is perfectly hard.” — ¶174"
+      }
+    },
+    {
+      "id": "p3c13",
+      "order": 13,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "The Convalescent",
+      "form": "vision-dialogue",
+      "class": "scene",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "I, Zarathustra, the advocate of life, the advocate of suffering, the advocate of the circle – I call you, my most abysmal thought!",
+        "cite": "¶6"
+      },
+      "caption": "“I, Zarathustra, the advocate of life, the advocate of suffering, the advocate of the circle – I call you, my most abysmal thought!” — ¶6",
+      "rationale": "Vision-dialogue: seven-day sickness, abysmal thought summoned, animals preach the eternal recurrence (hour-glass year), rosy apple, new lyre. Sickbed + recurrence-wheel scene.",
+      "palette_role": "Sickbed pallor inside blaze: bone convalescence, white-gold wheel turning above; abyss-voice greens held in the wheel.",
+      "opener_composition": "Sickbed-wheel scene above title; advocate-of-the-circle pull-line; abyss-voice; stacked title.",
+      "reading_treatment": "Tablet prose, Cinzel solar drop cap (vision); animals' long speeches (¶49-54) read as spoken doctrine, no speaker styling.",
+      "motif_asset": "cohort-p3.svg #scene-sickbed-wheel",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "scene-sickbed-wheel",
+        "class": "scene",
+        "motif": "zenith-ring",
+        "caption": "“I, Zarathustra, the advocate of life, the advocate of suffering, the advocate of the circle – I call you, my most abysmal thought!” — ¶6"
+      }
+    },
+    {
+      "id": "p3c14",
+      "order": 14,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "Of the Great Longing",
+      "form": "longing-song",
+      "class": "song-wide",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "O my soul, I gave you new names and many-coloured toys, I called you ‘destiny’ and ‘encompassment of encompassments’ and ‘time’s umbilical cord’ and ‘azure bell’.",
+        "cite": "¶9"
+      },
+      "caption": "“O my soul, I gave you new names and many-coloured toys, I called you ‘destiny’ and ‘encompassment of encompassments’ and ‘time’s umbilical cord’ and ‘azure bell’.” — ¶9",
+      "rationale": "Longing-song to the soul (25 'O my soul' anaphoras): rescue, washing, storm-rights, contempt, azure-bell naming; ends bidding the soul sing. Azure-bell crown shared with p3c4 (sky-song kinship).",
+      "palette_role": "Soul-blaze: azure-bell white-gold on twilight lapis; tenderest gold in Part III.",
+      "opener_composition": "Azure-bell crown above centered lyric; soul-address voice; naming pull-line (the azure bell itself).",
+      "reading_treatment": "CENTERED lyric: Spectral italic, azure-bell crowns; anaphora carries its own rhythm; no drop cap.",
+      "motif_asset": "cohort-p3.svg #crown-azure-bell",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "crown-azure-bell",
+        "class": "song-wide",
+        "motif": "zenith-ring",
+        "caption": "“O my soul, I gave you new names and many-coloured toys, I called you ‘destiny’ and ‘encompassment of encompassments’ and ‘time’s umbilical cord’ and ‘azure bell’.” — ¶9"
+      }
+    },
+    {
+      "id": "p3c15",
+      "order": 15,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "The Second Dance Song",
+      "form": "dance-song",
+      "class": "song",
+      "src": "art/cohort-p3.svg",
+      "motif": "lyre-dance",
+      "pull_line": {
+        "text": "But all joy wants eternity, ‘– wants deep, deep, deep eternity!",
+        "cite": "¶31"
+      },
+      "caption": "“But all joy wants eternity, ‘– wants deep, deep, deep eternity!” — ¶31",
+      "rationale": "Dance-song with Life: golden bark on dark waters, castanets, crooked ways, Wisdom vs Life jealousy, midnight's voice answering with the roundelay's first form. Dance-measure crown; lyre-dance motif threads p2c10/p3c15.",
+      "palette_role": "Midnight-dance blaze: gold eternity-cry on night-dance lapis; lyre-lines in white-gold.",
+      "opener_composition": "Dance-measure crown above centered lyric; dance-partner voice; eternity pull-line.",
+      "reading_treatment": "CENTERED lyric: Spectral italic, dance-measure crowns; Life's speeches centered with the song; no drop cap.",
+      "motif_asset": "cohort-p3.svg #crown-dance-measure",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "crown-dance-measure",
+        "class": "song",
+        "motif": "lyre-dance",
+        "caption": "“But all joy wants eternity, ‘– wants deep, deep, deep eternity!” — ¶31"
+      }
+    },
+    {
+      "id": "p3c16",
+      "order": 16,
+      "part": "part-3",
+      "part_roman": "III",
+      "title": "The Seven Seals (or: The Song of Yes and Amen)",
+      "form": "seal-song",
+      "class": "song-wide",
+      "src": "art/cohort-p3.svg",
+      "motif": "zenith-ring",
+      "pull_line": {
+        "text": "Oh how should I not lust for eternity and for the wedding ring of rings – the Ring of Recurrence!",
+        "cite": "¶24"
+      },
+      "caption": "“Oh how should I not lust for eternity and for the wedding ring of rings – the Ring of Recurrence!” — ¶24",
+      "rationale": "SEAL-SONG finale: seven stanzas each closing 'For I love you, O Eternity!' — the Ring of Recurrence refrain sevenfold. Z5: seven DISTINCT round seals (seal-round-1..7 + arc), read sevenfold.",
+      "palette_role": "Sevenfold blaze: the Ring refrain in white-gold; seven seals each distinct; part-finale fullness.",
+      "opener_composition": "Seven-seal arc above title + Ring-of-Recurrence pull-line; seal-song voice; the only opener with seven seals.",
+      "reading_treatment": "CENTERED lyric: Spectral italic, seven seal-round crowns (one per stanza, Z5); Eternity refrains bone-italic (gold graphic-only at verse size); no drop cap.",
+      "motif_asset": "cohort-p3.svg #seal-round-arc",
+      "manifest": {
+        "src": "art/cohort-p3.svg",
+        "symbol": "seal-round-arc",
+        "class": "song-wide",
+        "motif": "zenith-ring",
+        "caption": "“Oh how should I not lust for eternity and for the wedding ring of rings – the Ring of Recurrence!” — ¶24"
+      }
+    }
+  ],
+  "supervisor_notes": [
+    "2026-10-15 R2: p3c4/p3c14/p3c16 → class song-wide (FinalValidator blocking: seal-round-arc 600u + azure-bell 360u starved by the 5.5rem song clamp; song-wide = min(34rem,94%) opener measure; single-motif songs unchanged)."
+  ]
+}

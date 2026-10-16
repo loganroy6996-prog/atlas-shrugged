@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Infinite Jest — nine subsidized-year seals filed in a ledger grid on archive black</title>
+<defs>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .35 0"/></filter>
+</defs>
+<!-- Ledger Black #0D0F0C -->
+<rect width="800" height="1000" fill="#0d0f0c"/>
+<!-- filing stamp band -->
+<rect x="60" y="60" width="680" height="90" fill="none" stroke="#d6402b" stroke-width="3"/>
+<rect x="76" y="76" width="648" height="58" fill="#d6402b" opacity=".14"/>
+<g fill="none" stroke="#d6402b" stroke-width="2.4">
+<rect x="110" y="94" width="120" height="22"/><rect x="260" y="94" width="200" height="22"/><rect x="490" y="94" width="140" height="22"/>
+</g>
+<!-- the 3×3 seal grid: nine distinct engraved objects -->
+<g>
+<!-- 1 Whopper: stacked rings -->
+<g transform="translate(180,300)">
+<circle r="78" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+<circle r="66" fill="none" stroke="#e8dcc0" stroke-width="1.2"/>
+<ellipse cx="0" cy="-14" rx="40" ry="16" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<rect x="-40" y="-12" width="80" height="10" fill="none" stroke="#e8dcc0" stroke-width="2"/>
+<ellipse cx="0" cy="14" rx="40" ry="14" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<g stroke="#e8dcc0" stroke-width="1.4"><line x1="-24" y1="-20" x2="-24" y2="-8"/><line x1="0" y1="-22" x2="0" y2="-8"/><line x1="24" y1="-20" x2="24" y2="-8"/></g>
+</g>
+<!-- 2 Tucks pad: rounded square + cross -->
+<g transform="translate(400,300)">
+<circle r="78" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+<rect x="-38" y="-38" width="76" height="76" rx="18" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<path d="M-14,0 H14 M0,-14 V14" stroke="#e8dcc0" stroke-width="3"/>
+</g>
+<!-- 3 Dove bar: ingot -->
+<g transform="translate(620,300)">
+<circle r="78" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+<polygon points="-40,24 -28,-16 28,-16 40,24" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<line x1="-40" y1="24" x2="40" y2="24" stroke="#e8dcc0" stroke-width="2.4"/>
+<line x1="-20" y1="-2" x2="20" y2="-2" stroke="#e8dcc0" stroke-width="1.4"/>
+</g>
+<!-- 4 Wonderchicken: bird -->
+<g transform="translate(180,500)">
+<circle r="78" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+<path d="M-30,20 Q-34,-18 -6,-22 L-2,-32 L8,-20 Q34,-14 30,14 Q10,30 -30,20 Z" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<circle cx="4" cy="-8" r="3" fill="#e8dcc0"/>
+<path d="M-30,20 Q-40,32 -34,40 M-10,26 Q-12,36 -6,42" stroke="#e8dcc0" stroke-width="2" fill="none"/>
+</g>
+<!-- 5 Dishmaster: tub + spray -->
+<g transform="translate(400,500)">
+<circle r="78" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+<rect x="-36" y="-4" width="72" height="36" rx="6" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<path d="M-20,-4 L-28,-30 M0,-4 L0,-34 M20,-4 L28,-30" stroke="#e8dcc0" stroke-width="2"/>
+<g fill="#e8dcc0"><circle cx="-28" cy="-34" r="3"/><circle cx="0" cy="-38" r="3"/><circle cx="28" cy="-34" r="3"/></g>
+</g>
+<!-- 6 Yushityu board: circuitry -->
+<g transform="translate(620,500)">
+<circle r="78" fill="none" stroke="#9fe870" stroke-width="3"/>
+<g stroke="#9fe870" stroke-width="2" fill="none">
+<path d="M-30,30 L-30,0 L0,0 L0,-30"/><path d="M30,-30 L30,6 L6,6 L6,30"/><path d="M-30,-30 L30,-30"/>
+</g>
+<g fill="#9fe870"><circle cx="0" cy="-30" r="4"/><circle cx="6" cy="30" r="4"/><circle cx="-30" cy="30" r="4"/><circle cx="30" cy="-30" r="4"/><circle cx="-30" cy="-30" r="4"/></g>
+</g>
+<!-- 7 Dairy barn: gambrel roof -->
+<g transform="translate(180,700)">
+<circle r="78" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+<polygon points="-38,28 -38,-6 -18,-26 18,-26 38,-6 38,28" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<line x1="-38" y1="6" x2="38" y2="6" stroke="#e8dcc0" stroke-width="1.6"/>
+<rect x="-8" y="6" width="16" height="22" fill="none" stroke="#e8dcc0" stroke-width="2"/>
+</g>
+<!-- 8 Depend: gold shield-seal (the novel's present) -->
+<g transform="translate(400,700)">
+<circle r="78" fill="none" stroke="#c9a227" stroke-width="4"/>
+<circle r="66" fill="none" stroke="#c9a227" stroke-width="1.4"/>
+<path d="M-34,-30 H34 V12 Q34,36 0,48 Q-34,36 -34,12 Z" fill="none" stroke="#c9a227" stroke-width="2.6"/>
+<path d="M-18,-12 H18 M-18,2 H18" stroke="#c9a227" stroke-width="2"/>
+</g>
+<!-- 9 Glad bag: cinched sack -->
+<g transform="translate(620,700)">
+<circle r="78" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+<path d="M-16,-34 L16,-34 L30,30 Q0,44 -30,30 Z" fill="none" stroke="#e8dcc0" stroke-width="2.4"/>
+<line x1="-20" y1="-22" x2="20" y2="-22" stroke="#e8dcc0" stroke-width="2"/>
+<path d="M-20,-22 Q-32,-30 -28,-40 M20,-22 Q32,-30 28,-40" stroke="#e8dcc0" stroke-width="2" fill="none"/>
+</g>
+</g>
+<!-- stamp-red keylines framing the grid -->
+<g stroke="#d6402b" stroke-width="2" opacity=".8">
+<line x1="60" y1="190" x2="740" y2="190"/><line x1="60" y1="820" x2="740" y2="820"/>
+</g>
+<!-- filing footer: phosphor ledger fill -->
+<rect x="60" y="860" width="680" height="26" fill="none" stroke="#9fe870" stroke-width="2"/>
+<rect x="66" y="866" width="380" height="14" fill="#9fe870" opacity=".85"/>
+<!-- appendix violet tab: the endnotes register -->
+<rect x="560" y="910" width="180" height="30" fill="#7c6bd6" opacity=".9"/>
+<rect x="60" y="910" width="180" height="30" fill="none" stroke="#7c6bd6" stroke-width="2"/>
+<rect x="14" y="14" width="772" height="972" fill="none" stroke="#d6402b" stroke-width="3" opacity=".85"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".05"/>
+</svg>

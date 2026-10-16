@@ -1,0 +1,3323 @@
+{
+  "chapters": {
+    "p1c1": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p1c1",
+      "class": "plate",
+      "motif": "single-lens",
+      "caption": "before the first cut",
+      "part": "I",
+      "order": 1,
+      "way": "§",
+      "title": "Introduction",
+      "content_kind": "author-lens",
+      "palette_role": "slate",
+      "rationale": "Author's eye before the kaleidoscope: one uncut slate lens; the served heading stays a heads-up display, Churchill's self-mockery and the June-4 set-piece carry shard-tick quotes, the impossible-summing-up closer is the coda.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "I"
+      },
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "head"
+        },
+        {
+          "index": 4,
+          "role": "setup"
+        },
+        {
+          "index": 5,
+          "role": "quote"
+        },
+        {
+          "index": 11,
+          "role": "setup"
+        },
+        {
+          "index": 12,
+          "role": "quote"
+        },
+        {
+          "index": 13,
+          "role": "quote"
+        },
+        {
+          "index": 15,
+          "role": "setup"
+        },
+        {
+          "index": 16,
+          "role": "speech"
+        },
+        {
+          "index": 32,
+          "role": "coda"
+        }
+      ]
+    },
+    "p2c1": {
+      "asset": "art/prototype-plates.svg#p2c1",
+      "class": "plate",
+      "content_kind": "heroic-ode",
+      "motif": "rising-monoliths",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "order": 1,
+      "palette_role": "ochre",
+      "part": "II",
+      "rationale": "Heroic myth ascendant; biggest shards in the book (prototype).",
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p2c1",
+      "title": "Churchill as Liberty’s Champion: Heroic View",
+      "way": "1"
+    },
+    "p2c10": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c10",
+      "class": "plate",
+      "motif": "grasping-talons",
+      "caption": "nothing else but ambition to cling to",
+      "part": "II",
+      "order": 10,
+      "way": "10",
+      "title": "Churchill’s Desire for Fame: His Motive",
+      "content_kind": "motive-study",
+      "palette_role": "vermilion",
+      "rationale": "Grasping talons: fame-lust shards reach upward, clutching (¶1, ¶4, ¶5). Curved vermilion claws on lampblack — distinct from p2c1's straight ochre monoliths and p2c2's mirror. Vermilion occluders are motif-native. Closes Part II. Thesis ¶1 with vermilion claw-mark, Savrola/Macaulay close ¶8 as quote.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "thesis"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        }
+      ]
+    },
+    "p2c2": {
+      "asset": "art/prototype-plates.svg#p2c2",
+      "class": "plate",
+      "content_kind": "prosecution-brief",
+      "motif": "p2c1-inverted",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "order": 2,
+      "palette_role": "vermilion",
+      "part": "II",
+      "rationale": "Prosecution mirror — same shard set inverted, Vermilion relight (C2).",
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p2c2",
+      "title": "Churchill as Failed Statesman: Critical View",
+      "way": "2"
+    },
+    "p2c3": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c3",
+      "class": "plate",
+      "motif": "constellation-pins",
+      "caption": "seventy names hung like stars",
+      "part": "II",
+      "order": 3,
+      "way": "3",
+      "title": "Churchill’s Contemporaries: Whom He Knew",
+      "content_kind": "name-list",
+      "palette_role": "bone",
+      "rationale": "Constellation pins: ~70 acquaintances (¶2–36) as a social star-chart on a lampblack night bed. Salon-wall register reading; split continuations ¶10/11 and ¶23/24 glued AS SERVED via label hooks.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": false,
+        "register": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "list-head"
+        },
+        {
+          "index": 2,
+          "role": "list-item"
+        },
+        {
+          "index": 3,
+          "role": "list-item"
+        },
+        {
+          "index": 4,
+          "role": "list-item"
+        },
+        {
+          "index": 5,
+          "role": "list-item"
+        },
+        {
+          "index": 6,
+          "role": "list-item"
+        },
+        {
+          "index": 7,
+          "role": "list-item"
+        },
+        {
+          "index": 8,
+          "role": "list-item"
+        },
+        {
+          "index": 9,
+          "role": "list-item"
+        },
+        {
+          "index": 10,
+          "role": "list-item",
+          "label": "glue-a"
+        },
+        {
+          "index": 11,
+          "role": "list-item",
+          "label": "glue-b"
+        },
+        {
+          "index": 12,
+          "role": "list-item"
+        },
+        {
+          "index": 13,
+          "role": "list-item"
+        },
+        {
+          "index": 14,
+          "role": "list-item"
+        },
+        {
+          "index": 15,
+          "role": "list-item"
+        },
+        {
+          "index": 16,
+          "role": "list-item"
+        },
+        {
+          "index": 17,
+          "role": "list-item"
+        },
+        {
+          "index": 18,
+          "role": "list-item"
+        },
+        {
+          "index": 19,
+          "role": "list-item"
+        },
+        {
+          "index": 20,
+          "role": "list-item"
+        },
+        {
+          "index": 21,
+          "role": "list-item"
+        },
+        {
+          "index": 22,
+          "role": "list-item"
+        },
+        {
+          "index": 23,
+          "role": "list-item",
+          "label": "glue-a"
+        },
+        {
+          "index": 24,
+          "role": "list-item",
+          "label": "glue-b"
+        },
+        {
+          "index": 25,
+          "role": "list-item"
+        },
+        {
+          "index": 26,
+          "role": "list-item"
+        },
+        {
+          "index": 27,
+          "role": "list-item"
+        },
+        {
+          "index": 28,
+          "role": "list-item"
+        },
+        {
+          "index": 29,
+          "role": "list-item"
+        },
+        {
+          "index": 30,
+          "role": "list-item"
+        },
+        {
+          "index": 31,
+          "role": "list-item"
+        },
+        {
+          "index": 32,
+          "role": "list-item"
+        },
+        {
+          "index": 33,
+          "role": "list-item"
+        },
+        {
+          "index": 34,
+          "role": "list-item"
+        },
+        {
+          "index": 35,
+          "role": "list-item"
+        },
+        {
+          "index": 36,
+          "role": "list-item"
+        }
+      ]
+    },
+    "p2c4": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c4",
+      "class": "plate",
+      "motif": "converging-wedge",
+      "caption": "the afternoon of May the twenty-eighth",
+      "part": "II",
+      "order": 4,
+      "way": "4",
+      "title": "Churchill’s Finest Hour—May 28, 1940: The Decisive Moment",
+      "content_kind": "decisive-moment",
+      "palette_role": "ochre/vermilion",
+      "rationale": "Converging wedge: all blades aim at the vermilion afternoon (¶2, ¶9, ¶13). Left-weighted convergence, numeral right — inverse of p2c8. Cabinet vow ¶16 and beaches peroration ¶21 as speeches, confidential memo ¶18 as memo slip, wept coda ¶22, never-surrender thesis ¶23.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 15,
+          "role": "setup"
+        },
+        {
+          "index": 16,
+          "role": "speech"
+        },
+        {
+          "index": 18,
+          "role": "memo"
+        },
+        {
+          "index": 20,
+          "role": "setup"
+        },
+        {
+          "index": 21,
+          "role": "speech"
+        },
+        {
+          "index": 22,
+          "role": "coda"
+        },
+        {
+          "index": 23,
+          "role": "thesis"
+        }
+      ]
+    },
+    "p2c5": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c5",
+      "class": "plate",
+      "motif": "balanced-scales",
+      "caption": "for and against, in perfect balance",
+      "part": "II",
+      "order": 5,
+      "way": "5",
+      "title": "Churchill as Leader: Suited to High Office?",
+      "content_kind": "debate-diptych",
+      "palette_role": "bone",
+      "rationale": "Balanced scales: equipoise diptych — the book's only symmetric plate. For (¶0–6) vs Against (¶7–12) with opposing verdict plaques ¶6 / ¶12.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": false,
+        "diptych": true
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "head",
+          "label": "side-a"
+        },
+        {
+          "index": 1,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 2,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 3,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 4,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 5,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 6,
+          "role": "verdict",
+          "label": "side-a"
+        },
+        {
+          "index": 7,
+          "role": "head",
+          "label": "side-b"
+        },
+        {
+          "index": 8,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 9,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 10,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 11,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 12,
+          "role": "verdict",
+          "label": "side-b"
+        }
+      ]
+    },
+    "p2c6": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c6",
+      "class": "plate",
+      "motif": "type-as-shards",
+      "caption": "words are the only things which last for ever",
+      "part": "II",
+      "order": 6,
+      "way": "6",
+      "title": "Churchill’s Genius with Words: His Greatest Strength",
+      "content_kind": "craft-essay",
+      "palette_role": "ochre",
+      "rationale": "Type-as-shards: letterforms cut into ochre facets — W/O/R for WORDS (¶1, ¶12). Lampblack letters on ochre (~7:1). Japan declaration letter ¶6–10, tools broadcast ¶13, central thesis ¶19, verdict close ¶23.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 6,
+          "role": "letter"
+        },
+        {
+          "index": 7,
+          "role": "letter"
+        },
+        {
+          "index": 8,
+          "role": "letter"
+        },
+        {
+          "index": 9,
+          "role": "letter"
+        },
+        {
+          "index": 10,
+          "role": "letter-signoff"
+        },
+        {
+          "index": 13,
+          "role": "speech"
+        },
+        {
+          "index": 19,
+          "role": "thesis"
+        },
+        {
+          "index": 23,
+          "role": "verdict"
+        }
+      ]
+    },
+    "p2c7": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c7",
+      "class": "plate",
+      "motif": "77-tiles",
+      "caption": "seventy-seven tiles of exact words",
+      "part": "II",
+      "order": 7,
+      "way": "7",
+      "title": "Churchill’s Eloquence: His Exact Words",
+      "content_kind": "quote-flood",
+      "palette_role": "mixed",
+      "rationale": "77 small tiles: eloquence as mosaic — scattered rotated diamonds in mixed hues (not the strict ledger grid of p4c2). Strict setup/quote two-voice with dated rail from data-fw-label dates. Four wartime set-pieces as full-bleed plates: ¶47, ¶51–52, ¶55, ¶58.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": false,
+        "two_voice": true,
+        "dated_rail": true,
+        "set_pieces": [
+          47,
+          51,
+          52,
+          55,
+          58
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "thesis"
+        },
+        {
+          "index": 1,
+          "role": "quote",
+          "label": "1894"
+        },
+        {
+          "index": 2,
+          "role": "quote",
+          "label": "1897"
+        },
+        {
+          "index": 3,
+          "role": "setup"
+        },
+        {
+          "index": 4,
+          "role": "quote"
+        },
+        {
+          "index": 5,
+          "role": "quote"
+        },
+        {
+          "index": 6,
+          "role": "quote",
+          "label": "1907"
+        },
+        {
+          "index": 7,
+          "role": "setup"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        },
+        {
+          "index": 9,
+          "role": "quote"
+        },
+        {
+          "index": 10,
+          "role": "setup",
+          "label": "1908"
+        },
+        {
+          "index": 11,
+          "role": "quote"
+        },
+        {
+          "index": 12,
+          "role": "quote"
+        },
+        {
+          "index": 13,
+          "role": "quote",
+          "label": "1911"
+        },
+        {
+          "index": 14,
+          "role": "quote"
+        },
+        {
+          "index": 15,
+          "role": "quote"
+        },
+        {
+          "index": 16,
+          "role": "quote"
+        },
+        {
+          "index": 17,
+          "role": "quote",
+          "label": "1914–18"
+        },
+        {
+          "index": 18,
+          "role": "quote",
+          "label": "1914–18"
+        },
+        {
+          "index": 19,
+          "role": "quote",
+          "label": "1922"
+        },
+        {
+          "index": 20,
+          "role": "quote",
+          "label": "1932"
+        },
+        {
+          "index": 21,
+          "role": "quote",
+          "label": "1930s"
+        },
+        {
+          "index": 22,
+          "role": "quote"
+        },
+        {
+          "index": 23,
+          "role": "quote"
+        },
+        {
+          "index": 24,
+          "role": "quote"
+        },
+        {
+          "index": 25,
+          "role": "quote",
+          "label": "1935"
+        },
+        {
+          "index": 26,
+          "role": "quote",
+          "label": "1935"
+        },
+        {
+          "index": 27,
+          "role": "quote"
+        },
+        {
+          "index": 28,
+          "role": "setup",
+          "label": "12 Nov 1936"
+        },
+        {
+          "index": 29,
+          "role": "quote"
+        },
+        {
+          "index": 30,
+          "role": "quote"
+        },
+        {
+          "index": 31,
+          "role": "quote",
+          "label": "1936"
+        },
+        {
+          "index": 32,
+          "role": "quote"
+        },
+        {
+          "index": 33,
+          "role": "quote",
+          "label": "1938"
+        },
+        {
+          "index": 34,
+          "role": "quote"
+        },
+        {
+          "index": 35,
+          "role": "setup"
+        },
+        {
+          "index": 36,
+          "role": "quote"
+        },
+        {
+          "index": 37,
+          "role": "quote"
+        },
+        {
+          "index": 38,
+          "role": "quote"
+        },
+        {
+          "index": 39,
+          "role": "quote"
+        },
+        {
+          "index": 40,
+          "role": "quote",
+          "label": "1 Oct 1939"
+        },
+        {
+          "index": 41,
+          "role": "quote",
+          "label": "1 Oct 1939"
+        },
+        {
+          "index": 42,
+          "role": "quote",
+          "label": "Oct 1939"
+        },
+        {
+          "index": 43,
+          "role": "quote",
+          "label": "Jan 1940"
+        },
+        {
+          "index": 44,
+          "role": "quote"
+        },
+        {
+          "index": 45,
+          "role": "quote",
+          "label": "1940"
+        },
+        {
+          "index": 46,
+          "role": "setup",
+          "label": "11 Sept 1940"
+        },
+        {
+          "index": 47,
+          "role": "speech"
+        },
+        {
+          "index": 48,
+          "role": "quote",
+          "label": "Oct 1940"
+        },
+        {
+          "index": 49,
+          "role": "quote"
+        },
+        {
+          "index": 50,
+          "role": "setup",
+          "label": "1940"
+        },
+        {
+          "index": 51,
+          "role": "speech"
+        },
+        {
+          "index": 52,
+          "role": "speech"
+        },
+        {
+          "index": 53,
+          "role": "quote"
+        },
+        {
+          "index": 54,
+          "role": "setup",
+          "label": "22 June 1941"
+        },
+        {
+          "index": 55,
+          "role": "speech"
+        },
+        {
+          "index": 56,
+          "role": "quote"
+        },
+        {
+          "index": 57,
+          "role": "setup",
+          "label": "Dec 1941"
+        },
+        {
+          "index": 58,
+          "role": "speech"
+        },
+        {
+          "index": 59,
+          "role": "quote",
+          "label": "10 Nov 1942"
+        },
+        {
+          "index": 60,
+          "role": "quote",
+          "label": "Nov 1942"
+        },
+        {
+          "index": 61,
+          "role": "quote",
+          "label": "1943"
+        },
+        {
+          "index": 62,
+          "role": "quote",
+          "label": "Aug 1943"
+        },
+        {
+          "index": 63,
+          "role": "quote",
+          "label": "Jan 1945"
+        },
+        {
+          "index": 64,
+          "role": "quote",
+          "label": "1 May 1945"
+        },
+        {
+          "index": 65,
+          "role": "quote",
+          "label": "26 July 1945"
+        },
+        {
+          "index": 66,
+          "role": "quote",
+          "label": "1945"
+        },
+        {
+          "index": 67,
+          "role": "quote",
+          "label": "1945"
+        },
+        {
+          "index": 68,
+          "role": "quote"
+        },
+        {
+          "index": 69,
+          "role": "quote",
+          "label": "9 Aug 1947"
+        },
+        {
+          "index": 70,
+          "role": "quote"
+        },
+        {
+          "index": 71,
+          "role": "quote"
+        },
+        {
+          "index": 72,
+          "role": "quote",
+          "label": "11 Nov 1947"
+        },
+        {
+          "index": 73,
+          "role": "quote"
+        },
+        {
+          "index": 74,
+          "role": "quote",
+          "label": "1953"
+        },
+        {
+          "index": 75,
+          "role": "quote",
+          "label": "1954"
+        },
+        {
+          "index": 76,
+          "role": "quote",
+          "label": "1955"
+        }
+      ]
+    },
+    "p2c8": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c8",
+      "class": "plate",
+      "motif": "three-strokes",
+      "caption": "a cigar, a gesture, a suit of blue",
+      "part": "II",
+      "order": 8,
+      "way": "8",
+      "title": "Churchill in Symbols: Metonymy",
+      "content_kind": "symbol-study",
+      "palette_role": "ochre",
+      "rationale": "Three swift strokes: cigar/V-sign/uniform (¶2, ¶4/5/6) as three PARALLEL calligraphic blades — parallel, not p2c4's convergence. Numeral left, strokes right. Emblem tags on ¶4/5/6 plus ¶9 drink as fourth tag; thesis ¶2; coda ¶10.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true,
+        "emblems": true
+      },
+      "paragraphs": [
+        {
+          "index": 2,
+          "role": "thesis"
+        },
+        {
+          "index": 4,
+          "role": "symbol",
+          "label": "Cigar"
+        },
+        {
+          "index": 5,
+          "role": "symbol",
+          "label": "V Sign"
+        },
+        {
+          "index": 6,
+          "role": "symbol",
+          "label": "Siren Suit"
+        },
+        {
+          "index": 9,
+          "role": "symbol",
+          "label": "Drink"
+        },
+        {
+          "index": 10,
+          "role": "coda"
+        }
+      ]
+    },
+    "p2c9": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c9",
+      "class": "plate",
+      "motif": "word-stone",
+      "caption": "true, like a ship's compass",
+      "part": "II",
+      "order": 9,
+      "way": "9",
+      "title": "Churchill, True: In a Single Word",
+      "content_kind": "single-word",
+      "palette_role": "bone",
+      "rationale": "One word-stone: True single engraved block (¶1, ¶6). Bone block and Bone numeral kept DISJOINT — number left, stone right. Oaken Heart quotations ¶5–9 as engraved blocks, Shakespeare verse ¶4 as centered inscription, lead ¶3 as setup.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 3,
+          "role": "setup"
+        },
+        {
+          "index": 4,
+          "role": "verse"
+        },
+        {
+          "index": 5,
+          "role": "quote"
+        },
+        {
+          "index": 6,
+          "role": "quote"
+        },
+        {
+          "index": 7,
+          "role": "quote"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        },
+        {
+          "index": 9,
+          "role": "quote"
+        }
+      ]
+    },
+    "p3c1": {
+      "asset": "art/prototype-plates.svg#p3c1",
+      "class": "plate",
+      "content_kind": "character-study",
+      "motif": "black-dog-mass",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 1,
+      "palette_role": "slate",
+      "part": "III",
+      "rationale": "Depression as one light-swallowing shard (prototype).",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p3c1",
+      "title": "Churchill as Depressive: The “Black Dog”?",
+      "way": "11"
+    },
+    "p3c10": {
+      "caption": "tears not of sorrow but of wonder",
+      "class": "plate",
+      "content_kind": "essay",
+      "motif": "held-tear",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 10,
+      "palette_role": "slate",
+      "paragraphs": [
+        {
+          "index": 6,
+          "role": "quote"
+        },
+        {
+          "index": 9,
+          "role": "coda"
+        }
+      ],
+      "part": "III",
+      "rationale": "Softest geometry in the book — curves only: one held tear answered by a smaller witness tear; lampblack ellipse occluders (prototype-p3c7 precedent); wonder point in ochre.",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c10",
+      "title": "Churchill in Tears: Telling Detail",
+      "way": "20"
+    },
+    "p3c2": {
+      "caption": "sufficient for himself",
+      "class": "plate",
+      "content_kind": "essay-memo",
+      "motif": "turned-shoulder",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 2,
+      "palette_role": "slate",
+      "paragraphs": [
+        {
+          "index": 3,
+          "role": "memo"
+        },
+        {
+          "index": 4,
+          "role": "memo"
+        },
+        {
+          "index": 5,
+          "role": "letter-signoff"
+        },
+        {
+          "index": 14,
+          "role": "caption"
+        }
+      ],
+      "part": "III",
+      "rationale": "Disdain as composition — all mass turned away left while the numeral is exiled right; one escaping bone tooth is the unheeded world; Part-III candlelight tick at the far edge.",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c2",
+      "title": "Churchill’s Disdain: His Dominant Quality",
+      "way": "12"
+    },
+    "p3c3": {
+      "caption": "my policy is, 'Fight on.'",
+      "class": "plate",
+      "content_kind": "essay",
+      "motif": "bared-edge",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 3,
+      "palette_role": "vermilion",
+      "paragraphs": [],
+      "part": "III",
+      "rationale": "Sharpest angles in the book — vermilion blades bare left-to-right, the fourth pointing back (war cuts both ways); a slate tooth grounds the cost of war; lampblack bed for maximum attack.",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c3",
+      "title": "Churchill’s Belligerence: His Defining Characteristic",
+      "way": "13"
+    },
+    "p3c4": {
+      "caption": "1874–1965, with milestones missing",
+      "class": "plate",
+      "content_kind": "timeline",
+      "motif": "dated-procession",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 4,
+      "palette_role": "bone",
+      "paragraphs": [
+        {
+          "index": 1,
+          "label": "Winston Leonard Spencer Churchill",
+          "role": "ledger-head"
+        },
+        {
+          "index": 2,
+          "role": "ledger-row"
+        },
+        {
+          "index": 3,
+          "role": "ledger-row"
+        },
+        {
+          "index": 4,
+          "role": "ledger-row"
+        },
+        {
+          "index": 5,
+          "role": "ledger-row"
+        },
+        {
+          "index": 6,
+          "role": "ledger-row"
+        },
+        {
+          "index": 7,
+          "role": "ledger-row"
+        },
+        {
+          "index": 8,
+          "role": "ledger-row"
+        },
+        {
+          "index": 9,
+          "role": "ledger-row"
+        },
+        {
+          "index": 10,
+          "role": "ledger-row"
+        },
+        {
+          "index": 11,
+          "role": "ledger-row"
+        },
+        {
+          "index": 12,
+          "role": "ledger-row"
+        },
+        {
+          "index": 13,
+          "role": "ledger-row"
+        },
+        {
+          "index": 14,
+          "role": "ledger-row"
+        },
+        {
+          "index": 15,
+          "role": "ledger-row"
+        },
+        {
+          "index": 16,
+          "role": "ledger-row"
+        },
+        {
+          "index": 17,
+          "role": "ledger-row"
+        },
+        {
+          "index": 18,
+          "role": "ledger-row"
+        },
+        {
+          "index": 19,
+          "role": "ledger-row"
+        },
+        {
+          "index": 20,
+          "role": "ledger-row"
+        },
+        {
+          "index": 21,
+          "role": "ledger-row"
+        },
+        {
+          "index": 22,
+          "role": "ledger-row"
+        },
+        {
+          "index": 23,
+          "role": "ledger-row"
+        },
+        {
+          "index": 24,
+          "role": "ledger-row"
+        },
+        {
+          "index": 25,
+          "role": "ledger-row"
+        },
+        {
+          "index": 26,
+          "role": "ledger-row"
+        },
+        {
+          "index": 27,
+          "role": "ledger-row"
+        },
+        {
+          "index": 28,
+          "role": "ledger-row"
+        },
+        {
+          "index": 29,
+          "role": "ledger-row"
+        },
+        {
+          "index": 30,
+          "role": "ledger-row"
+        },
+        {
+          "index": 31,
+          "role": "ledger-row"
+        },
+        {
+          "index": 32,
+          "role": "ledger-row"
+        },
+        {
+          "index": 33,
+          "role": "ledger-row"
+        },
+        {
+          "index": 34,
+          "role": "ledger-row"
+        },
+        {
+          "index": 35,
+          "role": "ledger-row"
+        },
+        {
+          "index": 36,
+          "role": "ledger-row"
+        },
+        {
+          "index": 37,
+          "role": "ledger-row"
+        },
+        {
+          "index": 38,
+          "role": "ledger-row"
+        },
+        {
+          "index": 39,
+          "role": "ledger-row"
+        },
+        {
+          "index": 40,
+          "role": "ledger-row"
+        },
+        {
+          "index": 41,
+          "role": "ledger-row"
+        }
+      ],
+      "part": "III",
+      "rationale": "The conventional time line fails — the plate marches anyway, ledger shards ascending 1874→1965 toward the numeral; the 1940 beat burns vermilion; ochre year ticks bracket the life. Ledger index OFF (S3): one head needs no navigation.",
+      "reading": {
+        "drop_cap": false,
+        "ledger": false
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c4",
+      "title": "Churchill’s Time Line: Key Events",
+      "way": "14"
+    },
+    "p3c5": {
+      "caption": "the ever-absent father",
+      "class": "plate",
+      "content_kind": "essay-letter",
+      "motif": "split-shard-i",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 5,
+      "palette_role": "ochre",
+      "paragraphs": [
+        {
+          "index": 7,
+          "role": "letter"
+        },
+        {
+          "index": 11,
+          "role": "quote"
+        },
+        {
+          "index": 16,
+          "role": "caption"
+        }
+      ],
+      "part": "III",
+      "rationale": "LEFT half of the father/son hinge: the ochre shard clipped at x=600, bone zigzag split edge with hinge pin; the son's unanswered letter reaches across the split from the missing half's side; numeral looks right toward the father.",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c5",
+      "title": "Churchill as Son: His Most Formative Role",
+      "way": "15"
+    },
+    "p3c6": {
+      "caption": "two verdicts, one household",
+      "class": "plate",
+      "content_kind": "debate-verdict",
+      "motif": "split-shard-ii",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 6,
+      "palette_role": "ochre",
+      "paragraphs": [
+        {
+          "index": 0,
+          "label": "for",
+          "role": "verdict"
+        },
+        {
+          "index": 5,
+          "label": "against",
+          "role": "verdict"
+        }
+      ],
+      "part": "III",
+      "rationale": "RIGHT half of the hinge, completed — byte-identical shard transform, opposite clip, mirrored numeral gazing left at the son; verdict diptych tiles (bone Good / slate Not Good) echo the two heads; slate shadow is the cold father.",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c6",
+      "title": "Churchill as Father: A Good Parent?",
+      "way": "16"
+    },
+    "p3c7": {
+      "asset": "art/prototype-plates.svg#p3c7",
+      "class": "plate",
+      "content_kind": "pastime-study",
+      "motif": "palette-shards",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 7,
+      "palette_role": "mixed",
+      "part": "III",
+      "rationale": "Painter: wettest colour, impasto grain at max (prototype).",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p3c7",
+      "title": "Churchill the Painter: His Favorite Pastime",
+      "way": "17"
+    },
+    "p3c8": {
+      "caption": "earn a fortune, spend a larger one",
+      "class": "plate",
+      "content_kind": "essay-letter",
+      "motif": "leaking-vessel",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 8,
+      "palette_role": "vermilion",
+      "paragraphs": [
+        {
+          "index": 6,
+          "role": "letter"
+        }
+      ],
+      "part": "III",
+      "rationale": "Cracked vermilion vessel center; one SMALL ochre inflow (earned by writing) against five LARGER spilling teeth, the last bleeding off the plate edge — inflow < outflow, literally; gallery occluders on the lampblack bed.",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c8",
+      "title": "Churchill the Spendthrift: A Weakness",
+      "way": "18"
+    },
+    "p3c9": {
+      "caption": "contradictory conclusions",
+      "class": "plate",
+      "content_kind": "quote-collage",
+      "motif": "57-witness-tiles",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "III"
+      },
+      "order": 9,
+      "palette_role": "mixed",
+      "paragraphs": [
+        {
+          "index": 2,
+          "role": "setup"
+        },
+        {
+          "index": 3,
+          "role": "setup"
+        },
+        {
+          "index": 4,
+          "role": "quote"
+        },
+        {
+          "index": 5,
+          "role": "caption"
+        },
+        {
+          "index": 6,
+          "role": "setup"
+        },
+        {
+          "index": 7,
+          "role": "quote"
+        },
+        {
+          "index": 8,
+          "role": "caption"
+        },
+        {
+          "index": 9,
+          "role": "setup"
+        },
+        {
+          "index": 10,
+          "role": "quote"
+        },
+        {
+          "index": 11,
+          "role": "caption"
+        },
+        {
+          "index": 12,
+          "role": "setup"
+        },
+        {
+          "index": 13,
+          "role": "quote"
+        },
+        {
+          "index": 14,
+          "role": "caption"
+        },
+        {
+          "index": 15,
+          "role": "setup"
+        },
+        {
+          "index": 16,
+          "role": "quote"
+        },
+        {
+          "index": 17,
+          "role": "caption"
+        },
+        {
+          "index": 18,
+          "role": "setup"
+        },
+        {
+          "index": 19,
+          "role": "quote"
+        },
+        {
+          "index": 20,
+          "role": "caption"
+        },
+        {
+          "index": 21,
+          "role": "setup"
+        },
+        {
+          "index": 22,
+          "role": "quote"
+        },
+        {
+          "index": 23,
+          "role": "caption"
+        },
+        {
+          "index": 24,
+          "role": "setup"
+        },
+        {
+          "index": 25,
+          "role": "quote"
+        },
+        {
+          "index": 26,
+          "role": "caption"
+        },
+        {
+          "index": 27,
+          "role": "setup"
+        },
+        {
+          "index": 28,
+          "role": "quote"
+        },
+        {
+          "index": 29,
+          "role": "caption"
+        },
+        {
+          "index": 30,
+          "role": "setup"
+        },
+        {
+          "index": 31,
+          "role": "quote"
+        },
+        {
+          "index": 32,
+          "role": "caption"
+        },
+        {
+          "index": 33,
+          "role": "setup"
+        },
+        {
+          "index": 34,
+          "role": "quote"
+        },
+        {
+          "index": 35,
+          "role": "caption"
+        },
+        {
+          "index": 36,
+          "role": "setup"
+        },
+        {
+          "index": 37,
+          "role": "quote"
+        },
+        {
+          "index": 38,
+          "role": "caption"
+        },
+        {
+          "index": 39,
+          "role": "setup"
+        },
+        {
+          "index": 40,
+          "role": "quote"
+        },
+        {
+          "index": 41,
+          "role": "caption"
+        },
+        {
+          "index": 42,
+          "role": "setup"
+        },
+        {
+          "index": 43,
+          "role": "quote"
+        },
+        {
+          "index": 44,
+          "role": "caption"
+        },
+        {
+          "index": 45,
+          "role": "setup"
+        },
+        {
+          "index": 46,
+          "role": "quote"
+        },
+        {
+          "index": 47,
+          "role": "caption"
+        },
+        {
+          "index": 48,
+          "role": "setup"
+        },
+        {
+          "index": 49,
+          "role": "quote"
+        },
+        {
+          "index": 50,
+          "role": "caption"
+        },
+        {
+          "index": 51,
+          "role": "setup"
+        },
+        {
+          "index": 52,
+          "role": "quote"
+        },
+        {
+          "index": 53,
+          "role": "caption"
+        },
+        {
+          "index": 54,
+          "role": "setup"
+        },
+        {
+          "index": 55,
+          "role": "quote"
+        },
+        {
+          "index": 56,
+          "role": "caption"
+        }
+      ],
+      "part": "III",
+      "rationale": "Every tile a hue — 36 witness tiles in flanking banks, no two adjacent tiles agreeing, center aisle holding only numeral + occluders; the 57 witnesses live in the fully-mapped body (19 setup / 18 quote / 18 caption); no coda — the collage refuses to sum up.",
+      "reading": {
+        "drop_cap": false
+      },
+      "src": "art/cohort-b.svg",
+      "symbol": "p3c9",
+      "title": "Conflicting Views of Churchill: How Others Saw Him",
+      "way": "19"
+    },
+    "p4c1": {
+      "caption": "a glass of weak whisky",
+      "class": "plate",
+      "content_kind": "verdict-diptych",
+      "motif": "brimming-glass",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 1,
+      "palette_role": "vermilion",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "verdict"
+        },
+        {
+          "index": 6,
+          "role": "verdict"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Prosecution/defense diptych over the drinking record: WAS [0] vs WAS NOT [6] verdict plaques frame the evidence; the spirit-level plate breaks between them.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c1",
+      "title": "Churchill the Drinker: An Alcoholic?",
+      "way": "21"
+    },
+    "p4c10": {
+      "caption": "He never resigned himself",
+      "class": "plate",
+      "content_kind": "coda",
+      "motif": "faded-map-wash",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 10,
+      "palette_role": "slate",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Part IV's closing benediction: a single coda para under theme's Way-40-rhyme only-child base, given colophon air; the faded slate plate is the Empire's afterimage.",
+      "reading": {
+        "drop_cap": false,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c10",
+      "title": "Churchill’s Empire: How He Saw the World",
+      "way": "30"
+    },
+    "p4c2": {
+      "asset": "art/prototype-plates.svg#p4c2",
+      "class": "plate",
+      "content_kind": "fact-ledger",
+      "motif": "ledger-grid",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 2,
+      "palette_role": "bone",
+      "paragraphs": [
+        {
+          "index": 1,
+          "label": "Sovereigns",
+          "role": "ledger-head"
+        },
+        {
+          "index": 2,
+          "role": "ledger-row"
+        },
+        {
+          "index": 3,
+          "role": "ledger-row"
+        },
+        {
+          "index": 4,
+          "role": "ledger-row"
+        },
+        {
+          "index": 5,
+          "role": "ledger-row"
+        },
+        {
+          "index": 6,
+          "role": "ledger-row"
+        },
+        {
+          "index": 7,
+          "role": "ledger-row"
+        },
+        {
+          "index": 8,
+          "label": "Prime Ministers",
+          "role": "ledger-head"
+        },
+        {
+          "index": 9,
+          "role": "ledger-row"
+        },
+        {
+          "index": 10,
+          "role": "ledger-row"
+        },
+        {
+          "index": 11,
+          "role": "ledger-row"
+        },
+        {
+          "index": 12,
+          "role": "ledger-row"
+        },
+        {
+          "index": 13,
+          "role": "ledger-row"
+        },
+        {
+          "index": 14,
+          "role": "ledger-row"
+        },
+        {
+          "index": 15,
+          "role": "ledger-row"
+        },
+        {
+          "index": 16,
+          "role": "ledger-row"
+        },
+        {
+          "index": 17,
+          "role": "ledger-row"
+        },
+        {
+          "index": 18,
+          "role": "ledger-row"
+        },
+        {
+          "index": 19,
+          "role": "ledger-row"
+        },
+        {
+          "index": 20,
+          "role": "ledger-row"
+        },
+        {
+          "index": 21,
+          "role": "ledger-row"
+        },
+        {
+          "index": 22,
+          "role": "ledger-row"
+        },
+        {
+          "index": 23,
+          "role": "ledger-row"
+        },
+        {
+          "index": 24,
+          "role": "ledger-row"
+        },
+        {
+          "index": 25,
+          "role": "ledger-row"
+        },
+        {
+          "index": 26,
+          "role": "ledger-row"
+        },
+        {
+          "index": 27,
+          "role": "ledger-row"
+        },
+        {
+          "index": 28,
+          "label": "Party Alliances",
+          "role": "ledger-head"
+        },
+        {
+          "index": 29,
+          "role": "list-item"
+        },
+        {
+          "index": 30,
+          "role": "list-item"
+        },
+        {
+          "index": 31,
+          "role": "list-item"
+        },
+        {
+          "index": 32,
+          "label": "Peerage",
+          "role": "ledger-head"
+        },
+        {
+          "index": 35,
+          "label": "Executive Positions",
+          "role": "ledger-head"
+        },
+        {
+          "index": 36,
+          "role": "ledger-row"
+        },
+        {
+          "index": 37,
+          "role": "ledger-row"
+        },
+        {
+          "index": 38,
+          "role": "ledger-row"
+        },
+        {
+          "index": 39,
+          "role": "ledger-row"
+        },
+        {
+          "index": 40,
+          "role": "ledger-row"
+        },
+        {
+          "index": 41,
+          "role": "ledger-row"
+        },
+        {
+          "index": 42,
+          "role": "ledger-row"
+        },
+        {
+          "index": 43,
+          "role": "ledger-row"
+        },
+        {
+          "index": 44,
+          "role": "ledger-row"
+        },
+        {
+          "index": 45,
+          "role": "ledger-row"
+        },
+        {
+          "index": 46,
+          "role": "ledger-row"
+        },
+        {
+          "index": 47,
+          "role": "ledger-row"
+        },
+        {
+          "index": 48,
+          "label": "Statistics",
+          "role": "ledger-head"
+        },
+        {
+          "index": 49,
+          "role": "list-item"
+        },
+        {
+          "index": 50,
+          "role": "list-item"
+        },
+        {
+          "index": 51,
+          "role": "list-item"
+        },
+        {
+          "index": 52,
+          "role": "list-item"
+        },
+        {
+          "index": 53,
+          "role": "list-item"
+        },
+        {
+          "index": 54,
+          "role": "list-item"
+        },
+        {
+          "index": 55,
+          "role": "list-item"
+        },
+        {
+          "index": 56,
+          "role": "list-item"
+        },
+        {
+          "index": 57,
+          "role": "list-item"
+        },
+        {
+          "index": 58,
+          "role": "list-item"
+        },
+        {
+          "index": 59,
+          "role": "list-item"
+        },
+        {
+          "index": 60,
+          "role": "list-item"
+        },
+        {
+          "index": 61,
+          "role": "list-item"
+        },
+        {
+          "index": 62,
+          "role": "list-item"
+        },
+        {
+          "index": 63,
+          "role": "list-item"
+        },
+        {
+          "index": 64,
+          "role": "list-item"
+        },
+        {
+          "index": 65,
+          "role": "list-item"
+        },
+        {
+          "index": 66,
+          "role": "list-item"
+        },
+        {
+          "index": 67,
+          "label": "Regiments",
+          "role": "ledger-head"
+        },
+        {
+          "index": 68,
+          "role": "ledger-row"
+        },
+        {
+          "index": 69,
+          "role": "ledger-row"
+        },
+        {
+          "index": 70,
+          "role": "ledger-row"
+        },
+        {
+          "index": 71,
+          "role": "ledger-row"
+        },
+        {
+          "index": 72,
+          "role": "ledger-row"
+        },
+        {
+          "index": 73,
+          "role": "ledger-row"
+        },
+        {
+          "index": 74,
+          "role": "ledger-row"
+        },
+        {
+          "index": 75,
+          "role": "ledger-row"
+        },
+        {
+          "index": 76,
+          "role": "ledger-row"
+        },
+        {
+          "index": 77,
+          "label": "Favorites",
+          "role": "ledger-head"
+        },
+        {
+          "index": 78,
+          "role": "list-item"
+        },
+        {
+          "index": 79,
+          "role": "list-item"
+        },
+        {
+          "index": 80,
+          "role": "list-item"
+        },
+        {
+          "index": 81,
+          "role": "list-item"
+        },
+        {
+          "index": 82,
+          "role": "list-item"
+        },
+        {
+          "index": 83,
+          "role": "list-item"
+        },
+        {
+          "index": 84,
+          "role": "list-item"
+        },
+        {
+          "index": 85,
+          "role": "list-item"
+        },
+        {
+          "index": 86,
+          "role": "list-item"
+        },
+        {
+          "index": 87,
+          "role": "list-item"
+        },
+        {
+          "index": 88,
+          "role": "list-item"
+        },
+        {
+          "index": 89,
+          "role": "list-item"
+        },
+        {
+          "index": 90,
+          "role": "list-item"
+        },
+        {
+          "index": 91,
+          "role": "list-item"
+        },
+        {
+          "index": 92,
+          "role": "list-item"
+        },
+        {
+          "index": 93,
+          "role": "list-item"
+        },
+        {
+          "index": 94,
+          "role": "list-item"
+        },
+        {
+          "index": 95,
+          "role": "verse"
+        },
+        {
+          "index": 96,
+          "role": "verse"
+        },
+        {
+          "index": 97,
+          "role": "verse"
+        },
+        {
+          "index": 98,
+          "role": "verse"
+        },
+        {
+          "index": 99,
+          "role": "verse"
+        },
+        {
+          "index": 100,
+          "role": "verse"
+        },
+        {
+          "index": 101,
+          "role": "verse"
+        },
+        {
+          "index": 102,
+          "role": "verse"
+        },
+        {
+          "index": 103,
+          "label": "Government",
+          "role": "ledger-head"
+        }
+      ],
+      "part": "IV",
+      "rationale": "109 fact-paras: calmest plate, tabular tiles; index map from Cohort C engineer.",
+      "reading": {
+        "drop_cap": false,
+        "ledger": true
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p4c2",
+      "title": "Churchill in Context: Facts at a Glance",
+      "way": "22"
+    },
+    "p4c3": {
+      "caption": "too interesting to ignore",
+      "class": "plate",
+      "content_kind": "character-study",
+      "motif": "veiled-shard",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 3,
+      "palette_role": "slate",
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "thesis"
+        }
+      ],
+      "part": "IV",
+      "rationale": "A decorousness argument under a slate veil: the blunt thesis [4] is the chapter's only raised voice; rumors [8–9] and the Asquith/Lawrence counterfactual [11] stay veiled in calm prose.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c3",
+      "title": "Churchill and Sex: Too Interesting to Ignore",
+      "way": "23"
+    },
+    "p4c4": {
+      "caption": "my precious charming Clemmie",
+      "class": "plate",
+      "content_kind": "verdict-diptych",
+      "motif": "two-interlocked",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 4,
+      "palette_role": "ochre",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "verdict"
+        },
+        {
+          "index": 4,
+          "role": "letter"
+        },
+        {
+          "index": 5,
+          "role": "letter"
+        },
+        {
+          "index": 7,
+          "role": "verdict"
+        },
+        {
+          "index": 11,
+          "role": "caption"
+        },
+        {
+          "index": 13,
+          "role": "caption"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Marriage diptych: happy [0] / not-happy [7] verdict plaques; the March-1916 letters [4–5] set as correspondence; the two photograph captions [11,13] in sepia caption voice.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c4",
+      "title": "Churchill as Husband: A Happy Marriage?",
+      "way": "24"
+    },
+    "p4c5": {
+      "caption": "this sceptred isle",
+      "class": "plate",
+      "content_kind": "myth-essay",
+      "motif": "island-outline",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 5,
+      "palette_role": "ochre",
+      "paragraphs": [
+        {
+          "index": 9,
+          "role": "verse"
+        },
+        {
+          "index": 10,
+          "role": "verse"
+        },
+        {
+          "index": 11,
+          "role": "verse"
+        },
+        {
+          "index": 12,
+          "role": "verse"
+        },
+        {
+          "index": 13,
+          "role": "verse"
+        },
+        {
+          "index": 14,
+          "role": "verse"
+        },
+        {
+          "index": 15,
+          "role": "verse"
+        },
+        {
+          "index": 16,
+          "role": "verse"
+        },
+        {
+          "index": 17,
+          "role": "verse"
+        },
+        {
+          "index": 18,
+          "role": "verse"
+        },
+        {
+          "index": 19,
+          "role": "verse"
+        },
+        {
+          "index": 20,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Myth essay cresting in Shakespeare: eleven verse lines [9–19] set as a centered stanza block, the refusal-to-believe coda [20] as benediction, the Liberty/Empire contradiction [4–5] left to argue in calm prose.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c5",
+      "title": "Churchill’s Island Story: His Myth",
+      "way": "25"
+    },
+    "p4c6": {
+      "caption": "Remember Winston Churchill",
+      "class": "plate",
+      "content_kind": "caption-ledger",
+      "motif": "photo-frames",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 6,
+      "palette_role": "sepia-bone",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "setup"
+        },
+        {
+          "index": 1,
+          "label": "1",
+          "role": "caption"
+        },
+        {
+          "index": 2,
+          "label": "2",
+          "role": "caption"
+        },
+        {
+          "index": 3,
+          "label": "3",
+          "role": "caption"
+        },
+        {
+          "index": 4,
+          "label": "4",
+          "role": "caption"
+        },
+        {
+          "index": 5,
+          "label": "5",
+          "role": "caption"
+        },
+        {
+          "index": 6,
+          "label": "6",
+          "role": "caption"
+        },
+        {
+          "index": 7,
+          "label": "7",
+          "role": "caption"
+        },
+        {
+          "index": 8,
+          "label": "8",
+          "role": "caption"
+        },
+        {
+          "index": 9,
+          "label": "9",
+          "role": "caption"
+        },
+        {
+          "index": 10,
+          "label": "10",
+          "role": "caption"
+        },
+        {
+          "index": 11,
+          "label": "11",
+          "role": "caption"
+        },
+        {
+          "index": 12,
+          "label": "12",
+          "role": "caption"
+        },
+        {
+          "index": 13,
+          "label": "13",
+          "role": "caption"
+        },
+        {
+          "index": 14,
+          "label": "14",
+          "role": "caption"
+        },
+        {
+          "index": 15,
+          "label": "15",
+          "role": "caption"
+        },
+        {
+          "index": 16,
+          "label": "16",
+          "role": "caption"
+        },
+        {
+          "index": 17,
+          "label": "17",
+          "role": "caption"
+        },
+        {
+          "index": 18,
+          "label": "18",
+          "role": "caption"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Gallery hang in prose: setup [0] then 18 numbered captions [1–18] on a dated rail with frame-edge ticks echoing the plate's 6×3 sepia hang, aging light→dark down the page.",
+      "reading": {
+        "drop_cap": false,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c6",
+      "title": "Churchill in Photographs: How He Changed Through Time",
+      "way": "26"
+    },
+    "p4c7": {
+      "caption": "less a personality than a personification",
+      "class": "plate",
+      "content_kind": "literary-essay",
+      "motif": "novel-pages",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 7,
+      "palette_role": "mixed",
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "quote"
+        },
+        {
+          "index": 12,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Fiction's devices applied to a life: the bulldog/Woom unconvincing-character passage [4] as the central exhibit (quote), the ironies catalogue [6] and symbol exploitation [11] as calm accumulation, closing in the mythic-scale coda [12].",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c7",
+      "title": "Churchill as the Hero of a Novel: The Imagined and the Real",
+      "way": "27"
+    },
+    "p4c8": {
+      "caption": "walking with Destiny",
+      "class": "plate",
+      "content_kind": "destiny-argument",
+      "motif": "destiny-vector",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 8,
+      "palette_role": "vermilion/ochre",
+      "paragraphs": [
+        {
+          "index": 5,
+          "role": "list-item"
+        },
+        {
+          "index": 6,
+          "role": "list-item"
+        },
+        {
+          "index": 7,
+          "role": "list-item"
+        },
+        {
+          "index": 8,
+          "role": "list-item"
+        },
+        {
+          "index": 9,
+          "role": "list-item"
+        },
+        {
+          "index": 10,
+          "role": "list-item"
+        },
+        {
+          "index": 11,
+          "role": "list-item"
+        },
+        {
+          "index": 12,
+          "role": "list-item"
+        },
+        {
+          "index": 13,
+          "role": "list-item"
+        },
+        {
+          "index": 14,
+          "role": "list-item"
+        },
+        {
+          "index": 15,
+          "role": "quote"
+        },
+        {
+          "index": 17,
+          "role": "quote"
+        },
+        {
+          "index": 18,
+          "role": "quote"
+        },
+        {
+          "index": 27,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Survival catalogue [5–14] as a quickened ledger rhythm (list-items with date-beat energy), destiny's own voice [15,17–18] as set-piece quotes, Halifax/Chamberlain [20–26] as calm forensic prose, closing in the double-edged coda [27].",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c8",
+      "title": "Churchill’s Destiny: How He Saw Himself",
+      "way": "28"
+    },
+    "p4c9": {
+      "caption": "the clattering down",
+      "class": "plate",
+      "content_kind": "prosecution-brief",
+      "motif": "fracture-lines",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 9,
+      "palette_role": "vermilion",
+      "paragraphs": [
+        {
+          "index": 5,
+          "role": "letter"
+        },
+        {
+          "index": 10,
+          "role": "speech"
+        },
+        {
+          "index": 11,
+          "role": "thesis"
+        },
+        {
+          "index": 13,
+          "role": "thesis"
+        },
+        {
+          "index": 14,
+          "role": "speech"
+        },
+        {
+          "index": 15,
+          "role": "quote"
+        },
+        {
+          "index": 17,
+          "role": "coda"
+        },
+        {
+          "index": 18,
+          "role": "coda"
+        },
+        {
+          "index": 19,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "The cause stated, evidenced, and cracked: constituent letters/speeches [5,10,14–15] in correspondence/oration voice, the replacement-Empire thesis [11–13] as display argument, the clattering-down coda [17–19] as falling close.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c9",
+      "title": "Churchill the Imperialist: His Cause",
+      "way": "29"
+    },
+    "p5c1": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c1",
+      "class": "plate",
+      "motif": "transatlantic-cable-pair",
+      "caption": "seventeen hundred messages across the water",
+      "part": "V",
+      "order": 1,
+      "way": "31",
+      "title": "Churchill and Roosevelt: Friends as Well as Allies?",
+      "content_kind": "pro-contra-diptych",
+      "palette_role": "ochre",
+      "rationale": "True diptych: warm-case half (Had a Warm Friendship) vs cold-case half (Did Not Have a Warm Friendship); served verdict heads oppose each other; Atlantic cable-pair plate spans both.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true,
+        "diptych": true
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "verdict"
+        },
+        {
+          "index": 6,
+          "role": "verdict"
+        }
+      ]
+    },
+    "p5c10": {
+      "asset": "art/prototype-plates.svg#p5c10",
+      "class": "plate",
+      "content_kind": "epitaph",
+      "motif": "single-point",
+      "opener": {
+        "numeral_occluded": false,
+        "plate_min_px": 220,
+        "seal": "V"
+      },
+      "order": 10,
+      "palette_role": "ochre point",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "epitaph"
+        },
+        {
+          "index": 1,
+          "role": "coda"
+        }
+      ],
+      "part": "V",
+      "rationale": "Epitaph: one point of light; 63 words; colophon finish (C6).",
+      "reading": {
+        "drop_cap": false
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p5c10",
+      "title": "Remember Winston Churchill: Epitaph",
+      "way": "40"
+    },
+    "p5c2": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c2",
+      "class": "plate",
+      "motif": "backward-gaze",
+      "caption": "he looked backward, not forward",
+      "part": "V",
+      "order": 2,
+      "way": "32",
+      "title": "Churchill’s Imagination: How He Saw History",
+      "content_kind": "thesis-with-inscription",
+      "palette_role": "slate/ochre",
+      "rationale": "Backward-gaze thesis: Blenheim Victory Column inscription as monumental centered verse; the Admiralty-flag memo as a dispatch; the Oran 'I leave it to history' appeal inside ¶29 stays served prose (too long to lift).",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "setup"
+        },
+        {
+          "index": 5,
+          "role": "verse"
+        },
+        {
+          "index": 6,
+          "role": "verse"
+        },
+        {
+          "index": 7,
+          "role": "verse"
+        },
+        {
+          "index": 8,
+          "role": "verse"
+        },
+        {
+          "index": 9,
+          "role": "verse"
+        },
+        {
+          "index": 10,
+          "role": "verse"
+        },
+        {
+          "index": 11,
+          "role": "verse"
+        },
+        {
+          "index": 12,
+          "role": "verse"
+        },
+        {
+          "index": 13,
+          "role": "verse"
+        },
+        {
+          "index": 14,
+          "role": "verse"
+        },
+        {
+          "index": 15,
+          "role": "verse"
+        },
+        {
+          "index": 16,
+          "role": "verse"
+        },
+        {
+          "index": 17,
+          "role": "verse"
+        },
+        {
+          "index": 19,
+          "role": "setup"
+        },
+        {
+          "index": 20,
+          "role": "memo"
+        },
+        {
+          "index": 21,
+          "role": "memo"
+        },
+        {
+          "index": 26,
+          "role": "quote"
+        },
+        {
+          "index": 32,
+          "role": "coda"
+        }
+      ]
+    },
+    "p5c3": {
+      "asset": "art/prototype-plates.svg#p5c3",
+      "class": "plate",
+      "content_kind": "nemesis-diptych",
+      "motif": "split-diptych",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "order": 3,
+      "palette_role": "vermilion/slate",
+      "part": "V",
+      "rationale": "Nemesis: Hitler/Churchill halves that rhyme (prototype).",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p5c3",
+      "title": "Churchill and Hitler: Nemesis",
+      "way": "33"
+    },
+    "p5c4": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c4",
+      "class": "plate",
+      "motif": "lifted-layer",
+      "caption": "one layer peeled back",
+      "part": "V",
+      "order": 4,
+      "way": "34",
+      "title": "Churchill Exposed: Missing Information Supplied",
+      "content_kind": "suppressed-dossier",
+      "palette_role": "bone",
+      "rationale": "Suppressed-material dossier: calm bone record, the Barnum 'Boneless Wonder' set-piece as the chapter's one shard-tick quote, the Both-verdict closer as thesis.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "paragraphs": [
+        {
+          "index": 7,
+          "role": "setup"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        },
+        {
+          "index": 11,
+          "role": "thesis"
+        }
+      ]
+    },
+    "p5c5": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c5",
+      "class": "plate",
+      "motif": "masked-tiles",
+      "caption": "sixty-three statements, five of them false",
+      "part": "V",
+      "order": 5,
+      "way": "35",
+      "title": "Churchill True or False: Challenged Assumptions",
+      "content_kind": "masked-quiz",
+      "palette_role": "mixed",
+      "rationale": "True/False quiz: every even index 2..126 is a mask-q number row; served statement paras stay prose EXCEPT the 15 served-quotation statements (48–63 block + lead-in ¶97) which carry quote styling; answers para is mask-a inside the keyboard-honest details disclosure (facets.js wraps it; C5).",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": false,
+        "quiz": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "setup"
+        },
+        {
+          "index": 2,
+          "role": "mask-q"
+        },
+        {
+          "index": 4,
+          "role": "mask-q"
+        },
+        {
+          "index": 6,
+          "role": "mask-q"
+        },
+        {
+          "index": 8,
+          "role": "mask-q"
+        },
+        {
+          "index": 10,
+          "role": "mask-q"
+        },
+        {
+          "index": 12,
+          "role": "mask-q"
+        },
+        {
+          "index": 14,
+          "role": "mask-q"
+        },
+        {
+          "index": 16,
+          "role": "mask-q"
+        },
+        {
+          "index": 18,
+          "role": "mask-q"
+        },
+        {
+          "index": 20,
+          "role": "mask-q"
+        },
+        {
+          "index": 22,
+          "role": "mask-q"
+        },
+        {
+          "index": 24,
+          "role": "mask-q"
+        },
+        {
+          "index": 26,
+          "role": "mask-q"
+        },
+        {
+          "index": 28,
+          "role": "mask-q"
+        },
+        {
+          "index": 30,
+          "role": "mask-q"
+        },
+        {
+          "index": 32,
+          "role": "mask-q"
+        },
+        {
+          "index": 34,
+          "role": "mask-q"
+        },
+        {
+          "index": 36,
+          "role": "mask-q"
+        },
+        {
+          "index": 38,
+          "role": "mask-q"
+        },
+        {
+          "index": 40,
+          "role": "mask-q"
+        },
+        {
+          "index": 42,
+          "role": "mask-q"
+        },
+        {
+          "index": 44,
+          "role": "mask-q"
+        },
+        {
+          "index": 46,
+          "role": "mask-q"
+        },
+        {
+          "index": 48,
+          "role": "mask-q"
+        },
+        {
+          "index": 50,
+          "role": "mask-q"
+        },
+        {
+          "index": 52,
+          "role": "mask-q"
+        },
+        {
+          "index": 54,
+          "role": "mask-q"
+        },
+        {
+          "index": 56,
+          "role": "mask-q"
+        },
+        {
+          "index": 58,
+          "role": "mask-q"
+        },
+        {
+          "index": 60,
+          "role": "mask-q"
+        },
+        {
+          "index": 62,
+          "role": "mask-q"
+        },
+        {
+          "index": 64,
+          "role": "mask-q"
+        },
+        {
+          "index": 66,
+          "role": "mask-q"
+        },
+        {
+          "index": 68,
+          "role": "mask-q"
+        },
+        {
+          "index": 70,
+          "role": "mask-q"
+        },
+        {
+          "index": 72,
+          "role": "mask-q"
+        },
+        {
+          "index": 74,
+          "role": "mask-q"
+        },
+        {
+          "index": 76,
+          "role": "mask-q"
+        },
+        {
+          "index": 78,
+          "role": "mask-q"
+        },
+        {
+          "index": 80,
+          "role": "mask-q"
+        },
+        {
+          "index": 82,
+          "role": "mask-q"
+        },
+        {
+          "index": 84,
+          "role": "mask-q"
+        },
+        {
+          "index": 86,
+          "role": "mask-q"
+        },
+        {
+          "index": 88,
+          "role": "mask-q"
+        },
+        {
+          "index": 90,
+          "role": "mask-q"
+        },
+        {
+          "index": 92,
+          "role": "mask-q"
+        },
+        {
+          "index": 94,
+          "role": "mask-q"
+        },
+        {
+          "index": 96,
+          "role": "mask-q"
+        },
+        {
+          "index": 98,
+          "role": "mask-q"
+        },
+        {
+          "index": 100,
+          "role": "mask-q"
+        },
+        {
+          "index": 102,
+          "role": "mask-q"
+        },
+        {
+          "index": 104,
+          "role": "mask-q"
+        },
+        {
+          "index": 106,
+          "role": "mask-q"
+        },
+        {
+          "index": 108,
+          "role": "mask-q"
+        },
+        {
+          "index": 110,
+          "role": "mask-q"
+        },
+        {
+          "index": 112,
+          "role": "mask-q"
+        },
+        {
+          "index": 114,
+          "role": "mask-q"
+        },
+        {
+          "index": 116,
+          "role": "mask-q"
+        },
+        {
+          "index": 118,
+          "role": "mask-q"
+        },
+        {
+          "index": 120,
+          "role": "mask-q"
+        },
+        {
+          "index": 122,
+          "role": "mask-q"
+        },
+        {
+          "index": 124,
+          "role": "mask-q"
+        },
+        {
+          "index": 126,
+          "role": "mask-q"
+        },
+        {
+          "index": 97,
+          "role": "quote"
+        },
+        {
+          "index": 99,
+          "role": "quote"
+        },
+        {
+          "index": 101,
+          "role": "quote"
+        },
+        {
+          "index": 103,
+          "role": "quote"
+        },
+        {
+          "index": 105,
+          "role": "quote"
+        },
+        {
+          "index": 107,
+          "role": "quote"
+        },
+        {
+          "index": 109,
+          "role": "quote"
+        },
+        {
+          "index": 111,
+          "role": "quote"
+        },
+        {
+          "index": 113,
+          "role": "quote"
+        },
+        {
+          "index": 115,
+          "role": "quote"
+        },
+        {
+          "index": 117,
+          "role": "quote"
+        },
+        {
+          "index": 119,
+          "role": "quote"
+        },
+        {
+          "index": 121,
+          "role": "quote"
+        },
+        {
+          "index": 123,
+          "role": "quote"
+        },
+        {
+          "index": 125,
+          "role": "quote"
+        },
+        {
+          "index": 127,
+          "role": "quote"
+        },
+        {
+          "index": 128,
+          "role": "mask-a"
+        }
+      ]
+    },
+    "p5c6": {
+      "asset": "art/prototype-plates.svg#p5c6",
+      "class": "plate",
+      "content_kind": "tragedy",
+      "motif": "full-fracture",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "order": 6,
+      "palette_role": "vermilion",
+      "part": "V",
+      "rationale": "Tragedy: plate shattered, Greek-mask angles (prototype).",
+      "reading": {
+        "drop_cap": true
+      },
+      "src": "art/prototype-plates.svg",
+      "symbol": "p5c6",
+      "title": "The Tragedy of Winston Churchill, Englishman: The Meaning of His Life",
+      "way": "36"
+    },
+    "p5c7": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c7",
+      "class": "plate",
+      "motif": "hated-portrait",
+      "caption": "the portrait he hated",
+      "part": "V",
+      "order": 7,
+      "way": "37",
+      "title": "Churchill in Portrait: A Likeness",
+      "content_kind": "portrait-trial",
+      "palette_role": "slate/ochre",
+      "rationale": "Portrait-trial: the two served photo captions close the chapter as gallery captions; the aeroplane-in-the-dusk self-portrait inside ¶7 stays served prose; hated-portrait plate voids the face.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 8,
+          "role": "caption"
+        },
+        {
+          "index": 9,
+          "role": "caption"
+        }
+      ]
+    },
+    "p5c8": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c8",
+      "class": "plate",
+      "motif": "ebbing-tide",
+      "caption": "the tide goes out; the tablet remains",
+      "part": "V",
+      "order": 8,
+      "way": "38",
+      "title": "Churchill’s Last Days: How He Died",
+      "content_kind": "death-elegy",
+      "palette_role": "slate",
+      "rationale": "Death-elegy: last-words line and Abbey tablet as centered epitaph pair; the backward-sliding memory pageant (¶6) stays calm prose; ebbing-tide plate sinks below the numeral.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "epitaph"
+        },
+        {
+          "index": 11,
+          "role": "epitaph"
+        }
+      ]
+    },
+    "p5c9": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c9",
+      "class": "plate",
+      "motif": "judgment-seat",
+      "caption": "the verdict is yours; the chair is empty",
+      "part": "V",
+      "order": 9,
+      "way": "39",
+      "title": "My Churchill: Judgment",
+      "content_kind": "reader-verdict",
+      "palette_role": "bone",
+      "rationale": "Reader-verdict: the direct-address summons opens as thesis, the quarterdeck vision (cigar, flags, tears) centers as the book's emotional epitaph pair, the see-clearer closer is the coda; judgment-seat plate leaves the chair empty.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "thesis"
+        },
+        {
+          "index": 9,
+          "role": "epitaph"
+        },
+        {
+          "index": 10,
+          "role": "epitaph"
+        },
+        {
+          "index": 12,
+          "role": "coda"
+        }
+      ]
+    }
+  },
+  "cover": {
+    "class": "plate",
+    "src": "art/cover.svg"
+  },
+  "default": {
+    "class": "motif"
+  },
+  "version": 1
+}

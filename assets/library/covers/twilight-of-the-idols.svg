@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Twilight of the Idols — a struck bronze disc sounding its resonance rings</title>
+<defs>
+<radialGradient id="wash" cx="50%" cy="42%" r="55%">
+<stop offset="0" stop-color="#d29a4a" stop-opacity=".16"/><stop offset="1" stop-color="#d29a4a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="ember" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#e0684a"/><stop offset=".4" stop-color="#b23a2a" stop-opacity=".8"/><stop offset="1" stop-color="#b23a2a" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="800" height="1000" fill="#100d0a"/>
+<rect width="800" height="1000" fill="url(#wash)"/>
+<!-- radial engraving rays, subservient line-work -->
+<g stroke="#ede2cc" stroke-opacity=".12" stroke-width="1.4">
+<line x1="400" y1="420" x2="400" y2="40"/><line x1="400" y1="420" x2="590" y2="90"/><line x1="400" y1="420" x2="740" y2="280"/><line x1="400" y1="420" x2="740" y2="560"/><line x1="400" y1="420" x2="590" y2="750"/><line x1="400" y1="420" x2="400" y2="800"/><line x1="400" y1="420" x2="210" y2="750"/><line x1="400" y1="420" x2="60" y2="560"/><line x1="400" y1="420" x2="60" y2="280"/><line x1="400" y1="420" x2="210" y2="90"/>
+<line x1="400" y1="420" x2="495" y2="55"/><line x1="400" y1="420" x2="665" y2="195"/><line x1="400" y1="420" x2="665" y2="645"/><line x1="400" y1="420" x2="495" y2="785"/><line x1="400" y1="420" x2="305" y2="785"/><line x1="400" y1="420" x2="135" y2="645"/><line x1="400" y1="420" x2="135" y2="195"/><line x1="400" y1="420" x2="305" y2="55"/>
+</g>
+<!-- twelve sounding rings, one per chapter, fading outward -->
+<g fill="none" stroke="#d29a4a">
+<circle cx="400" cy="420" r="130" stroke-width="2.6" stroke-opacity=".95"/>
+<circle cx="400" cy="420" r="152" stroke-width="1.8" stroke-opacity=".8"/>
+<circle cx="400" cy="420" r="176" stroke-width="1.4" stroke-opacity=".66"/>
+<circle cx="400" cy="420" r="202" stroke-width="1.2" stroke-opacity=".52"/>
+<circle cx="400" cy="420" r="230" stroke-width="1" stroke-opacity=".4"/>
+<circle cx="400" cy="420" r="260" stroke-width=".9" stroke-opacity=".3"/>
+<circle cx="400" cy="420" r="292" stroke-width=".8" stroke-opacity=".21"/>
+<circle cx="400" cy="420" r="326" stroke-width=".7" stroke-opacity=".14"/>
+</g>
+<!-- broken arcs: the idol rings hollow -->
+<g fill="none" stroke="#ede2cc" stroke-width="1.6">
+<path d="M250,300 A165,165 0 0 1 400,255" stroke-opacity=".5"/>
+<path d="M560,280 A190,190 0 0 1 600,420" stroke-opacity=".35"/>
+</g>
+<!-- the idol disc: double incised circle -->
+<circle cx="400" cy="420" r="114" fill="#171310" stroke="#ede2cc" stroke-width="3.4"/>
+<circle cx="400" cy="420" r="100" fill="none" stroke="#ede2cc" stroke-opacity=".55" stroke-width="1.2"/>
+<!-- archaic mask: almond eyes set wide -->
+<g fill="none" stroke="#ede2cc" stroke-width="2.4" stroke-linecap="round">
+<path d="M338,390 Q368,380 394,387" stroke-opacity=".85"/>
+<path d="M406,387 Q432,380 462,390" stroke-opacity=".85"/>
+<path d="M410,398 L400,438 L412,442" stroke-opacity=".7"/>
+<path d="M378,464 Q400,469 422,464" stroke-opacity=".7"/>
+</g>
+<g fill="#100d0a" stroke="#ede2cc" stroke-width="2" stroke-opacity=".9">
+<path d="M342,416 Q357,406 372,416 Q357,426 342,416 Z"/>
+<path d="M428,416 Q443,406 458,416 Q443,426 428,416 Z"/>
+</g>
+<!-- impact crack down through the mask -->
+<g fill="none" stroke-linecap="round">
+<polyline points="400,400 395,422 403,444 393,468 401,492 395,516 403,534" stroke="#b23a2a" stroke-width="1.8" stroke-opacity=".9"/>
+<polyline points="395,422 382,430 372,428" stroke="#b23a2a" stroke-width="1.1" stroke-opacity=".6"/>
+<polyline points="403,444 416,452 426,450" stroke="#b23a2a" stroke-width="1.1" stroke-opacity=".6"/>
+</g>
+<circle cx="400" cy="398" r="18" fill="url(#ember)"/>
+<circle cx="400" cy="398" r="4.4" fill="#ede2cc"/>
+<!-- tuning-fork tines: the hammer that sounds -->
+<g fill="none" stroke="#ede2cc" stroke-width="3.4" stroke-linecap="round" stroke-opacity=".9">
+<path d="M378,318 L378,238"/><path d="M422,318 L422,238"/>
+<path d="M378,318 Q378,346 400,348 Q422,346 422,318"/>
+<path d="M400,348 L400,398" stroke="#d29a4a" stroke-width="3.4"/>
+</g>
+<g stroke="#d29a4a" stroke-width="1.3" stroke-opacity=".6" fill="none">
+<path d="M364,262 Q400,250 436,262"/><path d="M358,282 Q400,268 442,282"/>
+</g>
+<!-- chapter tally: twelve strike ticks along the foot -->
+<g stroke="#d29a4a" stroke-width="3" stroke-opacity=".7">
+<line x1="170" y1="900" x2="170" y2="928"/><line x1="212" y1="900" x2="212" y2="928"/><line x1="254" y1="900" x2="254" y2="928"/><line x1="296" y1="900" x2="296" y2="928"/><line x1="338" y1="900" x2="338" y2="928"/><line x1="380" y1="900" x2="380" y2="928"/><line x1="422" y1="900" x2="422" y2="928"/><line x1="464" y1="900" x2="464" y2="928"/><line x1="506" y1="900" x2="506" y2="928"/><line x1="548" y1="900" x2="548" y2="928"/><line x1="590" y1="900" x2="590" y2="928"/><line x1="632" y1="900" x2="632" y2="928"/>
+</g>
+<rect x="14" y="14" width="772" height="972" fill="none" stroke="#d29a4a" stroke-width="3" opacity=".8"/>
+</svg>

@@ -1,0 +1,216 @@
+{
+  "direction": "A · THE SIGNAL",
+  "status": "DRAFT for supervisor + ArtDirector review; expect one revision round",
+  "rationale": "Night railroad run: every chapter a signal aspect on the Line. Rails/track present in 29/30 chapters by census; signals peak at p3c5 (21); the strike IS the stop. Cannot house any non-railroad book.",
+  "title_swap_test": "Put any other title on a green-signal plate over converging rails and it reads wrong — the identity is railroad-specific.",
+  "references": [
+    "Cassandre, Etoile du Nord (1927), V&A O74368 — rails head-on, speed romanticism",
+    "Salter, Atlas Shrugged 1957 jacket, LBI Griffinger 5525297 — tunnel-mouth + converging rails + signal-disc primitives",
+    "Ferriss, The Metropolis of Tomorrow (1929) — massing-before-detail, lit edges",
+    "Geometric lathe / banknote engraving — unforgeable line-work (dollar plates B-detail inside A)",
+    "1930s Fortune covers — industrial modernism made lush",
+    "Rodchenko/Lissitzky constructivist books (MoMA Rowell) — 2-3 flat hues, type-as-structure",
+    "Fountainhead APPROVED identity — submission shape, F1-F10 conditions"
+  ],
+  "comparison": {
+    "axes": [
+      "Book-specificity",
+      "A0 part grammar",
+      "A1 scale",
+      "A2 gold",
+      "30x variation",
+      "Benchmark bar",
+      "Title-swap"
+    ],
+    "note": "Full table in directions.md §1; A wins on all-parts service, 30 census-keyed scenes, and shelf-uniqueness",
+    "rejected": [
+      "B · THE CURRENCY (money grammar starves Part I railroad sublime; lathe-border fatigue risk; Limelight vs rosette fight)",
+      "C · THE TERMINAL (board conceit trivializes valley + Galt address; closest to rejected baseline DNA; modulo-board tedium risk)"
+    ]
+  },
+  "fonts": {
+    "delivery": "engineer downloads woff2 to design/fonts/ + @font-face; Google Fonts links as dev fallback only",
+    "display": {
+      "family": "Barlow Condensed",
+      "fallback": ["Arial Narrow", "Helvetica Neue", "Impact", "sans-serif"],
+      "roles": ["cover title", "chapter heads", "part names"],
+      "verified": "Google Fonts CSS API 200, 2026-10-15",
+      "weights": [500, 600, 700]
+    },
+    "body": {
+      "family": "Crimson Pro",
+      "fallback": ["Georgia", "Palatino Linotype", "serif"],
+      "roles": ["chapter text"],
+      "verified": "Google Fonts CSS API 200, 2026-10-15",
+      "weights": [400, 600, "400italic"]
+    },
+    "data": {
+      "family": "Space Mono",
+      "fallback": ["ui-monospace", "Menlo", "monospace"],
+      "roles": ["signal codes", "TOC numerals", "captions", "kicker"],
+      "verified": "Google Fonts CSS API 200, 2026-10-15",
+      "weights": [400, 700]
+    }
+  },
+  "palette": {
+    "Nightballast": {"hex": "#0E1216", "role": "page/cover ground (cold blue-iron night)"},
+    "Tunnelblack": {"hex": "#07090C", "role": "slot wells, plate inlay"},
+    "Headlight": {"hex": "#F2E8D0", "role": "primary text on dark; beam color"},
+    "Clear_Green": {"hex": "#3FD08C", "role": "Part I aspect; graphics + large display only"},
+    "Order_Amber": {"hex": "#E8A33D", "role": "Part II aspect; graphics + large display only"},
+    "Stop_Red": {"hex": "#E0483E", "role": "Part III aspect; graphics + large display only"},
+    "Railsteel": {"hex": "#8B98A5", "role": "muted structure, secondary text, rail highlights"},
+    "themes": {
+      "default_dark": "as above",
+      "light_sepia": "ground #F2EAD8, text #1D2126; Green #1E7A4E, Amber #9A5F14, Red #A8322A (each >=4.5:1 for kickers, engineer verifies)",
+      "nocturne_slate": "keep night grounds",
+      "oxblood": "Tunnelblack toward #120B0B",
+      "candlelight": "Headlight warms to #F7E4C8",
+      "verdant": "keep Clear Green, Amber toward #D8942E"
+    }
+  },
+  "contrast_law": "Aspects carry graphics + large display (>=1.6rem Barlow Condensed 600+) + kickers (>=0.7rem Space Mono 700, +0.34em) ONLY; body and small text stay Headlight on Nightballast (~13:1). Validators meter every opener title treatment.",
+  "layout": {
+    "cover": "asymmetric grid: left column kicker/title/rule/author/tagline/actions; right column cover.svg in #cover-art (class plate). No text-over-art. Footer meta unchanged.",
+    "chapter_opener": "full-bleed signal plate band (class signal, height by scale.weight) in #chapter-art; then part kicker (mono, aspect color) / chapter head (Barlow Condensed 1.7rem 600 uppercase +0.08em) / data line (mono: CHAPTER VIII · words) / aspect rule left-weighted; then body. F4 law: first body line visible without scroll at 1440x1000 for standard openers.",
+    "measure": "body <= 66ch; opener lede <= 38rem",
+    "reading_body": "calm Crimson Pro; drop cap in Barlow Condensed 600 muted aspect; chapter-end mark via book CSS (aspect diamond, SVG or explicit-font glyph — no tofu)",
+    "scale": {
+      "cover_title": "clamp(3.4rem, 10vw, 7rem)/0.95 Barlow Condensed 700 uppercase +0.015em",
+      "chapter_head": "1.7rem Barlow Condensed 600 uppercase +0.08em",
+      "kicker": "0.72rem Space Mono 700 +0.34em uppercase",
+      "body": "1.28rem/1.78"
+    }
+  },
+  "art": {
+    "medium": "flat night-lithograph SVG: solid ink slabs, 2-3 flat hues per plate + lamp color, converging-line perspective, headlight beams as flat wedges (never glow filters), signal lamps as flat discs with hard 2px halo ring; linework >= 2px at final size; all original authored SVG",
+    "cover": {
+      "src": "art/cover.svg",
+      "slot": "#cover-art",
+      "class": "plate",
+      "caption": null,
+      "composition": "night signal plate, right column; green lamp over converging rails; no text in art"
+    },
+    "plates": {
+      "min_src": "art/signal-plates.svg",
+      "slot": "#chapter-art",
+      "class": "signal",
+      "sprite_symbols": "plate-p1c1 .. plate-p3c10 (30 symbols, shared lamp/beam defs)",
+      "max_height": "13rem standard cap; 9rem standard / 12rem grand / 13rem monumental / 7rem compact per scale.weight",
+      "wording": "captions are board codes (SIG I-08 · words), never prose labels"
+    }
+  },
+  "manifest_plan": {
+    "file": "design/chapters.json (READER-CONTRACT v1.1: explicit {src, symbol} keys, never fragment URLs)",
+    "cover": {"src": "art/cover.svg", "class": "plate"},
+    "default": {"class": "signal"},
+    "chapters_example": {
+      "p1c8": {
+        "src": "art/signal-plates.svg",
+        "symbol": "plate-p1c8",
+        "class": "signal",
+        "motif": "signal-clear",
+        "caption": "SIG I-08 · 18521 WORDS"
+      },
+      "p3c7": {
+        "src": "art/signal-plates.svg",
+        "symbol": "plate-p3c7",
+        "class": "signal speech",
+        "motif": "signal-stop",
+        "caption": "SIG III-07 · 37525 WORDS · THE ADDRESS"
+      }
+    },
+    "motif_to_data_art": "motif sets body[data-art]",
+    "cohort_fragments": "cohort leads author design/<cohort>.json; supervisor merges sequentially into design/chapters.json"
+  },
+  "caption_code": "SIG {part-roman}-{chapter-2digit} · {words} WORDS (e.g. SIG I-08 · 18521 WORDS)",
+  "data_art_values": [
+    "signal-clear",
+    "signal-caution",
+    "signal-stop",
+    "signal-stop-intruder",
+    "signal-clear-intruder"
+  ],
+  "motif_vocabulary": {
+    "parts": {
+      "part-i": {
+        "name": "ONE · NON-CONTRADICTION",
+        "aspect": "signal-clear",
+        "lamp": "#3FD08C",
+        "plate_world": "the Line running — open track, bridges, terminals at speed"
+      },
+      "part-ii": {
+        "name": "TWO · EITHER-OR",
+        "aspect": "signal-caution",
+        "lamp": "#E8A33D",
+        "plate_world": "signals against signals — orders contradict orders"
+      },
+      "part-iii": {
+        "name": "THREE · A IS A",
+        "aspect": "signal-stop",
+        "lamp": "#E0483E",
+        "plate_world": "the stopped world + the valley light"
+      }
+    },
+    "intruders": {
+      "p1c10": "signal-stop-intruder: red lamp on a green part — the Line's first death (Wyatt's Torch)",
+      "p3c1": "signal-clear-intruder: green valley light inside the stopped world (Atlantis approach)",
+      "p3c10": "signal-clear-intruder: lamp green again — the road is cleared (closing plate)"
+    },
+    "per_chapter_scene": {
+      "p1c1": "rails into city dusk + September-2 calendar disc",
+      "p1c2": "Rearden furnaces at night",
+      "p1c3": "Nat Taggart statue + Comet",
+      "p1c4": "stalled boardroom as dwarf signal, red-over-green",
+      "p1c5": "d'Anconia copper mines",
+      "p1c6": "wedding of steel — first Rearden Metal rail pour",
+      "p1c7": "the bridge — longest plate",
+      "p1c8": "John Galt Line first run — headlight wedge through rain",
+      "p1c9": "bracelets of sunlight + Rearden mills, telegraph wires",
+      "p1c10": "Wyatt's Torch — hill of flame as STOP plate (INTRUDER)",
+      "p2c1": "Stadler's institute under dead-gray sky",
+      "p2c2": "wedding reception — coupes as signal gantries",
+      "p2c3": "furnace + blackmail letter",
+      "p2c4": "the victim's lamp",
+      "p2c5": "bridge audit + Nat Taggart portrait",
+      "p2c6": "Directive 10-289 — the order board (type-only plate)",
+      "p2c7": "the Comet in the tunnel — smoke plate",
+      "p2c8": "the cabin + the Comet's last run",
+      "p2c9": "minimal plate — lamp + wire",
+      "p2c10": "dollar sign traced in smoke over prairie night",
+      "p3c1": "valley approach — green grass where no field was (INTRUDER)",
+      "p3c2": "valley at work — smelter, fields, Midas gold",
+      "p3c3": "anti-greed — the radio tower",
+      "p3c4": "anti-life — the wedding that isn't",
+      "p3c5": "the copper wire breaks — the catastrophe plate",
+      "p3c6": "the concerto — Halley's Fifth as waveforms over mills",
+      "p3c7": "the speech — standard plate + speech apparatus (see scale.p3c7)",
+      "p3c8": "the egoist — Galt + Dagny + the city dark",
+      "p3c9": "the generator — Project X tower",
+      "p3c10": "dollar traced over desolate earth + Wyatt's Torch still burning (INTRUDER)"
+    },
+    "scale": {
+      "determination": "authored per chapter from para counts + word counts; recorded here, never computed by index (F7/F8-clean)",
+      "monumental_13rem": ["p1c7", "p3c8", "p3c2"],
+      "grand_12rem": ["p3c1", "p1c10", "p3c3", "p1c9", "p3c5", "p1c6", "p3c4", "p2c3", "p2c10", "p3c6", "p1c5", "p2c2", "p2c7", "p2c4", "p2c1"],
+      "standard_9rem": ["p2c5", "p1c1", "p2c6", "p1c8", "p1c4"],
+      "triumph_compact_7rem": ["p3c10", "p3c9", "p2c9", "p1c3", "p2c8", "p1c2"],
+      "note": "grand plates carry extended captions; monumental add two-line inscriptions",
+      "p3c7_long_address": {
+        "class": "signal speech",
+        "design": "standard plate + designed speech apparatus: section numerals in Space Mono at speech beats, thin progress spine in margin keyed to address movements, generous relief spacing. Rhythm and progress legibility, NOT a bigger hero."
+      }
+    }
+  },
+  "navigation": {
+    "toc": {
+      "part_headers": "part aspect kicker + SVG lamp disc + Barlow Condensed part name",
+      "rows": "mono signal-code numerals (I-08, II-07) in aspect-muted color — codes, not badges (no borders/fills/cartouches)",
+      "active": "aspect lamp dot + Headlight title",
+      "read": "dim to 55%"
+    },
+    "header_progress": "aspect-colored progress bar via §2 hooks",
+    "settings_chrome": "re-skinned via §2 hooks in Railsteel/Headlight + aspect accents",
+    "endings": "closing plates (p1c10/p2c10/p3c10) + aspect end-marks; p3c10 lamp-green close"
+  }
+}

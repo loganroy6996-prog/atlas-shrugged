@@ -1,0 +1,159 @@
+/* Forty Ways — Cohort B (Part III private interior, Ways 12–20) reading treatments.
+   DIFFERENTIAL over theme.css §§2–7 shared bases: every rule below refines a
+   chapter+role context the shared base cannot know. Keyed to
+   body[data-book][data-chapter] + p[data-fw]; unlayered (wins over
+   @layer shared). Zero nth-child content rules — facets.js stamps data-fw
+   from design/cohort-b.json. C4: vermilion/slate = plates/large display
+   only; ochre = large numerals/rules only; body text stays Bone. No ochre
+   glow anywhere (S2); the verdict-against vermilion tick is large-display,
+   hence permitted. */
+
+/* ── p3c2 Way 12: memo cluster — glue the mock minute ([3]+[4]) into one
+   block with a shared ochre tick; first line as small-caps display. ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"] {
+  margin-bottom: 0;
+  border-left: 3px solid var(--fw-ochre);
+  border-radius: 0;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"]:last-of-type {
+  margin-bottom: 1.15em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"]:not(p[data-fw="memo"] ~ p[data-fw="memo"])::first-line {
+  font-family: var(--fw-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ── p3c4 Way 14: ledger rows with separators; [1] head in bone (a name,
+   not a section flag — cohort-c p4c2 precedent) + ochre tick echoing the
+   plate's year ticks. No .fw-index: reading.ledger is false (S3). ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-head"] {
+  color: var(--fw-bone);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-head"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.35em;
+  background: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-row"] {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.55em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-row"]:last-of-type {
+  border-bottom: 0;
+}
+
+/* ── p3c5 Way 15 / p3c8 Way 18 letters: theme letter base suffices (italic
+   indent). Intentionally unchanged — body calm, the hinge / vessel plates
+   do the work. ── */
+
+/* ── p3c6 Way 16: verdict diptych — opposing shard ticks keyed to labels;
+   drop cap suppressed on the [0] verdict head (verdict heads never take
+   drop caps — same guard theme uses for list chapters). ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"]::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 3px;
+  margin-right: 0.75rem;
+  vertical-align: 0.35em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"][data-fw-label="for"]::before {
+  background: var(--fw-ochre);
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"][data-fw-label="against"]::before {
+  background: var(--fw-vermilion);
+}
+
+/* ── p3c9 Way 19: witness triads — glue each setup/quote/caption triad;
+   quotes keep the theme ochre shard-tick ONLY (C4 forbids vermilion/slate
+   body ticks even though the plate is mixed); attributions read as
+   signoffs, not photo captions (caption role per S4). ── */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="setup"] {
+  margin-bottom: 0.3em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="setup"]:first-of-type {
+  margin-top: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="quote"] {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="caption"] {
+  margin-top: 0;
+  margin-bottom: 2.25em;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: var(--fw-measure);
+  text-align: right;
+  font-family: var(--fw-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] .chapter-text > p:last-child {
+  margin-bottom: 0;
+}
+/* No drop cap on p3c9: theme already kills it. */
+
+/* ── p3c10 Way 20: theme quote (Blitz [6]) + coda ([9]) bases suffice.
+   Intentionally unchanged. ── */
+
+/* ── Shared cohort guards: responsive / reduced-motion / print. No ledger
+   index in this cohort (p3c4 reading.ledger is false), so no index rules. */
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"]::before {
+    width: 1.25rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="quote"] {
+    padding-left: 0.75rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="caption"] {
+    margin-bottom: 1.5em;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Plates are static — conformance guard only, no motion to kill. */
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c3"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c5"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c8"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] #chapter-art,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c10"] #chapter-art {
+    animation: none;
+  }
+}
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c2"] p[data-fw="memo"] {
+    border-left-color: var(--fw-bone);
+    background: none;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-row"] {
+    border-bottom: 0;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c4"] p[data-fw="ledger-head"]::before,
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c6"] p[data-fw="verdict"]::before {
+    background: var(--fw-bone);
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p3c9"] p[data-fw="caption"] {
+    margin-bottom: 1.15em;
+  }
+}

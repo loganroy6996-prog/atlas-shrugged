@@ -1,0 +1,465 @@
+/* ==========================================================================
+   The Will to Power — CRITIQUE cohort (Book II, part-3, p3c1–p3c15)
+   "The Hammer Program" — Black Notebook gouge-plate apparatus, Bloodline ink.
+   Owner: SupWtP-3 (supervisor-authored; the critique engineer CSS deliverable
+   never landed as a file — every rule below follows design/critique.json,
+   its insertion_contract, toc_program, and the ArtDirector W1–W5 + Q2
+   conformance records verbatim).
+
+   Cascade: UNLAYERED, wins over @layer shared. Scope: EVERY rule carries
+   body[data-book='will-to-power'][data-part-id='part-3'] (never unqualified);
+   per-chapter refinements add body[data-chapter]; motif accents may use
+   body[data-art]. FORBIDDEN (validator-checked): nth-child motif/fleuron
+   rules, gradients near prose, Bloodline on interactive roles, unqualified
+   shared-selector restyles, minting reader-* classes.
+  _insertion hooks (supervisor book.js, reader:chapter-driven): .wtp-fleuron
+   (AFTER authored indices) · .cri-inscription (fragment-count line) ·
+   .cri-relief (BEFORE hinge paras p3c4[81]/p3c10[80] 1-based) · .cri-endseal
+   (AFTER final para p3c4/p3c10/p3c11/p3c15) · TOC movement labels + atoms.
+   ========================================================================== */
+
+/* ---- CRITIQUE tokens (identity palette, scoped to Book II) ---- */
+body[data-book='will-to-power'][data-part-id='part-3'] {
+  --cri-ink: #0B0A08;
+  --cri-note: #14120E;
+  --cri-vellum: #1D1A14;
+  --cri-bone: #EDE4D3;
+  --cri-ash: #A89C86;
+  --cri-pencil: #6B6257;
+  /* R3 item 4 chrome lifts (TEXT-ONLY; art inks stay canonical): */
+  --cri-pencil-chrome: #847A6E;
+  --cri-blood-chrome: #C06A6E;
+  --cri-sulphur: #E3A82B;
+  --cri-sulphur-deep: #9A6B1A;
+  --cri-blood: #8E2F32;
+  --cri-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --cri-body: "Newsreader", Georgia, "Iowan Old Style", serif;
+  --cri-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+/* ==========================================================================
+   1. READING BODY — calm single column, Bone on Inkblack, NO art behind prose
+   ========================================================================== */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text {
+  font-family: var(--cri-body);
+  font-size: 1.0875rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--cri-bone);
+  background: transparent;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p {
+  max-width: 36rem;
+  margin: 0 auto 1.15em;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+/* Standard drop cap: Fraunces 900 Bone with a Bloodline drop-bar (the hammer
+   edge); quiet long polemics (p3c4/p3c10) omit the bar per Q2. Tablets exempt. */
+body[data-book='will-to-power'][data-part-id='part-3']:not([data-chapter='p3c1']):not([data-chapter='p3c2']):not([data-chapter='p3c4']):not([data-chapter='p3c10']) #chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  font-family: var(--cri-display);
+  font-weight: 900;
+  font-size: 3.3em;
+  line-height: 0.82;
+  float: left;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--cri-bone);
+  border-left: 3px solid var(--cri-blood);
+  padding-left: 0.1em;
+}
+body[data-book='will-to-power'][data-chapter='p3c4'] #chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book='will-to-power'][data-chapter='p3c10'] #chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  font-family: var(--cri-display);
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 0.85;
+  float: left;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--cri-bone);
+  border-left: none;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.no-drop::first-letter {
+  font: inherit;
+  float: none;
+  padding: 0;
+  color: inherit;
+  border-left: none;
+}
+/* p3c1's spaced-title line IS the monument (centered, huge, Bone). */
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-text > p {
+  text-align: center;
+  font-family: var(--cri-display);
+  font-weight: 900;
+  font-size: clamp(1.6rem, 4.6vw, 2.6rem);
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  max-width: 30ch;
+  margin: 3rem auto 0;
+}
+/* p3c2's single aphorism: thesis-stone at 1.12rem on a narrow measure. */
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-text > p {
+  font-size: 1.12rem;
+  line-height: 1.75;
+  max-width: 30rem;
+  margin-top: 2.5rem;
+}
+/* NB. margin-cries: Bloodline bar + hanging mono marker via the frozen shared
+   p.reader-nb hook ONLY (W4: no per-chapter NB selectors). Consecutive-pair
+   spreads (p3c4[44+45], p3c7[13+14]) merge: the second bar is suppressed and
+   the pair reads as ONE spread with a single marker. */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.reader-nb {
+  border-left: 3px solid var(--cri-blood);
+  padding-left: 1.25rem;
+  position: relative;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.reader-nb::before {
+  content: "NB.";
+  position: absolute;
+  left: -3.4rem;
+  top: 0.32em;
+  font-family: var(--cri-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--cri-sulphur);
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.reader-nb + p.reader-nb {
+  border-left-width: 3px;
+  margin-top: -0.6em;
+  padding-top: 0.6em;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.reader-nb + p.reader-nb::before {
+  content: none;
+}
+/* Sulphur fleuron at AUTHORED boundaries only (book.js-inserted .wtp-fleuron,
+   class name converged with the Early cohort). */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > .wtp-fleuron {
+  display: block;
+  margin: 0 auto;
+  padding: 0.4rem 0 1.6rem;
+  max-width: 36rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--cri-sulphur);
+  user-select: none;
+}
+/* Blockquotes carry a Bloodline edge in Book II (identity §4). */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text blockquote {
+  border-left-color: var(--cri-blood);
+}
+
+/* ==========================================================================
+   2. CHAPTER OPENER — eyebrow → plate → title → rule+fragment → inscription
+   ========================================================================== */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta {
+  text-align: left;
+  margin-bottom: 2.75rem;
+  padding-top: 3.5rem;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .meta-part {
+  font-family: var(--cri-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--cri-blood-chrome);
+  margin: 0 0 1rem;
+}
+/* Standard opener title: Fraunces 900, whole (no single-word accent). */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .meta-title {
+  font-family: var(--cri-display);
+  font-weight: 900;
+  font-variation-settings: "opsz" 144;
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--cri-bone);
+  max-width: 20ch;
+  margin: 0;
+  text-wrap: balance;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .meta-number {
+  font-family: var(--cri-mono);
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--cri-blood-chrome);
+  margin: 0.9rem 0 0;
+}
+/* Standard plate-mark: 120px floated left, overlapping the title edge
+   (Book II aggression — the contract opener for standard chapters). */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-art.plate:not([hidden]) {
+  display: block;
+  float: left;
+  width: 120px;
+  max-width: 120px;
+  margin: 3.2rem 1.75rem 1rem 0;
+  padding: 0;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-art.plate:not([hidden]) svg {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-art.plate figcaption {
+  font-family: var(--cri-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--cri-pencil-chrome);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+/* Quiet long-polemic variant (p3c4/p3c10, Q2): Fraunces 700, smaller clamp,
+   plate-mark 96px stacked ABOVE the title, never overlapping the edge. */
+body[data-book='will-to-power'][data-chapter='p3c4'] #chapter-art.quiet:not([hidden]),
+body[data-book='will-to-power'][data-chapter='p3c10'] #chapter-art.quiet:not([hidden]) {
+  display: block;
+  float: none;
+  width: 96px;
+  max-width: 96px;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+body[data-book='will-to-power'][data-chapter='p3c4'] #chapter-art.quiet:not([hidden]) svg,
+body[data-book='will-to-power'][data-chapter='p3c10'] #chapter-art.quiet:not([hidden]) svg {
+  width: 96px;
+  height: auto;
+  display: block;
+}
+body[data-book='will-to-power'][data-chapter='p3c4'] #chapter-meta .meta-title,
+body[data-book='will-to-power'][data-chapter='p3c10'] #chapter-meta .meta-title {
+  font-weight: 700;
+  font-size: clamp(2rem, 4.6vw, 3rem);
+  line-height: 1.04;
+}
+/* Tablet openers (p3c1/p3c2, W5): 110px mark above, huge centered monument,
+   no inscription, no dropcap — reads intentional, not empty. */
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-art.tablet:not([hidden]),
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-art.tablet:not([hidden]) {
+  display: block;
+  float: none;
+  width: 110px;
+  max-width: 110px;
+  margin: 0 auto 2rem;
+  padding: 0;
+}
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-art.tablet:not([hidden]) svg,
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-art.tablet:not([hidden]) svg {
+  width: 110px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-meta,
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-meta {
+  text-align: center;
+  padding-top: 3rem;
+}
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-meta .meta-title {
+  font-size: clamp(2.6rem, 8vw, 4.2rem);
+  letter-spacing: 0.1em;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-meta .meta-title {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  max-width: 18ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Sulphur opener rule (2px match-strike) + authored rule-fragment line +
+   fragment-count inscription (book.js-inserted .cri-inscription). */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .meta-rule {
+  justify-content: flex-start;
+  margin-top: 1.4rem;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .meta-rule::before,
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .meta-rule::after {
+  content: none;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .meta-rule span {
+  width: 5rem;
+  height: 2px;
+  transform: none;
+  background: var(--cri-sulphur);
+  box-shadow: none;
+  opacity: 1;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .cri-rule-fragment {
+  font-family: var(--cri-body);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--cri-ash);
+  margin: 0.9rem 0 0;
+  max-width: 34rem;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-meta .cri-inscription {
+  font-family: var(--cri-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cri-ash);
+  margin: 0.7rem 0 0;
+}
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-meta .meta-rule,
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-meta .meta-rule,
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-meta .cri-rule-fragment,
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-meta .cri-rule-fragment,
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-meta .cri-inscription,
+body[data-book='will-to-power'][data-chapter='p3c2'] #chapter-meta .cri-inscription {
+  display: none;
+}
+/* p3c1 W5 sub-line: BOOK II · PART-TITLE TABLET (book.js-inserted). */
+body[data-book='will-to-power'][data-chapter='p3c1'] #chapter-meta .cri-tablet-sub {
+  font-family: var(--cri-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--cri-ash);
+  margin: 1.2rem 0 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+   3. RELIEF BANDS + END-SEALS (art only, margin-separated, never behind text)
+   ========================================================================== */
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > .cri-relief {
+  margin: 3rem auto;
+  max-width: 44rem;
+  padding: 0;
+  text-align: center;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > .cri-relief svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] .cri-endseal {
+  margin: 3.5rem auto 0;
+  max-width: 120px;
+  padding: 0;
+  text-align: center;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] .cri-endseal svg {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] .cri-endseal figcaption {
+  font-family: var(--cri-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cri-pencil-chrome);
+  margin-top: 0.7rem;
+}
+
+/* ==========================================================================
+   4. TOC — three-movement program (book.js annotations per toc_program)
+   ========================================================================== */
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-part-sub {
+  color: var(--cri-blood-chrome);
+}
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .cri-movement {
+  font-family: var(--cri-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--cri-blood-chrome);
+  padding: 1.2rem 1.25rem 0.3rem;
+}
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter .toc-num {
+  font-family: var(--cri-mono);
+  color: var(--cri-blood-chrome);
+}
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter .toc-name {
+  font-family: var(--cri-body);
+}
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .wtp-toc-atom {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  align-self: center;
+  color: var(--cri-blood);
+}
+/* Threshold tablets (p3c1/p3c2): dimmed, numerals hidden. */
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter[data-chapter-id='p3c1'],
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter[data-chapter-id='p3c2'] {
+  opacity: 0.72;
+}
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter[data-chapter-id='p3c1'] .toc-num,
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter[data-chapter-id='p3c2'] .toc-num {
+  visibility: hidden;
+}
+/* Reduced-emphasis shorts. */
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter[data-chapter-id='p3c11'] .toc-name,
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter[data-chapter-id='p3c14'] .toc-name,
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-chapter[data-chapter-id='p3c15'] .toc-name {
+  font-size: 0.92rem;
+  color: var(--cri-ash);
+}
+
+/* ==========================================================================
+   5. NAV — quiet cards + outgoing-motif signet slot
+   ========================================================================== */
+body[data-book='will-to-power'][data-part-id='part-3'] .chapter-nav .nav-btn .wtp-nav-signet {
+  width: 22px;
+  height: 22px;
+  color: var(--cri-blood);
+  align-self: flex-start;
+}
+body[data-book='will-to-power'][data-part-id='part-3'] .chapter-nav .nav-btn.next .wtp-nav-signet {
+  align-self: flex-end;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE / MOTION / PRINT
+   ========================================================================== */
+@media (max-width: 899px) {
+  body[data-book='will-to-power'][data-part-id='part-3'] #chapter-art.plate:not([hidden]) {
+    float: none;
+    margin: 0 0 1.5rem;
+  }
+}
+@media (max-width: 759px) {
+  body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.reader-nb::before {
+    position: static;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  body[data-book='will-to-power'][data-part-id='part-3'] .cri-endseal,
+  body[data-book='will-to-power'][data-part-id='part-3'] .cri-endseal svg {
+    max-width: 96px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book='will-to-power'][data-part-id='part-3'] *,
+  body[data-book='will-to-power'][data-part-id='part-3'] *::before,
+  body[data-book='will-to-power'][data-part-id='part-3'] *::after {
+    animation: none;
+    transition: none;
+  }
+}
+@media print {
+  body[data-book='will-to-power'][data-part-id='part-3'] #chapter-art,
+  body[data-book='will-to-power'][data-part-id='part-3'] .cri-relief,
+  body[data-book='will-to-power'][data-part-id='part-3'] .cri-endseal {
+    display: none;
+  }
+  body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.reader-nb {
+    border-left: 1px solid #000;
+  }
+  body[data-book='will-to-power'][data-part-id='part-3'] #chapter-text > p.reader-nb::before {
+    color: #000;
+  }
+}

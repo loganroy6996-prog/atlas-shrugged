@@ -1,0 +1,277 @@
+/* ─────────────────────────────────────────────────────────────
+   A Gentle Introduction — Cohort A (Narthex) plate treatments
+   Source: books/gentle-introduction/design/cohort-a.css
+   Merge: supervisor integrates sequentially into theme.css; this file is
+   FINAL and directly integrable. Unlayered: wins over @layer shared.
+
+   SCOPE (narrowed, binding): per-motif #chapter-art.arch sizing/framing
+   + Marcellus Candle drop caps + chapter-end seals ONLY. No shell rules:
+   .meta-rule pip, slot caption cartouche, TOC/nav grammar are the
+   supervisor's — this file never re-declares them and never touches
+   figcaption (see the svg/caption gap note below).
+
+   Hooks: body[data-book="gentle-introduction"] + [data-chapter="p1c1"|
+   "p1c2"|"p1c3"] with [data-art="narthex-door"|"twin-arch"|"three-lancets"]
+   fallback. Every rule is cohort-A-scoped; nothing leaks to cohorts B/C.
+   Palette: six hues only (ART-DIRECTION §3) + the plates' own stone
+   family (#5A5142/#4A4335/#3A332A/#2C2721) for frames. Shadows use
+   Narthex-with-opacity, never black. GI1: absolute stillness — zero
+   animation, zero transition in this file.
+   ───────────────────────────────────────────────────────────── */
+
+/* ── Shared slot sizing: centered, full-bleed-safe, never hidden ──
+   Shared already centers #chapter-art with margin-bottom 2rem; this pins
+   the cohort-A rhythm explicitly so per-motif max-widths always center.
+   Width 100% + max-width keeps plates inside every reader measure
+   (narrow 40rem → content ~656px still fits the widest 620px motif). */
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+/* ── Shared SVG ground: fixed dark jacket on every theme (O2 §3) ──
+   The plates' night fields are intrinsic, but the svg element itself gets
+   a fixed Narthex ground so letterboxing can never flash paper. The
+   0.25rem bottom margin pairs with the supervisor shell's figcaption
+   margin-top:1rem — total ~1.25rem + the plate's internal footer clears
+   the in-SVG "DOSE N OF XI" strip from the cartouche (supervisor wiring
+   repair, verified at 390px). This file never styles figcaption. */
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #100F0D;
+  margin-bottom: 0.25rem;
+}
+
+/* ── p1c1 · narthex-door — the threshold, withdrawn ──
+   Darkest plate in the book: narrowest slot (560px → 315px tall, the
+   ~320px §5 target) so the single portal stands alone in night. One
+   bitten outer line (#3A332A) over a 4px Narthex-black mount — the reader
+   held back from the door. Mount + shadow are fixed hexes: identical dark
+   jacket on light/sepia paper. */
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch {
+  max-width: 560px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch svg {
+  border: 1px solid #3A332A;
+  box-shadow: 0 0 0 4px #060504, 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+
+/* ── p1c2 · twin-arch — the verdict, bilateral ──
+   Widest slot (620px → 349px) so the shut/lit contrast reads instantly;
+   the plate IS the forced binary choice. Frame as diptych jambs: thin
+   head and sill, 3px side pilasters in deepest stone holding the two
+   doors apart. No outer mount — the verdict sits edged and exact. */
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch {
+  max-width: 620px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch svg {
+  border: 1px solid #4A4335;
+  border-left: 3px solid #2C2721;
+  border-right: 3px solid #2C2721;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+
+/* ── p1c3 · three-lancets — the wall warming ──
+   Middle width (600px → 338px); brightness, not size, carries the arc.
+   Brighter stone line (#4A4335, the lifted wall mid-tone) over a warm
+   ground mount (#0B0A08 vs p1c1's #060504) with a 4px sill course under
+   the glass — the nave approaches. Fixed dark on paper like its sisters. */
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch {
+  max-width: 600px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch svg {
+  border: 1px solid #4A4335;
+  border-bottom: 4px solid #1E1B16;
+  box-shadow: 0 0 0 4px #0B0A08, 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+
+/* ── Drop caps: Marcellus Candle, content-warranted, authored sizes ──
+   Shared paints ::first-letter in body serif + accent glow; art.css adds
+   a manuscript wash + halo. The Cathedral cuts both (GI5: light is drawn
+   mass, never a blur) and sets inscriptional Marcellus in Candle — large
+   glyphs only, so Candle text stays legal. Sizes author the arc: I
+   reserved at the threshold (3.15em), II procedural mid-treatment
+   (3.4em), III fullest voice (3.55em). Single-weight Marcellus → 400. */
+body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="narthex-door"] .chapter-text > p:first-of-type::first-letter {
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.15em;
+  line-height: 0.8;
+  padding: 0.05em 0.12em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="twin-arch"] .chapter-text > p:first-of-type::first-letter {
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.4em;
+  line-height: 0.79;
+  padding: 0.05em 0.13em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p:first-of-type::first-letter {
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.55em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+/* p1c3's opener ("Okay, so you're a Loyalist now. So what?") is 40 chars,
+   so reader.js tags it .no-drop — a full 3.55em cap would cramp a single
+   line. This authored override keeps the warranted Marcellus Candle cap
+   at a modest 2.35em that floats clean beside the short address. Higher
+   specificity than both shared .no-drop and the rule above. */
+body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:first-of-type.no-drop::first-letter,
+body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p:first-of-type.no-drop::first-letter {
+  float: left;
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 2.35em;
+  line-height: 0.85;
+  padding: 0.04em 0.1em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+/* Paper themes: Candle deepens to #9A6B24 per §4 so the large cap holds
+   contrast on vellum/sepia. Plates stay fixed dark (no remap, §3). */
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="narthex-door"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="twin-arch"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:first-of-type.no-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p:first-of-type.no-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="narthex-door"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="twin-arch"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:first-of-type.no-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="three-lancets"] .chapter-text > p:first-of-type.no-drop::first-letter {
+  color: #9A6B24;
+}
+
+/* ── Chapter-end seals (contract A.0): authored url() art, ≤32px ──
+   Each seal replaces shared's fleuron glyph with an arch/flame stamp in
+   its dose's ember tint — #A83A2C / #AC432B / #B14D2A, authored per
+   chapter, never modulo. Seals use ember + Ashen only (no Vellum, one
+   Candle lancet in III) so they read on night and paper alike.
+   Margin-top preserves shared's 2.75rem rhythm; no margins added, no
+   paragraph layout shifted. Widths grow with the arc: 24 / 28 / 30px. */
+
+/* Dose I: one arch, left leaf ember — the ajar door in miniature. */
+body[data-book="gentle-introduction"][data-chapter="p1c1"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%2021%20V11%20Q6%206%2012%203%20Q18%206%2018%2011%20V21%20Z'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.6'/%3E%3Cpath%20d='M8.5%2021%20V12%20Q8.5%208%2012%205.5%20V21%20Z'%20fill='%23A83A2C'/%3E%3Cline%20x1='12'%20y1='5.5'%20x2='12'%20y2='21'%20stroke='%239C917E'%20stroke-width='1'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* Dose II: two arches — shut outline left, ember right, ember diamond
+   between. The verdict stamped, both histories standing. */
+body[data-book="gentle-introduction"][data-chapter="p1c2"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='24'%20viewBox='0%200%2028%2024'%3E%3Cpath%20d='M3%2021%20V12%20Q3%208%207%205.5%20Q11%208%2011%2012%20V21%20Z'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.4'/%3E%3Cpath%20d='M17%2021%20V12%20Q17%208%2021%205.5%20Q25%208%2025%2012%20V21%20Z'%20fill='%23AC432B'%20fill-opacity='0.9'%20stroke='%239C917E'%20stroke-width='1.4'/%3E%3Cpath%20d='M14%204%20L15.5%206.5%20L14%209%20L12.5%206.5%20Z'%20fill='%23AC432B'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* Dose III: three lancets — ember, candle, half-lit ember. The triptych's
+   own counting (i/ii/iii) reduced to light values. */
+body[data-book="gentle-introduction"][data-chapter="p1c3"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='24'%20viewBox='0%200%2030%2024'%3E%3Cpath%20d='M4%2021%20V10%20Q4%207%206.5%204.5%20Q9%207%209%2010%20V21%20Z'%20fill='%23B14D2A'%20fill-opacity='0.9'/%3E%3Cpath%20d='M12.5%2021%20V10%20Q12.5%207%2015%204.5%20Q17.5%207%2017.5%2010%20V21%20Z'%20fill='%23DFA050'%20fill-opacity='0.9'/%3E%3Cpath%20d='M21%2021%20V10%20Q21%207%2023.5%204.5%20Q26%207%2026%2010%20V21%20Z'%20fill='%23B14D2A'%20fill-opacity='0.45'/%3E%3Cg%20fill='none'%20stroke='%239C917E'%20stroke-width='1'%3E%3Cpath%20d='M4%2021%20V10%20Q4%207%206.5%204.5%20Q9%207%209%2010%20V21%20Z'/%3E%3Cpath%20d='M12.5%2021%20V10%20Q12.5%207%2015%204.5%20Q17.5%207%2017.5%2010%20V21%20Z'/%3E%3Cpath%20d='M21%2021%20V10%20Q21%207%2023.5%204.5%20Q26%207%2026%2010%20V21%20Z'/%3E%3C/g%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* ── Phones: hold the 200px plate floor without overflow ──
+   At 390px the reader body keeps 1.15rem gutters; reclaiming 2px a side
+   lifts the 16:9 plate from ~199px to ~201px tall. The −2px sits inside
+   the 18px gutter — no 390px overflow. max-width:none lets the slot fill;
+   per-motif frames above still apply. */
+@media (max-width: 560px) {
+  body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch {
+    width: auto;
+    max-width: none;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+}
+
+/* ── Reduced motion: the Narthex is still; keep it still ──
+   This file declares no animation or transition; the guard pins that even
+   if a future shell introduces motion on these hooks. */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c1"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="narthex-door"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c2"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="twin-arch"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c3"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="three-lancets"] #chapter-art.arch svg {
+    animation: none !important;
+    transition: none !important;
+  }
+}

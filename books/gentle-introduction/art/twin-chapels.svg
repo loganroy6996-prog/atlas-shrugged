@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="c7t c7d">
+<title id="c7t">Dose VII — Two chapels: a moonlit chapel and a candlelit chapel stand whole on the same ground, divided by empty night air</title>
+<desc id="c7d">Nave plate. Two complete gabled side-chapels of identical massing stand apart on one continuous ground band, separated by a broad band of empty night air — the boundary drawn as sky. The left chapel is cool and whole, moonlit, its tall portal dark with a pale tympanum. The right chapel is warm and whole, candle-washed, its portal glowing gold with one sanctuary candle visible within. One small boundary stone stands at the gap's foot. Two sovereign peers; neither demolished.</desc>
+<defs>
+<linearGradient id="c7night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".6" stop-color="#100F0D"/><stop offset="1" stop-color="#171410"/>
+</linearGradient>
+<linearGradient id="c7stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="c7flame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<filter id="c7grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#c7grain)">
+<rect x="0" y="0" width="1600" height="900" fill="url(#c7night)"/>
+<!-- the sky band: warmest overall field yet, but the CENTER is night air -->
+<rect x="0" y="180" width="1600" height="180" fill="#DFA050" opacity=".05"/>
+<g fill="#ECE2CE">
+<circle cx="120" cy="120" r="2" opacity=".55"/><circle cx="280" cy="200" r="1.5" opacity=".35"/>
+<circle cx="1330" cy="120" r="2" opacity=".55"/><circle cx="1480" cy="210" r="1.5" opacity=".4"/>
+<circle cx="660" cy="100" r="1.4" opacity=".35"/><circle cx="950" cy="90" r="1.4" opacity=".35"/>
+<circle cx="800" cy="150" r="2.4" opacity=".8"/>
+</g>
+<!-- ===== LEFT chapel: cool, moonlit, whole — the defendant, stopped where it is ===== -->
+<g>
+<rect x="150" y="420" width="490" height="360" fill="#1E1B16" stroke="#5A5142" stroke-width="3"/>
+<path d="M150,420 L395,300 L640,420 Z" fill="#1E1B16" stroke="#5A5142" stroke-width="3"/>
+<rect x="370" y="256" width="50" height="60" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<line x1="395" y1="256" x2="395" y2="238" stroke="#3A332A" stroke-width="3"/>
+<circle cx="395" cy="232" r="5" fill="#3A332A"/>
+<line x1="150" y1="420" x2="640" y2="420" stroke="#4A4335" stroke-width="2"/>
+<g stroke="#3A332A" stroke-width="2">
+<line x1="150" y1="520" x2="260" y2="520"/><line x1="530" y1="520" x2="640" y2="520"/>
+<line x1="150" y1="620" x2="260" y2="620"/><line x1="530" y1="620" x2="640" y2="620"/>
+<line x1="150" y1="720" x2="260" y2="720"/><line x1="530" y1="720" x2="640" y2="720"/>
+</g>
+<g fill="#2C2721" stroke="#3A332A" stroke-width="1.5">
+<rect x="150" y="436" width="26" height="30"/><rect x="150" y="496" width="26" height="30"/>
+<rect x="150" y="556" width="26" height="30"/><rect x="150" y="616" width="26" height="30"/>
+<rect x="150" y="676" width="26" height="30"/><rect x="150" y="736" width="26" height="30"/>
+<rect x="614" y="436" width="26" height="30"/><rect x="614" y="496" width="26" height="30"/>
+<rect x="614" y="556" width="26" height="30"/><rect x="614" y="616" width="26" height="30"/>
+<rect x="614" y="676" width="26" height="30"/><rect x="614" y="736" width="26" height="30"/>
+</g>
+<!-- cold starlight wash only: Vellum .1, never candle -->
+<rect x="150" y="420" width="490" height="360" fill="#ECE2CE" opacity=".1"/>
+<!-- one tall dark portal with a pale moonlit tympanum -->
+<path d="M340,780 V520 Q340,470 395,452 Q450,470 450,520 V780 Z" fill="#0A0908" stroke="#5A5142" stroke-width="3"/>
+<path d="M340,520 Q340,470 395,452 Q450,470 450,520 L450,532 H340 Z" fill="#ECE2CE" opacity=".22"/>
+<!-- one small pale window -->
+<path d="M500,580 V540 A26,26 0 0 1 552,540 V580 Z" fill="#0A0908" stroke="#4A4335" stroke-width="2"/>
+<path d="M510,580 V546 A16,16 0 0 1 542,546 V580 Z" fill="#ECE2CE" opacity=".3"/>
+</g>
+<!-- ===== RIGHT chapel: warm, candlelit, whole — the plaintiff, burning on ===== -->
+<g>
+<rect x="960" y="420" width="490" height="360" fill="#1E1B16" stroke="#5A5142" stroke-width="3"/>
+<path d="M960,420 L1205,300 L1450,420 Z" fill="#1E1B16" stroke="#5A5142" stroke-width="3"/>
+<rect x="1180" y="256" width="50" height="60" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<line x1="1205" y1="256" x2="1205" y2="238" stroke="#3A332A" stroke-width="3"/>
+<circle cx="1205" cy="232" r="5" fill="#3A332A"/>
+<line x1="960" y1="420" x2="1450" y2="420" stroke="#4A4335" stroke-width="2"/>
+<g stroke="#3A332A" stroke-width="2">
+<line x1="960" y1="520" x2="1070" y2="520"/><line x1="1340" y1="520" x2="1450" y2="520"/>
+<line x1="960" y1="620" x2="1070" y2="620"/><line x1="1340" y1="620" x2="1450" y2="620"/>
+<line x1="960" y1="720" x2="1070" y2="720"/><line x1="1340" y1="720" x2="1450" y2="720"/>
+</g>
+<g fill="#2C2721" stroke="#3A332A" stroke-width="1.5">
+<rect x="960" y="436" width="26" height="30"/><rect x="960" y="496" width="26" height="30"/>
+<rect x="960" y="556" width="26" height="30"/><rect x="960" y="616" width="26" height="30"/>
+<rect x="960" y="676" width="26" height="30"/><rect x="960" y="736" width="26" height="30"/>
+<rect x="1424" y="436" width="26" height="30"/><rect x="1424" y="496" width="26" height="30"/>
+<rect x="1424" y="556" width="26" height="30"/><rect x="1424" y="616" width="26" height="30"/>
+<rect x="1424" y="676" width="26" height="30"/><rect x="1424" y="736" width="26" height="30"/>
+</g>
+<!-- candle wash over walls and gable: Candle .16 -->
+<rect x="960" y="420" width="490" height="360" fill="#DFA050" opacity=".16"/>
+<path d="M960,420 L1205,300 L1450,420 Z" fill="#DFA050" opacity=".16"/>
+<!-- one portal glowing gold, with the cover-grammar candle visible within -->
+<path d="M1150,780 V520 Q1150,470 1205,452 Q1260,470 1260,520 V780 Z" fill="#DFA050" opacity=".45"/>
+<path d="M1150,780 V520 Q1150,470 1205,452 Q1260,470 1260,520 V780" fill="none" stroke="#5A5142" stroke-width="3"/>
+<ellipse cx="1205" cy="780" rx="16" ry="5" fill="#E8DCC2"/>
+<rect x="1200" y="700" width="10" height="80" fill="#E8DCC2"/>
+<line x1="1205" y1="700" x2="1205" y2="694" stroke="#14120E" stroke-width="2"/>
+<path d="M1205,694 C1199.2,683.6 1200.2,675.8 1205,667.5 C1209.8,675.8 1210.8,683.6 1205,694 Z" fill="url(#c7flame)"/>
+<!-- one small warm window -->
+<path d="M1048,580 V540 A26,26 0 0 1 1100,540 V580 Z" fill="#0A0908" stroke="#4A4335" stroke-width="2"/>
+<path d="M1058,580 V546 A16,16 0 0 1 1090,546 V580 Z" fill="#DFA050" opacity=".5"/>
+</g>
+<!-- the shared earth: one continuous ground band under both chapels -->
+<rect x="0" y="780" width="1600" height="120" fill="#0B0A08"/>
+<line x1="0" y1="780" x2="1600" y2="780" stroke="#2C2721" stroke-width="2"/>
+<!-- drawn light: two wedges from the warm portal to the foreground -->
+<path d="M1150,780 H1260 L1330,900 H1080 Z" fill="#DFA050" opacity=".35"/>
+<path d="M1140,780 H1270 L1370,900 H1040 Z" fill="#DFA050" opacity=".18"/>
+<!-- the boundary stone at the gap's foot: the present line, surveyed -->
+<rect x="788" y="800" width="24" height="70" fill="#3A332A" stroke="#9C917E" stroke-width="1.5"/>
+<line x1="800" y1="808" x2="800" y2="862" stroke="#9C917E" stroke-width="1.5"/>
+<!-- (no in-SVG caption strip: the manifest caption covers it) -->
+</g>
+</svg>

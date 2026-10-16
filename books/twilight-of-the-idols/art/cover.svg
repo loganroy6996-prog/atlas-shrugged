@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="twc-title twc-desc">
+  <title id="twc-title">Struck idol-disc sounding its rings</title>
+  <desc id="twc-desc">An ivory line-engraving of a cracked bronze disc — the sounded idol — radiating concentric resonance rings on a forge-black ground, with fine radial engraving and a single ember impact point.</desc>
+  <defs>
+    <radialGradient id="discbronze" cx="42%" cy="36%" r="80%">
+      <stop offset="0%" stop-color="#D29A4A" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#D29A4A" stop-opacity="0.07"/>
+      <stop offset="75%" stop-color="#D29A4A" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#D29A4A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="embercore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E0684A" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#B23A2A" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#B23A2A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hairline" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EDE2CC" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#EDE2CC" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <!-- transparent ground: rings float on the cover bg (no opaque rect) -->
+
+  <!-- faint radial engraving rays -->
+  <g stroke="#EDE2CC" stroke-opacity="0.10" stroke-width="1">
+    <line x1="320" y1="320" x2="320" y2="18"/>
+    <line x1="320" y1="320" x2="471" y2="58"/>
+    <line x1="320" y1="320" x2="582" y2="169"/>
+    <line x1="320" y1="320" x2="622" y2="320"/>
+    <line x1="320" y1="320" x2="582" y2="471"/>
+    <line x1="320" y1="320" x2="471" y2="582"/>
+    <line x1="320" y1="320" x2="320" y2="622"/>
+    <line x1="320" y1="320" x2="169" y2="582"/>
+    <line x1="320" y1="320" x2="58" y2="471"/>
+    <line x1="320" y1="320" x2="18" y2="320"/>
+    <line x1="320" y1="320" x2="58" y2="169"/>
+    <line x1="320" y1="320" x2="169" y2="58"/>
+    <line x1="320" y1="320" x2="404" y2="36"/>
+    <line x1="320" y1="320" x2="532" y2="108"/>
+    <line x1="320" y1="320" x2="604" y2="236"/>
+    <line x1="320" y1="320" x2="604" y2="404"/>
+    <line x1="320" y1="320" x2="532" y2="532"/>
+    <line x1="320" y1="320" x2="404" y2="604"/>
+    <line x1="320" y1="320" x2="236" y2="604"/>
+    <line x1="320" y1="320" x2="108" y2="532"/>
+    <line x1="320" y1="320" x2="36" y2="404"/>
+    <line x1="320" y1="320" x2="36" y2="236"/>
+    <line x1="320" y1="320" x2="108" y2="108"/>
+    <line x1="320" y1="320" x2="236" y2="36"/>
+  </g>
+
+  <!-- bronze wash behind the disc -->
+  <circle cx="320" cy="320" r="252" fill="url(#discbronze)"/>
+
+  <!-- sounding rings: twelve strikes, one per chapter, fading outward -->
+  <g fill="none" stroke="#D29A4A">
+    <circle cx="320" cy="320" r="118" stroke-width="2.4" stroke-opacity="0.95"/>
+    <circle cx="320" cy="320" r="138" stroke-width="1.6" stroke-opacity="0.80"/>
+    <circle cx="320" cy="320" r="160" stroke-width="1.3" stroke-opacity="0.66"/>
+    <circle cx="320" cy="320" r="184" stroke-width="1.1" stroke-opacity="0.52"/>
+    <circle cx="320" cy="320" r="210" stroke-width="1" stroke-opacity="0.40"/>
+    <circle cx="320" cy="320" r="238" stroke-width="0.9" stroke-opacity="0.30"/>
+    <circle cx="320" cy="320" r="268" stroke-width="0.8" stroke-opacity="0.21"/>
+    <circle cx="320" cy="320" r="300" stroke-width="0.7" stroke-opacity="0.14"/>
+  </g>
+  <!-- broken ring arcs: the sound is not clean, the idol rings hollow -->
+  <g fill="none" stroke="#EDE2CC" stroke-width="1.4">
+    <path d="M 196 224 A 150 150 0 0 1 320 170" stroke-opacity="0.55"/>
+    <path d="M 452 203 A 172 172 0 0 1 492 320" stroke-opacity="0.38"/>
+    <path d="M 128 320 A 192 192 0 0 1 176 176" stroke-opacity="0.22"/>
+  </g>
+
+  <!-- the idol-disc: double incised circle -->
+  <g fill="none">
+    <circle cx="320" cy="320" r="104" stroke="url(#hairline)" stroke-width="3"/>
+    <circle cx="320" cy="320" r="92" stroke="#EDE2CC" stroke-opacity="0.55" stroke-width="1"/>
+  </g>
+
+  <!-- idol mask: narrow archaic features, almond eyes set wide -->
+  <g fill="none" stroke="#EDE2CC" stroke-width="2.2" stroke-linecap="round">
+    <path d="M 264 292 Q 292 282 316 289" stroke-opacity="0.85"/>
+    <path d="M 324 289 Q 348 282 376 292" stroke-opacity="0.85"/>
+    <path d="M 330 300 L 320 338 L 332 342" stroke-opacity="0.7"/>
+    <path d="M 300 362 Q 320 367 340 362" stroke-opacity="0.7"/>
+  </g>
+  <!-- hollow almond eyes, set wide apart -->
+  <g fill="#100D0A" stroke="#EDE2CC" stroke-width="1.8" stroke-opacity="0.9">
+    <path d="M 268 318 Q 282 308 296 318 Q 282 328 268 318 Z"/>
+    <path d="M 344 318 Q 358 308 372 318 Q 358 328 344 318 Z"/>
+  </g>
+
+  <!-- impact crack: hairline fissure from the strike point, down through the mask -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="320,302 315,322 323,342 313,364 321,386 315,408 323,424"
+      stroke="#B23A2A" stroke-width="1.6" stroke-opacity="0.9"/>
+    <polyline points="315,322 303,329 293,327" stroke="#B23A2A" stroke-width="1" stroke-opacity="0.6"/>
+    <polyline points="323,342 335,349 345,347" stroke="#B23A2A" stroke-width="1" stroke-opacity="0.6"/>
+    <polyline points="313,364 301,372 292,370" stroke="#B23A2A" stroke-width="0.9" stroke-opacity="0.5"/>
+  </g>
+  <!-- strike point ember -->
+  <circle cx="320" cy="300" r="16" fill="url(#embercore)"/>
+  <circle cx="320" cy="300" r="4" fill="#EDE2CC" fill-opacity="0.95"/>
+
+  <!-- tuning-fork tines rising from the disc: the hammer that sounds -->
+  <g fill="none" stroke="#EDE2CC" stroke-width="3" stroke-linecap="round" stroke-opacity="0.9">
+    <path d="M 300 218 L 300 148"/>
+    <path d="M 340 218 L 340 148"/>
+    <path d="M 300 218 Q 300 244 320 246 Q 340 244 340 218"/>
+    <path d="M 320 246 L 320 300" stroke="#D29A4A" stroke-width="3"/>
+  </g>
+  <g stroke="#D29A4A" stroke-width="1.2" stroke-opacity="0.6" fill="none">
+    <path d="M 288 168 Q 320 156 352 168"/>
+    <path d="M 282 186 Q 320 172 358 186"/>
+  </g>
+
+  <!-- inscription arc: become hard — letter-spaced caps on the outer ring -->
+  <g fill="#EDE2CC" fill-opacity="0.75" font-family="Cinzel, 'Times New Roman', serif" font-size="21" letter-spacing="7">
+    <text x="320" y="592" text-anchor="middle">BECOME HARD</text>
+  </g>
+  <g fill="#D29A4A" fill-opacity="0.8">
+    <circle cx="196" cy="584" r="2.4"/>
+    <circle cx="444" cy="584" r="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="s11t s11d">
+<title id="s11t">Plate XI — The sanctuary: the high altar in full light beneath the great east window</title>
+<desc id="s11d">Engraved architectural plate. The high altar stands centered on three stepped stairs beneath a tall glowing east window; a great arched reredos frames the altar; twin rows of choir stalls recede left and right; two sanctuary candles burn in tall stands; stepped wedges of gold light fall from the window across the altar and floor. The climax plate: the most luminous of the eleven. Nothing dissolves or comes apart: all stone intact, all arches whole.</desc>
+<defs>
+<linearGradient id="s11night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0B0A08"/><stop offset=".45" stop-color="#1B1813"/><stop offset="1" stop-color="#2A251C"/>
+</linearGradient>
+<linearGradient id="s11stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#1A1712"/><stop offset=".5" stop-color="#2E2920"/><stop offset="1" stop-color="#1A1712"/>
+</linearGradient>
+<linearGradient id="s11flame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<linearGradient id="s11east" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#F4D9A0"/><stop offset=".55" stop-color="#DFA050"/><stop offset="1" stop-color="#A83A2C"/>
+</linearGradient>
+<pattern id="s11hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="14" stroke="#9C917E" stroke-width="1.6"/>
+</pattern>
+<filter id="s11grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#s11grain)" font-family="Georgia,'Palatino Linotype','Liberation Serif',serif">
+<rect x="0" y="0" width="1600" height="900" fill="url(#s11night)"/>
+<rect x="28" y="28" width="1544" height="844" fill="none" stroke="#9C917E" stroke-width="2" opacity=".55"/>
+<rect x="44" y="44" width="1512" height="812" fill="none" stroke="#9C917E" stroke-width="1" opacity=".25"/>
+<text x="72" y="96" font-size="24" letter-spacing="4" fill="#9C917E">TAB. XI</text>
+<text x="1528" y="96" font-size="20" letter-spacing="3" fill="#9C917E" text-anchor="end">UR · DE NOVA STRUCTURA</text>
+
+<!-- ===== sanctuary back wall ===== -->
+<rect x="380" y="120" width="840" height="680" fill="url(#s11stone)" stroke="#9C917E" stroke-width="2.5"/>
+<rect x="380" y="120" width="840" height="680" fill="url(#s11hatch)" opacity=".12"/>
+
+<!-- ===== the great east window: full light ===== -->
+<path d="M640 560 L640 300 Q640 210 800 160 Q960 210 960 300 L960 560 Z" fill="#0A0908" stroke="#9C917E" stroke-width="3"/>
+<path d="M664 560 L664 310 Q664 232 800 188 Q936 232 936 310 L936 560 Z" fill="url(#s11east)"/>
+<path d="M700 560 L700 322 Q700 256 800 218 Q900 256 900 322 L900 560 Z" fill="#F4D9A0" opacity=".55"/>
+<!-- window mullions: three lights, leaded whole -->
+<g stroke="#0A0908" stroke-width="6">
+<line x1="747" y1="240" x2="747" y2="560"/><line x1="853" y1="240" x2="853" y2="560"/>
+</g>
+<g stroke="#0A0908" stroke-width="3">
+<line x1="664" y1="400" x2="936" y2="400"/><line x1="664" y1="480" x2="936" y2="480"/>
+</g>
+<!-- tracery circle in the window head -->
+<circle cx="800" cy="262" r="34" fill="#F4D9A0" stroke="#0A0908" stroke-width="5"/>
+<circle cx="800" cy="262" r="12" fill="#DFA050" stroke="#0A0908" stroke-width="3"/>
+
+<!-- ===== the reredos arch framing the altar ===== -->
+<path d="M500 800 L500 480 Q500 360 800 300 Q1100 360 1100 480 L1100 800 Z" fill="none" stroke="#9C917E" stroke-width="3.5"/>
+<path d="M532 800 L532 492 Q532 384 800 330 Q1068 384 1068 492 L1068 800 Z" fill="none" stroke="#DFA050" stroke-width="1.6" opacity=".7"/>
+<!-- reredos niches: empty canopied niches, intact -->
+<g fill="#0A0908" stroke="#9C917E" stroke-width="1.8">
+<path d="M560 700 L560 560 Q560 524 586 510 Q612 524 612 560 L612 700 Z"/>
+<path d="M988 700 L988 560 Q988 524 1014 510 Q1040 524 1040 560 L1040 700 Z"/>
+</g>
+
+<!-- ===== window light falling: stepped wedges across wall, altar, floor ===== -->
+<g>
+<polygon points="664,560 936,560 1060,800 540,800" fill="#DFA050" opacity=".24"/>
+<polygon points="720,560 880,560 960,800 640,800" fill="#DFA050" opacity=".28"/>
+<polygon points="764,560 836,560 880,800 720,800" fill="#F4D9A0" opacity=".34"/>
+</g>
+
+<!-- ===== the high altar on three steps ===== -->
+<g>
+<rect x="560" y="764" width="480" height="18" fill="#242019" stroke="#9C917E" stroke-width="1.5"/>
+<rect x="590" y="746" width="420" height="18" fill="#2E2920" stroke="#9C917E" stroke-width="1.5"/>
+<rect x="620" y="728" width="360" height="18" fill="#242019" stroke="#9C917E" stroke-width="1.5"/>
+<!-- altar mensa -->
+<rect x="650" y="620" width="300" height="108" fill="#ECE2CE" stroke="#9C917E" stroke-width="2.5"/>
+<rect x="650" y="620" width="300" height="108" fill="url(#s11hatch)" opacity=".1"/>
+<!-- mensa frontal: three gilt panels -->
+<g fill="#DFA050" stroke="#0A0908" stroke-width="1.5">
+<rect x="672" y="644" width="72" height="62"/><rect x="764" y="644" width="72" height="62"/><rect x="856" y="644" width="72" height="62"/>
+</g>
+<g stroke="#A83A2C" stroke-width="2">
+<line x1="672" y1="675" x2="744" y2="675"/><line x1="764" y1="675" x2="836" y2="675"/><line x1="856" y1="675" x2="928" y2="675"/>
+</g>
+<!-- altar top slab -->
+<rect x="638" y="606" width="324" height="16" fill="#F4D9A0" stroke="#9C917E" stroke-width="2"/>
+</g>
+
+<!-- ===== twin sanctuary candles in tall stands ===== -->
+<g>
+<g>
+<rect x="560" y="560" width="14" height="168" fill="#1E1B16" stroke="#9C917E" stroke-width="1.6"/>
+<rect x="544" y="716" width="46" height="12" fill="#242019" stroke="#9C917E" stroke-width="1.4"/>
+<rect x="559" y="470" width="16" height="92" fill="#ECE2CE" stroke="#9C917E" stroke-width="1.4"/>
+<path d="M567 428 C579 452 581 464 567 478 C553 464 555 452 567 428 Z" fill="url(#s11flame)"/>
+<path d="M567 450 C572 460 573 465 567 469 C561 465 562 460 567 450 Z" fill="#F4D9A0"/>
+</g>
+<g>
+<rect x="1026" y="560" width="14" height="168" fill="#1E1B16" stroke="#9C917E" stroke-width="1.6"/>
+<rect x="1010" y="716" width="46" height="12" fill="#242019" stroke="#9C917E" stroke-width="1.4"/>
+<rect x="1025" y="470" width="16" height="92" fill="#ECE2CE" stroke="#9C917E" stroke-width="1.4"/>
+<path d="M1033 428 C1045 452 1047 464 1033 478 C1019 464 1021 452 1033 428 Z" fill="url(#s11flame)"/>
+<path d="M1033 450 C1038 460 1039 465 1033 469 C1027 465 1028 460 1033 450 Z" fill="#F4D9A0"/>
+</g>
+</g>
+
+<!-- ===== choir stalls receding left and right (R3: narrowed, canopied) ===== -->
+<g>
+<g fill="#1E1B16" stroke="#9C917E" stroke-width="2">
+<rect x="130" y="580" width="180" height="220"/><rect x="1290" y="580" width="180" height="220"/>
+</g>
+<!-- stall canopies: pointed caps over each seat -->
+<g fill="#242019" stroke="#9C917E" stroke-width="1.6">
+<path d="M142 580 L142 540 Q158 522 174 540 L174 580 Z"/>
+<path d="M192 580 L192 540 Q208 522 224 540 L224 580 Z"/>
+<path d="M242 580 L242 540 Q258 522 274 540 L274 580 Z"/>
+<path d="M1326 580 L1326 540 Q1342 522 1358 540 L1358 580 Z"/>
+<path d="M1376 580 L1376 540 Q1392 522 1408 540 L1408 580 Z"/>
+<path d="M1426 580 L1426 540 Q1442 522 1458 540 L1458 580 Z"/>
+</g>
+<g fill="#0A0908">
+<rect x="146" y="552" width="24" height="28"/><rect x="196" y="552" width="24" height="28"/><rect x="246" y="552" width="24" height="28"/>
+<rect x="1330" y="552" width="24" height="28"/><rect x="1380" y="552" width="24" height="28"/><rect x="1430" y="552" width="24" height="28"/>
+</g>
+<g stroke="#DFA050" stroke-width="1.4" opacity=".65">
+<line x1="142" y1="648" x2="298" y2="648"/><line x1="1302" y1="648" x2="1458" y2="648"/>
+<line x1="142" y1="716" x2="298" y2="716"/><line x1="1302" y1="716" x2="1458" y2="716"/>
+<line x1="142" y1="768" x2="298" y2="768"/><line x1="1302" y1="768" x2="1458" y2="768"/>
+</g>
+<g stroke="#9C917E" stroke-width="1" opacity=".6">
+<line x1="186" y1="600" x2="186" y2="788"/><line x1="236" y1="600" x2="236" y2="788"/>
+<line x1="1364" y1="600" x2="1364" y2="788"/><line x1="1414" y1="600" x2="1414" y2="788"/>
+</g>
+<g fill="#DFA050" opacity=".85">
+<circle cx="158" cy="534" r="5"/><circle cx="208" cy="534" r="5"/><circle cx="258" cy="534" r="5"/>
+<circle cx="1342" cy="534" r="5"/><circle cx="1392" cy="534" r="5"/><circle cx="1442" cy="534" r="5"/>
+</g>
+</g>
+
+<!-- sanctuary floor: light pooling before the altar -->
+<g>
+<ellipse cx="800" cy="796" rx="330" ry="22" fill="#DFA050" opacity=".22"/>
+<ellipse cx="800" cy="796" rx="210" ry="14" fill="#DFA050" opacity=".26"/>
+<ellipse cx="800" cy="796" rx="100" ry="8" fill="#F4D9A0" opacity=".32"/>
+</g>
+<g stroke="#9C917E" stroke-width="1" opacity=".45">
+<line x1="470" y1="796" x2="1130" y2="796"/>
+<line x1="560" y1="780" x2="560" y2="812"/><line x1="680" y1="780" x2="680" y2="812"/>
+<line x1="920" y1="780" x2="920" y2="812"/><line x1="1040" y1="780" x2="1040" y2="812"/>
+</g>
+
+<!-- (no in-SVG caption strip: the manifest caption covers it — R1) -->
+</g>
+</svg>

@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="West front of a cathedral at night; the great portal stands ajar, spilling candlelight down the steps">
+  <title>Contemplative Cathedral — cover plate</title>
+  <desc>Original authored plate for A Gentle Introduction to Unqualified Reservations. Night west front, twin towers, great portal ajar with drawn candlelight, eleven dose-notches ember to gold along the base. Left third is calm night sky: the inscriptional title field.</desc>
+  <defs>
+    <!-- GIR2: the night lifts one step (void #060504 → narthex air) so the
+         plate reads as night, not absence, beside the luminous openers. -->
+    <linearGradient id="gi-night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E0C09"/>
+      <stop offset="0.55" stop-color="#171410"/>
+      <stop offset="1" stop-color="#23201A"/>
+    </linearGradient>
+    <linearGradient id="gi-stone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1B1712"/>
+      <stop offset="0.5" stop-color="#2E2820"/>
+      <stop offset="1" stop-color="#1B1712"/>
+    </linearGradient>
+    <linearGradient id="gi-flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#A83A2C"/>
+      <stop offset="0.45" stop-color="#DFA050"/>
+      <stop offset="1" stop-color="#F4D9A0"/>
+    </linearGradient>
+    <filter id="gi-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+      <feComposite in="SourceGraphic" in2="g" operator="over"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#gi-grain)">
+    <rect width="800" height="1000" fill="url(#gi-night)"/>
+
+    <!-- stars: sparse, cold, hand-placed; left field kept quiet for the title -->
+    <g fill="#ECE2CE">
+      <circle cx="60" cy="120" r="1.4" opacity="0.55"/>
+      <circle cx="140" cy="220" r="1" opacity="0.35"/>
+      <circle cx="96" cy="330" r="1.1" opacity="0.35"/>
+      <circle cx="368" cy="60" r="1.5" opacity="0.65"/>
+      <circle cx="452" cy="110" r="1.1" opacity="0.4"/>
+      <circle cx="530" cy="64" r="1.6" opacity="0.7"/>
+      <circle cx="610" cy="140" r="1" opacity="0.4"/>
+      <circle cx="690" cy="76" r="1.5" opacity="0.6"/>
+      <circle cx="742" cy="170" r="1.1" opacity="0.4"/>
+      <circle cx="660" cy="250" r="1" opacity="0.3"/>
+      <circle cx="300" cy="150" r="1" opacity="0.35"/>
+    </g>
+
+    <!-- architecture rides right-of-center; left third stays calm for type -->
+    <g transform="translate(70,0)">
+      <!-- twin towers: lifted ashlar bodies + lit belfry slits (GIR2) -->
+      <g>
+        <rect x="180" y="300" width="120" height="560" fill="#2C2620"/>
+        <rect x="180" y="300" width="120" height="560" fill="none" stroke="#6E6350" stroke-width="2"/>
+        <rect x="500" y="300" width="120" height="560" fill="#2C2620"/>
+        <rect x="500" y="300" width="120" height="560" fill="none" stroke="#6E6350" stroke-width="2"/>
+        <!-- buttress strips: the towers' bitten verticals -->
+        <g fill="#241F18" stroke="#57503F" stroke-width="1.5">
+          <rect x="188" y="310" width="14" height="540"/>
+          <rect x="278" y="310" width="14" height="540"/>
+          <rect x="508" y="310" width="14" height="540"/>
+          <rect x="598" y="310" width="14" height="540"/>
+        </g>
+        <!-- tower belfry lancets: one slit lit per tower (GIR2) -->
+        <g fill="#0A0908" stroke="#57503F" stroke-width="1.5">
+          <path d="M214 360 V470 H242 V360 Q228 336 214 360 Z"/>
+          <path d="M252 360 V470 H280 V360 Q266 336 252 360 Z"/>
+          <path d="M520 360 V470 H548 V360 Q534 336 520 360 Z"/>
+          <path d="M558 360 V470 H586 V360 Q572 336 558 360 Z"/>
+        </g>
+        <path d="M214 470 V430 H242 V470 Z" fill="#DFA050" opacity="0.75"/>
+        <path d="M558 470 V430 H586 V470 Z" fill="#DFA050" opacity="0.75"/>
+        <!-- tower caps -->
+        <path d="M180 300 L240 220 L300 300 Z" fill="#262119" stroke="#4A4335" stroke-width="2"/>
+        <path d="M500 300 L560 220 L620 300 Z" fill="#262119" stroke="#4A4335" stroke-width="2"/>
+        <line x1="240" y1="220" x2="240" y2="196" stroke="#4A4335" stroke-width="3"/>
+        <line x1="560" y1="220" x2="560" y2="196" stroke="#4A4335" stroke-width="3"/>
+        <!-- string courses -->
+        <g stroke="#57503F" stroke-width="2">
+          <line x1="180" y1="520" x2="300" y2="520"/>
+          <line x1="500" y1="520" x2="620" y2="520"/>
+          <line x1="180" y1="700" x2="300" y2="700"/>
+          <line x1="500" y1="700" x2="620" y2="700"/>
+        </g>
+      </g>
+
+      <!-- nave wall between towers -->
+      <rect x="300" y="430" width="200" height="430" fill="url(#gi-stone)" stroke="#3A332A" stroke-width="2"/>
+
+      <!-- rose window: dark tracery, single lit petal (the first dose) -->
+      <g transform="translate(400,520)">
+        <circle r="64" fill="#0A0908" stroke="#4A4335" stroke-width="2.5"/>
+        <circle r="48" fill="none" stroke="#4A4335" stroke-width="1.5"/>
+        <g stroke="#4A4335" stroke-width="1.5">
+          <line x1="0" y1="-48" x2="0" y2="48"/>
+          <line x1="-48" y1="0" x2="48" y2="0"/>
+          <line x1="-34" y1="-34" x2="34" y2="34"/>
+          <line x1="-34" y1="34" x2="34" y2="-34"/>
+        </g>
+        <path d="M0 0 L0 -48 A48 48 0 0 1 34 -34 Z" fill="#DFA050" opacity="0.85"/>
+        <circle r="9" fill="#0A0908" stroke="#9C917E" stroke-width="1.5"/>
+        <circle r="3.5" fill="#DFA050"/>
+      </g>
+
+      <!-- gable above portal -->
+      <path d="M300 430 L400 330 L500 430 Z" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+
+      <!-- steps -->
+      <g>
+        <rect x="300" y="860" width="200" height="14" fill="#1E1B16" stroke="#3A332A" stroke-width="1.5"/>
+        <rect x="282" y="874" width="236" height="14" fill="#1B1813" stroke="#3A332A" stroke-width="1.5"/>
+        <rect x="264" y="888" width="272" height="14" fill="#171410" stroke="#2C2721" stroke-width="1.5"/>
+      </g>
+      <g>
+        <!-- outer order -->
+        <path d="M330 860 V680 Q330 610 400 570 Q470 610 470 680 V860 Z"
+              fill="#0B0A08" stroke="#5A5142" stroke-width="3"/>
+        <!-- middle order -->
+        <path d="M346 860 V688 Q346 628 400 594 Q454 628 454 688 V860 Z"
+              fill="none" stroke="#4A4335" stroke-width="2"/>
+        <!-- inner order -->
+        <path d="M360 860 V696 Q360 644 400 614 Q440 644 440 696 V860 Z"
+              fill="#060504" stroke="#3A332A" stroke-width="1.5"/>
+        <!-- colonnettes -->
+        <g stroke="#5A5142" stroke-width="2">
+          <line x1="324" y1="860" x2="324" y2="686"/>
+          <line x1="476" y1="860" x2="476" y2="686"/>
+        </g>
+        <g fill="#5A5142">
+          <rect x="318" y="676" width="12" height="10"/>
+          <rect x="470" y="676" width="12" height="10"/>
+        </g>
+        <!-- the ajar door: open leaf is a flat mass of candlelight -->
+        <path d="M368 860 V700 Q368 656 400 632 V860 Z" fill="#DFA050" opacity="0.3"/>
+        <path d="M400 632 Q432 656 432 700 V860 H400 Z" fill="#171310" stroke="#6B5B3E" stroke-width="2"/>
+        <g stroke="#6B5B3E" stroke-width="1.5" opacity="0.9">
+          <line x1="400" y1="700" x2="432" y2="700"/>
+          <line x1="400" y1="760" x2="432" y2="760"/>
+          <line x1="400" y1="820" x2="432" y2="820"/>
+        </g>
+        <circle cx="408" cy="782" r="4" fill="#DFA050"/>
+        <!-- the sanctuary candle, just inside the door (GI5: single flame grammar) -->
+        <rect x="385" y="790" width="7" height="52" fill="#E8DCC2"/>
+        <path d="M388.5 790 C384 782 385 776 388.5 770 C392 776 393 782 388.5 790 Z" fill="url(#gi-flame)"/>
+        <!-- drawn light: stepped spill wedges over the steps (GI5: flat mass, no blur).
+             GIR2: widened one step so the portal carries the lifted plate. -->
+        <path d="M356 860 H444 L478 902 H322 Z" fill="#DFA050" opacity="0.55"/>
+        <path d="M344 860 H456 L500 902 H300 Z" fill="#DFA050" opacity="0.28"/>
+        <path d="M332 860 H468 L524 902 H276 Z" fill="#DFA050" opacity="0.14"/>
+      </g>
+
+
+    </g>
+
+    <!-- foreground ground; notches sit ON it, drawn after -->
+    <rect x="0" y="902" width="800" height="98" fill="#0B0A08"/>
+    <line x1="0" y1="902" x2="800" y2="902" stroke="#2C2721" stroke-width="2"/>
+    <!-- eleven dose-notches: exactly eleven, ember red c1 → candle gold c11 -->
+    <g>
+      <rect x="302" y="930" width="14" height="30" fill="#A83A2C"/>
+      <rect x="324" y="930" width="14" height="30" fill="#AC432B"/>
+      <rect x="346" y="930" width="14" height="30" fill="#B14D2A"/>
+      <rect x="368" y="930" width="14" height="30" fill="#B65729"/>
+      <rect x="390" y="930" width="14" height="30" fill="#BB622A"/>
+      <rect x="412" y="930" width="14" height="30" fill="#C06D2C"/>
+      <rect x="434" y="930" width="14" height="30" fill="#C6782F"/>
+      <rect x="456" y="930" width="14" height="30" fill="#CC8333"/>
+      <rect x="478" y="930" width="14" height="30" fill="#D28E39"/>
+      <rect x="500" y="930" width="14" height="30" fill="#D89743"/>
+      <rect x="522" y="930" width="14" height="30" fill="#DFA050"/>
+      <line x1="302" y1="972" x2="536" y2="972" stroke="#3A332A" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

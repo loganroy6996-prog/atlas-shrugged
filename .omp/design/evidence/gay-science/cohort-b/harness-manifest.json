@@ -1,0 +1,360 @@
+{
+ "version": 1,
+ "cover": {
+  "src": "art/cover.svg",
+  "class": "plate"
+ },
+ "default": {
+  "class": "motif"
+ },
+ "chapters": {
+  "p3c1": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-herd",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-essay gs-b-read-grand",
+   "motif": "gs-b-land-herd",
+   "caption": "Ebb and flood \u2014 the comedy of existence."
+  },
+  "p3c2": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-scales",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-scales"
+  },
+  "p3c3": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-wink",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay",
+   "motif": "gs-b-panel-wink",
+   "caption": "They give a wink \u2014 suspicion of the noble."
+  },
+  "p3c4": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-flame",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-flame"
+  },
+  "p3c5": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-drum",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-drum"
+  },
+  "p3c6": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-headwheel",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-headwheel"
+  },
+  "p3c7": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-field",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay",
+   "motif": "gs-b-panel-field",
+   "caption": "An immense field of work \u2014 the moral sun not yet risen."
+  },
+  "p3c8": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-lens",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-lens"
+  },
+  "p3c9": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-seedling",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-seedling"
+  },
+  "p3c10": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-ancestor",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-ancestor"
+  },
+  "p3c11": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-eye",
+   "class": "gs-b-opener-mark gs-b-tone-ember gs-b-read-standard",
+   "motif": "gs-b-eye"
+  },
+  "p3c12": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-strand",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-strand"
+  },
+  "p3c13": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-hand",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay",
+   "motif": "gs-b-panel-hand",
+   "caption": "Benefiting and hurting \u2014 power over dependents and equals."
+  },
+  "p3c14": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-grasp",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay",
+   "motif": "gs-b-panel-grasp",
+   "caption": "We stretch out our hands again \u2014 until friendship."
+  },
+  "p3c15": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-mountain",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-mountain"
+  },
+  "p3c16": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-bridge",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-bridge"
+  },
+  "p3c17": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-stream",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-stream"
+  },
+  "p3c18": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-column",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-column"
+  },
+  "p3c19": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-tree",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-tree"
+  },
+  "p3c20": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-cap",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-cap"
+  },
+  "p3c21": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-tablets",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-iron gs-b-read-essay",
+   "motif": "gs-b-land-tablets",
+   "caption": "[Thou shalt] and [Thou shalt not] \u2014 preached in the same breath."
+  },
+  "p3c22": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-court",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-stage gs-b-read-dramatic",
+   "motif": "gs-b-land-court",
+   "caption": "The fifth hour \u2014 a morning dream of ceremony."
+  },
+  "p3c23": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-applefall",
+   "class": "gs-b-opener-essay-opener gs-b-tone-autumn gs-b-read-essay",
+   "motif": "gs-b-panel-applefall",
+   "caption": "Corruption \u2014 the autumn of a people."
+  },
+  "p3c24": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-twocups",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-twocups"
+  },
+  "p3c25": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-turned",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-turned"
+  },
+  "p3c26": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-shed",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-shed"
+  },
+  "p3c27": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-hood",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-hood"
+  },
+  "p3c28": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-flare",
+   "class": "gs-b-opener-mark gs-b-tone-glare gs-b-read-standard",
+   "motif": "gs-b-flare"
+  },
+  "p3c29": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-prompter",
+   "class": "gs-b-opener-mark gs-b-tone-stage gs-b-read-quiet",
+   "motif": "gs-b-prompter"
+  },
+  "p3c30": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-m-plumemask",
+   "class": "gs-b-opener-mark gs-b-tone-stage gs-b-read-duet",
+   "motif": "gs-b-m-plumemask"
+  },
+  "p3c31": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-m-bowscale",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-duet",
+   "motif": "gs-b-m-bowscale"
+  },
+  "p3c32": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-halves",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-halves"
+  },
+  "p3c33": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-wink",
+   "class": "gs-b-opener-mark gs-b-tone-iron gs-b-read-quiet",
+   "motif": "gs-b-wink"
+  },
+  "p3c34": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-sunbeam",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-sunbeam"
+  },
+  "p3c35": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-pyre",
+   "class": "gs-b-opener-mark gs-b-tone-shadow gs-b-read-quiet",
+   "motif": "gs-b-pyre"
+  },
+  "p3c36": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-lastwords",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-stage gs-b-read-dramatic",
+   "motif": "gs-b-land-lastwords",
+   "caption": "Plaudite, amici \u2014 the mask falls; Tiberius is smothered."
+  },
+  "p3c37": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-threecandles",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-threecandles"
+  },
+  "p3c38": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-match",
+   "class": "gs-b-opener-mark gs-b-tone-ember gs-b-read-quiet",
+   "motif": "gs-b-match"
+  },
+  "p3c39": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-cup",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-cup"
+  },
+  "p3c40": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-swordfire",
+   "class": "gs-b-opener-mark gs-b-tone-iron gs-b-read-standard",
+   "motif": "gs-b-swordfire"
+  },
+  "p3c41": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-flask",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-flask"
+  },
+  "p3c42": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-horizonpath",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-horizonpath"
+  },
+  "p3c43": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-lawtablet",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-lawtablet"
+  },
+  "p3c44": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-lever",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-lever"
+  },
+  "p3c45": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-epicurus",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-noon gs-b-read-luminous",
+   "motif": "gs-b-land-epicurus",
+   "caption": "The afternoon of antiquity \u2014 the sea of existence grown still."
+  },
+  "p3c46": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-clamp",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-clamp"
+  },
+  "p3c47": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-muzzle",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-muzzle"
+  },
+  "p3c48": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-manacle",
+   "class": "gs-b-opener-essay-opener gs-b-tone-shadow gs-b-read-shadowed",
+   "motif": "gs-b-panel-manacle",
+   "caption": "The age of fear \u2014 the recipe against distress is distress."
+  },
+  "p3c49": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-wheel",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-wheel"
+  },
+  "p3c50": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-ringfaces",
+   "class": "gs-b-opener-mark gs-b-tone-iron gs-b-read-quiet",
+   "motif": "gs-b-ringfaces"
+  },
+  "p3c51": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-spark",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-spark"
+  },
+  "p3c52": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-echo",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-echo"
+  },
+  "p3c53": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-eye",
+   "class": "gs-b-opener-mark gs-b-tone-dim gs-b-read-quiet",
+   "motif": "gs-b-eye"
+  },
+  "p3c54": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-sleepwalker",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-dream gs-b-read-visionary",
+   "motif": "gs-b-land-sleepwalker",
+   "caption": "Go on dreaming lest you fall \u2014 the knower joins the dance."
+  },
+  "p3c55": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-altar",
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-altar"
+  },
+  "p3c56": {
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-monster",
+   "class": "gs-b-opener-mark gs-b-tone-closing gs-b-read-closing",
+   "motif": "gs-b-monster"
+  }
+ }
+}

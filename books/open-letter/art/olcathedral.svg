@@ -1,0 +1,431 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="ocTitle ocDesc">
+<title id="ocTitle">OL-CATHEDRAL cohort plates: Tudor-inventory line-engraving</title>
+<desc id="ocDesc">Three engraved inventory plates for An Open Letter chs. VIII-X: an eagle-warrant reset diptych; the flagship Gothic westwork mid-dissolution with Fundamentalens and ledger strip; the Receiver's double-entry ledger with ELBO certificate. No letterforms baked in; all inscriptions are HTML overlays.</desc>
+
+<!-- ══════════ p1c8 · p1c8-eagle-warrant · Figure VIII · Warrant for a reset ══════════ -->
+<!-- Reset-vs-revolution diptych: dissolving eagle banner LEFT, intact warrant RIGHT. -->
+<symbol id="p1c8-eagle-warrant" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid meet">
+<defs>
+<pattern id="oc8-hatch45" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+<line x1="0" y1="0" x2="0" y2="8" stroke="#C9A227" stroke-width="1" opacity="0.18"/>
+</pattern>
+<pattern id="oc8-cross" width="10" height="10" patternUnits="userSpaceOnUse">
+<path d="M0 10 L10 0 M0 0 L10 10" stroke="#C9A227" stroke-width="0.8" opacity="0.14"/>
+</pattern>
+<pattern id="oc8-stipple" width="16" height="16" patternUnits="userSpaceOnUse">
+<circle cx="4" cy="4" r="1.2" fill="#EDE2CE" opacity="0.2"/>
+<circle cx="12" cy="12" r="1.2" fill="#EDE2CE" opacity="0.2"/>
+</pattern>
+<filter id="oc8-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.06 0"/>
+</filter>
+</defs>
+<rect x="0" y="0" width="1600" height="700" fill="#0D0B09"/>
+<rect x="0" y="0" width="1600" height="700" fill="url(#oc8-stipple)"/>
+<!-- LEFT panel: rally hall, dissolving banner -->
+<rect x="60" y="60" width="680" height="580" fill="#141210"/>
+<rect x="60" y="60" width="680" height="580" fill="url(#oc8-hatch45)"/>
+<rect x="60" y="60" width="680" height="580" fill="none" stroke="#6E6252" stroke-width="1.5"/>
+<!-- the banner: torn rally cloth -->
+<path d="M140 140 L660 140 L660 420 L580 372 L505 428 L430 376 L355 428 L280 376 L205 426 L140 380 Z" fill="#7E2A22"/>
+<path d="M140 140 L660 140 L660 420 L580 372 L505 428 L430 376 L355 428 L280 376 L205 426 L140 380 Z" fill="none" stroke="#EDE2CE" stroke-width="2"/>
+<path d="M140 140 L144 90 L152 140" fill="none" stroke="#C9A227" stroke-width="2"/>
+<path d="M656 140 L660 90 L668 140" fill="none" stroke="#C9A227" stroke-width="2"/>
+<g stroke="#0D0B09" stroke-width="1.5" opacity="0.5">
+<line x1="140" y1="200" x2="660" y2="200"/><line x1="140" y1="320" x2="660" y2="320"/>
+</g>
+<!-- the gilt eagle: our own drawing, wings spread wide, stooping -->
+<g transform="translate(400,262)">
+<path d="M-152 -30 L-128 -38 L-138 -22 L-108 -26 L-118 -10 L-88 -10 L-94 6 L-64 0 L-66 16 L-34 8 L-16 22 L-16 -6 L16 -6 L16 22 L34 8 L66 16 L64 0 L94 6 L88 -10 L118 -10 L108 -26 L138 -22 L128 -38 L152 -30 L134 2 L146 34 L96 22 L66 44 L40 32 L16 44 L16 58 L-16 58 L-16 44 L-40 32 L-66 44 L-96 22 L-146 34 L-134 2 Z" fill="none" stroke="#C9A227" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M-64 0 L-40 -8 L-16 -6 M64 0 L40 -8 L16 -6" fill="none" stroke="#C9A227" stroke-width="1.4"/>
+<path d="M-16 22 L-16 58 M16 22 L16 58" stroke="#C9A227" stroke-width="2.2"/>
+<path d="M-16 40 L16 40" stroke="#C9A227" stroke-width="1.6"/>
+<path d="M-14 -6 C-16 -30 -10 -52 0 -62 C10 -52 16 -30 14 -6 Z" fill="none" stroke="#C9A227" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M0 -62 L-3 -70 L3 -70 L0 -62" fill="#C9A227"/>
+<path d="M0 -62 L14 -56 L2 -52 Z" fill="#C9A227"/>
+<circle cx="-2" cy="-48" r="2.4" fill="#C9A227"/>
+<path d="M-34 58 L-34 82 M-12 58 L-12 82 M12 58 L12 82 M34 58 L34 82" stroke="#C9A227" stroke-width="2.4"/>
+<path d="M-34 82 L-46 96 M-34 82 L-24 98 M-34 82 L-30 98 M-12 82 L-24 96 M-12 82 L-4 98 M-12 82 L-8 98 M12 82 L0 98 M12 82 L20 98 M12 82 L16 98 M34 82 L22 98 M34 82 L44 98 M34 82 L38 98" stroke="#C9A227" stroke-width="1.8"/>
+</g>
+<!-- vector lightning bolts from the talons -->
+<g stroke="#D64533" stroke-width="3" stroke-linejoin="round" fill="none">
+<path d="M370 400 L346 448 L366 448 L338 500"/>
+<path d="M430 400 L454 448 L434 448 L462 500"/>
+</g>
+<!-- the diagonal Signal strike across the rejected path -->
+<line x1="140" y1="560" x2="660" y2="120" stroke="#D64533" stroke-width="4"/>
+<!-- shed printed columns (book signature) -->
+<g stroke="#C9A227" stroke-width="2">
+<line x1="200" y1="470" x2="200" y2="600"/><line x1="320" y1="480" x2="320" y2="610"/>
+<line x1="440" y1="470" x2="440" y2="600"/><line x1="560" y1="480" x2="560" y2="610"/>
+</g>
+<g stroke="#EDE2CE" stroke-width="1" opacity="0.6">
+<line x1="190" y1="500" x2="210" y2="500"/><line x1="190" y1="520" x2="210" y2="520"/><line x1="190" y1="540" x2="210" y2="540"/><line x1="190" y1="560" x2="210" y2="560"/>
+<line x1="430" y1="500" x2="450" y2="500"/><line x1="430" y1="520" x2="450" y2="520"/><line x1="430" y1="540" x2="450" y2="540"/><line x1="430" y1="560" x2="450" y2="560"/>
+</g>
+<!-- scattered pamphlet slips -->
+<g fill="#EDE2CE" opacity="0.85">
+<rect x="560" y="520" width="70" height="26" transform="rotate(-14 560 520)"/>
+<rect x="150" y="560" width="70" height="26" transform="rotate(10 150 560)"/>
+<rect x="660" y="560" width="60" height="22" transform="rotate(-8 660 560)"/>
+</g>
+<!-- THE DIVIDE: ragged oxblood tear (left edge) + clean gilt seal-cut (right edge) -->
+<path d="M800 60 L786 110 L806 170 L788 240 L808 310 L789 380 L807 450 L788 520 L806 590 L790 640 L762 634 L780 560 L762 490 L780 420 L762 350 L780 280 L762 210 L780 140 L766 66 Z" fill="#7E2A22"/>
+<line x1="800" y1="60" x2="800" y2="640" stroke="#C9A227" stroke-width="3"/>
+<!-- RIGHT panel: the warrant, intact -->
+<rect x="860" y="60" width="680" height="580" fill="#1E1A15"/>
+<rect x="860" y="60" width="680" height="580" fill="url(#oc8-cross)"/>
+<rect x="872" y="72" width="656" height="556" fill="none" stroke="#C9A227" stroke-width="2"/>
+<rect x="884" y="84" width="632" height="532" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<!-- warrant articles: vector rules (inscriptions are HTML) -->
+<g stroke="#C9A227" stroke-width="2" opacity="0.85">
+<line x1="940" y1="180" x2="1460" y2="180"/><line x1="940" y1="196" x2="1460" y2="196"/>
+<line x1="940" y1="300" x2="1460" y2="300"/><line x1="940" y1="316" x2="1460" y2="316"/>
+<line x1="940" y1="420" x2="1380" y2="420"/>
+</g>
+<g stroke="#EDE2CE" stroke-width="1" opacity="0.5">
+<line x1="940" y1="214" x2="1460" y2="214"/><line x1="940" y1="334" x2="1460" y2="334"/>
+</g>
+<!-- struck 36%: struck fraction device -->
+<g stroke="#D64533" stroke-width="3">
+<line x1="1390" y1="396" x2="1458" y2="444"/>
+</g>
+<line x1="1396" y1="420" x2="1452" y2="420" stroke="#EDE2CE" stroke-width="1.5"/>
+<!-- hanging wax seal -->
+<line x1="1040" y1="460" x2="1040" y2="520" stroke="#C9A227" stroke-width="2"/>
+<path d="M1040 514 C1058 514 1066 522 1076 526 C1083 529 1082 539 1086 544 C1090 549 1084 556 1083 562 C1082 568 1074 568 1070 573 C1066 578 1058 574 1052 577 C1049 575 1049 575 1046 577 C1040 574 1032 578 1028 573 C1024 568 1016 568 1015 562 C1014 556 1008 549 1012 544 C1016 539 1015 529 1022 526 C1032 522 1040 514 1040 514 Z" fill="#7E2A22" stroke="#C9A227" stroke-width="1.6" transform="translate(0,6)"/>
+<circle cx="1040" cy="550" r="14" fill="none" stroke="#C9A227" stroke-width="1.4"/>
+<!-- power-cycle roundel: the computing register, kept small -->
+<g transform="translate(1360,550)">
+<circle cx="0" cy="0" r="20" fill="none" stroke="#C9A227" stroke-width="2"/>
+<path d="M-8 -8 A12 12 0 1 0 8 -8" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<line x1="0" y1="-14" x2="0" y2="0" stroke="#C9A227" stroke-width="2.5"/>
+</g>
+<!-- one gilt column-rule rising intact from the warrant: the sealed instrument prints true -->
+<line x1="1200" y1="460" x2="1200" y2="600" stroke="#C9A227" stroke-width="2"/>
+<g stroke="#EDE2CE" stroke-width="1" opacity="0.6">
+<line x1="1190" y1="490" x2="1210" y2="490"/><line x1="1190" y1="510" x2="1210" y2="510"/>
+<line x1="1190" y1="530" x2="1210" y2="530"/><line x1="1190" y1="550" x2="1210" y2="550"/>
+<line x1="1190" y1="570" x2="1210" y2="570"/>
+</g>
+<!-- plate furniture -->
+<rect x="40" y="40" width="1520" height="620" fill="none" stroke="#C9A227" stroke-width="3"/>
+<g transform="translate(120,105)">
+<path d="M-60 40 L-60 -20 Q-60 -60 -20 -60 L40 -60" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<rect x="-68" y="-68" width="16" height="16" transform="rotate(45 -60 -60)" fill="#0D0B09" stroke="#C9A227" stroke-width="2"/>
+<circle cx="-60" cy="-60" r="2.6" fill="#D64533"/>
+</g>
+<g transform="translate(1480,105) scale(-1,1)">
+<path d="M-60 40 L-60 -20 Q-60 -60 -20 -60 L40 -60" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<rect x="-68" y="-68" width="16" height="16" transform="rotate(45 -60 -60)" fill="#0D0B09" stroke="#C9A227" stroke-width="2"/>
+<circle cx="-60" cy="-60" r="2.6" fill="#D64533"/>
+</g>
+<rect x="0" y="0" width="1600" height="700" filter="url(#oc8-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ══════════ p1c9 FLAGSHIP · p1c9-dissolution · Figure IX · Inventory of a dissolution ══════════ -->
+<!-- The engraved westwork mid-dissolution: intact RIGHT half, scaffolded LEFT half, Fundamentalens. -->
+<symbol id="p1c9-dissolution" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet">
+<defs>
+<pattern id="oc9-hatch45" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+<line x1="0" y1="0" x2="0" y2="8" stroke="#C9A227" stroke-width="1" opacity="0.2"/>
+</pattern>
+<pattern id="oc9-hatch135" width="8" height="8" patternTransform="rotate(-45)" patternUnits="userSpaceOnUse">
+<line x1="0" y1="0" x2="0" y2="8" stroke="#C9A227" stroke-width="1" opacity="0.14"/>
+</pattern>
+<pattern id="oc9-cross" width="10" height="10" patternUnits="userSpaceOnUse">
+<path d="M0 10 L10 0 M0 0 L10 10" stroke="#C9A227" stroke-width="0.8" opacity="0.16"/>
+</pattern>
+<pattern id="oc9-stipple" width="18" height="18" patternUnits="userSpaceOnUse">
+<circle cx="5" cy="5" r="1.2" fill="#EDE2CE" opacity="0.18"/>
+<circle cx="13" cy="13" r="1.2" fill="#EDE2CE" opacity="0.18"/>
+</pattern>
+<filter id="oc9-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.06 0"/>
+</filter>
+</defs>
+<rect x="0" y="0" width="1600" height="900" fill="#0D0B09"/>
+<!-- stippled night: sparse gilt points, upper third -->
+<g fill="#C9A227">
+<circle cx="120" cy="90" r="1.6" opacity="0.7"/><circle cx="240" cy="160" r="1.2" opacity="0.5"/>
+<circle cx="360" cy="80" r="1.8" opacity="0.8"/><circle cx="520" cy="140" r="1.1" opacity="0.45"/>
+<circle cx="700" cy="90" r="1.4" opacity="0.6"/><circle cx="900" cy="120" r="1.2" opacity="0.5"/>
+<circle cx="1090" cy="80" r="1.7" opacity="0.7"/><circle cx="1270" cy="150" r="1.1" opacity="0.45"/>
+<circle cx="1420" cy="90" r="1.5" opacity="0.6"/><circle cx="130" cy="240" r="1.3" opacity="0.55"/>
+<circle cx="1490" cy="230" r="1.6" opacity="0.65"/>
+</g>
+<!-- ground band with engraved ground-lines -->
+<rect x="0" y="800" width="1600" height="100" fill="#141210"/>
+<g stroke="#C9A227" stroke-width="1" opacity="0.45">
+<line x1="40" y1="820" x2="400" y2="820"/><line x1="460" y1="826" x2="760" y2="826"/>
+<line x1="840" y1="820" x2="1140" y2="820"/><line x1="1200" y1="826" x2="1560" y2="826"/>
+<line x1="100" y1="846" x2="500" y2="846"/><line x1="580" y1="852" x2="1000" y2="852"/>
+<line x1="1080" y1="846" x2="1500" y2="846"/><line x1="60" y1="872" x2="700" y2="872"/>
+<line x1="900" y1="872" x2="1540" y2="872"/>
+</g>
+<!-- RIGHT tower: intact, spire, gilt-glass lancets -->
+<rect x="1040" y="180" width="180" height="620" fill="#141210" stroke="#EDE2CE" stroke-width="2.5"/>
+<rect x="1040" y="180" width="180" height="620" fill="url(#oc9-hatch45)"/>
+<path d="M1028 180 L1130 40 L1232 180 Z" fill="#141210" stroke="#EDE2CE" stroke-width="2.5"/>
+<line x1="1130" y1="40" x2="1130" y2="180" stroke="#C9A227" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2">
+<line x1="1130" y1="24" x2="1130" y2="40"/><line x1="1122" y1="31" x2="1138" y2="31"/>
+</g>
+<g>
+<path d="M1062 360 L1062 300 Q1062 268 1088 250 Q1114 268 1114 300 L1114 360 Z" fill="#C9A227" fill-opacity="0.5" stroke="#C9A227" stroke-width="2"/>
+<line x1="1088" y1="250" x2="1088" y2="360" stroke="#C9A227" stroke-width="1"/>
+<line x1="1062" y1="310" x2="1114" y2="310" stroke="#C9A227" stroke-width="1"/>
+<path d="M1108 560 L1108 480 Q1108 440 1134 418 Q1160 440 1160 480 L1160 560 Z" fill="#C9A227" fill-opacity="0.5" stroke="#C9A227" stroke-width="2"/>
+<line x1="1134" y1="418" x2="1134" y2="560" stroke="#C9A227" stroke-width="1"/>
+<line x1="1108" y1="500" x2="1160" y2="500" stroke="#C9A227" stroke-width="1"/>
+<path d="M1152 360 L1152 300 Q1152 268 1178 250 Q1204 268 1204 300 L1204 360 Z" fill="#C9A227" fill-opacity="0.5" stroke="#C9A227" stroke-width="2"/>
+<line x1="1178" y1="250" x2="1178" y2="360" stroke="#C9A227" stroke-width="1"/>
+<line x1="1152" y1="310" x2="1204" y2="310" stroke="#C9A227" stroke-width="1"/>
+</g>
+<line x1="1040" y1="400" x2="1220" y2="400" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<line x1="1040" y1="600" x2="1220" y2="600" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<!-- nave block -->
+<rect x="560" y="420" width="480" height="380" fill="#1E1A15" stroke="#EDE2CE" stroke-width="2.5"/>
+<rect x="560" y="420" width="480" height="380" fill="url(#oc9-cross)"/>
+<path d="M540 420 L800 310 L1060 420 Z" fill="#141210" stroke="#EDE2CE" stroke-width="2.5"/>
+<path d="M540 420 L800 310 L1060 420" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.4" transform="translate(0,14)"/>
+<g stroke="#C9A227" stroke-width="2"><line x1="800" y1="280" x2="800" y2="310"/><line x1="791" y1="289" x2="809" y2="289"/></g>
+<!-- exposed rafters on the nave's stripped left slope -->
+<g stroke="#EDE2CE" stroke-width="2.5">
+<line x1="620" y1="392" x2="590" y2="340"/><line x1="660" y1="376" x2="636" y2="312"/>
+<line x1="700" y1="360" x2="682" y2="288"/>
+</g>
+<!-- stepped outer buttresses -->
+<rect x="300" y="420" width="80" height="380" fill="#141210" stroke="#EDE2CE" stroke-width="2"/>
+<rect x="1220" y="420" width="80" height="380" fill="#141210" stroke="#EDE2CE" stroke-width="2"/>
+<rect x="300" y="420" width="80" height="380" fill="url(#oc9-hatch135)"/>
+<rect x="1220" y="420" width="80" height="380" fill="url(#oc9-hatch135)"/>
+<rect x="292" y="408" width="96" height="14" fill="#141210" stroke="#EDE2CE" stroke-width="1.5"/>
+<rect x="1212" y="408" width="96" height="14" fill="#141210" stroke="#EDE2CE" stroke-width="1.5"/>
+<!-- LEFT tower: uncapped, broken top, empty voids, removed-stone gaps -->
+<rect x="380" y="260" width="180" height="540" fill="#141210" stroke="#EDE2CE" stroke-width="2.5"/>
+<rect x="380" y="260" width="180" height="540" fill="url(#oc9-hatch45)"/>
+<path d="M380 260 L420 225 L445 248 L480 210 L505 242 L530 218 L560 260" fill="none" stroke="#EDE2CE" stroke-width="3"/>
+<path d="M380 260 L420 225 L445 248 L480 210 L505 242 L530 218 L560 260 L560 268 L380 268 Z" fill="#0D0B09"/>
+<g>
+<path d="M404 400 L404 340 Q404 308 428 292 Q452 308 452 340 L452 400 Z" fill="#0D0B09" stroke="#A89A80" stroke-width="2"/>
+<path d="M492 400 L492 340 Q492 308 516 292 Q540 308 540 340 L540 400 Z" fill="#0D0B09" stroke="#A89A80" stroke-width="2"/>
+<path d="M448 600 L448 520 Q448 480 472 462 Q496 480 496 520 L496 600 Z" fill="#0D0B09" stroke="#A89A80" stroke-width="2"/>
+</g>
+<g fill="#0D0B09" stroke="#6E6252" stroke-width="1.5">
+<rect x="400" y="440" width="60" height="28"/><rect x="480" y="470" width="60" height="28"/>
+<rect x="410" y="660" width="60" height="28"/><rect x="480" y="700" width="60" height="28"/>
+</g>
+<!-- THE LENS: Fundamentalens over the rose (brightest object; layered above all local line) -->
+<g>
+<circle cx="800" cy="520" r="140" fill="none" stroke="#C9A227" stroke-width="1.5" opacity="0.5"/>
+<g stroke="#EDE2CE" stroke-width="1" opacity="0.5">
+<line x1="800" y1="380" x2="800" y2="660"/><line x1="660" y1="520" x2="940" y2="520"/>
+</g>
+<g stroke="#C9A227" stroke-width="2">
+<line x1="800" y1="380" x2="800" y2="412"/><line x1="800" y1="628" x2="800" y2="660"/>
+<line x1="908" y1="520" x2="940" y2="520"/><line x1="692" y1="520" x2="660" y2="520"/>
+<line x1="876" y1="444" x2="898" y2="422"/><line x1="876" y1="596" x2="898" y2="618"/>
+</g>
+<g stroke="#A89A80" stroke-width="1.5" opacity="0.5">
+<line x1="660" y1="520" x2="692" y2="520"/><line x1="724" y1="444" x2="702" y2="422"/>
+<line x1="724" y1="596" x2="702" y2="618"/>
+</g>
+<circle cx="800" cy="520" r="126" fill="none" stroke="#C9A227" stroke-width="1.2"/>
+<circle cx="800" cy="520" r="30" fill="none" stroke="#C9A227" stroke-width="1.6"/>
+<circle cx="800" cy="520" r="5" fill="#C9A227"/>
+<circle cx="800" cy="520" r="205" fill="none" stroke="#C9A227" stroke-width="4"/>
+<circle cx="800" cy="520" r="188" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+<g fill="none" stroke="#C9A227" stroke-width="2">
+<line x1="724" y1="596" x2="702" y2="618"/><line x1="660" y1="520" x2="692" y2="520"/>
+<line x1="724" y1="444" x2="702" y2="422"/><line x1="876" y1="444" x2="898" y2="422"/>
+<line x1="908" y1="520" x2="940" y2="520"/><line x1="876" y1="596" x2="898" y2="618"/>
+<line x1="800" y1="628" x2="800" y2="660"/><line x1="800" y1="380" x2="800" y2="412"/>
+</g>
+<circle cx="800" cy="520" r="188" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<circle cx="800" cy="315" r="10" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<g stroke="#C9A227" stroke-width="2">
+<line x1="800" y1="300" x2="800" y2="306"/><line x1="800" y1="324" x2="800" y2="330"/>
+<line x1="785" y1="315" x2="791" y2="315"/><line x1="809" y1="315" x2="815" y2="315"/>
+<line x1="789" y1="304" x2="794" y2="309"/><line x1="806" y1="321" x2="811" y2="326"/>
+<line x1="811" y1="304" x2="806" y2="309"/><line x1="794" y1="321" x2="789" y2="326"/>
+</g>
+<path d="M812 715 A26 26 0 1 0 812 763 A20 20 0 1 1 812 715 Z" fill="#C9A227"/>
+</g>
+<!-- dissolution action: scaffold poles + paper tags -->
+<g stroke="#EDE2CE" stroke-width="3">
+<line x1="300" y1="180" x2="300" y2="800"/><line x1="420" y1="180" x2="420" y2="800"/>
+<line x1="540" y1="180" x2="540" y2="800"/>
+</g>
+<g stroke="#EDE2CE" stroke-width="1.5">
+<line x1="300" y1="280" x2="420" y2="280"/><line x1="420" y1="400" x2="540" y2="400"/>
+<line x1="300" y1="520" x2="420" y2="520"/><line x1="420" y1="640" x2="540" y2="640"/>
+<line x1="300" y1="160" x2="540" y2="160"/>
+<path d="M300 280 L420 400 M420 400 L300 520 M420 520 L540 640" stroke-width="1.5"/>
+</g>
+<g>
+<line x1="300" y1="280" x2="260" y2="330" stroke="#A89A80" stroke-width="1.5"/>
+<rect x="230" y="330" width="60" height="40" fill="#EDE2CE" transform="rotate(-8 230 330)"/>
+<rect x="230" y="330" width="60" height="8" fill="#D64533" transform="rotate(-8 230 330)"/>
+<line x1="420" y1="400" x2="452" y2="452" stroke="#A89A80" stroke-width="1.5"/>
+<rect x="424" y="452" width="60" height="40" fill="#EDE2CE" transform="rotate(6 424 452)"/>
+<rect x="424" y="452" width="60" height="8" fill="#D64533" transform="rotate(6 424 452)"/>
+<line x1="300" y1="520" x2="264" y2="572" stroke="#A89A80" stroke-width="1.5"/>
+<rect x="234" y="572" width="60" height="40" fill="#EDE2CE" transform="rotate(-5 234 572)"/>
+<rect x="234" y="572" width="60" height="8" fill="#D64533" transform="rotate(-5 234 572)"/>
+</g>
+<!-- shed printed columns drifting down-left (book signature) -->
+<g fill="#141210" stroke="#C9A227" stroke-width="1" opacity="0.96">
+<rect x="60" y="560" width="90" height="240"/><rect x="162" y="600" width="70" height="200"/>
+<rect x="244" y="640" width="60" height="160"/>
+</g>
+<g fill="#EDE2CE" opacity="0.7">
+<rect x="72" y="590" width="66" height="5"/><rect x="72" y="604" width="66" height="5"/>
+<rect x="72" y="618" width="46" height="5"/><rect x="72" y="638" width="66" height="5"/>
+<rect x="172" y="630" width="50" height="5"/><rect x="172" y="644" width="50" height="5"/>
+<rect x="172" y="658" width="34" height="5"/><rect x="252" y="668" width="44" height="5"/>
+<rect x="252" y="682" width="44" height="5"/>
+</g>
+<g fill="#C9A227" opacity="0.9">
+<rect x="60" y="552" width="90" height="4"/><rect x="162" y="592" width="70" height="4"/>
+<rect x="244" y="632" width="60" height="4"/>
+</g>
+<!-- portal: dark opening, gilt steps, hatched surround -->
+<path d="M720 800 L720 700 Q720 656 800 628 Q880 656 880 700 L880 800 Z" fill="#0D0B09" stroke="#C9A227" stroke-width="2.5"/>
+<path d="M706 800 L706 696 Q706 646 800 614 Q894 646 894 696 L894 800 L882 800 L882 698 Q882 654 800 628 Q718 654 718 698 L718 800 Z" fill="#7E2A22"/>
+<path d="M706 800 L706 696 Q706 646 800 614 Q894 646 894 696 L894 800" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+<g stroke="#C9A227" stroke-width="2">
+<line x1="700" y1="800" x2="900" y2="800"/><line x1="692" y1="812" x2="908" y2="812"/>
+<line x1="684" y1="824" x2="916" y2="824"/>
+</g>
+<!-- keystone course above the portal -->
+<rect x="700" y="600" width="200" height="16" fill="#7E2A22" stroke="#C9A227" stroke-width="1.5"/>
+<g stroke="#C9A227" stroke-width="1">
+<line x1="725" y1="600" x2="725" y2="616"/><line x1="750" y1="600" x2="750" y2="616"/>
+<line x1="775" y1="600" x2="775" y2="616"/><line x1="825" y1="600" x2="825" y2="616"/>
+<line x1="850" y1="600" x2="850" y2="616"/><line x1="875" y1="600" x2="875" y2="616"/>
+</g>
+<path d="M786 600 L814 600 L809 616 L791 616 Z" fill="#C9A227"/>
+<!-- ledger strip: guilloche band beneath the plate -->
+<rect x="300" y="830" width="1000" height="40" fill="#141210" stroke="#C9A227" stroke-width="1.5"/>
+<path d="M310 850 Q330 836 350 850 T390 850 T430 850 T470 850 T510 850 T550 850 T590 850 T630 850 T670 850 T710 850 T750 850 T790 850 T830 850 T870 850 T910 850 T950 850 T990 850 T1030 850 T1070 850 T1110 850 T1150 850 T1190 850 T1230 850 T1270 850 T1290 850" fill="none" stroke="#C9A227" stroke-width="1.2"/>
+<path d="M310 850 Q330 864 350 850 T390 850 T430 850 T470 850 T510 850 T550 850 T590 850 T630 850 T670 850 T710 850 T750 850 T790 850 T830 850 T870 850 T910 850 T950 850 T990 850 T1030 850 T1070 850 T1110 850 T1150 850 T1190 850 T1230 850 T1270 850 T1290 850" fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.6"/>
+<!-- plate furniture -->
+<rect x="24" y="24" width="1552" height="852" fill="none" stroke="#C9A227" stroke-width="3"/>
+<g transform="translate(104,820)">
+<path d="M-60 40 L-60 -20 Q-60 -60 -20 -60 L40 -60" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<rect x="-68" y="-68" width="16" height="16" transform="rotate(45 -60 -60)" fill="#0D0B09" stroke="#C9A227" stroke-width="2"/>
+<circle cx="-60" cy="-60" r="2.6" fill="#D64533"/>
+</g>
+<g transform="translate(1496,820) scale(-1,1)">
+<path d="M-60 40 L-60 -20 Q-60 -60 -20 -60 L40 -60" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<rect x="-68" y="-68" width="16" height="16" transform="rotate(45 -60 -60)" fill="#0D0B09" stroke="#C9A227" stroke-width="2"/>
+<circle cx="-60" cy="-60" r="2.6" fill="#D64533"/>
+</g>
+<rect x="0" y="0" width="1600" height="900" filter="url(#oc9-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ══════════ p1c10 · p1c10-receivers-ledger · Figure X · The Republic's balance-sheet, balanced ══════════ -->
+<!-- Double-entry ledger spread: ESSENTIAL gilt LEFT, INESSENTIAL oxblood RIGHT, gilt balance-rule. -->
+<symbol id="p1c10-receivers-ledger" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid meet">
+<defs>
+<pattern id="oc10-hatch45" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+<line x1="0" y1="0" x2="0" y2="8" stroke="#C9A227" stroke-width="1" opacity="0.16"/>
+</pattern>
+<pattern id="oc10-oxwash" width="9" height="9" patternUnits="userSpaceOnUse">
+<path d="M0 9 L9 0 M0 0 L9 9" stroke="#7E2A22" stroke-width="1" opacity="0.28"/>
+</pattern>
+<filter id="oc10-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.06 0"/>
+</filter>
+</defs>
+<rect x="0" y="0" width="1600" height="700" fill="#0D0B09"/>
+<rect x="40" y="40" width="1520" height="620" fill="#141210"/>
+<rect x="40" y="40" width="1520" height="620" fill="url(#oc10-oxwash)"/>
+<!-- ELBO certificate: upper document with guilloche border -->
+<rect x="400" y="70" width="800" height="220" fill="#1E1A15" stroke="#C9A227" stroke-width="2.5"/>
+<rect x="412" y="82" width="776" height="196" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<path d="M430 258 Q448 244 466 258 T502 258 T538 258 T574 258 T610 258 T646 258 T682 258 T718 258 T754 258 T790 258 T826 258 T862 258 T898 258 T934 258 T970 258 T1006 258 T1042 258 T1078 258 T1114 258 T1150 258 T1170 258" fill="none" stroke="#C9A227" stroke-width="1.2"/>
+<path d="M430 258 Q448 272 466 258 T502 258 T538 258 T574 258 T610 258 T646 258 T682 258 T718 258 T754 258 T790 258 T826 258 T862 258 T898 258 T934 258 T970 258 T1006 258 T1042 258 T1078 258 T1114 258 T1150 258 T1170 258" fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.6"/>
+<path d="M430 116 Q448 102 466 116 T502 116 T538 116 T574 116 T610 116 T646 116 T682 116 T718 116 T754 116 T790 116 T826 116 T862 116 T898 116 T934 116 T970 116 T1006 116 T1042 116 T1078 116 T1114 116 T1150 116 T1170 116" fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.8"/>
+<!-- Fnargl sceptre vignette with the two-year crack -->
+<g transform="translate(800,190)">
+<line x1="0" y1="-50" x2="0" y2="44" stroke="#C9A227" stroke-width="3"/>
+<circle cx="0" cy="-58" r="10" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<path d="M-14 44 L14 44 L8 60 L-8 60 Z" fill="none" stroke="#C9A227" stroke-width="2"/>
+<path d="M-4 10 L6 0 L-2 -10" fill="none" stroke="#D64533" stroke-width="1.6"/>
+</g>
+<!-- certificate masthead rule + denomination rules -->
+<line x1="560" y1="136" x2="1040" y2="136" stroke="#C9A227" stroke-width="2"/>
+<line x1="700" y1="248" x2="900" y2="248" stroke="#C9A227" stroke-width="2"/>
+<!-- torn NOT-VALID-UNTIL stub -->
+<path d="M1200 70 L1200 290 L1188 270 L1174 288 L1162 266 L1148 286 L1136 264 L1124 284 L1112 262 L1100 282 L1090 290 L1200 290 Z" fill="#0D0B09"/>
+<path d="M1200 70 L1188 100 L1200 130 L1188 160 L1200 190 L1188 220 L1200 250 L1188 280 L1200 290" fill="none" stroke="#D64533" stroke-width="2.5"/>
+<!-- perforation between certificate and stub -->
+<g fill="#C9A227" opacity="0.8">
+<circle cx="1112" cy="84" r="2"/><circle cx="1112" cy="104" r="2"/><circle cx="1112" cy="124" r="2"/>
+<circle cx="1112" cy="144" r="2"/><circle cx="1112" cy="164" r="2"/><circle cx="1112" cy="184" r="2"/>
+<circle cx="1112" cy="204" r="2"/><circle cx="1112" cy="224" r="2"/><circle cx="1112" cy="244" r="2"/>
+<circle cx="1112" cy="264" r="2"/>
+</g>
+<!-- Receiver's wax seal + stamp ring on the certificate -->
+<path d="M520 190 C534 190 541 197 550 200 C556 202 555 210 559 214 C563 218 558 224 557 229 C556 234 549 234 546 238 C543 242 536 239 532 241 C528 239 521 242 518 238 C515 234 508 234 507 229 C506 224 501 218 505 214 C509 210 508 202 514 200 C523 197 520 190 520 190 Z" fill="#7E2A22" stroke="#C9A227" stroke-width="1.6"/>
+<circle cx="532" cy="216" r="10" fill="none" stroke="#C9A227" stroke-width="1.2"/>
+<circle cx="1060" cy="140" r="26" fill="none" stroke="#D64533" stroke-width="2.5" opacity="0.9"/>
+<circle cx="1060" cy="140" r="20" fill="none" stroke="#D64533" stroke-width="1" opacity="0.7"/>
+<rect x="1042" y="133" width="36" height="14" fill="none" stroke="#D64533" stroke-width="1.6"/>
+<!-- ledger pages -->
+<rect x="100" y="310" width="660" height="280" fill="#1E1A15" stroke="#C9A227" stroke-width="1.5"/>
+<rect x="840" y="310" width="660" height="280" fill="#1E1A15" stroke="#7E2A22" stroke-width="1.5"/>
+<!-- central gilt balance-rule with flanking hairlines -->
+<line x1="760" y1="310" x2="760" y2="590" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<line x1="800" y1="310" x2="800" y2="590" stroke="#C9A227" stroke-width="3"/>
+<line x1="840" y1="310" x2="840" y2="590" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<!-- column heads: gilt vs oxblood bars (lettering HTML) -->
+<rect x="100" y="310" width="660" height="36" fill="#C9A227" opacity="0.85"/>
+<rect x="840" y="310" width="660" height="36" fill="#7E2A22"/>
+<!-- ruled entry lines -->
+<g stroke="#A89A80" stroke-width="1.5" opacity="0.7">
+<line x1="120" y1="372" x2="740" y2="372"/><line x1="120" y1="400" x2="740" y2="400"/>
+<line x1="120" y1="428" x2="740" y2="428"/><line x1="120" y1="456" x2="740" y2="456"/>
+<line x1="120" y1="484" x2="740" y2="484"/><line x1="120" y1="512" x2="740" y2="512"/>
+<line x1="860" y1="372" x2="1480" y2="372"/><line x1="860" y1="400" x2="1480" y2="400"/>
+<line x1="860" y1="428" x2="1480" y2="428"/><line x1="860" y1="456" x2="1480" y2="456"/>
+<line x1="860" y1="484" x2="1480" y2="484"/><line x1="860" y1="512" x2="1480" y2="512"/>
+</g>
+<g stroke="#C9A227" stroke-width="1" opacity="0.5">
+<line x1="120" y1="386" x2="740" y2="386"/><line x1="120" y1="442" x2="740" y2="442"/>
+<line x1="120" y1="498" x2="740" y2="498"/><line x1="860" y1="386" x2="1480" y2="386"/>
+<line x1="860" y1="442" x2="1480" y2="442"/><line x1="860" y1="498" x2="1480" y2="498"/>
+</g>
+<!-- balance-totals rule struck across at two-thirds -->
+<line x1="120" y1="544" x2="1480" y2="544" stroke="#C9A227" stroke-width="3"/>
+<line x1="120" y1="551" x2="1480" y2="551" stroke="#C9A227" stroke-width="1"/>
+<!-- folio band: No. X / ENTERED MMVIII -->
+<rect x="100" y="606" width="1400" height="30" fill="#0D0B09" stroke="#C9A227" stroke-width="1.5"/>
+<path d="M130 606 L122 636 M230 606 L222 636 M1330 606 L1322 636 M1430 606 L1422 636" stroke="#C9A227" stroke-width="1.5"/>
+<!-- balance-mark: the balanced scale tick -->
+<g stroke="#C9A227" stroke-width="2">
+<line x1="800" y1="566" x2="800" y2="596"/><circle cx="800" cy="602" r="5" fill="#C9A227" stroke="none"/>
+</g>
+<!-- shed column-rule: one entry line slides free below the totals -->
+<line x1="1150" y1="566" x2="1150" y2="606" stroke="#C9A227" stroke-width="2"/>
+<circle cx="1150" cy="612" r="2.5" fill="#C9A227"/>
+<!-- plate furniture -->
+<rect x="40" y="40" width="1520" height="620" fill="none" stroke="#C9A227" stroke-width="3"/>
+<g transform="translate(120,106)">
+<path d="M-60 40 L-60 -20 Q-60 -60 -20 -60 L40 -60" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<rect x="-68" y="-68" width="16" height="16" transform="rotate(45 -60 -60)" fill="#0D0B09" stroke="#C9A227" stroke-width="2"/>
+<circle cx="-60" cy="-60" r="2.6" fill="#D64533"/>
+</g>
+<g transform="translate(1480,106) scale(-1,1)">
+<path d="M-60 40 L-60 -20 Q-60 -60 -20 -60 L40 -60" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+<rect x="-68" y="-68" width="16" height="16" transform="rotate(45 -60 -60)" fill="#0D0B09" stroke="#C9A227" stroke-width="2"/>
+<circle cx="-60" cy="-60" r="2.6" fill="#D64533"/>
+</g>
+<rect x="0" y="0" width="1600" height="700" filter="url(#oc10-grain)" opacity="0.9"/>
+</symbol>
+</svg>

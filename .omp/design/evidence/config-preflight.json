@@ -1,0 +1,297 @@
+{
+  "checked_at": "2026-10-15T00:22:34.828871+00:00",
+  "agent_count": 22,
+  "book_count": 13,
+  "chapter_count": 942,
+  "errors": [],
+  "agents": {
+    "book-atlas-shrugged-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-being-and-time-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-beyond-good-and-evil-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-forty-ways-to-look-at-churchill-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-gay-science-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-gentle-introduction-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-infinite-jest-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-open-letter-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-sovereign-individual-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-the-fountainhead-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-thus-spoke-zarathustra-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-twilight-of-the-idols-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "book-will-to-power-supervisor": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-chapter-lead",
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "library-art-director": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "reference-study",
+        "visual-critique"
+      ]
+    },
+    "library-chapter-lead": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "library-designer": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "reference-study"
+      ]
+    },
+    "library-engineer": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow"
+      ]
+    },
+    "library-final-validator": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [],
+      "skills": [
+        "frontend-workflow",
+        "visual-critique",
+        "review-skill"
+      ]
+    },
+    "library-home-engineer": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow"
+      ]
+    },
+    "library-reader-lead": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [
+        "library-designer",
+        "library-engineer",
+        "library-validator"
+      ],
+      "skills": [
+        "frontend-design",
+        "frontend-workflow",
+        "visual-critique"
+      ]
+    },
+    "library-text-curator": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [],
+      "skills": []
+    },
+    "library-validator": {
+      "model": "opencode-go/muse-spark-1.3-contributor:max",
+      "thinking": "max",
+      "spawns": [],
+      "skills": [
+        "frontend-workflow",
+        "visual-critique",
+        "review-skill"
+      ]
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+ "art_direction": "books/twilight-of-the-idols/design/ART-DIRECTION.md",
+ "art_slots": {
+  "chapter": {
+   "class": "motif",
+   "figure": "#chapter-art"
+  },
+  "cover": {
+   "class": "plate",
+   "figure": "#cover-art",
+   "src": "art/cover.svg"
+  }
+ },
+ "author": "Friedrich Nietzsche",
+ "body": {
+  "family": "'Cormorant Garamond', 'Palatino Linotype', Palatino, Georgia, serif",
+  "leading": 1.8,
+  "measure_ch": 65,
+  "size_rem": 1.3
+ },
+ "book_css": "books/twilight-of-the-idols/design/book.css",
+ "chapters": [
+  {
+   "cohort": "hammerfall",
+   "id": "p1c1",
+   "motif": "sounding-fork",
+   "motif_desc": "tuning fork over black question-mark shadow",
+   "number_label": "Foreword",
+   "opener": "slot emblem above Cinzel title; shadow-bar under eyebrow",
+   "palette_role": "bone + ash, bronze rings (1 ring)",
+   "rationale": "The instrument before any idol; the immense '?' that casts a shadow",
+   "src": "art/hammerfall.svg",
+   "title": "Foreword",
+   "symbol": "sounding-fork",
+   "rings": 1
+  },
+  {
+   "cohort": "hammerfall",
+   "id": "p1c2",
+   "motif": "fanned-barbs",
+   "motif_desc": "fanned barbs / small daggers",
+   "number_label": "Maxims And Barbs",
+   "opener": "slot emblem; aphorism-friendly airy title block",
+   "palette_role": "bone + bronze, ember tips",
+   "rationale": "30 served stanzas (44 maxims in print; several fused per served para); yes/no/straight-line/goal",
+   "src": "art/hammerfall.svg",
+   "title": "Maxims And Barbs",
+   "symbol": "fanned-barbs",
+   "rings": 2
+  },
+  {
+   "cohort": "hammerfall",
+   "id": "p1c3",
+   "motif": "hemisected-mask",
+   "motif_desc": "hemisected mask, one half cracked",
+   "number_label": "The Problem Of Socrates",
+   "opener": "slot emblem; dialectic double-face",
+   "palette_role": "ash + bone, ember crack",
+   "rationale": "Dialectic as rabble revenge; Asclepius cock; decadence",
+   "src": "art/hammerfall.svg",
+   "title": "The Problem Of Socrates",
+   "symbol": "hemisected-mask",
+   "rings": 3
+  },
+  {
+   "cohort": "hammerfall",
+   "id": "p1c4",
+   "motif": "mummy-case",
+   "motif_desc": "mummy-case with Egyptian eye",
+   "number_label": "'Reason' In Philosophy",
+   "opener": "slot emblem; banded sarcophagus",
+   "palette_role": "ash + bronze, bone eye",
+   "rationale": "Conceptual mummies; Egypticism; Being as empty fiction",
+   "src": "art/hammerfall.svg",
+   "title": "'Reason' In Philosophy",
+   "symbol": "mummy-case",
+   "rings": 4
+  },
+  {
+   "cohort": "idolsmasher",
+   "id": "p1c5",
+   "motif": "noon-collapse",
+   "motif_desc": "six-step collapse into noon disc",
+   "number_label": "How the Real World Finally Became a Fable",
+   "opener": "poster-like airy opener; noon disc",
+   "palette_role": "brightest bronze; shortest shadow",
+   "rationale": "History of an Error 1-6; noon; INCIPIT ZARATHUSTRA",
+   "src": "art/idolsmasher.svg",
+   "title": "How the Real World Finally Became a Fable",
+   "symbol": "idol-fable-noon",
+   "rings": 5
+  },
+  {
+   "cohort": "idolsmasher",
+   "id": "p1c6",
+   "motif": "shears-flame",
+   "motif_desc": "shears vs flowering branch",
+   "number_label": "Morality As Anti-Nature",
+   "opener": "slot emblem; passion spiritualized",
+   "palette_role": "ember shears, bronze bloom",
+   "rationale": "il faut tuer les passions vs passion marrying spirit",
+   "src": "art/idolsmasher.svg",
+   "title": "Morality As Anti-Nature",
+   "symbol": "idol-shears-flame",
+   "rings": 6
+  },
+  {
+   "cohort": "idolsmasher",
+   "id": "p1c7",
+   "motif": "fourfold-knot",
+   "motif_desc": "fourfold reversed arrows / knot",
+   "number_label": "The Four Great Errors",
+   "opener": "slot emblem; widest cracks in book",
+   "palette_role": "full ember + bronze",
+   "rationale": "Four errors; consequence mistaken for cause",
+   "src": "art/idolsmasher.svg",
+   "title": "The Four Great Errors",
+   "symbol": "idol-four-errors",
+   "rings": 7
+  },
+  {
+   "cohort": "idolsmasher",
+   "id": "p1c8",
+   "motif": "veil-tablets",
+   "motif_desc": "veil over three tablets",
+   "number_label": "The 'Improvers' Of Humanity",
+   "opener": "slot emblem; masked tablets",
+   "palette_role": "ash veil, bone tablets, ember seal",
+   "rationale": "pia fraus of Manu/Plato/Confucius; immoral means",
+   "src": "art/idolsmasher.svg",
+   "title": "The 'Improvers' Of Humanity",
+   "symbol": "idol-veil-tablets",
+   "rings": 8
+  },
+  {
+   "cohort": "untimelydusk",
+   "id": "p1c9",
+   "motif": "dancing-pen",
+   "motif_desc": "dancing pen; goad and brake-shoe",
+   "number_label": "What The Germans Lack",
+   "opener": "slot emblem; dancing baseline",
+   "palette_role": "bronze pen, ash ground",
+   "rationale": "Learn to write; dance with concepts; goad vs brake",
+   "src": "art/untimelydusk.svg",
+   "title": "What The Germans Lack",
+   "symbol": "dancing-pen",
+   "rings": 9
+  },
+  {
+   "cohort": "untimelydusk",
+   "id": "p1c10",
+   "motif": "skirmish-gallery",
+   "motif_desc": "skirmish gallery of struck shields",
+   "number_label": "Reconnaissance Raids of an Untimely Man",
+   "opener": "slot emblem + mid-chapter raid markers",
+   "palette_role": "full grammar; densest rings",
+   "rationale": "~30 titled raids; longest chapter (11939 words)",
+   "src": "art/untimelydusk.svg",
+   "title": "Reconnaissance Raids of an Untimely Man",
+   "symbol": "skirmish-gallery",
+   "rings": 10
+  },
+  {
+   "cohort": "untimelydusk",
+   "id": "p1c11",
+   "motif": "dionysian-mask",
+   "motif_desc": "ivy-wreathed Dionysian mask",
+   "number_label": "What I Owe The Ancients",
+   "opener": "slot emblem; wreathed mask",
+   "palette_role": "bronze vine, bone mask",
+   "rationale": "Dionysus vs Crucified; Sallust/Horace; sanctified pain",
+   "src": "art/untimelydusk.svg",
+   "title": "What I Owe The Ancients",
+   "symbol": "dionysian-mask",
+   "rings": 11
+  },
+  {
+   "cohort": "untimelydusk",
+   "id": "p1c12",
+   "motif": "diamond-over-coal",
+   "motif_desc": "diamond over coal",
+   "number_label": "The Hammer Speaks",
+   "opener": "verdict opener; crack become emblem",
+   "palette_role": "brightest bone diamond, ember bed",
+   "rationale": "Coal/diamond kinship; write on bronze; become hard",
+   "src": "art/untimelydusk.svg",
+   "title": "The Hammer Speaks",
+   "symbol": "diamond-over-coal",
+   "rings": "12\u2192diamond"
+  }
+ ],
+ "chrome": {
+  "family": "'DM Sans', system-ui, sans-serif"
+ },
+ "cohort_files": {
+  "hammerfall": [
+   "books/twilight-of-the-idols/art/hammerfall.svg",
+   "books/twilight-of-the-idols/design/hammerfall.json",
+   "books/twilight-of-the-idols/design/hammerfall.css"
+  ],
+  "idolsmasher": [
+   "books/twilight-of-the-idols/art/idolsmasher.svg",
+   "books/twilight-of-the-idols/design/idolsmasher.json",
+   "books/twilight-of-the-idols/design/idolsmasher.css"
+  ],
+  "untimelydusk": [
+   "books/twilight-of-the-idols/art/untimelydusk.svg",
+   "books/twilight-of-the-idols/design/untimelydusk.json",
+   "books/twilight-of-the-idols/design/untimelydusk.css"
+  ]
+ },
+ "cover_art": "books/twilight-of-the-idols/art/cover.svg",
+ "direction": "STRUCK BRONZE / sounding-out",
+ "display": {
+  "family": "Cinzel, 'Times New Roman', serif",
+  "scale": {
+   "chapter_title": "clamp(1.9rem, 5vw, 3rem)",
+   "cover_title": "clamp(2.4rem, 8vw, 5rem)",
+   "toc_part": "0.8rem"
+  },
+  "tracking": "0.04em",
+  "weights": [
+   600,
+   700
+  ]
+ },
+ "fonts_link_add": "family=Cinzel:wght@600;700",
+ "hooks": {
+  "chapter_art": "#chapter-art.motif",
+  "contents": "body:not([data-chapter])",
+  "cover_art": "#cover-art.plate",
+  "motif": "body[data-art='<motif>']",
+  "reading": "body[data-chapter='<id>']",
+  "toc_row": ".toc-chapter[data-chapter-id]"
+ },
+ "palette": {
+  "anvil": "#1B1510",
+  "ash": "#A89A80",
+  "bone": "#EDE2CC",
+  "bronze": "#D29A4A",
+  "ember": "#B23A2A",
+  "forge": "#100D0A"
+ },
+ "part": {
+  "id": "part-1",
+  "subtitle": "How to Philosophize with a Hammer"
+ },
+ "reader_contract": "v1.1 \u00a73-\u00a74 + A.2 symbol key",
+ "signature": "strike-point: idol-form + impact crack + concentric sounding-rings",
+ "slug": "twilight-of-the-idols",
+ "art_conditions": "ArtDirector T1-T6 binding; see ART-DIRECTION.md"
+}

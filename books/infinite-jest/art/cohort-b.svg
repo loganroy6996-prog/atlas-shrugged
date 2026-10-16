@@ -1,0 +1,1324 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Infinite Jest cohort B plates: Documents and Interlace">
+<symbol id="chart-and-cone" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+<rect x="24" y="24" width="246" height="402" fill="#8FA3B8" opacity="0.08"/>
+<rect x="330" y="24" width="446" height="402" fill="#C9A227" opacity="0.07"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 14</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">CLINICAL INTERVIEW + COACH PROFILE</text>
+<!-- Watteau frontispiece vignette behind chart -->
+<ellipse cx="160" cy="240" rx="105" ry="140" fill="none" stroke="#C9A227" stroke-width="2" opacity="0.9"/>
+<ellipse cx="160" cy="240" rx="92" ry="127" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.5"/>
+<g stroke="#E8DCC0" stroke-width="1.6" fill="none" opacity="0.85">
+<path d="M 128 300 q -14 -40 6 -66 q 10 -14 30 -18 q 26 -5 34 12 q 6 14 -4 26 q -8 10 -20 12 q 22 2 26 16 q 4 16 -12 24 q -24 12 -60 -6 Z"/>
+<circle cx="150" cy="252" r="9"/>
+<path d="M 140 280 q 20 10 44 4"/>
+</g>
+<text x="70" y="396" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">THE POSTURE</text><text x="70" y="411" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">WATTEAU FRONTISPIECE</text>
+<!-- patient chart -->
+<rect x="66" y="96" width="188" height="200" fill="#1A1E17" stroke="#E8DCC0" stroke-width="2" opacity="1"/>
+<rect x="140" y="84" width="40" height="18" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<text x="160" y="112" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="0.7">5TH FL · PSYCH</text>
+<line x1="80" y1="122" x2="240" y2="122" stroke="#E8DCC0" stroke-width="1" opacity="0.7"/>
+<text x="160" y="144" text-anchor="middle" font-family="'Newsreader',Georgia,serif" font-size="20" font-style="italic" fill="#E8DCC0">“get me out</text>
+<text x="160" y="166" text-anchor="middle" font-family="'Newsreader',Georgia,serif" font-size="20" font-style="italic" fill="#E8DCC0">of this”</text>
+<line x1="80" y1="150" x2="240" y2="150" stroke="#E8DCC0" stroke-width="1" opacity="0.55"/>
+<line x1="80" y1="166" x2="240" y2="166" stroke="#E8DCC0" stroke-width="1" opacity="0.55"/>
+<line x1="80" y1="182" x2="240" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.55"/>
+<line x1="80" y1="198" x2="240" y2="198" stroke="#E8DCC0" stroke-width="1" opacity="0.55"/>
+<line x1="80" y1="214" x2="240" y2="214" stroke="#E8DCC0" stroke-width="1" opacity="0.55"/>
+<line x1="80" y1="230" x2="240" y2="230" stroke="#E8DCC0" stroke-width="1" opacity="0.55"/>
+<rect x="88" y="244" width="144" height="32" fill="none" stroke="#E05238" stroke-width="2.5" transform="rotate(-3 160 264)"/>
+<text x="160" y="269" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="14" font-weight="600" letter-spacing="1" fill="#E05238" transform="rotate(-3 160 264)">THEN WHAT?</text>
+<!-- horror rule -->
+<rect x="292" y="40" width="8" height="370" fill="#D6402B"/>
+<text x="306" y="240" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238" opacity="1.0" transform="rotate(90 306 240)">0145H</text><text x="306" y="255" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55" transform="rotate(90 306 240)">2 APR · P85</text>
+<!-- cone + lattice -->
+<g>
+<path d="M 420 180 L 560 180 L 490 340 Z" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.65">
+<line x1="431" y1="175" x2="549" y2="175"/><line x1="451" y1="165" x2="470" y2="300"/>
+<line x1="481" y1="165" x2="488" y2="320"/><line x1="511" y1="165" x2="504" y2="310"/><line x1="537" y1="168" x2="516" y2="292"/>
+<line x1="445" y1="205" x2="470" y2="160"/><line x1="470" y1="258" x2="492" y2="160"/><line x1="492" y1="300" x2="514" y2="160"/>
+</g>
+<path d="M 428 180 q -6 -34 24 -40 q 8 -22 38 -22 q 30 0 38 22 q 30 6 24 40 Z" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<line x1="440" y1="152" x2="540" y2="152" stroke="#E8DCC0" stroke-width="1" opacity="0.6"/>
+<line x1="452" y1="138" x2="528" y2="138" stroke="#E8DCC0" stroke-width="1" opacity="0.45"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.7">
+<line x1="448" y1="162" x2="532" y2="162"/><line x1="452" y1="168" x2="528" y2="168"/>
+</g>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.45">
+<line x1="462" y1="128" x2="518" y2="128"/>
+</g>
+</g>
+<text x="580" y="200" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">TRICOLOR</text><text x="580" y="215" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">THREE HATCH DENSITIES</text>
+<!-- train parallels + umbrella + signs -->
+<g stroke="#E8DCC0" stroke-width="1.2" opacity="0.8">
+<line x1="360" y1="380" x2="740" y2="348"/><line x1="360" y1="392" x2="740" y2="360"/>
+</g>
+<path d="M 600 340 q 40 -34 80 0" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.8"/>
+<line x1="640" y1="312" x2="640" y2="344" stroke="#E8DCC0" stroke-width="1.5" opacity="0.8"/>
+<text x="360" y="408" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#E8DCC0" opacity="0.6">GREE[NE LINE]</text>
+<text x="740" y="408" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#C9A227" opacity="0.8">CHAN[NEL] · PLAY · P119</text>
+
+</symbol>
+<symbol id="taxi-vent" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 15</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">TRANSIT LOG · UNIT #6</text>
+<!-- 21:9 window band -->
+<rect x="52" y="96" width="696" height="240" fill="none" stroke="#E8DCC0" stroke-width="2.5"/>
+<rect x="60" y="104" width="680" height="224" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<text x="400" y="90" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="3" fill="#C9A227">EASTBOUND → WATERTOWN</text>
+<line x1="120" y1="150" x2="210" y2="150" stroke="#E8DCC0" stroke-width="1.5" opacity="0.5"/>
+<line x1="260" y1="168" x2="350" y2="168" stroke="#E8DCC0" stroke-width="1.5" opacity="0.5"/>
+<line x1="430" y1="150" x2="520" y2="150" stroke="#E8DCC0" stroke-width="1.5" opacity="0.5"/>
+<line x1="560" y1="170" x2="650" y2="170" stroke="#E8DCC0" stroke-width="1.5" opacity="0.5"/>
+<line x1="180" y1="200" x2="270" y2="200" stroke="#E8DCC0" stroke-width="1.5" opacity="0.5"/>
+<line x1="360" y1="192" x2="450" y2="192" stroke="#E8DCC0" stroke-width="1.5" opacity="0.5"/>
+<line x1="520" y1="205" x2="610" y2="205" stroke="#E8DCC0" stroke-width="1.5" opacity="0.5"/>
+<text x="120" y="130" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#E8DCC0" opacity="0.5">MASS. LIVERY</text>
+<!-- elf-scale rung ladder + hovering feet -->
+<g stroke="#E8DCC0" stroke-width="2">
+<line x1="120" y1="140" x2="120" y2="300"/><line x1="170" y1="140" x2="170" y2="300"/>
+<line x1="120" y1="170" x2="170" y2="170"/><line x1="120" y1="200" x2="170" y2="200"/>
+<line x1="120" y1="230" x2="170" y2="230"/><line x1="120" y1="260" x2="170" y2="260"/>
+</g>
+<line x1="100" y1="300" x2="400" y2="300" stroke="#E8DCC0" stroke-width="2"/>
+<text x="100" y="316" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">TAXI FLOOR</text>
+<g stroke="#E8DCC0" stroke-width="2" fill="none">
+<ellipse cx="135" cy="232" rx="9" ry="14"/><ellipse cx="158" cy="232" rx="9" ry="14"/>
+</g>
+<line x1="145" y1="246" x2="145" y2="300" stroke="#E05238" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="150" y="278" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#E05238">68px GAP</text>
+<text x="210" y="180" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">FEET-BARELY-REACH</text><text x="210" y="195" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">ELF-SCALE · P1</text>
+<!-- vent screen right 35% -->
+<rect x="488" y="108" width="204" height="130" fill="#0A0C09" stroke="#E8DCC0" stroke-width="1.5" opacity="1"/>
+<rect x="500" y="120" width="180" height="14" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.85"/>
+<rect x="500" y="140" width="180" height="14" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.85"/>
+<rect x="500" y="160" width="180" height="14" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.85"/>
+<rect x="500" y="180" width="180" height="14" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.85"/>
+<rect x="500" y="200" width="180" height="14" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.85"/>
+<rect x="500" y="200" width="180" height="14" fill="none" stroke="#9FE870" stroke-width="2"/>
+<circle cx="600" cy="246" r="14" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="600" y1="246" x2="610" y2="236" stroke="#9FE870" stroke-width="2.5"/>
+<text x="600" y="278" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="16" font-weight="600" fill="#9FE870">5</text>
+<text x="560" y="262" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="1" fill="#E8DCC0" opacity="0.6">#4→#5</text>
+<path d="M 548 238 L 548 290 L 588 290" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<rect x="578" y="282" width="20" height="16" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="583" y1="282" x2="583" y2="288" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="593" y1="282" x2="593" y2="288" stroke="#E8DCC0" stroke-width="1.5"/>
+<g stroke="#000000" stroke-width="2" opacity="0.9">
+<path d="M 570 296 q 18 8 36 0"/><path d="M 572 302 q 16 6 32 0"/>
+</g>
+<!-- sill strip -->
+<rect x="60" y="312" width="680" height="16" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+<text x="400" y="324" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="3" fill="#E8DCC0" opacity="0.6">THANK YOU FOR NOT SMOKING</text>
+<!-- two-beat rule -->
+<line x1="52" y1="362" x2="748" y2="362" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+<text x="64" y="388" font-family="'Newsreader',Georgia,serif" font-size="17" font-style="italic" fill="#E8DCC0" opacity="0.85">“sick or something?”</text>
+<line x1="360" y1="372" x2="360" y2="404" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<text x="384" y="392" font-family="'Newsreader',Georgia,serif" font-size="19" font-style="italic" fill="#E8DCC0">“So it would seem.”</text>
+<line x1="384" y1="404" x2="640" y2="404" stroke="#C9A227" stroke-width="2"/>
+<text x="700" y="392" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">P4</text><text x="700" y="407" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">THE HEARTBEAT</text>
+
+</symbol>
+<symbol id="dusk-ember" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+<rect x="24" y="24" width="752" height="228" fill="#E05238" opacity="0.05"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 16</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">FIELD INTERVIEW · DUSK SESSION</text>
+<text x="64" y="96" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0">TUCSON · 6026</text>
+<!-- viscous-drop sun -->
+<path d="M 452 168 L 478 168 L 462 174 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 445 194 L 468 207 L 451 204 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 426 213 L 439 236 L 426 224 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 400 220 L 400 246 L 394 230 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 374 213 L 361 236 L 364 219 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 355 194 L 332 207 L 344 194 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 348 168 L 322 168 L 338 162 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 355 142 L 332 129 L 349 132 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 374 123 L 361 100 L 374 112 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 400 116 L 400 90 L 406 106 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 426 123 L 439 100 L 436 117 Z" fill="#E8DCC0" opacity="0.8"/>
+<path d="M 445 142 L 468 129 L 456 142 Z" fill="#E8DCC0" opacity="0.8"/>
+<circle cx="400" cy="168" r="48" fill="none" stroke="#E8DCC0" stroke-width="2.5"/>
+<circle cx="400" cy="168" r="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.6"/>
+<path d="M 448 168 q 6 2 4 8" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="470" y="150" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">TREMOR</text>
+<path d="M 352 130 L 330 112 L 470 112 L 448 130" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.8"/>
+<text x="400" y="76" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">BACKLIT VISOR</text>
+<text x="400" y="222" text-anchor="middle" font-family="'Newsreader',Georgia,serif" font-size="18" font-style="italic" fill="#E8DCC0" opacity="0.85">“a viscous drop about to fall”</text>
+
+<line x1="52" y1="252" x2="748" y2="252" stroke="#E8DCC0" stroke-width="2.5"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.65">
+<line x1="52" y1="252" x2="90" y2="238"/><line x1="90" y1="252" x2="128" y2="238"/>
+<line x1="128" y1="252" x2="166" y2="238"/><line x1="166" y1="252" x2="204" y2="238"/>
+<line x1="204" y1="252" x2="242" y2="238"/><line x1="242" y1="252" x2="280" y2="238"/>
+<line x1="280" y1="252" x2="318" y2="238"/><line x1="318" y1="252" x2="356" y2="238"/>
+<line x1="356" y1="252" x2="394" y2="238"/><line x1="394" y1="252" x2="432" y2="238"/>
+<line x1="432" y1="252" x2="470" y2="238"/><line x1="470" y1="252" x2="508" y2="238"/>
+<line x1="508" y1="252" x2="546" y2="238"/><line x1="546" y1="252" x2="584" y2="238"/>
+<line x1="584" y1="252" x2="622" y2="238"/><line x1="622" y1="252" x2="660" y2="238"/>
+<line x1="660" y1="252" x2="698" y2="238"/><line x1="698" y1="252" x2="736" y2="238"/>
+</g>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.35">
+<line x1="70" y1="238" x2="108" y2="252"/><line x1="146" y1="238" x2="184" y2="252"/>
+<line x1="222" y1="238" x2="260" y2="252"/><line x1="298" y1="238" x2="336" y2="252"/>
+<line x1="374" y1="238" x2="412" y2="252"/><line x1="450" y1="238" x2="488" y2="252"/>
+<line x1="526" y1="238" x2="564" y2="252"/><line x1="602" y1="238" x2="640" y2="252"/>
+<line x1="678" y1="238" x2="716" y2="252"/>
+</g>
+<!-- twin shadows -->
+<path d="M 250 252 L 150 400 L 260 400 L 300 252 Z" fill="#E8DCC0" opacity="0.14" stroke="#E8DCC0" stroke-width="1.5"/>
+<path d="M 550 252 L 650 400 L 540 400 L 500 252 Z" fill="#E8DCC0" opacity="0.14" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="250" y1="300" x2="340" y2="300" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="335" y2="314" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="319" y2="326" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="295" y2="335" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="266" y2="339" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="234" y2="339" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="205" y2="335" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="181" y2="326" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="165" y2="314" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="160" y2="300" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="165" y2="286" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="181" y2="274" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="205" y2="265" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="234" y2="261" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="266" y2="261" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="295" y2="265" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="319" y2="274" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<line x1="250" y1="300" x2="335" y2="286" stroke="#E8DCC0" stroke-width="1.2" opacity="0.6"/>
+<text x="250" y="330" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">ASTERISK-SHADOW</text>
+<!-- weeds + I-10 baseline -->
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none" opacity="0.7">
+<path d="M 80 396 q 10 -14 24 -8 q 12 5 8 16 q -10 4 -18 -2"/>
+<path d="M 400 400 q 10 -14 24 -8 q 12 5 8 16 q -10 4 -18 -2"/>
+<path d="M 560 396 q 10 -14 24 -8 q 12 5 8 16 q -10 4 -18 -2"/>
+</g>
+<line x1="52" y1="414" x2="520" y2="414" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+<text x="52" y="428" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">I-10 · WEEDS OF TUMBLING</text>
+<!-- ember cell -->
+<rect x="620" y="300" width="128" height="100" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.3">
+<line x1="620" y1="325" x2="748" y2="325"/><line x1="620" y1="350" x2="748" y2="350"/><line x1="620" y1="375" x2="748" y2="375"/>
+<line x1="652" y1="300" x2="652" y2="400"/><line x1="684" y1="300" x2="684" y2="400"/><line x1="716" y1="300" x2="716" y2="400"/>
+</g>
+<path d="M 684 372 L 684 348 M 684 360 L 672 352 M 684 360 L 696 352 M 684 348 L 678 338 M 684 348 L 690 338" stroke="#E05238" stroke-width="2.5" fill="none"/>
+<circle cx="684" cy="334" r="3" fill="#E05238"/>
+<text x="560" y="292" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238" opacity="1.0">TINY BLOOM OF ORANGE</text><text x="560" y="307" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P65 ENVOY · ONLY RED</text>
+
+</symbol>
+<symbol id="thesaurus-tired" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 17</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">CHORUS LOG · 164 ENTRIES · DESERT INSERTS</text>
+<!-- procession band: 16 stops -->
+<rect x="52" y="72" width="696" height="56" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+<text x="400" y="90" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#C9A227">DRILLS→SHOWER→EAT→CLASS→LAB→CLASS→CLASS→EAT→EXAM→LAB→RUN→DRILLS</text>
+<text x="400" y="106" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#C9A227">MATCH→MATCH→CIRCUITS→SAUNA→SHOWER→SLUMP · TUE 3 NOV · 1640H</text>
+
+<!-- carpet fiber field over louvers -->
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.25">
+<line x1="52" y1="150" x2="748" y2="150"/><line x1="52" y1="158" x2="748" y2="158"/>
+<line x1="52" y1="166" x2="748" y2="166"/><line x1="52" y1="292" x2="748" y2="292"/>
+<line x1="52" y1="300" x2="748" y2="300"/><line x1="52" y1="308" x2="748" y2="308"/>
+</g>
+<rect x="60" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="68" y1="170" x2="98" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="68" y1="182" x2="98" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="68" y1="194" x2="98" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="112" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="120" y1="170" x2="150" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="120" y1="182" x2="150" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="120" y1="194" x2="150" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="164" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="172" y1="170" x2="202" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="172" y1="182" x2="202" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="172" y1="194" x2="202" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="216" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="224" y1="170" x2="254" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="224" y1="182" x2="254" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="224" y1="194" x2="254" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="268" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="276" y1="170" x2="306" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="276" y1="182" x2="306" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="276" y1="194" x2="306" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="320" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="328" y1="170" x2="358" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="328" y1="182" x2="358" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="328" y1="194" x2="358" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="372" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="380" y1="170" x2="410" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="380" y1="182" x2="410" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="380" y1="194" x2="410" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="424" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="432" y1="170" x2="462" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="432" y1="182" x2="462" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="432" y1="194" x2="462" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="476" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="484" y1="170" x2="514" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="484" y1="182" x2="514" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="484" y1="194" x2="514" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="528" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="536" y1="170" x2="566" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="536" y1="182" x2="566" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="536" y1="194" x2="566" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="580" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="588" y1="170" x2="618" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="588" y1="182" x2="618" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="588" y1="194" x2="618" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<rect x="632" y="150" width="46" height="150" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/><line x1="640" y1="170" x2="670" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="640" y1="182" x2="670" y2="182" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="640" y1="194" x2="670" y2="194" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<!-- towel stripe: one black -->
+<g>
+<rect x="60" y="330" width="80" height="24" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<rect x="148" y="330" width="80" height="24" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<rect x="236" y="330" width="80" height="24" fill="#000000" stroke="#E8DCC0" stroke-width="1.2"/>
+<rect x="324" y="330" width="80" height="24" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<rect x="412" y="330" width="80" height="24" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+</g>
+<text x="508" y="340" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">OWN TOWELS</text><text x="508" y="355" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">ONE BLACK · STICE</text>
+<!-- exhaustion curve -->
+<path d="M 60 250 L 200 244 L 260 246 L 280 218 L 296 246 L 340 260 q 30 14 60 4 q 30 -10 60 2 q 30 12 60 0 q 26 -10 48 22 L 688 268"
+ fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<text x="280" y="206" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" font-weight="600" letter-spacing="1" fill="#E8DCC0">IT'S TRYING TO THINK</text>
+<text x="688" y="262" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="0.7">COLLAPSE</text>
+<!-- cascade words -->
+<text x="80" y="236" font-family="'Newsreader',Georgia,serif" font-size="15" font-style="italic" fill="#E8DCC0" opacity="0.8">tired</text>
+<text x="240" y="232" font-family="'Newsreader',Georgia,serif" font-size="17" font-style="italic" fill="#E8DCC0" opacity="0.85">Totalled</text>
+<text x="420" y="240" font-family="'Newsreader',Georgia,serif" font-size="16" font-style="italic" fill="#E8DCC0" opacity="0.8">wrung</text>
+<text x="560" y="252" font-family="'Newsreader',Georgia,serif" font-size="19" font-style="italic" fill="#C9A227">none come close</text>
+<!-- cut-in frames overlapping edges -->
+<rect x="40" y="366" width="200" height="52" fill="#C9A227" opacity="0.06" stroke="#C9A227" stroke-width="1.5"/>
+<text x="56" y="388" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227">CUT-IN · WIND</text>
+<text x="56" y="404" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">P43 · EVENING WIND</text>
+<rect x="560" y="366" width="200" height="52" fill="#C9A227" opacity="0.06" stroke="#C9A227" stroke-width="1.5"/>
+<text x="576" y="388" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227">CUT-IN · TEMPLES</text>
+<text x="576" y="404" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">P127–164 · WHAT YOU LOVE</text>
+<text x="400" y="410" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">TRANSMISSIONS FROM ANOTHER WORLD</text>
+
+</symbol>
+<symbol id="triangle-bell" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#0A0B09"/>
+<rect x="0" y="0" width="800" height="450" fill="#E8DCC0" opacity="0.03"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 18</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">NIGHT MINUTES · THREE ROOMS</text>
+<!-- hallway rule joining all three -->
+<line x1="52" y1="300" x2="620" y2="300" stroke="#C9A227" stroke-width="2"/>
+<text x="52" y="292" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#C9A227" opacity="0.8">HALLWAY · V.R.5 TWO CURVES DOWN</text>
+<!-- ROOM 1: bunk + jacket hood + LONELINESS -->
+<rect x="52" y="96" width="170" height="196" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="64" y="118" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#E8DCC0">ROOM 1 · HAL/BLOTT</text>
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none">
+<line x1="70" y1="200" x2="204" y2="200"/><line x1="70" y1="200" x2="70" y2="260"/><line x1="204" y1="200" x2="204" y2="260"/>
+<line x1="70" y1="230" x2="204" y2="230"/>
+<path d="M 120 200 q 6 -30 30 -28 q 22 2 24 28"/>
+</g>
+<rect x="70" y="264" width="134" height="20" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.7"/>
+<text x="137" y="278" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#E8DCC0">LONELINESS.</text>
+<!-- ROOM 2: viewer OFF + floor semicircle + WAYNE plate -->
+<rect x="238" y="96" width="170" height="196" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="250" y="118" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#E8DCC0">ROOM 2 · V.R.5</text>
+<rect x="258" y="130" width="130" height="60" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="258" y1="190" x2="388" y2="130" stroke="#E8DCC0" stroke-width="1.5" opacity="0.8"/>
+<text x="323" y="150" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">OFF · SOUTH WALL</text>
+<path d="M 268 270 q 55 -40 110 0" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none" opacity="0.8">
+<path d="M 282 262 q 6 -10 14 -8"/><path d="M 304 254 q 6 -10 14 -8"/>
+<path d="M 328 254 q 6 -10 14 -8"/><path d="M 350 262 q 6 -10 14 -8"/>
+</g>
+<rect x="268" y="200" width="110" height="20" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.7"/>
+<text x="323" y="214" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#E8DCC0">JOHN WAYNE</text>
+<!-- ROOM 3: blackboard + LET-IT-RIDE -->
+<rect x="424" y="96" width="196" height="196" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="436" y="118" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#E8DCC0">ROOM 3 · B.B. SESSION</text>
+<rect x="440" y="130" width="164" height="110" fill="#0D0F0C" stroke="#E8DCC0" stroke-width="1.5"/>
+<g stroke="#E8DCC0" stroke-width="1.2" opacity="0.8" fill="none">
+<path d="M 450 210 L 470 170 L 490 200 L 510 160 L 530 195 L 550 175 L 570 205 L 594 165"/>
+<line x1="450" y1="218" x2="594" y2="218"/>
+</g>
+<text x="522" y="262" text-anchor="middle" font-family="'Newsreader',Georgia,serif" font-size="17" font-style="italic" fill="#E8DCC0">let it ride</text>
+<line x1="462" y1="268" x2="582" y2="268" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="522" y="284" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P114 · CHALK</text>
+<!-- spit-bubble pair -->
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none" opacity="0.8">
+<circle cx="668" cy="150" r="16"/><circle cx="700" cy="132" r="9"/>
+<path d="M 640 190 q 30 -8 60 -22 q 20 -10 32 -24"/>
+</g>
+<text x="636" y="210" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">SPIT-BUBBLE</text><text x="636" y="225" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">BEAK · P44</text>
+<!-- dinner bell triangle + ladle -->
+<g stroke="#C9A227" stroke-width="2.5" fill="none">
+<path d="M 668 260 L 716 260 L 692 316 Z"/>
+<line x1="700" y1="238" x2="728" y2="286"/>
+<ellipse cx="730" cy="292" rx="6" ry="9"/>
+</g>
+<g stroke="#C9A227" stroke-width="1.2" opacity="0.7" fill="none">
+<path d="M 656 268 q -10 16 -4 32"/><path d="M 728 268 q 10 16 4 32"/>
+</g>
+<text x="620" y="348" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">CLANG</text><text x="620" y="363" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">TRIANGLE + LADLE · P122</text>
+<!-- base rule -->
+<line x1="52" y1="384" x2="748" y2="384" stroke="#C9A227" stroke-width="1.5"/>
+<text x="52" y="404" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#C9A227">LIMITS + RITUALS</text>
+<text x="748" y="404" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#E8DCC0" opacity="0.55">CODA · P121–122</text>
+
+</symbol>
+<symbol id="thicket-tripod" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 19</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">EVENING WALK · 19 ENTRIES · 1 FOUND OBJECT</text>
+<!-- open path + stipple litter -->
+<line x1="52" y1="356" x2="776" y2="356" stroke="#E8DCC0" stroke-width="2"/>
+<ellipse cx="406" cy="342" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(50 518 356)"/>
+<ellipse cx="326" cy="347" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(32 162 356)"/>
+<ellipse cx="261" cy="362" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(33 208 356)"/>
+<ellipse cx="359" cy="349" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(38 193 356)"/>
+<ellipse cx="115" cy="356" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(26 227 356)"/>
+<ellipse cx="555" cy="357" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(53 115 356)"/>
+<ellipse cx="455" cy="360" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(57 219 356)"/>
+<ellipse cx="71" cy="352" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(56 96 356)"/>
+<ellipse cx="531" cy="352" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(7 337 356)"/>
+<ellipse cx="293" cy="364" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(55 435 356)"/>
+<ellipse cx="97" cy="346" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(26 68 356)"/>
+<ellipse cx="110" cy="367" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(48 496 356)"/>
+<ellipse cx="262" cy="368" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(42 213 356)"/>
+<ellipse cx="352" cy="372" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(53 141 356)"/>
+<ellipse cx="465" cy="366" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(14 456 356)"/>
+<ellipse cx="339" cy="346" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(51 166 356)"/>
+<ellipse cx="259" cy="352" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(8 128 356)"/>
+<ellipse cx="380" cy="371" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(6 340 356)"/>
+<ellipse cx="421" cy="369" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(0 549 356)"/>
+<ellipse cx="292" cy="370" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(38 121 356)"/>
+<ellipse cx="326" cy="370" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(52 316 356)"/>
+<ellipse cx="312" cy="363" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(27 518 356)"/>
+<ellipse cx="337" cy="351" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(56 61 356)"/>
+<ellipse cx="185" cy="345" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(1 298 356)"/>
+<ellipse cx="252" cy="368" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(7 406 356)"/>
+<ellipse cx="421" cy="356" rx="4" ry="2" fill="#C9A227" opacity="0.75" transform="rotate(59 125 356)"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.5">
+<line x1="80" y1="372" x2="120" y2="372"/><line x1="200" y1="376" x2="260" y2="376"/><line x1="340" y1="372" x2="420" y2="372"/>
+</g>
+<text x="60" y="396" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">CRACKLE ×3</text><text x="60" y="411" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">LEAF-AND-TWIG · P1</text>
+<!-- gulls + dumpster + fence -->
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none" opacity="0.8">
+<path d="M 120 120 q 12 -10 24 0 q 12 -10 24 0"/>
+<path d="M 220 100 q 10 -8 20 0 q 10 -8 20 0"/>
+</g>
+<rect x="420" y="120" width="90" height="56" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="420" y1="134" x2="510" y2="134" stroke="#E8DCC0" stroke-width="1" opacity="0.6"/>
+<text x="465" y="128" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">DUMPSTER</text>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.5">
+<line x1="540" y1="110" x2="540" y2="180"/><line x1="560" y1="110" x2="560" y2="180"/>
+<line x1="580" y1="110" x2="580" y2="180"/><line x1="600" y1="110" x2="600" y2="180"/>
+<line x1="530" y1="130" x2="610" y2="130"/><line x1="530" y1="160" x2="610" y2="160"/>
+</g>
+<text x="570" y="196" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">WEST COURTS</text>
+<!-- walker pair: scale contrast, midline at 225 -->
+<line x1="52" y1="225" x2="400" y2="225" stroke="#C9A227" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+<g fill="#E8DCC0" opacity="0.9">
+<ellipse cx="250" cy="130" rx="14" ry="17"/>
+<path d="M 236 148 L 264 148 L 270 280 L 230 280 Z"/>
+<line x1="244" y1="280" x2="244" y2="352" stroke="#E8DCC0" stroke-width="7"/>
+<line x1="258" y1="280" x2="258" y2="352" stroke="#E8DCC0" stroke-width="7"/>
+</g>
+<text x="278" y="220" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">RIBCAGE</text><text x="278" y="235" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">ABOVE THE MIDLINE</text>
+<g fill="#E8DCC0" opacity="0.9">
+<ellipse cx="170" cy="252" rx="11" ry="13"/>
+<path d="M 159 266 L 181 266 L 184 316 L 156 316 Z"/>
+<line x1="165" y1="316" x2="165" y2="352" stroke="#E8DCC0" stroke-width="6"/>
+<line x1="176" y1="316" x2="176" y2="352" stroke="#E8DCC0" stroke-width="6"/>
+<rect x="156" y="292" width="28" height="20" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+</g>
+<text x="150" y="180" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">VEST · POLICE LOCK</text>
+<!-- embrace thicket + cold halo -->
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none" opacity="0.85">
+<path d="M 330 356 q 4 -60 30 -90 M 350 356 q 0 -70 -16 -104 M 368 356 q 10 -50 40 -72"/>
+<circle cx="360" cy="266" r="6"/><circle cx="344" cy="280" r="5"/><circle cx="378" cy="284" r="5"/>
+<path d="M 396 356 L 400 290 M 400 310 L 390 300 M 400 310 L 410 300 M 400 296 L 392 288 M 400 296 L 408 288"/>
+<path d="M 316 356 q -6 -40 -26 -56 M 316 330 L 304 322 M 316 330 L 328 322"/>
+</g>
+<circle cx="360" cy="300" r="52" fill="none" stroke="#9FE870" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.9"/>
+<text x="420" y="300" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#9FE870" opacity="1.0">COLD</text><text x="420" y="315" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">AMBIENT DROP · P18</text>
+<!-- thicket parting in V on SMALL tripod -->
+<g stroke="#E8DCC0" stroke-width="2" fill="none">
+<path d="M 640 356 L 690 250"/><path d="M 760 356 L 710 250"/>
+</g>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.5" fill="none">
+<path d="M 650 330 L 668 300"/><path d="M 750 330 L 732 300"/>
+</g>
+<g stroke="#E8DCC0" stroke-width="2">
+<line x1="700" y1="300" x2="690" y2="350"/><line x1="700" y1="300" x2="700" y2="350"/><line x1="700" y1="300" x2="710" y2="350"/>
+<rect x="686" y="296" width="28" height="8" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+</g>
+<text x="700" y="348" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">WAFFLE-TIPPED</text>
+<path d="M 676 288 q 24 -14 48 0" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<text x="700" y="278" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">360° PAN</text>
+<g stroke="#C9A227" stroke-width="1.5">
+<line x1="700" y1="262" x2="700" y2="272"/><line x1="688" y1="266" x2="694" y2="274"/><line x1="712" y1="266" x2="706" y2="274"/>
+</g>
+<text x="700" y="396" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">HUSKY TL</text><text x="700" y="411" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">FOUND · 1/8 PLATE</text>
+<text x="52" y="428" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">VIOLET LEOTARD STAYS PROSE · NO W.VA. JOKE TEXT</text>
+
+</symbol>
+<symbol id="dancehall-globe" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#080907"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 20</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">FIELD INTERVIEW · NIGHT SESSION</text>
+<line x1="52" y1="70" x2="748" y2="70" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="78" x2="748" y2="78" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="86" x2="748" y2="86" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="94" x2="748" y2="94" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="102" x2="748" y2="102" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="110" x2="748" y2="110" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="118" x2="748" y2="118" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="126" x2="748" y2="126" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="134" x2="748" y2="134" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="142" x2="748" y2="142" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="150" x2="748" y2="150" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="158" x2="748" y2="158" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="166" x2="748" y2="166" stroke="#E8DCC0" stroke-width="1" opacity="0.12"/>
+<line x1="52" y1="66" x2="92" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="80" y1="66" x2="120" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="108" y1="66" x2="148" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="136" y1="66" x2="176" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="164" y1="66" x2="204" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="192" y1="66" x2="232" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="220" y1="66" x2="260" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="248" y1="66" x2="288" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="276" y1="66" x2="316" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="304" y1="66" x2="344" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="332" y1="66" x2="372" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="360" y1="66" x2="400" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="388" y1="66" x2="428" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="416" y1="66" x2="456" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="444" y1="66" x2="484" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="472" y1="66" x2="512" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="500" y1="66" x2="540" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="528" y1="66" x2="568" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="556" y1="66" x2="596" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="584" y1="66" x2="624" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="612" y1="66" x2="652" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="640" y1="66" x2="680" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="668" y1="66" x2="708" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="696" y1="66" x2="736" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<line x1="724" y1="66" x2="764" y2="170" stroke="#E8DCC0" stroke-width="1" opacity="0.10"/>
+<text x="64" y="96" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">TUCSON · NIGHT</text>
+<!-- globe: inverted phosphor dome below where the sun was -->
+<circle cx="589" cy="223" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="387" cy="204" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="536" cy="220" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="551" cy="246" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="505" cy="234" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="315" cy="240" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="369" cy="239" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="316" cy="239" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="465" cy="249" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="395" cy="194" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="367" cy="233" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="498" cy="237" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="467" cy="233" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="652" cy="231" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="358" cy="201" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="268" cy="230" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="506" cy="239" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="485" cy="223" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="279" cy="237" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="441" cy="246" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="439" cy="238" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="303" cy="202" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="150" cy="241" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="446" cy="235" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="336" cy="245" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="397" cy="238" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="264" cy="201" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="434" cy="212" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="589" cy="187" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="638" cy="208" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="377" cy="219" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="419" cy="185" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="339" cy="211" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="302" cy="222" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="519" cy="196" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="160" cy="215" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="456" cy="206" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="370" cy="238" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="537" cy="239" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="173" cy="213" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="421" cy="240" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="481" cy="178" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="567" cy="232" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="379" cy="231" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="98" cy="196" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="400" cy="205" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="377" cy="239" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="440" cy="216" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="507" cy="229" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="430" cy="215" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="291" cy="199" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="101" cy="230" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="413" cy="241" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="647" cy="244" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="475" cy="250" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="279" cy="245" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="491" cy="227" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="559" cy="248" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="403" cy="218" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="295" cy="191" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="609" cy="250" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="333" cy="230" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="161" cy="240" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="261" cy="249" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="611" cy="249" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="250" cy="211" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="395" cy="203" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="329" cy="235" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="481" cy="208" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="613" cy="201" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="468" cy="238" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="408" cy="193" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="501" cy="238" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="252" cy="247" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="354" cy="237" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="561" cy="243" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="447" cy="234" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="376" cy="231" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="113" cy="239" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="352" cy="239" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="349" cy="189" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="357" cy="184" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="441" cy="240" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="395" cy="160" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="434" cy="234" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="427" cy="234" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="481" cy="215" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="602" cy="200" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="201" cy="242" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="71" cy="225" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="381" cy="231" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="431" cy="238" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="610" cy="179" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="541" cy="223" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="161" cy="227" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="236" cy="250" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="328" cy="181" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="390" cy="223" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="185" cy="198" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="336" cy="223" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="172" cy="225" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="517" cy="211" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="361" cy="247" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="130" cy="201" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="612" cy="220" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="635" cy="211" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="323" cy="219" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="346" cy="240" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="461" cy="235" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="453" cy="226" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="501" cy="244" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="612" cy="248" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="300" cy="211" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="253" cy="180" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="448" cy="231" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="618" cy="202" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="425" cy="232" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="440" cy="231" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="426" cy="247" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="541" cy="246" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="398" cy="244" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="349" cy="227" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="505" cy="198" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="689" cy="244" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="360" cy="205" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="638" cy="220" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="438" cy="242" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="408" cy="226" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="737" cy="238" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="393" cy="249" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="366" cy="213" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="383" cy="245" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="270" cy="183" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="478" cy="235" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="289" cy="216" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="376" cy="227" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="148" cy="221" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="441" cy="249" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="680" cy="216" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="151" cy="230" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="437" cy="225" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="519" cy="204" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="514" cy="238" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="581" cy="215" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="410" cy="233" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="646" cy="230" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="395" cy="211" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="351" cy="240" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="311" cy="160" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="349" cy="223" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="243" cy="187" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="430" cy="229" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="186" cy="242" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="221" cy="241" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="465" cy="233" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="285" cy="249" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="593" cy="212" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="611" cy="198" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="372" cy="247" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="462" cy="205" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="502" cy="246" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="434" cy="245" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="173" cy="244" r="1.5" fill="#9FE870" opacity="0.85"/>
+<circle cx="183" cy="225" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="606" cy="243" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="433" cy="236" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="639" cy="236" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="373" cy="248" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="378" cy="243" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="483" cy="224" r="1.8" fill="#9FE870" opacity="0.85"/>
+<circle cx="396" cy="188" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="469" cy="227" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="258" cy="236" r="1.1" fill="#9FE870" opacity="0.85"/>
+<circle cx="648" cy="225" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="191" cy="231" r="1.3" fill="#9FE870" opacity="0.85"/>
+<circle cx="279" cy="188" r="1.1" fill="#9FE870" opacity="0.85"/>
+<line x1="120" y1="252" x2="120" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="144" y1="252" x2="144" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="168" y1="252" x2="168" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="192" y1="252" x2="192" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="216" y1="252" x2="216" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="240" y1="252" x2="240" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="264" y1="252" x2="264" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="288" y1="252" x2="288" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="312" y1="252" x2="312" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="336" y1="252" x2="336" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="360" y1="252" x2="360" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="384" y1="252" x2="384" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="408" y1="252" x2="408" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="432" y1="252" x2="432" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="456" y1="252" x2="456" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="480" y1="252" x2="480" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="504" y1="252" x2="504" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="528" y1="252" x2="528" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="552" y1="252" x2="552" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="576" y1="252" x2="576" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="600" y1="252" x2="600" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="624" y1="252" x2="624" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="648" y1="252" x2="648" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="672" y1="252" x2="672" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<line x1="696" y1="252" x2="696" y2="262" stroke="#9FE870" stroke-width="1" opacity="0.6"/>
+<text x="600" y="170" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#9FE870" opacity="1.0">VAL D'OR</text><text x="600" y="185" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">DANCE-HALL GLOBE · P5</text>
+<!-- void where the sun was -->
+<circle cx="400" cy="168" r="48" fill="none" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="6 5" opacity="0.4"/>
+<text x="400" y="172" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="3" fill="#E8DCC0" opacity="0.45">SUN GONE</text>
+
+<line x1="52" y1="252" x2="748" y2="252" stroke="#E8DCC0" stroke-width="2.5"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.65">
+<line x1="52" y1="252" x2="90" y2="238"/><line x1="90" y1="252" x2="128" y2="238"/>
+<line x1="128" y1="252" x2="166" y2="238"/><line x1="166" y1="252" x2="204" y2="238"/>
+<line x1="204" y1="252" x2="242" y2="238"/><line x1="242" y1="252" x2="280" y2="238"/>
+<line x1="280" y1="252" x2="318" y2="238"/><line x1="318" y1="252" x2="356" y2="238"/>
+<line x1="356" y1="252" x2="394" y2="238"/><line x1="394" y1="252" x2="432" y2="238"/>
+<line x1="432" y1="252" x2="470" y2="238"/><line x1="470" y1="252" x2="508" y2="238"/>
+<line x1="508" y1="252" x2="546" y2="238"/><line x1="546" y1="252" x2="584" y2="238"/>
+<line x1="584" y1="252" x2="622" y2="238"/><line x1="622" y1="252" x2="660" y2="238"/>
+<line x1="660" y1="252" x2="698" y2="238"/><line x1="698" y1="252" x2="736" y2="238"/>
+</g>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.35">
+<line x1="70" y1="238" x2="108" y2="252"/><line x1="146" y1="238" x2="184" y2="252"/>
+<line x1="222" y1="238" x2="260" y2="252"/><line x1="298" y1="238" x2="336" y2="252"/>
+<line x1="374" y1="238" x2="412" y2="252"/><line x1="450" y1="238" x2="488" y2="252"/>
+<line x1="526" y1="238" x2="564" y2="252"/><line x1="602" y1="238" x2="640" y2="252"/>
+<line x1="678" y1="238" x2="716" y2="252"/>
+</g>
+<!-- two seated dune-shadows, sunk low -->
+<ellipse cx="300" cy="330" rx="120" ry="26" fill="#E8DCC0" opacity="0.10" stroke="#E8DCC0" stroke-width="1.5"/>
+<ellipse cx="500" cy="340" rx="120" ry="26" fill="#E8DCC0" opacity="0.10" stroke="#E8DCC0" stroke-width="1.5"/>
+<path d="M 260 330 q 20 -34 44 -30 q 22 4 24 30" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.8"/>
+<path d="M 460 340 q 20 -34 44 -30 q 22 4 24 30" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.8"/>
+<line x1="150" y1="300" x2="650" y2="300" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<text x="150" y="294" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">SPIT-DISTANCE · BOSTON ↔ ROCKS</text>
+<!-- stage-direction glyphs -->
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none">
+<path d="M 120 380 L 120 404 M 112 388 L 128 388 M 114 384 L 126 384"/>
+<rect x="108" y="376" width="24" height="32" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+</g>
+<text x="140" y="396" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">NAILS</text><text x="140" y="411" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">HAND-BACK UP · P8</text>
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none">
+<path d="M 330 388 q 20 -14 44 0 q -8 16 -22 16 q -14 0 -22 -16"/>
+<path d="M 336 400 q 16 8 32 0"/>
+</g>
+<text x="380" y="396" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">HORN</text><text x="380" y="411" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">FORLORN · NAUTICAL</text>
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none">
+<path d="M 560 376 L 572 404 L 584 376 Z"/>
+<line x1="572" y1="384" x2="572" y2="392"/>
+</g>
+<text x="592" y="396" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">DOG</text><text x="592" y="411" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">COYOTE EAR-NOTCH</text>
+<text x="400" y="272" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">DAY-GLO ORANGE STAYS PROSE · NOTHING HERE IS EMBER</text>
+
+</symbol>
+<symbol id="lotus-pull" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 21</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">DESERT HINGE / GYM PARABLE / STREET TESTIMONY</text>
+<!-- PANEL 1: desert hinge -->
+<text x="64" y="120" font-family="'Newsreader',Georgia,serif" font-size="16" font-style="italic" fill="#E8DCC0">walled</text>
+<text x="64" y="142" font-family="'Newsreader',Georgia,serif" font-size="16" font-style="italic" fill="#E8DCC0">nation</text>
+<text x="64" y="176" font-family="'Newsreader',Georgia,serif" font-size="16" font-style="italic" fill="#E8DCC0" opacity="0.7">murated</text>
+<text x="64" y="198" font-family="'Newsreader',Georgia,serif" font-size="16" font-style="italic" fill="#E8DCC0" opacity="0.7">nation</text>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.5">
+<line x1="64" y1="230" x2="150" y2="224"/><line x1="64" y1="242" x2="150" y2="236"/>
+<line x1="64" y1="254" x2="150" y2="248"/><line x1="64" y1="300" x2="150" y2="294"/>
+<line x1="64" y1="312" x2="150" y2="306"/>
+</g>
+<text x="64" y="348" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">HINGE</text><text x="64" y="363" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P1 · ONE LINE</text>
+<!-- cut rule 1 -->
+<rect x="196" y="40" width="6" height="370" fill="#D6402B"/>
+<!-- PANEL 2: guru, center axis x=400 -->
+<line x1="400" y1="72" x2="400" y2="400" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 6" opacity="0.35"/>
+<circle cx="400" cy="120" r="16" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<path d="M 352 190 q 48 -30 96 0 q -48 30 -96 0 Z" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<path d="M 360 176 q 40 -22 80 0" fill="none" stroke="#E8DCC0" stroke-width="1.2" opacity="0.7"/>
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none" opacity="0.8">
+<path d="M 366 168 q 10 -12 22 -8"/><path d="M 412 160 q 12 -4 22 8"/>
+</g>
+<line x1="418" y1="112" x2="428" y2="104" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="436" y="106" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">GLEAM</text>
+<rect x="352" y="208" width="96" height="34" fill="none" stroke="#E05238" stroke-width="2"/>
+<text x="400" y="231" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="14" font-weight="600" letter-spacing="1" fill="#E05238">TRANSCEND</text>
+<rect x="366" y="256" width="68" height="44" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="366" y1="270" x2="434" y2="270" stroke="#E8DCC0" stroke-width="1" opacity="0.6"/>
+<rect x="388" y="282" width="24" height="14" fill="none" stroke="#E8DCC0" stroke-width="1"/>
+<text x="400" y="266" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="2" fill="#E8DCC0" opacity="0.6">TOWEL</text>
+<path d="M 330 340 q 70 -44 140 0" fill="none" stroke="#E8DCC0" stroke-width="2.5"/>
+<line x1="330" y1="340" x2="330" y2="356" stroke="#E8DCC0" stroke-width="2.5"/>
+<line x1="470" y1="340" x2="470" y2="356" stroke="#E8DCC0" stroke-width="2.5"/>
+<path d="M 400 306 L 400 288 M 392 296 L 400 286 L 408 296" stroke="#C9A227" stroke-width="2" fill="none"/>
+<text x="316" y="388" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">CHIN-UP ↑</text><text x="316" y="403" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">THE BAR THAT LIFTS · P5</text>
+<text x="452" y="372" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">LYLE</text>
+<!-- cut rule 2 -->
+<rect x="508" y="40" width="6" height="370" fill="#D6402B"/>
+<!-- PANEL 3: street -->
+<line x1="540" y1="380" x2="740" y2="120" stroke="#E05238" stroke-width="3"/>
+<line x1="552" y1="380" x2="752" y2="120" stroke="#E05238" stroke-width="1" opacity="0.6"/>
+<text x="560" y="110" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#E05238">ORANGE LINE</text>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.6">
+<line x1="540" y1="200" x2="640" y2="200"/><line x1="540" y1="214" x2="640" y2="214"/>
+<line x1="540" y1="228" x2="640" y2="228"/><line x1="540" y1="242" x2="640" y2="242"/>
+<line x1="556" y1="188" x2="556" y2="254"/><line x1="576" y1="188" x2="576" y2="254"/>
+<line x1="596" y1="188" x2="596" y2="254"/><line x1="616" y1="188" x2="616" y2="254"/>
+</g>
+<text x="540" y="272" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.6">NIGHT PLAYGROUND</text>
+<path d="M 660 240 L 710 240 L 704 290 L 666 290 Z" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="685" y="262" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" font-weight="600" fill="#E8DCC0">CR</text>
+<text x="540" y="316" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="15" font-weight="600" letter-spacing="2" fill="#E8DCC0">400 $</text>
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none" opacity="0.8">
+<path d="M 660 320 L 720 320 L 714 308 L 666 308 Z"/><line x1="668" y1="320" x2="668" y2="336"/><line x1="712" y1="320" x2="712" y2="336"/>
+</g>
+<text x="690" y="352" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="2" fill="#E8DCC0" opacity="0.6">CHINATOWN GATE</text>
+<text x="540" y="392" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#E8DCC0" opacity="0.8">YRSTRULY · C · POOR TONY</text>
+<text x="540" y="408" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">BAG MANILA · VIOLET STAYS PROSE</text>
+
+</symbol>
+<symbol id="guts-phone" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+<rect x="24" y="24" width="340" height="220" fill="#C9A227" opacity="0.05"/>
+<rect x="436" y="24" width="340" height="220" fill="#8FA3B8" opacity="0.06"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 22</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">CROSS-COUNTRY CALL + FOUNDATION HISTORY</text>
+<text x="64" y="96" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="3" fill="#C9A227">PHOENIX · 90°F+</text>
+<text x="700" y="96" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="3" fill="#E8DCC0">ENFIELD · COLD</text>
+<!-- heat shimmer left -->
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none" opacity="0.6">
+<path d="M 90 130 q 8 -12 0 -24 q -8 -12 0 -24"/><path d="M 120 130 q 8 -12 0 -24 q -8 -12 0 -24"/>
+<path d="M 150 130 q 8 -12 0 -24 q -8 -12 0 -24"/><path d="M 180 130 q 8 -12 0 -24 q -8 -12 0 -24"/>
+</g>
+<!-- pith helmet on sidewalk -->
+<ellipse cx="200" cy="200" rx="52" ry="12" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<path d="M 164 200 q 36 -34 72 0" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<line x1="120" y1="216" x2="300" y2="216" stroke="#E8DCC0" stroke-width="2"/>
+<text x="200" y="238" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="4" fill="#E8DCC0" opacity="0.7">SIZZLE</text>
+<text x="64" y="170" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">PITH HELMET</text><text x="64" y="185" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">FACE DOWN · P16/18</text>
+<!-- cold ticks right -->
+<g stroke="#E8DCC0" stroke-width="1.5">
+<line x1="560" y1="110" x2="580" y2="110"/><line x1="570" y1="100" x2="570" y2="120"/>
+<line x1="600" y1="140" x2="620" y2="140"/><line x1="610" y1="130" x2="610" y2="150"/>
+<line x1="560" y1="170" x2="580" y2="170"/><line x1="570" y1="160" x2="570" y2="180"/>
+<line x1="600" y1="190" x2="620" y2="190"/><line x1="610" y1="180" x2="610" y2="200"/>
+</g>
+<!-- transparent phone center -->
+<rect x="330" y="110" width="140" height="130" fill="#FFFFFF" opacity="0.04" stroke="#E8DCC0" stroke-width="2.5"/>
+<rect x="338" y="118" width="124" height="114" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+<circle cx="340" cy="120" r="2.5" fill="#E8DCC0"/><circle cx="460" cy="120" r="2.5" fill="#E8DCC0"/>
+<g stroke="#9FE870" stroke-width="1.5" fill="none" opacity="0.95">
+<path d="M 350 200 L 350 170 L 380 170 L 380 150 L 410 150"/>
+<path d="M 450 200 L 450 180 L 420 180 L 420 160"/>
+<path d="M 365 200 L 365 190 L 395 190"/>
+</g>
+<g fill="#9FE870" opacity="0.9">
+<circle cx="350" cy="202" r="2.5"/><circle cx="410" cy="148" r="2.5"/><circle cx="450" cy="202" r="2.5"/><circle cx="420" cy="162" r="2"/>
+</g>
+<rect x="372" y="178" width="16" height="16" fill="none" stroke="#9FE870" stroke-width="1.5"/>
+<rect x="400" y="196" width="12" height="12" fill="none" stroke="#9FE870" stroke-width="1.5"/>
+<text x="478" y="180" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#9FE870" opacity="1.0">MMYELLOW</text><text x="478" y="195" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P2 · GUTS VISIBLE</text>
+<text x="400" y="262" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="3" fill="#E8DCC0" opacity="0.55">GOSSIP ABOVE</text>
+<!-- ledger rule -->
+<line x1="52" y1="278" x2="748" y2="278" stroke="#C9A227" stroke-width="2"/>
+<text x="400" y="296" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="3" fill="#C9A227" opacity="0.8">GRANITE BELOW</text>
+<!-- ennet foundation courses -->
+<g stroke="#E8DCC0" stroke-width="1.2">
+<line x1="120" y1="320" x2="680" y2="320"/><line x1="120" y1="344" x2="680" y2="344"/>
+<line x1="120" y1="368" x2="680" y2="368"/>
+<line x1="190" y1="320" x2="190" y2="344"/><line x1="330" y1="320" x2="330" y2="344"/><line x1="470" y1="320" x2="470" y2="344"/><line x1="610" y1="320" x2="610" y2="344"/>
+<line x1="260" y1="344" x2="260" y2="368"/><line x1="400" y1="344" x2="400" y2="368"/><line x1="540" y1="344" x2="540" y2="368"/>
+<line x1="120" y1="320" x2="120" y2="368"/><line x1="680" y1="320" x2="680" y2="368"/>
+</g>
+<path d="M 376 320 L 424 320 L 418 344 L 382 344 Z" fill="none" stroke="#C9A227" stroke-width="2"/>
+<text x="400" y="337" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" fill="#C9A227">22</text>
+<text x="440" y="338" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">22-CLIENTS</text><text x="440" y="353" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">KEYSTONE</text>
+<text x="600" y="362" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" font-weight="600" letter-spacing="1" fill="#E8DCC0" opacity="0.8">M.W. WHOPPER</text>
+<text x="120" y="392" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">ENNET HOUSE No. 49 · CORNER-STONE DATED Y.W.</text>
+<text x="680" y="392" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">FOUNDER UNPICTURED</text>
+
+</symbol>
+<symbol id="pulley-barrel" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+<rect x="0" y="0" width="800" height="450" fill="#E8DCC0" opacity="0.04"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 23</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">INTCOM 626 · MEMO CAH-NNE22</text>
+<!-- routing slip head -->
+<rect x="52" y="72" width="696" height="86" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.9"/>
+<line x1="52" y1="100" x2="748" y2="100" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+<line x1="52" y1="128" x2="748" y2="128" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+<text x="64" y="94" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="13" font-weight="600" letter-spacing="1" fill="#E8DCC0" opacity="0.95">FROM: MURRAYF@CLMSHQNNE22.626INTCOM</text>
+<text x="64" y="121" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="13" font-weight="600" letter-spacing="1" fill="#E8DCC0" opacity="0.95">TO: POWELLG/SANCHEZM/PARRYK@CLMHQNNE.626INTCOM</text>
+<text x="64" y="150" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="13" font-weight="600" letter-spacing="1" fill="#9FE870" opacity="0.95">MESSAGE: GUYS, GET A LOAD.</text>
+<text x="560" y="150" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#9FE870" opacity="1.0">GUYS-GET-A-LOAD</text><text x="560" y="165" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P1 VERBATIM</text>
+<!-- six-story section -->
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.85">
+<line x1="52" y1="200" x2="330" y2="200"/><line x1="52" y1="228" x2="330" y2="228"/>
+<line x1="52" y1="256" x2="330" y2="256"/><line x1="52" y1="284" x2="330" y2="284"/>
+<line x1="52" y1="312" x2="330" y2="312"/><line x1="52" y1="340" x2="330" y2="340"/>
+<line x1="52" y1="200" x2="52" y2="340"/><line x1="330" y1="200" x2="330" y2="340"/>
+</g>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.35">
+<line x1="70" y1="206" x2="120" y2="206"/><line x1="70" y1="234" x2="150" y2="234"/>
+<line x1="70" y1="262" x2="110" y2="262"/><line x1="70" y1="290" x2="140" y2="290"/>
+<line x1="70" y1="318" x2="100" y2="318"/>
+</g>
+<text x="336" y="205" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">ROOF</text><text x="336" y="220" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">SIXTH FLOOR</text>
+<text x="336" y="289" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238" opacity="1.0">3RD</text><text x="336" y="304" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">MEET ×2</text>
+<text x="336" y="345" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">GROUND</text><text x="336" y="360" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">BRICK-STREWN</text>
+<!-- pulley wheel -->
+<circle cx="200" cy="184" r="17" fill="none" stroke="#E8DCC0" stroke-width="2.5"/>
+<circle cx="200" cy="184" r="10" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.7"/>
+<circle cx="200" cy="184" r="3" fill="#E8DCC0" opacity="0.9"/>
+<line x1="183" y1="184" x2="217" y2="184" stroke="#E8DCC0" stroke-width="1" opacity="0.6"/>
+<line x1="200" y1="167" x2="200" y2="201" stroke="#E8DCC0" stroke-width="1" opacity="0.6"/>
+<text x="224" y="180" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">PULLEY</text><text x="224" y="195" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">SIXTH FLOOR</text>
+<!-- rope: continuous left, dashed over 3rd interval -->
+<path d="M 200 201 L 200 256" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<path d="M 200 256 L 200 312" fill="none" stroke="#E8DCC0" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+<path d="M 200 312 L 200 348" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<path d="M 200 167 C 260 167 280 190 292 210 L 292 250" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<text x="208" y="236" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">KNOW DEEP</text><text x="208" y="251" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">TWO KNUCKLES · P8</text>
+<!-- knuckle hand-grip -->
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none">
+<path d="M 192 318 q 8 -6 16 0 l 0 14 q -8 6 -16 0 Z"/>
+<line x1="196" y1="318" x2="196" y2="332"/><line x1="200" y1="317" x2="200" y2="333"/><line x1="204" y1="318" x2="204" y2="332"/>
+</g>
+<text x="224" y="330" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">KNUCKLES</text><text x="224" y="345" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">HOLDING TIGHT</text>
+<!-- barrel ascending right past 3rd -->
+<g>
+<path d="M 268 236 L 316 236 L 312 286 L 272 286 Z" fill="#D6402B" opacity="0.28" stroke="#E05238" stroke-width="2.5"/>
+<g stroke="#E05238" stroke-width="1" opacity="0.9">
+<line x1="270" y1="248" x2="314" y2="248"/><line x1="271" y1="260" x2="313" y2="260"/><line x1="272" y1="272" x2="312" y2="272"/>
+<line x1="282" y1="238" x2="280" y2="284"/><line x1="296" y1="238" x2="296" y2="285"/><line x1="306" y1="238" x2="308" y2="284"/>
+</g>
+<line x1="292" y1="236" x2="292" y2="210" stroke="#E8DCC0" stroke-width="2"/>
+</g>
+<rect x="252" y="200" width="34" height="20" fill="none" stroke="#E05238" stroke-width="1.5"/>
+<text x="269" y="215" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" fill="#E05238">#3</text>
+<rect x="310" y="292" width="40" height="20" fill="none" stroke="#E05238" stroke-width="1.5"/>
+<text x="330" y="307" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" fill="#E05238">#11</text>
+<!-- 3rd-floor starbursts -->
+<g stroke="#E05238" stroke-width="1.5">
+<line x1="246" y1="284" x2="232" y2="276"/><line x1="246" y1="284" x2="232" y2="284"/><line x1="246" y1="284" x2="232" y2="292"/>
+<line x1="246" y1="284" x2="240" y2="268"/><line x1="246" y1="284" x2="240" y2="300"/>
+<line x1="338" y1="284" x2="352" y2="276"/><line x1="338" y1="284" x2="352" y2="284"/><line x1="338" y1="284" x2="352" y2="292"/>
+</g>
+<!-- balance ticket 900KG vs 75KG -->
+<rect x="560" y="200" width="188" height="112" fill="none" stroke="#E8DCC0" stroke-width="1.5" opacity="0.9"/>
+<text x="572" y="224" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="1" fill="#E8DCC0">900 KG ▼ BRICK</text>
+<text x="572" y="244" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="1" fill="#E8DCC0">75 KG ▲ GLYNN</text>
+<line x1="572" y1="258" x2="736" y2="238" stroke="#E05238" stroke-width="2"/>
+<line x1="654" y1="248" x2="654" y2="288" stroke="#E8DCC0" stroke-width="1.5"/>
+<line x1="640" y1="288" x2="668" y2="288" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="572" y="306" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238" opacity="1.0">BLOCK-#11</text><text x="572" y="321" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">TIPPED SCALE</text>
+<!-- ground scatter + 30kg inset -->
+<g fill="#E8DCC0" opacity="0.7">
+<circle cx="120" cy="356" r="1.6"/><circle cx="150" cy="360" r="1.3"/><circle cx="180" cy="355" r="1.8"/>
+<circle cx="210" cy="361" r="1.2"/><circle cx="240" cy="357" r="1.6"/><circle cx="270" cy="360" r="1.3"/>
+<circle cx="300" cy="356" r="1.7"/><circle cx="135" cy="366" r="1.2"/><circle cx="225" cy="367" r="1.4"/>
+</g>
+<text x="560" y="348" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">30 KG</text><text x="560" y="363" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">EMPTIED BARREL · P9</text>
+<!-- endtrans rule -->
+<rect x="52" y="384" width="696" height="6" fill="#D6402B"/>
+<text x="52" y="404" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E05238">ENDTRANS · INTCOM 626</text>
+<text x="748" y="404" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P12 · P13 CUT</text>
+
+</symbol>
+<symbol id="hero-triptych" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+<rect x="0" y="0" width="800" height="450" fill="#E8DCC0" opacity="0.04"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 24</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">GRADED ESSAY · B/B+</text>
+<!-- ACTION BAY left third -->
+<text x="64" y="96" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0">ACTION · McGARRETT</text>
+<circle cx="170" cy="185" r="58" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<circle cx="170" cy="185" r="42" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.7"/>
+<circle cx="170" cy="185" r="27" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.5"/>
+<rect x="152" y="167" width="36" height="36" fill="none" stroke="#E8DCC0" stroke-width="2" transform="rotate(45 170 185)"/>
+<text x="64" y="280" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">HOMING-IN</text><text x="64" y="295" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">ONE CASE / WEEK</text>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.3">
+<line x1="64" y1="300" x2="276" y2="300"/><line x1="64" y1="308" x2="276" y2="308"/><line x1="64" y1="316" x2="276" y2="316"/>
+</g>
+<text x="64" y="332" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#E8DCC0" opacity="0.6">BARE FIELD — NO CLUTTER</text>
+<!-- DOLLY-TRACK divider -->
+<line x1="300" y1="72" x2="300" y2="340" stroke="#C9A227" stroke-width="2"/>
+<g stroke="#C9A227" stroke-width="1" opacity="0.7">
+<line x1="292" y1="90" x2="308" y2="90"/><line x1="292" y1="130" x2="308" y2="130"/>
+<line x1="292" y1="170" x2="308" y2="170"/><line x1="292" y1="210" x2="308" y2="210"/>
+<line x1="292" y1="250" x2="308" y2="250"/><line x1="292" y1="290" x2="308" y2="290"/>
+</g>
+<rect x="252" y="150" width="96" height="44" fill="#11140F" stroke="#C9A227" stroke-width="1.5"/>
+<text x="300" y="168" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" font-weight="600" letter-spacing="1" fill="#C9A227">TRIPODIC</text>
+<text x="300" y="182" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" font-weight="600" letter-spacing="1" fill="#C9A227">CLOSE-UP</text>
+<!-- REACTION BAY right -->
+<text x="440" y="96" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0">REACTION · FURILLO</text>
+<rect x="430" y="100" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="436" y1="112" x2="480" y2="112" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="436" y1="120" x2="472" y2="120" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="492" y="100" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="498" y1="112" x2="542" y2="112" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="498" y1="120" x2="534" y2="120" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="554" y="100" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="560" y1="112" x2="604" y2="112" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="560" y1="120" x2="596" y2="120" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="616" y="100" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="622" y1="112" x2="666" y2="112" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="622" y1="120" x2="658" y2="120" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="416" y="146" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="422" y1="158" x2="466" y2="158" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="422" y1="166" x2="458" y2="166" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="478" y="146" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="484" y1="158" x2="528" y2="158" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="484" y1="166" x2="520" y2="166" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="540" y="146" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="546" y1="158" x2="590" y2="158" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="546" y1="166" x2="582" y2="166" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="602" y="146" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="608" y1="158" x2="652" y2="158" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="608" y1="166" x2="644" y2="166" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="402" y="192" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="408" y1="204" x2="452" y2="204" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="408" y1="212" x2="444" y2="212" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="464" y="192" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="470" y1="204" x2="514" y2="204" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="470" y1="212" x2="506" y2="212" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<rect x="526" y="192" width="56" height="40" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.75"/><line x1="532" y1="204" x2="576" y2="204" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/><line x1="532" y1="212" x2="568" y2="212" stroke="#E8DCC0" stroke-width="1" opacity="0.3"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.5">
+<line x1="440" y1="248" x2="740" y2="248"/><line x1="460" y1="256" x2="748" y2="256"/><line x1="440" y1="264" x2="720" y2="264"/>
+</g>
+<text x="440" y="286" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0" opacity="1.0">TRIAGE</text><text x="440" y="301" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">ELEVEN CASES</text>
+<!-- circled B/B+ grader mark -->
+<g transform="rotate(-8 688 116)">
+<circle cx="688" cy="116" r="30" fill="none" stroke="#E05238" stroke-width="2.5"/>
+<text x="688" y="124" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="17" font-weight="600" fill="#E05238">B/B+</text>
+</g>
+<text x="560" y="130" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238" opacity="1.0">UNSUPPORTED-LEAP</text><text x="560" y="145" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">GRADER'S HAND</text>
+<!-- prophecy panel -->
+<rect x="52" y="344" width="696" height="62" fill="none" stroke="#E05238" stroke-width="1.5"/>
+<rect x="64" y="354" width="120" height="42" fill="none" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="5 3" opacity="0.8"/>
+<line x1="124" y1="354" x2="124" y2="396" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>
+<line x1="64" y1="375" x2="184" y2="375" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>
+<text x="200" y="372" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#E8DCC0">CATATONIC HERO — EMPTY STATIC FRAME</text>
+<text x="200" y="390" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#E8DCC0" opacity="0.6">CARRIED BY BURLY EXTRAS → → · RETROGRADE-AMINES</text>
+<text x="640" y="368" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="2" fill="#E05238">P9 ▸</text>
+
+</symbol>
+<symbol id="aigner-heart" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#F2ECDC"/>
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#14120E" stroke-width="3"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#14120E" stroke-width="1" opacity="0.6"/>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#14120E" opacity="0.8">PLATE 25</text>
+<text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#14120E" opacity="0.55">SOFT PROFILE</text>
+<!-- masthead -->
+<text x="400" y="122" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-size="64" letter-spacing="6" fill="#14120E">MOMENT</text>
+<line x1="52" y1="138" x2="748" y2="138" stroke="#14120E" stroke-width="2"/>
+<line x1="52" y1="143" x2="748" y2="143" stroke="#14120E" stroke-width="1" opacity="0.6"/>
+<text x="64" y="156" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#14120E">10 AUGUST · YEAR OF THE DEPEND ADULT UNDERGARMENT</text>
+<rect x="640" y="144" width="96" height="20" fill="none" stroke="#14120E" stroke-width="1.5"/>
+<text x="688" y="158" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#14120E">Y.D.A.U.</text>
+<text x="64" y="178" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#D6402B">KICKER: THE SECOND JARVIK IX · KEPT FROM THE PEOPLE</text>
+<!-- purse spot illustration -->
+<rect x="64" y="196" width="180" height="130" fill="none" stroke="#14120E" stroke-width="2"/>
+<path d="M 104 240 L 204 240 L 196 306 L 112 306 Z" fill="none" stroke="#14120E" stroke-width="2.5"/>
+<path d="M 120 240 q 34 -26 68 0" fill="none" stroke="#14120E" stroke-width="2"/>
+<rect x="142" y="262" width="24" height="14" fill="none" stroke="#14120E" stroke-width="1.5"/>
+<text x="154" y="273" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" font-weight="600" fill="#14120E">AGNES</text>
+<g stroke="#D6402B" stroke-width="2.5" fill="none">
+<path d="M 130 240 L 130 208"/><path d="M 178 240 L 178 208"/>
+</g>
+<rect x="120" y="198" width="20" height="12" fill="none" stroke="#D6402B" stroke-width="2"/>
+<rect x="168" y="198" width="20" height="12" fill="none" stroke="#D6402B" stroke-width="2"/>
+<g stroke="#D6402B" stroke-width="1.5">
+<line x1="136" y1="216" x2="142" y2="216"/><line x1="136" y1="224" x2="142" y2="224"/>
+<line x1="166" y1="216" x2="172" y2="216"/><line x1="166" y1="224" x2="172" y2="224"/>
+</g>
+<text x="154" y="340" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#14120E" opacity="0.7">ETIENNE AIGNER · IX</text>
+<!-- chase ribbon -->
+<path d="M 264 220 q 60 -18 120 -4 q 60 14 120 0 q 60 -14 120 2 q 40 8 60 -2" fill="none" stroke="#D6402B" stroke-width="2"/>
+<text x="484" y="212" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#D6402B">SHE STOLE MY HEART · STOP HER!</text>
+<g fill="#14120E" opacity="0.85">
+<ellipse cx="300" cy="252" rx="5" ry="10" transform="rotate(-20 300 252)"/><ellipse cx="340" cy="262" rx="5" ry="10" transform="rotate(-20 340 262)"/>
+<ellipse cx="380" cy="252" rx="5" ry="10" transform="rotate(-20 380 252)"/><ellipse cx="420" cy="262" rx="5" ry="10" transform="rotate(-20 420 262)"/>
+<ellipse cx="460" cy="252" rx="5" ry="10" transform="rotate(-20 460 252)"/>
+</g>
+<path d="M 500 268 q 20 -18 44 -8 q 20 8 14 28" fill="none" stroke="#14120E" stroke-width="1.5"/>
+<g fill="#14120E" opacity="0.7">
+<ellipse cx="320" cy="282" rx="4" ry="8" transform="rotate(-20 320 282)"/><ellipse cx="360" cy="290" rx="4" ry="8" transform="rotate(-20 360 282)"/>
+<ellipse cx="400" cy="282" rx="4" ry="8" transform="rotate(-20 400 282)"/><ellipse cx="440" cy="290" rx="4" ry="8" transform="rotate(-20 440 282)"/>
+</g>
+<path d="M 500 268 q 10 -22 32 -20 q 18 2 16 20 q -2 14 -18 14" fill="none" stroke="#14120E" stroke-width="1.2"/>
+<path d="M 560 250 q 30 4 44 26 q 8 14 4 30" fill="none" stroke="#14120E" stroke-width="1" opacity="0.7"/>
+<text x="600" y="300" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#14120E" opacity="0.65">BOA · WIG-STRAND</text>
+<!-- four red block numerals -->
+<g font-family="'Archivo Black','Arial Black',sans-serif" font-size="26" fill="#D6402B" text-anchor="middle">
+<text x="300" y="318">1</text><text x="346" y="318">2</text><text x="392" y="318">3</text><text x="438" y="318">4</text>
+</g>
+<text x="369" y="338" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#14120E" opacity="0.65">FOUR BLOCKS</text>
+<!-- shrug mark -->
+<g stroke="#14120E" stroke-width="2" fill="none">
+<path d="M 520 320 L 560 320"/><path d="M 560 320 L 560 308 M 560 320 L 572 314"/>
+<circle cx="540" cy="308" r="8"/>
+</g>
+<text x="596" y="322" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#14120E">HAPPENS-ALL-THE-TIME</text>
+<!-- colophon -->
+<line x1="52" y1="360" x2="748" y2="360" stroke="#14120E" stroke-width="2"/>
+<g stroke="#14120E" stroke-width="1.5">
+<line x1="80" y1="376" x2="100" y2="396"/><line x1="120" y1="376" x2="110" y2="396"/><line x1="160" y1="376" x2="170" y2="396"/>
+</g>
+<rect x="220" y="374" width="120" height="26" fill="none" stroke="#14120E" stroke-width="1.5"/>
+<text x="280" y="391" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#14120E">TOE TAG</text>
+<g stroke="#14120E" stroke-width="1.5" fill="none">
+<circle cx="420" cy="387" r="12"/>
+<line x1="420" y1="375" x2="420" y2="371"/><line x1="432" y1="387" x2="436" y2="387"/><line x1="420" y1="399" x2="420" y2="403"/><line x1="408" y1="387" x2="404" y2="387"/>
+<line x1="432" y1="387" x2="480" y2="387"/>
+</g>
+<text x="500" y="391" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#14120E" opacity="0.7">POWER SAW · P8</text>
+<text x="748" y="410" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#14120E" opacity="0.55">BEHIND THE LIBRARY</text>
+
+</symbol>
+<symbol id="tally-ledger" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+<rect x="0" y="0" width="800" height="450" fill="#E8DCC0" opacity="0.04"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.14">
+<line x1="0" y1="60" x2="800" y2="60"/><line x1="0" y1="120" x2="800" y2="120"/>
+<line x1="0" y1="180" x2="800" y2="180"/><line x1="0" y1="240" x2="800" y2="240"/>
+<line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="360" x2="800" y2="360"/>
+</g>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 26</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">ALPHABETICAL TALLY · 7 GROUPS</text>
+<!-- drop shadow: ONLY plate with one -->
+<rect x="168" y="86" width="496" height="330" fill="#000000" opacity="0.55"/>
+<!-- portrait file card 62% -->
+<rect x="152" y="72" width="496" height="330" fill="#151811" stroke="#E8DCC0" stroke-width="2"/>
+<rect x="152" y="72" width="120" height="26" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<text x="162" y="90" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#E8DCC0">FILE-7</text>
+<g fill="#11140F" stroke="#E8DCC0" stroke-width="1.5" opacity="0.9">
+<circle cx="170" cy="140" r="5"/><circle cx="170" cy="300" r="5"/>
+</g>
+<!-- classification stamp -->
+<rect x="186" y="112" width="428" height="34" fill="none" stroke="#E05238" stroke-width="2.5"/>
+<text x="400" y="135" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="15" font-weight="600" letter-spacing="2" fill="#E05238">CLASSIFIED · TERRORIST-EXTORTIONIST</text>
+<text x="400" y="166" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.8">R.C.M.P. / U.S.O.U.S.</text>
+<!-- legend strip -->
+<rect x="186" y="178" width="428" height="30" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.7"/>
+<text x="400" y="198" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#E8DCC0">Q · E · S · V · <tspan fill="#E05238">VV</tspan></text>
+<line x1="186" y1="218" x2="614" y2="218" stroke="#C9A227" stroke-width="1" opacity="0.7"/>
+<g stroke="#E8DCC0" stroke-width="1.4" fill="none" opacity="0.95"><circle cx="190" cy="233" r="6"/><line x1="190" y1="233" x2="190" y2="224"/><line x1="190" y1="227" x2="197" y2="227"/><line x1="196" y1="233" x2="196" y2="239"/><line x1="190" y1="239" x2="198" y2="239"/></g><text x="206" y="237" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#E8DCC0">LES ASSASSINS DES FAUTEUILS ROLLENTS</text>
+<line x1="200" y1="244" x2="400" y2="244" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+<text x="560" y="237" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238">Q·S·VV</text><text x="186" y="259" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#E8DCC0">LE BLOC QUÉBECOIS</text>
+<line x1="200" y1="266" x2="400" y2="266" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+<text x="560" y="259" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0">Q·S·E</text><text x="186" y="281" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#E8DCC0">CALGARIAN PRO-CANADIAN PHALANX</text>
+<line x1="200" y1="288" x2="400" y2="288" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+<text x="560" y="281" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0">E·V</text><text x="186" y="303" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#E8DCC0">LES FILS DE MONTCALM</text>
+<line x1="200" y1="310" x2="400" y2="310" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+<text x="560" y="303" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0">Q·E</text><text x="186" y="325" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#E8DCC0">LES FILS DE PAPINEAU</text>
+<line x1="200" y1="332" x2="400" y2="332" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+<text x="560" y="325" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0">Q·S·V</text><text x="186" y="347" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#E8DCC0">LE FRONT DE LA LIBÉRATION DE LA QUÉBEC</text>
+<line x1="200" y1="354" x2="400" y2="354" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+<text x="560" y="347" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238">Q·S·VV</text><text x="186" y="369" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#E8DCC0">LE PARTI QUÉBECOIS</text>
+<line x1="200" y1="376" x2="400" y2="376" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+<text x="560" y="369" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0">Q·S·E</text>
+<text x="186" y="408" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">ROWS BREAK AT SOURCE EM-DASHES ONLY</text>
+<text x="614" y="408" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.5">P1 LEGEND · P2 CHAIN</text>
+
+</symbol>
+<symbol id="mask-vendor" viewBox="0 0 800 450">
+
+<rect x="0" y="0" width="800" height="450" fill="#11140F"/>
+
+<rect x="24" y="24" width="752" height="402" fill="none" stroke="#E8DCC0" stroke-width="2.5" opacity="0.9"/>
+<rect x="32" y="32" width="736" height="386" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.4"/>
+<g stroke="#C9A227" stroke-width="2" opacity="0.9">
+<line x1="24" y1="40" x2="48" y2="40"/><line x1="40" y1="24" x2="40" y2="48"/>
+<line x1="752" y1="40" x2="776" y2="40"/><line x1="760" y1="24" x2="760" y2="48"/>
+<line x1="24" y1="410" x2="48" y2="410"/><line x1="40" y1="402" x2="40" y2="426"/>
+<line x1="752" y1="410" x2="776" y2="410"/><line x1="760" y1="402" x2="760" y2="426"/>
+</g>
+<text x="44" y="60" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E8DCC0" opacity="0.85">PLATE 27</text><text x="756" y="60" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" letter-spacing="3" fill="#E8DCC0" opacity="0.5">TREATISE + VENDOR BROADSIDE + PROFILE PLATES</text>
+<!-- homunculus specimen pinned top-left -->
+<g stroke="#E8DCC0" stroke-width="1.5" fill="none">
+<circle cx="80" cy="110" r="14"/>
+<line x1="66" y1="100" x2="94" y2="100"/>
+<rect x="68" y="88" width="24" height="8"/>
+<line x1="94" y1="110" x2="108" y2="124"/>
+</g>
+<text x="64" y="142" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">HOMUNCULUS</text>
+<!-- theses 1-2-3 -->
+<g font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="22" font-weight="600" fill="#C9A227" text-anchor="middle">
+<text x="150" y="116">1</text><text x="150" y="162">2</text><text x="150" y="208">3</text>
+</g>
+<text x="168" y="112" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="1" fill="#E8DCC0" opacity="0.75">STRESS</text>
+<text x="168" y="158" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="1" fill="#E8DCC0" opacity="0.75">VANITY</text>
+<text x="168" y="204" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="1" fill="#E8DCC0" opacity="0.75">MICRO-€</text>
+<!-- annular curve plot -->
+<rect x="240" y="84" width="130" height="80" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<path d="M 248 150 q 30 -60 52 -52 q 24 8 20 52 q -4 8 -72 0 Z" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<path d="M 300 98 L 300 150" stroke="#E8DCC0" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+<text x="240" y="178" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">ANNULAR CURVE · KICKED TENT</text>
+<!-- tableau diorama card -->
+<rect x="64" y="228" width="150" height="90" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<g stroke="#E8DCC0" stroke-width="2">
+<line x1="64" y1="244" x2="80" y2="244"/><line x1="64" y1="244" x2="64" y2="260"/>
+<line x1="214" y1="244" x2="198" y2="244"/><line x1="214" y1="244" x2="214" y2="260"/>
+<line x1="64" y1="302" x2="80" y2="302"/><line x1="64" y1="302" x2="64" y2="286"/>
+<line x1="214" y1="302" x2="198" y2="302"/><line x1="214" y1="302" x2="214" y2="286"/>
+</g>
+<text x="139" y="272" text-anchor="middle" font-family="'Newsreader',Georgia,serif" font-size="15" font-style="italic" fill="#E8DCC0" opacity="0.85">tableau</text>
+<text x="139" y="292" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">DIORAMA · LENS-CAP</text>
+<!-- mask specimens -->
+<rect x="240" y="196" width="70" height="60" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<g stroke="#E8DCC0" stroke-width="1" opacity="0.5">
+<line x1="240" y1="216" x2="310" y2="216"/><line x1="240" y1="236" x2="310" y2="236"/>
+<line x1="263" y1="196" x2="263" y2="256"/><line x1="287" y1="196" x2="287" y2="256"/>
+</g>
+<text x="240" y="270" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">HD-COMPOSITE</text>
+<ellipse cx="350" cy="226" rx="24" ry="30" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<ellipse cx="342" cy="220" rx="4" ry="6" fill="none" stroke="#E8DCC0" stroke-width="1"/>
+<ellipse cx="358" cy="220" rx="4" ry="6" fill="none" stroke="#E8DCC0" stroke-width="1"/>
+<text x="322" y="270" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">POLYBUTYLENE</text>
+<rect x="240" y="282" width="150" height="36" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<line x1="290" y1="318" x2="340" y2="318" stroke="#E8DCC0" stroke-width="3"/>
+<text x="315" y="304" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="1" fill="#E8DCC0" opacity="0.7">2-D CUTOUT · NECK-STUMP</text>
+<!-- blind-phone coda -->
+<rect x="64" y="332" width="326" height="34" fill="none" stroke="#E8DCC0" stroke-width="1" opacity="0.7"/>
+<rect x="76" y="338" width="40" height="22" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<g fill="#E8DCC0" opacity="0.8">
+<circle cx="84" cy="345" r="1.5"/><circle cx="92" cy="345" r="1.5"/><circle cx="100" cy="345" r="1.5"/>
+<circle cx="84" cy="353" r="1.5"/><circle cx="92" cy="353" r="1.5"/><circle cx="100" cy="353" r="1.5"/>
+</g>
+<text x="128" y="353" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.7">BLIND PHONE · 6 PINHOLES · n.62</text>
+<!-- canopy hinge -->
+<path d="M 410 32 q 12 20 0 40 q -12 20 0 40 q 12 20 0 40 q -12 20 0 40 q 12 20 0 40 q -12 20 0 40 q 12 20 0 40 q -12 20 0 40 q 12 20 0 40 q -12 20 0 34" fill="none" stroke="#E05238" stroke-width="2.5"/>
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none" opacity="0.8">
+<ellipse cx="410" cy="120" rx="14" ry="6"/><ellipse cx="410" cy="230" rx="14" ry="6"/><ellipse cx="410" cy="340" rx="14" ry="6"/>
+</g>
+<text x="428" y="250" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E05238" opacity="1.0">PAPERY-CAP</text><text x="428" y="265" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P17 HINGE</text>
+<!-- vendor tub -->
+<path d="M 470 300 L 640 300 L 628 380 L 482 380 Z" fill="none" stroke="#E8DCC0" stroke-width="2"/>
+<text x="555" y="346" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#E8DCC0">WIENERS·FENWAY</text>
+<g stroke="#E8DCC0" stroke-width="1.2" fill="none">
+<path d="M 490 300 L 494 282 L 498 300"/><path d="M 512 300 L 516 282 L 520 300"/>
+<path d="M 534 300 L 538 282 L 542 300"/><path d="M 556 300 L 560 282 L 564 300"/>
+<path d="M 578 300 L 582 282 L 586 300"/><path d="M 600 300 L 604 282 L 608 300"/>
+</g>
+<text x="470" y="290" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">CONICAL ×6 · 10$/CC →</text>
+
+<!-- poster stack -->
+<text x="600" y="110" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-size="34" fill="#E8DCC0">URINE!</text>
+<text x="600" y="142" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-size="19" fill="#E8DCC0">CLINICALLY STERILE</text>
+<text x="600" y="172" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-size="24" fill="#E8DCC0">PIPING HOT!</text>
+<line x1="500" y1="182" x2="700" y2="182" stroke="#E05238" stroke-width="2.5"/>
+<text x="600" y="210" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-size="16" fill="#E8DCC0">URINE TROUBLE?</text>
+<!-- nameplate ledgers -->
+<g font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#C9A227">
+<text x="470" y="238">PEMULIS · P29</text><text x="470" y="256">HAL · P31</text><text x="470" y="274">MARIO · P33</text>
+</g>
+<line x1="470" y1="246" x2="590" y2="246" stroke="#C9A227" stroke-width="1" opacity="0.5"/>
+<line x1="470" y1="264" x2="590" y2="264" stroke="#C9A227" stroke-width="1" opacity="0.5"/>
+<path d="M 660 230 L 730 230 L 722 248 L 660 248 Z" fill="none" stroke="#E8DCC0" stroke-width="1.2"/>
+<text x="695" y="244" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" font-weight="600" fill="#E8DCC0">WOLF-SPIDERS</text>
+<text x="470" y="404" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="11" font-weight="600" letter-spacing="2" fill="#C9A227" opacity="1.0">COMMIT-A-CRIME</text><text x="470" y="419" text-anchor="start" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" fill="#E8DCC0" opacity="0.55">P37 PASSWORD</text>
+<!-- nurse wedge + vade-mecum -->
+<path d="M 648 380 L 648 300 L 688 320 L 688 380" fill="none" stroke="#E8DCC0" stroke-width="1.5"/>
+<text x="748" y="396" text-anchor="end" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.6">NURSE · AJAR</text>
+<text x="648" y="414" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,Menlo,monospace" font-size="8" letter-spacing="1" fill="#E8DCC0" opacity="0.55">VAD-MECUM · P38</text>
+
+</symbol>
+</svg>

@@ -1,0 +1,1877 @@
+{
+ "started": "2026-10-16T21:00:27.942Z",
+ "homepage": {
+  "started": "2026-10-16T20:52:33.337Z",
+  "homepage": {
+   "d1440": {
+    "status": 200,
+    "title": "Literary Library",
+    "docHeight": 5663,
+    "bookCards": 0,
+    "console": [
+     "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "d390": {
+    "overflow": {
+     "sw": 390,
+     "cw": 390
+    },
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "links": [
+   {
+    "href": "./",
+    "status": 200
+   },
+   {
+    "href": "books/atlas-shrugged/",
+    "status": 200
+   },
+   {
+    "href": "books/the-fountainhead/",
+    "status": 200
+   },
+   {
+    "href": "books/infinite-jest/",
+    "status": 200
+   },
+   {
+    "href": "books/beyond-good-and-evil/",
+    "status": 200
+   },
+   {
+    "href": "books/thus-spoke-zarathustra/",
+    "status": 200
+   },
+   {
+    "href": "books/gay-science/",
+    "status": 200
+   },
+   {
+    "href": "books/twilight-of-the-idols/",
+    "status": 200
+   },
+   {
+    "href": "books/will-to-power/",
+    "status": 200
+   },
+   {
+    "href": "books/being-and-time/",
+    "status": 200
+   },
+   {
+    "href": "books/forty-ways-to-look-at-churchill/",
+    "status": 200
+   },
+   {
+    "href": "books/open-letter/",
+    "status": 200
+   },
+   {
+    "href": "books/gentle-introduction/",
+    "status": 200
+   },
+   {
+    "href": "books/sovereign-individual/",
+    "status": 200
+   }
+  ],
+  "linkSummary": {
+   "total": 14,
+   "bad": []
+  }
+ },
+ "books": {
+  "atlas-shrugged": {
+   "slug": "atlas-shrugged",
+   "tag": "distinct",
+   "exp": [
+    640,
+    764.34,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "Atlas\n          Shrugged",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "THE THEME",
+     "number": "Chapter I",
+     "paras": 405,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "SIG I-01 · 10733 WORDS"
+    },
+    "toc": {
+     "rows": 30,
+     "parts": 3,
+     "firstRow": "THE THEME",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 13,
+     "len": 413,
+     "fallback": false,
+     "total": 249
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+     "maxWidth": "764.346px",
+     "rendered": 764.3
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+      "maxWidth": "764.346px",
+      "rendered": 764.3
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "THE TOP AND THE BOTTOM",
+     "next": "THE IMMOVABLE MOVERS",
+     "backAfterPrev": "THE TOP AND THE BOTTOM",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "THE TOP AND THE BOTTOM",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          Atlas\n          Shrugged\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "THE THEME"
+    }
+   },
+   "errors1440": {
+    "console": [
+     "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "being-and-time": {
+   "slug": "being-and-time",
+   "tag": "n=s",
+   "exp": [
+    544,
+    544,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "Being\n          and Time",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "The Necessity of an Explicit Repetition of the Question of Being",
+     "number": "§ 1",
+     "paras": 9,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Three bars over a buried query — the slit"
+    },
+    "toc": {
+     "rows": 83,
+     "parts": 3,
+     "firstRow": "The Necessity of an Explicit Repetition of the Question of Being",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 11,
+     "len": 596,
+     "fallback": false,
+     "total": 22
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "maxWidth": "544px",
+     "rendered": 544
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "544px",
+      "rendered": 544
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "544px",
+      "rendered": 544
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Everyday Being a Self and the They",
+     "next": "The Task of a Thematic Analysis of Being-in",
+     "backAfterPrev": "Everyday Being a Self and the They",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Everyday Being a Self and the They",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          Being\n          and Time\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "The Necessity of an Explicit Repetition of the Question of Being"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "beyond-good-and-evil": {
+   "slug": "beyond-good-and-evil",
+   "tag": "distinct",
+   "exp": [
+    640,
+    674.53,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "Beyond Good\n          and Evil",
+     "artChildren": 0,
+     "artHidden": true,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Preface",
+     "number": "Preface",
+     "paras": 6,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Veil-line"
+    },
+    "toc": {
+     "rows": 11,
+     "parts": 1,
+     "firstRow": "Preface",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 10,
+     "len": 1396,
+     "fallback": false,
+     "total": 75
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "maxWidth": "674.544px",
+     "rendered": 674.5
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "674.544px",
+      "rendered": 674.5
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Prejudices of Philosophers",
+     "next": "The Free Spirit",
+     "backAfterPrev": "Prejudices of Philosophers",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Prejudices of Philosophers",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          Beyond Good\n          and Evil\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Preface"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "forty-ways-to-look-at-churchill": {
+   "slug": "forty-ways-to-look-at-churchill",
+   "tag": "n=s",
+   "exp": [
+    592,
+    592,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "Forty Ways to Look at\n          Winston Churchill",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Introduction",
+     "number": "Introduction",
+     "paras": 33,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "before the first cut"
+    },
+    "toc": {
+     "rows": 41,
+     "parts": 5,
+     "firstRow": "Introduction",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 10,
+     "len": 1013,
+     "fallback": false,
+     "total": 33
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Newsreader, Georgia, serif",
+     "maxWidth": "592px",
+     "rendered": 592
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, serif",
+      "maxWidth": "592px",
+      "rendered": 592
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, serif",
+      "maxWidth": "592px",
+      "rendered": 592
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Introduction",
+     "next": "Churchill as Liberty’s Champion: Heroic View",
+     "backAfterPrev": "Introduction",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Introduction",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          Forty Ways to Look at\n          Winston Churchill\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Introduction"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "gay-science": {
+   "slug": "gay-science",
+   "tag": "distinct",
+   "exp": [
+    592.08,
+    592.085,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "The\n          Gay Science",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Preface to the Second Edition",
+     "number": "Preface to the Second Edition",
+     "paras": 8,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Glow before the house — Preface to the Second Edition"
+    },
+    "toc": {
+     "rows": 448,
+     "parts": 8,
+     "firstRow": "Preface to the Second Edition",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 7,
+     "len": 28,
+     "fallback": true,
+     "total": 8
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+     "maxWidth": "592.085px",
+     "rendered": 592.1
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+      "maxWidth": "592.085px",
+      "rendered": 592.1
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+      "maxWidth": "592.085px",
+      "rendered": 592.1
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Preface to the Second Edition",
+     "next": "1. Invitation",
+     "backAfterPrev": "Preface to the Second Edition",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Preface to the Second Edition",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          The\n          Gay Science\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Preface to the Second Edition"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "gentle-introduction": {
+   "slug": "gentle-introduction",
+   "tag": "distinct",
+   "exp": [
+    640,
+    672,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "A Gentle Introduction\n          to Unqualified Reservations",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "The Red Pill",
+     "number": "Chapter 1",
+     "paras": 158,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Dose I · The narthex door"
+    },
+    "toc": {
+     "rows": 11,
+     "parts": 1,
+     "firstRow": "The Red Pill",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 11,
+     "len": 713,
+     "fallback": false,
+     "total": 158
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "maxWidth": "672px",
+     "rendered": 672
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "672px",
+      "rendered": 672
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "The Red Pill",
+     "next": "The American Rebellion",
+     "backAfterPrev": "The Red Pill",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "The Red Pill",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          A Gentle Introduction\n          to Unqualified Reservations\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "The Red Pill"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "infinite-jest": {
+   "slug": "infinite-jest",
+   "tag": "n=s",
+   "exp": [
+    608,
+    608,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "Infinite\n          Jest",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Year of Glad",
+     "number": "§ 1",
+     "paras": 139,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Plate 1 · The horseshoe of heads, one chair empty"
+    },
+    "toc": {
+     "rows": 89,
+     "parts": 2,
+     "firstRow": "Year of Glad",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 12,
+     "len": 408,
+     "fallback": false,
+     "total": 54
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+     "maxWidth": "608px",
+     "rendered": 608
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+      "maxWidth": "608px",
+      "rendered": 608
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+      "maxWidth": "608px",
+      "rendered": 608
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Late October — Year of the Depend Adult Undergarment",
+     "next": "6 November — Year of the Depend Adult Undergarment",
+     "backAfterPrev": "Late October — Year of the Depend Adult Undergarment",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Late October — Year of the Depend Adult Undergarment",
+     "scrollY": 665,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          Infinite\n          Jest\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Year of Glad"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "open-letter": {
+   "slug": "open-letter",
+   "tag": "distinct",
+   "exp": [
+    640,
+    648.86,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "An Open Letter\n          to Open-Minded Progressives",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "A Horizon Made of Canvas",
+     "number": "Chapter 1",
+     "paras": 115,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Figure I · The horizon tears"
+    },
+    "toc": {
+     "rows": 14,
+     "parts": 1,
+     "firstRow": "A Horizon Made of Canvas",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 11,
+     "len": 403,
+     "fallback": false,
+     "total": 115
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Ge",
+     "maxWidth": "648.859px",
+     "rendered": 648.9
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Ge",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Ge",
+      "maxWidth": "648.859px",
+      "rendered": 648.9
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Ge",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "A Horizon Made of Canvas",
+     "next": "More Historical Anomalies",
+     "backAfterPrev": "A Horizon Made of Canvas",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "A Horizon Made of Canvas",
+     "scrollY": 273,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          An Open Letter\n          to Open-Minded Progressives\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "A Horizon Made of Canvas"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "sovereign-individual": {
+   "slug": "sovereign-individual",
+   "tag": "plate-grid",
+   "exp": [
+    640,
+    715.1,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "The Sovereign\n          Individual",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "The Transition in the Year 2000",
+     "number": "Chapter 1",
+     "paras": 215,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Plate I · The millennium asymptote"
+    },
+    "toc": {
+     "rows": 11,
+     "parts": 1,
+     "firstRow": "The Transition in the Year 2000",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 10,
+     "len": 1212,
+     "fallback": false,
+     "total": 164
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "maxWidth": "715.097px",
+     "rendered": 436
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "640px",
+      "rendered": 340
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "715.097px",
+      "rendered": 436
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "maxWidth": "1024px",
+      "rendered": 616.6
+     }
+    },
+    "nav": {
+     "from": "The Life and Health of the Nation-State",
+     "next": "The Megapolitics of the Information Age",
+     "backAfterPrev": "The Life and Health of the Nation-State",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "The Life and Health of the Nation-State",
+     "scrollY": 182,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          The Sovereign\n          Individual\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "The Transition in the Year 2000"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "the-fountainhead": {
+   "slug": "the-fountainhead",
+   "tag": "distinct",
+   "exp": [
+    640,
+    674.53,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "The\n          Fountainhead",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Chapter I",
+     "number": "I",
+     "paras": 164,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "STA K-I · 5,736 words · FIG CLIFF"
+    },
+    "toc": {
+     "rows": 59,
+     "parts": 4,
+     "firstRow": "Chapter I",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 10,
+     "len": 581,
+     "fallback": false,
+     "total": 164
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+     "maxWidth": "674.544px",
+     "rendered": 674.5
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+      "maxWidth": "674.544px",
+      "rendered": 674.5
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Chapter I",
+     "next": "Chapter II",
+     "backAfterPrev": "Chapter I",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Chapter I",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          The\n          Fountainhead\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Chapter I"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "thus-spoke-zarathustra": {
+   "slug": "thus-spoke-zarathustra",
+   "tag": "n=s",
+   "exp": [
+    640,
+    640,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "Thus Spoke\n          Zarathustra",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Zarathustra’s Prologue",
+     "number": "Zarathustra’s Prologue",
+     "paras": 150,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "“Man is a rope, fastened between animal and Superman – a rope over an abyss.” — "
+    },
+    "toc": {
+     "rows": 81,
+     "parts": 4,
+     "firstRow": "Zarathustra’s Prologue",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 105,
+     "len": 513,
+     "fallback": false,
+     "total": 150
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Spectral, Georgia, serif",
+     "maxWidth": "640px",
+     "rendered": 640
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Spectral, Georgia, serif",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Spectral, Georgia, serif",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Spectral, Georgia, serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Zarathustra’s Prologue",
+     "next": "Of the Three Metamorphoses",
+     "backAfterPrev": "Zarathustra’s Prologue",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Zarathustra’s Prologue",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          Thus Spoke\n          Zarathustra\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Zarathustra’s Prologue"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "twilight-of-the-idols": {
+   "slug": "twilight-of-the-idols",
+   "tag": "distinct",
+   "exp": [
+    640,
+    644.8,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "Twilight of\n          the Idols",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Foreword",
+     "number": "Foreword",
+     "paras": 2,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Turin · 30 September 1888 — a declaration of war"
+    },
+    "toc": {
+     "rows": 12,
+     "parts": 1,
+     "firstRow": "Foreword",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 10,
+     "len": 1126,
+     "fallback": false,
+     "total": 61
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+     "maxWidth": "644.804px",
+     "rendered": 644.8
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+      "maxWidth": "640px",
+      "rendered": 640
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+      "maxWidth": "644.804px",
+      "rendered": 644.8
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "Reconnaissance Raids of an Untimely Man",
+     "next": "What I Owe The Ancients",
+     "backAfterPrev": "Reconnaissance Raids of an Untimely Man",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "Reconnaissance Raids of an Untimely Man",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          Twilight of\n          the Idols\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Foreword"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  },
+  "will-to-power": {
+   "slug": "will-to-power",
+   "tag": "n=s",
+   "exp": [
+    608,
+    608,
+    1024
+   ],
+   "axis": {
+    "cover": {
+     "title": "The\n          Will to\n          Power",
+     "artChildren": 1,
+     "artHidden": false,
+     "resumeChip": true
+    },
+    "opener": {
+     "title": "Preface",
+     "number": "Preface",
+     "paras": 5,
+     "artHidden": false,
+     "artKids": 2,
+     "cap": "Sealed tablet, hairline-cracked: 'like a torrent rushing to its end.'"
+    },
+    "toc": {
+     "rows": 52,
+     "parts": 5,
+     "firstRow": "Preface",
+     "drawerOpen": true,
+     "drawerClass": "drawer open"
+    },
+    "midProbe": {
+     "idx": 11,
+     "len": 739,
+     "fallback": false,
+     "total": 137
+    },
+    "midStd": {
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+     "maxWidth": "608px",
+     "rendered": 608
+    },
+    "overflowMid": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "settingsOpen": {
+     "cls": "settings open",
+     "display": "flex"
+    },
+    "measure": {
+     "narrow": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+      "maxWidth": "608px",
+      "rendered": 608
+     },
+     "standard": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+      "maxWidth": "608px",
+      "rendered": 608
+     },
+     "wide": {
+      "fontSize": "20.8px",
+      "lineHeight": "38.48px",
+      "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+      "maxWidth": "1024px",
+      "rendered": 1024
+     }
+    },
+    "nav": {
+     "from": "The Will to Power as Life",
+     "next": "Theory of the Will to Power and of Values",
+     "backAfterPrev": "The Will to Power as Life",
+     "nextChanged": true,
+     "prevRestored": true
+    },
+    "resumeChip": "Continue where you left off →",
+    "resumeRestored": {
+     "title": "The Will to Power as Life",
+     "scrollY": 0,
+     "readerActive": "view active"
+    },
+    "overflowEnd": {
+     "doc": [
+      1440,
+      1440
+     ],
+     "body": [
+      1440,
+      1440
+     ]
+    },
+    "cover390": {
+     "title": "\n          The\n          Will to\n          Power\n        ",
+     "ov": [
+      390,
+      390
+     ],
+     "headerBtnSizes": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+     ]
+    },
+    "reader390": {
+     "ov": [
+      390,
+      390
+     ],
+     "title": "Preface"
+    }
+   },
+   "errors1440": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   },
+   "errors390": {
+    "console": [],
+    "pageerrors": [],
+    "reqfailed": [],
+    "http4xx": []
+   }
+  }
+ }
+}

@@ -1,0 +1,385 @@
+/* ─────────────────────────────────────────────────────────────
+   A Gentle Introduction — Cohort B (Nave) plate treatments
+   Source: books/gentle-introduction/design/cohort-b.json's companion
+   Merge: supervisor integrates sequentially into theme.css; this file is
+   Final and directly integrable. Unlayered: wins over @layer shared.
+
+   SCOPE (narrowed, binding): per-motif #chapter-art arch/plate
+   sizing/framing + Marcellus Candle drop caps + chapter-end seals ONLY.
+   No shell rules: .meta-rule pip, slot caption cartouche, TOC/nav
+   grammar are the supervisor's — this file never re-declares them and
+   never touches figcaption.
+
+   Hooks: body[data-book="gentle-introduction"] + [data-chapter="p1c4"…
+   "p1c8"] with [data-art="cornerstone"|"westwork"|"arcade"|
+   "twin-chapels"|"spire"] fallback. Every rule is cohort-B-scoped;
+   nothing leaks to cohorts A/C. Palette: six hues only
+   (ART-DIRECTION §3) + the plates' own stone family
+   (#5A5142/#4A4335/#3A332A/#2C2721) for frames. Shadows use
+   Narthex-with-opacity, never black. GI1: absolute stillness — zero
+   animation, zero transition in this file.
+   ───────────────────────────────────────────────────────────── */
+
+/* ── Shared slot sizing: centered, full-bleed-safe, never hidden ──
+   Width 100% + max-width keeps plates inside every reader measure
+   (narrow 40rem → content ~656px still fits the widest 660px motif). */
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+/* ── Shared SVG ground: fixed dark jacket on every theme (O2 §3) ──
+   The plates' night fields are intrinsic, but the svg element itself gets
+   a fixed Narthex ground so letterboxing can never flash paper. The
+   0.25rem bottom margin pairs with the supervisor shell's figcaption
+   margin-top:1rem — total ~1.25rem + the plate's internal footer clears
+   the cartouche (verified pattern from cohort A at 390px). This file
+   never styles figcaption. */
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate svg,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #100F0D;
+  margin-bottom: 0.25rem;
+}
+
+/* ── p1c4 · cornerstone — the foundation laid, mounted ──
+   Middle slot (600px → 338px): the elevation's breadth needs room, but
+   the light lives low, so the plate sits grounded. Frame as a mason's
+   mount: one bitten outer line over a 5px Narthex-black bank, heavier
+   than c1's 4px — the course is LAID now, not awaited. Warm ground
+   (#0D0B08) beneath: the Nave floor warming under the stone. */
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch {
+  max-width: 600px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch svg {
+  border: 1px solid #3A332A;
+  box-shadow: 0 0 0 5px #060504, 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+
+/* ── p1c5 · westwork — the Cathedral's portrait, flagship ──
+   The cohort's widest and most present slot (660px → 371px): the only
+   plate that shows the building as a face earns the only slot wider
+   than 620px. The engraved frame lives IN the plate (cohort-C plate
+   convention); the CSS slot gives it air, not a second frame: a 4px
+   Ashlar mount + a Candle hairline keyed to the gallery band — the
+   portrait gallery's own moulding. Tallest cap below (3.6em). */
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate {
+  max-width: 660px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate svg,
+body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate svg {
+  border: 1px solid #DFA050;
+  box-shadow: 0 0 0 4px #1E1B16, 0 22px 52px rgba(16, 15, 13, 0.45);
+}
+
+/* ── p1c6 · arcade — the corridor, pilastered ──
+   Narrow slot (560px → 315px): the recession converges, so the slot
+   tightens — depth, not width, carries the chapter. Frame as
+   pilastered jambs: thin head and sill, 3px side piers in mid stone,
+   the left pier warmed (#6B5B3E) and the right cold (#2C2721) — the
+   plate's own lit-left/dark-right split carried into its mounting. */
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch {
+  max-width: 560px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch svg {
+  border: 1px solid #4A4335;
+  border-left: 3px solid #6B5B3E;
+  border-right: 3px solid #2C2721;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+
+/* ── p1c7 · twin-chapels — the separation, split-jamb ──
+   Wide slot (640px → 360px) so the bilateral gap reads instantly; the
+   plate IS the UPP verdict. Frame as a split jamb: a warm right border
+   (#4A4335) against a cold left one (#3A332A) with an Ashen sill course
+   under both — the two lightings held apart by the mounting itself,
+   standing on the same earth. */
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch {
+  max-width: 640px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch svg {
+  border: 1px solid #3A332A;
+  border-left: 3px solid #3A332A;
+  border-right: 3px solid #4A4335;
+  border-bottom: 4px solid #9C917E;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+
+/* ── p1c8 · spire — the ascent, sky-weighted ──
+   Middle-wide slot (620px → 349px): the town needs breadth, the tower
+   needs height, so the slot splits the difference. Frame as a
+   sky-weighted plate: a pale Ashen head-line (the moonlit half) over a
+   dark 4px sill (the street band) — the mounting tips the eye upward,
+   toward the lantern c9 answers with. */
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch {
+  max-width: 620px;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch svg,
+body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch svg {
+  border: 1px solid #3A332A;
+  border-top: 2px solid #9C917E;
+  border-bottom: 4px solid #0B0A08;
+  box-shadow: 0 18px 44px rgba(16, 15, 13, 0.4);
+}
+
+/* ── Drop caps: Marcellus Candle, content-warranted, authored sizes ──
+   Shared paints ::first-letter in body serif + accent glow; art.css adds
+   a manuscript wash + halo. The Cathedral cuts both (GI5: light is drawn
+   mass, never a blur) and sets inscriptional Marcellus in Candle — large
+   glyphs only, so Candle text stays legal. Sizes author the Nave walk:
+   IV grounded (3.45em), VI mid-corridor (3.5em), VII verdict-weight
+   (3.55em), VIII the hinge to the practical material at full voice
+   (3.65em). Single-weight Marcellus → 400. Short-opener .no-drop
+   overrides: none needed — every Nave opener is letter-led and ≥93
+   chars (verified: 342/93/190/94/142), so reader.js never auto-tags. */
+body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="cornerstone"] .chapter-text > p:first-of-type::first-letter {
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.45em;
+  line-height: 0.79;
+  padding: 0.05em 0.13em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="arcade"] .chapter-text > p:first-of-type::first-letter {
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  line-height: 0.79;
+  padding: 0.05em 0.13em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="twin-chapels"] .chapter-text > p:first-of-type::first-letter {
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.55em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-art="spire"] .chapter-text > p:first-of-type::first-letter {
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.65em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+/* p1c5 GIR1: P0 opens with single-letter "I" ("I feel we are ready…"),
+   whose Marcellus stem would read as a gold bar — the supervisor shell
+   (theme.css) already un-caps first-of-type and cathedral.js marks the
+   first droppable paragraph (P1 "Obviously, I can't…") with .gi-drop.
+   This cohort styles that hook at flagship scale (3.6em) and NEVER
+   re-caps P0: the two chapters' hooks are mutually exclusive by id. */
+body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p.gi-drop::first-letter,
+body[data-book="gentle-introduction"][data-art="westwork"] .chapter-text > p.gi-drop::first-letter {
+  float: left;
+  font-family: "Marcellus", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 3.6em;
+  line-height: 0.78;
+  padding: 0.05em 0.13em 0 0;
+  color: #DFA050;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+/* Paper themes: Candle deepens to #9A6B24 per §4 so the large cap holds
+   contrast on vellum/sepia. Plates stay fixed dark (no remap, §3). */
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="cornerstone"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="westwork"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="arcade"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="twin-chapels"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-art="spire"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="cornerstone"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="westwork"] .chapter-text > p.gi-drop::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="arcade"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="twin-chapels"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="sepia"] body[data-book="gentle-introduction"][data-art="spire"] .chapter-text > p:first-of-type::first-letter {
+  color: #9A6B24;
+}
+
+/* ── Chapter-end seals (contract A.0): authored url() art, ≤32px ──
+   Each seal replaces shared's fleuron glyph with a motif stamp in its
+   dose's arc tint — #B65729 / #BB622A / #C06D2C / #C6782F / #CC8333,
+   authored per chapter, never modulo. Seals use their tint + Ashen +
+   one Candle pip only, so they read on night and paper alike.
+   Margin-top preserves shared's 2.75rem rhythm; no margins added, no
+   paragraph layout shifted. Widths grow with the arc: 26/30/28/30/28. */
+
+/* Dose IV: the drafted block — tint outline, tooled inner margin, one
+   gold flame pip centered. The foundation in miniature. */
+body[data-book="gentle-introduction"][data-chapter="p1c4"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='26'%20viewBox='0%200%2026%2026'%3E%3Crect%20x='4'%20y='7'%20width='18'%20height='14'%20fill='none'%20stroke='%23B65729'%20stroke-width='1.8'/%3E%3Crect%20x='7.5'%20y='10.5'%20width='11'%20height='7'%20fill='none'%20stroke='%239C917E'%20stroke-width='1'/%3E%3Cpath%20d='M13%204.5%20C14.5%207%2014.7%208%2013%209%20C11.3%208%2011.5%207%2013%204.5%20Z'%20fill='%23DFA050'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* Dose V: the westwork — twin-tower outline with a gold oculus between
+   the towers. The portrait stamped. */
+body[data-book="gentle-introduction"][data-chapter="p1c5"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='24'%20viewBox='0%200%2030%2024'%3E%3Cpath%20d='M4%2021%20V8%20H10%20V21%20Z%20M20%2021%20V8%20H26%20V21%20Z'%20fill='none'%20stroke='%23BB622A'%20stroke-width='1.6'/%3E%3Cline%20x1='4'%20y1='21'%20x2='26'%20y2='21'%20stroke='%23BB622A'%20stroke-width='1.6'/%3E%3Ccircle%20cx='15'%20cy='13'%20r='4.5'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.2'/%3E%3Ccircle%20cx='15'%20cy='13'%20r='1.8'%20fill='%23DFA050'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* Dose VI: the arcade — three nested arches, left half gold, right half
+   dark. The corridor's two lightings in one stamp. */
+body[data-book="gentle-introduction"][data-chapter="p1c6"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='24'%20viewBox='0%200%2028%2024'%3E%3Cpath%20d='M5%2021%20V12%20Q5%207%2014%204%20Q23%207%2023%2012%20V21'%20fill='none'%20stroke='%23C06D2C'%20stroke-width='1.6'/%3E%3Cpath%20d='M9%2021%20V13%20Q9%209%2014%206.5%20Q19%209%2019%2013%20V21'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.2'/%3E%3Cpath%20d='M5%2021%20V12%20Q5%207%2014%204%20V21%20Z'%20fill='%23C06D2C'%20fill-opacity='0.5'/%3E%3Cpath%20d='M14%204%20Q23%207%2023%2012%20V21%20H14%20Z'%20fill='%23100F0D'%20fill-opacity='0.7'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* Dose VII: two chapels — tiny gabled outlines with a gap between, the
+   right one gold-filled. Separation, stamped whole. */
+body[data-book="gentle-introduction"][data-chapter="p1c7"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='30'%20height='24'%20viewBox='0%200%2030%2024'%3E%3Cpath%20d='M3%2021%20V12%20L8%207%20L13%2012%20V21%20Z'%20fill='none'%20stroke='%239C917E'%20stroke-width='1.4'/%3E%3Cpath%20d='M17%2021%20V12%20L22%207%20L27%2012%20V21%20Z'%20fill='%23C6782F'%20fill-opacity='0.65'%20stroke='%23C6782F'%20stroke-width='1.4'/%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* Dose VIII: the spire — tower-and-spire outline with four gold belfry
+   ticks. The handoff to the lantern, stamped. */
+body[data-book="gentle-introduction"][data-chapter="p1c8"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='26'%20viewBox='0%200%2028%2026'%3E%3Cpath%20d='M10%2023%20V12%20L14%203%20L18%2012%20V23%20Z'%20fill='none'%20stroke='%23CC8333'%20stroke-width='1.6'/%3E%3Cg%20fill='%23DFA050'%3E%3Crect%20x='10.8'%20y='13'%20width='1.4'%20height='4'/%3E%3Crect%20x='13.1'%20y='13'%20width='1.4'%20height='4'/%3E%3Crect%20x='15.4'%20y='13'%20width='1.4'%20height='4'/%3E%3Crect%20x='17.7'%20y='13'%20width='1.4'%20height='4'/%3E%3C/g%3E%3C/svg%3E");
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* ── Phones: hold the 200px plate floor without overflow ──
+   At 390px the reader body keeps 1.15rem gutters; reclaiming 2px a side
+   lifts the 16:9 plate from ~199px to ~201px tall. The −2px sits inside
+   the 18px gutter — no 390px overflow. max-width:none lets the slot fill;
+   per-motif frames above still apply. The flagship keeps its Candle
+   keyline at every width: it is the plate's moulding, not its size. */
+@media (max-width: 560px) {
+  body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+  body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate {
+    width: auto;
+    max-width: none;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+}
+
+/* ── Reduced motion: the Nave is still; keep it still ──
+   This file declares no animation or transition; the guard pins that even
+   if a future shell introduces motion on these hooks. */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch,
+  body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate,
+  body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate,
+  body[data-book="gentle-introduction"][data-chapter="p1c4"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="cornerstone"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c6"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="arcade"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c7"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="twin-chapels"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c8"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-art="spire"] #chapter-art.arch svg,
+  body[data-book="gentle-introduction"][data-chapter="p1c5"] #chapter-art.plate svg,
+  body[data-book="gentle-introduction"][data-art="westwork"] #chapter-art.plate svg {
+    animation: none !important;
+    transition: none !important;
+  }
+}

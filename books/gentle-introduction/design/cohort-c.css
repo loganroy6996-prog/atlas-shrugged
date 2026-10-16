@@ -1,0 +1,274 @@
+/* ============================================================
+   Gentle Introduction — Cohort C (Doses IX–XI): Crossing → Sanctuary
+   Conforms to design/ART-DIRECTION.md §§2–7 + GI1–GI7.
+   Scope: body[data-book="gentle-introduction"] (+ data-chapter/data-art).
+   Unlayered: wins over @layer shared. No reader-* classes. No JS.
+   Plates: art/crossing.svg, art/rose-window.svg, art/sanctuary.svg (FIXED
+   dark jackets on every theme per §3/O2 precedent).
+   Two offline notes for the integrator (see cohort-c.json "_notes"):
+   (a) Google Fonts unreachable from this host — spec keeps remote <link>
+       + full stacks; supervisor SHOULD vendor design/fonts/ per §8;
+   (b) Sanctuary-Red drop cap on p1c10 is 4.46:1 ≈ AA-large — spec keeps
+       it LARGE-ONLY with a Candle fallback line (delete one at review).
+   ============================================================ */
+
+/* ---------- C.0 Tokens: the six hues, dark-first ---------- */
+body[data-book="gentle-introduction"] {
+  --gi-narthex: #100F0D;
+  --gi-ashlar: #1E1B16;
+  --gi-vellum: #ECE2CE;
+  --gi-candle: #DFA050;
+  --gi-red: #A83A2C;
+  --gi-ashen: #9C917E;
+  --gi-flame-pale: #F4D9A0; /* flame-body gradient stop only (§3) */
+  --gi-display: "Marcellus", "Palatino Linotype", Palatino,
+    "Book Antiqua", Georgia, serif;
+  --gi-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+/* ---------- C.1 Chapter-opener art slot (§5: plate ~320px, ≥200px phones) -- */
+body[data-book="gentle-introduction"] #chapter-art.plate {
+  max-width: 56rem;
+  margin: 0 auto 2.5rem;
+}
+body[data-book="gentle-introduction"] #chapter-art.plate svg,
+body[data-book="gentle-introduction"] #chapter-art.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 200px; /* GI3 floor: never a postage stamp, never hidden */
+}
+/* The plate is a fixed dark jacket: on paper themes it keeps its night. */
+body[data-book="gentle-introduction"] #chapter-art.plate {
+  background: var(--gi-narthex);
+  border: 1px solid rgb(156 145 126 / 0.35);
+}
+/* Caption cartouche: Marcellus inscription on dark, also on paper themes */
+body[data-book="gentle-introduction"] #chapter-art.plate figcaption {
+  font-family: var(--gi-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.22em;
+  text-transform: none;
+  color: var(--gi-vellum);
+  background: var(--gi-narthex);
+  border-top: 1px solid rgb(156 145 126 / 0.35);
+  padding: 0.7rem 1rem 0.8rem;
+  text-align: center;
+}
+
+/* ---------- C.2 Meta block: dose numeral → title → candle rule (§5) ------ */
+body[data-book="gentle-introduction"] .chapter-meta {
+  max-width: 40ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Dose numeral line (identity voices: DOSE IX · PART I) */
+body[data-book="gentle-introduction"] .meta-part {
+  font-family: var(--gi-display);
+  font-size: 1rem;
+  letter-spacing: 0.28em;
+  text-indent: 0.28em; /* recenter tracked caps */
+  text-transform: uppercase;
+  color: var(--gi-candle);
+}
+/* Chapter title: Marcellus, balanced wrap, short lines */
+body[data-book="gentle-introduction"] .meta-title {
+  font-family: var(--gi-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  line-height: 1.12;
+  letter-spacing: 0.015em;
+  text-wrap: balance;
+  color: var(--gi-vellum);
+}
+/* "Chapter 9" label: quiet Ashen, keeps shared diamond tail */
+body[data-book="gentle-introduction"] .meta-number {
+  color: var(--gi-ashen);
+}
+/* Reading-time line inherits the quiet treatment */
+body[data-book="gentle-introduction"] .meta-sub {
+  color: var(--gi-ashen);
+}
+/* Candle rule: thin Ashen line with a center flame pip (authored SVG) */
+body[data-book="gentle-introduction"] .meta-rule span {
+  width: 9rem;
+  height: 12px; /* room for the pip; the line stays a hairline */
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 2 C13 8 13.6 11 10 14 C6.4 11 7 8 10 2 Z' fill='%23DFA050'/%3E%3Cpath d='M10 8.5 C11.4 11 11.6 12.2 10 13 C8.4 12.2 8.6 11 10 8.5 Z' fill='%23F4D9A0'/%3E%3C/svg%3E") center / 12px 12px no-repeat,
+    linear-gradient(90deg, transparent, var(--gi-ashen) 30%, var(--gi-ashen) 70%, transparent) center / 100% 1px no-repeat;
+  opacity: 1;
+  box-shadow: none; /* our line is drawn, not glowing */
+}
+
+/* ---------- C.3 Reading body: calm Source Serif, ≤68ch (P6) -------------- */
+body[data-book="gentle-introduction"] .chapter-text {
+  font-family: var(--gi-body);
+}
+body[data-book="gentle-introduction"] .chapter-text p {
+  max-width: min(var(--reader-max), 68ch);
+}
+/* Drop caps: Marcellus Candle, content-warranted only (§7).
+   p1c9 ("Today you begin…") + p1c11 ("In this chapter…") qualify;
+   p1c10 opens mid-conversation ("Okay. So where were we?") → no-drop. */
+body[data-book="gentle-introduction"][data-chapter="p1c9"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gentle-introduction"][data-chapter="p1c11"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--gi-display);
+  color: var(--gi-candle);
+}
+/* p1c10 rose drop cap: Sanctuary Red, LARGE-ONLY (4.46:1 ≈ AA-large).
+   OFFLINE DECISION POINT: if review wants strict ≥4.5 text, delete this
+   rule and the cap falls back to Candle (8.47:1). */
+body[data-book="gentle-introduction"][data-chapter="p1c10"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--gi-display);
+  color: var(--gi-red);
+}
+
+/* ---------- C.4 Chapter-end seals (contract A.0: url() art ≤32px) --------- */
+/* Shared fleuron is overridden per chapter with an authored arch/flame seal;
+   layout untouched (no added margins — the shared margin-top stands). */
+body[data-book="gentle-introduction"][data-chapter="p1c9"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 28 L6 14 Q6 7 16 4 Q26 7 26 14 L26 28 Z' fill='none' stroke='%23DFA050' stroke-width='2'/%3E%3Cpath d='M16 12 C18.5 16.5 19 19 16 21.5 C13 19 13.5 16.5 16 12 Z' fill='%23DFA050'/%3E%3C/svg%3E");
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c10"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23A83A2C' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23DFA050'/%3E%3Cg stroke='%23A83A2C' stroke-width='1.6'%3E%3Cpath d='M16 5v4M16 23v4M5 16h4M23 16h4M8.2 8.2l2.8 2.8M21 21l2.8 2.8M23.8 8.2L21 11M11 21l-2.8 2.8'/%3E%3C/g%3E%3C/svg%3E");
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c11"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M8 28 L8 15 Q8 8 16 5 Q24 8 24 15 L24 28 Z' fill='%23DFA050' opacity='.28' stroke='%23DFA050' stroke-width='2'/%3E%3Cpath d='M16 11 C17.5 14 17.8 15.5 16 17 C14.2 15.5 14.5 14 16 11 Z' fill='%23F4D9A0'/%3E%3C/svg%3E");
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* ---------- C.5 TOC: dispensary-of-stations ledger rows (§5) -------------- */
+/* Dose-notch before each Cohort-C row: that chapter's arc tint (authored,
+   never modulo). Active row: Candle notch + Vellum title. */
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c9"],
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c10"],
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c11"] {
+  position: relative;
+  padding-left: 1.6rem;
+}
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c9"]::before,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c10"]::before,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c11"]::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 50%;
+  width: 7px;
+  height: 18px;
+  transform: translateY(-50%);
+  clip-path: polygon(50% 0, 100% 28%, 100% 100%, 0 100%, 0 28%); /* arch notch */
+}
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c9"]::before { background: #D48C49; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c10"]::before { background: #DA964C; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c11"]::before { background: #DFA050; }
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c9"].active::before,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c10"].active::before,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c11"].active::before {
+  background: var(--gi-candle);
+}
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c9"] .toc-num,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c10"] .toc-num,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c11"] .toc-num {
+  font-family: var(--gi-display);
+  color: var(--gi-candle);
+}
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c9"].active .toc-name,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c10"].active .toc-name,
+body[data-book="gentle-introduction"] .toc-chapter[data-chapter-id="p1c11"].active .toc-name {
+  color: var(--gi-vellum);
+}
+
+/* ---------- C.6 Prev/next: neighbor motif names (§5) ---------------------- */
+/* The button titles are reader-filled; the motif line is the authored part:
+   book-owned JS (supervisor clears) or CSS-carried label per chapter. */
+body[data-book="gentle-introduction"][data-chapter="p1c9"] #btn-next .nav-label::after {
+  content: " · Dose X — The rose";
+  color: var(--gi-ashen);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c10"] #btn-prev .nav-label::after {
+  content: " · Dose IX — The crossing";
+  color: var(--gi-ashen);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c10"] #btn-next .nav-label::after {
+  content: " · Dose XI — The sanctuary";
+  color: var(--gi-ashen);
+  letter-spacing: 0.02em;
+}
+body[data-book="gentle-introduction"][data-chapter="p1c11"] #btn-prev .nav-label::after {
+  content: " · Dose X — The rose";
+  color: var(--gi-ashen);
+  letter-spacing: 0.02em;
+}
+
+/* ---------- C.7 Light / sepia remap (§4): plates stay night -------------- */
+html[data-theme="light"] body[data-book="gentle-introduction"] {
+  --gi-paper: #F4EEE1;
+  --gi-ink: #241F16;
+}
+html[data-theme="light"] body[data-book="gentle-introduction"] .meta-title { color: var(--gi-ink); }
+html[data-theme="light"] body[data-book="gentle-introduction"] .meta-part { color: #9A6B24; }
+html[data-theme="light"] body[data-book="gentle-introduction"] .meta-number,
+html[data-theme="light"] body[data-book="gentle-introduction"] .meta-sub { color: #6B5A40; }
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c9"] .chapter-text > p:first-of-type::first-letter,
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c11"] .chapter-text > p:first-of-type::first-letter {
+  color: #9A6B24;
+}
+html[data-theme="light"] body[data-book="gentle-introduction"][data-chapter="p1c10"] .chapter-text > p:first-of-type::first-letter {
+  color: #8E2F24; /* §4 text-safe red, large-only */
+}
+html[data-theme="light"] body[data-book="gentle-introduction"] #chapter-art.plate figcaption {
+  color: var(--gi-vellum); /* cartouche stays dark on paper (§3) */
+  background: var(--gi-narthex);
+}
+html[data-theme="sepia"] body[data-book="gentle-introduction"] .meta-title { color: #2c2416; }
+html[data-theme="sepia"] body[data-book="gentle-introduction"] .meta-part { color: #9A6B24; }
+html[data-theme="sepia"] body[data-book="gentle-introduction"] #chapter-art.plate figcaption {
+  color: var(--gi-vellum);
+  background: var(--gi-narthex);
+}
+
+/* ---------- C.8 Responsive + motion guards (P6/P9, §7) -------------------- */
+@media (max-width: 560px) {
+  body[data-book="gentle-introduction"] #chapter-art.plate {
+    margin-left: -1rem;
+    margin-right: -1rem; /* plate breathes edge-to-edge; never cropped */
+    max-width: none;
+  }
+  body[data-book="gentle-introduction"] .meta-title {
+    font-size: clamp(1.7rem, 8vw, 2.2rem);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Cohort C ships no ambient motion; this guard pins that promise. */
+  body[data-book="gentle-introduction"] #chapter-art.plate,
+  body[data-book="gentle-introduction"] .chapter-meta {
+    animation: none;
+  }
+}
+@media print {
+  body[data-book="gentle-introduction"] #chapter-art.plate {
+    border-color: #999;
+    break-inside: avoid;
+  }
+  body[data-book="gentle-introduction"] #chapter-art.plate figcaption {
+    background: #fff;
+    color: #000;
+    border-top-color: #999;
+  }
+}

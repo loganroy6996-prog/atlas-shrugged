@@ -1,0 +1,57 @@
+{
+ "chapters": {
+  "p1c11": {
+   "caption": "Figure XI · The diptych, posted",
+   "class": "plate",
+   "motif": "posted-diptych",
+   "opener_composition": "Two red-ink posted bills side by side (LEFT / RIGHT) sharing one gilt frame; a Q-virus wax seal bridges the gutter. Blackletter bill heads are HTML overlays.",
+   "opener_rationale": "The chapter dissolves left-vs-right into organization theory — a diptych that is visibly one sheet makes the argument graphically. Red-ink proclamation craft per lock.",
+   "palette_role": "Signal Red bills on Press Black, gilt shared frame.",
+   "reading_treatment": "Ruled bill-clause paragraphs for the nomos chain; red rubric M/Q margin sigils at first uses; burnt-deed singed edges on the antinomian gallery.",
+   "salutation": "leading Dear → Garamond 500 + cockade",
+   "src": "art/olrestore.svg",
+   "symbol": "p1c11-posted-diptych",
+   "title": "The Truth About Left and Right"
+  },
+  "p1c12": {
+   "caption": "Figure XII · Against the dam",
+   "class": "plate",
+   "motif": "dam-broadside",
+   "opener_composition": "Proclamation broadside: a ruled dam wall (Boulder Dam analogy, 'La Wik direct action') holding back a red-ink torrent of posted bills. Portrait-leaning composition, wall left, torrent right.",
+   "opener_rationale": "Ch 12's central set-piece is the Boulder Dam / direct-action analogy and the survey of tactics — dam-vs-torrent stages 'what is to be done' as pressure against a wall.",
+   "palette_role": "ink + Signal Red torrent, gilt wall rules.",
+   "reading_treatment": "Rubricated charter-notices for the Salomon and Pobedonostsev quotations; Fragebogen form-notice grid divider before P57.",
+   "salutation": "leading Dear → Garamond 500 + cockade",
+   "src": "art/olrestore.svg",
+   "symbol": "p1c12-dam-broadside",
+   "title": "What Is to Be Done?"
+  },
+  "p1c13": {
+   "caption": "Figure XIII · Patent of the pilots",
+   "class": "plate",
+   "motif": "pilots-patent",
+   "opener_composition": "Red-ink letters-patent: the pilots' directorate key large at center, Trust seal below, Plaincorp/Trust/Receiver hierarchy as a chancery table. Most formal opener in the book.",
+   "opener_rationale": "The chapter is a constitutional document (Trust, Receiver, PHT franchise) — letters-patent is its native form. Key + Trust knot carry the 'all power to the pilots' close.",
+   "palette_role": "brass + Signal Red seals on Press Black; closing cockade nearby in end-mark family.",
+   "reading_treatment": "Sealed office-notice callouts (Receiver/Director/Trust); tally-board SFGate figures; ruled instrument-notice divider for the antenna passage; white cockade closes beside the trust-knot end-seal.",
+   "salutation": "leading Dear → Garamond 500 + cockade",
+   "src": "art/olrestore.svg",
+   "symbol": "p1c13-pilots-patent",
+   "title": "Tactics and Structures of Any Prospective Restoration"
+  },
+  "p1c14": {
+   "caption": "Figure XIV · Commissioned, dismissed, sealed",
+   "class": "plate",
+   "motif": "space-commission",
+   "opener_composition": "Red-ink commission scroll unfurling over a small ember starfield; the white cockade returns as the closing seal. Mirror of ch 1's tear: the book opens by ripping scenery and closes by signing orders.",
+   "opener_rationale": "The send-off chapter (space-lieutenant framing, 'rules', the Bazaar/Cathedral close) wants ceremony: a commission, not an essay header. The closing cockade rhymes cover + ch 3 + ch 13.",
+   "palette_role": "ember starfield + Signal Red scroll + white cockade on near-black.",
+   "reading_treatment": "Five rule tablets as posted bills I–V wayposted through the read; charter-notices for the horror tour; facing-bill spread for the Gladstone–Tennyson debate; ruled tariff-notice divider for King Ine; tailor's-needle parting device at the close.",
+   "salutation": "leading Dear → Garamond 500 + cockade",
+   "src": "art/olrestore.svg",
+   "symbol": "p1c14-commission",
+   "title": "Rules for Reactionaries"
+  }
+ },
+ "version": 1
+}

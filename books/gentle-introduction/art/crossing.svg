@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="x9t x9d">
+<title id="x9t">Plate IX — The crossing: four vaults meet under the lantern tower; the sanctuary lamp hangs lit at the center</title>
+<desc id="x9d">Engraved architectural plate. Massive corner piers carry four pointed arches — nave, choir, and transepts — meeting at the crossing square; an octagonal lantern tower rises above with a ring of lit lancets; a sanctuary lamp on a long chain hangs at the crossing center, its flame drawn in ember, candle, and gold, spilling stepped wedges of light down the piers. Nothing dissolves or comes apart: all stone is intact, all arches whole.</desc>
+<defs>
+<linearGradient id="x9night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".5" stop-color="#100F0D"/><stop offset="1" stop-color="#1B1813"/>
+</linearGradient>
+<linearGradient id="x9stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="x9flame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<pattern id="x9hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="14" stroke="#9C917E" stroke-width="1.6"/>
+</pattern>
+<pattern id="x9hatchx" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+<line x1="0" y1="0" x2="0" y2="18" stroke="#0A0908" stroke-width="2.4"/>
+</pattern>
+<filter id="x9grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#x9grain)" font-family="Georgia,'Palatino Linotype','Liberation Serif',serif">
+<rect x="0" y="0" width="1600" height="900" fill="url(#x9night)"/>
+<rect x="28" y="28" width="1544" height="844" fill="none" stroke="#9C917E" stroke-width="2" opacity=".55"/>
+<rect x="44" y="44" width="1512" height="812" fill="none" stroke="#9C917E" stroke-width="1" opacity=".25"/>
+<text x="72" y="96" font-size="24" letter-spacing="4" fill="#9C917E">TAB. IX</text>
+<text x="1528" y="96" font-size="20" letter-spacing="3" fill="#9C917E" text-anchor="end">UR · DE RE AEDIFICATORIA</text>
+
+<!-- ===== the lantern tower: an octagon of lit lancets above the crossing ===== -->
+<g>
+<!-- tower shaft -->
+<rect x="560" y="150" width="480" height="200" fill="#1E1B16" stroke="#9C917E" stroke-width="2.5"/>
+<rect x="560" y="150" width="480" height="200" fill="url(#x9hatch)" opacity=".16"/>
+<!-- tower cap: crenellated, intact -->
+<g fill="#242019" stroke="#9C917E" stroke-width="2">
+<rect x="548" y="118" width="504" height="34"/>
+<rect x="560" y="96" width="34" height="24"/><rect x="618" y="96" width="34" height="24"/>
+<rect x="676" y="96" width="34" height="24"/><rect x="734" y="96" width="34" height="24"/>
+<rect x="810" y="96" width="34" height="24"/><rect x="868" y="96" width="34" height="24"/>
+<rect x="926" y="96" width="34" height="24"/><rect x="984" y="96" width="34" height="24"/>
+</g>
+<!-- four lit lancets: the lantern ring. Light drawn as flat stepped mass. -->
+<g>
+<g><rect x="600" y="176" width="52" height="148" fill="#0A0908" stroke="#9C917E" stroke-width="2"/>
+<path d="M600 220 Q600 178 626 168 Q652 178 652 220 L652 324 L600 324 Z" fill="#DFA050"/>
+<path d="M600 262 Q600 220 626 210 Q652 220 652 262 L652 324 L600 324 Z" fill="#F4D9A0" opacity=".85"/>
+<line x1="626" y1="176" x2="626" y2="324" stroke="#A83A2C" stroke-width="3"/></g>
+<g><rect x="700" y="176" width="52" height="148" fill="#0A0908" stroke="#9C917E" stroke-width="2"/>
+<path d="M700 220 Q700 178 726 168 Q752 178 752 220 L752 324 L700 324 Z" fill="#DFA050"/>
+<path d="M700 262 Q700 220 726 210 Q752 220 752 262 L752 324 L700 324 Z" fill="#F4D9A0" opacity=".85"/>
+<line x1="726" y1="176" x2="726" y2="324" stroke="#A83A2C" stroke-width="3"/></g>
+<g><rect x="848" y="176" width="52" height="148" fill="#0A0908" stroke="#9C917E" stroke-width="2"/>
+<path d="M848 220 Q848 178 874 168 Q900 178 900 220 L900 324 L848 324 Z" fill="#DFA050"/>
+<path d="M848 262 Q848 220 874 210 Q900 220 900 262 L900 324 L848 324 Z" fill="#F4D9A0" opacity=".85"/>
+<line x1="874" y1="176" x2="874" y2="324" stroke="#A83A2C" stroke-width="3"/></g>
+<g><rect x="948" y="176" width="52" height="148" fill="#0A0908" stroke="#9C917E" stroke-width="2"/>
+<path d="M948 220 Q948 178 974 168 Q1000 178 1000 220 L1000 324 L948 324 Z" fill="#DFA050"/>
+<path d="M948 262 Q948 220 974 210 Q1000 220 1000 262 L1000 324 L948 324 Z" fill="#F4D9A0" opacity=".85"/>
+<line x1="974" y1="176" x2="974" y2="324" stroke="#A83A2C" stroke-width="3"/></g>
+</g>
+<!-- tower string course -->
+<rect x="548" y="350" width="504" height="14" fill="#242019" stroke="#9C917E" stroke-width="1.5"/>
+</g>
+
+<!-- ===== the four crossing arches: nave / choir / north + south transepts ===== -->
+<g>
+<!-- left transept arch -->
+<path d="M120 780 L120 480 Q120 380 260 330 L420 290 L420 780 Z" fill="#0A0908" stroke="#9C917E" stroke-width="3"/>
+<path d="M160 780 L160 500 Q160 410 280 368 L380 344 L380 780 Z" fill="none" stroke="#9C917E" stroke-width="1.2" opacity=".6"/>
+<path d="M120 480 Q120 380 260 330 L420 290" fill="none" stroke="#DFA050" stroke-width="2" opacity=".5"/>
+<!-- right transept arch -->
+<path d="M1480 780 L1480 480 Q1480 380 1340 330 L1180 290 L1180 780 Z" fill="#0A0908" stroke="#9C917E" stroke-width="3"/>
+<path d="M1440 780 L1440 500 Q1440 410 1320 368 L1220 344 L1220 780 Z" fill="none" stroke="#9C917E" stroke-width="1.2" opacity=".6"/>
+<path d="M1480 480 Q1480 380 1340 330 L1180 290" fill="none" stroke="#DFA050" stroke-width="2" opacity=".5"/>
+<!-- great crossing arch: nave-to-choir axis, centered and whole -->
+<path d="M560 780 L560 470 Q560 380 800 350 Q1040 380 1040 470 L1040 780 Z" fill="#14120E" stroke="#9C917E" stroke-width="3.5"/>
+<path d="M600 780 L600 490 Q600 412 800 386 Q1000 412 1000 490 L1000 780 Z" fill="none" stroke="#9C917E" stroke-width="1.4" opacity=".7"/>
+</g>
+
+<!-- ===== the four corner piers: the weight of the tower rests on the corners ===== -->
+<g fill="url(#x9stone)" stroke="#9C917E" stroke-width="2.5">
+<rect x="420" y="470" width="140" height="310"/>
+<rect x="1040" y="470" width="140" height="310"/>
+</g>
+<g fill="url(#x9hatch)" opacity=".2">
+<rect x="420" y="470" width="140" height="310"/>
+<rect x="1040" y="470" width="140" height="310"/>
+</g>
+<!-- pier responds: half-shafts climbing to the vault springing -->
+<g fill="#242019" stroke="#9C917E" stroke-width="1.6">
+<rect x="446" y="470" width="26" height="310"/><rect x="508" y="470" width="26" height="310"/>
+<rect x="1066" y="470" width="26" height="310"/><rect x="1128" y="470" width="26" height="310"/>
+</g>
+<!-- pier capitals: intact carved bands -->
+<g fill="none" stroke="#DFA050" stroke-width="1.4" opacity=".8">
+<path d="M420 520 L560 520"/><path d="M420 540 L560 540"/>
+<path d="M1040 520 L1180 520"/><path d="M1040 540 L1180 540"/>
+</g>
+
+<!-- ===== light from the lantern: stepped wedges spilling down to the center ===== -->
+<g>
+<polygon points="640,364 960,364 900,560 700,560" fill="#DFA050" opacity=".22"/>
+<polygon points="700,364 900,364 860,560 740,560" fill="#DFA050" opacity=".28"/>
+<polygon points="748,364 852,364 830,560 770,560" fill="#F4D9A0" opacity=".3"/>
+<!-- spill washing down the inner pier faces -->
+<polygon points="560,470 600,470 600,780 560,780" fill="#DFA050" opacity=".3"/>
+<polygon points="1000,470 1040,470 1040,780 1000,780" fill="#DFA050" opacity=".3"/>
+<polygon points="572,470 588,470 588,780 572,780" fill="#F4D9A0" opacity=".35"/>
+<polygon points="1012,470 1028,470 1028,780 1012,780" fill="#F4D9A0" opacity=".35"/>
+</g>
+
+<!-- ===== the sanctuary lamp: hung at the crossing center on a long chain ===== -->
+<g>
+<line x1="800" y1="364" x2="800" y2="470" stroke="#9C917E" stroke-width="3"/>
+<g fill="none" stroke="#9C917E" stroke-width="1.6">
+<ellipse cx="800" cy="392" rx="7" ry="10"/><ellipse cx="800" cy="416" rx="7" ry="10"/>
+<ellipse cx="800" cy="440" rx="7" ry="10"/><ellipse cx="800" cy="462" rx="7" ry="10"/>
+</g>
+<!-- lamp bowl: Sanctuary Red glass holding the flame -->
+<path d="M756 470 L844 470 L822 512 Q800 522 778 512 Z" fill="#A83A2C" stroke="#9C917E" stroke-width="2"/>
+<path d="M766 470 L834 470 L820 500 Q800 508 780 500 Z" fill="#DFA050" opacity=".55"/>
+<!-- the flame: cover grammar, ember -> candle -> gold -->
+<path d="M800 424 C814 448 816 460 800 474 C784 460 786 448 800 424 Z" fill="url(#x9flame)"/>
+<path d="M800 446 C805 456 806 461 800 465 C794 461 795 456 800 446 Z" fill="#F4D9A0"/>
+<!-- stepped halo mass: flat rings, never a blur -->
+<ellipse cx="800" cy="452" rx="34" ry="46" fill="none" stroke="#DFA050" stroke-width="2" opacity=".7"/>
+<ellipse cx="800" cy="452" rx="52" ry="66" fill="none" stroke="#DFA050" stroke-width="1.2" opacity=".4"/>
+<!-- the lamp lights the crossing floor: an ellipse of stepped gold -->
+<ellipse cx="800" cy="740" rx="180" ry="34" fill="#DFA050" opacity=".22"/>
+<ellipse cx="800" cy="740" rx="120" ry="22" fill="#DFA050" opacity=".26"/>
+<ellipse cx="800" cy="740" rx="60" ry="12" fill="#F4D9A0" opacity=".3"/>
+</g>
+
+<!-- crossing floor: stone slabs, whole and level -->
+<g stroke="#9C917E" stroke-width="1" opacity=".5">
+<line x1="560" y1="740" x2="1040" y2="740"/>
+<line x1="620" y1="712" x2="620" y2="780"/><line x1="720" y1="712" x2="720" y2="780"/>
+<line x1="880" y1="712" x2="880" y2="780"/><line x1="980" y1="712" x2="980" y2="780"/>
+</g>
+<rect x="560" y="780" width="480" height="10" fill="#242019" stroke="#9C917E" stroke-width="1"/>
+
+<!-- (no in-SVG caption strip: the manifest caption covers it — R1) -->
+</g>
+</svg>

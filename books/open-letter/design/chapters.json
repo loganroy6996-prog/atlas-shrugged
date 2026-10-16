@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "cover": {
+    "caption": "The Cathedral at night, dissolving into broadsheet columns",
+    "class": "plate-cover",
+    "src": "art/cover.svg"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/oldoubt.svg",
+      "symbol": "p1c1-tearing-canvas",
+      "class": "plate",
+      "motif": "tearing-canvas",
+      "caption": "Figure I \u00b7 The horizon tears"
+    },
+    "p1c10": {
+      "src": "art/olcathedral.svg",
+      "symbol": "p1c10-receivers-ledger",
+      "class": "plate",
+      "motif": "receivers-ledger",
+      "caption": "Figure X \u00b7 The Republic's balance-sheet, balanced"
+    },
+    "p1c11": {
+      "src": "art/olrestore.svg",
+      "symbol": "p1c11-posted-diptych",
+      "class": "plate",
+      "motif": "posted-diptych",
+      "caption": "Figure XI \u00b7 The diptych, posted"
+    },
+    "p1c12": {
+      "src": "art/olrestore.svg",
+      "symbol": "p1c12-dam-broadside",
+      "class": "plate",
+      "motif": "dam-broadside",
+      "caption": "Figure XII \u00b7 Against the dam"
+    },
+    "p1c13": {
+      "src": "art/olrestore.svg",
+      "symbol": "p1c13-pilots-patent",
+      "class": "plate",
+      "motif": "pilots-patent",
+      "caption": "Figure XIII \u00b7 Patent of the pilots"
+    },
+    "p1c14": {
+      "src": "art/olrestore.svg",
+      "symbol": "p1c14-commission",
+      "class": "plate",
+      "motif": "space-commission",
+      "caption": "Figure XIV \u00b7 Commissioned, dismissed, sealed"
+    },
+    "p1c2": {
+      "src": "art/oldoubt.svg",
+      "symbol": "p1c2-anomaly-table",
+      "class": "plate",
+      "motif": "anomaly-table",
+      "caption": "Figure II \u00b7 The cabinet of anomalies"
+    },
+    "p1c3": {
+      "src": "art/oldoubt.svg",
+      "symbol": "p1c3-cockade",
+      "class": "plate",
+      "motif": "white-cockade",
+      "caption": "Figure III \u00b7 For the King over the water"
+    },
+    "p1c4": {
+      "src": "art/oldoubt.svg",
+      "symbol": "p1c4-putney-sheet",
+      "class": "plate",
+      "motif": "putney-sheet",
+      "caption": "Figure IV \u00b7 The first Whig"
+    },
+    "p1c5": {
+      "src": "art/olsovereign.svg",
+      "symbol": "p1c5-survey-chart",
+      "class": "plate",
+      "motif": "survey-chart",
+      "caption": "Figure V \u00b7 Soundings for world peace"
+    },
+    "p1c6": {
+      "src": "art/olsovereign.svg",
+      "symbol": "p1c6-clean-schematic",
+      "class": "plate",
+      "motif": "clean-schematic",
+      "caption": "Figure VI \u00b7 The clean room"
+    },
+    "p1c7": {
+      "src": "art/olsovereign.svg",
+      "symbol": "p1c7-crater-cyanotype",
+      "class": "plate",
+      "motif": "crater-cyanotype",
+      "caption": "Figure VII \u00b7 Specimen: the Beltway crater"
+    },
+    "p1c8": {
+      "src": "art/olcathedral.svg",
+      "symbol": "p1c8-eagle-warrant",
+      "class": "plate",
+      "motif": "eagle-warrant",
+      "caption": "Figure VIII \u00b7 Warrant for a reset"
+    },
+    "p1c9": {
+      "src": "art/olcathedral.svg",
+      "symbol": "p1c9-dissolution",
+      "class": "plate-flagship",
+      "motif": "facade-dissolution",
+      "caption": "Figure IX \u00b7 Inventory of a dissolution"
+    }
+  }
+}

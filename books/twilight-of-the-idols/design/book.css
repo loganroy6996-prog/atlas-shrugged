@@ -1,0 +1,384 @@
+/* Twilight of the Idols — STRUCK BRONZE book shell (design/book.css).
+   Supervisor integrates into theme.css sequentially. Hooks:
+   body:not([data-chapter]) = cover + contents; body[data-chapter] = reading.
+   Palette: forge #100D0A / anvil #1B1510 / ash #A89A80 / bone #EDE2CC /
+   bronze #D29A4A / ember #B23A2A. Display: Cinzel (supervisor adds to fonts
+   link); body: Cormorant Garamond; chrome: DM Sans. */
+
+/* ── Book tokens (dark-first; light/sepia keep bronze/ember accents) ── */
+:root, html[data-theme="dark"] {
+  --tw-forge: #100d0a;
+  --tw-anvil: #1b1510;
+  --tw-ash: #a89a80;
+  --tw-bone: #ede2cc;
+  --tw-bronze: #d29a4a;
+  --tw-ember: #b23a2a;
+  --bg: var(--tw-forge);
+  --bg-elevated: var(--tw-anvil);
+  --text: var(--tw-bone);
+  --text-muted: var(--tw-ash);
+  --accent: var(--tw-bronze);
+  --accent-hover: #e0aa5c;
+  --copper: var(--tw-ember);
+  --on-accent: #100d0a;
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="sepia"] {
+  --tw-bronze: #8a5a08;
+  --tw-ember: #93300f;
+  --accent: var(--tw-bronze);
+  --copper: var(--tw-ember);
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="light"] {
+  --tw-bronze: #92600a;
+  --tw-ember: #93300f;
+  --accent: var(--tw-bronze);
+  --copper: var(--tw-ember);
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+html[data-theme="nocturne"], html[data-theme="verdant"],
+html[data-theme="oxblood"], html[data-theme="slate"],
+html[data-theme="candlelight"] {
+  --font-display: "Cinzel", "Times New Roman", serif;
+}
+
+/* ── Cover (body without data-chapter; #cover view) ── */
+body:not([data-chapter]) #cover {
+  background:
+    radial-gradient(ellipse 60% 34% at 50% 20%, color-mix(in srgb, var(--tw-bronze) 12%, transparent), transparent 65%),
+    var(--bg);
+}
+/* The struck-disc emblem (supervisor places art/cover.svg above the title). */
+body:not([data-chapter]) .cover-emblem {
+  display: block;
+  width: min(300px, 62vw);
+  height: auto;
+  margin: 0 auto 1.75rem;
+  filter: drop-shadow(0 0 42px color-mix(in srgb, var(--tw-bronze) 28%, transparent));
+}
+body:not([data-chapter]) .cover-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  color: var(--text-muted);
+}
+body:not([data-chapter]) .cover-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 8vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-wrap: balance;
+}
+/* Lock the two title lines: "Twilight of" / "the Idols", never orphan "OF". */
+body:not([data-chapter]) .cover-title .title-line {
+  display: block;
+  white-space: nowrap;
+}
+body:not([data-chapter]) .title-line.accent {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.82em;
+  letter-spacing: 0.10em;
+  color: var(--accent);
+}
+body:not([data-chapter]) .cover-author {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: var(--text);
+}
+body:not([data-chapter]) .cover-quote {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+/* R1 micro-note: cover footer + resume detail read dim-small against the
+   ember band — raise to the muted floor (not faint) with breathing room.
+   Resume line keeps ONE title by hiding the JS detail span, which echoes
+   "number_label · title" verbatim in this book (number_label == title). */
+body:not([data-chapter]) .cover-footer {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+body:not([data-chapter]) .cover-resume-detail {
+  display: none;
+}
+body:not([data-chapter]) .cover-rule { width: 16rem; }
+body:not([data-chapter]) .cover-rule::before,
+body:not([data-chapter]) .cover-rule::after {
+  background: linear-gradient(90deg, transparent, var(--accent));
+  opacity: 0.8;
+}
+body:not([data-chapter]) .cover-rule::after {
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+body:not([data-chapter]) .rule-diamond {
+  background: var(--copper);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--copper) 70%, transparent);
+}
+
+/* ── Contents drawer (shared across cover/reading, book-styled) ── */
+#toc-list > .toc-part:only-of-type .toc-part-header {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  border-top: 1px solid var(--border-strong);
+  border-bottom: 1px solid var(--border-strong);
+  padding: 0.7rem 0;
+}
+#toc-list .toc-part-sub {
+  font-family: var(--font-sans);
+  letter-spacing: 0.12em;
+}
+#toc-list .toc-num {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--accent);
+  width: 2rem;
+}
+#toc-list .toc-name { font-size: 1.08rem; }
+#toc-list .toc-chapter:hover .toc-name {
+  color: var(--text);
+  font-style: italic;
+}
+/* Read-state: the struck ring (overrides the shared check glyph styling). */
+#toc-list .toc-chapter.read .toc-check {
+  color: var(--accent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent);
+  opacity: 1;
+}
+#toc-list .toc-chapter.active .toc-name { color: var(--text); }
+#toc-list .toc-chapter.active {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 70%);
+  border-left: 2px solid var(--accent);
+}
+
+/* ── Chapter openers (reading view; emblems supplied by cohort CSS/SVG) ── */
+body[data-chapter] .chapter-meta { margin-bottom: 3rem; }
+body[data-chapter] .meta-part {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  color: var(--accent);
+}
+body[data-chapter] .meta-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: 0.04em;
+  text-wrap: balance;
+}
+/* Cinzel percent rule: aphorism/short chapters (maxims, fable, verdict) get
+   small-clamp Cinzel 600 + wide tracking + air — monumentality via spacing.
+   TR5: p1c2 goes further — its 44 maxims need a whisper title, not a plaque. */
+body[data-chapter="p1c5"] .meta-title,
+body[data-chapter="p1c12"] .meta-title {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3.6vw, 2.1rem);
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+}
+body[data-chapter="p1c2"] .meta-title {
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  letter-spacing: 0.22em;
+  text-indent: 0.22em;
+  line-height: 1.4;
+}
+body[data-chapter="p1c2"] .chapter-meta,
+body[data-chapter="p1c5"] .chapter-meta,
+body[data-chapter="p1c12"] .chapter-meta {
+  margin-bottom: 4rem;
+  padding-top: 1.5rem;
+}
+/* TR5: maxims breathe — short grafs get air between volleys, narrower measure
+   so each barb lands alone. Body stays Cormorant (never Cinzel). */
+body[data-chapter="p1c2"] .chapter-text p {
+  max-width: min(var(--reader-max), 56ch);
+  margin-bottom: 1.6em;
+}
+/* Strike emblem via READER-CONTRACT §3 slots: reader.js inlines the manifest
+   SVG into #chapter-art / #cover-art. Treatments keyed by slot class. */
+#chapter-art {
+  margin: 0 auto 1.6rem;
+  text-align: center;
+}
+#chapter-art.motif svg {
+  width: 148px;
+  height: 148px;
+}
+#chapter-art figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--text-faint);
+  margin-top: 0.6rem;
+  opacity: 0.75;
+}
+#cover-art {
+  margin: 0 auto 1.75rem;
+  text-align: center;
+}
+#cover-art.plate svg {
+  width: min(300px, 62vw);
+  height: auto;
+  filter: drop-shadow(0 0 42px color-mix(in srgb, var(--tw-bronze) 28%, transparent));
+}
+/* TR6: cover caption is a whisper, never a sentence — quiet, lowercase, faint.
+   (Manifest caption itself is also shortened; this guards any cohort line.) */
+#cover-art figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: var(--text-faint);
+  opacity: 0.6;
+  margin-top: 0.5rem;
+}
+/* TR6: one quiet mark above the eyebrow, not twin flanking forks. The shared
+   fleuron pair is collapsed to a single leading diamond. */
+body:not([data-chapter]) .cover-eyebrow::before {
+  content: "\25C6  ";
+  color: var(--accent);
+  opacity: 0.7;
+}
+body:not([data-chapter]) .cover-eyebrow::after {
+  content: none;
+}
+/* Fallback reserve: .chapter-meta::before is confirmed free (art.css owns only
+   ::after) but stays display:none — no empty 148px gap ships on any opener.
+   Cohort CSS enables it ONLY alongside a real emblem value, if ever used. */
+body[data-chapter] .chapter-meta::before {
+  display: none;
+  content: none;
+}
+/* Opener seal under the heading: authored SVG ring (A.0-conformant url art).
+   Sized via width/height on the pseudo (replaced element from content:url). */
+body[data-chapter] .chapter-meta::after {
+  content: url("../art/seal-ring.svg");
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 1.4rem auto 0;
+  line-height: 0;
+  opacity: 0.9;
+}
+/* TR2: cut the title echo. In this book number_label == title for all 12
+   chapters, so .meta-number repeats the Cinzel title verbatim (×3 with the
+   reader header). Hide it; keep header context, Cinzel title, .meta-sub. */
+body[data-chapter] .meta-number {
+  display: none;
+}
+body[data-chapter] .meta-rule { margin-top: 1.4rem; }
+body[data-chapter] .meta-rule span {
+  width: 5rem;
+  background: linear-gradient(90deg, var(--copper), var(--accent));
+  opacity: 0.9;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+/* Chapter-end seal: authored SVG ring per A.0 (28px, centered, no layout
+   shift beyond the shared end-mark block). Cohorts may override per-chapter. */
+body[data-chapter] .chapter-text > p:last-child::after {
+  content: url("../art/seal-ring.svg");
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+/* TR3/T3 — Raid markers for p1c10 (11,939 words, 22 titled raids + close).
+   Mechanism: book-owned JS tags raid-start paragraphs with data-raid="<n>"
+   and .raid-start (contract reader:chapter hook); CSS renders a marginal
+   sounding-tick — small bronze ring on a hairline + raid label. Pure-CSS
+   fallback: without JS the chapter reads as clean prose (no markers, no
+   layout shift). */
+body[data-chapter="p1c10"] .chapter-text {
+  --raid-tick: var(--accent);
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start {
+  position: relative;
+  margin-top: 2.2em;
+  padding-top: 0.4em;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+}
+/* First graf doubles as raid 01: keep its drop-cap dignity — label floats
+   clear above the cap line (R1 micro-note: no collision with the "M"),
+   no rule through the opening initial. */
+body[data-chapter="p1c10"] .chapter-text p.raid-start:first-of-type {
+  margin-top: 3.4em;
+  padding-top: 0;
+  border-top: none;
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start:first-of-type::before {
+  display: none;
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start:first-of-type::after {
+  top: -2.6em;
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid var(--raid-tick);
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+body[data-chapter="p1c10"] .chapter-text p.raid-start::after {
+  content: "raid " attr(data-raid);
+  position: absolute;
+  top: -1.55em;
+  left: 1.2rem;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+/* Calm body: bronze drop-cap, quiet measure. */
+body[data-chapter] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  color: var(--accent);
+}
+body[data-chapter] .chapter-text blockquote {
+  border-left: 2px solid var(--copper);
+  font-style: italic;
+}
+
+/* ── Reader chrome ── */
+.progress-fill {
+  background: linear-gradient(90deg, var(--copper), var(--accent));
+}
+.nav-label {
+  font-family: var(--font-display);
+  letter-spacing: 0.22em;
+}
+.nav-btn:hover:not(:disabled) { border-color: var(--accent); }
+
+@media (max-width: 560px) {
+  #cover-art.plate svg { width: min(220px, 70vw); }
+  #chapter-art.motif svg { width: 112px; height: 112px; }
+  body:not([data-chapter]) .cover-emblem { width: min(220px, 70vw); }
+  body[data-chapter] .meta-part { letter-spacing: 0.22em; text-indent: 0.22em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #cover-art.plate svg { filter: none; }
+  body:not([data-chapter]) .cover-emblem { filter: none; }
+}
+@media print {
+  #chapter-art, #cover-art { display: none; }
+  body:not([data-chapter]) .cover-emblem { display: none; }
+}

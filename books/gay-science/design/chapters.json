@@ -1,0 +1,1685 @@
+{
+ "chapters": {
+  "p1c1": {
+   "caption": "Glow before the house \u2014 Preface to the Second Edition",
+   "class": "banner",
+   "motif": "dawn-glow",
+   "src": "art/cohort-a.svg",
+   "symbol": "gs-preface-glow"
+  },
+  "p2c25": {
+   "caption": "xxv \u00b7 the middle ground \u2014 the ring completes across the Prelude",
+   "class": "motif",
+   "motif": "sunrise",
+   "src": "art/cohort-a.svg",
+   "symbol": "gs-ring-shoot-depth"
+  },
+  "p2c33": {
+   "caption": "xxxiii \u00b7 losing myself, lured home \u2014 the ring completes across the Prelude",
+   "class": "motif",
+   "motif": "sunrise",
+   "src": "art/cohort-a.svg",
+   "symbol": "gs-ring-shoot-dance"
+  },
+  "p2c59": {
+   "caption": "lix \u00b7 inky drivel, boldly dipped \u2014 the ring completes across the Prelude",
+   "class": "motif",
+   "motif": "sunrise",
+   "src": "art/cohort-a.svg",
+   "symbol": "gs-ring-shoot-craft"
+  },
+  "p2c61": {
+   "caption": "lxi \u00b7 halfway spent, the clock hand moves \u2014 the ring completes across the Prelude",
+   "class": "motif",
+   "motif": "sunrise",
+   "src": "art/cohort-a.svg",
+   "symbol": "gs-ring-shoot-mask"
+  },
+  "p2c63": {
+   "caption": "lxiii \u00b7 be thine \u2014 the ring completes across the Prelude",
+   "class": "motif",
+   "motif": "sunrise",
+   "src": "art/cohort-a.svg",
+   "symbol": "gs-ring-shoot-star"
+  },
+  "p2c9": {
+   "caption": "ix \u00b7 joy on the narrow ledges \u2014 the ring completes across the Prelude",
+   "class": "motif",
+   "motif": "sunrise",
+   "src": "art/cohort-a.svg",
+   "symbol": "gs-ring-shoot-dance"
+  },
+  "p3c1": {
+   "caption": "Ebb and flood \u2014 the comedy of existence.",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-essay gs-b-read-grand banner",
+   "motif": "gs-b-land-herd",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-herd"
+  },
+  "p3c10": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-ancestor",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-ancestor"
+  },
+  "p3c11": {
+   "class": "gs-b-opener-mark gs-b-tone-ember gs-b-read-standard",
+   "motif": "gs-b-eye",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-eye"
+  },
+  "p3c12": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-strand",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-strand"
+  },
+  "p3c13": {
+   "caption": "Benefiting and hurting \u2014 power over dependents and equals.",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay banner",
+   "motif": "gs-b-panel-hand",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-hand"
+  },
+  "p3c14": {
+   "caption": "We stretch out our hands again \u2014 until friendship.",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay banner",
+   "motif": "gs-b-panel-grasp",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-grasp"
+  },
+  "p3c15": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-mountain",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-mountain"
+  },
+  "p3c16": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-bridge",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-bridge"
+  },
+  "p3c17": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-stream",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-stream"
+  },
+  "p3c18": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-column",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-column"
+  },
+  "p3c19": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-tree",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-tree"
+  },
+  "p3c2": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-scales",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-scales"
+  },
+  "p3c20": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-cap",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-cap"
+  },
+  "p3c21": {
+   "caption": "[Thou shalt] and [Thou shalt not] \u2014 preached in the same breath.",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-iron gs-b-read-essay banner",
+   "motif": "gs-b-land-tablets",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-tablets"
+  },
+  "p3c22": {
+   "caption": "The fifth hour \u2014 a morning dream of ceremony.",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-stage gs-b-read-dramatic banner",
+   "motif": "gs-b-land-court",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-court"
+  },
+  "p3c23": {
+   "caption": "Corruption \u2014 the autumn of a people.",
+   "class": "gs-b-opener-essay-opener gs-b-tone-autumn gs-b-read-essay banner",
+   "motif": "gs-b-panel-applefall",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-applefall"
+  },
+  "p3c24": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-twocups",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-twocups"
+  },
+  "p3c25": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-turned",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-turned"
+  },
+  "p3c26": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-shed",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-shed"
+  },
+  "p3c27": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-hood",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-hood"
+  },
+  "p3c28": {
+   "class": "gs-b-opener-mark gs-b-tone-glare gs-b-read-standard",
+   "motif": "gs-b-flare",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-flare"
+  },
+  "p3c29": {
+   "class": "gs-b-opener-mark gs-b-tone-stage gs-b-read-quiet",
+   "motif": "gs-b-prompter",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-prompter"
+  },
+  "p3c3": {
+   "caption": "They give a wink \u2014 suspicion of the noble.",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay banner",
+   "motif": "gs-b-panel-wink",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-wink"
+  },
+  "p3c30": {
+   "class": "gs-b-opener-mark gs-b-tone-stage gs-b-read-duet",
+   "motif": "gs-b-m-plumemask",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-m-plumemask"
+  },
+  "p3c31": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-duet",
+   "motif": "gs-b-m-bowscale",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-m-bowscale"
+  },
+  "p3c32": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-halves",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-halves"
+  },
+  "p3c33": {
+   "class": "gs-b-opener-mark gs-b-tone-iron gs-b-read-quiet",
+   "motif": "gs-b-wink",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-wink"
+  },
+  "p3c34": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-sunbeam",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-sunbeam"
+  },
+  "p3c35": {
+   "class": "gs-b-opener-mark gs-b-tone-shadow gs-b-read-quiet",
+   "motif": "gs-b-pyre",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-pyre"
+  },
+  "p3c36": {
+   "caption": "Plaudite, amici \u2014 the mask falls; Tiberius is smothered.",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-stage gs-b-read-dramatic banner",
+   "motif": "gs-b-land-lastwords",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-lastwords"
+  },
+  "p3c37": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-threecandles",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-threecandles"
+  },
+  "p3c38": {
+   "class": "gs-b-opener-mark gs-b-tone-ember gs-b-read-quiet",
+   "motif": "gs-b-match",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-match"
+  },
+  "p3c39": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-cup",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-cup"
+  },
+  "p3c4": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-flame",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-flame"
+  },
+  "p3c40": {
+   "class": "gs-b-opener-mark gs-b-tone-iron gs-b-read-standard",
+   "motif": "gs-b-swordfire",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-swordfire"
+  },
+  "p3c41": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-flask",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-flask"
+  },
+  "p3c42": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-horizonpath",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-horizonpath"
+  },
+  "p3c43": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-lawtablet",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-lawtablet"
+  },
+  "p3c44": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-lever",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-lever"
+  },
+  "p3c45": {
+   "caption": "The afternoon of antiquity \u2014 the sea of existence grown still.",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-noon gs-b-read-luminous banner",
+   "motif": "gs-b-land-epicurus",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-epicurus"
+  },
+  "p3c46": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-clamp",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-clamp"
+  },
+  "p3c47": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-muzzle",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-muzzle"
+  },
+  "p3c48": {
+   "caption": "The age of fear \u2014 the recipe against distress is distress.",
+   "class": "gs-b-opener-essay-opener gs-b-tone-shadow gs-b-read-shadowed banner",
+   "motif": "gs-b-panel-manacle",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-manacle"
+  },
+  "p3c49": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-wheel",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-wheel"
+  },
+  "p3c5": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-drum",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-drum"
+  },
+  "p3c50": {
+   "class": "gs-b-opener-mark gs-b-tone-iron gs-b-read-quiet",
+   "motif": "gs-b-ringfaces",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-ringfaces"
+  },
+  "p3c51": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-spark",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-spark"
+  },
+  "p3c52": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-quiet",
+   "motif": "gs-b-echo",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-echo"
+  },
+  "p3c53": {
+   "class": "gs-b-opener-mark gs-b-tone-dim gs-b-read-quiet",
+   "motif": "gs-b-eye",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-eye"
+  },
+  "p3c54": {
+   "caption": "Go on dreaming lest you fall \u2014 the knower joins the dance.",
+   "class": "gs-b-opener-landmark-panel gs-b-tone-dream gs-b-read-visionary banner",
+   "motif": "gs-b-land-sleepwalker",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-land-sleepwalker"
+  },
+  "p3c55": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-altar",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-altar"
+  },
+  "p3c56": {
+   "class": "gs-b-opener-mark gs-b-tone-closing gs-b-read-closing",
+   "motif": "gs-b-monster",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-monster"
+  },
+  "p3c6": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-headwheel",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-headwheel"
+  },
+  "p3c7": {
+   "caption": "An immense field of work \u2014 the moral sun not yet risen.",
+   "class": "gs-b-opener-essay-opener gs-b-tone-essay gs-b-read-essay banner",
+   "motif": "gs-b-panel-field",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-panel-field"
+  },
+  "p3c8": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-lens",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-lens"
+  },
+  "p3c9": {
+   "class": "gs-b-opener-mark gs-b-tone-morning gs-b-read-standard",
+   "motif": "gs-b-seedling",
+   "src": "art/cohort-b.svg",
+   "symbol": "gs-b-seedling"
+  },
+  "p4c1": {
+   "caption": "Sais veils open the triptych: no reality, only beloved appearances.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-gold"
+  },
+  "p4c10": {
+   "caption": "Fragile ornaments against the law of the jungle.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask"
+  },
+  "p4c11": {
+   "caption": "Isn't that the counsel of love? Vivat comoedia!",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask-comedy"
+  },
+  "p4c12": {
+   "caption": "Will and willingness: man makes the Bild of woman.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask"
+  },
+  "p4c13": {
+   "caption": "To wield a dagger deftly: Chinese revenge.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask-dagger"
+  },
+  "p4c14": {
+   "caption": "The deep alto raises the curtain upon possibilities.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask-pair"
+  },
+  "p4c15": {
+   "caption": "A psychic knot that may have no equal.",
+   "class": "banner",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c15"
+  },
+  "p4c16": {
+   "caption": "Mothers - and male mothers.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask"
+  },
+  "p4c17": {
+   "caption": "Never beget when it is not time.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask"
+  },
+  "p4c2": {
+   "caption": "Names grow into things: the creators' charter.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-gold"
+  },
+  "p4c20": {
+   "caption": "The tortoise: unwavering beat-keepers of the slow spirit.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c20"
+  },
+  "p4c21": {
+   "caption": "The delight in the mask, the good conscience in everything mask-like.",
+   "class": "banner",
+   "motif": "lyre",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c21"
+  },
+  "p4c22": {
+   "caption": "The art of putting oneself on stage before oneself.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask-pair"
+  },
+  "p4c23": {
+   "caption": "The imperfect poet lends his listeners wings.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-verm"
+  },
+  "p4c24": {
+   "caption": "The Athenian went to the theatre to hear pleasing speech.",
+   "class": "banner",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c24"
+  },
+  "p4c26": {
+   "caption": "Greek logic against the French leap into the opposite.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-gold-arc"
+  },
+  "p4c27": {
+   "caption": "The butterfly called The-Twinkling-of-an-Eye: one conquered by translating.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c27"
+  },
+  "p4c28": {
+   "caption": "Rhythm is a compulsion - poetry cast around the gods like a magical snare.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-tableau-poetry"
+  },
+  "p4c29": {
+   "caption": "Artists glorify with the lungs of heralds.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-gold-arc"
+  },
+  "p4c3": {
+   "caption": "We sleepwalkers of the day - we artists.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c3"
+  },
+  "p4c30": {
+   "caption": "One gives the mole wings: theatre as the hashish of the European.",
+   "class": "banner",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c30"
+  },
+  "p4c31": {
+   "caption": "The Orpheus of all secret misery: too vain to know it.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c31"
+  },
+  "p4c32": {
+   "caption": "What has weight for us, and what we have no weights for.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-gold-weights"
+  },
+  "p4c33": {
+   "caption": "The higher art we are losing: the art of festivals.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask-fest"
+  },
+  "p4c34": {
+   "caption": "Books as stolen lights, drafts as grey after-images.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-verm-half"
+  },
+  "p4c35": {
+   "caption": "Alfieri lied very much when he told his life story.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-bust"
+  },
+  "p4c36": {
+   "caption": "War is the father of all good things - and of good prose.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-verm-quills"
+  },
+  "p4c37": {
+   "caption": "No other means of getting rid of my thoughts.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-verm-quill"
+  },
+  "p4c38": {
+   "caption": "Audacious little words that became truths: the game gets serious.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-bust"
+  },
+  "p4c39": {
+   "caption": "The clothes of the mob, worn as his kind of hairshirt.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c39"
+  },
+  "p4c4": {
+   "caption": "actio in distans - but that requires distance.",
+   "class": "banner",
+   "motif": "ship",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c4"
+  },
+  "p4c40": {
+   "caption": "First passion, then the logical, mocking, terrifying mind.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-verm-twin"
+  },
+  "p4c41": {
+   "caption": "Rage, concepts, twists, spite, good words, noise.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-verm-triple"
+  },
+  "p4c42": {
+   "caption": "Independence of soul: the strength to cut this knot.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c42"
+  },
+  "p4c43": {
+   "caption": "Be a man and do not follow me - but yourself!",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-tableau-followers"
+  },
+  "p4c44": {
+   "caption": "Gratitude wants to speak, but something gets caught in her throat.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-gold-catch"
+  },
+  "p4c45": {
+   "caption": "While Voltaire perfected the laws of court speech.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-bust-court"
+  },
+  "p4c46": {
+   "caption": "Work in usum Delphinorum: philology's noble faith.",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-verm-regal"
+  },
+  "p4c47": {
+   "caption": "How to lend expression to animated masses of people.",
+   "class": "banner",
+   "motif": "lyre",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c47"
+  },
+  "p4c48": {
+   "caption": "From chancery German to the officers' bark.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c48"
+  },
+  "p4c49": {
+   "caption": "Poor bears in which hidden nymphs are at work: they want to dance.",
+   "class": "motif",
+   "motif": "lyre",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-lyre"
+  },
+  "p4c5": {
+   "caption": "The Macedonian king's talent: has he then no friend?",
+   "class": "motif",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-spark-gold"
+  },
+  "p4c50": {
+   "caption": "Who could refute a tone? Let the sprout become a tree.",
+   "class": "motif",
+   "motif": "lyre",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-lyre-sprout"
+  },
+  "p4c51": {
+   "caption": "The good will to appearance - and the fool's cap.",
+   "class": "banner",
+   "motif": "high-morning",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-branch-p4c51"
+  },
+  "p4c8": {
+   "caption": "Old women's scepticism: virtue as a desirable veil.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask"
+  },
+  "p4c9": {
+   "caption": "Devotion's melancholy gift of virtue and shame.",
+   "class": "motif",
+   "motif": "masks",
+   "src": "art/cohort-c.svg",
+   "symbol": "cc-med-mask"
+  },
+  "p5c10": {
+   "caption": "Nothing more frightful than feeling alone.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-herd"
+  },
+  "p5c106": {
+   "caption": "Admire yourself \u2014 and contempt?",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c11": {
+   "caption": "Strong and weak are relative concepts.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c12": {
+   "caption": "Wanting to become a function.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c127": {
+   "caption": "He who has ears to hear.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-star"
+  },
+  "p5c13": {
+   "caption": "Your virtue is the health of your soul.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c14": {
+   "caption": "Life is not an argument.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lens"
+  },
+  "p5c142": {
+   "caption": "Oh, this flame of my greed!",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lens"
+  },
+  "p5c144": {
+   "caption": "Their doubts about their own greatness.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-actor-prometheus"
+  },
+  "p5c15": {
+   "caption": "The dignity of a toreador.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c16": {
+   "caption": "Knowledge wants to be more than a means.",
+   "class": "banner",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-lamp"
+  },
+  "p5c17": {
+   "caption": "No more land!",
+   "class": "motif",
+   "motif": "ship",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-ship"
+  },
+  "p5c18": {
+   "caption": "I seek God! I seek God! \u2014 cried at bright morning, lantern lit.",
+   "class": "banner",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-zenith-lantern"
+  },
+  "p5c2": {
+   "caption": "When will we have de-deified nature?",
+   "class": "banner",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-chaos"
+  },
+  "p5c20": {
+   "caption": "The will is a force that works by magic.",
+   "class": "banner",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-will"
+  },
+  "p5c21": {
+   "caption": "Prayer-rattling for the poor in spirit.",
+   "class": "banner",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-prayer"
+  },
+  "p5c24": {
+   "caption": "Two permitted suicides.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c27": {
+   "caption": "The middle ages: alcohol poisoning of Europe.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c28": {
+   "caption": "Sin is a Jewish feeling and a Jewish invention.",
+   "class": "banner",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-serpent"
+  },
+  "p5c29": {
+   "caption": "The tower of royal power.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c3": {
+   "caption": "To what extent can truth stand to be incorporated?",
+   "class": "banner",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-sage"
+  },
+  "p5c30": {
+   "caption": "One sunbeam through perpetual day-night.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c31": {
+   "caption": "His error \u2014 sanctified into truth.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c32": {
+   "caption": "The Greeks gilded the passions.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c34": {
+   "caption": "If I love you, what does that concern you?",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c36": {
+   "caption": "One god was not the denial of another god.",
+   "class": "banner",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-gods"
+  },
+  "p5c37": {
+   "caption": "The mob becomes subtle.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c38": {
+   "caption": "A need they are able to satisfy.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c39": {
+   "caption": "Here I stand! I can do no other!",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c4": {
+   "caption": "Logic arose out of the illogical.",
+   "class": "banner",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-identity"
+  },
+  "p5c41": {
+   "caption": "The storm that put an end to everything.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c42": {
+   "caption": "Where there is ruling, there are masses.",
+   "class": "banner",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-egg"
+  },
+  "p5c43": {
+   "caption": "A virtue with such an effect I call brutal.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c44": {
+   "caption": "An embarrassing lapse of the intellect.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c45": {
+   "caption": "We have given things a new colour.",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lantern"
+  },
+  "p5c46": {
+   "caption": "I have slain all gods \u2014 what of the fifth act?",
+   "class": "motif",
+   "motif": "lantern",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-actor-toppled"
+  },
+  "p5c47": {
+   "caption": "We are made of glass.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-star"
+  },
+  "p5c5": {
+   "caption": "Cause and effect: never such a duality \u2014 a continuum.",
+   "class": "banner",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-branch-zenith-stream"
+  },
+  "p5c54": {
+   "caption": "A face without a future.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-herd"
+  },
+  "p5c6": {
+   "caption": "Drives learned coexistence \u2014 or poison.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lens"
+  },
+  "p5c61": {
+   "caption": "A bad ear for praise.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-herd"
+  },
+  "p5c63": {
+   "caption": "The crowd is not lazy enough for him.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-herd"
+  },
+  "p5c67": {
+   "caption": "The whole herd against him.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-herd"
+  },
+  "p5c69": {
+   "caption": "Les souverains rangent aux parvenus.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c8": {
+   "caption": "Four errors \u2014 and humanity with them.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-lens"
+  },
+  "p5c85": {
+   "caption": "I like him.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p5c9": {
+   "caption": "Morality is herd-instinct in the individual.",
+   "class": "motif",
+   "motif": "zenith",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-herd"
+  },
+  "p5c99": {
+   "caption": "The poverty of the poor.",
+   "class": "motif",
+   "motif": "tablet",
+   "src": "art/cohort-d.svg",
+   "symbol": "gs-shoot-zenith-tablet"
+  },
+  "p6c1": {
+   "class": "motif gs-ef-medallion",
+   "motif": "morning",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-dawn"
+  },
+  "p6c10": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-lyre"
+  },
+  "p6c11": {
+   "class": "motif gs-ef-medallion",
+   "motif": "morning",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-dawn"
+  },
+  "p6c13": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c14": {
+   "class": "motif gs-ef-medallion",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-voyage"
+  },
+  "p6c15": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-style"
+  },
+  "p6c16": {
+   "class": "banner gs-ef-banner",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-genoa"
+  },
+  "p6c17": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-column"
+  },
+  "p6c18": {
+   "class": "banner gs-ef-banner",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-air"
+  },
+  "p6c19": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-coin"
+  },
+  "p6c2": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-providence"
+  },
+  "p6c20": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-habits"
+  },
+  "p6c21": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c22": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c23": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-path"
+  },
+  "p6c24": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-lyre"
+  },
+  "p6c25": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c26": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-poet"
+  },
+  "p6c27": {
+   "class": "motif gs-ef-medallion",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-voyage"
+  },
+  "p6c28": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-lyre"
+  },
+  "p6c29": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c3": {
+   "class": "motif gs-ef-medallion",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-voyage"
+  },
+  "p6c30": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c31": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c32": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c33": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c34": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-path"
+  },
+  "p6c35": {
+   "class": "motif gs-ef-medallion",
+   "motif": "wave",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-voyage"
+  },
+  "p6c36": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c4": {
+   "class": "motif gs-ef-medallion",
+   "motif": "star",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-voyage-two"
+  },
+  "p6c40": {
+   "class": "motif gs-ef-medallion",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-voyage"
+  },
+  "p6c41": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-path"
+  },
+  "p6c42": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-lyre"
+  },
+  "p6c43": {
+   "class": "motif gs-ef-medallion",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-voyage"
+  },
+  "p6c44": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c45": {
+   "class": "motif gs-ef-medallion",
+   "motif": "morning",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-dawn"
+  },
+  "p6c46": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-column"
+  },
+  "p6c49": {
+   "class": "motif gs-ef-medallion",
+   "motif": "morning",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-dawn"
+  },
+  "p6c5": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-path"
+  },
+  "p6c50": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c51": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-pain"
+  },
+  "p6c52": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c53": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c54": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-otium"
+  },
+  "p6c55": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-coin"
+  },
+  "p6c56": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-coin"
+  },
+  "p6c58": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-drives"
+  },
+  "p6c59": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-lyre"
+  },
+  "p6c6": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p6c60": {
+   "class": "banner gs-ef-banner",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-physics"
+  },
+  "p6c61": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-coin"
+  },
+  "p6c62": {
+   "class": "banner gs-ef-banner",
+   "motif": "morning",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-humanity"
+  },
+  "p6c63": {
+   "class": "banner gs-ef-banner",
+   "motif": "morning",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-compassion"
+  },
+  "p6c64": {
+   "class": "motif gs-ef-medallion",
+   "motif": "sunrise",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-veil"
+  },
+  "p6c65": {
+   "class": "motif gs-ef-medallion",
+   "motif": "sunrise",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-rooster"
+  },
+  "p6c66": {
+   "caption": "The heaviest weight \u2014 what if this life returned forever?",
+   "class": "banner gs-ef-banner",
+   "motif": "hourglass",
+   "src": "art/cohort-ef.svg",
+   "symbol": "gs-hourglass-night"
+  },
+  "p6c67": {
+   "caption": "\u201cYou great heavenly body!\u201d \u2014 Incipit tragoedia",
+   "class": "banner gs-ef-banner",
+   "motif": "sunrise-forth",
+   "src": "art/cohort-ef.svg",
+   "symbol": "gs-sunrise-forth"
+  },
+  "p6c7": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-path"
+  },
+  "p6c8": {
+   "class": "banner gs-ef-banner",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-golden-vesuvius"
+  },
+  "p6c9": {
+   "class": "motif gs-ef-medallion",
+   "motif": "golden",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-sun"
+  },
+  "p7c1": {
+   "caption": "How to understand our cheerfulness \u2014 the first shadow over Europe",
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "gs-cheer-shadow"
+  },
+  "p7c10": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-flame"
+  },
+  "p7c11": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-religion"
+  },
+  "p7c12": {
+   "class": "banner gs-ef-banner",
+   "motif": "hourglass",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-herdnet"
+  },
+  "p7c13": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-knowledge"
+  },
+  "p7c14": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-actors"
+  },
+  "p7c15": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-german"
+  },
+  "p7c16": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-luther"
+  },
+  "p7c17": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-revenge"
+  },
+  "p7c18": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-letter"
+  },
+  "p7c19": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-actor"
+  },
+  "p7c2": {
+   "class": "banner gs-ef-banner",
+   "motif": "hourglass",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-pious"
+  },
+  "p7c20": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-mask"
+  },
+  "p7c21": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-sexes"
+  },
+  "p7c22": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-mask"
+  },
+  "p7c23": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-mask"
+  },
+  "p7c24": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-hunch"
+  },
+  "p7c25": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-pipe"
+  },
+  "p7c26": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-cynic"
+  },
+  "p7c27": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-mask"
+  },
+  "p7c28": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-romantic"
+  },
+  "p7c29": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-mask"
+  },
+  "p7c3": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-morality"
+  },
+  "p7c30": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-ideal"
+  },
+  "p7c31": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-science"
+  },
+  "p7c32": {
+   "class": "motif gs-ef-medallion",
+   "motif": "star",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-letter"
+  },
+  "p7c33": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-letter"
+  },
+  "p7c34": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-pipe"
+  },
+  "p7c35": {
+   "class": "banner gs-ef-banner",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-plate-homeless"
+  },
+  "p7c36": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-letter"
+  },
+  "p7c37": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-mask"
+  },
+  "p7c38": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-wanderer"
+  },
+  "p7c39": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-dance"
+  },
+  "p7c4": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-question"
+  },
+  "p7c40": {
+   "class": "banner gs-ef-banner",
+   "motif": "ship",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-argonaut"
+  },
+  "p7c41": {
+   "caption": "Epilogue \u2014 the spirits of the book descend, laughing",
+   "class": "banner gs-ef-banner",
+   "motif": "ring-fragment",
+   "src": "art/cohort-ef.svg",
+   "symbol": "gs-epilogue-ring"
+  },
+  "p7c5": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-believers"
+  },
+  "p7c6": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-scholar"
+  },
+  "p7c7": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-mask"
+  },
+  "p7c8": {
+   "class": "motif gs-ef-medallion",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-med-flame"
+  },
+  "p7c9": {
+   "class": "banner gs-ef-banner",
+   "motif": "afternoon",
+   "src": "art/cohort-ef.svg",
+   "symbol": "ef-branch-shadow-priest"
+  },
+  "p8c1": {
+   "caption": "Songs of Prince Vogelfrei \u2014 the outlaw sings the sun down",
+   "class": "song gs-ef-song",
+   "motif": "sunset",
+   "src": "art/cohort-ef.svg",
+   "symbol": "gs-appendix-farewell"
+  }
+ },
+ "cover": {
+  "caption": "Noon sun over a dark sea, ringed by vermilion dancers",
+  "class": "plate",
+  "src": "art/cover.svg"
+ },
+ "default": {
+  "class": "motif"
+ },
+ "version": 1
+}

@@ -1,0 +1,1837 @@
+{
+ "atlas-shrugged": {
+  "slug": "atlas-shrugged",
+  "chapter": "p1c3",
+  "consoleErrors": [
+   "Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(14, 18, 22)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 405,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 656,
+    "pMaxWidth": "763.86px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 764,
+    "pMaxWidth": "763.86px",
+    "readerBodyWidth": 912,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 764,
+    "pMaxWidth": "763.86px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "20.48px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.48px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "20.48px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "20.48px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "36.4544px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "36.4544px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "36.4544px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+   "sans": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(14, 18, 22)",
+    "staleInline": false,
+    "inlineBg": "rgb(14, 18, 22)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(13, 17, 23)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 14, 26)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(10, 15, 24)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 19, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(11, 18, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(18, 11, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(18, 11, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 13, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(54, 47, 38)",
+    "staleInline": true,
+    "inlineBg": "rgb(242, 234, 216)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(242, 234, 216)",
+    "staleInline": false,
+    "inlineBg": "rgb(242, 234, 216)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(231, 223, 207)",
+    "staleInline": true,
+    "inlineBg": "rgb(15, 21, 27)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(50, 54, 56)",
+    "staleInline": true,
+    "inlineBg": "rgb(242, 234, 216)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "being-and-time": {
+  "slug": "being-and-time",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(12, 15, 10)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 9,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "readerBodyWidth": 1216,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "readerBodyWidth": 1216,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "readerBodyWidth": 1216,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "20.2878px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "22.9341px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "26.4624px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "29.9907px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "47.9852px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "47.9852px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "47.9852px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "Fraunces, Georgia, serif",
+   "sans": "Fraunces, Georgia, serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(12, 15, 10)",
+    "staleInline": false,
+    "inlineBg": "rgb(12, 15, 10)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(12, 15, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 14, 20)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(10, 15, 19)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 19, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(13, 17, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 13, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 13, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(19, 13, 7)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(30, 24, 17)",
+    "staleInline": true,
+    "inlineBg": "rgb(239, 230, 208)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(241, 233, 214)",
+    "staleInline": true,
+    "inlineBg": "rgb(245, 241, 228)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(210, 207, 197)",
+    "staleInline": true,
+    "inlineBg": "rgb(14, 18, 22)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(26, 29, 32)",
+    "staleInline": true,
+    "inlineBg": "rgb(245, 241, 228)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "beyond-good-and-evil": {
+  "slug": "beyond-good-and-evil",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(18, 16, 11)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 6,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 640,
+    "pMaxWidth": "640px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 675,
+    "pMaxWidth": "674.544px",
+    "readerBodyWidth": 912,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 704,
+    "pMaxWidth": "1024px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18.4px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "24px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "27.2px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "43.52px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "50.32px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "57.12px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+   "sans": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(18, 16, 11)",
+    "staleInline": false,
+    "inlineBg": "rgb(18, 16, 11)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(18, 16, 11)",
+    "staleInline": true,
+    "inlineBg": "rgb(14, 15, 22)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(14, 15, 22)",
+    "staleInline": true,
+    "inlineBg": "rgb(14, 18, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(14, 18, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 14, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 14, 11)",
+    "staleInline": true,
+    "inlineBg": "rgb(19, 16, 9)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(53, 49, 39)",
+    "staleInline": true,
+    "inlineBg": "rgb(241, 231, 208)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(242, 233, 213)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 247, 239)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(250, 247, 239)",
+    "staleInline": true,
+    "inlineBg": "rgb(16, 19, 20)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(16, 19, 20)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 247, 239)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "forty-ways-to-look-at-churchill": {
+  "slug": "forty-ways-to-look-at-churchill",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(20, 17, 11)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 33,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "readerBodyWidth": 1152,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "readerBodyWidth": 1152,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "readerBodyWidth": 1152,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "18px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "18px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "18px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "31.5px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "31.5px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "31.5px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "Newsreader, Georgia, serif",
+   "sans": "\"DM Sans\", system-ui, sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(20, 17, 11)",
+    "staleInline": false,
+    "inlineBg": "rgb(20, 17, 11)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(18, 16, 15)",
+    "staleInline": true,
+    "inlineBg": "rgb(12, 15, 24)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(12, 16, 22)",
+    "staleInline": true,
+    "inlineBg": "rgb(14, 19, 13)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(17, 16, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 13, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 13, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 13, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(53, 45, 36)",
+    "staleInline": true,
+    "inlineBg": "rgb(236, 225, 203)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(238, 228, 207)",
+    "staleInline": true,
+    "inlineBg": "rgb(247, 242, 230)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(247, 242, 230)",
+    "staleInline": true,
+    "inlineBg": "rgb(16, 19, 24)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(16, 19, 24)",
+    "staleInline": true,
+    "inlineBg": "rgb(247, 242, 230)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "gay-science": {
+  "slug": "gay-science",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(6, 34, 43)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 8,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 656,
+    "pMaxWidth": "705.676px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 706,
+    "pMaxWidth": "705.676px",
+    "readerBodyWidth": 912,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 706,
+    "pMaxWidth": "705.676px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18.4px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "24px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "27.2px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "43.52px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "50.32px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "57.12px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"Source Serif 4\", \"Cormorant Garamond\", Georgia, serif",
+   "sans": "\"DM Sans\", system-ui, -apple-system, sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(6, 34, 43)",
+    "staleInline": false,
+    "inlineBg": "rgb(6, 34, 43)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(6, 31, 41)",
+    "staleInline": true,
+    "inlineBg": "rgb(7, 13, 29)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(7, 14, 27)",
+    "staleInline": true,
+    "inlineBg": "rgb(8, 19, 13)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(10, 18, 13)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 12, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(20, 12, 11)",
+    "staleInline": true,
+    "inlineBg": "rgb(19, 12, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(53, 46, 37)",
+    "staleInline": true,
+    "inlineBg": "rgb(241, 231, 210)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(241, 232, 211)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 246, 236)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(214, 211, 204)",
+    "staleInline": true,
+    "inlineBg": "rgb(14, 20, 26)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(50, 54, 58)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 246, 236)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "gentle-introduction": {
+  "slug": "gentle-introduction",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(16, 15, 13)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 158,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 656,
+    "pMaxWidth": "672px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "readerBodyWidth": 752,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18.4px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "24px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "27.2px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "43.52px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "50.32px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "57.12px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+   "sans": "\"DM Sans\", system-ui, -apple-system, sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(16, 15, 13)",
+    "staleInline": false,
+    "inlineBg": "rgb(16, 15, 13)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(16, 15, 13)",
+    "staleInline": false,
+    "inlineBg": "rgb(16, 15, 13)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(16, 15, 13)",
+    "staleInline": false,
+    "inlineBg": "rgb(16, 15, 13)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(16, 15, 13)",
+    "staleInline": false,
+    "inlineBg": "rgb(16, 15, 13)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(16, 15, 13)",
+    "staleInline": false,
+    "inlineBg": "rgb(16, 15, 13)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(50, 48, 43)",
+    "staleInline": true,
+    "inlineBg": "rgb(239, 228, 208)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(240, 230, 211)",
+    "staleInline": true,
+    "inlineBg": "rgb(244, 238, 225)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(232, 227, 214)",
+    "staleInline": true,
+    "inlineBg": "rgb(16, 15, 13)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(16, 15, 13)",
+    "staleInline": true,
+    "inlineBg": "rgb(244, 238, 225)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "infinite-jest": {
+  "slug": "infinite-jest",
+  "chapter": "p1c32",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(13, 15, 12)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 139,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 608,
+    "pMaxWidth": "608px",
+    "readerBodyWidth": 688,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 608,
+    "pMaxWidth": "608px",
+    "readerBodyWidth": 688,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 608,
+    "pMaxWidth": "608px",
+    "readerBodyWidth": 688,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18.4px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "24px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "27.2px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "43.52px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "50.32px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "57.12px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "Newsreader, Georgia, \"Times New Roman\", serif",
+   "sans": "Newsreader, Georgia, \"Times New Roman\", serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(13, 15, 12)",
+    "staleInline": false,
+    "inlineBg": "rgb(13, 15, 12)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(12, 15, 16)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 14, 26)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(10, 15, 24)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 19, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(12, 18, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 12, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 12, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 13, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(53, 46, 36)",
+    "staleInline": true,
+    "inlineBg": "rgb(239, 228, 204)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(241, 231, 211)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(214, 214, 214)",
+    "staleInline": true,
+    "inlineBg": "rgb(15, 21, 27)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(51, 56, 61)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "open-letter": {
+  "slug": "open-letter",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(13, 11, 9)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 115,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 619,
+    "pMaxWidth": "618.912px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 619,
+    "pMaxWidth": "618.912px",
+    "readerBodyWidth": 816,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 619,
+    "pMaxWidth": "618.912px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18.4px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "24px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "27.2px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "43.52px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "50.32px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "57.12px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+   "sans": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(13, 11, 9)",
+    "staleInline": false,
+    "inlineBg": "rgb(13, 11, 9)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(13, 11, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(11, 14, 25)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(11, 15, 23)",
+    "staleInline": true,
+    "inlineBg": "rgb(11, 19, 13)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(11, 19, 13)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 12, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 12, 11)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 13, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(20, 13, 6)",
+    "staleInline": true,
+    "inlineBg": "rgb(245, 238, 227)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(245, 238, 227)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 248, 245)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(250, 248, 245)",
+    "staleInline": true,
+    "inlineBg": "rgb(15, 21, 27)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(120, 122, 124)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 248, 245)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "sovereign-individual": {
+  "slug": "sovereign-individual",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(11, 10, 9)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 215,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 481,
+    "pMaxWidth": "481.153px",
+    "readerBodyWidth": 1152,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 481,
+    "pMaxWidth": "481.153px",
+    "readerBodyWidth": 1152,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 481,
+    "pMaxWidth": "481.153px",
+    "readerBodyWidth": 1152,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "16px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "16px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "16px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "16px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "27.2px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "27.2px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "27.2px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+   "sans": "Archivo, \"DM Sans\", system-ui, -apple-system, sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(11, 10, 9)",
+    "staleInline": false,
+    "inlineBg": "rgb(11, 10, 9)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(11, 11, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 14, 26)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(10, 15, 24)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 19, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(10, 19, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 12, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 12, 11)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 13, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(54, 47, 38)",
+    "staleInline": true,
+    "inlineBg": "rgb(244, 236, 216)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(245, 238, 221)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(250, 249, 247)",
+    "staleInline": true,
+    "inlineBg": "rgb(15, 21, 27)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(15, 21, 27)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "the-fountainhead": {
+  "slug": "the-fountainhead",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(23, 16, 11)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 164,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 640,
+    "pMaxWidth": "640px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 675,
+    "pMaxWidth": "674.544px",
+    "readerBodyWidth": 912,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18.4px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "24px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "27.2px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "43.52px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "50.32px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "57.12px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+   "sans": "system-ui, -apple-system, \"Segoe UI\", sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(23, 16, 11)",
+    "staleInline": false,
+    "inlineBg": "rgb(23, 16, 11)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(22, 16, 11)",
+    "staleInline": true,
+    "inlineBg": "rgb(18, 16, 14)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(18, 17, 14)",
+    "staleInline": true,
+    "inlineBg": "rgb(16, 20, 16)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(17, 19, 15)",
+    "staleInline": true,
+    "inlineBg": "rgb(22, 13, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(22, 13, 11)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 16, 9)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(55, 49, 40)",
+    "staleInline": true,
+    "inlineBg": "rgb(246, 234, 214)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(246, 234, 214)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 243, 230)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(250, 243, 230)",
+    "staleInline": true,
+    "inlineBg": "rgb(18, 16, 14)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(18, 16, 14)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 243, 230)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "thus-spoke-zarathustra": {
+  "slug": "thus-spoke-zarathustra",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(10, 14, 33)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 150,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 640,
+    "pMaxWidth": "640px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 640,
+    "pMaxWidth": "640px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "38.48px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "38.48px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "38.48px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "Spectral, Georgia, serif",
+   "sans": "\"DM Sans\", system-ui, -apple-system, sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(10, 14, 33)",
+    "staleInline": false,
+    "inlineBg": "rgb(10, 14, 33)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(10, 14, 32)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 14, 26)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(10, 15, 24)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 19, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(12, 18, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 12, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 12, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 13, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(54, 47, 38)",
+    "staleInline": true,
+    "inlineBg": "rgb(244, 236, 216)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(245, 238, 221)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(181, 182, 182)",
+    "staleInline": true,
+    "inlineBg": "rgb(15, 21, 27)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(51, 56, 61)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "twilight-of-the-idols": {
+  "slug": "twilight-of-the-idols",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(16, 13, 10)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 2,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 640,
+    "pMaxWidth": "640px",
+    "readerBodyWidth": 720,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 645,
+    "pMaxWidth": "644.804px",
+    "readerBodyWidth": 848,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "18.4px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "20.8px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "24px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "27.2px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "43.52px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "50.32px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "57.12px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+   "sans": "\"DM Sans\", system-ui, -apple-system, sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(16, 13, 10)",
+    "staleInline": false,
+    "inlineBg": "rgb(16, 13, 10)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(16, 13, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 14, 26)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(10, 14, 26)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 19, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(12, 18, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(21, 12, 11)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(21, 12, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(20, 13, 6)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(54, 47, 38)",
+    "staleInline": true,
+    "inlineBg": "rgb(244, 236, 216)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(245, 238, 221)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(238, 237, 236)",
+    "staleInline": true,
+    "inlineBg": "rgb(15, 21, 27)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(27, 32, 38)",
+    "staleInline": true,
+    "inlineBg": "rgb(250, 249, 247)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ },
+ "will-to-power": {
+  "slug": "will-to-power",
+  "chapter": "p1c1",
+  "consoleErrors": [],
+  "failed": [],
+  "httpErrors": [],
+  "firstVisitTheme": "dark",
+  "bodyBgFirst": "rgb(11, 10, 8)",
+  "coverVisible": true,
+  "dataChapter": "p1c1",
+  "paraCount": 5,
+  "widthsDesktop": {
+   "narrow": {
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "readerBodyWidth": 688,
+    "docOverflow": 0
+   },
+   "standard": {
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "readerBodyWidth": 688,
+    "docOverflow": 0
+   },
+   "wide": {
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "readerBodyWidth": 1104,
+    "docOverflow": 0
+   }
+  },
+  "sizes": {
+   "sm": {
+    "fontSize": "17.6px",
+    "textSizeVar": "1.15rem"
+   },
+   "md": {
+    "fontSize": "17.6px",
+    "textSizeVar": "1.3rem"
+   },
+   "lg": {
+    "fontSize": "17.6px",
+    "textSizeVar": "1.5rem"
+   },
+   "xl": {
+    "fontSize": "17.6px",
+    "textSizeVar": "1.7rem"
+   }
+  },
+  "leading": {
+   "tight": {
+    "lineHeight": "29.92px",
+    "leading": "1.6"
+   },
+   "normal": {
+    "lineHeight": "29.92px",
+    "leading": "1.85"
+   },
+   "loose": {
+    "lineHeight": "29.92px",
+    "leading": "2.1"
+   }
+  },
+  "fonts": {
+   "serif": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+   "sans": "system-ui, -apple-system, \"Segoe UI\", sans-serif"
+  },
+  "themes": {
+   "dark": {
+    "ds": "dark",
+    "bg": "rgb(11, 10, 8)",
+    "staleInline": false,
+    "inlineBg": "rgb(11, 10, 8)"
+   },
+   "nocturne": {
+    "ds": "nocturne",
+    "bg": "rgb(11, 10, 10)",
+    "staleInline": true,
+    "inlineBg": "rgb(10, 13, 20)"
+   },
+   "verdant": {
+    "ds": "verdant",
+    "bg": "rgb(10, 13, 20)",
+    "staleInline": true,
+    "inlineBg": "rgb(11, 16, 12)"
+   },
+   "oxblood": {
+    "ds": "oxblood",
+    "bg": "rgb(11, 16, 12)",
+    "staleInline": true,
+    "inlineBg": "rgb(18, 12, 9)"
+   },
+   "candlelight": {
+    "ds": "candlelight",
+    "bg": "rgb(18, 12, 9)",
+    "staleInline": true,
+    "inlineBg": "rgb(16, 12, 7)"
+   },
+   "sepia": {
+    "ds": "sepia",
+    "bg": "rgb(16, 12, 7)",
+    "staleInline": true,
+    "inlineBg": "rgb(239, 227, 203)"
+   },
+   "light": {
+    "ds": "light",
+    "bg": "rgb(240, 229, 207)",
+    "staleInline": true,
+    "inlineBg": "rgb(246, 241, 230)"
+   },
+   "slate": {
+    "ds": "slate",
+    "bg": "rgb(234, 230, 219)",
+    "staleInline": true,
+    "inlineBg": "rgb(14, 17, 20)"
+   },
+   "auto": {
+    "ds": "light",
+    "bg": "rgb(26, 28, 31)",
+    "staleInline": true,
+    "inlineBg": "rgb(246, 241, 230)"
+   }
+  },
+  "afterReload": {
+   "theme": "candlelight",
+   "size": "xl",
+   "leading": "loose",
+   "font": "sans",
+   "measure": "narrow",
+   "storage": {
+    "theme": "candlelight",
+    "size": "xl",
+    "leading": "loose",
+    "font": "sans",
+    "measure": "narrow",
+    "chapterId": "p1c1",
+    "scrollY": 0,
+    "read": []
+   }
+  }
+ }
+}

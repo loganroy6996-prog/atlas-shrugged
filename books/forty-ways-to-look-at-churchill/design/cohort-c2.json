@@ -1,0 +1,512 @@
+{
+  "chapters": {
+    "p4c1": {
+      "caption": "a glass of weak whisky",
+      "class": "plate",
+      "content_kind": "verdict-diptych",
+      "motif": "brimming-glass",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 1,
+      "palette_role": "vermilion",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "verdict"
+        },
+        {
+          "index": 6,
+          "role": "verdict"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Prosecution/defense diptych over the drinking record: WAS [0] vs WAS NOT [6] verdict plaques frame the evidence; the spirit-level plate breaks between them.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c1",
+      "title": "Churchill the Drinker: An Alcoholic?",
+      "way": "21"
+    },
+    "p4c10": {
+      "caption": "He never resigned himself",
+      "class": "plate",
+      "content_kind": "coda",
+      "motif": "faded-map-wash",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 10,
+      "palette_role": "slate",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Part IV's closing benediction: a single coda para under theme's Way-40-rhyme only-child base, given colophon air; the faded slate plate is the Empire's afterimage.",
+      "reading": {
+        "drop_cap": false,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c10",
+      "title": "Churchill’s Empire: How He Saw the World",
+      "way": "30"
+    },
+    "p4c3": {
+      "caption": "too interesting to ignore",
+      "class": "plate",
+      "content_kind": "character-study",
+      "motif": "veiled-shard",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 3,
+      "palette_role": "slate",
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "thesis"
+        }
+      ],
+      "part": "IV",
+      "rationale": "A decorousness argument under a slate veil: the blunt thesis [4] is the chapter's only raised voice; rumors [8–9] and the Asquith/Lawrence counterfactual [11] stay veiled in calm prose.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c3",
+      "title": "Churchill and Sex: Too Interesting to Ignore",
+      "way": "23"
+    },
+    "p4c4": {
+      "caption": "my precious charming Clemmie",
+      "class": "plate",
+      "content_kind": "verdict-diptych",
+      "motif": "two-interlocked",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 4,
+      "palette_role": "ochre",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "verdict"
+        },
+        {
+          "index": 4,
+          "role": "letter"
+        },
+        {
+          "index": 5,
+          "role": "letter"
+        },
+        {
+          "index": 7,
+          "role": "verdict"
+        },
+        {
+          "index": 11,
+          "role": "caption"
+        },
+        {
+          "index": 13,
+          "role": "caption"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Marriage diptych: happy [0] / not-happy [7] verdict plaques; the March-1916 letters [4–5] set as correspondence; the two photograph captions [11,13] in sepia caption voice.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c4",
+      "title": "Churchill as Husband: A Happy Marriage?",
+      "way": "24"
+    },
+    "p4c5": {
+      "caption": "this sceptred isle",
+      "class": "plate",
+      "content_kind": "myth-essay",
+      "motif": "island-outline",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 5,
+      "palette_role": "ochre",
+      "paragraphs": [
+        {
+          "index": 9,
+          "role": "verse"
+        },
+        {
+          "index": 10,
+          "role": "verse"
+        },
+        {
+          "index": 11,
+          "role": "verse"
+        },
+        {
+          "index": 12,
+          "role": "verse"
+        },
+        {
+          "index": 13,
+          "role": "verse"
+        },
+        {
+          "index": 14,
+          "role": "verse"
+        },
+        {
+          "index": 15,
+          "role": "verse"
+        },
+        {
+          "index": 16,
+          "role": "verse"
+        },
+        {
+          "index": 17,
+          "role": "verse"
+        },
+        {
+          "index": 18,
+          "role": "verse"
+        },
+        {
+          "index": 19,
+          "role": "verse"
+        },
+        {
+          "index": 20,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Myth essay cresting in Shakespeare: eleven verse lines [9–19] set as a centered stanza block, the refusal-to-believe coda [20] as benediction, the Liberty/Empire contradiction [4–5] left to argue in calm prose.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c5",
+      "title": "Churchill’s Island Story: His Myth",
+      "way": "25"
+    },
+    "p4c6": {
+      "caption": "Remember Winston Churchill",
+      "class": "plate",
+      "content_kind": "caption-ledger",
+      "motif": "photo-frames",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 6,
+      "palette_role": "sepia-bone",
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "setup"
+        },
+        {
+          "index": 1,
+          "label": "1",
+          "role": "caption"
+        },
+        {
+          "index": 2,
+          "label": "2",
+          "role": "caption"
+        },
+        {
+          "index": 3,
+          "label": "3",
+          "role": "caption"
+        },
+        {
+          "index": 4,
+          "label": "4",
+          "role": "caption"
+        },
+        {
+          "index": 5,
+          "label": "5",
+          "role": "caption"
+        },
+        {
+          "index": 6,
+          "label": "6",
+          "role": "caption"
+        },
+        {
+          "index": 7,
+          "label": "7",
+          "role": "caption"
+        },
+        {
+          "index": 8,
+          "label": "8",
+          "role": "caption"
+        },
+        {
+          "index": 9,
+          "label": "9",
+          "role": "caption"
+        },
+        {
+          "index": 10,
+          "label": "10",
+          "role": "caption"
+        },
+        {
+          "index": 11,
+          "label": "11",
+          "role": "caption"
+        },
+        {
+          "index": 12,
+          "label": "12",
+          "role": "caption"
+        },
+        {
+          "index": 13,
+          "label": "13",
+          "role": "caption"
+        },
+        {
+          "index": 14,
+          "label": "14",
+          "role": "caption"
+        },
+        {
+          "index": 15,
+          "label": "15",
+          "role": "caption"
+        },
+        {
+          "index": 16,
+          "label": "16",
+          "role": "caption"
+        },
+        {
+          "index": 17,
+          "label": "17",
+          "role": "caption"
+        },
+        {
+          "index": 18,
+          "label": "18",
+          "role": "caption"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Gallery hang in prose: setup [0] then 18 numbered captions [1–18] on a dated rail with frame-edge ticks echoing the plate's 6×3 sepia hang, aging light→dark down the page.",
+      "reading": {
+        "drop_cap": false,
+        "ledger": false
+      },
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c6",
+      "title": "Churchill in Photographs: How He Changed Through Time",
+      "way": "26"
+    },
+    "p4c7": {
+      "caption": "less a personality than a personification",
+      "class": "plate",
+      "content_kind": "literary-essay",
+      "motif": "novel-pages",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 7,
+      "palette_role": "mixed",
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "quote"
+        },
+        {
+          "index": 12,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Fiction's devices applied to a life: the bulldog/Woom unconvincing-character passage [4] as the central exhibit (quote), the ironies catalogue [6] and symbol exploitation [11] as calm accumulation, closing in the mythic-scale coda [12].",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c7",
+      "title": "Churchill as the Hero of a Novel: The Imagined and the Real",
+      "way": "27"
+    },
+    "p4c8": {
+      "caption": "walking with Destiny",
+      "class": "plate",
+      "content_kind": "destiny-argument",
+      "motif": "destiny-vector",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 8,
+      "palette_role": "vermilion/ochre",
+      "paragraphs": [
+        {
+          "index": 5,
+          "role": "list-item"
+        },
+        {
+          "index": 6,
+          "role": "list-item"
+        },
+        {
+          "index": 7,
+          "role": "list-item"
+        },
+        {
+          "index": 8,
+          "role": "list-item"
+        },
+        {
+          "index": 9,
+          "role": "list-item"
+        },
+        {
+          "index": 10,
+          "role": "list-item"
+        },
+        {
+          "index": 11,
+          "role": "list-item"
+        },
+        {
+          "index": 12,
+          "role": "list-item"
+        },
+        {
+          "index": 13,
+          "role": "list-item"
+        },
+        {
+          "index": 14,
+          "role": "list-item"
+        },
+        {
+          "index": 15,
+          "role": "quote"
+        },
+        {
+          "index": 17,
+          "role": "quote"
+        },
+        {
+          "index": 18,
+          "role": "quote"
+        },
+        {
+          "index": 27,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "Survival catalogue [5–14] as a quickened ledger rhythm (list-items with date-beat energy), destiny's own voice [15,17–18] as set-piece quotes, Halifax/Chamberlain [20–26] as calm forensic prose, closing in the double-edged coda [27].",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c8",
+      "title": "Churchill’s Destiny: How He Saw Himself",
+      "way": "28"
+    },
+    "p4c9": {
+      "caption": "the clattering down",
+      "class": "plate",
+      "content_kind": "prosecution-brief",
+      "motif": "fracture-lines",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "order": 9,
+      "palette_role": "vermilion",
+      "paragraphs": [
+        {
+          "index": 5,
+          "role": "letter"
+        },
+        {
+          "index": 10,
+          "role": "speech"
+        },
+        {
+          "index": 11,
+          "role": "thesis"
+        },
+        {
+          "index": 13,
+          "role": "thesis"
+        },
+        {
+          "index": 14,
+          "role": "speech"
+        },
+        {
+          "index": 15,
+          "role": "quote"
+        },
+        {
+          "index": 17,
+          "role": "coda"
+        },
+        {
+          "index": 18,
+          "role": "coda"
+        },
+        {
+          "index": 19,
+          "role": "coda"
+        }
+      ],
+      "part": "IV",
+      "rationale": "The cause stated, evidenced, and cracked: constituent letters/speeches [5,10,14–15] in correspondence/oration voice, the replacement-Empire thesis [11–13] as display argument, the clattering-down coda [17–19] as falling close.",
+      "reading": {
+        "drop_cap": true,
+        "ledger": false
+      },
+      "src": "art/cohort-c2.svg",
+      "symbol": "p4c9",
+      "title": "Churchill the Imperialist: His Cause",
+      "way": "29"
+    }
+  },
+  "version": 1
+}

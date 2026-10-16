@@ -1,0 +1,190 @@
+{
+  "books": [
+    {
+      "slug": "atlas-shrugged",
+      "toc_chapters": 30,
+      "parts": 3,
+      "chapter_files": 30,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 405,
+        "nonempty": 405
+      }
+    },
+    {
+      "slug": "being-and-time",
+      "toc_chapters": 83,
+      "parts": 3,
+      "chapter_files": 83,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 9,
+        "nonempty": 9
+      }
+    },
+    {
+      "slug": "beyond-good-and-evil",
+      "toc_chapters": 11,
+      "parts": 1,
+      "chapter_files": 11,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 6,
+        "nonempty": 6
+      }
+    },
+    {
+      "slug": "forty-ways-to-look-at-churchill",
+      "toc_chapters": 41,
+      "parts": 5,
+      "chapter_files": 41,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 33,
+        "nonempty": 33
+      }
+    },
+    {
+      "slug": "gay-science",
+      "toc_chapters": 448,
+      "parts": 8,
+      "chapter_files": 448,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 8,
+        "nonempty": 8
+      }
+    },
+    {
+      "slug": "gentle-introduction",
+      "toc_chapters": 11,
+      "parts": 1,
+      "chapter_files": 11,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 158,
+        "nonempty": 158
+      }
+    },
+    {
+      "slug": "infinite-jest",
+      "toc_chapters": 89,
+      "parts": 2,
+      "chapter_files": 89,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 139,
+        "nonempty": 139
+      }
+    },
+    {
+      "slug": "open-letter",
+      "toc_chapters": 14,
+      "parts": 1,
+      "chapter_files": 14,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 115,
+        "nonempty": 115
+      }
+    },
+    {
+      "slug": "sovereign-individual",
+      "toc_chapters": 11,
+      "parts": 1,
+      "chapter_files": 11,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 215,
+        "nonempty": 215
+      }
+    },
+    {
+      "slug": "the-fountainhead",
+      "toc_chapters": 59,
+      "parts": 4,
+      "chapter_files": 59,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 164,
+        "nonempty": 164
+      }
+    },
+    {
+      "slug": "thus-spoke-zarathustra",
+      "toc_chapters": 81,
+      "parts": 4,
+      "chapter_files": 81,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 150,
+        "nonempty": 150
+      }
+    },
+    {
+      "slug": "twilight-of-the-idols",
+      "toc_chapters": 12,
+      "parts": 1,
+      "chapter_files": 12,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 2,
+        "nonempty": 2
+      }
+    },
+    {
+      "slug": "will-to-power",
+      "toc_chapters": 52,
+      "parts": 5,
+      "chapter_files": 52,
+      "missing_files": [],
+      "orphan_files": [],
+      "duplicate_ids": 0,
+      "first_chapter_sample": {
+        "id": "p1c1",
+        "paragraphs": 5,
+        "nonempty": 5
+      }
+    }
+  ],
+  "totals": {
+    "toc_chapters": 942,
+    "chapter_files": 942
+  }
+}

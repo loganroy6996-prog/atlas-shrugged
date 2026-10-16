@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Being and Time — cohort art: equipment-space (p2c7–p2c16, §§15–24).
+  Identity: "The Clearing" (ART-DIRECTION.md §§1–10; ArtDirector PROVISIONAL PASS B1–B8).
+  Arc beat: tools → grid argued-against → space. gapWidth 20→30% (stall 24% through the grid,
+  jump at the §21 verdict); shaft 28° throughout; ghosts LEFT-BLEED; NO ember.
+
+  v1.1 sprite: 10 <symbol> entries, each viewBox="0 0 1600 520", preserveAspectRatio slice.
+  Manifest references via the explicit `symbol` key (contract A.2) — no fragment URLs.
+
+  CLONE-SAFETY: reader.js fillArtSlot() clones ONLY the referenced <symbol>'s children
+  into #chapter-art. Any url(#…) or use-href pointing OUTSIDE the symbol would dangle.
+  Therefore every symbol is SELF-CONTAINED: all geometry is inlined absolute coordinates,
+  and each filter/clip/pattern is defined INSIDE the symbol that uses it (unique ids).
+  The top-level <defs> below is the authorship record (shaft-28 geometry, sliver,
+  40px grid tile, trunk library, grain recipe) for supervisors/validators; runtime uses
+  the per-symbol copies. There are intentionally NO <use> cross-references at all.
+
+  Palette: CSS vars with dark hex fallbacks so light/sepia remap. Trunk silhouettes use
+  var(—bt-trunk,#080B07) so pale themes re-ink them. NO embedded <style>, NO remote refs,
+  NO animation, NO ember. Grain <g class="grain"> is gated by cohort CSS under
+  prefers-reduced-motion / narrow widths.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+  <defs>
+    <!-- Authorship record: 28° shaft geometry. tan28 = 0.5317; dx=229 over y 0→430.
+         Base band top x 1150–1390 → floor x 921–1161; core top 1210–1330 → 981–1101.
+         Symbols carry their own hand-varied absolute-coordinate copies. -->
+    <polygon id="eq-shaft-28" points="1150,0 1390,0 1161,430 921,430"/>
+    <polygon id="eq-shaft-core" points="1210,0 1330,0 1101,430 981,430"/>
+    <polygon id="eq-shaft-sliver" points="1540,0 1569,0 1340,430 1311,430"/>
+    <pattern id="eq-grid-cartes" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40,0 L0,0 L0,40" fill="none" stroke-width="1"/>
+    </pattern>
+    <!-- Authorship record: trunk library (hand-plotted silhouettes). -->
+    <path id="eq-trunk-a" d="M60,470 C62,360 51,234 58,84 L89,84 C96,234 98,360 100,470 Z"/>
+    <path id="eq-trunk-b" d="M182,470 C184,360 172,214 179,64 L207,64 C214,214 216,360 218,470 Z"/>
+    <!-- Authorship record: grain recipe (feTurbulence fractalNoise 0.9). -->
+    <filter id="eq-grain-recipe" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+    </filter>
+  </defs>
+
+  <!-- ============ equip-hammer — §15: the hammer in use (p2c7) ============ -->
+  <symbol id="equip-hammer" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-hammer" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <clipPath id="hammer-shaftclip">
+        <polygon points="1150,0 1390,0 1161,430 921,430"/>
+        <ellipse cx="1040" cy="445" rx="200" ry="26"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="eq-shaft" points="1150,0 1390,0 1161,430 921,430" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+    <polygon class="eq-core" points="1210,0 1330,0 1101,430 981,430" fill="var(--bt-shaft,#E9D488)" opacity="0.14"/>
+    <ellipse class="eq-pool" cx="1040" cy="445" rx="200" ry="26" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M60,470 C62,360 51,234 58,84 L89,84 C96,234 98,360 100,470 Z"/>
+    <path d="M182,470 C184,360 172,214 179,64 L207,64 C214,214 216,360 218,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- workbench top edge -->
+      <line x1="300" y1="430" x2="1340" y2="430" stroke="#080B07" stroke-width="6" opacity="0.85"/>
+      <!-- flat hammer silhouette diagonal IN the pool, mid-swing -->
+      <g transform="rotate(-24 1010 420)" fill="#0A0D09" opacity="0.92">
+        <rect x="978" y="396" width="64" height="26" rx="3"/>
+        <rect x="1002" y="414" width="17" height="86" rx="4"/>
+      </g>
+      <!-- motion arc: two ghost positions of the haft -->
+      <path d="M920,380 A130,130 0 0 1 1085,352" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="2" opacity="0.7"/>
+      <path d="M936,398 A104,104 0 0 1 1064,374" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.4" opacity="0.45"/>
+      <!-- receding-left totality pictograms: shoe last, clock face, hide, nail -->
+      <g fill="var(--bt-mist,#C9D4C3)" opacity="0.62">
+        <path d="M420,452 c0,-10 14,-14 26,-14 l34,0 c8,0 12,4 12,9 c0,5 -5,8 -14,8 l-48,0 c-6,0 -10,-1 -10,-3 Z"/>
+        <circle cx="600" cy="448" r="15" fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4"/>
+        <line x1="600" y1="448" x2="600" y2="438" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2"/>
+        <line x1="600" y1="448" x2="607" y2="451" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2"/>
+        <path d="M700,436 q22,-8 40,2 q-6,14 -24,16 q-18,2 -16,-18 Z"/>
+        <rect x="800" y="438" width="26" height="5" rx="1"/>
+        <circle cx="830" cy="440" r="3.4"/>
+      </g>
+      <!-- um-zu threads: converging on the hammer, never crossing the shaft -->
+      <g fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.4" opacity="0.8">
+        <path d="M480,446 C640,440 800,430 962,404"/>
+        <path d="M614,440 C740,436 850,428 966,412"/>
+        <path d="M736,446 C820,442 890,432 968,420"/>
+        <path d="M812,440 C870,436 920,430 968,426"/>
+      </g>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="900" y="0" width="500" height="470" filter="url(#grain-hammer)" clip-path="url(#hammer-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.5">
+      <circle cx="880" cy="468" r="2.2"/><circle cx="960" cy="486" r="2"/><circle cx="1060" cy="470" r="2.2"/>
+      <circle cx="1140" cy="488" r="1.8"/><circle cx="760" cy="478" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ equip-breach — §16: the breach where the web lights up (p2c8) ============
+       The shaft itself fractures at y≈215 (lower segment +14px x): light arrives through
+       damage, so the lower half burns brighter. Broken hammer with glowing gap; dashed
+       empty bench slot (the missing tool); referential threads radiate ONLY from the crack,
+       opacity falling with distance. gapWidth 21%. -->
+  <symbol id="equip-breach" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-breach" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <clipPath id="breach-shaftclip">
+        <polygon points="1150,0 1390,0 1276,215 1036,215"/>
+        <polygon points="1050,215 1290,215 1175,430 935,430"/>
+        <ellipse cx="1054" cy="445" rx="190" ry="26"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="eq-shaft" points="1150,0 1390,0 1276,215 1036,215" fill="var(--bt-shaft,#E9D488)" opacity="0.12"/>
+    <polygon class="eq-shaft" points="1050,215 1290,215 1175,430 935,430" fill="var(--bt-shaft,#E9D488)" opacity="0.2"/>
+    <ellipse class="eq-pool" cx="1054" cy="445" rx="190" ry="26" fill="var(--bt-shaft,#E9D488)" opacity="0.28"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M33,470 C35,360 37,234 44,84 L75,84 C82,234 71,360 73,470 Z"/>
+    <path d="M209,470 C211,360 213,214 220,64 L248,64 C255,214 243,360 245,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <line x1="320" y1="430" x2="1340" y2="430" stroke="#080B07" stroke-width="6" opacity="0.85"/>
+      <!-- diagonal crack polyline splitting the shaft -->
+      <path d="M1000,120 L1080,170 L1040,215 L1140,270 L1090,320" fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4" opacity="0.9"/>
+      <!-- broken hammer: head separated, gap glowing shaft -->
+      <rect x="960" y="392" width="58" height="24" rx="3" fill="#0A0D09" opacity="0.92" transform="rotate(-18 990 404)"/>
+      <rect x="1004" y="424" width="15" height="52" rx="4" fill="#0A0D09" opacity="0.92" transform="rotate(-18 1010 450)"/>
+      <rect x="986" y="410" width="26" height="9" fill="var(--bt-shaft,#E9D488)" opacity="0.85" transform="rotate(-18 999 414)"/>
+      <!-- dashed empty bench slot: the missing tool -->
+      <rect x="1150" y="404" width="130" height="26" rx="2" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.6" stroke-dasharray="7 5" opacity="0.8"/>
+      <!-- referential threads radiating ONLY from the crack -->
+      <g fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.3">
+        <path d="M1080,215 C960,250 860,300 780,360" opacity="0.85"/>
+        <path d="M1090,230 C1000,290 940,340 900,400" opacity="0.65"/>
+        <path d="M1070,205 C940,200 800,210 640,240" opacity="0.5"/>
+        <path d="M1100,240 C1040,300 1000,360 990,410" opacity="0.4"/>
+        <path d="M1060,195 C920,160 780,150 620,160" opacity="0.3"/>
+      </g>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="900" y="0" width="500" height="470" filter="url(#grain-breach)" clip-path="url(#breach-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.5">
+      <circle cx="980" cy="470" r="2.2"/><circle cx="1070" cy="488" r="2"/><circle cx="1150" cy="470" r="2.2"/>
+      <circle cx="900" cy="490" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ equip-signs — §17: yielding at the intersection (p2c9) ============
+       Plan-view crossroads with a signpost at the crossing; the turn-arrow renders in
+       STRAW not red (palette substitution: the phenomenon is indicating, not redness;
+       B5 forbids red/ember in this cohort). Dashed yield triangle; storm-buoy and
+       boundary-stone minis at the scene edges (the sign family). gapWidth 22%. -->
+  <symbol id="equip-signs" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-signs" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <clipPath id="signs-shaftclip">
+        <polygon points="1150,0 1390,0 1161,430 921,430"/>
+        <ellipse cx="1040" cy="445" rx="200" ry="26"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="eq-shaft" points="1150,0 1390,0 1161,430 921,430" fill="var(--bt-shaft,#E9D488)" opacity="0.15"/>
+    <polygon class="eq-core" points="1210,0 1330,0 1101,430 981,430" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    <ellipse class="eq-pool" cx="1040" cy="445" rx="200" ry="26" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M73,470 C75,360 72,234 77,84 L109,84 C114,234 111,360 113,470 Z"/>
+    <path d="M169,470 C171,360 167,214 173,64 L201,64 C207,214 203,360 205,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- plan-view crossroads: two converging floor lines -->
+      <g stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4" opacity="0.7">
+        <line x1="380" y1="520" x2="760" y2="430"/>
+        <line x1="900" y1="520" x2="820" y2="430"/>
+      </g>
+      <!-- signpost silhouette at the crossing: post + two finger boards -->
+      <g fill="var(--bt-mist,#C9D4C3)" opacity="0.7">
+        <rect x="772" y="300" width="14" height="130"/>
+        <path d="M772,312 L700,312 L700,332 L772,332 Z"/>
+        <path d="M786,344 L858,344 L858,364 L786,364 Z"/>
+      </g>
+      <!-- straw turn-arrow (left), edge parallel to the shaft -->
+      <g opacity="0.95">
+        <line x1="1010" y1="470" x2="892" y2="470" stroke="var(--bt-shaft,#E9D488)" stroke-width="7"/>
+        <path d="M930,444 L886,470 L930,496" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- dashed yield triangle -->
+      <path d="M1120,440 L1170,440 L1145,482 Z" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.8" stroke-dasharray="7 5" opacity="0.85"/>
+      <!-- sign family minis: storm-buoy left, boundary-stone right -->
+      <g opacity="0.6">
+        <circle cx="480" cy="452" r="11" fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4"/>
+        <line x1="480" y1="441" x2="480" y2="430" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4"/>
+        <rect x="1300" y="436" width="22" height="30" rx="2" fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4"/>
+      </g>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="900" y="0" width="500" height="470" filter="url(#grain-signs)" clip-path="url(#signs-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.45">
+      <circle cx="950" cy="490" r="2"/><circle cx="1100" cy="478" r="2.2"/><circle cx="1210" cy="492" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ equip-lattice — §18: relevance converging on the for-the-sake-of-which (p2c10) ============
+       Panoramic thirds: workshop/farmstead silhouettes left; 9–12-node lichen lattice with
+       catenary-sag lines middle (letting-be: the lines SAG); broadened 28° shaft (+38%,
+       blur-4 edges) right with a terminal OPEN ring — Dasein is not a node-dot. The ring
+       is the only shaft-outline geometry in the cohort. gapWidth 24%. -->
+  <symbol id="equip-lattice" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-lattice" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <filter id="lattice-soft4" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4"/>
+      </filter>
+      <clipPath id="lattice-shaftclip">
+        <polygon points="1090,0 1421,0 1192,430 861,430"/>
+        <ellipse cx="1026" cy="445" rx="230" ry="28"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <g filter="url(#lattice-soft4)">
+      <polygon class="eq-shaft" points="1090,0 1421,0 1192,430 861,430" fill="var(--bt-shaft,#E9D488)" opacity="0.15"/>
+      <polygon class="eq-core" points="1170,0 1341,0 1112,430 941,430" fill="var(--bt-shaft,#E9D488)" opacity="0.12"/>
+    </g>
+    <ellipse class="eq-pool" cx="1026" cy="445" rx="230" ry="28" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M47,470 C49,360 32,234 38,84 L69,84 C75,234 85,360 87,470 Z"/>
+    <path d="M195,470 C197,360 180,214 185,64 L213,64 C218,214 229,360 231,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- left third: workshop/farmstead silhouettes (bench, barn gable, fence) -->
+      <g fill="var(--bt-mist,#C9D4C3)" opacity="0.65">
+        <rect x="300" y="398" width="120" height="12"/>
+        <rect x="312" y="410" width="10" height="20"/><rect x="398" y="410" width="10" height="20"/>
+        <path d="M470,430 L470,380 L520,352 L570,380 L570,430 Z"/>
+        <g stroke="var(--bt-mist,#C9D4C3)" stroke-width="6"><line x1="600" y1="430" x2="600" y2="396"/><line x1="630" y1="430" x2="630" y2="396"/><line x1="660" y1="430" x2="660" y2="396"/><line x1="588" y1="408" x2="672" y2="408"/></g>
+      </g>
+      <!-- middle: 10-node lichen lattice, catenary-sag lines converging right -->
+      <g fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" opacity="0.85">
+        <path d="M470,250 Q560,290 660,262 Q760,238 870,260"/>
+        <path d="M470,330 Q570,368 670,342 Q770,318 870,340"/>
+        <path d="M560,180 Q620,250 640,340"/>
+        <path d="M700,190 Q730,260 740,350"/>
+        <path d="M470,250 Q600,300 740,350"/>
+        <path d="M660,262 Q700,300 670,342"/>
+        <path d="M870,260 Q950,278 1014,294" opacity="0.7"/>
+        <path d="M870,340 Q950,324 1014,308" opacity="0.7"/>
+      </g>
+      <g fill="var(--bt-lichen,#9DB89A)" opacity="0.9">
+        <circle cx="470" cy="250" r="4"/><circle cx="660" cy="262" r="4"/><circle cx="870" cy="260" r="4"/>
+        <circle cx="470" cy="330" r="4"/><circle cx="670" cy="342" r="4"/><circle cx="870" cy="340" r="4"/>
+        <circle cx="560" cy="180" r="4"/><circle cx="700" cy="190" r="4"/><circle cx="640" cy="340" r="4"/><circle cx="740" cy="350" r="4"/>
+      </g>
+      <!-- terminal OPEN ring: Dasein, shaft outline 2.5px -->
+      <circle cx="1050" cy="300" r="34" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2.5" opacity="0.9"/>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="840" y="0" width="600" height="470" filter="url(#grain-lattice)" clip-path="url(#lattice-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.45">
+      <circle cx="900" cy="480" r="2.2"/><circle cx="1020" cy="494" r="2"/><circle cx="1140" cy="482" r="2.2"/>
+    </g>
+  </symbol>
+
+  <!-- ============ cartes-extensa — §19: one body, three shapes (p2c11) ============
+       COLD INTERLUDE. The shaft stops at a horizontal ruled line (y=150) and never
+       reaches the floor — NO pool. Below: 40px Cartesian grid; ONE body recast in THREE
+       equal-area outlines (square / bar / column); a left-margin vertical rule splits the
+       EMPTY "res cogitans" field from the gridded "res corporea" field — the thinking half
+       is unpictured by design. Trunks ruled at 0° lean. gapWidth 24% (STALL). -->
+  <symbol id="cartes-extensa" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-extensa" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <pattern id="extensa-grid40" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40,0 L0,0 L0,40" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.35"/>
+      </pattern>
+      <clipPath id="extensa-shaftclip">
+        <polygon points="1150,0 1390,0 1310,150 1070,150"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <rect x="300" y="150" width="1300" height="370" fill="url(#extensa-grid40)"/>
+    <polygon class="eq-shaft" points="1150,0 1390,0 1310,150 1070,150" fill="var(--bt-shaft,#E9D488)" opacity="0.12"/>
+    <line x1="300" y1="150" x2="1600" y2="150" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2" opacity="0.7"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M20,470 C22,360 18,234 24,84 L56,84 C62,234 58,360 60,470 Z"/>
+    <path d="M142,470 C144,360 140,214 146,64 L174,64 C180,214 176,360 178,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- left-margin vertical rule: EMPTY res cogitans | gridded res corporea -->
+      <line x1="300" y1="40" x2="300" y2="500" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2" opacity="0.7"/>
+      <text x="160" y="90" text-anchor="middle" font-size="19" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">res cogitans</text>
+      <text x="950" y="90" text-anchor="middle" font-size="19" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">res corporea</text>
+      <!-- one solid, three equal-area outlines (120² = 240×60 = 60×240) -->
+      <g fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.2" opacity="0.8">
+        <rect x="480" y="250" width="120" height="120"/>
+        <rect x="680" y="280" width="240" height="60"/>
+        <rect x="1000" y="180" width="60" height="240"/>
+      </g>
+      <text x="740" y="200" text-anchor="middle" font-size="18" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">longitudo · latitudo · profundum</text>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="1050" y="0" width="360" height="150" filter="url(#grain-extensa)" clip-path="url(#extensa-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-lichen,#9DB89A)" opacity="0.35">
+      <circle cx="500" cy="470" r="2"/><circle cx="760" cy="492" r="2"/><circle cx="1100" cy="478" r="2"/>
+    </g>
+  </symbol>
+
+  <!-- ============ cartes-substantia — §20: the sealed sphere that needs nothing (p2c12) ============
+       The perfect circle holds NOTHING (needs nothing). Below: "nulla alia re indigeat".
+       Right side: a three-rung ladder (Deus / substantia / creaturae) with the MIDDLE rung
+       broken and offset 13px — univocity fails. One 12%-width shaft sliver at the far right
+       edge is the chapter's only warmth. Grid loosened to 48px. gapWidth 24.5%. -->
+  <symbol id="cartes-substantia" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-substantia" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <pattern id="substantia-grid48" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M48,0 L0,0 L0,48" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.25"/>
+      </pattern>
+      <clipPath id="substantia-shaftclip">
+        <polygon points="1540,0 1569,0 1340,430 1311,430"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <rect x="280" y="40" width="1320" height="480" fill="url(#substantia-grid48)"/>
+    <polygon class="eq-shaft" points="1540,0 1569,0 1340,430 1311,430" fill="var(--bt-shaft,#E9D488)" opacity="0.14"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M27,470 C29,360 24,234 31,84 L63,84 C70,234 65,360 67,470 Z"/>
+    <path d="M149,470 C151,360 146,214 153,64 L181,64 C188,214 183,360 185,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- sealed sphere: perfect outline, EMPTY interior -->
+      <circle cx="720" cy="240" r="120" fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2" opacity="0.85"/>
+      <text x="720" y="392" text-anchor="middle" font-size="19" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">nulla alia re indigeat</text>
+      <!-- three-rung ladder: Deus / substantia / creaturae; middle rung broken +13px -->
+      <g stroke="var(--bt-mist,#C9D4C3)" stroke-width="2" opacity="0.8">
+        <line x1="1080" y1="120" x2="1080" y2="420"/>
+        <line x1="1260" y1="120" x2="1260" y2="420"/>
+      </g>
+      <g stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4" opacity="0.85">
+        <line x1="1080" y1="190" x2="1260" y2="190"/>
+        <line x1="1080" y1="270" x2="1150" y2="270"/>
+        <line x1="1163" y1="283" x2="1260" y2="283"/>
+        <line x1="1080" y1="350" x2="1260" y2="350"/>
+      </g>
+      <g font-size="18" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic" text-anchor="middle">
+        <text x="1170" y="178">Deus</text>
+        <text x="1170" y="258">substantia</text>
+        <text x="1170" y="338">creaturae</text>
+      </g>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="1311" y="0" width="260" height="430" filter="url(#grain-substantia)" clip-path="url(#substantia-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-lichen,#9DB89A)" opacity="0.3">
+      <circle cx="560" cy="478" r="2"/><circle cx="900" cy="492" r="2"/>
+    </g>
+  </symbol>
+
+  <!-- ============ cartes-crack — §21: the grid cracking; four doors ajar (p2c13) ============
+       The verdict. The grid does not fade — it is STRUCK at (1100,250) and cracks along
+       three polylines; three shaft shards wedge through (brightest shaft since §18). Left:
+       a wax block with a dripping edge overlaps a tilted ruler that FAILS to touch it — the
+       hardness mistranslation made visible. Right edge: FOUR vertical door-slits with light
+       through each, widths increasing — the four Whys standing ajar. NO text: the "No!" is
+       prose, never illustrated typographically. gapWidth 27%. -->
+  <symbol id="cartes-crack" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-crack" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <pattern id="crack-grid40" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40,0 L0,0 L0,40" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.35"/>
+      </pattern>
+      <clipPath id="crack-shaftclip">
+        <polygon points="1064,222 1116,196 1002,430 950,430"/>
+        <polygon points="1120,230 1150,190 1080,430 1042,430"/>
+        <polygon points="1080,260 1130,260 990,430 930,430"/>
+        <rect x="1450" y="120" width="110" height="310"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <rect x="280" y="0" width="1320" height="520" fill="url(#crack-grid40)"/>
+    <polygon class="eq-shaft" points="1064,222 1116,196 1002,430 950,430" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+    <polygon class="eq-shaft" points="1120,230 1150,190 1080,430 1042,430" fill="var(--bt-shaft,#E9D488)" opacity="0.24"/>
+    <polygon class="eq-shaft" points="1080,260 1130,260 990,430 930,430" fill="var(--bt-shaft,#E9D488)" opacity="0.2"/>
+    <ellipse class="eq-pool" cx="1020" cy="448" rx="200" ry="24" fill="var(--bt-shaft,#E9D488)" opacity="0.24"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M53,470 C55,360 65,234 71,84 L102,84 C108,234 91,360 93,470 Z"/>
+    <path d="M202,470 C204,360 214,214 220,64 L248,64 C254,214 236,360 238,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- impact star + 3 crack polylines -->
+      <g fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4">
+        <path d="M1100,250 L1020,180 L980,120"/>
+        <path d="M1100,250 L1200,200 L1260,140"/>
+        <path d="M1100,250 L1120,340 L1090,420"/>
+      </g>
+      <circle cx="1100" cy="250" r="7" fill="var(--bt-shaft,#E9D488)" opacity="0.9"/>
+      <!-- wax block with dripping edge overlapping a tilted ruler that FAILS to touch it -->
+      <g opacity="0.9">
+        <path d="M420,340 L560,340 L560,410 q-4,14 -12,12 q-4,-8 -8,-8 q-2,10 -10,10 q-6,-4 -6,-14 L420,410 Z" fill="var(--bt-mist,#C9D4C3)" opacity="0.75"/>
+        <g transform="rotate(14 560 372)">
+          <rect x="548" y="350" width="130" height="16" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="2"/>
+          <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="1"><line x1="561" y1="350" x2="561" y2="358"/><line x1="574" y1="350" x2="574" y2="358"/><line x1="587" y1="350" x2="587" y2="358"/><line x1="600" y1="350" x2="600" y2="358"/><line x1="613" y1="350" x2="613" y2="358"/><line x1="626" y1="350" x2="626" y2="358"/><line x1="639" y1="350" x2="639" y2="358"/><line x1="652" y1="350" x2="652" y2="358"/><line x1="665" y1="350" x2="665" y2="358"/></g>
+        </g>
+      </g>
+      <!-- FOUR vertical door-slits, widths increasing, shaft light through each -->
+      <g>
+        <rect x="1452" y="130" width="120" height="300" fill="#080B07" opacity="0.9"/>
+        <rect x="1458" y="140" width="8" height="280" fill="var(--bt-shaft,#E9D488)" opacity="0.85"/>
+        <rect x="1480" y="140" width="12" height="280" fill="var(--bt-shaft,#E9D488)" opacity="0.85"/>
+        <rect x="1506" y="140" width="16" height="280" fill="var(--bt-shaft,#E9D488)" opacity="0.85"/>
+        <rect x="1536" y="140" width="22" height="280" fill="var(--bt-shaft,#E9D488)" opacity="0.85"/>
+      </g>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="900" y="150" width="700" height="320" filter="url(#grain-crack)" clip-path="url(#crack-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.5">
+      <circle cx="960" cy="480" r="2.2"/><circle cx="1080" cy="492" r="2"/><circle cx="1200" cy="478" r="2"/>
+    </g>
+  </symbol>
+
+  <!-- ============ space-region — §22: the room by use; the sun's day-places (p2c14) ============
+       Flat room-corner elevation (Isotype, no perspective): ceiling line, floor line, door
+       rectangle with use-ticks labeled "ceiling · floor · door". A sun-arc across the top
+       carries four day-place nodes. On the floor line a dashed EMPTY rectangle glows — the
+       missing thing making the region visible for the first time. gapWidth 28%. -->
+  <symbol id="space-region" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-region" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <clipPath id="region-shaftclip">
+        <polygon points="1150,0 1390,0 1161,430 921,430"/>
+        <ellipse cx="1040" cy="445" rx="210" ry="26"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="eq-shaft" points="1150,0 1390,0 1161,430 921,430" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+    <polygon class="eq-core" points="1210,0 1330,0 1101,430 981,430" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    <ellipse class="eq-pool" cx="1040" cy="445" rx="210" ry="26" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+    <ellipse cx="1040" cy="445" rx="248" ry="38" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.6" opacity="0.55"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M67,470 C69,360 60,234 65,84 L96,84 C101,234 105,360 107,470 Z"/>
+    <path d="M175,470 C177,360 166,214 172,64 L200,64 C206,214 209,360 211,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- room-corner elevation: ceiling line / floor line / door rectangle -->
+      <g stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.4" opacity="0.8">
+        <line x1="340" y1="170" x2="760" y2="170"/>
+        <line x1="340" y1="430" x2="760" y2="430"/>
+        <line x1="340" y1="170" x2="340" y2="430"/>
+        <rect x="620" y="290" width="90" height="140" fill="none"/>
+      </g>
+      <!-- use-ticks -->
+      <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="2" opacity="0.9">
+        <line x1="480" y1="170" x2="480" y2="188"/>
+        <line x1="480" y1="412" x2="480" y2="430"/>
+        <line x1="620" y1="352" x2="638" y2="352"/>
+      </g>
+      <text x="550" y="142" text-anchor="middle" font-size="18" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">ceiling · floor · door</text>
+      <!-- sun-arc with 4 day-place nodes -->
+      <path d="M420,120 A300,140 0 0 1 1300,120" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2" opacity="0.8"/>
+      <g fill="var(--bt-shaft,#E9D488)" opacity="0.9">
+        <circle cx="560" cy="66" r="5"/><circle cx="780" cy="34" r="5"/><circle cx="1000" cy="34" r="5"/><circle cx="1200" cy="66" r="5"/>
+      </g>
+      <!-- dashed EMPTY rectangle with region glow: the missing thing -->
+      <rect x="860" y="392" width="120" height="44" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.8" stroke-dasharray="8 5" opacity="0.9"/>
+      <rect x="846" y="380" width="148" height="68" rx="10" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2" opacity="0.7"/>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="900" y="0" width="500" height="470" filter="url(#grain-region)" clip-path="url(#region-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.45">
+      <circle cx="950" cy="484" r="2"/><circle cx="1120" cy="476" r="2.2"/>
+    </g>
+  </symbol>
+
+  <!-- ============ space-dedist — §23: over there and back; measures of nearness (p2c15) ============
+       A return-path curve loops from the "over there" node (right) back to the "here" node
+       (left), arrowhead at the return end — Dasein never here but over-there-then-back.
+       Three lived-measure ticks; a mirrored glove PAIR (L/R) against a SINGLE hammer; a
+       spectacles glyph near "here" — nearest and most overlooked. gapWidth 29%. -->
+  <symbol id="space-dedist" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-dedist" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <clipPath id="dedist-shaftclip">
+        <polygon points="1150,0 1390,0 1161,430 921,430"/>
+        <ellipse cx="1040" cy="448" rx="260" ry="26"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="eq-shaft" points="1150,0 1390,0 1161,430 921,430" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+    <polygon class="eq-core" points="1210,0 1330,0 1101,430 981,430" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    <ellipse class="eq-pool" cx="1040" cy="448" rx="260" ry="26" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M60,470 C62,360 51,234 58,84 L89,84 C96,234 98,360 100,470 Z"/>
+    <path d="M189,470 C191,360 181,214 186,64 L214,64 C219,214 223,360 225,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- return-path curve: over-there node (right) looping back to here (left) -->
+      <path d="M1250,300 C1150,180 900,160 700,220 C540,268 460,300 420,330" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="2"/>
+      <circle cx="1250" cy="300" r="7" fill="var(--bt-lichen,#9DB89A)" opacity="0.9"/>
+      <circle cx="420" cy="330" r="7" fill="var(--bt-shaft,#E9D488)" opacity="0.95"/>
+      <path d="M440,318 L420,330 L438,342" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2.2"/>
+      <!-- three lived-measure ticks + labels -->
+      <g stroke="var(--bt-mist,#C9D4C3)" stroke-width="2" opacity="0.8">
+        <line x1="640" y1="420" x2="640" y2="446"/>
+        <line x1="800" y1="420" x2="800" y2="446"/>
+        <line x1="960" y1="420" x2="960" y2="446"/>
+      </g>
+      <text x="800" y="478" text-anchor="middle" font-size="18" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">good walk · stone’s throw · pipe-smoke</text>
+      <!-- glove PAIR (mirror, L/R) vs SINGLE hammer -->
+      <g opacity="0.75">
+        <path d="M520,120 q-6,-34 10,-52 q4,10 6,20 q2,-14 6,-22 q8,6 8,24 l0,50 Z" fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.2"/>
+        <path d="M580,120 q6,-34 -10,-52 q-4,10 -6,20 q-2,-14 -6,-22 q-8,6 -8,24 l0,50 Z" fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2.2"/>
+        <text x="537" y="192" text-anchor="middle" font-size="17" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">L</text>
+        <text x="563" y="192" text-anchor="middle" font-size="17" fill="var(--bt-lichen,#9DB89A)" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-style="italic">R</text>
+      </g>
+      <g transform="rotate(-24 640 380)" fill="var(--bt-mist,#C9D4C3)" opacity="0.75">
+        <rect x="612" y="368" width="56" height="24" rx="3"/>
+        <rect x="632" y="384" width="15" height="70" rx="4"/>
+      </g>
+      <!-- spectacles glyph near here: nearest overlooked -->
+      <g fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2" opacity="0.7">
+        <circle cx="640" cy="300" r="10"/><circle cx="666" cy="300" r="10"/><line x1="650" y1="300" x2="656" y2="300"/>
+      </g>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="780" y="0" width="620" height="470" filter="url(#grain-dedist)" clip-path="url(#dedist-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.45">
+      <circle cx="880" cy="482" r="2"/><circle cx="1180" cy="488" r="2.2"/><circle cx="1300" cy="474" r="1.8"/>
+    </g>
+  </symbol>
+
+  <!-- ============ space-room — §24: made room; the lattice dissolving (p2c16) ============
+       Cohort ceiling and handoff. Left 60%: the lived region under the cohort's WIDEST
+       shaft — bench, a flat HAND sweeping right, a cleared shaft-washed OPEN rectangle
+       (made room), soft curved region lines. Right 40%: the neutral lattice DISSOLVING
+       left-to-right (solid → dashes → dots → nothing) — LOSS, never celebration — its left
+       edge overlapped by the region. gapWidth 30%. -->
+  <symbol id="space-room" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="grain-room" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.78 0 0 0 0 0.52 0 0 0 0.55 0"/>
+      </filter>
+      <clipPath id="room-shaftclip">
+        <polygon points="1040,0 1440,0 1211,430 811,430"/>
+        <ellipse cx="1010" cy="448" rx="260" ry="26"/>
+      </clipPath>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <rect class="eq-floor" x="0" y="430" width="1600" height="90" fill="var(--bt-ink,#060805)"/>
+    <line x1="0" y1="430" x2="1600" y2="430" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.5"/>
+    <polygon class="eq-shaft" points="1040,0 1440,0 1211,430 811,430" fill="var(--bt-shaft,#E9D488)" opacity="0.17"/>
+    <polygon class="eq-core" points="1140,0 1340,0 1111,430 911,430" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+    <ellipse class="eq-pool" cx="1010" cy="448" rx="260" ry="26" fill="var(--bt-shaft,#E9D488)" opacity="0.27"/>
+    <g class="eq-trunks" fill="var(--bt-trunk,#080B07)" stroke="var(--bt-bark,#3E4A34)" stroke-width="1">
+    <path d="M80,470 C82,360 65,234 71,84 L102,84 C108,234 118,360 120,470 Z"/>
+    <path d="M182,470 C184,360 165,214 172,64 L200,64 C207,214 216,360 218,470 Z"/>
+    </g>
+    <g class="eq-motif">
+      <!-- soft curved region lines -->
+      <g fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.6" opacity="0.7">
+        <path d="M280,360 Q480,330 700,352"/>
+        <path d="M280,392 Q500,364 740,388"/>
+      </g>
+      <!-- bench -->
+      <g fill="var(--bt-mist,#C9D4C3)" opacity="0.65">
+        <rect x="330" y="398" width="120" height="12"/>
+        <rect x="342" y="410" width="10" height="20"/><rect x="428" y="410" width="10" height="20"/>
+      </g>
+      <!-- flat HAND silhouette sweeping right: palm + four fingers -->
+      <g fill="var(--bt-mist,#C9D4C3)" opacity="0.7">
+        <rect x="470" y="232" width="90" height="30" rx="9"/>
+        <rect x="556" y="228" width="120" height="9" rx="4"/>
+        <rect x="556" y="240" width="132" height="9" rx="4"/>
+        <rect x="556" y="252" width="120" height="9" rx="4"/>
+        <path d="M500,232 L528,214 L538,222 L516,236 Z"/>
+      </g>
+      <!-- cleared shaft-washed OPEN rectangle: made room -->
+      <rect x="560" y="280" width="200" height="120" fill="var(--bt-shaft,#E9D488)" opacity="0.18"/>
+      <path d="M560,280 L760,280 L760,400 L560,400" fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2.2" opacity="0.9"/>
+      <!-- neutral lattice dissolving: solid → dashes → dots → nothing -->
+      <g stroke="var(--bt-bark,#3E4A34)" stroke-width="1.4" opacity="0.9">
+        <line x1="960" y1="120" x2="960" y2="420"/>
+        <line x1="1010" y1="120" x2="1010" y2="420"/>
+        <line x1="900" y1="200" x2="1060" y2="200"/>
+        <line x1="900" y1="300" x2="1060" y2="300"/>
+      </g>
+      <g stroke="var(--bt-bark,#3E4A34)" stroke-width="1.4" stroke-dasharray="10 7" opacity="0.7">
+        <line x1="1100" y1="120" x2="1100" y2="420"/>
+        <line x1="1170" y1="120" x2="1170" y2="420"/>
+        <line x1="1080" y1="200" x2="1200" y2="200"/>
+        <line x1="1080" y1="300" x2="1200" y2="300"/>
+      </g>
+      <g fill="var(--bt-bark,#3E4A34)" opacity="0.55">
+        <circle cx="1240" cy="160" r="2.2"/><circle cx="1280" cy="160" r="2"/><circle cx="1318" cy="160" r="1.6"/>
+        <circle cx="1240" cy="250" r="2.2"/><circle cx="1280" cy="250" r="2"/><circle cx="1318" cy="250" r="1.6"/>
+        <circle cx="1240" cy="340" r="2.2"/><circle cx="1280" cy="340" r="2"/><circle cx="1318" cy="340" r="1.6"/>
+      </g>
+      <!-- region overlaps the lattice's left edge -->
+      <path d="M880,140 Q940,260 900,400" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="2.4" opacity="0.9"/>
+    </g>
+    <g class="grain" opacity="0.06">
+      <rect x="790" y="0" width="670" height="470" filter="url(#grain-room)" clip-path="url(#room-shaftclip)"/>
+    </g>
+    <g class="eq-flecks" fill="var(--bt-shaft,#E9D488)" opacity="0.45">
+      <circle cx="850" cy="482" r="2.2"/><circle cx="1080" cy="492" r="2"/><circle cx="1240" cy="480" r="2"/>
+    </g>
+  </symbol>
+
+</svg>

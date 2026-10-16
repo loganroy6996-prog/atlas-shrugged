@@ -1,0 +1,97 @@
+{
+ "chapters": {
+  "p1c1": {
+   "caption": "Turin \u00b7 30 September 1888 \u2014 a declaration of war",
+   "class": "motif",
+   "motif": "sounding-fork",
+   "src": "art/hammerfall.svg",
+   "symbol": "sounding-fork"
+  },
+  "p1c10": {
+   "caption": "the skirmish rank, centre plate struck",
+   "class": "motif",
+   "motif": "skirmish-gallery",
+   "src": "art/untimelydusk.svg",
+   "symbol": "skirmish-gallery"
+  },
+  "p1c11": {
+   "caption": "Dionysos wreathed, at noon",
+   "class": "motif",
+   "motif": "dionysian-mask",
+   "src": "art/untimelydusk.svg",
+   "symbol": "dionysian-mask"
+  },
+  "p1c12": {
+   "caption": "the diamond over the coal",
+   "class": "motif",
+   "motif": "diamond-over-coal",
+   "src": "art/untimelydusk.svg",
+   "symbol": "diamond-over-coal"
+  },
+  "p1c2": {
+   "caption": "Thirty stanzas \u00b7 staccato \u2014 one at a time",
+   "class": "motif",
+   "motif": "fanned-barbs",
+   "src": "art/hammerfall.svg",
+   "symbol": "fanned-barbs"
+  },
+  "p1c3": {
+   "caption": "Reason = Virtue = Happiness \u2014 the indicted equation",
+   "class": "motif",
+   "motif": "hemisected-mask",
+   "src": "art/hammerfall.svg",
+   "symbol": "hemisected-mask"
+  },
+  "p1c4": {
+   "caption": "Four propositions \u00b7 read as indictments",
+   "class": "motif",
+   "motif": "mummy-case",
+   "src": "art/hammerfall.svg",
+   "symbol": "mummy-case"
+  },
+  "p1c5": {
+   "caption": "Six errors collapsing into the noon disc",
+   "class": "cadence",
+   "motif": "noon-collapse",
+   "src": "art/idolsmasher.svg",
+   "symbol": "idol-fable-noon"
+  },
+  "p1c6": {
+   "caption": "Shears beneath the uncut flame of passion",
+   "class": "emblem",
+   "motif": "shears-flame",
+   "src": "art/idolsmasher.svg",
+   "symbol": "idol-shears-flame"
+  },
+  "p1c7": {
+   "caption": "The idol of causality split into four errors",
+   "class": "plate",
+   "motif": "fourfold-knot",
+   "src": "art/idolsmasher.svg",
+   "symbol": "idol-four-errors"
+  },
+  "p1c8": {
+   "caption": "The pious mask over the lying tablets",
+   "class": "emblem",
+   "motif": "veil-tablets",
+   "src": "art/idolsmasher.svg",
+   "symbol": "idol-veil-tablets"
+  },
+  "p1c9": {
+   "caption": "the dancing quill strikes the flatland",
+   "class": "motif",
+   "motif": "dancing-pen",
+   "src": "art/untimelydusk.svg",
+   "symbol": "dancing-pen"
+  }
+ },
+ "cover": {
+  "caption": "the sounded idol",
+  "class": "plate",
+  "src": "art/cover.svg"
+ },
+ "default": {
+  "class": "motif"
+ },
+ "version": 1
+}

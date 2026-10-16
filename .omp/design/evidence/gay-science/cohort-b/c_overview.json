@@ -1,0 +1,32 @@
+{
+ "binding_basis": [
+  "books/gay-science/design/ART-DIRECTION.md (APPROVED, binding; read in full)",
+  ".omp/design/critiques/gay-science.md incl. G6 REVISE GR1-GR7 (read in full)",
+  ".omp/design/ART-DIRECTION.md P1-P11 (read in full)",
+  "gs-prototype.html (read in full, 476 lines)",
+  "part-dividers.svg re-grep: gs-part-i..viii live 8/8",
+  "reader.js render grep: no-drop auto-rule verified (numeral/quote/short openers)"
+ ],
+ "conform_overview": {
+  "bands": "Seed \u226460w: p3c51 (55w) ONLY. Shoot 60-300w: 41 chapters. Branch 300-800w: 11 chapters (p3c24 301, p3c5 303, p3c12 312, p3c40 323, p3c2 340, p3c22 416, p3c7 440, p3c48 462, p3c13 558, p3c14 611, p3c3 644). Essay-Branch >800w per \u00a77B: p3c1 1239, p3c21 957, p3c23 980. Total Branch 14. Boundary pair noted: p3c11 295 (Shoot) vs p3c24 301 (Branch) \u2014 bands applied strictly.",
+  "decisions": [
+   "D1 WEIGHTS: all 56 treatments reassigned by \u00a76 bands (Seed/Shoot/Branch). My mark/essay/landmark invention is withdrawn.",
+   "D2 ZERO Book-One landmarks: \u00a76 named list contains no p3c*; \u00a77B pins p3c1/21/23 as Branch. My 6 landmark panels become 3 grand Branch banners + 1 Branch banner + 3 Shoot motifs (table in final section). 0 landmark CSS rules; 1 chapter rule total (p3c51 spark seal, A.0).",
+   "D3 CLASS VOCAB: banner/motif/spark exactly (\u00a710b). My gs-b-opener/tone/read triple is withdrawn. Treatments: Branch=banner (viewport-bleed, 46vh/34vh), Shoot=motif (\u226424rem), Seed=spark (CSS-only, no slot, no runtime entry).",
+   "D4 MOTIF VOCAB: provisional JSON carries no motif field (\u00a710a shape); merge instruction sets motif=morning (altitude truth) on all 55 slot entries. Symbol ids stay gs-b-* (cohort namespace, file-internal).",
+   "D5 COHORT-AUTHORED WEATHER: Shoot motifs + Branch banners are cohort-authored morning-weather compositions (low sun + upward fan + flat sea + gulls + ONE content emblem) in the gs-part-iii hand \u2014 per \u00a77B weather + \u00a710a opener.composition + supervisor 'design your cohort openers full-width' + prototype precedent (its banners are authored, not sprite clones) + Prelude per-chapter-distinctness precedent. Literal fallback offered: if supervisor rules strict sprite-reuse, every entry collapses to {src: art/part-dividers.svg, symbol: gs-part-iii} with zero other changes.",
+   "D6 NOON-BREAK KILLED: p3c45 loses overhead sun + gold title. G1 fixes altitude per part; a noon sun in Book One breaks dawn\u2192zenith\u2192sunset legibility. Paleness kept (sun-core bands), altitude fixed morning.",
+   "D7 NO DUSK anywhere in B (G5: night chapters only; B has none). All dusk usages retuned to sea-deep/night/foam-hollow (list in atoms section).",
+   "D8 FLAT (G4): zero radial art-gradients. All slot washes withdrawn; seals + marginalia are flat currentColor data-URI art.",
+   "D9 TYPE (\u00a73): Fraunces 560-600, SOFT 100, WONK 1, leading 1.12, titles clamp(2.1rem,6vw,3.4rem); kickers .28em gold; uniform titles (no italic/gold/large landmarks); body Source Serif \u226468ch.",
+   "D10 STAGE EMBLEMS KEPT as content-kind (P5) inside morning tableaux (curtain/bell/mask/plumes/prompter/pillow/laurel for p3c22/29/30/36): separation rule vs Cohort C proposed in grammar_notes (B: stage-content-inside-morning-tableau; C: standalone mask weather-marks).",
+   "D11 CHROME (\u00a78): progress ray + 8px sun-disc edge; nav horizon tablets + Fraunces kickers; header gold kicker + Fraunces 560; settings gold ring + italic labels; TOC book-wide horizon-lines + altitude discs specified as SUPERVISOR-MERGE block (not cohort-b.css).",
+   "D12 MOTION (\u00a79): openers rise once (.7s); reduced-motion cuts. (My zero-motion withdrawn; prototype banner-fade \u2192 \u00a79 rise.)"
+  ],
+  "repairs_GR4_GR5_GR6": [
+   "GR4 full-width: all 14 banner viewBoxes composed edge-to-edge (sun/emblem/sea span full 1200u; no half-empty band); all 41 motif boxes filled (sun-vs-emblem thirds balance). Per-composition width beats in recipes.",
+   "GR5 inscriptions: ZERO inscriptions in B (inscription lines are landmark-only per \u00a76; B has no landmarks). HTML meta-titles get text-wrap:balance + inset padding.",
+   "GR6 numerals: ALL 56 chapters open with digits \u2192 reader.js auto-no-drop (verified /^[^A-Za-z]/ rule) \u2192 ZERO drop-caps in cohort. No CSS needed; documented + validator-checklisted."
+  ]
+ }
+}

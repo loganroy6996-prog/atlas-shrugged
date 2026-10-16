@@ -1,0 +1,440 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 460" role="img" aria-labelledby="orTitle orDesc">
+<title id="orTitle">OL-RESTORE opener plates: red-ink proclamation craft on Press Black</title>
+<desc id="orDesc">Four chapter plates for An Open Letter chs. XI–XIV: a posted-bill diptych split by a red axis; a dam wall shedding bills into a red torrent; a letters-patent sheet with directorate key and Trust seal; a commission scroll over an ember starfield. No letterforms baked in; all titles are HTML overlays.</desc>
+<!-- ═══ p1c11 · posted-diptych · Figure XI · The diptych, posted ═══ -->
+<symbol id="p1c11-posted-diptych" viewBox="0 0 1600 460"><defs>
+<filter id="or11-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.06 0"/>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="1600" height="460" fill="#141210"/>
+<!-- shed column-rules falling below the torn right bill -->
+<g stroke="#C9A227" stroke-width="1" opacity="0.8">
+<line x1="980" y1="404" x2="980" y2="452"/>
+<line x1="1140" y1="406" x2="1140" y2="446"/>
+<line x1="1300" y1="405" x2="1300" y2="456"/>
+</g>
+<!-- one shared gilt frame -->
+<rect x="60" y="40" width="1480" height="380" fill="none" stroke="#C9A227" stroke-width="3"/>
+<rect x="72" y="52" width="1456" height="356" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<!-- bill panels -->
+<rect x="84" y="64" width="692" height="332" fill="#1E1A15"/>
+<rect x="84" y="64" width="692" height="332" fill="none" stroke="#EDE2CE" stroke-width="1.5" opacity="0.35"/>
+<rect x="824" y="64" width="692" height="332" fill="#1E1A15"/>
+<rect x="824" y="64" width="692" height="332" fill="none" stroke="#EDE2CE" stroke-width="1.5" opacity="0.35"/>
+<!-- LEFT bill: straight plumb rules (nomos) -->
+<g stroke="#C9A227" stroke-width="1" opacity="0.5">
+<line x1="180" y1="80" x2="180" y2="380"/>
+<line x1="300" y1="80" x2="300" y2="380"/>
+<line x1="420" y1="80" x2="420" y2="380"/>
+<line x1="540" y1="80" x2="540" y2="380"/>
+<line x1="660" y1="80" x2="660" y2="380"/>
+</g>
+<g stroke="#EDE2CE" stroke-width="2" opacity="0.18">
+<line x1="100" y1="160" x2="760" y2="160"/>
+<line x1="100" y1="230" x2="760" y2="230"/>
+<line x1="100" y1="300" x2="760" y2="300"/>
+</g>
+<!-- RIGHT bill: rules skew -4deg, one column snapped (antinomian) -->
+<g stroke="#C9A227" stroke-width="1" opacity="0.5">
+<line x1="912" y1="80" x2="891" y2="380"/>
+<line x1="1032" y1="80" x2="1011" y2="380"/>
+<line x1="1152" y1="80" x2="1138" y2="216"/>
+<line x1="1134" y1="242" x2="1120" y2="380"/>
+<line x1="1272" y1="80" x2="1251" y2="380"/>
+<line x1="1392" y1="80" x2="1371" y2="380"/>
+</g>
+<g stroke="#EDE2CE" stroke-width="2" opacity="0.18">
+<line x1="840" y1="170" x2="1500" y2="124"/>
+<line x1="840" y1="240" x2="1500" y2="194"/>
+<line x1="840" y1="310" x2="1500" y2="264"/>
+</g>
+<!-- center gutter: the M–Q axis -->
+<line x1="800" y1="40" x2="800" y2="420" stroke="#D64533" stroke-width="2"/>
+<!-- Q-virus wax seal bridging the gutter (motifs#wax-seal blob ×1.45, no letter) -->
+<g transform="translate(800,230) scale(1.45)">
+<path d="M0 -44 C20 -44 30 -34 40 -30 C48 -26 46 -12 52 -4 C58 4 48 14 46 24 C44 34 32 34 26 42 C20 50 8 44 0 48 C-8 44 -20 50 -26 42 C-32 34 -44 34 -46 24 C-48 14 -58 4 -52 -4 C-46 -12 -48 -26 -40 -30 C-30 -34 -20 -44 0 -44 Z" fill="#7E2A22" stroke="#C9A227" stroke-width="1.6"/>
+<ellipse cx="-12" cy="-14" rx="16" ry="9" fill="#D64533" opacity="0.5" transform="rotate(-24)"/>
+<circle r="24" fill="none" stroke="#C9A227" stroke-width="1.4"/>
+<circle r="15" fill="none" stroke="#D64533" stroke-width="2" opacity="0.9"/>
+</g>
+<!-- pin marks -->
+<g fill="#C9A227">
+<circle cx="60" cy="40" r="4"/><circle cx="1540" cy="40" r="4"/>
+<circle cx="60" cy="420" r="4"/><circle cx="1540" cy="420" r="4"/>
+</g>
+<!-- dissolving action: torn bottom edge of the RIGHT bill + red kicker -->
+<path d="M900 396 L960 384 L1020 396 L1080 382 L1140 396 L1200 384 L1260 396 L1320 383 L1400 396 L1400 404 L900 404 Z" fill="#EDE2CE" opacity="0.9"/>
+<line x1="900" y1="410" x2="1400" y2="410" stroke="#D64533" stroke-width="2"/>
+<rect x="0" y="0" width="1600" height="460" filter="url(#or11-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ═══ p1c12 · dam-broadside · Figure XII · Against the dam ═══ -->
+<symbol id="p1c12-dam-broadside" viewBox="0 0 1600 460"><defs>
+<filter id="or12-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.06 0"/>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="1600" height="460" fill="#0D0B09"/>
+<rect x="640" y="0" width="900" height="460" fill="#1E1A15"/>
+<!-- torrent bands -->
+<g stroke="#D64533" opacity="0.85">
+<line x1="700" y1="460" x2="1150" y2="-40" stroke-width="22"/>
+<line x1="860" y1="460" x2="1310" y2="-40" stroke-width="14"/>
+<line x1="1000" y1="460" x2="1450" y2="-40" stroke-width="20"/>
+<line x1="1140" y1="460" x2="1590" y2="-40" stroke-width="15"/>
+<line x1="1270" y1="460" x2="1720" y2="-40" stroke-width="18"/>
+</g>
+<!-- shed posted bills riding the flow -->
+<g opacity="0.9">
+<g transform="translate(830,300) rotate(-28)">
+<rect x="-45" y="-60" width="90" height="120" fill="#EDE2CE"/>
+<line x1="-32" y1="-30" x2="32" y2="-30" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="0" x2="32" y2="0" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="30" x2="32" y2="30" stroke="#6E6252" stroke-width="3"/>
+</g>
+<g transform="translate(1000,180) rotate(-28)">
+<rect x="-45" y="-60" width="90" height="120" fill="#EDE2CE"/>
+<line x1="-32" y1="-30" x2="32" y2="-30" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="0" x2="32" y2="0" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="30" x2="32" y2="30" stroke="#6E6252" stroke-width="3"/>
+</g>
+<g transform="translate(1150,330) rotate(-28)">
+<rect x="-45" y="-60" width="90" height="120" fill="#EDE2CE"/>
+<line x1="-32" y1="-30" x2="32" y2="-30" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="0" x2="32" y2="0" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="30" x2="32" y2="30" stroke="#6E6252" stroke-width="3"/>
+</g>
+<g transform="translate(1300,150) rotate(-28)">
+<rect x="-45" y="-60" width="90" height="120" fill="#EDE2CE"/>
+<line x1="-32" y1="-30" x2="32" y2="-30" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="0" x2="32" y2="0" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="30" x2="32" y2="30" stroke="#6E6252" stroke-width="3"/>
+</g>
+<g transform="translate(1420,300) rotate(-28)">
+<rect x="-45" y="-60" width="90" height="120" fill="#EDE2CE"/>
+<line x1="-32" y1="-30" x2="32" y2="-30" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="0" x2="32" y2="0" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="30" x2="32" y2="30" stroke="#6E6252" stroke-width="3"/>
+</g>
+<g transform="translate(760,120) rotate(-28)">
+<rect x="-45" y="-60" width="90" height="120" fill="#EDE2CE"/>
+<line x1="-32" y1="-30" x2="32" y2="-30" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="0" x2="32" y2="0" stroke="#6E6252" stroke-width="3"/>
+<line x1="-32" y1="30" x2="32" y2="30" stroke="#6E6252" stroke-width="3"/>
+</g>
+</g>
+<!-- DAM WALL x60–640 with battered right face -->
+<path d="M60 0 L640 0 L600 460 L60 460 Z" fill="#141210"/>
+<g stroke="#C9A227" stroke-width="2">
+<line x1="60" y1="64" x2="637" y2="64"/>
+<line x1="60" y1="128" x2="634" y2="128"/>
+<line x1="60" y1="192" x2="631" y2="192"/>
+<line x1="60" y1="256" x2="628" y2="256"/>
+<line x1="60" y1="320" x2="625" y2="320"/>
+<line x1="60" y1="384" x2="622" y2="384"/>
+</g>
+<g stroke="#C9A227" stroke-width="1.4" opacity="0.8">
+<line x1="180" y1="64" x2="180" y2="128"/><line x1="360" y1="64" x2="360" y2="128"/><line x1="520" y1="64" x2="520" y2="128"/>
+<line x1="120" y1="128" x2="120" y2="192"/><line x1="300" y1="128" x2="300" y2="192"/><line x1="480" y1="128" x2="480" y2="192"/>
+<line x1="180" y1="192" x2="180" y2="256"/><line x1="360" y1="192" x2="360" y2="256"/><line x1="520" y1="192" x2="520" y2="256"/>
+<line x1="120" y1="256" x2="120" y2="320"/><line x1="300" y1="256" x2="300" y2="320"/><line x1="480" y1="256" x2="480" y2="320"/>
+<line x1="180" y1="320" x2="180" y2="384"/><line x1="360" y1="320" x2="360" y2="384"/><line x1="520" y1="320" x2="520" y2="384"/>
+</g>
+<!-- dislodged top-right course -->
+<g transform="translate(658,32) rotate(-8 80 32)">
+<rect x="0" y="0" width="160" height="64" fill="#141210" stroke="#C9A227" stroke-width="2"/>
+<line x1="0" y1="32" x2="160" y2="32" stroke="#C9A227" stroke-width="1.4"/>
+</g>
+<g stroke="#C9A227" stroke-width="1" opacity="0.7">
+<line x1="660" y1="120" x2="700" y2="200"/>
+<line x1="680" y1="118" x2="724" y2="204"/>
+<line x1="700" y1="116" x2="748" y2="206"/>
+</g>
+<!-- wall crown: coping + survey ticks -->
+<line x1="60" y1="10" x2="640" y2="10" stroke="#C9A227" stroke-width="4"/>
+<g stroke="#D64533" stroke-width="2">
+<line x1="100" y1="18" x2="100" y2="34"/><line x1="160" y1="18" x2="160" y2="34"/>
+<line x1="220" y1="18" x2="220" y2="34"/><line x1="280" y1="18" x2="280" y2="34"/>
+<line x1="340" y1="18" x2="340" y2="34"/><line x1="400" y1="18" x2="400" y2="34"/>
+<line x1="460" y1="18" x2="460" y2="34"/><line x1="520" y1="18" x2="520" y2="34"/>
+<line x1="580" y1="18" x2="580" y2="34"/>
+</g>
+<!-- sluice gates across the lower third -->
+<g>
+<rect x="140" y="300" width="6" height="160" fill="#D64533"/>
+<rect x="260" y="300" width="6" height="160" fill="#D64533"/>
+<rect x="380" y="300" width="6" height="160" fill="#D64533"/>
+<rect x="500" y="300" width="6" height="160" fill="#D64533"/>
+<g stroke="#EDE2CE" stroke-width="1.4" opacity="0.7">
+<line x1="146" y1="330" x2="260" y2="330"/><line x1="146" y1="370" x2="260" y2="370"/><line x1="146" y1="410" x2="260" y2="410"/>
+<line x1="266" y1="330" x2="380" y2="330"/><line x1="266" y1="370" x2="380" y2="370"/><line x1="266" y1="410" x2="380" y2="410"/>
+<line x1="386" y1="330" x2="500" y2="330"/><line x1="386" y1="370" x2="500" y2="370"/><line x1="386" y1="410" x2="500" y2="410"/>
+</g>
+</g>
+<rect x="0" y="0" width="1600" height="460" filter="url(#or12-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ═══ p1c13 · pilots-patent · Figure XIII · Patent of the pilots ═══ -->
+<symbol id="p1c13-pilots-patent" viewBox="0 0 1600 460"><defs>
+<filter id="or13-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.06 0"/>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="1600" height="460" fill="#141210"/>
+<!-- LEFT margin: laser rule with sight-ticks -->
+<line x1="300" y1="60" x2="300" y2="400" stroke="#D64533" stroke-width="3"/>
+<g stroke="#C9A227" stroke-width="2">
+<line x1="288" y1="120" x2="312" y2="120"/><line x1="288" y1="230" x2="312" y2="230"/>
+<line x1="288" y1="340" x2="312" y2="340"/>
+</g>
+<!-- RIGHT margin: flashlight cone dissolving to dots -->
+<g stroke="#D64533" stroke-width="2" opacity="0.25">
+<line x1="1300" y1="60" x2="1240" y2="400"/>
+<line x1="1300" y1="60" x2="1300" y2="400"/>
+<line x1="1300" y1="60" x2="1360" y2="400"/>
+</g>
+<g fill="#6E6252">
+<circle cx="1255" cy="360" r="2"/><circle cx="1300" cy="375" r="2"/><circle cx="1345" cy="360" r="2"/>
+<circle cx="1265" cy="395" r="2"/><circle cx="1315" cy="405" r="2"/><circle cx="1350" cy="395" r="2"/>
+</g>
+<!-- letters-patent sheet -->
+<rect x="400" y="30" width="800" height="400" fill="#1E1A15" stroke="#C9A227" stroke-width="3"/>
+<rect x="410" y="40" width="780" height="380" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+<rect x="422" y="52" width="756" height="356" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.4"/>
+<!-- corner ornaments: gilt L-scrolls with red pip -->
+<g fill="none" stroke="#C9A227" stroke-width="2.5">
+<path d="M400 90 L400 60 Q400 40 420 40 L450 40"/>
+<path d="M1200 90 L1200 60 Q1200 40 1180 40 L1150 40"/>
+<path d="M400 370 L400 400 Q400 420 420 420 L450 420"/>
+<path d="M1200 370 L1200 400 Q1200 420 1180 420 L1150 420"/>
+</g>
+<g fill="#D64533">
+<circle cx="414" cy="54" r="3"/><circle cx="1186" cy="54" r="3"/>
+<circle cx="414" cy="406" r="3"/><circle cx="1186" cy="406" r="3"/>
+</g>
+<!-- chancery hierarchy tiers: TRUST / RECEIVER / PLAINCORP by rule width -->
+<line x1="460" y1="92" x2="1140" y2="92" stroke="#C9A227" stroke-width="2"/>
+<line x1="562" y1="116" x2="1038" y2="116" stroke="#C9A227" stroke-width="2" opacity="0.75"/>
+<line x1="647" y1="140" x2="953" y2="140" stroke="#C9A227" stroke-width="2" opacity="0.5"/>
+<!-- directorate KEY -->
+<circle cx="800" cy="222" r="44" fill="none" stroke="#C9A227" stroke-width="8"/>
+<circle cx="800" cy="222" r="10" fill="#D64533"/>
+<rect x="794" y="266" width="12" height="116" fill="#C9A227"/>
+<rect x="806" y="332" width="34" height="10" fill="#C9A227"/>
+<rect x="806" y="357" width="34" height="10" fill="#C9A227"/>
+<!-- Trust seal with knot-work cross -->
+<circle cx="800" cy="368" r="40" fill="#7E2A22" stroke="#C9A227" stroke-width="2"/>
+<path d="M788 356 L812 380 M812 356 L788 380" stroke="#EDE2CE" stroke-width="3"/>
+<circle cx="800" cy="368" r="5" fill="#EDE2CE"/>
+<!-- seal ribbons to sheet bottom corners -->
+<g stroke="#D64533" stroke-width="2">
+<line x1="788" y1="404" x2="480" y2="428"/>
+<line x1="796" y1="406" x2="500" y2="428"/>
+<line x1="812" y1="404" x2="1120" y2="428"/>
+<line x1="804" y1="406" x2="1100" y2="428"/>
+</g>
+<!-- dissolving action: lifting corner + sliding column-rules -->
+<path d="M1050 430 L1200 430 L1200 340 L1120 372 Z" fill="#0D0B09" opacity="0.85"/>
+<path d="M1050 430 L1140 430 L1140 352 L1090 372 Z" fill="#7E2A22" opacity="0.55"/>
+<path d="M1050 430 L1128 430 L1118 344 Z" fill="#EDE2CE" opacity="0.92"/>
+<g stroke="#C9A227" stroke-width="1" opacity="0.8">
+<line x1="1215" y1="360" x2="1290" y2="360"/>
+<line x1="1215" y1="385" x2="1310" y2="385"/>
+<line x1="1215" y1="410" x2="1270" y2="410"/>
+</g>
+<rect x="0" y="0" width="1600" height="460" filter="url(#or13-grain)" opacity="0.9"/>
+</symbol>
+
+<!-- ═══ p1c14 · commission · Figure XIV · Commissioned, dismissed, sealed ═══ -->
+<symbol id="p1c14-commission" viewBox="0 0 1600 460"><defs>
+<filter id="or14-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.93 0 0 0 0 0.89 0 0 0 0 0.81 0 0 0 0.06 0"/>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="1600" height="460" fill="#0D0B09"/>
+<!-- ember starfield -->
+<g>
+<circle cx="847.1" cy="208.7" r="2" fill="#EDE2CE" opacity="0.81"/>
+<circle cx="946.1" cy="200" r="1.4" fill="#EDE2CE" opacity="0.77"/>
+<circle cx="1555.3" cy="156.1" r="2.5" fill="#EDE2CE" opacity="0.53"/>
+<circle cx="1221.9" cy="412.3" r="2.2" fill="#EDE2CE" opacity="0.87"/>
+<circle cx="721.7" cy="170.9" r="1.7" fill="#C9A227" opacity="0.87"/>
+<circle cx="1581.1" cy="80.2" r="2.4" fill="#EDE2CE" opacity="0.46"/>
+<circle cx="414.3" cy="443.2" r="1.4" fill="#C9A227" opacity="0.51"/>
+<circle cx="1086.7" cy="100.1" r="1.7" fill="#EDE2CE" opacity="0.75"/>
+<circle cx="664.5" cy="374.3" r="2.3" fill="#EDE2CE" opacity="0.84"/>
+<circle cx="43.8" cy="351.6" r="1" fill="#C9A227" opacity="0.76"/>
+<circle cx="1319.3" cy="109.1" r="1.5" fill="#C9A227" opacity="0.58"/>
+<circle cx="1017.8" cy="117.4" r="2" fill="#EDE2CE" opacity="0.68"/>
+<circle cx="1431.5" cy="101.4" r="1.9" fill="#EDE2CE" opacity="0.47"/>
+<circle cx="906.5" cy="146.2" r="1.2" fill="#C9A227" opacity="0.71"/>
+<circle cx="113.1" cy="136.2" r="1" fill="#C9A227" opacity="0.54"/>
+<circle cx="580.4" cy="235.7" r="1.5" fill="#C9A227" opacity="0.44"/>
+<circle cx="1396.9" cy="405" r="1.1" fill="#EDE2CE" opacity="0.75"/>
+<circle cx="1374.8" cy="388.2" r="1" fill="#EDE2CE" opacity="0.86"/>
+<circle cx="1290.6" cy="40.1" r="2.4" fill="#EDE2CE" opacity="0.45"/>
+<circle cx="702.2" cy="76.5" r="1.8" fill="#C9A227" opacity="0.69"/>
+<circle cx="823.1" cy="241.5" r="2.1" fill="#EDE2CE" opacity="0.85"/>
+<circle cx="1440.9" cy="26.9" r="1.3" fill="#C9A227" opacity="0.57"/>
+<circle cx="1556.9" cy="335.7" r="2.2" fill="#C9A227" opacity="0.7"/>
+<circle cx="23.3" cy="127.3" r="1.6" fill="#C9A227" opacity="0.6"/>
+<circle cx="1211.1" cy="254.2" r="2" fill="#EDE2CE" opacity="0.46"/>
+<circle cx="1050.9" cy="92.7" r="1.3" fill="#C9A227" opacity="0.52"/>
+<circle cx="279.3" cy="68" r="1.1" fill="#EDE2CE" opacity="0.7"/>
+<circle cx="273" cy="325.7" r="1.1" fill="#C9A227" opacity="0.73"/>
+<circle cx="1327.7" cy="283.7" r="2.3" fill="#C9A227" opacity="0.86"/>
+<circle cx="1120.8" cy="381.9" r="2.1" fill="#C9A227" opacity="0.66"/>
+<circle cx="1453.1" cy="246.2" r="1.9" fill="#EDE2CE" opacity="0.62"/>
+<circle cx="573.4" cy="387.3" r="1.4" fill="#C9A227" opacity="0.71"/>
+<circle cx="98.9" cy="217.9" r="2.4" fill="#EDE2CE" opacity="0.42"/>
+<circle cx="780.7" cy="212.1" r="1.6" fill="#C9A227" opacity="0.65"/>
+<circle cx="1309.6" cy="214" r="1.3" fill="#C9A227" opacity="0.44"/>
+<circle cx="9.8" cy="58.6" r="1.2" fill="#C9A227" opacity="0.46"/>
+<circle cx="1466.5" cy="197.4" r="1.4" fill="#EDE2CE" opacity="0.48"/>
+<circle cx="858.8" cy="62.4" r="1.7" fill="#C9A227" opacity="0.53"/>
+<circle cx="588.4" cy="261.3" r="1" fill="#EDE2CE" opacity="0.65"/>
+<circle cx="1563.8" cy="119.2" r="1.9" fill="#EDE2CE" opacity="0.81"/>
+<circle cx="1236.7" cy="116.2" r="1.9" fill="#C9A227" opacity="0.81"/>
+<circle cx="855.1" cy="73.2" r="2.3" fill="#C9A227" opacity="0.67"/>
+<circle cx="1514.4" cy="356.6" r="2.3" fill="#EDE2CE" opacity="0.76"/>
+<circle cx="1235.4" cy="412.5" r="1.7" fill="#C9A227" opacity="0.78"/>
+<circle cx="534.6" cy="390" r="1.9" fill="#EDE2CE" opacity="0.72"/>
+<circle cx="974" cy="326.4" r="1.4" fill="#EDE2CE" opacity="0.84"/>
+<circle cx="1431.5" cy="308.7" r="1.3" fill="#EDE2CE" opacity="0.88"/>
+<circle cx="1371.5" cy="311.8" r="2.2" fill="#EDE2CE" opacity="0.82"/>
+<circle cx="1554.3" cy="355.5" r="2.5" fill="#C9A227" opacity="0.58"/>
+<circle cx="683" cy="17.1" r="2.2" fill="#EDE2CE" opacity="0.78"/>
+<circle cx="562.2" cy="50.2" r="1.1" fill="#C9A227" opacity="0.4"/>
+<circle cx="1118.8" cy="64.5" r="2" fill="#C9A227" opacity="0.6"/>
+<circle cx="1340.7" cy="192.3" r="1.7" fill="#EDE2CE" opacity="0.9"/>
+<circle cx="123.8" cy="300.6" r="2.3" fill="#C9A227" opacity="0.61"/>
+<circle cx="345.5" cy="303.6" r="2.3" fill="#EDE2CE" opacity="0.4"/>
+<circle cx="690.5" cy="156.9" r="1.8" fill="#EDE2CE" opacity="0.88"/>
+<circle cx="162.8" cy="69" r="1.9" fill="#EDE2CE" opacity="0.67"/>
+<circle cx="865" cy="415.4" r="1.2" fill="#C9A227" opacity="0.72"/>
+<circle cx="864.5" cy="107.1" r="2.3" fill="#C9A227" opacity="0.81"/>
+<circle cx="1109.8" cy="271.8" r="1.2" fill="#C9A227" opacity="0.8"/>
+<circle cx="903.5" cy="176.9" r="2.1" fill="#C9A227" opacity="0.47"/>
+<circle cx="1428" cy="29.8" r="1.5" fill="#EDE2CE" opacity="0.52"/>
+<circle cx="1195.8" cy="355.9" r="1.8" fill="#C9A227" opacity="0.45"/>
+<circle cx="956.7" cy="420.2" r="1.5" fill="#EDE2CE" opacity="0.67"/>
+<circle cx="120.2" cy="193.9" r="1" fill="#EDE2CE" opacity="0.74"/>
+<circle cx="683.2" cy="203.7" r="1.4" fill="#EDE2CE" opacity="0.57"/>
+<circle cx="795.7" cy="189" r="1.6" fill="#C9A227" opacity="0.7"/>
+<circle cx="119.5" cy="321.8" r="2" fill="#EDE2CE" opacity="0.47"/>
+<circle cx="1392.3" cy="228.1" r="1.2" fill="#EDE2CE" opacity="0.76"/>
+<circle cx="36.2" cy="85.7" r="1.8" fill="#EDE2CE" opacity="0.41"/>
+<circle cx="136.5" cy="400.5" r="1.4" fill="#C9A227" opacity="0.59"/>
+<circle cx="948.6" cy="157.1" r="1.2" fill="#EDE2CE" opacity="0.82"/>
+<circle cx="1397.7" cy="202.7" r="1.8" fill="#C9A227" opacity="0.83"/>
+<circle cx="699.4" cy="428" r="1.3" fill="#C9A227" opacity="0.78"/>
+<circle cx="525.4" cy="174.5" r="2.1" fill="#EDE2CE" opacity="0.5"/>
+<circle cx="1502.8" cy="37.9" r="2.1" fill="#C9A227" opacity="0.56"/>
+<circle cx="446.9" cy="271.6" r="1.3" fill="#C9A227" opacity="0.65"/>
+<circle cx="1290.3" cy="281.9" r="1.9" fill="#EDE2CE" opacity="0.53"/>
+<circle cx="1431" cy="383.8" r="1.9" fill="#EDE2CE" opacity="0.43"/>
+<circle cx="284.2" cy="32.8" r="1.1" fill="#C9A227" opacity="0.67"/>
+<circle cx="390.6" cy="318.2" r="1" fill="#C9A227" opacity="0.64"/>
+<circle cx="1045.9" cy="259.8" r="2.4" fill="#EDE2CE" opacity="0.46"/>
+<circle cx="896.5" cy="229.1" r="2.4" fill="#EDE2CE" opacity="0.69"/>
+<circle cx="669.4" cy="102.4" r="2.1" fill="#C9A227" opacity="0.57"/>
+<circle cx="790.9" cy="446.1" r="2.1" fill="#EDE2CE" opacity="0.65"/>
+<circle cx="1406.2" cy="374.3" r="1.2" fill="#C9A227" opacity="0.85"/>
+<circle cx="35.1" cy="99.4" r="1.1" fill="#C9A227" opacity="0.75"/>
+<circle cx="639.3" cy="128.2" r="2.4" fill="#EDE2CE" opacity="0.81"/>
+<circle cx="638.4" cy="267.1" r="1.5" fill="#C9A227" opacity="0.75"/>
+<circle cx="513.8" cy="428" r="1.3" fill="#EDE2CE" opacity="0.49"/>
+<circle cx="140.7" cy="452" r="1.7" fill="#C9A227" opacity="0.81"/>
+<circle cx="922" cy="69.6" r="2.5" fill="#EDE2CE" opacity="0.53"/>
+<circle cx="740" cy="438.5" r="2.5" fill="#EDE2CE" opacity="0.72"/>
+<circle cx="171.9" cy="170.8" r="2" fill="#EDE2CE" opacity="0.49"/>
+<circle cx="1227.5" cy="123.7" r="1.1" fill="#C9A227" opacity="0.45"/>
+<circle cx="22.3" cy="319.1" r="2.1" fill="#EDE2CE" opacity="0.51"/>
+<circle cx="1039.6" cy="161.1" r="1.1" fill="#EDE2CE" opacity="0.47"/>
+<circle cx="857.2" cy="34.6" r="2.4" fill="#C9A227" opacity="0.7"/>
+<circle cx="1394.3" cy="416.3" r="1.2" fill="#C9A227" opacity="0.47"/>
+<circle cx="385.6" cy="392.9" r="2.3" fill="#C9A227" opacity="0.41"/>
+<circle cx="700" cy="237.4" r="1.1" fill="#EDE2CE" opacity="0.49"/>
+<circle cx="1299.8" cy="398.4" r="1.8" fill="#C9A227" opacity="0.63"/>
+<circle cx="690.6" cy="297.2" r="2.3" fill="#EDE2CE" opacity="0.9"/>
+<circle cx="1308" cy="237.3" r="1.9" fill="#C9A227" opacity="0.47"/>
+<circle cx="963.4" cy="351.5" r="2.6" fill="#D64533" opacity="0.9"/>
+<circle cx="300.7" cy="66.4" r="3.2" fill="#D64533" opacity="0.9"/>
+<circle cx="993.1" cy="375.3" r="3.2" fill="#D64533" opacity="0.9"/>
+<circle cx="651.5" cy="221.1" r="3.1" fill="#D64533" opacity="0.9"/>
+<circle cx="1477.6" cy="225.2" r="2.9" fill="#D64533" opacity="0.9"/>
+<circle cx="1381.6" cy="31.5" r="3.2" fill="#D64533" opacity="0.9"/>
+<circle cx="568.6" cy="313.6" r="3.4" fill="#D64533" opacity="0.9"/>
+</g>
+<!-- ringed planet arc, cropped top-right -->
+<circle cx="1480" cy="40" r="90" fill="#141210"/>
+<circle cx="1480" cy="40" r="90" fill="none" stroke="#C9A227" stroke-width="2" opacity="0.5"/>
+<ellipse cx="1480" cy="40" rx="130" ry="30" fill="none" stroke="#C9A227" stroke-width="2" opacity="0.5" transform="rotate(-18 1480 40)"/>
+<!-- LEFT margin: insignia ladder, ascending chevrons -->
+<g fill="none" stroke="#C9A227" stroke-width="3">
+<path d="M95 380 L120 364 L145 380"/>
+<path d="M90 315 L120 293 L150 315"/>
+<path d="M85 240 L120 212 L155 240"/>
+<path d="M80 155 L120 120 L160 155"/>
+</g>
+<!-- commission scroll body -->
+<rect x="180" y="150" width="1240" height="210" fill="#141210"/>
+<line x1="180" y1="150" x2="1420" y2="150" stroke="#C9A227" stroke-width="3"/>
+<line x1="180" y1="360" x2="1420" y2="360" stroke="#C9A227" stroke-width="3"/>
+<!-- rolled ends -->
+<circle cx="180" cy="255" r="105" fill="none" stroke="#C9A227" stroke-width="3"/>
+<circle cx="180" cy="255" r="88" fill="none" stroke="#EDE2CE" stroke-width="2" opacity="0.8"/>
+<circle cx="180" cy="255" r="70" fill="none" stroke="#C9A227" stroke-width="2"/>
+<circle cx="1420" cy="255" r="105" fill="none" stroke="#C9A227" stroke-width="3"/>
+<circle cx="1420" cy="255" r="88" fill="none" stroke="#EDE2CE" stroke-width="2" opacity="0.8"/>
+<circle cx="1420" cy="255" r="70" fill="none" stroke="#C9A227" stroke-width="2"/>
+<!-- five rule-clauses with pilcrow-style lead ticks -->
+<g stroke="#C9A227" stroke-width="2" opacity="0.85">
+<line x1="380" y1="196" x2="1220" y2="196"/>
+<line x1="380" y1="226" x2="1220" y2="226"/>
+<line x1="380" y1="256" x2="1220" y2="256"/>
+<line x1="380" y1="286" x2="1220" y2="286"/>
+<line x1="380" y1="316" x2="1220" y2="316"/>
+</g>
+<g fill="#C9A227">
+<rect x="360" y="188" width="10" height="16"/><rect x="360" y="218" width="10" height="16"/>
+<rect x="360" y="248" width="10" height="16"/><rect x="360" y="278" width="10" height="16"/>
+<rect x="360" y="308" width="10" height="16"/>
+</g>
+<!-- seal ribbon + commission wax seal -->
+<line x1="786" y1="360" x2="786" y2="392" stroke="#D64533" stroke-width="5"/>
+<line x1="814" y1="360" x2="814" y2="392" stroke="#D64533" stroke-width="5"/>
+<path d="M800 348 C826 348 838 360 846 364 C852 368 850 380 856 386 C862 392 854 400 852 408 C850 416 840 416 836 422 C832 428 822 424 800 426 C778 424 768 428 764 422 C760 416 750 416 748 408 C746 400 738 392 744 386 C750 380 748 368 754 364 C762 360 774 348 800 348 Z" fill="#7E2A22" stroke="#C9A227" stroke-width="2"/>
+<!-- white cockade closing seal overlapping the scroll's top rule -->
+<g transform="translate(1240,120)">
+<circle r="46" fill="#EDE2CE"/>
+<circle r="46" fill="none" stroke="#0D0B09" stroke-width="2.5"/>
+<circle r="34" fill="none" stroke="#0D0B09" stroke-width="1.4"/>
+<circle r="22" fill="none" stroke="#0D0B09" stroke-width="1.4"/>
+<circle r="9" fill="#7E2A22" stroke="#0D0B09" stroke-width="1.4"/>
+<g stroke="#0D0B09" stroke-width="1.2" opacity="0.8">
+<line x1="0" y1="-46" x2="0" y2="-35"/><line x1="0" y1="35" x2="0" y2="46"/>
+<line x1="-46" y1="0" x2="-35" y2="0"/><line x1="35" y1="0" x2="46" y2="0"/>
+<line x1="-32" y1="-32" x2="-24" y2="-24"/><line x1="24" y1="24" x2="32" y2="32"/>
+<line x1="32" y1="-32" x2="24" y2="-24"/><line x1="-24" y1="24" x2="-32" y2="32"/>
+</g>
+<path d="M-14 44 L-24 88 L-8 78 L0 92 L8 78 L24 88 L14 44 Z" fill="#EDE2CE" stroke="#0D0B09" stroke-width="1.4"/>
+</g>
+<!-- dissolving action: three column-rules drifting down-left off the scroll -->
+<g stroke="#C9A227" stroke-width="1" opacity="0.7">
+<line x1="300" y1="372" x2="230" y2="420"/>
+<line x1="340" y1="374" x2="280" y2="432"/>
+<line x1="380" y1="376" x2="330" y2="424"/>
+</g>
+<rect x="0" y="0" width="1600" height="460" filter="url(#or14-grain)" opacity="0.9"/>
+</symbol>
+</svg>

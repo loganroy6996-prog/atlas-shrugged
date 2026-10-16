@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Being and Time: cohort art falling-care (p2c27 to p2c36, sections 35 to 44).
+  Identity: The Clearing (Lichtung), ART-DIRECTION.md sections 1 to 10 plus ArtDirector B1 to B8.
+  Arc beat: idle talk to ANXIETY to CARE to TRUTH. gapWidth 38 to 52 percent, ghosts LEFT-BLEED.
+  Contents: one symbol per chapter treatment (fc-35 through fc-44), viewBox 0 0 1600 900.
+  Shared helpers: fc-shaft, fc-shaft-cold, fc-ghost per-ID ghost numerals,
+    fc-flecks-row (breather divider), fc-trunks-fc (cohort skyline, hand-plotted,
+    unique to this cohort).
+  Palette roles ONLY from ART-DIRECTION section 2 via CSS vars with dark fallbacks:
+    humus 0C0F0A, ink 060805, mist C9D4C3, lichen 9DB89A,
+    shaft E9D488, ember C96F3B (fc-40 ONLY), bark 3E4A34.
+  Light themes: book tokens remap the same vars; no fixed dark-only fills
+    except near-black tints that recompute via color-mix at render (engineer
+    wires per-theme overrides; see HANDOFF section 5).
+  No animation inside this file. Grain: fc-grain filter (feTurbulence);
+    engineer gates it behind prefers-reduced-motion / min-width per 4.7(5).
+  Inlined by reader.js v1.1 into #chapter-art via src plus symbol; each symbol
+    is a complete opener composition, NOT a stripe.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+  <defs>
+    <!-- Soft luminous grain for shaft polygons. Static; engineer disables
+         under prefers-reduced-motion / <640px (see HANDOFF §5). -->
+    <filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter>
+    <filter id="fc-grain-cold" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="40" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.95  0 0 0 0 0.97  0 0 0 0 0.95  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.14"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="fc-cold-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7F2" stop-opacity="0.9"/>
+      <stop offset="0.6" stop-color="#F4F7F2" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#F4F7F2" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="fc-ember-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C96F3B" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#C96F3B" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#C96F3B" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="fc-clear-wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.08"/>
+    </linearGradient>
+    <!-- Cohort trunk skyline: hand-plotted, unique to falling-care.
+         Trunk masses lean and vary; gap widens toward the right (§44). -->
+    <g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g>
+  </defs>
+
+  <!-- ============ fc-35 — §35 Idle Talk: scattered talk-flecks ============
+       Gap 38%. Straight dim shaft; talk-scatter across the whole scene:
+       groundless saying with no floor (Bodenlosigkeit, p4). -->
+  <symbol id="fc-35" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <polygon points="660,-40 980,-40 860,940 540,940" fill="url(#fc-shaft-fade)"
+             opacity="0.5" filter="url(#fc-grain)"/>
+    <g>
+      <circle cx="875" cy="655" r="5.0" fill="var(--bt-shaft,#E9D488)" opacity="0.17"/>
+      <circle cx="1517" cy="505" r="5.0" fill="var(--bt-shaft,#E9D488)" opacity="0.24"/>
+      <circle cx="1270" cy="794" r="5.7" fill="var(--bt-shaft,#E9D488)" opacity="0.19"/>
+      <circle cx="1501" cy="49" r="4.9" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="555" cy="447" r="2.1" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+      <circle cx="555" cy="503" r="3.9" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+      <circle cx="278" cy="103" r="5.6" fill="var(--bt-mist,#C9D4C3)" opacity="0.30"/>
+      <circle cx="793" cy="364" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+      <circle cx="1215" cy="414" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.28"/>
+      <circle cx="1308" cy="590" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+      <circle cx="656" cy="202" r="3.5" fill="var(--bt-shaft,#E9D488)" opacity="0.17"/>
+      <circle cx="928" cy="220" r="5.1" fill="var(--bt-shaft,#E9D488)" opacity="0.12"/>
+      <circle cx="1055" cy="118" r="5.8" fill="var(--bt-shaft,#E9D488)" opacity="0.12"/>
+      <circle cx="1107" cy="438" r="4.5" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+      <circle cx="1185" cy="722" r="4.1" fill="var(--bt-mist,#C9D4C3)" opacity="0.25"/>
+      <circle cx="1280" cy="612" r="5.3" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="291" cy="537" r="3.2" fill="var(--bt-shaft,#E9D488)" opacity="0.18"/>
+      <circle cx="871" cy="532" r="5.4" fill="var(--bt-mist,#C9D4C3)" opacity="0.30"/>
+      <circle cx="1498" cy="352" r="3.8" fill="var(--bt-mist,#C9D4C3)" opacity="0.14"/>
+      <circle cx="1103" cy="704" r="3.5" fill="var(--bt-shaft,#E9D488)" opacity="0.29"/>
+      <circle cx="193" cy="785" r="4.9" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+      <circle cx="1568" cy="378" r="3.9" fill="var(--bt-shaft,#E9D488)" opacity="0.15"/>
+      <circle cx="1277" cy="606" r="4.0" fill="var(--bt-shaft,#E9D488)" opacity="0.29"/>
+      <circle cx="1125" cy="242" r="4.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.26"/>
+      <circle cx="405" cy="159" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="1171" cy="676" r="5.8" fill="var(--bt-mist,#C9D4C3)" opacity="0.26"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-36 — §36 Curiosity: margin-pulled flecks ============
+       Gap 40%. de-distancing: circumspection flees the near for the distant
+       margin (p6–p8); light leans off-axis, right-of-center. -->
+  <symbol id="fc-36" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <polygon points="880,-40 1200,-40 1080,940 760,940" fill="url(#fc-shaft-fade)"
+             opacity="0.5" filter="url(#fc-grain)"/>
+    <g>
+      <circle cx="1227" cy="827" r="5.4" fill="var(--bt-shaft,#E9D488)" opacity="0.30"/>
+      <circle cx="718" cy="549" r="2.9" fill="var(--bt-lichen,#9DB89A)" opacity="0.21"/>
+      <circle cx="1176" cy="121" r="3.4" fill="var(--bt-lichen,#9DB89A)" opacity="0.32"/>
+      <circle cx="1241" cy="689" r="5.1" fill="var(--bt-lichen,#9DB89A)" opacity="0.17"/>
+      <circle cx="1360" cy="607" r="2.7" fill="var(--bt-shaft,#E9D488)" opacity="0.17"/>
+      <circle cx="1473" cy="313" r="5.1" fill="var(--bt-shaft,#E9D488)" opacity="0.14"/>
+      <circle cx="1560" cy="763" r="3.7" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="1261" cy="222" r="3.7" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="1147" cy="456" r="4.3" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="1485" cy="720" r="3.1" fill="var(--bt-shaft,#E9D488)" opacity="0.17"/>
+      <circle cx="1483" cy="837" r="3.5" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="1243" cy="193" r="4.0" fill="var(--bt-shaft,#E9D488)" opacity="0.16"/>
+      <circle cx="1441" cy="224" r="4.4" fill="var(--bt-shaft,#E9D488)" opacity="0.31"/>
+      <circle cx="1509" cy="770" r="2.6" fill="var(--bt-shaft,#E9D488)" opacity="0.23"/>
+      <circle cx="1520" cy="753" r="3.0" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+      <circle cx="1560" cy="107" r="2.1" fill="var(--bt-shaft,#E9D488)" opacity="0.21"/>
+      <circle cx="1015" cy="381" r="2.7" fill="var(--bt-shaft,#E9D488)" opacity="0.29"/>
+      <circle cx="1560" cy="168" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="1085" cy="147" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.19"/>
+      <circle cx="1317" cy="506" r="3.3" fill="var(--bt-shaft,#E9D488)" opacity="0.20"/>
+      <circle cx="1348" cy="338" r="3.5" fill="var(--bt-shaft,#E9D488)" opacity="0.20"/>
+      <circle cx="1210" cy="423" r="3.5" fill="var(--bt-lichen,#9DB89A)" opacity="0.21"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-37 — §37 Ambiguity: doubled semblance-flecks ============
+       Gap 41%. Every fleck carries a dim twin offset down-right: everything
+       looks understood but is not; semblance doubled (p1, p6). -->
+  <symbol id="fc-37" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <polygon points="700,-40 1020,-40 900,940 580,940" fill="url(#fc-shaft-fade)"
+             opacity="0.5" filter="url(#fc-grain)"/>
+    <polygon points="760,-40 1080,-40 960,940 640,940" fill="url(#fc-shaft-fade)"
+             opacity="0.18"/>
+    <g>
+      <circle cx="909" cy="180" r="4.6" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+      <circle cx="929" cy="185" r="3.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+      <circle cx="879" cy="364" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.28"/>
+      <circle cx="898" cy="359" r="3.6" fill="var(--bt-mist,#C9D4C3)" opacity="0.22"/>
+      <circle cx="669" cy="370" r="4.9" fill="var(--bt-shaft,#E9D488)" opacity="0.34"/>
+      <circle cx="691" cy="369" r="4.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.27"/>
+      <circle cx="1003" cy="180" r="3.4" fill="var(--bt-shaft,#E9D488)" opacity="0.29"/>
+      <circle cx="1018" cy="178" r="2.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.23"/>
+      <circle cx="996" cy="491" r="2.6" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+      <circle cx="1017" cy="492" r="2.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+      <circle cx="628" cy="395" r="4.8" fill="var(--bt-shaft,#E9D488)" opacity="0.19"/>
+      <circle cx="642" cy="397" r="4.1" fill="var(--bt-mist,#C9D4C3)" opacity="0.15"/>
+      <circle cx="848" cy="135" r="4.7" fill="var(--bt-shaft,#E9D488)" opacity="0.30"/>
+      <circle cx="866" cy="131" r="4.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.24"/>
+      <circle cx="1038" cy="264" r="3.8" fill="var(--bt-shaft,#E9D488)" opacity="0.33"/>
+      <circle cx="1059" cy="266" r="3.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.26"/>
+      <circle cx="875" cy="307" r="3.0" fill="var(--bt-shaft,#E9D488)" opacity="0.28"/>
+      <circle cx="896" cy="306" r="2.6" fill="var(--bt-mist,#C9D4C3)" opacity="0.22"/>
+      <circle cx="529" cy="416" r="4.1" fill="var(--bt-shaft,#E9D488)" opacity="0.19"/>
+      <circle cx="549" cy="410" r="3.5" fill="var(--bt-mist,#C9D4C3)" opacity="0.16"/>
+      <circle cx="890" cy="345" r="2.7" fill="var(--bt-shaft,#E9D488)" opacity="0.21"/>
+      <circle cx="904" cy="351" r="2.3" fill="var(--bt-mist,#C9D4C3)" opacity="0.16"/>
+      <circle cx="803" cy="282" r="3.9" fill="var(--bt-shaft,#E9D488)" opacity="0.27"/>
+      <circle cx="823" cy="281" r="3.4" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-38 — §38 Falling: 38° dimmed plunge-shaft ============
+       Gap 42%. Shaft at 38° from vertical, opacity −30%: the Absturz plunge
+       (p14); flecks sink to the lower gap. -->
+  <symbol id="fc-38" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <polygon points="880,-40 1180,-40 560,940 260,940" fill="url(#fc-shaft-fade)"
+             opacity="0.35" filter="url(#fc-grain)"/>
+    <g>
+      <circle cx="889" cy="726" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.18"/>
+      <circle cx="777" cy="594" r="4.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.18"/>
+      <circle cx="651" cy="698" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.28"/>
+      <circle cx="969" cy="718" r="4.8" fill="var(--bt-shaft,#E9D488)" opacity="0.20"/>
+      <circle cx="570" cy="752" r="2.0" fill="var(--bt-shaft,#E9D488)" opacity="0.24"/>
+      <circle cx="1062" cy="831" r="5.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.12"/>
+      <circle cx="784" cy="674" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+      <circle cx="974" cy="687" r="2.5" fill="var(--bt-shaft,#E9D488)" opacity="0.27"/>
+      <circle cx="793" cy="779" r="2.5" fill="var(--bt-shaft,#E9D488)" opacity="0.23"/>
+      <circle cx="585" cy="710" r="2.7" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+      <circle cx="675" cy="858" r="2.4" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+      <circle cx="633" cy="708" r="2.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.28"/>
+      <circle cx="1011" cy="803" r="4.7" fill="var(--bt-mist,#C9D4C3)" opacity="0.28"/>
+      <circle cx="621" cy="638" r="3.3" fill="var(--bt-mist,#C9D4C3)" opacity="0.13"/>
+      <circle cx="863" cy="595" r="3.3" fill="var(--bt-shaft,#E9D488)" opacity="0.14"/>
+      <circle cx="570" cy="749" r="4.3" fill="var(--bt-mist,#C9D4C3)" opacity="0.23"/>
+      <circle cx="948" cy="656" r="3.0" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="497" cy="614" r="4.1" fill="var(--bt-mist,#C9D4C3)" opacity="0.28"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-39 — §39 Totality question: held threshold ============
+       Gap 43%. Shaft halts mid-air (fades by y=560): the question asked but
+       not yet answered; sparse flecks; the cobbling-together refused (p4). -->
+  <symbol id="fc-39" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <polygon points="720,-40 1040,-40 940,560 620,560" fill="url(#fc-shaft-fade)"
+             opacity="0.55" filter="url(#fc-grain)"/>
+    <rect x="620" y="552" width="320" height="2" fill="var(--bt-bark,#3E4A34)"
+          opacity="0.9"/>
+    <g>
+      <circle cx="614" cy="381" r="2.5" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+      <circle cx="483" cy="629" r="3.7" fill="var(--bt-shaft,#E9D488)" opacity="0.24"/>
+      <circle cx="497" cy="555" r="4.1" fill="var(--bt-mist,#C9D4C3)" opacity="0.12"/>
+      <circle cx="751" cy="403" r="3.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.19"/>
+      <circle cx="672" cy="580" r="3.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.20"/>
+      <circle cx="842" cy="585" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.24"/>
+      <circle cx="1055" cy="439" r="3.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.22"/>
+      <circle cx="1085" cy="731" r="3.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.18"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-40 — §40 ANXIETY (climax): cold shaft, ember floor ==
+       Gap 44%. THE ONLY Div One ember use (B5). Trunks crowd inward;
+       a cold-white pillar falls on an ember floor: the nothing-and-nowhere,
+       "it was really nothing" (p13), world sunk into insignificance (p12). -->
+  <symbol id="fc-40" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="fc-ember-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C96F3B" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#C96F3B" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#C96F3B" stop-opacity="0.55"/>
+    </linearGradient><filter id="fc-grain-cold" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="40" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.95  0 0 0 0 0.97  0 0 0 0 0.95  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.14"/>
+      </feMerge>
+    </filter><linearGradient id="fc-cold-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7F2" stop-opacity="0.9"/>
+      <stop offset="0.6" stop-color="#F4F7F2" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#F4F7F2" stop-opacity="0.05"/>
+    </linearGradient><linearGradient id="fc-ember-feather" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.12" stop-color="#fff" stop-opacity="1"/><stop offset="0.88" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="fc-ember-mask"><rect x="0" y="620" width="1600" height="280" fill="url(#fc-ember-feather)"/></mask></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-ink,#060805)"/>
+    <g class="fc-trunks" fill="#060805">
+      <path d="M0,0 L190,0 C186,220 198,430 180,640 C172,740 178,820 172,900 L0,900 Z"/>
+      <path d="M218,0 L316,0 C312,260 322,470 308,660 C302,760 308,830 304,900 L210,900 C218,700 208,450 218,0 Z"/>
+      <path d="M344,0 L420,0 C416,200 426,420 412,620 C406,730 412,820 408,900 L338,900 C344,680 336,400 344,0 Z"/>
+      <path d="M1180,0 L1256,0 C1252,200 1262,420 1248,620 C1242,730 1248,820 1244,900 L1174,900 C1180,680 1172,400 1180,0 Z"/>
+      <path d="M1284,0 L1382,0 C1378,230 1388,470 1374,680 C1368,770 1374,840 1370,900 L1278,900 C1286,690 1276,430 1284,0 Z"/>
+      <path d="M1410,0 L1600,0 L1600,900 L1404,900 C1412,700 1402,420 1410,0 Z"/>
+    </g>
+    <polygon points="740,-40 900,-40 860,940 700,940" fill="url(#fc-cold-fade)"
+             opacity="0.85" filter="url(#fc-grain-cold)"/>
+    <rect x="0" y="640" width="1600" height="260" fill="url(#fc-ember-floor)" mask="url(#fc-ember-mask)"/>
+    <g>
+      <circle cx="769" cy="858" r="2.2" fill="var(--bt-ember,#C96F3B)" opacity="0.41"/>
+      <circle cx="1151" cy="820" r="2.6" fill="var(--bt-ember,#C96F3B)" opacity="0.44"/>
+      <circle cx="1089" cy="779" r="2.1" fill="var(--bt-ember,#C96F3B)" opacity="0.66"/>
+      <circle cx="519" cy="815" r="5.1" fill="var(--bt-ember,#C96F3B)" opacity="0.48"/>
+      <circle cx="1151" cy="732" r="5.0" fill="var(--bt-ember,#C96F3B)" opacity="0.35"/>
+      <circle cx="1154" cy="726" r="4.6" fill="var(--bt-ember,#C96F3B)" opacity="0.63"/>
+      <circle cx="1091" cy="718" r="6.4" fill="var(--bt-ember,#C96F3B)" opacity="0.64"/>
+      <circle cx="660" cy="836" r="3.1" fill="var(--bt-ember,#C96F3B)" opacity="0.36"/>
+      <circle cx="544" cy="756" r="6.1" fill="var(--bt-ember,#C96F3B)" opacity="0.48"/>
+      <circle cx="1172" cy="861" r="3.1" fill="var(--bt-ember,#C96F3B)" opacity="0.47"/>
+      <circle cx="469" cy="805" r="5.0" fill="var(--bt-ember,#C96F3B)" opacity="0.53"/>
+      <circle cx="487" cy="810" r="2.6" fill="var(--bt-ember,#C96F3B)" opacity="0.64"/>
+      <circle cx="771" cy="718" r="6.9" fill="var(--bt-ember,#C96F3B)" opacity="0.68"/>
+      <circle cx="672" cy="867" r="3.4" fill="var(--bt-ember,#C96F3B)" opacity="0.51"/>
+      <circle cx="855" cy="842" r="2.3" fill="var(--bt-ember,#C96F3B)" opacity="0.31"/>
+      <circle cx="533" cy="769" r="6.0" fill="var(--bt-ember,#C96F3B)" opacity="0.59"/>
+      <circle cx="643" cy="480" r="2.4" class="fc-cold" fill="#F4F7F2" opacity="0.20"/>
+      <circle cx="792" cy="559" r="3.8" class="fc-cold" fill="#F4F7F2" opacity="0.29"/>
+      <circle cx="919" cy="237" r="2.3" class="fc-cold" fill="#F4F7F2" opacity="0.39"/>
+      <circle cx="868" cy="228" r="2.7" class="fc-cold" fill="#F4F7F2" opacity="0.35"/>
+      <circle cx="623" cy="234" r="3.6" class="fc-cold" fill="#F4F7F2" opacity="0.25"/>
+      <circle cx="768" cy="344" r="3.0" class="fc-cold" fill="#F4F7F2" opacity="0.26"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-41 — §41 CARE (climax): THREE BRAIDED shafts ==========
+       Gap 46%. Existentiality / facticity / falling woven as one coherence
+       (p5–p6, p10): three sine-edged ribbons interleaved, NEVER touching
+       at crossings. See HANDOFF §3 for the gestalt rule. -->
+  <symbol id="fc-41" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <g filter="url(#fc-grain)">
+      <path d="M640,-40 C700,140 700,320 700,500 C700,680 700,810 700,940
+               L600,940 C600,810 600,680 600,500 C600,320 600,140 560,-40 Z"
+            fill="url(#fc-shaft-fade)" opacity="0.5"/>
+      <path d="M880,-40 C840,180 880,340 1000,520 C1100,670 1160,800 1190,940
+               L1060,940 C1030,800 970,670 870,520 C770,370 740,180 760,-40 Z"
+            fill="url(#fc-shaft-fade)" opacity="0.55"/>
+      <path d="M1060,-40 C1000,180 940,360 900,560 C870,700 850,820 840,940
+               L730,940 C740,820 760,700 790,560 C830,360 890,180 950,-40 Z"
+            fill="url(#fc-shaft-fade)" opacity="0.62"/>
+      <path d="M760,-40 C810,160 860,330 830,520 C805,680 760,810 730,940
+               L640,940 C670,810 715,680 740,520 C770,330 720,160 670,-40 Z"
+            fill="url(#fc-shaft-fade)" opacity="0.45"/>
+    </g>
+    <g>
+      <circle cx="584" cy="370" r="2.5" fill="var(--bt-mist,#C9D4C3)" opacity="0.32"/>
+      <circle cx="605" cy="605" r="3.2" fill="var(--bt-shaft,#E9D488)" opacity="0.36"/>
+      <circle cx="705" cy="583" r="3.3" fill="var(--bt-shaft,#E9D488)" opacity="0.40"/>
+      <circle cx="453" cy="825" r="2.8" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="594" cy="527" r="2.8" fill="var(--bt-shaft,#E9D488)" opacity="0.21"/>
+      <circle cx="668" cy="354" r="3.7" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="590" cy="774" r="4.9" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="560" cy="251" r="3.7" fill="var(--bt-mist,#C9D4C3)" opacity="0.38"/>
+      <circle cx="483" cy="723" r="2.4" fill="var(--bt-shaft,#E9D488)" opacity="0.28"/>
+      <circle cx="593" cy="584" r="3.2" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="894" cy="139" r="3.2" fill="var(--bt-shaft,#E9D488)" opacity="0.31"/>
+      <circle cx="587" cy="749" r="3.0" fill="var(--bt-shaft,#E9D488)" opacity="0.36"/>
+      <circle cx="652" cy="624" r="4.0" fill="var(--bt-shaft,#E9D488)" opacity="0.40"/>
+      <circle cx="711" cy="616" r="3.2" fill="var(--bt-shaft,#E9D488)" opacity="0.32"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-42 — §42 Cura fable: river, hand, clay ================
+       Gap 47%. Earth-register: river band, shaping hand over worked clay,
+       Saturn's threefold judgment ticks; Cura prima finxit (p7). -->
+  <symbol id="fc-42" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <polygon points="680,-40 1000,-40 880,940 560,940" fill="url(#fc-shaft-fade)"
+             opacity="0.42" filter="url(#fc-grain)"/>
+    <path d="M436,600 C600,570 760,630 920,600 C1040,578 1140,610 1236,596
+             L1236,700 C1140,714 1040,682 920,704 C760,734 600,674 436,704 Z"
+          fill="var(--bt-lichen,#9DB89A)" opacity="0.22"/>
+    <path d="M436,640 C600,612 760,668 920,640 C1040,620 1140,650 1236,638"
+          fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="2"
+          opacity="0.35"/>
+    <g fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="6"
+       stroke-linecap="round" opacity="0.85">
+      <path d="M640,180 C660,260 690,330 740,390 C780,440 830,470 890,478"/>
+      <path d="M640,180 C700,200 760,240 800,300 C830,350 845,410 848,470"/>
+      <path d="M800,300 C840,320 880,360 905,410 C920,445 928,470 930,495"/>
+    </g>
+    <g fill="none" stroke="var(--bt-mist,#C9D4C3)" stroke-width="3"
+       stroke-linecap="round" opacity="0.6">
+      <path d="M742,392 C770,400 800,420 822,448"/>
+      <path d="M762,350 C790,362 816,384 834,410"/>
+    </g>
+    <g fill="var(--bt-shaft,#E9D488)" opacity="0.55">
+      <path d="M800,520 C840,500 900,498 935,518 C965,536 970,570 950,595
+               C922,628 842,630 810,602 C788,582 786,540 800,520 Z"/>
+    </g>
+    <g fill="none" stroke="var(--bt-ink,#060805)" stroke-width="2" opacity="0.5">
+      <path d="M815,545 C845,538 885,540 915,552"/>
+      <path d="M810,575 C845,570 890,572 925,585"/>
+    </g>
+    <g stroke="var(--bt-shaft,#E9D488)" stroke-width="2" opacity="0.5">
+      <line x1="1120" y1="180" x2="1120" y2="260"/>
+      <line x1="1150" y1="180" x2="1150" y2="260"/>
+      <line x1="1180" y1="180" x2="1180" y2="260"/>
+    </g>
+    <g>
+      <circle cx="903" cy="564" r="2.7" fill="var(--bt-mist,#C9D4C3)" opacity="0.18"/>
+      <circle cx="975" cy="668" r="4.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.16"/>
+      <circle cx="742" cy="565" r="2.5" fill="var(--bt-mist,#C9D4C3)" opacity="0.23"/>
+      <circle cx="450" cy="592" r="3.6" fill="var(--bt-mist,#C9D4C3)" opacity="0.23"/>
+      <circle cx="593" cy="654" r="4.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.15"/>
+      <circle cx="1026" cy="672" r="2.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.17"/>
+      <circle cx="1138" cy="614" r="2.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.16"/>
+      <circle cx="1057" cy="657" r="4.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.26"/>
+      <circle cx="827" cy="716" r="2.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.23"/>
+      <circle cx="1044" cy="659" r="4.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.24"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-43 — §43 Reality: igniting false frames ================
+       Gap 49%. The external-world question burns at its corners: dissolving
+       frames ignite edge-inward; the "scandal" proof (p11) hollows out. -->
+  <symbol id="fc-43" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><g id="fc-trunks-fc" class="fc-trunks" fill="#060805">
+      <path d="M0,0 L150,0 C146,220 158,430 140,640 C132,740 138,820 132,900 L0,900 Z"/>
+      <path d="M178,0 L262,0 C258,260 268,470 254,660 C248,760 254,830 250,900 L170,900 C178,700 168,450 178,0 Z"/>
+      <path d="M292,0 L352,0 C348,200 358,420 344,620 C338,730 344,820 340,900 L288,900 C294,680 286,400 292,0 Z"/>
+      <path d="M388,0 L436,0 C432,240 442,480 430,700 C426,780 430,840 428,900 L382,900 C388,700 380,440 388,0 Z"/>
+      <path d="M1180,0 L1242,0 C1238,230 1248,470 1236,680 C1230,770 1236,840 1232,900 L1174,900 C1180,690 1172,430 1180,0 Z"/>
+      <path d="M1270,0 L1352,0 C1348,210 1358,440 1344,650 C1338,750 1344,830 1340,900 L1264,900 C1272,690 1262,420 1270,0 Z"/>
+      <path d="M1380,0 L1472,0 C1468,240 1478,480 1464,690 C1458,780 1464,850 1460,900 L1374,900 C1382,700 1372,440 1380,0 Z"/>
+      <path d="M1498,0 L1600,0 L1600,900 L1492,900 C1500,700 1490,420 1498,0 Z"/>
+    </g><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <use href="#fc-trunks-fc"/>
+    <polygon points="700,-40 1020,-40 900,940 580,940" fill="url(#fc-shaft-fade)"
+             opacity="0.55" filter="url(#fc-grain)"/>
+    <g fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="3"
+       opacity="0.55">
+      <path d="M560,300 L640,300 L560,300 L560,380"/>
+      <path d="M1040,300 L960,300 L1040,300 L1040,380"/>
+      <path d="M560,700 L640,700 L560,700 L560,620"/>
+      <path d="M1040,700 L960,700 L1040,700 L1040,620"/>
+    </g>
+    <g fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2.5"
+       stroke-linecap="round" opacity="0.4">
+      <path d="M700,300 L660,300 Q650,300 650,310 L650,340"/>
+      <path d="M900,300 L940,300 Q950,300 950,310 L950,340"/>
+      <path d="M700,700 L660,700 Q650,700 650,690 L650,660"/>
+      <path d="M900,700 L940,700 Q950,700 950,690 L950,660"/>
+    </g>
+    <g>
+      <circle cx="459" cy="568" r="2.4" fill="var(--bt-mist,#C9D4C3)" opacity="0.17"/>
+      <circle cx="947" cy="208" r="3.5" fill="var(--bt-shaft,#E9D488)" opacity="0.19"/>
+      <circle cx="857" cy="525" r="4.4" fill="var(--bt-mist,#C9D4C3)" opacity="0.17"/>
+      <circle cx="473" cy="214" r="2.3" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+      <circle cx="809" cy="448" r="3.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.19"/>
+      <circle cx="709" cy="179" r="2.2" fill="var(--bt-shaft,#E9D488)" opacity="0.23"/>
+      <circle cx="649" cy="683" r="3.3" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="1032" cy="542" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.13"/>
+      <circle cx="891" cy="622" r="4.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.16"/>
+      <circle cx="921" cy="413" r="2.3" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+    </g>
+  </symbol>
+
+  <!-- ============ fc-44 — §44 TRUTH (climax): fullest Div One light =========
+       Gap 52%. Trunks step OUTWARD (384/1216); the gap is a luminous field:
+       torn edge of concealment, two paths (discovering descends left,
+       concealment curves right), goddess-line; bright fleck drift. -->
+  <symbol id="fc-44" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="fc-clear-wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.08"/>
+    </linearGradient><filter id="fc-grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="44" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.16"/>
+      </feMerge>
+    </filter></defs>
+    <rect x="0" y="0" width="1600" height="900" fill="var(--bt-humus,#0C0F0A)"/>
+    <g class="fc-trunks" fill="#060805">
+      <path d="M0,0 L130,0 C126,220 138,430 120,640 C112,740 118,820 112,900 L0,900 Z"/>
+      <path d="M158,0 L242,0 C238,260 248,470 234,660 C228,760 234,830 230,900 L150,900 C158,700 148,450 158,0 Z"/>
+      <path d="M272,0 L368,0 C364,200 374,420 360,620 C354,730 360,820 356,900 L268,900 C274,680 266,400 272,0 Z"/>
+      <path d="M1232,0 L1328,0 C1324,200 1334,420 1320,620 C1314,730 1320,820 1316,900 L1228,900 C1234,680 1226,400 1232,0 Z"/>
+      <path d="M1358,0 L1442,0 C1438,260 1448,470 1434,660 C1428,760 1434,830 1430,900 L1350,900 C1358,700 1348,450 1358,0 Z"/>
+      <path d="M1470,0 L1600,0 L1600,900 L1464,900 C1472,700 1462,420 1470,0 Z"/>
+    </g>
+    <polygon points="384,-40 1216,-40 1216,940 384,940" fill="url(#fc-clear-wash)"
+             filter="url(#fc-grain)"/>
+    <path d="M384,720 L460,700 L520,724 L600,698 L680,722 L760,700 L840,724
+             L920,700 L1000,722 L1080,698 L1140,720 L1216,702 L1216,900 L384,900 Z"
+          fill="var(--bt-ink,#060805)" opacity="0.85"/>
+    <path d="M384,720 L460,700 L520,724 L600,698 L680,722 L760,700 L840,724
+             L920,700 L1000,722 L1080,698 L1140,720 L1216,702"
+          fill="none" stroke="var(--bt-shaft,#E9D488)" stroke-width="2"
+          opacity="0.6"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M800,120 C780,260 740,420 690,560 C660,650 640,720 632,780"
+            stroke="var(--bt-shaft,#E9D488)" stroke-width="5" opacity="0.75"/>
+      <path d="M800,120 C830,260 880,420 940,560 C980,660 1020,730 1050,790"
+            stroke="var(--bt-lichen,#9DB89A)" stroke-width="4" opacity="0.45"/>
+    </g>
+    <line x1="800" y1="60" x2="800" y2="130" stroke="var(--bt-mist,#C9D4C3)"
+          stroke-width="2" opacity="0.6"/>
+    <g>
+      <circle cx="730" cy="490" r="5.4" fill="var(--bt-shaft,#E9D488)" opacity="0.36"/>
+      <circle cx="640" cy="262" r="4.3" fill="var(--bt-shaft,#E9D488)" opacity="0.30"/>
+      <circle cx="810" cy="812" r="4.8" fill="var(--bt-shaft,#E9D488)" opacity="0.43"/>
+      <circle cx="1002" cy="582" r="3.4" fill="var(--bt-shaft,#E9D488)" opacity="0.50"/>
+      <circle cx="889" cy="181" r="2.3" fill="var(--bt-shaft,#E9D488)" opacity="0.33"/>
+      <circle cx="660" cy="779" r="5.3" fill="var(--bt-shaft,#E9D488)" opacity="0.26"/>
+      <circle cx="713" cy="444" r="5.7" fill="var(--bt-shaft,#E9D488)" opacity="0.29"/>
+      <circle cx="988" cy="659" r="2.2" fill="var(--bt-shaft,#E9D488)" opacity="0.46"/>
+      <circle cx="981" cy="600" r="5.4" fill="var(--bt-shaft,#E9D488)" opacity="0.36"/>
+      <circle cx="778" cy="427" r="5.2" fill="var(--bt-shaft,#E9D488)" opacity="0.32"/>
+      <circle cx="766" cy="672" r="4.7" fill="var(--bt-shaft,#E9D488)" opacity="0.43"/>
+      <circle cx="1160" cy="631" r="3.1" fill="var(--bt-shaft,#E9D488)" opacity="0.32"/>
+      <circle cx="431" cy="642" r="4.6" fill="var(--bt-mist,#C9D4C3)" opacity="0.33"/>
+      <circle cx="1138" cy="506" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.35"/>
+      <circle cx="1057" cy="537" r="2.2" fill="var(--bt-shaft,#E9D488)" opacity="0.48"/>
+      <circle cx="934" cy="441" r="2.6" fill="var(--bt-shaft,#E9D488)" opacity="0.44"/>
+      <circle cx="643" cy="565" r="3.1" fill="var(--bt-shaft,#E9D488)" opacity="0.38"/>
+      <circle cx="556" cy="477" r="4.7" fill="var(--bt-shaft,#E9D488)" opacity="0.33"/>
+      <circle cx="1150" cy="289" r="2.3" fill="var(--bt-mist,#C9D4C3)" opacity="0.48"/>
+      <circle cx="1019" cy="338" r="5.2" fill="var(--bt-shaft,#E9D488)" opacity="0.34"/>
+      <circle cx="648" cy="390" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.27"/>
+      <circle cx="612" cy="779" r="4.6" fill="var(--bt-shaft,#E9D488)" opacity="0.53"/>
+      <circle cx="721" cy="349" r="3.8" fill="var(--bt-shaft,#E9D488)" opacity="0.52"/>
+      <circle cx="1006" cy="301" r="4.1" fill="var(--bt-shaft,#E9D488)" opacity="0.32"/>
+    </g>
+  </symbol>
+
+  <!-- ============ SHARED: floated shaft ribbons (rail accents) ==============
+       fc-shaft / fc-shaft-cold: ribbon segments for rail ticks and the §39
+       threshold well accent. These are ACCENTS, never the opener shaft (B1). -->
+  <symbol id="fc-shaft" viewBox="0 0 120 320" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="fc-shaft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9D488" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E9D488" stop-opacity="0.06"/>
+    </linearGradient></defs>
+    <polygon points="30,-10 90,-10 70,330 10,330" fill="url(#fc-shaft-fade)"
+             opacity="0.8"/>
+  </symbol>
+  <symbol id="fc-shaft-cold" viewBox="0 0 120 320"
+          preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="fc-cold-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7F2" stop-opacity="0.9"/>
+      <stop offset="0.6" stop-color="#F4F7F2" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#F4F7F2" stop-opacity="0.05"/>
+    </linearGradient></defs>
+    <polygon points="40,-10 80,-10 75,330 35,330" fill="url(#fc-cold-fade)"
+             opacity="0.9"/>
+  </symbol>
+
+  <!-- ============ SHARED: ghost numerals (left-bleed table, B2) =============
+       One authored <symbol> per chapter numeral so the validator can compare
+       table-vs-render. Glyph = Fraunces 300 (book font stack), fill mist at
+       per-ID opacity, positioned for LEFT-BLEED crop by #chapter-art.
+       Engineer: render via <svg class="fc-ghost"><use href="#fc-ghost-40"/>
+       or inline <text>; font-family must be "Fraunces", Georgia, serif. -->
+  <symbol id="fc-ghost-35" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-40" y="400" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="440" fill="var(--bt-mist,#C9D4C3)" opacity="0.07">35</text>
+  </symbol>
+  <symbol id="fc-ghost-36" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-40" y="400" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="440" fill="var(--bt-mist,#C9D4C3)" opacity="0.07">36</text>
+  </symbol>
+  <symbol id="fc-ghost-37" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-40" y="400" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="440" fill="var(--bt-mist,#C9D4C3)" opacity="0.08">37</text>
+  </symbol>
+  <symbol id="fc-ghost-38" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-60" y="420" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="440" fill="var(--bt-mist,#C9D4C3)" opacity="0.08">38</text>
+  </symbol>
+  <symbol id="fc-ghost-39" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-40" y="400" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="420" fill="var(--bt-mist,#C9D4C3)" opacity="0.07">39</text>
+  </symbol>
+  <symbol id="fc-ghost-40" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-70" y="430" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="470" fill="var(--bt-mist,#C9D4C3)" opacity="0.10">40</text>
+  </symbol>
+  <symbol id="fc-ghost-41" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-50" y="410" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="460" fill="var(--bt-mist,#C9D4C3)" opacity="0.09">41</text>
+  </symbol>
+  <symbol id="fc-ghost-42" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-40" y="400" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="430" fill="var(--bt-mist,#C9D4C3)" opacity="0.07">42</text>
+  </symbol>
+  <symbol id="fc-ghost-43" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-40" y="400" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="430" fill="var(--bt-mist,#C9D4C3)" opacity="0.08">43</text>
+  </symbol>
+  <symbol id="fc-ghost-44" viewBox="0 0 600 500" preserveAspectRatio="xMinYMid meet">
+    <text x="-50" y="410" font-family="Fraunces, Georgia, serif" font-weight="300"
+          font-size="470" fill="var(--bt-mist,#C9D4C3)" opacity="0.10">44</text>
+  </symbol>
+
+  <!-- ============ SHARED: breather fleck row (long-chapter relief) ==========
+       1600×120 strip; engineer embeds via the fc-breather-* mask classes on
+       #chapter-text backgrounds (see JSON reading.treatment + HANDOFF §5). -->
+  <symbol id="fc-flecks-row" viewBox="0 0 1600 120"
+          preserveAspectRatio="xMidYMid meet">
+    <g>
+      <circle cx="733" cy="73" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.32"/>
+      <circle cx="740" cy="67" r="3.2" fill="var(--bt-shaft,#E9D488)" opacity="0.30"/>
+      <circle cx="903" cy="65" r="2.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+      <circle cx="861" cy="96" r="4.4" fill="var(--bt-shaft,#E9D488)" opacity="0.29"/>
+      <circle cx="879" cy="59" r="4.1" fill="var(--bt-shaft,#E9D488)" opacity="0.22"/>
+      <circle cx="965" cy="75" r="4.0" fill="var(--bt-shaft,#E9D488)" opacity="0.34"/>
+      <circle cx="639" cy="41" r="3.3" fill="var(--bt-shaft,#E9D488)" opacity="0.20"/>
+      <circle cx="907" cy="98" r="3.0" fill="var(--bt-shaft,#E9D488)" opacity="0.34"/>
+      <circle cx="590" cy="66" r="3.9" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+      <circle cx="517" cy="46" r="4.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.26"/>
+      <circle cx="929" cy="58" r="2.9" fill="var(--bt-mist,#C9D4C3)" opacity="0.22"/>
+      <circle cx="727" cy="61" r="3.6" fill="var(--bt-mist,#C9D4C3)" opacity="0.33"/>
+      <circle cx="960" cy="44" r="3.7" fill="var(--bt-shaft,#E9D488)" opacity="0.34"/>
+      <circle cx="321" cy="74" r="4.4" fill="var(--bt-shaft,#E9D488)" opacity="0.36"/>
+      <circle cx="1175" cy="75" r="3.5" fill="var(--bt-mist,#C9D4C3)" opacity="0.40"/>
+      <circle cx="745" cy="85" r="3.6" fill="var(--bt-shaft,#E9D488)" opacity="0.30"/>
+      <circle cx="864" cy="71" r="2.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.21"/>
+      <circle cx="804" cy="86" r="4.2" fill="var(--bt-shaft,#E9D488)" opacity="0.30"/>
+      <circle cx="287" cy="44" r="4.0" fill="var(--bt-mist,#C9D4C3)" opacity="0.26"/>
+      <circle cx="589" cy="72" r="4.2" fill="var(--bt-mist,#C9D4C3)" opacity="0.22"/>
+      <circle cx="884" cy="77" r="2.4" fill="var(--bt-shaft,#E9D488)" opacity="0.34"/>
+      <circle cx="798" cy="62" r="2.9" fill="var(--bt-shaft,#E9D488)" opacity="0.33"/>
+    </g>
+  </symbol>
+</svg>

@@ -1,0 +1,1085 @@
+{
+ "cohort": "E",
+ "cohort_title": "Ennet House",
+ "book": "infinite-jest",
+ "status": "locked-frozen",
+ "ids_provisional": false,
+ "provisional_note": "DRAFT Phase 1 manifest — chapter IDs PROVISIONAL per TextCurator audit; each entry carries part + sequential order + full title for cheap remap. Do not lock until supervisor relays freeze notice.",
+ "range": "p1c54-p1c66",
+ "cohort_mood": "Fluorescent-lit communal recovery running parallel to E.T.A. pressure and desert conspiracy — night offices, dining-hall noise, streetlamp walks, desert dawn. Grammar: institutional night-interiors + Tucson negative-space counterpoint.",
+ "shared_grammar": "Neighboring chapters share grammar without cloning: (a) night-interior chapters (p1c54/56/58/59/61/63) use ledger/office/streetlamp opener frames with timestamp-forward titles; (b) desert pair (p1c55/62) shares outcrop negative-space grammar, dawn vs. night; (c) dossier pair (p1c57/65) shares maximum-restraint body with loaded opener objects; (d) E.T.A. spectacle pair (p1c61/64) shares broadside energy; (e) p1c60 centerpiece encompasses all; (f) p1c66 closes the cohort in solitary V.R.6 quiet.",
+ "entries": [
+  {
+   "id": "p1c54",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 54,
+   "index": 54,
+   "number_label": "§ 54",
+   "title": "10 November — Year of the Depend Adult Undergarment",
+   "word_count": 9705,
+   "n_paras": 113,
+   "subject": "Hal, Pemulis & co. wait in the Headmaster's waiting room for the carpet — the blue-inventory opening, Avril's apple, Lateral Alice's dot-matrix, Clenette's stare.",
+   "mood": "Held-breath bureaucratic dread under fluorescent calm; summoned-schoolkid guilt.",
+   "motifs": [
+    "blue-checked shag carpet",
+    "institutional-plush wobbling chairs",
+    "blue wallpaper sky",
+    "dot-matrix printer",
+    "paper-wrapped sandwich",
+    "intercom summons"
+   ],
+   "rationale": "Subject: Hal, Pemulis & co. summoned to the Headmaster's waiting room; the chapter opens with a famous inventory — everything in the room that is blue. Mood: held-breath bureaucratic dread under fluorescent calm; Avril's apple, Lateral Alice's dot-matrix, the Clenette stare. Motifs: blueness as surveillance color, squeaking chairs, paper-wrapped food, intercom summons.",
+   "palette_role": "Institutional blue anchor of the cohort — largest sustained blue passage (carpet, chairs, wallpaper sky, nautical braid); the blue everything else is measured against.",
+   "motif": "Waiting-room armada: blue plaid, institutional chairs, paper-wrapped sandwich",
+   "motif_asset": "cohort-e.svg#waiting-room",
+   "opener_composition": "Inventory ledger: the room's blue things listed as specimen rows above the title; title set like a summons slip; wobbling-chair rhythm in the rule spacing.",
+   "reading_treatment": "Quiet body with a blue left-margin tick on dialogue; the opener carries the inventory — body stays calm for the long Tavis scene.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "10 NOV · COMM.-AD. WAITING ROOM · THE CARPET",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Engraved waiting-room elevation: six institutional-plush chairs with elliptical steel-tube legs, blue-checked shag swatch, tennis-ball vase with premie violets; one chair mid-bob with squeak-lines."
+   },
+  "design": {
+   "plate": "waiting-room elevation: six chairs receding, two in Inventory Blue check crosshatch, legs as true ellipses; fifth chair mid-bob 3deg with squeak ticks; ESCHAX sheet + 105W lamp stems; red table (Stamp spot) with gray escutcheon, tennis-ball vase, violet sprig; wallpaper-sky slice + photo rects behind; mowed/unmowed carpet seam.",
+   "hatch": "Horizontal shag + check grid; stipple upholstery; cumuli curls.",
+   "spots": "Stamp Red table; Inventory Blue checks/sky (exception requested).",
+   "ticks": "Blue left-margin rules on inventory beats; Clenette stare tick P112.",
+   "spec": "local://cohort-e-design.md SS1/6; anomaly: crazy wheel."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "waiting-room",
+    "caption": "Plate 54 · The blue inventory, six chairs",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "waiting-room"
+   },
+   "deep_research": {
+    "structure": "113 paras: blue-inventory overture [0-5] → diddle-check overheard [6-28] → Eschaton dread + Hal interior [29-37] → August flashback (Tina Echt intake, Moms apple, Politeness Roulette) [38-107] → dentist/two-Tavises return [108-110] → Clenette tail [111-112].",
+    "document_form": "Waiting-room inventory + overheard proceedings + nested August memory.",
+    "opener_lines": [
+     "P0: The following things in the room were blue.",
+     "P12: Recrossed legs and closer inspection reveal that Trevor Axford's left sock, though not his right sock, is blue."
+    ],
+    "added_motifs": [
+     "wet-nail-polish-red coffeetable with gray E.T.A. escutcheon (P1)",
+     "nautical-blue braid on Pemulis yachting cap (P2)",
+     "Moore's blue fingertips and lips (P3)",
+     "Politeness Roulette + Granny Smith apple (P65-71)",
+     "clinkers etymology riff (P94-96)",
+     "Clenette: bluish-cast black, teal-blue custodial jumpsuit, crazy-wheel cart (P112)"
+    ],
+    "movements": "P0-P5 blue inventory → P6-P28 diddle-check → P29-P37 dread/interior → P38-P107 August flashback → P108-P112 return + Clenette stare."
+   },
+   "opener_worthy": "P0: The following things in the room were blue.",
+   "note_refs_count": 11,
+   "note_refs_notes": [
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    218,
+    219,
+    221
+   ]
+  },
+  {
+   "id": "p1c55",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 55,
+   "index": 55,
+   "number_label": "§ 55",
+   "title": "Pre-Dawn and Dawn, 1 May Y.D.A.U. Outcropping Northwest of Tucson AZ U.S.A., Still",
+   "word_count": 1243,
+   "n_paras": 31,
+   "subject": "Marathe and Steeply on the Tucson outcropping, pre-dawn into dawn — the blond hairy-woman myth, Medusa-in-reverse, passive temptation.",
+   "mood": "Cold desert air; philosophical sparring with night-long companionship underneath.",
+   "motifs": [
+    "blanket",
+    "Sterling pebbled grip",
+    "skirt/drag discomfort",
+    "mythic hairy woman",
+    "dawn over the Rincons"
+   ],
+   "rationale": "Subject: Marathe and Steeply on the Tucson outcropping, pre-dawn into dawn — the Oriental hairy-woman myth, Medusa-in-reverse, passive temptation. Mood: cold desert air, philosophical sparring with genuine night-long companionship underneath. Motifs: blanket, Sterling grip texture, skirt/drag discomfort, 'I must soon leave.'",
+   "palette_role": "Desert counterpoint — pale pre-dawn wash against the cohort's night interiors; warm sand + cold steel.",
+   "motif": "Desert outcrop at first light: two seated silhouettes, blanket, pebbled-grip pistol",
+   "motif_asset": "cohort-e.svg#outcropping-dawn",
+   "opener_composition": "Negative-space opener: vast pale sky field, tiny seated pair at the bottom; time-stamp set like a surveyor's mark; the cohort's only daylight opener.",
+   "reading_treatment": "Airy measure, generous line-height; dialogue speakers distinguished by indent rhythm rather than labels; dawn gradient reserved for the opener only.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "PRE-DAWN→DAWN 1 MAY · OUTCROPPING NW OF TUCSON",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Negative-space desert plate: vast hatched dawn sky, two small seated silhouettes on a rock outcrop, blanket fold + pebbled-grip pistol texture study in the margin."
+   },
+  "design": {
+   "plate": "Wide strip 21:9, 70pc sky: fine horizontal hairlines to horizon; sick-pink Stamp 18pc band over Rincon ridge; shared slab/ridge geometry with 62; two tiny seated silhouettes; blanket fold + burr dots; three phosphor insect dots; pebbled-grip stipple inset P29; surveyor corner-marks.",
+   "hatch": "Horizontal sky hairlines, 3 densities; stipple grip study.",
+   "spots": "Stamp wash + phosphor insects only; coolest plate.",
+   "ticks": "INSECTS P8; SICK-PINK P26; GRIP P29.",
+   "spec": "local://cohort-e-design.md SS6/8 diptych; anomaly: burr seeds."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "outcropping-dawn",
+    "caption": "Plate 55 · Two figures, first light",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "outcropping-dawn"
+   },
+   "deep_research": {
+    "structure": "31 paras: myth volley [0-7] → insects + sixth-meeting frame [8-9] → Odalisque exchange [10-18] → Greek types [19-23] → dawn descriptionals [24-26] → leave-taking [27-30].",
+    "document_form": "Desert dialogue with landscape interludes; the outcropping diptych opener.",
+    "opener_lines": [
+     "P10: A false dawn.",
+     "P15: A Medusa in reverse, one might say."
+    ],
+    "added_motifs": [
+     "bioluminescent multi-winged insects (P8)",
+     "sixth or seventh meeting, accomplishing little (P9)",
+     "L'Odalisque de Sainte Thérèse → opal (P12-14)",
+     "overtanned-hide desert floor, reptile-hued saguaro (P24)",
+     "sick-pink unhealed-burn sky over the Rincons (P26)",
+     "Sterling pebbled-grip imprint (P29)"
+    ],
+    "movements": "P0-P7 hairy-woman myth → P8-P9 night frame → P10-P18 Odalisque → P19-P23 types → P24-P26 dawn → P27-P30 parting."
+   },
+   "opener_worthy": "P10: A false dawn.",
+   "note_refs_count": 1,
+   "note_refs_notes": [
+    222
+   ]
+  },
+  {
+   "id": "p1c56",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 56,
+   "index": 56,
+   "number_label": "§ 56",
+   "title": "0450h., 11 November — Year of the Depend Adult Undergarment Front Office, Ennet House D.A.R.H., Enfield MA",
+   "word_count": 8552,
+   "n_paras": 131,
+   "subject": "Ennet House front office, 0450h — Gately and Joelle's long night talk (the veil, U.H.I.D.s, shame-circles); Lenz's bird; the lockless-house rule.",
+   "mood": "Fluorescent intimacy; two damaged people careful with each other at the undefended hour.",
+   "motifs": [
+    "the veil as Type and Symbol",
+    "bay-windowed front office",
+    "phone console",
+    "Dream Duty handheld game",
+    "schizoid cats",
+    "doors without locks"
+   ],
+   "rationale": "Subject: Ennet House front office, 0450h — Gately and Joelle's long night talk (the veil, U.H.I.D.s, shame-circles), Lenz's bird down the garbage disposal, the lockless-house rule. Mood: fluorescent intimacy; two damaged people being careful with each other at an hour when defenses are down. Motifs: the veil as Type and Symbol, Dream Duty games, schizoid cats, doors without locks.",
+   "palette_role": "Night-office amber — bay-window lamplight, cigarette glow; the cohort's warm-dark pole.",
+   "motif": "Front office at 0450h: bay window, phone console, log book, veil",
+   "motif_asset": "cohort-e.svg#front-office",
+   "opener_composition": "Night-shift ledger: timestamp huge (0450h.) like a punch-clock stamp; title stacked as a duty roster; Joelle's veil drawn as a single falling line.",
+   "reading_treatment": "Dialogue-forward treatment with wide quotation measure; the long Joelle/Gately exchange gets alternating margin alignment; the Lenz coda lands in a colder, narrower block.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "0450H 11 NOV · ENNET HOUSE FRONT OFFICE",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Night-office plate: bay window with lamplit panes, phone console, Daily Log book, Joelle's veil as a single falling engraved line; lockless door ajar."
+   },
+  "design": {
+   "plate": "Night-office elevation 4:5: bay window, three lamplit panes (Seal amber), muntin cross; phone-console button grid + Daily Log 0450H below; veil as ONE falling unbroken engraved line with knot; door ajar with EMPTY lockplate circle (lockless rule as absence).",
+   "hatch": "Pane glow via concentric keylines; console stipple; single-stroke veil.",
+   "spots": "Seal Gold amber; veil Manila.",
+   "ticks": "Veil triptych P39/P72/P91; Browning interval 2216-2226H P115-124; NO LOCKS P130; punch-clock 0450H stamp zone.",
+   "spec": "local://cohort-e-design.md SS6; anomaly: missing lockplate."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "front-office",
+    "caption": "Plate 56 · The 0450h interface",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "front-office"
+   },
+   "deep_research": {
+    "structure": "131 paras: Lowell bar story [0-19] → metronome-legs joke → veil interrogation/U.H.I.D. catechism [27-96] → Lenz night-dossier (rats→cats→dogs→Browning) [97-128] → lockless-house rule [129-130].",
+    "document_form": "Night-interface dialogue + embedded predator dossier.",
+    "opener_lines": [
+     "P0: Didn't know whether to shit or shout Dixie after it went off.",
+     "P91: I am deformed with beauty."
+    ],
+    "added_motifs": [
+     "Chuck-or-Chick shot in a Lowell bar (P1-11)",
+     "metronome-legs AA joke (P22-26)",
+     "veil as Type and Symbol, donned a day at a time (P39)",
+     "hide-your-hiding shame catechism (P44-58)",
+     "to hide openly (P72)",
+     "Hefty bags = Irish Luggage (P110)",
+     "2216h-2226h interval, Browning X444 (P115-124)",
+     "no locks inside Ennet House (P130)"
+    ],
+    "movements": "P0-P19 bar story → P20-P26 jokes → P27-P96 veil interface → P97-P128 Lenz dossier → P129-P130 house rule."
+   },
+   "opener_worthy": "P0: Didn't know whether to shit or shout Dixie after it went off.",
+   "note_refs_count": 4,
+   "note_refs_notes": [
+    224,
+    225,
+    226,
+    227
+   ]
+  },
+  {
+   "id": "p1c57",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 57,
+   "index": 57,
+   "number_label": "§ 57",
+   "title": "Early November — Year of the Depend Adult Undergarment",
+   "word_count": 867,
+   "n_paras": 2,
+   "subject": "Dossier: Rodney Tine's metric ruler; the Entertainment's body count — Berkeley cartridge, Tempe, the Famous Crooner. Two dense paragraphs.",
+   "mood": "Clinical, leering, moth-energy bureaucracy; paranoid briefing.",
+   "motifs": [
+    "locked bathroom drawer",
+    "metric ruler + telescoping travel model",
+    "vanished cartridges",
+    "flannel fibers",
+    "electron microscopy"
+   ],
+   "rationale": "Subject: Rodney Tine (U.S. Office of Unspecified Services) — the blackmailable metric ruler, the Entertainment's body count (Berkeley cartridge flannel fibers, Tempe, the Famous Crooner). Only 2 paragraphs; a dense paranoid briefing. Mood: clinical, leering, moth-energy bureaucracy. Motifs: locked drawers, telescoping travel ruler, vanished cartridges, electron microscopy.",
+   "palette_role": "Bureaucratic steel-gray with a moth-dust accent; coldest, most clinical entry in the cohort.",
+   "motif": "Locked bathroom drawer, metric ruler, moth",
+   "motif_asset": "cohort-e.svg#metric-ruler",
+   "opener_composition": "Dossier card: the chapter's two dense paragraphs presented as a redacted file; a metric rule runs the page edge as a sly scale; opener is minimal — the prose block IS the art.",
+   "reading_treatment": "Dossier treatment: justified narrow measure, typewriter-adjacent voice for the header matter; no drop cap — a file stamp instead.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "EARLY NOV · OFFICE OF UNSPECIFIED SERVICES",
+    "seal": "AS OF Y.D.A.U. (filing seal — undated dossier)",
+    "plate": "Dossier plate: locked bathroom-cabinet drawer with metric ruler + telescoping travel ruler in plan view; a moth specimen pinned beside the file stamp."
+   },
+  "design": {
+   "plate": "Compact dossier 4:3 plan view: locked drawer front (keyhole + CONNECTICUT AVE. stencil); metric ruler diagonal with cm ticks 0-30; telescoping travel ruler half-extended; pinned moth + MOTH-ENERGY specimen label; Stamp file stamp O.U.S. rotated 8deg; redaction bars over BERKELEY/TEMPE/CROONER.",
+   "hatch": "Vertical drawer grain; ruler tick precision; moth wing venation.",
+   "spots": "Stamp file stamp; steel Manila 40-60pc; coldest entry.",
+   "ticks": "RULER P0; MOTH P1 only; narrow justified dossier body, file-stamp kicker not drop cap.",
+   "spec": "local://cohort-e-design.md SS6; anomaly: pin shadow."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "metric-ruler",
+    "caption": "Plate 57 · The blackmailable ruler",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "metric-ruler"
+   },
+   "deep_research": {
+    "structure": "2 paras / 867 words: Tine ruler dossier [0] → Entertainment body-count briefing [1]. Densest chapter in the cohort by words-per-para.",
+    "document_form": "Paranoid dossier / intelligence briefing.",
+    "opener_lines": [
+     "P0: The only bona fide blackmailable thing about Rodney Tine ... his special metric ruler.",
+     "P1: Possessed of roughly the mental/spiritual energies of a moth ..."
+    ],
+    "added_motifs": [
+     "locked Connecticut Ave. bathroom drawer (P0)",
+     "telescoping travelling ruler (P0)",
+     "Berkeley cartridge, flannel fibers (P1)",
+     "four lost D.E.A. field researchers (P1)",
+     "the Famous Crooner restraint (P1)"
+    ],
+    "movements": "P0 the ruler → P1 the body count. No subdivisions possible."
+   },
+   "opener_worthy": "P0: The only bona fide blackmailable thing about Rodney Tine ... his special metric ruler.",
+   "note_refs_count": 2,
+   "note_refs_notes": [
+    228,
+    229
+   ]
+  },
+  {
+   "id": "p1c58",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 58,
+   "index": 58,
+   "number_label": "§ 58",
+   "title": "Late P.M., Monday 9 November — Year of the Depend Adult Undergarment",
+   "word_count": 1688,
+   "n_paras": 26,
+   "subject": "Pemulis eavesdrops after hours — Stice's counterphobia session, Tavis chanting on the StairBlaster, Avril doing the splits with Wayne.",
+   "mood": "After-hours mischief; voyeur's delight; the school as empty stage.",
+   "motifs": [
+    "ear to the door",
+    "counterphobia vs linoleum",
+    "StairBlaster chant",
+    "doorless blazing office",
+    "mute whistle",
+    "the splits"
+   ],
+   "rationale": "Subject: Pemulis eavesdrops — Stice's counterphobia session with Dr. Rusk, Tavis chanting on the StairBlaster shirtless, then Avril doing the splits on her office floor with Wayne. Mood: after-hours mischief, voyeur's delight; the school as empty stage. Motifs: doors/doorlessness, ear-to-wood listening, linoleum vs. counterphobia, the mute whistle.",
+   "palette_role": "After-hours black + single blazing rectangle; StairBlaster chant rhythm in micro-rules.",
+   "motif": "Doorless blazing office rectangle: split on the floor, mute whistle, trophy case",
+   "motif_asset": "cohort-e.svg#doorless-office",
+   "opener_composition": "Light-rectangle opener: a blazing door-shaped field holding the title; surrounding page kept near-black like the 2100h lobby; the 'odd vehicular shape' as a small anomaly mark.",
+   "reading_treatment": "Eavesdrop treatment: overheard dialogue in slightly inset blocks with a 'through the door' muffling cue (reduced contrast that restores on the reveal); calm body otherwise.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "LATE P.M. MON 9 NOV · COMM.-AD. AFTER HOURS",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "After-hours plate: near-black lobby with one blazing doorless office rectangle; ear-to-door listener glyph; StairBlaster escalator zigzag; mute whistle on a lanyard."
+   },
+  "design": {
+   "plate": "Black-field 16:9: near-black lobby, ONE blazing door-shaped Manila 92pc rectangle (concentric keylines + radiating ticks); inside: abstract splits pictogram + mute whistle on lanyard with NO PELLET tag; ear-to-door glyph left; StairBlaster sawtooth + chant ticks; trophy case + anomaly blob.",
+   "hatch": "Faint lobby shag; radiating engraved radiance; sawtooth chant.",
+   "spots": "Blazing Manila; phosphor chant ticks; 2100H.",
+   "ticks": "Ear P2; 2100H + ANOMALY P12; CHANT P13; WHISTLE P24; eavesdrop inset blocks P0-11.",
+   "spec": "local://cohort-e-design.md SS6; anomaly: vehicular blob."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "doorless-office",
+    "caption": "Plate 58 · The blazing rectangle",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "doorless-office"
+   },
+   "deep_research": {
+    "structure": "26 paras: Rusk/Stice eavesdrop [0-11] → 2100h lobby crossing [12-15] → blazing doorless office: Wayne + Moms [16-25].",
+    "document_form": "After-hours eavesdrop triptych.",
+    "opener_lines": [
+     "P2: Fear of linoleum?",
+     "P16: The doorless Dean of Academic Affairs's office was a blazing rectangle of light."
+    ],
+    "added_motifs": [
+     "counterphobia diagnosis (P1)",
+     "GI Joe cathected father (P7)",
+     "rubberized knob sheath + Champion An Inner Child sampler (P11)",
+     "StairBlaster chant (P13)",
+     "Wayne in helmet/supporter/three-point stance (P17)",
+     "mute whistle + the splits (P24)"
+    ],
+    "movements": "P0-P11 the session → P12-P15 the crossing → P16-P25 the tableau."
+   },
+   "opener_worthy": "P2: Fear of linoleum?",
+   "note_refs_count": 0,
+   "note_refs_notes": []
+  },
+  {
+   "id": "p1c59",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 59,
+   "index": 59,
+   "number_label": "§ 59",
+   "title": "Wednesday 11 November — Year of the Depend Adult Undergarment",
+   "word_count": 4554,
+   "n_paras": 49,
+   "subject": "Lenz and Green walk Brighton at night — Lenz's monologues (Pepito, recurving dream, septum), Green's silences, the brainwash coda.",
+   "mood": "Cold harbor wind; confessional pavement with predator/prey undertow.",
+   "motifs": [
+    "streetlamp cones",
+    "cigarette ritual",
+    "dumpster easements",
+    "Warhol-tan disguise",
+    "creaking leather jacket",
+    "late mothers"
+   ],
+   "rationale": "Subject: Lenz and Green walking Brighton at night — Lenz's monologues (Pepito gun story, recurving dream, septum), Green's crumpling silences, the cult-that-brainwashes coda. Mood: cold harbor wind, confessional pavement, predator/prey undertow. Motifs: streetlamps, cigarette ritual, dumpster easements, war stories vs. true vulnerability.",
+   "palette_role": "Sodium streetlamp amber + wet-asphalt blue-black; the cohort's most nocturnal-urban entry.",
+   "motif": "Streetlamp cone on Faneuil St.: two walkers, cigarette ends, dumpster easement",
+   "motif_asset": "cohort-e.svg#streetlamp",
+   "opener_composition": "Night-walk strip: a horizontal lamp-cone band carrying the title; route-like dotted path threading the opener; Warhol-tan Lenz vs. creaking-leather Green as two opposed weights.",
+   "reading_treatment": "Walking rhythm: long Lenz monologues in full measure, Green's one-line answers given white space like held breath; street-noise paragraph (harbor-wind/skirling) gets a distinct soundscape indent.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "WED 11 NOV · BRIGHTON, FANEUL ST. NIGHT WALK",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Night-walk strip plate: sodium streetlamp cone over a dotted Faneuil St. route, two walker silhouettes (topcoat vs. creaking leather), cigarette-end glow points, dumpster-easement hatch."
+   },
+  "design": {
+   "plate": "Night-walk strip 21:8: sodium lamp + hatched cone (Seal 55pc) over dotted pool FANEUIL ST.; dotted route with waypoints; opposed walkers (topcoat + Warhol halo vs leather + creak ticks); two Stamp embers; dumpster crosshatch; queasy wobble-line moon.",
+   "hatch": "Radiating cone lines + dotted pool; route dots; easement crosshatch.",
+   "spots": "Seal sodium; Stamp embers.",
+   "ticks": "MOON P3; SOUNDSCAPE P6; RECURVE P18; ELSEWHERE inset P28-35; SEPTUM star P36; WASHING P48.",
+   "spec": "local://cohort-e-design.md SS6; anomaly: queasy moon."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "streetlamp",
+    "caption": "Plate 59 · The Faneuil St. walk",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "streetlamp"
+   },
+   "deep_research": {
+    "structure": "49 paras: costume overture [0] → Pepito story [1-2] → November P.M. soundscape [3] → Brookline mtg. embed [4-5] → night-noises [6] → Lenz monologue braid [7-27] → Hal bunk interlude [28-35] → septum vulnerability [36] → cults/Concavity [37-47] → brainwash coda [48].",
+    "document_form": "Night-walk monologue braid with one alien interlude (Hal photosynthesizing).",
+    "opener_lines": [
+     "P0: Lenz wears ... a disguise that makes him look like Andy Warhol with a tan.",
+     "P36: Under a streetlamp on Faneuil St. ... where his septum used to be."
+    ],
+    "added_motifs": [
+     "creaking off-the-rack leather jacket (P0)",
+     "moon like it doesn't feel well (P3)",
+     "harbor-wind skirling soundscape (P6)",
+     "pocketwatch/fob stepfather (P8)",
+     "recurving dream: cane chair, safari hat, valise (P18)",
+     "labial writhing on o-diphthongs (P24)",
+     "Hal photosynthesizing / Baobob tree (P28-35)",
+     "Express Elevator To AA (P41)"
+    ],
+    "movements": "P0-P2 overture → P3-P6 embed/soundscape → P7-P27 monologues → P28-P35 Hal interlude → P36-P48 septum→cults→coda."
+   },
+   "opener_worthy": "P0: Lenz wears ... a disguise that makes him look like Andy Warhol with a tan.",
+   "note_refs_count": 3,
+   "note_refs_notes": [
+    230,
+    231,
+    232
+   ]
+  },
+  {
+   "id": "p1c60",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 60,
+   "index": 60,
+   "number_label": "§ 60",
+   "title": "Selected Snippets from the Individual-Resident- Informal-Interface Moments of D. W. Gately, Live-In",
+   "word_count": 31997,
+   "n_paras": 409,
+   "subject": "CENTERPIECE (32k words): Gately's Wednesday — Brookline AA, residents' night, Lenz/Green walk, Mario's walk to lit windows, Daily Log litany, curfew head-counts, the Nuck fight, Joelle takes charge, pond-draining/spect-op coda, wheelchair down the hillside.",
+   "mood": "Exhausted tenderness under siege; the longest night of caretaking in the novel.",
+   "motifs": [
+    "Daily Log",
+    "head-counts",
+    "curfew 2330h",
+    "falling retriever watercolor",
+    "flesh-wound",
+    "spect-ops",
+    "squeaking brass wheelchair"
+   ],
+   "rationale": "Subject (32k words, the book's Informal-Interface centerpiece): Gately's Wednesday — Brookline AA meeting, the residents' night, Lenz/Green's walk embedding, Mario's night walk to Ennet's lit windows, the Daily Log litany, curfew head-counts, the Nuck fight in the streetlet (bodycheck, flesh-wound), Joelle taking charge, then the pond-draining/spect-op coda and the wheelchair down the hillside. Mood: exhausted tenderness under siege; the longest night of caretaking in the novel. Motifs: the Daily Log, head-counts, curfew 2330h, the falling watercolor, lying down as decision, spect-ops, the squeaking brass wheelchair. No invented events: all beats verified in-text.",
+   "palette_role": "Encompasses the cohort's whole night palette (amber office, asphalt street, dawn edge) — the centerpiece that earns the widest range.",
+   "motif": "The night desk: Daily Log, head-count tally, curfew key-ring, retriever watercolor falling",
+   "motif_asset": "cohort-e.svg#gately-centerpiece",
+   "opener_composition": "CENTERPIECE: a full night-ledger spread — STAFF header as punched tape, 32k-word weight acknowledged in a 'long night' progress device; four movement tabs (Brookline meeting / the walk / the House / the street) as quiet section markers inside the chapter; opener art shows the falling retriever watercolor mid-cant.",
+   "reading_treatment": "EXCEPTIONAL: movement markers (4 quiet rules with time-stamps: meeting / walk / house / street), long-chapter relief via the Log-litany in ledger styling, the fight sequence in tightened measure with accelerated leading, the coda (pond-draining → wheelchair) in widened dawn measure. Progress + resume essential here.",
+   "centerpiece": true,
+   "structure_map": {
+    "para_count": 409,
+    "movements": [
+     {
+      "label": "Brookline meeting + House interfaces",
+      "paras": "0-48",
+      "note": "STAFF dateline header [0]; resident-interface dialogue incl. Yolanda/sponsor scene; ends Jesus kid [48]"
+     },
+     {
+      "label": "Orin interlude (rented room)",
+      "paras": "49-51,179,214-274",
+      "note": "Swiss hand-model scene opens [49-51]; Orin/Subject contempt passages [214-218]; wheelchair surveyor at the door [219-274] — braided through, not contiguous"
+     },
+     {
+      "label": "E.T.A. dialogue (Pemulis/Id/Ars)",
+      "paras": "52-178",
+      "note": "long spoken braid incl. annular-fusion medicine [140], Concavity fauna [152]; Lenz-as-sponsor story [44-48] seeds the walk"
+     },
+     {
+      "label": "Lenz/Green night walk",
+      "paras": "180-193",
+      "note": "Market St./Spur route, dumpster Mondrian, Green's Xmas memory [187-190], Green's separation fugue [191], Lenz and the dog [193]"
+     },
+     {
+      "label": "Mario night walk",
+      "paras": "194-204",
+      "note": "insomnia, Madame Psychosis hiatus, pelvis burn, prayers, Ennet lit windows [202], Headmistress window [204]"
+     },
+     {
+      "label": "Gately duty litany (Daily Log)",
+      "paras": "205-213",
+      "note": "picayune/unpleasant duties, Doony Glynn, Krispie mess, Gompert comment, files, phone, barometer"
+     },
+     {
+      "label": "Curfew + the street fight",
+      "paras": "275-398",
+      "note": "curfew head-counts [275-280], Doon [281-283], Glynn fever [296], the ruckus [300-306], Gately down [307-308], Joelle takes charge [370], the lift [395-398]"
+     },
+     {
+      "label": "Spect-op coda",
+      "paras": "399-408",
+      "note": "InterLace watching [399-401], spect-ops [402], pond-draining [403-404], Tine at the window [405], WYYY engineer [406-407], brass wheelchair downhill [408]"
+     }
+    ]
+   },
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "WED 11 NOV · ENNET HOUSE · THE LONG NIGHT",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "CENTERPIECE multi-plate: (a) opener — the night desk (Daily Log, head-count tally, curfew key-ring) with the retriever watercolor mid-cant; (b) braid dividers — head-count tally marks, key-ring, streetlet plan, dawn pond-draining vignette — keyed to structure_map movements."
+   },
+  "design": {
+   "plate": "CENTERPIECE night desk 16:10: STAFF punched-tape header (sprockets + 408-para inscription, document-voice fiction); open Daily Log with 2300/2330 tallies; key-ring + 5 keys; red 5-EAST card (Stamp spot); Krispie bowl, 2pc cup, meatloaf pan minus one rectangle, barometer; retriever frame 12deg mid-cant with motion ticks (only moving element).",
+   "hatch": "Woodgrain desk; page rules; food stipple; clean key silhouettes.",
+   "spots": "Stamp 5-EAST card; Seal keys + tallies; dawn-edge tick row.",
+   "ticks": "Litany ledger P204-212; behemoth stars P190/P303/P305/P407; IN CHARGE P370; fight tighten P302-308; coda widen P398-407.",
+   "dividers": "8 CSS dividers before nth 49/53/180/194/205/214/275/399 (artifact 5b); corrected 408-para map supersedes rev5 counts; STAFF opener is inscription not quotation.",
+   "spec": "local://cohort-e-design.md SS0/5; build FIRST (J8)."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "gately-centerpiece",
+    "caption": "Plates 60a–60e · The long night",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "gately-centerpiece"
+   },
+   "deep_research": {
+    "structure": "409 paras / 32k words: interfaces [0-48] → braided Orin interlude [49-51/179/214-274] + E.T.A. dialogue [52-178] → Lenz/Green walk [180-193] → Mario walk [194-204] → duty litany [205-213] → curfew+fight [275-398] → spect-op coda [399-408]. See structure_map.",
+    "document_form": "Night ledger: STAFF dateline + resident interfaces + duty litany + street report + spect-op coda.",
+    "opener_lines": [
+     "P0: STAFF, ENNET HOUSE ... UP TO ABOUT 2329H., WEDNESDAY 11 NOVEMBER Y.D.A.U.",
+     "P307-308: ... just as Gately decides to lie down. / It's not like passing out. It's just a decision ..."
+    ],
+    "added_motifs": [
+     "Daily Log litany (P205-213)",
+     "Doon / the Black Bug (P281-290)",
+     "retriever watercolor canting off the wall (P303)",
+     "flesh-wound (P309)",
+     "Madame Psychosis is in charge (P370)",
+     "pond-draining spect-op (P403-404)",
+     "brass wheelchair downhill (P408)"
+    ],
+    "movements": "See structure_map (8 movements with para ranges)."
+   },
+   "opener_worthy": "P0: STAFF, ENNET HOUSE ... UP TO ABOUT 2329H., WEDNESDAY 11 NOVEMBER Y.D.A.U.",
+   "note_refs_count": 16,
+   "note_refs_notes": [
+    234,
+    236,
+    237,
+    240,
+    241,
+    243,
+    244,
+    246,
+    247,
+    248,
+    251,
+    252,
+    254,
+    256,
+    257,
+    258
+   ]
+  },
+  {
+   "id": "p1c61",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 61,
+   "index": 61,
+   "number_label": "§ 61",
+   "title": "11 November — Year of the Depend Adult Undergarment",
+   "word_count": 5889,
+   "n_paras": 53,
+   "subject": "E.T.A. supper, 1810h — 133 kids, the powdered-milk conspiracy assay, Stice/Hal aftermath, Ingersoll on crutches, poltergeist objects.",
+   "mood": "Oceanic chewing noise; deadly-serious eating; conspiracy ebullience.",
+   "motifs": [
+    "milk bags vs powdered",
+    "tray-bus window",
+    "ceiling fans",
+    "stelliform gelatin mold",
+    "unsigned sailor-hat-white cast",
+    "migrating objects"
+   ],
+   "rationale": "Subject: E.T.A. supper, 1810h — 133 kids, the powdered-milk conspiracy assay (bluish cast, telltale foam), Stice/Hal aftermath, Ingersoll on crutches, moving-objects poltergeist cycle. Mood: oceanic chewing noise, deadly-serious eating, conspiracy ebullience. Motifs: milk bags, tray-bus window, forkwork, the unsigned sailor-hat-white cast.",
+   "palette_role": "Warm canteen pine + sour-milk white; the cohort's loudest, most populated warmth.",
+   "motif": "Dining-hall atrium: knotty pine, ceiling fans, milk dispenser, stelliform mold",
+   "motif_asset": "cohort-e.svg#dining-hall",
+   "opener_composition": "Commons board: title set like a supper seating plan (133 kids, 13 staff); milk-bag vs. powdered-milk as a small two-column assay motif; ceiling-fan arcs overhead.",
+   "reading_treatment": "Canteen clamor: rapid dialogue exchanges in tight measure with minimal spacing; the milk-assay scene gets a lab-note inset; the Ingersoll lull gets a full white-space beat.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "1810H 11 NOV · E.T.A. DINING HALL, WEST HOUSE",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Commons plate: knotty-pine atrium section with ceiling-fan arcs + columns; milk-bag vs. powdered-milk two-column assay motif; stelliform gelatin mold; unsigned sailor-hat-white cast."
+   },
+  "design": {
+   "plate": "Commons section 16:10: pine column row (vertical grain) + ceiling-fan arcs; fenestration grid; tray-bus band with YR MOTHER stencil; milk-assay tumbler pair (BAG MILK slosh vs POWDERED foam + callout); stelliform mold; emphatically BLANK unsigned cast + UNSIGNED tag.",
+   "hatch": "Pine grain; fan arcs + blade ticks; foam dots.",
+   "spots": "Seal pine; sour-milk Manila; stamp x4Y tick.",
+   "ticks": "1810H/133+13 P0; MILK-BAG P11; FOAM P18; MIGRATIONS P24; CAST P48; x4Y P51; lab inset P6-23; Ingersoll lull P48.",
+   "spec": "local://cohort-e-design.md SS7; anomaly: unsigned cast."
+  },
+  "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "dining-hall",
+    "caption": "Plate 61 · Supper, 133 kids",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "dining-hall"
+   },
+   "deep_research": {
+    "structure": "53 paras: commons overture [0-2] → Stice Xmas story [3-5] → milk assay [6-23] → poltergeist catalog [24] → dumb-jokes volley [25-41] → Makulic vomit [44] → Ingersoll lull [48] → powdered-milk reveal [51] → Struck plate-swap [52].",
+    "document_form": "Canteen clamour: assay + jokes + lull.",
+    "opener_lines": [
+     "P0: 1810h., 133 kids and thirteen assorted staff sitting down at suppertime ...",
+     "P18: Note a certain bluish cast to it. Traces and remains. Suspicious foam."
+    ],
+    "added_motifs": [
+     "YR MOTHER DOES NOT LIVE HERE; BUS YR TRAY (P0)",
+     "sandwich like the wrist of an assailant (P2)",
+     "MILK-bag image management (P11-12)",
+     "bluish cast + telltale foam (P18)",
+     "falling ceiling tiles + migrating objects (P24)",
+     "sailor-hat-white unsigned cast (P48)",
+     "pre-mixed since Tavis, four years (P51)"
+    ],
+    "movements": "P0-P5 supper → P6-P23 milk assay → P24-P41 objects+jokes → P42-P48 lull → P49-P52 reveals."
+   },
+   "opener_worthy": "P0: 1810h., 133 kids and thirteen assorted staff sitting down at suppertime ...",
+   "note_refs_count": 3,
+   "note_refs_notes": [
+    259,
+    260,
+    262
+   ]
+  },
+  {
+   "id": "p1c62",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 62,
+   "index": 62,
+   "number_label": "§ 62",
+   "title": "1 May Y.D.A.U. Outcropping Northwest of Tucson AZ U.S.A.",
+   "word_count": 4169,
+   "n_paras": 121,
+   "subject": "Steeply's father story on the outcrop — the small TV at the distributorship, M*A*S*H letters, the closet of coded notebooks, death in the chair.",
+   "mood": "Confessional, unexpectedly tender; Marathe measuring the red smear over the Rincons.",
+   "motifs": [
+    "the recliner",
+    "annular pallor of the missing ring",
+    "coded notebooks",
+    "M*A*S*H letters",
+    "death in the chair"
+   ],
+   "rationale": "Subject: Steeply's father story on the outcrop — the small TV at the distributorship, M*A*S*H letters, the closet of coded notebooks, death in the chair. Mood: confessional, unexpectedly tender; Marathe holding thumb-and-forefinger against the red smear over the Rincons. Motifs: the recliner, annular pallor of the missing ring, coded notebooks, 'Misplaced.' / 'As you wish.'",
+   "palette_role": "Desert night (deep indigo) + recliner-room tungsten memory; bridges p1c55's dawn and the cohort's interiors.",
+   "motif": "The recliner and the notebooks: armchair, scores of coded notebooks, M*A*S*H letters",
+   "motif_asset": "cohort-e.svg#recliner",
+   "opener_composition": "Desert-evening companion to p1c55: same outcrop grammar, now lampless night; the recliner floats as a memory-object above the title; notebooks stacked as a margin device.",
+   "reading_treatment": "Confession measure: slow, wide, still; Steeply's long turns unbroken; Marathe's one-line French-tinged replies given margin isolation; shares the p1c55/p1c62 desert grammar.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "1 MAY · OUTCROPPING NW OF TUCSON, NIGHT",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Desert-night companion plate to 55: deep-indigo outcrop, the recliner floating as a memory-object, stacked coded notebooks in the margin, M*A*S*H letter envelope."
+   },
+  "design": {
+   "plate": "Desert-night companion: geometry SHARED with 55 (slab/ridge/marks byte-identical); crosshatch night sky + max 12 phosphor stars; floating tungsten recliner + Betamixer + tapes; forced closet + notebook cascade; MASH BURNS envelope; annular-pallor hand; red-smear caliper gauge inset.",
+   "hatch": "Diagonal night crosshatch; tungsten recliner hatch; code-glyph scribbles.",
+   "spots": "Seal tungsten; phosphor stars; Stamp smear gauge.",
+   "ticks": "PALLOR P0; SMALL TV P20; SMEAR P30; SWAMP P42; DEATH IN CHAIR P85; NOTEBOOKS P90; MISPLACED/AS YOU WISH pair P119-120.",
+   "spec": "local://cohort-e-design.md SS7/8 diptych; anomaly: annular pallor."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "recliner",
+    "caption": "Plate 62 · The recliner notebooks",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "recliner"
+   },
+   "deep_research": {
+    "structure": "121 paras: father overture [0-9] → syndication immersion [10-28] → notebook secrecy [29-36] → quoting habit [37-44] → Burns letters [48-60] → work collapse [61-77] → secret book + double blow [78-84] → death in the chair [85-89] → notebooks tumble [90] → eye-factor coda [96-120].",
+    "document_form": "Confession: one long anecdote with dawn witness-marks.",
+    "opener_lines": [
+     "P1: We watched him get consumed with a sort of entertainment. It wasn't pretty.",
+     "P119-120: Misplaced. / As you wish."
+    ],
+    "added_motifs": [
+     "annular pallor of the missing ring (P0)",
+     "M*A*S*H acronym-not-command (P5)",
+     "small TV at the distributorship (P20)",
+     "thumb-and-forefinger vs. the red smear (P30)",
+     "kitchen as Mess Tent, den as Swamp (P42)",
+     "Burns = burning apocalypse (P60)",
+     "CBS/Fox attorneys letter (P80)",
+     "scores of coded notebooks (P90)"
+    ],
+    "movements": "P0-P9 overture → P10-P36 immersion → P37-P60 letters → P61-P89 collapse+death → P90-P120 notebooks + eyes."
+   },
+   "opener_worthy": "P1: We watched him get consumed with a sort of entertainment. It wasn't pretty.",
+   "note_refs_count": 1,
+   "note_refs_notes": [
+    264
+   ]
+  },
+  {
+   "id": "p1c63",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 63,
+   "index": 63,
+   "number_label": "§ 63",
+   "title": "13 November — Year of the Depend Adult Undergarment",
+   "word_count": 1710,
+   "n_paras": 39,
+   "subject": "0245h Ennet living room — Day tells Gompert about the violin-and-fan resonance and the triangular horror; Green asleep crying out; Bouncety-Bounce on the viewer.",
+   "mood": "Wee-hours dread inside communal safety; the novel's purest horror passage.",
+   "motifs": [
+    "upraised vibrating pane",
+    "resonance notes",
+    "sail/wing too large to see",
+    "rubber infant mask",
+    "handheld game blurps"
+   ],
+   "rationale": "Subject: 0245h Ennet living room — Geoffrey Day tells Kate Gompert about the violin-and-fan resonance and the triangular horror rising; Green asleep crying out; Mr. Bouncety-Bounce capering on the viewer. Mood: wee-hours dread inside communal safety; the novel's purest horror passage. Motifs: the upraised vibrating pane, resonance notes, the sail/wing too large to see, 'Time in the shadow of the wing.'",
+   "palette_role": "Deepest dark in the cohort — near-black living room with phosphor-blue viewer flicker; horror held in reserve, never illustrated literally.",
+   "motif": "The wing too big to see: violin + fan resonance, triangular horror, rubber infant mask",
+   "motif_asset": "cohort-e.svg#wing-shadow",
+   "opener_composition": "Wee-hours dark: title barely lit like the D.E.C. viewer's jumpy glow; a vast partial wing-arc crosses the opener corner; 0245h. as the only bright numeral.",
+   "reading_treatment": "Nightmare containment: Day's story in a subtly darker well with hairline containment; Gompert's flat replies in normal measure as grounding; Green's sleep-cries in spaced italic isolation; reduced-motion safe (no flicker animation by default).",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "0245H 13 NOV · ENNET HOUSE LIVING ROOM",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Wee-hours plate: dark living room with jumpy D.E.C. viewer glow, upraised vibrating windowpane + violin, a vast partial wing-arc crossing one corner (horror in reserve, never literal)."
+   },
+  "design": {
+   "plate": "Deepest-dark 16:9: D.E.C. viewer (STATIC offset double keyline, phosphor 35pc) + Bouncety infant pictogram; upraised pane + vibration ticks + violin with converging resonance arcs; ONE vast partial wing-arc + 3 fading feather-tick groups in a single corner (never whole, no eye/head); infant mask; handheld game + BLIP; 0245H only bright numeral.",
+   "hatch": "Viewer offset keylines; resonance arcs; feather ticks in opacity steps.",
+   "spots": "Phosphor viewer glow + timestamp; rest Manila reserve.",
+   "ticks": "0245H P0; RESONANCE P8; HORROR DISTILLED P12; PIECE OF STRING P28; GREEN CRIES spaced italic P29; WING P36; wells P7-28 deep + P30-36 shallow.",
+   "spec": "local://cohort-e-design.md SS7/9 containment; anomaly: piece of string."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "wing-shadow",
+    "caption": "Plate 63 · The wing too big to see",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "wing-shadow"
+   },
+   "deep_research": {
+    "structure": "39 paras: 0245h tableau [0-6] → violin+fan resonance [7-16] → scab-picking return [16-21] → Brown recurrence [22-28] → Green cries [29] → hell understood [30-36] → no-worse coda [37-38].",
+    "document_form": "Wee-hours testimony: one story, flat witnesses.",
+    "opener_lines": [
+     "P0: 0245h., Ennet House, the hours that are truly wee.",
+     "P36: Time in the shadow of the wing of the thing too big to see, rising."
+    ],
+    "added_motifs": [
+     "handheld game blips and tweets (P0)",
+     "jumpy-picture D.E.C. viewer (P0)",
+     "upraised vibrating pane (P8)",
+     "large dark billowing shape (P10)",
+     "total horror, distilled and given form (P12)",
+     "mushroom-head non sequitur (P18)",
+     "Mr. Bouncety-Bounce, 130-kilo infant (P28-29)",
+     "For God's sake no Mr. Ho don't light it (P29)"
+    ],
+    "movements": "P0-P6 tableau → P7-P21 the resonance → P22-P28 recurrence → P29-P38 hell + coda."
+   },
+   "opener_worthy": "P0: 0245h., Ennet House, the hours that are truly wee.",
+   "note_refs_count": 0,
+   "note_refs_notes": []
+  },
+  {
+   "id": "p1c64",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 64,
+   "index": 64,
+   "number_label": "§ 64",
+   "title": "11 November — Year of the Depend Adult Undergarment (2) — Apparently some higher-up had sent Mary Esther…",
+   "word_count": 13465,
+   "n_paras": 285,
+   "subject": "The Hal vs. Stice exhibition on the West Courts (yellow Vespa summons, Steeply in the bleachers) intercut with Tunnel Club and the ephebic-pressure debate.",
+   "mood": "Cold bright spectacle; performance anxiety made public.",
+   "motifs": [
+    "yellow Vespa",
+    "bleachers",
+    "AirStirrup brace",
+    "performance charts",
+    "Tunnel Club",
+    "ephebic abandon"
+   ],
+   "rationale": "Subject: the Hal vs. Stice exhibition on the West Courts (Mary Esther Thode's yellow Vespa summons, Steeply watching from the bleachers with deLint, Schtitt inscrutable) intercut with the Tunnel Club Eschatonites and the ephebic-pressure debate. Mood: cold bright spectacle, performance anxiety made public. Motifs: the run from Hammond golf course, AirStirrup brace, performance charts no one may see, maggots in the fridge, 'the formidable mental edge.'",
+   "palette_role": "Blue autumn glory + chilly noon gray; the cohort's only true afternoon light; yellow Vespa accent.",
+   "motif": "West Courts exhibition: bleachers, yellow Vespa, Tunnel Club, performance charts",
+   "motif_asset": "cohort-e.svg#west-courts",
+   "opener_composition": "Match-day broadside: oversized 'exhibition, not a ladder' framing; the yellow Vespa as a small bright vehicle crossing the opener; bleacher-grid seating the title.",
+   "reading_treatment": "Spectacle treatment: match passages in present-tense-bright styling, tunnel interludes in compressed darker blocks; the ephebic monologue as a set-piece aside.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "11 NOV · WEST COURTS EXHIBITION (NOT A LADDER)",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Match-day broadside plate: bleacher grid with two tiny players, yellow Vespa crossing, AirStirrup-brace detail, performance-chart fragment, Tunnel Club tunnel-section below."
+   },
+  "design": {
+   "plate": "Broadside 4:5, three registers: bleacher grid (Steeply notebook + deLint NEVER SHOWN clipboard); court strip with two tiny players (AirStirrup callout) + poorly-wired flutter sun + EXHIBITION NOT A LADDER banner; yellow Vespa crossing; BELOW court line: tunnel section (mercuric zigzag + OJ carton + fridge); daylight above, phosphor below.",
+   "hatch": "Bleacher rows; court lines; tunnel tube; mercuric zigzag.",
+   "spots": "Seal Vespa; phosphor tunnel register.",
+   "ticks": "VESPA P0; POORLY WIRED P2; TAKE-TWO P20; SAPROGENIC P81; MERCURIC P117; OJ P171; EPHEBIC P210; BUD MATCH P237; tunnel blocks P100-187; ON AIR inset P224-243.",
+   "spec": "local://cohort-e-design.md SS7; anomaly: OJ carton."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "west-courts",
+    "caption": "Plate 64 · Exhibition, not a ladder",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "west-courts"
+   },
+   "deep_research": {
+    "structure": "285 paras: Vespa summons + match overture [0-7] → simultaneous-city cuts [8-15] → bleacher dialogue (seeing/being seen) [16-80] → Steeply/Bain letters [81-99] → Tunnel Club + fridge [100-187] → Poutrincourt ephebic dialogue [188-223] → Troeltsch broadcast parody [224-243] → complete-game analysis [244-284].",
+    "document_form": "Match-day broadside: spectacle + letters + tunnel horror + theory + parody broadcast.",
+    "opener_lines": [
+     "P0: Apparently some higher-up had sent Mary Esther Thode out on her little yellow Vespa ...",
+     "P284: ... But the one we see this most in is Hal."
+    ],
+    "added_motifs": [
+     "yellow Vespa (P0)",
+     "Lone-Rangerish sleeping mask (P8)",
+     "poorly-wired fluttering sun (P2)",
+     "take-two sporting code (P20-24)",
+     "Saprogenic Greetings letters (P81-99)",
+     "mercuric tunnel lights (P117)",
+     "ballooning OJ carton + maggots (P171-175)",
+     "ephebic abandon (P210)",
+     "Bud Match of the Week parody (P237)"
+    ],
+    "movements": "P0-P7 overture → P8-P15 city cuts → P16-P80 bleachers → P81-P99 letters → P100-P187 tunnels → P188-P223 theory → P224-P284 broadcast+analysis."
+   },
+   "opener_worthy": "P0: Apparently some higher-up had sent Mary Esther Thode out on her little yellow Vespa ...",
+   "note_refs_count": 7,
+   "note_refs_notes": [
+    265,
+    269,
+    270,
+    271,
+    272,
+    275,
+    276
+   ]
+  },
+  {
+   "id": "p1c65",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 65,
+   "index": 65,
+   "number_label": "§ 65",
+   "title": "14 November — Year of the Depend Adult Undergarment (2) — The Man o’ War Grille on Prospect…",
+   "word_count": 1782,
+   "n_paras": 10,
+   "subject": "Matty Pemulis at the Man o' War Grille — soup, the pavement bag lady, Poor Tony grave-ready outside, then the Da: Louth boat, abuse with complete recall, death on aspirated blood.",
+   "mood": "Neat-eater composure over horror; the window as membrane between diner and street.",
+   "motifs": [
+    "soup bowl",
+    "the fez",
+    "foot traffic",
+    "rope cones",
+    "cat's-eye door crack",
+    "atomized blood"
+   ],
+   "rationale": "Subject: Matty Pemulis at the Man o' War Grille — soup, the bag lady on the pavement, Brazilians squaring off, Poor Tony Krause grave-ready outside, then the Da: Louth boat, Southie docks, abuse with complete recall, death choking on aspirated blood. Mood: neat-eater composure over horror; the window as membrane between diner and street. Motifs: untouched slurp, the fez, rope cones, the cat's-eye door crack, atomized blood hanging in the air.",
+   "palette_role": "Hot-clatter brass + soup-steam white against pavement gray; Poor Tony's greenish-white as a sickly accent.",
+   "motif": "Grille window on Prospect: soup bowl, fez, foot traffic, rope cones",
+   "motif_asset": "cohort-e.svg#grille-window",
+   "opener_composition": "Window-frame opener: title viewed through a restaurant-window grid; foot-traffic silhouettes pass below; soup steam as the only soft element in a hard chapter.",
+   "reading_treatment": "Restrained, unadorned — the prose must not be decorated. Plain measure, no motifs in-body; only the opener window-frame and a single rule before the Da passage. Maximum restraint.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "14 NOV · MAN O' WAR GRILLE, PROSPECT ST.",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Window-frame plate: restaurant-window grid with soup bowl + steam, fez glyph, foot-traffic silhouettes below, rope-cone coil; maximum restraint — the opener object only."
+   },
+  "design": {
+   "plate": "MAXIMUM RESTRAINT 4:3: window mullion grid; centered soup bowl + ONE steam curve; fez glyph on peg; foot-traffic silhouettes BELOW window line only; rope-cone coil at corner (single Da-echo). FORBIDDEN: Tony figure, blood, gore, second object.",
+   "hatch": "Mullion rules; single steam curve; coil spiral.",
+   "spots": "None beyond standard Manila/Seal; no second spot.",
+   "ticks": "NONE. One unmarked hairline above P5 only; plain measure throughout.",
+   "spec": "local://cohort-e-design.md SS7/10 restraint."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "grille-window",
+    "caption": "Plate 65 · Soup, window, street",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "grille-window"
+   },
+   "deep_research": {
+    "structure": "10 paras: grille tableau [0-4] → Da dossier [5] → Poor Tony sighting [6] → abuse memory [7] → lube gratitude [8] → death scene [9]. Longest para P7 (981w) is the chapter's unbearable center.",
+    "document_form": "Window memoir: street seen through glass, past seen through soup.",
+    "opener_lines": [
+     "P0: The Man o' War Grille on Prospect: Matty sat in the hot clatter ...",
+     "P9: ... choking on aspirated blood, a veritable fountain of the darkest possible blood ..."
+    ],
+    "added_motifs": [
+     "fez-wearing waiter, blood-or-soup apron (P0)",
+     "neat eater, no slurp (P0)",
+     "pavement bowel movement, steaming (P1)",
+     "Little Lisbon calamari soup (P3)",
+     "rope cones on the Southie docks (P5)",
+     "Poor Tony grave-ready, greenish-white (P6)",
+     "cat's-eye door crack (P7)",
+     "atomized blood hanging in the air (P9)"
+    ],
+    "movements": "P0-P4 grille → P5-P6 Da + Tony → P7-P9 memory + death."
+   },
+   "opener_worthy": "P0: The Man o' War Grille on Prospect: Matty sat in the hot clatter ...",
+   "note_refs_count": 0,
+   "note_refs_notes": []
+  },
+  {
+   "id": "p1c66",
+   "part": "part-1",
+   "part_roman": "I",
+   "part_subtitle": "The Novel",
+   "order": 66,
+   "index": 66,
+   "number_label": "§ 66",
+   "title": "11 November — Year of the Depend Adult Undergarment (3) — First thing after supper Hal drops around…",
+   "word_count": 1896,
+   "n_paras": 10,
+   "subject": "After supper Hal seeks Schtitt, gets deLint (nonoccurrence), then sits alone in Viewing Room 6 watching Himself's entertainments — Bureaucrat twice, self-punishment cartridges queued.",
+   "mood": "Post-defeat anomie; ontological erasure as comfort viewing.",
+   "motifs": [
+    "occurrence/nonoccurrence",
+    "cartridge shelf",
+    "Kodiak spit",
+    "furnace burnt-dust smell",
+    "the waving child",
+    "Blood Sister's AA origin"
+   ],
+   "rationale": "Subject: after supper Hal seeks Schtitt, gets deLint (\"You just never quite occurred out there, kid\"), then sits alone in Viewing Room 6 watching his dead father's entertainments — Wave Bye-Bye to the Bureaucrat twice, the furnace kicking on, self-punishment cartridges queued (Fun with Teeth, Blood Sister: One Tough Nun, germinated from Himself's brief Boston AA stint). Mood: post-defeat anomie, ontological erasure as comfort viewing. Motifs: occurrence/nonoccurrence, Kodiak spit, burnt-dust furnace smell, the waving child, Blood Sister's AA origin.",
+   "palette_role": "Cartridge-label colors on near-black; Kodiak-spit brown as an earthy footnote; ontological-erasure blue for the Bureaucrat.",
+   "motif": "Viewing Room 6: couch, cartridges, wastebasket, furnace flicker",
+   "motif_asset": "cohort-e.svg#viewing-room",
+   "opener_composition": "After-suppert quiet: title on a dark glass shelf between cartridge spines (Wave Bye-Bye / Fun with Teeth / Blood Sister); furnaces kick on as a faint heat-shimmer line.",
+   "reading_treatment": "Solitary confinement: single-voice body, cartridges as labeled shelf-markers in-margin; the deLint chill line isolated; Blood Sister reveal lands as a quiet footnote-style block.",
+   "ledger_conform": {
+    "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+    "filing_line": "11 NOV · E.T.A. VIEWING ROOM 6, AFTER SUPPER",
+    "seal": "Depend Adult Undergarment (undergarment seal)",
+    "plate": "Solitary plate: dark glass cartridge shelf (Wave Bye-Bye / Fun with Teeth / Blood Sister spines), couch + wastebasket, faint furnace heat-shimmer line, waving-child glyph."
+   },
+  "design": {
+   "plate": "Solitary 4:3: dark glass cartridge shelf, three Plex spines (WAVE BYE-BYE in Inventory Blue = second/last blue use; FUN WITH TEETH; BLOOD SISTER); waving-child glyph on Bureaucrat spine; couch + KODIAK wastebasket; furnace shimmer hairline + BURNT DUST; curled spreadsheet + marker corner.",
+   "hatch": "Glass shelf lines; spine lettering; spit hatch; shimmer wave.",
+   "spots": "Inventory Blue Bureaucrat spine (exception); phosphor queue ticks.",
+   "ticks": "NONOCCURRENCE P1 isolated; V.R.6 P2; BURNT DUST P5; WAVING CHILD P7; queue pair P9 footnote block; cohort closes, standard end seal.",
+   "spec": "local://cohort-e-design.md SS7; anomaly: waving child."
+  },
+   "contract_manifest": {
+    "src": "art/cohort-e.svg",
+    "class": "plate",
+    "motif": "viewing-room",
+    "caption": "Plate 66 · Viewing Room 6",
+    "slot": "#chapter-art",
+    "note": "Contract v1.1 symbol form (sanctioned): reader.js fetches src once, extracts symbol id, inlines a clone; missing id → hidden slot + console warning, never fatal.",
+    "symbol": "viewing-room"
+   },
+   "deep_research": {
+    "structure": "10 paras: deLint nonoccurrence [0-1] → V.R.6 setup [2-5] → Bureaucrat synopsis [6-8] → self-punishment queue + Blood Sister reveal [9]. P6 (900w) is the film-inside-chapter.",
+    "document_form": "Solitary viewing log with one embedded film synopsis.",
+    "opener_lines": [
+     "P1: You just never quite occurred out there, kid ...",
+     "P9: ... Blood Sister: One Tough Nun ... germinated out of ... Himself's ... experience with Boston AA ..."
+    ],
+    "added_motifs": [
+     "prone shirtless spreadsheet deLint (P0)",
+     "nonoccurrence, regressed figures (P1)",
+     "Kodiak spit, unlined wastebasket (P2)",
+     "furnace burnt-dust smell (P5)",
+     "the waving child, 0816 rear camera (P7)",
+     "ontological erasure drive (P8)",
+     "Fun with Teeth queue (P9)"
+    ],
+    "movements": "P0-P1 the verdict → P2-P5 the room → P6-P8 the Bureaucrat → P9 the queue."
+   },
+   "opener_worthy": "P1: You just never quite occurred out there, kid ...",
+   "note_refs_count": 1,
+   "note_refs_notes": [
+    279
+   ]
+  }
+ ],
+ "reader_contract_observed": {
+  "source": ".omp/design/READER-CONTRACT.md v1.0",
+  "hooks": [
+   "body[data-chapter]",
+   "body[data-part]",
+   "body[data-part-id]",
+   "body[data-book]",
+   "body[data-view]",
+   "body[data-art]",
+   "#chapter-art slot",
+   "reader:chapter event",
+   "design/chapters.json manifest (supervisor merges)"
+  ],
+  "constraints_derived": [
+   "design against #chapter-art slot + data hooks; supervisor merges cohort JSON into design/chapters.json",
+   "pure CSS over untouched prose; no reader-* classes minted by book",
+   "art referenced book-relatively under art/"
+  ],
+  "baseline_screenshots": [
+   ".omp/design/evidence/cohort-e/baseline-cover-1440.webp",
+   ".omp/design/evidence/cohort-e/baseline-reader-p1c1.webp"
+  ]
+ },
+ "art_direction_conformance": {
+  "source": "books/infinite-jest/design/ART-DIRECTION-DRAFT.md (JestIdentity draft; supervisor finalizes)",
+  "grammar": "Subsidized Time Ledger: mono date-stamp band + authored engraved SVG plate + Archivo Black title + ledger rule; Newsreader calm body 34-38rem; six named tokens (Ledger Black #0D0F0C, File Manila #E8DCC0, Stamp Red #D6402B, Cartridge Phosphor #9FE870, Seal Gold #C9A227, Carbon Violet #7C6BD6); cohort E = warmest paper register, session placards / recovery-chip medallions / litany ledgers; p1c60 multi-plate braid dividers"
+ },
+ "contract_conformance": {
+  "contract": "READER-CONTRACT v1.0 STABLE + SupIJ-2 IJ relay (existing-nodes-only RELAXED for opener art; prose stays pure-CSS/untouched)",
+  "slots": "All 13 plates (+p1c60 divider set) target #chapter-art (injected above #chapter-meta); body variation via body[data-chapter]/[data-part]/[data-art] + #chapter-text[data-paras]; no reader-* classes minted.",
+  "css_cascade": "design/cohort-e.css unlayered → wins over @layer shared; scoped under body[data-book='infinite-jest'] + per-chapter hooks.",
+  "manifest_merge": "Supervisor merges entries contract_manifest blocks into design/chapters.json sequentially; cohort JSON stays source of truth with part+order+title for provisional-ID remap.",
+  "fonts": "No cohort font loading (supervisor/theme level); cohort CSS references --font-* tokens only.",
+  "endnotes": "FROZEN data: 49 note_refs on cohort chapters (p1c54:11, p1c55:1, p1c56:4, p1c57:2, p1c59:3, p1c60:16, p1c61:3, p1c62:1, p1c64:7, p1c66:1; p1c58/63/65: none) + notes-index.json 388/388. Reader renders .reader-noteref anchors + note-return chip per §6; cohort CSS styles hooks only, mints nothing.",
+  "fragments": "CONFIRMED per SupIJ-2 relay of ReaderLead ruling (contract Appendix A.1). Split-SVG fallback retired to this footnote.",
+  "implementation_status": "Contract text designed-against; shared v1/v1.1 implementation landing by ReaderLead as sole writer (per Main: no contact until landing broadcast). Source reader.js today sets only body[data-chapter]+body[data-part]; data-art/#chapter-art/chapters.json arrive with the landing. Cohort specs need no change when they land.",
+  "v1_1_addendum": "MIGRATED: all 13 contract_manifest blocks use the sanctioned {src, symbol} form; fragment srcs retired (still honored per contract, but no longer authored)."
+ },
+ "rev2_note": "Conformed to ART-DIRECTION-DRAFT.md (Direction 1 Subsidized Time Ledger) + READER-CONTRACT v1.0 IJ relay, following cohort-a rev4 model: per-entry stamp band, filing line, year seal, engraved plate brief, contract_manifest block targeting #chapter-art. Still gated on finalized ART-DIRECTION.md + integration spec for Phase 2 spawns.",
+ "rev3_note": "Fragments confirmed: contract_manifest notes updated to the supported fragment-inlining behavior; split fallback retired to a footnote. Still gated on finalized ART-DIRECTION.md + integration spec for Phase 2 spawns.",
+ "rev4_note": "Contract v1.1 migration: contract_manifest blocks now {src: art/cohort-e.svg, symbol: motif-id}; fragment-in-src form retired. Still gated on finalized ART-DIRECTION.md + integration spec for Phase 2 spawns.",
+ "rev5_note": "Rev5 deepening (Cohort A rev5 parity): full-text sweeps of all 13 chapters (113+31+131+2+26+49+409+53+121+39+285+10+10 paras); per-entry deep_research (structure, document_form, verbatim opener_lines, added_motifs, movements) + opener_worthy. All motifs verified verbatim with para indices. Still gated on finalized ART-DIRECTION.md + integration spec for Phase 2 spawns.",
+ "freeze_note": "ID FREEZE (TextCurator audit + Main verification, .omp/design/infinite-jest-text-audit.md): p1c1-p1c77/p2c1-p2c12 Final, no splits/merges/renames, titles unchanged. Manifest LOCKED against these IDs; part/order/title keys retained as permanent provenance. Cohort E carries 49 note_refs across 10/13 chapters (p1c58/63/65 carry none); reader activates body→note links from note_refs ONLY; endnote round-trips testable end-to-end.",
+ "supervisor_approvals_2026-10-15": "SupIJ-3 GRANTED: (1) Inventory Blue spot ~#5B7FA6, scoped as --ij-inventory, plates 54/66 + their ticks ONLY (p1c54 plot-essential blueness; p1c66 erasure-blue); validator confirms it appears nowhere else. (2) STAFF-as-filing-stamp: visibly a stamp (rotated, bordered, mono), never a quotation. BINDING CORRECTION to rev5 deep_research: frozen p1c60 has 408 paras (P0-P407), NOT 409; no STAFF/2329H paragraph exists (actual P0 is dialogue) — opener_lines P0 STAFF inscription is document-voice fiction; watercolor falls P302; divider anchors nth-of-type 49/53/180/194/205/214/275/399; chapter closes P407 wheelchair. See local://cohort-e-design.md §0."
+}

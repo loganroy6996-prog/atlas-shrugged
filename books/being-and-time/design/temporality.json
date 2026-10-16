@@ -1,0 +1,736 @@
+{
+ "artDirection": "books/being-and-time/design/ART-DIRECTION.md (binding incl. §9 reader-contract conformance + §10 v1.1/conformance ArtDirector verdict); READER-CONTRACT.md v1.0+v1.1 STABLE; ArtDirector verdict PROVISIONAL PASS with binding conditions B1–B8 (see bindingConditions)",
+ "book": "being-and-time",
+ "chapters": [
+  "p3c17",
+  "p3c18",
+  "p3c19",
+  "p3c20",
+  "p3c21",
+  "p3c22",
+  "p3c23",
+  "p3c24",
+  "p3c25",
+  "p3c26",
+  "p3c27"
+ ],
+ "cohort": "temporality",
+ "cohortBeat": "resoluteness → TEMPORALITY horizons. Night-path vertical beams (inherited from death-conscience) fully rejoin at §62, then TURN HORIZONTAL at §65: three ecstasis horizon-lines enter and persist, reworked per chapter, fading to a grey flatline at §71.",
+ "directions": {
+  "chosen": {
+   "evolution": "p3c17 seam-beam (12°) → p3c18 single vertical 0° brightest → p3c19 ring → p3c20 plumb → p3c21 THE TURN (vertical breaks into 3 horizontals + Moment-tick) → p3c22 horizons+4 task ticks → p3c23 compression → p3c24 four-band stack → p3c25 horizons escaping frame + tool-shadow dissolve → p3c26 region-on-horizon → p3c27 grey flatline + one notch.",
+   "name": "D1 'The Turn' (CHOSEN)",
+   "why": "The cohort's own argumentative event — care's meaning revealed as ecstatic-horizonal temporality — becomes a visible 90° rotation of the book's master image. Future-first ordering (future/having-been/present top-to-bottom) is textually exact (§65 p18-19). The §69 whereto-lines-escaping-frame literalizes 'further outside than any object' (p52) and the horizonal schemata (p47). The §71 diminuendo earns the historicity handoff. Title-swap test: beams rejoining then falling into named ecstasis horizons means nothing on any other book."
+  },
+  "considered": [
+   {
+    "name": "D2 'Concentric Rings'",
+    "rejectedWhy": "Rings repeat the death cohort's copper time-ring language and the old Div-Two ◇ seal register — a rejected-pattern echo. The circle belongs to §63 alone ('leap into this circle', p17); stretching it across 11 chapters over-claims a local motif while abandoning the cohort's textually central image (horizons: §§65/69/70). Ring-per-chapter also degrades toward badge-repetition, explicitly banned.",
+    "salvage": "Single ring kept exactly once, at p3c19, where the prose earns it."
+   },
+   {
+    "name": "D3 'Typographic Score'",
+    "rejectedWhy": "Openers as giant German display type (Vorlaufen, Augenblick, Wiederholung) with minimal SVG. Fails the twin giants: §§68-69 need spatial landmarks and breathing architecture, not more letterforms. Weak title-swap test — any German philosophy book could wear big Fraunces nouns. Also collides with the binding ghost-numeral system (two competing giant-type voices per opener).",
+    "salvage": "One attested German landmark term per chapter survives as the margin-rail gloss (small, quiet, English-captioned)."
+   }
+  ],
+  "exploredWithin": "Book identity is binding (ART-DIRECTION.md); the three directions above explore within the Clearing grammar per cohort-designer role."
+ },
+ "entries": {
+  "p3c17": {
+   "contentRationale": "Hinge chapter (11 paras): anticipation + resoluteness must be brought together 'from within' (p2: start from resoluteness and ask whether it points ahead to anticipatory resoluteness); method pauses 'not to rest, but to gain momentum' (p4). Programmatic preview of §§62-71 (p10). Opener stages two-becoming-one: the death-conscience split beams visibly converging with a seam still showing — the question of the chapter rendered as unfinished joinery. The threshold well carries p0's 'We projected existentially an authentic potentiality-for-being-whole' momentum-gathering pause.",
+   "flecks": "Sparse single fleck-row low in the text column (the pause before momentum); wide breather after p4 region is approximated by a mid-column divider (explicit rule, no para hooks exist).",
+   "gapWidth": "55%",
+   "ghost": {
+    "content": "61",
+    "opacity": "8%",
+    "placement": "right-bleed",
+    "size": "20vw"
+   },
+   "kicker": "Part 3 · § 61 · 1160 words · ≈6 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-61",
+    "src": "art/temporality.svg",
+    "symbol": "tp-61"
+   },
+   "minutes": 6,
+   "motif": "converging twin beams with visible seam",
+   "numberLabel": "§ 61",
+   "openerComposition": "Ledger. G: right-bleed '61'. S (slot banner tp-61): two 12° beams converging downward into one shaft; a 1px lichen seam line marks the join for the upper third, dissolving below. T: title flush-left (long title wraps to 3 lines max at 40px min clamp). R: gloss 'Vorlaufen + Entschlossenheit' (both terms attested: Vorlaufen §68 p5, Entschlossenheit throughout) + micro-caption 'two phenomena, one join'.",
+   "order": "§61 (Division Two sequence 17 of 39)",
+   "paletteRole": "Night-path carryover: ink-deep ground, shaft beams at 80% core, seam in lichen, hairlines bark. No ember (binding).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. Calm body; one fleck divider. No mini-map (short chapter).",
+   "svgRegion": "tp-61",
+   "title": "Preliminary Sketch of the Methodological Step from Outlining the Authentic Being-a-Whole of Dasein to the Phenomenal Exposition of Temporality",
+   "words": 1160,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p4",
+    "text": "not in order to “rest,” but in order to gain new momentum",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "two short lichen lines merging into one shaft hairline, centered above the prev/next row",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "join completed"
+   },
+   "tocTick": "55%"
+  },
+  "p3c18": {
+   "contentRationale": "Cohort PEAK before the summit (17 paras): resoluteness 'thought out to its end' (p0); null ground of guilt (p2); death as 'possibility of the impossibility of existence' (p4); situation disclosed 'only in a free act of resolve' (p8); certainty 'keeping oneself free for the possibility of taking it back' (p8); modalization ownmost/nonrelational/insuperable/certain-yet-indefinite (p10); 'sober anxiety' close (p15). Binding note: beams fully rejoined — brightest pre-temporality. Opener is pure severity: one vertical shaft, full slot height, highest shaft-core opacity in the cohort, flanked by two faint afterimage lines (the extinguished split). No ornament anywhere — the chapter's 'relentless severity' (p5) forbids decoration.",
+   "flecks": "NONE. Unbroken severity; the only chapter in the cohort with a clean text column. Breathing comes from paragraph spacing only.",
+   "gapWidth": "58%",
+   "ghost": {
+    "content": "62",
+    "opacity": "10%",
+    "placement": "right-bleed",
+    "size": "22vw"
+   },
+   "kicker": "Part 3 · § 62 · 2084 words · ≈10 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-62",
+    "src": "art/temporality.svg",
+    "symbol": "tp-62"
+   },
+   "minutes": 10,
+   "motif": "single rejoined vertical shaft, brightest pre-temporality",
+   "numberLabel": "§ 62",
+   "openerComposition": "Ledger. G: right-bleed '62' at 10% (brightest ghost before §65). S (slot banner tp-62): one 0° vertical shaft, full-bleed height, shaft core at 100% with soft falloff; two hairline afterimages at ±18% width in lichen at 30%. T: title flush-left. R: gloss 'vorlaufende Entschlossenheit' (attested: 'anticipatory resoluteness' throughout; German compound standard in translations) + micro-caption 'thought out to its end'.",
+   "order": "§62 (Division Two sequence 18 of 39)",
+   "paletteRole": "Brightest shaft-core in cohort (100% core, widest falloff). Ground humus-to-ink. Bark hairlines only elsewhere.",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type ('To what extent does resoluteness, thought out to its end…'). Zero dividers; paragraph spacing 1.15em for solemnity.",
+   "svgRegion": "tp-62",
+   "title": "The Existentielly Authentic of Dasein as Anticipatory Resoluteness",
+   "words": 2084,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p4",
+    "text": "the possibility of the impossibility of existence",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "single centered shaft hairline, widest air above in cohort; prev/next at maximum quiet",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "severity coda"
+   },
+   "tocTick": "58%"
+  },
+  "p3c19": {
+   "contentRationale": "Ground chapter (21 paras): fore-having/fore-sight/fore-conception made primordial (p0-1); 'Dasein is ontologically farthest from itself' (p2); interpretation 'has the character of doing violence' (p4); the circle charge answered: 'leaping into this circle primordially and completely' (p17). The ring appears exactly once in the cohort, here, where the prose earns it: the rejoined shaft bends and passes THROUGH a large lichen ring (not around it) — the leap into, not over, the circle. The shaft exits the ring slightly widened: primordiality gained.",
+   "flecks": "One fleck divider placed late-column (the p17 leap region, approximated by 70% scroll rule).",
+   "gapWidth": "60%",
+   "ghost": {
+    "content": "63",
+    "opacity": "8%",
+    "placement": "right-bleed",
+    "size": "20vw"
+   },
+   "kicker": "Part 3 · § 63 · 2455 words · ≈12 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-63",
+    "src": "art/temporality.svg",
+    "symbol": "tp-63"
+   },
+   "minutes": 12,
+   "motif": "shaft passing through the hermeneutic ring",
+   "numberLabel": "§ 63",
+   "openerComposition": "Ledger. G: right-bleed '63'. S (slot banner tp-63): vertical shaft enters top, threads a large thin ring (lichen, 2px) centered right-of-middle, exits widened by ~15%. Ring overlaps shaft — drawn over, unbroken. T: title flush-left. R: gloss 'hermeneutische Situation' (attested in chapter title wording 'Hermeneutical Situation') + micro-caption 'leap in, not over'.",
+   "order": "§63 (Division Two sequence 19 of 39)",
+   "paletteRole": "Shaft at 85% + lichen ring dominant line-work; bark hairlines. First chapter where lichen equals shaft in visual weight (methodological ground).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. Single late divider. Standard 34rem.",
+   "svgRegion": "tp-63",
+   "title": "The Hermeneutical Situation at Which We Have Arrived for Interpreting the Meaning of Being of Care, and the Methodological Character of the Existential Analytic in General",
+   "words": 2455,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p4",
+    "text": "the character of doing violence",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "hairline with a small lichen ring centered on it",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "circle carried to the close"
+   },
+   "tocTick": "60%"
+  },
+  "p3c20": {
+   "contentRationale": "Ground chapter (12 paras): self-constancy (Selbst-Ständigkeit, p6-11) vs substance/subject; Kant 'I think' critique — Kant 'slips back into the same inappropriate ontology of the substantial' (p5); 'Care does not need a foundation in a self' (p11). Opener: a single plumb hairline (self-constancy as held line, not block) beside a hollow square with broken corners (the refused substantial subject, dissolving, dashed). The plumb passes through the square's center without touching its edges — the self needs no substantial ground.",
+   "flecks": "One fleck divider mid-column (the Kant-turn region).",
+   "gapWidth": "62%",
+   "ghost": {
+    "content": "64",
+    "opacity": "8%",
+    "placement": "right-bleed",
+    "size": "19vw"
+   },
+   "kicker": "Part 3 · § 64 · 2309 words · ≈12 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-64",
+    "src": "art/temporality.svg",
+    "symbol": "tp-64"
+   },
+   "minutes": 12,
+   "motif": "plumb line through a dissolving hollow square",
+   "numberLabel": "§ 64",
+   "openerComposition": "Ledger. G: right-bleed '64'. S (slot banner tp-64): centered 0° plumb hairline (shaft, full height); hollow square (lichen dashed, corners broken/open) centered on the line's middle third, line passing through untouched. T: title flush-left (short title — allow larger clamp up to 64px). R: gloss 'Selbst-Ständigkeit' (attested p6: 'self-constancy [Selbstandigkeit]') + micro-caption 'no foundation in a self'.",
+   "order": "§64 (Division Two sequence 20 of 39)",
+   "paletteRole": "Shaft plumb at 90%; dissolving square lichen dashed. Quietest vertical chapter — the held breath before the Turn.",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. Single divider. Standard 34rem.",
+   "svgRegion": "tp-64",
+   "title": "Care and Selfhood",
+   "words": 2309,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p11",
+    "text": "Care does not need a foundation in a self",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "one centered vertical plumb tick, 12px, shaft",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "plumb coda"
+   },
+   "tocTick": "62%"
+  },
+  "p3c21": {
+   "contentRationale": "SUMMIT of the book's argument (25 paras) and most ambitious opener: meaning = 'upon-which of the primary project' (p1-4); 'having-been arises from the future' (p8, p10); 'I-am-as-having-been' (p14); the Moment/Augenblick (p16); 'Temporality is not a being at all. It is not, but rather temporalizes itself' (p16); ecstasies 'toward itself / back to / letting be encountered' (p17); future-first priority within equiprimordiality (p18-19); four theses (p23); vulgar time as 'mere succession of nows' (p17). THE TURN: the vertical beam breaks into THREE HORIZONTAL ecstasis lines (top→bottom = future / having-been / present; future line thickest+brightest = priority; equal spacing = equiprimordiality). A single vertical Moment-tick pierces all three at 62% width ('In the Moment nothing can happen' §68 p9 — the tick is narrow, bright, silent). Faint vertical afterimage at the left edge remembers the beam that turned. Hinge paras p7/9/11/14/17/18/19/21/24 honored by three fleck-rows aligned to the three lines.",
+   "flecks": "Three horizontal fleck-rows in the text column at 25/50/75% scroll, weights matched to the three ecstasis lines (future row brightest) — the horizons descend into the reading body.",
+   "gapWidth": "65%",
+   "ghost": {
+    "content": "65",
+    "opacity": "10%",
+    "placement": "right-bleed",
+    "size": "24vw"
+   },
+   "kicker": "Part 3 · § 65 · 3214 words · ≈16 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-65",
+    "src": "art/temporality.svg",
+    "symbol": "tp-65"
+   },
+   "minutes": 16,
+   "motif": "three horizontal ecstasis lines + piercing Moment-tick (THE TURN)",
+   "numberLabel": "§ 65",
+   "openerComposition": "Ledger, grandest in cohort. G: right-bleed '65' at full 24vw/10%. S (slot banner tp-65, tallest slot in cohort ~1.4× standard): three full-width horizontal lines — future 5px shaft 100%, having-been 3px shaft 70%, present 2px lichen 60%; one vertical Moment-tick (2px, shaft 100%, 40% of slot height) piercing all three at x=62%; faint vertical beam-afterimage (lichen 20%) at x=6%. T: title flush-left. R: gloss 'Augenblick' (attested p16: 'Moment [Augenblick]') + micro-caption 'future first, all equiprimordial'.",
+   "order": "§65 (Division Two sequence 21 of 39)",
+   "paletteRole": "Full shaft voice: three shaft weights + lichen. Brightest overall opener after §62's single shaft (broader but less concentrated light).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. Three ecstasis-aligned fleck dividers. Standard 34rem (3214w does not need giant measure; rhythm carries it).",
+   "svgRegion": "tp-65",
+   "title": "Temporality as the Ontological Meaning of Care",
+   "words": 3214,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p8",
+    "text": "having-been arises from the future",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "three short horizontal lines, decreasing widths (future widest), centered stack",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "ecstasis coda"
+   },
+   "tocTick": "65%"
+  },
+  "p3c22": {
+   "contentRationale": "Program chapter (6 paras): the repetition of the analysis announced — disclosedness/everydayness/historicity/within-timeness (p1-5); 'Dasein uses itself up — uses its time; reckons with it' (p4). Horizons persist (binding §65+); beneath them four small task-ticks (the program's four assignments) and a faint tally-register — reckoning with time. Workmanlike, forward-pointing opener: the summit's lines put to work.",
+   "flecks": "Single divider + slightly tightened paragraph spacing (programmatic briskness).",
+   "gapWidth": "67%",
+   "ghost": {
+    "content": "66",
+    "opacity": "8%",
+    "placement": "right-bleed",
+    "size": "19vw"
+   },
+   "kicker": "Part 3 · § 66 · 947 words · ≈5 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-66",
+    "src": "art/temporality.svg",
+    "symbol": "tp-66"
+   },
+   "minutes": 5,
+   "motif": "persisting horizons + four program task-ticks",
+   "numberLabel": "§ 66",
+   "openerComposition": "Ledger. G: right-bleed '66'. S (slot banner tp-66): three horizons continue (slightly dimmer than §65: 85/60/55%); below them four short vertical task-ticks in a row (lichen, even spacing) + faint tally marks. T: title flush-left. R: gloss 'Wiederholung der Analyse' (repetition attested §68 p12 'repetition [Wiederholung]'; 'der Analyse' is designer German — caption carries the English: 'the repetition of the analysis') + micro-caption 'four tasks'.",
+   "order": "§66 (Division Two sequence 22 of 39)",
+   "paletteRole": "Shaft 85% horizons + lichen ticks. Deliberately a half-step dimmer than §65 (program, not event).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. Single divider. Standard 34rem.",
+   "svgRegion": "tp-66",
+   "title": "The Temporality of Dasein and the Tasks of a More Primordial Repetition of the Existential Analysis Arising from It",
+   "words": 947,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p4",
+    "text": "uses itself up — uses its time",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "four tiny lichen ticks in a row (the four tasks, listed, not checked)",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "program coda"
+   },
+   "tocTick": "67%"
+  },
+  "p3c23": {
+   "contentRationale": "Shortest chapter in the cohort (2 paras, 597w): primordial wholeness 'demands' multiplicity (p0); 'the ontological origin exceeds in power what arises from it; any arising is degeneration' (p0); preview of the §68-71 sequence (p1). Proportional minimalism: the quietest opener in the cohort. Three horizons compress into ONE fine line (wholeness); beneath it a row of small dots (multiplicity) held under a single thin arc. No Moment-tick, no afterimage — restraint is the content ('does not coincide with simplicity' yet rendered simply: the paradox held, not solved).",
+   "flecks": "NONE (2 paras — any divider would be absurd). Threshold well alone.",
+   "gapWidth": "68%",
+   "ghost": {
+    "content": "67",
+    "opacity": "7%",
+    "placement": "right-bleed",
+    "size": "18vw"
+   },
+   "kicker": "Part 3 · § 67 · 597 words · ≈3 min",
+   "manifest": {
+    "class": "motif",
+    "motif": "tp-67",
+    "src": "art/temporality.svg",
+    "symbol": "tp-67"
+   },
+   "minutes": 3,
+   "motif": "horizons compressed to one line holding a row of dots",
+   "numberLabel": "§ 67",
+   "openerComposition": "Ledger, smallest slot in cohort (motif treatment ~0.6× standard height). G: right-bleed '67' at cohort-minimum 18vw/7%. S (slot motif tp-67): single 2px shaft line full width; beneath it seven small dots (lichen) under one thin arc (bark). T: title flush-left. R: gloss 'Ursprung' (attested conceptually p0 'origin'; German standard — caption: 'the origin exceeds') + micro-caption 'wholeness holds multiplicity'.",
+   "order": "§67 (Division Two sequence 23 of 39)",
+   "paletteRole": "Minimal shaft (single line only); lichen dots; bark arc. Palest opener except §71 by design.",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. No dividers, no mini-map. 34rem.",
+   "svgRegion": "tp-67",
+   "title": "The Basic Content of the Existential Constitution of Dasein, and the Preliminary Sketch of Its Temporal Interpretation",
+   "words": 597,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p0",
+    "text": "exceeds it in power from the beginning",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "three small lichen dots in a row (minimal ending for the shortest chapter)",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "multiplicity coda"
+   },
+   "tocTick": "68%"
+  },
+  "p3c24": {
+   "contentRationale": "GIANT I (51 paras, 5994w), four subsections: (a) understanding — anticipation vs awaiting, 'awaiting that makes present' (p14), Moment vs making-present (p9-10), repetition vs forgetting (p12); (b) attunement — fear (forgetting that awaits and makes present, p22) vs anxiety (present 'held in readiness', p26), pallid lack of mood (p30-32); (c) falling — curiosity, 'never dwelling anywhere' (p38) as extreme opposite of the Moment; (d) discourse — tenses, 'is' as copula (p47); close: 'a future that makes present, in the process of having-been' (p49). Opener: FOUR stacked horizontal bands (Rothko register) = the four subsections, weights ascending (a) 2px lichen → (b) 3px lichen/shaft → (c) 2px dimmed (falling = dimmest) → (d) 4px shaft (discourse articulates = brightest band). Long-chapter relief per binding note: 38rem measure, breather spacing, rail mini-map with 4 subsection markers + scroll-driven 'you are here' marker.",
+   "flecks": "Subsection breather bands: three wide low-density fleck zones at 25/50/75% scroll approximating the (a)/(b)/(c)/(d) transitions + paragraph spacing 1.2em. Explicit per-ID rules only.",
+   "gapWidth": "70%",
+   "ghost": {
+    "content": "68",
+    "opacity": "10%",
+    "placement": "right-bleed",
+    "size": "22vw"
+   },
+   "kicker": "Part 3 · § 68 · 5994 words · ≈30 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-68",
+    "src": "art/temporality.svg",
+    "symbol": "tp-68"
+   },
+   "minutes": 30,
+   "motif": "four stacked subsection bands (Rothko stack)",
+   "numberLabel": "§ 68",
+   "openerComposition": "Ledger. G: right-bleed '68'. S (slot banner tp-68): four full-width horizontal bands with air between them: (a) 2px lichen 55%, (b) 3px shaft 65%, (c) 2px lichen 35% (dimmed = falling), (d) 4px shaft 90%; each band's left end steps rightward (a→d staircase of 4% steps) so the stack reads as descent. T: title flush-left. R: gloss 'Gegenwärtigen' (attested p10: 'making present [Gegenwartigen]') + 4-marker mini-map (see giantsRelief).",
+   "order": "§68 (Division Two sequence 24 of 39)",
+   "paletteRole": "Mixed shaft/lichen across four weights; (c) band deliberately dimmest in cohort (falling register).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. 38rem measure. Three subsection breather dividers + 1.2em paragraph spacing. Rail mini-map (4 ticks + scroll marker). See giantsRelief.",
+   "svgRegion": "tp-68",
+   "title": "The Temporality of Disclosedness in General",
+   "words": 5994,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p49",
+    "text": "a future that makes present, in the process of having-been",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "four short bands echoing the opener stack weights (a/b/c/d); (c) band dimmest",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "subsection coda"
+   },
+   "tocTick": "70%"
+  },
+  "p3c25": {
+   "contentRationale": "GIANT II (55 paras, 6697w), three movements: (a) circumspect care — awaiting/retaining/making-present, 'knows its way around' (p12); (b) circumspection→theory — hammer 'too heavy' → mass (p33-34), place→position, 'world point' (p37), mathematical projection of nature (p38), thematization/objectification (p40); (c) transcendence — horizonal schemata, 'whereto of the ecstasy' (p47), world 'further outside than any object' (p52), 'subjective world more objective than any object' (p53). Opens with the book's own master sentence: 'ecstatic temporality clears the there' (p1). Opener: three horizons whose right ends EXTEND PAST THE FRAME with open (uncapped) line-ends = the whereto; at left, a small hammer tool-shadow dissolving dot-by-dot into a grid point (place→position, Um-schrankt→entschrankt p37). Long-chapter relief same as §68 with 3-marker mini-map.",
+   "flecks": "Two movement breather bands (at ~33/66% scroll for (a)/(b)/(c)) + 1.2em spacing. The hammer-dissolve motif repeats once as a small divider glyph drawn in the divider band (authored path, not a font glyph).",
+   "gapWidth": "72%",
+   "ghost": {
+    "content": "69",
+    "opacity": "10%",
+    "placement": "right-bleed",
+    "size": "22vw"
+   },
+   "kicker": "Part 3 · § 69 · 6697 words · ≈33 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-69",
+    "src": "art/temporality.svg",
+    "symbol": "tp-69"
+   },
+   "minutes": 33,
+   "motif": "horizons escaping the frame + dissolving hammer tool-shadow",
+   "numberLabel": "§ 69",
+   "openerComposition": "Ledger. G: right-bleed '69'. S (slot banner tp-69): three horizons (same weights as §65) with right ends running past the slot edge (bleed 6% beyond, square-cut, no caps/arrows — the escape is the statement); left third: small hammer pictogram (flat, lichen) dissolving rightward into spaced dots ending in one grid point (shaft). T: title flush-left. R: gloss 'Transzendenz der Welt' (attested in title 'Transcendence of the World') + 3-marker mini-map.",
+   "order": "§69 (Division Two sequence 25 of 39)",
+   "paletteRole": "Full shaft horizons + lichen tool-shadow. Brightest giant opener (the clearing sentence lives here).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p0 ('The ecstatic unity of temporality…is the condition of the possibility that there can be a being that exists as its there'). 38rem measure. Two movement breathers + hammer-dissolve divider. Rail mini-map (3 ticks + scroll marker).",
+   "svgRegion": "tp-69",
+   "title": "The Temporality of Being-in-the-World and the Problem of the Transcendence of the World",
+   "words": 6697,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p52",
+    "text": "further outside than any object",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "three short lines; the last extends right past center (the whereto leaves the page)",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "escape continues"
+   },
+   "tocTick": "72%"
+  },
+  "p3c26": {
+   "contentRationale": "Space chapter (9 paras): making-room (Einräumen) via directionality + de-distancing (p3); region as whereto of belonging (p4); 'here' as leeway, never a position (p5); 'Dasein breaks into space' (p7); language 'thoroughly dominated by spatial representations' (p8). Opener: a horizon line with a BROKEN RING resting on it (region = belonging-without-containment; the ring's gap faces the walking direction); below, two rails converging toward the horizon (de-distancing as perspective). The cohort's only perspectival composition — space earns depth, everything else stays frontal.",
+   "flecks": "Single divider mid-column.",
+   "gapWidth": "74%",
+   "ghost": {
+    "content": "70",
+    "opacity": "8%",
+    "placement": "right-bleed",
+    "size": "20vw"
+   },
+   "kicker": "Part 3 · § 70 · 1265 words · ≈7 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-70",
+    "src": "art/temporality.svg",
+    "symbol": "tp-70"
+   },
+   "minutes": 7,
+   "motif": "broken region-ring resting on a horizon + converging de-distancing rails",
+   "numberLabel": "§ 70",
+   "openerComposition": "Ledger. G: right-bleed '70'. S (slot banner tp-70): one 3px shaft horizon at 55% height; broken ring (lichen 2px, gap at lower-right) sitting on the line at 60% width; two bark rails from the bottom corners converging to a point on the horizon at 60% width. T: title flush-left. R: gloss 'Einräumen' (attested p3: 'making room' — German standard for the term; caption: 'making room') + micro-caption 'the here is a leeway'.",
+   "order": "§70 (Division Two sequence 26 of 39)",
+   "paletteRole": "Shaft horizon + lichen ring + bark rails. Only chapter where bark carries composed lines (depth register).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. Single divider. 34rem.",
+   "svgRegion": "tp-70",
+   "title": "The Temporality of the Spatiality Characteristic of Dasein",
+   "words": 1265,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p7",
+    "text": "Dasein breaks into space",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "one small broken lichen ring, gap lower-right, centered",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "region coda"
+   },
+   "tocTick": "74%"
+  },
+  "p3c27": {
+   "contentRationale": "Grey close (9 paras): 'eternal yesterday' (p3); pallid lack of mood (p4); 'suffer dully' (p4); 'master the everyday in the Moment… only for the moment' (p4); 'everydayness = temporality' (p8). Deliberate diminuendo: the cohort's horizons collapse to ONE flat unbroken lichen-grey line (the eternal yesterday — no future-priority weight left); a single small bright notch interrupts it at center (the Moment that masters the everyday 'only for the moment' — small because it cannot extinguish it). Palest shaft usage in the cohort: light almost withdrawn, handing off to historicity. The flatline must read as grey on dark ground, not as a dimmed shaft — lichen-dominant by intent.",
+   "flecks": "NONE — monotony is the content ('like yesterday, so today and tomorrow', p6). Unbroken column.",
+   "gapWidth": "75%",
+   "ghost": {
+    "content": "71",
+    "opacity": "7%",
+    "placement": "right-bleed",
+    "size": "20vw"
+   },
+   "kicker": "Part 3 · § 71 · 815 words · ≈4 min",
+   "manifest": {
+    "class": "banner",
+    "motif": "tp-71",
+    "src": "art/temporality.svg",
+    "symbol": "tp-71"
+   },
+   "minutes": 4,
+   "motif": "flat grey horizon with one small Moment-notch",
+   "numberLabel": "§ 71",
+   "openerComposition": "Ledger. G: right-bleed '71' at 7% (joint-palest ghost). S (slot banner tp-71): single 2px flat line full width in lichen at 55%; one 8px-wide × 14px-tall shaft notch centered on the line (the only shaft ink in the slot). Maximum air above and below — the emptiest slot in the cohort. T: title flush-left. R: gloss 'Alltäglichkeit' (attested in title 'Everydayness') + micro-caption 'the eternal yesterday'.",
+   "order": "§71 (Division Two sequence 27 of 39)",
+   "paletteRole": "Lichen-dominant; shaft appears ONLY in the 8px notch. Deliberate near-withdrawal of light (diminuendo into historicity cohort).",
+   "part": "part-3",
+   "readingTreatment": "Threshold well on p:first-of-type. No dividers (monotony register). 34rem. The well itself is the only relief — then flatness.",
+   "svgRegion": "tp-71",
+   "title": "The Temporal Meaning of the Everydayness of Dasein",
+   "words": 815,
+   "cohort": "temporality",
+   "railInscription": {
+    "para": "p4",
+    "text": "master the everyday in the Moment",
+    "visibility": "margin rail only (>=1100px); hidden when rail folds under title; Fraunces italic 15px/1.5 lichen"
+   },
+   "ending": {
+    "composition": "full-width grey flatline WITH the Moment-notch running through the nav zone above prev/next",
+    "implementation": "body[data-chapter]-scoped #chapter-nav::before with authored data-URI SVG micro-scene (static; hidden in print; reduced-motion safe); prev/next stay quiet text links per ART-DIRECTION 4.6",
+    "motif": "the yesterday continues"
+   },
+   "tocTick": "75%"
+  }
+ },
+ "gapRamp": [
+  [
+   "p3c17",
+   "55%"
+  ],
+  [
+   "p3c18",
+   "58%"
+  ],
+  [
+   "p3c19",
+   "60%"
+  ],
+  [
+   "p3c20",
+   "62%"
+  ],
+  [
+   "p3c21",
+   "65%"
+  ],
+  [
+   "p3c22",
+   "67%"
+  ],
+  [
+   "p3c23",
+   "68%"
+  ],
+  [
+   "p3c24",
+   "70%"
+  ],
+  [
+   "p3c25",
+   "72%"
+  ],
+  [
+   "p3c26",
+   "74%"
+  ],
+  [
+   "p3c27",
+   "75%"
+  ]
+ ],
+ "giantsRelief": {
+  "breathers": "Explicit per-ID #chapter-text background bands (SVG data-URI fleck zones, low density, shaft/lichen at ≤25%) at subsection transitions (p3c24: 25/50/75%; p3c25: 33/66%) + paragraph spacing 1.2em. No modulo, no para-index hooks (none exist).",
+  "measure": "38rem for p3c24 + p3c25 (binding); 34rem all others.",
+  "railMiniMap": "Margin-rail strip (supervisor ledger rail ≥1100px; horizontal strip <1100px; hidden <640px): CSS background on the rail region keyed per chapter — 4 ticks (p3c24: a/b/c/d) or 3 ticks (p3c25: a/b/c) in lichen with micro-labels via the rail gloss element the supervisor wires; 'you are here' marker = 6px shaft dot positioned by CSS scroll-driven animation (animation-timeline: scroll(root)) in Chromium with static mid-position fallback elsewhere. Pure CSS, no JS, no reader-* classes. Under prefers-reduced-motion the marker is static."
+ },
+ "implementationBriefForEngineer": [
+  "1. Author art/temporality.svg per svgPlan (11 <g> regions + shared defs; strokes currentColor/CSS vars ONLY; shaft fills via var(--bt-shaft) with color-mix falloffs). feTurbulence grain: include at ≤0.06 opacity inside slot art ONLY; gate OFF under prefers-reduced-motion and <640px (media query hides .tp-grain).",
+  "2. Author design/temporality.css: ONLY body[data-book='being-and-time'][data-chapter='<own-id>']-scoped rules (+ body[data-part-id='part-3'] cohort-shared selectors listing own IDs). Slot gating pattern: body[data-chapter='p3c2N'] #chapter-art svg .tp-scene{display:none} + body[data-chapter='p3c2N'] #chapter-art svg #tp-NN{display:block}. Ghost numerals: explicit per-ID #chapter-meta::before{content:'NN'} right-bleed rules per ghost specs. Threshold wells: p:first-of-type Fraunces 21px/1.6 on --bt-under. Fleck dividers: explicit per-ID #chapter-text background layers. Giants: 38rem + breathers + rail mini-map (see giantsRelief). Print: hide slot art (background:transparent) per theme print precedent.",
+  "3. Supervisor merges entries.*.manifest into design/chapters.json (src/class/motif per chapter; motif sets body[data-art]).",
+  "4. Prototype FIRST: p3c18 (severity), p3c21 (summit), p3c25 (giant) at 1440×1000 / 820×1180 / 390×844; ArtDirector review before expanding to all 11.",
+  "5. Firewall re-check before delivery: no drop caps, no centered titles, no justified text, no glyph ornaments (❧◇◆✦§), no cartouche badges, no modulo/hash rules, no reader-* classes, shaft never on paragraph text, contrast mist-on-humus ≥7:1 computed.",
+  "6. Rail inscriptions: render entries.*.railInscription in the margin rail under the gloss (>=1100px only); Fraunces italic 15px/1.5 lichen; max 3 lines.",
+  "7. Nav codas: implement entries.*.ending as body[data-chapter]-scoped #chapter-nav::before data-URI SVG micro-scenes (static, print-hidden); keep prev/next quiet text links per ART-DIRECTION 4.6.",
+  "8. Enriched scene details per svgPlan regions; TOC shaft-tick widths = entries.*.tocTick."
+ ],
+ "neighborCheck": [
+  "p3c17/p3c18: converging-with-seam vs single brightest — question vs answer.",
+  "p3c18/p3c19: pure shaft vs shaft-through-ring — severity vs method.",
+  "p3c19/p3c20: ring vs plumb+square — circle vs line (deliberate antithesis).",
+  "p3c20/p3c21: last vertical vs first horizontal — THE TURN (strongest adjacent contrast in cohort, intentional).",
+  "p3c21/p3c22: summit lines vs working lines + ticks — event vs program.",
+  "p3c22/p3c23: ticks+tally vs single line + dots — program vs compression (loudest-to-quietest adjacent step after the Turn).",
+  "p3c23/p3c24: minimal motif vs four-band stack — held breath vs giant descent (intentional).",
+  "p3c24/p3c25: stepped descent stack vs frame-escaping lines + hammer — inward vs outward.",
+  "p3c25/p3c26: escaping horizons vs ring-on-horizon + rails — transcendence vs region (ring returns, transformed: hermeneutic → regional).",
+  "p3c26/p3c27: perspectival depth vs flat grey line — space vs monotony (depth collapses, intentional)."
+ ],
+ "openerGrammar": {
+  "ghostNumerals": "Fraunces 300, mist 7–10%, RIGHT-BLEED all 11 (binding cohort placement), sizes 18–24vw per entry (explicit per-ID #chapter-meta::before content rules; §65 largest, §67 smallest).",
+  "kicker": "ONE line per opener: 'Part 3 · § N · W words · ≈M min' (Source Serif 4 12px, 0.22em, lichen). No other eyebrows.",
+  "ledger": "Ghost gutter 22% + title 52% + margin rail 26% (≥1100px); rail folds under title <1100px; single column + cropped ghost <640px. Title flush-left ALWAYS. Slot art (#chapter-art, treatments banner|plate|motif) sits ABOVE #chapter-meta, terminates above first paragraph, never behind body text.",
+  "shaftRule": "Vertical 12°→0° for p3c17–p3c20 (night-path inheritance, rejoined); THE TURN at p3c21 (horizontal ecstasis lines, future/having-been/present top-to-bottom, future thickest+brightest); horizontals persist p3c22–p3c27 reworked per chapter. No ember anywhere in cohort (binding)."
+ },
+ "palette": {
+  "--bt-bark": {
+   "hex": "#3E4A34",
+   "role": "hairlines; composed rails ONLY at p3c26 (depth register)"
+  },
+  "--bt-canopy": {
+   "hex": "#141B12",
+   "role": "elevated surfaces (TOC panel, mini-map strip ground)"
+  },
+  "--bt-humus": {
+   "hex": "#0C0F0A",
+   "role": "page ground; opener ground throughout cohort"
+  },
+  "--bt-ink": {
+   "hex": "#060805",
+   "role": "deepest black (p3c17–p3c18 night-path carryover grounds)"
+  },
+  "--bt-lichen": {
+   "hex": "#9DB89A",
+   "role": "secondary line-work (seams, rings, dots, squares, greyline); meta/kicker text"
+  },
+  "--bt-mist": {
+   "hex": "#C9D4C3",
+   "role": "body text (≥7:1 on humus — validator computes); ghost numerals at 7–10%"
+  },
+  "--bt-shaft": {
+   "hex": "#E9D488",
+   "role": "THE accent: beams, ecstasis lines, Moment-tick/notch, focus, progress. NEVER paragraph text."
+  },
+  "lightSepia": "Light: ground #F5F1E4, text #1C231A, accent #7A6414, muted #5A6B54, hairline #C9BFA4. Sepia: ground #EFE6D0, text #232B1F, accent #6E5A10, muted #5F6B53, hairline #C4B78F. All SVG strokes currentColor/CSS vars → automatic re-ink; translucent shaft fills bind to accent var."
+ },
+ "part": {
+  "id": "part-3",
+  "name": "Division Two",
+  "roman": "3",
+  "subtitle": "Dasein and Temporality"
+ },
+ "phase": "Phase 2 conformant + v1.1 symbol-keyed (Phase 1 prose rationales preserved; tokens/type/composition/slots per binding ART-DIRECTION.md incl. §9–§10)",
+ "readingGrammar": {
+  "body": "Source Serif 4 19px/1.75, LEFT-aligned ragged right, 34rem (38rem giants). Paragraph spacing 1.1em (1.15em p3c18 solemnity; 1.2em giants). mist on humus.",
+  "dividers": "#chapter-text CSS background fleck bands keyed per chapter (explicit rules): p3c18 NONE, p3c23 NONE, p3c27 NONE (content-driven absences); p3c21 three ecstasis rows; giants subsection breathers; others single. Data-URI SVG flecks, ≤25% opacity, gated like grain.",
+  "threshold": "First paragraph = threshold: Fraunces 21px/1.6 on --bt-under well, full measure. NO drop caps (firewall)."
+ },
+ "references": [
+  {
+   "cite": "Tate — Mark Rothko, Seagram murals display (https://www.tate.org.uk/visit/tate-modern/display/in-the-studio/mark-rothko-seagram-murals); Tate research on Red on Maroon (https://www.tate.org.uk/art/research-publications/the-sublime/philip-shaw-mark-rothkos-red-on-maroon-r1140521)",
+   "takeaway": "Stacked hovering bands with air between them → p3c24 four-subsection stack; tonal weight-steps without hue change → ecstasis line weights."
+  },
+  {
+   "cite": "Hiroshi Sugimoto, Seascapes — artist site (https://www.sugimotohiroshi.com/seascapes-1); Fraenkel Gallery (https://fraenkelgallery.com/portfolios/hiroshi-sugimoto-seascapes)",
+   "takeaway": "Bisected horizon, two-tone stillness, 'sharp horizon line' as consciousness → §65 ecstasis lines and §71 grey flatline; restraint across a long series → cohort stamina model."
+  },
+  {
+   "cite": "Tate Modern — Agnes Martin (https://www.tate.org.uk/whats-on/tate-modern/agnes-martin); Guggenheim teacher resource (https://www.guggenheim.org/wp-content/uploads/2016/09/guggenheim-education-agnes-martin-teacher-resource-9.27.16.pdf)",
+   "takeaway": "Fine horizontal line discipline, hand-drawn regularity with tremor → horizon-line weights/spacing; pencil-pale lines on ground → lichen line-work register."
+  },
+  {
+   "cite": "James Turrell, The Color Inside / Skyspaces — UT Landmarks (https://turrell.utexas.edu/); Skyspace catalogue (https://turrell.app/)",
+   "takeaway": "Aperture of light ABOVE the viewer, entered from below → slot-art-as-aperture: light terminates above the first paragraph, reading body stays calm beneath."
+  }
+ ],
+ "skills": {
+  "frontend-design": "received via injected content (no fallback needed)",
+  "frontend-workflow": "received via injected content (no fallback needed)",
+  "reference-study": "received via injected content (no fallback needed); notes: local://temporality-reference-study.md"
+ },
+ "svgPlan": {
+  "defs": [
+   "tp-shaftGrad: linearGradient shaft→transparent (falloff for beam cores)",
+   "tp-grain: feTurbulence filter, opacity ≤0.06, class 'tp-grain' (gated off <640px + reduced-motion)",
+   "tp-fleck: small 4px fleck path reused by divider data-URIs"
+  ],
+  "file": "art/temporality.svg",
+  "note": "One <symbol id='tp-NN' viewBox='0 0 1600 520'> per chapter treatment (+ shared defs), per READER-CONTRACT v1.1 explicit-symbol rule: manifest entries use {src:'art/temporality.svg', symbol:'tp-NN'} and reader.js inlines the referenced symbol into #chapter-art. Fragment-URL src form superseded. Strokes currentColor/CSS vars only — no fixed fills except var-bound shaft translucents.",
+  "regions": [
+   {
+    "id": "tp-61",
+    "paths": "two converging 12° beam polygons + 1px seam line (upper third, dissolving) + joinery ticks: three small offset tick-marks where the beams meet (unfinished joinery)",
+    "spec": "viewBox 0 0 1600 520; beams meet at bottom-center"
+   },
+   {
+    "id": "tp-62",
+    "paths": "one 0° shaft polygon full height (100% core) + two hairline afterimages (unchanged: purity IS the content)",
+    "spec": "brightest core in cohort; afterimages lichen 30%"
+   },
+   {
+    "id": "tp-63",
+    "paths": "vertical shaft + large thin ring (circle path) overlapped center-right + tangent ticks: two small tick-marks where the shaft threads the ring",
+    "spec": "ring drawn OVER shaft, unbroken; shaft exits +15% wider"
+   },
+   {
+    "id": "tp-64",
+    "paths": "centered plumb hairline + dashed hollow square, broken corners + refused drafting guides: faint dashed construction lines (diagonals + bounding box, lichen 25%) around the square = the refused categorial horizon",
+    "spec": "line passes through square untouched"
+   },
+   {
+    "id": "tp-65",
+    "paths": "3 full-width horizontal lines (5/3/2px) + vertical Moment-tick at x=62% + faint vertical afterimage at x=6% + vulgar-now strip: a row of ~24 small even vertical ticks (lichen 30%) BELOW the present line = the derivative 'mere succession of nows' (p17)",
+    "spec": "tallest scene (slot 1.4×); future line top, brightest"
+   },
+   {
+    "id": "tp-66",
+    "paths": "3 horizons (dimmed) + 4 task-ticks + faint tally register (unchanged: workmanlike as specified)",
+    "spec": "standard slot"
+   },
+   {
+    "id": "tp-67",
+    "paths": "1 fine horizontal line + 7 dots + thin arc below (unchanged: restraint is the content)",
+    "spec": "motif treatment (0.6× height); quietest scene"
+   },
+   {
+    "id": "tp-68",
+    "paths": "4 horizontal bands, left ends stepping rightward 4% each (descent staircase) + subsection markers: tiny Fraunces-italic SVG <text> a/b/c/d (11px, lichen) at each band's left step",
+    "spec": "weights 2/3/2/4px; (c) band dimmest"
+   },
+   {
+    "id": "tp-69",
+    "paths": "3 horizons bleeding 6% past right edge (square-cut) + hammer pictogram dissolving into dots → grid point at left + whereto ticks: three faint short vertical ticks at the viewBox right edge where horizons exit",
+    "spec": "hammer = flat authored pictogram (tool-shadow register)"
+   },
+   {
+    "id": "tp-70",
+    "paths": "1 horizon + broken ring (gap lower-right) + 2 converging rails + leeway hatch: a low hatched band (bark, 30%) beneath the ring on the horizon = the Spielraum leeway (p5)",
+    "spec": "only perspectival scene in cohort"
+   },
+   {
+    "id": "tp-71",
+    "paths": "1 flat lichen line + 8×14px shaft notch centered (unchanged: monotony is the content)",
+    "spec": "emptiest scene; maximum air"
+   }
+  ],
+  "viewBox": "0 0 1600 520",
+  "symbolRule": "v1.1: 11 <symbol> regions (tp-61..tp-71); supervisor merges entries.*.manifest {src,symbol,class,motif} into design/chapters.json; motif sets body[data-art]."
+ },
+ "tocAuthority": "books/being-and-time/data/toc.json — all 11 IDs/titles/word counts verified; all 11 chapters read in full from data/chapters/*.json",
+ "type": {
+  "body": "Source Serif 4 (supervisor wires; fallback Georgia) 19px/1.75, left ragged, hyphenation on. Scale 12/15/19/24/32/48/72/112.",
+  "display": "Fraunces variable (supervisor wires; fallback Georgia) — chapter titles 40–64px clamp, opsz 100, wght 400, leading 1.05, −0.01em, flush-left; threshold first-paras 21px/1.6; ghost numerals 300.",
+  "railGloss": "One attested German landmark term per chapter (Fraunces italic 1.02em) + English micro-caption; prose never edited."
+ },
+ "bindingConditions": {
+  "B1": "Shafts are SVG art (authored skewed polygons + grain inlined into #chapter-art), never CSS stripes — no linear-gradient bar in #chapter-meta.",
+  "B2": "Ghost numerals authored + verified: Fraunces 300, 18–24vw, 7–10%, right-bleed crop per-entry table; no badge-like centering.",
+  "B3": "Light NEVER behind body text: slot art terminates above first para; flecks only opener zones + explicit breather rules; mist-on-humus ≥7:1 composited (validator computes).",
+  "B4": "Threshold must read designed: Fraunces 21px well with confident inset + size step; fallback (if prototype review fails): quiet Source Serif + shaft tick in margin.",
+  "B5": "Ember discipline: NO ember anywhere in temporality cohort (ember = §40 + p3c3–p3c9 only).",
+  "B6": "Finale silence: n/a to this cohort (p3c39 owned by historicity-finale); p3c27 diminuendo hands off toward it.",
+  "B7": "Long-chapter relief mandatory: p3c24+p3c25 get 38rem + breathers + rail mini-map (see giantsRelief).",
+  "B8": "Fraunces registry: hold light 300–400 + opsz + WONK 1 + flush-left ledger + straw light; never drift to black/poster/masthead voices."
+ },
+ "benchmarkResponse": {
+  "deliberatelyQuiet": [
+   "p3c18 severity (zero dividers, pure shaft) — decorating it would betray the chapter's 'relentless severity' (p5)",
+   "p3c23 compression (shortest chapter, smallest motif, no dividers)",
+   "p3c27 flatline (monotony is the content; unbroken column + continuing nav flatline)",
+   "Reading body throughout: calm mist-on-humus; ambition in openers/margins/endings, never text effects"
+  ],
+  "source": ".omp/design/USER-FEEDBACK.md — homepage creative-quality benchmark (Main broadcast)",
+  "strengthened": [
+   "Rail inscriptions: one attested short quote per chapter (para-cited) in the margin rail (hidden <1100px)",
+   "Nav codas: per-chapter authored ending motif in the #chapter-nav zone (scoped ::before micro-scenes)",
+   "Enriched slot scenes: vulgar-now tick strip (tp-65), subsection markers (tp-68), leeway hatch (tp-70), refused drafting guides (tp-64), joinery/tangent/whereto ticks",
+   "TOC ticks: per-entry tocTick = gapRamp values for the supervisor's arc-in-miniature TOC"
+  ]
+ }
+}

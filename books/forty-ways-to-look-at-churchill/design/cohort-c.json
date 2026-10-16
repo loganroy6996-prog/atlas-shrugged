@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "chapters": {
+    "p4c2": {
+      "src": "art/cohort-c.svg",
+      "symbol": "p4c2",
+      "class": "plate",
+      "motif": "ledger-grid",
+      "caption": "their precision is comforting",
+      "part": "IV",
+      "order": 2,
+      "way": "22",
+      "title": "Churchill in Context: Facts at a Glance",
+      "content_kind": "fact-ledger",
+      "palette_role": "bone",
+      "rationale": "109 fact-paras: calmest plate, tabular bone grid with 9 ochre section ticks and one vermilion HOPE NOT flag; sticky ledger index over 9 heads.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "IV"
+      },
+      "reading": {
+        "drop_cap": false,
+        "ledger": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "ledger-head",
+          "label": "Sovereigns"
+        },
+        {
+          "index": 2,
+          "role": "ledger-row"
+        },
+        {
+          "index": 3,
+          "role": "ledger-row"
+        },
+        {
+          "index": 4,
+          "role": "ledger-row"
+        },
+        {
+          "index": 5,
+          "role": "ledger-row"
+        },
+        {
+          "index": 6,
+          "role": "ledger-row"
+        },
+        {
+          "index": 7,
+          "role": "ledger-row"
+        },
+        {
+          "index": 8,
+          "role": "ledger-head",
+          "label": "Prime Ministers"
+        },
+        {
+          "index": 9,
+          "role": "ledger-row"
+        },
+        {
+          "index": 10,
+          "role": "ledger-row"
+        },
+        {
+          "index": 11,
+          "role": "ledger-row"
+        },
+        {
+          "index": 12,
+          "role": "ledger-row"
+        },
+        {
+          "index": 13,
+          "role": "ledger-row"
+        },
+        {
+          "index": 14,
+          "role": "ledger-row"
+        },
+        {
+          "index": 15,
+          "role": "ledger-row"
+        },
+        {
+          "index": 16,
+          "role": "ledger-row"
+        },
+        {
+          "index": 17,
+          "role": "ledger-row"
+        },
+        {
+          "index": 18,
+          "role": "ledger-row"
+        },
+        {
+          "index": 19,
+          "role": "ledger-row"
+        },
+        {
+          "index": 20,
+          "role": "ledger-row"
+        },
+        {
+          "index": 21,
+          "role": "ledger-row"
+        },
+        {
+          "index": 22,
+          "role": "ledger-row"
+        },
+        {
+          "index": 23,
+          "role": "ledger-row"
+        },
+        {
+          "index": 24,
+          "role": "ledger-row"
+        },
+        {
+          "index": 25,
+          "role": "ledger-row"
+        },
+        {
+          "index": 26,
+          "role": "ledger-row"
+        },
+        {
+          "index": 27,
+          "role": "ledger-row"
+        },
+        {
+          "index": 28,
+          "role": "ledger-head",
+          "label": "Party Alliances"
+        },
+        {
+          "index": 29,
+          "role": "list-item"
+        },
+        {
+          "index": 30,
+          "role": "list-item"
+        },
+        {
+          "index": 31,
+          "role": "list-item"
+        },
+        {
+          "index": 32,
+          "role": "ledger-head",
+          "label": "Peerage"
+        },
+        {
+          "index": 35,
+          "role": "ledger-head",
+          "label": "Executive Positions"
+        },
+        {
+          "index": 36,
+          "role": "ledger-row"
+        },
+        {
+          "index": 37,
+          "role": "ledger-row"
+        },
+        {
+          "index": 38,
+          "role": "ledger-row"
+        },
+        {
+          "index": 39,
+          "role": "ledger-row"
+        },
+        {
+          "index": 40,
+          "role": "ledger-row"
+        },
+        {
+          "index": 41,
+          "role": "ledger-row"
+        },
+        {
+          "index": 42,
+          "role": "ledger-row"
+        },
+        {
+          "index": 43,
+          "role": "ledger-row"
+        },
+        {
+          "index": 44,
+          "role": "ledger-row"
+        },
+        {
+          "index": 45,
+          "role": "ledger-row"
+        },
+        {
+          "index": 46,
+          "role": "ledger-row"
+        },
+        {
+          "index": 47,
+          "role": "ledger-row"
+        },
+        {
+          "index": 48,
+          "role": "ledger-head",
+          "label": "Statistics"
+        },
+        {
+          "index": 49,
+          "role": "list-item"
+        },
+        {
+          "index": 50,
+          "role": "list-item"
+        },
+        {
+          "index": 51,
+          "role": "list-item"
+        },
+        {
+          "index": 52,
+          "role": "list-item"
+        },
+        {
+          "index": 53,
+          "role": "list-item"
+        },
+        {
+          "index": 54,
+          "role": "list-item"
+        },
+        {
+          "index": 55,
+          "role": "list-item"
+        },
+        {
+          "index": 56,
+          "role": "list-item"
+        },
+        {
+          "index": 57,
+          "role": "list-item"
+        },
+        {
+          "index": 58,
+          "role": "list-item"
+        },
+        {
+          "index": 59,
+          "role": "list-item"
+        },
+        {
+          "index": 60,
+          "role": "list-item"
+        },
+        {
+          "index": 61,
+          "role": "list-item"
+        },
+        {
+          "index": 62,
+          "role": "list-item"
+        },
+        {
+          "index": 63,
+          "role": "list-item"
+        },
+        {
+          "index": 64,
+          "role": "list-item"
+        },
+        {
+          "index": 65,
+          "role": "list-item"
+        },
+        {
+          "index": 66,
+          "role": "list-item"
+        },
+        {
+          "index": 67,
+          "role": "ledger-head",
+          "label": "Regiments"
+        },
+        {
+          "index": 68,
+          "role": "ledger-row"
+        },
+        {
+          "index": 69,
+          "role": "ledger-row"
+        },
+        {
+          "index": 70,
+          "role": "ledger-row"
+        },
+        {
+          "index": 71,
+          "role": "ledger-row"
+        },
+        {
+          "index": 72,
+          "role": "ledger-row"
+        },
+        {
+          "index": 73,
+          "role": "ledger-row"
+        },
+        {
+          "index": 74,
+          "role": "ledger-row"
+        },
+        {
+          "index": 75,
+          "role": "ledger-row"
+        },
+        {
+          "index": 76,
+          "role": "ledger-row"
+        },
+        {
+          "index": 77,
+          "role": "ledger-head",
+          "label": "Favorites"
+        },
+        {
+          "index": 78,
+          "role": "list-item"
+        },
+        {
+          "index": 79,
+          "role": "list-item"
+        },
+        {
+          "index": 80,
+          "role": "list-item"
+        },
+        {
+          "index": 81,
+          "role": "list-item"
+        },
+        {
+          "index": 82,
+          "role": "list-item"
+        },
+        {
+          "index": 83,
+          "role": "list-item"
+        },
+        {
+          "index": 84,
+          "role": "list-item"
+        },
+        {
+          "index": 85,
+          "role": "list-item"
+        },
+        {
+          "index": 86,
+          "role": "list-item"
+        },
+        {
+          "index": 87,
+          "role": "list-item"
+        },
+        {
+          "index": 88,
+          "role": "list-item"
+        },
+        {
+          "index": 89,
+          "role": "list-item"
+        },
+        {
+          "index": 90,
+          "role": "list-item"
+        },
+        {
+          "index": 91,
+          "role": "list-item"
+        },
+        {
+          "index": 92,
+          "role": "list-item"
+        },
+        {
+          "index": 93,
+          "role": "list-item"
+        },
+        {
+          "index": 94,
+          "role": "list-item"
+        },
+        {
+          "index": 95,
+          "role": "verse"
+        },
+        {
+          "index": 96,
+          "role": "verse"
+        },
+        {
+          "index": 97,
+          "role": "verse"
+        },
+        {
+          "index": 98,
+          "role": "verse"
+        },
+        {
+          "index": 99,
+          "role": "verse"
+        },
+        {
+          "index": 100,
+          "role": "verse"
+        },
+        {
+          "index": 101,
+          "role": "verse"
+        },
+        {
+          "index": 102,
+          "role": "verse"
+        },
+        {
+          "index": 103,
+          "role": "ledger-head",
+          "label": "Government"
+        }
+      ]
+    }
+  }
+}

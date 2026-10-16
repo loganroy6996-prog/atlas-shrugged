@@ -1,0 +1,89 @@
+{
+ "started": "2026-10-16T20:52:33.337Z",
+ "homepage": {
+  "d1440": {
+   "status": 200,
+   "title": "Literary Library",
+   "docHeight": 5663,
+   "bookCards": 0,
+   "console": [
+    "Failed to load resource: the server responded with a status of 404 (File not found)"
+   ],
+   "pageerrors": [],
+   "reqfailed": [],
+   "http4xx": []
+  },
+  "d390": {
+   "overflow": {
+    "sw": 390,
+    "cw": 390
+   },
+   "console": [],
+   "pageerrors": [],
+   "reqfailed": [],
+   "http4xx": []
+  }
+ },
+ "links": [
+  {
+   "href": "./",
+   "status": 200
+  },
+  {
+   "href": "books/atlas-shrugged/",
+   "status": 200
+  },
+  {
+   "href": "books/the-fountainhead/",
+   "status": 200
+  },
+  {
+   "href": "books/infinite-jest/",
+   "status": 200
+  },
+  {
+   "href": "books/beyond-good-and-evil/",
+   "status": 200
+  },
+  {
+   "href": "books/thus-spoke-zarathustra/",
+   "status": 200
+  },
+  {
+   "href": "books/gay-science/",
+   "status": 200
+  },
+  {
+   "href": "books/twilight-of-the-idols/",
+   "status": 200
+  },
+  {
+   "href": "books/will-to-power/",
+   "status": 200
+  },
+  {
+   "href": "books/being-and-time/",
+   "status": 200
+  },
+  {
+   "href": "books/forty-ways-to-look-at-churchill/",
+   "status": 200
+  },
+  {
+   "href": "books/open-letter/",
+   "status": 200
+  },
+  {
+   "href": "books/gentle-introduction/",
+   "status": 200
+  },
+  {
+   "href": "books/sovereign-individual/",
+   "status": 200
+  }
+ ],
+ "linkSummary": {
+  "total": 14,
+  "bad": []
+ }
+}

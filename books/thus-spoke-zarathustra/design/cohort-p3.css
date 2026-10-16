@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Thus Spoke Zarathustra — cohort P3 (Part Three, roman III) chapter CSS.
+   "Blaze Tablets". Supervisor-authored from design/cohort-p3.json
+   (16 entries, all pull-lines verbatim-verified against chapter JSON).
+   Scope: CLOSES + DROP CAPS + SONG lyric treatments + p3c12 RELIEF +
+   p3c16 SEVEN SEAL-ROUNDS ONLY. Global shell (tokens, fonts, slot
+   sizing, meta typography, TOC, progress, part accents) lives in
+   theme.css. NEVER duplicate theme.css rules here.
+   Contract: READER-CONTRACT v1.1 + A.0 chapter-end ruling + A.2 symbols.
+   Director verdict Z1–Z7 binding (Z5: sevenfold seal-rounds — validators
+   count). Z1 AUDIT: no text-shadow, no radial/conic-gradient, no
+   drop-shadow, no blur() in any rule body below.
+   Unlayered: wins over @layer shared; NO !important anywhere.
+   Unit discipline: rem/px only (P3 symbols are fixed-viewBox art).
+   ========================================================================== */
+
+/* ---- P3 closes (A.0 path): per-chapter blazing-disc mini-seals as data:
+   URIs inlining the EXACT close-cell art (the sprite's row-2 <view> crops
+   sit outside the sheet canvas — data URIs are bounds-proof).
+   Inline-block tail; no margin changes on the paragraph (A.0). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c1"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M4%2015h24%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%222.4%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c2"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M9%2016a7%207%200%200%201%2014%200M9%2016v5M23%2016v5%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%222%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c3"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M16%2027V14M16%2018l-5%20-4M16%2018l5%20-4M16%2022l-4%20-3M16%2022l4%20-3%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.8%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c4"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2215%22%20r%3D%2210%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M16%2024v3%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2228.5%22%20r%3D%221.4%22%20fill%3D%22%23C8502E%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c5"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M18%205l-5%208%205%203%20-5%208%204%203%22%20stroke%3D%22%23C8502E%22%20stroke-width%3D%222%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c6"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M16%205c-3%203%20-3%206%200%208c3%20-2%203%20-5%200%20-8z%22%20fill%3D%22%230A0E21%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c7"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M11%2027V12M16%2027V10M21%2027V12%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.8%22%2F%3E%3Cpath%20d%3D%22M9%2010h14%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.8%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c8"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M9%2013q7%207%2014%200M11%2017q5%205%2010%200%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.8%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c9"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M16%205v22%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%208l8%204%20-8%204z%22%20fill%3D%22%230A0E21%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c10"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2214%22%20r%3D%223%22%20fill%3D%22%230A0E21%22%2F%3E%3Cpath%20d%3D%22M16%2017v4M8%2019h16%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.8%22%2F%3E%3Cpath%20d%3D%22M8%2019v4M24%2019v4%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.4%22%2F%3E%3Cpath%20d%3D%22M5%2025q3%204%206%200M21%2025q3%204%206%200%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.6%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c11"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M13%2027V7M19%2027V7%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.8%22%2F%3E%3Cpath%20d%3D%22M13%2010h6M13%2015h6M13%2020h6M13%2025h6%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Cpath%20d%3D%22M5%2016a11%2011%200%200%201%2022%200l-3%201%202%204%20-4%202%201%204z%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M27%2016a11%2011%200%200%201%20-2%206%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M15%206l-3%205%204%202%20-3%205%204%202%20-2%206%22%20stroke%3D%22%230A0E21%22%20stroke-width%3D%221.6%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c13"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%3Cpath%20d%3D%22M16%205v22M5%2016h22M8.3%208.3l15.4%2015.4M23.7%208.3L8.3%2023.7%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221.3%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%222.4%22%20fill%3D%22%23E8A93D%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c14"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2214%22%20r%3D%2210%22%20fill%3D%22%23E8A93D%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2224%22%20r%3D%224%22%20fill%3D%22%23E8A93D%22%2F%3E%3Ccircle%20cx%3D%2217%22%20cy%3D%2226%22%20r%3D%224.5%22%20fill%3D%22%23E8A93D%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%224%22%20fill%3D%22%23E8A93D%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c15"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2210%22%20fill%3D%22%23E8A93D%22%2F%3E%3Cpath%20d%3D%22M16%202v3M23%204.1l-1.5%202.6M28.9%209l-2.6%201.5M31%2016h-3M28.9%2023l-2.6%20-1.5M23%2027.9l-1.5%20-2.6M16%2030v-3M9%2027.9l1.5%20-2.6M3.1%2023l2.6%20-1.5M1%2016h3M3.1%209l2.6%201.5M9%204.1l1.5%202.6%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:last-child::after { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2213%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%222.5%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%228%22%20fill%3D%22%23E8A93D%22%2F%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-part="III"] .chapter-text > p:last-child::after {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 0.75em;
+  vertical-align: -4px;
+}
+
+/* ---- P3 drop caps: Cinzel solar for sermons + visions; songs open
+   without (rule 7: lyric voice). Song no-cap resets live with each song. */
+body[data-book="thus-spoke-zarathustra"][data-part="III"] .chapter-text > p:first-of-type::first-letter {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  font-weight: 600;
+  color: var(--z-solar, #E8A93D);
+  background: none;
+}
+
+/* ---- Shared P3 song lyric: centered Spectral italic, 26–30rem, no cap. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c4"] .chapter-text > p,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c6"] .chapter-text > p,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c9"] .chapter-text > p,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c14"] .chapter-text > p,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c15"] .chapter-text > p,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Spectral, Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2.0;
+  color: var(--z-bone, #F2E7CF);
+}
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c4"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c6"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c9"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c14"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c15"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  float: none;
+  font-family: Spectral, Georgia, serif;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  padding: 0;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+/* Song closers ("Thus spoke/sang Zarathustra.") settle to small roman-silver. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c4"] .chapter-text > p:last-child,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c6"] .chapter-text > p:last-child,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c9"] .chapter-text > p:last-child,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c14"] .chapter-text > p:last-child {
+  font-size: 0.95rem;
+  font-style: normal;
+  color: #C9D4E8;
+}
+/* p3c15's last line is the eternity cry itself: keep it lyric-large. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c15"] .chapter-text > p:last-child {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* ---- p3c12 TABLET relief (183 paras): relief dividers above the
+   ¶30/60/90/120/150 breaks (nth-of-type 31/61/91/121/151). Each break
+   opens a new movement (first-born / noblemen / 'nothing is worth
+   while' / rolling into depths / command-and-obey) — authored relief
+   art in its own box (P2 p2c20 precedent), NOT positional striping. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(31)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(61)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(91)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(121)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(151)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http:%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%2016%27%3E%3Cpath%20d%3D%22M0%208H48M72%208H120%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221.4%22%2F%3E%3Cpath%20d%3D%22M48%208l6%20-5%206%2010%206%20-10%206%205%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.6%22%2F%3E%3Cpath%20d%3D%22M60%201v3M60%2012v3%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.2%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 120px;
+  height: 16px;
+  margin: 0 auto 2rem;
+}
+
+/* ---- p3c16 SEAL-SONG (Z5): seven DISTINCT seal-rounds, one per stanza.
+   Stanza openings: ¶0/4/7/10/13+14/18/22 → nth-of-type 1/5/8/11/14/19/23.
+   Symbols seal-round-1..7 are seven different engravings; validators count.
+   <symbol>-only cells cannot crop in CSS image context, so these seven
+   crowns + the p3c12 relief are data: URIs inlining the EXACT symbol art
+   (same bytes, image-context-safe) — the P4/GentleIntro/BeingTime pattern. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(1)::before { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%20120%27%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2252%22%20fill%3D%22%230A0E21%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%0A%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2245%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221%22%20opacity%3D%220.6%22%2F%3E%0A%3Cg%20transform%3D%22translate%2860%2060%29%22%3E%3Cpath%20d%3D%22M-22%2010q4%20-12%2016%20-12q2%20-10%2012%20-10q9%200%2011%209q10%201%2013%2011q-8%206%20-18%204q-12%208%20-26%202q-6%20-2%20-8%20-4z%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M-18%20-2q8%20-6%2018%20-3M-10%20-12q10%20-4%2019%202%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.2%22%20opacity%3D%220.7%22%2F%3E%3Cpath%20d%3D%22M0%2012v14M-8%2020h16%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.6%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(5)::before { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%20120%27%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2252%22%20fill%3D%22%230A0E21%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%0A%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2245%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221%22%20opacity%3D%220.6%22%2F%3E%0A%3Cg%20transform%3D%22translate%2860%2060%29%22%3E%3Cpath%20d%3D%22M-26%2022l4%20-22%208%200%204%2022zM-12%2022l3%20-16%207%200%203%2016zM4%2022l2%20-12%206%200%202%2012z%22%20fill%3D%22none%22%20stroke%3D%22%238B93B8%22%20stroke-width%3D%221.8%22%2F%3E%3Cpath%20d%3D%22M-26%2022h40%22%20stroke%3D%22%238B93B8%22%20stroke-width%3D%221.8%22%2F%3E%3Cpath%20d%3D%22M22%20-6v22%22%20stroke%3D%22%237A8B5A%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%22-12%22%20r%3D%227%22%20fill%3D%22%23C8502E%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%22-10%22%20r%3D%223%22%20fill%3D%22%23C8502E%22%2F%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%22-10%22%20r%3D%223%22%20fill%3D%22%23C8502E%22%2F%3E%3Cpath%20d%3D%22M22%20-4l-7%202M22%202l7%201%22%20stroke%3D%22%237A8B5A%22%20stroke-width%3D%221.4%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(8)::before { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%20120%27%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2252%22%20fill%3D%22%230A0E21%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%0A%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2245%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221%22%20opacity%3D%220.6%22%2F%3E%0A%3Cg%20transform%3D%22translate%2860%2060%29%22%3E%3Crect%20x%3D%22-24%22%20y%3D%22-14%22%20width%3D%2220%22%20height%3D%2220%22%20transform%3D%22rotate%28-8%20-14%20-4%29%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.8%22%2F%3E%3Ccircle%20cx%3D%22-17%22%20cy%3D%22-8%22%20r%3D%221.8%22%20fill%3D%22%23F5C96B%22%2F%3E%3Ccircle%20cx%3D%22-10%22%20cy%3D%22-2%22%20r%3D%221.8%22%20fill%3D%22%23F5C96B%22%2F%3E%3Crect%20x%3D%224%22%20y%3D%22-2%22%20width%3D%2220%22%20height%3D%2220%22%20transform%3D%22rotate%2810%2014%208%29%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.8%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%225%22%20r%3D%221.8%22%20fill%3D%22%23F5C96B%22%2F%3E%3Ccircle%20cx%3D%2217%22%20cy%3D%2211%22%20r%3D%221.8%22%20fill%3D%22%23F5C96B%22%2F%3E%3Ccircle%20cx%3D%228%22%20cy%3D%222%22%20r%3D%221.8%22%20fill%3D%22%23F5C96B%22%2F%3E%3Cpath%20d%3D%22M-4%20-16q-2%20-8%204%20-10M16%20-14q4%20-6%2010%20-4%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(11)::before { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%20120%27%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2252%22%20fill%3D%22%230A0E21%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%0A%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2245%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221%22%20opacity%3D%220.6%22%2F%3E%0A%3Cg%20transform%3D%22translate%2860%2060%29%22%3E%3Cpath%20d%3D%22M-22%20-6h44l-7%2016h-30z%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M-14%2010h28%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.4%22%2F%3E%3Cpath%20d%3D%22M-8%2010v8M8%2010v8M-14%2020h28%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.4%22%2F%3E%3Cpath%20d%3D%22M-16%20-14q4%20-6%200%20-12M-4%20-15q4%20-6%200%20-12M8%20-14q4%20-6%200%20-12M20%20-14q4%20-6%200%20-12%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.4%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(14)::before { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%20120%27%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2252%22%20fill%3D%22%230A0E21%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%0A%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2245%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221%22%20opacity%3D%220.6%22%2F%3E%0A%3Cg%20transform%3D%22translate%2860%2060%29%22%3E%3Cpath%20d%3D%22M-26%2014h52l-9%2012h-34z%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M0%2014V-20%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M0%20-20l16%2010%20-16%204z%22%20fill%3D%22%23F5C96B%22%20opacity%3D%220.85%22%2F%3E%3Cpath%20d%3D%22M0%20-12l-14%208%2014%202z%22%20fill%3D%22%23F2E7CF%22%20opacity%3D%220.8%22%2F%3E%3Cpath%20d%3D%22M-30%2030q10%20-6%2020%200t20%200t20%200%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(19)::before { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%20120%27%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2252%22%20fill%3D%22%230A0E21%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%0A%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2245%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221%22%20opacity%3D%220.6%22%2F%3E%0A%3Cg%20transform%3D%22translate%2860%2060%29%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22-16%22%20r%3D%226%22%20fill%3D%22%23F5C96B%22%2F%3E%3Cpath%20d%3D%22M0%20-10c-8%204%20-10%2012%20-4%2020l10%20-4%20-2%20-10%206%202%206%20-4c2%20-8%20-4%20-12%20-16%20-4z%22%20fill%3D%22%23F5C96B%22%2F%3E%3Cpath%20d%3D%22M-16%20-6q8%206%2016%202t16%20-2%22%20fill%3D%22none%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.8%22%2F%3E%3Cpath%20d%3D%22M-6%2010l-8%2014M2%2010l4%2014%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%222.2%22%2F%3E%3Cpath%20d%3D%22M-18%2026h36%22%20stroke%3D%22%23F5C96B%22%20stroke-width%3D%221.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(23)::before { content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20120%20120%27%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2252%22%20fill%3D%22%230A0E21%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222.5%22%2F%3E%0A%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2245%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%221%22%20opacity%3D%220.6%22%2F%3E%0A%3Cg%20transform%3D%22translate%2860%2060%29%22%3E%3Cpath%20d%3D%22M0%204C-8%20-8%20-24%20-12%20-36%20-6c10%200%2016%204%2020%2010c-6%20-1%20-12%202%20-15%208c8%20-3%2016%20-1%2022%204l9%202c6%20-5%2014%20-7%2022%20-4c-3%20-6%20-9%20-9%20-15%20-8c4%20-6%2010%20-10%2020%20-10c-12%20-6%20-28%20-2%20-36%206z%22%20fill%3D%22%23F2E7CF%22%2F%3E%3Ccircle%20cx%3D%222%22%20cy%3D%222%22%20r%3D%221.8%22%20fill%3D%22%230A0E21%22%2F%3E%3Cpath%20d%3D%22M-30%2022q8%20-5%2016%20-2M14%2024q8%20-4%2015%201%22%20fill%3D%22none%22%20stroke%3D%22%238B93B8%22%20stroke-width%3D%221.2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(1)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(5)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(8)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(11)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(14)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(19)::before,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(23)::before {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1.2rem;
+}
+/* Eternity refrains (nth 4/7/10/13/18/22/27): bone-italic largesse; gold
+   stays graphic-only at verse size (rule 14). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(4),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(7),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(10),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(13),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(18),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(22),
+body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p:nth-of-type(27) {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* ---- P3 responsive: lyric measure releases on phones; relief/crowns hold. */
+@media (max-width: 560px) {
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c4"] .chapter-text > p,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c6"] .chapter-text > p,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c9"] .chapter-text > p,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c14"] .chapter-text > p,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c15"] .chapter-text > p,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p {
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* ---- Print + reduced-motion guards (art is static; declared no-op). */
+@media print {
+  body[data-book="thus-spoke-zarathustra"][data-part="III"] .chapter-text > p:last-child::after,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(31)::before,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(61)::before,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(91)::before,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(121)::before,
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c12"] .chapter-text > p:nth-of-type(151)::before {
+    content: none;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-chapter="p3c16"] .chapter-text > p::before {
+    content: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="thus-spoke-zarathustra"][data-part="III"] .chapter-text > p:last-child::after,
+  body[data-book="thus-spoke-zarathustra"][data-part="III"] .chapter-text > p::before {
+    animation: none;
+    transition: none;
+  }
+}

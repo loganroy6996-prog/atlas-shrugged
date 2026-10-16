@@ -1,0 +1,3744 @@
+{
+  "meta": {
+    "site": "http://localhost:8000 (serves _site)",
+    "viewport": "390x844",
+    "reducedMotionEmulated": true,
+    "date": "2026-10-16T14:18:12.329Z",
+    "tool": "playwright chromium headless --no-sandbox",
+    "browser": "chromium (/etc/profiles/per-user/prateek/bin/chromium)",
+    "scope": "ALL 13 books; reader prefs on real built site; verification only, no implementation edits"
+  },
+  "books": {
+    "atlas-shrugged": {
+      "slug": "atlas-shrugged",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 764.36,
+              "readerMeasureRaw": "min(min(52rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "764.346px",
+              "expected": 764.36,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 764.36,
+              "readerMeasureRaw": "min(52rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "832px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 764.36,
+              "readerMeasureRaw": "max(52rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c3",
+        "paraIdx": 13,
+        "fallback": false,
+        "parasCount": 249,
+        "title": "THE TOP AND THE BOTTOM",
+        "len": 413,
+        "excerpt": "Orren Boyle had appeared from nowhere, five years ago, and had since made the co",
+        "override": "anchor cross-check",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 13,
+        "len": 413,
+        "fallback": false,
+        "head": "Orren Boyle had appeared from nowhere, five years ago, and had since m",
+        "classlessCount": 249,
+        "psTotal": 249
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-atlas-shrugged"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c3\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-atlas-shrugged"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c3\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [
+        "screenshots/atlas-shrugged-wide-state-390.png"
+      ],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 13828
+    },
+    "being-and-time": {
+      "slug": "being-and-time",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "544px",
+              "expected": 544,
+              "pass": true,
+              "authPx": 544,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(min(34rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "34rem",
+              "nav": {
+                "navIdx": "544px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "544px",
+              "expected": 544,
+              "pass": true,
+              "authPx": 544,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(34rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "34rem",
+              "nav": {
+                "navIdx": "544px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 544,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "max(34rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "34rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": true,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p2c19",
+        "paraIdx": 11,
+        "fallback": false,
+        "parasCount": 22,
+        "title": "Everyday Being a Self and the They",
+        "len": 596,
+        "excerpt": "In these characteristics of being which we have laid out-everyday beingamong-one",
+        "override": "anchor cross-check",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 11,
+        "len": 596,
+        "fallback": false,
+        "head": "In these characteristics of being which we have laid out-everyday bein",
+        "classlessCount": 22,
+        "psTotal": 22
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-being-and-time"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c19\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-being-and-time"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c19\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [
+        "screenshots/being-and-time-wide-state-390.png"
+      ],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 13908
+    },
+    "beyond-good-and-evil": {
+      "slug": "beyond-good-and-evil",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(min(52rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "674.544px",
+              "expected": 674.55,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(52rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "832px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "max(52rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c2",
+        "paraIdx": 10,
+        "fallback": false,
+        "parasCount": 75,
+        "title": "Prejudices of Philosophers",
+        "len": 1396,
+        "excerpt": "problem of truthfulness is even hinted at in the remotest manner. They all pose ",
+        "scanTried": [
+          {
+            "id": "p1c1",
+            "reason": "no qualifying paragraph"
+          }
+        ]
+      },
+      "probe": {
+        "idx": 10,
+        "len": 1396,
+        "fallback": false,
+        "head": "problem of truthfulness is even hinted at in the remotest manner. They",
+        "classlessCount": 52,
+        "psTotal": 75
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-beyond-good-and-evil"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c2\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-beyond-good-and-evil"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c2\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14021
+    },
+    "forty-ways-to-look-at-churchill": {
+      "slug": "forty-ways-to-look-at-churchill",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 342,
+              "computedMaxWidth": "592px",
+              "expected": 592,
+              "pass": true,
+              "authPx": 592,
+              "ch65Px": 746.88,
+              "readerMeasureRaw": "min(min(37rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "37rem",
+              "nav": {
+                "navIdx": "592px",
+                "navRect": 342
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 342,
+              "computedMaxWidth": "592px",
+              "expected": 592,
+              "pass": true,
+              "authPx": 592,
+              "ch65Px": 746.88,
+              "readerMeasureRaw": "min(37rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "37rem",
+              "nav": {
+                "navIdx": "592px",
+                "navRect": 342
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 342,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 592,
+              "ch65Px": 746.88,
+              "readerMeasureRaw": "max(37rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "37rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 342
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              342,
+              342,
+              342
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": true,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "Newsreader, Georgia, serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c1",
+        "paraIdx": 10,
+        "fallback": false,
+        "parasCount": 33,
+        "title": "Introduction",
+        "len": 1013,
+        "excerpt": "Sometimes I’d detect a biographer’s reading too much into facts—supplying motive",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 10,
+        "len": 1013,
+        "fallback": false,
+        "head": "Sometimes I’d detect a biographer’s reading too much into facts—supply",
+        "classlessCount": 32,
+        "psTotal": 33
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-forty-ways-to-look-at-churchill"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-forty-ways-to-look-at-churchill"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14197
+    },
+    "gay-science": {
+      "slug": "gay-science",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "592.085px",
+              "expected": 592.09,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 592.09,
+              "readerMeasureRaw": "min(min(52rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "592.085px",
+              "expected": 592.09,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 592.09,
+              "readerMeasureRaw": "min(52rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "832px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 592.09,
+              "readerMeasureRaw": "max(52rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p2c63",
+        "paraIdx": 5,
+        "fallback": true,
+        "parasCount": 6,
+        "title": "63. Stellar Morals",
+        "len": 758,
+        "excerpt": "* ‘Scherz, List, und Rache’ is the title of a libretto written by Goethe and set",
+        "scanTried": [
+          {
+            "id": "p1c1",
+            "reason": "no qualifying paragraph"
+          },
+          {
+            "id": "p2c1",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c2",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c3",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c4",
+            "reason": "no qualifying paragraph"
+          },
+          {
+            "id": "p2c5",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c6",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c7",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c8",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c9",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c10",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c11",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c12",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c13",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c14",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c15",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c16",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c17",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c18",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c19",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c20",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c21",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c22",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c23",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c24",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c25",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c26",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c27",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c28",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c29",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c30",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c31",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c32",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c33",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c34",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c35",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c36",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c37",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c38",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c39",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c40",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c41",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c42",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c43",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c44",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c45",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c46",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c47",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c48",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c49",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c50",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c51",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c52",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c53",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c54",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c55",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c56",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c57",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c58",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c59",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c60",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c61",
+            "reason": "skip: < 6 paragraphs"
+          },
+          {
+            "id": "p2c62",
+            "reason": "skip: < 6 paragraphs"
+          }
+        ]
+      },
+      "probe": {
+        "idx": 5,
+        "len": 758,
+        "fallback": true,
+        "head": "* ‘Scherz, List, und Rache’ is the title of a libretto written by Goet",
+        "classlessCount": 5,
+        "psTotal": 6
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-gay-science"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c63\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-gay-science"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c63\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14846
+    },
+    "gentle-introduction": {
+      "slug": "gentle-introduction",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 672,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(min(42rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "42rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "672px",
+              "expected": 672,
+              "pass": true,
+              "authPx": 672,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(42rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "42rem",
+              "nav": {
+                "navIdx": "672px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 672,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "max(42rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "42rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c1",
+        "paraIdx": 11,
+        "fallback": false,
+        "parasCount": 158,
+        "title": "The Red Pill",
+        "len": 713,
+        "excerpt": "The third, our third, is very different from the other two. We must remember tha",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 11,
+        "len": 713,
+        "fallback": false,
+        "head": "The third, our third, is very different from the other two. We must re",
+        "classlessCount": 157,
+        "psTotal": 158
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-gentle-introduction"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-gentle-introduction"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14023
+    },
+    "infinite-jest": {
+      "slug": "infinite-jest",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "608px",
+              "expected": 608,
+              "pass": true,
+              "authPx": 608,
+              "ch65Px": 746.88,
+              "readerMeasureRaw": "min(min(38rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "38rem",
+              "nav": {
+                "navIdx": "608px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "608px",
+              "expected": 608,
+              "pass": true,
+              "authPx": 608,
+              "ch65Px": 746.88,
+              "readerMeasureRaw": "min(38rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "38rem",
+              "nav": {
+                "navIdx": "608px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 608,
+              "ch65Px": 746.88,
+              "readerMeasureRaw": "max(38rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "38rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": true,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c32",
+        "paraIdx": 12,
+        "fallback": false,
+        "parasCount": 54,
+        "title": "Late October — Year of the Depend Adult Undergarment",
+        "len": 408,
+        "excerpt": "‘Attractive paraplegic female seeks same; object:’ The windowless laryngeal stud",
+        "override": "mandatory per brief",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 12,
+        "len": 408,
+        "fallback": false,
+        "head": "‘Attractive paraplegic female seeks same; object:’ The windowless lary",
+        "classlessCount": 53,
+        "psTotal": 54
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-infinite-jest"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c32\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-infinite-jest"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c32\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [
+        "screenshots/infinite-jest-wide-state-390.png"
+      ],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14476
+    },
+    "open-letter": {
+      "slug": "open-letter",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 736,
+              "ch65Px": 648.86,
+              "readerMeasureRaw": "min(min(46rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "46rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "648.859px",
+              "expected": 648.86,
+              "pass": true,
+              "authPx": 736,
+              "ch65Px": 648.86,
+              "readerMeasureRaw": "min(46rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "46rem",
+              "nav": {
+                "navIdx": "736px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 736,
+              "ch65Px": 648.86,
+              "readerMeasureRaw": "max(46rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "46rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c1",
+        "paraIdx": 11,
+        "fallback": false,
+        "parasCount": 115,
+        "title": "A Horizon Made of Canvas",
+        "len": 403,
+        "excerpt": "Of course, Mamet is Mamet. He’s out to shock, not convert. Even the word “libera",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 11,
+        "len": 403,
+        "fallback": false,
+        "head": "Of course, Mamet is Mamet. He’s out to shock, not convert. Even the wo",
+        "classlessCount": 115,
+        "psTotal": 115
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-open-letter"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-open-letter"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14019
+    },
+    "sovereign-individual": {
+      "slug": "sovereign-individual",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 736,
+              "ch65Px": 715.11,
+              "readerMeasureRaw": "min(min(46rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "46rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "715.097px",
+              "expected": 715.11,
+              "pass": true,
+              "authPx": 736,
+              "ch65Px": 715.11,
+              "readerMeasureRaw": "min(46rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "46rem",
+              "nav": {
+                "navIdx": "736px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 736,
+              "ch65Px": 715.11,
+              "readerMeasureRaw": "max(46rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "46rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "sovereignPlate": {
+          "display": "block",
+          "gridTemplateColumns": "none",
+          "artHidden": false,
+          "artClass": "chapter-art plate",
+          "containerWidth": 390,
+          "proseWidth": 353.21875,
+          "maxWidth": "596.737px",
+          "tagged": null
+        },
+        "sovereignPlateMeasureResponse": {
+          "narrow": {
+            "renderedWidth": 353.21875,
+            "computedMaxWidth": "596.737px",
+            "gridDisplay": "block",
+            "containerWidth": 390,
+            "chapterTextWidth": 353.21875
+          },
+          "standard": {
+            "renderedWidth": 353.21875,
+            "computedMaxWidth": "596.737px",
+            "gridDisplay": "block",
+            "containerWidth": 390,
+            "chapterTextWidth": 353.21875
+          },
+          "wide": {
+            "renderedWidth": 353.21875,
+            "computedMaxWidth": "596.737px",
+            "gridDisplay": "block",
+            "containerWidth": 390,
+            "chapterTextWidth": 353.21875
+          }
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c5",
+        "paraIdx": 10,
+        "fallback": false,
+        "parasCount": 164,
+        "title": "The Life and Health of the Nation-State",
+        "len": 1212,
+        "excerpt": "When failing systems have the power to do so, they often impose penal burdens up",
+        "override": "authored plate-grid chapter (manifest class=plate)",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 10,
+        "len": 1212,
+        "fallback": false,
+        "head": "When failing systems have the power to do so, they often impose penal ",
+        "classlessCount": 137,
+        "psTotal": 164
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-sovereign-individual"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c5\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-sovereign-individual"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c5\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [
+        "screenshots/sovereign-individual-wide-state-390.png"
+      ],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 15001
+    },
+    "the-fountainhead": {
+      "slug": "the-fountainhead",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(min(52rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "674.544px",
+              "expected": 674.55,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "min(52rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "832px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 832,
+              "ch65Px": 674.55,
+              "readerMeasureRaw": "max(52rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "52rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c1",
+        "paraIdx": 10,
+        "fallback": false,
+        "parasCount": 164,
+        "title": "Chapter I",
+        "len": 581,
+        "excerpt": "He cut straight across the lake to the shore ahead. He reached the rocks where h",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 10,
+        "len": 581,
+        "fallback": false,
+        "head": "He cut straight across the lake to the shore ahead. He reached the roc",
+        "classlessCount": 164,
+        "psTotal": 164
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-the-fountainhead"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-the-fountainhead"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 13993
+    },
+    "thus-spoke-zarathustra": {
+      "slug": "thus-spoke-zarathustra",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 640,
+              "ch65Px": 675.91,
+              "readerMeasureRaw": "min(min(40rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "40rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 640,
+              "ch65Px": 675.91,
+              "readerMeasureRaw": "min(40rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "40rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 640,
+              "ch65Px": 675.91,
+              "readerMeasureRaw": "max(40rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "40rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": true,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "Spectral, Georgia, serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c1",
+        "paraIdx": 105,
+        "fallback": false,
+        "parasCount": 150,
+        "title": "Zarathustra’s Prologue",
+        "len": 513,
+        "excerpt": "But then something happened that silenced every mouth and fixed every eye. In th",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 105,
+        "len": 513,
+        "fallback": false,
+        "head": "But then something happened that silenced every mouth and fixed every ",
+        "classlessCount": 150,
+        "psTotal": 150
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-thus-spoke-zarathustra"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-thus-spoke-zarathustra"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14112
+    },
+    "twilight-of-the-idols": {
+      "slug": "twilight-of-the-idols",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "640px",
+              "expected": 640,
+              "pass": true,
+              "authPx": 768,
+              "ch65Px": 644.81,
+              "readerMeasureRaw": "min(min(48rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "48rem",
+              "nav": {
+                "navIdx": "640px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "644.804px",
+              "expected": 644.81,
+              "pass": true,
+              "authPx": 768,
+              "ch65Px": 644.81,
+              "readerMeasureRaw": "min(48rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "48rem",
+              "nav": {
+                "navIdx": "768px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 768,
+              "ch65Px": 644.81,
+              "readerMeasureRaw": "max(48rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "48rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": false,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p1c10",
+        "paraIdx": 10,
+        "fallback": false,
+        "parasCount": 61,
+        "title": "Reconnaissance Raids of an Untimely Man",
+        "len": 1126,
+        "excerpt": "In this state we enrich everything out of our own plenitude: whatever we see, wh",
+        "override": "anchor cross-check",
+        "scanTried": []
+      },
+      "probe": {
+        "idx": 10,
+        "len": 1126,
+        "fallback": false,
+        "head": "In this state we enrich everything out of our own plenitude: whatever ",
+        "classlessCount": 39,
+        "psTotal": 61
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-twilight-of-the-idols"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c10\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-twilight-of-the-idols"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p1c10\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [
+        "screenshots/twilight-of-the-idols-wide-state-390.png"
+      ],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 14017
+    },
+    "will-to-power": {
+      "slug": "will-to-power",
+      "viewport": "390x844",
+      "checks": {
+        "measure": {
+          "states": {
+            "narrow": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "608px",
+              "expected": 608,
+              "pass": true,
+              "authPx": 608,
+              "ch65Px": 702.88,
+              "readerMeasureRaw": "min(min(38rem, 65ch), 40rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "38rem",
+              "nav": {
+                "navIdx": "608px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:narrow"
+              ]
+            },
+            "standard": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "608px",
+              "expected": 608,
+              "pass": true,
+              "authPx": 608,
+              "ch65Px": 702.88,
+              "readerMeasureRaw": "min(38rem, 65ch)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "38rem",
+              "nav": {
+                "navIdx": "608px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:standard"
+              ]
+            },
+            "wide": {
+              "renderedWidth": 353.22,
+              "computedMaxWidth": "1024px",
+              "expected": 1024,
+              "pass": true,
+              "authPx": 608,
+              "ch65Px": 702.88,
+              "readerMeasureRaw": "max(38rem, 64rem)",
+              "chapterMaxRaw": "",
+              "readerMaxRaw": "38rem",
+              "nav": {
+                "navIdx": "1024px",
+                "navRect": 353.22
+              },
+              "scrollWidth": 390,
+              "clientWidth": 390,
+              "overflowOk": true,
+              "actives": [
+                "theme:dark",
+                "size:md",
+                "leading:normal",
+                "font:serif",
+                "measure:wide"
+              ]
+            }
+          },
+          "mono": {
+            "rendered": [
+              353.22,
+              353.22,
+              353.22
+            ],
+            "ok": true
+          },
+          "renderedMonoOk": true,
+          "formula": "narrow=min(min(A,65ch),40rem); standard=min(A,65ch); wide=max(A,64rem); A=var(--chapter-max, var(--reader-max,52rem)) ON probe; 65ch measured in-probe; tol ±2px on computedMaxWidth",
+          "narrowViewport": true,
+          "equalityExpectedSame40rem": true,
+          "pass": true
+        },
+        "size": {
+          "observed": [
+            {
+              "value": "sm",
+              "fontSizePx": "18.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "md",
+              "fontSizePx": "20.8px",
+              "overflowOk": true
+            },
+            {
+              "value": "lg",
+              "fontSizePx": "24px",
+              "overflowOk": true
+            },
+            {
+              "value": "xl",
+              "fontSizePx": "27.2px",
+              "overflowOk": true
+            }
+          ],
+          "expected": {
+            "sm": 18.4,
+            "md": 20.8,
+            "lg": 24,
+            "xl": 27.2
+          },
+          "pass": true
+        },
+        "leading": {
+          "observed": [
+            {
+              "value": "tight",
+              "fontSizePx": "24px",
+              "lineHeightPx": "38.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "normal",
+              "fontSizePx": "24px",
+              "lineHeightPx": "44.4px",
+              "overflowOk": true
+            },
+            {
+              "value": "loose",
+              "fontSizePx": "24px",
+              "lineHeightPx": "50.4px",
+              "overflowOk": true
+            }
+          ],
+          "expectedAt": "1.6/1.85/2.1 × fontSize, tol ±1px",
+          "pass": true
+        },
+        "font": {
+          "observed": {
+            "serif": {
+              "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            },
+            "sans": {
+              "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+              "dmSansLoaded": true,
+              "overflowOk": true
+            }
+          },
+          "expectedSans": "\"DM Sans\" via --reader-sans on probe (not the :first-of-type opener)",
+          "pass": true
+        },
+        "persistence": {
+          "datasetAfter": {
+            "measure": "wide",
+            "size": "xl",
+            "leading": "loose",
+            "font": "sans",
+            "theme": "dark"
+          },
+          "computed": {
+            "fontSizePx": "27.2px",
+            "lineHeightPx": "57.12px",
+            "computedMaxWidth": "1024px",
+            "expectedWide": 1024,
+            "fontFamily": "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+          },
+          "datasetOk": true,
+          "computedOk": true,
+          "overflowOk": true,
+          "pass": true
+        },
+        "overflowSweep": {
+          "states": 12,
+          "allOk": true,
+          "bad": []
+        },
+        "keyboard": {
+          "skipped": true,
+          "reason": "desktop-only per brief"
+        },
+        "notes": {
+          "skipped": true,
+          "reason": "desktop-only exercise; census verified in preflight"
+        }
+      },
+      "consoleErrors": [],
+      "nonFavicon4xx": [],
+      "warnings": [],
+      "coverOk": true,
+      "chapter": {
+        "chapterId": "p2c1",
+        "paraIdx": 5,
+        "fallback": true,
+        "parasCount": 9,
+        "title": "European Nihilism",
+        "len": 848,
+        "excerpt": "(4) If we are to be opposed to ‘meaninglessness’ on the one hand, and moral valu",
+        "scanTried": [
+          {
+            "id": "p1c1",
+            "reason": "skip: < 6 paragraphs"
+          }
+        ]
+      },
+      "probe": {
+        "idx": 5,
+        "len": 848,
+        "fallback": true,
+        "head": "(4) If we are to be opposed to ‘meaninglessness’ on the one hand, and ",
+        "classlessCount": 8,
+        "psTotal": 9
+      },
+      "defaultsAtEntry": {
+        "measure": "standard",
+        "size": "md",
+        "leading": "normal",
+        "font": "serif"
+      },
+      "segButtonsPresent": {
+        "size": true,
+        "leading": true,
+        "font": true,
+        "measure": true,
+        "theme": true
+      },
+      "datasetBeforeReload": {
+        "measure": "wide",
+        "size": "xl",
+        "leading": "loose",
+        "font": "sans",
+        "theme": "dark"
+      },
+      "localStorageKeys": {
+        "allKeys": [
+          "reader-will-to-power"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "localStorageKeysAfterReload": {
+        "allKeys": [
+          "reader-will-to-power"
+        ],
+        "bookKeyRaw": "{\"theme\":\"dark\",\"size\":\"xl\",\"leading\":\"loose\",\"font\":\"sans\",\"measure\":\"wide\",\"chapterId\":\"p2c1\",\"scrollY\":0,\"read\":[]}"
+      },
+      "shots": [],
+      "overflowFinal": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "ok": true
+      },
+      "msElapsed": 13825
+    }
+  },
+  "retries": []
+}

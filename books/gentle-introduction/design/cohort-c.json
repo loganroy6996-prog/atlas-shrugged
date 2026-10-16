@@ -1,0 +1,212 @@
+{
+  "_cohort": "C — Crossing → Sanctuary (Doses IX–XI)",
+  "_conformance": "ART-DIRECTION.md §§2–7 + GI1–GI7; READER-CONTRACT §4 entries (supervisor merges into design/chapters.json). Classes plate/arch only. No reader-* classes. Plates FIXED dark on all themes (§3).",
+  "_directions": {
+    "chosen": "Within-cathedral exploration, per binding §6: the book identity APPROVED Direction 1 (Contemplative Cathedral); cohort brief requires exploring within the chosen grammar, not re-choosing. Three within-grammar studies: (A) Occupational plates — crossing lantern / rose / sanctuary as drawn architecture [CHOSEN]; (B) Emblem medallions — lamp, rose, altar as small centered devices [rejected: medallions shrink to stickers at 200px and repeat the banned label-on-panel shape at 3×]; (C) Plan-view diagrams — cruciform floor plan, rose tracery diagram, sanctuary elevation as engraved schematics [rejected: diagrams illustrate the BUILDING, not the ARGUMENT; the reboot-at-center lamp and mandate-as-rose-light need interior presence, not survey drawings].",
+    "references": [
+      "Crossing (architecture) — en.wikipedia.org/wiki/Crossing_(architecture): the crossing as junction of four arms; tower/dome weight rests on the corners; lantern towers admit light down to the crossing → p1c9 corner piers + lit lantern ring.",
+      "Lantern tower — en.wikipedia.org/wiki/Lantern_tower: tall windowed construction above the crossing; often octagonal with windows to lighten the load and admit light → p1c9 crenellated lantern with four lit lancets.",
+      "Rose window — en.wikipedia.org/wiki/Rose_window: circular Gothic window divided by stone mullions and tracery → p1c10 twelve spokes + stone ring + glass petals.",
+      "Carceri d'invenzione — en.wikipedia.org/wiki/Carceri_d%27invenzione (via directions.md): Piranesi 2nd-state rule — bitten line + tonal mass, no mid-tone murk → GI3 binding on all plates."
+    ]
+  },
+  "_grammar": {
+    "arc": "Candle-dominant; most luminous plates. IX crossing lamp (light arrives at the center) → X rose light (Sanctuary Red's second sanctioned use) → XI full-light climax (may carry Vellum fields: altar mensa, east glass, candle wax).",
+    "dose_notches": [
+      "#D48C49",
+      "#DA964C",
+      "#DFA050"
+    ],
+    "motif_logic": "Descent-into-maze → mandate → new-structure, recast into cathedral grammar per conformance order: the Procedure's discontinuous reboot happens AT THE CENTER under a lit lantern (p1c9 crossing); the Mandate of Heaven is light admitted from above through a rose — power flowing down toward the worthy (p1c10 rose-window); the New Structure is the sanctuary in full light, the altar where undivided authority reigns (p1c11 sanctuary). Nothing dissolves/cracks/sheds (GI1/N1 absolute): all arches whole, all glass leaded, all stone intact.",
+    "palette": {
+      "Ashen": "#9C917E",
+      "Ashlar": "#1E1B16",
+      "Candle": "#DFA050",
+      "Narthex": "#100F0D",
+      "SanctuaryRed": "#A83A2C",
+      "Vellum": "#ECE2CE"
+    },
+    "type": {
+      "body": "Source Serif 4 (400/600+italic), quiet; Georgia/Times fallback",
+      "chrome": "DM Sans (shared voice, retained)",
+      "display": "Marcellus, large-only ≥1.5rem; Palatino/Cormorant-class fallback"
+    }
+  },
+  "_notes": [
+    "OFFLINE (fonts): Google Fonts unreachable from this host at author time (curl exit 35, browser faces error) — remote <link> + full stacks kept per §2; supervisor SHOULD vendor design/fonts/ per READER-CONTRACT §8. Prototype proves the design in fallback stacks.",
+    "OFFLINE (p1c10 drop cap): Sanctuary Red on Narthex is 4.46:1 ≈ AA-large; cohort-c.css keeps it LARGE-ONLY with a Candle fallback line — delete one at review.",
+    "R1 applied: in-SVG caption strips removed from all three plates (manifest caption covers it; no double-caption collision); corner furniture tucked inside the plate frame. R2: rose outer ring 3.5→5px + faint keyline. R3: sanctuary stalls narrowed 220→180px + canopies + seat divisions.",
+    "Proof: design/proof-c.html on :8941; plates viewed full-width + 200px + 390px (see _proof)."
+  ],
+  "_proof": [
+    "proof-c.html @1440px: IX/X/XI full-width verified (rose rebuilt to true radial geometry after first proof; inscriptions relocated, then removed per R1).",
+    "proof-c.html @390px (:8941): R1/R2/R3 verified — furniture clears frames, rose ring holds, stalls read as canopied furniture, altar dominates.",
+    "200px row: IX tower+lamp, X red rose, XI east window all legible (GI3 floor holds)."
+  ],
+  "p1c10": {
+    "caption": "Dose X · The rose",
+    "class": "plate",
+    "composition": "Rose centered in its ashlar wall under a pointed-arch frame; side lancets answer from the aisles; stepped rose-light wedges spill to the sill. Slot: #chapter-art above meta (§5 plate ~320px desktop, ≥200px phones).",
+    "content_kind": "doctrinal core: the Mandate of Heaven (Tianming), the Schelling point, the Antiversity as truth service, the Right Pole island of stability.",
+    "end_seal": "Rose seal: Sanctuary-Red ring + Candle hub + 8 spoke ticks (url() ≤32px, contract A.0).",
+    "grounds": [
+      {
+        "para": 34,
+        "quote": "The spiritual core of the First Step is the famous and ancient Chinese principle of the Mandate of Heaven, or Tianming... power flows toward the worthy.",
+        "why": "The plate IS this sentence: light admitted from above through the rose, flowing down toward the worthy below."
+      },
+      {
+        "para": 38,
+        "quote": "To defeat the Modern Structure, create a New Structure which is more worthy to rule... power will flow to it—as the rains return to the ocean.",
+        "why": "Rose-light wedges spill DOWN the wall to the floor: the rains returning to the ocean, drawn as stepped light."
+      },
+      {
+        "para": 44,
+        "quote": "It had a red button, and under that red button was a little heat-printed plastic strip that said, in Cyrillic: SURRENDER TO AMERICA.",
+        "why": "The rose's Sanctuary-Red glass is the chapter's red sanctioned: the eject-button red, transfigured into rose light (identity: red's second use)."
+      },
+      {
+        "para": 59,
+        "quote": "The only way to break this cycle is to create a Schelling point: a credible and precise alternative. A red button.",
+        "why": "The rose is the Schelling point drawn: one centered, precise, unmissable device around which all eyes coordinate."
+      },
+      {
+        "para": 61,
+        "quote": "We just replace its brain—the University. With a new device we call the Antiversity... an independent producer of veracity—a truth service.",
+        "why": "The hub oculus: a single clear eye of gold glass at the rose's center — the truth service as the window's seeing heart."
+      },
+      {
+        "para": 96,
+        "quote": "There is an isolated political maximum, or island of stability, several orders of magnitude to the right of the present-day political spectrum... the Right Pole.",
+        "why": "The rose ring is the island drawn whole: a bounded, complete, self-sufficient circle set apart in the wall."
+      },
+      {
+        "para": 106,
+        "quote": "Only now see you the true height of these fierce and snowy mountains. Tremble, glasshoppa. The mountains exist. But there is a path.",
+        "why": "The pointed-arch frame around the rose: the path exists and it is arched — the mountain pass as a doorway of light."
+      }
+    ],
+    "motif": "rose-window",
+    "opener": "Plate → DOSE X · PART I (Marcellus, Candle) → Marcellus title → candle rule → calm Source Serif body. Drop cap: Sanctuary Red Marcellus (large-only, 4.46:1; Candle fallback in CSS).",
+    "order": 10,
+    "palette_role": "Sanctuary Red's second sanctioned use: twelve red petals + red spill feet; Candle inner trefoils + hub; the arc's red climax before XI goes full gold.",
+    "part": "part-1",
+    "reading": "Calm body ≤68ch; no art behind prose. Long doctrinal paragraphs keep full measure; the rose light stays above the meta block only.",
+    "src": "art/rose-window.svg",
+    "title": "The Mandate of Heaven"
+  },
+  "p1c11": {
+    "caption": "Dose XI · The sanctuary",
+    "class": "plate",
+    "composition": "Altar centered on three steps beneath the great east window; reredos arch frames the Sanctuary; twin candles + receding choir stalls flank; stepped window-light falls across altar and floor. Slot: #chapter-art above meta (§5).",
+    "content_kind": "climax: the Plinth as existential party, the Program, seizing power (direct/indirect coup), Belloc's conquest of ideas, closing Carlyle.",
+    "end_seal": "Sanctuary seal: Candle arch with gold field + pale flame (url() ≤32px, contract A.0) — the book's last mark is a lit arch.",
+    "grounds": [
+      {
+        "para": 3,
+        "quote": "Once the Antiversity holds full sovereignty, it continues the Procedure, dissolving USG and replacing it with a New Structure of its own design.",
+        "why": "The sanctuary IS the New Structure: the finished room, in full light, where the replacement stands complete."
+      },
+      {
+        "para": 6,
+        "quote": "Can democracy terminate democracy?... elect a President who has promised to cancel the Constitution... the military must also support this autogolpe.",
+        "why": "The altar on its steps: undivided sovereign authority in one place — the self-coup's single lawful seat, drawn as the high altar."
+      },
+      {
+        "para": 69,
+        "quote": "The key safety change is that the Party is designed to seize power, but not hold power... a temporary organism—designed to win and die. Its career is its larval stage.",
+        "why": "The twin candles: they burn to give light and are consumed — the win-and-die Plinth as sanctuary candles, not as ruins (GI1)."
+      },
+      {
+        "para": 111,
+        "quote": "Continue calling the project by its internal codename... the Plinth. Again... not only does the Plinth not exist, it cannot exist until the Antiversity exists.",
+        "why": "The altar mensa on its stepped base: the Plinth drawn literally — the stepped platform on which the new order stands."
+      },
+      {
+        "para": 130,
+        "quote": "The direct coup is harder and more dangerous... the Plinth never fails. If it would fail, it doesn't try.",
+        "why": "The east window's unbroken tracery + whole glass: the never-fail standard drawn as unblemished craft — nothing cracked, nothing mended."
+      },
+      {
+        "para": 142,
+        "quote": "It is the pressure and at last the conquest of ideas when they have this three-fold power: first, that they are novel... secondly... conviction... thirdly... a system.",
+        "why": "The mensa's three gilt frontal panels: Belloc's three-fold power as three gold tablets on the altar front."
+      },
+      {
+        "para": 151,
+        "quote": "Better Boethius than Claudian, I say. Better truth in a cage than lies in purple. Truth will not remain in a cage, nor lies in purple.",
+        "why": "The full-light east glass: truth out of the cage — the book's brightest field, Vellum-pale, at the very end of the walk."
+      },
+      {
+        "para": 152,
+        "quote": "'Nay, by God, Donald, we must help him to mend it!'",
+        "why": "The book's closing imperative hangs over the altar: the sanctuary is not a ruin to admire but a work to complete — mending, not mourning."
+      }
+    ],
+    "motif": "sanctuary",
+    "opener": "Plate (most luminous of the eleven) → DOSE XI · PART I → Marcellus title → candle rule → calm body. Drop cap: Marcellus Candle ('In this chapter, we're going to step boldly forward…').",
+    "order": 11,
+    "palette_role": "Full-light climax: Vellum fields sanctioned (altar mensa, east glass, candle wax); Candle dominant; Sanctuary Red only in ember accents (flame bases, frontal rules).",
+    "part": "part-1",
+    "reading": "Calm body ≤68ch; 155 paras (longest chapter) get zero opener interference — plate, meta, then uninterrupted prose to the sanctuary seal.",
+    "src": "art/sanctuary.svg",
+    "title": "The New Structure"
+  },
+  "p1c9": {
+    "caption": "Dose IX · The crossing",
+    "class": "plate",
+    "composition": "Lantern tower centered above; four arches (nave/choir/transepts) meet at the crossing square; corner piers carry the weight; lamp hangs at center on its chain; stepped light wedges fall from lantern to floor. Slot: #chapter-art above meta (§5 plate ~320px desktop, ≥200px phones).",
+    "content_kind": "procedural hinge: Reboot vs revolution, the Three Steps, passivism's steel rule, Law of Sewage, Hitler-prevention.",
+    "end_seal": "Crossing seal: Candle arch outline + centered flame (url() ≤32px, contract A.0).",
+    "grounds": [
+      {
+        "para": 0,
+        "quote": "Out of the Computer's infinite fluorescent maze. Into the glorious air of pure, unfiltered reason. The last hatch is unlocked above your head. The ladder is at your feet.",
+        "why": "The lantern tower IS the unlocked hatch overhead: light admitted from above the crossing; the hanging lamp-chain is the ladder at the reader's feet, recast as the sanctuary lamp."
+      },
+      {
+        "para": 5,
+        "quote": "The Reaction is an ideal plan for a discontinuous transition of sovereignty, or reboot. The Procedure is what you can do, dear reader, to help make the Reaction happen.",
+        "why": "The crossing square: four arms meeting at ONE discontinuous center — the reboot drawn as the place where separate structures share a single instant of transition."
+      },
+      {
+        "para": 8,
+        "quote": "So, at 11:59:59 p.m. on Reaction Eve, the Constitution... is as valid as ever... At 12:00:00 a.m. on Reaction Day, the Constitution is out and Chuck is in.",
+        "why": "The lamp lit at the center: the 12:00:00 moment — one flame, already burning, marking the discontinuous instant. (No clock face: the identity forbids gimmick overlays; the lit lamp is the timestamp.)"
+      },
+      {
+        "para": 9,
+        "quote": "A reboot has about as much in common with your common, or garden, revolution as a beautiful young woman has with a Gila monster. The two are, quite simply, opposites.",
+        "why": "GI1 compliance as content: the plate shows a reboot that BUILDS (lit lantern, whole arches) — the opposite of revolution's ruin. Nothing dissolves, because the Reaction doesn't destroy."
+      },
+      {
+        "para": 22,
+        "quote": "There is only one dark, half-magical art that can produce reliable quality on the first try... It is called engineering... Political engineering is rocket science, too.",
+        "why": "The corner piers + strainer arches: load-bearing engineering drawn honestly — the tower's weight rests on the corners (Crossing ref), the engineer's answer to 'work perfectly on the first try'."
+      },
+      {
+        "para": 29,
+        "quote": "The Procedure comes in Three Steps: 1. Become worthy. / 2. Accept power. / 3. Rule!!1!1",
+        "why": "Three stepped light wedges fall from lantern to floor: the Three Steps as descending grades of light — worthy, accept, rule — arriving at the crossing floor."
+      },
+      {
+        "para": 38,
+        "quote": "The steel rule of passivism is absolute renunciation of official power... absolute renunciation of power over USG implies absolute submission to the Structure.",
+        "why": "The lamp hangs on a steel chain from above: held power suspended, renounced, awaiting acceptance — the steel rule as a hanging lamp, not a raised weapon."
+      },
+      {
+        "para": 105,
+        "quote": "The Law is: if you put a drop of wine in a barrel of sewage, you get sewage. If you put a drop of sewage in a barrel of wine, you get sewage.",
+        "why": "The lamp's glass is Sanctuary Red but the FLAME is pure Candle-gold: the vessel may hold anything, but what burns at the center is uncontaminated — the Law of Sewage answered by a quarantined flame."
+      }
+    ],
+    "motif": "crossing",
+    "opener": "Plate → DOSE IX · PART I (Marcellus, Candle) → Marcellus title → candle rule (Ashen + flame pip) → calm Source Serif body. Drop cap: Marcellus Candle on 'Today you begin…' (P0, long, declarative — warranted).",
+    "order": 9,
+    "palette_role": "Candle arrives: lit lantern ring + lamp flame + spill wedges carry the chapter; Sanctuary Red only in lamp glass + flame base. First plate where light dominates stone (GI2 hinge).",
+    "part": "part-1",
+    "reading": "Calm body ≤68ch; no art behind prose. The 130-para procedural argument reads uninterrupted; opener ambition stays above the meta block.",
+    "src": "art/crossing.svg",
+    "title": "The Procedure and the Reaction"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "modelRoles": {
+    "default": "opencode-zen/step-5-preview-free:xhigh",
+    "smol": "opencode-zen/step-5-preview-free:xhigh",
+    "slow": "opencode-zen/step-5-preview-free:xhigh",
+    "plan": "opencode-zen/step-5-preview-free:xhigh"
+  },
+  "defaultThinkingLevel": "xhigh",
+  "prewalk": {
+    "enabled": false
+  },
+  "externalThinking": false,
+  "async": {
+    "enabled": true,
+    "maxJobs": 16
+  },
+  "skills": {
+    "enabled": true,
+    "customDirectories": [
+      "/home/prateek/.agents/skills",
+      "/home/prateek/.omp/agent/managed-skills"
+    ]
+  },
+  "task": {
+    "enableEffort": true,
+    "maxEffort": "xhigh",
+    "maxRecursionDepth": 4,
+    "maxConcurrency": 6,
+    "maxRuntimeMs": 0,
+    "softRequestBudget": 120,
+    "batch": true,
+    "prewalk": false,
+    "showResolvedModelBadge": true,
+    "agentModelOverrides": {
+      "library-art-director": "opencode-zen/step-5-preview-free:xhigh",
+      "library-home-engineer": "opencode-zen/step-5-preview-free:xhigh",
+      "library-reader-lead": "opencode-zen/step-5-preview-free:xhigh",
+      "library-text-curator": "opencode-zen/step-5-preview-free:xhigh",
+      "library-final-validator": "opencode-zen/step-5-preview-free:xhigh",
+      "library-chapter-lead": "opencode-zen/step-5-preview-free:xhigh",
+      "library-designer": "opencode-zen/step-5-preview-free:xhigh",
+      "library-engineer": "opencode-zen/step-5-preview-free:xhigh",
+      "library-validator": "opencode-zen/step-5-preview-free:xhigh",
+      "book-atlas-shrugged-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-the-fountainhead-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-beyond-good-and-evil-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-thus-spoke-zarathustra-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-gay-science-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-twilight-of-the-idols-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-will-to-power-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-being-and-time-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-infinite-jest-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-forty-ways-to-look-at-churchill-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-open-letter-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-gentle-introduction-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "book-sovereign-individual-supervisor": "opencode-zen/step-5-preview-free:xhigh",
+      "task": "opencode-zen/step-5-preview-free:xhigh",
+      "scout": "opencode-zen/step-5-preview-free:xhigh",
+      "sonic": "opencode-zen/step-5-preview-free:xhigh",
+      "reviewer": "opencode-zen/step-5-preview-free:xhigh",
+      "security-reviewer": "opencode-zen/step-5-preview-free:xhigh"
+    },
+    "agentPrewalk": {
+      "library-art-director": "off",
+      "library-home-engineer": "off",
+      "library-reader-lead": "off",
+      "library-text-curator": "off",
+      "library-final-validator": "off",
+      "library-chapter-lead": "off",
+      "library-designer": "off",
+      "library-engineer": "off",
+      "library-validator": "off",
+      "book-atlas-shrugged-supervisor": "off",
+      "book-the-fountainhead-supervisor": "off",
+      "book-beyond-good-and-evil-supervisor": "off",
+      "book-thus-spoke-zarathustra-supervisor": "off",
+      "book-gay-science-supervisor": "off",
+      "book-twilight-of-the-idols-supervisor": "off",
+      "book-will-to-power-supervisor": "off",
+      "book-being-and-time-supervisor": "off",
+      "book-infinite-jest-supervisor": "off",
+      "book-forty-ways-to-look-at-churchill-supervisor": "off",
+      "book-open-letter-supervisor": "off",
+      "book-gentle-introduction-supervisor": "off",
+      "book-sovereign-individual-supervisor": "off",
+      "task": "off",
+      "scout": "off",
+      "sonic": "off",
+      "reviewer": "off",
+      "security-reviewer": "off"
+    },
+    "completionProbe": false
+  },
+  "display": {
+    "subagentLivePreview": true
+  },
+  "statusLine": {
+    "compactThinkingLevel": false
+  },
+  "retry": {
+    "enabled": true,
+    "maxRetries": 2,
+    "baseDelayMs": 5000,
+    "maxDelayMs": 300000,
+    "modelFallback": false,
+    "waitForUsageReset": false
+  }
+}

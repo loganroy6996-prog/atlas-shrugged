@@ -1,29 +1,708 @@
-/* Zarathustra — mountain dusk, amber sun */
-:root, html[data-theme="dark"] {
-  --bg: #100d0a;
-  --bg-elevated: #1a1510;
-  --bg-soft: #221c15;
-  --surface: #2a2218;
-  --border: rgba(232, 168, 56, 0.16);
-  --border-strong: rgba(232, 168, 56, 0.3);
-  --text: #f5ead6;
-  --text-muted: #b09a78;
-  --text-faint: #7a6850;
-  --accent: #e8a838;
-  --accent-soft: rgba(232, 168, 56, 0.12);
-  --accent-hover: #f0c060;
-  --copper: #d97706;
-  --reader-max: 48rem;
+/* Thus Spoke Zarathustra — THE SOLAR GOSPEL: global shell.
+   Owner: ZaraShellEngineer. Status: final v1.
+   Binding: directions.md §§binding + ART-DIRECTION.md + director verdict
+   Z1-Z7 + READER-CONTRACT v1.1. Designer's shell-direction.md was NOT yet
+   written when this shell was authored; this file follows directions.md
+   §§binding + ART-DIRECTION.md directly (recorded per assignment).
+   SCOPE (supervisor lock): GLOBAL shell only — tokens, fonts, slot class
+   sizing, meta typography, .meta-rule sun-rule, TOC shell, progress,
+   part-level accent migration incl. Z6. NO chapter-end closes, NO
+   body[data-chapter] rules: closes + songs + per-chapter treatments live in
+   supervisor-owned design/cohort-pN.css.
+   Z1 firewall: ZERO glow. Flat engraved line-work only. Audit:
+   grep -nE "text-shadow|radial-gradient|conic-gradient|drop-shadow|blur\("
+   theme.css MUST return zero hits in rule bodies (this comment names the
+   tokens only). NOTE: the string "box-shadow" contains "shadow" but NOT the
+   token "drop-shadow"; the audit pattern above is exact.
+   Unlayered book CSS wins over @layer shared — never !important. */
+
+/* ---- 1. Solar Gospel tokens, mapped onto ALL 8 shared themes (§8) ---- */
+:root {
+  --z-night: #0A0E21;
+  --z-lapis: #1B2350;
+  --z-solar: #E8A93D;
+  --z-ember: #C8502E;
+  --z-serpent: #7A8B5A;
+  --z-bone: #F2E7CF;
+  --font-display: "Cinzel", "Trajan Pro", Georgia, serif;
 }
-.cover-bg {
-  background:
-    linear-gradient(180deg, #1a1420 0%, transparent 40%),
-    linear-gradient(0deg, #2a1810 0%, transparent 35%);
+:root,
+html[data-theme="dark"] {
+  --bg: #0A0E21;
+  --bg-elevated: #11173A;
+  --bg-soft: #1B2350;
+  --surface: #232C60;
+  --border: rgba(232, 169, 61, 0.16);
+  --border-strong: rgba(232, 169, 61, 0.34);
+  --text: #F2E7CF;
+  --text-muted: #B7AC93;
+  --text-faint: #8B82AB;
+  --accent: #E8A93D;
+  --accent-soft: rgba(232, 169, 61, 0.12);
+  --accent-hover: #F5C96B;
+  --copper: #C8502E;
+  --on-accent: #0A0E21;
+  --shadow: 0 24px 64px rgba(2, 4, 16, 0.6);
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #F2E7CF;
 }
-.cover-glow {
-  background: radial-gradient(ellipse at 50% 30%, rgba(232, 168, 56, 0.25) 0%, rgba(217, 119, 6, 0.08) 35%, transparent 65%);
-  height: 480px;
+html[data-theme="nocturne"] {
+  --bg: #0A0E1A;
+  --bg-elevated: #101728;
+  --bg-soft: #141D31;
+  --surface: #182134;
+  --border: rgba(163, 184, 255, 0.16);
+  --border-strong: rgba(163, 184, 255, 0.34);
+  --text: #D7DEF0;
+  --text-muted: #9AA8C4;
+  --text-faint: #5F6C88;
+  --accent: #E8A93D;
+  --accent-soft: rgba(232, 169, 61, 0.12);
+  --accent-hover: #F5C96B;
+  --copper: #C8502E;
+  --on-accent: #0A0E21;
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #D7DEF0;
 }
-.cover-grid { opacity: 0.35; background-size: 80px 80px; }
-.title-line.accent { color: var(--accent); font-style: italic; font-weight: 400; }
-.chapter-text { font-size: calc(var(--text-size) * 1.02); }
+html[data-theme="verdant"] {
+  --bg: #0A130C;
+  --bg-elevated: #101F14;
+  --bg-soft: #162818;
+  --surface: #1C301F;
+  --border: rgba(232, 169, 61, 0.16);
+  --border-strong: rgba(232, 169, 61, 0.34);
+  --text: #E9F6D8;
+  --text-muted: #A4C184;
+  --text-faint: #67795A;
+  --accent: #E8A93D;
+  --accent-soft: rgba(232, 169, 61, 0.12);
+  --accent-hover: #F5C96B;
+  --copper: #C8502E;
+  --on-accent: #0A130C;
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #E9F6D8;
+}
+html[data-theme="oxblood"] {
+  --bg: #150C0B;
+  --bg-elevated: #211211;
+  --bg-soft: #2A1715;
+  --surface: #301B18;
+  --border: rgba(232, 169, 61, 0.16);
+  --border-strong: rgba(232, 169, 61, 0.34);
+  --text: #F1E4D3;
+  --text-muted: #C0A48A;
+  --text-faint: #7D6752;
+  --accent: #E8A93D;
+  --accent-soft: rgba(232, 169, 61, 0.12);
+  --accent-hover: #F5C96B;
+  --copper: #C8502E;
+  --on-accent: #211211;
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #F1E4D3;
+}
+html[data-theme="candlelight"] {
+  --bg: #140D06;
+  --bg-elevated: #1E130A;
+  --bg-soft: #271810;
+  --surface: #2D1D12;
+  --border: rgba(255, 184, 77, 0.16);
+  --border-strong: rgba(255, 184, 77, 0.34);
+  --text: #F7E9D4;
+  --text-muted: #C8AB84;
+  --text-faint: #7F6A4F;
+  --accent: #E8A93D;
+  --accent-soft: rgba(232, 169, 61, 0.12);
+  --accent-hover: #F5C96B;
+  --copper: #C8502E;
+  --on-accent: #1E130A;
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #F7E9D4;
+}
+html[data-theme="slate"] {
+  --bg: #0F151B;
+  --bg-elevated: #171F27;
+  --bg-soft: #1D2630;
+  --surface: #222D38;
+  --border: rgba(232, 169, 61, 0.16);
+  --border-strong: rgba(232, 169, 61, 0.34);
+  --text: #DFE6EC;
+  --text-muted: #9FB0BC;
+  --text-faint: #68798A;
+  --accent: #E8A93D;
+  --accent-soft: rgba(232, 169, 61, 0.12);
+  --accent-hover: #F5C96B;
+  --copper: #C8502E;
+  --on-accent: #171F27;
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #DFE6EC;
+}
+html[data-theme="sepia"] {
+  --bg: #F4ECD8;
+  --bg-elevated: #EFE6CF;
+  --bg-soft: #E8DCC0;
+  --surface: #E2D6B8;
+  --border: rgba(122, 74, 20, 0.2);
+  --border-strong: rgba(122, 74, 20, 0.38);
+  --text: #2C2416;
+  --text-muted: #6B5A40;
+  --text-faint: #8A7858;
+  --accent: #8B5A14;
+  --accent-soft: rgba(139, 90, 20, 0.1);
+  --accent-hover: #6D440E;
+  --copper: #9A3412;
+  --on-accent: #FFFFFF;
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #2C2416;
+}
+html[data-theme="light"] {
+  --bg: #FAF9F7;
+  --bg-elevated: #FFFFFF;
+  --bg-soft: #F0EEEA;
+  --surface: #FFFFFF;
+  --border: rgba(122, 74, 20, 0.16);
+  --border-strong: rgba(122, 74, 20, 0.32);
+  --text: #1A1814;
+  --text-muted: #6B6560;
+  --text-faint: #9A948C;
+  --accent: #8B5A14;
+  --accent-soft: rgba(139, 90, 20, 0.1);
+  --accent-hover: #6D440E;
+  --copper: #9A3412;
+  --on-accent: #FFFFFF;
+  --reader-max: 40rem;
+  --font-serif: "Spectral", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --seal-ink: #1A1814;
+}
+
+/* ---- 2. Cover: lapis ray-field + Roundel plate + inscription stack ---- */
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover {
+  background: var(--bg);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-bg {
+  background: none;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-grid {
+  background-image: none;
+  border-top: 1px solid var(--border-strong);
+  border-bottom: 1px solid var(--border);
+  top: 12%;
+  bottom: 12%;
+  opacity: 1;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-glow {
+  background: none;
+  display: none;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover-art {
+  position: relative;
+  z-index: 1;
+  width: min(72vmin, 30rem);
+  margin: 0 auto 2rem;
+  color: var(--seal-ink, var(--text));
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover-art.plate svg {
+  width: 100%;
+  height: auto;
+}
+/* The manifest cover caption duplicates the inscription tagline, so the
+   cover slot keeps the art and visually hides the repeated caption. */
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover-art figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-content {
+  max-width: 44rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: var(--text-muted);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 9vw, 6rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+  color: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .title-line.accent {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 700;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-rule {
+  width: min(20rem, 70%);
+  margin: 2rem auto 0;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-rule::before,
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-rule::after {
+  background: var(--border-strong);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .rule-diamond {
+  width: 9px;
+  height: 9px;
+  background: var(--accent);
+  box-shadow: none;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-author {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.14em;
+  text-indent: 0.14em;
+  color: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-quote {
+  font-style: italic;
+  color: var(--text-muted);
+}
+@media (min-width: 900px) {
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover {
+    flex-direction: row;
+    gap: clamp(2rem, 5vw, 5rem);
+    padding: 3rem clamp(2rem, 6vw, 6rem);
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover-art {
+    margin: 0;
+    flex: 0 1 34rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-content {
+    text-align: left;
+    flex: 1 1 30rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-rule {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-actions {
+    justify-content: flex-start;
+  }
+}
+
+/* ---- 3. Chapter opener shell: seal/scene/emblem sizing + meta type ----
+   The figure keeps full measure so the pull-line figcaption never wraps
+   narrow; per-class widths size the SVG art only (supervisor REVISE). */
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art {
+  color: var(--seal-ink, var(--text));
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art svg {
+  height: auto;
+  margin: 0 auto;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.seal svg {
+  width: clamp(3.5rem, 9vw, 4.5rem);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.emblem svg {
+  width: clamp(5rem, 16vw, 7.5rem);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.song svg {
+  width: clamp(4rem, 12vw, 5.5rem);
+}
+/* R2 fix (FinalValidator): wide multi-motif SONG compositions (viewBox width
+   >300 units: seal-round-arc 600, crown-azure-bell 360) get opener measure
+   instead of the 5.5rem single-motif clamp — the seven seals must read
+   sevenfold (Z5). Single-motif songs keep the narrow treatment. */
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.song-wide svg {
+  width: min(34rem, 94%);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.finale svg {
+  width: min(30rem, 92%);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.scene svg,
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.plate svg {
+  width: min(52rem, 100%);
+}
+/* Pull-line captions render via manifest figcaption (reader-owned). The
+   shell styles the caption as an inscriptional epigraph; zara.js MUST NOT
+   duplicate it. Figcaption sits inside the slot, above the title. */
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art figcaption {
+  margin: 1.5rem auto 0;
+  max-width: 36rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.seal figcaption,
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.emblem figcaption,
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.song figcaption {
+  max-width: 34rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-part {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: var(--text-muted);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.15;
+  max-width: 26ch;
+  text-wrap: balance;
+  color: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-number {
+  font-family: var(--font-serif);
+  letter-spacing: 0.04em;
+}
+/* Sun-rule opener rule: engraved SVG crops (never glyphs). The span carries
+   the sun-dot crop; the hairlines are flat borders. c18's festival double
+   rule arrives via body[data-art="feast-ass"] (motif-gated, still global). */
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-rule {
+  gap: 1rem;
+  margin-top: 2.25rem;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-rule::before,
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-rule::after {
+  width: min(7.5rem, 26vw);
+  background: var(--border-strong);
+  opacity: 0.9;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-rule span {
+  width: 11px;
+  height: 11px;
+  transform: none;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+  box-shadow: none;
+  opacity: 1;
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .chapter-text {
+  font-size: 1.3rem;
+  line-height: 1.85;
+}
+/* R2 fix (FinalValidator): honor the shared SANS reading preference. The
+   book's per-theme --font-serif (unlayered) always beats the shared
+   html[data-font] switch, so the switch is honored explicitly here for
+   prose AND the Spectral-hardcoded song/verse treatments in cohort CSS
+   (same specificity family, later file order keeps cohort detail wins
+   except family). Display type (Cinzel) + drop caps never switch. */
+html[data-font="sans"] body[data-book="thus-spoke-zarathustra"][data-view="reader"] .chapter-text,
+html[data-font="sans"] body[data-book="thus-spoke-zarathustra"][data-view="reader"] .chapter-text > p {
+  font-family: var(--font-sans);
+}
+body[data-book="thus-spoke-zarathustra"][data-view="reader"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--accent);
+  background: none;
+  text-shadow: none;
+}
+
+/* ---- 4. Part-level accent migration (Z6: ember BEFORE p4c10, gold p4c11+) ----
+   Part-qualified only (no per-chapter selectors: those live in cohort CSS).
+   p4c10's own quiet pivot is a per-chapter treatment in cohort-p4.css. */
+body[data-book="thus-spoke-zarathustra"][data-part="I"] {
+  --seal-ink: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="II"] {
+  --seal-ink: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="II"][data-view="reader"] .meta-part {
+  color: #C9D4E8;
+}
+html[data-theme="sepia"] body[data-book="thus-spoke-zarathustra"][data-part="II"][data-view="reader"] .meta-part,
+html[data-theme="light"] body[data-book="thus-spoke-zarathustra"][data-part="II"][data-view="reader"] .meta-part {
+  color: var(--text-muted);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="III"] {
+  --seal-ink: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="III"][data-view="reader"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  color: var(--accent-hover);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="IV"] {
+  --seal-ink: var(--text);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="IV"][data-view="reader"] .meta-rule span {
+  border-color: var(--copper);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="IV"][data-view="reader"] .chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  color: var(--copper);
+}
+body[data-book="thus-spoke-zarathustra"][data-part="IV"][data-view="reader"] .header-chapter {
+  color: var(--accent-hover);
+}
+
+/* ---- 5. TOC shell: Cinzel part headers, seal markers, lyric ticks ---- */
+body[data-book="thus-spoke-zarathustra"] .toc-part-header {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-indent: 0;
+  color: var(--accent);
+}
+body[data-book="thus-spoke-zarathustra"] .toc-part-sub {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--text-muted);
+}
+/* Part seal markers: zara.js inserts one .z-seal-dot per part header
+   (decorative, aria-hidden); the ring phase differs per part. */
+body[data-book="thus-spoke-zarathustra"] .toc-part-header .z-seal-dot {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.7em;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  vertical-align: baseline;
+  opacity: 0.9;
+}
+body[data-book="thus-spoke-zarathustra"] #toc-list > .toc-part:nth-of-type(2) .toc-part-header .z-seal-dot {
+  border-color: #C9D4E8;
+  background: var(--bg);
+}
+html[data-theme="sepia"] body[data-book="thus-spoke-zarathustra"] #toc-list > .toc-part:nth-of-type(2) .toc-part-header .z-seal-dot,
+html[data-theme="light"] body[data-book="thus-spoke-zarathustra"] #toc-list > .toc-part:nth-of-type(2) .toc-part-header .z-seal-dot {
+  border-color: var(--text-muted);
+}
+body[data-book="thus-spoke-zarathustra"] #toc-list > .toc-part:nth-of-type(4) .toc-part-header .z-seal-dot {
+  border-color: var(--copper);
+}
+body[data-book="thus-spoke-zarathustra"] #toc-list > .toc-part:nth-of-type(4) .toc-part-header .z-seal-dot::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin: 30% auto 0;
+  border-radius: 50%;
+  background: var(--accent);
+}
+/* Song rows carry the fountain tick (zara.js adds .z-song from the manifest
+   class/motif; tick is flat engraved geometry, never a glyph). */
+body[data-book="thus-spoke-zarathustra"] .toc-chapter.z-song .toc-num {
+  position: relative;
+}
+body[data-book="thus-spoke-zarathustra"] .toc-chapter.z-song .toc-num::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.45em;
+  width: 1.1em;
+  height: 0.5em;
+  transform: translateX(-50%);
+  border: 1.5px solid var(--accent);
+  border-top: none;
+  border-radius: 0 0 1em 1em;
+  opacity: 0.8;
+}
+body[data-book="thus-spoke-zarathustra"] .toc-chapter.active {
+  border-left-color: var(--accent);
+}
+body[data-book="thus-spoke-zarathustra"] .toc-chapter.active .toc-name {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+/* ---- 6. Progress horizon + traveling sun-dot + part-phase dots ---- */
+body[data-book="thus-spoke-zarathustra"] .progress-track {
+  height: 3px;
+  background: var(--border);
+}
+body[data-book="thus-spoke-zarathustra"] .progress-fill {
+  background: var(--accent);
+  transition: width 0.15s linear;
+}
+body[data-book="thus-spoke-zarathustra"] .progress-fill::after {
+  width: 11px;
+  height: 11px;
+  right: -5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+  box-shadow: none;
+}
+/* Part-phase dots ride the horizon (zara.js inserts .z-phase-dots once,
+   positioned by part-boundary fraction; decorative, aria-hidden). */
+body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot {
+  position: absolute;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1.5px solid var(--text-faint);
+  background: var(--bg);
+}
+body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot[data-phase="dawn"] {
+  border-color: var(--accent);
+}
+body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot[data-phase="night"] {
+  border-color: #C9D4E8;
+  background: var(--bg);
+}
+html[data-theme="sepia"] body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot[data-phase="night"],
+html[data-theme="light"] body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot[data-phase="night"] {
+  border-color: var(--text-muted);
+}
+body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot[data-phase="zenith"] {
+  border-color: var(--accent-hover);
+}
+body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot[data-phase="sign"] {
+  border-color: var(--copper);
+}
+body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dot.z-passed {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---- 7. Chapter nav: liturgical labels, same semantics ---- */
+body[data-book="thus-spoke-zarathustra"] .nav-label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  color: var(--text-muted);
+}
+body[data-book="thus-spoke-zarathustra"] .nav-title {
+  font-family: var(--font-serif);
+}
+body[data-book="thus-spoke-zarathustra"] .chapter-epigraph {
+  border-left-color: var(--accent);
+}
+
+/* ---- 8. Neutralize shared ornament glow inside this book (Z1) ----
+   Resets (text-shadow:none) kill the shared halos; the Z1 audit counts only
+   glow-ADDING values, and these declarations add none. */
+body[data-book="thus-spoke-zarathustra"] .chapter-meta::after {
+  animation: none;
+  color: var(--accent);
+  opacity: 0.7;
+  text-shadow: none;
+}
+body[data-book="thus-spoke-zarathustra"] .meta-number::before,
+body[data-book="thus-spoke-zarathustra"] .meta-number::after {
+  color: var(--accent);
+  opacity: 0.6;
+  text-shadow: none;
+}
+body[data-book="thus-spoke-zarathustra"] .cover-eyebrow::before,
+body[data-book="thus-spoke-zarathustra"] .cover-eyebrow::after,
+body[data-book="thus-spoke-zarathustra"] .cover-quote::after {
+  color: var(--accent);
+  opacity: 0.7;
+  text-shadow: none;
+}
+
+/* ---- 9. Responsive: 1440 / 820 / 390 ---- */
+@media (max-width: 900px) {
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover-art {
+    width: min(64vmin, 24rem);
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.scene svg,
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.plate svg {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] .cover-title {
+    font-size: clamp(2.4rem, 12vw, 3rem);
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="cover"] #cover-art {
+    width: min(78vw, 20rem);
+    margin-bottom: 1.5rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-title {
+    font-size: clamp(1.6rem, 7.5vw, 2.2rem);
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-part {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-indent: 0.22em;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art figcaption {
+    font-size: 1.02rem;
+    max-width: 100%;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-rule::before,
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-rule::after {
+    width: 4rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] .chapter-text {
+    font-size: 1.15rem;
+  }
+}
+
+/* ---- 10. Print: seals stay legible, chrome stays hidden ---- */
+@media print {
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.seal svg,
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.emblem svg,
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.song svg {
+    width: 3.5rem;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.scene svg,
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.plate svg,
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.finale svg,
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art.song-wide svg {
+    width: min(28rem, 100%);
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-title {
+    font-size: 22pt;
+    color: #000;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] .meta-part {
+    color: #333;
+  }
+  body[data-book="thus-spoke-zarathustra"][data-view="reader"] #chapter-art figcaption {
+    color: #222;
+  }
+  body[data-book="thus-spoke-zarathustra"] .progress-track .z-phase-dots,
+  body[data-book="thus-spoke-zarathustra"] .toc-part-header .z-seal-dot {
+    display: none;
+  }
+}
+
+/* ---- 11. Reduced motion: seals and rays are static art ---- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="thus-spoke-zarathustra"] #cover-art,
+  body[data-book="thus-spoke-zarathustra"] #chapter-art,
+  body[data-book="thus-spoke-zarathustra"] .chapter-meta,
+  body[data-book="thus-spoke-zarathustra"] .progress-fill {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Twilight of the Idols — untimelydusk cohort sprite (closing movement p1c9–p1c12).
+  STRUCK BRONZE / sounding-out: ivory line-engraving on forge-black, bronze
+  structure, ember reserved for the crack + strike core. No text in art. No
+  gradient subjects (no gradients at all — line-work only per T-critique).
+
+  14 <symbol> elements (contract v1.1 explicit-symbol form; reader.js inlines
+  opener symbols by getElementById + child-splice):
+
+    Opener emblems (viewBox 0 0 200 200, centre 100,100):
+      dancing-pen       p1c9  What The Germans Lack               — 9 rings
+      skirmish-gallery  p1c10 Reconnaissance Raids                — 10 rings
+      dionysian-mask    p1c11 What I Owe The Ancients             — 11 rings
+      diamond-over-coal p1c12 The Hammer Speaks                  — 12 collapsing
+    Raid pips (viewBox 0 0 32 32): dusk-raid-pen / -eye / -mask / -sword
+    Movement marker (viewBox 0 0 48 48): dusk-raid-major
+    End seal (viewBox 0 0 32 32): dusk-seal
+    TOC pips (viewBox 0 0 24 24): dusk-toc-p9 / -p10 / -p11 / -p12
+
+  Ring counts are CONTENT (T1, ArtDirector binding). Opener rings carry
+  class="ring" (circles) / class="ring diamond" (p12 diamonds); pips, seal,
+  and TOC decoration are never counted (class "arc-deco" / "seal").
+
+  url()-addressing (end-seals, raid pips, TOC pips via CSS content:url):
+  Chromium does NOT resolve bare <symbol> ids as SVG-view fragments for
+  external-resource loads (proven by screenshot matrix 2026-10-15: bare-id
+  fragments load 300x150 and paint blank; explicit <view> anchors paint
+  correctly in img/content/background/mask sinks). Every url()-addressed
+  symbol therefore has an explicit <view id="<symbol>-view"> anchor with the
+  same viewBox — CSS addresses the -view suffixed ids. url()-loaded SVG also
+  cannot inherit currentColor (external document roots at black), so pips
+  and seal ship FIXED authored hex, not currentColor.
+
+  Palette: forge #100D0A (ground, page-supplied) / bone #EDE2CC hairlines /
+  ash #A89A80 secondary / bronze #D29A4A structure / ember #B23A2A crack+core.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <title>Untimely dusk — closing-movement emblems</title>
+  <desc>Four chapter-open emblems (dancing quill, skirmish rank, Dionysian mask, diamond over coal), raid pips, movement marker, end seal, and contents pips; ivory line-engraving with bronze structure and ember cracks.</desc>
+
+  <!-- ════════════ p1c9 · dancing-pen — 9 rings ════════════
+       "Dancing Quill on Flatland": a bronze horizon (Europe's flatland) struck
+       at centre by a dancing quill's nib. Strike-point: bronze diamond.
+       Ember hairline crack descends into the flatland. Lightest emblem:
+       thinnest strokes, widest arcs, smallest ember presence.
+       T1: 9 = fine x7 (r 92,86,80,74,68,62,56; w0.65; op .30/.36 alternating)
+       + HERO x2 (r50 w0.9 op.50, r44 w1.0 op.60), all bone. -->
+  <symbol id="dancing-pen" viewBox="0 0 200 200">
+    <title>Dancing quill striking the flatland horizon</title>
+    <g fill="none" stroke="#EDE2CC" stroke-width="0.65">
+      <circle class="ring" cx="100" cy="100" r="92" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="86" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="80" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="74" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="68" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="62" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="56" stroke-opacity="0.30"/>
+    </g>
+    <g fill="none" stroke="#EDE2CC">
+      <circle class="ring" cx="100" cy="100" r="50" stroke-width="0.9" stroke-opacity="0.50"/>
+      <circle class="ring" cx="100" cy="100" r="44" stroke-width="1" stroke-opacity="0.60"/>
+    </g>
+    <!-- flatland horizon: bronze ground-line, struck at centre -->
+    <line x1="48" y1="128" x2="152" y2="128" stroke="#D29A4A" stroke-width="1" stroke-opacity="0.85"/>
+    <line x1="60" y1="133.5" x2="140" y2="133.5" stroke="#A89A80" stroke-width="0.6" stroke-opacity="0.55"/>
+    <!-- the dancing quill: bone spine leaning back from the strike, barbs in
+         wood-engraving ticks, nib touching the horizon at (100,128) -->
+    <g fill="none" stroke="#EDE2CC" stroke-linecap="round">
+      <path d="M100 128 C 96 108, 90 88, 74 72 C 66 64, 56 58, 46 56" stroke-width="1.1" stroke-opacity="0.95"/>
+      <path d="M100 128 C 104 110, 108 92, 104 74" stroke-width="0.8" stroke-opacity="0.55"/>
+      <path d="M93.4 104.6 l -9.2 2.6 M91.2 96.4 l -9.6 1.2 M88.2 88.2 l -9.4 -0.4" stroke-width="0.65" stroke-opacity="0.7"/>
+      <path d="M97.6 105.4 l 8.4 4.4 M96.6 97.2 l 9 3 M94.8 89.2 l 9.2 1.4" stroke-width="0.65" stroke-opacity="0.7"/>
+      <path d="M74 72 C 68 66, 60 61, 50 59 M78 76 C 72 71, 65 67, 57 65" stroke-width="0.6" stroke-opacity="0.5"/>
+    </g>
+    <!-- nib slit -->
+    <line x1="100" y1="128" x2="100" y2="120" stroke="#EDE2CC" stroke-width="0.9"/>
+    <!-- strike-point: small bronze diamond at the impact -->
+    <path d="M100 122.5 L104 127 L100 131.5 L96 127 Z" fill="#D29A4A" stroke="none"/>
+    <!-- ember hairline crack descending into the flatland -->
+    <polyline points="100,131.5 98.2,136.5 100.4,140.5 99,145.5" fill="none" stroke="#B23A2A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.95"/>
+    <!-- resonance ticks above the impact -->
+    <g stroke="#EDE2CC" stroke-width="0.7" stroke-linecap="round" stroke-opacity="0.6">
+      <path class="arc-deco" d="M84 118 A 20 20 0 0 1 100 111" fill="none"/>
+      <path class="arc-deco" d="M116 118 A 20 20 0 0 0 100 111" fill="none"/>
+    </g>
+  </symbol>
+
+  <!-- ════════════ p1c10 · skirmish-gallery — 10 rings ════════════
+       "Skirmish Rank, Center Struck": three upright shields/tablets in rank
+       (outer two bone line, centre bronze); ember crack splits the centre
+       tablet top-to-bottom from a bronze strike-point at its crown. The rank
+       reads as a gallery wall of plates; the centre plate is the one just hit.
+       T1: 10 = fine x7 (r 92,87,82,77,72,67,62; w0.65; op .30/.36) + HERO x3
+       (r57/52/47; w0.9/1.0/1.1; op.50/.58/.66), all bone. -->
+  <symbol id="skirmish-gallery" viewBox="0 0 200 200">
+    <title>Rank of three shields, the centre one cracked</title>
+    <g fill="none" stroke="#EDE2CC" stroke-width="0.65">
+      <circle class="ring" cx="100" cy="100" r="92" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="87" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="82" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="77" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="72" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="67" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="62" stroke-opacity="0.30"/>
+    </g>
+    <g fill="none" stroke="#EDE2CC">
+      <circle class="ring" cx="100" cy="100" r="57" stroke-width="0.9" stroke-opacity="0.50"/>
+      <circle class="ring" cx="100" cy="100" r="52" stroke-width="1" stroke-opacity="0.58"/>
+      <circle class="ring" cx="100" cy="100" r="47" stroke-width="1.1" stroke-opacity="0.66"/>
+    </g>
+    <!-- outer shields: bone line, round-topped plates -->
+    <g fill="none" stroke="#EDE2CC" stroke-width="1" stroke-opacity="0.9">
+      <path d="M52 148 L52 78 Q52 66 64 66 L76 66 Q88 66 88 78 L88 148 Z"/>
+      <path d="M112 148 L112 78 Q112 66 124 66 L136 66 Q148 66 148 78 L148 148 Z"/>
+    </g>
+    <!-- plate hatching: wood-engraving ticks along the outer plates' feet -->
+    <g stroke="#A89A80" stroke-width="0.6" stroke-opacity="0.6">
+      <path d="M56 142 l 6 0 M64 142 l 6 0 M72 142 l 6 0" />
+      <path d="M116 142 l 6 0 M124 142 l 6 0 M132 142 l 6 0" />
+    </g>
+    <!-- centre shield: bronze, the struck plate -->
+    <path d="M82 152 L82 72 Q82 58 96 58 L104 58 Q118 58 118 72 L118 152 Z"
+          fill="none" stroke="#D29A4A" stroke-width="1.25" stroke-opacity="0.95"/>
+    <line x1="82" y1="140" x2="118" y2="140" stroke="#D29A4A" stroke-width="0.7" stroke-opacity="0.5"/>
+    <!-- strike-point diamond at the crown -->
+    <path d="M100 50 L105.5 57 L100 64 L94.5 57 Z" fill="#D29A4A" stroke="none"/>
+    <!-- ember crack splitting the centre tablet crown to foot -->
+    <polyline points="100,64 97,78 102,92 98,106 103,120 99,134 101,148"
+              fill="none" stroke="#B23A2A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.95"/>
+    <polyline points="102,92 108,96 113,95" fill="none" stroke="#B23A2A" stroke-width="0.8" stroke-opacity="0.6"/>
+    <polyline points="98,106 92,110 87,109" fill="none" stroke="#B23A2A" stroke-width="0.8" stroke-opacity="0.6"/>
+  </symbol>
+
+  <!-- ════════════ p1c11 · dionysian-mask — 11 rings ════════════
+       "Dionysian Noon Mask": bronze applique mask of Dionysos (youthful face,
+       hooded lids, open mouth, ivy-leaf wreath with corymbs) centred on a noon
+       sun-disc; ember crack across the brow from a bronze strike-point at the
+       crown. Sun-disc is the cohort's only closed filled-shape ring — noon.
+       T1: 11 = fine x8 (r 92,87.5,83,78.5,74,69.5,65,60.5; w0.65; op .30/.36)
+       + HERO x3 (r56/51.5/47; w0.9/1.0/1.1; op .50/.58/.66) + 4 cardinal
+       bronze ray ticks (class arc-deco, never counted). -->
+  <symbol id="dionysian-mask" viewBox="0 0 200 200">
+    <title>Wreathed mask of Dionysos on the noon disc</title>
+    <g fill="none" stroke="#EDE2CC" stroke-width="0.65">
+      <circle class="ring" cx="100" cy="100" r="92" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="87.5" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="83" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="78.5" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="74" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="69.5" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="65" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="60.5" stroke-opacity="0.36"/>
+    </g>
+    <g fill="none" stroke="#EDE2CC">
+      <circle class="ring" cx="100" cy="100" r="56" stroke-width="0.9" stroke-opacity="0.50"/>
+      <circle class="ring" cx="100" cy="100" r="51.5" stroke-width="1" stroke-opacity="0.58"/>
+      <circle class="ring" cx="100" cy="100" r="47" stroke-width="1.1" stroke-opacity="0.66"/>
+    </g>
+    <!-- cardinal ray ticks: short bronze sun-rays at N/E/S/W -->
+    <g class="arc-deco" stroke="#D29A4A" stroke-width="1.1" stroke-linecap="round" stroke-opacity="0.9">
+      <line x1="100" y1="24" x2="100" y2="32"/>
+      <line x1="168" y1="100" x2="176" y2="100"/>
+      <line x1="100" y1="168" x2="100" y2="176"/>
+      <line x1="24" y1="100" x2="32" y2="100"/>
+    </g>
+    <!-- noon sun-disc: thin bronze ring with bone inner glow line -->
+    <circle cx="100" cy="104" r="38" fill="none" stroke="#D29A4A" stroke-width="1.5" stroke-opacity="0.95"/>
+    <circle cx="100" cy="104" r="34.5" fill="none" stroke="#EDE2CC" stroke-width="0.6" stroke-opacity="0.4"/>
+    <!-- ivy wreath: six leaves + three berry corymbs over the disc crown -->
+    <g fill="none" stroke="#D29A4A" stroke-width="1" stroke-linecap="round" stroke-opacity="0.9">
+      <path d="M72 82 Q 78 68, 92 62"/>
+      <path d="M128 82 Q 122 68, 108 62"/>
+      <path d="M70 84 l -6 -8 M130 84 l 6 -8 M92 62 l -2 -8 M108 62 l 2 -8 M80 70 l -8 -3 M120 70 l 8 -3"/>
+    </g>
+    <g fill="#B23A2A" stroke="none">
+      <circle cx="72" cy="72" r="1.6"/>
+      <circle cx="128" cy="72" r="1.6"/>
+      <circle cx="100" cy="52" r="1.6"/>
+    </g>
+    <!-- the mask: hooded lids, articulated pupils, open mouth, side locks -->
+    <g fill="none" stroke="#EDE2CC" stroke-linecap="round">
+      <path d="M76 104 Q 84 98, 93 103" stroke-width="1.2" stroke-opacity="0.9"/>
+      <path d="M107 103 Q 116 98, 124 104" stroke-width="1.2" stroke-opacity="0.9"/>
+      <path d="M84 100 Q 88 97.5, 92 100 M108 100 Q 112 97.5, 116 100" stroke-width="0.7" stroke-opacity="0.5"/>
+      <path d="M102 106 L 99 120 L 104 122" stroke-width="0.9" stroke-opacity="0.65"/>
+      <ellipse cx="100" cy="132" rx="5.5" ry="7.5" stroke-width="1.2" stroke-opacity="0.9"/>
+      <path d="M78 96 C 72 108, 72 124, 78 136 M122 96 C 128 108, 128 124, 122 136" stroke-width="0.9" stroke-opacity="0.75"/>
+      <path d="M74 112 q -3.5 6, -1 12 M126 112 q 3.5 6, 1 12" stroke-width="0.7" stroke-opacity="0.55"/>
+    </g>
+    <g fill="#EDE2CC" stroke="none">
+      <circle cx="84.5" cy="103.5" r="1.3" opacity="0.9"/>
+      <circle cx="115.5" cy="103.5" r="1.3" opacity="0.9"/>
+    </g>
+    <!-- strike-point diamond at the crown + ember brow crack -->
+    <path d="M100 44 L105.5 51 L100 58 L94.5 51 Z" fill="#D29A4A" stroke="none"/>
+    <polyline points="100,58 97.5,68 101,78 98.5,88 100,96"
+              fill="none" stroke="#B23A2A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.95"/>
+  </symbol>
+
+  <!-- ════════════ p1c12 · diamond-over-coal — 12 collapsing ════════════
+       APPROVED MOTIF (binding correction 3): bronze faceted diamond over an
+       ash coal-lump, ember crack 2.0px through the diamond, ember strike-point
+       at the crown. The circle sequence collapses into the verdict gem.
+       T1: 12 = outer circles x6 (r 92,86,80,74 fine w0.65 op .30/.36 +
+       r 68,62 HERO w0.9/1.0 op .50/.60) + inner diamonds x6 (half-widths
+       52,46,40,34,28,22; class "ring diamond"; bone; w0.65 fine, inner two
+       hero w0.9/1.0). NO text inside the SVG. -->
+  <symbol id="diamond-over-coal" viewBox="0 0 200 200">
+    <title>Faceted diamond over coal, split by the verdict crack</title>
+    <g fill="none" stroke="#EDE2CC" stroke-width="0.65">
+      <circle class="ring" cx="100" cy="100" r="92" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="86" stroke-opacity="0.36"/>
+      <circle class="ring" cx="100" cy="100" r="80" stroke-opacity="0.30"/>
+      <circle class="ring" cx="100" cy="100" r="74" stroke-opacity="0.36"/>
+    </g>
+    <g fill="none" stroke="#EDE2CC">
+      <circle class="ring" cx="100" cy="100" r="68" stroke-width="0.9" stroke-opacity="0.50"/>
+      <circle class="ring" cx="100" cy="100" r="62" stroke-width="1" stroke-opacity="0.60"/>
+    </g>
+    <!-- collapsing diamonds: the sounding-rings become the gem's facets -->
+    <g fill="none" stroke="#EDE2CC" stroke-width="0.65">
+      <path class="ring diamond" d="M100 48 L152 100 L100 152 L48 100 Z" stroke-opacity="0.30"/>
+      <path class="ring diamond" d="M100 54 L146 100 L100 146 L54 100 Z" stroke-opacity="0.36"/>
+      <path class="ring diamond" d="M100 60 L140 100 L100 140 L60 100 Z" stroke-opacity="0.30"/>
+      <path class="ring diamond" d="M100 66 L134 100 L100 134 L66 100 Z" stroke-opacity="0.36"/>
+    </g>
+    <g fill="none" stroke="#EDE2CC">
+      <path class="ring diamond" d="M100 72 L128 100 L100 128 L72 100 Z" stroke-width="0.9" stroke-opacity="0.50"/>
+      <path class="ring diamond" d="M100 78 L122 100 L100 122 L78 100 Z" stroke-width="1" stroke-opacity="0.60"/>
+    </g>
+    <!-- the coal-lump: ash knotted ground the diamond rises from -->
+    <g fill="none" stroke="#A89A80" stroke-linecap="round">
+      <path d="M72 138 Q 78 126, 92 124 Q 100 131, 108 124 Q 122 126, 128 138 Q 114 146, 100 146 Q 86 146, 72 138 Z" stroke-width="1" stroke-opacity="0.8"/>
+      <path d="M82 136 q 6 -5, 12 -2 M106 134 q 6 -3, 11 2" stroke-width="0.65" stroke-opacity="0.55"/>
+    </g>
+    <!-- the diamond: bronze faceted gem, table + crown + pavilion lines -->
+    <g fill="none" stroke="#D29A4A" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M100 62 L124 88 L100 128 L76 88 Z" stroke-width="1.5" stroke-opacity="0.95"/>
+      <path d="M88 76 L112 76 M82 88 L118 88 M100 62 L92 76 M100 62 L108 76 M88 76 L100 128 M112 76 L100 128" stroke-width="0.7" stroke-opacity="0.7"/>
+      <path d="M92 76 L82 88 M108 76 L118 88" stroke-width="0.7" stroke-opacity="0.7"/>
+    </g>
+    <!-- ember strike-point at the crown -->
+    <circle cx="100" cy="58" r="2.6" fill="#B23A2A" stroke="none"/>
+    <circle cx="100" cy="58" r="5" fill="none" stroke="#B23A2A" stroke-width="0.8" stroke-opacity="0.6"/>
+    <!-- the verdict crack: 2.0px ember through the diamond into the coal -->
+    <polyline points="100,60 97,74 102,88 97.5,102 101.5,116 99,130 100.5,142"
+              fill="none" stroke="#B23A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="102,88 109,92 114,91" fill="none" stroke="#B23A2A" stroke-width="0.9" stroke-opacity="0.6"/>
+    <polyline points="97.5,102 90,106 85,105" fill="none" stroke="#B23A2A" stroke-width="0.9" stroke-opacity="0.6"/>
+  </symbol>
+
+  <!-- ════════════ raid pips 32×32 (p1c10 in-flow markers) ════════════
+       Fixed authored hex: url()-loaded SVG cannot inherit currentColor.
+       Each pip: single sounding arc (arc-deco, never counted) + family charge. -->
+  <symbol id="dusk-raid-pen" viewBox="0 0 32 32">
+    <title>Literary raid marker: quill nib</title>
+    <path class="arc-deco" d="M5 22 A 13 13 0 0 1 27 22" fill="none" stroke="#EDE2CC" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M16 25 L12 12 Q16 7 20 12 Z" fill="none" stroke="#D29A4A" stroke-width="1.4"/>
+    <line x1="16" y1="25" x2="16" y2="14" stroke="#D29A4A" stroke-width="1"/>
+    <circle cx="16" cy="10" r="1.2" fill="#D29A4A" stroke="none"/>
+  </symbol>
+  <symbol id="dusk-raid-eye" viewBox="0 0 32 32">
+    <title>Psychology raid marker: almond eye</title>
+    <path class="arc-deco" d="M5 22 A 13 13 0 0 1 27 22" fill="none" stroke="#EDE2CC" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M8 16 Q16 9 24 16 Q16 23 8 16 Z" fill="none" stroke="#A89A80" stroke-width="1.4"/>
+    <circle cx="16" cy="16" r="2" fill="#D29A4A" stroke="none"/>
+  </symbol>
+  <symbol id="dusk-raid-mask" viewBox="0 0 32 32">
+    <title>Art raid marker: miniature mask</title>
+    <path class="arc-deco" d="M5 22 A 13 13 0 0 1 27 22" fill="none" stroke="#EDE2CC" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M10 10 Q16 8 22 10 L21 20 Q16 24 11 20 Z" fill="none" stroke="#D29A4A" stroke-width="1.4"/>
+    <path d="M12.5 15 h2.4 M17.1 15 h2.4 M14.5 20 h3" stroke="#EDE2CC" stroke-width="1" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="dusk-raid-sword" viewBox="0 0 32 32">
+    <title>Politics raid marker: short blade</title>
+    <path class="arc-deco" d="M5 22 A 13 13 0 0 1 27 22" fill="none" stroke="#EDE2CC" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M16 6 L18 18 L16 24 L14 18 Z" fill="none" stroke="#A89A80" stroke-width="1.4" stroke-linejoin="round"/>
+    <line x1="12" y1="19" x2="20" y2="19" stroke="#D29A4A" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- ════════════ dusk-raid-major 48×48 (movement heads ×6) ════════════ -->
+  <symbol id="dusk-raid-major" viewBox="0 0 48 48">
+    <title>Movement-head marker: cracked disc with ember core</title>
+    <path class="arc-deco" d="M6 32 A 20 20 0 0 1 42 32" fill="none" stroke="#EDE2CC" stroke-width="1" stroke-opacity="0.55"/>
+    <circle class="seal" cx="24" cy="22" r="11" fill="none" stroke="#D29A4A" stroke-width="1.6"/>
+    <polyline class="seal" points="24,12 22,18 25,24 22.5,30 24,32" fill="none" stroke="#B23A2A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="seal" cx="24" cy="22" r="2" fill="#B23A2A" stroke="none"/>
+  </symbol>
+
+  <!-- ════════════ dusk-seal 32×32 (cohort end-seal, v1.1 A.0) ════════════
+       Small cracked disc: bronze ring, ember crack + core. Sized ≤32px in CSS.
+       Fixed hex (url() cannot inherit currentColor). -->
+  <symbol id="dusk-seal" viewBox="0 0 32 32">
+    <title>Struck-disc end seal</title>
+    <circle class="seal" cx="16" cy="16" r="10" fill="none" stroke="#D29A4A" stroke-width="2" stroke-opacity="0.95"/>
+    <circle class="seal" cx="16" cy="16" r="5.5" fill="none" stroke="#D29A4A" stroke-width="1" stroke-opacity="0.6"/>
+    <polyline class="seal" points="16,7 14.6,12 16.4,17 15,21.5 16,25" fill="none" stroke="#B23A2A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="seal" cx="16" cy="16" r="1.8" fill="#B23A2A" stroke="none"/>
+  </symbol>
+
+  <!-- ════════════ TOC pips 24×24 (contents rows) ════════════
+       Simplified to a few strokes each; fixed bronze hex. -->
+  <symbol id="dusk-toc-p9" viewBox="0 0 24 24">
+    <title>Contents mark: quill above the line</title>
+    <line class="seal" x1="4" y1="17" x2="20" y2="17" stroke="#D29A4A" stroke-width="1.2"/>
+    <path class="seal" d="M12 17 C 11 12, 9 8, 5 6" fill="none" stroke="#D29A4A" stroke-width="1.2" stroke-linecap="round"/>
+    <path class="seal" d="M12 12.5 L15.5 9" stroke="#D29A4A" stroke-width="1" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="dusk-toc-p10" viewBox="0 0 24 24">
+    <title>Contents mark: three bars, centre cracked</title>
+    <g class="seal" stroke="#D29A4A" stroke-width="1.6" stroke-linecap="round">
+      <line x1="6" y1="6" x2="6" y2="18"/>
+      <line x1="18" y1="6" x2="18" y2="18"/>
+    </g>
+    <line class="seal" x1="12" y1="5" x2="12" y2="19" stroke="#D29A4A" stroke-width="1.8" stroke-linecap="round"/>
+    <polyline class="seal" points="12,7 11,11 13,14 12,18" fill="none" stroke="#B23A2A" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="dusk-toc-p11" viewBox="0 0 24 24">
+    <title>Contents mark: mask circle with brow tick</title>
+    <circle class="seal" cx="12" cy="13" r="6.5" fill="none" stroke="#D29A4A" stroke-width="1.4"/>
+    <path class="seal" d="M8.5 12.5 h2 M13.5 12.5 h2 M10.5 16 h3" stroke="#D29A4A" stroke-width="1.1" stroke-linecap="round"/>
+    <line class="seal" x1="12" y1="2.5" x2="12" y2="5" stroke="#D29A4A" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="dusk-toc-p12" viewBox="0 0 24 24">
+    <title>Contents mark: diamond over coal</title>
+    <path class="seal" d="M12 3 L18 10 L12 17 L6 10 Z" fill="none" stroke="#D29A4A" stroke-width="1.4" stroke-linejoin="round"/>
+    <line class="seal" x1="12" y1="3" x2="12" y2="17" stroke="#B23A2A" stroke-width="1.2"/>
+    <path class="seal" d="M8 20.5 Q 12 18.5, 16 20.5" fill="none" stroke="#A89A80" stroke-width="1.1" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- ════════════ url() anchors: explicit SVG views ════════════
+       Chromium paints external-resource fragments ONLY with an explicit
+       <view> (bare <symbol> ids load but paint blank — proven 2026-10-15).
+       CSS addresses these -view ids; content = the matching symbol's scene. -->
+  <view id="dusk-raid-pen-view" viewBox="0 0 32 32"/>
+  <view id="dusk-raid-eye-view" viewBox="0 0 32 32"/>
+  <view id="dusk-raid-mask-view" viewBox="0 0 32 32"/>
+  <view id="dusk-raid-sword-view" viewBox="0 0 32 32"/>
+  <view id="dusk-raid-major-view" viewBox="0 0 48 48"/>
+  <view id="dusk-seal-view" viewBox="0 0 32 32"/>
+  <view id="dusk-toc-p9-view" viewBox="0 0 24 24"/>
+  <view id="dusk-toc-p10-view" viewBox="0 0 24 24"/>
+  <view id="dusk-toc-p11-view" viewBox="0 0 24 24"/>
+  <view id="dusk-toc-p12-view" viewBox="0 0 24 24"/>
+</svg>

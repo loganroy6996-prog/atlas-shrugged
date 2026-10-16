@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>P1 Prototype — Solar Gospel (p1c1 · p1c9 · p1c23)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --z-night:#0A0E21; --z-lapis:#1B2350; --z-solar:#E8A93D;
+    --z-ember:#C8502E; --z-serpent:#7A8B5A; --z-bone:#F2E7CF;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--z-night); color:var(--z-bone);
+    font-family:"Spectral",Georgia,serif; -webkit-font-smoothing:antialiased; }
+  .proto-note { max-width:60rem; margin:0 auto; padding:1.2rem 1.5rem 0;
+    font-family:"DM Sans",system-ui,sans-serif; font-size:.8rem; color:#9aa0c0; }
+  .proto-note b { color:var(--z-solar); font-weight:500; }
+  section.demo { max-width:60rem; margin:0 auto; padding:3.5rem 1.5rem 4.5rem;
+    border-bottom:1px solid rgba(232,169,61,.18); }
+  #chapter-art { display:flex; justify-content:center; margin:0 0 1.6rem; }
+  #chapter-art svg { display:block; height:auto; }
+  .art-scene svg { width:min(58rem,100%); color:var(--z-bone); }
+  .art-emblem svg { width:120px; color:var(--z-bone); }
+  .art-finale svg { width:150px; color:var(--z-bone); }
+  .meta-part { margin:0 0 .9rem; text-align:center; font-family:Cinzel,"Trajan Pro",Georgia,serif;
+    font-size:.85rem; letter-spacing:.3em; text-indent:.3em; color:var(--z-solar); font-weight:400; }
+  .meta-title { margin:0 auto; text-align:center; font-family:Cinzel,"Trajan Pro",Georgia,serif;
+    font-weight:600; font-size:clamp(2rem,5vw,3.1rem); line-height:1.18;
+    letter-spacing:.015em; text-wrap:balance; max-width:44rem; color:var(--z-bone); }
+  .pull-line { margin:1.4rem auto 0; max-width:40rem; text-align:center;
+    font-style:italic; font-size:1.15rem; line-height:1.7; color:var(--z-bone); }
+  .pull-line cite { font-style:normal; font-size:.85rem; color:var(--z-solar); white-space:nowrap; }
+  .sun-rule { display:flex; justify-content:center; margin:1.6rem 0 0; }
+  .sun-rule svg { width:14rem; color:var(--z-solar); }
+  .sun-rule.short svg { width:12rem; }
+  .chapter-text { max-width:40rem; margin:2.6rem auto 0; font-size:1.3rem; line-height:1.9; }
+  .chapter-text.narrow { max-width:38rem; }
+  .chapter-text p { margin:0 auto 1.15em; }
+  .chapter-text p:first-of-type::first-letter { font-family:Cinzel,Georgia,serif;
+    float:left; font-size:3.4em; line-height:.82; padding:.06em .12em 0 0;
+    font-weight:600; color:var(--z-solar); }
+  .chapter-text.finale-cap p:first-of-type::first-letter { color:#EEC25E; }
+  .end-seal { display:flex; justify-content:center; margin-top:2.6rem; }
+  .end-seal svg { width:26px; height:26px; color:var(--z-solar); flex:none; }
+  @media (max-width: 640px) {
+    section.demo { padding:2.25rem 1.1rem 3.5rem; }
+    .meta-part { font-size:.72rem; letter-spacing:.22em; text-indent:.22em; }
+    .art-scene svg { width:100%; }
+    .pull-line { font-size:1.02rem; }
+    .chapter-text { font-size:1.12rem; line-height:1.8; }
+    .sun-rule svg { width:10rem; }
+    .sun-rule.short svg { width:9rem; }
+  }
+  /* Z1 firewall: no text-shadow, no glow, no gradient anywhere in this file. */
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<!--
+    Thus Spoke Zarathustra — P1 cohort symbol library (DRAFT FOR PROTOTYPE REVIEW).
+    Owner: ZaraP1Designer. Status: draft — conforms to adopted Direction A (Solar Gospel)
+    + ArtDirector verdict (Z1–Z4, Z7 binding on P1). Supervisor integrates; P1 engineer builds final.
+    ALL gold is FLAT engraved line-work (Z1 firewall): no gradients, no filters, no glow,
+    no text-shadow anywhere in this file. Strokes use currentColor where the using
+    context must re-tint; fixed palette roles are documented per symbol.
+    Palette: --z-night #0A0E21 / --z-lapis #1B2350 / --z-solar #E8A93D /
+             --z-ember #C8502E / --z-serpent #7A8B5A / --z-bone #F2E7CF.
+    Body: Spectral (director ruling — Newsreader OUT). Display: Cinzel (liturgical, Z2).
+  -->
+  <defs>
+    <g id="zcrestingrays">
+      <path d="M48 20v-9M66 25l5-8M30 25l-5-8M79 38l8-4M17 38l-8-4M86 52h9M1 52H10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- P1 draft of supervisor master art/seal-part-1.svg: the Dawn-Ring. -->
+  <symbol id="dawn-ring" viewBox="0 0 96 96">
+    <circle cx="48" cy="48" r="44" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="48" cy="48" r="38.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.55"/>
+    <path d="M12 63a36 36 0 0 0 72 0" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.8"/>
+    <path d="M20 63a28 28 0 0 1 56 0" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M30 63a18 18 0 0 1 36 0" fill="var(--z-solar,#E8A93D)" opacity="0.9"/>
+    <use href="#zcrestingrays" color="var(--z-solar,#E8A93D)"/>
+    <circle cx="48" cy="63" r="2.6" fill="var(--z-bone,#F2E7CF)"/>
+  </symbol>
+
+  <!-- P1 closing mini-seal (App. A.0 / Z7): body[data-chapter]-qualified p:last-child::after SVG url, ≤32px. -->
+  <symbol id="cresting-sun-mini" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M5 20a11 11 0 0 0 22 0" fill="none" stroke="currentColor" stroke-width="1" opacity="0.7"/>
+    <path d="M8.5 20a7.5 7.5 0 0 1 15 0" fill="var(--z-solar,#E8A93D)"/>
+    <path d="M16 9V6.4M21 10.5l1.8-2.2M11 10.5l-1.8-2.2M24.5 15l2.6-.7M7.5 15l-2.6-.7" fill="none" stroke="var(--z-solar,#E8A93D)" stroke-width="1.3" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- P1 draft of supervisor master art/rule-sun.svg: opener sun-rule. -->
+  <symbol id="sun-rule" viewBox="0 0 320 16">
+    <path d="M8 8h118M194 8h118" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <circle cx="160" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="160" cy="8" r="2" fill="var(--z-solar,#E8A93D)"/>
+    <path d="M160 0v-0M160 1.5v2M160 12.5v2M153.5 8h-2M168.5 8h-2" fill="none" stroke="var(--z-solar,#E8A93D)" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="8" cy="8" r="1.4" fill="currentColor"/>
+    <circle cx="312" cy="8" r="1.4" fill="currentColor"/>
+  </symbol>
+
+  <!-- p1c1: 3-beat vision-epic frieze. Beat separators are engraved rules, never gutters of glow. -->
+  <symbol id="rope-fall-scene" viewBox="0 0 960 420">
+    <!-- Beat 1: dawn sun-address over mountain + lake (x 0–300). -->
+    <g fill="none" stroke="currentColor">
+      <circle cx="150" cy="120" r="46" stroke-width="2.4"/>
+      <circle cx="150" cy="120" r="38" stroke-width="1" opacity="0.6"/>
+      <path d="M150 52v-22M150 188v14M82 120H60M218 120h22M102 72l-14-14M198 72l14-14M102 168l-14 14M198 168l14 14" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="150" cy="120" r="10" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+      <path d="M18 300l60-84 46 52 52-96 48 84 40-44 36 88" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M30 330h240M60 348h180" stroke-width="1.2" opacity="0.7"/>
+      <path d="M228 268l10-26 10 26M238 248v-18" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 96c14-8 30-10 46-6" stroke-width="1.2" opacity="0.7"/>
+    </g>
+    <!-- Beat 2: market square, taut rope, falling figure (x 330–630). -->
+    <g fill="none" stroke="currentColor">
+      <path d="M368 330V160M592 330V160" stroke-width="3"/>
+      <path d="M356 160h24M580 160h24M356 330h24M580 330h24" stroke-width="2"/>
+      <path d="M356 148l12-14 12 14M580 148l12-14 12 14" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M368 178c60 10 164 10 224 0" stroke-width="1.6"/>
+      <path d="M540 176l26-6 2 10-26 6z" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M452 208c8-4 18-2 22 6l6 14 16-8 5 8-20 12 10 18-8 5-10-14-12 16-8-5 8-20-14-8 3-9 12 4 2-12 8-2z" stroke-width="2.1" stroke-linejoin="round"/>
+      <path d="M392 330v-26l10-14 10 14v26M424 330v-26l10-14 10 14v26M456 330v-26l10-14 10 14v26M488 330v-26l10-14 10 14v26M520 330v-26l10-14 10 14v26M552 330v-26l10-14 10 14v26" stroke-width="1.4" opacity="0.85"/>
+      <path d="M384 330h192" stroke-width="1.4" opacity="0.7"/>
+    </g>
+    <!-- Beat 3: night burial at the hollow tree; eagle + serpent at noon sky (x 660–940). -->
+    <g fill="none" stroke="currentColor">
+      <circle cx="802" cy="70" r="26" stroke-width="2" opacity="0.9"/>
+      <path d="M802 28V18M802 112v8M760 70h-10M844 70h10M774 42l-7-7M830 42l7-7" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M734 176c14-20 34-30 54-30l14-14 14 14c20 0 40 10 54 30-15-4-26-2-34 4 1-9-2-17-9-22-6 7-17 9-26 6-9 3-20 1-26-6-7 5-10 13-9 22-8-6-19-8-34-4z" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M772 140c6-6 16-8 24-4" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M802 116c-6 8-16 10-22 6s-2-10 5-11c-3-5 2-10 9-9" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M748 330c0-58 6-104 30-142l12 6c-22 36-26 80-26 136" stroke-width="2.6"/>
+      <path d="M778 196c10-14 28-22 46-24M776 226c12-6 28-8 42-4" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M744 296c8-10 24-14 38-10l-4 40c-14 4-28 0-34-10z" stroke-width="1.8"/>
+      <path d="M752 306h22M752 314h22" stroke-width="1.1" opacity="0.7"/>
+      <path d="M706 330h182" stroke-width="1.4" opacity="0.7"/>
+      <path d="M716 74l3-3M724 70l3-3M884 130l3-3M892 136l3-3M890 60l3-3" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+    </g>
+    <!-- Beat separators: twin engraved rules with sun-dots. -->
+    <g stroke="var(--z-solar,#E8A93D)" fill="none">
+      <path d="M318 40v340M326 40v340" stroke-width="1"/>
+      <circle cx="322" cy="200" r="3" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+      <path d="M644 40v340M652 40v340" stroke-width="1"/>
+      <circle cx="648" cy="200" r="3" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+    </g>
+  </symbol>
+
+  <!-- p1c2: camel / lion / child triptych; dragon-scale fragment under the lion's paw. -->
+  <symbol id="triptych-metamorphoses" viewBox="0 0 360 120">
+    <g fill="none" stroke="currentColor">
+      <path d="M30 96V60c0-8 6-12 12-12l16-4 8-12h12l6 10 14 4c8 2 12 8 12 16v34" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M52 84h44M60 96v-8M102 96v-8" stroke-width="1.4"/>
+      <path d="M40 52l18-6 4 8-18 6z" stroke-width="1.2" opacity="0.8"/>
+      <path d="M262 88c0-14 8-24 20-28l4-14 6 12c8-2 16 2 18 10l10 4-8 8 2 8h-52z" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="282" cy="66" r="2" fill="currentColor" stroke="none"/>
+      <path d="M262 88c-6 2-10 6-12 12" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M196 100l24-10 6 8-24 10z" stroke-width="1.4"/>
+      <path d="M202 96l4-4M210 94l4-4M218 92l4-4" stroke-width="1" opacity="0.8"/>
+      <circle cx="318" cy="52" r="9" stroke-width="1.8"/>
+      <path d="M318 61v22M310 70l-8 10M326 70l8 10M318 83l-8 14M318 83l8 14" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="340" cy="92" r="12" stroke-width="1.8"/>
+      <circle cx="340" cy="92" r="4" stroke-width="1.2"/>
+      <path d="M340 80v-6M340 104v6M328 92h-6M352 92h6" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+    <g stroke="var(--z-solar,#E8A93D)">
+      <path d="M128 14v92M232 14v92" fill="none" stroke-width="1"/>
+      <circle cx="128" cy="60" r="2.4" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+      <circle cx="232" cy="60" r="2.4" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+    </g>
+  </symbol>
+
+  <!-- p1c9: the lone mountainside tree; mirrored roots; awaited lightning. -->
+  <symbol id="lone-tree" viewBox="0 0 120 120">
+    <g fill="none" stroke="currentColor">
+      <path d="M58 108C56 84 54 64 46 48c-5-10-3-24 5-33" stroke-width="3" stroke-linecap="round"/>
+      <path d="M54 80c-12-2-24-10-29-22M55 64c12-5 26-5 35 2M50 52c-7-9-7-20-3-29" stroke-width="2" stroke-linecap="round"/>
+      <path d="M24 44c6-10 20-15 32-11M60 36c9-8 24-9 33-2M40 30c5-10 15-15 26-14M70 24c8-4 18-3 24 3" stroke-width="1.6" stroke-linecap="round" opacity="0.95"/>
+      <path d="M36 40l-6-2M48 34l-5-4M66 32l5-4M78 34l6-2" stroke-width="1.1" opacity="0.8"/>
+      <path d="M16 108h88" stroke-width="1.6"/>
+      <path d="M58 108c-3 5-10 8-18 8M58 108c3 5 10 8 18 8M58 108v10" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+      <path d="M40 116l-10 5M76 116l10 5M58 118v4" stroke-width="1.2" opacity="0.75"/>
+      <path d="M28 112c8 3 56 3 64 0" stroke-width="1" opacity="0.5"/>
+    </g>
+    <path d="M92 6l-12 16 9 2-12 16" fill="none" stroke="var(--z-solar,#E8A93D)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- p1c12: the smashed cold idol; rainbow + bridges emerging behind. -->
+  <symbol id="smashed-idol" viewBox="0 0 120 120">
+    <g fill="none">
+      <path d="M22 40a38 38 0 0 1 76 0" stroke="var(--z-solar,#E8A93D)" stroke-width="1.6"/>
+      <path d="M28 40a32 32 0 0 1 64 0" stroke="var(--z-serpent,#7A8B5A)" stroke-width="1.3"/>
+      <path d="M34 40a26 26 0 0 1 52 0" stroke="var(--z-ember,#C8502E)" stroke-width="1.1" opacity="0.85"/>
+      <path d="M14 96c22-14 50-14 92 0" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M30 96v-6M50 92v-6M70 92v-6M90 96v-6" stroke="currentColor" stroke-width="1.1" opacity="0.8"/>
+    </g>
+    <g fill="none" stroke="currentColor">
+      <path d="M44 52h32v44H44z" stroke-width="2.2"/>
+      <path d="M44 52l6-10h20l6 10" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M60 42l-4 22 8 8-6 14 6 10" stroke-width="1.6"/>
+      <path d="M52 44l16-2 2 6-16 2z" stroke-width="1.3"/>
+      <path d="M82 60l10-4 2 8-10 4zM36 84l-8 6 6 6 8-6z" stroke-width="1.2" opacity="0.85"/>
+      <path d="M40 96h40" stroke-width="1.6"/>
+    </g>
+  </symbol>
+
+  <!-- p1c20: the adder under the fig branch (motif: bestiary-adder). -->
+  <symbol id="adder" viewBox="0 0 120 120">
+    <g fill="none" stroke="currentColor">
+      <path d="M14 30c26-10 56-12 92-6" stroke-width="2"/>
+      <path d="M34 27c-2-8 2-16 10-18l4 8 8-2c0 8-4 14-12 16z" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M66 23c0-8 6-14 14-14l2 8 8 0c-2 8-8 12-16 12z" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M92 22c4-6 12-8 18-6l-2 8 6 4c-6 4-14 4-18-2z" stroke-width="1.4" stroke-linejoin="round"/>
+    </g>
+    <g fill="none" stroke="var(--z-serpent,#7A8B5A)">
+      <path d="M34 92c0-10 8-16 18-16 14 0 16 12 30 12 10 0 16-6 16-14 0-10-8-12-12-18" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M52 79l3-4M62 80l3-4M72 84l4-3M82 86l4-2" stroke-width="1.1" stroke-linecap="round" opacity="0.9"/>
+      <circle cx="68" cy="60" r="5.5" stroke-width="2"/>
+      <circle cx="69.5" cy="59" r="1.4" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+      <path d="M73 57l8-4M73 61l8 0" stroke-width="1.3" stroke-linecap="round" stroke="var(--z-ember,#C8502E)"/>
+    </g>
+    <circle cx="98" cy="98" r="7" fill="none" stroke="var(--z-solar,#E8A93D)" stroke-width="1.6"/>
+    <path d="M98 87v-4M98 109v4M87 98h-4M109 98h4" stroke="var(--z-solar,#E8A93D)" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- p1c23: the staff-head — golden haft, rayed sun, serpent coiled about it, fountain base. -->
+  <symbol id="staff-sun-serpent" viewBox="0 0 120 160">
+    <g fill="none">
+      <path d="M60 158V78" stroke="var(--z-solar,#E8A93D)" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M60 150v-8M60 132v-8M60 114v-8" stroke="var(--z-night,#0A0E21)" stroke-width="3.6"/>
+      <circle cx="60" cy="56" r="26" stroke="var(--z-solar,#E8A93D)" stroke-width="2.4"/>
+      <circle cx="60" cy="56" r="20" stroke="var(--z-solar,#E8A93D)" stroke-width="1" opacity="0.65"/>
+      <circle cx="60" cy="56" r="6" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+      <path d="M60 18v-8M60 94v6M22 56h-8M98 56h8M33 29l-6-6M87 29l6-6M33 83l-6 6M87 83l6 6" stroke="var(--z-solar,#E8A93D)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M60 34c14 0 22 8 22 20 0 14-12 16-22 22-10 6-22 8-22 22 0 10 8 16 16 18" stroke="var(--z-serpent,#7A8B5A)" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M52 100l-4 8 8-2c2-4 0-8-4-6z" stroke="var(--z-serpent,#7A8B5A)" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="52" cy="102" r="1.2" fill="var(--z-bone,#F2E7CF)" stroke="none"/>
+      <path d="M50 38l4-3M68 38l-4-3M78 52l5 1M42 52l-5 1" stroke="var(--z-serpent,#7A8B5A)" stroke-width="1.1" stroke-linecap="round" opacity="0.9"/>
+      <path d="M38 150c6-4 14-4 22 0 8-4 16-4 22 0" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="46" cy="140" r="1.6" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+      <circle cx="60" cy="136" r="1.6" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+      <circle cx="74" cy="140" r="1.6" fill="var(--z-solar,#E8A93D)" stroke="none"/>
+    </g>
+  </symbol>
+</svg>
+<p class="proto-note"><b>P1 PROTOTYPE DRAFT</b> — Solar Gospel grammar on live text (Spectral body per director ruling; Cinzel liturgical; flat engraved gold, zero glow). Three openers: p1c1 scene · p1c9 emblem · p1c23 finale. View at 1440 / 820 / 390.</p>
+
+<!-- p1c1 VISION-EPIC -->
+<section class="demo" aria-label="p1c1 prototype">
+  <figure id="chapter-art" class="art-scene" aria-hidden="true">
+    <svg viewBox="0 0 960 420" role="img" aria-label="Three-beat frieze: dawn sun-address, the rope fall, night burial with eagle and serpent">
+      <use href="#rope-fall-scene"/>
+    </svg>
+  </figure>
+  <p class="meta-part">Part the First · I</p>
+  <h1 class="meta-title">Zarathustra&rsquo;s Prologue</h1>
+  <p class="pull-line">&ldquo;Man is a rope, fastened between animal and Superman &ndash; a rope over an abyss.&rdquo; <cite>&mdash; &sect;57</cite></p>
+  <div class="sun-rule" aria-hidden="true"><svg viewBox="0 0 320 16"><use href="#sun-rule"/></svg></div>
+  <div class="chapter-text">
+    <p>When Zarathustra was thirty years old, he left his home and the lake of his home and went into the mountains. Here he had the enjoyment of his spirit and his solitude and he did not weary of it for ten years. But at last his heart turned &ndash; and one morning he rose with the dawn, stepped before the sun, and spoke to it thus:</p>
+    <p>Great star! What would your happiness be, if you had not those for whom you shine!</p>
+    <p>You have come up here to my cave for ten years: you would have grown weary of your light and of this journey, without me, my eagle and my serpent.</p>
+  </div>
+  <div class="end-seal" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#cresting-sun-mini"/></svg></div>
+</section>
+
+<!-- p1c9 PARABLE-EMBLEM -->
+<section class="demo" aria-label="p1c9 prototype">
+  <figure id="chapter-art" class="art-emblem" aria-hidden="true">
+    <svg viewBox="0 0 120 120" role="img" aria-label="Lone tree on the mountainside awaiting lightning"><use href="#lone-tree"/></svg>
+  </figure>
+  <p class="meta-part">Part the First · I</p>
+  <h1 class="meta-title">Of the Tree on the Mountainside</h1>
+  <p class="pull-line">&ldquo;The more it wants to rise into the heights and the light, the more determinedly do its roots strive earthwards, downwards, into the darkness, into the depths &ndash; into evil.&rdquo; <cite>&mdash; &sect;4</cite></p>
+  <div class="sun-rule short" aria-hidden="true"><svg viewBox="0 0 320 16"><use href="#sun-rule"/></svg></div>
+  <div class="chapter-text narrow">
+    <p>Zarathustra had noticed that a young man was avoiding him. And as he was walking alone one evening through the mountains surrounding the town called The Pied Cow, behold! he found this young man leaning against a tree and gazing wearily into the valley.</p>
+    <p>At that the young man stood up in confusion and said: &lsquo;I hear Zarathustra and I was just thinking of him.&rsquo;</p>
+  </div>
+  <div class="end-seal" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#cresting-sun-mini"/></svg></div>
+</section>
+
+<!-- p1c23 FAREWELL-FINALE -->
+<section class="demo" aria-label="p1c23 prototype">
+  <figure id="chapter-art" class="art-finale" aria-hidden="true">
+    <svg viewBox="0 0 120 160" role="img" aria-label="Staff with serpent coiled about a sun"><use href="#staff-sun-serpent"/></svg>
+  </figure>
+  <p class="meta-part">Part the First · I</p>
+  <h1 class="meta-title">Of the Bestowing Virtue</h1>
+  <p class="pull-line">&ldquo;&lsquo;All gods are dead: now we want the Superman to live&rsquo; &ndash; let this be our last will one day at the great noontide!&rdquo; <cite>&mdash; &sect;51</cite></p>
+  <div class="sun-rule" aria-hidden="true"><svg viewBox="0 0 320 16"><use href="#sun-rule"/></svg></div>
+  <div class="chapter-text finale-cap">
+    <p>When Zarathustra had taken leave of the town to which his heart was attached and which was called &lsquo;The Pied Cow&rsquo; there followed him many who called themselves his disciples and escorted him.</p>
+    <p>Tell me: how did gold come to have the highest value? Because it is uncommon and useless and shining and mellow in lustre; it always bestows itself.</p>
+  </div>
+  <div class="end-seal" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#cresting-sun-mini"/></svg></div>
+</section>
+</body>
+</html>

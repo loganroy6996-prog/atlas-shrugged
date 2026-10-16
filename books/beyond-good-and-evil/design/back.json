@@ -1,0 +1,214 @@
+{
+  "cohort": "back",
+  "cohort_ids": [
+    "p1c6",
+    "p1c7",
+    "p1c8",
+    "p1c9",
+    "p1c10",
+    "p1c11"
+  ],
+  "design_status": "phase2-conform: Numbered Ledger approved (E1-E7); back-design.md delivered; oracle EXACT; prototype scope p1c10+p1c11",
+  "entries": {
+    "p1c10": {
+      "art": "art/back-seal-9-steps.svg",
+      "mood_arc": "The storm breaks: longest chapter must feel monumental — rank made visible, then the 'EVIL thoughts' finale releases the pressure.",
+      "opener": "CONFORMED in back-design.md §3 p1c10 (ledger grammar); was: PROVISIONAL: stepped ascent composition behind the title — pathos of distance rendered as vertical hierarchy; long-chapter relief via aphorism-number styling.",
+      "palette_role": "LOCKED: summit (PROTOTYPE) — see tokens",
+      "rationale": "The book's longest chapter (§257–296) is a doctrine of rank: 'EVERY elevation of the type man has hitherto been the work of an aristocratic society' (§257), 'the PATHOS OF DISTANCE' (§257), 'INSTINCT FOR RANK' (§263), solitude (§289: recluse/echo of the wilderness), masks (§269–270), and the closing cry to 'my old, beloved— EVIL thoughts!' (§296). Verbatim: 'EVERY elevation of the type \"man,\" has hitherto been the work of an aristocratic society' (§257); 'you sudden sparks and marvels of my solitude, you, my old, beloved-- EVIL thoughts!' (§296). Treatment must carry scale, height, and hardness — not the storm's rain but its summit.",
+      "reading": "CONFORMED in back-design.md §3 p1c10 (ledger grammar); was: PROVISIONAL: ascending section markers keyed to rank motif; relief rhythm for ~94 paragraphs.",
+      "key_passages": [
+        "§278: 'Wanderer, who art thou? I see thee follow thy path without scorn, without love, with unfathomable eyes, wet and sad as a plummet which has returned to the light insatiated out of every depth' — the plummet-from-depth image.",
+        "§284: 'To live in a vast and proud tranquility; always beyond… to SEAT oneself on them as upon horses' + 'solitude is a virtue with us, as a sublime bent and bias to purity.'",
+        "§295: 'the genius of the heart… which smoothes rough souls and makes them taste a new longing--to lie placid as a mirror, that the deep heavens may be reflected in them.'"
+      ],
+      "mode": "summit (PROTOTYPE)",
+      "range": "§§257–296",
+      "sections": 40,
+      "numerals": "brass + sanguine triple 278/287/296 ONLY (E3)",
+      "motif": "noble-steps",
+      "manifest": {
+        "src": "art/back-seal-9-steps.svg",
+        "symbol": "seal-9-steps",
+        "class": "seal",
+        "caption": "Pl. IX — Stepped pyramid"
+      },
+      "end_seal": "art/back-end-9-steps.svg",
+      "end_mark": "§ 296 (brass)",
+      "gloss": "Rank, distance, and the noble soul."
+    },
+    "p1c11": {
+      "art": "art/back-fleuron-bow.svg",
+      "mood_arc": "Resolution: light, altitude, intimacy. The one chapter that is song, not argument — midday sun after the storm.",
+      "opener": "CONFORMED in back-design.md §3 p1c11 (ledger grammar); was: PROVISIONAL: luminous alpine composition — glacier/eagle/height; verse-first layout with generous measure and stanza breathing (plain <p> per line, styled as verse).",
+      "palette_role": "LOCKED: verse-silence (PROTOTYPE) — see tokens",
+      "rationale": "A 36-line alpine poem, not prose: 'MIDDAY of Life! Oh, season of delight!', 'Is not the glacier's grey today for you / Rose-garlanded?', 'To spy for you from farthest eagle's view', the bow-and-arrow huntsman ('An evil huntsman was I? See how taut / My bow was bent!'), and the finale 'friend Zarathustra, came!' Verbatim: 'MIDDAY of Life! Oh, season of delight!'; 'The Guest of Guests, friend Zarathustra, came!' Treatment MUST be verse-luminous — stanza rhythm, altitude, noon light — never a prose wall.",
+      "reading": "CONFORMED in back-design.md §3 p1c11 (ledger grammar); was: PROVISIONAL: verse measure, restrained italic/indent cadence for stanza groups, no drop cap.",
+      "key_passages": [
+        "'My table was spread out for you on high-- / Who dwelleth so Star-near, so near the grisly pit below?' — height-above-abyss, the cohort's final vertical image.",
+        "'Midday of life! My second youth's delight!' + 'At midday 'twas, when one became as two' — noon as transformation.",
+        "Close: 'The world now laughs, the grisly veil was torn, / And Light and Dark were one that wedding-morn.'"
+      ],
+      "mode": "verse-silence (PROTOTYPE)",
+      "range": "—",
+      "sections": 0,
+      "numerals": "SILENT (E4)",
+      "motif": "aftersong-bow",
+      "manifest": {
+        "src": "art/back-fleuron-bow.svg",
+        "symbol": "fleuron-bow",
+        "class": "fleuron",
+        "caption": "Fleuron — Bow at noon"
+      },
+      "end_seal": "art/back-end-11-bow.svg",
+      "end_mark": "NONE (E4)",
+      "gloss": "NONE — the poem's first line is the gloss."
+    },
+    "p1c6": {
+      "art": "art/back-seal-5-herd.svg",
+      "mood_arc": "The storm gathers low: herds, obedience, discipline — earth-bound pressure that the later chapters release upward.",
+      "opener": "CONFORMED in back-design.md §3 p1c6 (ledger grammar); was: PROVISIONAL: specimen-field composition behind the title — many small disciplined forms (the 'MANY kinds of morality') under one gathering pressure; aphorism numerals styled as catalogue entries.",
+      "palette_role": "LOCKED: catalogue — see tokens",
+      "rationale": "The chapter is a naturalist's cabinet of moralities: 'the problem of morality itself has been OMITTED' from every 'Science of Morals' (§186); morals as 'tyranny against nature' bred by 'long OBEDIENCE' (§188); the herd instinct — 'there have also been human herds (family alliances, communities, tribes, peoples, states, churches)' (§199); master/slave valuations; and the closing 'storms which sweep across the heaven of OUR life' (§203). Verbatim: 'problems which only disclose themselves by a comparison of MANY kinds of morality' (§186); 'there have also been human herds' (§199). Treatment should feel taxonomic and loamy — many specimens, disciplined ranks, gathering weight.",
+      "reading": "CONFORMED in back-design.md §3 p1c6 (ledger grammar); was: PROVISIONAL: catalogue-like aphorism numbers (§186–203), disciplined measure, specimen-plate dividers.",
+      "key_passages": [
+        "§196: 'It is to be INFERRED that there are countless dark bodies near the sun--such as we shall never see… the psychologist of morals reads the whole star-writing merely as an allegorical and symbolic language' — NOTE: p1c6 has its own astronomical image; coordinate with p1c8's two-suns motif so they differ (dark bodies/occlusion vs twin-sun motley light).",
+        "§197: 'The beast of prey and the man of prey (for instance, Caesar Borgia)… the healthiest of all tropical monsters and growths' + 'Morals as Timidity' — tropical/temperate contrast.",
+        "§203 close: 'these are the heavy distant thoughts and storms which sweep across the heaven of OUR life.'"
+      ],
+      "mode": "catalogue",
+      "range": "§§186–203",
+      "sections": 18,
+      "numerals": "Faded Entry (quietest)",
+      "motif": "morals-herd",
+      "manifest": {
+        "src": "art/back-seal-5-herd.svg",
+        "symbol": "seal-5-herd",
+        "class": "seal",
+        "caption": "Pl. V — Herd-lines"
+      },
+      "end_seal": "art/back-end-5-herd.svg",
+      "end_mark": "§ 203 (brass)",
+      "gloss": "Many moralities, catalogued like specimens."
+    },
+    "p1c7": {
+      "art": "art/back-seal-6-lens.svg",
+      "mood_arc": "The satirist's laboratory: cold instruments under glass — the scholar diminished against the philosopher's elevation.",
+      "opener": "CONFORMED in back-design.md §3 p1c7 (ledger grammar); was: PROVISIONAL: instrument-cabinet composition — lenses/slides/specimen jars rendered small and cold; title set against the 'elevation' the scholar cannot reach.",
+      "palette_role": "LOCKED: instrument — see tokens",
+      "rationale": "A satire of the learned man as the philosopher's decadent shadow: the 'OBJECTIVE spirit' sick 'of all subjectivity' (§207); the scholar as mere 'instrument' (8x) and specialist who has 'specialize[d]' himself away from 'superspection, circumspection, DESPECTION' (§205); 'philosophical workers, and in general scientific men' confounded with philosophers (§211); Napoleon's 'VOILA UN HOMME!' on Goethe (§209); closing on breeding and 'gradation of rank' (§213). Verbatim: 'one might doubt whether this fruit could still come to maturity' (§205); 'VOILA UN HOMME!' (§209). Treatment should feel like a cold instrument cabinet — precise, diminishing, faintly comic.",
+      "reading": "CONFORMED in back-design.md §3 p1c7 (ledger grammar); was: PROVISIONAL: clinical aphorism numbers, footnote-like asides feel, one warm accent reserved for the Goethe moment.",
+      "key_passages": [
+        "§205: 'The dangers that beset the evolution of the philosopher are, in fact, so manifold nowadays, that one might doubt whether this fruit could still come to maturity.'",
+        "§213 close: 'they have to be BRED for it… Many generations must have prepared the way for the coming of the philosopher' — breeding motif links forward to p1c10 rank."
+      ],
+      "mode": "instrument",
+      "range": "§§204–213",
+      "sections": 10,
+      "numerals": "faded everywhere EXCEPT §209 brass",
+      "motif": "scholars-lens",
+      "manifest": {
+        "src": "art/back-seal-6-lens.svg",
+        "symbol": "seal-6-lens",
+        "class": "seal",
+        "caption": "Pl. VI — Lens"
+      },
+      "end_seal": "art/back-end-6-lens.svg",
+      "end_mark": "§ 213 (brass)",
+      "gloss": "The scholar is an instrument — not a philosopher."
+    },
+    "p1c8": {
+      "art": "art/back-seal-7-twinsuns.svg",
+      "mood_arc": "The sky opens: two suns, motley light — the cohort's first genuinely beautiful image, before the nations chapter complicates it.",
+      "opener": "CONFORMED in back-design.md §3 p1c8 (ledger grammar); was: PROVISIONAL: twin-sun firmament composition — 'we Europeans of the day after tomorrow' under two differently coloured suns; title lit motley.",
+      "palette_role": "LOCKED: twin-rule — see tokens",
+      "rationale": "Opens 'OUR Virtues?' for 'we Europeans of the day after tomorrow' (§214) and gives the cohort its single most paintable image: 'As in the stellar firmament there are sometimes two suns which determine the path of one planet… suns of different colours shine around a single planet, now with red light, now with green… our actions are MOTLEY-COLOURED' (§215). Also the 'granite of spiritual fate' (§231), the tediousness of moralists (§228: 'virtue has been MORE injured by the TEDIOUSNESS of its advocates'), and the tiger-clawed 'dangerous and beautiful cat, woman' finale (§239). Verbatim: 'there are sometimes two suns which determine the path of one planet' (§215); 'at the bottom of our souls… a granite of spiritual fate' (§231). Treatment: a motley firmament — dual-coloured light on one planet.",
+      "reading": "CONFORMED in back-design.md §3 p1c8 (ledger grammar); was: PROVISIONAL: sun-pair section markers; granite-dark pull-moments for §231; restrained handling of the §232–239 polemic (no caricature).",
+      "key_passages": [
+        "§215: 'As in the stellar firmament there are sometimes two suns which determine the path of one planet, and in certain cases suns of different colours shine around a single planet, now with red light, now with green' — the cohort's signature image; must differ from p1c6 §196 dark-bodies image.",
+        "§231: 'at the bottom of our souls, quite down below, there is certainly something unteachable, a granite of spiritual fate.'",
+        "§226: 'WE IMMORALISTS.--This world… this almost invisible, inaudible world of delicate command.'"
+      ],
+      "mode": "twin-rule",
+      "range": "§§214–239",
+      "sections": 26,
+      "numerals": "brass + §215 motley dual-rule (E3)",
+      "motif": "virtues-twinsuns",
+      "manifest": {
+        "src": "art/back-seal-7-twinsuns.svg",
+        "symbol": "seal-7-twinsuns",
+        "class": "seal",
+        "caption": "Pl. VII — Twin suns"
+      },
+      "end_seal": "art/back-end-7-twinsuns.svg",
+      "end_mark": "§ 239 (brass)",
+      "gloss": "Two suns, one planet: our motley-coloured actions."
+    },
+    "p1c9": {
+      "art": "art/back-seal-8-staves.svg",
+      "mood_arc": "The orchestra tunes then overreaches: Wagner's pride, national portraits in sequence, ending in Rome-satire — the cohort's most theatrical movement.",
+      "opener": "CONFORMED in back-design.md §3 p1c9 (ledger grammar); was: PROVISIONAL: overture composition — score-like staves or a conductor's surge behind the title; national 'movements' signalled as the chapter proceeds.",
+      "palette_role": "LOCKED: overture — see tokens",
+      "rationale": "Opens on Wagner's Mastersinger overture — 'a piece of magnificent, gorgeous, heavy, latter-day art' (§240) — then marches through Germans ('THEY HAVE AS YET NO TODAY', §240; 94x 'German'), 'good Europeans' (§241), Jews (§250), English (§252), France 'the high school of taste' (§254), and tempo/march motifs (§255), closing with the satirical Rome verse ('ROME'S FAITH BY INTUITION!'). Verbatim: 'I HEARD, once again for the first time, Richard Wagner's overture to the Mastersinger' (§240); 'they belong to the day before yesterday and the day after tomorrow' (§240). Treatment: an overture — musical surge, national movements, theatrical close.",
+      "reading": "CONFORMED in back-design.md §3 p1c9 (ledger grammar); was: PROVISIONAL: movement-like section markers per nation; score-inflected dividers; verse styling for the closing Rome stanza.",
+      "key_passages": [
+        "§243: 'I hear with pleasure that our sun is moving rapidly towards the constellation Hercules: and I hope that the men on this earth will do like the sun. And we foremost, we good Europeans!' — third solar image in the cohort; keep distinct (a sun in motion/voyage).",
+        "§245: 'The good old time is past, it sang itself out in Mozart-- how happy are WE that his ROCOCO still speaks to us' — rococo/Mozart counter-motif to Wagner's heaviness.",
+        "Close: Rome satire-verse ending 'For what ye hear is ROME-- ROME'S FAITH BY INTUITION!' — theatrical verse finale."
+      ],
+      "mode": "overture",
+      "range": "§§240–256",
+      "sections": 17,
+      "numerals": "full brass + movement numerals 240/250/252/254",
+      "motif": "peoples-staves",
+      "manifest": {
+        "src": "art/back-seal-8-staves.svg",
+        "symbol": "seal-8-staves",
+        "class": "seal",
+        "caption": "Pl. VIII — Staves"
+      },
+      "end_seal": "art/back-end-8-staves.svg",
+      "end_mark": "§ 256 (brass)",
+      "gloss": "An overture on Germans, neighbours, and good Europeans."
+    }
+  },
+  "mood_arc": "LOWLAND → LABORATORY → FIRMAMENT → OVERTURE → SUMMIT → NOON: the cohort climbs from the herds and obedience of p1c6, through the scholar's cold cabinet (p1c7), up into the twin-sun sky of p1c8, through the national orchestra of p1c9, to the aristocratic summit of longest chapter p1c10, and resolves in the alpine midday poem of p1c11 — height and light increasing across the arc.",
+  "identity": {
+    "name": "The Numbered Ledger",
+    "spec": "design/ART-DIRECTION.md",
+    "locks": [
+      "design/directions.md §5",
+      ".omp/design/critiques/beyond-good-and-evil.md E1-E7",
+      "READER-CONTRACT v1.1"
+    ]
+  },
+  "tokens": {
+    "bge-black": "#12100B",
+    "bge-raised": "#1E1A12",
+    "bge-ink": "#EDE4D3",
+    "bge-brass": "#D9A441",
+    "bge-blood": "#B3402A",
+    "bge-faded": "#8A7D63",
+    "light-brass": "#8A5E14",
+    "light-blood": "#93301D"
+  },
+  "fonts": {
+    "display": "Fraunces 400/600 + italic",
+    "body": "Source Serif 4 400/600 + italic",
+    "ledger": "IBM Plex Mono 400/500",
+    "fallbacks": "Georgia / ui-monospace REQUIRED"
+  },
+  "e3_ration": [
+    "§215 dual-rule (p1c8)",
+    "§§278/287/296 numerals (p1c10)",
+    "Aftersong bow set (p1c11)"
+  ],
+  "oracle": "BACK rows verified EXACT (§4.6 back-design.md); 111 starts",
+  "rulings": {
+    "p1c11_ending": "Supervisor ACCEPTED back-design.md §3 correction: directions.md §5.3 centered 'Light and Dark' colophon is UNIMPLEMENTABLE without prose edits (line is mid-P36, forbidden). p1c11 ending = P36 in verse measure + bow end-seal via contract A.0 (body[data-chapter]-qualified p:last-child::after SVG url() <=32px, no layout shift)."
+  },
+  "preview": {
+    "source_live": "http://127.0.0.1:8912/books/beyond-good-and-evil/",
+    "note": ":8000 _site lags source; engineer screenshots against source-live"
+  }
+}

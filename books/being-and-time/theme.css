@@ -1,35 +1,876 @@
-/* Being and Time — forest manuscript */
-:root, html[data-theme="dark"] {
-  --bg: #0a100c;
-  --bg-elevated: #101a14;
-  --bg-soft: #16241c;
-  --surface: #1c2c22;
-  --border: rgba(74, 222, 128, 0.14);
-  --border-strong: rgba(74, 222, 128, 0.28);
-  --text: #e4f0e8;
-  --text-muted: #8aab96;
-  --text-faint: #5a7564;
-  --accent: #4ade80;
-  --accent-soft: rgba(74, 222, 128, 0.1);
-  --accent-hover: #86efac;
-  --copper: #a3e635;
-  --reader-max: 50rem;
-  --font-serif: "Cormorant Garamond", "Palatino Linotype", Palatino, "Times New Roman", serif;
+/* ==========================================================================
+   Being and Time — "The Clearing" (Lichtung) · supervisor-owned theme shell
+   Binding: books/being-and-time/design/ART-DIRECTION.md §§1–10 (B1–B8) +
+   READER-CONTRACT v1.1 STABLE. Unlayered: wins over @layer shared.
+   Scope: tokens, fonts, cover, calm body, TOC arc, progress, prev/next,
+   ghost-ledger defaults, light/sepia remaps. Cohort files own ONLY their
+   body[data-chapter] rules and are loaded AFTER this file.
+   Firewall: no repeating rail backgrounds, no SS badge, no glyph ornaments,
+   no modulo tinting, no centered title block, no drop caps, no justification.
+   ========================================================================== */
+
+/* ---- 0. Book tokens (dark-first) ---------------------------------------- */
+body[data-book="being-and-time"] {
+  --bt-humus: #0C0F0A;
+  --bt-canopy: #141B12;
+  --bt-under: #1D2619;
+  --bt-ink: #060805;
+  --bt-mist: #C9D4C3;
+  --bt-lichen: #9DB89A;
+  --bt-shaft: #E9D488;
+  --bt-ember: #C96F3B;
+  --bt-bark: #3E4A34;
+  --bt-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --bt-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+/* Shared-slot mapping: the Clearing re-skins the reader through the
+   reserved token names (contract §8), scoped per theme. --bt-shaft is
+   display/numeral/shaft/focus ONLY — never paragraph text. */
+:root,
+html[data-theme="dark"] {
+  --bg: #0C0F0A;
+  --bg-elevated: #141B12;
+  --bg-soft: #1D2619;
+  --surface: #141B12;
+  --border: #3E4A34;
+  --border-strong: #55663F;
+  --text: #C9D4C3;
+  --text-muted: #9DB89A;
+  --text-faint: #6E8270;
+  --accent: #E9D488;
+  --accent-soft: rgba(233, 212, 136, 0.10);
+  --accent-hover: #F4E3A8;
+  --copper: #C96F3B;
+  --on-accent: #141B12;
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --reader-max: 34rem;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --text-size: 1.19rem;
+  --leading: 1.75;
+}
+html[data-theme="light"] {
+  --bg: #F5F1E4;
+  --bg-elevated: #ECE5D1;
+  --bg-soft: #E9E2CE;
+  --surface: #FBF8EF;
+  --border: #C9BFA4;
+  --border-strong: #A89C7C;
+  --text: #1C231A;
+  --text-muted: #5A6B54;
+  --text-faint: #8A947F;
+  --accent: #7A6414;
+  --accent-soft: rgba(122, 100, 20, 0.10);
+  --accent-hover: #5F4D0E;
+  --copper: #A34E22;
+  --on-accent: #F5F1E4;
 }
 html[data-theme="sepia"] {
-  --bg: #f3f0e6;
-  --text: #1a2a1c;
-  --accent: #2f6b45;
-  --bg-elevated: #ebe6d6;
+  --bg: #EFE6D0;
+  --bg-elevated: #E4D8BC;
+  --bg-soft: #E2D7BC;
+  --surface: #F4EDDA;
+  --border: #C4B78F;
+  --border-strong: #9D9069;
+  --text: #232B1F;
+  --text-muted: #5F6B53;
+  --text-faint: #868F73;
+  --accent: #6E5A10;
+  --accent-soft: rgba(110, 90, 16, 0.10);
+  --accent-hover: #57480C;
+  --copper: #A34E22;
+  --on-accent: #EFE6D0;
 }
-.cover-glow {
-  background: radial-gradient(ellipse, rgba(74, 222, 128, 0.12) 0%, transparent 65%);
+/* Clearing re-ink for the remaining dark themes: same one-light system,
+   grounds shifted; shaft/ember discipline holds everywhere. */
+html[data-theme="nocturne"] body[data-book="being-and-time"],
+html[data-theme="verdant"] body[data-book="being-and-time"],
+html[data-theme="oxblood"] body[data-book="being-and-time"],
+html[data-theme="slate"] body[data-book="being-and-time"],
+html[data-theme="candlelight"] body[data-book="being-and-time"] {
+  --bt-humus: #0C0F0A;
+  --bt-canopy: #141B12;
+  --bt-under: #1D2619;
+  --bt-mist: #C9D4C3;
+  --bt-lichen: #9DB89A;
+  --bt-shaft: #E9D488;
 }
-.cover-grid {
-  background-image: repeating-linear-gradient(
-    0deg, transparent, transparent 27px,
-    rgba(74, 222, 128, 0.05) 27px, rgba(74, 222, 128, 0.05) 28px
-  );
+html[data-theme="nocturne"] { --bg: #0A0E14; --bg-elevated: #10161D; --bg-soft: #141C22; --surface: #141C22; --text: #C9D4C3; --text-muted: #9DB89A; --accent: #E9D488; --accent-soft: rgba(233,212,136,.10); --copper: #C96F3B; --on-accent: #141B12; --border: #2E3A2C; --border-strong: #4A5A44; }
+html[data-theme="verdant"] { --bg: #0A130C; --bg-elevated: #101F14; --bg-soft: #16281A; --surface: #16281A; --text: #C9D4C3; --text-muted: #9DB89A; --accent: #E9D488; --accent-soft: rgba(233,212,136,.10); --copper: #C96F3B; --on-accent: #141B12; --border: #2E3A2C; --border-strong: #4A5A44; }
+html[data-theme="oxblood"] { --bg: #150D0B; --bg-elevated: #1E1210; --bg-soft: #281714; --surface: #281714; --text: #D8CFC0; --text-muted: #A8A094; --accent: #E9D488; --accent-soft: rgba(233,212,136,.10); --copper: #C96F3B; --on-accent: #141B12; --border: #3E3428; --border-strong: #58493A; }
+html[data-theme="slate"] { --bg: #0E1216; --bg-elevated: #151B21; --bg-soft: #1B232B; --surface: #1B232B; --text: #C9D4C3; --text-muted: #9DB89A; --accent: #E9D488; --accent-soft: rgba(233,212,136,.10); --copper: #C96F3B; --on-accent: #141B12; --border: #2E3A34; --border-strong: #4A5A50; }
+html[data-theme="candlelight"] { --bg: #130D07; --bg-elevated: #1C1310; --bg-soft: #261A14; --surface: #261A14; --text: #D8CFC0; --text-muted: #A8A094; --accent: #E9D488; --accent-soft: rgba(233,212,136,.10); --copper: #C96F3B; --on-accent: #141B12; --border: #3E3428; --border-strong: #58493A; }
+
+/* ---- 1. Shared-ornament kill-switch (firewall) ---------------------------
+   art.css is opted INTO per element and this book opts out everywhere:
+   no fleuron seals, no diamond chips, no illuminated drop-caps, no
+   chapter-end fleurons, no grain film (cohorts gate their own grain). */
+body[data-book="being-and-time"] .chapter-meta::after,
+body[data-book="being-and-time"] .meta-number::before,
+body[data-book="being-and-time"] .meta-number::after,
+body[data-book="being-and-time"] .cover-eyebrow::before,
+body[data-book="being-and-time"] .cover-eyebrow::after,
+body[data-book="being-and-time"] .cover-quote::after {
+  content: none;
 }
-.title-line.accent { font-style: italic; color: var(--accent); }
-.chapter-text p { text-align: justify; hyphens: auto; }
+body[data-book="being-and-time"] .meta-rule span,
+body[data-book="being-and-time"] .rule-diamond {
+  box-shadow: none;
+}
+body[data-book="being-and-time"] .chapter-text > p:last-child::after {
+  content: none;
+  display: none;
+}
+body[data-book="being-and-time"]::before,
+body[data-book="being-and-time"]::after {
+  display: none;
+}
+/* Drop-cap annihilation (shared reader.css + art.css both feed it). */
+body[data-book="being-and-time"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-weight: inherit;
+  color: inherit;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+/* ---- 2. Cover: title inside the gap ------------------------------------- */
+body[data-book="being-and-time"][data-view="cover"] {
+  background: var(--bt-ink);
+}
+body[data-book="being-and-time"] #cover {
+  background: var(--bt-ink);
+  overflow: hidden;
+}
+/* The commissioned scene fills the cover; content sits in the light. */
+body[data-book="being-and-time"] #cover-art {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  max-width: none;
+}
+body[data-book="being-and-time"] #cover-art svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 62% 40%;
+}
+body[data-book="being-and-time"] #cover-art figcaption {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 4.5rem;
+  margin: 0;
+  font-family: var(--bt-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--bt-lichen);
+  opacity: 0.75;
+}
+/* Retire the rejected rail/grid/glow cover chrome. */
+body[data-book="being-and-time"] .cover-bg,
+body[data-book="being-and-time"] .cover-grid,
+body[data-book="being-and-time"] .cover-glow {
+  background: none;
+  opacity: 0;
+}
+body[data-book="being-and-time"] .cover-content {
+  text-align: left;
+  align-items: flex-start;
+  max-width: 44rem;
+  margin-left: max(1.5rem, 8vw);
+  margin-right: auto;
+  padding-top: 12vh;
+}
+body[data-book="being-and-time"] .cover-eyebrow {
+  font-family: var(--bt-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: none;
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .cover-title {
+  font-family: var(--bt-display);
+  font-variation-settings: "opsz" 144, "SOFT" 50, "WONK" 1;
+  font-weight: 340;
+  font-size: clamp(4.5rem, 13vw, 10rem);
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  color: var(--bt-mist);
+  text-wrap: balance;
+}
+body[data-book="being-and-time"] .cover-title .title-line {
+  display: block;
+}
+body[data-book="being-and-time"] .cover-title .title-line.accent {
+  font-style: normal;
+  font-weight: 340;
+  color: var(--bt-shaft);
+}
+body[data-book="being-and-time"] .cover-rule {
+  justify-content: flex-start;
+  margin: 1.5rem 0;
+  width: 8rem;
+}
+body[data-book="being-and-time"] .cover-rule::before {
+  background: var(--bt-bark);
+}
+body[data-book="being-and-time"] .cover-rule::after {
+  content: none;
+}
+body[data-book="being-and-time"] .cover-rule .rule-diamond {
+  width: 5px;
+  height: 5px;
+  background: var(--bt-shaft);
+  transform: rotate(45deg);
+}
+body[data-book="being-and-time"] .cover-author {
+  font-family: var(--bt-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  letter-spacing: 0.01em;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .cover-quote {
+  margin-top: 1.75rem;
+  font-family: var(--bt-body);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: var(--bt-lichen);
+  max-width: 30rem;
+}
+body[data-book="being-and-time"] .cover-actions {
+  justify-content: flex-start;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+body[data-book="being-and-time"] .btn {
+  font-family: var(--bt-body);
+  font-size: 1rem;
+  border-radius: 2px;
+}
+body[data-book="being-and-time"] .btn-primary {
+  background: var(--bt-shaft);
+  border-color: var(--bt-shaft);
+  color: #141B12;
+}
+body[data-book="being-and-time"] .btn-primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  box-shadow: 0 12px 32px -12px rgba(233, 212, 136, 0.5);
+}
+body[data-book="being-and-time"] .btn-ghost {
+  color: var(--bt-lichen);
+  border-color: var(--bt-bark);
+}
+body[data-book="being-and-time"] .btn-ghost:hover {
+  color: var(--bt-mist);
+  border-color: var(--bt-shaft);
+  background: rgba(233, 212, 136, 0.08);
+}
+body[data-book="being-and-time"] .cover-continue .link-btn {
+  font-family: var(--bt-body);
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .cover-continue .link-btn:hover {
+  color: var(--bt-shaft);
+}
+body[data-book="being-and-time"] .cover-footer {
+  color: var(--bt-lichen);
+  font-family: var(--bt-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+/* Cover gap breathes with overall progress (0–8%). reader.js sets
+   --cover-progress on #cover; static full-gap when unset. */
+body[data-book="being-and-time"] #cover-art svg {
+  transform-origin: 62% 40%;
+}
+
+/* ---- 3. Opener ledger + slot treatments --------------------------------- */
+body[data-book="being-and-time"] .reader-body {
+  max-width: 72rem;
+}
+body[data-book="being-and-time"] #chapter-art {
+  margin: 0 auto 2.5rem;
+  max-width: 62rem;
+}
+body[data-book="being-and-time"] #chapter-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body[data-book="being-and-time"] #chapter-art figcaption {
+  margin: 0.7rem 0 0;
+  font-family: var(--bt-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--bt-lichen);
+  opacity: 0.85;
+  text-align: left;
+}
+/* plate: contained, framed, dense. banner: full ledger width. motif: compact. */
+body[data-book="being-and-time"] #chapter-art.plate {
+  max-width: 44rem;
+  background: var(--bt-canopy);
+  border: 1px solid var(--bt-bark);
+  padding: 10px;
+}
+body[data-book="being-and-time"] #chapter-art.banner {
+  max-width: 62rem;
+}
+body[data-book="being-and-time"] #chapter-art.motif {
+  max-width: min(420px, 80%);
+  margin-left: auto;
+  margin-right: 0;
+}
+/* Ledger: flush-left title column; ghost lives in the gutter via
+   cohort per-ID #chapter-meta::before rules (authored table, never badges). */
+body[data-book="being-and-time"] .chapter-meta {
+  position: relative;
+  text-align: left;
+  max-width: 62rem;
+  margin: 0 auto 2.75rem;
+  padding-left: clamp(0rem, 4vw, 3rem);
+}
+body[data-book="being-and-time"] .meta-part {
+  font-family: var(--bt-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-indent: 0;
+  text-transform: none;
+  color: var(--bt-lichen);
+  margin-bottom: 1rem;
+}
+body[data-book="being-and-time"] .meta-title {
+  margin: 0;
+  max-width: 24ch;
+  font-family: var(--bt-display);
+  font-variation-settings: "opsz" 100, "SOFT" 40, "WONK" 1;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .meta-number {
+  margin-top: 0.9rem;
+  font-family: var(--bt-body);
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  color: var(--bt-lichen);
+  border: none;
+  padding: 0;
+  background: none;
+}
+body[data-book="being-and-time"] .meta-sub {
+  font-family: var(--bt-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: none;
+  color: var(--text-faint);
+}
+/* The one kicker line: meta-sub carries words/min; cohorts keep silence. */
+body[data-book="being-and-time"] .meta-rule {
+  justify-content: flex-start;
+  margin-top: 1.6rem;
+}
+body[data-book="being-and-time"] .meta-rule::before {
+  width: 4rem;
+  background: var(--bt-bark);
+  opacity: 1;
+}
+body[data-book="being-and-time"] .meta-rule::after {
+  content: none;
+}
+body[data-book="being-and-time"] .meta-rule span {
+  width: 5px;
+  height: 5px;
+  background: var(--bt-shaft);
+  opacity: 1;
+}
+/* Ghost-numeral defaults (cohorts override per-ID placement/size/opacity):
+   Fraunces 300, mist at low opacity, cropped by the gutter. */
+body[data-book="being-and-time"] .chapter-meta::before {
+  position: absolute;
+  left: -0.35em;
+  top: -0.42em;
+  font-family: var(--bt-display);
+  font-weight: 300;
+  font-size: 20vw;
+  line-height: 1;
+  color: var(--bt-mist);
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+body[data-book="being-and-time"] .chapter-meta {
+  z-index: 0;
+}
+
+/* ---- 4. Calm reading body ------------------------------------------------ */
+body[data-book="being-and-time"] .chapter-text {
+  font-family: var(--bt-body);
+  font-size: var(--text-size, 1.19rem);
+  line-height: var(--leading, 1.75);
+  color: var(--bt-mist);
+}
+/* SANS pref: swap the reading voice to the shared sans stack (GS-R3 fix
+   mirrored). Display type (titles/ghosts/rails) stays Fraunces by design. */
+html[data-font="sans"] body[data-book="being-and-time"] .chapter-text,
+html[data-font="sans"] body[data-book="being-and-time"] .chapter-text p,
+html[data-font="sans"] body[data-book="being-and-time"] .chapter-text > p:first-of-type {
+  font-family: var(--font-sans, system-ui, sans-serif);
+}
+body[data-book="being-and-time"] .chapter-text p {
+  margin-left: 0;
+  margin-right: auto;
+  max-width: min(var(--chapter-max, var(--reader-max)), 65ch);
+  text-align: left;
+  hyphens: auto;
+}
+/* Threshold first paragraph: confident well (B4) — cohorts may refine.
+   1.31rem/1.19rem = 1.1008 step over body; scales with the SIZE pref. */
+body[data-book="being-and-time"] .chapter-text > p:first-of-type {
+  font-family: var(--bt-display);
+  font-size: calc(var(--text-size, 1.19rem) * 1.1008);
+  line-height: 1.6;
+  background: var(--bt-under);
+  border-left: 2px solid var(--bt-shaft);
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.9em;
+}
+/* Long-chapter relief measure (B7): §§44/68/69/83. Contract A.3: the
+   shared measure rules honor --chapter-max at standard (narrow caps at
+   40rem, wide floors at 64rem — user extremes intentionally win). Token
+   (not max-width) so the reading measure pref keeps composing. */
+body[data-book="being-and-time"][data-chapter="p2c36"],
+body[data-book="being-and-time"][data-chapter="p3c24"],
+body[data-book="being-and-time"][data-chapter="p3c25"],
+body[data-book="being-and-time"][data-chapter="p3c39"] {
+  --chapter-max: 38rem;
+}
+/* Finale silence (B6): shaft title, no ornament. */
+body[data-book="being-and-time"][data-chapter="p3c39"] .meta-title {
+  color: var(--bt-shaft);
+}
+body[data-book="being-and-time"] ::selection {
+  background: var(--bt-shaft);
+  color: #141B12;
+}
+
+/* ---- 5. Reader chrome: header, progress, nav ----------------------------- */
+body[data-book="being-and-time"] .reader-header {
+  background: rgba(12, 15, 10, 0.92);
+  border-bottom: 1px solid var(--bt-bark);
+}
+html[data-theme="light"] body[data-book="being-and-time"] .reader-header {
+  background: rgba(245, 241, 228, 0.94);
+}
+html[data-theme="sepia"] body[data-book="being-and-time"] .reader-header {
+  background: rgba(239, 230, 208, 0.94);
+}
+body[data-book="being-and-time"] .header-part {
+  font-family: var(--bt-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .header-chapter {
+  font-family: var(--bt-display);
+  font-weight: 400;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .icon-btn {
+  color: var(--bt-lichen);
+  border-radius: 2px;
+}
+body[data-book="being-and-time"] .icon-btn:hover {
+  color: var(--bt-shaft);
+  background: rgba(233, 212, 136, 0.08);
+}
+body[data-book="being-and-time"] .icon-btn:focus-visible,
+body[data-book="being-and-time"] .btn:focus-visible,
+body[data-book="being-and-time"] .toc-chapter:focus-visible,
+body[data-book="being-and-time"] .nav-btn:focus-visible,
+body[data-book="being-and-time"] .link-btn:focus-visible,
+body[data-book="being-and-time"] .seg-btn:focus-visible {
+  outline: 2px solid var(--bt-shaft);
+  outline-offset: 2px;
+}
+/* Progress: the 2px shaft beam. */
+body[data-book="being-and-time"] .progress-track {
+  background: var(--bt-bark);
+  height: 2px;
+}
+body[data-book="being-and-time"] .progress-fill {
+  background: var(--bt-shaft);
+  box-shadow: none;
+}
+body[data-book="being-and-time"] .progress-fill::after {
+  content: none;
+}
+/* Prev/Next: quiet text links with Fraunces § numerals; no cards. */
+body[data-book="being-and-time"] .chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: min(var(--reader-max), 65ch);
+  margin-left: 0;
+  margin-right: auto;
+  border-top: 1px solid var(--bt-bark);
+  padding-top: 1.5rem;
+}
+body[data-book="being-and-time"] .nav-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  opacity: 1;
+  gap: 0.25rem;
+}
+body[data-book="being-and-time"] .nav-btn.next {
+  text-align: right;
+  align-items: flex-end;
+  margin-left: auto;
+}
+body[data-book="being-and-time"] .nav-btn:hover:not(:disabled) {
+  transform: none;
+  border: none;
+  background: none;
+}
+body[data-book="being-and-time"] .nav-btn .nav-label {
+  font-family: var(--bt-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: none;
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .nav-btn .nav-title {
+  font-family: var(--bt-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .nav-btn:hover:not(:disabled) .nav-title {
+  color: var(--bt-shaft);
+}
+
+/* ---- 6. TOC drawer: the arc in miniature -------------------------------- */
+body[data-book="being-and-time"] .drawer-panel {
+  background: var(--bt-canopy);
+  border-right: 1px solid var(--bt-bark);
+}
+body[data-book="being-and-time"] .drawer-eyebrow {
+  font-family: var(--bt-body);
+  letter-spacing: 0.22em;
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .drawer-header h2 {
+  font-family: var(--bt-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .toc-part-header {
+  font-family: var(--bt-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .toc-part-sub {
+  font-family: var(--bt-body);
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .toc-chapter {
+  border-left: 2px solid transparent;
+}
+body[data-book="being-and-time"] .toc-chapter .toc-num {
+  font-family: var(--bt-body);
+  font-style: normal;
+  font-size: 0.81rem;
+  color: var(--bt-lichen);
+  border: none;
+  padding: 0;
+  background: none;
+  min-width: 2rem;
+}
+body[data-book="being-and-time"] .toc-chapter .toc-name {
+  font-family: var(--bt-body);
+  font-size: 0.94rem;
+  font-weight: 400;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .toc-chapter .toc-sub {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: var(--text-faint);
+}
+body[data-book="being-and-time"] .toc-chapter:hover {
+  background: rgba(233, 212, 136, 0.06);
+}
+body[data-book="being-and-time"] .toc-chapter.active {
+  background: rgba(233, 212, 136, 0.08);
+  border-left-color: var(--bt-shaft);
+}
+body[data-book="being-and-time"] .toc-chapter.active .toc-num {
+  color: var(--bt-shaft);
+}
+body[data-book="being-and-time"] .toc-chapter.read:not(.active) {
+  opacity: 0.55;
+}
+/* Shaft ticks: each row carries the chapter's gapWidth as a light tick
+   under the numeral — the slit-to-clearing arc in miniature. Death-cohort
+   rows (p3c3–p3c9) carry an ember floor tick (B5). */
+body[data-book="being-and-time"] .toc-chapter .toc-num::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 3px;
+  background: var(--bt-shaft);
+  opacity: 0.8;
+}
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c1"] .toc-num::after { width: 8px; min-width: 3px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c2"] .toc-num::after { width: 9px; min-width: 3px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c3"] .toc-num::after { width: 10px; min-width: 3px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c4"] .toc-num::after { width: 10px; min-width: 3px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c5"] .toc-num::after { width: 11px; min-width: 4px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c6"] .toc-num::after { width: 12px; min-width: 4px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c7"] .toc-num::after { width: 13px; min-width: 4px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p1c8"] .toc-num::after { width: 12px; min-width: 4px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c1"] .toc-num::after { width: 14px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c2"] .toc-num::after { width: 14px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c3"] .toc-num::after { width: 14px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c4"] .toc-num::after { width: 15px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c5"] .toc-num::after { width: 16px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c6"] .toc-num::after { width: 16px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c7"] .toc-num::after { width: 16px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c8"] .toc-num::after { width: 16px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c9"] .toc-num::after { width: 17px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c10"] .toc-num::after { width: 18px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c11"] .toc-num::after { width: 18px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c12"] .toc-num::after { width: 18px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c13"] .toc-num::after { width: 20px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c14"] .toc-num::after { width: 20px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c15"] .toc-num::after { width: 20px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c16"] .toc-num::after { width: 21px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c17"] .toc-num::after { width: 21px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c18"] .toc-num::after { width: 22px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c19"] .toc-num::after { width: 20px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c20"] .toc-num::after { width: 22px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c21"] .toc-num::after { width: 22px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c22"] .toc-num::after { width: 23px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c23"] .toc-num::after { width: 24px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c24"] .toc-num::after { width: 24px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c25"] .toc-num::after { width: 24px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c26"] .toc-num::after { width: 25px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c27"] .toc-num::after { width: 25px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c28"] .toc-num::after { width: 26px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c29"] .toc-num::after { width: 26px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c30"] .toc-num::after { width: 27px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c31"] .toc-num::after { width: 28px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c32"] .toc-num::after { width: 28px; background: var(--bt-shaft); }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c33"] .toc-num::after { width: 29px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c34"] .toc-num::after { width: 30px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c35"] .toc-num::after { width: 30px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p2c36"] .toc-num::after { width: 32px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c1"] .toc-num::after { width: 26px; opacity: 0.55; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c2"] .toc-num::after { width: 24px; opacity: 0.55; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c3"] .toc-num::after { width: 22px; background: var(--bt-ember); opacity: 0.7; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c4"] .toc-num::after { width: 21px; background: var(--bt-ember); opacity: 0.7; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c5"] .toc-num::after { width: 20px; background: var(--bt-ember); opacity: 0.7; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c6"] .toc-num::after { width: 20px; background: var(--bt-ember); opacity: 0.7; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c7"] .toc-num::after { width: 21px; background: var(--bt-ember); opacity: 0.7; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c8"] .toc-num::after { width: 23px; background: var(--bt-ember); opacity: 0.7; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c9"] .toc-num::after { width: 28px; background: var(--bt-ember); opacity: 0.85; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c10"] .toc-num::after { width: 29px; opacity: 0.6; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c11"] .toc-num::after { width: 30px; opacity: 0.6; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c12"] .toc-num::after { width: 30px; opacity: 0.6; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c13"] .toc-num::after { width: 31px; opacity: 0.6; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c14"] .toc-num::after { width: 32px; opacity: 0.6; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c15"] .toc-num::after { width: 32px; opacity: 0.6; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c16"] .toc-num::after { width: 33px; opacity: 0.7; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c17"] .toc-num::after { width: 34px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c18"] .toc-num::after { width: 35px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c19"] .toc-num::after { width: 36px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c20"] .toc-num::after { width: 37px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c21"] .toc-num::after { width: 38px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c22"] .toc-num::after { width: 40px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c23"] .toc-num::after { width: 40px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c24"] .toc-num::after { width: 41px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c25"] .toc-num::after { width: 42px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c26"] .toc-num::after { width: 43px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c27"] .toc-num::after { width: 44px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c28"] .toc-num::after { width: 44px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c29"] .toc-num::after { width: 44px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c30"] .toc-num::after { width: 46px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c31"] .toc-num::after { width: 46px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c32"] .toc-num::after { width: 48px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c33"] .toc-num::after { width: 48px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c34"] .toc-num::after { width: 50px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c35"] .toc-num::after { width: 51px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c36"] .toc-num::after { width: 52px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c37"] .toc-num::after { width: 53px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c38"] .toc-num::after { width: 54px; }
+body[data-book="being-and-time"] .toc-chapter[data-chapter-id="p3c39"] .toc-num::after { width: 56px; opacity: 1; }
+body[data-book="being-and-time"] .toc-search {
+  font-family: var(--bt-body);
+  background: var(--bt-ink);
+  border-color: var(--bt-bark);
+  color: var(--bt-mist);
+  border-radius: 2px;
+}
+body[data-book="being-and-time"] .toc-search::placeholder {
+  color: var(--text-faint);
+}
+body[data-book="being-and-time"] .toc-search:focus {
+  border-color: var(--bt-shaft);
+  box-shadow: 0 0 0 2px rgba(233, 212, 136, 0.15);
+}
+body[data-book="being-and-time"] .toc-progress {
+  font-family: var(--bt-body);
+  color: var(--bt-lichen);
+}
+
+/* ---- 7. Settings + loading + misc ---------------------------------------- */
+body[data-book="being-and-time"] .settings-card {
+  background: var(--bt-canopy);
+  border: 1px solid var(--bt-bark);
+  border-radius: 3px;
+}
+body[data-book="being-and-time"] .settings-card h3 {
+  font-family: var(--bt-display);
+  font-weight: 400;
+  color: var(--bt-mist);
+}
+body[data-book="being-and-time"] .settings-row {
+  font-family: var(--bt-body);
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .seg-btn {
+  font-family: var(--bt-body);
+  border-radius: 2px;
+  color: var(--bt-lichen);
+}
+body[data-book="being-and-time"] .seg-btn[aria-pressed="true"],
+body[data-book="being-and-time"] .seg-btn.active {
+  background: var(--bt-shaft);
+  border-color: var(--bt-shaft);
+  color: #141B12;
+}
+body[data-book="being-and-time"] .loading-spinner {
+  border-color: var(--bt-bark);
+  border-top-color: var(--bt-shaft);
+}
+body[data-book="being-and-time"] .note-return-chip {
+  font-family: var(--bt-body);
+  background: var(--bt-canopy);
+  border: 1px solid var(--bt-bark);
+  color: var(--bt-lichen);
+  border-radius: 2px;
+}
+/* Reader-owned utility classes still compose: read rows, checks. */
+body[data-book="being-and-time"] .toc-chapter.read .toc-check {
+  background: var(--bt-bark);
+  border-color: var(--bt-bark);
+  color: var(--bt-mist);
+}
+
+/* ---- 8. Margin rail (≥1100px) + responsive ledger ------------------------- */
+/* Cohorts place rail glosses; the shell reserves the rail geometry. */
+@media (min-width: 1100px) {
+  body[data-book="being-and-time"] .reader-body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 1099px) {
+  body[data-book="being-and-time"] #chapter-art.motif {
+    max-width: min(560px, 100%);
+    margin-right: auto;
+  }
+}
+@media (max-width: 640px) {
+  body[data-book="being-and-time"] .cover-content {
+    margin-left: 1.25rem;
+    padding-top: 9vh;
+  }
+  body[data-book="being-and-time"] .reader-body,
+  body[data-book="being-and-time"] .chapter-meta {
+    overflow-x: clip;
+  }
+  body[data-book="being-and-time"] .chapter-meta {
+    padding-left: 0;
+  }
+  body[data-book="being-and-time"] .chapter-meta::before {
+    font-size: 34vw;
+    top: -0.55em;
+    opacity: 0.06;
+  }
+  body[data-book="being-and-time"] .chapter-text > p:first-of-type {
+    padding: 1.1rem 1.1rem;
+    hyphens: none;
+  }
+  body[data-book="being-and-time"] .chapter-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  body[data-book="being-and-time"] .nav-btn.next {
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  body[data-book="being-and-time"] #chapter-art.plate {
+    padding: 6px;
+  }
+}
+
+/* ---- 9. Motion + print guards -------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="being-and-time"] *,
+  body[data-book="being-and-time"] *::before,
+  body[data-book="being-and-time"] *::after {
+    animation: none;
+    transition: none;
+  }
+  /* Grain-gating: cohort .grain groups go static-hidden. */
+  body[data-book="being-and-time"] #chapter-art .grain,
+  body[data-book="being-and-time"] #chapter-art .iw-grain,
+  body[data-book="being-and-time"] #chapter-art .hf-grain {
+    display: none;
+  }
+}
+@media print {
+  body[data-book="being-and-time"] #chapter-art,
+  body[data-book="being-and-time"] #cover-art,
+  body[data-book="being-and-time"] .chapter-meta::before {
+    display: none;
+  }
+  body[data-book="being-and-time"] .chapter-text > p:first-of-type {
+    background: none;
+    border-left: 2px solid #000;
+    padding: 0 0 0 1rem;
+    font-family: inherit;
+    font-size: inherit;
+  }
+}

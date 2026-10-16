@@ -7,7 +7,7 @@
   <title>Infinite Jest — David Foster Wallace</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared/reader.css" />
   <link rel="stylesheet" href="theme.css" />
 </head>
@@ -27,7 +27,7 @@
         <div class="cover-rule" aria-hidden="true"><span class="rule-diamond"></span></div>
         <p class="cover-author" id="cover-author">David Foster Wallace</p>
         <p class="cover-dedication" id="cover-dedication">For F. P. Foster: R.I.P.</p>
-        <p class="cover-quote" id="cover-quote">Everything About Everything</p>
+        <p class="cover-quote" id="cover-quote">A file in 77 parts + 388 notes</p>
         <div class="cover-actions">
           <button type="button" class="btn btn-primary" data-action="begin">Begin Reading</button>
           <button type="button" class="btn btn-ghost" data-action="open-toc">Table of Contents</button>
@@ -74,6 +74,7 @@
           <p class="meta-part" id="meta-part"></p>
           <h1 class="meta-title" id="meta-title"></h1>
           <p class="meta-number" id="meta-number"></p>
+          <p class="meta-sub" id="meta-sub"></p>
           <div class="meta-rule" aria-hidden="true"><span></span></div>
         </div>
         <div class="chapter-text" id="chapter-text"></div>
@@ -152,10 +153,13 @@
   <script>
     window.BOOK_CONFIG = {
       storageKey: "reader-infinite-jest",
+      slug: "infinite-jest",
       libraryHref: "../../index.html",
-      tagline: "Everything About Everything"
+      notesPart: "part-2",
+      tagline: "A file in 77 parts + 388 notes"
     };
   </script>
   <script src="../../shared/reader.js"></script>
+  <script src="ledger.js"></script>
 </body>
 </html>

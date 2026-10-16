@@ -1,0 +1,465 @@
+/* ═══ OL-RESTORE cohort layer · red-ink + blackletter proclamation ═══
+   Chapters p1c11–p1c14. Unlayered: wins over @layer shared.
+   Self-contained for supervisor inline under the COHORT INTEGRATION marker.
+   Canon: ART-DIRECTION.md + design/chapters.json; build spec
+   olrestore-research.md §11. End-seals + salutation/redaction markers are
+   supervisor-owned (theme.css + design/book.js) — this file styles RESTORE
+   plates, opener lockups, and reading treatments only. */
+
+/* ── 0. Cohort tokens (fixed plate craft; text re-inks per theme) ── */
+body[data-book="open-letter"][data-chapter="p1c11"],
+body[data-book="open-letter"][data-chapter="p1c12"],
+body[data-book="open-letter"][data-chapter="p1c13"],
+body[data-book="open-letter"][data-chapter="p1c14"] {
+  --ol-ink: #0d0b09;
+  --ol-press: #141210;
+  --ol-impression: #1e1a15;
+  --ol-newsprint: #ede2ce;
+  --ol-dim: #a89a80;
+  --ol-ash: #6e6252;
+  --ol-oxblood: #7e2a22;
+  --ol-signal: #d64533;
+  --ol-gilt: #c9a227;
+}
+html[data-theme="sepia"] body[data-book="open-letter"][data-chapter="p1c11"],
+html[data-theme="sepia"] body[data-book="open-letter"][data-chapter="p1c12"],
+html[data-theme="sepia"] body[data-book="open-letter"][data-chapter="p1c13"],
+html[data-theme="sepia"] body[data-book="open-letter"][data-chapter="p1c14"],
+html[data-theme="light"] body[data-book="open-letter"][data-chapter="p1c11"],
+html[data-theme="light"] body[data-book="open-letter"][data-chapter="p1c12"],
+html[data-theme="light"] body[data-book="open-letter"][data-chapter="p1c13"],
+html[data-theme="light"] body[data-book="open-letter"][data-chapter="p1c14"] {
+  --ol-signal: #b33a2b;
+}
+
+/* ── 1. Plate slots: ember-on-ink proclamation plates ── */
+body[data-book="open-letter"][data-chapter="p1c11"] #chapter-art.plate,
+body[data-book="open-letter"][data-chapter="p1c12"] #chapter-art.plate,
+body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art.plate,
+body[data-book="open-letter"][data-chapter="p1c14"] #chapter-art.plate {
+  background: var(--ol-press);
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  outline: 1px solid rgba(13, 11, 9, 0.9);
+  outline-offset: 5px;
+}
+body[data-book="open-letter"][data-chapter="p1c11"] #chapter-art.plate svg,
+body[data-book="open-letter"][data-chapter="p1c12"] #chapter-art.plate svg,
+body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art.plate svg,
+body[data-book="open-letter"][data-chapter="p1c14"] #chapter-art.plate svg {
+  max-height: 460px;
+  background: var(--ol-press);
+}
+/* c13 letters-patent: tallest formal plate in the cohort */
+body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art.plate svg {
+  max-height: 460px;
+}
+body[data-book="open-letter"][data-chapter="p1c11"] #chapter-art.plate figcaption,
+body[data-book="open-letter"][data-chapter="p1c12"] #chapter-art.plate figcaption,
+body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art.plate figcaption,
+body[data-book="open-letter"][data-chapter="p1c14"] #chapter-art.plate figcaption {
+  color: var(--ol-dim);
+  border-top: 1px solid rgba(201, 162, 39, 0.45);
+  background: var(--ol-ink);
+}
+
+/* ── 2. Proclamation opener lockups ── */
+/* c11 diptych folio: axis rule under the folio line (M–Q axis echo) */
+body[data-book="open-letter"][data-art="posted-diptych"] .meta-number::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 1.6rem;
+  margin: 0.55rem auto 0;
+  background: var(--ol-signal);
+}
+/* c12 broadside: red rubric date-line across the opener */
+body[data-book="open-letter"][data-art="dam-broadside"] .meta-part::after {
+  content: "1908 · 2008";
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: var(--ol-signal);
+}
+/* c13 patent: the closing laser as rubric over the title */
+body[data-book="open-letter"][data-art="pilots-patent"] .meta-title::before {
+  content: "All power to the pilots";
+  display: block;
+  margin-bottom: 0.7rem;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-indent: 0.32em;
+  text-transform: uppercase;
+  color: var(--ol-signal);
+}
+/* c14 commission: five rule numerals wayposted across the opener */
+body[data-book="open-letter"][data-art="space-commission"] .meta-number::after {
+  content: "I · II · III · IV · V";
+  display: block;
+  margin-top: 0.55rem;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: var(--ol-gilt);
+}
+/* c14 colophon scale: the book's final title runs larger */
+body[data-book="open-letter"][data-chapter="p1c14"] .meta-title {
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+}
+/* Gilt rule + fleuron closer under every RESTORE opener */
+body[data-book="open-letter"][data-chapter="p1c11"] .meta-rule,
+body[data-book="open-letter"][data-chapter="p1c12"] .meta-rule,
+body[data-book="open-letter"][data-chapter="p1c13"] .meta-rule,
+body[data-book="open-letter"][data-chapter="p1c14"] .meta-rule {
+  gap: 0.9rem;
+}
+body[data-book="open-letter"][data-chapter="p1c11"] .meta-rule::before,
+body[data-book="open-letter"][data-chapter="p1c12"] .meta-rule::before,
+body[data-book="open-letter"][data-chapter="p1c13"] .meta-rule::before,
+body[data-book="open-letter"][data-chapter="p1c14"] .meta-rule::before,
+body[data-book="open-letter"][data-chapter="p1c11"] .meta-rule::after,
+body[data-book="open-letter"][data-chapter="p1c12"] .meta-rule::after,
+body[data-book="open-letter"][data-chapter="p1c13"] .meta-rule::after,
+body[data-book="open-letter"][data-chapter="p1c14"] .meta-rule::after {
+  width: 5.5rem;
+  background: var(--ol-gilt);
+  opacity: 0.85;
+  box-shadow: none;
+}
+body[data-book="open-letter"][data-chapter="p1c11"] .meta-rule span,
+body[data-book="open-letter"][data-chapter="p1c12"] .meta-rule span,
+body[data-book="open-letter"][data-chapter="p1c13"] .meta-rule span,
+body[data-book="open-letter"][data-chapter="p1c14"] .meta-rule span {
+  width: auto;
+  height: auto;
+  transform: none;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  opacity: 1;
+}
+body[data-book="open-letter"][data-chapter="p1c11"] .meta-rule span::before,
+body[data-book="open-letter"][data-chapter="p1c12"] .meta-rule span::before,
+body[data-book="open-letter"][data-chapter="p1c13"] .meta-rule span::before,
+body[data-book="open-letter"][data-chapter="p1c14"] .meta-rule span::before {
+  content: "❦";
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--ol-gilt);
+}
+
+/* ── 3. Salutation + drop cap (markers by design/book.js) ── */
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p.ol-salute-full,
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p.ol-salute-full,
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p.ol-salute-full,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p.ol-salute-full {
+  font-family: var(--font-serif);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.35);
+  padding-bottom: 1.1em;
+  margin-bottom: 1.6em;
+}
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p.ol-salute-full::first-letter,
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p.ol-salute-full::first-letter,
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p.ol-salute-full::first-letter,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p.ol-salute-full::first-letter {
+  color: var(--accent);
+  -webkit-text-stroke: 0.5px var(--copper);
+}
+
+/* ── 4. Posted-bill reading treatments (positional, chapter+index keyed) ── */
+/* Shared bill-clause voice: gilt clause-rule, no wash (c11 nomos chain). */
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(43),
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(46),
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(51),
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(56),
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(60) {
+  border-left: 2px solid var(--ol-gilt);
+  padding-left: 1rem;
+}
+/* c11 M/Q rubric sigils at first polemical uses. */
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(9)::before,
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(26)::before {
+  display: block;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  color: var(--ol-signal);
+  margin-bottom: 0.4rem;
+}
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(9)::before {
+  content: "M · Q";
+}
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(26)::before {
+  content: "Q · CONTAGION";
+}
+/* c11 burnt-deed edges on the antinomian gallery. */
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(66),
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(75),
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text > p:nth-of-type(91) {
+  border-bottom: 2px solid var(--ol-oxblood);
+  box-shadow: 0 6px 6px -6px var(--ol-ash);
+  padding-bottom: 0.9em;
+}
+
+/* c12 charter-notices: Salomon + Pobedonostsev long quotations. */
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(55),
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(68),
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(78),
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(90),
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(94) {
+  background: var(--ol-press);
+  border-top: 3px double var(--ol-gilt);
+  border-bottom: 3px double var(--ol-gilt);
+  padding: 1rem 1.2rem;
+}
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(55)::before {
+  content: "E. von Salomon · Der Fragebogen";
+  display: block;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  color: var(--ol-signal);
+  margin-bottom: 0.5rem;
+}
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(90)::before {
+  content: "K. Pobedonostsev · 1869";
+  display: block;
+  font-family: var(--font-data);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--ol-signal);
+  margin-bottom: 0.5rem;
+}
+/* c12 Fragebogen form-notice grid divider ahead of the questionnaire. */
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text > p:nth-of-type(57)::after {
+  content: "";
+  display: block;
+  height: 3.2rem;
+  margin-top: 1.2rem;
+  border: 1px solid var(--ol-ash);
+  background:
+    repeating-linear-gradient(90deg, var(--ol-ash) 0 1px, transparent 1px 2.2rem),
+    repeating-linear-gradient(0deg, var(--ol-ash) 0 1px, transparent 1px 1.05rem),
+    var(--ol-press);
+}
+
+/* c13 sealed office notices: Receiver / Director / Trust. */
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(55)::before,
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(59)::before,
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(64)::before {
+  display: block;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  color: var(--ol-signal);
+  margin-bottom: 0.4rem;
+}
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(55)::before {
+  content: "Receiver";
+}
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(59)::before {
+  content: "Director";
+}
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(64)::before {
+  content: "Trust";
+}
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(55),
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(59),
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(64) {
+  background: var(--ol-press);
+  border-left: 4px solid var(--ol-gilt);
+  padding: 0.9rem 1.1rem 0.9rem 1.3rem;
+}
+/* c13 antenna instrument-notice divider: five ruled ticks, real variables. */
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(51)::after {
+  content: "size · material · coherence · wattage · clarity";
+  display: block;
+  margin-top: 1.1rem;
+  padding-top: 0.7rem;
+  border-top: 2px solid var(--ol-gilt);
+  font-family: var(--font-data);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  color: var(--ol-ash);
+}
+/* c13 tally-board figures for the SFGate scores. */
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text > p:nth-of-type(38) {
+  font-family: var(--font-data);
+  font-size: 0.95em;
+  color: var(--ol-gilt);
+}
+
+/* c14 rule tablets I–V as posted bills wayposted through the read. */
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(105),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(116),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(120),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(125),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(174) {
+  background: var(--ol-press);
+  border: 1px solid var(--ol-gilt);
+  outline: 1px solid var(--ol-ink);
+  outline-offset: 4px;
+  padding: 1.1rem 1.3rem;
+  margin-top: 2.2rem;
+  margin-bottom: 2.2rem;
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(105)::before,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(116)::before,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(120)::before,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(125)::before,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(174)::before {
+  display: block;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.74rem;
+  letter-spacing: 0.3em;
+  color: var(--ol-signal);
+  margin-bottom: 0.45rem;
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(105)::before {
+  content: "Rule I — Reaction is a boolean decision";
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(116)::before {
+  content: "Rule II — No religious war";
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(120)::before {
+  content: "Rule III — Total breach";
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(125)::before {
+  content: "Rule IV — Truth is the only weapon";
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(174)::before {
+  content: "Rule V — Quality over quantity";
+}
+/* c14 horror-tour charter-notices (Britain / Manhattan). */
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(36),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(48),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(69),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(76) {
+  background: var(--ol-press);
+  border-top: 3px double var(--ol-gilt);
+  border-bottom: 3px double var(--ol-gilt);
+  padding: 1rem 1.2rem;
+}
+/* c14 Gladstone–Tennyson facing bills: 1835 vs 1885. */
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(137),
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(156) {
+  background: var(--ol-press);
+  border: 1px solid var(--ol-gilt);
+  padding: 1rem 1.2rem;
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(137)::before,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(156)::before {
+  display: block;
+  font-family: var(--font-data);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  color: var(--ol-signal);
+  margin-bottom: 0.5rem;
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(137)::before {
+  content: "1835 · Locksley Hall";
+}
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(156)::before {
+  content: "1885 · Sixty Years After";
+}
+/* c14 King Ine tariff-notice divider: thieves / brigands / army. */
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(90)::after {
+  content: "Thieves · ≤7 — Brigands · 7–35 — Army · beyond";
+  display: block;
+  margin-top: 1.1rem;
+  padding-top: 0.7rem;
+  border-top: 2px solid var(--ol-gilt);
+  font-family: var(--font-data);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--ol-gilt);
+}
+/* c14 tailor's-needle parting device beside the Resartus close. */
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text > p:nth-of-type(180)::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2px;
+  margin-top: 1.2rem;
+  background: var(--ol-gilt);
+  box-shadow: 5.2rem -4px 0 -0.5px var(--ol-signal);
+}
+
+/* ── 5. Redaction bars (O4): supervisor-owned markers, cohort finish ── */
+/* Marker contract: design/book.js wraps verified substrings in
+   mark.ol-redact. REDACTIONS entries needed from supervisor:
+   p1c11 P21 "IQ of 80" + "IQ of 120"; p1c12 P67 "one hundred and
+   thirty-one questions"; p1c13 P37 tally string; p1c14 P122 "eleven
+   hundred". Until then these rules style any present marker. */
+body[data-book="open-letter"][data-chapter="p1c11"] .chapter-text mark.ol-redact,
+body[data-book="open-letter"][data-chapter="p1c12"] .chapter-text mark.ol-redact,
+body[data-book="open-letter"][data-chapter="p1c13"] .chapter-text mark.ol-redact,
+body[data-book="open-letter"][data-chapter="p1c14"] .chapter-text mark.ol-redact {
+  border-top: 2px solid var(--ol-signal);
+  letter-spacing: 0.08em;
+}
+
+/* ── 6. Motion, focus, responsive, print ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="open-letter"][data-chapter="p1c11"] #chapter-art,
+  body[data-book="open-letter"][data-chapter="p1c12"] #chapter-art,
+  body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art,
+  body[data-book="open-letter"][data-chapter="p1c14"] #chapter-art {
+    animation: none;
+  }
+}
+body[data-book="open-letter"][data-chapter="p1c11"] a:focus-visible,
+body[data-book="open-letter"][data-chapter="p1c12"] a:focus-visible,
+body[data-book="open-letter"][data-chapter="p1c13"] a:focus-visible,
+body[data-book="open-letter"][data-chapter="p1c14"] a:focus-visible,
+body[data-book="open-letter"][data-chapter="p1c11"] button:focus-visible,
+body[data-book="open-letter"][data-chapter="p1c12"] button:focus-visible,
+body[data-book="open-letter"][data-chapter="p1c13"] button:focus-visible,
+body[data-book="open-letter"][data-chapter="p1c14"] button:focus-visible {
+  outline: 2px solid var(--ol-gilt);
+  outline-offset: 2px;
+}
+@media (max-width: 1023px) {
+  body[data-book="open-letter"][data-art="posted-diptych"] .meta-number::after {
+    margin-inline: auto;
+  }
+}
+@media (max-width: 560px) {
+  body[data-book="open-letter"][data-chapter="p1c11"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c12"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c14"] #chapter-art.plate {
+    outline-offset: 3px;
+  }
+  body[data-book="open-letter"][data-chapter="p1c11"] #chapter-art.plate svg,
+  body[data-book="open-letter"][data-chapter="p1c12"] #chapter-art.plate svg,
+  body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art.plate svg,
+  body[data-book="open-letter"][data-chapter="p1c14"] #chapter-art.plate svg {
+    max-height: 240px;
+  }
+  body[data-book="open-letter"][data-chapter="p1c14"] .meta-title {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+}
+@media print {
+  body[data-book="open-letter"][data-chapter="p1c11"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c12"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c13"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c14"] #chapter-art.plate {
+    outline: none;
+    break-inside: avoid;
+  }
+}

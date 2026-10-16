@@ -1,0 +1,690 @@
+{
+  "version": 1,
+  "chapters": {
+    "p1c1": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p1c1",
+      "class": "plate",
+      "motif": "single-lens",
+      "caption": "before the first cut",
+      "part": "I",
+      "order": 1,
+      "way": "§",
+      "title": "Introduction",
+      "content_kind": "author-lens",
+      "palette_role": "slate",
+      "rationale": "Author's eye before the kaleidoscope: one uncut slate lens; the served heading stays a heads-up display, Churchill's self-mockery and the June-4 set-piece carry shard-tick quotes, the impossible-summing-up closer is the coda.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "I"
+      },
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "head"
+        },
+        {
+          "index": 4,
+          "role": "setup"
+        },
+        {
+          "index": 5,
+          "role": "quote"
+        },
+        {
+          "index": 11,
+          "role": "setup"
+        },
+        {
+          "index": 12,
+          "role": "quote"
+        },
+        {
+          "index": 13,
+          "role": "quote"
+        },
+        {
+          "index": 15,
+          "role": "setup"
+        },
+        {
+          "index": 16,
+          "role": "speech"
+        },
+        {
+          "index": 32,
+          "role": "coda"
+        }
+      ]
+    },
+    "p5c1": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c1",
+      "class": "plate",
+      "motif": "transatlantic-cable-pair",
+      "caption": "seventeen hundred messages across the water",
+      "part": "V",
+      "order": 1,
+      "way": "31",
+      "title": "Churchill and Roosevelt: Friends as Well as Allies?",
+      "content_kind": "pro-contra-diptych",
+      "palette_role": "ochre",
+      "rationale": "True diptych: warm-case half (Had a Warm Friendship) vs cold-case half (Did Not Have a Warm Friendship); served verdict heads oppose each other; Atlantic cable-pair plate spans both.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true,
+        "diptych": true
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "verdict"
+        },
+        {
+          "index": 6,
+          "role": "verdict"
+        }
+      ]
+    },
+    "p5c2": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c2",
+      "class": "plate",
+      "motif": "backward-gaze",
+      "caption": "he looked backward, not forward",
+      "part": "V",
+      "order": 2,
+      "way": "32",
+      "title": "Churchill’s Imagination: How He Saw History",
+      "content_kind": "thesis-with-inscription",
+      "palette_role": "slate/ochre",
+      "rationale": "Backward-gaze thesis: Blenheim Victory Column inscription as monumental centered verse; the Admiralty-flag memo as a dispatch; the Oran 'I leave it to history' appeal inside ¶29 stays served prose (too long to lift).",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "setup"
+        },
+        {
+          "index": 5,
+          "role": "verse"
+        },
+        {
+          "index": 6,
+          "role": "verse"
+        },
+        {
+          "index": 7,
+          "role": "verse"
+        },
+        {
+          "index": 8,
+          "role": "verse"
+        },
+        {
+          "index": 9,
+          "role": "verse"
+        },
+        {
+          "index": 10,
+          "role": "verse"
+        },
+        {
+          "index": 11,
+          "role": "verse"
+        },
+        {
+          "index": 12,
+          "role": "verse"
+        },
+        {
+          "index": 13,
+          "role": "verse"
+        },
+        {
+          "index": 14,
+          "role": "verse"
+        },
+        {
+          "index": 15,
+          "role": "verse"
+        },
+        {
+          "index": 16,
+          "role": "verse"
+        },
+        {
+          "index": 17,
+          "role": "verse"
+        },
+        {
+          "index": 19,
+          "role": "setup"
+        },
+        {
+          "index": 20,
+          "role": "memo"
+        },
+        {
+          "index": 21,
+          "role": "memo"
+        },
+        {
+          "index": 26,
+          "role": "quote"
+        },
+        {
+          "index": 32,
+          "role": "coda"
+        }
+      ]
+    },
+    "p5c4": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c4",
+      "class": "plate",
+      "motif": "lifted-layer",
+      "caption": "one layer peeled back",
+      "part": "V",
+      "order": 4,
+      "way": "34",
+      "title": "Churchill Exposed: Missing Information Supplied",
+      "content_kind": "suppressed-dossier",
+      "palette_role": "bone",
+      "rationale": "Suppressed-material dossier: calm bone record, the Barnum 'Boneless Wonder' set-piece as the chapter's one shard-tick quote, the Both-verdict closer as thesis.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true,
+        "quotes": "shard-tick"
+      },
+      "paragraphs": [
+        {
+          "index": 7,
+          "role": "setup"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        },
+        {
+          "index": 11,
+          "role": "thesis"
+        }
+      ]
+    },
+    "p5c5": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c5",
+      "class": "plate",
+      "motif": "masked-tiles",
+      "caption": "sixty-three statements, five of them false",
+      "part": "V",
+      "order": 5,
+      "way": "35",
+      "title": "Churchill True or False: Challenged Assumptions",
+      "content_kind": "masked-quiz",
+      "palette_role": "mixed",
+      "rationale": "True/False quiz: every even index 2..126 is a mask-q number row; served statement paras stay prose EXCEPT the 15 served-quotation statements (48–63 block + lead-in ¶97) which carry quote styling; answers para is mask-a inside the keyboard-honest details disclosure (facets.js wraps it; C5).",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": false,
+        "quiz": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "setup"
+        },
+        {
+          "index": 2,
+          "role": "mask-q"
+        },
+        {
+          "index": 4,
+          "role": "mask-q"
+        },
+        {
+          "index": 6,
+          "role": "mask-q"
+        },
+        {
+          "index": 8,
+          "role": "mask-q"
+        },
+        {
+          "index": 10,
+          "role": "mask-q"
+        },
+        {
+          "index": 12,
+          "role": "mask-q"
+        },
+        {
+          "index": 14,
+          "role": "mask-q"
+        },
+        {
+          "index": 16,
+          "role": "mask-q"
+        },
+        {
+          "index": 18,
+          "role": "mask-q"
+        },
+        {
+          "index": 20,
+          "role": "mask-q"
+        },
+        {
+          "index": 22,
+          "role": "mask-q"
+        },
+        {
+          "index": 24,
+          "role": "mask-q"
+        },
+        {
+          "index": 26,
+          "role": "mask-q"
+        },
+        {
+          "index": 28,
+          "role": "mask-q"
+        },
+        {
+          "index": 30,
+          "role": "mask-q"
+        },
+        {
+          "index": 32,
+          "role": "mask-q"
+        },
+        {
+          "index": 34,
+          "role": "mask-q"
+        },
+        {
+          "index": 36,
+          "role": "mask-q"
+        },
+        {
+          "index": 38,
+          "role": "mask-q"
+        },
+        {
+          "index": 40,
+          "role": "mask-q"
+        },
+        {
+          "index": 42,
+          "role": "mask-q"
+        },
+        {
+          "index": 44,
+          "role": "mask-q"
+        },
+        {
+          "index": 46,
+          "role": "mask-q"
+        },
+        {
+          "index": 48,
+          "role": "mask-q"
+        },
+        {
+          "index": 50,
+          "role": "mask-q"
+        },
+        {
+          "index": 52,
+          "role": "mask-q"
+        },
+        {
+          "index": 54,
+          "role": "mask-q"
+        },
+        {
+          "index": 56,
+          "role": "mask-q"
+        },
+        {
+          "index": 58,
+          "role": "mask-q"
+        },
+        {
+          "index": 60,
+          "role": "mask-q"
+        },
+        {
+          "index": 62,
+          "role": "mask-q"
+        },
+        {
+          "index": 64,
+          "role": "mask-q"
+        },
+        {
+          "index": 66,
+          "role": "mask-q"
+        },
+        {
+          "index": 68,
+          "role": "mask-q"
+        },
+        {
+          "index": 70,
+          "role": "mask-q"
+        },
+        {
+          "index": 72,
+          "role": "mask-q"
+        },
+        {
+          "index": 74,
+          "role": "mask-q"
+        },
+        {
+          "index": 76,
+          "role": "mask-q"
+        },
+        {
+          "index": 78,
+          "role": "mask-q"
+        },
+        {
+          "index": 80,
+          "role": "mask-q"
+        },
+        {
+          "index": 82,
+          "role": "mask-q"
+        },
+        {
+          "index": 84,
+          "role": "mask-q"
+        },
+        {
+          "index": 86,
+          "role": "mask-q"
+        },
+        {
+          "index": 88,
+          "role": "mask-q"
+        },
+        {
+          "index": 90,
+          "role": "mask-q"
+        },
+        {
+          "index": 92,
+          "role": "mask-q"
+        },
+        {
+          "index": 94,
+          "role": "mask-q"
+        },
+        {
+          "index": 96,
+          "role": "mask-q"
+        },
+        {
+          "index": 98,
+          "role": "mask-q"
+        },
+        {
+          "index": 100,
+          "role": "mask-q"
+        },
+        {
+          "index": 102,
+          "role": "mask-q"
+        },
+        {
+          "index": 104,
+          "role": "mask-q"
+        },
+        {
+          "index": 106,
+          "role": "mask-q"
+        },
+        {
+          "index": 108,
+          "role": "mask-q"
+        },
+        {
+          "index": 110,
+          "role": "mask-q"
+        },
+        {
+          "index": 112,
+          "role": "mask-q"
+        },
+        {
+          "index": 114,
+          "role": "mask-q"
+        },
+        {
+          "index": 116,
+          "role": "mask-q"
+        },
+        {
+          "index": 118,
+          "role": "mask-q"
+        },
+        {
+          "index": 120,
+          "role": "mask-q"
+        },
+        {
+          "index": 122,
+          "role": "mask-q"
+        },
+        {
+          "index": 124,
+          "role": "mask-q"
+        },
+        {
+          "index": 126,
+          "role": "mask-q"
+        },
+        {
+          "index": 97,
+          "role": "quote"
+        },
+        {
+          "index": 99,
+          "role": "quote"
+        },
+        {
+          "index": 101,
+          "role": "quote"
+        },
+        {
+          "index": 103,
+          "role": "quote"
+        },
+        {
+          "index": 105,
+          "role": "quote"
+        },
+        {
+          "index": 107,
+          "role": "quote"
+        },
+        {
+          "index": 109,
+          "role": "quote"
+        },
+        {
+          "index": 111,
+          "role": "quote"
+        },
+        {
+          "index": 113,
+          "role": "quote"
+        },
+        {
+          "index": 115,
+          "role": "quote"
+        },
+        {
+          "index": 117,
+          "role": "quote"
+        },
+        {
+          "index": 119,
+          "role": "quote"
+        },
+        {
+          "index": 121,
+          "role": "quote"
+        },
+        {
+          "index": 123,
+          "role": "quote"
+        },
+        {
+          "index": 125,
+          "role": "quote"
+        },
+        {
+          "index": 127,
+          "role": "quote"
+        },
+        {
+          "index": 128,
+          "role": "mask-a"
+        }
+      ]
+    },
+    "p5c7": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c7",
+      "class": "plate",
+      "motif": "hated-portrait",
+      "caption": "the portrait he hated",
+      "part": "V",
+      "order": 7,
+      "way": "37",
+      "title": "Churchill in Portrait: A Likeness",
+      "content_kind": "portrait-trial",
+      "palette_role": "slate/ochre",
+      "rationale": "Portrait-trial: the two served photo captions close the chapter as gallery captions; the aeroplane-in-the-dusk self-portrait inside ¶7 stays served prose; hated-portrait plate voids the face.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 8,
+          "role": "caption"
+        },
+        {
+          "index": 9,
+          "role": "caption"
+        }
+      ]
+    },
+    "p5c8": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c8",
+      "class": "plate",
+      "motif": "ebbing-tide",
+      "caption": "the tide goes out; the tablet remains",
+      "part": "V",
+      "order": 8,
+      "way": "38",
+      "title": "Churchill’s Last Days: How He Died",
+      "content_kind": "death-elegy",
+      "palette_role": "slate",
+      "rationale": "Death-elegy: last-words line and Abbey tablet as centered epitaph pair; the backward-sliding memory pageant (¶6) stays calm prose; ebbing-tide plate sinks below the numeral.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 4,
+          "role": "epitaph"
+        },
+        {
+          "index": 11,
+          "role": "epitaph"
+        }
+      ]
+    },
+    "p5c9": {
+      "src": "art/cohort-d.svg",
+      "symbol": "p5c9",
+      "class": "plate",
+      "motif": "judgment-seat",
+      "caption": "the verdict is yours; the chair is empty",
+      "part": "V",
+      "order": 9,
+      "way": "39",
+      "title": "My Churchill: Judgment",
+      "content_kind": "reader-verdict",
+      "palette_role": "bone",
+      "rationale": "Reader-verdict: the direct-address summons opens as thesis, the quarterdeck vision (cigar, flags, tears) centers as the book's emotional epitaph pair, the see-clearer closer is the coda; judgment-seat plate leaves the chair empty.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "V"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "thesis"
+        },
+        {
+          "index": 9,
+          "role": "epitaph"
+        },
+        {
+          "index": 10,
+          "role": "epitaph"
+        },
+        {
+          "index": 12,
+          "role": "coda"
+        }
+      ]
+    }
+  }
+}

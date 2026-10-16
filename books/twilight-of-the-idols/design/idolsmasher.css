@@ -1,0 +1,402 @@
+/* Twilight of the Idols — IDOLSMASHER cohort (design/idolsmasher.css).
+   Demolition core, p1c5–p1c8. Implements the DESIGNER-OWNED manifest
+   design/idolsmasher.json (BENCHMARK v3) against art/idolsmasher.svg.
+   Every rule is scoped under body[data-chapter="p1c5..p1c8"],
+   body[data-art="<motif>"], or #chapter-art. Unlayered book CSS beats
+   @layer shared; supervisor integrates this file sequentially into theme
+   context — do NOT append concurrently with other cohorts.
+
+   Grammar: bone #EDE2CC engraving, bronze #D29A4A rings/stars, ember
+   #B23A2A cracks only, ash #A89A80 dashed rings/veil/shadow. Theme
+   survival: dark/sepia/light reuse the book tokens (--tw-*) set in
+   book.css; nocturne/verdant/oxblood/slate/candlelight keep bronze/ember
+   accents on their own grounds — all literals below are identity colors
+   by design (cf. book.css candlelight/oxblood/etc. which also keep --tw-
+   bronze/ember); body text/measure always come from shared vars.
+
+   R-U1/F1 (2026-10-15): seals/phase-discs/sigils travel as embedded data-URI
+   SVG (byte-faithful to the <symbol> children as top-level rendered content,
+   seal-ring.svg construction) — file-fragment url() to <symbol> content paints
+   blank in Chromium sinks even with <view> anchors (proven live). No path
+   rewrite needed if the supervisor INLINES this file into theme.css. */
+
+/* ── 0. Cohort tokens (scoped; fall back to book tokens) ── */
+body[data-chapter="p1c5"], body[data-chapter="p1c6"],
+body[data-chapter="p1c7"], body[data-chapter="p1c8"] {
+  --idol-bone: var(--tw-bone, #ede2cc);
+  --idol-bronze: var(--tw-bronze, #d29a4a);
+  --idol-ember: var(--tw-ember, #b23a2a);
+  --idol-ash: var(--tw-ash, #a89a80);
+  --idol-forge: var(--tw-forge, #100d0a);
+  --idol-display: var(--font-display, "Cinzel", "Cormorant Garamond", "Palatino Linotype", serif);
+}
+
+/* ── 1. Opener emblem sizes (reader.js inlines the manifest symbol into
+   #chapter-art; class comes from the manifest entry) ── */
+body[data-chapter="p1c5"] #chapter-art.cadence svg {
+  width: min(270px, 72vw);
+  height: auto;
+  margin-inline: auto;
+}
+body[data-chapter="p1c6"] #chapter-art.emblem svg {
+  width: min(215px, 60vw);
+  height: auto;
+  margin-inline: auto;
+}
+body[data-chapter="p1c7"] #chapter-art.plate svg {
+  width: min(210px, 58vw);
+  height: auto;
+  margin-inline: auto;
+}
+body[data-chapter="p1c8"] #chapter-art.emblem svg {
+  width: min(210px, 58vw);
+  height: auto;
+  margin-inline: auto;
+}
+
+/* ── 2. p1c5 POSTER (T4): airy opener, small Cinzel title, cadence strip ── */
+body[data-chapter="p1c5"] .chapter-meta {
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+body[data-chapter="p1c5"] .meta-title {
+  font-family: var(--idol-display);
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.8vw, 1.6rem);
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+/* The 256-word chapter reads finished: air under the body, seal below. */
+body[data-chapter="p1c5"] #chapter-text {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+/* Six-diamond cadence strip under the meta-rule: five ash outlines, sixth
+   bronze-filled with halo — the six stages echoed inside the reading flow.
+   Glyphs here are typographic furniture (like a fleuron), not the emblem.
+   book.css stretches .meta-rule span to an 84px block; this cohort restores
+   the hairline and hangs the strip below it via a wrapping row flex. */
+body[data-chapter="p1c5"] .meta-rule {
+  flex-wrap: wrap;
+  row-gap: 1.1rem;
+}
+body[data-chapter="p1c5"] .meta-rule span {
+  flex: 0 0 5rem;
+  width: 5rem;
+  height: 1px;
+}
+body[data-chapter="p1c5"] .meta-rule::after {
+  content: "◇ ◇ ◇ ◇ ◇ ◆";
+  flex: 0 0 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  color: var(--idol-ash);
+}
+/* p1c5 is a poster: no drop cap (P1 'History of an Error' is a subtitle). */
+body[data-chapter="p1c5"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+/* P1 subtitle treatment: centered, letterspaced, ash. */
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(1) {
+  text-align: center;
+  letter-spacing: 0.18em;
+  text-indent: 0.18em;
+  color: var(--text-muted);
+  font-size: 1.05em;
+  margin-bottom: 2rem;
+}
+/* TWO VOICES (pure-CSS reachability — see gap G2): stage sentences upright
+   (odd-indexed numbered paras), asides italic + indented (even-indexed). */
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(3),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(5),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(10) {
+  font-style: italic;
+  color: var(--text-muted);
+  padding-left: 1.5rem;
+  border-left: 1px solid color-mix(in srgb, var(--idol-bronze) 45%, transparent);
+}
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(7),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(9) {
+  font-style: italic;
+  color: var(--text-muted);
+  padding-left: 1.5rem;
+  border-left: 1px solid color-mix(in srgb, var(--idol-bronze) 45%, transparent);
+}
+/* Stage numerals / INCIPIT styling needs supervisor spans (gap G1/G3) —
+   ::first-letter cannot isolate 'N.' or the closing caps without them. */
+/* p1c5 end seal: engraved noon disc below the final paragraph (T4). */
+body[data-chapter="p1c5"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%2218%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.95%22%2F%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%2213%22%20stroke-width%3D%221.2%22%20stroke-opacity%3D%220.8%22%2F%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%228%22%20stroke-width%3D%221%22%20stroke-opacity%3D%220.7%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%222%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Cline%20x1%3D%2217%22%20y1%3D%2241%22%20x2%3D%2231%22%20y2%3D%2241%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.9%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 3. p1c6: drop cap + 'peace of soul' catalogue + flame seal ── */
+body[data-chapter="p1c6"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--idol-display);
+  font-weight: 600;
+  color: var(--idol-bronze);
+}
+/* Catalogue litany (gap G4): P5 reads as the catalogue block; true per-'Or'
+   hanging lines need supervisor spans. Closest honest form: hanging indent
+   + dimmed rhythm so the anaphoric clauses scan as a litany. */
+body[data-chapter="p1c6"] .chapter-text > p:nth-of-type(5) {
+  padding-left: 2rem;
+  text-indent: -1.25rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+body[data-chapter="p1c6"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.95%22%2F%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2214%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%223%202%22%20stroke-opacity%3D%220.8%22%2F%3E%20%3Cpath%20d%3D%22M24%2C14%20C28%2C19%2030%2C22%2030%2C26%20C30%2C31%2027%2C34%2024%2C34%20C21%2C34%2018%2C31%2018%2C26%20C18%2C23%2019%2C21%2021%2C19%20C20%2C22%2021%2C24%2022%2C25%20C21%2C22%2022%2C18%2024%2C14%20Z%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3Cline%20x1%3D%2235%22%20y1%3D%2235%22%20x2%3D%2240%22%20y2%3D%2240%22%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 4. p1c7: ruled plates + phase-disc plate-heads + quarters seal ── */
+body[data-chapter="p1c7"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+/* Ruled plates: each error/interlude head-paragraph opens a plate. */
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8),
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9) {
+  border-top: 1px solid color-mix(in srgb, var(--idol-bronze) 40%, transparent);
+  padding-top: 1.6rem;
+  margin-top: 2.6rem;
+}
+/* Phase-disc markers (gap G5): engraved SVG minis leading each plate via
+   content:url(#fragment) — honest art, wrong position only until the
+   supervisor splits heads onto their own line. */
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%200%201%2020%2C12%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%200%201%2012%2C20%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2C12%20L12%2C4%20A8%2C8%200%201%201%204%2C12%20Z%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23EDE2CC%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22%23D29A4A%22%2F%3E%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%222.5%22%20fill%3D%22%23100D0A%22%2F%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.6em;
+  vertical-align: -0.1em;
+  line-height: 0;
+}
+/* Plate-head line itself (gap G5): first-line small-caps emphasis is the
+   closest pure-CSS reach; full Cinzel plate-head line needs the split. */
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1)::first-line,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3)::first-line,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6)::first-line,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8)::first-line,
+body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9)::first-line {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--idol-bone);
+}
+body[data-chapter="p1c7"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%220.95%22%2F%3E%20%3Cg%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221%22%20stroke-opacity%3D%220.8%22%3E%20%3Cline%20x1%3D%2224%22%20y1%3D%228%22%20x2%3D%2224%22%20y2%3D%2240%22%2F%3E%20%3Cline%20x1%3D%228%22%20y1%3D%2224%22%20x2%3D%2240%22%20y2%3D%2224%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%2233%22%20y1%3D%2215%22%20x2%3D%2239%22%20y2%3D%229%22%2F%3E%20%3Cline%20x1%3D%2233%22%20y1%3D%2233%22%20x2%3D%2239%22%20y2%3D%2239%22%2F%3E%20%3Cline%20x1%3D%2215%22%20y1%3D%2233%22%20x2%3D%229%22%20y2%3D%2239%22%2F%3E%20%3Cline%20x1%3D%2215%22%20y1%3D%2215%22%20x2%3D%229%22%20y2%3D%229%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%222%22%20fill%3D%22%23D29A4A%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 5. p1c8: centered maxim + margin seals + fraus seal ── */
+body[data-chapter="p1c8"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--idol-display);
+  font-weight: 600;
+  color: var(--idol-bronze);
+}
+/* P2 thesis maxim: centered, italic, bone. */
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(2) {
+  text-align: center;
+  font-style: italic;
+  color: var(--idol-bone);
+  max-width: 34rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-wrap: balance;
+}
+/* Margin seals: engraved SVG minis floated into the left margin on wide
+   screens; inline before text on phone (see §7). */
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(3)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%3E%20%3Crect%20x%3D%225%22%20y%3D%225%22%20width%3D%2214%22%20height%3D%2214%22%20stroke-width%3D%221.5%22%2F%3E%20%3Cline%20x1%3D%2212%22%20y1%3D%225%22%20x2%3D%2212%22%20y2%3D%2219%22%20stroke-width%3D%221%22%2F%3E%20%3Cline%20x1%3D%225%22%20y1%3D%2212%22%20x2%3D%2219%22%20y2%3D%2212%22%20stroke-width%3D%221%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(5)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%3E%20%3Cpath%20d%3D%22M12%2C5%20L19%2C19%20L5%2C19%20Z%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%2F%3E%20%3Cline%20x1%3D%228.5%22%20y1%3D%2212%22%20x2%3D%2215.5%22%20y2%3D%2212%22%20stroke-width%3D%221%22%2F%3E%20%3Cline%20x1%3D%226.75%22%20y1%3D%2215.5%22%20x2%3D%2217.25%22%20y2%3D%2215.5%22%20stroke-width%3D%221%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(7)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221.5%22%2F%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%228%22%20y1%3D%228%22%20x2%3D%2216%22%20y2%3D%2216%22%2F%3E%20%3Cline%20x1%3D%228%22%20y1%3D%2216%22%20x2%3D%2216%22%20y2%3D%228%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(8)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%23A89A80%22%20stroke-width%3D%221.5%22%2F%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%228%22%20y1%3D%228%22%20x2%3D%2216%22%20y2%3D%2216%22%2F%3E%20%3Cline%20x1%3D%228%22%20y1%3D%2216%22%20x2%3D%2216%22%20y2%3D%228%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E");
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0.35em 0 0 -2.4rem;
+  line-height: 0;
+}
+body[data-chapter="p1c8"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20d%3D%22M31.6%2C7.7%20A18%2C18%200%201%201%2016.4%2C7.7%22%20fill%3D%22none%22%20stroke%3D%22%23D29A4A%22%20stroke-width%3D%221.6%22%20stroke-opacity%3D%220.95%22%20stroke-linecap%3D%22round%22%2F%3E%20%3Cg%20stroke%3D%22%23B23A2A%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%20%3Cline%20x1%3D%2217%22%20y1%3D%2217%22%20x2%3D%2231%22%20y2%3D%2231%22%2F%3E%20%3Cline%20x1%3D%2217%22%20y1%3D%2231%22%20x2%3D%2231%22%20y2%3D%2217%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2224%22%20cy%3D%229%22%20r%3D%221.8%22%20fill%3D%22%23D29A4A%22%2F%3E%3C%2Fsvg%3E");
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 2.75rem auto 0;
+  line-height: 0;
+}
+
+/* ── 6. Motif-scoped treatments (body[data-art] from the manifest) ── */
+body[data-art="noon-collapse"] .meta-rule span {
+  background: linear-gradient(90deg, transparent, var(--idol-bronze), transparent);
+  width: 7rem;
+}
+body[data-art="fourfold-knot"] .meta-rule span {
+  background: linear-gradient(90deg, var(--idol-ember), var(--idol-bronze), var(--idol-ember));
+  width: 7rem;
+}
+body[data-art="veil-tablets"] .meta-rule span {
+  background: linear-gradient(90deg, var(--idol-ash), var(--idol-ember), var(--idol-ash));
+  width: 7rem;
+}
+
+/* ── 7. Small screens: emblems shrink, margin seals go inline ── */
+@media (max-width: 560px) {
+  body[data-chapter="p1c5"] #chapter-art.cadence svg {
+    width: min(220px, 78vw);
+  }
+  body[data-chapter="p1c6"] #chapter-art.emblem svg,
+  body[data-chapter="p1c7"] #chapter-art.plate svg,
+  body[data-chapter="p1c8"] #chapter-art.emblem svg {
+    width: min(168px, 62vw);
+  }
+  body[data-chapter="p1c5"] .chapter-meta {
+    padding-top: 1.25rem;
+  }
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(3)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(5)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(7)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(8)::before {
+    float: none;
+    display: inline-block;
+    margin: 0 0.6em 0 0;
+    vertical-align: -0.15em;
+  }
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(3),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(5),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(7),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(8),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(9),
+  body[data-chapter="p1c5"] .chapter-text > p:nth-of-type(10) {
+    padding-left: 1rem;
+  }
+}
+
+/* ── 8. Guards: reduced motion + print ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-chapter="p1c5"] #chapter-art.cadence svg,
+  body[data-chapter="p1c6"] #chapter-art.emblem svg,
+  body[data-chapter="p1c7"] #chapter-art.plate svg,
+  body[data-chapter="p1c8"] #chapter-art.emblem svg {
+    filter: none;
+  }
+}
+@media print {
+  body[data-chapter="p1c5"] #chapter-art.cadence,
+  body[data-chapter="p1c6"] #chapter-art.emblem,
+  body[data-chapter="p1c7"] #chapter-art.plate,
+  body[data-chapter="p1c8"] #chapter-art.emblem,
+  body[data-chapter="p1c5"] .meta-rule::after,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(1)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(3)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(6)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(8)::before,
+  body[data-chapter="p1c7"] .chapter-text > p:nth-of-type(9)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(3)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(5)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(7)::before,
+  body[data-chapter="p1c8"] .chapter-text > p:nth-of-type(8)::before {
+    display: none;
+  }
+  body[data-chapter="p1c5"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c6"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c7"] .chapter-text > p:last-child::after,
+  body[data-chapter="p1c8"] .chapter-text > p:last-child::after {
+    content: none;
+  }
+}

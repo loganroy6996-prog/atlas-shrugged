@@ -1,0 +1,242 @@
+{
+ "map_29_42": [
+  {
+   "delta": "Shoot motif (stage-content kept).",
+   "id": "p3c29",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; prompter box right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-prompter",
+    "treatment": "motif"
+   },
+   "order": 29,
+   "palette_role": "stage-content \u2014 excuses",
+   "part": "part-3",
+   "rationale": "French unities quarrel: conservatives invent reasons for habits after the fact (122w).",
+   "reading_treatment": "Shoot",
+   "title": "29. The add-on-liars.",
+   "word_count": 122
+  },
+  {
+   "delta": "Shoot motif; duet panel folded into tableau.",
+   "id": "p3c30",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; plumes fanned + mask-fall right sharing baseline; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-plumemask",
+    "treatment": "motif"
+   },
+   "order": 30,
+   "palette_role": "stage-content \u2014 borrowed splendour",
+   "part": "part-3",
+   "rationale": "Famous borrow splendour/fear/feigned idleness from a dying rotating cast (230w).",
+   "reading_treatment": "Shoot",
+   "title": "30. The comedy of the famous.",
+   "word_count": 230
+  },
+  {
+   "delta": "Shoot motif; duet folded into tableau.",
+   "id": "p3c31",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; bow crossed over scales left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-bowscale",
+    "treatment": "motif"
+   },
+   "order": 31,
+   "palette_role": "trade \u2014 luxury to come",
+   "part": "part-3",
+   "rationale": "Trade common as reading, as hunting once was; nobles may trade as sentiment-luxury (233w).",
+   "reading_treatment": "Shoot",
+   "title": "31. Trade and nobility.",
+   "word_count": 233
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c32",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; two doors right (open + ajar); sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-twodoors",
+    "treatment": "motif"
+   },
+   "order": 32,
+   "palette_role": "discipleship \u2014 refused",
+   "part": "part-3",
+   "rationale": "Corrupter rejects two disciples: cannot say no / half-and-half; doctrine needs warlike soul (112w).",
+   "reading_treatment": "Shoot",
+   "title": "32. Undesired disciples.",
+   "word_count": 112
+  },
+  {
+   "delta": "Shoot motif; iron tone killed, moon-hollow kept.",
+   "id": "p3c33",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; wink small left beside hollow moon-arc; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-moonwink",
+    "treatment": "motif"
+   },
+   "order": 33,
+   "palette_role": "knowledge \u2014 cold suspicion",
+   "part": "part-3",
+   "rationale": "Man became distrustful, more evil, late: 'because he now has a science' (77w); wink rhymes \u00a73.",
+   "reading_treatment": "Shoot",
+   "title": "33. Outside the lecture-room.",
+   "word_count": 77
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c34",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sunbeam wedge from upper-LEFT (sun sits in beam origin); vault arcs right; rising secret-dots.",
+    "symbol": "gs-b-motif-sunbeam",
+    "treatment": "motif"
+   },
+   "order": 34,
+   "palette_role": "history \u2014 retroactive sun",
+   "part": "part-3",
+   "rationale": "Great humans exert retroactive force: secrets crawl into his sunshine; past undiscovered (67w).",
+   "reading_treatment": "Shoot",
+   "title": "34. Historia abscondita.20",
+   "word_count": 67
+  },
+  {
+   "delta": "Shoot motif; shadow tone killed; G5 pyre retuned.",
+   "id": "p3c35",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; stake + foam snapped-halo left; sea; NO gull (smoke stills air) + 2 sparks.",
+    "symbol": "gs-b-motif-pyre",
+    "treatment": "motif"
+   },
+   "order": 35,
+   "palette_role": "heresy \u2014 stake fire",
+   "part": "part-3",
+   "rationale": "Thinking otherwise = heresy, witchcraft's adjunct; Reformation redoubled medieval spirit (116w).",
+   "reading_treatment": "Shoot",
+   "title": "35. Heresy and witchcraft.",
+   "word_count": 116
+  },
+  {
+   "delta": "v1 landmark\u2192Branch banner (224w band). pillows span full width.",
+   "id": "p3c36",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Mask-fall large LEFT; laurel RIGHT; pillows heavy FULL-WIDTH bottom; low sun + fan; night (G5).",
+    "symbol": "gs-b-banner-lastwords",
+    "treatment": "banner"
+   },
+   "order": 36,
+   "palette_role": "stage-content \u2014 falling mask",
+   "part": "part-3",
+   "rationale": "Augustus plaudite / Nero artifex / Tiberius smothered double death: Roman theatre Branch set-piece (224w).",
+   "reading_treatment": "Branch",
+   "title": "36. Last words.",
+   "word_count": 224
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c37",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; three candles right before altar arc; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-threecandles",
+    "treatment": "motif"
+   },
+   "order": 37,
+   "palette_role": "knowledge \u2014 three errors",
+   "part": "part-3",
+   "rationale": "Science promoted via three errors: God (Newton), utility (Voltaire), innocence (Spinoza) (130w).",
+   "reading_treatment": "Shoot",
+   "title": "37. Because of three errors.",
+   "word_count": 130
+  },
+  {
+   "delta": "Shoot motif; ember tone killed \u2192 standard tableau.",
+   "id": "p3c38",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; match over keg left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-match",
+    "treatment": "motif"
+   },
+   "order": 38,
+   "palette_role": "youth \u2014 powder kegs",
+   "part": "part-3",
+   "rationale": "Young men powder kegs thrilled by the burning match of zeal, never the cause (94w).",
+   "reading_treatment": "Shoot",
+   "title": "38. The explosive ones.",
+   "word_count": 94
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c39",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; tipped cup right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-cup",
+    "treatment": "motif"
+   },
+   "order": 39,
+   "palette_role": "taste \u2014 enforced ridiculum",
+   "part": "part-3",
+   "rationale": "Taste changes before opinions when shameless ones enforce hoc est ridiculum (176w).",
+   "reading_treatment": "Shoot",
+   "title": "39. Changed taste.",
+   "word_count": 176
+  },
+  {
+   "delta": "NEW stripe banner (was mark). 323w Branch; G5 chimney retuned.",
+   "id": "p3c40",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Weather-stripe band (swordfire in sequence; chimney night mass).",
+    "symbol": "gs-b-banner-stripe",
+    "treatment": "banner"
+   },
+   "order": 40,
+   "palette_role": "essay \u2014 survey stripe",
+   "part": "part-3",
+   "rationale": "Military culture above industrial: workers sell selves to unknown employers (323w Branch).",
+   "reading_treatment": "Branch",
+   "title": "40. On the lack of noble style.",
+   "word_count": 323
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c41",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; flask left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-flask",
+    "treatment": "motif"
+   },
+   "order": 41,
+   "palette_role": "thought \u2014 experiment",
+   "part": "part-3",
+   "rationale": "Thinker treats acts as experiments; success/failure are answers; remorse for the ordered-about (69w).",
+   "reading_treatment": "Shoot",
+   "title": "41. Against remorse.",
+   "word_count": 69
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c42",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; horizonpath + walker right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-horizonpath",
+    "treatment": "motif"
+   },
+   "order": 42,
+   "palette_role": "work \u2014 rare breed",
+   "part": "part-3",
+   "rationale": "Against work-for-wages: rare ones (artists, hunters, travellers, lovers) for whom work is reward (284w).",
+   "reading_treatment": "Shoot",
+   "title": "42. Work and boredom.",
+   "word_count": 284
+  }
+ ]
+}

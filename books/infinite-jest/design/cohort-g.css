@@ -1,0 +1,2406 @@
+/* =====================================================================
+   INFINITE JEST — Cohort G · Endnotes & Errata (p2c1–p2c12) · design/cohort-g.css
+   FINAL 2026-10-15: J8 p2c2 broadsheet verified, expanded to p2c1/p2c3-p2c12. UNLAYERED (wins over
+   @layer shared; scoped selectors below carry higher specificity than the
+   theme's book-level rules via the [data-chapter] hook).
+   Scope: body[data-book="infinite-jest"][data-chapter] ONLY. Classes ij-*
+   ONLY; NEVER mint reader-* (styling shared .reader-* via §2-qualified
+   selectors is allowed). Explicit researched nth-of-type ONLY — no modulo,
+   no range tricks. Prose untouched (J4). NO gold anywhere (J5); Carbon
+   Violet register throughout; Stamp Red ONLY for UNRELEASED (G2) + Day-Glo
+   serum tick environs excluded — see G12 note.
+   BREAKPOINT LEXICON (cohort A precedent): 1100px = gutter/marginalia
+   collapse (unifies with the ledger tick layer); 720px = narrow measure
+   tightening. 390px art floor: theme §8 keeps plates >=200px tall.
+   Verified para indices: data/chapters/p2c{N}.json re-read 2026-10-15;
+   0-based JSON idx → 1-based nth-of-type; ledger hooks replayed
+   (reader.js NOTEREF_RE + ledger.js paintNoteTicks/paintFilmography).
+   Skill provenance: skill://frontend-workflow + skill://frontend-design
+   injected in-context (no local fallback used).
+   ===================================================================== */
+
+/* ---- G0. Cohort-wide appendix register (p2c1–p2c12) ---- */
+/* Index-tab numerals: shared .reader-note keeps its 3.2rem hanging
+   indent (theme §7); G adds mono tabular violet rhythm + mega-note
+   footnote-rule ticks on researched heads. One selector group per
+   chapter keeps the merge auditable (cohort C/A/E precedent). */
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text:has(.reader-note) > p.reader-note,
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text:has(.reader-note) > p.reader-note {
+  font-variant-numeric: tabular-nums;
+  scroll-margin-top: calc(var(--header-h, 0px) + 1rem);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c2"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c3"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c4"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c5"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c6"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c7"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c8"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c9"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c10"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c11"] .reader-noteref,
+body[data-book="infinite-jest"][data-chapter="p2c12"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.86em;
+  color: var(--ij-violet);
+  text-decoration: underline;
+  text-decoration-color: rgba(124, 107, 214, 0.5);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c2"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c3"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c4"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c5"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c6"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c7"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c8"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c9"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c10"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c11"] .reader-noteref:hover,
+body[data-book="infinite-jest"][data-chapter="p2c12"] .reader-noteref:hover {
+  color: var(--text);
+  text-decoration-color: var(--ij-violet);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c2"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c3"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c4"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c5"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c6"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c7"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c8"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c9"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c10"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c11"] .reader-noteref:focus-visible,
+body[data-book="infinite-jest"][data-chapter="p2c12"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Drawer-pull margin pills: ledger.js .ij-tick shape untouched; G tunes
+   only the vertical rhythm so pills clear hanging numerals. */
+body[data-book="infinite-jest"][data-chapter="p2c1"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c2"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c3"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c4"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c5"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c6"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c7"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c8"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c9"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c10"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c11"] .ij-tick,
+body[data-book="infinite-jest"][data-chapter="p2c12"] .ij-tick {
+  top: 0.35em;
+}
+
+/* Lettered sub-notes: violet mono letter + mid-dot leader, one step
+   deeper than numeric notes. */
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p.reader-note-sub,
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p.reader-note-sub {
+  padding-left: 4.4rem;
+  text-indent: -1.6rem;
+  font-size: 0.94em;
+}
+
+/* Return chip: violet-on-elevated with violet left edge (theme §6 base
+   supplies layout; G confirms the appendix register). */
+body[data-book="infinite-jest"][data-chapter="p2c1"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c2"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c3"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c4"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c5"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c6"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c7"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c8"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c9"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c10"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c11"] .note-return-chip:not(.hidden):not([hidden]),
+body[data-book="infinite-jest"][data-chapter="p2c12"] .note-return-chip:not(.hidden):not([hidden]) {
+  border-left: 3px solid var(--ij-violet);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-art,
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-art {
+  border-color: rgba(124, 107, 214, 0.45);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-art svg,
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-art svg {
+  min-height: 200px;
+}
+
+/* Mega-note heads: 1.3em numeral zone + 24px violet footnote-rule tick.
+   reader.js puts the numeral inline (prose untouched), so G styles the
+   head paragraph's hanging zone via padding (no text wrap possible). */
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p.reader-note:nth-of-type(26) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p.reader-note:nth-of-type(6) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p.reader-note:nth-of-type(1) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p.reader-note:nth-of-type(10) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p.reader-note:nth-of-type(5) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p.reader-note:nth-of-type(78) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p.reader-note:nth-of-type(17) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p.reader-note:nth-of-type(75) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p.reader-note:nth-of-type(154) {
+  padding-left: 4.4rem;
+  text-indent: -4.4rem;
+  margin-top: 1.6rem;
+}
+
+/* ---- G2. p2c2 Note 24 — filmography broadsheet (J6/J8 prototype) ---- */
+/* Verbatim anchors: masthead p0 (nth 1); colophon p1–p3 (nth 2–4);
+   CELLULOID band before p4 (nth 5); rows p4–p61 (nth 5–62); MAGNETIC
+   VIDEO band before p31 (nth 32); CARTRIDGE band before p42 (nth 43);
+   Found bare p29/p30/p32/p37/p38 (nth 30/31/33/38/39); tailed
+   p31/p33/p39 (nth 32/34/40); IJ-I p7 (nth 8), IJ-II p16 (nth 17),
+   IJ-III p28 (nth 29), IJ-IV p43 (nth 44), IJ-V? p61 (nth 62);
+   continuations p22/p40/p52/p53/p60 (nth 23/41/53/54/61); scene-breath
+   Cage III p19 (nth 20), Desire p51 (nth 52), Marat p59 (nth 60);
+   a–f tail p62–p71 (nth 63–72); tail continuations p63/p66/p68/p70
+   (nth 64/67/69/71); Ibid. p71 (nth 72). Stamps painted by ledger.js
+   (.ij-stamp-gauge/.ij-stamp-unrel/.ij-stamp-vault + .ij-film). */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text {
+  column-gap: 2.5rem;
+  column-rule: 1px solid rgba(124, 107, 214, 0.28);
+  max-width: 44rem;
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text {
+  column-count: 2;
+  max-width: 64rem;
+}
+
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p {
+  break-inside: avoid;
+  max-width: none;
+}
+}
+
+/* Masthead: p0 spans both columns. reader.js sets the numeral inline,
+   so the lockup reads "24. JAMES O. INCANDENZA: A FILMOGRAPHY". */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(1) {
+  column-span: all;
+  text-align: center;
+  font-family: "Archivo Black", "Arial Black", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  color: var(--text);
+  padding: 1.4rem 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+  border-top: 3px double var(--ij-violet);
+  border-bottom: 3px double var(--ij-violet);
+  text-indent: 0;
+  max-width: none;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(1)::after {
+  content: "A FILMOGRAPHY \00B7 NOTE 24 \00B7 AS COMPLETE AS WE ARE ABLE TO MAKE IT";
+  display: block;
+  margin-top: 0.7em;
+  font-family: var(--ij-mono);
+  font-size: 0.42em;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--ij-violet);
+}
+
+/* Disclaimer colophon: p1–p3 bounded, spanning both columns. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(4) {
+  column-span: all;
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.4);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1rem 1.25rem;
+  font-size: 0.92em;
+  margin-bottom: 0;
+  max-width: none;
+  text-indent: 0;
+  padding-left: 1.25rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(2) {
+  border-bottom: 0; border-radius: 2px 2px 0 0;
+}
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(3) {
+  border-top: 0; border-bottom: 0; border-radius: 0;
+}
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(4) {
+  border-top: 0; border-radius: 0 0 2px 2px; margin-bottom: 1.6rem;
+}
+
+/* Catalogue rows p4–p61 (nth 5–62): ruled-row anatomy. Explicit list
+   only — every researched index enumerated, no ranges, no modulo. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(24),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(25),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(26),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(27),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(39),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(43),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(47),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(49),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(50),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(51),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(56),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(57),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(58),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(60),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(61),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62) {
+  border-top: 1px solid rgba(124, 107, 214, 0.28);
+  padding-top: 0.55rem;
+  margin-bottom: 0.55rem;
+  padding-left: 1rem;
+  text-indent: 0;
+  max-width: none;
+}
+
+/* Boundary rows after era bands drop their top hairline (the band is
+   the rule there). */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(43) {
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* Era dividers: full-width band rules on the boundary rows' ::before.
+   column-span on ::before is unreliable, so the boundary ROWS span both
+   columns (≥1100px, see below) and their ::before bands render full-width
+   above the row text. Below 1100px the bands are ordinary band rules. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(5)::before {
+  content: "CELLULOID \00B7 B.S. UNDATED \00B7 GAUGES 16/35/78";
+  display: block;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  border-bottom: 3px double rgba(124, 107, 214, 0.5);
+  padding: 0.6rem 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(32)::before {
+  content: "MAGNETIC VIDEO \00B7 YEAR OF THE WHOPPER";
+  display: block;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  border-bottom: 3px double rgba(124, 107, 214, 0.5);
+  padding: 0.6rem 0.5rem;
+  margin: 1.2rem 0 0.8rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(43)::before {
+  content: "CARTRIDGE \00B7 Y.T.M.P. \2192 Y.T.-S.D.B.";
+  display: block;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  border-bottom: 3px double rgba(124, 107, 214, 0.5);
+  padding: 0.6rem 0.5rem;
+  margin: 1.2rem 0 0.8rem;
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(5),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(32),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(43) {
+    column-span: all;
+  }
+}
+
+/* IJ sigil thread: margin-only ◈ marks (left rail ≥1100px, run-in tag
+   below) + 3px left rule on the researched rows. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(8)::after {
+  content: "\25C8 J\00B7I";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-violet);
+  margin-top: 0.5em;
+}
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(17)::after {
+  content: "\25C8 J\00B7II";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-violet);
+  margin-top: 0.5em;
+}
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(29)::after {
+  content: "\25C8 J\00B7III";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-violet);
+  margin-top: 0.5em;
+}
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(44)::after {
+  content: "\25C8 J\00B7IV";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-violet);
+  margin-top: 0.5em;
+}
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62)::after {
+  content: "\25C8 J\00B7V? \2014 THE ENTERTAINMENT";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-violet);
+  margin-top: 0.5em;
+}
+
+/* Reset shared + apology-proof guards: ::after content cleared for all OTHER rows in p2c2 before applying the sigils above... */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62) {
+  border-left: 3px solid var(--ij-violet);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62) {
+  margin-top: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62) {
+  margin-top: 1.6rem;
+  border-top: 3px double rgba(124, 107, 214, 0.6);
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(8)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(17)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(29)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(44)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62)::after {
+    position: absolute;
+    right: calc(100% + 0.6rem);
+    left: auto;
+    top: 0.2em;
+    margin-top: 0;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 720px) {
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(8)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(17)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(29)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(44)::after,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62)::after {
+    content: "\25C8";
+  }
+}
+
+/* Found-Drama compression: the five bare titles as one bounded group
+   block (bordered inset, ruled micro-rows, Plex Mono). The block is a
+   visual grouping; para anchors live on the paras themselves. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(30)::before {
+  content: "FOUND DRAMAS \00B7 CONCEPTUAL";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(39) {
+  font-family: var(--ij-mono);
+  font-size: 0.85em;
+  background: var(--bg-elevated);
+  border-left: 1px solid rgba(124, 107, 214, 0.5);
+  border-right: 1px solid rgba(124, 107, 214, 0.5);
+  padding: 0.4rem 1rem;
+  margin-bottom: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(30) {
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  border-radius: 2px 2px 0 0;
+  padding-top: 0.8rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(39) {
+  border-bottom: 1px solid rgba(124, 107, 214, 0.5);
+  border-radius: 0 0 2px 2px;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.55rem;
+}
+
+/* Tailed Found rows (nth 32/34/40) stay full catalogue rows — no extra
+   wrap; the row's UNRELEASED stamp covers them. Continuation paras
+   (nth 23/41/53/54/61) tuck under their heads: no top hairline. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(61) {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: -0.3rem;
+}
+
+/* Scene-breath for the longest entries: Cage III (nth 20), Desire
+   (nth 52), Marat (nth 60). */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(60) {
+  margin-bottom: 1.1rem;
+}
+
+/* Stamps: ledger.js hooks ONLY. Gauge = violet bordered micro-caps;
+   UNRELEASED = Stamp Red tilt (the cohort's ONLY red text); VAULT =
+   faint clerk-ink. .ij-film rows keep the theme's violet left rule. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] .ij-stamp {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] .ij-stamp-gauge {
+  color: var(--ij-violet);
+  border: 1px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 0.12rem 0.45rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] .ij-stamp-unrel {
+  color: var(--ij-stamp);
+  border: 1px solid var(--ij-stamp);
+  transform: rotate(-1.5deg);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] .ij-stamp-vault {
+  color: var(--text-faint);
+  border: 1px solid var(--text-faint);
+}
+
+/* a–f footnote tail (nth 63–72): nested apparatus under the cohort's
+   only full-width footnote rule inside prose. Heads a–f violet mono
+   letter + mid-dot; continuation paras indent to the text column;
+   'Ibid.' (nth 72) closes flush. Spans both columns ≥1100px. */
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(63),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(64),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(65),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(66),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(67),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(68),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(69),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(70),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(71),
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(72) {
+  font-size: 0.92em;
+  padding-left: 4.4rem;
+  text-indent: -1.6rem;
+  border-top: 0;
+  padding-top: 0;
+  margin-bottom: 0.4rem;
+  max-width: none;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(63) {
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  padding-top: 1rem;
+  margin-top: 1.4rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(63)::before {
+  content: "APPARATUS a\2013f \00B7 MOCK-SCHOLARLY TAIL";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+@media (min-width: 1100px) {
+  /* The tail OPENER spans (closes the two-column listing); the remaining
+     tail paras flow as ordinary full-width blocks beneath it. */
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(63) {
+    column-span: all;
+  }
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(64),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(65),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(66),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(67),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(68),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(69),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(70),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(71),
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(72) {
+    column-span: all;
+    break-inside: auto;
+  }
+}
+
+/* Return chip stays above the two-column flow (sticky per shared). */
+body[data-book="infinite-jest"][data-chapter="p2c2"] .note-return-chip:not(.hidden):not([hidden]) {
+  position: sticky;
+  top: calc(var(--header-h, 0px) + 0.75rem);
+  z-index: 5;
+}
+
+/* ---- G1. p2c1 Notes 1–23 — threshold glossary (30 paras) ---- */
+/* Anchors: n3 cardioid p2 (nth 3, 198w); n5 drines+N.B. p4 (nth 5);
+   n13/14/16 burglary chain p19/p20/p22 (nth 20/21/23); n21 first live
+   Q.v. p27 (nth 28) — first drawer-pull pair in Part II. */
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p {
+  margin-bottom: 1.3rem;
+  max-width: min(var(--reader-max), 62ch);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(5) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.4);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1.1rem 1.25rem 1.1rem 4.4rem;
+  text-indent: -3.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(3)::before {
+  content: "N3 \00B7 CARDIOID PLAN";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(5)::before {
+  content: "N5 \00B7 DRINES TAXONOMY";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+/* Burglary chain 13/14/16 shares one left rule across nth 20/21/23
+   (15 and 17 intervene in prose; the rule re-announces the thread). */
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(23) {
+  border-left: 2px solid rgba(124, 107, 214, 0.55);
+  padding-left: 4.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(28) {
+  border: 1px dashed rgba(124, 107, 214, 0.55);
+  border-radius: 2px;
+  padding: 0.7rem 1rem 0.7rem 4.2rem;
+  background: rgba(124, 107, 214, 0.06);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p:nth-of-type(28)::before {
+  content: "FIRST CROSS-REF \00B7 Q.V. NOTE 211";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+
+/* ---- G3. p2c3 Notes 25–64 — lexicon + separatist primer (44 paras) ---- */
+/* Anchors: primer 39–42 p14–p20 (nth 15/17/18/19/20/21); apparatus a
+   p15 (nth 16), b='See Note 304' p17 (nth 18); n45='See Note 304'
+   p23 (nth 24); n57 DMZ p35 (nth 36, 103w); n64 T&Q p42 (nth 43,
+   211w); n38 literary q.v. stays plain (regex needs 'Note N'). */
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p {
+  margin-bottom: 0.8rem;
+  max-width: min(var(--reader-max), 62ch);
+}
+
+/* Primer briefing block: continuous bounded block, shared left rule,
+   wheel-fleur section mark on the opener (pure-CSS roundel). */
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(21) {
+  background: var(--bg-elevated);
+  border-left: 3px solid var(--ij-violet);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(15) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  border-radius: 2px 2px 0 0;
+  padding-top: 1rem;
+  margin-top: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(21) {
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  border-radius: 0 0 2px 2px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(15)::before {
+  content: "A.F.R. \00B7 TRIPLE AGENT \00B7 FORTIER BRIEFING";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+/* n40 triple-ruled: the triple agent gets three rules via double
+   border + an inset hairline. */
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(19) {
+  border-left: 3px double var(--ij-violet);
+  box-shadow: inset 0 1px 0 rgba(124, 107, 214, 0.4), inset 0 -1px 0 rgba(124, 107, 214, 0.4);
+}
+
+/* Insets: n57 DMZ + n64 T&Q. */
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(43) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.4);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1.1rem 1.25rem 1.1rem 4.4rem;
+  text-indent: -3.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(36)::before {
+  content: "N57 \00B7 TEMPORAL PERCEPTION";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(43)::before {
+  content: "N64 \00B7 T+Q CURRICULUM";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+/* Climax pointers: 304-bound refs get an arrow-chip tail (qualified
+   selector on the shared link class — allowed, no minting). */
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(18) .reader-noteref::after,
+body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p:nth-of-type(24) .reader-noteref::after {
+  content: " \2192";
+  color: var(--ij-violet);
+}
+
+
+/* ---- G4. p2c4 Notes 65–104 — wards file + first transcript (88 paras) ---- */
+/* Anchors: n67 anecdote p2 (nth 3, 596w); n87 backward Q.v. p22 (nth
+   23); n90 'E.g.:' p25 (nth 26) + SELECTED SNIPPET masthead p26 (nth
+   27) + 47 dialogue turns p27–p73 (nth 28–74). Voice alternation is
+   Day-vs-Gately by paragraph turn: even/odd offsets assigned
+   EXPLICITLY per researched index (Day opens nth 28). */
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(3) {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(124, 107, 214, 0.3);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(3)::before {
+  content: "N67 \00B7 E.M. OFFICERS KNOW MARIO";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(23) {
+  border: 1px dashed rgba(124, 107, 214, 0.55);
+  border-radius: 2px;
+  padding: 0.7rem 1rem 0.7rem 4.2rem;
+  background: rgba(124, 107, 214, 0.06);
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(23)::before {
+  content: "\21A9 FIRST BACKWARD LINK \00B7 Q.V. NOTE 24";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+/* n90 transcript masthead: bounded header with dateline lockup. */
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(26) {
+  font-family: var(--ij-mono);
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
+  color: var(--ij-violet);
+  margin-top: 1.6rem;
+  margin-bottom: 0;
+  padding-bottom: 0.4rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(27) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.45);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1rem 1.25rem;
+  font-family: var(--ij-mono);
+  font-size: 0.8em;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  text-indent: 0;
+  padding-left: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(27)::before {
+  content: "WEDNESDAY 11 NOV \00B7 2329H \00B7 ENNET HOUSE";
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  padding-bottom: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+/* 47 dialogue turns: Day (even nth) hangs left, Gately (odd nth) steps
+   right — positional two-voice set, explicit indices 28–74. */
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(50),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(56),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(58),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(60),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(62),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(64),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(66),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(68),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(70),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(72),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(74) {
+  padding-left: 4.2rem;
+  text-indent: -1rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.35);
+  margin-bottom: 0.55rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(39),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(43),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(47),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(49),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(51),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(57),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(61),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(63),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(65),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(67),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(69),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(71),
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(73) {
+  padding-left: 5.2rem;
+  text-indent: -1rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.6);
+  margin-bottom: 0.55rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p:nth-of-type(74) {
+  margin-bottom: 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(124, 107, 214, 0.3);
+}
+
+
+/* ---- G5. p2c5 Notes 105–144 — deep-water triptych (325 paras) ---- */
+/* Anchors: n110 frame p5–p6 (nth 6–7); Avril movement p7–p22 (nth
+   8–23: ALL-CAPS head nth 8, '20 June' nth 9, 'Dear Filbert' nth 10,
+   body nth 11–16, close nth 17–18, Saints head nth 19–20, form nth
+   21–22, sign-off nth 23); Orin call p23–p266 (nth 24–267:
+   'Mmyellow' nth 24, Strategy-7 pitch nth 25–55, high-toll turn nth
+   58, Pemberton nth 61, profiler material nth 94+, Pemulis enters nth
+   206, meta-extortion nth 261–262, close nth 263–267); apparatus a–l
+   p267–p279 (nth 268–280, continuous marginalia rule); n123 math
+   lecture p292–p300 (nth 293–301: dictation nth 293–297, PEEMSTER nth
+   298, HALSADICK nth 300, 'P.S. Allston Rules' nth 301). */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(6) {
+  margin-top: 1.4rem;
+  border-top: 3px double rgba(124, 107, 214, 0.55);
+  padding-top: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(6)::before {
+  content: "N110 \00B7 I \2014 FRAME \00B7 11/7 HAL";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+/* Scene-break ornaments between movements (the cohort's only ◈◈◈). */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(7)::after {
+  content: "\25C8 \25C8 \25C8";
+  display: block;
+  text-align: center;
+  letter-spacing: 1.2em;
+  color: var(--ij-violet);
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(23)::after {
+  content: "\25C8 \25C8 \25C8";
+  display: block;
+  text-align: center;
+  letter-spacing: 1.2em;
+  color: var(--ij-violet);
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+  text-indent: 0;
+}
+
+/* Avril letter inset: correspondence treatment with airmail edge ticks
+   (violet + muted red-blue 2px ticks on the frame ONLY). */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(23) {
+  background: var(--bg-elevated);
+  border-left: 3px solid var(--ij-violet);
+  border-right: 1px solid rgba(124, 107, 214, 0.35);
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(8) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  border-radius: 2px 2px 0 0;
+  padding-top: 1rem;
+  font-family: var(--ij-mono);
+  font-size: 0.82em;
+  letter-spacing: 0.08em;
+  color: var(--ij-violet);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(9) {
+  font-family: var(--ij-mono);
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(17) {
+  font-style: italic;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(23) {
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  border-radius: 0 0 2px 2px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+/* Airmail edge ticks on the letter frame (2px, muted). */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(8)::before {
+  content: "N110 \00B7 II \2014 AVRIL LETTER";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+
+/* Orin/Hal call: two-voice rhythm. Orin's long Strategy/pitch turns vs
+   Hal's short interjections: researched Hal beats step right (nth
+   32/34/36/38/40/42/44/46/48/50/52/55/57/59 + late short turns),
+   Orin's pitch turns hang left. Movement header on nth 24. */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(24)::before {
+  content: "N110 \00B7 III \2014 ORIN CALL \00B7 HIGH-TOLL HOURS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(50),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(57),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(263),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(265) {
+  padding-left: 5.2rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.6);
+  margin-bottom: 0.5rem;
+}
+
+/* Call wayfinding: high-toll turn (nth 58), Pemberton beat (nth 61),
+   Pemulis entrance (nth 206), meta-extortion close (nth 261–262). */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(58)::before {
+  content: "HIGH-TOLL HOURS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(61),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(206) {
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(124, 107, 214, 0.3);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(61)::before {
+  content: "PEMBERTON AT NET";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(206)::before {
+  content: "PEMULIS ENTERS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(261),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(262) {
+  background: rgba(124, 107, 214, 0.07);
+  border-left: 3px solid var(--ij-violet);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(267) {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(124, 107, 214, 0.3);
+  margin-bottom: 1.4rem;
+}
+
+/* Apparatus a–l (nth 268–280): nested marginalia with ONE continuous
+   left marginalia rule binding all 12 sub-notes. */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(268),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(269),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(270),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(271),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(272),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(273),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(274),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(275),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(276),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(277),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(278),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(279),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(280) {
+  border-left: 2px solid var(--ij-violet);
+  font-size: 0.92em;
+  margin-bottom: 0.35rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(268) {
+  margin-top: 1.2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(268)::before {
+  content: "APPARATUS a\2013l";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(280) {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  margin-bottom: 1.4rem;
+}
+
+/* n123 math lecture (nth 293–301): bounded lecture block; PEEMSTER
+   (nth 298) + HALSADICK (nth 300) figure tags; 'P.S. Allston Rules.'
+   (nth 301) as the punchline closer. */
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(293),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(294),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(295),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(296),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(297),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(298),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(299),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(300),
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(301) {
+  background: var(--bg-elevated);
+  border-left: 3px solid var(--ij-violet);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(293) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  border-radius: 2px 2px 0 0;
+  padding-top: 1rem;
+  margin-top: 1.4rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(293)::before {
+  content: "N123 \00B7 MEAN-VALUE LECTURE";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(298)::before {
+  content: "FIG. P \00B7 PEEMSTER";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(300)::before {
+  content: "FIG. H \00B7 HALSADICK";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p:nth-of-type(301) {
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  border-radius: 0 0 2px 2px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.4rem;
+  font-family: var(--ij-mono);
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
+}
+
+
+/* ---- G6. p2c6 Notes 145–184 — newsprint interview nº 1 (66 paras) ---- */
+/* Anchors: n145 transcript nth 1–25 (masthead nth 1, Q. turns nth
+   2/5…, closer nth 25); n154 back-pointer nth 34; n162 grotesque nth
+   44 (224w); media cluster nth 45–49; French run nth 52–56 (n173 Q.v.
+   304 is nth 55). */
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(1) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.45);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1rem 1.25rem;
+  font-family: var(--ij-mono);
+  font-size: 0.8em;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  text-indent: 0;
+  padding-left: 1.25rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(1)::before {
+  content: "TRANSCRIPT-FRAGMENT \00B7 3 NOVEMBER Y.D.A.U. \00B7 INTERVIEW No 1";
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  padding-bottom: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+/* Transcript turns nth 2–25: Q&A rhythm, alternating offsets. */
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(4),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(24) {
+  padding-left: 4.2rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.35);
+  margin-bottom: 0.55rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(25) {
+  padding-left: 5.2rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.6);
+  margin-bottom: 0.55rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(25) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(124, 107, 214, 0.3);
+  margin-bottom: 1.4rem;
+}
+
+/* Media-theory cluster nth 45–49: essay insets, shared rule. */
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(47),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(49) {
+  background: var(--bg-elevated);
+  border-left: 2px solid rgba(124, 107, 214, 0.5);
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  margin-bottom: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(45) {
+  border-top: 1px solid rgba(124, 107, 214, 0.35);
+  border-radius: 2px 2px 0 0;
+  padding-top: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(49) {
+  border-bottom: 1px solid rgba(124, 107, 214, 0.35);
+  border-radius: 0 0 2px 2px;
+  padding-bottom: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(45)::before {
+  content: "MEDIA THEORY \00B7 LACE-FORCH\00C9 / VEALS / R.I.S.C.";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+
+/* n162 grotesque gallery (nth 44): heavy left rule + gallery air. */
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(44) {
+  border-left: 4px solid var(--ij-violet);
+  padding-left: 4.6rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(44)::before {
+  content: "N162 \00B7 NIELSEN PORTRAITS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+
+/* French dictionary strip nth 52–56: five micro-glosses, 0.5rem air;
+   n173 (nth 55) breaks the strip as a violet pointer chip. */
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(56) {
+  margin-bottom: 0.5rem;
+  border-left: 2px solid rgba(232, 220, 192, 0.35);
+  padding-left: 4.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(55) {
+  border: 1px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 0.6rem 1rem 0.6rem 4.2rem;
+  background: rgba(124, 107, 214, 0.08);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p:nth-of-type(34) .reader-noteref::after {
+  content: " \2190";
+  color: var(--ij-violet);
+}
+
+
+/* ---- G7. p2c7 Notes 185–224 — yearbook portraits + manuals (41 paras) ---- */
+/* Anchors: n186 manual p1 (nth 2, 134w); n209 gallery p24 (nth 25,
+   512w); n211 dread p27 (nth 28, 110w); n213 manual p29 (nth 30,
+   187w); n216 'No clue.' p32 (nth 33, 3w — spotlight isolator); n194
+   cf. p9 (nth 10) stays styled-non-link (regex excludes 'cf.'). */
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(30) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.4);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1.1rem 1.25rem 1.1rem 4.4rem;
+  text-indent: -3.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(2)::before {
+  content: "N186 \00B7 BALL-PICKUP MANUAL";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(30)::before {
+  content: "N213 \00B7 ERRANT-SHOTS MANUAL";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+/* Portrait gallery (nth 25): gallery air + section mark (the plate
+   carries the per-player breakdown; no sentence surgery). */
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(25) {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-top: 1rem;
+  border-top: 3px double rgba(124, 107, 214, 0.5);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(25)::before {
+  content: "N209 \00B7 PORTRAIT ROW \00B7 SCHACHT / SPODEK / BAIN / STICE / WAYNE";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+/* Lore notes nth 6–12 (190–196): fireside register tint. */
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(12) {
+  background: rgba(232, 220, 192, 0.04);
+  border-left: 2px solid rgba(232, 220, 192, 0.3);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(28) {
+  border-left: 3px solid var(--ij-violet);
+  padding-left: 4.4rem;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(28)::before {
+  content: "N211 \00B7 EXPULSION DREAD";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+
+/* n216 spotlight isolator (nth 33): centered, white, silenced. */
+body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p:nth-of-type(33) {
+  text-align: center;
+  text-indent: 0;
+  padding: 1.6rem 1rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.35em;
+  color: var(--text);
+  border-top: 1px solid rgba(124, 107, 214, 0.35);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.35);
+  background: rgba(124, 107, 214, 0.05);
+}
+
+
+/* ---- G8. p2c8 Notes 225–264 — Moms confession + small change (93 paras) ---- */
+/* Anchors: n234 nth 10–60 (masthead nth 10, 'Moms' opener nth 11, Q.
+   turns incl. nth 20/30/40/50/53, 'fourth horseman' nth 51, mold
+   beats nth 56–57, sub-notes a/b nth 58/60, continuation nth 59);
+   micro-run 236–264 nth 62–93 (0.55rem air); parenthetical aside run
+   250–259 nth 79–88; validator traps p53 = nth 54 (no heads there). */
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(10) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.5);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1rem 1.25rem;
+  font-family: var(--ij-mono);
+  font-size: 0.8em;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  text-indent: 0;
+  padding-left: 1.25rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(10)::before {
+  content: "TRANSCRIPT-FRAGMENTS \00B7 NOVEMBER Y.D.A.U. \00B7 INTERVIEW No 2 \00B7 THE MOMS";
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  padding-bottom: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+/* Transcript body nth 11–57: full transcript treatment, alternating
+   voice offsets (explicit indices). */
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(25),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(27),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(39),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(43),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(47),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(49),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(51),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(57) {
+  padding-left: 4.2rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.35);
+  margin-bottom: 0.55rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(24),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(26),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(50),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(56) {
+  padding-left: 5.2rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.6);
+  margin-bottom: 0.55rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(11)::before {
+  content: "ON THE MOMS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(57) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(124, 107, 214, 0.3);
+  margin-bottom: 1.2rem;
+}
+
+/* Sub-notes a/b (nth 58/60) + continuation (nth 59): nested. */
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(58),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(60) {
+  border-left: 2px solid var(--ij-violet);
+  font-size: 0.92em;
+}
+
+/* Micro-run nth 62–93: staccato, short notes nearly touching. */
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(62),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(63),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(64),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(65),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(66),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(67),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(68),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(69),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(70),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(71),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(72),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(73),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(74),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(75),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(76),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(77),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(78),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(79),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(80),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(81),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(82),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(83),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(84),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(85),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(86),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(87),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(88),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(89),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(90),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(91),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(92),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(93) {
+  margin-bottom: 0.55rem;
+}
+
+/* Parenthetical aside strip nth 79–88: recessed tint + curve-bracket
+   section marks on the strip edges. */
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(79),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(80),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(81),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(82),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(83),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(84),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(85),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(86),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(87),
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(88) {
+  background: rgba(124, 107, 214, 0.05);
+  border-left: 2px solid rgba(124, 107, 214, 0.4);
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(79)::before {
+  content: "( STAGE DIRECTIONS 250\2013259";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p:nth-of-type(88)::after {
+  content: ")";
+  display: block;
+  text-align: right;
+  font-family: var(--ij-mono);
+  color: var(--ij-violet);
+  margin-top: 0.3em;
+}
+
+
+/* ---- G9. p2c9 Notes 265–304 — sanctum diptych (109 paras) ---- */
+/* Anchors: n269 letter nth 5–39 (letterhead nth 5; §(1) nth 6; §(3c)
+   nth 8; §(3e) nth 10; §(5) nth 12; §(7) nth 20; sub-notes a/b/c nth
+   32/34/38 + continuations nth 33/35/36/37/39); dialect cluster nth
+   44–47; n304 nth 78–106 (dateline nth 78; quote blocks nth 79/81/
+   83–88/90/92/94–101/103–106; Struck narration nth 80/82/89/91/102;
+   lapse beat nth 93; sub-notes a/b nth 107–109). */
+/* Letterhead lockup (nth 5): bounded correspondence header. */
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(5) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.5);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1rem 1.25rem;
+  font-family: var(--ij-mono);
+  font-size: 0.82em;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  text-indent: 0;
+  padding-left: 1.25rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(5)::before {
+  content: "SAPROGENIC GREETINGS \00B7 BAIN \2192 STEEPLEY \00B7 NOVEMBER";
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.4);
+  padding-bottom: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+/* Numbered §§ as ruled section bands with thesis tags. */
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(6) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  padding-top: 0.9rem;
+  margin-top: 1.1rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(6)::before {
+  content: "\00A71 \00B7 FORMATIVE YEARS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(8) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  padding-top: 0.9rem;
+  margin-top: 1.1rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(8)::before {
+  content: "\00A73C \00B7 SUICIDE FACTS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(10) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  padding-top: 0.9rem;
+  margin-top: 1.1rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(10)::before {
+  content: "\00A73E \00B7 SEPARATION CAUSE";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(12) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  padding-top: 0.9rem;
+  margin-top: 1.1rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(12)::before {
+  content: "\00A75 \00B7 HIGH-SODIUM ORIN";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(20) {
+  border-top: 1px solid rgba(124, 107, 214, 0.4);
+  padding-top: 0.9rem;
+  margin-top: 1.1rem;
+}
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(20)::before {
+  content: "\00A77 \00B7 ABUSE IS VACUOUS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(20) {
+  border-top: 3px double rgba(124, 107, 214, 0.55);
+}
+
+/* Bain sub-notes a–c (nth 32/34/38 + continuations): nested. */
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(39) {
+  border-left: 2px solid var(--ij-violet);
+  font-size: 0.92em;
+}
+
+/* Dialect borderland strip nth 44–47: shared rule, mid-violet. */
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(47) {
+  border-left: 2px solid rgba(124, 107, 214, 0.5);
+  background: rgba(124, 107, 214, 0.05);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(44)::before {
+  content: "BORDERLAND \00B7 QU\00C9B\00C9COIS IDIOM 274\2013277";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+/* R1 REPAIR (validator REVISE): n304 head (nth 78) is 260w of scene prose,
+   not a dateline — it reads as normal Newsreader hanging-numeral prose in
+   measure. Wayfinding survives as a compact ::before label with flanking
+   rules on the LABEL, not the paragraph. (The G0 mega-head rule at line
+   ~208 still gives it the 1.6rem top air.) */
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(78)::before {
+  content: "N304 \00B7 STRUCK TERM-PAPER \00B7 2030H 11 NOV";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  text-align: center;
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.5);
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.8rem;
+  text-indent: 0;
+}
+
+/* Quotation blocks: Struck source (22 researched paras). */
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(79),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(81),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(83),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(84),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(85),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(86),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(87),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(88),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(90),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(92),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(94),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(95),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(96),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(97),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(98),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(99),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(100),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(101),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(103),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(104),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(105),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(106) {
+  border-left: 3px solid var(--ij-violet);
+  background: var(--bg-elevated);
+  padding: 0.7rem 1.1rem 0.7rem 4.2rem;
+  font-size: 0.95em;
+  margin-bottom: 0.6rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(93)::after {
+  content: "\25C8 LAPSUS \00B7 HURL HIMSELF ATHWART";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-violet);
+  margin-top: 0.5em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(107),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(108),
+body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p:nth-of-type(109) {
+  border-left: 2px solid var(--ij-violet);
+  font-size: 0.92em;
+}
+/* ---- G10. p2c10 Notes 305-344 (205 paras) ---- */
+/* n314 nth 10; n321 nth 17-71 + sub nth 72; dream nth 22-32; n324 nth
+   75-135 + apparatus nth 136-146; micro-run nth 147-153; n332 nth
+   154-191; pharma nth 198-201; n344 sub nth 205. */
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(10) {
+  border: 1px dashed rgba(124, 107, 214, 0.55);
+  border-radius: 2px;
+  padding: 0.7rem 1rem 0.7rem 4.2rem;
+  background: rgba(124, 107, 214, 0.06);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(17) {
+  font-family: var(--ij-mono);
+  font-size: 0.82em;
+  letter-spacing: 0.06em;
+  color: var(--ij-violet);
+  border-top: 3px double rgba(124, 107, 214, 0.55);
+  padding-top: 1rem;
+  margin-top: 1.4rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(17)::before {
+  content: "N321 \00B7 RISE OVER RUN \00B7 1930H RM. 204";
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(24),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(26),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(50),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(56),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(58),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(60),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(62),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(64),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(66),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(68),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(70) {
+  padding-left: 4.2rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.35);
+  margin-bottom: 0.5rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(25),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(27),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(39),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(43),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(47),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(49),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(51),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(57),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(61),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(63),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(65),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(67),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(69),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(71) {
+  padding-left: 5.2rem;
+  border-left: 2px solid rgba(124, 107, 214, 0.6);
+  margin-bottom: 0.5rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(24),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(25),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(26),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(27),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(32) {
+  background: rgba(124, 107, 214, 0.07);
+  border-left: 3px double var(--ij-violet);
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.3rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(22)::before {
+  content: "DMZ-DREAM";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ij-violet);
+  margin-bottom: 0.4em;
+  text-indent: 0;
+}
+
+/* R1 REPAIR (validator REVISE): n324 head (nth 75) is 353w of scene prose —
+   normal Newsreader hanging-numeral prose in measure + compact ::before
+   label with flanking rules on the LABEL. n332 (nth 154, 4-word head) KEEPS
+   the true dateline lockup below unchanged. */
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(75)::before {
+  content: "N324 \00B7 LOCKER ROOM \00B7 17 NOVEMBER Y.D.A.U.";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  text-align: center;
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.5);
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.8rem;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(154) {
+  font-family: var(--ij-mono);
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  color: var(--ij-violet);
+  text-align: center;
+  border-top: 1px solid rgba(124, 107, 214, 0.5);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.5);
+  padding: 0.9rem 1rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.2rem;
+  text-indent: 0;
+  padding-left: 1rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(136),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(137),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(138),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(139),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(140),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(141),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(142),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(143),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(144),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(145),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(146) {
+  border-left: 2px solid var(--ij-violet);
+  font-size: 0.92em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(147),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(148),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(149),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(150),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(151),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(152),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(153) {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(198),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(199),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(200),
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(201) {
+  border-left: 2px solid rgba(217, 164, 65, 0.6);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p:nth-of-type(205) {
+  border-left: 2px solid var(--ij-violet);
+}
+/* ---- G11. p2c11 Notes 345-384 (46 paras) ---- */
+/* n349 nth 5; chant nth 11-18 unbroken; n365 nth 21; n369 nth 26;
+   n379 nth 36; sub-notes nth 23/38/41. */
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p {
+  margin-bottom: 0.65rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p:nth-of-type(21) {
+  text-align: center;
+  text-indent: 0;
+  padding: 1.2rem 1rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.2em;
+  border-top: 1px solid rgba(124, 107, 214, 0.35);
+  border-bottom: 1px solid rgba(124, 107, 214, 0.35);
+  background: rgba(124, 107, 214, 0.05);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p:nth-of-type(26) {
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.4);
+  border-left: 3px solid var(--ij-violet);
+  border-radius: 2px;
+  padding: 1.1rem 1.25rem 1.1rem 4.4rem;
+  text-indent: -3.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p:nth-of-type(26)::before {
+  content: "N369 \00B7 SORKIN MAPS";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-violet);
+  margin-bottom: 0.6em;
+  text-indent: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p:nth-of-type(36) {
+  border: 1px dashed rgba(124, 107, 214, 0.55);
+  border-radius: 2px;
+  padding: 0.7rem 1rem 0.7rem 4.2rem;
+  background: rgba(124, 107, 214, 0.06);
+}
+/* ---- G12. p2c12 Notes 385-388 (10 paras) ---- */
+/* n385-388 nth 1-5; tail nth 6-10 (ACME/cartridge/bibliography/variant
+   /closing). Verified author text - styled, never quarantined. */
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(1),
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(4),
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(5) {
+  margin-bottom: 1.5rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(5) {
+  padding-bottom: 1.4rem;
+  border-bottom: 3px double rgba(124, 107, 214, 0.6);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(6) {
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.82em;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-indent: 0;
+  padding: 1.2rem 1rem 0.6rem;
+  margin-top: 1.2rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(7) {
+  font-family: var(--ij-mono);
+  font-size: 0.85em;
+  line-height: 1.7;
+  background: var(--bg-elevated);
+  border: 1px solid rgba(124, 107, 214, 0.4);
+  border-radius: 2px;
+  padding: 1rem 1.25rem;
+  text-indent: 0;
+  padding-left: 1.25rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(8) {
+  padding-left: 4.4rem;
+  text-indent: -1.6rem;
+  font-style: italic;
+  border-left: 2px solid rgba(124, 107, 214, 0.4);
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(9) {
+  padding-left: 5rem;
+  color: var(--text-muted);
+  font-size: 0.94em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p:nth-of-type(10) {
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.82em;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-indent: 0;
+  padding: 0.6rem 1rem 1.2rem;
+  border-bottom: 3px double rgba(124, 107, 214, 0.6);
+}
+
+/* ---- GZ. Responsive + motion guards (p2c* only) ---- */
+@media (max-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p:nth-of-type(62)::after {
+    white-space: normal;
+  }
+}
+@media (max-width: 720px) {
+  body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p.reader-note,
+  body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p.reader-note {
+    padding-left: 2.4rem;
+    text-indent: -2.4rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="infinite-jest"][data-chapter="p2c1"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c2"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c3"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c4"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c5"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c6"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c7"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c8"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c9"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c10"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c11"] #chapter-text > p,
+  body[data-book="infinite-jest"][data-chapter="p2c12"] #chapter-text > p {
+    scroll-behavior: auto;
+  }
+}

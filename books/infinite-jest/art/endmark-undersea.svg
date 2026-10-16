@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- A.0 endmark glyph · cohort-D p1c48 "undersea" — concentric dim-water rings,
+       Manila at 40% (cohort-d.json endmarks_a0): the chapter descends and ends at depth.
+       Engraved-line geometry, explicit strokes, no external refs. -->
+  <g fill="none" stroke="#E8DCC0" stroke-linecap="round">
+    <circle cx="100" cy="104" r="76" stroke-width="3" opacity="0.28"/>
+    <circle cx="100" cy="104" r="58" stroke-width="2.4" opacity="0.34"/>
+    <circle cx="100" cy="104" r="41" stroke-width="1.8" opacity="0.40"/>
+    <circle cx="100" cy="104" r="12" stroke-width="2.2" opacity="0.46"/>
+    <line x1="100" y1="92" x2="100" y2="116" stroke-width="2.4" opacity="0.46"/>
+    <path d="M40 46 Q64 30 92 42 M118 34 Q146 28 164 44" stroke-width="2" opacity="0.22"/>
+  </g>
+</svg>

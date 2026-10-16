@@ -7,9 +7,14 @@
   <title>The Will to Power — Friedrich Nietzsche</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared/reader.css" />
   <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="design/early.css" />
+  <link rel="stylesheet" href="design/critique.css" />
+  <link rel="stylesheet" href="design/knowledge.css" />
+  <link rel="stylesheet" href="design/nature.css" />
+  <link rel="stylesheet" href="design/crown.css" />
 </head>
 <body>
   <div id="app">
@@ -18,11 +23,13 @@
         <div class="cover-grid"></div>
         <div class="cover-glow"></div>
       </div>
+      <figure class="cover-art" id="cover-art" aria-hidden="true" hidden></figure>
       <div class="cover-content">
-        <p class="cover-eyebrow">A work by</p>
+        <p class="cover-eyebrow">Friedrich Nietzsche · Notebooks of the 1880s</p>
         <h1 class="cover-title">
-          <span class="title-line" id="cover-title-main">The</span>
-          <span class="title-line accent">Will to Power</span>
+          <span class="title-line">The</span>
+          <span class="title-line">Will to</span>
+          <span class="title-line accent">Power</span>
         </h1>
         <div class="cover-rule" aria-hidden="true"><span class="rule-diamond"></span></div>
         <p class="cover-author" id="cover-author">Friedrich Nietzsche</p>
@@ -70,6 +77,7 @@
       </header>
 
       <article class="reader-body" id="reader-body">
+        <figure class="chapter-art" id="chapter-art" aria-hidden="true" hidden></figure>
         <div class="chapter-meta" id="chapter-meta">
           <p class="meta-part" id="meta-part"></p>
           <h1 class="meta-title" id="meta-title"></h1>
@@ -157,5 +165,6 @@
     };
   </script>
   <script src="../../shared/reader.js"></script>
+  <script src="design/book.js" defer></script>
 </body>
 </html>

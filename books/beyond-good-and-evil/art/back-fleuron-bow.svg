@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" role="img" aria-label="Bow fleuron: a drawn bow loosed upward">
+  <title>Bow fleuron — Aftersong</title>
+  <symbol id="fleuron-bow" viewBox="0 0 320 72">
+    <g id="bow" fill="none" stroke="currentColor" stroke-linecap="round">
+      <line x1="14" y1="36" x2="38" y2="36" stroke-width="0.75" opacity="0.7"/>
+      <circle cx="44" cy="36" r="1" fill="currentColor" stroke="none"/>
+      <path d="M64,8 Q128,36 64,64" stroke-width="1.5"/>
+      <line x1="64" y1="8" x2="64" y2="64" stroke-width="0.9" opacity="0.9"/>
+      <circle cx="64" cy="36" r="2.5" stroke-width="1"/>
+      <line x1="60" y1="38" x2="298" y2="8" stroke-width="1.1"/>
+      <path d="M298,8 L285,9 M298,8 L289,19" stroke-width="1.1"/>
+      <path d="M60,38 L50,34 M60,38 L52,44" stroke-width="0.9"/>
+      <g style="stroke:var(--bge-brass,#D9A441)" stroke-width="1">
+        <path d="M150,12 L150,20 M146,16 L154,16"/>
+        <path d="M185,6 L185,14 M181,10 L189,10"/>
+        <path d="M220,14 L220,22 M216,18 L224,18"/>
+      </g>
+    </g>
+  </symbol>
+</svg>

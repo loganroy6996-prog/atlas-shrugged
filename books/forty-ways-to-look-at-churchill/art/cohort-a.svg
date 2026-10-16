@@ -1,0 +1,292 @@
+<!-- Forty Ways: Cohort A (Part II, Ways 3-10) plates.
+     INLINE PATHS pattern (prototype grammar): bed -> motif (never touching
+     the numeral zone) -> text.fw-num -> >=2 dark occluders -> grain -> floor.
+     C1: only lampblack/gallery/vermilion cross Bone strokes, middle band
+     only, first/last strokes clear. Fills ONLY fw theme vars. No glow. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <title>Cohort A facet plates — Ways 3–10</title>
+  <!-- p2c3 Way 3: constellation pins on a lampblack night bed. -->
+  <symbol id="p2c3" viewBox="0 0 1200 360">
+    <title>Way 3 plate — acquaintances as a constellation chart</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <g fill="none" stroke="var(--fw-bone)" stroke-width="1.5" opacity="0.3">
+      <path d="M120 40 L210 95 L140 150"/>
+      <path d="M880 95 L980 55 L1050 95"/>
+      <path d="M830 275 L900 210 L1020 270"/>
+    </g>
+    <g fill="var(--fw-bone)">
+      <path d="M120 32.5 L127.5 40 L120 47.5 L112.5 40 Z" opacity=".58"/>
+      <path d="M300 32.5 L307.5 40 L300 47.5 L292.5 40 Z" opacity=".58"/>
+      <path d="M520 35 L525 40 L520 45 L515 40 Z" opacity=".50"/>
+      <path d="M760 32 L768 40 L760 48 L752 40 Z" opacity=".38"/>
+      <path d="M980 34.5 L985.5 40 L980 45.5 L974.5 40 Z" opacity=".30"/>
+      <path d="M1100 33 L1107 40 L1100 47 L1093 40 Z" opacity=".42"/>
+      <path d="M60 90 L65 95 L60 100 L55 95 Z" opacity=".65"/>
+      <path d="M210 87.5 L217.5 95 L210 102.5 L202.5 95 Z" opacity=".95"/>
+      <path d="M420 90 L425 95 L420 100 L415 95 Z" opacity=".65"/>
+      <path d="M640 88 L647 95 L640 102 L633 95 Z" opacity=".57"/>
+      <path d="M880 87.5 L887.5 95 L880 102.5 L872.5 95 Z" opacity=".95"/>
+      <path d="M1050 90 L1055 95 L1050 100 L1045 95 Z" opacity=".47"/>
+      <path d="M140 145 L145 150 L140 155 L135 150 Z" opacity=".44"/>
+      <path d="M360 143 L367 150 L360 157 L353 150 Z" opacity=".36"/>
+      <path d="M450 142.5 L457.5 150 L450 157.5 L442.5 150 Z" opacity=".95"/>
+      <path d="M800 143.5 L806.5 150 L800 156.5 L793.5 150 Z" opacity=".56"/>
+      <path d="M950 145 L955 150 L950 155 L945 150 Z" opacity=".62"/>
+      <path d="M90 204.5 L95.5 210 L90 215.5 L84.5 210 Z" opacity=".42"/>
+      <path d="M260 205 L265 210 L260 215 L255 210 Z" opacity=".44"/>
+      <path d="M480 203 L487 210 L480 217 L473 210 Z" opacity=".36"/>
+      <path d="M715 202.5 L722.5 210 L715 217.5 L707.5 210 Z" opacity=".61"/>
+      <path d="M900 204.5 L905.5 210 L900 215.5 L894.5 210 Z" opacity=".60"/>
+      <path d="M1090 204 L1096 210 L1090 216 L1084 210 Z" opacity=".58"/>
+      <path d="M180 267 L185 272 L180 277 L175 272 Z" opacity=".38"/>
+      <path d="M400 265 L407 272 L400 279 L393 272 Z" opacity=".30"/>
+      <path d="M735 264 L743 272 L735 280 L727 272 Z" opacity=".35"/>
+      <path d="M830 266 L836 272 L830 278 L824 272 Z" opacity=".52"/>
+      <path d="M1020 265.5 L1026.5 272 L1020 278.5 L1013.5 272 Z" opacity=".50"/>
+    </g>
+    <text class="fw-num" x="600" y="315" text-anchor="middle" font-size="290">3</text>
+    <g fill="var(--fw-gallery)">
+      <path d="M60 78 L745 140 L735 178 L55 128 Z"/>
+      <path d="M465 268 L1140 228 L1145 262 L470 305 Z"/>
+    </g>
+    <g fill="var(--fw-bone)">
+      <path d="M180 92 L186 98 L180 104 L174 98 Z" opacity=".8"/>
+      <path d="M420 115 L425 120 L420 125 L415 120 Z" opacity=".8"/>
+      <path d="M880 243 L885 248 L880 253 L875 248 Z" opacity=".8"/>
+      <path d="M1020 238 L1025 243 L1020 248 L1015 243 Z" opacity=".8"/>
+    </g>
+    <g filter="url(#fw-a3-grain)" opacity="0.10">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a3-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+  <!-- p2c4 Way 4: converging wedge — every blade aimed at one afternoon. -->
+  <symbol id="p2c4" viewBox="0 0 1200 360">
+    <title>Way 4 plate — every shard aimed at one afternoon</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-ochre)">
+      <path d="M0 30 L520 150 L500 175 L0 90 Z" opacity="0.95"/>
+      <path d="M0 130 L530 168 L525 190 L0 185 Z" opacity="0.8"/>
+      <path d="M0 200 L525 195 L520 215 L0 255 Z" opacity="0.85"/>
+      <path d="M0 300 L500 210 L490 232 L0 350 Z" opacity="0.7"/>
+    </g>
+    <path d="M545 150 L655 185 L545 220 Z" fill="var(--fw-vermilion)"/>
+    <path d="M570 185 L610 195 L570 205 Z" fill="var(--fw-vermilion)" opacity="0.8"/>
+    <text class="fw-num" x="850" y="320" text-anchor="middle" font-size="280">4</text>
+    <g fill="var(--fw-lampblack)">
+      <path d="M1200 100 L700 175 L710 200 L1200 150 Z"/>
+      <path d="M1200 280 L705 200 L715 225 L1200 330 Z"/>
+    </g>
+    <g filter="url(#fw-a4-grain)" opacity="0.12">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a4-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.5"/>
+  </symbol>
+  <!-- p2c5 Way 5: balanced scales — the book's only symmetric plate. -->
+  <symbol id="p2c5" viewBox="0 0 1200 360">
+    <title>Way 5 plate — the scales in perfect balance</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <rect x="200" y="64" width="800" height="14" fill="var(--fw-bone)" opacity="0.8"/>
+    <g stroke="var(--fw-bone)" stroke-width="2" opacity="0.5">
+      <path d="M350 78 L350 225"/>
+      <path d="M450 78 L450 225"/>
+      <path d="M750 78 L750 225"/>
+      <path d="M850 78 L850 225"/>
+    </g>
+    <g fill="var(--fw-bone)" opacity="0.9">
+      <path d="M310 225 L490 225 L450 262 L350 262 Z"/>
+      <path d="M710 225 L890 225 L850 262 L750 262 Z"/>
+    </g>
+    <text class="fw-num" x="600" y="315" text-anchor="middle" font-size="280">5</text>
+    <g fill="var(--fw-lampblack)">
+      <path d="M332 78 L367 78 L782 250 L747 250 Z"/>
+      <path d="M833 78 L868 78 L418 250 L453 250 Z"/>
+      <path d="M600 80 L620 95 L600 110 L580 95 Z"/>
+    </g>
+    <g filter="url(#fw-a5-grain)" opacity="0.08">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a5-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+  <!-- p2c6 Way 6: type-as-shards — W/O/R cut into ochre facets. -->
+  <symbol id="p2c6" viewBox="0 0 1200 360">
+    <title>Way 6 plate — letterforms cut into ochre facets</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-ochre)">
+      <path d="M90 360 L150 130 L330 150 L280 360 Z"/>
+      <path d="M350 360 L420 90 L600 115 L540 360 Z" opacity="0.9"/>
+      <path d="M620 360 L680 170 L790 185 L750 360 Z" opacity="0.75"/>
+    </g>
+    <g fill="var(--fw-lampblack)" font-family="var(--fw-display)" font-weight="600" text-anchor="middle">
+      <text x="210" y="330" font-size="150">W</text>
+      <text x="475" y="330" font-size="150">O</text>
+      <text x="705" y="335" font-size="130">R</text>
+    </g>
+    <path d="M60 60 L200 70 L195 100 L58 90 Z" fill="var(--fw-lampblack)"/>
+    <path d="M1050 60 L1140 70 L1135 105 L1048 95 Z" fill="var(--fw-ochre)" opacity="0.6"/>
+    <text class="fw-num" x="920" y="320" text-anchor="middle" font-size="260">6</text>
+    <g fill="var(--fw-lampblack)">
+      <path d="M1200 135 L880 170 L1200 215 Z"/>
+      <path d="M780 240 L1020 262 L780 290 Z"/>
+    </g>
+    <g filter="url(#fw-a6-grain)" opacity="0.12">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a6-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+  <!-- p2c7 Way 7: 77-tiles mosaic — eloquence as scattered diamonds. -->
+  <symbol id="p2c7" viewBox="0 0 1200 360">
+    <title>Way 7 plate — the mosaic of exact words</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g>
+      <path d="M60 51 L69 60 L60 69 L51 60 Z" fill="var(--fw-bone)" opacity="0.5"/>
+      <path d="M170 49 L181 60 L170 71 L159 60 Z" fill="var(--fw-ochre)" opacity="0.6"/>
+      <path d="M280 52 L288 60 L280 68 L272 60 Z" fill="var(--fw-slate)" opacity="0.5"/>
+      <path d="M390 50 L400 60 L390 70 L380 60 Z" fill="var(--fw-bone)" opacity="0.4"/>
+      <path d="M810 51 L819 60 L810 69 L801 60 Z" fill="var(--fw-ochre)" opacity="0.55"/>
+      <path d="M920 49 L931 60 L920 71 L909 60 Z" fill="var(--fw-bone)" opacity="0.65"/>
+      <path d="M1030 52 L1038 60 L1030 68 L1022 60 Z" fill="var(--fw-slate)" opacity="0.5"/>
+      <path d="M1140 50 L1150 60 L1140 70 L1130 60 Z" fill="var(--fw-ochre)" opacity="0.45"/>
+      <path d="M75 130 L85 140 L75 150 L65 140 Z" fill="var(--fw-slate)" opacity="0.6"/>
+      <path d="M185 132 L193 140 L185 148 L177 140 Z" fill="var(--fw-bone)" opacity="0.5"/>
+      <path d="M295 128 L307 140 L295 152 L283 140 Z" fill="var(--fw-ochre)" opacity="0.7"/>
+      <path d="M405 131 L414 140 L405 149 L396 140 Z" fill="var(--fw-slate)" opacity="0.45"/>
+      <path d="M800 130 L810 140 L800 150 L790 140 Z" fill="var(--fw-bone)" opacity="0.6"/>
+      <path d="M915 132 L923 140 L915 148 L907 140 Z" fill="var(--fw-ochre)" opacity="0.5"/>
+      <path d="M1040 129 L1051 140 L1040 151 L1029 140 Z" fill="var(--fw-bone)" opacity="0.55"/>
+      <path d="M1130 131 L1139 140 L1130 149 L1121 140 Z" fill="var(--fw-slate)" opacity="0.6"/>
+      <path d="M55 211 L64 220 L55 229 L46 220 Z" fill="var(--fw-ochre)" opacity="0.5"/>
+      <path d="M175 209 L186 220 L175 231 L164 220 Z" fill="var(--fw-slate)" opacity="0.65"/>
+      <path d="M290 212 L298 220 L290 228 L282 220 Z" fill="var(--fw-bone)" opacity="0.55"/>
+      <path d="M400 210 L410 220 L400 230 L390 220 Z" fill="var(--fw-ochre)" opacity="0.5"/>
+      <path d="M805 211 L814 220 L805 229 L796 220 Z" fill="var(--fw-slate)" opacity="0.55"/>
+      <path d="M925 208 L937 220 L925 232 L913 220 Z" fill="var(--fw-bone)" opacity="0.6"/>
+      <path d="M1035 212 L1043 220 L1035 228 L1027 220 Z" fill="var(--fw-ochre)" opacity="0.5"/>
+      <path d="M1145 210 L1155 220 L1145 230 L1135 220 Z" fill="var(--fw-bone)" opacity="0.55"/>
+      <path d="M70 290 L80 300 L70 310 L60 300 Z" fill="var(--fw-bone)" opacity="0.45"/>
+      <path d="M180 292 L188 300 L180 308 L172 300 Z" fill="var(--fw-ochre)" opacity="0.6"/>
+      <path d="M300 289 L311 300 L300 311 L289 300 Z" fill="var(--fw-slate)" opacity="0.5"/>
+      <path d="M395 291 L404 300 L395 309 L386 300 Z" fill="var(--fw-bone)" opacity="0.6"/>
+      <path d="M815 290 L825 300 L815 310 L805 300 Z" fill="var(--fw-ochre)" opacity="0.45"/>
+      <path d="M920 292 L928 300 L920 308 L912 300 Z" fill="var(--fw-slate)" opacity="0.6"/>
+      <path d="M1030 289 L1041 300 L1030 311 L1019 300 Z" fill="var(--fw-bone)" opacity="0.5"/>
+      <path d="M1135 291 L1144 300 L1135 309 L1126 300 Z" fill="var(--fw-ochre)" opacity="0.55"/>
+      <path d="M340 77 L358 95 L340 113 L322 95 Z" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <path d="M860 157 L878 175 L860 193 L842 175 Z" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <path d="M230 242 L248 260 L230 278 L212 260 Z" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <path d="M970 247 L988 265 L970 283 L952 265 Z" fill="var(--fw-vermilion)" opacity="0.9"/>
+    </g>
+    <text class="fw-num" x="600" y="315" text-anchor="middle" font-size="280">7</text>
+    <g fill="var(--fw-lampblack)">
+      <path d="M612 168 L648 204 L612 240 L576 204 Z"/>
+      <path d="M618 218 L654 254 L618 290 L582 254 Z"/>
+    </g>
+    <g>
+      <path d="M545 268 L557 280 L545 292 L533 280 Z" fill="var(--fw-ochre)" opacity="0.7"/>
+      <path d="M660 165 L670 175 L660 185 L650 175 Z" fill="var(--fw-bone)" opacity="0.6"/>
+    </g>
+    <g filter="url(#fw-a7-grain)" opacity="0.14">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a7-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+  <!-- p2c8 Way 8: three swift strokes — parallel calligraphic blades. -->
+  <symbol id="p2c8" viewBox="0 0 1200 360">
+    <title>Way 8 plate — three strokes for a silhouette</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-ochre)">
+      <path d="M480 360 L880 40 L940 40 L540 360 Z"/>
+      <path d="M640 360 L977 90 L1019 90 L682 360 Z" opacity="0.85"/>
+      <path d="M800 360 L1062 150 L1084 150 L822 360 Z" opacity="0.7"/>
+    </g>
+    <text class="fw-num" x="300" y="320" text-anchor="middle" font-size="280">8</text>
+    <g fill="var(--fw-lampblack)">
+      <path d="M120 360 L520 40 L580 40 L180 360 Z"/>
+      <path d="M300 175 L400 190 L310 235 Z"/>
+    </g>
+    <g filter="url(#fw-a8-grain)" opacity="0.10">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a8-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+  <!-- p2c9 Way 9: one word-stone — TRUE engraved, numeral disjoint. -->
+  <symbol id="p2c9" viewBox="0 0 1200 360">
+    <title>Way 9 plate — the word-stone TRUE</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <path d="M560 110 L1020 100 L1000 280 L580 290 Z" fill="var(--fw-bone)" opacity="0.92"/>
+    <text x="790" y="215" text-anchor="middle" font-family="var(--fw-display)" font-weight="600" font-size="92" letter-spacing="14" fill="var(--fw-lampblack)">TRUE</text>
+    <g fill="var(--fw-lampblack)" opacity="0.85">
+      <path d="M455 185 L475 190 L458 202 Z"/>
+      <path d="M495 205 L518 210 L500 224 Z"/>
+      <path d="M530 225 L555 230 L535 245 Z"/>
+    </g>
+    <text class="fw-num" x="350" y="320" text-anchor="middle" font-size="270">9</text>
+    <g fill="var(--fw-lampblack)">
+      <path d="M230 155 L440 175 L300 210 Z"/>
+      <path d="M250 285 L430 250 L280 235 Z"/>
+    </g>
+    <g filter="url(#fw-a9-grain)" opacity="0.08">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a9-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+  <!-- p2c10 Way 10: grasping talons — vermilion claws on lampblack. -->
+  <symbol id="p2c10" viewBox="0 0 1200 360">
+    <title>Way 10 plate — talons reaching for fame</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <g fill="var(--fw-vermilion)">
+      <path d="M210 360 C245 250 300 160 375 80 L400 105 C330 165 285 260 265 360 Z" opacity="0.9"/>
+      <path d="M760 360 C745 295 705 235 655 185 L682 163 C738 218 785 280 815 360 Z" opacity="0.9"/>
+      <path d="M935 360 C915 260 870 170 830 80 L855 105 C920 170 955 260 990 360 Z" opacity="0.85"/>
+    </g>
+    <text class="fw-num" x="600" y="250" text-anchor="middle" font-size="220">10</text>
+    <g fill="var(--fw-vermilion)">
+      <path d="M400 360 C430 280 480 220 540 170 L568 192 C515 240 475 295 460 360 Z"/>
+      <path d="M560 360 C575 260 590 180 600 70 L632 72 C625 185 615 265 610 360 Z"/>
+    </g>
+    <g filter="url(#fw-a10-grain)" opacity="0.14">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-a10-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.6"/>
+  </symbol>
+</svg>

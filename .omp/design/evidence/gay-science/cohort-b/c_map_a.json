@@ -1,0 +1,243 @@
+{
+ "key": "\u00a710a shape: id/part/order/title(word-doublecheck vs TOC)/word_count/rationale/palette_role(P5 content-kind)/motif_asset(opener_ref file)/opener{treatment banner|motif|SEED-NONE, symbol, composition}/reading_treatment. motifs: Shoot=gs-b-motif-<name> 480\u00d7300 tableau (sun-third + emblem + horizon/sea + gull/sparks); Branch=banner ids. runtime motif=morning on all 55 slot entries. \u0394 = conformance delta vs my v1 (landmark\u2192Branch/Shoot, noon-break killed, dusk purged).",
+ "map_1_14": [
+  {
+   "delta": "v1 landmark-panel \u2192 \u00a77B grand Branch banner.",
+   "id": "p3c1",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "ORIGINAL 1200x380 full-width: low-left sun r72 + rakerays span; herd band + tide strip full-width; masks-pair in sea right; 4 gulls; 6 sparks.",
+    "symbol": "gs-b-grand-herd",
+    "treatment": "banner"
+   },
+   "order": 1,
+   "palette_role": "essay \u2014 herd morning",
+   "part": "part-3",
+   "rationale": "Programmatic opener, longest (1239w): herd instinct as species-essence, ebb-and-flood law, comedy/tragedy as preservation; grandest Branch banner.",
+   "reading_treatment": "Branch: banner + Foam drop-cap rule (no-drop by numeral, GR6)",
+   "title": "1. The teachers of the purpose of existence.",
+   "word_count": 1239
+  },
+  {
+   "delta": "NEW: weather-stripe Branch banner (was v1 mark).",
+   "id": "p3c2",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Weather-stripe band: stripe emblems alternate behind low-left sun + fan; horizon + sea full-width.",
+    "symbol": "gs-b-banner-stripe",
+    "treatment": "banner"
+   },
+   "order": 2,
+   "palette_role": "essay \u2014 survey stripe",
+   "part": "part-3",
+   "rationale": "Lonely conscience vs underweight scales (340w, Branch by band): stripe survey keeps bands honest; scales lead the stripe.",
+   "reading_treatment": "Branch",
+   "title": "2. Intellectual conscience.",
+   "word_count": 340
+  },
+  {
+   "delta": "essay-opener\u2192Branch banner (same composition).",
+   "id": "p3c3",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Sun low-left + fan; wink \u00d71.5 right; seabands + horizon full-width; 2 gulls; 3 sparks.",
+    "symbol": "gs-b-banner-wink",
+    "treatment": "banner"
+   },
+   "order": 3,
+   "palette_role": "essay \u2014 suspicion morning",
+   "part": "part-3",
+   "rationale": "Common natures wink at nobility, laugh at the sparkle in the noble eye (644w): eternal injustice of the noble.",
+   "reading_treatment": "Branch",
+   "title": "3. Noble and common.",
+   "word_count": 644
+  },
+  {
+   "delta": "unchanged class (Shoot motif).",
+   "id": "p3c4",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left third + fan; flame \u00d71.6 right; horizon + sea base; gull + 2 sparks.",
+    "symbol": "gs-b-motif-flame",
+    "treatment": "motif"
+   },
+   "order": 4,
+   "palette_role": "moral-psych \u2014 rekindling",
+   "part": "part-3",
+   "rationale": "Strongest evil spirits rekindle dozing passions, topple boundary stones (278w Shoot).",
+   "reading_treatment": "Shoot: motif + Foam drop-cap rule",
+   "title": "4. What preserves the species.",
+   "word_count": 278
+  },
+  {
+   "delta": "NEW: stripe banner (was mark). 303w = Branch.",
+   "id": "p3c5",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Weather-stripe band (drum in stripe sequence).",
+    "symbol": "gs-b-banner-stripe",
+    "treatment": "banner"
+   },
+   "order": 5,
+   "palette_role": "essay \u2014 survey stripe",
+   "part": "part-3",
+   "rationale": "Pathos-merchants need the unconditional ought as drumbeat: Mazzini, categorical imperative (303w Branch).",
+   "reading_treatment": "Branch",
+   "title": "5. Unconditional duties.",
+   "word_count": 303
+  },
+  {
+   "delta": "Shoot motif (was mark).",
+   "id": "p3c6",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right third; headwheel \u00d71.5 left; horizon + sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-headwheel",
+    "treatment": "motif"
+   },
+   "order": 6,
+   "palette_role": "modernity \u2014 head-machine",
+   "part": "part-3",
+   "rationale": "Reflection lost ceremony; unstoppable head-machine thinks while walking (165w).",
+   "reading_treatment": "Shoot",
+   "title": "6. Loss of dignity.",
+   "word_count": 165
+  },
+  {
+   "delta": "essay-opener\u2192Branch banner.",
+   "id": "p3c7",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Field fills lower half to horizon; sun + full fan upper-RIGHT (alternation); gull; gold furrows.",
+    "symbol": "gs-b-banner-field",
+    "treatment": "banner"
+   },
+   "order": 7,
+   "palette_role": "essay \u2014 field morning",
+   "part": "part-3",
+   "rationale": "Immense unploughed field of moral study: unwritten histories of love/avarice/envy, toward cyclops-buildings (440w).",
+   "reading_treatment": "Branch",
+   "title": "7. Something for the industrious.",
+   "word_count": 440
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c8",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; lens \u00d71.6 right; sea base; gull + 2 sparks.",
+    "symbol": "gs-b-motif-lens",
+    "treatment": "motif"
+   },
+   "order": 8,
+   "palette_role": "moral-psych \u2014 hidden virtue",
+   "part": "part-3",
+   "rationale": "Real virtues hide like reptile-scale sculptures; the microscope is not yet invented (265w).",
+   "reading_treatment": "Shoot",
+   "title": "8. Unconscious virtues.",
+   "word_count": 265
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c9",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; seedling \u00d71.6 left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-seedling",
+    "treatment": "motif"
+   },
+   "order": 9,
+   "palette_role": "growth \u2014 eruption",
+   "part": "part-3",
+   "rationale": "Feeble traits erupt into light centuries later; hidden gardens within (154w).",
+   "reading_treatment": "Shoot",
+   "title": "9. Our eruptions.",
+   "word_count": 154
+  },
+  {
+   "delta": "Shoot motif; G5: ancestor dusk\u2192night hollow.",
+   "id": "p3c10",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; ancestor \u00d71.5 right (night hollow + foam rim); sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-ancestor",
+    "treatment": "motif"
+   },
+   "order": 10,
+   "palette_role": "atavism \u2014 late ghost",
+   "part": "part-3",
+   "rationale": "Rare humans are late ghosts of past cultures at an andante tempo (217w).",
+   "reading_treatment": "Shoot",
+   "title": "10. A kind of atavism.",
+   "word_count": 217
+  },
+  {
+   "delta": "Shoot motif (295w \u2014 6w under Branch; band strict). Ember tone killed: calm eye.",
+   "id": "p3c11",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; eye \u00d71.5 left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-eye",
+    "treatment": "motif"
+   },
+   "order": 11,
+   "palette_role": "knowledge \u2014 dawning eye",
+   "part": "part-3",
+   "rationale": "Consciousness the latest unfinished organ; knowledge-become-instinctive only dawning (295w Shoot).",
+   "reading_treatment": "Shoot",
+   "title": "11. Consciousness (Bewu\u00dftsein)6",
+   "word_count": 295
+  },
+  {
+   "delta": "NEW stripe banner (was mark). 312w Branch.",
+   "id": "p3c12",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Weather-stripe band (strand in sequence).",
+    "symbol": "gs-b-banner-stripe",
+    "treatment": "banner"
+   },
+   "order": 12,
+   "palette_role": "essay \u2014 survey stripe",
+   "part": "part-3",
+   "rationale": "Pleasure/displeasure intertwined: jubilation unto heaven needs grief unto death (312w Branch).",
+   "reading_treatment": "Branch",
+   "title": "12. On the aim of science.",
+   "word_count": 312
+  },
+  {
+   "delta": "essay-opener\u2192Branch banner.",
+   "id": "p3c13",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Hand-open large right over bands; sun low-left + fan; 2 equal-dots facing hand.",
+    "symbol": "gs-b-banner-hand",
+    "treatment": "banner"
+   },
+   "order": 13,
+   "palette_role": "essay \u2014 power morning",
+   "part": "part-3",
+   "rationale": "Benefiting/hurting both power exercised; pain asks its cause (558w).",
+   "reading_treatment": "Branch",
+   "title": "13. On the doctrine of the feeling of power.",
+   "word_count": 558
+  },
+  {
+   "delta": "essay-opener\u2192Branch banner.",
+   "id": "p3c14",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Grasp upper-right over PALED bands; spark-triplet ideal-star above; sun low-LEFT.",
+    "symbol": "gs-b-banner-grasp",
+    "treatment": "banner"
+   },
+   "order": 14,
+   "palette_role": "essay \u2014 grasping morning",
+   "part": "part-3",
+   "rationale": "Greed/love one instinct named twice; landscape tires in 3 months; friendship the higher thirst (611w).",
+   "reading_treatment": "Branch",
+   "title": "14. The things people call love.",
+   "word_count": 611
+  }
+ ]
+}

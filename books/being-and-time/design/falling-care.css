@@ -1,0 +1,358 @@
+/* ==========================================================================
+   Being and Time — cohort: falling-care (p2c27–p2c36, §§35–44)
+   Supervisor-authored integration CSS (the cohort's engineer deliverable
+   never landed; the designer HANDOFF + falling-care.json are the authority).
+   Spec: HANDOFF §§3–5 + ART-DIRECTION.md §§1–10 (B1–B8) + READER-CONTRACT
+   v1.1. Sibling grammar mirrored from design/intro-world.css (ledger grid,
+   rail-gloss vehicle, ghost ::before, breather + seal patterns).
+
+   SCOPE: ONLY body[data-chapter="p2c27"]…["p2c36"] (+ body[data-art]
+   motif aliases). Never touches theme.css, index.html, shared/**, prose.
+   Unlayered: wins over @layer shared. No reader-* classes. No book JS.
+   ========================================================================== */
+
+/* ---- 0. Cohort tokens ---------------------------------------------------- */
+body[data-book="being-and-time"][data-chapter="p2c27"],
+body[data-book="being-and-time"][data-chapter="p2c28"],
+body[data-book="being-and-time"][data-chapter="p2c29"],
+body[data-book="being-and-time"][data-chapter="p2c30"],
+body[data-book="being-and-time"][data-chapter="p2c31"],
+body[data-book="being-and-time"][data-chapter="p2c32"],
+body[data-book="being-and-time"][data-chapter="p2c33"],
+body[data-book="being-and-time"][data-chapter="p2c34"],
+body[data-book="being-and-time"][data-chapter="p2c35"],
+body[data-book="being-and-time"][data-chapter="p2c36"] {
+  --bt-humus: #0C0F0A;
+  --bt-canopy: #141B12;
+  --bt-under: #1D2619;
+  --bt-ink: #060805;
+  --bt-mist: #C9D4C3;
+  --bt-lichen: #9DB89A;
+  --bt-shaft: #E9D488;
+  --bt-ember: #C96F3B;
+  --bt-bark: #3E4A34;
+  --bt-cold: #F4F7F2;
+  --bt-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --bt-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+/* ---- 1. Ghost numerals (B2 — HANDOFF §4 table, authored per-ID) ----------
+   Fraunces 300, mist, LEFT-BLEED. Implemented as #chapter-meta::before
+   content rules (the fc-ghost-NN symbols' <use>-injection vehicle never
+   landed a loader; per-ID content is the ART-DIRECTION §3 mechanism). */
+body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta::before {
+  content: "35"; font-size: 20vw; opacity: 0.07;
+  left: -0.28em; top: -0.42em;
+}
+body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta::before {
+  content: "36"; font-size: 20vw; opacity: 0.07;
+  left: -0.28em; top: -0.42em;
+}
+body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta::before {
+  content: "37"; font-size: 20vw; opacity: 0.08;
+  left: -0.28em; top: -0.42em;
+}
+body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta::before {
+  content: "38"; font-size: 20vw; opacity: 0.08;
+  left: -0.34em; top: -0.36em;
+}
+body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta::before {
+  content: "39"; font-size: 19vw; opacity: 0.07;
+  left: -0.28em; top: -0.42em;
+}
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta::before {
+  content: "40"; font-size: 24vw; opacity: 0.10;
+  left: -0.40em; top: -0.30em;
+}
+body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta::before {
+  content: "41"; font-size: 22vw; opacity: 0.09;
+  left: -0.31em; top: -0.38em;
+}
+body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta::before {
+  content: "42"; font-size: 20vw; opacity: 0.07;
+  left: -0.28em; top: -0.42em;
+}
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta::before {
+  content: "43"; font-size: 20vw; opacity: 0.08;
+  left: -0.28em; top: -0.42em;
+}
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta::before {
+  content: "44"; font-size: 24vw; opacity: 0.10;
+  left: -0.31em; top: -0.38em;
+}
+
+/* ---- 2. Ledger grid (§4.1: gutter 22 / title 52 / rail 26) --------------- */
+@media (min-width: 1100px) {
+  body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta,
+  body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta {
+    display: grid;
+    grid-template-columns: 22% 52% 26%;
+    column-gap: 0;
+    align-items: start;
+  }
+  body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta > *,
+  body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta > * {
+    grid-column: 2;
+  }
+}
+
+/* ---- 3. Rail glosses (HANDOFF §3 — margin rail vehicle) ------------------ */
+body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta::after,
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta::after {
+  grid-column: 3;
+  grid-row: 1 / span 4;
+  align-self: start;
+  margin: 0.4rem 0 0 2rem;
+  padding: 0.9rem 0 0.9rem 1.1rem;
+  border-left: 1px solid var(--bt-bark);
+  font-family: var(--bt-display);
+  font-style: italic;
+  font-size: 1.02em;
+  line-height: 1.55;
+  color: var(--bt-lichen);
+  white-space: pre-line;
+  z-index: 1;
+}
+body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta::after {
+  content: "Gerede\asaying without ground";
+}
+body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta::after {
+  content: "Unverweilen\anever dwelling anywhere";
+}
+body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta::after {
+  content: "“everything looks as if\agenuinely understood”";
+}
+body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta::after {
+  content: "Absturz — the plunge\atemptation · tranquillization\aalienation · entanglement";
+}
+body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta::after {
+  content: "“not by cobbling\atogether elements”\anxiety → care";
+}
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta::after {
+  content: "“it was really nothing”\aUnheimlichkeit";
+  border-left-color: var(--bt-cold);
+  border-left-width: 2px;
+}
+body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta::after {
+  content: "being-ahead-of-itself\aalready-in\abeing-together-with";
+  border-left-color: var(--bt-shaft);
+  border-left-width: 2px;
+}
+body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta::after {
+  content: "Cura prima finxit\aquamdiu vixerit · ex humo";
+}
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta::after {
+  content: "“a scandal of philosophy”\a“I-am-in-a-world”";
+}
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta::after {
+  content: "the discovering path ·\athe concealing path\alaws became true — Newton";
+  border-left-color: var(--bt-shaft);
+  border-left-width: 2px;
+}
+@media (max-width: 1099.98px) {
+  body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta::after {
+    display: block;
+    margin: 1.4rem 0 0;
+    padding: 0.7rem 0 0;
+    border-left: none;
+    border-top: 1px solid var(--bt-bark);
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 639.98px) {
+  body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta::after,
+  body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta::after {
+    display: none;
+  }
+  body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-meta::before,
+  body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-meta::before {
+    top: -0.6em;
+    opacity: 0.06;
+  }
+}
+
+/* ---- 4. Drop-cap kill (firewall — cohort-scoped backstop) ---------------- */
+body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-text > p:first-of-type::first-letter,
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  transform: none;
+  background: none;
+  text-shadow: none;
+}
+
+/* ---- 5. Threshold wells (B4 — theme shell carries the base; the §40 well
+   runs cold to rhyme with the inverted pillar) ---------------------------- */
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-text > p:first-of-type {
+  border-left-color: var(--bt-cold);
+}
+
+/* ---- 6. Breathers (HANDOFF §5.3 — explicit indices, never An+B) ----------
+   Inter-paragraph fleck strips: margin-top air + a hairline row of flecks
+   drawn from the cohort's own grammar (bark hairline + shaft/cold ticks).
+   B3: strips sit BETWEEN paragraphs, never behind glyphs. */
+body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-text > p:nth-of-type(15),
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-text > p:nth-of-type(13),
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-text > p:nth-of-type(16),
+body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-text > p:nth-of-type(7),
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-text > p:nth-of-type(24),
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-text > p:nth-of-type(35),
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-text > p:nth-of-type(21),
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-text > p:nth-of-type(36),
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-text > p:nth-of-type(53) {
+  margin-top: 2.6em;
+}
+body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-text > p:nth-of-type(15)::before,
+body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-text > p:nth-of-type(7)::before,
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-text > p:nth-of-type(24)::before,
+body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-text > p:nth-of-type(35)::before,
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-text > p:nth-of-type(21)::before,
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-text > p:nth-of-type(36)::before,
+body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-text > p:nth-of-type(53)::before {
+  content: "";
+  display: block;
+  width: 9rem;
+  margin-bottom: 1.7em;
+  border-top: 1px solid var(--bt-bark);
+  box-shadow: 4.5rem -3px 0 -2px var(--bt-shaft);
+  opacity: 0.9;
+}
+/* §40 breathers: the ember-tinted variant (sole exception, HANDOFF §5.3). */
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-text > p:nth-of-type(13)::before,
+body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-text > p:nth-of-type(16)::before {
+  content: "";
+  display: block;
+  width: 9rem;
+  margin-bottom: 1.7em;
+  border-top: 1px solid var(--bt-ember);
+  box-shadow: 4.5rem -3px 0 -2px var(--bt-cold);
+  opacity: 0.85;
+}
+
+/* ---- 7. Grain gating (§4.7 — feTurbulence off under reduced motion / <640px) */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="being-and-time"][data-chapter="p2c27"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c28"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c29"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c30"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c31"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c32"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c33"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c34"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c35"] #chapter-art svg [filter],
+  body[data-book="being-and-time"][data-chapter="p2c36"] #chapter-art svg [filter] {
+    filter: none;
+  }
+}
+
+/* ---- 8. Light / sepia re-ink (HANDOFF §5.5) ------------------------------ */
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c27"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c28"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c29"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c30"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c31"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c32"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c33"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c34"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c35"],
+html[data-theme="light"] body[data-book="being-and-time"][data-chapter="p2c36"] {
+  --bt-humus: #F5F1E4;
+  --bt-canopy: #ECE5D1;
+  --bt-under: #E9E2CE;
+  --bt-mist: #1C231A;
+  --bt-lichen: #5A6B54;
+  --bt-shaft: #7A6414;
+  --bt-bark: #C9BFA4;
+  --bt-cold: #FFFFFF;
+}
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c27"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c28"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c29"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c30"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c31"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c32"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c33"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c34"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c35"],
+html[data-theme="sepia"] body[data-book="being-and-time"][data-chapter="p2c36"] {
+  --bt-humus: #EFE6D0;
+  --bt-canopy: #E4D8BC;
+  --bt-under: #E2D7BC;
+  --bt-mist: #232B1F;
+  --bt-lichen: #5F6B53;
+  --bt-shaft: #6E5A10;
+  --bt-bark: #C4B78F;
+  --bt-cold: #FFFDF4;
+}
+
+/* Light/sepia: fixed trunk + cold-fleck re-ink (HANDOFF §5.5 design point —
+   trunks #2A3325/#2E352A, cold stays near-white so the §40 pillar inverts). */
+html[data-theme="light"] body[data-book="being-and-time"] #chapter-art .fc-trunks {
+  fill: #2A3325;
+}
+html[data-theme="sepia"] body[data-book="being-and-time"] #chapter-art .fc-trunks {
+  fill: #2E352A;
+}

@@ -1,28 +1,1247 @@
-/* Beyond Good and Evil — violet lightning, free spirit */
-:root, html[data-theme="dark"] {
-  --bg: #0c0a12;
-  --bg-elevated: #15121f;
-  --bg-soft: #1c1829;
-  --surface: #221e32;
-  --border: rgba(167, 139, 250, 0.16);
-  --border-strong: rgba(167, 139, 250, 0.32);
-  --text: #f0eafc;
-  --text-muted: #a89bc4;
-  --text-faint: #6f6488;
-  --accent: #a78bfa;
-  --accent-soft: rgba(167, 139, 250, 0.12);
-  --accent-hover: #c4b5fd;
-  --copper: #c084fc;
-  --reader-max: 50rem;
+/* Beyond Good and Evil — THE NUMBERED LEDGER (ArtDirector APPROVED, E1–E7).
+ * Identity: 298 section starts (§§1–296) as a numbered archival instrument.
+ * Tokens: Ledger Black / Vellum Smoke / Ochre Ink (engraved, never glowing —
+ * E2) / Sanguine (rationed per E3) / Faded Entry. Type: Fraunces engraved
+ * display + Source Serif 4 body + IBM Plex Mono ledger voice (E6).
+ * Unlayered by contract — always wins over @layer shared. Every chapter rule
+ * is body[data-chapter]-qualified; TOC rows key off
+ * .toc-chapter[data-chapter-id]. Art paths book-root-relative url("art/…").
+ * Hooks consumed: body[data-book]/[data-view]/[data-chapter]/[data-part]/[data-art]
+ * (reader.js paintBodyHooks), figure#chapter-art.ledger-seal/.ledger-fleuron
+ * (manifest class fill), .range-figures + #meta-gloss + .kicker-range +
+ * .toc-range + .sec-num/.sec-start/.sec-marked + .verse-frag/.verse-finale +
+ * #movement-index (ledger.js). All degrade cleanly when absent. */
+
+/* ── 0. Ledger tokens + reader-var mapping (all 8 themes) ─────── */
+:root {
+  --bge-black: #12100b;
+  --bge-raised: #1e1a12;
+  --bge-ink: #ede4d3;
+  --bge-brass: #d9a441;
+  --bge-blood: #b3402a;
+  --bge-blood-text: #c65a3f;
+  --bge-faded: #8a7d63;
+  --bge-muted: #a2967a;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-ledger: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-grot: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-.cover-grid {
-  background-image: repeating-linear-gradient(
-    -12deg, transparent, transparent 40px,
-    rgba(167, 139, 250, 0.04) 40px, rgba(167, 139, 250, 0.04) 41px
-  );
+/* Dark default (Ink): the ledger plate. */
+:root,
+html[data-theme="dark"] {
+  --bg: #12100b;
+  --bg-elevated: #1e1a12;
+  --bg-soft: #1a1610;
+  --surface: #241f15;
+  --border: rgba(217, 164, 65, 0.16);
+  --border-strong: rgba(217, 164, 65, 0.34);
+  --text: #ede4d3;
+  --text-muted: #a2967a;
+  --text-faint: #8a7d63;
+  --accent: #d9a441;
+  --accent-soft: rgba(217, 164, 65, 0.12);
+  --accent-hover: #e7b958;
+  --copper: #b3402a;
+  --on-accent: #12100b;
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --reader-max: 52rem;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-.cover-glow {
-  background: radial-gradient(ellipse, rgba(167, 139, 250, 0.2) 0%, rgba(192, 132, 252, 0.08) 40%, transparent 70%);
+/* Typeface toggle: reading column swaps to the grotesk (SANS must work). */
+html[data-font="sans"] body[data-book="beyond-good-and-evil"] #app {
+  --font-serif: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-.title-line.accent { color: var(--accent); font-style: italic; }
-.rule-diamond { border-radius: 1px; box-shadow: 0 0 12px var(--accent); }
+/* Dark-theme tints: keep the brass instrument, shift the ground only. */
+html[data-theme="nocturne"] {
+  --bg: #0e0f16;
+  --bg-elevated: #15171f;
+  --bg-soft: #13141c;
+  --surface: #1a1c26;
+  --border: rgba(217, 164, 65, 0.16);
+  --border-strong: rgba(217, 164, 65, 0.32);
+  --text: #e8e2d4;
+  --text-muted: #a2967a;
+  --text-faint: #8a7d63;
+  --accent: #d9a441;
+  --accent-soft: rgba(217, 164, 65, 0.12);
+  --accent-hover: #e7b958;
+  --copper: #b3402a;
+  --on-accent: #0e0f16;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+html[data-theme="verdant"] {
+  --bg: #0e120c;
+  --bg-elevated: #151a12;
+  --bg-soft: #121610;
+  --surface: #1a2018;
+  --border: rgba(217, 164, 65, 0.16);
+  --border-strong: rgba(217, 164, 65, 0.32);
+  --text: #e9e4d3;
+  --text-muted: #a2967a;
+  --text-faint: #8a7d63;
+  --accent: #d9a441;
+  --accent-soft: rgba(217, 164, 65, 0.12);
+  --accent-hover: #e7b958;
+  --copper: #b3402a;
+  --on-accent: #0e120c;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+html[data-theme="oxblood"] {
+  --bg: #150e0b;
+  --bg-elevated: #201512;
+  --bg-soft: #1b1310;
+  --surface: #261a15;
+  --border: rgba(152, 84, 52, 0.25);
+  --border-strong: rgba(217, 164, 65, 0.32);
+  --text: #f0e3d0;
+  --text-muted: #a89a7d;
+  --text-faint: #8f8062;
+  --accent: #e0aa45;
+  --accent-soft: rgba(217, 164, 65, 0.14);
+  --accent-hover: #efbd5d;
+  --copper: #c4553a;
+  --on-accent: #150e0b;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+html[data-theme="slate"] {
+  --bg: #101314;
+  --bg-elevated: #181d1f;
+  --bg-soft: #141819;
+  --surface: #1e2426;
+  --border: rgba(217, 164, 65, 0.14);
+  --border-strong: rgba(217, 164, 65, 0.3);
+  --text: #e5e1d3;
+  --text-muted: #a2967a;
+  --text-faint: #8a7d63;
+  --accent: #d9a441;
+  --accent-soft: rgba(217, 164, 65, 0.12);
+  --accent-hover: #e7b958;
+  --copper: #b3402a;
+  --on-accent: #101314;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+html[data-theme="candlelight"] {
+  --bg: #131009;
+  --bg-elevated: #201a11;
+  --bg-soft: #1b1510;
+  --surface: #272014;
+  --border: rgba(217, 164, 65, 0.18);
+  --border-strong: rgba(217, 164, 65, 0.36);
+  --text: #f0e5d1;
+  --text-muted: #a89a7d;
+  --text-faint: #8f8062;
+  --accent: #dfa845;
+  --accent-soft: rgba(217, 164, 65, 0.14);
+  --accent-hover: #efbd5d;
+  --copper: #c4553a;
+  --on-accent: #131009;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+/* Light themes: brass/blood deepen so figures never drop below 4.5:1. */
+html[data-theme="light"] {
+  --bg: #faf7ef;
+  --bg-elevated: #f3eee1;
+  --bg-soft: #f0e9d8;
+  --surface: #fffdf6;
+  --border: rgba(90, 64, 16, 0.16);
+  --border-strong: rgba(90, 64, 16, 0.32);
+  --text: #211c12;
+  --text-muted: #5f5543;
+  --text-faint: #6e6450;
+  --accent: #8a5e14;
+  --accent-soft: rgba(138, 94, 20, 0.1);
+  --accent-hover: #75500f;
+  --copper: #93301d;
+  --on-accent: #fffdf6;
+  --shadow: 0 24px 64px rgba(60, 45, 20, 0.12);
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+html[data-theme="sepia"] {
+  --bg: #f1e7d0;
+  --bg-elevated: #e9dcbf;
+  --bg-soft: #e6d9ba;
+  --surface: #f8f1de;
+  --border: rgba(95, 68, 20, 0.18);
+  --border-strong: rgba(95, 68, 20, 0.34);
+  --text: #2a2113;
+  --text-muted: #65563c;
+  --text-faint: #77684d;
+  --accent: #7a5410;
+  --accent-soft: rgba(122, 84, 16, 0.12);
+  --accent-hover: #68470d;
+  --copper: #86301e;
+  --on-accent: #f8f1de;
+  --shadow: 0 24px 64px rgba(80, 55, 15, 0.14);
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+/* Ledger voice follows the accent into light themes (seals use currentColor). */
+html[data-theme="light"] body[data-book="beyond-good-and-evil"],
+html[data-theme="sepia"] body[data-book="beyond-good-and-evil"] {
+  --bge-brass: #8a5e14;
+  --bge-blood: #93301d;
+  --bge-blood-text: #93301d;
+  --bge-faded: #6e6450;
+  --bge-muted: #5f5543;
+}
+html[data-theme="sepia"] body[data-book="beyond-good-and-evil"] {
+  --bge-brass: #7a5410;
+  --bge-blood: #86301e;
+  --bge-blood-text: #86301e;
+  --bge-faded: #77684d;
+  --bge-muted: #65563c;
+}
+
+/* ── 1. Chapter-art slot: the ledger plate ────────────────────── */
+/* Hidden until the manifest inlines a seal SVG; rules only shape a filled
+ * slot. Composition exceptions: p1c2 seals right (§2 grid), p1c5/p1c7 seals
+ * smaller, p1c10 seal largest, p1c8 twin-split halves flank the seal. */
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art {
+  text-align: center;
+}
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art.ledger-seal:not([hidden]) {
+  display: block;
+  margin: 0 auto 1.75rem;
+  max-width: 12rem;
+  color: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art.ledger-seal svg {
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
+  margin: 0 auto;
+}
+/* Composition IV (p1c5): the sorts seal runs smaller — the maxim field below
+ * is the chapter's real mass, the seal only its colophon. */
+body[data-chapter="p1c5"] #chapter-art.ledger-seal:not([hidden]) {
+  max-width: 8.5rem;
+}
+body[data-chapter="p1c5"] #chapter-art.ledger-seal svg {
+  max-width: 8.5rem;
+}
+/* Composition VI (p1c7): the cold-cabinet instrument runs smallest. */
+body[data-chapter="p1c7"] #chapter-art.ledger-seal:not([hidden]) {
+  max-width: 7.5rem;
+}
+body[data-chapter="p1c7"] #chapter-art.ledger-seal svg {
+  max-width: 7.5rem;
+}
+/* Composition IX (p1c10): the summit seal is the largest in the book. */
+body[data-chapter="p1c10"] #chapter-art.ledger-seal:not([hidden]) {
+  max-width: 13.5rem;
+}
+body[data-chapter="p1c10"] #chapter-art.ledger-seal svg {
+  max-width: 13.5rem;
+}
+/* Fleurons (p1c1, p1c11): the silent chapters' ONLY marks (E4). */
+body[data-chapter="p1c1"] #chapter-art.ledger-fleuron:not([hidden]),
+body[data-chapter="p1c11"] #chapter-art.ledger-fleuron:not([hidden]) {
+  display: block;
+  margin: 0 auto 2rem;
+  max-width: 17rem;
+  color: var(--bge-blood);
+}
+body[data-chapter="p1c1"] #chapter-art.ledger-fleuron svg,
+body[data-chapter="p1c11"] #chapter-art.ledger-fleuron svg {
+  width: 100%;
+  max-width: 17rem;
+  height: auto;
+  margin: 0 auto;
+}
+/* Manifest captions become ledger captions: small, tracked, brass. */
+body[data-book="beyond-good-and-evil"] #chapter-art figcaption {
+  margin-top: 0.9rem;
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+
+/* ── 2. Opener grammar: kicker → title → figures → rule → gloss ─ */
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-part {
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.6vw, 2.9rem);
+  line-height: 1.08;
+  letter-spacing: 0.005em;
+  color: var(--bge-ink);
+  color: var(--text);
+  text-shadow: none;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .range-figures {
+  margin: 1.1rem 0 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(3.2rem, 10vw, 6rem);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--bge-brass);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .range-figures[hidden] {
+  display: none;
+}
+/* Composition VII (p1c8): the twin-figure split — "214" and "239" flank the
+ * seal on one row (supervisor paints .rf-first/.rf-last; stacked <900px).
+ * Composition VIII (p1c9): movement index under the gloss. */
+body[data-chapter="p1c8"] .movement-index,
+body[data-chapter="p1c10"] .movement-index {
+  display: none;
+}
+/* Composition IX: p1c10 carries the largest figures in the book. */
+body[data-chapter="p1c10"] .chapter-meta .range-figures {
+  font-size: clamp(4.5rem, 13vw, 8.5rem);
+}
+/* Composition IV: p1c5 figures run smaller and wider-tracked — a field of
+ * small figures, not a monument; the chapter holds 125 of them. */
+body[data-chapter="p1c5"] .chapter-meta .range-figures {
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  letter-spacing: 0.12em;
+}
+/* Composition VI: p1c7 figures smallest — the cold cabinet. */
+body[data-chapter="p1c7"] .chapter-meta .range-figures {
+  font-size: clamp(2.2rem, 6.4vw, 3.6rem);
+  letter-spacing: 0.08em;
+}
+/* E4: no figures on the silent chapters, ever — even if added later. */
+body[data-chapter="p1c1"] .chapter-meta .range-figures,
+body[data-chapter="p1c11"] .chapter-meta .range-figures {
+  display: none;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-number {
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-number::before,
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-number::after {
+  content: none;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta::after {
+  content: none;
+}
+/* Double rule: 2px brass over 1px faded. The span is the brass bar; the
+ * ::after draws the faded hairline beneath it. Shared meta-rule::before
+ * (side hairline) is silenced by flex-direction: column. */
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-rule {
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin-top: 1.75rem;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-rule::before {
+  content: none;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-rule span:not(.rank-steps) {
+  width: 7rem;
+  height: 2px;
+  background: var(--bge-brass);
+  opacity: 1;
+  transform: none;
+  box-shadow: none;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-rule::after {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 1px;
+  background: var(--bge-faded);
+  opacity: 0.8;
+}
+/* Composition IX: the rank-steps rule ascends under the p1c10 title — the
+ * ONLY chapter whose rule climbs (ledger.js appends .rank-steps; the shared
+ * brass bar stays as the rule's ground). */
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-rule .rank-steps {
+  display: block;
+  width: 7.5rem;
+  height: 1.5rem;
+  background: none;
+  background-color: transparent;
+  color: var(--bge-brass);
+}
+body[data-chapter="p1c10"] .chapter-meta .meta-rule .rank-steps svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* Composition XI: a single sanguine hairline, not the double brass rule. */
+body[data-chapter="p1c11"] .chapter-meta .meta-rule span {
+  width: 9rem;
+  height: 1px;
+  background: var(--bge-blood);
+}
+body[data-chapter="p1c11"] .chapter-meta .meta-rule::after {
+  content: none;
+}
+/* Italic gloss line under the rule (supervisor-owned element + map). */
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-gloss {
+  margin: 1.25rem auto 0;
+  max-width: 34rem;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--bge-muted);
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-gloss[hidden] {
+  display: none;
+}
+body[data-book="beyond-good-and-evil"] .chapter-meta .meta-sub {
+  font-family: var(--font-ledger);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+/* Composition I (p1c2): at desktop the seal floats right of the opener plate.
+ * The meta block left-aligns and reserves the seal's column. */
+@media (min-width: 900px) {
+  body[data-chapter="p1c2"] .reader-body {
+    position: relative;
+  }
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal:not([hidden]) {
+    position: absolute;
+    top: 3rem;
+    right: clamp(1rem, 6vw, 5rem);
+    margin: 0;
+    max-width: 9rem;
+    z-index: 1;
+  }
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal svg {
+    max-width: 9rem;
+  }
+  body[data-chapter="p1c2"] .chapter-meta {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: min(var(--reader-max), 65ch);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 12rem;
+  }
+  body[data-chapter="p1c2"] .chapter-meta .meta-rule {
+    align-items: flex-start;
+  }
+  body[data-chapter="p1c2"] .chapter-meta .meta-gloss {
+    margin-left: 0;
+  }
+  /* Composition V (p1c6): seal left + figures right on one catalogue row. */
+  body[data-chapter="p1c6"] .reader-body {
+    position: relative;
+  }
+  body[data-chapter="p1c6"] #chapter-art.ledger-seal:not([hidden]) {
+    position: absolute;
+    top: 3.25rem;
+    left: clamp(1rem, 6vw, 5rem);
+    margin: 0;
+    max-width: 8.5rem;
+    z-index: 1;
+  }
+  body[data-chapter="p1c6"] #chapter-art.ledger-seal svg {
+    max-width: 8.5rem;
+  }
+  body[data-chapter="p1c6"] .chapter-meta {
+    position: relative;
+    z-index: 2;
+    text-align: right;
+    max-width: min(var(--reader-max), 65ch);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 11rem;
+  }
+  body[data-chapter="p1c6"] .chapter-meta .meta-rule {
+    align-items: flex-end;
+  }
+  body[data-chapter="p1c6"] .chapter-meta .meta-gloss {
+    margin-right: 0;
+  }
+  /* Composition VII (p1c8): twin-figure split — seal centered between
+   * brass "214" and sanguine "239" halves on one row. */
+  body[data-chapter="p1c8"] #chapter-art.ledger-seal:not([hidden]) {
+    max-width: 8rem;
+  }
+  body[data-chapter="p1c8"] #chapter-art.ledger-seal svg {
+    max-width: 8rem;
+  }
+  body[data-chapter="p1c8"] .chapter-meta .range-figures .rf-first {
+    color: var(--bge-brass);
+  }
+  body[data-chapter="p1c8"] .chapter-meta .range-figures .rf-sep {
+    color: var(--bge-faded);
+  }
+  body[data-chapter="p1c8"] .chapter-meta .range-figures .rf-last {
+    color: var(--bge-blood-text);
+  }
+}
+
+/* ── 3. Margin numerals: the signature (E1) ───────────────────── */
+body[data-book="beyond-good-and-evil"] #chapter-text > p.sec-start {
+  position: relative;
+}
+body[data-book="beyond-good-and-evil"] #chapter-text .sec-num {
+  font-family: var(--font-ledger);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--bge-brass);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+@media (min-width: 900px) {
+  body[data-book="beyond-good-and-evil"] #chapter-text > p.sec-start {
+    scroll-margin-top: calc(var(--header-h) + 1rem);
+  }
+  body[data-book="beyond-good-and-evil"] #chapter-text .sec-num {
+    position: absolute;
+    right: calc(100% + 1.25rem);
+    top: 0.55em;
+    width: 3.25rem;
+    text-align: right;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 899px) {
+  body[data-book="beyond-good-and-evil"] #chapter-text > p.sec-start {
+    padding-left: 3.25rem;
+    text-indent: -3.25rem;
+  }
+  body[data-book="beyond-good-and-evil"] #chapter-text > p.sec-start .sec-num {
+    display: inline-block;
+    min-width: 2.75rem;
+    margin-right: 0.5rem;
+    text-indent: 0;
+  }
+}
+
+/* ── 4. Numbered-chapter reading: shared base + numeral temperature ─ */
+/* No drop caps on numbered chapters: the margin numeral is the entry. */
+body[data-book="beyond-good-and-evil"] #chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+  background: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+/* p1c2: long-essay relief — extra air above each section start. */
+body[data-chapter="p1c2"] #chapter-text > p.sec-start {
+  margin-top: 2.1em;
+}
+body[data-chapter="p1c2"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+/* p1c3: the free-breathing voice — widest measure, slowest air. */
+body[data-chapter="p1c3"] #chapter-text > p.sec-start {
+  margin-top: 2.3em;
+}
+body[data-chapter="p1c3"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+/* p1c4: the ember voice — slowest leading in FRONT. */
+body[data-chapter="p1c4"] #chapter-text {
+  line-height: 1.9;
+}
+body[data-chapter="p1c4"] #chapter-text > p.sec-start {
+  margin-top: 2.3em;
+}
+body[data-chapter="p1c4"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+/* p1c6 catalogue: numerals in Faded Entry — the quietest numbered voice. */
+body[data-chapter="p1c6"] #chapter-text .sec-num {
+  color: var(--bge-faded);
+}
+body[data-chapter="p1c6"] #chapter-text > p.sec-start {
+  margin-top: 2em;
+}
+body[data-chapter="p1c6"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+/* p1c7 instrument: faded everywhere EXCEPT §209 in brass (the one warm
+ * instrument in the cold cabinet — ledger.js paints data-sec). */
+body[data-chapter="p1c7"] #chapter-text .sec-num {
+  color: var(--bge-faded);
+}
+body[data-chapter="p1c7"] #chapter-text .sec-num[data-sec="209"] {
+  color: var(--bge-brass);
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
+}
+body[data-chapter="p1c7"] #chapter-text > p.sec-start {
+  margin-top: 2em;
+}
+body[data-chapter="p1c7"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+/* p1c8 twin-rule: brass numerals + the §215 motley dual-rule (E3). */
+body[data-chapter="p1c8"] #chapter-text > p.sec-start {
+  margin-top: 2.1em;
+}
+body[data-chapter="p1c8"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+body[data-chapter="p1c8"] #chapter-text > p:has(> .sec-num[data-sec="215"])::before {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-bottom: 1.2em;
+  border-top: 1px solid var(--bge-brass);
+  border-bottom: 1px solid var(--bge-blood);
+}
+/* p1c9 overture: brass + four centered movement numerals. */
+body[data-chapter="p1c9"] #chapter-text > p.sec-start {
+  margin-top: 2.1em;
+}
+body[data-chapter="p1c9"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+body[data-chapter="p1c9"] #chapter-text .sec-num[data-sec="240"],
+body[data-chapter="p1c9"] #chapter-text .sec-num[data-sec="250"],
+body[data-chapter="p1c9"] #chapter-text .sec-num[data-sec="252"],
+body[data-chapter="p1c9"] #chapter-text .sec-num[data-sec="254"] {
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+}
+/* p1c10 summit: the roomiest section air in the book. */
+body[data-chapter="p1c10"] #chapter-text > p.sec-start {
+  margin-top: 2.6em;
+}
+body[data-chapter="p1c10"] #chapter-text > p.sec-start:first-of-type {
+  margin-top: 0;
+}
+/* E3: Sanguine numerals — §50, §146, §§278/287/296 ONLY. Flat rubrication
+ * (E2: no glow) at text-legible blood on dark, deep blood on light. */
+body[data-chapter="p1c4"] #chapter-text .sec-num.sec-red,
+body[data-chapter="p1c5"] #chapter-text .sec-num.sec-red,
+body[data-chapter="p1c10"] #chapter-text .sec-num.sec-red {
+  color: var(--bge-blood-text);
+  font-weight: 500;
+}
+body[data-chapter="p1c10"] #chapter-text .sec-num.sec-red {
+  font-size: 0.84rem;
+}
+/* The marked maxim/section gets air, not a badge. */
+body[data-chapter="p1c5"] #chapter-text > p.sec-marked,
+body[data-chapter="p1c10"] #chapter-text > p.sec-marked {
+  margin-top: 2.75em;
+}
+
+/* ── 5. p1c5 maxim-set: the cohort centerpiece (E5) ───────────── */
+body[data-chapter="p1c5"] #chapter-text > p.sec-start {
+  margin-bottom: 1.6em;
+  margin-top: 0;
+}
+body[data-chapter="p1c5"] #chapter-text > p:not(.sec-start) {
+  margin-top: -0.9em;
+  margin-bottom: 1.6em;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--bge-faded);
+}
+/* Hairlines every ~5 maxims: positional rules on wrapped section starts. The
+ * 25 paragraph indices below are every 5th maxim start derived from the §5.1
+ * oracle (continuations at paras 8/47/50/75 shift the count, hence the
+ * irregular steps — none collide with a continuation). The .sec-start guard
+ * means prose drift only moves a rule, never mis-numbers (E1: these carry no
+ * numeral content — layout only). */
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(5),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(11),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(16),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(21),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(26),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(31),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(36),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(41),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(46),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(53),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(58),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(63),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(68),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(73),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(79),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(84),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(89),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(94),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(99),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(104),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(109),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(114),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(119),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(124),
+body[data-chapter="p1c5"] #chapter-text > p.sec-start:nth-of-type(129) {
+  border-bottom: 1px solid var(--bge-faded);
+  border-bottom-color: color-mix(in srgb, var(--bge-faded) 55%, transparent);
+  padding-bottom: 1.6em;
+}
+
+/* ── 6. Verse fragments (explicit-index tags only — never inferred) ─ */
+/* p1c8: §228 rhyme + SEVEN APOPHTHEGMS — centered, stanza air. */
+body[data-chapter="p1c8"] #chapter-text > p.verse-frag {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+/* p1c9: the Rome-verse finale — italic, hanging indent, top air. */
+body[data-chapter="p1c9"] #chapter-text > p.verse-finale {
+  max-width: 56ch;
+  margin-top: 2.5em;
+  font-style: italic;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+/* p1c9 movement index: the overture's authored playbill. */
+body[data-chapter="p1c9"] .chapter-meta .movement-index {
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 0;
+  max-width: 26rem;
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+body[data-chapter="p1c9"] .chapter-meta .movement-index li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px dotted var(--bge-faded);
+  border-bottom-color: color-mix(in srgb, var(--bge-faded) 60%, transparent);
+}
+body[data-chapter="p1c9"] .chapter-meta .movement-index .mv-no {
+  min-width: 2.5rem;
+  color: var(--bge-brass);
+}
+body[data-chapter="p1c9"] .chapter-meta .movement-index .mv-name {
+  flex: 1;
+  text-align: left;
+}
+body[data-chapter="p1c9"] .chapter-meta .movement-index .mv-sec {
+  color: var(--bge-brass);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── 7. Silent chapters: total system-off (E4) ─────────────────── */
+/* No figures, no seals, no numerals — one fleuron, verse typography. Any "§"
+ * glyph in these chapters fails review, so this section mints no marks. */
+body[data-chapter="p1c1"] #chapter-text,
+body[data-chapter="p1c11"] #chapter-text {
+  font-family: var(--font-body);
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-chapter="p1c1"] #chapter-text > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 3.5em;
+  line-height: 0.78;
+  padding: 0.06em 0.14em 0 0;
+  color: var(--bge-brass);
+  background: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+body[data-chapter="p1c1"] #chapter-text > p:last-child {
+  text-align: right;
+  font-style: italic;
+  color: var(--bge-muted);
+}
+body[data-chapter="p1c1"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c11"] #chapter-text > p:last-child::after {
+  content: none;
+}
+body[data-chapter="p1c1"] #chapter-text .sec-num,
+body[data-chapter="p1c11"] #chapter-text .sec-num {
+  display: none;
+}
+/* p1c11 verse: bylines → invocation → verse measure → refrain air. */
+body[data-chapter="p1c11"] #chapter-text > p:nth-of-type(1),
+body[data-chapter="p1c11"] #chapter-text > p:nth-of-type(2) {
+  text-align: center;
+  font-family: var(--font-ledger);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bge-faded);
+}
+body[data-chapter="p1c11"] #chapter-text > p:nth-of-type(3) {
+  margin-top: 1.5em;
+  margin-bottom: 1.9em;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.35;
+}
+body[data-chapter="p1c11"] #chapter-text > p:nth-of-type(n+4) {
+  max-width: 34rem;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  margin-bottom: 0.9em;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+body[data-chapter="p1c11"] #chapter-text > p:nth-of-type(30),
+body[data-chapter="p1c11"] #chapter-text > p:nth-of-type(34) {
+  margin-top: 2.2em;
+}
+/* p1c11 bow end-seal (A.0: intrinsic ≤32px, zero layout shift). */
+body[data-chapter="p1c11"] #chapter-text > p:last-child {
+  padding-bottom: 36px;
+  background: url("art/back-end-11-bow.svg") center bottom / 24px 24px no-repeat;
+}
+
+/* ── 8. Chapter-end marks (brass ALWAYS — §4.2) + A.0 end-seals ── */
+body[data-chapter="p1c2"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c3"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c4"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c5"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c6"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c7"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c8"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c9"] #chapter-text > p:last-child::after,
+body[data-chapter="p1c10"] #chapter-text > p:last-child::after {
+  display: block;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: var(--font-ledger);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--bge-brass);
+  opacity: 1;
+  text-shadow: none;
+}
+body[data-chapter="p1c2"] #chapter-text > p:last-child::after { content: "§ 23"; }
+body[data-chapter="p1c3"] #chapter-text > p:last-child::after { content: "§ 44"; }
+body[data-chapter="p1c4"] #chapter-text > p:last-child::after { content: "§ 62"; }
+body[data-chapter="p1c5"] #chapter-text > p:last-child::after { content: "§ 185"; }
+body[data-chapter="p1c6"] #chapter-text > p:last-child::after { content: "§ 203"; }
+body[data-chapter="p1c7"] #chapter-text > p:last-child::after { content: "§ 213"; }
+body[data-chapter="p1c8"] #chapter-text > p:last-child::after { content: "§ 239"; }
+body[data-chapter="p1c9"] #chapter-text > p:last-child::after { content: "§ 256"; }
+body[data-chapter="p1c10"] #chapter-text > p:last-child::after { content: "§ 296"; }
+/* BACK end-seals ride as background art on the end-mark line (seal-bronze,
+ * fixed colors per §4.5 — ::after url() art cannot inherit theme vars). */
+/* (End-seals below use a second ::marker-free line: the mark keeps its text
+ * and the seal sits beneath via background on the same ::after box.) */
+body[data-chapter="p1c6"] #chapter-text > p:last-child::after {
+  padding-bottom: 32px;
+  background: url("art/back-end-5-herd.svg") center bottom / 24px 24px no-repeat;
+}
+body[data-chapter="p1c7"] #chapter-text > p:last-child::after {
+  padding-bottom: 32px;
+  background: url("art/back-end-6-lens.svg") center bottom / 24px 24px no-repeat;
+}
+body[data-chapter="p1c8"] #chapter-text > p:last-child::after {
+  padding-bottom: 32px;
+  background: url("art/back-end-7-twinsuns.svg") center bottom / 24px 24px no-repeat;
+}
+body[data-chapter="p1c9"] #chapter-text > p:last-child::after {
+  padding-bottom: 32px;
+  background: url("art/back-end-8-staves.svg") center bottom / 24px 24px no-repeat;
+}
+body[data-chapter="p1c10"] #chapter-text > p:last-child::after {
+  padding-bottom: 32px;
+  background: url("art/back-end-9-steps.svg") center bottom / 24px 24px no-repeat;
+}
+
+/* ── 9. TOC ledger rows ───────────────────────────────────────── */
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c6"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c7"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c8"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c9"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c10"] .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c11"] .toc-num {
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--bge-faded);
+  width: 2rem;
+}
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c6"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c7"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c8"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c9"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c10"] .toc-name,
+#toc-list .toc-chapter[data-chapter-id="p1c11"] .toc-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: 0.01em;
+}
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c6"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c7"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c8"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c9"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c10"] .toc-main::after,
+#toc-list .toc-chapter[data-chapter-id="p1c11"] .toc-main::after {
+  content: "";
+  display: block;
+  margin: 0.3rem 0 0.1rem;
+  border-bottom: 1px dotted var(--bge-brass);
+  opacity: 0.55;
+}
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c6"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c7"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c8"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c9"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c10"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c11"] .toc-range {
+  flex-shrink: 0;
+  min-width: 4.75rem;
+  margin-left: 0.5rem;
+  align-self: center;
+  text-align: right;
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--bge-brass);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+/* The silent chapters' ledger rows show a faded em dash, never a range. */
+#toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-range,
+#toc-list .toc-chapter[data-chapter-id="p1c11"] .toc-range {
+  color: var(--bge-faded);
+}
+#toc-list .toc-chapter[data-chapter-id="p1c1"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c2"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c3"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c4"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c5"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c6"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c7"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c8"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c9"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c10"].active .toc-num,
+#toc-list .toc-chapter[data-chapter-id="p1c11"].active .toc-num {
+  color: var(--bge-brass);
+}
+/* Single part header reads as a motto plate: ledger voice, dotted frame. */
+#toc-list > .toc-part:only-of-type .toc-part-header {
+  font-family: var(--font-ledger);
+  color: var(--bge-brass);
+  letter-spacing: 0.24em;
+}
+#toc-list > .toc-part:only-of-type .toc-part-sub {
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--bge-faded);
+  border-top: 1px dotted var(--bge-brass);
+}
+
+/* ── 10. Progress, nav, header, selection: ledger furniture ───── */
+body[data-book="beyond-good-and-evil"] .progress-fill {
+  background: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"] .progress-fill::after {
+  content: none;
+}
+body[data-book="beyond-good-and-evil"] .chapter-nav .nav-label {
+  font-family: var(--font-ledger);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"] .chapter-nav .nav-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+body[data-book="beyond-good-and-evil"] .chapter-nav .nav-btn {
+  border-radius: 2px;
+}
+body[data-book="beyond-good-and-evil"] #chapter-text::selection {
+  background: var(--bge-brass);
+  color: #12100b;
+}
+html[data-theme="light"] body[data-book="beyond-good-and-evil"] #chapter-text::selection,
+html[data-theme="sepia"] body[data-book="beyond-good-and-evil"] #chapter-text::selection {
+  color: #faf7ef;
+}
+body[data-book="beyond-good-and-evil"] .reader-header .header-part {
+  font-family: var(--font-ledger);
+  color: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"] .reader-header .header-chapter {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* ── 11. Cover: the full-viewport ledger plate ─────────────────── */
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-bg {
+  background: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-grid {
+  background-image:
+    repeating-linear-gradient(0deg, var(--bge-faded) 0 1px, transparent 1px 2.1rem);
+  opacity: 0.22;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black 30%, transparent 78%);
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-glow {
+  background: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-ghost {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(3.5rem, 12vw, 7rem);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  color: var(--bge-brass);
+  opacity: 0.14;
+  pointer-events: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-eyebrow {
+  font-family: var(--font-ledger);
+  color: var(--bge-faded);
+  letter-spacing: 0.3em;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-eyebrow::before,
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-eyebrow::after {
+  content: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.9rem, 9vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: 0.005em;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .title-line.accent {
+  color: var(--bge-brass);
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-rule {
+  width: 14rem;
+  flex-direction: column;
+  gap: 3px;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-rule::before {
+  content: "";
+  width: 14rem;
+  height: 2px;
+  background: var(--bge-brass);
+  flex: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-rule::after {
+  content: "";
+  width: 14rem;
+  height: 1px;
+  background: var(--bge-faded);
+  opacity: 0.8;
+  flex: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .rule-diamond {
+  display: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-author {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  color: var(--bge-muted);
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-quote {
+  font-style: italic;
+  color: var(--bge-muted);
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-quote::after {
+  content: none;
+}
+/* The ghosted range table: nine ledger entries at low presence. */
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-ledger {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem 2rem;
+  margin: 2.25rem auto 0;
+  padding: 1.25rem 1.5rem;
+  max-width: 30rem;
+  border-top: 1px dotted var(--bge-faded);
+  border-bottom: 1px dotted var(--bge-faded);
+  font-family: var(--font-ledger);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--bge-faded);
+  opacity: 0.9;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-ledger div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-ledger dt {
+  margin: 0;
+  font-weight: 400;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-ledger dd {
+  margin: 0;
+  color: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .btn-primary {
+  background: var(--bge-brass);
+  border-color: var(--bge-brass);
+  color: #12100b;
+  box-shadow: none;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .btn-primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  box-shadow: none;
+  transform: translateY(-1px);
+}
+html[data-theme="light"] body[data-book="beyond-good-and-evil"][data-view="cover"] .btn-primary,
+html[data-theme="sepia"] body[data-book="beyond-good-and-evil"][data-view="cover"] .btn-primary {
+  color: #faf7ef;
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .link-btn {
+  color: var(--bge-brass);
+}
+body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-footer {
+  font-family: var(--font-ledger);
+  color: var(--bge-faded);
+}
+
+/* ── 12. Responsive ───────────────────────────────────────────── */
+@media (max-width: 899px) {
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal:not([hidden]) {
+    max-width: 9rem;
+  }
+  body[data-chapter="p1c2"] #chapter-art.ledger-seal svg {
+    max-width: 9rem;
+  }
+}
+@media (max-width: 560px) {
+  body[data-book="beyond-good-and-evil"] #chapter-art.ledger-seal:not([hidden]) {
+    max-width: 7.5rem;
+  }
+  body[data-book="beyond-good-and-evil"] #chapter-art.ledger-seal svg {
+    max-width: 7.5rem;
+  }
+  body[data-chapter="p1c10"] #chapter-art.ledger-seal:not([hidden]),
+  body[data-chapter="p1c10"] #chapter-art.ledger-seal svg {
+    max-width: 9rem;
+  }
+  body[data-chapter="p1c1"] #chapter-art.ledger-fleuron:not([hidden]),
+  body[data-chapter="p1c11"] #chapter-art.ledger-fleuron:not([hidden]) {
+    max-width: 13rem;
+  }
+  body[data-chapter="p1c1"] #chapter-art.ledger-fleuron svg,
+  body[data-chapter="p1c11"] #chapter-art.ledger-fleuron svg {
+    max-width: 13rem;
+  }
+  body[data-book="beyond-good-and-evil"] #chapter-text > p.sec-start {
+    padding-left: 2.9rem;
+    text-indent: -2.9rem;
+  }
+  body[data-book="beyond-good-and-evil"] #chapter-text > p.sec-start .sec-num {
+    min-width: 2.4rem;
+  }
+  #toc-list .toc-chapter[data-chapter-id="p1c1"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c2"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c3"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c4"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c5"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c6"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c7"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c8"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c9"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c10"] .toc-range,
+  #toc-list .toc-chapter[data-chapter-id="p1c11"] .toc-range {
+    min-width: 0;
+  }
+  body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-ledger {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  body[data-book="beyond-good-and-evil"][data-view="cover"] .cover-ghost {
+    top: 3%;
+  }
+}
+
+/* ── 13. Motion: one calm settle, then stillness ──────────────── */
+body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art:not([hidden]) {
+  animation: bge-ledger-settle 400ms ease-out both;
+}
+@keyframes bge-ledger-settle {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="beyond-good-and-evil"][data-view="reader"] #chapter-art:not([hidden]) {
+    animation: none;
+  }
+}
+
+/* ── 14. Print: the ledger on paper ───────────────────────────── */
+@media print {
+  body[data-book="beyond-good-and-evil"] #chapter-art {
+    color: #000;
+  }
+  body[data-book="beyond-good-and-evil"] #chapter-text > p.sec-start {
+    padding-left: 0;
+    text-indent: 0;
+  }
+  body[data-book="beyond-good-and-evil"] #chapter-text .sec-num {
+    position: static;
+    display: inline;
+  }
+}

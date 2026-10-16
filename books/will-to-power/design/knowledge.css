@@ -1,0 +1,351 @@
+/* ==========================================================================
+   The Will to Power — KNOWLEDGE cohort (Book III Part 1, p4c1–p4c13)
+   "Thirteen Wounds in One Eye" — Black Notebook gouge-plate apparatus.
+   Scope: ONLY body[data-book="will-to-power"][data-part-id="part-4"] (+ per-chapter
+   body[data-chapter] overrides). Unlayered: wins over @layer shared. No reader-*
+   classes minted, no !important, zero animation, no prose recolor.
+   Insertion-script hooks (supervisor-owned JS, fed by knowledge.json):
+   .know-fleuron (after exact fleuron indices) · .know-sub (on exact sub-note
+   paras) · .know-band (relief band after p4c11 para 60) · .know-inscription
+   (fragment-count line in #chapter-meta).
+   ========================================================================== */
+
+/* ---- Cohort tokens under the data-book scope only (book tokens, no new hues) ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] {
+  --know-ink: #0B0A08;
+  --know-notebook: #14120E;
+  --know-vellum: #1D1A14;
+  --know-bone: #EDE4D3;
+  --know-ash: #A89C86;
+  --know-pencil: #6B6257;
+  /* R3 item 4 chrome lifts (TEXT-ONLY; art inks stay canonical): */
+  --know-pencil-chrome: #847A6E;
+  --know-verdigris-chrome: #5E8C7B;
+  --know-verdigris: #4E7C6B;
+  --know-sulphur: #E3A82B;
+  --know-sulphur-deep: #9A6B1A;
+  --know-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --know-body: "Newsreader", Georgia, "Iowan Old Style", serif;
+  --know-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ---- Reading body: calm Newsreader column on Inkblack (prose stays Bone) ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text {
+  font-family: var(--know-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--know-bone);
+  background: transparent;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text p {
+  max-width: min(var(--reader-max), 37rem);
+}
+
+/* ---- Opener contract: mono eyebrow (book apparatus convention) ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta {
+  text-align: left;
+  margin-bottom: 2.75rem;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-part {
+  font-family: var(--know-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-indent: 0;
+  color: var(--know-ash);
+  margin: 0 0 1rem;
+}
+
+/* ---- Plate-mark: 120px right-float ≥900px, stacked above title below ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-art.plate-mark:not([hidden]) {
+  display: block;
+  float: right;
+  width: 120px;
+  max-width: 120px;
+  margin: 0.35rem 0 1rem 2rem;
+  padding: 0;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-art.plate-mark:not([hidden]) svg {
+  width: 120px;
+  height: 120px;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-art.plate-mark figcaption {
+  font-family: var(--know-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--know-pencil-chrome);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* ---- Fraunces title, set whole (no single-word accent) ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-title {
+  font-family: var(--know-display);
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-variation-settings: "opsz" 144;
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  max-width: 20ch;
+  margin: 0;
+  color: var(--know-bone);
+  text-wrap: balance;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-number {
+  font-family: var(--know-mono);
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--know-verdigris-chrome);
+  margin: 0.9rem 0 0;
+}
+
+/* ---- 2px Sulphur rule + fragment-count inscription (one match-strike) ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-rule {
+  justify-content: flex-start;
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-rule::before {
+  content: "";
+  width: 5rem;
+  height: 2px;
+  background: var(--know-sulphur);
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-rule::after {
+  display: none;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-rule span {
+  width: 6px;
+  height: 6px;
+  background: var(--know-sulphur);
+  opacity: 1;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .meta-sub {
+  font-family: var(--know-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--know-ash);
+  margin: 0.7rem 0 0;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .know-inscription {
+  font-family: var(--know-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--know-ash);
+  margin: 0.7rem 0 0;
+}
+/* Inscription fallback before the insertion script lands: paras from the slot. */
+body[data-book="will-to-power"][data-part-id="part-4"] #chapter-meta .know-inscription:empty::before {
+  content: attr(data-paras-fallback);
+  color: var(--know-pencil-chrome);
+}
+
+/* ---- Drop cap: Fraunces 900 Bone (override shared accent-colored cap) ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--know-display);
+  font-weight: 900;
+  font-variation-settings: "opsz" 144;
+  color: var(--know-bone);
+}
+
+/* ---- Tablet p4c1 (W5): centered monument; extend shared .no-drop, don't fight it ---- */
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-art.plate-mark:not([hidden]) {
+  float: none;
+  margin: 0 auto 2rem;
+  width: 132px;
+  max-width: 132px;
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-art.plate-mark:not([hidden]) svg {
+  width: 132px;
+  height: 132px;
+  margin: 0 auto;
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-art.plate-mark figcaption {
+  text-align: center;
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-meta {
+  text-align: center;
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-meta .meta-title {
+  font-weight: 900;
+  max-width: 16ch;
+  margin: 0 auto;
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-meta .meta-rule {
+  justify-content: center;
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-meta .meta-sub,
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-meta .know-inscription {
+  display: none;
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] .chapter-text > p {
+  text-align: center;
+  font-family: var(--know-display);
+  font-weight: 900;
+  font-variation-settings: "opsz" 144;
+  font-size: clamp(1.6rem, 4.6vw, 2.6rem);
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  max-width: 30ch;
+  margin-top: 3rem;
+  color: var(--know-bone);
+}
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] .chapter-text > p.no-drop::first-letter {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+/* No end seal on the tablet: the monument is the seal. */
+body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] .chapter-text > p:last-child::after {
+  display: none;
+}
+
+/* ---- Authored fleuron dividers (W3): inserted elements only, exact indices ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-fleuron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  max-width: min(var(--reader-max), 37rem);
+  margin: 2.1rem auto;
+  padding: 0;
+  color: var(--know-sulphur);
+  font-size: 1rem;
+  line-height: 1;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-fleuron::before,
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-fleuron::after {
+  content: "";
+  width: 3.2rem;
+  height: 1px;
+  background: var(--know-pencil);
+  opacity: 0.7;
+}
+
+/* ---- NB. margin cries (W4): shared .reader-nb hook, Sulphur bar + mono marker ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p.reader-nb {
+  position: relative;
+  border-left: 3px solid var(--know-sulphur);
+  padding-left: 1.25rem;
+  margin-left: 0;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p.reader-nb::before {
+  content: "NB.";
+  position: absolute;
+  left: -3.4rem;
+  top: 0.32em;
+  font-family: var(--know-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--know-sulphur);
+}
+
+/* ---- Sub-notes: indent + Verdigris tick on insertion-script-marked paras ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p.know-sub {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--know-bone);
+}
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p.know-sub::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0.55em;
+  width: 0.5rem;
+  height: 2px;
+  background: var(--know-verdigris);
+}
+
+/* ---- Relief band p4c11 (art only, full-bleed, never behind prose) ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-band {
+  max-width: none;
+  margin: 2.6rem auto;
+  padding: 0;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-band svg {
+  display: block;
+  width: 100%;
+  height: 64px;
+}
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-band .know-band-caption {
+  font-family: var(--know-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--know-pencil-chrome);
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+/* ---- Chapter-end seal (App. A): url() art ≤32px, no layout shift ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p:last-child::after {
+  content: url("../art/knowledge.svg");
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 0.9rem;
+  vertical-align: -4px;
+}
+
+/* ---- TOC: verdigris numerals + sulphur current bar (cohort rows) ---- */
+body[data-book="will-to-power"] #toc-list .toc-part[data-part-id="part-4"] .toc-chapter .toc-num {
+  font-family: var(--know-mono, "IBM Plex Mono", ui-monospace, Menlo, monospace);
+  color: var(--know-verdigris-chrome, #5E8C7B);
+}
+body[data-book="will-to-power"] #toc-list .toc-part[data-part-id="part-4"] .toc-chapter .toc-name {
+  font-family: var(--know-body, Newsreader, Georgia, serif);
+}
+body[data-book="will-to-power"] #toc-list .toc-part[data-part-id="part-4"] .toc-chapter.active {
+  border-left-color: var(--know-sulphur, #E3A82B);
+}
+body[data-book="will-to-power"] #toc-list .toc-part[data-part-id="part-4"] .toc-chapter.active .toc-num {
+  color: var(--know-sulphur, #E3A82B);
+}
+
+/* ---- Focus: Sulphur outline within the cohort ---- */
+body[data-book="will-to-power"][data-part-id="part-4"] :focus-visible {
+  outline: 2px solid var(--know-sulphur);
+  outline-offset: 3px;
+}
+
+/* ---- Responsive: float→stack <900px; NB marker above text <760px ---- */
+@media (max-width: 899px) {
+  body[data-book="will-to-power"][data-part-id="part-4"] #chapter-art.plate-mark:not([hidden]) {
+    float: none;
+    margin: 0 0 1.5rem;
+  }
+  body[data-book="will-to-power"][data-part-id="part-4"][data-chapter="p4c1"] #chapter-art.plate-mark:not([hidden]) {
+    margin: 0 auto 2rem;
+  }
+}
+@media (max-width: 759px) {
+  body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p.reader-nb {
+    padding-left: 1rem;
+    padding-top: 1.4rem;
+  }
+  body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p.reader-nb::before {
+    left: 1rem;
+    top: 0;
+  }
+  body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-fleuron::before,
+  body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > .know-fleuron::after {
+    width: 2.2rem;
+  }
+}
+@media (min-width: 760px) and (max-width: 899px) {
+  body[data-book="will-to-power"][data-part-id="part-4"] .chapter-text > p.reader-nb {
+    margin-left: 3.4rem;
+  }
+}

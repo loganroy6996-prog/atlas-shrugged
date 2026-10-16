@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">The Gay Science — a rising sun mural over flat sea bands, dance ring below</title>
+<defs>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .35 0"/></filter>
+</defs>
+<!-- Abyssal Sea #06222B ground -->
+<rect width="800" height="1000" fill="#06222b"/>
+<!-- the mural sun: architectural mass, flat wedges, NO glow disc -->
+<g>
+<polygon points="400,470 120,120 260,60" fill="#f5b301"/>
+<polygon points="400,470 300,40 420,20" fill="#f5b301"/>
+<polygon points="400,470 520,20 600,60" fill="#f5b301"/>
+<polygon points="400,470 680,120 700,240" fill="#f5b301"/>
+<polygon points="400,470 720,400 640,500" fill="#f5b301"/>
+<polygon points="400,470 80,400 160,500" fill="#f5b301"/>
+<polygon points="400,470 200,40 300,20" fill="#e4572e" opacity=".85"/>
+<polygon points="400,470 500,20 600,40" fill="#e4572e" opacity=".85"/>
+<circle cx="400" cy="470" r="150" fill="#f5b301"/>
+<circle cx="400" cy="470" r="150" fill="none" stroke="#ffedbe" stroke-width="6"/>
+<circle cx="400" cy="470" r="96" fill="#ffedbe"/>
+<!-- Provençal sun-face: naïve geometry, straight gaze -->
+<g stroke="#06222b" stroke-width="5" fill="none" stroke-linecap="round">
+<line x1="354" y1="460" x2="382" y2="460"/>
+<line x1="418" y1="460" x2="446" y2="460"/>
+<line x1="372" y1="514" x2="428" y2="514"/>
+<line x1="352" y1="440" x2="384" y2="442" opacity=".6"/>
+<line x1="448" y1="440" x2="416" y2="442" opacity=".6"/>
+</g>
+</g>
+<!-- flat ultramarine sea bands -->
+<rect y="660" width="800" height="60" fill="#173a8f"/>
+<rect y="730" width="800" height="44" fill="#0b3542"/>
+<rect y="784" width="800" height="216" fill="#04161d"/>
+<g fill="#f3ead8" opacity=".8">
+<rect x="90" y="684" width="180" height="8"/><rect x="370" y="684" width="120" height="8"/><rect x="560" y="684" width="150" height="8"/>
+<rect x="180" y="748" width="140" height="6"/><rect x="470" y="748" width="200" height="6"/>
+</g>
+<!-- the dance ring: five vermilion gestures on the shore (Matisse grammar) -->
+<g>
+<ellipse cx="200" cy="896" rx="30" ry="46" transform="rotate(-14 200 896)" fill="#e4572e"/>
+<ellipse cx="300" cy="904" rx="30" ry="46" transform="rotate(8 300 904)" fill="#e4572e"/>
+<ellipse cx="400" cy="898" rx="30" ry="46" transform="rotate(-6 400 898)" fill="#e4572e"/>
+<ellipse cx="500" cy="904" rx="30" ry="46" transform="rotate(12 500 904)" fill="#e4572e"/>
+<ellipse cx="600" cy="896" rx="30" ry="46" transform="rotate(-10 600 896)" fill="#e4572e"/>
+<circle cx="200" cy="838" r="15" fill="#e4572e"/><circle cx="300" cy="846" r="15" fill="#e4572e"/><circle cx="400" cy="840" r="15" fill="#e4572e"/><circle cx="500" cy="846" r="15" fill="#e4572e"/><circle cx="600" cy="838" r="15" fill="#e4572e"/>
+<path d="M200,856 Q300,818 400,854 Q500,818 600,856" fill="none" stroke="#e4572e" stroke-width="10" stroke-linecap="round"/>
+</g>
+<!-- a single ship heading for the horizon -->
+<g transform="translate(620,600)">
+<polygon points="0,0 90,0 70,26 15,26" fill="#f3ead8"/>
+<rect x="42" y="-46" width="6" height="48" fill="#f3ead8"/>
+<polygon points="48,-46 48,-6 86,-6" fill="#f3ead8"/>
+</g>
+<!-- stars of the troubadour night above -->
+<g fill="#f3ead8"><circle cx="90" cy="90" r="4"/><circle cx="710" cy="70" r="4"/><circle cx="650" cy="150" r="3"/><circle cx="150" cy="160" r="3"/></g>
+<rect x="14" y="14" width="772" height="972" fill="none" stroke="#f5b301" stroke-width="4"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".05"/>
+</svg>

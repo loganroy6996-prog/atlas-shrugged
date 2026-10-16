@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Being and Time — cover scene: "The Clearing" (supervisor-owned).
+  A dark wood of hand-plotted trunk silhouettes parts around one shaft of
+  warm straw light (8% gap). The shaft is an authored skewed polygon with
+  interior gradient falloff + feTurbulence grain — never a CSS stripe (B1).
+  Self-contained: all defs live INSIDE the symbol (reader.js inlines only
+  the symbol subtree). viewBox 0 0 1600 1000.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+  <symbol id="cover-clearing" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="cc-shaft" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+        <stop offset="0.30" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.28"/>
+        <stop offset="0.55" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.75"/>
+        <stop offset="0.80" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.30"/>
+        <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="cc-core" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.9"/>
+        <stop offset="0.55" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.45"/>
+        <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.10"/>
+      </linearGradient>
+      <linearGradient id="cc-pool" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+        <stop offset="0.5" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.22"/>
+        <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.05"/>
+      </linearGradient>
+      <linearGradient id="cc-night" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" style="stop-color:var(--bt-ink,#060805)" stop-opacity="0"/>
+        <stop offset="1" style="stop-color:var(--bt-ink,#060805)" stop-opacity="0.55"/>
+      </linearGradient>
+      <filter id="cc-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="83" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.91  0 0 0 0 0.83  0 0 0 0 0.53  0 0 0 0.45 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.18"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <!-- ground -->
+    <rect x="0" y="0" width="1600" height="1000" style="fill:var(--bt-ink,#060805)"/>
+    <!-- LEFT STAND: nine hand-plotted trunks, leaning faintly left, rims catching light on gap side -->
+    <g style="fill:#060805">
+      <path d="M0,0 L64,0 C60,240 70,480 58,720 C54,820 58,920 54,1000 L0,1000 Z"/>
+      <path d="M92,0 L138,0 C134,220 144,470 132,700 C128,810 132,910 128,1000 L88,1000 C94,760 86,460 92,0 Z"/>
+      <path d="M176,0 L214,0 C210,260 220,520 208,740 C204,840 208,930 204,1000 L172,1000 C178,740 168,440 176,0 Z"/>
+      <path d="M258,0 L306,0 C300,240 312,500 300,720 C296,830 300,920 296,1000 L252,1000 C260,740 250,450 258,0 Z"/>
+      <path d="M348,0 L382,0 C378,280 386,560 376,780 C372,870 376,940 372,1000 L344,1000 C350,760 342,470 348,0 Z"/>
+      <path d="M424,0 L470,0 C464,230 476,490 464,710 C460,820 464,910 460,1000 L418,1000 C426,750 416,440 424,0 Z"/>
+      <path d="M512,0 L544,0 C540,300 548,600 540,800 C537,890 540,950 537,1000 L508,1000 C514,770 506,480 512,0 Z"/>
+      <path d="M584,0 L624,0 C620,250 628,520 620,740 C617,840 620,930 617,1000 L580,1000 C586,750 578,460 584,0 Z"/>
+      <path d="M664,0 L696,0 C692,290 700,590 692,800 C689,890 692,950 689,1000 L660,1000 C666,770 658,470 664,0 Z"/>
+    </g>
+    <path d="M696,0 L706,0 C698,300 706,600 698,800 C696,890 698,950 696,1000 L688,1000 C694,760 686,460 696,0 Z" style="fill:var(--bt-shaft,#E9D488)" opacity="0.28"/>
+    <path d="M854,0 L864,0 C856,300 866,600 858,800 C856,890 858,950 856,1000 L848,1000 C854,760 846,460 854,0 Z" style="fill:var(--bt-shaft,#E9D488)" opacity="0.28"/>
+    <!-- rim light on all trunk edges so the stands read against the ink ground -->
+    <g fill="none" style="stroke:var(--bt-bark,#3E4A34)" stroke-width="2" opacity="0.9">
+      <path d="M64,0 C60,240 70,480 58,720 C54,820 58,920 54,1000"/>
+      <path d="M92,0 C86,460 94,760 88,1000"/>
+      <path d="M138,0 C134,220 144,470 132,700 C128,810 132,910 128,1000"/>
+      <path d="M176,0 C168,440 178,740 172,1000"/>
+      <path d="M214,0 C210,260 220,520 208,740 C204,840 208,930 204,1000"/>
+      <path d="M258,0 C250,450 260,740 252,1000"/>
+      <path d="M306,0 C300,240 312,500 300,720 C296,830 300,920 296,1000"/>
+      <path d="M348,0 C342,470 350,760 344,1000"/>
+      <path d="M382,0 C378,280 386,560 376,780 C372,870 376,940 372,1000"/>
+      <path d="M424,0 C416,440 426,750 418,1000"/>
+      <path d="M470,0 C464,230 476,490 464,710 C460,820 464,910 460,1000"/>
+      <path d="M512,0 C506,480 514,770 508,1000"/>
+      <path d="M544,0 C540,300 548,600 540,800 C537,890 540,950 537,1000"/>
+      <path d="M584,0 C578,460 586,750 580,1000"/>
+      <path d="M624,0 C620,250 628,520 620,740 C617,840 620,930 617,1000"/>
+      <path d="M664,0 C658,470 666,770 660,1000"/>
+      <path d="M896,0 C894,590 902,800 905,1000 M864,0 C866,470 857,770 860,1000"/>
+      <path d="M936,0 C942,460 934,750 940,1000 M976,0 C972,520 982,740 985,1000"/>
+      <path d="M1048,0 C1044,600 1054,800 1057,1000 M1016,0 C1014,480 1006,770 1012,1000"/>
+      <path d="M1090,0 C1104,440 1094,750 1100,1000 M1136,0 C1130,490 1142,710 1146,1000"/>
+      <path d="M1212,0 C1208,560 1218,780 1222,1000 M1178,0 C1180,470 1170,760 1176,1000"/>
+      <path d="M1254,0 C1270,450 1260,740 1266,1000 M1302,0 C1296,500 1308,720 1312,1000"/>
+      <path d="M1340,0 C1332,520 1342,820 1336,1000"/>
+      <path d="M1450,0 C1444,480 1452,800 1446,1000"/>
+    </g>
+    <g style="fill:#060805">
+      <path d="M864,0 L896,0 C902,290 894,590 902,800 C905,890 902,950 905,1000 L860,1000 C857,770 866,470 864,0 Z"/>
+      <path d="M936,0 L976,0 C982,250 972,520 982,740 C985,840 982,930 985,1000 L940,1000 C934,750 942,460 936,0 Z"/>
+      <path d="M1016,0 L1048,0 C1054,300 1044,600 1054,800 C1057,890 1054,950 1057,1000 L1012,1000 C1006,770 1014,480 1016,0 Z"/>
+      <path d="M1090,0 L1136,0 C1142,230 1130,490 1142,710 C1146,820 1142,910 1146,1000 L1100,1000 C1094,750 1104,440 1090,0 Z"/>
+      <path d="M1178,0 L1212,0 C1218,280 1208,560 1218,780 C1222,870 1218,940 1222,1000 L1176,1000 C1170,760 1180,470 1178,0 Z"/>
+      <path d="M1254,0 L1302,0 C1308,240 1296,500 1308,720 C1312,830 1308,920 1312,1000 L1266,1000 C1260,740 1270,450 1254,0 Z"/>
+      <path d="M1340,0 L1420,0 L1416,1000 L1336,1000 C1342,820 1332,520 1340,0 Z"/>
+      <path d="M1450,0 L1600,0 L1600,1000 L1446,1000 C1452,800 1444,480 1450,0 Z"/>
+    </g>
+    <!-- light catching the rims of the two trunks that frame the gap -->
+    <path d="M696,0 L706,0 C698,300 706,600 698,800 C696,890 698,950 696,1000 L688,1000 C694,760 686,460 696,0 Z" style="fill:var(--bt-shaft,#E9D488)" opacity="0.28"/>
+    <path d="M854,0 L864,0 C856,300 866,600 858,800 C856,890 858,950 856,1000 L848,1000 C854,760 846,460 854,0 Z" style="fill:var(--bt-shaft,#E9D488)" opacity="0.28"/>
+    <!-- THE SHAFT: skewed polygon 26° from vertical, 8% gap, grain inside -->
+    <g filter="url(#cc-grain)">
+      <polygon points="748,-40 876,-40 700,1040 572,1040" fill="url(#cc-shaft)"/>
+      <polygon points="796,-40 836,-40 660,1040 620,1040" fill="url(#cc-core)" opacity="0.8"/>
+    </g>
+    <!-- floor pool where the shaft lands -->
+    <ellipse cx="648" cy="880" rx="220" ry="70" fill="url(#cc-pool)"/>
+    <!-- drifting flecks inside the light -->
+    <g style="fill:var(--bt-shaft,#E9D488)">
+      <circle cx="770" cy="220" r="2.6" opacity="0.65"/>
+      <circle cx="742" cy="340" r="1.8" opacity="0.5"/>
+      <circle cx="712" cy="470" r="2.2" opacity="0.6"/>
+      <circle cx="690" cy="580" r="1.6" opacity="0.45"/>
+      <circle cx="668" cy="700" r="2.8" opacity="0.7"/>
+      <circle cx="640" cy="790" r="2.0" opacity="0.55"/>
+      <circle cx="800" cy="420" r="1.5" opacity="0.4"/>
+      <circle cx="730" cy="150" r="1.7" opacity="0.5"/>
+      <circle cx="676" cy="860" r="2.4" opacity="0.6"/>
+      <circle cx="700" cy="90" r="1.4" opacity="0.35"/>
+    </g>
+    <!-- night floor: deepens toward the bottom (Division Two walks here) -->
+    <rect x="0" y="0" width="1600" height="1000" fill="url(#cc-night)"/>
+    <!-- vignette -->
+    <rect x="0" y="0" width="1600" height="1000" fill="none" stroke="#060805" stroke-width="60" opacity="0.5"/>
+  </symbol>
+</svg>

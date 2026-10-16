@@ -1,0 +1,79 @@
+{
+ "atoms": "Same 62+14 ids, all gs-b-*, self-contained in art/cohort-b.svg, flat fills only, round caps. Structural changes from v1: (1) gs-b-sunhigh DELETED (no overhead sun in Book One \u2014 G1). (2) Added gs-b-rakerays: elongated upward fan (10 lines, 70u strokes, shallow -35\u00b0 origin) for grand banners; gs-b-sparkline: triple-wave foam rail; gs-b-sunpath arcs for corner/epicurean compositions (plain two-endpoint curves, not full wedges); gs-b-herdband and gs-b-tidetwo repurposed as FULL-WIDTH 1200u bands for grand banners (span rule below). (3) G5 RETUNES (dusk #2A1540 removed from every B usage): gs-b-ancestor crescent sea-deep\u2192night hollow + foam ghost-rim only; gs-b-pyre halo = foam snapped arc (no dusk); gs-b-swordfire chimney = night mass + foam smoke; gs-b-lever shadow-hand = sea-deep silhouette + foam effort arcs; gs-b-land-lastwords\u2192gs-b-banner-lastwords palette dusk\u2192night/deep; gs-b-land-sleepwalker\u2192gs-b-banner-sleepwalker: dreamer on NIGHT ridge under morning rays, vermilion leapers kept, dusk dream-arcs become foam; moon-curve for p3c53/p3c33 stays night-fill-less (bare foam arc = hollow).",
+ "banner_composition_system": "CANVAS 1200\u00d7340 (grand 1200\u00d7380): sky rect sea-deep #04161d; low sun LEFT (cx\u2248300, cy\u2248200, r 64-72) with full upward gs-b-rayfan + gs-b-rakerays reaching right margin; content emblem RIGHT (cx 850-950) large; horizon line full-width y\u2248250; flat sea bands below (sea/wave/deep thirds); 1-3 gulls upper-right; 3-6 sparks; (grand) herdband/tide bands span full width. NO centered sun (GR4: centered sun + centered emblem = half-empty sides); NO inscription lines (GR5/B-has-no-landmarks). Alternate 4 banners (field/tablets/applefall/manacle): sun RIGHT, emblem LEFT \u2014 rhythm across the 14.",
+ "grand_banners": [
+  {
+   "comp": "ORIGINAL 1200x380. Sun low-left r72 + rakerays spanning full width; herd band FULL-WIDTH mid (9 humps across 1200u); tide strip full-width below; masks-pair small right-inside-sea; 4 gulls; 6 sparks; horizon y=280.",
+   "for": "p3c1",
+   "id": "gs-b-grand-herd",
+   "replaces": "gs-b-land-herd"
+  },
+  {
+   "comp": "ORIGINAL 1200x380. Tablets monumental RIGHT (x\u2248900, 320u tall); herd arc LOW full-width beneath; rakerays from low-left sun rake ACROSS the tablets (stern slant); iron = high foam contrast on deep; 2 sparks.",
+   "for": "p3c21",
+   "id": "gs-b-grand-tablets",
+   "replaces": "gs-b-land-tablets"
+  },
+  {
+   "comp": "ORIGINAL 1200x380. Branch upper-LEFT sweeping right; apples falling across FULL 1200u width (7 apples, staggered x); seeding apple bottom-center; dusk\u2192DEEP-sea bands (G5: autumn = vermilion apples + gold, no aubergine); 1 gull.",
+   "for": "p3c23",
+   "id": "gs-b-grand-applefall",
+   "replaces": "gs-b-panel-applefall"
+  }
+ ],
+ "motif_composition_system": "CANVAS 480\u00d7300 (fits \u226424rem): low sun one THIRD (left x\u2248140 r56, or right x\u2248340) + partial 5-ray fan; content emblem opposite third at 1.4-1.8\u00d7 scale; horizon + narrow sea base; 1 gull + 2 sparks upper. Both thirds occupied (GR4); min feature 4px at 384px render.",
+ "shoot_symbol_policy": "ALWAYS a composed 480\u00d7300 tableau symbol (gs-b-motif-<name>), NEVER the bare emblem id. Bare emblems are <g> building blocks (no viewBox); reader clones element-by-id and inherits file-root viewBox when the target lacks one \u2014 cloning a bare <g> would render the whole 1360-sheet coordinate space wrong. So every Shoot entry's symbol = its tableau (41 tableaux, listed in map sections as motif_asset).",
+ "std_banners": [
+  {
+   "emblem": "gs-b-wink \u00d71.5",
+   "for": "p3c3",
+   "id": "gs-b-banner-wink"
+  },
+  {
+   "emblem": "gs-b-field fills lower half to horizon",
+   "for": "p3c7",
+   "id": "gs-b-banner-field"
+  },
+  {
+   "emblem": "gs-b-hand-open large right + 2 equal-dots",
+   "for": "p3c13",
+   "id": "gs-b-banner-hand"
+  },
+  {
+   "emblem": "gs-b-hand-grasp over PALED bands + spark-triplet ideal-star",
+   "for": "p3c14",
+   "id": "gs-b-banner-grasp"
+  },
+  {
+   "emblem": "gs-b-manacle center on darkened bands; fan opacity .35; 1 guttering spark",
+   "for": "p3c48",
+   "id": "gs-b-banner-manacle"
+  },
+  {
+   "emblem": "curtain valance top full-width; bell large LEFT; torn slip RIGHT; low sun+fan behind; vermilion-forward",
+   "for": "p3c22",
+   "id": "gs-b-banner-court"
+  },
+  {
+   "emblem": "STRIPE composition: scales/strand/column/swordfire/flask/horizonpath/lawtablet motifs alternate as weather-stripes across the band behind low sun \u2014 the middle essays as a surveyed field. Sun low-left + fan; stripe emblems 120u each at .9 opacity; horizon + sea.",
+   "for": "p3c2/5/12/40/24",
+   "id": "gs-b-banner-stripe \u00d75"
+  },
+  {
+   "emblem": "mask-fall large LEFT mid-fall; laurel RIGHT; pillows heavy FULL-WIDTH bottom mass; low sun; dusk\u2192night",
+   "for": "p3c36",
+   "id": "gs-b-banner-lastwords"
+  },
+  {
+   "emblem": "whitesea bands (sun-core .85/.6/.4) + rocks + fish; calm eye CENTER over still surface; LOW sun + fan (morning altitude FIXED \u2014 v1 overhead sun deleted); 5 sparks like light on water",
+   "for": "p3c45",
+   "id": "gs-b-banner-epicurean"
+  },
+  {
+   "emblem": "ridge + dreamer CENTER crossing void; morning fan must-not-wake-to; 2 leapers margins; masks-pair tiny (no dead mask); 4 will-o-wisp sparks; dream-arcs foam (G5)",
+   "for": "p3c54",
+   "id": "gs-b-banner-sleepwalker"
+  }
+ ],
+ "width_note": "Every banner/motif composes FULL-WIDTH per supervisor instruction: no element floats centered with empty sides; sun-vs-emblem thirds always both occupied; sea/horizon always span edge-to-edge. Conformance deltas vs v1 recorded per chapter in map rationales."
+}

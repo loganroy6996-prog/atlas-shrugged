@@ -1,28 +1,785 @@
-/* Will to Power — crimson iron */
-:root, html[data-theme="dark"] {
-  --bg: #0c0808;
-  --bg-elevated: #160e0e;
-  --bg-soft: #1f1414;
-  --surface: #281818;
-  --border: rgba(225, 29, 72, 0.16);
-  --border-strong: rgba(225, 29, 72, 0.3);
-  --text: #fce8ec;
-  --text-muted: #c4909a;
-  --text-faint: #7a5058;
-  --accent: #e11d48;
-  --accent-soft: rgba(225, 29, 72, 0.12);
-  --accent-hover: #fb7185;
-  --copper: #9f1239;
-  --reader-max: 50rem;
+/* ==========================================================================
+   The Will to Power — THE BLACK NOTEBOOK (supervisor theme shell)
+   A posthumous archival object: ink-black paper, bone-white ink, one
+   sulphur-gold accent like a match struck in a dark room. Fragments are
+   exhibited as numbered evidence; per-part woodcut-gouge plates carry the
+   part inks (ring / shattered tablet / lens-eye / ladder).
+
+   Normative: design/ART-DIRECTION.md + design/book-identity.json +
+   READER-CONTRACT v1.1 + .omp/design/critiques/will-to-power.md (W1–W6).
+   REPLACES the rejected "forge press" baseline wholesale (crimson gradients,
+   rail rules, numeral badges, modulo tints, skew/opacity churn — all cut).
+
+   Cascade: UNLAYERED, always wins over @layer shared. Every rule is scoped
+   under body[data-book='will-to-power'] (+ [data-view]/[data-part-id]/
+   [data-chapter]/[data-art] hooks per contract §2). No reader-* classes
+   minted. No !important (print + reduced-motion guards excepted).
+   Cohort layers load AFTER this file: design/early.css (parts 1–2),
+   design/critique.css (part 3), design/knowledge.css + design/nature.css
+   (part 4), design/crown.css (part 5).
+   ========================================================================== */
+
+/* ---- 0. Identity tokens (book scope only) ---- */
+body[data-book='will-to-power'] {
+  --wtp-ink: #0b0a08;
+  --wtp-notebook: #14120e;
+  --wtp-vellum-deep: #1d1a14;
+  --wtp-bone: #ede4d3;
+  --wtp-ash: #a89c86;
+  --wtp-pencil: #6b6257;
+  /* Chrome lifts (R3 item 4): small text in Pencil/part-ink must clear 4.5:1
+     on Inkblack. Art inks below stay canonical for plates/borders; these
+     lifted twins are TEXT-ONLY. Pencil 4.70 · Gloom 5.30 · Blood 5.21 ·
+     Verdigris 5.20 · Heights 5.64. */
+  --wtp-pencil-chrome: #847a6e;
+  --wtp-gloom-chrome: #8a8098;
+  --wtp-blood-chrome: #c06a6e;
+  --wtp-verdi-chrome: #5e8c7b;
+  --wtp-heights-chrome: #6e8ca8;
+  --wtp-sulphur: #e3a82b;
+  --wtp-sulphur-deep: #9a6b1a;
+  --wtp-gloom: #5a4e6e;
+  --wtp-blood: #8e2f32;
+  --wtp-verdi: #4e7c6b;
+  --wtp-heights: #5b7a99;
+  --wtp-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --wtp-body: 'Newsreader', Georgia, 'Iowan Old Style', serif;
+  --wtp-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 }
-.cover-glow {
-  background: radial-gradient(ellipse, rgba(225, 29, 72, 0.18) 0%, rgba(159, 18, 57, 0.08) 40%, transparent 70%);
+
+/* ---- 1. Shared-token overrides: dark-first Black Notebook on every theme ----
+   Sulphur owns ALL interactive roles (progress/links/focus/selected states);
+   part inks stay content-only (validator check).
+   SCOPE (D2): html[data-theme] on the ROOT element — contract §8's stated
+   scoping. A body-descendant scope would hide these tokens from shared
+   applyPrefs, which reads --bg/--text off getComputedStyle(documentElement)
+   to paint the body wash; per-theme repaints would silently fail. */
+:root,
+html[data-theme='dark'] {
+  --bg: #0b0a08;
+  --bg-elevated: #14120e;
+  --bg-soft: #1d1a14;
+  --surface: #221e17;
+  --border: rgba(107, 98, 87, 0.35);
+  --border-strong: rgba(168, 156, 134, 0.55);
+  --text: #ede4d3;
+  --text-muted: #a89c86;
+  --text-faint: #6b6257;
+  --accent: #e3a82b;
+  --accent-soft: rgba(227, 168, 43, 0.12);
+  --accent-hover: #f0bc4a;
+  --copper: #9a6b1a;
+  --on-accent: #0b0a08;
+  --reader-max: 38rem;
+  --font-serif: 'Newsreader', Georgia, 'Iowan Old Style', serif;
+  --font-sans: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
 }
-.cover-grid {
-  background-image:
-    linear-gradient(rgba(225, 29, 72, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(225, 29, 72, 0.05) 1px, transparent 1px);
-  background-size: 56px 56px;
+html[data-theme='sepia'] {
+  --bg: #efe3cb;
+  --bg-elevated: #e6d7b8;
+  --bg-soft: #dcc99e;
+  --surface: #f7efdc;
+  --text: #241c10;
+  --text-muted: #5d4f36;
+  --text-faint: #857252;
+  --accent: #7d5715;
+  --accent-soft: rgba(154, 107, 26, 0.14);
+  --accent-hover: #6b4a12;
+  --copper: #6b4a12;
+  --on-accent: #f7efdc;
+  --border: rgba(93, 79, 54, 0.3);
+  --border-strong: rgba(93, 79, 54, 0.5);
+  /* D2b: remap the Black-Notebook identity tokens — every book surface
+     reads --wtp-* (never shared --text), so paper themes must re-ink them
+     or the page renders Bone-on-parchment (unreadable). All ≥4.5:1. */
+  --wtp-ink: #efe3cb;
+  --wtp-notebook: #e6d7b8;
+  --wtp-vellum-deep: #dcc99e;
+  --wtp-bone: #241c10;
+  --wtp-ash: #5d4f36;
+  --wtp-pencil: #857252;
+  --wtp-pencil-chrome: #5d4f36;
+  --wtp-gloom-chrome: #4a4258;
+  --wtp-blood-chrome: #7d282b;
+  --wtp-verdi-chrome: #33614f;
+  --wtp-heights-chrome: #3d5a76;
+  --wtp-sulphur: #7d5715;
+  --wtp-sulphur-deep: #6b4a12;
 }
-.title-line.accent { color: var(--accent); font-weight: 600; font-style: normal; }
-.progress-fill { background: linear-gradient(90deg, #9f1239, #e11d48); }
+html[data-theme='light'] {
+  --bg: #f6f1e6;
+  --bg-elevated: #fdfaf2;
+  --bg-soft: #ece4d2;
+  --surface: #ffffff;
+  --text: #221b10;
+  --text-muted: #5d5340;
+  --text-faint: #8a7f68;
+  --accent: #7d5715;
+  --accent-soft: rgba(154, 107, 26, 0.12);
+  --accent-hover: #6b4a12;
+  --copper: #6b4a12;
+  --on-accent: #ffffff;
+  --border: rgba(93, 83, 64, 0.25);
+  --border-strong: rgba(93, 83, 64, 0.45);
+  /* D2b: paper re-ink — see sepia note above. */
+  --wtp-ink: #f6f1e6;
+  --wtp-notebook: #fdfaf2;
+  --wtp-vellum-deep: #ece4d2;
+  --wtp-bone: #221b10;
+  --wtp-ash: #5d5340;
+  --wtp-pencil: #8a7f68;
+  --wtp-pencil-chrome: #5d5340;
+  --wtp-gloom-chrome: #4a4258;
+  --wtp-blood-chrome: #7d282b;
+  --wtp-verdi-chrome: #33614f;
+  --wtp-heights-chrome: #3d5a76;
+  --wtp-sulphur: #7d5715;
+  --wtp-sulphur-deep: #6b4a12;
+}
+html[data-theme='nocturne'] {
+  --bg: #0a0d14;
+  --bg-elevated: #11141d;
+  --bg-soft: #181c26;
+  --surface: #1e222c;
+  --text: #e3e0d2;
+  --text-muted: #a09c8c;
+  --text-faint: #66635a;
+  --accent: #e3a82b;
+  --accent-soft: rgba(227, 168, 43, 0.12);
+  --accent-hover: #f0bc4a;
+  --copper: #9a6b1a;
+  --on-accent: #0a0d14;
+  --border: rgba(102, 99, 90, 0.35);
+  --border-strong: rgba(160, 156, 140, 0.5);
+}
+html[data-theme='verdant'] {
+  --bg: #0b100c;
+  --bg-elevated: #121812;
+  --bg-soft: #1a2118;
+  --surface: #202820;
+  --text: #e6e4d2;
+  --text-muted: #a3a088;
+  --text-faint: #68665a;
+  --accent: #e3a82b;
+  --accent-soft: rgba(227, 168, 43, 0.12);
+  --accent-hover: #f0bc4a;
+  --copper: #9a6b1a;
+  --on-accent: #0b100c;
+  --border: rgba(104, 102, 90, 0.35);
+  --border-strong: rgba(163, 160, 136, 0.5);
+}
+html[data-theme='oxblood'] {
+  --bg: #120c09;
+  --bg-elevated: #1b1310;
+  --bg-soft: #241916;
+  --surface: #2a1f1a;
+  --text: #eee2cf;
+  --text-muted: #ab9b80;
+  --text-faint: #6e6252;
+  --accent: #e3a82b;
+  --accent-soft: rgba(227, 168, 43, 0.12);
+  --accent-hover: #f0bc4a;
+  --copper: #9a6b1a;
+  --on-accent: #120c09;
+  --border: rgba(110, 98, 82, 0.35);
+  --border-strong: rgba(171, 155, 128, 0.5);
+}
+html[data-theme='slate'] {
+  --bg: #0e1114;
+  --bg-elevated: #151a1f;
+  --bg-soft: #1d2329;
+  --surface: #232a31;
+  --text: #e4e1d4;
+  --text-muted: #a19d8e;
+  --text-faint: #67655c;
+  --accent: #e3a82b;
+  --accent-soft: rgba(227, 168, 43, 0.12);
+  --accent-hover: #f0bc4a;
+  --copper: #9a6b1a;
+  --on-accent: #0e1114;
+  --border: rgba(103, 101, 92, 0.35);
+  --border-strong: rgba(161, 157, 142, 0.5);
+}
+html[data-theme='candlelight'] {
+  --bg: #100c07;
+  --bg-elevated: #1a1410;
+  --bg-soft: #241c15;
+  --surface: #2a2219;
+  --text: #efe4d0;
+  --text-muted: #ac9c80;
+  --text-faint: #6f6351;
+  --accent: #e3a82b;
+  --accent-soft: rgba(227, 168, 43, 0.12);
+  --accent-hover: #f0bc4a;
+  --copper: #9a6b1a;
+  --on-accent: #100c07;
+  --border: rgba(111, 99, 81, 0.35);
+  --border-strong: rgba(172, 156, 128, 0.5);
+}
+
+/* ---- 2. Cover: archival plate — monumental title LEFT, gouge plate RIGHT ----
+   (ArtDirector Q3: asymmetric, plate LARGE — right 40% desktop, stacked above
+   title on phone. No gradient washes; depth from the plate + one vignette.) */
+body[data-book='will-to-power'][data-view='cover'] #cover {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  min-height: 100svh;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-bg {
+  display: none; /* the gouge plate replaces the shared glow/grid shell */
+}
+body[data-book='will-to-power'][data-view='cover'] #cover-art.plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40%;
+  order: 2;
+  margin: 0;
+  padding: 4rem 4rem 4rem 0;
+  max-width: none;
+  pointer-events: none;
+}
+body[data-book='will-to-power'][data-view='cover'] #cover-art.plate svg {
+  width: min(100%, 24rem);
+  height: auto;
+  max-height: 72svh;
+  margin: auto;
+}
+body[data-book='will-to-power'][data-view='cover'] #cover-art.plate figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-content {
+  flex: 1 1 60%;
+  order: 1;
+  margin: 0;
+  padding: 5rem 2rem 6rem clamp(1.5rem, 7vw, 7rem);
+  max-width: 56rem;
+  text-align: left;
+  align-self: center;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-eyebrow {
+  font-family: var(--wtp-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--wtp-ash);
+  margin: 0 0 2rem;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-eyebrow::before,
+body[data-book='will-to-power'][data-view='cover'] .cover-eyebrow::after {
+  content: none; /* archival label, not a fleuron sandwich */
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-title {
+  font-family: var(--wtp-display);
+  font-weight: 900;
+  font-variation-settings: 'opsz' 144;
+  font-size: clamp(3.5rem, 11vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--wtp-bone);
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-title .title-line {
+  display: block;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-title .title-line.accent {
+  color: var(--wtp-bone); /* no single-accent word; the rule carries Sulphur */
+  font-style: normal;
+  text-shadow: none;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-rule {
+  justify-content: flex-start;
+  margin: 2.2rem 0 0;
+  width: min(16rem, 70%);
+  height: 2px;
+  background: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'][data-view='cover'] .rule-diamond {
+  display: none; /* match-strike rule, not a glowing diamond */
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-author {
+  font-family: var(--wtp-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--wtp-ash);
+  margin: 1.6rem 0 0;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-quote {
+  font-family: var(--wtp-body);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--wtp-ash);
+  margin: 1.4rem 0 0;
+  max-width: 30rem;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-quote::after {
+  content: none;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-actions {
+  justify-content: flex-start;
+  margin-top: 2.8rem;
+}
+body[data-book='will-to-power'][data-view='cover'] .btn {
+  font-family: var(--wtp-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 1rem 1.6rem;
+}
+body[data-book='will-to-power'][data-view='cover'] .btn-primary {
+  background: var(--wtp-sulphur);
+  border-color: var(--wtp-sulphur);
+  color: #0b0a08;
+}
+body[data-book='will-to-power'][data-view='cover'] .btn-primary:hover {
+  background: var(--wtp-sulphur-deep);
+  border-color: var(--wtp-sulphur-deep);
+  color: var(--wtp-bone);
+}
+body[data-book='will-to-power'][data-view='cover'] .btn-ghost {
+  border-color: var(--wtp-pencil);
+  color: var(--wtp-ash);
+}
+body[data-book='will-to-power'][data-view='cover'] .btn-ghost:hover {
+  border-color: var(--wtp-sulphur);
+  color: var(--wtp-sulphur);
+  background: transparent;
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-continue .link-btn {
+  font-family: var(--wtp-mono);
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-resume-detail {
+  font-family: var(--wtp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--wtp-ash);
+}
+body[data-book='will-to-power'][data-view='cover'] .cover-footer {
+  font-family: var(--wtp-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--wtp-pencil-chrome);
+}
+/* The one orchestrated motion: cover plate draws in (≤900ms). */
+@keyframes wtp-cover-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+body[data-book='will-to-power'][data-view='cover'] #cover-art.plate svg {
+  animation: wtp-cover-in 0.9s ease-out both;
+}
+
+/* ---- 3. Reading body: the shared calm system (cohorts refine per part) ----
+   Newsreader Bone on Inkblack; no art behind prose; no per-paragraph color. */
+body[data-book='will-to-power'][data-view='reader'] #chapter-text {
+  font-family: var(--wtp-body);
+  font-size: 1.0875rem;
+  line-height: 1.7;
+  color: var(--wtp-bone);
+  background: transparent;
+}
+/* D3: honor the shared Serif/Sans typeface toggle (accessibility/ereader
+   feel). A real sans stack — never Plex Mono as reading prose. */
+html[data-font='sans'] body[data-book='will-to-power'][data-view='reader'] #chapter-text {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+/* D2c: paper themes re-ink the SHELL + COHORT prose/chrome tokens too.
+   (a) §0 defines --wtp-bone/--wtp-ash ON BODY, which blocks inheritance of
+   the §1 html-level paper values — so the shell tokens are re-declared here
+   at higher specificity (this is the D2c cover-title fix: cover/TOC/nav
+   chrome follows the paper wash). (b) Cohort layers pin prose to
+   --cri-bone/--crown-bone/etc. (never shared --text). (c) Dark-chrome twins
+   fail on paper (all ≤3.9:1), so they map to paper-ink twins (all ≥4.5:1;
+   --wtp-ash doubles as the Pencil-chrome). Plate SVG fills and part-ink ART
+   tokens stay canonical (gouge plates stay dark); --wtp-early-violet is
+   unused by early.css (verified) and needs no twin. */
+html[data-theme='sepia'] body[data-book='will-to-power'],
+html[data-theme='light'] body[data-book='will-to-power'] {
+  --wtp-ink: #efe3cb;
+  --wtp-notebook: #e6d7b8;
+  --wtp-vellum-deep: #dcc99e;
+  --wtp-bone: #241c10;
+  --wtp-ash: #5d4f36;
+  --wtp-pencil: #857252;
+  --wtp-pencil-chrome: #5d4f36;
+  --wtp-gloom-chrome: #4a4258;
+  --wtp-blood-chrome: #7d282b;
+  --wtp-verdi-chrome: #33614f;
+  --wtp-heights-chrome: #3d5a76;
+  --wtp-sulphur: #7d5715;
+  --wtp-early-bone: #241c10;
+  --wtp-early-ash: #5d4f36;
+  --wtp-early-ink: #efe3cb;
+  --wtp-early-pencil: #857252;
+  --wtp-early-sulphur: #7d5715;
+  --cri-bone: #241c10;
+  --cri-ash: #5d4f36;
+  --cri-note: #e6d7b8;
+  --cri-vellum: #dcc99e;
+  --cri-sulphur: #7d5715;
+  --cri-pencil-chrome: #5d4f36;
+  --cri-blood-chrome: #7d282b;
+  --know-bone: #241c10;
+  --know-ash: #5d4f36;
+  --know-notebook: #e6d7b8;
+  --know-vellum: #dcc99e;
+  --know-sulphur: #7d5715;
+  --know-pencil-chrome: #5d4f36;
+  --know-verdigris-chrome: #33614f;
+  --nat-bone: #241c10;
+  --nat-ash: #5d4f36;
+  --nat-note: #e6d7b8;
+  --nat-vellum: #dcc99e;
+  --nat-sulphur: #7d5715;
+  --nat-pencil-chrome: #5d4f36;
+  --nat-verdigris-chrome: #33614f;
+  --crown-bone: #241c10;
+  --crown-ash: #5d4f36;
+  --crown-note: #e6d7b8;
+  --crown-vellum: #dcc99e;
+  --crown-sulphur: #7d5715;
+  --crown-pencil-chrome: #5d4f36;
+  --crown-heights-chrome: #3d5a76;
+}
+body[data-book='will-to-power'][data-view='reader'] #chapter-text > p {
+  max-width: min(var(--reader-max), 68ch);
+}
+/* Translator edition numerals (201 inline "NNN." markers): superscript Plex
+   Mono Ash — handled by book.js wrapping; styled here at shell level so all
+   five cohorts share one apparatus treatment. */
+body[data-book='will-to-power'] .wtp-ednum {
+  font-family: var(--wtp-mono);
+  font-size: 0.72em;
+  vertical-align: super;
+  line-height: 0;
+  letter-spacing: 0.02em;
+  color: var(--wtp-ash);
+}
+/* Drop cap: Fraunces 900 Bone (cohorts may narrow per part grammar). */
+body[data-book='will-to-power'] #chapter-text > p:first-of-type:not(.no-drop)::first-letter {
+  font-family: var(--wtp-display);
+  font-weight: 900;
+  font-variation-settings: 'opsz' 144;
+  color: var(--wtp-bone);
+  background: none;
+  text-shadow: none;
+}
+/* Chapter-end marks: per-part authored seals (benchmark §8). Early cohort
+   ships url() data-seals for parts 0–I; this shell sets the shared default
+   OFF so cohort seals own the ending — never the generic fleuron. */
+body[data-book='will-to-power'] #chapter-text > p:last-child::after {
+  content: none;
+}
+/* The shared opener fleuron + number diamonds are replaced by cohort rules. */
+body[data-book='will-to-power'] .chapter-meta::after {
+  content: none;
+}
+body[data-book='will-to-power'] .meta-number::before,
+body[data-book='will-to-power'] .meta-number::after {
+  content: none;
+}
+/* Blockquotes: pencil edge, vellum-deep well (Book II cohorts override). */
+body[data-book='will-to-power'] #chapter-text blockquote {
+  border-left: 2px solid var(--wtp-pencil);
+  background: var(--wtp-vellum-deep);
+  color: var(--wtp-bone);
+  font-style: italic;
+  padding: 1rem 1.4rem;
+  margin: 1.6em auto;
+  max-width: min(var(--reader-max), 68ch);
+}
+/* NB. margin-cries: shell fallback (Sulphur bar + mono marker) for cohorts
+   whose CSS layers load — cohort files refine per part ink. Primary hook is
+   the frozen shared p.reader-nb (contract §7). */
+body[data-book='will-to-power'] #chapter-text > p.reader-nb {
+  border-left: 2px solid var(--wtp-sulphur);
+  padding-left: 1.1rem;
+}
+
+/* ---- 4. Header / progress: mono apparatus, Sulphur position segment ---- */
+body[data-book='will-to-power'] .reader-header {
+  background: color-mix(in srgb, var(--wtp-notebook) 92%, transparent);
+  border-bottom: 1px solid var(--wtp-pencil);
+}
+body[data-book='will-to-power'] .header-part,
+body[data-book='will-to-power'] .header-chapter {
+  font-family: var(--wtp-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+body[data-book='will-to-power'] .header-part {
+  color: var(--wtp-ash);
+  font-size: 0.62rem;
+}
+body[data-book='will-to-power'] .header-chapter {
+  font-family: var(--wtp-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--wtp-bone);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body[data-book='will-to-power'] .progress-track {
+  height: 3px;
+  background: var(--wtp-vellum-deep);
+}
+body[data-book='will-to-power'] #progress-fill {
+  background: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] .icon-btn {
+  color: var(--wtp-ash);
+}
+body[data-book='will-to-power'] .icon-btn:hover {
+  color: var(--wtp-sulphur);
+}
+
+/* ---- 5. TOC drawer: book plates, part inks, Sulphur current-marker ----
+   Part headers: Fraunces 900 roman numeral + mono subtitle, whitespace-
+   separated (book.js annotates .toc-part[data-part-id] + numerals). */
+body[data-book='will-to-power'] .drawer-panel {
+  background: var(--wtp-notebook);
+  border-right: 1px solid var(--wtp-pencil);
+}
+body[data-book='will-to-power'] .drawer-eyebrow {
+  font-family: var(--wtp-mono);
+  letter-spacing: 0.26em;
+  color: var(--wtp-pencil-chrome);
+}
+body[data-book='will-to-power'] .drawer-header h2 {
+  font-family: var(--wtp-display);
+  font-weight: 900;
+  color: var(--wtp-bone);
+}
+body[data-book='will-to-power'] .toc-tools {
+  background: var(--wtp-notebook);
+  border-bottom-color: var(--wtp-pencil);
+}
+body[data-book='will-to-power'] .toc-search {
+  font-family: var(--wtp-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  background: var(--wtp-vellum-deep);
+  border-color: var(--wtp-pencil);
+  color: var(--wtp-bone);
+  caret-color: var(--wtp-sulphur);
+  border-radius: 0;
+}
+body[data-book='will-to-power'] .toc-search::placeholder {
+  color: var(--wtp-pencil-chrome);
+  letter-spacing: 0.12em;
+}
+body[data-book='will-to-power'] .toc-progress {
+  font-family: var(--wtp-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] .toc-part {
+  margin-bottom: 2.5rem;
+}
+body[data-book='will-to-power'] .toc-part-header {
+  font-family: var(--wtp-display);
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--wtp-bone);
+  padding: 1.5rem 1.25rem 0.2rem;
+}
+body[data-book='will-to-power'] .toc-part-header .toc-part-sub {
+  border-top: none;
+  font-family: var(--wtp-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--wtp-ash);
+  margin-top: 0.6rem;
+  padding-top: 0;
+}
+/* Part-ink numerals per annotated part (book.js sets data-part-id). */
+body[data-book='will-to-power'] .toc-part[data-part-id='part-1'] .toc-num { color: var(--wtp-pencil-chrome); }
+body[data-book='will-to-power'] .toc-part[data-part-id='part-2'] .toc-num { color: var(--wtp-gloom-chrome); }
+body[data-book='will-to-power'] .toc-part[data-part-id='part-3'] .toc-num { color: var(--wtp-blood-chrome); }
+body[data-book='will-to-power'] .toc-part[data-part-id='part-4'] .toc-num { color: var(--wtp-verdi-chrome); }
+body[data-book='will-to-power'] .toc-part[data-part-id='part-5'] .toc-num { color: var(--wtp-heights-chrome); }
+body[data-book='will-to-power'] .toc-chapter {
+  border-bottom: none;
+  padding: 0.55rem 1.25rem;
+}
+body[data-book='will-to-power'] .toc-num {
+  font-family: var(--wtp-mono);
+  font-size: 0.72rem;
+  min-width: 2.6rem;
+}
+body[data-book='will-to-power'] .toc-name {
+  font-family: var(--wtp-body);
+  font-size: 1rem;
+  color: var(--wtp-bone);
+}
+body[data-book='will-to-power'] .toc-sub {
+  font-family: var(--wtp-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--wtp-pencil-chrome);
+}
+body[data-book='will-to-power'] .toc-chapter:hover {
+  background: rgba(227, 168, 43, 0.07);
+}
+body[data-book='will-to-power'] .toc-chapter.active {
+  background: rgba(227, 168, 43, 0.1);
+  border-left-color: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] .toc-chapter.active .toc-num {
+  color: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] .toc-check {
+  border-color: var(--wtp-pencil);
+}
+body[data-book='will-to-power'] .toc-chapter.read .toc-check {
+  background: var(--wtp-sulphur);
+  border-color: var(--wtp-sulphur);
+  color: #0b0a08;
+}
+
+/* ---- 6. Nav / settings: Sulphur owns every interactive role ---- */
+body[data-book='will-to-power'] .chapter-nav .nav-btn {
+  background: var(--wtp-notebook);
+  border: 1px solid var(--wtp-pencil);
+  border-radius: 0;
+}
+body[data-book='will-to-power'] .chapter-nav .nav-btn:hover:not(:disabled) {
+  border-color: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] .chapter-nav .nav-label {
+  font-family: var(--wtp-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.24em;
+  color: var(--wtp-pencil-chrome);
+}
+/* R3 item 4: the shared reading-time line inherits --text-faint (Pencil
+   3.31:1) wherever cohorts don't override it (parts III–V) — lift the floor
+   to Ash (7.32:1) book-wide. */
+body[data-book='will-to-power'] #chapter-meta .meta-sub {
+  color: var(--wtp-ash);
+}
+body[data-book='will-to-power'] .chapter-nav .nav-title {
+  font-family: var(--wtp-body);
+  font-size: 1.05rem;
+  color: var(--wtp-bone);
+}
+body[data-book='will-to-power'] .chapter-nav .nav-btn.prev {
+  border-left: 1px solid var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] .chapter-nav .nav-btn.next:not(:disabled) {
+  border-right: 1px solid var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] .settings-card {
+  background: var(--wtp-notebook);
+  border-color: var(--wtp-pencil);
+  border-radius: 0;
+}
+body[data-book='will-to-power'] .settings-header h3 {
+  font-family: var(--wtp-display);
+  font-weight: 700;
+  color: var(--wtp-bone);
+}
+body[data-book='will-to-power'] .settings-row > span {
+  font-family: var(--wtp-mono);
+  letter-spacing: 0.2em;
+  color: var(--wtp-ash);
+}
+body[data-book='will-to-power'] .seg-btn {
+  font-family: var(--wtp-mono);
+  border-radius: 0;
+}
+body[data-book='will-to-power'] .seg-btn.active {
+  background: var(--wtp-sulphur);
+  color: #0b0a08;
+}
+body[data-book='will-to-power'] .seg-theme-btn.active {
+  border-color: var(--wtp-sulphur);
+}
+body[data-book='will-to-power'] :focus-visible {
+  outline: 2px solid var(--wtp-sulphur);
+  outline-offset: 3px;
+}
+body[data-book='will-to-power'] .loading-spinner {
+  border-color: var(--wtp-pencil);
+  border-top-color: var(--wtp-sulphur);
+}
+
+/* ---- 7. Responsive: plate stacks ABOVE title on phone (Q3) ---- */
+@media (max-width: 820px) {
+  body[data-book='will-to-power'][data-view='cover'] #cover {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body[data-book='will-to-power'][data-view='cover'] #cover-art.plate {
+    order: 0;
+    flex: none;
+    padding: 4rem 1.5rem 0;
+  }
+  body[data-book='will-to-power'][data-view='cover'] #cover-art.plate svg {
+    width: min(100%, 20rem);
+    max-height: 44svh;
+  }
+  body[data-book='will-to-power'][data-view='cover'] .cover-content {
+    padding: 2.5rem 1.5rem 6rem;
+    text-align: center;
+  }
+  body[data-book='will-to-power'][data-view='cover'] .cover-rule {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body[data-book='will-to-power'][data-view='cover'] .cover-actions {
+    justify-content: center;
+  }
+  body[data-book='will-to-power'][data-view='cover'] .cover-quote {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 560px) {
+  body[data-book='will-to-power'][data-view='reader'] #chapter-text {
+    font-size: 1.0625rem;
+  }
+  body[data-book='will-to-power'] .toc-part-header {
+    font-size: 1.6rem;
+  }
+}
+
+/* ---- 8. Reduced motion + print ---- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book='will-to-power'][data-view='cover'] #cover-art.plate svg {
+    animation: none;
+  }
+}
+@media print {
+  body[data-book='will-to-power'][data-view='cover'] #cover-art.plate svg {
+    animation: none;
+  }
+  body[data-book='will-to-power'] #chapter-text > p.reader-nb {
+    border-left: 1px solid #000;
+  }
+}

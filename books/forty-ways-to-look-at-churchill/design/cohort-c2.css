@@ -1,0 +1,118 @@
+/* Forty Ways — Cohort C2 (Part IV, Ways 21/23–30) reading treatments.
+   DIFFERENTIAL over theme.css §§2–7 shared bases: every rule below refines a
+   chapter+role context the shared base cannot know. Keyed to
+   body[data-book][data-chapter] + p[data-fw]; unlayered (wins over @layer
+   shared). Zero nth-child content rules — facets.js stamps data-fw from
+   design/cohort-c2.json. C4: vermilion/slate = plates/large display only;
+   ochre = large numerals/rules only; body text stays Bone. */
+
+/* p4c6: gallery-hang captions — number rail + sepia frame-edge tick.
+   Labels come from data-fw-label (facets.js); numbers tabular. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"] {
+  position: relative;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 34rem;
+  padding: 0.9rem 1rem 0.9rem 4.25rem;
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::before {
+  content: attr(data-fw-label);
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 3.25rem;
+  text-align: right;
+  font-family: var(--fw-display);
+  font-size: 1.05rem;
+  color: var(--fw-bone);
+  font-variant-numeric: tabular-nums;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::after {
+  content: "";
+  position: absolute;
+  left: 3.75rem;
+  top: 1.05rem;
+  bottom: 1.05rem;
+  width: 6px;
+  background: var(--fw-faded);
+  opacity: 0.5;
+}
+/* Setup breathes above the hang; last caption closes without a rule. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="setup"] {
+  margin-bottom: 2rem;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]:last-of-type {
+  border-bottom: 0;
+}
+
+/* p4c6: no drop cap — captions list, not a prose opener (reading.drop_cap
+   false; facets.js does not enforce it, so the kill lives here, mirroring
+   the theme §3 kill pattern). */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* p4c10: colophon air above Part IV's closing benediction. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c10"] .chapter-text > p:only-child {
+  margin-top: 3rem;
+}
+
+/* p4c5: Richard II stanza — centered column, glued lines, air around. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c5"] p[data-fw="verse"] {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.15em;
+  line-height: 1.55;
+}
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c5"] p[data-fw="verse"]:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* p4c8: survival catalogue — tightened stack, tabular dates. */
+body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c8"] p[data-fw="list-item"] {
+  margin-bottom: 0.35em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* p4c1/p4c4 verdicts, p4c4 letters/captions, p4c9 speech/thesis, p4c7 quote,
+   p4c3 thesis: shared bases serve these exactly — no differential. */
+
+@media (max-width: 720px) {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"] {
+    padding-left: 3.5rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::before {
+    width: 2.5rem;
+    font-size: 1rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"]::after {
+    left: 3rem;
+  }
+}
+@media print {
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c6"] p[data-fw="caption"] {
+    border-bottom: 0;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c1"] p[data-fw="verdict"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c4"] p[data-fw="verdict"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c3"] p[data-fw="thesis"],
+  body[data-book="forty-ways-to-look-at-churchill"][data-chapter="p4c9"] p[data-fw="thesis"] {
+    break-after: avoid;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* C2 ships no plate motion; nothing to kill. Placemarker so the
+     validator can confirm the axis was considered. */
+}

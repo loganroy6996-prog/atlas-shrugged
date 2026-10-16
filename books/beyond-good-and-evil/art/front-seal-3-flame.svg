@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Flame seal: a flame burning in a round arch niche">
+  <title>Flame-in-arch seal — Chapter III</title>
+  <symbol id="seal-3-flame" viewBox="0 0 240 240">
+  <g class="seal-ring">
+    <circle cx="120" cy="120" r="115" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="120" cy="120" r="108" fill="none" stroke="currentColor" stroke-width="0.75"/>
+    <path d="M120.0,22.5L120.0,14.5M130.5,20.5L130.9,16.6M140.8,22.2L141.6,18.3M150.9,24.9L152.1,21.1M160.7,28.6L162.3,25.0M168.8,35.6L172.8,28.6M178.8,39.1L181.1,35.9M186.9,45.7L189.6,42.7M194.3,53.1L197.3,50.4M200.9,61.2L204.1,58.9M204.4,71.2L211.4,67.2M211.4,79.3L215.0,77.7M215.1,89.1L218.9,87.9M217.8,99.2L221.7,98.4M219.5,109.5L223.4,109.1M217.5,120.0L225.5,120.0M219.5,130.5L223.4,130.9M217.8,140.8L221.7,141.6M215.1,150.9L218.9,152.1M211.4,160.7L215.0,162.3M204.4,168.8L211.4,172.8M200.9,178.8L204.1,181.1M194.3,186.9L197.3,189.6M186.9,194.3L189.6,197.3M178.8,200.9L181.1,204.1M168.8,204.4L172.8,211.4M160.7,211.4L162.3,215.0M150.9,215.1L152.1,218.9M140.8,217.8L141.6,221.7M130.5,219.5L130.9,223.4M120.0,217.5L120.0,225.5M109.5,219.5L109.1,223.4M99.2,217.8L98.4,221.7M89.1,215.1L87.9,218.9M79.3,211.4L77.7,215.0M71.3,204.4L67.3,211.4M61.2,200.9L58.9,204.1M53.1,194.3L50.4,197.3M45.7,186.9L42.7,189.6M39.1,178.8L35.9,181.1M35.6,168.8L28.6,172.8M28.6,160.7L25.0,162.3M24.9,150.9L21.1,152.1M22.2,140.8L18.3,141.6M20.5,130.5L16.6,130.9M22.5,120.0L14.5,120.0M20.5,109.5L16.6,109.1M22.2,99.2L18.3,98.4M24.9,89.1L21.1,87.9M28.6,79.3L25.0,77.7M35.6,71.2L28.6,67.2M39.1,61.2L35.9,58.9M45.7,53.1L42.7,50.4M53.1,45.7L50.4,42.7M61.2,39.1L58.9,35.9M71.2,35.6L67.2,28.6M79.3,28.6L77.7,25.0M89.1,24.9L87.9,21.1M99.2,22.2L98.4,18.3M109.5,20.5L109.1,16.6" fill="none" stroke="currentColor" stroke-width="1"/>
+    <circle cx="120" cy="120" r="93" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="0.1 5.2" opacity="0.8"/>
+  </g>
+  <circle cx="120" cy="120" r="86" fill="none" stroke="currentColor" stroke-width="0.75" opacity="0.65"/>
+    <g id="flame" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M70,190 L70,112 A50,50 0 0 1 170,112 L170,190" stroke-width="1.5"/>
+      <path d="M79,190 L79,114 A41,41 0 0 1 161,114 L161,190" stroke-width="0.75" opacity="0.8"/>
+      <line x1="62" y1="190" x2="178" y2="190" stroke-width="1.2"/>
+      <line x1="70" y1="194" x2="170" y2="194" stroke-width="0.75" opacity="0.7"/>
+      <g stroke-width="0.9" opacity="0.85">
+        <path d="M70,112 L62,108 M170,112 L178,108 M84.6,76.6 L79,71 M155.4,76.6 L161,71 M120,62 L120,54"/>
+      </g>
+      <path d="M120,168 C104,152 100,138 106,124 C109,116 114,112 113,102 C112,94 116,88 120,80 C124,90 122,96 126,102 C132,110 138,118 136,132 C134,150 130,160 120,168 Z" stroke-width="1.25"/>
+      <path d="M120,162 C110,150 109,140 113,130 C116,124 119,122 120,114 C122,122 125,126 128,132 C131,140 129,152 120,162 Z" stroke-width="0.9"/>
+      <line x1="108" y1="170" x2="132" y2="170" stroke-width="1.5"/>
+      <g stroke-width="0.8" opacity="0.7">
+        <path d="M108,72 C106,64 110,58 108,50 M120,68 C122,60 118,54 120,46 M132,72 C134,64 130,58 132,50"/>
+      <path d="M116,46 L120,39 L124,46" fill="none" stroke="currentColor" stroke-width="0.9"/>
+      </g>
+      <g fill="currentColor" stroke="none" opacity="0.85">
+        <circle cx="108" cy="175" r="1.3"/><circle cx="120" cy="178" r="1.5"/><circle cx="132" cy="175" r="1.3"/>
+        <circle cx="92" cy="150" r="1"/><circle cx="148" cy="150" r="1"/><circle cx="96" cy="170" r="1"/>
+        <circle cx="144" cy="170" r="1"/><circle cx="104" cy="60" r="1"/><circle cx="136" cy="60" r="1"/>
+      </g>
+    </g>
+  </symbol>
+</svg>

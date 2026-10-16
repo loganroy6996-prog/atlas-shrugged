@@ -1,0 +1,255 @@
+/* The Gay Science — NOON identity tokens (Direction A).
+   Designer: SupGayScience-2.GsIdentityDesigner. Status: PROPOSED, pending
+   ArtDirector critique (requested 2026-10-15); supervisor merges into theme.css.
+   If merged: copy these blocks into books/gay-science/theme.css verbatim.
+   Reader contract vars (--bg … --on-accent, --reader-max) + --gs-* art vars.
+   All 8 concrete reader themes covered. Dark-first; light themes keep the
+   same sun/sea grammar with deepened ink values for contrast. */
+
+:root, html[data-theme="dark"] {
+  --bg: #06222b;
+  --bg-elevated: #0a2c36;
+  --bg-soft: #0d333e;
+  --surface: #123e49;
+  --border: rgba(245, 179, 1, 0.16);
+  --border-strong: rgba(245, 179, 1, 0.34);
+  --text: #f3ead8;
+  --text-muted: #cdbfa4;
+  --text-faint: #8f8471;
+  --accent: #f5b301;
+  --accent-soft: rgba(245, 179, 1, 0.12);
+  --accent-hover: #ffc93c;
+  --copper: #e4572e;
+  --on-accent: #06222b;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #f5b301;
+  --gs-sun-core: #ffedbe;
+  --gs-ray: rgba(245, 179, 1, 0.5);
+  --gs-sea-deep: #04161d;
+  --gs-sea: #0b3542;
+  --gs-wave: #173a8f;
+  --gs-vermilion: #e4572e;
+  --gs-foam: #f3ead8;
+  --gs-dusk: #2a1540;
+  --gs-night: #030b0f;
+  --gs-horizon: rgba(243, 234, 216, 0.35);
+}
+
+html[data-theme="sepia"] {
+  --bg: #f1e7d2;
+  --bg-elevated: #eae0c6;
+  --bg-soft: #e2d5b8;
+  --surface: #dccfac;
+  --border: rgba(138, 90, 0, 0.22);
+  --border-strong: rgba(138, 90, 0, 0.38);
+  --text: #2a2113;
+  --text-muted: #6b5a3d;
+  --text-faint: #8f7d5c;
+  --accent: #8a5a00;
+  --accent-soft: rgba(138, 90, 0, 0.12);
+  --accent-hover: #6e4700;
+  --copper: #b23a1f;
+  --on-accent: #fff8e8;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #e79b00;
+  --gs-sun-core: #fff3d0;
+  --gs-ray: rgba(180, 120, 0, 0.5);
+  --gs-sea-deep: #0e3a46;
+  --gs-sea: #155263;
+  --gs-wave: #173a8f;
+  --gs-vermilion: #c74324;
+  --gs-foam: #3a2f1b;
+  --gs-dusk: #6b4a8f;
+  --gs-night: #1a2b33;
+  --gs-horizon: rgba(42, 33, 19, 0.4);
+}
+
+html[data-theme="light"] {
+  --bg: #faf6ec;
+  --bg-elevated: #ffffff;
+  --bg-soft: #f0eada;
+  --surface: #ffffff;
+  --border: rgba(138, 90, 0, 0.18);
+  --border-strong: rgba(138, 90, 0, 0.34);
+  --text: #1c2a30;
+  --text-muted: #55636a;
+  --text-faint: #8b979c;
+  --accent: #8a5a00;
+  --accent-soft: rgba(138, 90, 0, 0.1);
+  --accent-hover: #6e4700;
+  --copper: #b23a1f;
+  --on-accent: #ffffff;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #e79b00;
+  --gs-sun-core: #fff3d0;
+  --gs-ray: rgba(180, 120, 0, 0.45);
+  --gs-sea-deep: #0e4a5c;
+  --gs-sea: #12617a;
+  --gs-wave: #1d4ed8;
+  --gs-vermilion: #c74324;
+  --gs-foam: #23414d;
+  --gs-dusk: #6b4a8f;
+  --gs-night: #26414d;
+  --gs-horizon: rgba(28, 42, 48, 0.4);
+}
+
+html[data-theme="nocturne"] {
+  --bg: #070d1d;
+  --bg-elevated: #0c1428;
+  --bg-soft: #111a33;
+  --surface: #16203a;
+  --border: rgba(255, 201, 60, 0.16);
+  --border-strong: rgba(255, 201, 60, 0.32);
+  --text: #e3e9f7;
+  --text-muted: #a9b6d3;
+  --text-faint: #646f8c;
+  --accent: #ffc93c;
+  --accent-soft: rgba(255, 201, 60, 0.12);
+  --accent-hover: #ffe08a;
+  --copper: #e4572e;
+  --on-accent: #0c1428;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #ffc93c;
+  --gs-sun-core: #fff6dc;
+  --gs-ray: rgba(255, 201, 60, 0.5);
+  --gs-sea-deep: #040814;
+  --gs-sea: #0b1b3a;
+  --gs-wave: #27408b;
+  --gs-vermilion: #e4572e;
+  --gs-foam: #e3e9f7;
+  --gs-dusk: #3a2060;
+  --gs-night: #02040c;
+  --gs-horizon: rgba(227, 233, 247, 0.35);
+}
+
+html[data-theme="verdant"] {
+  --bg: #08130d;
+  --bg-elevated: #0d1f14;
+  --bg-soft: #122819;
+  --surface: #182f1f;
+  --border: rgba(245, 179, 1, 0.16);
+  --border-strong: rgba(245, 179, 1, 0.32);
+  --text: #edf4df;
+  --text-muted: #b3c69a;
+  --text-faint: #6f7f60;
+  --accent: #f5b301;
+  --accent-soft: rgba(245, 179, 1, 0.12);
+  --accent-hover: #ffc93c;
+  --copper: #e4572e;
+  --on-accent: #0d1f14;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #f5b301;
+  --gs-sun-core: #ffedbe;
+  --gs-ray: rgba(245, 179, 1, 0.5);
+  --gs-sea-deep: #04100a;
+  --gs-sea: #0c2b22;
+  --gs-wave: #1e5c46;
+  --gs-vermilion: #e4572e;
+  --gs-foam: #edf4df;
+  --gs-dusk: #2a1540;
+  --gs-night: #020a06;
+  --gs-horizon: rgba(237, 244, 223, 0.35);
+}
+
+html[data-theme="oxblood"] {
+  --bg: #140c0b;
+  --bg-elevated: #201211;
+  --bg-soft: #291715;
+  --surface: #2f1b18;
+  --border: rgba(255, 184, 77, 0.16);
+  --border-strong: rgba(255, 184, 77, 0.32);
+  --text: #f4e7d3;
+  --text-muted: #c6a78b;
+  --text-faint: #7f6a52;
+  --accent: #ffb84d;
+  --accent-soft: rgba(255, 184, 77, 0.12);
+  --accent-hover: #ffd08a;
+  --copper: #e4572e;
+  --on-accent: #201211;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #ffb84d;
+  --gs-sun-core: #ffedd2;
+  --gs-ray: rgba(255, 184, 77, 0.5);
+  --gs-sea-deep: #0e0706;
+  --gs-sea: #2a130e;
+  --gs-wave: #7a2e1d;
+  --gs-vermilion: #f0653a;
+  --gs-foam: #f4e7d3;
+  --gs-dusk: #2a1540;
+  --gs-night: #0a0403;
+  --gs-horizon: rgba(244, 231, 211, 0.35);
+}
+
+html[data-theme="slate"] {
+  --bg: #0e141a;
+  --bg-elevated: #161e26;
+  --bg-soft: #1c262f;
+  --surface: #222e38;
+  --border: rgba(255, 201, 60, 0.16);
+  --border-strong: rgba(255, 201, 60, 0.32);
+  --text: #e2e9ef;
+  --text-muted: #a3b3be;
+  --text-faint: #67788a;
+  --accent: #ffc93c;
+  --accent-soft: rgba(255, 201, 60, 0.12);
+  --accent-hover: #ffe08a;
+  --copper: #e4572e;
+  --on-accent: #161e26;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #ffc93c;
+  --gs-sun-core: #fff6dc;
+  --gs-ray: rgba(255, 201, 60, 0.5);
+  --gs-sea-deep: #080d12;
+  --gs-sea: #14303e;
+  --gs-wave: #1e4e6b;
+  --gs-vermilion: #e4572e;
+  --gs-foam: #e2e9ef;
+  --gs-dusk: #2a3a55;
+  --gs-night: #04080c;
+  --gs-horizon: rgba(226, 233, 239, 0.35);
+}
+
+html[data-theme="candlelight"] {
+  --bg: #130c06;
+  --bg-elevated: #1d130a;
+  --bg-soft: #271810;
+  --surface: #2d1d12;
+  --border: rgba(255, 184, 77, 0.16);
+  --border-strong: rgba(255, 184, 77, 0.32);
+  --text: #f8ebd5;
+  --text-muted: #cbac83;
+  --text-faint: #7e6a4e;
+  --accent: #ffb84d;
+  --accent-soft: rgba(255, 184, 77, 0.12);
+  --accent-hover: #ffd08a;
+  --copper: #e4572e;
+  --on-accent: #1d130a;
+  --reader-max: 52rem;
+  --gs-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --gs-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --gs-sun: #ffc93c;
+  --gs-sun-core: #fff3d6;
+  --gs-ray: rgba(255, 201, 60, 0.5);
+  --gs-sea-deep: #0d0703;
+  --gs-sea: #2e1c0e;
+  --gs-wave: #6b3e1a;
+  --gs-vermilion: #e4572e;
+  --gs-foam: #f8ebd5;
+  --gs-dusk: #3a1c40;
+  --gs-night: #080402;
+  --gs-horizon: rgba(248, 235, 213, 0.35);
+}

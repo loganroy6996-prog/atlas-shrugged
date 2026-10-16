@@ -1,0 +1,225 @@
+/* OL-DOUBT cohort layer — "Stitches in the Canvas" (ART-DIRECTION.md, adopted 2026-10-15)
+   Painted scenery + tear treatments for p1c1–p1c4. Unlayered: wins over @layer
+   shared. Keyed ONLY off body[data-chapter] + body[data-art]; never generic.
+   Supervisor inlines this file under the COHORT INTEGRATION marker in theme.css.
+   Seals/salutation/redaction MARKS are supervisor-owned (theme.css + book.js);
+   this layer owns plates, reading treatments, and cohort motion.
+   Reading-treatment colors use theme tokens (panels re-ink per theme; only
+   plate art grounds are fixed, per O2) so contrast holds on all 8 themes. */
+
+/* ── 1. Plate treatments ────────────────────────────────
+   Slot frame/figcaption come from the book shell; the cohort owns the
+   painted-plate presence: fixed night ground behind the art and the
+   coming-apart drop shadow. Plates are FIXED art (O2): the slot ground
+   below is the only fixed hex family in this file. */
+body[data-book="open-letter"][data-chapter="p1c1"] #chapter-art.plate,
+body[data-book="open-letter"][data-chapter="p1c2"] #chapter-art.plate,
+body[data-book="open-letter"][data-chapter="p1c3"] #chapter-art.plate,
+body[data-book="open-letter"][data-chapter="p1c4"] #chapter-art.plate {
+  position: relative;
+  background: #0d0b09;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+}
+body[data-book="open-letter"][data-chapter="p1c1"] #chapter-art.plate svg,
+body[data-book="open-letter"][data-chapter="p1c2"] #chapter-art.plate svg,
+body[data-book="open-letter"][data-chapter="p1c3"] #chapter-art.plate svg,
+body[data-book="open-letter"][data-chapter="p1c4"] #chapter-art.plate svg {
+  background: #0d0b09;
+}
+/* Plate entrance: fade + rise 12px over 1.1s on reader:chapter fill (§6).
+   reader.js re-fills the slot per chapter, so the animation re-runs naturally. */
+@keyframes oldoubt-plate-settle {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+body[data-book="open-letter"][data-art="tearing-canvas"] #chapter-art.plate:not([hidden]),
+body[data-book="open-letter"][data-art="anomaly-table"] #chapter-art.plate:not([hidden]),
+body[data-book="open-letter"][data-art="white-cockade"] #chapter-art.plate:not([hidden]),
+body[data-book="open-letter"][data-art="putney-sheet"] #chapter-art.plate:not([hidden]) {
+  animation: oldoubt-plate-settle 1.1s ease-out both;
+}
+
+/* ── 2. p1c1 stitched-patch dividers ────────────────────
+   The three-question waypoints (verified 1-based paras 70/90/102:
+   independence / nationalism / Nazis) carry a stitched tear-tick above
+   the paragraph, reusing the plate's tear-edge vocabulary. */
+body[data-book="open-letter"][data-chapter="p1c1"] .chapter-text > p:nth-of-type(70)::before,
+body[data-book="open-letter"][data-chapter="p1c1"] .chapter-text > p:nth-of-type(90)::before,
+body[data-book="open-letter"][data-chapter="p1c1"] .chapter-text > p:nth-of-type(102)::before {
+  content: "";
+  display: block;
+  width: 9rem;
+  margin: 0 auto 1.15em;
+  border-top: 2px dashed var(--text);
+  opacity: 0.85;
+}
+body[data-book="open-letter"][data-chapter="p1c1"] .chapter-text > p:nth-of-type(70),
+body[data-book="open-letter"][data-chapter="p1c1"] .chapter-text > p:nth-of-type(90),
+body[data-book="open-letter"][data-chapter="p1c1"] .chapter-text > p:nth-of-type(102) {
+  border-left: 3px solid var(--copper);
+  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── 3. p1c2 dispatch panels ────────────────────────────
+   Long quoted documents as ruled panels. Designer ruling (2026-10-15):
+   panels contain ONLY quoted document text — author voice never rides
+   inside a document frame. All indices 1-based, verified against JSON:
+   SEWARD 59–69 + cartouche-lead 58 (colon-terminated; 70 'Note the
+   pattern' is author voice) · PROPAGANDA 96–98 + cartouche-lead 95
+   (99 'Obviously, this is propaganda' is author voice) · GREY-A
+   102–103 + whole-101 panel intro · GREY-B 109–113 + rubricated
+   'Grey responds' cartouche duplicated from 109's head · GREY-C
+   115–118 + pull-line cartouche 'As he wrote in early 1916' duplicated
+   from 114's tail. Paras 104–108, 114, 119 stay body. */
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(n+59):nth-of-type(-n+69),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(n+96):nth-of-type(-n+98),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(n+102):nth-of-type(-n+103),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(n+109):nth-of-type(-n+113),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(n+115):nth-of-type(-n+118) {
+  background: var(--bg-soft);
+  border-left: 3px solid var(--copper);
+  border-right: 1px solid var(--border-strong);
+  padding: 0.85rem 1.1rem 0.85rem 1.25rem;
+  margin-bottom: 0;
+  font-size: 0.96em;
+  text-align: left;
+  hyphens: manual;
+}
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(59),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(96),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(102),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(109),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(115) {
+  border-top: 1px solid var(--border-strong);
+  padding-top: 1.1rem;
+}
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(69),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(98),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(103),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(113),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(118) {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.15em;
+}
+/* Cartouche-leads: the author's own lead-in sentences, attached to the
+   panel below with a gilt rule and tightened margin. */
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(58),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(95),
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(101) {
+  border-left: 3px solid var(--copper);
+  padding-left: 1rem;
+  margin-bottom: 0.4em;
+  color: var(--text-muted);
+}
+/* Rubricated cartouches: verbatim duplications sanctioned as panel
+   labels (designer ruling). Short mono micro-labels, Plex data voice. */
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(109)::before,
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(115)::before {
+  display: block;
+  font-family: var(--font-data);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--copper);
+  margin-bottom: 0.7rem;
+}
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(109)::before {
+  content: "Grey responds";
+}
+body[data-book="open-letter"][data-chapter="p1c2"] .chapter-text > p:nth-of-type(115)::before {
+  content: "As he wrote in early 1916";
+}
+
+/* ── 4. p1c3 aphorism pull-lines ─────────────────────────
+   Designer ruling (2026-10-15): the spec named SENTENCES, so sentence
+   pull-lines are the spec-faithful treatment — paras stay body. Both
+   strings verified verbatim in chapter JSON. Inter-para placement at
+   all widths (engineer's discretion: margin floats risk overlap under
+   wide-measure settings; duplication sanctioned as pull-quote form). */
+body[data-book="open-letter"][data-chapter="p1c3"] .chapter-text > p:nth-of-type(2)::after,
+body[data-book="open-letter"][data-chapter="p1c3"] .chapter-text > p:nth-of-type(6)::after {
+  display: block;
+  font-weight: 500;
+  font-size: 1.12em;
+  text-align: left;
+  border-left: 3px solid var(--copper);
+  padding-left: 1.1rem;
+  margin-top: 1.4em;
+  color: var(--text);
+}
+body[data-book="open-letter"][data-chapter="p1c3"] .chapter-text > p:nth-of-type(2)::after {
+  content: "Doubt is a slow flower.";
+}
+body[data-book="open-letter"][data-chapter="p1c3"] .chapter-text > p:nth-of-type(6)::after {
+  content: "History 1, mystery 0.";
+}
+
+/* ── 5. p1c4 taxonomy tablets ───────────────────────────
+   The type 1/2/3 payoff as ruled definition tablets. Anchors verified:
+   P23 defines type 3 (open), P28 defines type 1 (loyal) after the rain
+   check, P57 defines type 2 (consensus). Headers are mono micro-labels
+   in the Plex data voice. */
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(23),
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(28),
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(57) {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--copper);
+  padding: 1rem 1.2rem;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  text-align: left;
+  hyphens: manual;
+}
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(23)::before,
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(28)::before,
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(57)::before {
+  display: block;
+  font-family: var(--font-data);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--copper);
+  margin-bottom: 0.6rem;
+}
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(23)::before {
+  content: "TYPE 3 · THE OPEN SOCIETY";
+}
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(28)::before {
+  content: "TYPE 1 · THE LOYAL SOCIETY";
+}
+body[data-book="open-letter"][data-chapter="p1c4"] .chapter-text > p:nth-of-type(57)::before {
+  content: "TYPE 2 · THE CONSENSUS SOCIETY";
+}
+
+/* ── 6. Cohort responsive floor ─────────────────────────
+   Phone keeps every plate's mandated survivors (spec §9.4): c1 tear +
+   columns, c3 cockade + torn corner, c2 three frames + red pin, c4
+   sheet + loose nail + fleuron. Symbols use xMidYMid slice so the slot
+   crop holds the composition center. Pull-lines step down slightly. */
+@media (max-width: 560px) {
+  body[data-book="open-letter"][data-chapter="p1c3"] .chapter-text > p:nth-of-type(2)::after,
+  body[data-book="open-letter"][data-chapter="p1c3"] .chapter-text > p:nth-of-type(6)::after {
+    font-size: 1.04em;
+  }
+}
+
+/* ── 7. Motion + print guards ─────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="open-letter"][data-art="tearing-canvas"] #chapter-art.plate,
+  body[data-book="open-letter"][data-art="anomaly-table"] #chapter-art.plate,
+  body[data-book="open-letter"][data-art="white-cockade"] #chapter-art.plate,
+  body[data-book="open-letter"][data-art="putney-sheet"] #chapter-art.plate {
+    animation: none;
+  }
+}
+@media print {
+  body[data-book="open-letter"][data-chapter="p1c1"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c2"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c3"] #chapter-art.plate,
+  body[data-book="open-letter"][data-chapter="p1c4"] #chapter-art.plate {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}

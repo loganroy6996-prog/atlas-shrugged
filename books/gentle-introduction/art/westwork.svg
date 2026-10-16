@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="c5t c5d">
+<title id="c5t">Plate V — The westwork: the Cathedral's portrait; twin towers, ten identical lit gallery openings, a blind oculus, three portals, one great candle</title>
+<desc id="c5d">Nave flagship plate, engraved. The west front seen from the nave floor: twin tower masses flank a west wall carrying an upper gallery of ten small identical evenly-lit round-arched openings in two ranks, a central blind oculus with a gold heart, and three great pointed portals below, all whole and all ajar on darkness, the center portal taller. One great sanctuary candle burns before the center portal; five stepped wedges of light flood the foreground floor. Ten openings, no crown, no throne: coordination without a coordinator.</desc>
+<defs>
+<linearGradient id="c5night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".5" stop-color="#100F0D"/><stop offset="1" stop-color="#1B1813"/>
+</linearGradient>
+<linearGradient id="c5stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="c5flame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<filter id="c5grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#c5grain)" font-family="Georgia,'Palatino Linotype','Liberation Serif',serif">
+<rect x="0" y="0" width="1600" height="900" fill="url(#c5night)"/>
+<!-- engraved double frame + corner furniture inside (cohort-C plate convention) -->
+<rect x="28" y="28" width="1544" height="844" fill="none" stroke="#9C917E" stroke-width="2" opacity=".55"/>
+<rect x="44" y="44" width="1512" height="812" fill="none" stroke="#9C917E" stroke-width="1" opacity=".25"/>
+<text x="72" y="96" font-size="24" letter-spacing="4" fill="#9C917E">TAB. V</text>
+<text x="1528" y="96" font-size="20" letter-spacing="3" fill="#9C917E" text-anchor="end">UR · DE STRUCTURA MODERNA</text>
+<!-- ===== twin tower masses, inner faces catching the great candle's wash ===== -->
+<g>
+<rect x="120" y="120" width="300" height="660" fill="#1E1B16" stroke="#5A5142" stroke-width="3"/>
+<rect x="1180" y="120" width="300" height="660" fill="#1E1B16" stroke="#5A5142" stroke-width="3"/>
+<rect x="108" y="104" width="324" height="18" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+<rect x="1168" y="104" width="324" height="18" fill="#242019" stroke="#3A332A" stroke-width="2"/>
+<g stroke="#453C2E" stroke-width="2">
+<line x1="120" y1="330" x2="420" y2="330"/><line x1="120" y1="560" x2="420" y2="560"/>
+<line x1="1180" y1="330" x2="1480" y2="330"/><line x1="1180" y1="560" x2="1480" y2="560"/>
+</g>
+<g fill="#0A0908" stroke="#4A4335" stroke-width="2">
+<path d="M222,190 V280 H262 V190 Q242,164 222,190 Z"/>
+<path d="M292,190 V280 H332 V190 Q312,164 292,190 Z"/>
+<path d="M1268,190 V280 H1308 V190 Q1288,164 1268,190 Z"/>
+<path d="M1338,190 V280 H1378 V190 Q1358,164 1338,190 Z"/>
+</g>
+<polygon points="420,180 420,760 352,760 352,180" fill="#DFA050" opacity=".14"/>
+<polygon points="420,240 420,700 386,700 386,240" fill="#DFA050" opacity=".2"/>
+<polygon points="1180,180 1180,760 1248,760 1248,180" fill="#DFA050" opacity=".14"/>
+<polygon points="1180,240 1180,700 1214,700 1214,240" fill="#DFA050" opacity=".2"/>
+</g>
+<!-- ===== the west wall between the towers ===== -->
+<rect x="420" y="140" width="760" height="640" fill="url(#c5stone)" stroke="#3A332A" stroke-width="3"/>
+<!-- gallery band: TEN identical evenly-lit openings, two ranks of five, no head -->
+<g>
+<rect x="452" y="158" width="696" height="238" fill="#0A0908" stroke="#4A4335" stroke-width="2"/>
+<line x1="452" y1="284" x2="1148" y2="284" stroke="#4A4335" stroke-width="1.5"/>
+<g fill="#DFA050" opacity=".28">
+<path d="M520,268 V224 A32,32 0 0 1 584,224 V268 Z"/>
+<path d="M644,268 V224 A32,32 0 0 1 708,224 V268 Z"/>
+<path d="M768,268 V224 A32,32 0 0 1 832,224 V268 Z"/>
+<path d="M892,268 V224 A32,32 0 0 1 956,224 V268 Z"/>
+<path d="M1016,268 V224 A32,32 0 0 1 1080,224 V268 Z"/>
+<path d="M520,376 V332 A32,32 0 0 1 584,332 V376 Z"/>
+<path d="M644,376 V332 A32,32 0 0 1 708,332 V376 Z"/>
+<path d="M768,376 V332 A32,32 0 0 1 832,332 V376 Z"/>
+<path d="M892,376 V332 A32,32 0 0 1 956,332 V376 Z"/>
+<path d="M1016,376 V332 A32,32 0 0 1 1080,332 V376 Z"/>
+</g>
+<g fill="none" stroke="#4A4335" stroke-width="1.5">
+<path d="M520,268 V224 A32,32 0 0 1 584,224 V268"/>
+<path d="M644,268 V224 A32,32 0 0 1 708,224 V268"/>
+<path d="M768,268 V224 A32,32 0 0 1 832,224 V268"/>
+<path d="M892,268 V224 A32,32 0 0 1 956,224 V268"/>
+<path d="M1016,268 V224 A32,32 0 0 1 1080,224 V268"/>
+<path d="M520,376 V332 A32,32 0 0 1 584,332 V376"/>
+<path d="M644,376 V332 A32,32 0 0 1 708,332 V376"/>
+<path d="M768,376 V332 A32,32 0 0 1 832,332 V376"/>
+<path d="M892,376 V332 A32,32 0 0 1 956,332 V376"/>
+<path d="M1016,376 V332 A32,32 0 0 1 1080,332 V376"/>
+</g>
+</g>
+<rect x="420" y="396" width="760" height="12" fill="#1E1B16" stroke="#3A332A" stroke-width="1.5"/>
+<!-- the blind oculus: sovereignty located — a dark ring with a gold heart -->
+<g transform="translate(800,448)">
+<circle r="40" fill="#0A0908" stroke="#5A5142" stroke-width="3"/>
+<circle r="28" fill="none" stroke="#4A4335" stroke-width="1.5"/>
+<circle r="14" fill="#DFA050" opacity=".9"/>
+<circle r="5" fill="#F4D9A0"/>
+</g>
+<!-- ===== three great portals, all whole, all ajar, the center taller ===== -->
+<g>
+<path d="M480,780 V620 Q480,560 570,536 Q660,560 660,620 V780 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="3"/>
+<path d="M496,780 V626 Q496,572 570,550 Q644,572 644,626 V780" fill="none" stroke="#4A4335" stroke-width="2"/>
+<path d="M512,780 V630 Q512,580 570,558 V780 Z" fill="#DFA050" opacity=".2"/>
+<path d="M570,558 Q628,580 628,630 V780 H570 Z" fill="#171310" stroke="#6B5B3E" stroke-width="2"/>
+<g stroke="#6B5B3E" stroke-width="1.5" opacity=".9">
+<line x1="570" y1="660" x2="628" y2="660"/><line x1="570" y1="715" x2="628" y2="715"/>
+<line x1="570" y1="765" x2="628" y2="765"/>
+</g>
+<circle cx="578" cy="700" r="4" fill="#DFA050"/>
+</g>
+<g>
+<path d="M940,780 V620 Q940,560 1030,536 Q1120,560 1120,620 V780 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="3"/>
+<path d="M956,780 V626 Q956,572 1030,550 Q1104,572 1104,626 V780" fill="none" stroke="#4A4335" stroke-width="2"/>
+<path d="M1030,558 Q1088,580 1088,630 V780 H1030 Z" fill="#DFA050" opacity=".2"/>
+<path d="M972,780 V630 Q972,580 1030,558 V780 Z" fill="#171310" stroke="#6B5B3E" stroke-width="2"/>
+<g stroke="#6B5B3E" stroke-width="1.5" opacity=".9">
+<line x1="972" y1="660" x2="1030" y2="660"/><line x1="972" y1="715" x2="1030" y2="715"/>
+<line x1="972" y1="765" x2="1030" y2="765"/>
+</g>
+<circle cx="1022" cy="700" r="4" fill="#DFA050"/>
+</g>
+<g>
+<path d="M680,780 V600 Q680,530 800,500 Q920,530 920,600 V780 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="3.5"/>
+<path d="M700,780 V606 Q700,542 800,514 Q900,542 900,606 V780" fill="none" stroke="#4A4335" stroke-width="2"/>
+<path d="M716,780 V610 Q716,552 800,526 V780 Z" fill="#DFA050" opacity=".3"/>
+<path d="M800,526 Q884,552 884,610 V780 H800 Z" fill="#171310" stroke="#6B5B3E" stroke-width="2"/>
+<g stroke="#6B5B3E" stroke-width="1.5" opacity=".9">
+<line x1="800" y1="650" x2="884" y2="650"/><line x1="800" y1="715" x2="884" y2="715"/>
+<line x1="800" y1="770" x2="884" y2="770"/>
+</g>
+<circle cx="810" cy="690" r="4" fill="#DFA050"/>
+</g>
+<!-- the great candle before the center portal: tallest wax in the cohort -->
+<ellipse cx="800" cy="780" rx="22" ry="7" fill="#E8DCC2"/>
+<rect x="793" y="560" width="14" height="220" fill="#E8DCC2"/>
+<line x1="800" y1="560" x2="800" y2="552" stroke="#14120E" stroke-width="2.5"/>
+<path d="M800,552 C788.5,536 790.5,522 800,510 C809.5,522 811.5,536 800,552 Z" fill="url(#c5flame)"/>
+<!-- foreground floor inside the frame -->
+<rect x="44" y="780" width="1512" height="76" fill="#0B0A08"/>
+<line x1="44" y1="780" x2="1556" y2="780" stroke="#2C2721" stroke-width="2"/>
+<!-- drawn light: five stepped wedges flooding from all three portals -->
+<path d="M420,780 H1180 L1260,856 H340 Z" fill="#DFA050" opacity=".12"/>
+<path d="M480,780 H1120 L1180,856 H420 Z" fill="#DFA050" opacity=".22"/>
+<path d="M500,780 H640 L680,856 H460 Z" fill="#DFA050" opacity=".15"/>
+<path d="M960,780 H1100 L1140,856 H920 Z" fill="#DFA050" opacity=".15"/>
+<path d="M710,780 H890 L950,856 H650 Z" fill="#DFA050" opacity=".45"/>
+<!-- (no in-SVG caption strip: the manifest caption covers it) -->
+</g>
+</svg>

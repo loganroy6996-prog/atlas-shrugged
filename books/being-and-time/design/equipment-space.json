@@ -1,0 +1,587 @@
+{
+  "artDirection": "books/being-and-time/design/ART-DIRECTION.md (binding incl. §9 reader-contract conformance + §10 v1.1 addendum / ArtDirector PROVISIONAL PASS B1-B8); READER-CONTRACT v1.1 STABLE (A.2 symbol key, A.0 end seals)",
+  "book": "being-and-time",
+  "chapters": [
+    "p2c7",
+    "p2c8",
+    "p2c9",
+    "p2c10",
+    "p2c11",
+    "p2c12",
+    "p2c13",
+    "p2c14",
+    "p2c15",
+    "p2c16"
+  ],
+  "cohort": "equipment-space",
+  "cohortBeat": "Tools → grid argued-against → space. Workshop/handiness (§§15–18: hammer, breach, signs, lattice) → cold Descartes interlude (§§19–20: shaft interrupted, grid dominant; §21: grid cracked, light returning) → lived spatiality (§§22–24: region, de-distancing, making-room). gapWidth 20→30% monotonic (stall at 24% through the grid, jump at the §21 verdict); shaft 28° throughout; ghosts left-bleed; NO ember.",
+  "directions": {
+    "chosen": {
+      "evolution": "p2c7 hammer in floor-light + totality threads → p2c8 shaft fractured at the crack → p2c9 signpost + straw turn-arrow → p2c10 sagging lattice converging on open ring → p2c11 shaft stopped at ruled line, one body in three shapes → p2c12 sealed sphere + broken ladder rung → p2c13 grid cracked, wax vs ruler, four doors ajar → p2c14 room-corner by use + missing-thing glow → p2c15 return-path + measures + gloves-vs-hammer → p2c16 made room overlapping dissolving lattice.",
+      "name": "S1 'Bench-top Isotype' (CHOSEN)",
+      "why": "Deepest prose root; strongest title-swap; B1/B3-safe; maximally distant from rejected baseline."
+    },
+    "considered": [
+      {
+        "name": "S2 'Chiaroscuro workshop' (rejected)",
+        "rejectedWhy": "B3 temptation, gradient-card tell, weak title-swap.",
+        "salvage": "None."
+      },
+      {
+        "name": "S3 'Inscriptional / typographic' (rejected)",
+        "rejectedWhy": "Fights ghost-numeral ledger; fails monoliths.",
+        "salvage": "One quiet rail gloss per chapter."
+      }
+    ],
+    "exploredWithin": "Book identity is binding (ART-DIRECTION.md); directions explore within the Clearing grammar."
+  },
+  "references": [
+    "Diderot & d'Alembert, Encyclopédie — plates of the mechanical arts (craft engravings; plate-caption grammar) → `plate` treatment + in-SVG Latin inscriptions + figcaptions.",
+    "Descartes, La Géométrie (1637) — ruled geometric diagrams, letter-labeled figures, recast shapes → the grid's own visual language for p2c11–p2c13 (quoted, then cracked).",
+    "Neurath/Arntz Isotype (Vienna Method, 1925–34) — flat pictograms, no perspective, repetition not enlargement → tool-shadow grammar for p2c7–p2c10 + p2c14–p2c16; keeps workshop scenes out of stock-illustration rendering.",
+    "Hereford Mappa Mundi (c. 1300) — lived cartography, oriented use-labeled space, center-by-meaning → p2c14–p2c16 region art (places by use, region glowing when something is missing)."
+  ],
+  "type": "Fraunces (display: titles Fraunces 400 opsz 100, ghosts Fraunces 300, rail terms Fraunces italic, threshold Fraunces 21px) + Source Serif 4 (body 19px/1.75, kicker/meta 12px). Fallback Georgia, 'Times New Roman', serif.",
+  "entries": {
+    "p2c7": {
+      "breather": {
+        "anchor": "Totality thesis (p5, 1451ch) · nature turn (p11)",
+        "implementation": "p:nth-of-type(6)::after thread-knot divider · p:nth-of-type(12)::after timber-ticks divider. Authored data-URI SVGs, 148x26.",
+        "motif": "thread-knot; timber-ticks"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "The hammer-that-must-not-be-stared-at (p6–p7: 'Hammering does not just have a knowledge of the useful character of the hammer' verified p6 head; 'the less we just stare at the thing called hammer, the more original our relation to it becomes' p7); 'no such thing as a useful thing' alone — totality (p5); um-zu references; work-chain shoe/clock → leather → hides → animals (p9–p10); nature as timber/quarry/water-power/wind-in-sails (p11). Opener stages USE, not display: the hammer lies IN the light mid-swing, threads tying it to the totality.",
+      "ending": {
+        "composition": "Hammer-head square, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0: url() art, ≤32px, no layout shift).",
+        "motif": "hammer-head"
+      },
+      "gapWidth": "20%",
+      "ghost": {
+        "content": "15",
+        "opacity": "9%",
+        "placement": "left-bleed",
+        "size": "22vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 15",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈12 min · 2,375 words"
+      },
+      "manifest": {
+        "caption": "Fig. 15 · Zeug — the hammer in use; the totality it belongs to",
+        "class": "banner",
+        "motif": "equip-hammer",
+        "order": 15,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "equip-hammer",
+        "title": "The Being of Beings Encountered in the Surrounding World"
+      },
+      "minutes": 12,
+      "motif": "equip-hammer — workbench floor; 28° shaft + pool; flat hammer silhouette diagonal IN pool + lichen motion arc (two ghost positions); receding-left totality pictograms (shoe last, clock face, hide, nail) tied by um-zu threads to the hammer; threads converge, never cross the shaft.",
+      "numberLabel": "§ 15",
+      "openerComposition": "Banner ledger: ghost '15' left-bleed; title flush-left (wraps ≤3 lines @40px min clamp); rail gloss 'Zeug · Zuhandenheit' + 'use, not staring'. Shaft tick 20% (cohort floor).",
+      "order": 15,
+      "paletteRole": "Warmest opener in workshop group; full shaft core 100%, pool 26% wash. Trunks x≈80/200, lean +1°.",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "use, not staring",
+        "term": "Zeug · Zuhandenheit"
+      },
+      "readingTreatment": "STANDARD WELL (p0 442ch; served p0/p1 mid-word junction 'taking/care' accommodated — well covers p0 only). Breathers at totality + nature joints. Margin flecks: tool-shadow micros at 30%/65% (right gutter ≥1100px only). Seal: hammer-head.",
+      "svgRegion": "equip-hammer",
+      "symbol": "equip-hammer",
+      "thresholdEdge": "shared-confident",
+      "title": "The Being of Beings Encountered in the Surrounding World",
+      "tocTick": "20%",
+      "words": 2375
+    },
+    "p2c8": {
+      "breather": {
+        "anchor": "Turn to world (p7) · predisclosed world (p13)",
+        "implementation": "p:nth-of-type(8)::after crack-zigzag divider · p:nth-of-type(14)::after dashed relit arc. Authored data-URI SVGs.",
+        "motif": "crack; relit arc"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "Breakdown triad — conspicuousness / obtrusiveness / obstinacy (p2–p6); 'breach in the context of references' (p9); 'Circumspection comes up with emptiness' (p9); world announces itself ONLY through the breach (p7–p10); references [Verweisungen] (p8). The shaft itself fractures: light arrives through damage.",
+      "ending": {
+        "composition": "Crack zigzag, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "crack"
+      },
+      "gapWidth": "21%",
+      "ghost": {
+        "content": "16",
+        "opacity": "8%",
+        "placement": "left-bleed",
+        "size": "20vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 16",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈9 min · 1,864 words"
+      },
+      "manifest": {
+        "caption": "Fig. 16 · Verweisungen — the breach where the web lights up",
+        "class": "motif",
+        "motif": "equip-breach",
+        "order": 16,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "equip-breach",
+        "title": "The Worldly Character of the Surrounding World Announcing Itself in Innerworldly Beings"
+      },
+      "minutes": 9,
+      "motif": "equip-breach — bench; 28° shaft split by diagonal crack polyline at mid-height, lower segment offset +14px x; broken hammer (head separated, gap glowing shaft); dashed empty bench slot (lichen dashes = the missing tool); referential threads radiating ONLY from the crack, opacity falling with distance.",
+      "numberLabel": "§ 16",
+      "openerComposition": "Motif ledger (compact right): ghost '16'; rail gloss 'Verweisungen' + 'the breach lights the web'. Shaft tick 21%.",
+      "order": 16,
+      "paletteRole": "Shaft core 90%, brighter BELOW the crack (inverted expectation — the break gives light). Trunks x≈53/227, lean −1°.",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "the breach lights the web",
+        "term": "Verweisungen"
+      },
+      "readingTreatment": "STANDARD WELL. Breathers at world-turn + predisclosed joints. Margin flecks: crack ticks at 45%. Seal: crack zigzag 20px lichen.",
+      "svgRegion": "equip-breach",
+      "symbol": "equip-breach",
+      "thresholdEdge": "shared-confident",
+      "title": "The Worldly Character of the Surrounding World Announcing Itself in Innerworldly Beings",
+      "tocTick": "21%",
+      "words": 1864
+    },
+    "p2c9": {
+      "breather": {
+        "anchor": "Arrow phenomenology (p8, 1872ch) · string on finger (p15)",
+        "implementation": "p:nth-of-type(9)::after left-arrow divider · p:nth-of-type(16)::after string-loop divider. Authored data-URI SVGs.",
+        "motif": "arrow; string-loop"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "Signs as indicating [Zeigen] (p2): signposts, boundary-stones, mariner's storm-buoy, mourning signs (p2, all verified); the motor-car RED turn-signal arrow at the intersection (p5: 'adjustable red arrow … at an intersection … yield accordingly or remain standing' — verified verbatim); south wind as rain-sign for the farmer (p12); string on finger (p15). PALETTE SUBSTITUTION (deliberate, B5-compliant): the arrow renders in STRAW, not red — the phenomenon is indicating, not redness; red/ember is forbidden in this cohort. Validator: do not flag.",
+      "ending": {
+        "composition": "Arrowhead, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "arrowhead"
+      },
+      "gapWidth": "22%",
+      "ghost": {
+        "content": "17",
+        "opacity": "8%",
+        "placement": "left-bleed",
+        "size": "21vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 17",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈14 min · 2,728 words"
+      },
+      "manifest": {
+        "caption": "Fig. 17 · Zeigen — yielding at the intersection",
+        "class": "motif",
+        "motif": "equip-signs",
+        "order": 17,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "equip-signs",
+        "title": "Reference and Signs"
+      },
+      "minutes": 14,
+      "motif": "equip-signs — plan-view crossroads (two converging floor lines); signpost silhouette at the crossing (post + two finger boards); straw turn-arrow (left) with edge parallel to shaft; dashed yield triangle; storm-buoy + boundary-stone minis at scene edges (the sign family).",
+      "numberLabel": "§ 17",
+      "openerComposition": "Motif ledger: ghost '17'; rail gloss 'Zeigen' + 'yielding · remaining still'. Shaft tick 22%.",
+      "order": 17,
+      "paletteRole": "Steady shaft 95%; arrow = brightest single glyph in workshop group. Trunks x≈93/187, lean 0°.",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "yielding · remaining still",
+        "term": "Zeigen"
+      },
+      "readingTreatment": "STANDARD WELL. Breathers at arrow-phenomenology + string joints. Margin flecks: arrow ticks 35%/70%. Seal: arrowhead 20px lichen.",
+      "svgRegion": "equip-signs",
+      "symbol": "equip-signs",
+      "thresholdEdge": "shared-confident",
+      "title": "Reference and Signs",
+      "tocTick": "22%",
+      "words": 2728
+    },
+    "p2c10": {
+      "breather": {
+        "anchor": "Total relevance earlier (p4) · signifying (p13) · Descartes contrast (p21)",
+        "implementation": "p:nth-of-type(5)::after sagging-line-3-nodes · p:nth-of-type(14)::after open-ring-mini · p:nth-of-type(22)::after ruled-line-with-break. Authored data-URI SVGs.",
+        "motif": "sag line; ring; broken rule"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "Relevance chains hammer→hammering→fastening→shelter→for-the-sake-of Dasein (p3–p4); total relevance EARLIER than any single tool — workshop/farmstead whole-before-parts (p4); letting-be (p5–p6, [Bewendenlassen] p9); significance as signifying whole (p13–p15); ends announcing the Descartes contrast (p21–p24). The lattice SAGS (letting-be) and converges on an OPEN ring — Dasein is not a node-dot.",
+      "ending": {
+        "composition": "Open ring, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "open ring"
+      },
+      "gapWidth": "24%",
+      "ghost": {
+        "content": "18",
+        "opacity": "9%",
+        "placement": "left-bleed",
+        "size": "23vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 18",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈14 min · 2,724 words"
+      },
+      "manifest": {
+        "caption": "Fig. 18 · Bewandtnis — relevance converging on the for-the-sake-of-which",
+        "class": "banner",
+        "motif": "equip-lattice",
+        "order": 18,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "equip-lattice",
+        "title": "Relevance [Bewandtnis] and Significance [Bedeutsamkeit]: The Worldliness of the World"
+      },
+      "minutes": 14,
+      "motif": "equip-lattice — panoramic thirds: left workshop/farmstead silhouettes (bench, barn gable, fence); middle 9–12-node lichen lattice, catenary-sag lines; right broadened 28° shaft (+38%) with terminal OPEN ring (Dasein, shaft outline 2.5px).",
+      "numberLabel": "§ 18",
+      "openerComposition": "Banner ledger: ghost '18' left-bleed; title flush-left; rail gloss 'Bewandtnis · Bedeutsamkeit' + 'the whole before the tool'. Shaft tick 24%.",
+      "order": 18,
+      "paletteRole": "Broadest shaft in workshop group (+38% width, soft blur-4 edges); terminal ring = only shaft-outline geometry in cohort. Trunks x≈67/213, lean +2°.",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "the whole before the tool",
+        "term": "Bewandtnis · Bedeutsamkeit"
+      },
+      "readingTreatment": "STANDARD WELL (p0 232ch reads as epigraph opening — served-prose p0/p1 mid-sentence junction accommodated). Breathers at total-relevance, signifying, Descartes-contrast joints. Margin flecks: lattice nodes 25%/50%/75%. Seal: open ring shaft 70% (climax seal).",
+      "svgRegion": "equip-lattice",
+      "symbol": "equip-lattice",
+      "thresholdEdge": "shared-confident",
+      "title": "Relevance [Bewandtnis] and Significance [Bedeutsamkeit]: The Worldliness of the World",
+      "tocTick": "24%",
+      "words": 2724
+    },
+    "p2c11": {
+      "breather": {
+        "anchor": "Before the 3053ch p2 monolith-para (longitudo/latitudo/profundum)",
+        "implementation": "p:nth-of-type(2)::after single ruled tick, lichen 60%.",
+        "motif": "ruled tick"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "COLD INTERLUDE (4-para monolith). ego cogito/res cogitans vs res corporea (p0); substantia ambiguity (p0); extensio as principal attribute; ONE body recast — 'magis secundum longitudinem … latitudinem … profunditatem' (p2); Gestalt/motus as modes of extensio (p2). Light HELD FLAT: shaft never reaches the floor; the thinking half of the split left EMPTY (unpictured by design).",
+      "ending": {
+        "composition": "Small square, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "square"
+      },
+      "gapWidth": "24%",
+      "ghost": {
+        "content": "19",
+        "opacity": "7%",
+        "placement": "left-bleed",
+        "size": "19vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 19",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈4 min · 883 words"
+      },
+      "manifest": {
+        "caption": "Fig. 19 · res extensa — one body, three shapes; the world held flat",
+        "class": "plate",
+        "motif": "cartes-extensa",
+        "order": 19,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "cartes-extensa",
+        "title": "The Determination of the \"World\" as res extensa"
+      },
+      "minutes": 4,
+      "motif": "cartes-extensa — shaft stops at horizontal ruled line y=150; below, 40px grid; ONE solid in THREE equal-area outlines (120×120 square / 240×60 bar / 60×240 column, mist 80%); inscriptions 'longitudo · latitudo · profundum'; left-margin vertical rule splitting EMPTY 'res cogitans' field from gridded 'res corporea' field.",
+      "numberLabel": "§ 19",
+      "openerComposition": "Plate ledger (framed, contained): ghost '19' dimmest; rail gloss 'res extensa · substantia' + 'the world held flat'. Shaft tick 24% (STALL).",
+      "order": 19,
+      "paletteRole": "Coldest in cohort: shaft core 55%, stopped; grid lichen 35%/60%; NO floor pool. Trunks x≈40/160, lean 0° (ruled — the grid disciplines even trunks).",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "the world held flat",
+        "term": "res extensa · substantia"
+      },
+      "readingTreatment": "MONOLITH RULE (B4 fallback by design: quiet Source Serif + 3px shaft border-left, NO well). ONE breather before p2. NO body flecks — clean cold column. Paragraph air 1.25em. Seal: small square 16px lichen 60%.",
+      "svgRegion": "cartes-extensa",
+      "symbol": "cartes-extensa",
+      "thresholdEdge": "monolith-fallback",
+      "title": "The Determination of the \"World\" as res extensa",
+      "tocTick": "24%",
+      "words": 883
+    },
+    "p2c12": {
+      "breather": {
+        "anchor": "Before the 2920ch p2 analogy discussion (univocal vs analogous 'being')",
+        "implementation": "p:nth-of-type(2)::after broken-rung tick, lichen 60%.",
+        "motif": "broken rung"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "Substantiality: 'nulla alia re indigeat ad existendum' (p0); ens perfectissimum / Deus (p0); analogy — 'nomen substantiae non convenit Deo et illis univoce' (p1); univocal vs analogous 'being' (p2). The sphere contains NOTHING (needs nothing); the ladder's middle rung is BROKEN (univocity fails).",
+      "ending": {
+        "composition": "Sealed ring, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "sealed ring"
+      },
+      "gapWidth": "24.5%",
+      "ghost": {
+        "content": "20",
+        "opacity": "7%",
+        "placement": "left-bleed",
+        "size": "19vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 20",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈5 min · 1,096 words"
+      },
+      "manifest": {
+        "caption": "Fig. 20 · substantia — the sealed sphere that needs nothing",
+        "class": "plate",
+        "motif": "cartes-substantia",
+        "order": 20,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "cartes-substantia",
+        "title": "The Fundaments of the Ontological Definition of the \"World\""
+      },
+      "minutes": 5,
+      "motif": "cartes-substantia — perfect circle outline (mist 85%, 2px), EMPTY interior; below, inscription 'nulla alia re indigeat'; right side 3-rung ladder 'Deus / substantia / creaturae' with MIDDLE rung broken/offset 13px; shaft sliver (12% width) at far right edge.",
+      "numberLabel": "§ 20",
+      "openerComposition": "Plate ledger: ghost '20' dimmest; rail gloss 'substantia · ens perfectissimum' + 'needing nothing'. Shaft tick 24.5% (dimmest plate, half-step).",
+      "order": 20,
+      "paletteRole": "Near-coldest; one shaft sliver at right edge (12% width, 60% core) = the chapter's only warmth. Grid loosened to 48px, fainter. Trunks x≈47/167, lean 0°.",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "needing nothing",
+        "term": "substantia · ens perfectissimum"
+      },
+      "readingTreatment": "MONOLITH RULE. ONE breather before p2. NO body flecks. Paragraph air 1.25em. Seal: sealed ring 18px lichen 60%.",
+      "svgRegion": "cartes-substantia",
+      "symbol": "cartes-substantia",
+      "thresholdEdge": "monolith-fallback",
+      "title": "The Fundaments of the Ontological Definition of the \"World\"",
+      "tocTick": "24.5%",
+      "words": 1096
+    },
+    "p2c13": {
+      "breather": {
+        "anchor": "Mathematical knowledge (p3) · value predicates (p14) · four Whys landed (p21) · salvage (p24)",
+        "implementation": "p:nth-of-type(4)::after crack-tick · p:nth-of-type(15)::after notched-square · p:nth-of-type(22)::after four-slits-mini · p:nth-of-type(25)::after shard-wedge. Authored data-URI SVGs.",
+        "motif": "crack; notch; slits; shard"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "The verdict 'No!' twice (p0, 27 paras — longest in cohort, volley rhythm). intellectio as dictated sole access (p2); remanens capax mutationum (p3); wax example — color/taste/hardness dismissed (p5); hardness-as-resistance mistranslated into not-yielding-place / change of location (p7); rounding-out with value predicates fails (p14–p16); FOUR forward questions (p18–p21: '1. Why … 2. Why … 3. Why … 4. Why'); salvage via extensio/Kant (p24–p25); closes opening Part C aroundness (p26). The grid does not fade — it is STRUCK and cracks; the four questions stand ajar.",
+      "ending": {
+        "composition": "Broken grid corner, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "broken grid corner"
+      },
+      "gapWidth": "27%",
+      "ghost": {
+        "content": "21",
+        "opacity": "10%",
+        "placement": "left-bleed",
+        "size": "24vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 21",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈14 min · 2,878 words"
+      },
+      "manifest": {
+        "caption": "Fig. 21 · intellectio — the grid cracking; four doors ajar",
+        "class": "banner",
+        "motif": "cartes-crack",
+        "order": 21,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "cartes-crack",
+        "title": "The Hermeneutical Discussion of the Cartesian Ontology of the \"World\""
+      },
+      "minutes": 14,
+      "motif": "cartes-crack — grid fractured by 3 crack polylines from central impact point; 3 shaft shards wedging through; left third: wax block with dripping bezier edge overlapping a tilted ruler that FAILS to touch it; right edge: FOUR vertical door-slits with shaft light through each, widths increasing (the four Whys).",
+      "numberLabel": "§ 21",
+      "openerComposition": "Banner ledger: ghost '21' BRIGHTEST (24vw/10%); rail gloss 'intellectio' + 'No! · No!'. Shaft tick 27% (largest single jump — critique = light returning).",
+      "order": 21,
+      "paletteRole": "Brightest shaft since p2c10 (3 shards, 100% core at cracks); wax in warm mist; ruler in cold lichen (the mistranslation made visible). Trunks x≈73/220, lean −2° (grid losing its grip).",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "No! · No!",
+        "term": "intellectio"
+      },
+      "readingTreatment": "STANDARD WELL (p0 1217ch = the verdict — the well carries 'No!'). Four breathers (D10: volley never split). Margin flecks: crack flecks at all four joints. Seal: broken grid corner 22px shaft 70% (climax seal).",
+      "svgRegion": "cartes-crack",
+      "symbol": "cartes-crack",
+      "thresholdEdge": "shared-confident",
+      "title": "The Hermeneutical Discussion of the Cartesian Ontology of the \"World\"",
+      "tocTick": "27%",
+      "words": 2878
+    },
+    "p2c14": {
+      "breather": {
+        "anchor": "Room corners (p4: above=ceiling, below=floor, behind=door)",
+        "implementation": "p:nth-of-type(5)::after corner-mark glyph, lichen.",
+        "motif": "corner mark"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "Nearness [Nahe] not measured distance (p2); places belong to regions; 'above = on the ceiling, below = on the floor, behind = at the door' (p4); sun-places — sunrise/noon/sunset/midnight (p5 context); region becomes visible ONLY when something is missing from its place (p6: 'When we do not find something in its place, the region of that place often becomes explicitly accessible as such for the first time'). Found beat: p1 is the 2-line fragment 'now the task.' (13ch, verified).",
+      "ending": {
+        "composition": "Sun-arc tick, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "sun tick"
+      },
+      "gapWidth": "28%",
+      "ghost": {
+        "content": "22",
+        "opacity": "8%",
+        "placement": "left-bleed",
+        "size": "21vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 22",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈6 min · 1,138 words"
+      },
+      "manifest": {
+        "caption": "Fig. 22 · Nähe — the room by use; the sun's day-places",
+        "class": "motif",
+        "motif": "space-region",
+        "order": 22,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "space-region",
+        "title": "The Spatiality of Innerworldly Things at Hand"
+      },
+      "minutes": 6,
+      "motif": "space-region — flat room-corner elevation (Isotype, no perspective): ceiling line / floor line / door rectangle, use-ticks labeled 'ceiling · floor · door'; sun-arc across top with 4 day-place nodes; dashed EMPTY rectangle on floor line with region glow around it (the missing thing making the region visible).",
+      "numberLabel": "§ 22",
+      "openerComposition": "Motif ledger (compact right): ghost '22'; rail gloss 'Nähe' + 'above = on the ceiling'. Shaft tick 28%.",
+      "order": 22,
+      "paletteRole": "Warm returns: shaft 95%, pool becomes region map (soft lichen contour + shaft wash confined to region outline). Trunks x≈87/193, lean +1°.",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "above = on the ceiling",
+        "term": "Nähe"
+      },
+      "readingTreatment": "STANDARD WELL on p0 (454ch) + designed found-beat: p:nth-of-type(2) ('now the task.') Fraunces italic 19px lichen, margin-top 0.4em. Breather at p4. Margin flecks: sun ticks at 55%. Seal: sun-arc tick 20px lichen.",
+      "svgRegion": "space-region",
+      "symbol": "space-region",
+      "thresholdEdge": "shared-confident",
+      "title": "The Spatiality of Innerworldly Things at Hand",
+      "tocTick": "28%",
+      "words": 1138
+    },
+    "p2c15": {
+      "breather": {
+        "anchor": "Lived measures (p3) · here/over-there (p8) · left/right grounding (p12)",
+        "implementation": "p:nth-of-type(4)::after three-measure-ticks · p:nth-of-type(9)::after return-loop-mini · p:nth-of-type(13)::after mirrored-L/R-ticks. Authored data-URI SVGs.",
+        "motif": "measures; loop; L/R"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "Dasein never here but over-there-then-back (p8); de-distancing as active bringing-near (p1); lived measures — 'a good walk, a stone's throw, as long as it takes to smoke a pipe' (p3); right/left from directionality (p10–p11); gloves handed L/R vs 'no right- and left-handed hammers' (p11); spectacles nearest-overlooked (p6: 'sitting on his nose'). Rail discipline: 'Entfernung'/'Einräumen' verified ABSENT from served p2c15/p2c16 prose — gloss stays in attested English.",
+      "ending": {
+        "composition": "Return loop, 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "return loop"
+      },
+      "gapWidth": "29%",
+      "ghost": {
+        "content": "23",
+        "opacity": "9%",
+        "placement": "left-bleed",
+        "size": "22vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 23",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈12 min · 2,409 words"
+      },
+      "manifest": {
+        "caption": "Fig. 23 · de-distancing — over there and back; measures of nearness",
+        "class": "motif",
+        "motif": "space-dedist",
+        "order": 23,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "space-dedist",
+        "title": "The Spatiality of Being-in-the-World"
+      },
+      "minutes": 12,
+      "motif": "space-dedist — return-path curve (lichen 2px) from 'over there' node (right) looping back to 'here' node (left) with arrowhead at return end; three measure ticks labeled 'good walk · stone's throw · pipe-smoke'; glove PAIR (mirror, 'L'/'R') vs SINGLE hammer below; spectacles glyph at 40% near 'here' (nearest overlooked).",
+      "numberLabel": "§ 23",
+      "openerComposition": "Motif ledger: ghost '23'; rail gloss 'de-distancing · directionality' + 'never here, but over there'. Shaft tick 29%.",
+      "order": 23,
+      "paletteRole": "Near-full cohort light: shaft 100%, pool stretched along the path (rx 260). Trunks x≈80/207, lean +1°.",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "never here, but over there",
+        "term": "de-distancing · directionality"
+      },
+      "readingTreatment": "STANDARD WELL (p0 ends naming de-distancing + directionality — ideal well text). Breathers at measures, here/over-there, L/R joints. Margin flecks: path ticks 30%/60%. Seal: return loop 20px lichen.",
+      "svgRegion": "space-dedist",
+      "symbol": "space-dedist",
+      "thresholdEdge": "shared-confident",
+      "title": "The Spatiality of Being-in-the-World",
+      "tocTick": "29%",
+      "words": 2409
+    },
+    "p2c16": {
+      "breather": {
+        "anchor": "Making room defined (p3) · neutralization — the loss (p6) · space back from world (p9)",
+        "implementation": "p:nth-of-type(4)::after open-rectangle-mini · p:nth-of-type(7)::after dissolving-dots · p:nth-of-type(10)::after return-arc. Authored data-URI SVGs.",
+        "motif": "room; dots; arc"
+      },
+      "cohort": "equipment-space",
+      "contentRationale": "Making room as 'giving space' (p3: 'This giving space, which we call making room'); circumspect measuring → formal intuition → pure homogeneous 3D space (p4–p6); regions NEUTRALIZED to pure dimensions, relevance lost (p6); 'Space does not become accessible only by depriving the surrounding world of its worldliness' (p9); space understood ONLY back from world (p9). The lattice MUST read as DISSOLVING/LOSS (bark lines fragmenting to dots to nothing), overlapped by the lived region — never as celebration of homogeneous space.",
+      "ending": {
+        "composition": "Open rectangle (cleared room), 28px box, centered.",
+        "implementation": "p:last-child::after sibling-mechanism seal (A.0).",
+        "motif": "open rectangle"
+      },
+      "gapWidth": "30%",
+      "ghost": {
+        "content": "24",
+        "opacity": "9%",
+        "placement": "left-bleed",
+        "size": "23vw"
+      },
+      "kicker": {
+        "metaNumber": "§ 24",
+        "metaPart": "Part 2 · The Preparatory Fundamental Analysis of Dasein",
+        "metaSub": "≈8 min · 1,619 words"
+      },
+      "manifest": {
+        "caption": "Fig. 24 · making room — made room; the lattice dissolving",
+        "class": "banner",
+        "motif": "space-room",
+        "order": 24,
+        "part": "part-2",
+        "src": "art/equipment-space.svg",
+        "symbol": "space-room",
+        "title": "The Spatiality of Dasein and Space"
+      },
+      "minutes": 8,
+      "motif": "space-room — panoramic: left 60% lived region (widest shaft, bench, flat HAND silhouette sweeping right, cleared shaft-washed open rectangle = made room, soft curved region lines); right 40% neutral lattice dissolving left→right (solid → dashes → dots → nothing), its left edge OVERLAPPED by the region.",
+      "numberLabel": "§ 24",
+      "openerComposition": "Banner ledger: ghost '24'; rail gloss 'making room · giving space' + 'space back from world'. Shaft tick 30% (cohort ceiling; handoff to they-self 30→38%).",
+      "order": 24,
+      "paletteRole": "Widest shaft in cohort (handoff brightness); lattice in dimmest line color (--bt-bark) vs region in lichen/shaft. Trunks x≈100/200, lean +2° (lightest stance).",
+      "part": "part-2",
+      "railTerm": {
+        "gloss": "space back from world",
+        "term": "making room · giving space"
+      },
+      "readingTreatment": "STANDARD WELL. Breathers at making-room, neutralization, space-back joints. Margin flecks: dissolving dots 50%/75%. Seal: open rectangle 22px shaft 70% (climax/handoff seal).",
+      "svgRegion": "space-room",
+      "symbol": "space-room",
+      "thresholdEdge": "shared-confident",
+      "title": "The Spatiality of Dasein and Space",
+      "tocTick": "30%",
+      "words": 1619
+    }
+  }
+}

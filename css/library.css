@@ -1,27 +1,180 @@
+@import url("../shared/art.css");
 /* ─────────────────────────────────────────────
-   Literary Library — main menu
+   Literary Library — the Night Gallery
+   Themes: dark "Ink" (default) · sepia · light "Vellum" · nocturne ·
+   verdant · oxblood · slate · candlelight
+   The chrome recedes; thirteen authored cover plates
+   (assets/library/covers/<slug>.svg) carry the color.
 ───────────────────────────────────────────── */
 
-:root {
-  --bg: #08090b;
-  --bg-card: #12141a;
-  --bg-card-hover: #181b24;
-  --border: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.16);
-  --text: #f2efe8;
-  --text-muted: #9a958c;
-  --text-faint: #5c5852;
-  --accent: #e8d5a3;
-  --font-serif: "Cormorant Garamond", Georgia, serif;
+:root,
+:root[data-theme="dark"] {
+  /* Ink — paper-black gallery wall, candle-gold accents */
+  --bg: #0b0a08;
+  --bg-card: #14110d;
+  --bg-card-hover: #1c1812;
+  --bg-input: #100e0b;
+  --border: rgba(236, 229, 216, 0.11);
+  --border-hover: rgba(236, 229, 216, 0.26);
+  --text: #ece5d8;
+  --text-muted: #a79b85;
+  --text-faint: #6e6455;
+  --accent: #d8b36a;
+  --accent-soft: rgba(216, 179, 106, 0.12);
+  --accent-hover: #e6c684;
+  --on-accent: #1b1408;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  --font-serif: "Fraunces", Georgia, serif;
   --font-sans: "DM Sans", system-ui, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+:root[data-theme="sepia"] {
+  /* Sepia — aged paper study, iron-gall ink */
+  --bg: #171310;
+  --bg-card: #221c17;
+  --bg-card-hover: #2a2320;
+  --bg-input: #1b1613;
+  --border: rgba(120, 90, 50, 0.35);
+  --border-hover: rgba(150, 115, 65, 0.6);
+  --text: #ede0c8;
+  --text-muted: #b3a184;
+  --text-faint: #77694f;
+  --accent: #d4a94e;
+  --accent-soft: rgba(212, 169, 78, 0.12);
+  --accent-hover: #e2ba63;
+  --on-accent: #241a08;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+}
 
-html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+:root[data-theme="light"] {
+  /* Vellum — warm manuscript paper, single light option */
+  --bg: #f5f0e6;
+  --bg-card: #fffdf7;
+  --bg-card-hover: #ffffff;
+  --bg-input: #fffdf7;
+  --border: rgba(60, 45, 25, 0.14);
+  --border-hover: rgba(60, 45, 25, 0.3);
+  --text: #241f18;
+  --text-muted: #6b6257;
+  --text-faint: #a39a8a;
+  --accent: #8a6414;
+  --accent-soft: rgba(138, 100, 20, 0.12);
+  --accent-hover: #75530f;
+  --on-accent: #ffffff;
+  --shadow: 0 18px 45px rgba(90, 70, 40, 0.14);
+}
+
+:root[data-theme="nocturne"] {
+  /* Nocturne — midnight-blue reading lamp, silver text, indigo accent */
+  --bg: #0a0f1e;
+  --bg-card: #111828;
+  --bg-card-hover: #162033;
+  --bg-input: #0d1322;
+  --border: rgba(163, 184, 255, 0.16);
+  --border-hover: rgba(163, 184, 255, 0.34);
+  --text: #dbe2f0;
+  --text-muted: #9aa8c4;
+  --text-faint: #5f6c88;
+  --accent: #a3b8ff;
+  --accent-soft: rgba(163, 184, 255, 0.12);
+  --accent-hover: #bccbff;
+  --on-accent: #10142a;
+  --shadow: 0 18px 50px rgba(2, 6, 18, 0.6);
+}
+
+:root[data-theme="verdant"] {
+  /* Verdant — deep court-green, tennis-ball accent */
+  --bg: #0b1510;
+  --bg-card: #122019;
+  --bg-card-hover: #182a20;
+  --bg-input: #0e1a13;
+  --border: rgba(198, 241, 53, 0.14);
+  --border-hover: rgba(198, 241, 53, 0.32);
+  --text: #e6f2d4;
+  --text-muted: #a4c184;
+  --text-faint: #67795a;
+  --accent: #c6f135;
+  --accent-soft: rgba(198, 241, 53, 0.12);
+  --accent-hover: #d6f95e;
+  --on-accent: #16200a;
+  --shadow: 0 18px 50px rgba(4, 12, 7, 0.6);
+}
+
+:root[data-theme="oxblood"] {
+  /* Oxblood — dark-red library leather, brass accent */
+  --bg: #160d0d;
+  --bg-card: #221312;
+  --bg-card-hover: #2b1817;
+  --bg-input: #1b0f0e;
+  --border: rgba(217, 164, 65, 0.16);
+  --border-hover: rgba(217, 164, 65, 0.36);
+  --text: #f0e3d2;
+  --text-muted: #c0a48a;
+  --text-faint: #7d6752;
+  --accent: #d9a441;
+  --accent-soft: rgba(217, 164, 65, 0.12);
+  --accent-hover: #e6b95c;
+  --on-accent: #241105;
+  --shadow: 0 18px 50px rgba(10, 3, 3, 0.6);
+}
+
+:root[data-theme="slate"] {
+  /* Slate — cold grey morning, steel blue (dark) */
+  --bg: #10161c;
+  --bg-card: #182028;
+  --bg-card-hover: #1f2933;
+  --bg-input: #131a21;
+  --border: rgba(143, 195, 221, 0.16);
+  --border-hover: rgba(143, 195, 221, 0.36);
+  --text: #dde4ea;
+  --text-muted: #9fb0bc;
+  --text-faint: #68798a;
+  --accent: #8fc3dd;
+  --accent-soft: rgba(143, 195, 221, 0.12);
+  --accent-hover: #a8d2e8;
+  --on-accent: #10161c;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+}
+
+:root[data-theme="candlelight"] {
+  /* Candlelight — flickering warm amber, high-contrast serif glow */
+  --bg: #120b06;
+  --bg-card: #1e1209;
+  --bg-card-hover: #271710;
+  --bg-input: #170e07;
+  --border: rgba(255, 184, 77, 0.16);
+  --border-hover: rgba(255, 184, 77, 0.38);
+  --text: #f6e8d3;
+  --text-muted: #c8ab84;
+  --text-faint: #7f6a4f;
+  --accent: #ffb84d;
+  --accent-soft: rgba(255, 184, 77, 0.12);
+  --accent-hover: #ffc86e;
+  --on-accent: #2a1503;
+  --shadow: 0 18px 50px rgba(8, 4, 1, 0.65);
+}
+
+/* Crossfade choreography: view-transition handles the swap, this class adds a
+   soft opacity settle on themed surfaces. Transform-free by design. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 240ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.theme-crossfade .library-bg,
+html.theme-crossfade .book-card {
+  animation: themeSettle 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes themeSettle {
+  from { opacity: 0.55; }
+  to { opacity: 1; }
+}
+
+[hidden] {
+  display: none !important;
 }
 
 body {
@@ -31,19 +184,78 @@ body {
   color: var(--text);
   font-family: var(--font-sans);
   line-height: 1.5;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Ambient background */
+/* Ambient background — one layered motif per theme (all gradients, no images) */
 .library-bg {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(212, 175, 100, 0.08), transparent 50%),
-    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(167, 139, 250, 0.06), transparent 45%),
-    radial-gradient(ellipse 50% 40% at 70% 100%, rgba(56, 189, 248, 0.05), transparent 50%),
-    radial-gradient(ellipse 40% 30% at 10% 80%, rgba(225, 29, 72, 0.04), transparent 50%);
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(216, 179, 106, 0.09), transparent 50%),
+    radial-gradient(ellipse 55% 40% at 85% 12%, rgba(120, 140, 220, 0.06), transparent 45%),
+    radial-gradient(ellipse 50% 40% at 70% 100%, rgba(184, 115, 51, 0.07), transparent 50%),
+    radial-gradient(ellipse 40% 30% at 10% 80%, rgba(216, 179, 106, 0.04), transparent 50%);
+}
+
+/* Sepia — low lamplight pooling over aged paper fiber */
+:root[data-theme="sepia"] .library-bg {
+  background:
+    radial-gradient(ellipse 90% 55% at 50% -10%, rgba(212, 169, 78, 0.14), transparent 55%),
+    radial-gradient(ellipse 60% 35% at 12% 88%, rgba(120, 84, 40, 0.16), transparent 55%),
+    radial-gradient(ellipse 55% 35% at 88% 82%, rgba(92, 60, 28, 0.12), transparent 55%);
+}
+
+:root[data-theme="light"] .library-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(138, 100, 20, 0.1), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(138, 100, 20, 0.06), transparent 45%),
+    radial-gradient(ellipse 50% 40% at 70% 100%, rgba(138, 100, 20, 0.05), transparent 50%);
+}
+
+/* Nocturne — starfield pinpricks over a cold horizon glow */
+:root[data-theme="nocturne"] .library-bg {
+  background:
+    radial-gradient(ellipse 70% 22% at 50% 108%, rgba(80, 110, 200, 0.22), transparent 60%),
+    radial-gradient(ellipse 45% 30% at 82% 8%, rgba(163, 184, 255, 0.12), transparent 55%),
+    radial-gradient(ellipse 35% 25% at 12% 22%, rgba(120, 150, 230, 0.08), transparent 55%),
+    radial-gradient(ellipse 90% 60% at 50% -20%, rgba(20, 30, 70, 0.5), transparent 60%);
+}
+
+/* Verdant — stadium floodlight wash over deep court green */
+:root[data-theme="verdant"] .library-bg {
+  background:
+    radial-gradient(ellipse 55% 35% at 50% -8%, rgba(230, 245, 190, 0.12), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 8% 90%, rgba(60, 120, 70, 0.2), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 92% 88%, rgba(40, 90, 55, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 30% at 50% 108%, rgba(198, 241, 53, 0.07), transparent 60%);
+}
+
+/* Oxblood — ember glow breathing inside dark leather gloom */
+:root[data-theme="oxblood"] .library-bg {
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 110%, rgba(150, 50, 30, 0.28), transparent 60%),
+    radial-gradient(ellipse 45% 30% at 85% 10%, rgba(217, 164, 65, 0.1), transparent 55%),
+    radial-gradient(ellipse 40% 30% at 8% 30%, rgba(90, 25, 25, 0.35), transparent 60%);
+}
+
+/* Slate — pale northern window-light over cold iron grey */
+:root[data-theme="slate"] .library-bg {
+  background:
+    radial-gradient(ellipse 75% 45% at 50% -12%, rgba(200, 220, 235, 0.14), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 90% 85%, rgba(90, 110, 130, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 8% 80%, rgba(60, 80, 100, 0.2), transparent 55%);
+}
+
+/* Candlelight — twin flame halos over charred umber dark */
+:root[data-theme="candlelight"] .library-bg {
+  background:
+    radial-gradient(ellipse 34% 26% at 30% 6%, rgba(255, 190, 90, 0.2), transparent 60%),
+    radial-gradient(ellipse 30% 24% at 70% 4%, rgba(255, 170, 60, 0.16), transparent 60%),
+    radial-gradient(ellipse 90% 60% at 50% 110%, rgba(120, 45, 10, 0.3), transparent 60%),
+    radial-gradient(ellipse 70% 40% at 50% 40%, rgba(255, 150, 50, 0.05), transparent 65%);
 }
 
 .library-bg::after {
@@ -51,106 +263,668 @@ body {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    linear-gradient(rgba(127, 127, 127, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 127, 127, 0.07) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent);
+}
+
+/* Sepia / light — paper fiber: fine horizontal laid-lines instead of grid */
+:root[data-theme="sepia"] .library-bg::after {
+  background-image:
+    repeating-linear-gradient(0deg, rgba(92, 64, 30, 0.06) 0 1px, transparent 1px 5px),
+    linear-gradient(rgba(92, 64, 30, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(92, 64, 30, 0.05) 1px, transparent 1px);
+  background-size: auto, 96px 96px, 96px 96px;
+}
+
+:root[data-theme="light"] .library-bg::after {
+  background-image:
+    repeating-linear-gradient(0deg, rgba(60, 45, 25, 0.05) 0 1px, transparent 1px 5px),
+    linear-gradient(rgba(60, 45, 25, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(60, 45, 25, 0.05) 1px, transparent 1px);
+  background-size: auto, 96px 96px, 96px 96px;
+}
+
+/* Nocturne — starfield: pinpoint dots on a wide sparse lattice */
+:root[data-theme="nocturne"] .library-bg::after {
+  background-image:
+    radial-gradient(rgba(220, 230, 255, 0.5) 1px, transparent 1.4px),
+    radial-gradient(rgba(180, 200, 255, 0.28) 1px, transparent 1.4px),
+    linear-gradient(rgba(163, 184, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(163, 184, 255, 0.05) 1px, transparent 1px);
+  background-size: 130px 130px, 89px 89px, 72px 72px, 72px 72px;
+  background-position: 0 0, 43px 61px, 0 0, 0 0;
+}
+
+/* Verdant — felt court: service-box lines over close weave */
+:root[data-theme="verdant"] .library-bg::after {
+  background-image:
+    linear-gradient(rgba(198, 241, 53, 0.09) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(198, 241, 53, 0.09) 2px, transparent 2px),
+    linear-gradient(rgba(230, 242, 212, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(230, 242, 212, 0.035) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 18px 18px, 18px 18px;
+}
+
+/* Oxblood — leather mottle: two offset blotches breaking the grid */
+:root[data-theme="oxblood"] .library-bg::after {
+  background-image:
+    radial-gradient(ellipse 22% 14% at 22% 60%, rgba(120, 50, 35, 0.16), transparent 70%),
+    radial-gradient(ellipse 26% 16% at 74% 30%, rgba(60, 20, 20, 0.22), transparent 70%),
+    linear-gradient(rgba(217, 164, 65, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 164, 65, 0.05) 1px, transparent 1px);
+  background-size: auto, auto, 88px 88px, 88px 88px;
+}
+
+/* Slate — drafting rules: fine cold lines, wider measure */
+:root[data-theme="slate"] .library-bg::after {
+  background-image:
+    linear-gradient(rgba(143, 195, 221, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(143, 195, 221, 0.07) 1px, transparent 1px);
+  background-size: 96px 96px;
+}
+
+/* Candlelight — rising embers: warm specks drifting over soft weave */
+:root[data-theme="candlelight"] .library-bg::after {
+  background-image:
+    radial-gradient(rgba(255, 200, 120, 0.4) 1px, transparent 1.5px),
+    linear-gradient(rgba(255, 184, 77, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 184, 77, 0.05) 1px, transparent 1px);
+  background-size: 110px 110px, 72px 72px, 72px 72px;
+  background-position: 20px 30px, 0 0, 0 0;
+}
+
+/* Top bar */
+.topbar {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.brand-mark {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+/* Reading-light menu — one spacious control replacing the cramped rail */
+.theme-menu {
+  position: relative;
+}
+
+#theme-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-height: 3rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+#theme-button:hover {
+  border-color: var(--border-hover);
+}
+
+.theme-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.theme-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+#theme-button .sw {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  background: var(--sw-bg, var(--bg-card));
+  box-shadow: inset 0 0 0 2px var(--sw-ac, var(--accent));
+  border: 1px solid var(--border-hover);
+}
+
+.theme-chevron {
+  color: var(--text-faint);
+  transition: transform 0.2s var(--ease);
+}
+
+#theme-button[aria-expanded="true"] .theme-chevron {
+  transform: rotate(180deg);
+}
+
+.theme-panel {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  z-index: 60;
+  width: max-content;
+  min-width: 19rem;
+  max-width: min(22rem, calc(100vw - 2rem));
+  max-height: min(26rem, calc(100vh - 8rem));
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.5rem;
+  list-style: none;
+  border: 1px solid var(--border-hover);
+  border-radius: 14px;
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+
+.theme-panel [role="option"] {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-height: 3.5rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 9px;
+  cursor: pointer;
+  outline: none;
+}
+
+.theme-panel [role="option"]:hover,
+.theme-panel [role="option"]:focus-visible {
+  background: var(--bg-card-hover);
+}
+
+.theme-panel [role="option"].selected {
+  background: var(--accent-soft);
+}
+
+.opt-swatch {
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--sw-bg, var(--bg-card));
+  box-shadow: inset 0 0 0 3px var(--sw-ac, var(--accent));
+  border: 1px solid var(--border-hover);
+}
+
+.opt-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.opt-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.opt-mood {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.opt-check {
+  flex: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0;
+}
+
+.theme-panel [role="option"].selected .opt-check {
+  opacity: 1;
 }
 
 /* Layout */
 .library {
   position: relative;
   z-index: 1;
-  max-width: 72rem;
+  max-width: 76rem;
   margin: 0 auto;
-  padding: 3.5rem 1.5rem 5rem;
+  padding: 3rem 1.5rem 5rem;
 }
 
-.library-header {
-  text-align: center;
-  margin-bottom: 3.5rem;
-  animation: fadeUp 0.8s var(--ease) both;
+/* Masthead — left-aligned, quiet; the plates are the spectacle */
+.masthead {
+  margin-bottom: 2.75rem;
+  animation: rise 0.8s var(--ease) backwards;
 }
 
-@keyframes fadeUp {
+@keyframes rise {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.library-eyebrow {
-  margin: 0 0 1rem;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.28em;
+.masthead-kicker {
+  margin: 0 0 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
-.library-title {
+.masthead-title {
   margin: 0;
+  max-width: 20ch;
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: clamp(2.75rem, 8vw, 4.5rem);
-  line-height: 1;
+  font-size: clamp(2.6rem, 5.5vw, 4.1rem);
+  line-height: 1.04;
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
-.library-title em {
-  font-style: italic;
-  color: var(--accent);
-  font-weight: 400;
-}
-
-.library-rule {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin: 1.5rem auto;
-  width: 10rem;
-}
-
-.library-rule::before,
-.library-rule::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent));
-}
-
-.library-rule::after {
-  background: linear-gradient(90deg, var(--accent), transparent);
-}
-
-.library-rule span {
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  transform: rotate(45deg);
-}
-
-.library-sub {
-  margin: 0 auto;
-  max-width: 32rem;
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-style: italic;
+.masthead-sub {
+  margin: 1.1rem 0 0;
+  max-width: 52ch;
+  font-size: 1.02rem;
+  line-height: 1.6;
   color: var(--text-muted);
 }
 
-.library-count {
-  margin: 1.25rem 0 0;
-  font-size: 0.7rem;
+.masthead-stats {
+  margin: 1.4rem 0 0;
+  font-size: 0.72rem;
+  font-weight: 500;
   letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Featured volume — one editorial spread */
+.featured {
+  display: grid;
+  grid-template-columns: minmax(0, 21rem) minmax(0, 1fr);
+  gap: 2.75rem;
+  align-items: center;
+  margin-bottom: 2.75rem;
+  padding: 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+  animation: rise 0.8s var(--ease) 0.08s backwards;
+}
+
+.featured-plate {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.featured-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.featured-kicker {
+  margin: 0 0 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.featured-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.featured-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.featured-title a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
+}
+
+.featured-author {
+  margin: 0.7rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.featured-tagline {
+  margin: 1.1rem 0 0;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.featured-blurb {
+  margin: 0.6rem 0 0;
+  max-width: 56ch;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.featured-meta {
+  margin: 1.2rem 0 0;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.featured-progress {
+  margin: 0.6rem 0 0;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.btn-open {
+  display: inline-block;
+  margin-top: 1.4rem;
+  padding: 0.8rem 1.7rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s var(--ease);
+}
+
+.btn-open:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+/* Continue shelf */
+.continue-shelf {
+  margin: 0 0 2.5rem;
+  padding: 1.25rem 1.4rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-card);
+}
+
+.shelf-title {
+  margin: 0 0 0.9rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.shelf-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shelf-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 0.9rem 0.6rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--bg-input);
+  transition: border-color 0.2s, transform 0.2s var(--ease);
+}
+
+.shelf-item:hover {
+  border-color: var(--card-accent, var(--accent));
+  transform: translateY(-2px);
+}
+
+.shelf-thumb {
+  flex: none;
+  width: 2.5rem;
+  height: 3.1rem;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--bg-card-hover);
+}
+
+.shelf-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.shelf-title-text {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shelf-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shelf-pct {
+  flex: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--card-accent, var(--accent));
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: stretch;
+  margin-bottom: 0.4rem;
+}
+
+.search-wrap {
+  position: relative;
+  flex: 1 1 18rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-faint);
+  pointer-events: none;
+}
+
+#search {
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--bg-input);
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#search::placeholder { color: var(--text-faint); }
+
+#search:focus { border-color: var(--accent); }
+
+.shelf-chips {
+  flex: 1 1 100%;
+  order: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.55rem 1.05rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.chip:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: transparent;
+  color: var(--on-accent);
+  font-weight: 600;
+}
+
+.sort-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0 0.4rem 0 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--bg-input);
+}
+
+.sort-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text-faint);
 }
 
-/* Grid */
+.select-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+#sort {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.75rem 1.6rem 0.75rem 0.2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+#sort option { color: #111; }
+
+.select-chevron {
+  position: absolute;
+  right: 0.5rem;
+  color: var(--text-faint);
+  pointer-events: none;
+}
+
+.result-count {
+  min-height: 1.4em;
+  margin: 0.5rem 0 1.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* Shelf sections */
+.shelf {
+  margin-bottom: 3rem;
+}
+
+.shelf:last-child {
+  margin-bottom: 0;
+}
+
+.shelf-head {
+  margin-bottom: 1.25rem;
+  max-width: 60ch;
+}
+
+.shelf-name {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.7rem;
+  letter-spacing: -0.01em;
+}
+
+.shelf-desc {
+  margin: 0.25rem 0 0;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+/* Volume grid */
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-  gap: 1.25rem;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -161,113 +935,313 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 1.5rem 1.4rem 1.35rem;
+  box-sizing: border-box;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 10px;
   text-decoration: none;
   color: inherit;
-  position: relative;
   overflow: hidden;
-  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), background 0.25s;
-  animation: fadeUp 0.7s var(--ease) both;
-}
-
-.book-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--card-accent), transparent);
-  opacity: 0.7;
-}
-
-.book-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 100% 0%, color-mix(in srgb, var(--card-accent) 12%, transparent), transparent 55%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: none;
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), background 0.25s, box-shadow 0.25s;
+  animation: rise 0.7s var(--ease) backwards;
+  animation-delay: calc(var(--i, 0) * 45ms);
 }
 
 .book-card:hover {
-  border-color: color-mix(in srgb, var(--card-accent) 45%, var(--border));
+  border-color: var(--border-hover);
   background: var(--bg-card-hover);
   transform: translateY(-3px);
+  box-shadow: var(--shadow);
 }
-
-.book-card:hover::after { opacity: 1; }
 
 .book-card:focus-visible {
   outline: 2px solid var(--card-accent);
-  outline-offset: 2px;
+  outline-offset: 3px;
+}
+
+/* The plate — authored artwork is the card's face */
+.plate {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: #0b0a08;
+}
+
+.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+
+.book-card:hover .plate img {
+  transform: scale(1.02);
+}
+
+.plate-sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 42%, rgba(255, 255, 255, 0.13) 50%, transparent 58%);
+  transform: translateX(-101%);
+  transition: transform 0.9s var(--ease);
+  pointer-events: none;
+}
+
+.book-card:hover .plate-sheen {
+  transform: translateX(101%);
+}
+
+.plate-fallback {
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+}
+
+/* H1 (FinalValidator R1): light-theme controls must read as paper, not
+   dark pills punched through the page. Cards already re-ink via tokens;
+   these controls need explicit paper surfaces under light + sepia. */
+:root[data-theme="light"] #theme-button,
+:root[data-theme="light"] .theme-panel,
+:root[data-theme="light"] #search,
+:root[data-theme="light"] .sort-wrap,
+:root[data-theme="light"] .shelf-item,
+:root[data-theme="light"] .chip {
+  background: #fffdf7;
+  color: #241f18;
+}
+
+:root[data-theme="light"] #search::placeholder {
+  color: #a39a8a;
+}
+
+:root[data-theme="light"] .chip {
+  color: #6b6257;
+}
+
+:root[data-theme="light"] .chip[aria-pressed="true"] {
+  background: #8a6414;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+:root[data-theme="light"] .theme-panel [role="option"]:hover,
+:root[data-theme="light"] .theme-panel [role="option"]:focus-visible {
+  background: #f5f0e6;
+}
+
+:root[data-theme="light"] .theme-panel [role="option"].selected {
+  background: rgba(138, 100, 20, 0.14);
+}
+
+:root[data-theme="light"] .opt-mood,
+:root[data-theme="light"] .theme-label,
+:root[data-theme="light"] .sort-label,
+:root[data-theme="light"] .search-icon,
+:root[data-theme="light"] .select-chevron,
+:root[data-theme="light"] .theme-chevron {
+  color: #6b6257;
+}
+
+:root[data-theme="light"] .opt-name,
+:root[data-theme="light"] .theme-current,
+:root[data-theme="light"] #sort {
+  color: #241f18;
+}
+
+:root[data-theme="light"] .opt-check {
+  color: #8a6414;
+}
+
+/* Sepia sits mid-dark: keep its surfaces but guarantee chip legibility. */
+:root[data-theme="sepia"] .chip[aria-pressed="true"] {
+  background: #d4a94e;
+  border-color: transparent;
+  color: #241a08;
+}
+
+.plate-mono {
+  font-family: var(--font-serif);
+  font-size: 6rem;
+  font-style: italic;
+  color: var(--card-accent);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.35rem 1.35rem 1.3rem;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.7rem;
 }
 
 .book-year {
-  margin: 0 0 0.75rem;
-  font-size: 0.65rem;
-  font-weight: 500;
+  font-size: 0.68rem;
+  font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--card-accent);
+  color: color-mix(in srgb, var(--card-accent) 72%, var(--text));
+}
+
+.progress-badge {
+  flex: none;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--card-accent);
+  color: color-mix(in srgb, var(--card-accent) 72%, var(--text));
+  border: 1px solid var(--card-accent);
+  border-color: color-mix(in srgb, var(--card-accent) 55%, transparent);
+  background: transparent;
+  background: color-mix(in srgb, var(--card-accent) 12%, transparent);
+  border-radius: 999px;
+  padding: 0.22rem 0.65rem;
 }
 
 .book-title {
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: 1.65rem;
-  line-height: 1.15;
+  font-size: 1.45rem;
+  line-height: 1.16;
   letter-spacing: -0.01em;
+  text-wrap: balance;
 }
 
 .book-author {
-  margin: 0.45rem 0 0;
-  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
+}
+
+.book-tagline {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  opacity: 0.85;
 }
 
 .book-blurb {
-  margin: 1rem 0 0;
-  flex: 1;
+  display: block;
+  margin-top: 0.45rem;
+  max-width: 56ch;
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   font-style: italic;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--text-muted);
 }
 
+.progress-track {
+  height: 3px;
+  border-radius: 999px;
+  background: var(--border);
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: var(--card-accent);
+}
+
+.continue-line {
+  display: block;
+  margin: 0.6rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--card-accent);
+  color: color-mix(in srgb, var(--card-accent) 72%, var(--text));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .book-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  margin-top: 1.25rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-  font-size: 0.7rem;
-  letter-spacing: 0.06em;
+  display: block;
+  margin-top: auto;
+  padding-top: 1.1rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-faint);
+  color: var(--text-muted);
 }
 
 .book-open {
-  margin-top: 1rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--card-accent);
-  opacity: 0.85;
-  transition: opacity 0.2s, transform 0.2s;
+  color: color-mix(in srgb, var(--card-accent) 72%, var(--text));
+  transition: transform 0.2s var(--ease);
 }
 
 .book-card:hover .book-open {
-  opacity: 1;
   transform: translateX(3px);
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 3.5rem 1rem;
+  border: 1px dashed var(--border-hover);
+  border-radius: 12px;
+}
+
+.empty-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.empty-sub {
+  margin: 0.5rem 0 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.btn-reset {
+  appearance: none;
+  border: 1px solid var(--border-hover);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.65rem 1.4rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-reset:hover {
+  border-color: var(--accent);
+  background: var(--bg-card);
 }
 
 /* Footer */
@@ -279,14 +1253,131 @@ body {
   letter-spacing: 0.08em;
 }
 
-@media (max-width: 560px) {
-  .library { padding: 2.5rem 1.1rem 3.5rem; }
-  .book-title { font-size: 1.4rem; }
+/* ── Theme chrome: selection, scrollbar, focus ── */
+::selection {
+  background: var(--accent);
+  color: var(--on-accent, #1b1408);
 }
 
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--border-hover);
+  border-radius: 999px;
+  border: 3px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+html { scrollbar-color: var(--border-hover) var(--bg); }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[role="option"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-panel [role="option"]:focus-visible {
+  outline-offset: -2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .featured {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 1.5rem;
+  }
+
+  .featured-plate {
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    flex-wrap: wrap;
+    padding: 1rem 1.1rem 0;
+  }
+
+  .theme-menu {
+    width: 100%;
+  }
+
+  #theme-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .theme-panel {
+    left: 0;
+    right: 0;
+    min-width: 0;
+    width: auto;
+  }
+
+  .library {
+    padding: 2.25rem 1.1rem 3.5rem;
+  }
+
+  .masthead-title {
+    font-size: clamp(2.2rem, 11vw, 2.9rem);
+  }
+
+  .featured {
+    padding: 1.1rem;
+    gap: 1.25rem;
+  }
+
+  .card-body {
+    padding: 1.15rem 1.1rem 1.1rem;
+  }
+
+  .sort-wrap {
+    flex: 1 1 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Reduced motion: entrances, sheens, and theme swaps cut instantly. */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+
+  html.theme-crossfade .library-bg,
+  html.theme-crossfade .book-card {
+    animation: none;
+  }
+
+  .masthead,
+  .featured,
+  .book-card {
+    animation: none;
+  }
+
+  .plate img,
+  .plate-sheen,
+  .book-card,
+  .book-open,
+  .btn-open,
+  .shelf-item,
+  .theme-chevron {
+    transition: none;
+  }
+
+  .book-card:hover,
+  .book-card:hover .plate img,
+  .book-card:hover .plate-sheen,
+  .book-card:hover .book-open,
+  .btn-open:hover,
+  .shelf-item:hover {
+    transform: none;
+  }
+
+  body {
+    transition: none;
   }
 }

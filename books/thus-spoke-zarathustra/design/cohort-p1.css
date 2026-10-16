@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Thus Spoke Zarathustra — cohort P1 (Part One, roman I) chapter CSS.
+   "Dawn Tablets". Supervisor-integrated from ZaraLeadP1's manifest
+   (design/cohort-p1.json, 23 entries, all pull-lines verbatim-verified).
+   Scope: CLOSES + DROP CAPS + P1 reading details ONLY. Global shell
+   (tokens, fonts, slot sizing, meta typography, TOC, progress, part
+   accents) lives in theme.css. NEVER duplicate theme.css rules here.
+   Contract: READER-CONTRACT v1.1 + A.0 chapter-end ruling (SVG-url
+   p:last-child::after, authored art, ≤32px, no layout shift) + A.2 symbols.
+   Director verdict Z1–Z7 binding. Z1 AUDIT: no text-shadow, no
+   radial/conic-gradient, no drop-shadow, no blur() in any rule body below.
+   Unlayered: wins over @layer shared; NO !important anywhere.
+   ========================================================================== */
+
+/* ---- P1 closes (A.0 path): cresting-sun mini-seal, inline-block tail.
+   P1 art ships ONLY as <symbol> cells (no positioned <view> crops), so the
+   close is a data: URI tracing the cohort-p1.svg #cresting-sun-mini draft
+   (ring + cresting sun + rays; solar #E8A93D, bone #F2E7CF). — Z7. */
+body[data-book="thus-spoke-zarathustra"][data-part="I"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14.5' fill='none' stroke='%23F2E7CF' stroke-width='1.4'/%3E%3Cpath d='M5 20a11 11 0 0 0 22 0' fill='none' stroke='%23F2E7CF' stroke-width='1' opacity='0.7'/%3E%3Cpath d='M8.5 20a7.5 7.5 0 0 1 15 0' fill='%23E8A93D'/%3E%3Cpath d='M16 9V6.4M21 10.5l1.8-2.2M11 10.5l-1.8-2.2M24.5 15l2.6-.7M7.5 15l-2.6-.7' fill='none' stroke='%23E8A93D' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 0.75em;
+  vertical-align: -4px;
+}
+
+/* ---- P1 drop caps: Cinzel solar for sermons + visions (rule 7).
+   Base cap (theme.css-agnostic): Cinzel, solar, epic measure clear. */
+body[data-book="thus-spoke-zarathustra"][data-part="I"] .chapter-text > p:first-of-type::first-letter {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  font-weight: 600;
+  color: var(--z-solar, #E8A93D);
+  background: none;
+}
+/* p1c1 vision-epic: epic-scale cap (3.6em). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c1"] .chapter-text > p:first-of-type::first-letter {
+  font-size: 3.6em;
+}
+/* p1c3 drowsy exception: cap dimmed to 70% (never the body). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c3"] .chapter-text > p:first-of-type::first-letter {
+  opacity: 0.7;
+}
+/* p1c4/p1c5 earth chapters: serpent-led caps. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c4"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c5"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c14"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c20"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--z-serpent, #7A8B5A);
+}
+/* p1c7 courtroom pallor: palest cap in P1 (bone-dimmed, text-verified guilt weather). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c7"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c10"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--z-bone, #F2E7CF);
+  opacity: 0.75;
+}
+/* p1c8 blood-ink exception (§1/§6 'written with blood'): the ONE ember cap in Part I. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c8"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--z-ember, #C8502E);
+}
+/* p1c22 dusk voice: dusk-gold (text-verified voluntary-death dusk). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c22"] .chapter-text > p:first-of-type::first-letter {
+  color: #D98F35;
+}
+/* p1c23 farewell-finale: white-gold cap (noontide doctrine stated). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c23"] .chapter-text > p:first-of-type::first-letter {
+  color: #EEC25E;
+}
+/* p1c15/p1c19: quote-led openers — shared .no-drop already skips the cap; keep. */
+
+/* ---- P1 reading details (content-verified, never positional decoration). */
+/* p1c8 aphorism air: widest paragraph rhythm in P1 — peaks need valleys. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c8"] .chapter-text > p {
+  margin-bottom: 1.3em;
+}
+/* p1c3 torpor: slightly close-set prose (seal/rule/cap dimming only, never body color). */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c3"] .chapter-text > p {
+  margin-bottom: 1.1em;
+}
+/* p1c5 physiological decree: aphoristic air for short paras. */
+body[data-book="thus-spoke-zarathustra"][data-chapter="p1c5"] .chapter-text > p {
+  margin-bottom: 1.2em;
+}
+
+/* ---- Print + reduced-motion guards (art is static; declared no-op). */
+@media print {
+  body[data-book="thus-spoke-zarathustra"][data-part="I"] .chapter-text > p:last-child::after {
+    content: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="thus-spoke-zarathustra"][data-part="I"] .chapter-text > p:last-child::after {
+    animation: none;
+    transition: none;
+  }
+}

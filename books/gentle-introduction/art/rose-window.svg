@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="w10t w10d">
+<title id="w10t">Plate X — The rose window: a twelve-petalled rose of Sanctuary Red and Candle glass, whole in its stone ring</title>
+<desc id="w10d">Engraved architectural plate. A great circular rose window set whole in an ashlar wall: twelve stone mullion spokes divide twelve petals of deep red and gold glass around a golden hub; a pointed-arch frame surrounds the ring; stepped wedges of rose-colored light spill down the wall to the floor. Nothing dissolves or comes apart: every petal is leaded whole, the ring unbroken.</desc>
+<defs>
+<linearGradient id="w10night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".5" stop-color="#100F0D"/><stop offset="1" stop-color="#1B1813"/>
+</linearGradient>
+<linearGradient id="w10stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<radialGradient id="w10hub" cx="50%" cy="42%" r="60%">
+<stop offset="0" stop-color="#F4D9A0"/><stop offset=".55" stop-color="#DFA050"/><stop offset="1" stop-color="#A83A2C"/>
+</radialGradient>
+<pattern id="w10hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="14" stroke="#9C917E" stroke-width="1.6"/>
+</pattern>
+<filter id="w10grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#w10grain)" font-family="Georgia,'Palatino Linotype','Liberation Serif',serif">
+<rect x="0" y="0" width="1600" height="900" fill="url(#w10night)"/>
+<rect x="28" y="28" width="1544" height="844" fill="none" stroke="#9C917E" stroke-width="2" opacity=".55"/>
+<rect x="44" y="44" width="1512" height="812" fill="none" stroke="#9C917E" stroke-width="1" opacity=".25"/>
+<text x="72" y="96" font-size="24" letter-spacing="4" fill="#9C917E">TAB. X</text>
+<text x="1528" y="96" font-size="20" letter-spacing="3" fill="#9C917E" text-anchor="end">UR · DE MANDATO CAELI</text>
+
+<!-- ===== the ashlar wall that holds the rose ===== -->
+<rect x="330" y="140" width="940" height="660" fill="url(#w10stone)" stroke="#9C917E" stroke-width="2.5"/>
+<rect x="330" y="140" width="940" height="660" fill="url(#w10hatch)" opacity=".14"/>
+<g stroke="#0A0908" stroke-width="2" opacity=".8">
+<line x1="330" y1="260" x2="1270" y2="260"/><line x1="330" y1="680" x2="1270" y2="680"/>
+<line x1="470" y1="140" x2="470" y2="260"/><line x1="740" y1="140" x2="740" y2="260"/>
+<line x1="860" y1="140" x2="860" y2="260"/><line x1="1130" y1="140" x2="1130" y2="260"/>
+<line x1="470" y1="680" x2="470" y2="800"/><line x1="740" y1="680" x2="740" y2="800"/>
+<line x1="860" y1="680" x2="860" y2="800"/><line x1="1130" y1="680" x2="1130" y2="800"/>
+</g>
+
+<!-- ===== the pointed-arch frame around the rose ===== -->
+<path d="M430 800 L430 470 Q430 330 800 250 Q1170 330 1170 470 L1170 800 Z" fill="#0A0908" stroke="#9C917E" stroke-width="3"/>
+<path d="M462 800 L462 476 Q462 352 800 282 Q1138 352 1138 476 L1138 800 Z" fill="none" stroke="#DFA050" stroke-width="1.4" opacity=".55"/>
+
+<!-- ===== the rose: outer stone ring, unbroken (R2: lifted strokes + keyline) ===== -->
+<circle cx="800" cy="500" r="226" fill="none" stroke="#9C917E" stroke-width="1.6" opacity=".8"/>
+<circle cx="800" cy="500" r="218" fill="#242019" stroke="#9C917E" stroke-width="5"/>
+<!-- ring bosses: twelve carved knops, all present -->
+<g fill="#9C917E">
+<circle cx="800" cy="282" r="7"/><circle cx="909" cy="311" r="7"/><circle cx="989" cy="391" r="7"/>
+<circle cx="1018" cy="500" r="7"/><circle cx="989" cy="609" r="7"/><circle cx="909" cy="689" r="7"/>
+<circle cx="800" cy="718" r="7"/><circle cx="691" cy="689" r="7"/><circle cx="611" cy="609" r="7"/>
+<circle cx="582" cy="500" r="7"/><circle cx="611" cy="391" r="7"/><circle cx="691" cy="311" r="7"/>
+</g>
+
+<!-- ===== twelve petals: Sanctuary Red outer ring, Candle inner ring ===== -->
+<g>
+<!-- outer petal ring: deep red glass, true radial foils -->
+<g fill="#A83A2C" stroke="#0A0908" stroke-width="2">
+<path d="M800 318 Q766 352 777 384 Q800 404 823 384 Q834 352 800 318 Z"/>
+<path d="M891 342 Q844 355 838 388 Q848 417 877 411 Q904 389 891 342 Z"/>
+<path d="M958 409 Q911 396 889 423 Q883 452 912 462 Q945 456 958 409 Z"/>
+<path d="M982 500 Q948 466 916 477 Q896 500 916 523 Q948 534 982 500 Z"/>
+<path d="M958 591 Q945 544 912 538 Q883 548 889 577 Q911 604 958 591 Z"/>
+<path d="M891 658 Q904 611 877 589 Q848 583 838 612 Q844 645 891 658 Z"/>
+<path d="M800 682 Q834 648 823 616 Q800 596 777 616 Q766 648 800 682 Z"/>
+<path d="M709 658 Q756 645 762 612 Q752 583 723 589 Q696 611 709 658 Z"/>
+<path d="M642 591 Q689 604 711 577 Q717 548 688 538 Q655 544 642 591 Z"/>
+<path d="M618 500 Q652 534 684 523 Q704 500 684 477 Q652 466 618 500 Z"/>
+<path d="M642 409 Q655 456 688 462 Q717 452 711 423 Q689 396 642 409 Z"/>
+<path d="M709 342 Q696 389 723 411 Q752 417 762 388 Q756 355 709 342 Z"/>
+</g>
+<!-- petal leading: gold foil centers -->
+<g fill="#DFA050" opacity=".9">
+<circle cx="800" cy="360" r="9"/>
+<circle cx="870" cy="379" r="9"/>
+<circle cx="921" cy="430" r="9"/>
+<circle cx="940" cy="500" r="9"/>
+<circle cx="921" cy="570" r="9"/>
+<circle cx="870" cy="621" r="9"/>
+<circle cx="800" cy="640" r="9"/>
+<circle cx="730" cy="621" r="9"/>
+<circle cx="679" cy="570" r="9"/>
+<circle cx="660" cy="500" r="9"/>
+<circle cx="679" cy="430" r="9"/>
+<circle cx="730" cy="379" r="9"/>
+</g>
+<!-- inner petal ring: Candle glass trefoils, 12 -->
+<g fill="#DFA050" stroke="#0A0908" stroke-width="2">
+<path d="M800 416 Q787 439 800 458 Q813 439 800 416 Z"/>
+<path d="M842 427 Q819 441 821 464 Q841 454 842 427 Z"/>
+<path d="M873 458 Q846 459 836 479 Q859 481 873 458 Z"/>
+<path d="M884 500 Q861 487 842 500 Q861 513 884 500 Z"/>
+<path d="M873 542 Q859 519 836 521 Q846 541 873 542 Z"/>
+<path d="M842 573 Q841 546 821 536 Q819 559 842 573 Z"/>
+<path d="M800 584 Q813 561 800 542 Q787 561 800 584 Z"/>
+<path d="M758 573 Q781 559 779 536 Q759 546 758 573 Z"/>
+<path d="M727 542 Q754 541 764 521 Q741 519 727 542 Z"/>
+<path d="M716 500 Q739 513 758 500 Q739 487 716 500 Z"/>
+<path d="M727 458 Q741 481 764 479 Q754 459 727 458 Z"/>
+<path d="M758 427 Q759 454 779 464 Q781 441 758 427 Z"/>
+</g>
+</g>
+
+<!-- ===== twelve stone mullion spokes: slender tracery between the petals ===== -->
+<g stroke="#9C917E" stroke-width="3" stroke-linecap="round">
+<line x1="810" y1="463" x2="850" y2="313"/>
+<line x1="827" y1="473" x2="937" y2="363"/>
+<line x1="837" y1="490" x2="987" y2="450"/>
+<line x1="837" y1="510" x2="987" y2="550"/>
+<line x1="827" y1="527" x2="937" y2="637"/>
+<line x1="810" y1="537" x2="850" y2="687"/>
+<line x1="790" y1="537" x2="750" y2="687"/>
+<line x1="773" y1="527" x2="663" y2="637"/>
+<line x1="763" y1="510" x2="613" y2="550"/>
+<line x1="763" y1="490" x2="613" y2="450"/>
+<line x1="773" y1="473" x2="663" y2="363"/>
+<line x1="790" y1="463" x2="750" y2="313"/>
+</g>
+<circle cx="800" cy="500" r="40" fill="#242019" stroke="#9C917E" stroke-width="4"/>
+
+<!-- ===== the hub: gold glass oculus ===== -->
+<circle cx="800" cy="500" r="31" fill="url(#w10hub)" stroke="#0A0908" stroke-width="2"/>
+<circle cx="800" cy="500" r="12" fill="#F4D9A0"/>
+<!-- hub flame pip: the mandate's single tongue of fire -->
+<path d="M800 484 C806 493 807 498 800 503 C793 498 794 493 800 484 Z" fill="#A83A2C"/>
+
+<!-- ===== rose light spilling down the wall: stepped wedges, red feet to gold ===== -->
+<g>
+<polygon points="620,700 980,700 1060,800 540,800" fill="#A83A2C" opacity=".3"/>
+<polygon points="670,700 930,700 990,800 610,800" fill="#DFA050" opacity=".3"/>
+<polygon points="740,700 860,700 890,800 710,800" fill="#F4D9A0" opacity=".32"/>
+<ellipse cx="800" cy="800" rx="220" ry="16" fill="#DFA050" opacity=".25"/>
+</g>
+<!-- sill -->
+<rect x="430" y="800" width="740" height="10" fill="#242019" stroke="#9C917E" stroke-width="1"/>
+
+<!-- side lancets: the nave aisles answer the rose, small and whole -->
+<g>
+<path d="M180 800 L180 520 Q180 460 220 440 Q260 460 260 520 L260 800 Z" fill="#0A0908" stroke="#9C917E" stroke-width="2"/>
+<path d="M196 800 L196 540 Q196 492 220 478 Q244 492 244 540 L244 800 Z" fill="#DFA050" opacity=".5"/>
+<path d="M1340 800 L1340 520 Q1340 460 1380 440 Q1420 460 1420 520 L1420 800 Z" fill="#0A0908" stroke="#9C917E" stroke-width="2"/>
+<path d="M1356 800 L1356 540 Q1356 492 1380 478 Q1404 492 1404 540 L1404 800 Z" fill="#DFA050" opacity=".5"/>
+</g>
+
+<!-- (no in-SVG caption strip: the manifest caption covers it — R1) -->
+</g>
+</svg>

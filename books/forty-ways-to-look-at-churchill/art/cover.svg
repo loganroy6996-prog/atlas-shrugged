@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 620" role="img" aria-label="Cubist shards scattering around an empty void">
+  <title>Forty Facets cover — mid-scatter around a void</title>
+  <!-- Bed: flat lampblack masses; fills via vars so themes recolor. -->
+  <rect x="0" y="0" width="1440" height="620" fill="var(--fw-gallery, #211B13)"/>
+  <rect x="0" y="470" width="1440" height="150" fill="var(--fw-lampblack, #14110B)"/>
+  <!-- Void: the unfinishable portrait's missing face (right third). -->
+  <ellipse cx="1010" cy="250" rx="150" ry="185" fill="var(--fw-lampblack, #14110B)"/>
+  <ellipse cx="1010" cy="250" rx="150" ry="185" fill="none" stroke="var(--fw-ochre, #C8984A)" stroke-width="2" opacity="0.55"/>
+  <ellipse cx="1010" cy="250" rx="112" ry="142" fill="none" stroke="var(--fw-ochre, #C8984A)" stroke-width="1" opacity="0.3"/>
+  <!-- Ochre scatter: rising monoliths (public monument, Part II). -->
+  <g fill="var(--fw-ochre, #C8984A)">
+    <path d="M120 470 L205 180 L268 200 L190 470 Z"/>
+    <path d="M250 470 L330 250 L392 268 L320 470 Z"/>
+    <path d="M60 470 L120 330 L170 345 L120 470 Z" opacity="0.75"/>
+    <path d="M420 470 L470 300 L540 312 L500 470 Z" opacity="0.85"/>
+  </g>
+  <!-- Vermilion confrontation shards (nemesis/tragedy, Part V). -->
+  <g fill="var(--fw-vermilion, #C4502C)">
+    <path d="M1180 470 L1330 210 L1380 240 L1260 470 Z"/>
+    <path d="M1290 470 L1400 330 L1440 345 L1400 470 Z" opacity="0.8"/>
+    <path d="M700 470 L880 420 L900 470 Z"/>
+  </g>
+  <!-- Slate private shards (doubt/night, Part III). -->
+  <g fill="var(--fw-slate, #5E6E93)">
+    <path d="M540 470 L600 200 L680 230 L640 470 Z" opacity="0.9"/>
+    <path d="M640 470 L730 340 L790 355 L730 470 Z" opacity="0.7"/>
+    <path d="M360 470 L400 380 L450 388 L420 470 Z" opacity="0.6"/>
+  </g>
+  <!-- Bone record tiles (archive, Part IV). -->
+  <g fill="var(--fw-bone, #ECE1CB)">
+    <path d="M880 470 L920 240 L1040 250 L1000 470 Z" opacity="0.9"/>
+    <path d="M1060 470 L1090 330 L1170 340 L1150 470 Z" opacity="0.7"/>
+    <path d="M0 470 L40 400 L90 408 L60 470 Z" opacity="0.5"/>
+  </g>
+  <!-- Small mid-air fragments: the scatter frozen. -->
+  <g>
+    <path d="M760 180 L800 120 L830 130 L795 190 Z" fill="var(--fw-ochre, #C8984A)"/>
+    <path d="M850 140 L880 100 L900 108 L875 150 Z" fill="var(--fw-bone, #ECE1CB)" opacity="0.8"/>
+    <path d="M490 150 L520 110 L545 118 L518 158 Z" fill="var(--fw-slate, #5E6E93)"/>
+    <path d="M1240 140 L1275 90 L1300 100 L1270 152 Z" fill="var(--fw-vermilion, #C4502C)"/>
+    <path d="M300 130 L325 95 L345 102 L322 140 Z" fill="var(--fw-ochre, #C8984A)" opacity="0.7"/>
+    <path d="M180 200 L200 170 L215 175 L198 206 Z" fill="var(--fw-bone, #ECE1CB)" opacity="0.6"/>
+  </g>
+  <!-- Gallery floor line. -->
+  <rect x="0" y="468" width="1440" height="2" fill="var(--fw-ochre, #C8984A)" opacity="0.5"/>
+</svg>

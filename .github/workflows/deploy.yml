@@ -32,6 +32,7 @@ jobs:
           # Library shell
           cp index.html catalog.json _site/
           cp -r css shared _site/
+          if [ -d assets ]; then cp -r assets _site/; fi
           touch _site/.nojekyll
 
           # Each book: index, theme, data (no bulk book.json)
@@ -40,11 +41,18 @@ jobs:
             slug=$(basename "$book")
             mkdir -p "_site/books/$slug/data/chapters"
             cp "$book/index.html" "$book/theme.css" "$book/meta.json" "_site/books/$slug/" 2>/dev/null || true
-            if [ -f "$book/data/toc.json" ]; then
-              cp "$book/data/toc.json" "_site/books/$slug/data/"
-            fi
+            for js in "$book"/*.js; do [ -f "$js" ] && cp "$js" "_site/books/$slug/" || true; done
+            for df in "$book"/data/*.json; do [ -f "$df" ] && cp "$df" "_site/books/$slug/data/" || true; done
             if [ -d "$book/data/chapters" ]; then
               cp "$book/data/chapters/"*.json "_site/books/$slug/data/chapters/" 2>/dev/null || true
+            fi
+            if [ -d "$book/art" ]; then
+              mkdir -p "_site/books/$slug/art"
+              cp -r "$book/art/." "_site/books/$slug/art/"
+            fi
+            if [ -d "$book/design" ]; then
+              mkdir -p "_site/books/$slug/design"
+              cp -r "$book/design/." "_site/books/$slug/design/"
             fi
           done
 

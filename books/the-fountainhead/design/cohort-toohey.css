@@ -1,0 +1,213 @@
+/* TOOHEY cohort (Part 2) — FURNACE grammar · lead engineer pass
+ * Conforms to ART-DIRECTION.md (final, F1–F10/A1–A2), CHAPTERS.md Part 2 rows
+ * (authored numeral_fill + bars vocabulary + COLD set), READER-CONTRACT §2–§4/§8.
+ * Hooks: body[data-book="the-fountainhead"][data-part-id="part-2"],
+ * body[data-chapter="p2cN"], body[data-art="toohey-arches"].
+ * Art: art/toohey-banner.svg inlined into #chapter-art.banner by reader.js.
+ * Per-chapter values (fig/numeral_fill/bars/dropcap/notes) in cohort-toohey.json.
+ * Benchmark: USER-FEEDBACK.md — controls/details authored in FURNACE means. */
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] {
+  --fh-hearth: #17100b;
+  --fh-hearth-deep: #100b08;
+  --fh-bone: #f6ead6;
+  --fh-ember: #e4572e;
+  --fh-ember-deep: #8c3a20;
+  --fh-emberlight: #ffd9a0;
+  --fh-bronze: #c8a06a;
+  --fh-ash: #7a6a58;
+  --fh-cinder: #3a2c22;
+  --fh-bar-inlay: #100b08;
+  --fh-display: Oswald, "Arial Narrow", Impact, sans-serif;
+  --fh-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+
+/* ── Banner slot: meta→text zone, compact, never pushes text (F4) ── */
+body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner {
+  display: block;
+  max-height: 12rem;
+  overflow: hidden;
+  margin: 0 0 1.5rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 3px double var(--fh-bronze);
+  background: var(--fh-hearth-deep);
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 12rem;
+}
+
+/* One panel visible per chapter; the rest hidden. Explicit per-chapter
+ * display rules (no :has() dependency for the core behavior). */
+body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner .t2-panel {
+  display: none;
+}
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c1"] #chapter-art.banner #t2-c1,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c2"] #chapter-art.banner #t2-c2,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c3"] #chapter-art.banner #t2-c3,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c4"] #chapter-art.banner #t2-c4,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c5"] #chapter-art.banner #t2-c5,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c6"] #chapter-art.banner #t2-c6,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c7"] #chapter-art.banner #t2-c7,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c8"] #chapter-art.banner #t2-c8,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c9"] #chapter-art.banner #t2-c9,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c10"] #chapter-art.banner #t2-c10,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c11"] #chapter-art.banner #t2-c11,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c12"] #chapter-art.banner #t2-c12,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c13"] #chapter-art.banner #t2-c13,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c14"] #chapter-art.banner #t2-c14,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c15"] #chapter-art.banner #t2-c15 {
+  display: inline;
+}
+
+/* Chainage captions set via figcaption (reader caption field). Ember here is
+ * large-display use (F1); validator meters computed contrast (F9). */
+body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner figcaption {
+  font-family: var(--fh-data);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-emberlight);
+  padding: 0.5rem 0 0;
+}
+
+/* ── Chapter meta: Oswald head + Plex kicker (§2 scale) ── */
+body[data-book="the-fountainhead"][data-part-id="part-2"] .meta-part {
+  font-family: var(--fh-data);
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] .meta-title {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fh-bone);
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] .meta-rule span {
+  width: 10rem;
+  background: linear-gradient(90deg, transparent, var(--fh-ember-deep) 20% 80%, transparent);
+  box-shadow: 0 7px 0 -4px var(--fh-cinder);
+}
+
+/* ── Drop-cap heat: Ember-deep, Bronze for COLD dialogue opens ── */
+body[data-book="the-fountainhead"][data-part-id="part-2"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--fh-display);
+  font-weight: 700;
+  color: var(--fh-ember-deep);
+  border-left-color: var(--fh-ember-deep);
+}
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c4"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c7"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c14"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--fh-bronze);
+  border-left-color: var(--fh-bronze);
+}
+
+/* ── End mark: Bronze diamond, banked heat (F10: Plex carries U+25C6) ── */
+body[data-book="the-fountainhead"][data-part-id="part-2"] .chapter-text > p:last-child::after {
+  content: "◆";
+  font-family: var(--fh-data);
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c10"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-part-id="part-2"][data-chapter="p2c12"] .chapter-text > p:last-child::after {
+  color: var(--fh-ember);
+}
+
+/* ── Reader chrome in FURNACE means (benchmark: authored controls) ── */
+body[data-book="the-fountainhead"][data-part-id="part-2"] .progress-fill {
+  background: linear-gradient(90deg, var(--fh-ember-deep), var(--fh-bronze));
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] .header-part {
+  font-family: var(--fh-data);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"][data-part-id="part-2"] .header-chapter {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] .nav-label {
+  font-family: var(--fh-data);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] .nav-title {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-2"] .nav-btn:hover:not(:disabled) {
+  border-top: 2px solid var(--fh-ember-deep);
+}
+
+/* TOC: Part 2 section = 2nd .toc-part in order (shared markup carries no
+ * part id on sections, so TOC order = part order per theme.css note). */
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(2) .toc-part-sub {
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(2) .toc-num {
+  font-family: var(--fh-data);
+  color: var(--fh-ember-deep);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(2) .toc-chapter.active {
+  border-left-color: var(--fh-ember-deep);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(2) .toc-chapter.read .toc-check {
+  background: var(--fh-bronze);
+  border-color: var(--fh-bronze);
+}
+
+/* ── Small screens: banner keeps full width, chainage tracking relaxes ── */
+@media (max-width: 720px) {
+  body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner {
+    max-height: none;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner svg {
+    max-height: none;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner figcaption {
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="the-fountainhead"][data-part-id="part-2"] #chapter-art.banner {
+    border-bottom-style: solid;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-2"] .nav-btn:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+/* ── Sepia / light themes: Bone ground, darkened Ember (F1/F9 policing) ── */
+html[data-theme="sepia"] body[data-book="the-fountainhead"][data-part-id="part-2"],
+html[data-theme="light"] body[data-book="the-fountainhead"][data-part-id="part-2"] {
+  --fh-hearth: #f6ead6;
+  --fh-hearth-deep: #efe0c8;
+  --fh-bone: #2a1e14;
+  --fh-ember: #b23e1f;
+  --fh-ember-deep: #8c3a20;
+  --fh-emberlight: #8c3a20;
+  --fh-bronze: #8a6a3a;
+  --fh-ash: #6b5c48;
+  --fh-bar-inlay: #e2d3b8;
+}

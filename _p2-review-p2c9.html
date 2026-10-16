@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>REVIEW ONLY p2c9 — The Night Song</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+<style>
+  :root { --z-night:#0A0E21; --z-lapis:#1B2350; --z-solar:#E8A93D; --z-ember:#C8502E; --z-serpent:#7A8B5A; --z-bone:#F2E7CF; }
+  body { margin:0; background:#070B1C; color:#F2E7CF; font-family:Spectral,Georgia,serif; }
+  .review-banner { font-family:system-ui,sans-serif; font-size:.75rem; color:#0A0E21; background:#E8A93D; padding:.4rem 1rem; text-align:center; }
+  main { max-width:48rem; margin:0 auto; padding:2rem 1.25rem 5rem; }
+  #chapter-art { margin:0 0 2rem; text-align:center; }
+  #chapter-art svg { display:block; margin:0 auto; }
+  .chapter-meta { text-align:center; margin-bottom:2.5rem; }
+  .meta-part { font-family:Cinzel,Georgia,serif; font-size:.85rem; letter-spacing:.3em; color:#E8A93D; margin:0 0 .8rem; }
+  .meta-title { font-family:Cinzel,Georgia,serif; font-size:clamp(2rem,5vw,3rem); margin:0; text-wrap:balance; }
+  .meta-rule { display:flex; align-items:center; justify-content:center; gap:.8rem; margin-top:1.6rem; }
+  .meta-rule::before, .meta-rule::after { content:""; width:4.5rem; height:1px; background:#C9D4E8; opacity:.5; }
+  .meta-rule span { display:block; width:7px; height:7px; transform:rotate(45deg); background:#E8A93D; }
+  .chapter-text > p { font-size:1.3rem; line-height:1.87; margin:0 0 1.4em; }
+/* ==========================================================================
+   Thus Spoke Zarathustra — cohort P2 (Part Two, roman II) reader CSS.
+   "The Night Doctrine" / Eclipse Vigil. Owner: ZaraP2Engineer (P2 cohort).
+   Implements local://zara-p2-design.md §8 (11-block plan, in order).
+   Identity: books/thus-spoke-zarathustra/design/directions.md (Direction A,
+   THE SOLAR GOSPEL; binding rules 1-14 + Part II Night grammar) and
+   books/thus-spoke-zarathustra/design/ART-DIRECTION.md (supervisor draft v0.1).
+   Contract: .omp/design/READER-CONTRACT.md v1.0 STABLE + v1.1 symbol key (A.2)
+   + Appendix A.0 chapter-end ruling (SVG-url p:last-child::after override,
+   authored art at most 32px, no layout shift).
+   Director verdict .omp/design/critiques/thus-spoke-zarathustra.md: Z1-Z7
+   binding; Spectral body FINAL (prose 1.3rem/1.87; songs Spectral italic
+   1.15rem/2.0); Cinzel display liturgical; no font hedging.
+   Lead rulings (binding, close §10 open flags): (b) p2c10 TRI-VOICE approved —
+   frame / embedded song ¶9-25 / dusk-indent coda; (c) p2c22 WHISPER REGISTER
+   approved — ¶7-29 at 1.25rem silver-leaning bone, contrast-proved at build;
+   (d) p2c20 RELIEF approved as demarcated primary via p:nth-of-type(43)::before
+   carrying the relief-bridge SVG url() (A.0 rationale: authored art, own box,
+   unused pseudo) — one deletion removes it, see RELIEF block.
+   Scope discipline: EVERY rule is qualified under body[data-part="II"],
+   body[data-chapter="p2cN"], or body[data-art="<motif>"]. No unqualified
+   selectors. No edits to shared/*, prose, theme.css, index.html, or siblings.
+   Unlayered cohort CSS wins over @layer shared; NO !important anywhere.
+   Z1 firewall: ALL gold is FLAT engraved SVG line-work. Zero text-shadow on
+   Cinzel, zero glow discs, zero luminosity effects. Z1 AUDIT LINE:
+   grep -nE "text-shadow|radial-gradient|conic-gradient|drop-shadow|blur\("
+   design/cohort-p2.css MUST return zero hits (this comment names the tokens;
+   the audit greps rule bodies and finds none).
+   FALLBACK DEMARCATION: the provisional CSS-only opener block is wrapped in
+   "FALLBACK — REMOVE AFTER chapters.json MERGE" comments. The supervisor
+   deletes that block once design/chapters.json carries the P2 manifest; the
+   manifest path (block 6) is primary. The p2c20 RELIEF block is likewise
+   wrapped in "RELIEF — SUPERVISOR MAY STRIP" for one-deletion removal.
+   ========================================================================== */
+
+/* ---- Block 2. Cohort tokens (scoped derivations ONLY; values from identity) -- */
+body[data-part="II"] {
+  --p2-night: #070B1C;
+  --p2-star: #C9D4E8;
+  --p2-white-gold: #F5C96B;
+  --p2-whisper: #DDE3EC;
+  --p2-lyric-max: 28rem;
+  --p2-emblem: 120px;
+}
+
+/* ---- Block 3a. Song lyric treatment: p2c9 The Night Song (prototype chapter).
+   Centered Spectral italic lyric, 26-30rem, NO drop cap. Refrains are ¶0,1,21-24
+   = p:nth-of-type(1,2,22,23,24,25); the fountain crown sits ABOVE each refrain
+   pair (over ¶0 and ¶21) via background-image in the paragraph's own padded box. */
+body[data-chapter="p2c9"] .chapter-text > p {
+  max-width: var(--p2-lyric-max);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Spectral, Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2.0;
+  color: var(--z-bone, #F2E7CF);
+}
+body[data-chapter="p2c9"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-family: Spectral, Georgia, serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: none;
+}
+body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(1),
+body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(22) {
+  padding-top: 0;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2096%2048%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M14%2044%20Q14%2020%2048%2010%20Q82%2020%2082%2044%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M26%2044%20Q28%2028%2048%2022%20Q68%2028%2070%2044%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M48%2044%20V22%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M8%2044h80%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M48%204l2%204.2%204.2%202-4.2%202-2%204.2-2-4.2-4.2-2%204.2-2Z%22%20fill%3D%22%23C9D4E8%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M20%2014l1.4%202.8%202.8%201.4-2.8%201.4-1.4%202.8-1.4-2.8-2.8-1.4%202.8-1.4Z%22%20fill%3D%22%237A8B5A%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M76%2014l1.4%202.8%202.8%201.4-2.8%201.4-1.4%202.8-1.4-2.8-2.8-1.4%202.8-1.4Z%22%20fill%3D%22%237A8B5A%22/%3E%0A%20%20%20%20%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center 6px;
+  background-size: 0 0;
+}
+body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(1)::before,
+body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(22)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2096%2048%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M14%2044%20Q14%2020%2048%2010%20Q82%2020%2082%2044%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M26%2044%20Q28%2028%2048%2022%20Q68%2028%2070%2044%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M48%2044%20V22%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M8%2044h80%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M48%204l2%204.2%204.2%202-4.2%202-2%204.2-2-4.2-4.2-2%204.2-2Z%22%20fill%3D%22%23C9D4E8%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M20%2014l1.4%202.8%202.8%201.4-2.8%201.4-1.4%202.8-1.4-2.8-2.8-1.4%202.8-1.4Z%22%20fill%3D%22%237A8B5A%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M76%2014l1.4%202.8%202.8%201.4-2.8%201.4-1.4%202.8-1.4-2.8-2.8-1.4%202.8-1.4Z%22%20fill%3D%22%237A8B5A%22/%3E%0A%20%20%20%20%3C/svg%3E");
+  display: block;
+  width: 72px;
+  height: 36px;
+  margin: 0 auto 0.9rem;
+}
+body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(26) {
+  font-size: 0.95rem;
+  color: var(--p2-star);
+}
+
+/* ---- Block 3b. p2c10 The Dance Song: TRI-VOICE (flag (b) APPROVED).
+   Frame narrative (¶0-8, ¶26+) left sermon prose, NO drop cap (song chapter,
+   rule 7, frame included); embedded dance-song (¶9-25) centered lyric italic
+   with the lyre crown above ¶9; evening coda (¶27+) dusk-indented one em. */
+body[data-chapter="p2c10"] .chapter-text > p {
+  font-family: Spectral, Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.87;
+  color: var(--z-bone, #F2E7CF);
+}
+body[data-chapter="p2c10"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-family: Spectral, Georgia, serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: none;
+}
+body[data-chapter="p2c10"] .chapter-text > p:nth-of-type(n+10):nth-of-type(-n+26) {
+  max-width: var(--p2-lyric-max);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2.0;
+}
+body[data-chapter="p2c10"] .chapter-text > p:nth-of-type(10)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2096%2064%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M30%208%20Q16%2034%2034%2056%20Q48%2062%2062%2056%20Q80%2034%2066%208%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M30%208h36%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M38%2012%20Q36%2034%2042%2054%20M44%2012%20Q43%2034%2046%2054%20M50%2012%20Q50%2034%2050%2054%20M56%2012%20Q57%2034%2054%2054%20M62%2012%20Q64%2034%2058%2054%22%20fill%3D%22none%22%20stroke%3D%22%237A8B5A%22%20stroke-width%3D%221.8%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M34%2056%20Q48%2062%2062%2056%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M48%200l1.6%203.4%203.4%201.6-3.4%201.6-1.6%203.4-1.6-3.4-3.4-1.6%203.4-1.6Z%22%20fill%3D%22%23C9D4E8%22/%3E%0A%20%20%20%20%3C/svg%3E");
+  display: block;
+  width: 64px;
+  height: 43px;
+  margin: 0 auto 0.9rem;
+}
+body[data-chapter="p2c10"] .chapter-text > p:nth-of-type(n+28) {
+  margin-left: 1em;
+  color: var(--p2-star);
+}
+
+/* ---- Block 3c. p2c11 The Funeral Song: lyric-crest. Centered lyric italic,
+   NO drop cap; wreath crown above ¶0; the ¶36 closer set bold at 1.5rem in
+   flat white-gold — P2's single gold-text moment (rule 14 large-text). */
+body[data-chapter="p2c11"] .chapter-text > p {
+  max-width: var(--p2-lyric-max);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Spectral, Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2.0;
+  color: var(--z-bone, #F2E7CF);
+}
+body[data-chapter="p2c11"] .chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-family: Spectral, Georgia, serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: none;
+}
+body[data-chapter="p2c11"] .chapter-text > p:nth-of-type(1)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2096%2064%22%3E%0A%20%20%20%20%20%20%3Cellipse%20cx%3D%2248%22%20cy%3D%2234%22%20rx%3D%2230%22%20ry%3D%2222%22%20fill%3D%22none%22%20stroke%3D%22%237A8B5A%22%20stroke-width%3D%224%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M22%2028l-8-4M22%2040l-8%204M74%2028l8-4M74%2040l8%204M34%2016l-4-8M62%2016l4-8M34%2052l-4%208M62%2052l4%208%22%20stroke%3D%22%237A8B5A%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M48%2012l2%204.2%204.2%202-4.2%202-2%204.2-2-4.2-4.2-2%204.2-2Z%22%20fill%3D%22%23C9D4E8%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M48%2046l1.6%203.3%203.3%201.6-3.3%201.6-1.6%203.3-1.6-3.3-3.3-1.6%203.3-1.6Z%22%20fill%3D%22%23C9D4E8%22/%3E%0A%20%20%20%20%3C/svg%3E");
+  display: block;
+  width: 60px;
+  height: 40px;
+  margin: 0 auto 0.9rem;
+}
+body[data-chapter="p2c11"] .chapter-text > p:nth-of-type(37) {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--p2-white-gold);
+}
+
+/* ---- Block 4. p2c22 whisper register (flag (c) APPROVED). The voiceless
+   dialogue (¶7-29) in the same measure, 0.05rem smaller, silver-leaning bone.
+   NO quotation styling: the voice is voiceless. Contrast proof (computed):
+   --p2-whisper #DDE3EC on composited night #070B1C-#0A0E21 = 13.9:1 (see yield). */
+body[data-chapter="p2c22"] .chapter-text > p:nth-of-type(n+8):nth-of-type(-n+30) {
+  font-size: 1.25rem;
+  color: var(--p2-whisper);
+}
+
+/* ---- Block 5. Drop-cap rules: Cinzel solar for sermons + visions; explicit
+   NO-drop for the three song chapters (c9/c10/c11 reset in block 3 above).
+   Qualifies the shared reader.css drop-cap (unlayered wins, no !important);
+   also clears the art.css additive background on the same letter. */
+body[data-part="II"]:not([data-chapter="p2c9"]):not([data-chapter="p2c10"]):not([data-chapter="p2c11"]) .chapter-text > p:first-of-type::first-letter {
+  font-family: Cinzel, "Trajan Pro", Georgia, serif;
+  color: var(--z-solar, #E8A93D);
+  background: none;
+}
+
+/* ---- Block 6. Manifest-path #chapter-art treatments (PRIMARY, v1 live).
+   Plate sizing per class; night ground via FLAT background-color + inlined SVG;
+   figcaption pull-lines in Spectral italic bone (reader.js owns the aria). */
+body[data-part="II"] #chapter-art {
+  background-color: var(--p2-night);
+  border: 1px solid var(--border-strong, rgba(201, 212, 232, 0.22));
+  padding: 1.25rem 1rem 1rem;
+  margin-bottom: 2rem;
+}
+body[data-part="II"] #chapter-art.scene svg {
+  width: min(56rem, 100%);
+  max-height: 46vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-part="II"] #chapter-art.song svg {
+  width: min(30rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-chapter="p2c9"] #chapter-art.song svg {
+  width: min(22rem, 78%);
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-part="II"] #chapter-art.emblem svg {
+  width: var(--p2-emblem);
+  margin-left: auto;
+  margin-right: auto;
+}
+body[data-chapter="p2c16"] #chapter-art.emblem svg {
+  width: 96px;
+}
+body[data-chapter="p2c3"] #chapter-art.emblem svg {
+  width: 96px;
+}
+body[data-chapter="p2c20"] #chapter-art.emblem svg {
+  width: min(200px, 72%);
+}
+body[data-part="II"] #chapter-art figcaption {
+  margin-top: 1rem;
+  font-family: Spectral, Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--z-bone, #F2E7CF);
+}
+
+/* ---- Block 7. CSS-only FALLBACK (provisional degradation until the supervisor
+   merges design/chapters.json; supervisor deletes this whole block at merge).
+   ---- FALLBACK — REMOVE AFTER chapters.json MERGE (start) ---- */
+body[data-part="II"] .chapter-meta::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1.1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+body[data-chapter="p2c1"] .chapter-meta::before { background-image: url(#phase-p2c1); }
+body[data-chapter="p2c2"] .chapter-meta::before { background-image: url(#phase-p2c2); }
+body[data-chapter="p2c3"] .chapter-meta::before { background-image: url(#phase-p2c3); }
+body[data-chapter="p2c4"] .chapter-meta::before { background-image: url(#phase-p2c4); }
+body[data-chapter="p2c5"] .chapter-meta::before { background-image: url(#phase-p2c5); }
+body[data-chapter="p2c6"] .chapter-meta::before { background-image: url(#phase-p2c6); }
+body[data-chapter="p2c7"] .chapter-meta::before { background-image: url(#phase-p2c7); }
+body[data-chapter="p2c8"] .chapter-meta::before { background-image: url(#phase-p2c8); }
+body[data-chapter="p2c9"] .chapter-meta::before { background-image: url(#phase-p2c9); }
+body[data-chapter="p2c10"] .chapter-meta::before { background-image: url(#phase-p2c10); }
+body[data-chapter="p2c11"] .chapter-meta::before { background-image: url(#phase-p2c11); }
+body[data-chapter="p2c12"] .chapter-meta::before { background-image: url(#phase-p2c12); }
+body[data-chapter="p2c13"] .chapter-meta::before { background-image: url(#phase-p2c13); }
+body[data-chapter="p2c14"] .chapter-meta::before { background-image: url(#phase-p2c14); }
+body[data-chapter="p2c15"] .chapter-meta::before { background-image: url(#phase-p2c15); }
+body[data-chapter="p2c16"] .chapter-meta::before { background-image: url(#phase-p2c16); }
+body[data-chapter="p2c17"] .chapter-meta::before { background-image: url(#phase-p2c17); }
+body[data-chapter="p2c18"] .chapter-meta::before { background-image: url(#phase-p2c18); }
+body[data-chapter="p2c19"] .chapter-meta::before { background-image: url(#phase-p2c19); }
+body[data-chapter="p2c20"] .chapter-meta::before { background-image: url(#phase-p2c20); }
+body[data-chapter="p2c21"] .chapter-meta::before { background-image: url(#phase-p2c21); }
+body[data-chapter="p2c22"] .chapter-meta::before { background-image: url(#phase-p2c22); }
+body[data-part="II"] .chapter-meta {
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 0;
+}
+body[data-chapter="p2c1"] .chapter-meta { background-image: url(#scene-mirror-child); background-size: min(56rem, 100%) auto; padding-top: clamp(120px, 30vw, 340px); }
+body[data-chapter="p2c2"] .chapter-meta { background-image: url(#emblem-fig-split); background-size: 120px auto; padding-top: 132px; }
+body[data-chapter="p2c3"] .chapter-meta { background-image: url(#emblem-camp-bed); background-size: 96px auto; padding-top: 104px; }
+body[data-chapter="p2c4"] .chapter-meta { background-image: url(#emblem-sleeping-monster); background-size: 150px auto; padding-top: 120px; }
+body[data-chapter="p2c5"] .chapter-meta { background-image: url(#emblem-ploughshare); background-size: 180px auto; padding-top: 128px; }
+body[data-chapter="p2c6"] .chapter-meta { background-image: url(#emblem-well-fountain); background-size: 104px auto; padding-top: 140px; }
+body[data-chapter="p2c7"] .chapter-meta { background-image: url(#emblem-web-pillar); background-size: 150px auto; padding-top: 124px; }
+body[data-chapter="p2c8"] .chapter-meta { background-image: url(#emblem-sail-desert); background-size: 120px auto; padding-top: 122px; }
+body[data-chapter="p2c9"] .chapter-meta { background-image: url(#song-fountain-night); background-size: 200px auto; padding-top: 272px; }
+body[data-chapter="p2c10"] .chapter-meta { background-image: url(#song-dance-round); background-size: min(26rem, 92%) auto; padding-top: clamp(140px, 42vw, 320px); }
+body[data-chapter="p2c11"] .chapter-meta { background-image: url(#song-wreath-voyage); background-size: min(28rem, 94%) auto; padding-top: clamp(130px, 40vw, 300px); }
+body[data-chapter="p2c12"] .chapter-meta { background-image: url(#emblem-river-dice); background-size: 150px auto; padding-top: 146px; }
+body[data-chapter="p2c13"] .chapter-meta { background-image: url(#emblem-pillar-tiger); background-size: 104px auto; padding-top: 140px; }
+body[data-chapter="p2c14"] .chapter-meta { background-image: url(#emblem-motley-masks); background-size: 200px auto; padding-top: 128px; }
+body[data-chapter="p2c15"] .chapter-meta { background-image: url(#emblem-moon-dawn); background-size: 190px auto; padding-top: 138px; }
+body[data-chapter="p2c16"] .chapter-meta { background-image: url(#emblem-door-sheep); background-size: 96px auto; padding-top: 112px; }
+body[data-chapter="p2c17"] .chapter-meta { background-image: url(#emblem-peacock-sea); background-size: 190px auto; padding-top: 148px; }
+body[data-chapter="p2c18"] .chapter-meta { background-image: url(#emblem-volcano-heart); background-size: 150px auto; padding-top: 146px; }
+body[data-chapter="p2c19"] .chapter-meta { background-image: url(#scene-coffin-laughter); background-size: min(56rem, 100%) auto; padding-top: clamp(120px, 30vw, 340px); }
+body[data-chapter="p2c20"] .chapter-meta { background-image: url(#emblem-bridge-ear); background-size: min(200px, 72%) auto; padding-top: 146px; }
+body[data-chapter="p2c21"] .chapter-meta { background-image: url(#emblem-abyss-brood); background-size: 104px auto; padding-top: 148px; }
+body[data-chapter="p2c22"] .chapter-meta { background-image: url(#scene-still-room); background-size: min(56rem, 100%) auto; padding-top: clamp(120px, 30vw, 340px); }
+/* ---- FALLBACK — REMOVE AFTER chapters.json MERGE (end) ---- */
+
+/* ---- Block 8. Chapter closes (A.0 path, live immediately). 24px mini-seal
+   SVG-url content on p:last-child::after; NO margin changes on the paragraph
+   (A.0 no-layout-shift rule). p2c11 + p2c22 use the dawn-break variant. */
+body[data-chapter="p2c1"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c2"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c3"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c4"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c5"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c6"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c7"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c8"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c9"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c10"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c12"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c13"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c14"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c15"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c16"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c17"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c18"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c19"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c20"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c21"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M16%205a11%2011%200%200%201%200%2022%208.5%208.5%200%200%201%200-22Z%22%20fill%3D%22%23070B1C%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%222.2%22%20fill%3D%22%237A8B5A%22/%3E%0A%20%20%20%20%3C/svg%3E");
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 0.75em;
+  vertical-align: -4px;
+}
+body[data-chapter="p2c11"] .chapter-text > p:last-child::after,
+body[data-chapter="p2c22"] .chapter-text > p:last-child::after {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M16%205a11%2011%200%200%201%200%2022%208.5%208.5%200%200%201%200-22Z%22%20fill%3D%22%23070B1C%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M8%2023a11%2011%200%200%200%2016%200%22%20fill%3D%22none%22%20stroke%3D%22%23E8A93D%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%222.2%22%20fill%3D%22%23E8A93D%22/%3E%0A%20%20%20%20%3C/svg%3E");
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 0.75em;
+  vertical-align: -4px;
+}
+
+/* ---- Block 9. p2c20 relief (CONDITIONAL, flag (d) APPROVED as demarcated
+   primary). The terror-break sits between ¶43 (nth-of-type 44) and ¶44
+   (nth-of-type 45); the slim bridge-rule rides above ¶44 in its own box.
+   ---- RELIEF — SUPERVISOR MAY STRIP (start: one deletion removes it) ---- */
+body[data-chapter="p2c20"] .chapter-text > p:nth-of-type(45)::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2096%2024%22%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M6%2020%20Q48%202%2090%2020%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%222.4%22/%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M20%2015v5M34%2010v8M48%208v10M62%2010v8M76%2015v5%22%20stroke%3D%22%237A8B5A%22%20stroke-width%3D%221.6%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2248%22%20cy%3D%228%22%20r%3D%222%22%20fill%3D%22none%22%20stroke%3D%22%23C9D4E8%22%20stroke-width%3D%221.6%22/%3E%0A%20%20%20%20%3C/svg%3E");
+  display: block;
+  width: 48px;
+  height: 12px;
+  margin: 0 auto 2rem;
+}
+/* ---- RELIEF — SUPERVISOR MAY STRIP (end) ---- */
+
+/* ---- Block 10. Breakpoints: 560px phones + 820px tablets. Plates scale;
+   tri-voice/whisper ranges hold; pull-lines NEVER truncated by CSS (truncation
+   is a lead-owned content decision — manifest captions carry the excerpt). */
+@media (max-width: 820px) {
+  body[data-part="II"] #chapter-art {
+    padding: 1rem 0.75rem 0.75rem;
+  }
+  body[data-chapter="p2c20"] #chapter-art.emblem svg {
+    width: min(200px, 86%);
+  }
+  body[data-chapter="p2c14"] #chapter-art.emblem svg,
+  body[data-chapter="p2c15"] #chapter-art.emblem svg,
+  body[data-chapter="p2c17"] #chapter-art.emblem svg {
+    width: min(190px, 80%);
+  }
+}
+@media (max-width: 560px) {
+  body[data-part="II"] #chapter-art.scene svg {
+    max-height: 40vh;
+  }
+  body[data-part="II"] #chapter-art.emblem svg {
+    width: min(120px, 52vw);
+  }
+  body[data-chapter="p2c20"] #chapter-art.emblem svg {
+    width: min(200px, 86vw);
+  }
+  body[data-chapter="p2c9"] #chapter-art.song svg {
+    width: min(22rem, 92%);
+  }
+  body[data-chapter="p2c9"] .chapter-text > p,
+  body[data-chapter="p2c10"] .chapter-text > p:nth-of-type(n+10):nth-of-type(-n+26),
+  body[data-chapter="p2c11"] .chapter-text > p {
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(26),
+  body[data-chapter="p2c11"] .chapter-text > p:nth-of-type(38) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body[data-chapter="p2c11"] .chapter-text > p:nth-of-type(37) {
+    font-size: 1.35rem;
+  }
+}
+
+/* ---- Block 11. Print + reduced-motion + contrast guards. P2 art is static:
+   the reduced-motion guard is a declared no-op for auditability. Closes and
+   opener art hide in print so the page reads as calm text. */
+@media print {
+  body[data-part="II"] #chapter-art,
+  body[data-part="II"] .chapter-meta::before {
+    display: none;
+  }
+  body[data-part="II"] .chapter-text > p:last-child::after {
+    content: none;
+  }
+  body[data-chapter="p2c20"] .chapter-text > p:nth-of-type(45)::before {
+    content: none;
+  }
+  body[data-part="II"] .chapter-text > p,
+  body[data-part="II"] .chapter-meta {
+    background-image: none;
+  }
+  body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(1)::before,
+  body[data-chapter="p2c9"] .chapter-text > p:nth-of-type(22)::before,
+  body[data-chapter="p2c10"] .chapter-text > p:nth-of-type(10)::before,
+  body[data-chapter="p2c11"] .chapter-text > p:nth-of-type(1)::before {
+    content: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-part="II"] #chapter-art,
+  body[data-part="II"] .chapter-meta::before,
+  body[data-part="II"] .chapter-text > p:last-child::after {
+    animation: none;
+    transition: none;
+  }
+}
+
+</style>
+</head>
+<body data-part="II" data-chapter="p2c9" data-art="fountain-night">
+<div class="review-banner">REVIEW ONLY — p2c9 · real text + real art symbol + real cohort CSS (fragment urls inlined as data-URI for staging)</div>
+<main>
+  <figure id="chapter-art" class="chapter-art song"><svg viewBox="0 0 200 260" role="img" aria-label="The Night Song">
+      <rect x="2" y="2" width="196" height="256" fill="#010204"/>
+      <rect x="2" y="2" width="196" height="256" fill="none" stroke="#C9D4E8" stroke-width="2"/>
+      <circle cx="100" cy="46" r="24" fill="#010204"/>
+      <circle cx="100" cy="46" r="24" fill="none" stroke="#C9D4E8" stroke-width="2.2"/>
+      <circle cx="100" cy="46" r="29" fill="none" stroke="#C9D4E8" stroke-width="1.2"/>
+      <path d="M100 180 Q100 120 100 96 M100 180 Q70 150 62 110 M100 180 Q130 150 138 110 M100 180 Q52 160 40 118 M100 180 Q148 160 160 118" fill="none" stroke="#C9D4E8" stroke-width="2.8" stroke-linecap="round"/>
+      <path d="M100 180 Q84 158 80 128 M100 180 Q116 158 120 128" fill="none" stroke="#C9D4E8" stroke-width="2"/>
+      <path d="M100 88l2.4 5 5 2.4-5 2.4-2.4 5-2.4-5-5-2.4 5-2.4Z" fill="#C9D4E8"/>
+      <path d="M62 102l1.8 3.7 3.7 1.8-3.7 1.8-1.8 3.7-1.8-3.7-3.7-1.8 3.7-1.8Z" fill="#C9D4E8"/>
+      <path d="M138 102l1.8 3.7 3.7 1.8-3.7 1.8-1.8 3.7-1.8-3.7-3.7-1.8 3.7-1.8Z" fill="#C9D4E8"/>
+      <path d="M40 110l1.6 3.3 3.3 1.6-3.3 1.6-1.6 3.3-1.6-3.3-3.3-1.6 3.3-1.6Z" fill="#7A8B5A"/>
+      <path d="M160 110l1.6 3.3 3.3 1.6-3.3 1.6-1.6 3.3-1.6-3.3-3.3-1.6 3.3-1.6Z" fill="#7A8B5A"/>
+      <path d="M80 116l1.4 2.8 2.8 1.4-2.8 1.4-1.4 2.8-1.4-2.8-2.8-1.4 2.8-1.4Z" fill="#C9D4E8"/>
+      <path d="M120 116l1.4 2.8 2.8 1.4-2.8 1.4-1.4 2.8-1.4-2.8-2.8-1.4 2.8-1.4Z" fill="#C9D4E8"/>
+      <path d="M60 180h80M70 180v14h60v-14" fill="none" stroke="#C9D4E8" stroke-width="3"/>
+      <path d="M60 180 Q100 172 140 180" fill="none" stroke="#C9D4E8" stroke-width="2"/>
+      <path d="M52 196 Q100 188 148 196" fill="none" stroke="#7A8B5A" stroke-width="1.6"/>
+      <path d="M100 208 V238" stroke="#C9D4E8" stroke-width="2.6"/>
+      <path d="M100 244 V256" stroke="#C9D4E8" stroke-width="2.6"/>
+      <path d="M92 241h16" stroke="#7A8B5A" stroke-width="1.6"/>
+      <path d="M150 130l1.6 3.3 3.3 1.6-3.3 1.6-1.6 3.3-1.6-3.3-3.3-1.6 3.3-1.6Z" fill="#C9D4E8"/>
+      <path d="M48 150l1.6 3.3 3.3 1.6-3.3 1.6-1.6 3.3-1.6-3.3-3.3-1.6 3.3-1.6Z" fill="#7A8B5A"/>
+      <path d="M152 170l1.4 2.8 2.8 1.4-2.8 1.4-1.4 2.8-1.4-2.8-2.8-1.4 2.8-1.4Z" fill="#C9D4E8"/>
+      <path d="M46 200l1.4 2.8 2.8 1.4-2.8 1.4-1.4 2.8-1.4-2.8-2.8-1.4 2.8-1.4Z" fill="#C9D4E8"/>
+    </svg><figcaption>Light am I: ah, that I were night!</figcaption></figure>
+  <div class="chapter-meta">
+    <p class="meta-part">Part the Second · II</p>
+    <h1 class="meta-title">The Night Song</h1>
+    <div class="meta-rule"><span></span></div>
+  </div>
+  <div class="chapter-text">
+      <p>It is night: now do all leaping fountains speak louder. And my soul too is a leaping fountain.</p>
+      <p>It is night: only now do all songs of lovers awaken. And my soul too is the song of a lover.</p>
+      <p>Something unquenched, unquenchable, is in me, that wants to speak out. A craving for love is in me, that itself speaks the language of love. Light am I: ah, that I were night! But this is my solitude, that I am girded round with light.</p>
+      <p>Ah, that I were dark and obscure! How I would suck at the breasts of light!</p>
+      <p>And I should bless you, little sparkling stars and glowworms above! – and be happy in your gifts of light.</p>
+      <p>But I live in my own light, I drink back into myself the flames that break from me.</p>
+      <p>I do not know the joy of the receiver; and I have often dreamed that stealing must be more blessed than receiving.</p>
+      <p>It is my poverty that my hand never rests from giving; it is my envy that I see expectant eyes and illumined nights of desire.</p>
+      <p>Oh wretchedness of all givers! Oh eclipse of my sun! Oh craving for desire! Oh ravenous hunger in satiety!</p>
+      <p>They take from me: but do I yet touch their souls? A gulf stands between giving and receiving; and the smallest gulf must be bridged at last. A hunger grows from out of my beauty: I should like to rob those to whom I give – thus do I hunger after wickedness.</p>
+      <p>Withdrawing my hand when another hand already reaches out to it; hesitating, like the waterfall that hesitates even in its plunge – thus do I hunger after wickedness.</p>
+      <p>Such vengeance does my abundance concoct: such spite wells from my solitude.</p>
+      <p>My joy in giving died in giving, my virtue grew weary of itself through its abundance!</p>
+      <p>The danger for him who always gives, is that he may lose his shame; the hand and heart of him who distributes grow callous through sheer distributing.</p>
+      <p>My eye no longer overflows with the shame of suppliants; my hand has become too hard for the trembling of hands that have been filled.</p>
+      <p>Where have the tears of my eye and the bloom of my heart gone? Oh solitude of all givers! Oh silence of all light-givers!</p>
+      <p>Many suns circle in empty space: to all that is dark they speak with their light – to me they are silent.</p>
+      <p>Oh, this is the enmity of light towards what gives light: unpitying it travels its way.</p>
+      <p>Unjust towards the light-giver in its inmost heart, cold towards suns – thus travels every sun.</p>
+      <p>Like a storm the suns fly along their courses; that is their travelling. They follow their inexorable will; that is their coldness.</p>
+      <p>Oh, it is only you, obscure, dark ones, who extract warmth from light-givers! Oh, only you drink milk and comfort from the udders of light! Ah, ice is around me, my hand is burned with ice! Ah, thirst is in me, which yearns after your thirst!</p>
+      <p>It is night: ah, that I must be light! And thirst for the things of night! And solitude!</p>
+      <p>It is night: now my longing breaks from me like a well-spring – I long for speech.</p>
+      <p>It is night: now do all leaping fountains speak louder. And my soul too is a leaping fountain.</p>
+      <p>It is night: only now do all songs of lovers awaken. And my soul too is the song of a lover.</p>
+      <p>Thus sang Zarathustra.</p>
+  </div>
+</main>
+</body>
+</html>

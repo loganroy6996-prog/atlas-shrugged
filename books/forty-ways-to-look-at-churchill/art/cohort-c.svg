@@ -1,0 +1,272 @@
+<!-- Forty Ways: Cohort C (Part IV, Ways 21 to 30) plates.
+     One symbol per chapter, viewBox 0 0 1200 360. Primitives referenced
+     cross-file via art/facets.svg id refs (reader.js inlines ONLY the matching
+     symbol, so local url()/use would die on clone: F1). Fills ALWAYS
+     fw theme vars so all 8 themes recolor; NO hardcoded colors. Way numeral:
+     text.fw-num painted BEFORE dark occluders (paint order is z-order);
+     only lampblack/gallery-deep/vermilion masses cross Bone
+     strokes (C1 corollary); crossings confined to the middle-60% band. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none" aria-hidden="true">
+  <title>Cohort C facet plates — Ways 21–30</title>
+
+  <!-- p4c1 Way 21: brimming glass — shelf + tilted spirit-level, WAS / WAS NOT. -->
+  <symbol id="p4c1" viewBox="0 0 1200 360">
+    <title>Way 21 plate — spirit level breaking between two verdicts</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="120" y="250" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="360" y="250" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="600" y="250" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="840" y="250" opacity="0.12"/>
+    </g>
+    <text class="fw-num" x="600" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">21</text>
+    <text x="300" y="120" text-anchor="middle" font-size="30" letter-spacing="6" fill="var(--fw-bone)" font-family="var(--fw-display)">WAS</text>
+    <text x="850" y="120" text-anchor="middle" font-size="30" letter-spacing="6" fill="var(--fw-bone)" font-family="var(--fw-display)">WAS NOT</text>
+    <g fill="var(--fw-vermilion)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(120,180) scale(2,0.14)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(600,186) rotate(-4) scale(2,0.14)"/>
+    </g>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(452,198) rotate(-4) scale(0.42,0.9)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(610,192) scale(0.62,0.75)"/>
+    </g>
+    <g filter="url(#fw-c-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p4c2 Way 22: ledger grid — the calmest plate; strict 5×8 grid + HOPE NOT flag.
+       NOTE: <title> sits first so reader.js clones it with the symbol. -->
+  <symbol id="p4c2" viewBox="0 0 1200 360">
+    <title>Way 22 plate — full ledger grid with one red flag</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="4" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="4" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="4" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="4" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="4" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="48" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="48" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="48" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="48" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="48" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="92" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="92" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="92" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="92" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="92" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="136" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="136" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="136" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="136" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="136" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="180" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="180" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="180" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="180" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="180" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="224" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="224" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="224" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="224" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="224" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="268" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="268" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="268" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="268" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="268" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="0" y="312" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="240" y="312" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="480" y="312" opacity="0.06"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="720" y="312" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="960" y="312" opacity="0.06"/>
+    </g>
+    <g fill="var(--fw-ochre)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,4) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,41) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,78) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,115) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,152) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,189) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,226) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,263) scale(0.2,0.07)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(8,300) scale(0.2,0.07)"/>
+    </g>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(1096,40) scale(0.5)" fill="var(--fw-vermilion)"/>
+    <text x="1120" y="61" text-anchor="middle" font-size="14" letter-spacing="1" fill="var(--fw-bone)" font-family="var(--fw-display)">HOPE</text>
+    <text x="1120" y="77" text-anchor="middle" font-size="14" letter-spacing="1" fill="var(--fw-bone)" font-family="var(--fw-display)">NOT</text>
+    <text class="fw-num" x="600" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">22</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(470,150) scale(1.25,1.45)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(650,150) scale(1.25,1.45)"/>
+    </g>
+    <g filter="url(#fw-c2-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c2-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+
+  <!-- p4c3 Way 23: veiled shard. Slate veil drapes the record; one bone hairline escapes. -->
+  <symbol id="p4c3" viewBox="0 0 1200 360">
+    <title>Way 23 plate — slate veil over the record, one escaping hairline</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="80" y="200" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="320" y="200" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="560" y="200" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="800" y="200" opacity="0.10"/>
+    </g>
+    <g filter="url(#fw-c3-grain)" opacity="0.16">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(80,0) scale(4.7,3.6)" fill="var(--fw-slate)" opacity="0.82"/>
+    </g>
+    <filter id="fw-c3-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.22 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(700,150) rotate(28) scale(0.3,0.09)" fill="var(--fw-bone)"/>
+    <text class="fw-num" x="880" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">23</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(772,185) scale(0.6,0.85)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(872,180) rotate(8) scale(0.6,0.9)"/>
+    </g>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p4c4 Way 24: two interlocked. Clasped sheets, ochre seam, slate crack opening right. -->
+  <symbol id="p4c4" viewBox="0 0 1200 360">
+    <title>Way 24 plate — two sheets interlocked, cracking apart</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(320,150) scale(2.33,1.36)" opacity="0.14"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(340,190) scale(2.33,1.36)" opacity="0.14"/>
+    </g>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(430,178) scale(1.2,1.2)" fill="var(--fw-ochre)"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(680,210) rotate(6) scale(0.83,0.07)" fill="var(--fw-slate)"/>
+    <text class="fw-num" x="600" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">24</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(465,168) scale(0.33,0.55)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(588,208) scale(0.3,0.55)"/>
+    </g>
+    <g filter="url(#fw-c4-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c4-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+  <!-- p4c5 Way 25: island outline. Ledger rules bend into a shoreline; crown offshore. -->
+  <symbol id="p4c5" viewBox="0 0 1200 360">
+    <title>Way 25 plate — ledger rules bending into an island coastline</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(80,60) scale(2.25,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(80,120) scale(2.25,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(80,180) scale(2.25,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(80,240) scale(2.25,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(80,300) scale(2.25,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(620,60) rotate(-8) scale(1.4,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(620,120) rotate(-14) scale(1.4,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(620,180) rotate(-20) scale(1.4,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(620,240) rotate(-26) scale(1.4,1)" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(620,300) rotate(-32) scale(1.4,1)" opacity="0.10"/>
+    </g>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(1010,90) scale(6)" fill="var(--fw-ochre)" opacity="0.35"/>
+    <text class="fw-num" x="400" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">25</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(266,238) scale(0.36,0.62)"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(388,168) rotate(-14) scale(0.28,0.62)"/>
+    </g>
+    <g filter="url(#fw-c5-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c5-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p4c6 Way 26: photo frames. 6x3 sepia hang aging light to dark; shadow rail occludes. -->
+  <symbol id="p4c6" viewBox="0 0 1200 360">
+    <title>Way 26 plate — eighteen sepia frames aging light to dark</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <rect x="69.8" y="34.2" width="110.5" height="76.5" opacity="0.160"/>
+      <rect x="259.8" y="34.2" width="110.5" height="76.5" opacity="0.152"/>
+      <rect x="449.8" y="34.2" width="110.5" height="76.5" opacity="0.145"/>
+      <rect x="639.8" y="34.2" width="110.5" height="76.5" opacity="0.137"/>
+      <rect x="829.8" y="34.2" width="110.5" height="76.5" opacity="0.129"/>
+      <rect x="1019.8" y="34.2" width="110.5" height="76.5" opacity="0.122"/>
+      <rect x="69.8" y="139.2" width="110.5" height="76.5" opacity="0.114"/>
+      <rect x="259.8" y="139.2" width="110.5" height="76.5" opacity="0.106"/>
+      <rect x="449.8" y="139.2" width="110.5" height="76.5" opacity="0.099"/>
+      <rect x="639.8" y="139.2" width="110.5" height="76.5" opacity="0.091"/>
+      <rect x="829.8" y="139.2" width="110.5" height="76.5" opacity="0.084"/>
+      <rect x="1019.8" y="139.2" width="110.5" height="76.5" opacity="0.076"/>
+      <rect x="69.8" y="244.2" width="110.5" height="76.5" opacity="0.068"/>
+      <rect x="259.8" y="244.2" width="110.5" height="76.5" opacity="0.061"/>
+      <rect x="449.8" y="244.2" width="110.5" height="76.5" opacity="0.053"/>
+      <rect x="639.8" y="244.2" width="110.5" height="76.5" opacity="0.045"/>
+      <rect x="829.8" y="244.2" width="110.5" height="76.5" opacity="0.038"/>
+      <rect x="1019.8" y="244.2" width="110.5" height="76.5" opacity="0.030"/>
+    </g>
+    <g fill="var(--fw-faded)">
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(61.2,25.8) scale(0.85)" opacity="1.00"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(251.2,25.8) scale(0.85)" opacity="0.97"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(441.2,25.8) scale(0.85)" opacity="0.94"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(631.2,25.8) scale(0.85)" opacity="0.90"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(821.2,25.8) scale(0.85)" opacity="0.87"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(1011.2,25.8) scale(0.85)" opacity="0.84"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(61.2,130.8) scale(0.85)" opacity="0.81"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(251.2,130.8) scale(0.85)" opacity="0.77"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(441.2,130.8) scale(0.85)" opacity="0.74"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(631.2,130.8) scale(0.85)" opacity="0.71"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(821.2,130.8) scale(0.85)" opacity="0.68"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(1011.2,130.8) scale(0.85)" opacity="0.64"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(61.2,235.8) scale(0.85)" opacity="0.61"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(251.2,235.8) scale(0.85)" opacity="0.58"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(441.2,235.8) scale(0.85)" opacity="0.55"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(631.2,235.8) scale(0.85)" opacity="0.51"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(821.2,235.8) scale(0.85)" opacity="0.48"/>
+      <use href="art/facets.svg#frame-sepia" xlink:href="art/facets.svg#frame-sepia" transform="translate(1011.2,235.8) scale(0.85)" opacity="0.45"/>
+    </g>
+    <rect x="500" y="150" width="34" height="56" fill="var(--fw-lampblack)" opacity="0.85"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(1063,148) scale(0.28)" fill="var(--fw-bone)" opacity="0.8"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(1090,148) scale(-0.28,0.28)" fill="var(--fw-bone)" opacity="0.8"/>
+    <g fill="var(--fw-gallery)">
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(460,250) rotate(24) scale(0.5)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(510,270) rotate(-30) scale(0.4)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(490,295) rotate(70) scale(0.35)"/>
+    </g>
+    <rect x="1060" y="262" width="30" height="42" fill="var(--fw-bone)" opacity="0.75"/>
+    <text class="fw-num" x="600" y="300" text-anchor="middle" font-size="200" fill="var(--fw-bone)">26</text>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(350,140) scale(2.08,2.7)" fill="var(--fw-gallery)" opacity="0.92"/>
+    <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(330,150) scale(1.4,0.8)" fill="var(--fw-lampblack)"/>
+    <g filter="url(#fw-c6-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c6-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-faded)" opacity="0.5"/>
+  </symbol>
+</svg>

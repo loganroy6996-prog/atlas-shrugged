@@ -1,0 +1,648 @@
+{
+  "checked_at": "2026-10-15T00:24:29.420852+00:00",
+  "main": {
+    "time": 1792023676.9697692,
+    "model": "opencode-go/muse-spark-1.3-contributor",
+    "thinkingLevel": "max",
+    "sessionId": "01a13c82-a202-70ab-b62c-c79fb880f998",
+    "promptAdmitted": true
+  },
+  "observed_provider_requests": 465,
+  "observed_sessions": 63,
+  "nonmax_requests": [],
+  "corrected_requests": 0,
+  "children": [
+    {
+      "path": "SupSovereign-2.jsonl",
+      "sessionId": "01a13cf0-56ac-7733-8d7a-dd75efd393cd",
+      "agent": "book-sovereign-individual-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": [
+        {
+          "agent": "library-designer",
+          "name": "SovIdentityDesigner",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "SovCohortA",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "SovCohortB",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "SovCohortC",
+          "effort": "hi"
+        }
+      ]
+    },
+    {
+      "path": "TextCurator.jsonl",
+      "sessionId": "01a13cf0-56b1-707c-946e-8e4b92f9f858",
+      "agent": "library-text-curator",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "FinalValidator.jsonl",
+      "sessionId": "01a13cf0-56b5-7524-812c-255910cde65b",
+      "agent": "library-final-validator",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupAtlas-2.jsonl",
+      "sessionId": "01a13cf0-56b8-73d8-912e-c84e8dee94c7",
+      "agent": "book-atlas-shrugged-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "HomeEngineer.jsonl",
+      "sessionId": "01a13cf0-56bc-73ca-9607-6029432d18cc",
+      "agent": "library-home-engineer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "ArtDirector.jsonl",
+      "sessionId": "01a13cf0-56bf-70fb-ba01-155467f7f163",
+      "agent": "library-art-director",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2.jsonl",
+      "sessionId": "01a13cf0-56c2-77b3-9355-85e7b6d2acfa",
+      "agent": "book-infinite-jest-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": [
+        {
+          "agent": "library-designer",
+          "name": "JestIdentity",
+          "effort": "hi"
+        },
+        {
+          "agent": null,
+          "name": "JestCohortA",
+          "effort": "hi"
+        },
+        {
+          "agent": null,
+          "name": "JestCohortB",
+          "effort": "hi"
+        },
+        {
+          "agent": null,
+          "name": "JestCohortC",
+          "effort": "hi"
+        },
+        {
+          "agent": null,
+          "name": "JestCohortD",
+          "effort": "hi"
+        },
+        {
+          "agent": null,
+          "name": "JestCohortE",
+          "effort": "hi"
+        },
+        {
+          "agent": null,
+          "name": "JestCohortF",
+          "effort": "hi"
+        },
+        {
+          "agent": null,
+          "name": "JestCohortG",
+          "effort": "hi"
+        }
+      ]
+    },
+    {
+      "path": "SupOpenLetter-2.jsonl",
+      "sessionId": "01a13cf0-56c6-75eb-ad39-421a904c4a78",
+      "agent": "book-open-letter-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "ReaderLead.jsonl",
+      "sessionId": "01a13cf0-56c9-77d8-bbc2-e572081c21e5",
+      "agent": "library-reader-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2.jsonl",
+      "sessionId": "01a13cf0-56cc-706f-b38b-284211249d15",
+      "agent": "book-forty-ways-to-look-at-churchill-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupWtP-2.jsonl",
+      "sessionId": "01a13cf0-56d0-7095-b88f-91d834a81287",
+      "agent": "book-will-to-power-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": [
+        {
+          "agent": "library-designer",
+          "name": "WtPBookDesigner",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "WtPLeadEarly",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "WtPLeadCritique",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "WtPLeadKnowledge",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "WtPLeadNature",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "WtPLeadCrown",
+          "effort": "hi"
+        }
+      ]
+    },
+    {
+      "path": "SupBeingTime-2.jsonl",
+      "sessionId": "01a13cf0-56d3-70a0-b7ca-88c93bcb1ede",
+      "agent": "book-being-and-time-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupGentleIntro-2.jsonl",
+      "sessionId": "01a13cf0-56d6-71d4-be40-0791d17bcecf",
+      "agent": "book-gentle-introduction-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupTwilight-2.jsonl",
+      "sessionId": "01a13cf0-56d9-7453-baa8-0efc9552f882",
+      "agent": "book-twilight-of-the-idols-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": [
+        {
+          "agent": "library-designer",
+          "name": "TwilightBookDesigner",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "TwilightCohortHammer",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "TwilightCohortIdols",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-chapter-lead",
+          "name": "TwilightCohortDusk",
+          "effort": "hi"
+        }
+      ]
+    },
+    {
+      "path": "SupGayScience-2.jsonl",
+      "sessionId": "01a13cf0-56dc-719b-ad92-a32091f83220",
+      "agent": "book-gay-science-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupZarathustra-2.jsonl",
+      "sessionId": "01a13cf0-56e6-762b-abfa-988af08118a0",
+      "agent": "book-thus-spoke-zarathustra-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupFountain-2.jsonl",
+      "sessionId": "01a13cf0-56e9-70e9-96a5-130460bb354b",
+      "agent": "book-the-fountainhead-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBGE-2.jsonl",
+      "sessionId": "01a13cf0-56ed-7344-8c70-879dbe8dee70",
+      "agent": "book-beyond-good-and-evil-supervisor",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupSovereign-2/SupSovereign-2.SovCohortC.jsonl",
+      "sessionId": "01a13cf1-21c8-7428-b711-e7a80778bdb9",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupSovereign-2/SupSovereign-2.SovCohortB.jsonl",
+      "sessionId": "01a13cf1-21cd-743c-8cdd-2d10d26a92db",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupSovereign-2/SupSovereign-2.SovCohortA.jsonl",
+      "sessionId": "01a13cf1-21d0-71b6-bb9a-d7e756b6840e",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": [
+        {
+          "agent": "library-designer",
+          "name": "SovCohortADesigner",
+          "effort": "hi"
+        }
+      ]
+    },
+    {
+      "path": "SupSovereign-2/SupSovereign-2.SovIdentityDesigner.jsonl",
+      "sessionId": "01a13cf1-21d3-70b2-aca6-89eb785e9342",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillBookDesigner.jsonl",
+      "sessionId": "01a13cf1-679d-7436-ae5f-b384b57694cb",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillWaysEarly.jsonl",
+      "sessionId": "01a13cf1-67a0-742e-b6a7-eda93114154c",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillWaysLate.jsonl",
+      "sessionId": "01a13cf1-67a4-7362-b25b-1f363268cdf8",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": [
+        {
+          "agent": "library-designer",
+          "name": "ChurchillWaysLateDesigner",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-engineer",
+          "name": "ChurchillWaysLateEngineer",
+          "effort": "hi"
+        },
+        {
+          "agent": "library-validator",
+          "name": "ChurchillWaysLateValidator",
+          "effort": "hi"
+        }
+      ]
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillWaysMiddle.jsonl",
+      "sessionId": "01a13cf1-67a7-7391-8cd1-cba61a5a98ad",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillBookends.jsonl",
+      "sessionId": "01a13cf1-6801-7427-833c-420f01128e62",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupWtP-2/SupWtP-2.WtPLeadCrown.jsonl",
+      "sessionId": "01a13cf1-a1c9-7693-ba0c-d8840d3322e3",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupWtP-2/SupWtP-2.WtPLeadNature.jsonl",
+      "sessionId": "01a13cf1-a1cd-77ca-84c0-eca8b4a5f302",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupWtP-2/SupWtP-2.WtPLeadKnowledge.jsonl",
+      "sessionId": "01a13cf1-a1d0-716f-b734-d742b8f1d1de",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupWtP-2/SupWtP-2.WtPLeadCritique.jsonl",
+      "sessionId": "01a13cf1-a1d3-761d-b07a-7d949d02fecc",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupWtP-2/SupWtP-2.WtPBookDesigner.jsonl",
+      "sessionId": "01a13cf1-a1d7-7556-bee6-0ae358fd3f24",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupWtP-2/SupWtP-2.WtPLeadEarly.jsonl",
+      "sessionId": "01a13cf1-a244-7725-b616-95dd456a0e70",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupTwilight-2/SupTwilight-2.TwilightBookDesigner.jsonl",
+      "sessionId": "01a13cf1-b9b4-7139-8c03-9de0d3f01e1e",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupTwilight-2/SupTwilight-2.TwilightCohortIdols.jsonl",
+      "sessionId": "01a13cf1-b9cf-7632-8ad6-a298c3b99815",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupTwilight-2/SupTwilight-2.TwilightCohortDusk.jsonl",
+      "sessionId": "01a13cf1-b9d4-761b-b0e7-d70aa28fa204",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupTwilight-2/SupTwilight-2.TwilightCohortHammer.jsonl",
+      "sessionId": "01a13cf1-b9d7-7506-8ee8-5b8acf355ae3",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupZarathustra-2/SupZarathustra-2.ZaraLeadP2.jsonl",
+      "sessionId": "01a13cf1-f730-7515-889f-c91db4c5688f",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupZarathustra-2/SupZarathustra-2.ZaraLeadP3.jsonl",
+      "sessionId": "01a13cf1-f733-7175-a967-a10fa65e456c",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupZarathustra-2/SupZarathustra-2.ZarathustraIdentity.jsonl",
+      "sessionId": "01a13cf1-f737-777c-912a-6c19894a6444",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupZarathustra-2/SupZarathustra-2.ZaraLeadP4.jsonl",
+      "sessionId": "01a13cf1-f73a-7123-9c8c-895a252755ac",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupZarathustra-2/SupZarathustra-2.ZaraLeadP1.jsonl",
+      "sessionId": "01a13cf1-f755-7359-a4c8-70f7635a5c39",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestIdentity.jsonl",
+      "sessionId": "01a13cf2-1e6e-7489-a4df-8a5af9986e62",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestCohortF.jsonl",
+      "sessionId": "01a13cf2-1e72-71d6-bfe2-ae5d8b0ad0fc",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestCohortE.jsonl",
+      "sessionId": "01a13cf2-1e76-7143-8141-ac8a5dc80c3c",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestCohortG.jsonl",
+      "sessionId": "01a13cf2-1e79-7761-8152-76a8c5fda639",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestCohortD.jsonl",
+      "sessionId": "01a13cf2-1e7d-77ec-9921-99205f7a5f78",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestCohortA.jsonl",
+      "sessionId": "01a13cf2-1e80-76ed-9126-8948e7814cc7",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestCohortB.jsonl",
+      "sessionId": "01a13cf2-1eb4-7190-a728-020809c55273",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupIJ-2/SupIJ-2.JestCohortC.jsonl",
+      "sessionId": "01a13cf2-1eb8-76fa-8512-37257ad563cc",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BTDeathConscience.jsonl",
+      "sessionId": "01a13cf2-27f5-74e8-a2d8-8cb9788f6a3b",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BTTemporality.jsonl",
+      "sessionId": "01a13cf2-27f8-7358-92b3-903931f39b18",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BTFallingCare.jsonl",
+      "sessionId": "01a13cf2-27fc-71eb-aec8-10b6c5411d08",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BeingTimeIdentity.jsonl",
+      "sessionId": "01a13cf2-27ff-75cc-b822-b4a9dc190bfb",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BTIntroWorld.jsonl",
+      "sessionId": "01a13cf2-2802-7351-8d1a-aede8a9b878c",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BTTheySelf.jsonl",
+      "sessionId": "01a13cf2-2805-7728-bdc6-8beadc4d1873",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BTEquipmentSpace.jsonl",
+      "sessionId": "01a13cf2-2809-745d-8a10-c8a1612d9ca1",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupBeingTime-2/SupBeingTime-2.BTHistoricityFinale.jsonl",
+      "sessionId": "01a13cf2-2823-7477-837b-9dea847cc6b1",
+      "agent": "library-chapter-lead",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillWaysLate/SupChurchill-2.ChurchillWaysLate.ChurchillWaysLateValidator.jsonl",
+      "sessionId": "01a13cf2-2939-757f-b144-fb071c0b320a",
+      "agent": "library-validator",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillWaysLate/SupChurchill-2.ChurchillWaysLate.ChurchillWaysLateDesigner.jsonl",
+      "sessionId": "01a13cf2-293c-71d1-9f7a-9d8f0f51b8bb",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupChurchill-2/SupChurchill-2.ChurchillWaysLate/SupChurchill-2.ChurchillWaysLate.ChurchillWaysLateEngineer.jsonl",
+      "sessionId": "01a13cf2-293f-7289-b266-d19fd573576e",
+      "agent": "library-engineer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    },
+    {
+      "path": "SupSovereign-2/SupSovereign-2.SovCohortA/SupSovereign-2.SovCohortA.SovCohortADesigner.jsonl",
+      "sessionId": "01a13cf1-d2d1-77b6-8680-2da7581f16ec",
+      "agent": "library-designer",
+      "resolvedModel": "opencode-go/muse-spark-1.3-contributor:max",
+      "currentModel": "opencode-go/muse-spark-1.3-contributor",
+      "child_dispatches": []
+    }
+  ]
+}

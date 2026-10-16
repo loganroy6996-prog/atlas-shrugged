@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">A Gentle Introduction — a still cathedral west front, portal ajar with candlelight, eleven dose notches</title>
+<defs>
+<filter id="bite"><feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="3" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+</defs>
+<!-- Narthex #100F0D -->
+<rect width="800" height="1000" fill="#100f0d"/>
+<!-- the west front: bitten-line ashlar masses -->
+<g filter="url(#bite)">
+<rect x="100" y="140" width="600" height="700" fill="#1e1b16"/>
+<rect x="100" y="140" width="600" height="700" fill="none" stroke="#9c917e" stroke-width="3"/>
+<!-- twin towers -->
+<rect x="100" y="60" width="130" height="780" fill="#1e1b16" stroke="#9c917e" stroke-width="3"/>
+<rect x="570" y="60" width="130" height="780" fill="#1e1b16" stroke="#9c917e" stroke-width="3"/>
+<!-- lancet openings, dark -->
+<g fill="#0a0908">
+<rect x="130" y="120" width="34" height="180"/><rect x="176" y="120" width="34" height="180"/>
+<rect x="600" y="120" width="34" height="180"/><rect x="646" y="120" width="34" height="180"/>
+</g>
+<!-- ashlar courses -->
+<g stroke="#2e2a22" stroke-width="2">
+<line x1="230" y1="260" x2="570" y2="260"/><line x1="230" y1="380" x2="570" y2="380"/><line x1="230" y1="500" x2="570" y2="500"/><line x1="230" y1="620" x2="570" y2="620"/><line x1="230" y1="740" x2="570" y2="740"/>
+<line x1="350" y1="140" x2="350" y2="840"/><line x1="470" y1="140" x2="470" y2="840"/>
+</g>
+</g>
+<!-- the great portal, right-of-center, door ajar -->
+<g>
+<path d="M440,840 L440,420 Q440,320 520,280 Q600,320 600,420 L600,840 Z" fill="#0a0908" stroke="#9c917e" stroke-width="4"/>
+<!-- candlelight spilling from the ajar door -->
+<polygon points="520,840 520,330 560,360 560,840" fill="#dfa050"/>
+<polygon points="560,840 560,360 580,380 580,840" fill="#dfa050" opacity=".55"/>
+<!-- light spilling down the steps -->
+<polygon points="440,840 600,840 660,920 380,920" fill="#dfa050" opacity=".28"/>
+<polygon points="480,840 580,840 610,920 450,920" fill="#dfa050" opacity=".3"/>
+<!-- the single flame, drawn -->
+<ellipse cx="540" cy="440" rx="26" ry="44" fill="#dfa050" opacity=".35"/>
+<path d="M540,404 C552,428 554,440 540,454 C526,440 528,428 540,404 Z" fill="#dfa050"/>
+<path d="M540,428 C545,438 546,443 540,448 C534,443 535,438 540,428 Z" fill="#f7efdb"/>
+</g>
+<!-- steps -->
+<g stroke="#9c917e" stroke-width="2" opacity=".7">
+<line x1="380" y1="880" x2="660" y2="880"/><line x1="360" y1="920" x2="680" y2="920"/>
+</g>
+<!-- rose window: sanctuary red, drawn tracery -->
+<g transform="translate(340,300)">
+<circle r="64" fill="none" stroke="#9c917e" stroke-width="3"/>
+<circle r="48" fill="none" stroke="#a83a2c" stroke-width="2.4"/>
+<g stroke="#a83a2c" stroke-width="2">
+<line x1="0" y1="-48" x2="0" y2="48"/><line x1="-48" y1="0" x2="48" y2="0"/>
+<line x1="-34" y1="-34" x2="34" y2="34"/><line x1="-34" y1="34" x2="34" y2="-34"/>
+</g>
+<circle r="10" fill="#a83a2c"/>
+</g>
+<!-- eleven dose notches along the base: ember to gold -->
+<g>
+<rect x="140" y="890" width="26" height="40" fill="#a83a2c"/>
+<rect x="174" y="890" width="26" height="40" fill="#a83a2c" opacity=".9"/>
+<rect x="208" y="890" width="26" height="40" fill="#b4503a" opacity=".9"/>
+<rect x="242" y="890" width="26" height="40" fill="#c06040"/>
+<rect x="276" y="890" width="26" height="40" fill="#cf7048"/>
+<rect x="310" y="890" width="26" height="40" fill="#d8804c"/>
+<rect x="344" y="890" width="26" height="40" fill="#dfa050" opacity=".8"/>
+<rect x="378" y="890" width="26" height="40" fill="#dfa050" opacity=".85"/>
+<rect x="412" y="890" width="26" height="40" fill="#dfa050" opacity=".9"/>
+<rect x="446" y="890" width="26" height="40" fill="#dfa050"/>
+<rect x="480" y="890" width="26" height="40" fill="#e8b060"/>
+</g>
+<!-- inscriptional title block field, calm left -->
+<g fill="#ece2ce" opacity=".85">
+<rect x="130" y="560" width="180" height="10"/><rect x="130" y="580" width="140" height="10"/>
+</g>
+<rect x="130" y="606" width="70" height="5" fill="#a83a2c"/>
+<rect x="14" y="14" width="772" height="972" fill="none" stroke="#9c917e" stroke-width="2.4"/>
+</svg>

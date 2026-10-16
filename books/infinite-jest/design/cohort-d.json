@@ -1,0 +1,721 @@
+{
+  "cohort": "D",
+  "cohort_title": "Gaudeamus",
+  "ids_provisional": false,
+  "note": "ID FREEZE: p1c1–p1c77/p2c1–p2c12 FINAL per TextCurator audit (no shifts). part+order+title keys are permanent provenance. Chapter IDs p1c1–p1c77/p2c1–p2c12 are PROVISIONAL per TextCurator PDF audit. Each entry records part + sequential index + full TOC title for cheap remap. Draft Phase 1 manifest — not locked until supervisor freeze notice. TextCurator ruling: p1c45[3] is Wallace's own mid-section scene cut (PDF pp.416-421), SERVE AS IS with scene-break styling. multi-strand chapters (p1c46, p1c47, p1c51, p1c53) interleave distinct sections — see structure_notes. Gaudeamus spelling is the author's (TOC-verbatim).",
+  "range": "p1c41–p1c53 (sequential index 41–53, part-1 / The Novel)",
+  "shared_grammar": "Cohort spine: the Interdependence-Day feast at E.T.A. (8 Nov: Eschaton war-game, gala supper, Mario's 48-minute O.N.A.N. puppet-film, White Flag speaker meeting) CUT AGAINST the Tucson desert-night Marathe/Steeply interface (30 Apr/1 May: choice, freedom, soup-can ethics, p-terminals, 'empty of intent'). Follows the draft ART-DIRECTION-DRAFT.md scaffold (mono stamp band + authored plate + Archivo title + calm Newsreader body): feast-side chapters use gala-program / handbill / broadsheet plates in Seal Gold + Stamp Red; desert-side chapters use night-interface plates (starfield, outcropping, bonfire ring) in Cartridge Phosphor on Ledger Black. braid_divider marks (thin ledger rule + mono location slug) separate interleaved strands inside p1c46/p1c47/p1c51/p1c53; script lines (GENTLE:/TINE:/SEC. x:) and spinning news Headers (—Header/—Superheader) get positional/document set. Neighboring chapters share this grammar without cloning plates.",
+  "entries": [
+    {
+      "id": "p1c41",
+      "motif_asset": "Exam-paper plate: masthead block 'SEPARATISM AND RETURN — Mlle. POUTRINCOURT' over double-bind items (1a)–(1d) in mono, then the WETA intercom speaker grille + Troeltsch's score-scroll ('disembowelled … 6–3, 6–2') running beneath like a ticker.",
+      "mood": "Examination-hall dread cut with intercom farce; an essay that forgets the exam and becomes a family history.",
+      "motifs": [
+        "double-bind exam items (1a)–(1d): kleptomania vs. agoraphobia",
+        "WETA intercom scores, Troeltsch's lurid beat-verbs",
+        "Mario's arachnoidal birth, police lock, lead receptacle",
+        "head-mount Bolex, veiled legate at the portcullis"
+      ],
+      "n_paras": 35,
+      "opener_composition": "Stamp band shows 'AS OF Y.D.A.U. — EXAM FILE' (undated chapter → filing seal); plate is the exam-paper card with masthead + items; title in Archivo, rule, drop cap on ITEM 1. The portcullis/veil image is reserved for the closing, not the opener.",
+      "palette_role": "File Manila exam-paper on Ledger Black; Stamp Red for the (1a)–(1d) item letters; Phosphor only for the intercom ticker line.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Paras 0–5 (exam items) set as the bounded found-paper masthead block; paras 6–15 (WETA + essay body) as calm narrative; the Troeltsch score litanies (paras 8/9/11/13) keep their breathless comma-run set — no list-ification, they are broadcast speech. Birth/mirror set pieces (paras 16–34) get generous measure; the one-line scare-cuts ('It's pain.' paras 20/23) keep full paragraph spacing.",
+      "roman": "41",
+      "structure_note": "Single strand but three registers: exam form (0–5), classroom/essay (6–17), birth-fable (18–34). Score-litany paras and the mirror/merkin set pieces are the long reads.",
+      "subject": "Hal's Poutrincourt separatism exam opens as double-bind items (kleptomaniac/agoraphobic), dissolves into WETA intercom tennis scores, a F.L.Q. mirror-on-the-highway set piece, and Mario's premature arachnoidal birth + police-lock biography — ending with Hal routing the veiled legate at the portcullis.",
+      "title": "Keep Your Answers Brief and Gender Neutral",
+      "words": 4781,
+      "part_roman": "I",
+      "order": 41,
+      "number_label": "§ 41",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "exam-file",
+        "class": "plate",
+        "motif": "exam-file",
+        "caption": "Plate 41 · Examination file: double-bind items + WETA ticker",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN (refines brief, contradicts nothing): exam-card plate ~4:5 — masthead 'SEPARATISM AND RETURN — Mlle. POUTRINCOURT' (verified [10]) + ruled (1a)-(1d) rows w/ Stamp Red item letters (verified [0-5]) + WETA grille + static Phosphor score ticker ('disembowelled … 6-3, 6-2', 'duck on a Junebug' [9]) + gate-latch corner glyph foreshadowing the portcullis [34]. Stamp band 'AS OF Y.D.A.U. — EXAM FILE' + seal-filing; filing '112 WEST HOUSE / POUTRINCOURT / 1435-1445H' [6]. Reading: 0-5 bounded masthead block; 8/9/11/13 comma-run litanies un-listed; scare-cut isolates 19/20/22/23 full air. Ticks: EXAM red on 0-5, FILM on 30-32 (Bolex), SCENE-CUT on 16 (mirrors) + 25 (arachnoidal birth). Full spec: design.chapters.p1c41."
+    },
+    {
+      "id": "p1c42",
+      "motif_asset": "Night-interface plate: clotted blue-star field over a pearly blank city-glow; two facing chairs (metal chair + standing figure in heels) on a shelf lip; a small circle-and-cut hand gesture glyph.",
+      "mood": "Cold high-altitude dialectic; shame after revealed belief; the freedom-from vs. freedom-to argument at full pitch.",
+      "motifs": [
+        "clotted blue stars / pearly blank city sky",
+        "plaid blanket, metal chair, high heels on toes",
+        "freedom-from vs. freedom-to; rich father / candy child",
+        "sideways moon 'color of a fat man's face'",
+        "the unmentioned shelf descent problem"
+      ],
+      "n_paras": 28,
+      "opener_composition": "Stamp band: '30 APR / 1 MAY — TUCSON INTERFACE'. Plate is the starfield-and-shelf scene; title Archivo; short stichomythic exchanges keep tight spacing so the debate reads fast.",
+      "palette_role": "Desert-night register: Ledger Black ground, Phosphor starfield, File Manila dialogue; Stamp Red withheld entirely — the desert side never uses feast red.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Dialogue-derby positional set: Marathe's long French-inflected arguments vs. Steeply's flat American replies; the one-line exchanges (paras 8–10, 13–19) set tight as rally volleys. Opening starfield paragraph gets the drop cap; closing descent-problem line (para 27) keeps isolate spacing as the chapter's chill coda.",
+      "roman": "42",
+      "structure_note": "Pure two-hander, 28 paras, no inserts or headers; longest paras are Marathe's set speeches (2/3/11/12/20). Footnote refs: none observed.",
+      "subject": "First desert-night interface: Marathe's 'choose with great care' indictment of U.S.A. spectation-appetite vs. Steeply's freedom-defense — rich father, candy child, 'you cannot kill what is already dead' — ending on the unmentioned problem of getting off the shelf in the dark.",
+      "title": "30 April / 1 May — Year of the Depend Adult Undergarment",
+      "words": 1987,
+      "part_roman": "I",
+      "order": 42,
+      "number_label": "§ 42",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "tucson-stars",
+        "class": "plate",
+        "motif": "tucson-stars",
+        "caption": "Plate 42 · Night interface: starfield shelf, two chairs",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: starfield-shelf plate ~16:9 — clotted Phosphor stars over pearly blank city band (verified [0]), ruled shelf ledge, blanket-draped metal chair + heel-mark ticks (standing figure WITHHELD — voices in the dark), sideways sallow moon [23], circle-and-cut gesture glyph [3]. ZERO red. Stamp band '30 APR / 1 MAY — TUCSON INTERFACE'; filing 'OUTCROPPING / NIGHT WATCH 1 / SHELF'. Reading: positional two-hander (Marathe set speeches 2/3/11/12/20 full; volleys 8-10/13-19/24 tight; one-breaths 9/14/16/18 never inflated); [27] descent-problem isolate coda. Ticks: NIGHT on 0/11/20/23, ESSAY on 2/3/12. No note_refs (verified 0). Full spec: design.chapters.p1c42."
+    },
+    {
+      "id": "p1c43",
+      "motif_asset": "Eschaton war-map plate: four-court grid with REDCHI/AMNAT/INDIR force disks, lobbed-ballistic arcs, damage-glyph overlays; snow-dot dispersal spreading across the map's east edge; Otis Lord's beanie + TP cart vignette in the corner.",
+      "mood": "Boy-logic total war curdling into real-world weather; rules-lawyering as the snow buries the map.",
+      "motifs": [
+        "Eschaton: 400 dead balls, four-court theater, Pink2/EndStat",
+        "Otis P. Lord's beanie, Pemulis's emeritus corrections",
+        "map-vs-territory slippage: real snow on the fucking map",
+        "the 2,367-word meltdown paragraph (para 47): umbrella, TP, airborne Lord"
+      ],
+      "n_paras": 48,
+      "opener_composition": "Stamp band: '8 NOV — I.-DAY · ESCHATON THEATER'. Plate is the war-map at full opener width — the cohort's most diagrammatic plate. Title Archivo; drop cap on the 'Every year at E.T.A.' paragraph.",
+      "palette_role": "Feast-side tactical register: Seal Gold force disks + Stamp Red damage glyphs on Ledger Black map ground; snow rendered in File Manila dispersal — the white that eats the map.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Standard calm body for the rules-exposition (paras 0–12); the short shouted exchanges (e.g. para 24 'Real-world snow…') set tight as field radio. Para 47 (2,367 words, the meltdown) is the endurance read: generous measure, no subdivision — the unbroken paragraph IS the chaos. Snow-fall stage lines (paras 36/46) keep isolate spacing.",
+      "roman": "43",
+      "structure_note": "Single-strand escalation: rules (0–12) → play (13–35) → weather-breach (36–46) → meltdown para 47. Refs 120–130 observed (para 47 carries 130).",
+      "subject": "Interdependence Day, E.T.A.: the annual Eschaton nuclear-war game on four tennis courts — rules, game-master Otis Lord, Pemulis's emeritus authority — until real November snow falls on the map and play collapses into the book's great map-vs-territory meltdown.",
+      "title": "8 November — Year of the Depend Adult Undergarment Interdependence Day Gaudeamus Igitur",
+      "words": 10247,
+      "part_roman": "I",
+      "order": 43,
+      "number_label": "§ 43",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "eschaton-map",
+        "class": "plate",
+        "motif": "eschaton-map",
+        "caption": "Plate 43 · Eschaton theater war-map, snow dispersal",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN (within-cohort GATE with p1c46 — build first): four-court war-map panorama ~21:9 — NATO-APP-6 counters (AMNAT gold rectangles, SOVWAR red diamonds, REDCHI red circles, IRLIBSYR/LIBSYR Manila half-frames, size ticks as EndStat values), lobbed-ballistic dashed arcs, burst/damage glyphs + INDDIR/SUFDDIR stencil tallies, Manila snow-dot dispersal eating the EAST edge [25]; corner command-post: WHITE beanie (n.b. white [15]) + TP cart + umbrella strut + Yushityu + solander box w/ nickel key [35], red UGC beanie doffed beside it. Stamp band '8 NOV — I.-DAY · ESCHATON THEATER' + seal-8 + beanie-stamp cluster; filing 'ETA COURTS 6-12 / GAME-MASTER LORD / 400 DEAD BALLS' [2]. Reading: 24/40 shout isolates; 36/46 weather isolates; PARA 47 (2,367w) protected monolith at 38rem, no subdivision. Ticks: LOBBY on 14/25, ESSAY on 2/5, NIGHT on 36. Full spec: design.chapters.p1c43."
+    },
+    {
+      "id": "p1c44",
+      "motif_asset": "Speaker-meeting handbill plate: 'WHITE FLAG GROUP — PROVIDENT CAFETERIA — COMMITMENT: ADVANCED BASICS OF CONCORD' with a podium + amplified-mic vignette and the raffle-urn; reverse side carries the 'Do not ask WHY…' quatrain as hand-lettered placard.",
+      "mood": "Grange-hall warmth and fluorescent exposure; practiced testimony, crocodile heckling, sleet on the windows.",
+      "motifs": [
+        "shared Substance-career cliff's-edge litany (paras 6–11)",
+        "the Irish bowl-splatterer (paras 13–14, dialect set piece)",
+        "Complaint Department of Filene's (para 40)",
+        "raffle-break: ashtrays, urns, sleet, Tiny Ewell",
+        "'Do not ask WHY…' quatrain coda"
+      ],
+      "n_paras": 46,
+      "opener_composition": "Stamp band: '8 NOV — WHITE FLAG COMMITMENT'. Plate is the handbill card; title Archivo (long title wraps to three lines — allow it). Drop cap on 'Boston AA is like AA nowhere else…'.",
+      "palette_role": "Meeting-hall register: warm File Manila handbill ground lifted from Ledger Black; Stamp Red for the Commitment line and quatrain placard; Phosphor reserved for the margin note-ticks only.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Calm body; the em-dash-led Losses litany (paras 6–11) keeps its run-on breathlessness — no list-ification. Dialect set piece (para 14) set roman, never italicized-for-effect. Raffle-break sequence (paras 25–37) may breathe slightly wider. Final quatrain (para 45) set as centered placard isolate, hand-lettered feel via Archivo at small size.",
+      "roman": "44",
+      "structure_note": "Single meeting arc: doctrine (0–5) → Losses litany (6–12) → speakers (13–21) → Gately's night-job aside (22–23) → raffle-break (25–37) → Statue/product aside (38) → more speakers (39–44) → quatrain. No script or header paras. Refs 131–143 observed.",
+      "subject": "Boston AA doctrine + the White Flag Group's Sunday speaker meeting: the Advanced Basics Commitment — Losses litanies, the Irish immigrant's toilet testimony, the Filene's Complaint Department man hiding under his desk, raffle-break sociology — closing on the 'Do not ask WHY' quatrain.",
+      "title": "8 November — Year of the Depend Adult Undergarment Interdependence Day Gaudeamus Igitur (2) — Boston AA is like AA nowhere else…",
+      "words": 17238,
+      "part_roman": "I",
+      "order": 44,
+      "number_label": "§ 44",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "white-flag",
+        "class": "plate",
+        "motif": "white-flag",
+        "caption": "Plate 44 · Speaker-meeting handbill: White Flag hosts Advanced Basics",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: White Flag handbill card ~4:5 — mixed wood-type 'WHITE FLAG GROUP — PROVIDENT CAFETERIA — COMMITMENT: ADVANCED BASICS OF CONCORD' [1], plywood podium + amplified mic [0][32], 60-cup raffle urn + Big-Book prize [0], crocodile-corner glyph [16], sleet-tick border [26]; quatrain placard strip (verified verbatim [45], Archivo small red, uneven baseline). Stamp band '8 NOV — WHITE FLAG COMMITMENT'; filing 'PROVIDENT CAFETERIA / CONCORD ADVANCED BASICS / 2000H' [2]. Reading: Losses 6-11 un-listed; dialect [14] roman; doctrine 0-2 bounded; raffle 25-37 +air; giants 16 (1,818w) + 44 (2,453w) at 38rem; quatrain centered isolate. Ticks: MEETING red on 3/13/40, ESSAY on 2/19/21/44, LOBBY on 25/37. Full spec: design.chapters.p1c44."
+    },
+    {
+      "id": "p1c45",
+      "motif_asset": "Split plate: left half desert-night interface (crossed bare arms, high heels on toes, plaid blanket, clotted stars); right half weight-room nightcap (towel dispenser, Wild Turkey + Caffeine Free Diet Coke, Blake read in cartoon voices). A ledger seam splits the plate.",
+      "mood": "Surveillance lullaby giving way to two a.m. father-confession; the cohort's quietest hinge.",
+      "motifs": [
+        "choreography of interface: smoking, toe-bobbing, practiced half-sleep",
+        "Himself/Lyle weight-room nights: no-plot despair, Found Drama",
+        "marriage graded C–, Blake in cartoon voices"
+      ],
+      "n_paras": 8,
+      "opener_composition": "Stamp band: '30 APR / 1 MAY — INTERFACE LULL'. Split plate mirrors the chapter's two strands. Title Archivo; drop cap on the choreography paragraph. Para 3 (stranded AA paragraph — see structure_note) gets a subtle ledger-rule frame + 'FILED OUT OF SEQUENCE?' margin tick per curator flag, never hidden.",
+      "palette_role": "Hinge register: Phosphor night on the left half, warm Manila lamplight on the right half, Ledger seam between — the only plate in the cohort that mixes the two sides.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Only 8 paras: paras 0–1 (interface) and 2/4–7 (weight-room) read as two calm blocks separated by a braid_divider ('E.T.A. WEIGHT ROOM — EARLIER'). Para 3 (1,688-word AA speaker story, South Boston pregnant newcomer) is a ruled authorial scene-cut — style as served with the framed scene-break treatment; do NOT relocate or trim prose.",
+      "roman": "45",
+      "structure_note": "TextCurator RULED (verified PDF pp.416-421): para 3 is NOT a boundary defect — it is Wallace's own mid-section scene cut (same device as the p1c46/p1c47 braids); moving it would contradict print. SERVE AS IS: style as an in-section scene break with the ledger-rule frame + scene-cut margin tick (not an error flag). Para order as served: 0-1 desert, 2 Himself/Lyle, 3 AA scene-cut, 4-7 Himself/Lyle. Refs 144-145 in para 2.",
+      "subject": "Desert lull (Steeply's marital-leave datum, Marathe's half-sleep) hinged to Himself's all-night weight-room drinking sessions with Lyle — plot despair, Found Drama's origin, the C– marriage, Blake in cartoon voices — plus one White Flag speaker paragraph as an authorial mid-section scene-cut (TextCurator-ruled, PDF pp.416-421).",
+      "title": "30 April / 1 May — Year of the Depend Adult Undergarment (2) — The choreography of interface had settled into…",
+      "words": 2323,
+      "part_roman": "I",
+      "order": 45,
+      "number_label": "§ 45",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "interface-lull",
+        "class": "plate",
+        "motif": "interface-lull",
+        "caption": "Plate 45 · Split plate: desert lull / weight-room nightcap",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: split plate ~16:9 (0.8x height) — LEFT phosphor desert (crossed bare arms, heel toe-marks, plaid fold, clotted stars [0]) / RIGHT Manila lamplight (towel dispenser, Wild Turkey + Caffeine Free Diet Coke, Blake w/ cartoon-speech tail [4][7]), Ledger seam w/ hinge glyph. NO red; para 3 NOT pictured. Stamp band '30 APR / 1 MAY — INTERFACE LULL'; filing 'SHELF / WEIGHT ROOM / 0200H' [3]. Reading: divider before para 2 'E.T.A. WEIGHT ROOM — EARLIER' (para 2 opens the weight-room strand); PARA 3 (1,688w AA cut): SERVE AS IS — ledger-rule frame + scene-cut margin tick, NO error flag, NO micro-label, NO relocation (TextCurator PDF pp.416-421). Ticks: NIGHT 0, ESSAY 2/6, MEETING-Manila + SCENE-CUT on 3. Full spec: design.chapters.p1c45."
+    },
+    {
+      "id": "p1c46",
+      "motif_asset": "Three-plate braid (stacked, ledger-ruled): (1) puppet-stage plate — velvet stage, Gentle pounding the Seal askew, Motown-girl cabinet puppets; (2) broadsheet plate — spinning journalistic Headers ('GENTLE TO CANADIAN PM: HAVE SOME TERRITORY'); (3) before/after Reconfiguration maps — garish red Concavity with stapled blue-bellied flies.",
+      "mood": "Gala-dessert chaos, janitor-closet statecraft, late-night guru counsel, ad-industry autopsy — the feast at full sprawl.",
+      "motifs": [
+        "Mario's 48-minute puppet film: Gentle, Tine, oxygen, 'Give it away'",
+        "spinning news Headers at 45-rpm 'Flight of the Bumblebee'",
+        "Lyle's weight-room tête-à-têtes (storm window, different Lyles)",
+        "Eric Clipperton suicide-legend; Interlace/NoCoat rise (paras 149–163)"
+      ],
+      "n_paras": 164,
+      "opener_composition": "Stamp band: '8 NOV — I.-DAY GALA · PUPPET FILM'. Opener plate is the puppet-stage (the chapter's nominal subject); broadsheet + map plates deploy as braid_divider plates at paras 37 and 103. Script lines (GENTLE:/TINE:/SEC. x:) in positional speaker set; Headers in broadsheet mono. Title Archivo; drop cap on the puppet-film paragraph.",
+      "palette_role": "Full feast register: Seal Gold stage + Stamp Red Headers and Concavity on Ledger Black; Lyle interludes (paras 27–35, 55–58) cool to Phosphor-on-black night register — the divider carries the temperature change.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Braid-aware calm body with three divider types: 'ON SCREEN' (film), 'WEIGHT ROOM' (Lyle), 'HAL'S MIND' (Clipperton/Interlace essay, paras 144–163). Script paras (list in structure_note) get hanging-indent continuation lines with speakers in the body voice (Manila roman — the 'hanging gold speakers' pass was NOT shipped; rev5 amendment, see design.p1c46 and DESIGN-FINDINGS-D.md F-D1); header paras set as centered broadsheet lines. The 164-para length needs the margin tick system (film/lobby/essay glyphs) so readers can track strands.",
+      "roman": "46",
+      "structure_note": "Braid: gala audience (0–3) → film: cabinet scenes (4–26) → Lyle (27–35) → film: header montage (36–54) → Lyle/Hal (55–59) → film: headers (60–64) → film: cabinet/Reconfiguration (65–138) → headers (139–143) → Hal's Clipperton/Interlace essay (144–163). Script paras: 8,12–17,19–25,40,50,53,61,65–72,74–81,83–88,92–98,101–103,106–110,112,116–129,130–138,140–141 (+130-series cont.). Header paras: 39,42–43,45,49,51,60,142. Refs 147–168 observed.",
+      "subject": "I.-Day gala supper + Mario's annual puppet-film (Gentle's cabinet giving away the Concavity, 'Give it away,' Reconfiguration maps) braided with Lyle's storm-night weight-room counsel and Hal's Clipperton-legend + Interlace/NoCoat history essay.",
+      "title": "8 November — Year of the Depend Adult Undergarment Gaudeamus Igitur",
+      "words": 17043,
+      "part_roman": "I",
+      "order": 46,
+      "number_label": "§ 46",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "puppet-gala",
+        "class": "plate",
+        "motif": "puppet-gala",
+        "caption": "Plate 46 · Gala puppet-stage; further plates at §§ 37 and 103",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN (within-cohort GATE with p1c43 — build first; densest plate in D): puppet-stage panorama ~21:9 — velvet curtains + gold valance, Gentle pounding the Seal ASK EW ~8° (verified [5]), Motown cabinet puppets (dresses gray-rose, J5-safe, never violet [64]), TINE pointer on seal-crested easel [103], entr'acte bunting + Raisinette dots [136], audience fedoras/beret [2][3]. Mergeable braid symbols: braid-broadsheet (spinning header f/x, Bumblebee 45-rpm grooves [137]) + braid-concavity (before/after maps, Ticonderoga right-angle, stapled blue-bellied flies [101-103]). LIVE DATA = 162 PARAS (0-161), not 164 — see design.p1c46_162_decision. Dividers (pure-CSS, J2): WEIGHT ROOM before 27 + 55 (feast→phosphor-night); 'ON SCREEN — THE HEADLINE MONTAGE' before 37 (para 36 ends '…under Gentle:'); 'ON SCREEN — THE RECONFIGURATION MAPS' before 102 — NOT 103, because 102/103 split one hyphenated sentence ('practical-joke- / type flies…') and para 102 opens the second map; 'HAL'S MIND — THE CLIPPERTON LEGEND' before 142 (film→essay, leading 1.85). Script = hanging indent + positional indent (verified sets in design.script_and_header_sets; rev5 amendment 2026-10-16: 'hanging gold speakers' as designed was NOT shipped — speakers render the same Manila as body, F4 DESIGN-FINDINGS-D.md — implement gold speakers only with a real .speaker span pass; doc keeps the CSS honest).; headers = centered broadsheet mono, point-size words by relative scale; chains 45/46/139 single centered blocks, semicolons intact. Ticks: FILM on film paras, LOBBY 0-3 + 54, NIGHT 27-35 + 55-58, ESSAY 142-161. Full spec: design.chapters.p1c46."
+    },
+    {
+      "id": "p1c47",
+      "motif_asset": "Two-plate braid: (1) night-interface plate — Habitant pea-soup can ('Veuillez Recycler Ce Contenant') between the two chairs under Venus; soup-can centered as the ethics-seminar exhibit; (2) puppet-film plate — portabubble Gentle + Tine's smoke-detector eyes + Veals's front teeth, placemat revenue-vision scene.",
+      "mood": "Socratic night-school under the stars, then the gala film's revenue farce; tenderness (Gately sunlights) smuggled between.",
+      "motifs": [
+        "Habitant soup-can ethics: bonk the head, delayed gratification, candy kid",
+        "A.F.R. 'naked aggression' vs. clothed agenda; Venus 'pallid cheese'",
+        "Gately 'sunlights on the side' / Shattuck janitoring (paras 110–117)",
+        "puppet-film part 2: portabubble, Triple Bind, placemats, Forsythia Bowl"
+      ],
+      "n_paras": 174,
+      "opener_composition": "Stamp band: '30 APR / 1 MAY — THE SOUP SEMINAR'. Opener plate is the soup-can interface scene; film plate deploys at the braid_divider before para 120 ('ON SCREEN — REVENUE VISION'). Script set as in p1c46. Drop cap on 'Marathe did not quite sleep.'",
+      "palette_role": "Desert-night primary (Phosphor stars, Manila dialogue, no Stamp Red) for paras 0–106; Gately insert (110–117) in warm Manila work-register; film section (120–173) flips to feast red/gold — the divider carries the flip.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Stichomythic rally set for the short exchanges (paras 6–100 have ~30 sub-12-word paras — keep tight, never inflate). Soup-seminar core (paras 60–106) is the sustained read: calm measure, speaker rhythm preserved. Clipperton coda (107–109) + Gately insert (110–117) + E.T.A. girls aside (118–119) each take braid_dividers. Film script (120–173) in positional speaker set with header lines (120–123) as broadsheet.",
+      "roman": "47",
+      "structure_note": "Braid: desert dialogue (0–106) → Clipperton coda (107–109) → Gately/Shattuck (110–117) → E.T.A. coda (118–119) → puppet-film part 2 script (120–173). Script paras: 120–121,124–129,131–141,143–154,156,158–160,162–173. Refs 169–177 observed.",
+      "subject": "The desert night's philosophical core — Marathe's soup-can seminar (enlightened self-interest, the candy kid, 'to bonk the head') — plus the Clipperton funeral coda, Gately's Shattuck janitoring, and the puppet-film's second half (Gentle's portabubble revenue vision, Triple Bind, placemats).",
+      "title": "30 April / 1 May — Year of the Depend Adult Undergarment (3) — Marathe did not quite sleep. They had…",
+      "words": 11352,
+      "part_roman": "I",
+      "order": 47,
+      "number_label": "§ 47",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "soup-seminar",
+        "class": "plate",
+        "motif": "soup-seminar",
+        "caption": "Plate 47 · Soup-can ethics seminar; film plate at §120",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: soup-seminar plate ~16:9 — Habitant can ('Veuillez Recycler Ce Contenant' [87]) CENTERED between chairs under pallid-cheese Venus [105], bonk-glyph margin [89], Tucson light-rectangles base [85]. ZERO red in desert half. Mergeable: braid-revenue (portabubble + TINE smoke-detector eyes [144] + Veals teeth + zodiac placemat w/ grease corona [172]). Stamp band '30 APR / 1 MAY — THE SOUP SEMINAR'; filing 'SHELF / SINGLE-SERVING EXHIBIT / VENUS RISING'. Reading: ~30 sub-12w rally paras tight; seminar core 60-106 calm; codas 107-109/110-117/118-119 minor scene-cut ticks (Gately insert warm .ij-insert-work); film 120-173 in p1c46 script set + headers 120/121/122-kicker/123 broadsheet. ONE full divider before 120 'ON SCREEN — REVENUE VISION' (desert→feast flip — cohort's widest swing). Ticks: NIGHT sparse 0/64/87/102/105/106, ESSAY 69/89/110, FILM 120-173, chorus-center 125/134/138/162/165. Full spec: design.chapters.p1c47."
+    },
+    {
+      "id": "p1c48",
+      "motif_asset": "Biker-meeting handbill plate: 'TOUGH SHIT BUT YOU STILL CAN'T DRINK — BRAINTREE' with hawg + leather-spat vignette, AA triangle-in-circle jailhouse tatt, and Bob Death's fish-joke as small marginalia; reverse carries the undersea-dream vignette (silent dim water, same temperature).",
+      "mood": "Rowdy fellowship over an abyss; confessed cluelessness applauded; memory dredged like bilge.",
+      "motifs": [
+        "Higher Power cluelessness confession; 'Keep Coming'",
+        "biker hawgs, jailhouse AA tatt, Bob Death's fish joke",
+        "'Get In Touch With Your Feelings' — canines under clichés",
+        "Beverly childhood: Sir Osis of Thuliver, Nimitz the kitty",
+        "undersea dream coda"
+      ],
+      "n_paras": 21,
+      "opener_composition": "Stamp band: 'Y.D.A.U. — WHITE FLAG COMMITMENT · BRAINTREE'. Handbill plate; title Archivo; drop cap on the Commitment paragraph. The undersea dream (para 20) closes with an isolate coda set — dim, quiet, slower measure.",
+      "palette_role": "Meeting-hall warm Manila + Stamp Red handbill; childhood-memory sequence (paras 11–19) cools to desaturated Phosphor-gray; undersea coda in deep Ledger blue-black — the chapter visibly descends.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Calm body; Commitment scene (0–8) at normal measure; memory-dredge (9–19) with slightly narrower measure and extra paragraph air to feel like sinking; one-line para 15 ('Nimitz the kitty') keeps isolate spacing — it is a held breath. Final dream para set as coda isolate.",
+      "roman": "48",
+      "structure_note": "Two movements: Braintree Commitment (0–8) → memory-dredge essay (9–19) → dream coda (20). Refs 178–179. No script/headers.",
+      "subject": "White Flag Commitment to the Braintree biker meeting: Gately's Higher Power confession, Bob Death's fish joke — then the 'Get In Touch' memory-dredge (Beverly childhood, Sir Osis, Nimitz) and the undersea dream coda.",
+      "title": "Year of the Depend Adult Undergarment (8) — On a White Flag Group Commitment to…",
+      "words": 3738,
+      "part_roman": "I",
+      "order": 48,
+      "number_label": "§ 48",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "braintree",
+        "class": "plate",
+        "motif": "braintree",
+        "caption": "Plate 48 · Biker-meeting handbill + undersea coda vignette",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: Braintree handbill card ~4:5 — condensed wood-type 'TOUGH SHIT BUT YOU STILL CAN'T DRINK — BRAINTREE' [0], hawg (bars + lamp + throb ticks [5]) + spat + spade-knife buckle [3], triangle-in-circle tatt as the handbill's own seal (Manila line, red triangle [5]), whiskery-fish marginalia [7]; coda band beneath: undersea concentric rings [20]. Stamp band 'Y.D.A.U. — WHITE FLAG COMMITMENT · BRAINTREE'; filing 'CHURCH BASEMENT / HAWG PARKING / JULY'. Reading: 0-8 normal; memory 9-19 narrowed 34rem + air (sinking); [15] 'Nimitz the kitty.' held-breath isolate; [20] deep blue-black coda isolate — chapter visibly descends warm→phosphor-gray→depth. Ticks: MEETING red 0/5/6, ESSAY 9/10/11, SCENE-CUT 11/20. Endmark A.0: undersea glyph (Manila 40% rings). Full spec: design.chapters.p1c48."
+    },
+    {
+      "id": "p1c49",
+      "motif_asset": "Single-paragraph nightmare plate: shale teeth splintering into grit, a squeezed tennis ball, watch-checking faces turned away; engraved in sickly green-gray with one Stamp Red accent (the oral rot). Small plate — the chapter is 442 words.",
+      "mood": "Helpless oral horror; institutional indifference; the cohort's held breath.",
+      "motifs": [
+        "teeth like shale, grit, squeezing a ball",
+        "Schacht 'late for his next appointment'",
+        "pricing dentures; the dire symptom no one names"
+      ],
+      "n_paras": 1,
+      "opener_composition": "Stamp band: 'VERY LATE OCTOBER — DREAM FILE'. Small plate above a single flowing paragraph — no dividers, no ticks, no script. The whole chapter fits one screen; the opener IS the chapter. Title Archivo small; the paragraph set at full calm measure with a drop cap.",
+      "palette_role": "Nightmare anomaly: sickly Phosphor-green-gray plate on Ledger Black, one Stamp Red accent — the only red allowed outside feast chapters, and it signifies rot.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "No reading treatment beyond the single paragraph: protect it from any list/script/header detection (it contains quoted speech but is one para). Isolate spacing above the coda-less end. This is the cohort's rest beat between Braintree and dawn drills.",
+      "roman": "49",
+      "structure_note": "1 para, 442 words. Refs: 109 (? — verify; 180s sequence suggests 180). Shortest chapter in cohort; proportional treatment per RELAUNCH (subtle authored mark, not a giant hero).",
+      "subject": "Hal's recurring teeth-disintegration nightmare in a single 442-word paragraph: shale teeth, grit, the squeezed ball, watch-checking bystanders — pure dread vignette.",
+      "title": "Very Late October Y.D.A.U.",
+      "words": 442,
+      "part_roman": "I",
+      "order": 49,
+      "number_label": "§ 49",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "teeth-dream",
+        "class": "plate-small",
+        "motif": "teeth-dream",
+        "caption": "Plate 49 · Shale-teeth nightmare vignette",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: teeth-dream vignette ~1:1 at 0.5x standard (442 words — proportional per RELAUNCH): three fractured shale molars + grit stipple, squeezed ball w/ compression ticks, two watch circles + averted profiles ('late for his next appointment'), sickly Phosphor-25% wash + ONE Stamp Red rot-crack (only non-feast/non-violence red in D = rot). Stamp band 'VERY LATE OCTOBER — DREAM FILE'; filing 'RECURRENCE / ORAL / 442 WORDS'. Reading: single para protected (no list/script/header detection), drop cap, isolate above end. No ticks, no dividers. Endmark A.0: shale-tooth glyph (phosphor-gray + red fleck). The cohort's rest beat — let it be small. Full spec: design.chapters.p1c49."
+    },
+    {
+      "id": "p1c50",
+      "motif_asset": "Two-plate braid: (1) dawn-drills plate — staggered squads on Center Courts, Schtitt's weatherman's pointer, Gatorade cones, Side-to-Sides funnel; cold breath glyphs; (2) Aventura plate — black '64 Ford Aventura ('black as water at night'), Handicapped plates, Purity Supreme bag, one-candle cake.",
+      "mood": "Predawn institutional grind → Gately hagiography; Teutonic tennis metaphysics → recovery warmth.",
+      "motifs": [
+        "A.M. drills: stagger, Finesse court, wind sprints, Side-to-Sides",
+        "Schtitt's 'second world' / 'occur' metaphysics; 'Play.'",
+        "Pat's Aventura; court dates; 'sunlights on the side'",
+        "knee-and-ceiling; one-candle cake; boiled-hot-dog chef litany"
+      ],
+      "n_paras": 56,
+      "opener_composition": "Stamp band: '9 NOV — DAWN DRILLS · ETA'. Opener plate is the drills panorama; Aventura plate deploys at braid_divider before para 46 ('ENNET HOUSE — GATELY'). The Schtitt dialogue rally (paras 18–45, many sub-12-word lines) in tight positional set. Drop cap on the capacity paragraph.",
+      "palette_role": "Cold drills register: Phosphor-cold court lines + Manila breath on Ledger Black for paras 0–45; Gately section (46–55) warms to Manila lamplight + Seal Gold cake-candle — the divider carries the dawn-to-hearth shift.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Capacity/logistics exposition (0–4) calm; drills sequence (5–17) with court-by-court rhythm preserved; Schtitt rally (18–45) tight. Gately biography (46–55) at warm calm measure; the chef litany (para 55: hot dogs/meat loaf/Shake 'N Bake) keeps its comma-run set. Refs 181–197 observed, densest in Gately half.",
+      "roman": "50",
+      "structure_note": "Clean two-part braid: E.T.A. dawn drills + Schtitt seminar (0–45) → Gately biography (46–55). Junction at para 46 is abrupt but stable (no anomaly flag). Short rally paras: 19,22–23,27–28,30,33,35–36,38–39,43.",
+      "subject": "E.T.A. dawn drills under Schtitt (stagger logistics, Finesse court, Side-to-Sides, the 'second world' seminar ending 'Play.') then Don Gately's biography — Pat's Aventura, court dates, knee-and-ceiling, the one-candle cake, chef litany.",
+      "title": "9 November — Year of the Depend Adult Undergarment",
+      "words": 10290,
+      "part_roman": "I",
+      "order": 50,
+      "number_label": "§ 50",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "dawn-drills",
+        "class": "plate",
+        "motif": "dawn-drills",
+        "caption": "Plate 50 · Dawn-drills panorama; Aventura plate at §46",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: dawn-drills panorama ~21:9 — staggered squad glyphs w/ breath-steam hairlines, Schtitt pointer stabbing sky [41] + stopwatch + pipe rail, three Gatorade cones [14], Side-to-Sides funnel lanes [15], picric cloud cone + pinkish corona [8][13]; Phosphor lines + Manila breath on Ledger. Mergeable: braid-aventura (black '64 Aventura, Handicapped plates, Purity Supreme bag, one-candle cake w/ gold flame [46][52][54]). Stamp band '9 NOV — DAWN DRILLS · ETA'; filing 'CENTER COURTS / FIRST SHIFT / 0720H' [17]. Reading: 0-4 calm; 5-17 court rhythm; rally 18-45 positional (shorts tight; 'Play.' [45] isolate above divider); Gately 46-55 warm 38rem; chef litany [55] comma-run intact. Divider before 46 'ENNET HOUSE — GATELY' (dawn-cold→hearth). Ticks: EXAM-Manila 5-17, ESSAY 26/29/41, LOBBY 40, MEETING-Manila 54. Full spec: design.chapters.p1c50."
+    },
+    {
+      "id": "p1c51",
+      "motif_asset": "Three-plate braid (stacked): (1) p-terminal plate — hair-thin Briggs electrodes, rat lever, 'Rivers of Reward' diagram, Brandon Manitoba seal; (2) Aventura-night plate — CITGO sign in pulsing neon distance, Bread & Circus bag, Storrow 500 on-ramp; (3) Antitoi-shop plate — blown-glass notions, happy-mask A.F.R., 585-rpm-drive TP, Lucien's soaring-north coda.",
+      "mood": "Clinical horror → joyride guilt → home-invasion dread → pietà; the cohort's darkest braid.",
+      "motifs": [
+        "Brandon p-terminals: rat, dolphin, trampling volunteers",
+        "Gately's Aventura joyride: CITGO sign, B.U. country, menthols",
+        "Antitoi shop: squeaking hinge, soup-sopped bread, black filament",
+        "Lucien's death-flight 'in all the world's well-known tongues'"
+      ],
+      "n_paras": 90,
+      "opener_composition": "Stamp band: 'PRE-DAWN 1 MAY — STILL · P-TERMINALS'. Opener plate is the p-terminal diagram; joyride + shop plates deploy at braid_dividers before paras 74 ('BOSTON — GATELY') and 82 ('ANTITOI SHOP'). Sub-12-word rally lines (paras 1–2, 21–22, etc.) tight. Drop cap on Steeply's electrode question.",
+      "palette_role": "Desert-night clinical register for paras 0–73 (Phosphor diagram lines, Manila dialogue); joyride (74–81) in sodium-streetlight amber (opacity-derived from Seal Gold); shop sequence (82–89) in cold Mask-white + Stamp Red dread accents — red returns as violence, not feast.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Seminar dialogue (0–73) in tight rally set with the long Steeply expositions (0, 8, 10, 13, 20, 24, 30, 33, 35, 39, 43, 46–47, 51, 57, 60, 64, 66, 68, 70–72) at calm measure. Joyride (74–81) breathes wider, faster. Shop sequence (82–89) narrows and slows; Lucien's coda (para 89 tail) as isolate. Refs 198–207 observed in Boston/shop sections.",
+      "roman": "51",
+      "structure_note": "Three-strand braid: p-terminal seminar (0–73) → Gately joyride (74–81) → Antitoi shop invasion (82–89). Junctions abrupt but stable. Para 81 (1,697 words, Inman/Little Lisbon) is the long read of the joyride strand.",
+      "subject": "Pre-dawn: Steeply's Brandon p-terminal horror story (electrodes, rat lever, trampling volunteers) → Gately's manic Aventura grocery run (CITGO sign, B.U. country) → the A.F.R. rape of the Antitoi brothers' shop and Lucien's soaring death-flight coda.",
+      "title": "Pre-Dawn, 1 May — Y.D.A.U. Outcropping Northwest of Tucson AZ U.S.A., Still",
+      "words": 9322,
+      "part_roman": "I",
+      "order": 51,
+      "number_label": "§ 51",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "p-terminals",
+        "class": "plate",
+        "motif": "p-terminals",
+        "caption": "Plate 51 · P-terminal diagram; joyride + shop plates at §§ 74 and 82",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: p-terminal diagram plate ~16:9 — hair-thin Briggs electrodes [0] on lobe cross-section w/ 'Rivers of Reward' tributaries [13], rat lever + paw + tally ticks [20], Brandon Manitoba round seal [15][35], volunteer queue doubling the block [35]; Phosphor lines, Manila labels, ZERO red. Mergeable: braid-joyride (CITGO neon distance w/ gold pulse rings, Bread & Circus bag, Storrow 500 curve [76][77][80]) + braid-shop (blown-glass shelf, happy-mask glyph, 585-rpm TP, squeak-ticked hinge [82] — Mask-white + red dread). Stamp band 'PRE-DAWN 1 MAY — STILL · P-TERMINALS'; filing 'OUTCROPPING / BRANDON EXHIBIT / EMERY BOARD' [70-73]. Reading: seminar 0-73 rally + calm expositions; joyride 74-81 wider/faster (81: 1,697w at 38rem); shop 82-89 narrows 38→34rem + air (dread as measure); [88] 'Can a mask's drawn smile widen?' max-air isolate; [89] tail Lucien coda isolate. Dividers: before 74 'BOSTON — GATELY' (night→sodium-amber) + before 82 'ANTITOI SHOP' (amber→mask-white dread). Ticks: ESSAY on expositions, NIGHT 0/72/73, SCENE-CUT at dividers + 82. Full spec: design.chapters.p1c51."
+    },
+    {
+      "id": "p1c52",
+      "motif_asset": "Minimal night plate: outcropping lip, bonfire + ring of palsied torch-fires below, two figures (one seated + blanket, one standing + self-embrace); a drawn-smile mask glyph dissolving at the plate's edge. Smallest desert plate — 24 paras, 827 words.",
+      "mood": "Exhausted tenderness between enemies; the night's last questions; feminine/birdlike head-cocks in the silence.",
+      "motifs": [
+        "bonfire + ring of palsied fires; dancing torch-bearers",
+        "'Do you ever think of viewing it?'",
+        "pacemaker killed by videophonic pulse (Marathe's father)",
+        "density/holography theories; Fortier's irrelevance"
+      ],
+      "n_paras": 24,
+      "opener_composition": "Stamp band: 'PRE-DAWN 1 MAY — STILL · LAST WATCH'. Small plate; title Archivo; the short exchanges (paras 1, 4, 8, 16, 18, 22) in tight rally set. The closing head-cock paragraph (para 23) keeps isolate spacing — the desert sequence ends on observed gesture, not argument.",
+      "palette_role": "Purest desert-night register in the cohort: Phosphor stars/fires on Ledger Black, Manila dialogue, zero red. The quietest plate — a visual decrescendo before the Sepulveda flashback.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Calm minimal: 24 short paras read as a single night-watch movement. No dividers, no script, no headers. Footnote refs: none observed. Protect the silences — paragraph spacing does the work.",
+      "roman": "52",
+      "structure_note": "Single strand, shortest desert chapter (827 words). Short rally paras: 1,4,8,16,18,22. Functions as coda to the 5-chapter Tucson sequence (p1c42/45/47/51/52).",
+      "subject": "The desert night's last watch: 'Do you ever think of viewing it?', the Read-Only copy, Marathe's father's pacemaker death, density/holography theories — ending on Steeply's feminine birdlike head-cocks in the silence.",
+      "title": "Pre-Dawn, 1 May Y.D.A.U. Outcropping Northwest of Tucson AZ U.S.A., Still",
+      "words": 827,
+      "part_roman": "I",
+      "order": 52,
+      "number_label": "§ 52",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "last-watch",
+        "class": "plate-small",
+        "motif": "last-watch",
+        "caption": "Plate 52 · Last watch: bonfire ring, two figures",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: last-watch plate ~16:9 at 0.6x standard (827 words — decrescendo): single ledge, bonfire + palsied torch ring w/ dance marks [0][2], seated+blanket + standing+self-embrace figures [0], dissolving drawn-smile mask at edge (p1c51's mask letting go). Purest desert-night: Phosphor fires/stars, Manila figures, zero red; mostly dark ground. Stamp band 'PRE-DAWN 1 MAY — STILL · LAST WATCH'; filing 'OUTCROPPING / FIFTH NIGHT / SILENCE' (Tucson sequence p1c42/45/47/51/52). Reading: 24 paras one movement; rally shorts (1/4/8/16/18/22) tight; speeches (11/12/15/21) calm; [23] head-cocks isolate — desert ends on gesture. NO inserts/dividers. Ticks: NIGHT on 0/11/23 ONLY (sparsest in D). Endmark A.0: dissolving-mask glyph (Manila 50%). Full spec: design.chapters.p1c52."
+    },
+    {
+      "id": "p1c53",
+      "motif_asset": "Three-plate braid (stacked): (1) Sepulveda plate — sun-blazed white/blue bedroom, King-Size frame on casters, tomato-juice tumbler, vacuum's minor-D shriek, amputated brass knob rolling its cycloid; (2) NA-meeting plate — anechoic vestry circle, 'Keep Coming Back' shout, Roy Tony's spread-arm hug demand; (3) night-interface plate — Hoyne's 'empty of intent' eyes, sideways moon, windblown-spark insects.",
+      "mood": "Sun-blasted filial slapstick → church-basement menace → clinical dread at the stars' paling; 1963 noon to pre-dawn across one chapter.",
+      "motifs": [
+        "squeaking bed, tomato juice, orange TV makeup, white toupee",
+        "brass knob cycloid → 'possibilities of annulation'",
+        "NA marijuana meeting: Roy Tony hug confrontation",
+        "Hoyne/'empty of intent'; paling stars, spark-insects"
+      ],
+      "n_paras": 132,
+      "opener_composition": "Stamp band: 'WINTER B.S. 1963 — SEPULVEDA CA'. Opener plate is the Sepulveda bedroom — the cohort's only full-daylight plate (sun-blazed white/blue, warmest ground in D). NA + desert plates deploy at braid_dividers before paras 83 ('BOSTON — NA MEETING') and 110 ('PRE-DAWN — STILL'). Drop cap on the Bazin/tomato-juice paragraph.",
+      "palette_role": "Anomaly + return: Sepulveda section (0–82) in sun-bleached Manila/white daylight register (unique in cohort); NA meeting (83–109) in vestry amber + Stamp Red confrontation accents; desert coda (110–131) back to Phosphor night — the chapter walks the cohort's whole palette in order.",
+      "part": "part-1",
+      "part_subtitle": "The Novel",
+      "reading_treatment": "Bedroom farce (0–82) at calm daylight measure — the short slapstick exchanges (paras 2–3, 26, 30, 40, 55, 59–60, 75) tight. NA meeting (83–109) in rally set, the Roy Tony confrontation (paras 90–109) tightest in the chapter. Desert coda (110–131) slows to night-watch spacing; final insect/spark paragraph as isolate. Ref 208 in para 0 only.",
+      "roman": "53",
+      "structure_note": "Three-strand braid: Sepulveda 1963 bedroom farce (0–82) → NA marijuana meeting (83–109) → desert-night coda (110–131). Junctions abrupt but stable (no anomaly flag — matches the novel's interleave pattern). Only chapter in cohort with full daylight; only B.S.-1963 material in D.",
+      "subject": "Winter B.S. 1963 Sepulveda: young Jim Incandenza helps his parents hunt a squeaking bed (tomato juice, sun-blaze, vacuum terror, the knob's cycloid → annulation) → Boston NA marijuana meeting (Roy Tony's hug confrontation) → desert-night coda (Hoyne's 'empty of intent' eyes, paling stars).",
+      "title": "Winter, B.S. 1963, Sepulveda CA",
+      "words": 8840,
+      "part_roman": "I",
+      "order": 53,
+      "number_label": "§ 53",
+      "contract_manifest": {
+        "src": "art/cohort-d.svg",
+        "symbol": "sepulveda",
+        "class": "plate",
+        "motif": "sepulveda",
+        "caption": "Plate 53 · Sun-blazed bedroom; further plates at §§ 83 and 110",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape per READER-CONTRACT v1.1 Appendix A.2 (explicit `symbol` key; reader.js fetches src once, clones the matching <symbol>/<g id> into #chapter-art; missing id → hidden slot + console warning, never fatal). A.1 fragment srcs remain honored for backward compatibility but all new manifests MUST use `symbol`. Footnote: if integration ever rejects symbols, engineer splits to art/cohort-d/<motif>.svg with identical ids — no entry remap needed beyond src."
+      },
+      "design": "DESIGN: Sepulveda daylight panorama ~21:9 (ONLY full-daylight plate in D) — sun-blazed white/blue bedroom (powder-blue pile [1], glare wash), King-Size black-steel frame + 4 sunk casters [45], tomato tumbler w/ residue [0][25], vacuum shriek ticks from hall [82], amputated brass knob + hex half rolling the CYCLOID center (L'Hôpital/Brachistochrone micro-label [80][81][82] — 'possibilities of annulation'); wig + orange-makeup accents [0][5]. Red WITHHELD from opener. Mergeable: braid-na (anechoic chair ring, no tables, ashtrays-on-knees, 'Keep Coming Back' arc, Roy Tony spread arms [84][88][90]) + braid-desert ('empty of intent' eyes [129], sideways moon, spark-insects [131]). Stamp band 'WINTER B.S. 1963 — SEPULVEDA CA' + seal-filing (pre-subsidy); filing 'BEDROOM / SQUEAK HUNT / SUN-BLAZE'. Reading: farce 0-82 calm + tight shorts; knob 80-82 +air (philosophical hinge); confrontation 90-109 TIGHTEST; coda 110-131 night spacing; [131] spark-insects isolate. Dividers: before 83 'BOSTON — NA MEETING' (daylight→vestry/red) + before 110 'PRE-DAWN — STILL' (vestry→night) — chapter walks D's whole palette in order. Ticks: MEETING red 83/90/108, NIGHT 110/129/131, ESSAY 81/82. Endmark seal-8 (file closes in the desert present). Full spec: design.chapters.p1c53."
+    }
+  ],
+  "cohort_palette_note": "Feast side (p1c41/43/44/46 + film braids): Seal Gold + Stamp Red on Ledger Black, File Manila ink. Desert side (p1c42/45-desert/47-desert/51-seminar/52/53-coda): Cartridge Phosphor + Manila on Ledger Black, zero red. Hinges/anomalies: p1c45 split plate, p1c49 nightmare green-gray, p1c53 daylight Manila/white, p1c50 dawn-cold→hearth. All tints via opacity from the six draft tokens; no new hues.",
+  "designer_brief_pending": "Phase 2 (gated on SupIJ-2 ART-DIRECTION.md broadcast + Main's sequenced spawn slot): spawn library-designer (effort hi) for cohort-d.svg art + opener compositions from this manifest; then library-engineer (effort hi) for art/cohort-d.svg + design/cohort-d.css per reader_contract above; then library-validator (effort hi) for screenshot critique at 1440x1000/820x1180/390x844. Repair and re-review. Never touch theme.css/index.html/shared/**.",
+  "evidence": {
+    "baseline": "http://127.0.0.1:8000/ viewed (cover + p1c43 opener + body). Baseline: dark green/gold shell, plain centered serif body, zero chapter-specific art. Screenshots captured in-session 2026-10-15.",
+    "chapters_read": "All 13 chapter JSONs read: full first/mid/last sampling + first-120 and last-140 scans of p1c44/46/47/48/50/51/53; dialogue exchanges of p1c42/45 read in full; junctions p1c45[3], p1c47[106-119], p1c51[73-89], p1c53[82-83/109-110] verified verbatim.",
+    "toc": "books/infinite-jest/data/toc.json entries 41–53 (titles/word counts verbatim above).",
+    "word_counts": "TOC word_counts used for manifest 'words' (authoritative); independent paragraph-split counts differ slightly (e.g. p1c44 ~17.2k both ways) — noted, not conflicting."
+  },
+  "contract_conformance": {
+    "contract": "READER-CONTRACT v1.1 STABLE + SupIJ-2 IJ relay + Cohort A rev5 schema",
+    "slots": "All 13 plates target #chapter-art (injected above #chapter-meta); prose untouched, pure CSS via body[data-chapter]/[data-part]/[data-art] + #chapter-text[data-paras]; no reader-* classes minted (all motif/plate names ij-/cohort-d-prefixed and book-owned).",
+    "css_cascade": "Cohort CSS (design/cohort-d.css) unlayered → always wins over @layer shared; scoped to body[data-book='infinite-jest'] + per-chapter/per-motif hooks. Braid dividers + mid-chapter plates use p:nth-of-type(n)::before (mono slug label and/or content:url() plate fragment) — no DOM changes, no prose edits.",
+    "manifest_merge": "Supervisor merges entries' contract_manifest blocks into design/chapters.json sequentially; cohort JSON stays the source of truth with part+order+title for the provisional-ID remap.",
+    "fonts": "No cohort font loading (book-level concern: theme.css/index.html via supervisor); cohort CSS references --font-* tokens only.",
+    "endnotes": "Cohort D has no notes-part chapters; observed body-chapter footnote-ref candidates (notes ~106–208) are recorded in structure_notes for future body→note links IF TextCurator supplies note_refs — no guessing, violet .reader-noteref styling reserved via contract hooks.",
+    "end_seals": "Appendix A.0 chapter-end seals available (p:last-child::after url() art ≤32px, no layout shift) — candidates: p1c49 nightmare glyph, p1c52 mask glyph, p1c48 undersea glyph. Designer decides; engineer implements."
+  },
+  "rev2_note": "rev2: aligned to Cohort A rev5 standard per SupIJ-2 — per-entry contract_manifest blocks (art/cohort-d.svg#<motif> fragment src, class, motif→body[data-art], caption, slot, split-SVG fallback note) + cohort-level contract_conformance; entries carry part/part_roman/order/number_label/title remap keys. Supersedes the rev1 `art` + `reader_contract` shape. Fragments CONFIRMED per ReaderLead Appendix A.1 (relayed by SupIJ-2): single-SVG-with-symbols is the build shape; split-SVG fallback demoted to footnote.",
+  "rev3_note": "rev3: migrated contract_manifest to v1.1 A.2 explicit-symbol form (src art/cohort-d.svg + symbol=<motif>); fragment srcs retired per Main's ruling. Added A.0 end-seal candidates. No content changes.",
+  "status": "locked-frozen-rev5",
+  "rev4_note": "rev4: TextCurator ruling on p1c45[3] (SERVE AS IS, PDF pp.416-421, authorial scene-cut — error flag retired); BENCHMARK clause recorded (Main order via SupIJ-2): Phase 2 designer spec must build to the homepage creative-quality bar through the LEDGER identity, never by copying the homepage's look. Cohort D fires in the second wave after F+G (order TBD by prototype results). No content changes.",
+  "rev5_note": "rev5: ID FREEZE (TextCurator audit complete, .omp/design/infinite-jest-text-audit.md) — p1c41–p1c53 Final, no splits/merges/renames, titles unchanged. Manifest LOCKED against these IDs; part/part_roman/order/number_label/title keys retained as permanent provenance. Chapter JSON now carries note_refs (cohort D coverage: p1c41=10, p1c42=0, p1c43=9, p1c44=10, p1c45=2, p1c46=21, p1c47=9, p1c48=2, p1c49=1, p1c50=13, p1c51=9, p1c52=0, p1c53=1); reader activates body→note links from note_refs only. p1c45[3] serve-as-is scene-break treatment confirmed. Recorded for second-wave fire.",
+  "design": {
+    "designer": "JestCohortDDesigner (SupIJ-3.JestCohortDLead.JestCohortDDesigner)",
+    "date": "2026-10-15",
+    "status": "design-complete",
+    "scope_note": "Design record ONLY. No entry contract_manifest symbols, ids, titles, order, or structure anchors altered; no SVG/CSS authored. Skills read via skill:// URIs (frontend-design, frontend-workflow, reference-study); no local fallback used. All para indices 0-based against frozen live chapter JSON; junction wordings verified verbatim in-session.",
+    "thesis": "The feast program and the night watch: thirteen engraved artifacts from the novel's gala week — examination file, two printed programs, a war-map, two recovery handbills, a hinge plate, three desert interfaces, a nightmare vignette, a dawn-drills panorama, a joyride diptych, a last watch, a daylight bedroom — drawn in one engraving hand (ruled keylines, hatch families, stencil mono labels, one spot role + Manila) but never the same artifact twice. Feast-side plates crowd the frame as November deepens (p1c46 the densest composition in the cohort); desert-side plates thin toward silence (p1c52 the emptiest). The braid chapters (p1c46/p1c47/p1c51/p1c53 + hinge p1c45/p1c50) carry in-flow pure-CSS dividers because Chromium cannot paint SVG-sprite fragments through CSS content:/background: (cohort C probe) — so the sprite ships opener symbols AND divider/sub-plate symbols as supervisor-mergeable assets, while the reader-visible junctions are bounded CSS compositions (J2).",
+    "directions_considered": "A) Uniform program-booklet plates for all 13 (rejected: the desert chapters would lie — they are starlight and argument, not paper; uniformity would also clone cohort C's document grammar). B) Character-portrait plates (rejected: the novel's faces are veiled, masked, wigged, greasepainted — portraiture would fight the prose's own concealments, and the brief's grammar is programs/menus/handbills). C) CHOSEN: artifact-per-chapter in one engraving hand — each plate a distinct printed/made thing from its pages (exam file, war-map, handbill, soup can, drills panorama, bedroom, interface scenes), feast register crowding as November deepens, desert register thinning toward p1c52's silence. Matches the brief's cohort grammar exactly, keeps the body calm, and gives the engineer 13 genuinely different compositional problems instead of one template with 13 captions.",
+    "frontend_design_review": "Per skill://frontend-design: the boldness is spent in ONE place per chapter (the authored plate object); everything around stays quiet (scaffold, calm Newsreader body, Manila ink). Type treatments are active, not neutral: header-line broadsheet set and hanging-speaker script set in p1c46/p1c47 are the film medium made visible; the p1c44 quatrain placard and p1c41 exam masthead are found-paper voices. Numbered markers (cup cones, cue strips) appear only where the prose itself counts; dividers encode strand/location information, never decoration. No cream/terracotta default, no SaaS cards, no gradient washes, no ALL-CAPS eyebrows above content — the mono stamp band is the brief's mandated document voice (brief's own words win), not a generic eyebrow.",
+    "plate_system": "Opener scaffold per ART-DIRECTION §5 (stamp band → plate → Archivo title → ledger rule). Symbols in art/cohort-d.svg, one <symbol id> per chapter matching the frozen contract_manifest symbol, plus braid sub-plate symbols (braid-broadsheet, braid-concavity, braid-revenue, braid-aventura, braid-joyride, braid-shop, braid-na, braid-desert) shipped as supervisor-mergeable assets. Opener symbols composed at landscape ~16:9 (panoramas p1c43/p1c50/p1c53-sepulveda at ~21:9 frieze ambition; p1c49/p1c52 plate-small). Engraving grammar: Manila line ink on Ledger ground, ruled keylines, 45-degree hatch families + stipple (snow/steam/gravel), Plex Mono stencil labels, ONE spot role per plate (gold=record/institution, red=feast-alarm/violence, phosphor=machine/starlight/glow) + Manila. All strokes explicit hex (no currentColor across the clone boundary); year seals referenced from art/seals.svg via <use> only, never redrawn (seal-8 Depend gold for dated Y.D.A.U. chapters, seal-filing for undated). J5: zero Carbon Violet anywhere in Part I — violet prose words stay prose.",
+    "register_map": "FEAST (gold/red on Ledger, Manila ink): p1c41 exam file, p1c43 war-map, p1c44 handbill, p1c46 gala + film braids, p1c48 Braintree handbill, p1c47 film section (paras 120-173), meeting inserts p1c45[3]/p1c53 NA. DESERT-NIGHT (phosphor/manila on Ledger, ZERO red): p1c42, p1c45 desert (0-1), p1c47 desert (0-106), p1c51 seminar (0-73), p1c52, p1c53 coda (110-131). HINGE/ANOMALY: p1c45 split plate (phosphor-left/Manila-right, Ledger seam); p1c49 nightmare green-gray (Phosphor at low opacity + Manila, one Stamp Red rot accent — the only red outside feast/violence, signifying oral rot); p1c53 Sepulveda daylight (sun-bleached Manila/white, warmest ground in cohort, Stamp Red withheld until the NA meeting); p1c50 dawn-cold (phosphor court lines + Manila breath) warming to hearth (Seal Gold candle) at para 46; p1c51 joyride sodium-amber (Seal Gold opacity-derived) and shop cold Mask-white + Stamp Red dread (red returns as violence, never feast). Seal crowding arc: p1c41 filing seal → p1c43 Y.D.A.U. + beanie-stamp cluster → p1c46 gala program with the most seals in the cohort → desert chapters single small seal → p1c52 seal-filing only.",
+    "tick_vocabulary": "Gutter-only Plex Mono + Phosphor glyphs (J2 marginalia); collapse below the paragraph under 720px, never overlay; outline glyphs (ledger owns filled note-tick pills). FILM: clapboard/frame glyph (p1c46 film paras, p1c47 120-173) — phosphor frame corners. LOBBY/GALA: ticket-stub glyph (p1c46 gala audience 0-3, p1c43 pavilion) — gold. ESSAY: paragraph-mark pilcrow (p1c41 essay body 6-17, p1c46 Clipperton/Interlace 142-161, p1c51 seminar long expositions) — Manila. NIGHT: star-dot glyph (desert two-handers p1c42/p1c52, seminar nights) — phosphor. MEETING: circle-triangle glyph (recovery handbill chapters p1c44/p1c48, NA insert p1c53 83-109, p1c45[3]) — red on meeting chapters only, Manila elsewhere. SCENE-CUT: ledger-rule tick (p1c45[3] frame, braid junctions) — Manila. EXAM: item-letter tick (p1c41 items 0-5, p1c50 drills 5-17) — red item letters. Note-ticks (ledger-filled, from note_refs) coexist: cohort glyphs sit above the para's first line, note pills inline at the match. No violet ticks in Part I (J5).",
+    "divider_spec": "In-flow braid dividers are pure-CSS bounded blocks (Chromium cannot paint SVG-sprite fragments via content:/background:): max-width 34rem centered, hairline rules + Plex Mono 600 location slug + small CSS glyph (diamond/frame/star per strand), clearing the measure, never full-bleed, never mid-paragraph (J2). Temperature/register flip rides the divider (feast↔desert, daylight→vestry→night). Divider/sub-plate SYMBOLS still ship in art/cohort-d.svg as mergeable assets for supervisor use; the reader-visible junction is the CSS composition. Labels (verified against live prose): p1c45 'E.T.A. WEIGHT ROOM — EARLIER' before para 2 (4-word para 2 opens Himself/Lyle? NO — weight-room strand opens at para 2 'There'd been that first brutal winter night', so divider before para 2; the para-3 scene-cut gets the ledger-rule frame + scene-cut tick, NOT a second divider); p1c46 'ON SCREEN — THE HEADLINE MONTAGE' before para 37 + 'ON SCREEN — THE RECONFIGURATION MAPS' before para 102 (see p1c46_162_decision); 'WEIGHT ROOM — LYLE' before paras 27 and 55; 'HAL'S MIND — THE CLIPPERTON LEGEND' before para 142; p1c47 'ON SCREEN — REVENUE VISION' before para 120 (film plate deploys here; Gately insert 110-117 + E.T.A. coda 118-119 take minor scene-cut ticks, not full dividers — they are codas, not strands); p1c50 'ENNET HOUSE — GATELY' before para 46; p1c51 'BOSTON — GATELY' before para 74 + 'ANTITOI SHOP' before para 82; p1c53 'BOSTON — NA MEETING' before para 83 + 'PRE-DAWN — STILL' before para 110. Scene-cut minor ticks (no full divider): p1c47 before 107 (Clipperton coda), 110 (Gately), 118 (E.T.A. girls). Reduced motion: dividers are static rules — no shimmer, no reveal animation.",
+    "p1c46_162_decision": "LIVE DATA HAS 162 PARAS (0-161), not the brief's 164: the brief's structure_note describes 'essay (144-163)' and 'Refs 147-168', but para 161 is the last Interlace paragraph ('And as InterLace's eventual outright purchase…') and there is no 162/163. The map-plate divider placement: paras 102-103 split ONE sentence ('Some little rubber practical-joke-' / 'type flies…stapled in a raisinesque dispersal over the red Concavity') across a paragraph break — a divider between 102 and 103 would cut mid-word mid-sentence (J2 forbids mid-paragraph interruption; mid-WORD is worse). DECISION: the Concavity-map divider sits BEFORE PARA 102, justified from the prose: para 101 ends the first (traditional) map description ('…a garish, almost menacing red.'), and para 102 opens the second map ('The second North American map looks neither old nor all that good…It has a concavity.'). The divider 'ON SCREEN — THE RECONFIGURATION MAPS' therefore introduces the before/after pair exactly where Wallace introduces the second map; the 102/103 hyphen-split sentence then reads unbroken beneath it. The header-montage divider sits before para 37 ('UKRAINE, TWO MORE BALTIC STATES APPLY…' verified verbatim) because para 36 is dining-hall narration ending '…under Gentle:' — the montage is what follows the colon. Ancillary: structure_note 'Script paras' list includes 130-series continuations that live data places at 130-137 (verified: 130 TINE, 131 PRES.MEX, 132 GENTLE, 133 TINE, 134 PRES.MEX, 135 TINE, 136 Statesmanship triad, 137 Bumblebee bridge); entry design note carries the corrected verified script/header para sets. Header paras verified: 37,38,39,42,43,44,45,49,50,51,53,60,61,62,139,140 (+40 subheader, +141 'Obviously Homemade Subheader').",
+    "script_and_header_sets": "p1c46 SCRIPT (hanging speaker names, roman Manila speaker + Newsreader line — rev5: NO Plex Mono 600 gold speaker, that pass was not shipped, see design.p1c46 rev5 amendment and DESIGN-FINDINGS-D.md F-D1; positional indent alternating GENTLE/TINE vs SECS): verified 7,8,12,13,14,15,16,17,19,20,21,22,23,24,25 (cabinet scenes), 65,66,67,68,69,70,71,72(narration-stage-direction hybrid — set as stage direction, indented italic Plex? NO: Newsreader italic, indented, Manila at 85%),73(narration),74,75,76,77,78,79,80,81,82(narration),83,84,85,86,87,88(narration-challenge),89(narration),90(narration),91,92,93,94,95,96,97,98,99,100,104,105,106,107,108,109,110,111(narration-list),112,113(narration),114,115,116,117,118,119(stage direction),120,121,122(stage direction),123,124,125(narration),126,127,128,129,130,131,132,133,134,135,136(triad isolate). HEADERS (broadsheet mono: Plex Mono 600 centered, Stamp Red em-leader attribution preserved as written, point-size words honored by relative scale — Superheader largest, Header middle, Subheader smallest): verified 37,38,39,40,42,43,44,45,46(long multi-header para — set as stacked broadsheet block, each header on its own line break ONLY where the prose has semicolons? NO — prose untouched; set as one centered block, semicolons intact),47,48('Lead Graph' — set as small caps attribution line),49,50,51,52,53,60,61,62,63(long news para — calm narrative, not header set),64(narration),138,139(long header-chain — stacked emphasis via hanging indents? NO — prose untouched; centered broadsheet block),140,141('Obviously Homemade Subheader' — set as deadpan small centered line). p1c47 FILM HEADERS: 120,121,122('CRANIALLY CHALLENGED, ACROMEGALIC INFANTS LOST' — 5-word fragment, set as orphaned kicker line above 123),123. p1c47 SCRIPT: 124-173 — same hanging-speaker set as p1c46 (GENTLE muffled-bracket lines 124/137/164/166 keep brackets; ALL SECS. group lines 125/134/138/162/165 set as centered chorus, tighter; VEALS lines 145/147/163/167 nasal-tight; TINE smoke-detector line 144 takes a phosphor-red? NO — Stamp Red eye-glyph margin tick, no red text). Stage-direction brackets throughout both chapters set in Newsreader italic, never mono. NO list-ification of comma-run litanies anywhere (Troeltsch scores p1c41 8/9/11/13, Losses p1c44 6-11, chef p1c50 55, INDDIR tallies p1c43) — they are broadcast/breath speech.",
+    "ij_insert_assignments": "Explicit researched 0-based para indices ONLY (no modulo, per INTEGRATION.md). p1c41: .ij-insert-exam on 0-5 (masthead block: mono item letters red, ITEM 1 rule); .ij-insert-ticker on 8,9,11,13 (WETA scores — phosphor left rule, score verbs preserved inline, NOT extracted); scare-cut isolates 20,23 ('It's pain.' / 'Wait…') full air. p1c43: .ij-insert-radio on 24 (shout isolate), 36/46 (weather stage lines); para 47 protected monolith (no insert, generous measure, no subdivision). p1c44: .ij-insert-placard on 45 (quatrain: Archivo small centered, Stamp Red, hand-lettered feel); doctrine block 0-2 bounded found-paper; raffle-break 25-37 breathes +0.25rem para gap. p1c45: .ij-insert-scenecut on 3 (ledger-rule frame + top/bottom rules + 'FILED AS WRITTEN — AUTHOR'S CUT' micro-label? NO — micro-labels above content are a generic tell; frame + scene-cut margin tick only, no label). p1c46: .ij-insert-script on verified script paras (hanging speaker); .ij-insert-header on verified header paras (broadsheet); .ij-insert-bridge on 26 (entr'acte), 137 (Bumblebee) — centered italic bridges; monolith 59 (1241w Himself audience-essay) generous measure. p1c47: .ij-insert-script on 124-173 film lines; .ij-insert-header on 120-123; soup-seminar core 60-106 calm; Gately 110-117 warm .ij-insert-work (Manila lift, no red). p1c48: .ij-insert-coda on 20 (undersea isolate, deep Ledger blue-black wash, slower measure); memory-dredge 9-19 narrowed 34rem + extra air; isolate 15 ('Nimitz the kitty') held breath. p1c49: NO inserts (single para protected; drop cap; isolate spacing above end). p1c50: .ij-insert-rally on 18-45 (tight positional speaker set, Chu/Schtitt/deLint indent grammar); drills 5-17 court rhythm; chef litany 55 comma-run preserved. p1c51: seminar 0-73 rally set w/ long expositions calm; joyride 74-81 wider/faster; shop 82-89 narrow/slow; Lucien coda 89 tail isolate. p1c52: NO inserts (24 paras one movement; silences via para spacing). p1c53: slapstick rally 0-82 tight shorts; confrontation 90-109 tightest; coda 110-131 night spacing; isolate 131 (spark-insects).",
+    "endmarks_a0": "Per INTEGRATION.md §2(4): supervisor wires --ij-endmark url() per chapter (≤32px, no layout shift). Designer picks: p1c48 undersea glyph (concentric dim-water rings, Manila at 40% — the chapter descends and ends at depth); p1c49 shale-tooth glyph (single cracked-tooth outline, phosphor-gray with the one red rot fleck — the cohort's rest beat gets the smallest mark); p1c52 drawn-smile mask glyph dissolving (half mask-outline, Manila at 50%, edge ticks fading — the desert sequence ends on observed gesture). All other cohort D chapters take their year seal (seal-8 Y.D.A.U. gold for dated, seal-filing for p1c41-uncertain? NO — p1c41 is undated 'AS OF Y.D.A.U. — EXAM FILE' → seal-filing; p1c49 'VERY LATE OCTOBER' → seal-8; p1c52 pre-dawn 1 May → seal-8).",
+    "responsive_and_a11y": "Plates ≥~200px even at 390px, never display:none (director P1); panoramas (p1c43/p1c50/p1c53-sepulveda) crop to central vignette under 560px with caption retained. Margin ticks collapse below the paragraph under 720px (never overlay); braid dividers hold max-width 34rem centered at all viewports. Phosphor focus rings on all interactive chrome; body contrast Manila-on-Ledger ~13:1; Stamp Red text on dark verified ≥4.5:1 (bump #D6402B→#E05238 if computed fails); Phosphor never sets small body text. Reduced motion: zero animation — no seal shimmer, no reveal, no ticker scroll (the WETA 'ticker' is a static ruled line, not motion). KNOWN PITFALL honored: never spec .meta-rule span stretching — the shared 7px diamond is recolored only (gold feast / phosphor desert / Manila hinge). A.3 measure tokens: narrative 34-38rem via --chapter-max (p1c43-47 monolith 38rem; p1c48 memory 34rem; p1c49 single 36rem); inserts to 44rem where the brief allows. J3: p1c44's 3-line title wraps allowed; Archivo clamp holds at 390px.",
+    "references_studied": "1) 19th-c. American broadside/print culture (designhistory.org Broadsides survey incl. Dunlap broadside, Lincoln wood-type posters, Rob Roy Kelly wood-type collection at UT Austin): mixed wood/metal type conglomeration, distance-reading hierarchy, ephemera bluntness → p1c46/p1c47 header broadsheet sets (point-size words honored by relative scale, not literal points), p1c44/p1c48 handbill plates (plywood-podium vernacular, raffle-ticket micro-type). 2) NATO APP-6 unit-symbol grammar (army.ca wiki: allegiance frames — rectangle friendly/circle neutral/diamond hostile — + unit-size ticks + branch glyphs): bounded geometric counters with overhead ticks → p1c43 Eschaton war-map plate (AMNAT rectangles gold, SOVWAR diamonds red, REDCHI circles, size ticks as EndStat point-values, arced lobbed-ballistic arrows, snow-dot dispersal eating the map's east edge). 3) Gospel-temperance meeting broadside c.1910 (NAHA Digital Collections item 13044, P.I. Williams Minnesota broadside: single-sheet notice, testimonial copy 'confirmed inebriate…ring of sincerity', church-venue practicality): the recovery-meeting handbill's direct ancestor → p1c44 White Flag / p1c48 Braintree plates (venue + commitment + raffle practicalities as the design content, quatrain/fish-joke as marginalia, sleet/hawg atmosphere as border weather). Gala-program/men u craft absorbed via the brief's own feast-menu grammar + cohort F's released Gaudeamus plates (avoid cloning F's closing-gala program: D's gala is mid-feast chaos, F's is convergence).",
+    "benchmark_conformance": "Homepage bar met through the LEDGER medium: p1c46 puppet-stage + p1c43 war-map are panorama-ambition engraved plates (dimensional objects — velvet stage, askew Seal, force disks, ballistic arcs — with composed metadata bands, not tinted shells); every opener carries authored plate + stamp band + Archivo title at one-homepage-card authorship per surface; braid dividers are designed junctions (bounded CSS compositions with location slugs and register flips), the in-flow equivalent of the homepage's section craft; script/header sets are typographic illustration (the film medium visible in type). Calm core preserved: Newsreader/Manila 34-38rem body, ambition in openers/plates/margins/dividers — the benchmark's 'quiet reading, designed everything else' split. No homepage copying: no hero gradients, no card grids, no feature rows — programs, war-maps, handbills, interfaces.",
+    "handoff": "Engineer (via lead): (1) author art/cohort-d.svg with 13 opener <symbol id> matching frozen contract_manifest symbols EXACTLY (exam-file, tucson-stars, eschaton-map, white-flag, interface-lull, puppet-gala, soup-seminar, braintree, teeth-dream, dawn-drills, p-terminals, last-watch, sepulveda) + 8 braid sub-plate symbols (braid-broadsheet, braid-concavity, braid-revenue, braid-aventura, braid-joyride, braid-shop, braid-na, braid-desert) as mergeable assets; (2) author design/cohort-d.css unlayered, ij-*-prefixed, body[data-book='infinite-jest'][data-chapter] scoped, explicit nth-of-type from this record ONLY; (3) build p1c46 puppet-stage + p1c43 war-map FIRST as the within-cohort gate — the rest fire only after lead review passes them; (4) J5 grep for violet hexes must be empty; (5) touch no locked manifest keys, no theme.css/index.html/shared; (6) endmarks: wire the three A.0 glyph picks + year seals per endmarks_a0.",
+    "chapters": {
+      "p1c41": {
+        "plate": "EXAM-FILE (symbol exam-file, opener plate, card ~4:5). Engraved examination file card: masthead block 'SEPARATISM AND RETURN — Mlle. POUTRINCOURT' in Plex Mono 600 stencil (verified: 'Separatism and Return: Québecois History from Frontenac Through the Age of Interdependence' [10]); double-bind items (1a)-(1d) as ruled form rows with Stamp Red item letters (verified verbatim [0-5]: kleptomaniac/agoraphobic, 'You must steal.', '(1d) Thus, respond…'); WETA intercom speaker grille (slatted lozenge) + Troeltsch score-scroll running beneath as a static ticker rule ('disembowelled … 6–3, 6–2' [9], 'duck on a Junebug' [9]) in Phosphor mono. Saluki-profile vignette? NO — no faces; the portcullis/veil image is reserved for the closing (entry brief) — the plate's lower corner carries a small gate-latch glyph foreshadowing [34].",
+        "stamp_band": "AS OF Y.D.A.U. — EXAM FILE (undated → seal-filing, <use> only). Filing line: 112 WEST HOUSE / POUTRINCOURT / 1435-1445H (verified [6] WETA slot).",
+        "opener": "Stamp band → exam-card plate → Archivo title → ledger rule → drop cap on ITEM 1 [0]. Longest read is the birth-fable; opener stays a card, not a panorama — the exam is the chapter's frame, the fable its escape.",
+        "palette": "File Manila exam-paper ground lifted from Ledger Black; Stamp Red (1a)-(1d) letters + masthead rule; Phosphor ONLY the ticker line. J5-clean.",
+        "reading": "Paras 0-5 bounded found-paper masthead block (.ij-insert-exam); 6-15 calm narrative; Troeltsch litanies (8/9/11/13) breathless comma-run, no list-ification; birth/mirror set pieces (16-34) generous 38rem; scare-cut isolates 19/20/22/23 ('Her husband looked down…paling', 'It's pain.' x2, 'Wait wait wait wait') full paragraph air — they are the chapter's held breaths.",
+        "ticks": "EXAM item-letter ticks on 0-5 (red); FILM frame-corner tick on 30-32 (Bolex passages — Mario's camera enters here); SCENE-CUT tick on 16 (mirror-on-highway set piece opens) and 25 (arachnoidal birth opens). Note pills from note_refs (106/108/109/112/113/114/115/117/118/119) inline at matches.",
+        "dividers": [],
+        "seal_role": "seal-filing in the stamp band (undated exam file); endmark seal-filing.",
+        "rationale": "The chapter opens as an exam and forgets the exam — the plate must BE the exam (so the forgetting has something to dissolve), with the ticker as the classroom's leaking reality and the gate-latch as the portcullis to come. Red belongs to the item letters because the double-bind is the chapter's trap; phosphor belongs to the intercom because broadcast is the chapter's farce."
+      },
+      "p1c42": {
+        "plate": "TUCSON-STARS (symbol tucson-stars, opener plate, landscape ~16:9). Engraved night-interface scene: clotted blue-star field (Phosphor stipple clusters, densest top-left) over a pearly blank city-glow band (Manila flat wash, zero stars — verified [0] 'Only above the U.S.A. city was the sky blank'); shelf lip as a ruled ledge; two chairs — metal chair (occupied, blanket-draped) + standing figure implied by heel-marks (two small heel ticks on the ledge, the figure itself withheld: the chapter is voices in the dark); sideways moon (small tilted disk, 'color of a fat man's face' [23] — depicted as sallow Manila, never captioned); circle-and-cut hand-gesture glyph (small, margin of the plate, quoting [3] 'small emphatic circles and cuts'). NO red anywhere.",
+        "stamp_band": "30 APR / 1 MAY — TUCSON INTERFACE. Filing line: OUTCROPPING / NIGHT WATCH 1 / SHELF (seal-8 small — dated Y.D.A.U.).",
+        "opener": "Stamp band → starfield plate → Archivo title (short title, generous air) → ledger rule → drop cap on the starfield paragraph [0]. The opener must feel like stepping onto the shelf: dark, wide, quiet.",
+        "palette": "Purest desert-night in D after p1c52: Ledger ground, Phosphor stars, Manila dialogue/glow, ZERO red. J5-clean.",
+        "reading": "Dialogue-derby positional set: Marathe's long French-inflected arguments (2/3/11/12/20) full measure, Steeply's flat replies slight indent; rally volleys (8-10, 13-19, 24) tight — paras 9 ('Just you wait…paisano'), 14 ('L'état protecteur'), 16 ('Unhappy'), 18 ('Buckeroo?') are single-breath lines, never inflated. Closing descent-problem [27] isolate coda with extra air above — the chapter's chill landing.",
+        "ticks": "NIGHT star-dots on 0 (starfield), 11 (DuPlessis genius), 20 (freedom-from), 23 (sideways moon); ESSAY pilcrows on 2/3/12 (set speeches). No note_refs in this chapter (verified: 0) — the margin belongs to the night.",
+        "dividers": [],
+        "seal_role": "seal-8 small in band (dated interface); endmark seal-8.",
+        "rationale": "First desert night: the design job is unlimited darkness with two voices. Withholding the standing figure (heel-marks only) honors the prose's own withholding — we hear Steeply before we ever quite see him — and the pearly blank band is the chapter's thesis (the city that cannot see stars) drawn as negative space."
+      },
+      "p1c43": {
+        "plate": "ESCHATON-MAP (symbol eschaton-map, opener plate, DOUBLE-WIDTH panorama ~21:9 — the cohort's most diagrammatic plate and, with p1c46, its gate). Engraved four-court theater war-map: ruled court grid (Courts 6/8/12 labeled per [11][14]), force counters in NATO-APP-6 grammar (AMNAT gold rectangles, SOVWAR red diamonds, REDCHI red circles, IRLIBSYR/LIBSYR Manila half-frames; unit-size ticks overhead as EndStat point-values); lobbed-ballistic arcs (dashed parabolas, warhead dots at apices — 'towering topspin lob' [16]); damage-glyph overlays (burst asterisks, INDDIR/SUFDDIR tallies in stencil mono); snow-dot dispersal spreading across the map's EAST edge (Manila stipple gradient, densest at the edge — 'a light dusting…starting to appear' [25] → the white that eats the map); corner vignette: Otis Lord's WHITE beanie (n.b. white, not black/red [15]) + TP cart with umbrella strut + Yushityu portable rectangle + the solander box with nickel key ([35]) drawn small — the whole command post in 1/8 of the plate. RED UGC beanie shown doffed beside the box (dreaded, present, not worn).",
+        "stamp_band": "8 NOV — I.-DAY · ESCHATON THEATER. Filing line: ETA COURTS 6-12 / GAME-MASTER LORD / 400 DEAD BALLS (verified [2]). Seal-8 + a small beanie-stamp cluster (white/black/red dots) crowding the band — seals crowd as November deepens.",
+        "opener": "Stamp band → war-map panorama at full opener width → Archivo title (long Gaudeamus title, wraps allowed per J3) → ledger rule → drop cap on 'Every year at E.T.A.' [0]. The map must read at a glance as a game AND as a war: counters crisp, arcs playful, snow ominous.",
+        "palette": "Feast-side tactical: Seal Gold AMNAT + Stamp Red SOVWAR/damage on Ledger map ground; Manila snow dispersal + stencil labels. Red = game-violence (rules-lawyering made visible). J5-clean.",
+        "reading": "Rules-exposition (0-12) standard calm; field-radio shorts (24 'Real-world snow…fucking map!', 40 'Hal finally spits.') tight isolates; weather stage lines (36 'a real-world chill descends', 46 'coming down hard enough to compose an environment') isolate air; PARA 47 (2,367 words, the meltdown — umbrella, TP, airborne Lord) protected monolith: generous 38rem, no subdivision, no insert — the unbroken paragraph IS the chaos. Clocks (2100 [2], 1515h [14], 1300 [17], 1600h [47]) take EXAM item-ticks? NO — clock ticks are ledger's; cohort adds LOBBY ticket-stub ticks on 14 (scrambled-call summit) and 25 (rugby-scrum at the cart).",
+        "ticks": "LOBBY ticket-stubs on 14/25 (summits at the cart); ESSAY pilcrow on 2 (rules vademecum) and 5 (Triggering Situation); NIGHT star-dot on 36 (the chill descends — the desert's weather invading the feast). Notes 120/122/124/125/126/127/128/129/130 inline.",
+        "dividers": [],
+        "seal_role": "seal-8 + beanie-stamp cluster (white/black/red) in band; endmark seal-8.",
+        "rationale": "The map-vs-territory chapter must open with a map that is visibly LOSING to territory: the snow dispersal eating the east edge is the whole novel in one plate corner. NATO-counter grammar (researched) gives boy-logic war its authentic diagram language; the corner command-post (white beanie + solander box + doffed red UGC) plants the chapter's dread without spending it."
+      },
+      "p1c44": {
+        "plate": "WHITE-FLAG (symbol white-flag, opener plate, card ~4:5). Engraved speaker-meeting handbill card: 'WHITE FLAG GROUP — PROVIDENT CAFETERIA — COMMITMENT: ADVANCED BASICS OF CONCORD' (verified [1]) in mixed wood-type conglomeration (large condensed WHITE FLAG, smaller ADVANCED BASICS — researched broadside grammar); plywood-podium + amplified-mic vignette (verified [0] 'amplified podium', [32] 'empty podium microphone'); raffle-urn (60-cup coffee urn, verified [0]) + Big-Book raffle prize rectangle; crocodile-corner glyph (small, quoting [16] the framed crocodile glossy — the Crocodiles' namesake, drawn once, dryly); sleet ticks along the card's border (verified [26] 'goopy sleet against the broad windows'); reverse/placard strip: the 'Do not ask WHY…' quatrain ([45] verified verbatim: 'Do not ask WHY If you dont want to DIE Do like your TOLD If you want to get OLD') as hand-lettered placard — Archivo small, Stamp Red, slightly uneven baseline.",
+        "stamp_band": "8 NOV — WHITE FLAG COMMITMENT. Filing line: PROVIDENT CAFETERIA / CONCORD ADVANCED BASICS / 2000H (verified [2] packed by 2000h). Seal-8.",
+        "opener": "Stamp band → handbill plate → Archivo title (longest title in D after p1c77-class: wraps to three lines, allowed) → ledger rule → drop cap on 'Boston AA is like AA nowhere else…' [0].",
+        "palette": "Meeting-hall: warm Manila handbill ground lifted from Ledger; Stamp Red Commitment line + quatrain placard + raffle micro-type; Phosphor reserved for margin note-ticks only (never the plate). J5-clean.",
+        "reading": "Calm body; Losses litany (6-11) run-on breathless, NO list-ification; dialect set piece [14] (bowl-splatterer 'confarmed…b'yond contin') roman, never italicized-for-effect; doctrine block (0-2) bounded found-paper; raffle-break (25-37) +0.25rem air; workshop the two giants: [16] (1,818w Gately-invitation) and [44] (2,453w causal-attribution) generous 38rem, no subdivision; quatrain [45] centered placard isolate. Clocks (2000h [2], 0900h [7], 0200h [11], 1930h [16], 0800/1600h [40], 0900/2100/2300h [44]) ledger ticks; cohort MEETING circle-triangle ticks on 3 (John L. podium), 13 (Irish speaker), 40 (Filene's man).",
+        "ticks": "MEETING circle-triangles (red) on 3/13/40; ESSAY pilcrows on 2 (cosmic-loan doctrine), 19 (the bitch-is-you-have-to-want-to), 21 (trite/epiphany), 44 (causal attribution); LOBBY ticket-stub on 25 (raffle-break opens) and 37 (raffle-break winds down). Notes 131-142 inline.",
+        "dividers": [],
+        "seal_role": "seal-8 in band; the crocodile-corner glyph is the chapter's private seal (drawn, not <use>). Endmark seal-8.",
+        "rationale": "A meeting handbill is practical paper — venue, commitment, raffle — so the plate's content IS the evening's logistics, with the quatrain as its hand-lettered soul and the crocodile as its in-joke. Sleet on the border keeps the November weather that the desert chapters fled; the warm Manila ground is the cafeteria's fluorescent mercy against it."
+      },
+      "p1c45": {
+        "plate": "INTERFACE-LULL (symbol interface-lull, opener plate, landscape ~16:9 SPLIT). Split plate with a Ledger seam: LEFT half desert-night interface (crossed bare arms, high-heel toe-marks on a ledge line, plaid-blanket fold pattern, clotted Phosphor stars — verified [0] choreography); RIGHT half weight-room nightcap (towel-dispenser cylinder with towel fold, Wild Turkey bottle + Caffeine Free Diet Coke can silhouettes, open Blake volume with cartoon-speech-tail glyph — verified [4][7]); the seam is a ruled Ledger line with a small hinge glyph (the cohort's quietest hinge, drawn as a hinge). NO Stamp Red either half; the AA scene-cut [3] is NOT pictured (it arrives as prose, framed).",
+        "stamp_band": "30 APR / 1 MAY — INTERFACE LULL. Filing line: SHELF / WEIGHT ROOM / 0200H (verified [3] 0200h). Seal-8.",
+        "opener": "Stamp band → split plate → Archivo title → ledger rule → drop cap on the choreography paragraph [0]. Only 8 paras: the opener must not overwhelm — plate at 0.8x standard height.",
+        "palette": "HINGE register: Phosphor night left, warm Manila lamplight right, Ledger seam — the ONLY plate in D mixing the two sides. J5-clean.",
+        "reading": "Two calm blocks: interface (0-1) + weight-room (2, 4-7) separated by the braid divider before para 2 ('E.T.A. WEIGHT ROOM — EARLIER': para 2 opens 'There'd been that first brutal winter night' — the weight-room strand). PARA 3 (1,688-word AA speaker story, South Boston pregnant newcomer) is Wallace's own mid-section scene cut (TextCurator-ruled, PDF pp.416-421): SERVE AS IS with the ledger-rule frame + scene-cut margin tick — top/bottom rules, 1px Manila at 40%, NO error flag, NO relocation, NO 'FILED OUT OF SEQUENCE' micro-label (labels above content are a generic tell; the frame + tick carry it).",
+        "ticks": "NIGHT star-dot on 0; ESSAY pilcrow on 2 (Found Drama origin) and 6 (C– marriage); MEETING circle-triangle (Manila, not red — this insert is a cut-in, not a meeting chapter) on 3; SCENE-CUT ledger tick on 3's frame. Notes 144/145 inline at [2].",
+        "dividers": [
+          {
+            "before": 2,
+            "label": "E.T.A. WEIGHT ROOM — EARLIER",
+            "register": "desert-night → lamplight-warm"
+          }
+        ],
+        "seal_role": "seal-8 in band; endmark seal-8.",
+        "rationale": "The hinge chapter: two midnights (a shelf, a weight room) with one AA paragraph cut between them like a slipped slide. The split plate mirrors the strands; the un-pictured scene-cut honors the ruling — Wallace's cut must arrive as TEXT, framed, not pre-illustrated. Smallest plate ambition in the feast half, deliberately: this is the cohort's held breath before the gala."
+      },
+      "p1c46": {
+        "plate": "PUPPET-GALA (symbol puppet-gala, opener plate, WIDE panorama ~21:9 — the cohort's densest composition and its gate, with p1c43). Engraved gala puppet-stage: velvet stage (deep red hatch curtains, gold valance fringe) with Johnny Gentle pounding a rubber-gloved fist on the podium so hard it knocks the SEAL ASK EW (verified [5] — the Seal drawn tilted ~8°, the chapter's thesis in one angle); Motown-girl cabinet puppets (bouffants, purple dresses — verified [64] 'purple dresses and matching lipstick' — J5: purple DRESSES are depicted content? NO — Carbon Violet #7C6BD6 is banned from Part I entirely; the dresses render as deep gray-rose at low opacity, J5-safe by construction, validator pixel-checks); TINE's telescoping weatherman's pointer leaning on the seal-crested easel (verified [103]); entr'acte bunting + Raisinette dots scattered on the stage boards (verified [136] half-chewed Raisinette hits the portabubble — the gala's ammunition); audience silhouettes (fedora brims, beret — Kittenplan/Dunkel/Tina Echt [2][3]) along the plate's base. Braid sub-plates (mergeable symbols): braid-broadsheet (spinning header f/x: tilted header slugs radiating from a black-acetate disk, 'Flight of the Bumblebee' 45-rpm grooves — verified [137]); braid-concavity (before/after Reconfiguration maps: white USA + pink Mexico + garish red Canada vs. bitten Concavity with stapled blue-bellied flies in raisinesque dispersal + Ticonderoga right-angle — verified [101][102][103]).",
+        "stamp_band": "8 NOV — I.-DAY GALA · PUPPET FILM. Filing line: DINING HALL / MARIO'S 48-MINUTE CARTRIDGE / 1930H (verified [0] 1930h dessert zenith). Seal-8 + the most seal-crowding in D (program stamps along the band's edge).",
+        "opener": "Stamp band → puppet-stage panorama → Archivo title → ledger rule → drop cap on the puppet-film paragraph [0]. The stage must feel CROWDED: curtains, puppets, bunting, audience — the feast at full sprawl, the visual opposite of p1c52.",
+        "palette": "Full feast: Seal Gold stage/valance + Stamp Red Headers/Concavity/velvet on Ledger; Lyle interludes (27-35, 55-58) cool to Phosphor-on-black — the WEIGHT ROOM dividers carry the temperature change. J5-clean (gray-rose dresses, never violet).",
+        "reading": "Braid-aware calm body. Script set (hanging Plex Mono 600 gold speakers + Newsreader lines; verified script paras in script_and_header_sets) with positional indent (GENTLE/TINE vs SECS alternating); header set (centered broadsheet mono, point-size words honored by relative scale; verified header paras incl. chains 45/46/139 as single centered blocks, semicolons intact); bridges 26 (entr'acte) + 137 (Bumblebee) centered italic; monoliths 59 (1,241w Himself audience-essay) + 145 (532w Clipperton v. Reat) + 161 (478w Interlace purchase) generous 38rem. Rally shorts (8/12/14/15/18/24/25/86/87/92/93/94/98/99/104/107/109/112/114/116/118/120/126/127/129/131/132/135/136) tight. Essay strand (142-161) takes ESSAY pilcrow ticks + slightly deepened leading (1.85) as Hal's mind takes over.",
+        "ticks": "FILM frame-corners on all film paras (4-26, 36-54, 60-141); LOBBY ticket-stubs on 0-3 (gala audience) + 54 (State of O.N.A.N. address); NIGHT star-dots on 27-35 + 55-58 (Lyle storm-night); ESSAY pilcrows on 142-161 (Clipperton/Interlace); SCENE-CUT ticks at every divider. Notes 147-160 inline (14 mapped).",
+        "dividers": [
+          {
+            "before": 27,
+            "label": "WEIGHT ROOM — LYLE",
+            "register": "feast → phosphor-night"
+          },
+          {
+            "before": 37,
+            "label": "ON SCREEN — THE HEADLINE MONTAGE",
+            "register": "dining-hall → broadsheet (braid-broadsheet asset; CSS junction)"
+          },
+          {
+            "before": 55,
+            "label": "WEIGHT ROOM — LYLE",
+            "register": "broadsheet → phosphor-night"
+          },
+          {
+            "before": 102,
+            "label": "ON SCREEN — THE RECONFIGURATION MAPS",
+            "register": "cabinet script → map-plate (braid-concavity asset; CSS junction)"
+          },
+          {
+            "before": 142,
+            "label": "HAL'S MIND — THE CLIPPERTON LEGEND",
+            "register": "film → essay (leading 1.85)"
+          }
+        ],
+        "seal_role": "seal-8 + program-stamp cluster in band (densest in cohort); endmark seal-8.",
+        "rationale": "The gala chapter earns the densest plate in D: a puppet stage mid-performance with the Seal literally knocked askew — statecraft as janitor-closet theater. The two ON SCREEN dividers are the film's own cuts (montage, then maps), the WEIGHT ROOM dividers are Lyle's storm-lit counsel cooling the feast, and the HAL'S MIND divider marks the chapter's great turn: the film ends, Hal's Clipperton/Interlace essay takes the last twenty paras. Divider-before-102 (not 103) preserves the hyphen-split Concavity sentence — see p1c46_162_decision."
+      },
+      "p1c47": {
+        "plate": "SOUP-SEMINAR (symbol soup-seminar, opener plate, landscape ~16:9). Engraved night-interface exhibit: the Habitant pea-soup can ('Veuillez Recycler Ce Contenant' stencil label — verified [87]) CENTERED between the two chairs under Venus (pallid-cheese disk — verified [105] — sallow Manila); metal chair + heel-marks as in p1c42 but closer, lower (the seminar leans in); bonk-the-head gesture glyph (small arc + can silhouette, quoting [89] 'a bonking of your head') in the plate margin; Tucson light-rectangles along the base (verified [85] 'ponderous rectangles of moving light'). NO red. Braid sub-plate (mergeable): braid-revenue (portabubble Gentle + TINE's smoke-detector eyes — verified [144] 'two tiny smoke-detector bulbs' — + Veals's front teeth + zodiac placemat with Hot-and-Sour grease corona — verified [172]).",
+        "stamp_band": "30 APR / 1 MAY — THE SOUP SEMINAR. Filing line: SHELF / SINGLE-SERVING EXHIBIT / VENUS RISING (verified [102][105]). Seal-8.",
+        "opener": "Stamp band → soup-can interface plate → Archivo title → ledger rule → drop cap on 'Marathe did not quite sleep.' [0]. The can is the chapter's Socratic exhibit — centered like evidence, lit like the moon's rival.",
+        "palette": "Desert-night primary (Phosphor stars, Manila dialogue, ZERO red) for 0-106; Gately insert (110-117) warm Manila work-register (.ij-insert-work lift, no red); film section (120-173) flips to feast red/gold — the ON SCREEN divider carries the flip. J5-clean.",
+        "reading": "Stichomythic rally set: ~30 sub-12-word paras in 6-100 (verified: 6/8/11/13/17/18/22/26/28/35/41/42/43/45/52/53/54/56/63/65/68/86/90/96/98/100) tight, never inflated; soup-seminar core (60-106) sustained calm, speaker rhythm preserved; Clipperton coda (107-109) + Gately insert (110-117, Shattuck janitoring, 'sunlights on the side' [110]) + E.T.A. girls aside (118-119) take minor scene-cut ticks; film script (120-173) in p1c46's positional speaker set with header lines (120/121/122-kicker/123) as broadsheet. Clocks (0430h [110], 0800/1200h [112], 0459/0801h [113], 0500h [115]) ledger ticks.",
+        "ticks": "NIGHT star-dots on 0-106 desert (sparse: 0/64/87/102/105/106); ESSAY pilcrows on 69 (parodically-dense seminar turn) + 89 (bonk-the-head core); MEETING circle-triangle? NO — Gately insert takes LOBBY? NO — takes WORK-BOOT glyph? NO new glyph: Gately insert takes Manila ESSAY pilcrow on 110; FILM frame-corners on 120-173; chorus-center lines (125/134/138/162/165 ALL SECS.) tighter centered. Notes 169-177 inline.",
+        "dividers": [
+          {
+            "before": 120,
+            "label": "ON SCREEN — REVENUE VISION",
+            "register": "desert-night → feast (braid-revenue asset; CSS junction)"
+          }
+        ],
+        "seal_role": "seal-8 in band; endmark seal-8.",
+        "rationale": "The desert night's philosophical coreiku: a soup can elevated to seminar exhibit under Venus. Centering the can (not the men) stages Marathe's method — the concrete instance that carries the ethics — while the bonk-glyph keeps the chapter's violence theoretical. The single full divider at 120 is the night's great flip: Socratic stars → revenue farce, the cohort's widest register swing in one junction."
+      },
+      "p1c48": {
+        "plate": "BRAINTREE (symbol braintree, opener plate, card ~4:5). Engraved biker-meeting handbill: 'TOUGH SHIT BUT YOU STILL CAN'T DRINK — BRAINTREE' (verified [0]) in condensed wood-type caps; hawg vignette (handlebar + headlamp + throbbing-motion ticks — verified [5] 'straddling his throbbing hawg') + leather-spat + belt-buckle spade-knife micro-glyph (verified [3]); AA triangle-in-circle jailhouse tatt (verified [5] 'weird little insignia of a triangle inside a circle' — drawn as the handbill's own seal, Manila line, Stamp Red triangle); Bob Death's fish-joke as small marginalia (wise old whiskery fish glyph, corner — verified [7]); reverse/coda vignette: undersea dream (concentric dim-water rings, silent, same-temperature — verified [20]) as a quiet band beneath the handbill — the chapter visibly descends from hawg-roar to depth.",
+        "stamp_band": "Y.D.A.U. — WHITE FLAG COMMITMENT · BRAINTREE. Filing line: CHURCH BASEMENT / HAWG PARKING / JULY (verified [0] 'this past July'). Seal-8.",
+        "opener": "Stamp band → handbill plate (with coda band) → Archivo title → ledger rule → drop cap on the Commitment paragraph [0].",
+        "palette": "Meeting-hall warm Manila + Stamp Red handbill; childhood-memory sequence (11-19) cools to desaturated Phosphor-gray (.ij-insert-memory: narrowed 34rem + extra air); undersea coda [20] deep Ledger blue-black wash isolate — the chapter visibly descends. J5-clean.",
+        "reading": "Commitment scene (0-8) normal measure; memory-dredge (9-19) narrower + airier (sinking feel); one-line [15] ('Nimitz the kitty.') isolate held breath; [19] (Sir Osis of Thuliver mop-handle knight) tender normal; final dream [20] coda isolate (.ij-insert-coda). Notes 178/179 inline at 10/18.",
+        "ticks": "MEETING circle-triangles (red) on 0 (podium confession) + 5 (hawg embrace) + 6 (fish joke); ESSAY pilcrows on 9 (the omitted thing) + 10 (Get In Touch) + 11 (remembering); SCENE-CUT tick on 11 (memory-dredge opens) + 20 (dream coda).",
+        "dividers": [],
+        "seal_role": "seal-8 in band; the triangle-in-circle tatt is the chapter's private seal. Endmark: A.0 undersea glyph (concentric dim-water rings, Manila 40%) — see endmarks_a0.",
+        "rationale": "Rowdy fellowship over an abyss: the handbill shouts (hawg, tatt, fish-joke) while the coda band beneath it is already underwater. The cooling/descending reading treatment (warm → phosphor-gray → blue-black) is the chapter's emotional plot drawn as temperature; 'Nimitz the kitty' gets full isolate air because it is the memory-dredge's still point."
+      },
+      "p1c49": {
+        "plate": "TEETH-DREAM (symbol teeth-dream, opener plate, SMALL vignette ~1:1 at 0.5x standard — the chapter is 442 words; proportional treatment per RELAUNCH). Engraved nightmare study: shale teeth (three fractured molars, crack lines + grit stipple spilling — verified [0] 'teeth had become like shale and splintered…fragmented and melted into grit'); squeezed ball (tennis-ball curve + seam, compression ticks); watch-checking faces turned away (two wristwatch circles + averted-profile ticks — verified 'saying he was late for his next appointment', Schacht); sickly green-gray wash (Phosphor at ~25% + Manila grit) with ONE Stamp Red accent (the oral rot — a single red crack line, the only red outside feast/violence in D, signifying rot). Small plate, held breath.",
+        "stamp_band": "VERY LATE OCTOBER — DREAM FILE (seal-8; undated-but-monthly → still seal-8 per endmarks_a0). Filing line: RECURRENCE / ORAL / 442 WORDS (the word count IS the filing data — the chapter's smallness is its metadata).",
+        "opener": "Stamp band → small vignette → Archivo title (small) → ledger rule → single flowing paragraph with drop cap. The whole chapter fits one screen; the opener IS the chapter. No dividers, no ticks, no script — restraint is the treatment.",
+        "palette": "Nightmare anomaly: sickly Phosphor-green-gray + Manila grit on Ledger, one Stamp Red rot-crack. J5-clean.",
+        "reading": "No reading treatment beyond the single paragraph: protect it from any list/script/header detection (it contains quoted speech but is ONE para); isolate spacing above the coda-less end. Note 180 inline. This is the cohort's rest beat between Braintree and dawn drills — the design must let it be small.",
+        "ticks": [],
+        "dividers": [],
+        "seal_role": "seal-8 in band; endmark: A.0 shale-tooth glyph (cracked-tooth outline, phosphor-gray + one red rot fleck).",
+        "rationale": "The cohort's held breath: a 442-word nightmare that must not be heroed. The small vignette + word-count filing line + zero apparatus stages the dream as a filed specimen — dread preserved under glass. The single red crack is the chapter's only alarm, and it signifies rot, never feast."
+      },
+      "p1c50": {
+        "plate": "DAWN-DRILLS (symbol dawn-drills, opener plate, WIDE panorama ~21:9). Engraved dawn-drills panorama: staggered squads on Center Courts (four-rank formation glyphs receding, breath-steam hairlines above each rank — cold breath made visible); Schtitt's weatherman's pointer (raised, 'seems to stab at the sky' [41]) + stopwatch + pipe silhouettes in the foreground rail; Gatorade cone cluster (three conic cups — verified [14] 'three cones of Gatorade'); Side-to-Sides funnel (converging lane lines, demonic simplicity — verified [15]); north-horizon picric cloud cone (verified [13] 'bulbous cone of picric clouds') + pinkish corona behind Schtitt's white head (verified [8]); cold color: Phosphor court lines + Manila breath on Ledger. Braid sub-plate (mergeable): braid-aventura (black '64 Ford Aventura — 'black as water at night' — Handicapped plates, Purity Supreme bag, one-candle cake with single Seal Gold flame — verified [46][52][54]).",
+        "stamp_band": "9 NOV — DAWN DRILLS · ETA. Filing line: CENTER COURTS / FIRST SHIFT / 0720H (verified [17] 0720h). Seal-8.",
+        "opener": "Stamp band → drills panorama → Archivo title → ledger rule → drop cap on the capacity paragraph [0]. The panorama must feel COLD: steam, cones, funnel, cloud — breath everywhere, warmth nowhere (until para 46).",
+        "palette": "Cold drills register (Phosphor court lines + Manila breath on Ledger) for 0-45; Gately section (46-55) warms to Manila lamplight + Seal Gold cake-candle — the divider carries the dawn-to-hearth shift. J5-clean.",
+        "reading": "Capacity/logistics (0-4) calm; drills (5-17) court-by-court rhythm preserved; Schtitt rally (18-45) tight positional set (Schtitt pacing vs Chu/Coyle/Beak replies; shorts 19/22/23/27/28/30/33/35/36/38/39/43 tight; 'Play.' [45] isolate — the seminar's last word gets air ABOVE the divider); Gately biography (46-55) warm calm 38rem; chef litany [55] (hot dogs/meat loaf/Shake 'N Bake) comma-run preserved. Clocks (0720h [17], 0430 [53]) ledger ticks.",
+        "ticks": "EXAM item-ticks on 5-17 (drill sequence, red? NO — Manila: drills are institution, not trap; red reserved for exam letters + feast); ESSAY pilcrows on 26 (second-world citizens) + 29 (23.8 meters) + 41 (Occur); LOBBY ticket-stub on 40 (prorectors' pavilion); MEETING circle-triangle (Manila) on 54 (one-candle cake — recovery warmth, not meeting chapter). Notes 181-197 inline (13 mapped, densest in Gately half).",
+        "dividers": [
+          {
+            "before": 46,
+            "label": "ENNET HOUSE — GATELY",
+            "register": "dawn-cold → hearth-warm (braid-aventura asset; CSS junction)"
+          }
+        ],
+        "seal_role": "seal-8 in band; endmark seal-8.",
+        "rationale": "Predawn grind → hagiography: the panorama's cold (breath, cones, funnel, cloud) makes the divider's warmth (lamplight, candle) land as relief. 'Play.' [45] isolated above the junction is Schtitt's whole metaphysics in one word — then the chapter walks off the courts and into Gately's life. The Aventura sub-plate is the hearth object: black car, brown bag, one candle."
+      },
+      "p1c51": {
+        "plate": "P-TERMINALS (symbol p-terminals, opener plate, landscape ~16:9). Engraved clinical diagram: hair-thin Briggs electrodes (verified [0] 'hair-thin') converging on a lobe cross-section with 'Rivers of Reward' tributary lines (verified [13]); rat lever (small lever + pressed-paw glyph, 'thousands of times an hour' tally ticks — verified [20]); Brandon Manitoba seal (round institutional seal, Manila line — verified [15][35]); volunteer queue (small figures doubling around a block corner — verified [35] 'lining up literally around the block'); trample/dismantle vignette withheld (the horror stays in the prose). Phosphor diagram lines on Ledger, Manila labels, ZERO red. Braid sub-plates (mergeable): braid-joyride (CITGO sign in pulsing neon distance — Seal Gold opacity pulse rings — Bread & Circus bag, Storrow 500 on-ramp curve — verified [76][77][80]); braid-shop (blown-glass notions shelf + happy-mask glyph + 585-rpm-drive TP rectangle + squeaking hinge (arc + 'squeak' motion ticks — verified [82]) — cold Mask-white + Stamp Red dread accents).",
+        "stamp_band": "PRE-DAWN 1 MAY — STILL · P-TERMINALS. Filing line: OUTCROPPING / BRANDON EXHIBIT / EMERY BOARD (verified [70]-[73] emerying — Steeply's fidget is the scene's time signature). Seal-8.",
+        "opener": "Stamp band → p-terminal diagram → Archivo title → ledger rule → drop cap on Steeply's electrode question [0]. The diagram must feel CLINICAL: ruled lines, tributary precision, institutional seal — horror in lab-coat dress.",
+        "palette": "Desert-night clinical (Phosphor diagram lines, Manila dialogue, ZERO red) for 0-73; joyride (74-81) sodium-streetlight amber (Seal Gold opacity-derived); shop (82-89) cold Mask-white + Stamp Red dread accents — red returns as VIOLENCE, never feast. J5-clean.",
+        "reading": "Seminar dialogue (0-73) tight rally set with long Steeply expositions (0/8/10/13/20/24/30/33/35/39/43/46/47/51/57/60/64/66/68/70-72 — verified lengths) at calm measure; joyride (74-81) breathes wider/faster (para 81: 1,697-word Inman/Little Lisbon long read, generous 38rem); shop (82-89) NARROWS and slows (36rem → 34rem, +0.3rem para air — dread as measure); Lucien's death-flight coda ([89] tail) isolate. Shorts (1/2/9/12/15/18/19/21/22/25/27/31/32/34/40/42/44/45/48/52/54/55/62/63/87/88 — incl. [88] 'Can a mask's drawn smile widen?' — the cohort's coldest one-liner, full isolate air) tight. Clocks (1800h [74][76], 0430 [75]) ledger ticks.",
+        "ticks": "ESSAY pilcrows on the long expositions (0/8/10/13/20/30/35/43/57); NIGHT star-dots on 0 (opens pre-dawn) + 72/73 (seminar's last rasp); SCENE-CUT ticks at both dividers; MEETING? NO — shop takes DREAD red asterisk? NO new red-tick grammar: shop takes Manila SCENE-CUT tick on 82 + red note-pill styling only. Notes 198-207 inline (Boston/shop sections).",
+        "dividers": [
+          {
+            "before": 74,
+            "label": "BOSTON — GATELY",
+            "register": "clinical-night → sodium-amber (braid-joyride asset; CSS junction)"
+          },
+          {
+            "before": 82,
+            "label": "ANTITOI SHOP",
+            "register": "sodium-amber → mask-white dread (braid-shop asset; CSS junction)"
+          }
+        ],
+        "seal_role": "seal-8 in band; the Brandon seal is drawn INSIDE the plate (exhibit seal, not archive seal). Endmark seal-8.",
+        "rationale": "The cohort's darkest braid: clinical horror → joyride guilt → home-invasion dread → pietà. The diagram plate stages atrocity as a lab exhibit (the prose does the screaming); the two dividers walk the palette from phosphor night through sodium amber into mask-white dread; the narrowing measure in the shop (38→34rem) makes Lucien's soaring coda ([89] tail, isolate) feel like release. [88]'s mask question gets the most air of any one-liner in D."
+      },
+      "p1c52": {
+        "plate": "LAST-WATCH (symbol last-watch, opener plate, SMALL ~16:9 at 0.6x standard — 24 paras, 827 words; the quietest plate in D, a visual decrescendo). Engraved minimal night: outcropping lip (single ruled ledge); bonfire + ring of palsied torch-fires below (Phosphor flame ticks, dancing-torch motion marks — verified [0] 'young persons carrying the torches…dancing' [2]); two figures (one seated + blanket fold, one standing + self-embrace arc — verified [0] 'bare arms around him'); drawn-smile mask glyph DISSOLVING at the plate's edge (half outline + fading edge ticks — the mask from p1c51, letting go). Purest desert-night: Phosphor stars/fires on Ledger, Manila figures, ZERO red. Emptiest plate in the cohort — mostly dark ground, small fires.",
+        "stamp_band": "PRE-DAWN 1 MAY — STILL · LAST WATCH. Filing line: OUTCROPPING / FIFTH NIGHT / SILENCE (the fifth Tucson chapter: p1c42/45/47/51/52 — the filing line counts the sequence). Seal-8 small.",
+        "opener": "Stamp band → small night plate → Archivo title → ledger rule → NO drop cap? YES drop cap — opener-adjacent and content-warranted (the prolonged silence [0] deserves the capital). The opener must feel like the night exhaling.",
+        "palette": "Purest desert-night register in D: Phosphor stars/fires, Manila dialogue, zero red. The quietest plate — decrescendo before the Sepulveda flashback. J5-clean.",
+        "reading": "Calm minimal: 24 short paras read as ONE night-watch movement. Rally shorts (1 'Do you ever think of viewing it?', 4 'Yes.', 8, 16 'C'est ça.', 18 'The samizdat.', 22) tight; set speeches (11 scratch-crosshatches, 12 pacemaker death, 15 Brullent, 21 density theory) calm; closing head-cock [23] ('feminine and birdlike') isolate — the desert sequence ends on observed gesture, not argument. NO inserts, NO dividers. No note_refs (verified: 0) — the silences are protected by paragraph spacing alone.",
+        "ticks": "NIGHT star-dots ONLY, sparse: on 0 (prolonged silence) + 11 (scratches) + 23 (head-cocks). The fewest ticks in D — the margin must be nearly as quiet as the prose.",
+        "dividers": [],
+        "seal_role": "seal-8 small in band; endmark: A.0 dissolving-mask glyph (half mask-outline, Manila 50%, fading edge ticks).",
+        "rationale": "Coda to the five-chapter Tucson sequence: the design job is a decrescendo — smallest desert plate, sparsest ticks, no apparatus — so that p1c53's sun-blazed Sepulveda hits like morning. The dissolving mask at the plate's edge lets p1c51's horror go; the isolate head-cock [23] ends the desert on tenderness, and the endmark (dissolving mask) closes the file the same way."
+      },
+      "p1c53": {
+        "plate": "SEPULVEDA (symbol sepulveda, opener plate, WIDE panorama ~21:9 — the cohort's ONLY full-daylight plate). Engraved sun-blazed bedroom: white/blue bedroom (powder-blue coverlet pile — verified [1] — sun-blaze wash through the window, warmest ground in D: Manila at full lift, Ledger reduced to line work); King-Size frame on casters (black-steel rectangle + four caster wheels sunk in pile carpet — verified [45]); tomato-juice tumbler (amber cylinder, residue ring — verified [0][1][25]); vacuum's minor-D shriek (sound-wave ticks from the hall doorway — verified [82]); amputated brass knob rolling its CYCLOID (brass disk + hex-bolt half + the traced cycloid curve with L'Hôpital/Brachistochrone micro-label — verified [80][81][82] — the curve is the plate's center: 'the possibilities of annulation'); white wig + orange-makeup sun-blaze accents (verified [0][5]). Stamp Red WITHHELD from the opener (daylight register). Braid sub-plates (mergeable): braid-na (anechoic vestry circle — chair ring, no tables, ashtrays-on-knees, 'Keep Coming Back' shout arc, Roy Tony's spread-arm hug demand — verified [84][88][90]); braid-desert ('empty of intent' eye glyphs — verified [129] — sideways moon, windblown-spark insects — verified [131]).",
+        "stamp_band": "WINTER B.S. 1963 — SEPULVEDA CA. Filing line: BEDROOM / SQUEAK HUNT / SUN-BLAZE (only B.S.-1963 material in D; pre-Subsidized → seal-filing? NO — dated but pre-subsidy: seal-filing, the archive's filing seal, <use> only).",
+        "opener": "Stamp band → daylight panorama → Archivo title → ledger rule → drop cap on the Bazin/tomato-juice paragraph [0]. The panorama must GLARE: white, blue, amber — the reader should squint after five chapters of desert night.",
+        "palette": "Anomaly + return: Sepulveda (0-82) sun-bleached Manila/white daylight (unique in D); NA meeting (83-109) vestry amber + Stamp Red confrontation accents; desert coda (110-131) back to Phosphor night — the chapter walks the cohort's WHOLE palette in order (daylight → amber/red → night). J5-clean.",
+        "reading": "Bedroom farce (0-82) calm daylight measure; slapstick shorts (2/3/18/26/30/40/55/59/60/73/75 — incl. [2] 'Eureka', [30] 'Right', [40] 'My bow tie was rumpled') tight; knob sequence (80/81/82) slows (cycloid paras get +0.25rem air — the chapter's philosophical hinge: 'possibilities of annulation' [82] is the last line before the NA divider); NA meeting (83-109) rally set, Roy Tony confrontation (90-109; shorts 92/94/97/100) TIGHTEST in the chapter; desert coda (110-131) night-watch spacing; final insect/spark [131] isolate. Ref 208 in [0] only.",
+        "ticks": "LOBBY? NO — bedroom takes EXAM? NO: Sepulveda takes no cohort glyph (daylight anomaly, unmarked — its strangeness is mark enough); NA section takes MEETING circle-triangles (red) on 83 (vestry opens) + 90 (Roy Tony rises) + 108 (the ultimatum); coda takes NIGHT star-dots on 110 (lost a couple already) + 129 (empty of intent) + 131 (spark-insects); ESSAY pilcrow on 81 (cycloid/Brachistochrone) + 82 (annulation).",
+        "dividers": [
+          {
+            "before": 83,
+            "label": "BOSTON — NA MEETING",
+            "register": "daylight → vestry-amber/red (braid-na asset; CSS junction)"
+          },
+          {
+            "before": 110,
+            "label": "PRE-DAWN — STILL",
+            "register": "vestry → phosphor-night (braid-desert asset; CSS junction)"
+          }
+        ],
+        "seal_role": "seal-filing in band (pre-Subsidized date); endmark seal-filing? NO — endmark seal-8? The chapter ENDS in the desert coda (pre-dawn 1 May Y.D.A.U.) → endmark seal-8 (the file closes in the present).",
+        "rationale": "1963 noon to pre-dawn in one chapter: the daylight panorama is the cohort's great contrast (five desert nights → sun-blaze), the knob's cycloid is its philosophical center (annulation, drawn as a curve), and the two dividers walk the whole cohort palette in order — daylight, vestry amber/red, phosphor night. The chapter is D in miniature, and the design stages it that way: glare, confrontation, then stars."
+      }
+    }
+  },
+  "supervisor_amendment_2026_10_16": "F4/F5 (DESIGN-FINDINGS-D.md): (F4) the scripted-set record above promises 'hanging gold speakers'; shipped is hanging indent with Manila speakers — amend stands until a .speaker span pass exists. (F5) the p1c46 teleconference partial-italic device had no coherent rule and no print verification (prose JSON has zero emphasis markup) — italics removed to roman neutrality (margins/colors kept); re-evaluate only with a 1st-edition print check. CSS-only; zero prose mutated."
+}

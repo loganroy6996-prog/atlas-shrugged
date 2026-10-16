@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- ROARK cohort scratch preview harness (supervisor may delete after integration).
+     Renders all 20 Part 4 openers + the p4c20 end state through the REAL reader
+     pipeline: shared/reader.js inlines manifest art into #chapter-art from
+     cohort-roark.json (via a design/chapters.json-shaped fetch), paints the
+     body[data-*] hooks, and renders live chapter prose. Single-chapter view
+     (?ch=p4cN) reproduces the reader exactly for F4 measurement; the gallery
+     lists all 20 for screenshot sweeps. Screenshot at 1440x1000, 820x1180,
+     390x844. No commits; delete after supervisor merge. -->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roark cohort preview — The Fountainhead Part 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/reader.css">
+<link rel="stylesheet" href="../theme.css">
+<link rel="stylesheet" href="cohort-roark.css">
+<style>
+  body { margin: 0; padding: 0; }
+  .pv-nav { position: sticky; top: 0; z-index: 50; background: #100b08; padding: 0.7rem 1rem; border-bottom: 1px solid #3a2c22; }
+  .pv-nav a { font: 500 0.75rem/2.1 "IBM Plex Mono", monospace; letter-spacing: 0.1em; color: #e4572e; margin-right: 0.9rem; text-decoration: none; }
+  .pv-nav a:hover { color: #ffd9a0; }
+  .pv-nav .pv-mode { color: #7a6a58; margin-left: 1rem; }
+  .pv-gallery #pv-root { max-width: 72rem; margin: 0 auto; padding: 2rem 1.5rem 6rem; }
+  .pv-chapter { margin-bottom: 5rem; scroll-margin-top: 4rem; border-bottom: 1px solid #3a2c22; padding-bottom: 4rem; }
+  .pv-note { font: 400 0.75rem/1.6 "IBM Plex Mono", monospace; color: #7a6a58; margin: 0 0 0.6rem; }
+  .pv-note b { color: #c8a06a; font-weight: 500; }
+  .pv-flag { display: inline-block; border: 1px solid #8c3a20; color: #e4572e; padding: 0 0.5em; margin-left: 0.6em; font-size: 0.85em; }
+  /* Single mode: reproduce reader geometry exactly (reader.css .reader-body). */
+  .pv-single #pv-root { max-width: none; margin: 0; padding: 0; }
+  .pv-single .pv-chapter { border: none; margin: 0; padding: 0; }
+  .pv-single .pv-note { max-width: calc(52rem + 5rem); margin: 0 auto; padding: 1rem 2rem 0; }
+  .pv-f4 { font: 500 0.75rem/1.6 "IBM Plex Mono", monospace; margin: 0.4rem auto 0; padding: 0 2rem 1rem; max-width: calc(52rem + 5rem); }
+  .pv-f4 .pass { color: #7fb08a; } .pv-f4 .fail { color: #e4572e; }
+  .chapter-text { font-family: "Source Serif 4", Georgia, serif; }
+</style>
+</head>
+<body data-book="the-fountainhead" data-part="4" data-part-id="part-4" data-view="reader">
+<nav class="pv-nav" aria-label="Preview chapters" id="pv-nav"></nav>
+<div id="pv-root"><p style="padding:2rem;font-family:monospace;color:#7a6a58">Loading…</p></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const SINGLE = Q.get('ch');
+document.body.classList.add(SINGLE ? 'pv-single' : 'pv-gallery');
+
+function paintNav(ids) {
+  const nav = document.getElementById('pv-nav');
+  nav.innerHTML = '<a href="roark-preview.html">all</a>' +
+    ids.map(id => '<a href="?ch=' + id + '">' + id + '</a>').join('') +
+    '<span class="pv-mode">' + (SINGLE ? 'single: ' + SINGLE : 'gallery: 20 openers') + '</span>';
+}
+
+// Mirror reader.js fillArtSlot (contract §4 + A.2): fetch src once, clone the
+// named symbol into the slot wrapped in <svg> with the symbol's viewBox,
+// then append the chainage figcaption. No reader.js internals are patched.
+const artCache = new Map();
+async function loadArtFile(src) {
+  const file = src.split('#')[0];
+  if (!artCache.has(file)) {
+    artCache.set(file, fetch('../' + file).then(r => {
+      if (!r.ok) throw new Error('art file ' + file + ' missing');
+      return r.text();
+    }).then(t => new DOMParser().parseFromString(t, 'image/svg+xml')));
+  }
+  return artCache.get(file);
+}
+async function fillSlot(fig, entry) {
+  fig.innerHTML = '';
+  const doc = await loadArtFile(entry.src);
+  const svgNS = 'http://www.w3.org/2000/svg';
+  let node;
+  if (entry.symbol) {
+    const target = doc.getElementById(entry.symbol);
+    if (!target) { console.warn('[preview] symbol #' + entry.symbol + ' missing in ' + entry.src); return; }
+    node = document.createElementNS(svgNS, 'svg');
+    node.setAttribute('viewBox', target.getAttribute('viewBox') || doc.documentElement.getAttribute('viewBox'));
+    node.appendChild(target.cloneNode(true));
+  } else {
+    node = doc.documentElement.cloneNode(true);
+    node.removeAttribute('width'); node.removeAttribute('height');
+  }
+  node.setAttribute('aria-hidden', 'true');
+  fig.appendChild(node);
+  if (entry.caption) {
+    const cap = document.createElement('figcaption');
+    cap.textContent = entry.caption;
+    fig.appendChild(cap);
+  }
+  fig.className = 'chapter-art ' + (entry.class || '');
+  fig.hidden = false;
+}
+
+Promise.all([
+  fetch('../data/toc.json').then(r => r.json()),
+  fetch('cohort-roark.json').then(r => r.json())
+]).then(async ([toc, manifest]) => {
+  const p4 = toc.parts.find(p => p.id === 'part-4');
+  paintNav(p4.chapters.map(c => c.id));
+  const items = [];
+  for (const c of p4.chapters) {
+    if (SINGLE && c.id !== SINGLE) continue;
+    const ch = await fetch('../data/chapters/' + c.id + '.json').then(r => r.json());
+    items.push({ meta: c, ch });
+  }
+  const root = document.getElementById('pv-root');
+  root.innerHTML = '';
+  if (SINGLE && items.length === 1) {
+    // Single mode: set the real body hooks so cohort CSS applies exactly
+    // as in the reader (data-chapter + data-art included).
+    const { meta, ch } = items[0];
+    const e = manifest.chapters[ch.id];
+    document.body.dataset.chapter = ch.id;
+    if (e.motif) document.body.dataset.art = e.motif;
+  }
+  for (const { meta, ch } of items) {
+    const e = manifest.chapters[ch.id];
+    const sec = document.createElement('section');
+    sec.className = 'pv-chapter';
+    sec.id = 'pv-' + ch.id;
+    const wrap = document.createElement('article');
+    wrap.className = 'reader-body';
+    if (!SINGLE) { // gallery: scope cohort hooks per section via data attrs
+      wrap.dataset.chapterScope = ch.id;
+    }
+    const fig = document.createElement('figure');
+    fig.className = 'chapter-art';
+    fig.id = SINGLE ? 'chapter-art' : 'chapter-art-' + ch.id;
+    fig.setAttribute('aria-hidden', 'true');
+    fig.hidden = true;
+    const note = document.createElement('p');
+    note.className = 'pv-note';
+    note.innerHTML = '<b>' + ch.id + '</b> · numeral ' + e.numeral_fill + '% · bars ' + e.bars +
+      ' · ' + e.src + (e.symbol ? '#' + e.symbol : '') + ' · ' + e.class + ' · dropcap ' + e.dropcap +
+      (e.bars === 'HEARTH' || e.bars === 'ASCENT' ? '<span class="pv-flag">CLIMAX</span>' : '') +
+      (e.dropcap === 'bronze-cold' ? '<span class="pv-flag">COLD</span>' : '');
+    const header = document.createElement('div');
+    header.className = 'chapter-meta';
+    header.innerHTML = '<p class="meta-part">Part IV · Howard Roark</p>' +
+      '<h1 class="meta-title">' + meta.title + '</h1>' +
+      '<p class="meta-number">' + meta.number_label + '</p>' +
+      '<div class="meta-rule" aria-hidden="true"><span></span></div>';
+    const text = document.createElement('div');
+    text.className = 'chapter-text';
+    const last = SINGLE && ch.id === 'p4c20' ? ch.paragraphs.length : 6;
+    ch.paragraphs.slice(0, last).forEach((p, i) => {
+      const el = document.createElement('p');
+      el.textContent = p;
+      // Mirror reader.js §7 no-drop rule: short/quote-led opener.
+      if (i === 0 && (p.length < 80 || /^[^A-Za-zÀ-ɏ]/.test(p))) el.classList.add('no-drop');
+      text.appendChild(el);
+    });
+    wrap.append(fig, header, text);
+    sec.append(note, wrap);
+    root.appendChild(sec);
+    if (!SINGLE) {
+      // Gallery scoping: clone the cohort rules that depend on
+      // body[data-chapter]/[data-art] down to each section. COLD caps and
+      // end seals are chapter-scoped; slot sizing is chapter-agnostic.
+      const scope = document.createElement('style');
+      const id = ch.id;
+      let css = '';
+      if (e.dropcap === 'bronze-cold') {
+        css += '#pv-' + id + ' .chapter-text > p:first-of-type::first-letter{color:#c8a06a !important;border-left-color:#c8a06a !important;}';
+      }
+      if (id === 'p4c20') {
+        css += '#pv-p4c20 .chapter-text > p:last-child::after{content:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'24\' height=\'24\' viewBox=\'0 0 24 24\'%3E%3Cpath d=\'M12 1 L23 12 L12 23 L1 12 Z\' fill=\'none\' stroke=\'%23FFD9A0\' stroke-width=\'2\'/%3E%3Cpath d=\'M12 6 L18 12 L12 18 L6 12 Z\' fill=\'%23E4572E\'/%3E%3C/svg%3E") !important;border-top:3px solid #e4572e !important;padding-top:1.5rem !important;margin-top:3rem !important;}';
+      }
+      if (css) { scope.textContent = css; sec.appendChild(scope); }
+    }
+    await fillSlot(fig, e);
+  }
+  if (SINGLE && items.length === 1) {
+    // F4 meter: is the first body line visible at 1440x1000 without scroll?
+    requestAnimationFrame(() => {
+      const first = document.querySelector('.chapter-text > p:first-of-type');
+      const r = first.getBoundingClientRect();
+      const ok = r.top < 1000;
+      const m = document.createElement('p');
+      m.className = 'pv-f4';
+      m.innerHTML = 'F4 @1440×1000: first-body-line top = <b>' + Math.round(r.top) + 'px</b> — ' +
+        (ok ? '<span class="pass">PASS (visible without scroll)</span>' : '<span class="fail">FAIL</span>');
+      document.querySelector('.pv-note').after(m);
+    });
+  }
+}).catch(err => {
+  document.getElementById('pv-root').innerHTML = '<p style="padding:2rem;color:#e4572e">Preview failed: ' + err + '</p>';
+});
+</script>
+</body>
+</html>

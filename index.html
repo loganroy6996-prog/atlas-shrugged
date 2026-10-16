@@ -1,45 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A private literary library — Rand, Nietzsche, Heidegger, Wallace, and more." />
+  <meta name="description" content="A private literary library — Rand, Nietzsche, Heidegger, Wallace, and more. Cleanly set editions, ready to read." />
   <title>Literary Library</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/library.css" />
+  <script>
+    // Apply saved theme before first paint (carried into the reader via the same key).
+    // Dark-first: first visit and unknown values paint dark. Stored "auto"
+    // resolves against the OS (light only when the OS asks for light).
+    try {
+      var __t = localStorage.getItem("literary-library-theme");
+      var __ok = {
+        dark: 1, sepia: 1, light: 1, nocturne: 1,
+        verdant: 1, oxblood: 1, slate: 1, candlelight: 1
+      };
+      var __eff = "dark";
+      if (__t === "auto") {
+        try {
+          __eff = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        } catch (__e) { __eff = "dark"; }
+      } else if (__t && __ok[__t]) {
+        __eff = __t;
+      }
+      document.documentElement.dataset.theme = __eff;
+    } catch (e) {}
+  </script>
 </head>
 <body>
   <div class="library-bg" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true">❦</span>
+      <span class="brand-name">Literary Library</span>
+    </a>
+    <div class="theme-menu">
+      <button type="button" id="theme-button" aria-haspopup="listbox" aria-expanded="false">
+        <span class="theme-label">Reading light</span>
+        <span class="theme-current">
+          <span class="sw" id="theme-swatch" aria-hidden="true"></span>
+          <span id="theme-name">Ink</span>
+          <svg class="theme-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <ul class="theme-panel" id="theme-panel" role="listbox" aria-label="Reading light" hidden></ul>
+    </div>
+  </div>
+
   <main class="library">
-    <header class="library-header">
-      <p class="library-eyebrow">A private collection</p>
-      <h1 class="library-title">Literary <em>Library</em></h1>
-      <div class="library-rule" aria-hidden="true"><span></span></div>
-      <p class="library-sub">
-        Beautifully set editions — cleaned of publisher junk, ready to read.
+    <header class="masthead">
+      <p class="masthead-kicker">A private library</p>
+      <h1 class="masthead-title">Thirteen long volumes, set for the long read.</h1>
+      <p class="masthead-sub">
+        Rand, Nietzsche, Heidegger, Wallace, and more — publisher junk removed,
+        typography respected. Pick a volume and begin.
       </p>
-      <p class="library-count" id="library-count">Loading…</p>
+      <p class="masthead-stats" id="library-count">Loading…</p>
     </header>
 
-    <ul class="book-grid" id="book-grid" aria-label="Books"></ul>
+    <section class="featured" id="featured" aria-label="Featured volume" hidden></section>
+
+    <section class="continue-shelf" id="continue-shelf" hidden aria-label="Continue reading">
+      <h2 class="shelf-title">Continue reading</h2>
+      <ul class="shelf-list" id="shelf-list"></ul>
+    </section>
+
+    <div class="toolbar" role="search">
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input
+          type="search"
+          id="search"
+          placeholder="Search title, author, or mood…  ( / )"
+          aria-label="Search books"
+          autocomplete="off"
+        />
+      </div>
+      <div class="shelf-chips" id="shelf-chips" role="group" aria-label="Shelves"></div>
+      <label class="sort-wrap">
+        <span class="sort-label">Sort</span>
+        <span class="select-wrap">
+          <select id="sort" aria-label="Sort books">
+            <option value="featured">Featured</option>
+            <option value="title">Title A–Z</option>
+            <option value="author">Author A–Z</option>
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="longest">Longest first</option>
+            <option value="shortest">Shortest first</option>
+          </select>
+          <svg class="select-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </label>
+    </div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+
+    <div id="shelves"></div>
+    <div class="empty-state" id="empty-state" hidden>
+      <p class="empty-title">Nothing on this shelf.</p>
+      <p class="empty-sub">No volume matches that search.</p>
+      <button type="button" class="btn-reset" id="btn-reset">Clear search</button>
+    </div>
 
     <footer class="library-footer">
-      <p>Dark · Sepia · Light themes · Reading progress saved per book</p>
+      <p>Progress is stored locally in your browser · Themes carry into the reader</p>
     </footer>
   </main>
 
   <script>
     (() => {
+      "use strict";
+      // Relative base keeps catalog + book links working on GitHub Pages project paths.
       const BASE = new URL("./", location.href).href;
-      const grid = document.getElementById("book-grid");
-      const countEl = document.getElementById("library-count");
+      const LIB_THEME_KEY = "literary-library-theme";
+      const SORT_KEY = "literary-library-sort";
+      const SHELF_KEY = "literary-library-shelf";
 
+      const shelvesEl = document.getElementById("shelves");
+      const countEl = document.getElementById("library-count");
+      const resultEl = document.getElementById("result-count");
+      const searchEl = document.getElementById("search");
+      const sortEl = document.getElementById("sort");
+      const emptyEl = document.getElementById("empty-state");
+      const shelfEl = document.getElementById("continue-shelf");
+      const shelfList = document.getElementById("shelf-list");
+      const featuredEl = document.getElementById("featured");
+      const chipsEl = document.getElementById("shelf-chips");
+
+      let allBooks = [];
+      const tocCache = new Map(); // slug -> flat chapter list
+      const progressBySlug = new Map(); // slug -> { idx, total, pct, ch }
+
+      /* ── Shelves (derived from slug; no catalog change needed) ── */
+      const SHELVES = [
+        { id: "novels", name: "Novels of ideas", desc: "Three doorstops that argue with the world.",
+          slugs: ["atlas-shrugged", "the-fountainhead", "infinite-jest"] },
+        { id: "philosophy", name: "Philosophy", desc: "Nietzsche's provocations, then Heidegger's question.",
+          slugs: ["beyond-good-and-evil", "thus-spoke-zarathustra", "gay-science",
+                  "twilight-of-the-idols", "will-to-power", "being-and-time"] },
+        { id: "polemics", name: "Portraits & polemics", desc: "A life, two letters, and a forecast.",
+          slugs: ["forty-ways-to-look-at-churchill", "open-letter",
+                  "gentle-introduction", "sovereign-individual"] },
+      ];
+      const shelfOf = new Map();
+      SHELVES.forEach((s) => s.slugs.forEach((slug) => shelfOf.set(slug, s.id)));
+      const shelfNameOf = (slug) => {
+        const s = SHELVES.find((x) => x.id === shelfOf.get(slug));
+        return s ? s.name : "";
+      };
+
+      /* ── Theme menu (shared with the reader via LIB_THEME_KEY) ── */
+      // Dark-first. Stored value is a concrete theme ("dark" default) or
+      // "auto" (explicit Auto choice): Auto resolves to light only when the OS
+      // asks for it, otherwise dark — never force light on a dark user.
+      const THEMES = [
+        { value: "dark", name: "Ink", mood: "Deep ink, candle-gold", bg: "#08090b", ac: "#e8d5a3" },
+        { value: "nocturne", name: "Nocturne", mood: "Midnight lamp, silver text", bg: "#0a0f1e", ac: "#a3b8ff" },
+        { value: "verdant", name: "Verdant", mood: "Court green, tennis-ball", bg: "#0b1510", ac: "#c6f135" },
+        { value: "oxblood", name: "Oxblood", mood: "Leather library, brass", bg: "#160d0d", ac: "#d9a441" },
+        { value: "candlelight", name: "Candlelight", mood: "Flickering amber glow", bg: "#120b06", ac: "#ffb84d" },
+        { value: "sepia", name: "Sepia", mood: "Aged paper, iron-gall ink", bg: "#171310", ac: "#d4a94e" },
+        { value: "light", name: "Vellum", mood: "Warm morning paper", bg: "#f5f0e6", ac: "#8a6414" },
+        { value: "slate", name: "Slate", mood: "Cold steel evening", bg: "#10161c", ac: "#8fc3dd" },
+        { value: "auto", name: "Auto", mood: "Follows your system", bg: "#08090b", ac: "#f5f0e6" },
+      ];
+      const themeButton = document.getElementById("theme-button");
+      const themePanel = document.getElementById("theme-panel");
+      const themeName = document.getElementById("theme-name");
+      const themeSwatch = document.getElementById("theme-swatch");
+      let currentTheme = "dark";
+
+      const osTheme = () => {
+        try {
+          return matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        } catch { return "dark"; }
+      };
+
+      function applyTheme(value, { animate = true } = {}) {
+        const root = document.documentElement;
+        const swap = () => { root.dataset.theme = value; };
+        if (
+          animate &&
+          typeof document.startViewTransition === "function" &&
+          !matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+          root.classList.add("theme-crossfade");
+          const done = () => root.classList.remove("theme-crossfade");
+          try {
+            document.startViewTransition(swap).finished.then(done, done);
+          } catch { swap(); done(); }
+        } else {
+          swap();
+        }
+      }
+
+      function paintThemeButton(value) {
+        const meta = THEMES.find((t) => t.value === value) || THEMES[0];
+        themeName.textContent = value === "auto"
+          ? `Auto · ${osTheme() === "light" ? "Vellum" : "Ink"} now`
+          : meta.name;
+        themeSwatch.style.setProperty("--sw-bg", meta.bg);
+        themeSwatch.style.setProperty("--sw-ac", meta.ac);
+        themePanel.querySelectorAll("[role=option]").forEach((li) => {
+          const on = li.dataset.value === value;
+          li.setAttribute("aria-selected", on ? "true" : "false");
+          li.classList.toggle("selected", on);
+        });
+      }
+
+      function setTheme(value, { persist = true, animate = true } = {}) {
+        if (!THEMES.some((t) => t.value === value)) return;
+        currentTheme = value;
+        applyTheme(value === "auto" ? osTheme() : value, { animate });
+        if (persist) {
+          try { localStorage.setItem(LIB_THEME_KEY, value); } catch {}
+        }
+        paintThemeButton(value);
+      }
+
+      // Build the spacious option list once.
+      THEMES.forEach((t) => {
+        const li = document.createElement("li");
+        li.setAttribute("role", "option");
+        li.dataset.value = t.value;
+        li.id = `theme-opt-${t.value}`;
+        li.tabIndex = -1;
+        li.innerHTML = `
+          <span class="opt-swatch" aria-hidden="true"></span>
+          <span class="opt-text"><span class="opt-name"></span><span class="opt-mood"></span></span>
+          <span class="opt-check" aria-hidden="true">✓</span>`;
+        li.querySelector(".opt-name").textContent = t.name;
+        li.querySelector(".opt-mood").textContent = t.mood;
+        li.querySelector(".opt-swatch").style.setProperty("--sw-bg", t.bg);
+        li.querySelector(".opt-swatch").style.setProperty("--sw-ac", t.ac);
+        themePanel.appendChild(li);
+      });
+
+      function openMenu() {
+        themePanel.hidden = false;
+        themeButton.setAttribute("aria-expanded", "true");
+        const sel = themePanel.querySelector(".selected") || themePanel.firstChild;
+        if (sel) sel.focus({ preventScroll: true });
+      }
+      function closeMenu(focusButton = false) {
+        if (themePanel.hidden) return;
+        themePanel.hidden = true;
+        themeButton.setAttribute("aria-expanded", "false");
+        if (focusButton) themeButton.focus();
+      }
+      themeButton.addEventListener("click", () => {
+        if (themePanel.hidden) openMenu();
+        else closeMenu();
+      });
+      themePanel.addEventListener("click", (e) => {
+        const li = e.target.closest("[role=option]");
+        if (!li) return;
+        setTheme(li.dataset.value);
+        closeMenu(true);
+      });
+      themePanel.addEventListener("keydown", (e) => {
+        const opts = [...themePanel.querySelectorAll("[role=option]")];
+        const i = opts.indexOf(document.activeElement);
+        if (e.key === "Escape") { e.preventDefault(); closeMenu(true); }
+        else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+          e.preventDefault();
+          const d = e.key === "ArrowDown" ? 1 : -1;
+          const next = opts[(i < 0 ? (d > 0 ? 0 : opts.length - 1) : i + d + opts.length) % opts.length];
+          next.focus();
+        } else if (e.key === "Home") { e.preventDefault(); opts[0].focus(); }
+        else if (e.key === "End") { e.preventDefault(); opts[opts.length - 1].focus(); }
+        else if (e.key === "Enter" || e.key === " ") {
+          if (i >= 0) { e.preventDefault(); setTheme(opts[i].dataset.value); closeMenu(true); }
+        } else if (e.key === "Tab") { closeMenu(); }
+      });
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".theme-menu")) closeMenu();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !themePanel.hidden) closeMenu(true);
+      });
+
+      // First visit paints dark (pre-paint); nothing persisted until the reader
+      // picks explicitly. Unknown legacy values fall back to dark.
+      let homeSaved = null;
+      try { homeSaved = localStorage.getItem(LIB_THEME_KEY); } catch {}
+      if (homeSaved && THEMES.some((t) => t.value === homeSaved)) {
+        setTheme(homeSaved, { persist: false, animate: false });
+      } else {
+        setTheme("dark", { persist: false, animate: false });
+      }
+      // Auto tracks the OS while it stays selected (dark-leaning: only a light
+      // OS preference shows Vellum). Explicit themes never re-resolve.
+      try {
+        matchMedia("(prefers-color-scheme: light)").addEventListener("change", () => {
+          let cur = null;
+          try { cur = localStorage.getItem(LIB_THEME_KEY); } catch {}
+          if (cur === "auto") setTheme("auto", { persist: false });
+          else paintThemeButton(cur);
+        });
+      } catch {}
+
+      /* ── Helpers ── */
       function fmt(n) {
         if (n >= 1e6) return (n / 1e6).toFixed(2).replace(/\.?0+$/, "") + "M";
         if (n >= 1e3) return Math.round(n / 1e3) + "k";
         return String(n);
+      }
+
+      function readHours(words) {
+        const h = Math.round((words || 0) / 15000);
+        return h >= 1 ? `~${h}h read` : "Short read";
+      }
+
+      function yearNum(b) {
+        const m = String(b.year || "").match(/\d{3,4}/);
+        return m ? parseInt(m[0], 10) : 0;
+      }
+
+      function bookHref(slug) {
+        return `books/${encodeURIComponent(slug)}/`;
+      }
+
+      function coverSrc(slug) {
+        return `assets/library/covers/${encodeURIComponent(slug)}.svg`;
       }
 
       function escapeHtml(s) {
@@ -50,37 +338,339 @@
           .replace(/"/g, "&quot;");
       }
 
+      function readProgress(slug) {
+        try {
+          const raw = localStorage.getItem("reader-" + slug);
+          if (!raw) return null;
+          const s = JSON.parse(raw);
+          return s && s.chapterId ? s : null;
+        } catch {
+          return null;
+        }
+      }
+
+      async function flatChapters(slug) {
+        if (tocCache.has(slug)) return tocCache.get(slug);
+        const res = await fetch(new URL(`books/${encodeURIComponent(slug)}/data/toc.json`, BASE));
+        if (!res.ok) throw new Error("toc");
+        const toc = await res.json();
+        const flat = [];
+        for (const part of toc.parts || []) {
+          for (const ch of part.chapters || []) flat.push(ch);
+        }
+        tocCache.set(slug, flat);
+        return flat;
+      }
+
+      /* ── Shelf chips + persisted toolbar state ── */
+      let activeShelf = "all";
+      try {
+        const s = localStorage.getItem(SHELF_KEY);
+        if (s && (s === "all" || SHELVES.some((x) => x.id === s))) activeShelf = s;
+        const so = localStorage.getItem(SORT_KEY);
+        if (so && [...sortEl.options].some((o) => o.value === so)) sortEl.value = so;
+      } catch {}
+
+      function renderChips(counts) {
+        chipsEl.innerHTML = "";
+        const defs = [{ id: "all", name: "All volumes" }, ...SHELVES];
+        defs.forEach((d) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "chip";
+          btn.dataset.shelf = d.id;
+          btn.setAttribute("aria-pressed", d.id === activeShelf ? "true" : "false");
+          btn.textContent = d.id === "all"
+            ? `All volumes · ${allBooks.length}`
+            : `${d.name} · ${counts[d.id] || 0}`;
+          chipsEl.appendChild(btn);
+        });
+      }
+      chipsEl.addEventListener("click", (e) => {
+        const btn = e.target.closest(".chip");
+        if (!btn) return;
+        activeShelf = btn.dataset.shelf;
+        try { localStorage.setItem(SHELF_KEY, activeShelf); } catch {}
+        chipsEl.querySelectorAll(".chip").forEach((c) =>
+          c.setAttribute("aria-pressed", c === btn ? "true" : "false"));
+        render();
+      });
+
+      /* ── Render ── */
+      function filtered() {
+        const q = searchEl.value.trim().toLowerCase();
+        let list = allBooks.filter((b) =>
+          !q ||
+          b.title.toLowerCase().includes(q) ||
+          b.author.toLowerCase().includes(q) ||
+          (b.tagline || "").toLowerCase().includes(q) ||
+          (b.blurb || "").toLowerCase().includes(q) ||
+          shelfNameOf(b.slug).toLowerCase().includes(q)
+        );
+        if (activeShelf !== "all") list = list.filter((b) => shelfOf.get(b.slug) === activeShelf);
+        const sort = sortEl.value;
+        const by = {
+          title: (a, b) => a.title.localeCompare(b.title),
+          author: (a, b) => a.author.localeCompare(b.author) || a.title.localeCompare(b.title),
+          newest: (a, b) => yearNum(b) - yearNum(a),
+          oldest: (a, b) => yearNum(a) - yearNum(b),
+          longest: (a, b) => (b.words || 0) - (a.words || 0),
+          shortest: (a, b) => (a.words || 0) - (b.words || 0),
+        }[sort];
+        if (by) list = [...list].sort(by);
+        return list;
+      }
+
+      function metaLine(b) {
+        return `${b.chapters || 0} chapters · ${fmt(b.words || 0)} words · ` +
+          `${b.parts || 0} part${b.parts === 1 ? "" : "s"} · ${readHours(b.words)}`;
+      }
+
+      function progressBadgeHtml(p) {
+        if (!p) return `<span class="progress-badge" hidden></span>`;
+        const label = p.pct >= 100 ? "Finished" : `${p.pct}%`;
+        return `<span class="progress-badge">${escapeHtml(label)}</span>`;
+      }
+
+      function cardHtml(b, i) {
+        const p = progressBySlug.get(b.slug);
+        const cont = p ? `<p class="continue-line">Continue · ${escapeHtml(p.ch.title)}</p>` : "";
+        const track = p
+          ? `<div class="progress-track" aria-hidden="true"><div class="progress-fill" style="width:${p.pct}%"></div></div>`
+          : "";
+        return `
+          <span class="plate" aria-hidden="true">
+            <img src="${coverSrc(b.slug)}" alt="" loading="lazy" width="800" height="1000" />
+            <span class="plate-sheen"></span>
+          </span>
+          <span class="card-body">
+            <span class="card-top">
+              <span class="book-year">${escapeHtml(b.year || "")}</span>
+              ${progressBadgeHtml(p)}
+            </span>
+            <h2 class="book-title">${escapeHtml(b.title)}</h2>
+            <span class="book-author">${escapeHtml(b.author)}</span>
+            ${b.tagline ? `<span class="book-tagline">${escapeHtml(b.tagline)}</span>` : ""}
+            ${b.blurb ? `<span class="book-blurb">${escapeHtml(b.blurb)}</span>` : ""}
+            ${cont}${track}
+            <span class="book-meta">${escapeHtml(metaLine(b))}</span>
+            <span class="book-open">${p ? "Continue reading" : "Open the book"} →</span>
+          </span>
+        `;
+      }
+
+      function makeCard(b, i) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.className = "book-card" + (progressBySlug.has(b.slug) ? " has-progress" : "");
+        a.href = bookHref(b.slug);
+        a.dataset.slug = b.slug;
+        a.style.setProperty("--card-accent", b.accent || "#e8d5a3");
+        a.style.setProperty("--i", String(Math.min(i, 12)));
+        a.innerHTML = cardHtml(b, i);
+        // A missing plate must never break the card: fall back to a monogram.
+        const img = a.querySelector(".plate img");
+        img.addEventListener("error", () => {
+          const plate = a.querySelector(".plate");
+          plate.classList.add("plate-fallback");
+          plate.innerHTML = `<span class="plate-mono" aria-hidden="true">${escapeHtml(b.title.charAt(0))}</span>`;
+        }, { once: true });
+        li.appendChild(a);
+        return li;
+      }
+
+      function featuredPick() {
+        let best = null;
+        for (const b of allBooks) {
+          const p = progressBySlug.get(b.slug);
+          if (p && (!best || p.pct > progressBySlug.get(best.slug).pct)) best = b;
+        }
+        return best || allBooks[0] || null;
+      }
+
+      function renderFeatured() {
+        const b = featuredPick();
+        if (!b) { featuredEl.hidden = true; featuredEl.innerHTML = ""; return; }
+        const p = progressBySlug.get(b.slug);
+        featuredEl.hidden = false;
+        featuredEl.innerHTML = `
+          <a class="featured-plate" href="${bookHref(b.slug)}" tabindex="-1" aria-hidden="true">
+            <img src="${coverSrc(b.slug)}" alt="" width="800" height="1000" fetchpriority="high" />
+          </a>
+          <div class="featured-text">
+            <p class="featured-kicker">${p ? "Picked up where you left off" : "Featured volume"}</p>
+            <h2 class="featured-title"><a href="${bookHref(b.slug)}">${escapeHtml(b.title)}</a></h2>
+            <p class="featured-author">${escapeHtml(b.author)} · ${escapeHtml(b.year || "")}</p>
+            ${b.tagline ? `<p class="featured-tagline">${escapeHtml(b.tagline)}</p>` : ""}
+            ${b.blurb ? `<p class="featured-blurb">${escapeHtml(b.blurb)}</p>` : ""}
+            <p class="featured-meta">${escapeHtml(metaLine(b))}</p>
+            ${p ? `<p class="featured-progress">Chapter ${p.idx + 1} of ${p.total} · ${escapeHtml(p.ch.title)} · ${p.pct}%</p>` : ""}
+            <a class="btn-open" href="${bookHref(b.slug)}">${p ? "Continue reading" : "Open the book"} →</a>
+          </div>
+        `;
+        const img = featuredEl.querySelector("img");
+        img.addEventListener("error", () => {
+          const plate = featuredEl.querySelector(".featured-plate");
+          plate.classList.add("plate-fallback");
+          plate.innerHTML = `<span class="plate-mono" aria-hidden="true">${escapeHtml(b.title.charAt(0))}</span>`;
+        }, { once: true });
+      }
+
+      function render() {
+        const list = filtered();
+        const searching = searchEl.value.trim() !== "" || activeShelf !== "all" || sortEl.value !== "featured";
+        shelvesEl.innerHTML = "";
+        let n = 0;
+        if (!searching) {
+          // Shelf sections in catalog order.
+          SHELVES.forEach((s) => {
+            const members = list.filter((b) => shelfOf.get(b.slug) === s.id);
+            if (!members.length) return;
+            const sec = document.createElement("section");
+            sec.className = "shelf";
+            sec.setAttribute("aria-label", s.name);
+            sec.innerHTML = `
+              <header class="shelf-head">
+                <h2 class="shelf-name">${escapeHtml(s.name)}</h2>
+                <p class="shelf-desc">${escapeHtml(s.desc)}</p>
+              </header>
+              <ul class="book-grid"></ul>`;
+            const ul = sec.querySelector("ul");
+            members.forEach((b) => ul.appendChild(makeCard(b, n++)));
+            shelvesEl.appendChild(sec);
+          });
+          // Anything unmapped still shows up, rather than vanishing.
+          const rest = list.filter((b) => !shelfOf.has(b.slug));
+          if (rest.length) {
+            const sec = document.createElement("section");
+            sec.className = "shelf";
+            sec.setAttribute("aria-label", "More volumes");
+            sec.innerHTML = `<ul class="book-grid"></ul>`;
+            const ul = sec.querySelector("ul");
+            rest.forEach((b) => ul.appendChild(makeCard(b, n++)));
+            shelvesEl.appendChild(sec);
+          }
+        } else {
+          const sec = document.createElement("section");
+          sec.className = "shelf";
+          sec.setAttribute("aria-label", "Volumes");
+          sec.innerHTML = `<ul class="book-grid"></ul>`;
+          const ul = sec.querySelector("ul");
+          list.forEach((b) => ul.appendChild(makeCard(b, n++)));
+          shelvesEl.appendChild(sec);
+        }
+        renderFeatured();
+        emptyEl.hidden = list.length > 0;
+        resultEl.textContent =
+          list.length === allBooks.length ? "" : `${list.length} of ${allBooks.length} volumes`;
+      }
+
+      /* ── Progress badges + continue shelf ── */
+      async function resolveProgress() {
+        progressBySlug.clear();
+        await Promise.all(
+          allBooks.map(async (b) => {
+            const state = readProgress(b.slug);
+            if (!state) return;
+            let flat;
+            try {
+              flat = await flatChapters(b.slug);
+            } catch {
+              return; // toc unavailable (e.g. file://) — skip badges silently
+            }
+            const idx = flat.findIndex((c) => c.id === state.chapterId);
+            if (idx < 0) return;
+            const total = flat.length;
+            const pct = total > 1 ? Math.round((idx / (total - 1)) * 100) : 100;
+            progressBySlug.set(b.slug, { idx, total, pct, ch: flat[idx] });
+          })
+        );
+        // Re-render cards so badges/tracks/featured pick up progress.
+        render();
+        const bySlug = new Map(allBooks.map((b) => [b.slug, b]));
+        const items = [...progressBySlug.entries()]
+          .map(([slug, p]) => ({ slug, ...p }))
+          .sort((a, b) => b.pct - a.pct);
+        if (!items.length) {
+          shelfEl.hidden = true;
+          shelfList.innerHTML = "";
+          return;
+        }
+        shelfEl.hidden = false;
+        shelfList.innerHTML = "";
+        items.forEach((it) => {
+          const b = bySlug.get(it.slug);
+          if (!b) return;
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.className = "shelf-item";
+          a.href = bookHref(it.slug);
+          a.style.setProperty("--card-accent", b.accent || "#e8d5a3");
+          a.innerHTML = `
+            <img class="shelf-thumb" src="${coverSrc(it.slug)}" alt="" loading="lazy" width="80" height="100" />
+            <span class="shelf-main">
+              <span class="shelf-title-text">${escapeHtml(b.title)}</span>
+              <span class="shelf-sub">Ch. ${it.idx + 1}/${it.total} — ${escapeHtml(it.ch.title)}</span>
+            </span>
+            <span class="shelf-pct">${it.pct}%</span>
+          `;
+          const img = a.querySelector("img");
+          img.addEventListener("error", () => img.remove(), { once: true });
+          li.appendChild(a);
+          shelfList.appendChild(li);
+        });
+      }
+
+      /* ── Events ── */
+      let searchTimer = null;
+      searchEl.addEventListener("input", () => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(render, 120);
+      });
+      sortEl.addEventListener("change", () => {
+        try { localStorage.setItem(SORT_KEY, sortEl.value); } catch {}
+        render();
+      });
+      document.getElementById("btn-reset").addEventListener("click", () => {
+        searchEl.value = "";
+        activeShelf = "all";
+        try { localStorage.setItem(SHELF_KEY, "all"); } catch {}
+        chipsEl.querySelectorAll(".chip").forEach((c) =>
+          c.setAttribute("aria-pressed", c.dataset.shelf === "all" ? "true" : "false"));
+        render();
+        searchEl.focus();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "/" && !e.target.matches("input, textarea, select")) {
+          e.preventDefault();
+          searchEl.focus();
+        }
+      });
+      // Another tab (the reader) may have advanced progress — refresh badges on return.
+      window.addEventListener("pageshow", resolveProgress);
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) resolveProgress();
+      });
+
+      /* ── Load ── */
       fetch(new URL("catalog.json", BASE))
         .then((r) => {
           if (!r.ok) throw new Error("catalog");
           return r.json();
         })
         .then((data) => {
-          const books = data.books || [];
-          countEl.textContent = `${books.length} volumes`;
-          grid.innerHTML = "";
-          books.forEach((b, i) => {
-            const li = document.createElement("li");
-            const a = document.createElement("a");
-            a.className = "book-card";
-            a.href = `books/${encodeURIComponent(b.slug)}/`;
-            a.style.setProperty("--card-accent", b.accent || "#e8d5a3");
-            a.style.animationDelay = `${0.05 + i * 0.04}s`;
-            a.innerHTML = `
-              <p class="book-year">${escapeHtml(b.year || "")}</p>
-              <h2 class="book-title">${escapeHtml(b.title)}</h2>
-              <p class="book-author">${escapeHtml(b.author)}</p>
-              <p class="book-blurb">${escapeHtml(b.blurb || b.tagline || "")}</p>
-              <div class="book-meta">
-                <span>${b.chapters || 0} chapters</span>
-                <span>${fmt(b.words || 0)} words</span>
-                <span>${b.parts || 0} parts</span>
-              </div>
-              <span class="book-open">Open →</span>
-            `;
-            li.appendChild(a);
-            grid.appendChild(li);
+          allBooks = data.books || [];
+          const words = allBooks.reduce((n, b) => n + (b.words || 0), 0);
+          const chapters = allBooks.reduce((n, b) => n + (b.chapters || 0), 0);
+          countEl.textContent = `${allBooks.length} volumes · ${fmt(words)} words · ${chapters} chapters`;
+          const counts = {};
+          allBooks.forEach((b) => {
+            const id = shelfOf.get(b.slug);
+            if (id) counts[id] = (counts[id] || 0) + 1;
           });
+          renderChips(counts);
+          render();
+          resolveProgress();
         })
         .catch((err) => {
           console.error(err);

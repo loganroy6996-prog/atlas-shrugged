@@ -1,0 +1,137 @@
+<!-- Forty Ways: Cohort C2 (Part IV, Ways 27 to 30) plates.
+     One symbol per chapter, viewBox 0 0 1200 360. Primitives referenced
+     cross-file via art/facets.svg id refs (reader.js/facets.js inline ONLY the
+     matching symbol, so local url()/use would die on clone: F1). Fills ALWAYS
+     fw theme vars so all 8 themes recolor; NO hardcoded colors. Way numeral:
+     text.fw-num painted BEFORE dark occluders (paint order is z-order);
+     ONLY lampblack masses cross Bone numeral strokes (C1); crossings confined
+     to the middle-60% band. Grain opacity max 0.16; p4c10 carries NO grain. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none" aria-hidden="true">
+  <title>Cohort C2 facet plates — Ways 27–30</title>
+
+  <!-- p4c7 Way 27: novel pages — seven leaves fan up off the ledger desk. -->
+  <symbol id="p4c7" viewBox="0 0 1200 360">
+    <title>Way 27 plate — fanned novel leaves over the ledger desk</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="60" y="292" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="300" y="292" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="540" y="292" opacity="0.10"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="780" y="292" opacity="0.10"/>
+    </g>
+    <text class="fw-num" x="620" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">27</text>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(180,150) rotate(-78) scale(0.85,1.5)" opacity="0.22"/>
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(212,124) rotate(-60) scale(0.85,1.5)" opacity="0.27"/>
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(248,104) rotate(-42) scale(0.85,1.5)" opacity="0.32"/>
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(288,90) rotate(-24) scale(0.85,1.5)" opacity="0.38"/>
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(332,82) rotate(-8) scale(0.85,1.5)" opacity="0.44"/>
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(376,82) rotate(8) scale(0.85,1.5)" opacity="0.50"/>
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(418,90) rotate(24) scale(0.85,1.5)" opacity="0.56"/>
+    </g>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(470,104) rotate(192) scale(0.8)" fill="var(--fw-ochre)" opacity="0.9"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(138,218) rotate(-64) scale(0.7)" fill="var(--fw-vermilion)" opacity="0.9"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(60,60) scale(0.7,0.5)" fill="var(--fw-slate)" opacity="0.35"/>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(518,195) rotate(-24) scale(0.55,0.6)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(608,198) rotate(8) scale(0.6,0.75)"/>
+    </g>
+    <g filter="url(#fw-c2d7-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c2d7-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p4c8 Way 28: destiny vector — ledger stack launching blades page-right. -->
+  <symbol id="p4c8" viewBox="0 0 1200 360">
+    <title>Way 28 plate — shards accelerate page-right on the destiny vector</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="20" y="162" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="140" y="162" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="260" y="162" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="20" y="206" opacity="0.08"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="140" y="206" opacity="0.08"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="260" y="206" opacity="0.08"/>
+    </g>
+    <text class="fw-num" x="560" y="312" text-anchor="middle" font-size="200" fill="var(--fw-bone)">28</text>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(640,196) scale(0.7)" fill="var(--fw-ochre)"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(770,178) scale(0.9)" fill="var(--fw-ochre)"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(905,156) scale(1.1)" fill="var(--fw-vermilion)"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(1040,132) scale(1.05)" fill="var(--fw-vermilion)"/>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(480,178) scale(0.36,1.05)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(606,176) scale(1.0,0.9)"/>
+    </g>
+    <g filter="url(#fw-c2d8-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c2d8-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p4c9 Way 29: fracture lines — vermilion cracks split the ledger wall. -->
+  <symbol id="p4c9" viewBox="0 0 1200 360">
+    <title>Way 29 plate — vermilion fracture lines split the ledger wall</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g fill="var(--fw-bone)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="80" y="50" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="320" y="50" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="560" y="50" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="800" y="50" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="80" y="110" opacity="0.09"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="320" y="110" opacity="0.09"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="560" y="110" opacity="0.09"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="800" y="110" opacity="0.09"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="80" y="170" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="320" y="170" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="560" y="170" opacity="0.12"/>
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" x="800" y="170" opacity="0.12"/>
+    </g>
+    <text class="fw-num" x="600" y="310" text-anchor="middle" font-size="220" fill="var(--fw-bone)">29</text>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(492,50) rotate(8) scale(0.55,2.1)" fill="var(--fw-vermilion)"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(700,62) rotate(-10) scale(0.45,1.9)" fill="var(--fw-vermilion)"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(600,42) rotate(4) scale(0.35,1.5)" fill="var(--fw-vermilion)"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(920,262) rotate(12) scale(0.7)" fill="var(--fw-bone)" opacity="0.42"/>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(496,155) rotate(6) scale(0.5,1.0)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(621,160) rotate(-5) scale(0.45,1.0)"/>
+    </g>
+    <g filter="url(#fw-c2d9-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-c2d9-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p4c10 Way 30: faded map wash — near-empty slate, rhyming Way 40. NO grain. -->
+  <symbol id="p4c10" viewBox="0 0 1200 360">
+    <title>Way 30 plate — faded map wash, nearly empty</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <rect x="180" y="300" width="840" height="1" fill="var(--fw-slate)" opacity="0.35"/>
+    <rect x="280" y="312" width="640" height="1" fill="var(--fw-slate)" opacity="0.22"/>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(240,180) scale(2.2,0.9)" fill="var(--fw-slate)" opacity="0.10"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(560,200) scale(1.2,0.06)" fill="var(--fw-bone)" opacity="0.32"/>
+    <text class="fw-num" x="600" y="272" text-anchor="middle" font-size="150" fill="var(--fw-bone)" opacity="0.42">30</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(540,158) scale(0.34,1.0)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(640,156) scale(0.95,0.85)"/>
+    </g>
+    <path d="M600 96 L611 122 L600 148 L589 122 Z" fill="var(--fw-slate)" opacity="0.8"/>
+    <path d="M600 108 L605 122 L600 136 L595 122 Z" fill="var(--fw-bone)" opacity="0.6"/>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+</svg>

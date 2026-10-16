@@ -1,0 +1,285 @@
+<!-- Forty Ways: Cohort D (Intro + Part V Ways 31,32,34,35,37,38,39) plates.
+     Inline-path pattern per cohort-d design spec S2 (matches prototype-plates.svg
+     and the p5c3/p5c6/p5c10 neighbors; reader.js clones ONLY the matching symbol's
+     children into the chapter-art slot, so inline geometry has zero cross-file deps).
+     Fills ALWAYS use fw theme vars so all 8 themes recolor; NO hardcoded colors.
+     Grain groups opacity <= 0.16; filters have unique per-symbol IDs. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <title>Cohort D facet plates — Introduction and Ways 31–39</title>
+
+  <!-- p1c1 Intro §: single uncut lens on a gallery bed; hanging line introduced. -->
+  <symbol id="p1c1" viewBox="0 0 1200 360">
+    <title>Introduction plate — one uncut lens before the first cut</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <text class="fw-num" x="600" y="305" text-anchor="middle" font-size="280">§</text>
+    <!-- lens-rim shadows: annular bands concentric with the lens (600,180), middle only -->
+    <path d="M527.7 207.9 A85 55 0 0 1 527.7 152.1 L553.4 160.9 A55 36 0 0 0 553.4 199.1 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M678.1 151.3 A90 59 0 0 1 678.1 208.7 L652 199.5 A60 39 0 0 0 652 160.5 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <ellipse cx="600" cy="180" rx="262" ry="170" fill="none" stroke="var(--fw-slate)" stroke-width="10"/>
+    <ellipse cx="600" cy="180" rx="240" ry="150" fill="none" stroke="var(--fw-bone)" stroke-width="2" opacity="0.5"/>
+    <circle cx="762" cy="78" r="7" fill="var(--fw-ochre)"/>
+    <rect x="80" y="300" width="400" height="1.5" fill="var(--fw-bone)" opacity="0.5"/>
+    <rect x="720" y="300" width="400" height="1.5" fill="var(--fw-bone)" opacity="0.5"/>
+    <g filter="url(#fw-d1-grain)" opacity="0.10">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d1-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p5c1 Way 31: transatlantic cable pair between unequal shores; 7 ticks, charter diamond. -->
+  <symbol id="p5c1" viewBox="0 0 1200 360">
+    <title>Way 31 plate — seventeen hundred messages across the water</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <path d="M0 200 L90 200 L70 360 L0 360 Z" fill="var(--fw-bone)" opacity="0.8"/>
+    <path d="M1110 140 L1200 140 L1200 360 L1090 360 Z" fill="var(--fw-bone)" opacity="0.8"/>
+    <path d="M60 180 Q600 -40 1140 178" fill="none" stroke="var(--fw-ochre)" stroke-width="6"/>
+    <path d="M60 300 Q600 0 1140 208" fill="none" stroke="var(--fw-ochre)" stroke-width="6" opacity="0.75"/>
+    <g fill="var(--fw-bone)" opacity="0.85">
+      <rect x="200" y="118" width="26" height="5" transform="rotate(-14 213 120.5)"/>
+      <rect x="330" y="82" width="26" height="5" transform="rotate(-8 343 84.5)"/>
+      <rect x="470" y="62" width="26" height="5" transform="rotate(-3 483 64.5)"/>
+      <rect x="610" y="62" width="26" height="5" transform="rotate(3 623 64.5)"/>
+      <rect x="750" y="80" width="26" height="5" transform="rotate(8 763 82.5)"/>
+      <rect x="880" y="110" width="26" height="5" transform="rotate(13 893 112.5)"/>
+      <rect x="990" y="140" width="26" height="5" transform="rotate(16 1003 142.5)"/>
+    </g>
+    <path d="M1096 193 L1112 177 L1128 193 L1112 209 Z" fill="var(--fw-ochre)"/>
+    <text class="fw-num" x="600" y="305" text-anchor="middle" font-size="220">31</text>
+    <!-- cable shadows: bands parallel to the lower catenary, crossing the 31 middle band -->
+    <path d="M505 231 Q600 203 705 216 L705 196 Q600 183 505 211 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M520 276 Q605 250 690 263 L690 245 Q605 232 520 258 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <g filter="url(#fw-d2-grain)" opacity="0.12">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d2-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p5c2 Way 32: backward gaze — present at right, trail decaying left into the column. -->
+  <symbol id="p5c2" viewBox="0 0 1200 360">
+    <title>Way 32 plate — he looked backward, not forward</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <path d="M120 44 L200 44 L185 330 L105 330 Z" fill="var(--fw-ochre)"/>
+    <rect x="100" y="30" width="120" height="14" fill="var(--fw-ochre)"/>
+    <rect x="96" y="322" width="100" height="12" fill="var(--fw-ochre)" opacity="0.7"/>
+    <g fill="var(--fw-bone)" opacity="0.55">
+      <rect x="132" y="90" width="52" height="4"/>
+      <rect x="130" y="120" width="52" height="4"/>
+      <rect x="128" y="150" width="52" height="4"/>
+    </g>
+    <path d="M690 130 L772 118 L758 282 L676 282 Z" fill="var(--fw-slate)" opacity="0.8"/>
+    <path d="M572 142 L648 126 L636 277 L560 277 Z" fill="var(--fw-slate)" opacity="0.68"/>
+    <path d="M462 152 L530 132 L519 272 L451 272 Z" fill="var(--fw-slate)" opacity="0.55"/>
+    <path d="M362 162 L422 138 L412 264 L353 264 Z" fill="var(--fw-slate)" opacity="0.42"/>
+    <path d="M272 172 L324 144 L316 257 L265 257 Z" fill="var(--fw-slate)" opacity="0.3"/>
+    <text class="fw-num" x="880" y="305" text-anchor="middle" font-size="220">32</text>
+    <!-- nearest trail shards: lampblack, same left-leaning shear as the slate trail -->
+    <path d="M800 124 L882 112 L868 280 L786 280 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M888 122 L966 111 L953 278 L875 278 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <g filter="url(#fw-d3-grain)" opacity="0.12">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d3-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p5c4 Way 34: lifted layer — calm record left, peeled corner + suppressed rows right. -->
+  <symbol id="p5c4" viewBox="0 0 1200 360">
+    <title>Way 34 plate — one layer peeled back</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <rect x="60" y="60" width="500" height="240" fill="var(--fw-bone)" opacity="0.14"/>
+    <text class="fw-num" x="310" y="305" text-anchor="middle" font-size="230">34</text>
+    <!-- fold shadow raking across the left sheet plus the curled lip edge, both diagonal -->
+    <path d="M100 300 L460 140 L540 140 L180 300 Z" fill="var(--fw-lampblack)" opacity="0.9"/>
+    <path d="M100 345 L460 185 L490 185 L130 345 Z" fill="var(--fw-lampblack)" opacity="0.9"/>
+    <rect x="630" y="60" width="510" height="240" fill="var(--fw-bone)" opacity="0.14"/>
+    <rect x="630" y="60" width="510" height="240" fill="none" stroke="var(--fw-bone)" stroke-width="2" opacity="0.3"/>
+    <g fill="var(--fw-faded)">
+      <rect x="660" y="95" width="270" height="5" opacity="0.35"/>
+      <rect x="660" y="120" width="310" height="5" opacity="0.3"/>
+      <rect x="660" y="145" width="240" height="5" opacity="0.35"/>
+      <rect x="660" y="195" width="300" height="5" opacity="0.3"/>
+      <rect x="660" y="220" width="255" height="5" opacity="0.35"/>
+    </g>
+    <path d="M1140 60 L1140 300 L900 300 L1140 150 Z" fill="var(--fw-bone)" opacity="0.92"/>
+    <path d="M900 300 L1140 150 L1140 185 L940 300 Z" fill="var(--fw-lampblack)" opacity="0.75"/>
+    <path d="M800 300 L940 300 L1120 166 L1080 140 L860 270 Z" fill="var(--fw-lampblack)" opacity="0.35"/>
+    <g filter="url(#fw-d4-grain)" opacity="0.14">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d4-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+
+  <!-- p5c5 Way 35: masked tiles — 9x7 ledger grid (center void), exactly 5 vermilion cells. -->
+  <symbol id="p5c5" viewBox="0 0 1200 360">
+    <title>Way 35 plate — sixty-three statements, five of them false</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <g>
+      <rect x="33" y="12" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="159" y="12" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="285" y="12" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="411" y="12" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="537" y="12" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="663" y="12" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="789" y="12" width="118" height="40" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <rect x="915" y="12" width="118" height="40" fill="var(--fw-ochre)" opacity="0.7"/>
+      <rect x="1041" y="12" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="33" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="159" y="60" width="118" height="40" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <rect x="285" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="411" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="537" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="663" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="789" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="915" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="1041" y="60" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="33" y="108" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="159" y="108" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="285" y="108" width="118" height="40" fill="var(--fw-ochre)" opacity="0.7"/>
+      <rect x="789" y="108" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="915" y="108" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="1041" y="108" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="33" y="156" width="118" height="40" fill="var(--fw-slate)" opacity="0.7"/>
+      <rect x="159" y="156" width="118" height="40" fill="var(--fw-slate)" opacity="0.7"/>
+      <rect x="285" y="156" width="118" height="40" fill="var(--fw-slate)" opacity="0.7"/>
+      <rect x="789" y="156" width="118" height="40" fill="var(--fw-slate)" opacity="0.7"/>
+      <rect x="915" y="156" width="118" height="40" fill="var(--fw-slate)" opacity="0.7"/>
+      <rect x="1041" y="156" width="118" height="40" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <rect x="33" y="204" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="159" y="204" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="285" y="204" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="789" y="204" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="915" y="204" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="1041" y="204" width="118" height="40" fill="var(--fw-ochre)" opacity="0.7"/>
+      <rect x="33" y="252" width="118" height="40" fill="var(--fw-ochre)" opacity="0.7"/>
+      <rect x="159" y="252" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="285" y="252" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="789" y="252" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="915" y="252" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="1041" y="252" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="33" y="300" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="159" y="300" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="285" y="300" width="118" height="40" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <rect x="411" y="300" width="118" height="40" fill="var(--fw-ochre)" opacity="0.7"/>
+      <rect x="537" y="300" width="118" height="40" fill="var(--fw-bone)" opacity="0.82"/>
+      <rect x="663" y="300" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+      <rect x="789" y="300" width="118" height="40" fill="var(--fw-bone)" opacity="0.75"/>
+      <rect x="915" y="300" width="118" height="40" fill="var(--fw-vermilion)" opacity="0.9"/>
+      <rect x="1041" y="300" width="118" height="40" fill="var(--fw-bone)" opacity="0.89"/>
+    </g>
+    <rect x="450" y="110" width="300" height="210" fill="var(--fw-lampblack)"/>
+    <text class="fw-num" x="600" y="305" text-anchor="middle" font-size="230">35</text>
+    <!-- de-clumped mask tiles: opposite tilts, upper-left over the 3, lower-right over the 5, chip offset -->
+    <g transform="rotate(-10 562 188)">
+      <rect x="515" y="165" width="95" height="46" fill="var(--fw-lampblack)"/>
+      <path d="M530 188 L548 170 L556 178 L538 196 Z M560 178 L578 170 L586 178 L568 196 Z" fill="var(--fw-bone)"/>
+    </g>
+    <rect x="628" y="181" width="60" height="46" fill="var(--fw-vermilion)" transform="rotate(6 658 204)"/>
+    <g transform="rotate(9 615 255)">
+      <rect x="560" y="232" width="110" height="46" fill="var(--fw-lampblack)"/>
+      <path d="M575 255 L593 237 L601 245 L583 263 Z M605 245 L623 237 L631 245 L613 263 Z" fill="var(--fw-bone)"/>
+    </g>
+    <g filter="url(#fw-d5-grain)" opacity="0.12">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d5-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+
+  <!-- p5c7 Way 37: hated portrait — seated slate bulk, voided face, ochre mantle slashes. -->
+  <symbol id="p5c7" viewBox="0 0 1200 360">
+    <title>Way 37 plate — the portrait he hated</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <path d="M330 120 L370 120 L340 340 L300 340 Z" fill="var(--fw-ochre)" opacity="0.85"/>
+    <path d="M770 100 L805 100 L775 340 L740 340 Z" fill="var(--fw-ochre)" opacity="0.85"/>
+    <path d="M420 140 L730 140 L790 340 L370 340 Z" fill="var(--fw-slate)" opacity="0.85"/>
+    <text class="fw-num" x="550" y="305" text-anchor="middle" font-size="230">37</text>
+    <!-- slashed canvas: knife-cut slashes upper-right to lower-left + diagonal frame member -->
+    <path d="M700 120 L740 132 L470 360 L420 360 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M610 108 L634 116 L400 340 L372 340 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M740 200 L796 218 L600 360 L540 360 Z" fill="var(--fw-lampblack)" opacity="0.9"/>
+    <g filter="url(#fw-d6-grain)" opacity="0.14">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d6-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p5c8 Way 38: ebbing tide — numeral rides high; bands sink right; floor tablet. -->
+  <symbol id="p5c8" viewBox="0 0 1200 360">
+    <title>Way 38 plate — the tide goes out; the tablet remains</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <text class="fw-num" x="430" y="225" text-anchor="middle" font-size="200">38</text>
+    <!-- undertide bands: same down-right slope as the tide bands, widened into the water -->
+    <path d="M330 138 L560 148 L560 172 L330 162 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M230 210 L560 224 L560 244 L220 236 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M0 228 L1200 258 L1200 278 L0 248 Z" fill="var(--fw-slate)" opacity="0.45"/>
+    <path d="M0 282 L1200 307 L1200 322 L0 297 Z" fill="var(--fw-slate)" opacity="0.32"/>
+    <path d="M0 328 L1200 348 L1200 356 L0 356 Z" fill="var(--fw-gallery)" opacity="0.8"/>
+    <rect x="980" y="286" width="120" height="52" fill="var(--fw-bone)" opacity="0.85"/>
+    <rect x="990" y="300" width="100" height="3" fill="var(--fw-lampblack)" opacity="0.7"/>
+    <rect x="990" y="310" width="80" height="3" fill="var(--fw-lampblack)" opacity="0.7"/>
+    <g filter="url(#fw-d7-grain)" opacity="0.10">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d7-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p5c9 Way 39: judgment seat — pull-back arcs open behind an empty chair. -->
+  <symbol id="p5c9" viewBox="0 0 1200 360">
+    <title>Way 39 plate — the verdict is yours; the chair is empty</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <path d="M610 220 A150 150 0 0 1 910 220" fill="none" stroke="var(--fw-bone)" stroke-width="2" opacity="0.35"/>
+    <path d="M550 220 A210 210 0 0 1 970 220" fill="none" stroke="var(--fw-bone)" stroke-width="2" opacity="0.22"/>
+    <path d="M490 220 A270 270 0 0 1 1030 220" fill="none" stroke="var(--fw-bone)" stroke-width="2" opacity="0.12"/>
+    <text class="fw-num" x="450" y="305" text-anchor="middle" font-size="220">39</text>
+    <!-- chair-leg shadows raking leftward from the chair base across the 39 middle band -->
+    <path d="M700 320 L505 235 L495 261 L690 344 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M830 310 L560 190 L545 214 L815 334 Z" fill="var(--fw-lampblack)" opacity="0.92"/>
+    <path d="M700 90 L840 90 L820 240 L690 240 Z" fill="var(--fw-bone)" opacity="0.92"/>
+    <path d="M680 240 L850 240 L830 300 L670 300 Z" fill="var(--fw-bone)" opacity="0.75"/>
+    <rect x="690" y="300" width="18" height="56" fill="var(--fw-bone)" opacity="0.6"/>
+    <rect x="800" y="300" width="18" height="56" fill="var(--fw-bone)" opacity="0.6"/>
+    <path d="M640 340 L950 330 L960 352 L650 358 Z" fill="var(--fw-lampblack)" opacity="0.7"/>
+    <g filter="url(#fw-d8-grain)" opacity="0.10">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-d8-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+</svg>

@@ -1,0 +1,78 @@
+{
+  "chapters": {
+    "p1c1": {
+      "src": "art/narthex-door.svg",
+      "class": "arch",
+      "motif": "narthex-door",
+      "caption": "Dose I \u00b7 The narthex door"
+    },
+    "p1c2": {
+      "src": "art/twin-arch.svg",
+      "class": "arch",
+      "motif": "twin-arch",
+      "caption": "Dose II \u00b7 Two arches"
+    },
+    "p1c3": {
+      "src": "art/three-lancets.svg",
+      "class": "arch",
+      "motif": "three-lancets",
+      "caption": "Dose III \u00b7 Three lancets"
+    },
+    "p1c9": {
+      "src": "art/crossing.svg",
+      "class": "plate",
+      "motif": "crossing",
+      "caption": "Dose IX \u00b7 The crossing"
+    },
+    "p1c10": {
+      "src": "art/rose-window.svg",
+      "class": "plate",
+      "motif": "rose-window",
+      "caption": "Dose X \u00b7 The rose"
+    },
+    "p1c11": {
+      "src": "art/sanctuary.svg",
+      "class": "plate",
+      "motif": "sanctuary",
+      "caption": "Dose XI \u00b7 The sanctuary"
+    },
+    "p1c4": {
+      "src": "art/cornerstone.svg",
+      "class": "arch",
+      "motif": "cornerstone",
+      "caption": "Dose IV \u00b7 The cornerstone"
+    },
+    "p1c5": {
+      "src": "art/westwork.svg",
+      "class": "plate",
+      "motif": "westwork",
+      "caption": "Dose V \u00b7 The westwork"
+    },
+    "p1c6": {
+      "src": "art/arcade.svg",
+      "class": "arch",
+      "motif": "arcade",
+      "caption": "Dose VI \u00b7 The arcade"
+    },
+    "p1c7": {
+      "src": "art/twin-chapels.svg",
+      "class": "arch",
+      "motif": "twin-chapels",
+      "caption": "Dose VII \u00b7 Two chapels"
+    },
+    "p1c8": {
+      "src": "art/spire.svg",
+      "class": "arch",
+      "motif": "spire",
+      "caption": "Dose VIII \u00b7 The spire"
+    }
+  },
+  "cover": {
+    "class": "plate",
+    "src": "art/cover.svg"
+  },
+  "default": {
+    "class": "arch"
+  },
+  "version": 1
+}

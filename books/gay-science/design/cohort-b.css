@@ -1,0 +1,436 @@
+/* Cohort B — Book One (part-3) · Emblem Cabinet within NOON · gs-b- vocabulary only.
+   Twin part scoping: body[data-part-id='part-3'] preferred, body[data-part='III'] backstop.
+   Book CSS is unlayered and wins over @layer shared. No reader-* classes, no !important. */
+
+/* ---------- P1 mark slot ---------- */
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark,
+body[data-part='III'] #chapter-art.gs-b-opener-mark {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 2.25rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark svg {
+  max-width: 100%;
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-quiet svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-quiet svg {
+  width: 72px;
+  height: auto;
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-standard svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-standard svg {
+  width: 104px;
+  height: auto;
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-duet svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-duet svg {
+  width: 196px;
+  height: auto;
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-closing svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-closing svg {
+  width: 128px;
+  height: auto;
+}
+
+/* ---------- P2 essay slot (contained plate) ---------- */
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener {
+  margin: 0 auto 2.75rem;
+  width: 100%;
+  max-width: 56rem;
+  background: color-mix(in srgb, var(--gs-sea-deep) 46%, transparent);
+  border-top: 1px solid var(--gs-horizon);
+  border-bottom: 1px solid var(--gs-horizon);
+  overflow: hidden;
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener svg,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 720 / 320;
+  max-width: 100%;
+}
+
+
+/* ---------- P3 landmark slot (contained plate, GR4 full-width tableau) ---------- */
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel {
+  margin: 0 auto 3rem;
+  width: 100%;
+  max-width: 72rem;
+  background: color-mix(in srgb, var(--gs-sea-deep) 40%, transparent);
+  border-top: 1px solid var(--gs-horizon);
+  border-bottom: 1px solid var(--gs-horizon);
+  overflow: hidden;
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel svg,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 960 / 420;
+  max-width: 100%;
+}
+
+
+/* ---------- P4 tones (essay + landmark slots; morning = default, no declarations) ---------- */
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-essay,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-essay,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-essay,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-essay {
+  border-top: 1px solid color-mix(in srgb, var(--gs-sun) 45%, var(--gs-horizon));
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-iron svg,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-iron svg,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-iron svg,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-iron svg,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-iron svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-iron svg {
+  filter: saturate(.8) contrast(1.06);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-stage,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-stage,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-stage,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-stage {
+  border-top: 2px solid color-mix(in srgb, var(--gs-vermilion) 65%, transparent);
+  background:
+    linear-gradient(color-mix(in srgb, var(--gs-vermilion) 12%, transparent), color-mix(in srgb, var(--gs-vermilion) 12%, transparent)),
+    color-mix(in srgb, var(--gs-sea-deep) 40%, transparent);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-autumn,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-autumn,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-autumn,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-autumn {
+  background:
+    linear-gradient(color-mix(in srgb, var(--gs-night) 55%, transparent), color-mix(in srgb, var(--gs-vermilion) 16%, transparent)),
+    color-mix(in srgb, var(--gs-sea-deep) 46%, transparent);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-autumn svg,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-autumn svg,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-autumn svg,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-autumn svg {
+  filter: sepia(.18);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-shadow,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-shadow,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-shadow,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-shadow,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-shadow,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-shadow {
+  background:
+    linear-gradient(color-mix(in srgb, var(--gs-night) 60%, transparent), color-mix(in srgb, var(--gs-night) 60%, transparent)),
+    color-mix(in srgb, var(--gs-sea-deep) 46%, transparent);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-shadow svg,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-shadow svg,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-shadow svg,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-shadow svg,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-shadow svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-shadow svg {
+  filter: brightness(.84) saturate(.82);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-noon,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-noon,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-noon,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-noon {
+  background:
+    linear-gradient(color-mix(in srgb, var(--gs-sun-core) 16%, transparent), color-mix(in srgb, var(--gs-sun-core) 16%, transparent)),
+    color-mix(in srgb, var(--gs-sea-deep) 40%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--gs-sun) 55%, transparent);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-noon svg,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-noon svg,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-noon svg,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-noon svg {
+  filter: brightness(1.06);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-dream,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-dream,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-dream,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-dream {
+  background:
+    linear-gradient(color-mix(in srgb, var(--gs-night) 60%, transparent), color-mix(in srgb, var(--gs-night) 60%, transparent)),
+    color-mix(in srgb, var(--gs-sea-deep) 40%, transparent);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-dream svg,
+body[data-part='III'] #chapter-art.gs-b-opener-essay-opener.gs-b-tone-dream svg,
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-dream svg,
+body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-dream svg {
+  filter: saturate(1.12);
+}
+/* mark modifiers */
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-dim svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-dim svg {
+  opacity: .78;
+  filter: saturate(.65);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-ember,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-ember {
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--gs-vermilion) 16%, transparent), transparent);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-glare svg,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-glare svg {
+  width: 128px;
+  filter: brightness(1.28) saturate(1.12);
+}
+/* O3 mark-scoped shadow veil (CF-5): p3c35 pyre keeps JSON tone */
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-shadow,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-shadow {
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--gs-night) 60%, transparent), transparent);
+}
+body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-closing,
+body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-closing {
+  background: linear-gradient(transparent 55%, color-mix(in srgb, var(--gs-sun) 14%, transparent));
+  border-bottom: 1px solid color-mix(in srgb, var(--gs-sun) 40%, transparent);
+}
+
+/* ---------- P5 meta part ---------- */
+body[data-part-id='part-3'] .meta-part,
+body[data-part='III'] .meta-part {
+  font-family: var(--gs-body);
+  font-variant-caps: all-small-caps;
+  letter-spacing: .24em;
+  color: var(--gs-sun);
+  opacity: .9;
+}
+
+/* ---------- P6 meta title ---------- */
+body[data-part-id='part-3'] .meta-title,
+body[data-part='III'] .meta-title {
+  font-family: var(--gs-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -.01em;
+  color: var(--gs-foam);
+  text-wrap: balance;
+}
+
+/* ---------- P7 meta rule (horizon sun-road) ---------- */
+body[data-part-id='part-3'] .meta-rule span,
+body[data-part='III'] .meta-rule span {
+  width: 7rem;
+  height: 2px;
+  border-radius: 0;
+  background: linear-gradient(90deg, transparent, var(--gs-sun) 25%, var(--gs-vermilion) 75%, transparent);
+  opacity: .9;
+}
+
+/* ---------- P8 body ---------- */
+body[data-part-id='part-3'] .chapter-text,
+body[data-part='III'] .chapter-text {
+  font-family: var(--gs-body);
+}
+
+/* ---------- P9 drop-cap forward (content-assigned by art family) ---------- */
+body[data-part-id='part-3'][data-art^='gs-b-panel-'] p:first-of-type::first-letter,
+body[data-part='III'][data-art^='gs-b-panel-'] p:first-of-type::first-letter,
+body[data-part-id='part-3'][data-art^='gs-b-land-'] p:first-of-type::first-letter,
+body[data-part='III'][data-art^='gs-b-land-'] p:first-of-type::first-letter {
+  font-family: var(--gs-display);
+  font-weight: 600;
+  color: var(--gs-sun);
+}
+
+/* ---------- L1 p3c1 ---------- */
+body[data-chapter='p3c1'] .meta-title {
+  font-size: clamp(2.6rem, 7vw, 4.25rem);
+}
+body[data-chapter='p3c1'] .meta-rule span {
+  width: 11rem;
+}
+body[data-chapter='p3c1'] #chapter-art.gs-b-opener-landmark-panel.gs-b-tone-essay {
+  border-top: 1px solid color-mix(in srgb, var(--gs-sun) 55%, var(--gs-horizon));
+}
+@media (min-width: 76rem) {
+  body[data-chapter='p3c1'] #chapter-art.gs-b-opener-landmark-panel {
+    max-width: 76rem;
+  }
+}
+
+/* ---------- L2 p3c21 ---------- */
+body[data-chapter='p3c21'] .meta-title {
+  letter-spacing: .01em;
+}
+body[data-chapter='p3c21'] .meta-rule span {
+  background: linear-gradient(90deg, transparent, var(--gs-vermilion) 30%, var(--gs-foam) 70%, transparent);
+}
+
+/* ---------- L3 p3c22 ---------- */
+body[data-chapter='p3c22'] .meta-title {
+  font-style: italic;
+}
+body[data-chapter='p3c22'] #chapter-art.gs-b-opener-landmark-panel {
+  margin-bottom: 3.25rem;
+}
+
+/* ---------- L4 p3c36 ---------- */
+body[data-chapter='p3c36'] .meta-rule span {
+  background: linear-gradient(90deg, transparent, var(--gs-night) 25%, var(--gs-vermilion) 75%, transparent);
+}
+
+/* ---------- L5 p3c45 (THE noon-flash) ---------- */
+body[data-chapter='p3c45'] .reader-body {
+  background: radial-gradient(90% 420px at 50% 0%, color-mix(in srgb, var(--gs-sun-core) 10%, transparent), transparent 70%);
+}
+body[data-chapter='p3c45'] .meta-title {
+  color: var(--gs-sun);
+}
+/* R2: deepen text-adjacent sun on light papers (book §2); art keeps gold masses */
+html[data-theme='sepia'] body[data-chapter='p3c45'] .meta-title,
+html[data-theme='light'] body[data-chapter='p3c45'] .meta-title {
+  color: #8A5A00;
+}
+
+/* ---------- L6 p3c54 ---------- */
+body[data-chapter='p3c54'] .meta-title {
+  font-style: italic;
+  letter-spacing: .005em;
+}
+body[data-chapter='p3c54'] .meta-rule span {
+  background: linear-gradient(90deg, transparent, var(--gs-night) 30%, var(--gs-sun) 70%, transparent);
+}
+
+/* ---------- B1 progress = sun-road sweep ---------- */
+body[data-part-id='part-3'] .progress-fill,
+body[data-part='III'] .progress-fill {
+  background: linear-gradient(90deg, var(--gs-sea) 0%, var(--gs-sun) 55%, var(--gs-vermilion) 100%);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--gs-sun) 45%, transparent);
+}
+
+/* ---------- B2 nav = horizon tablets ---------- */
+body[data-part-id='part-3'] .nav-btn,
+body[data-part='III'] .nav-btn {
+  border: 1px solid var(--border-strong);
+  border-radius: 0;
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--gs-sea-deep) 45%, transparent));
+  border-top: 2px solid color-mix(in srgb, var(--gs-sun) 40%, transparent);
+}
+body[data-part-id='part-3'] .nav-btn:hover:not(:disabled),
+body[data-part='III'] .nav-btn:hover:not(:disabled) {
+  border-top-color: var(--gs-sun);
+  background: color-mix(in srgb, var(--gs-sea-deep) 60%, transparent);
+  transform: none;
+}
+body[data-part-id='part-3'] .nav-label,
+body[data-part='III'] .nav-label {
+  font-family: var(--gs-body);
+  letter-spacing: .22em;
+  color: var(--gs-sun);
+  opacity: .85;
+}
+body[data-part-id='part-3'] .nav-title,
+body[data-part='III'] .nav-title {
+  font-family: var(--gs-display);
+  font-style: italic;
+}
+body[data-part-id='part-3'] .nav-btn.prev,
+body[data-part='III'] .nav-btn.prev {
+  text-align: left;
+  border-left: 2px solid color-mix(in srgb, var(--gs-vermilion) 45%, transparent);
+}
+body[data-part-id='part-3'] .nav-btn.next,
+body[data-part='III'] .nav-btn.next {
+  border-right: 2px solid color-mix(in srgb, var(--gs-vermilion) 45%, transparent);
+}
+
+/* ---------- B3 header wordmark ---------- */
+body[data-part-id='part-3'] .header-chapter,
+body[data-part='III'] .header-chapter {
+  font-family: var(--gs-display);
+  font-style: italic;
+}
+body[data-part-id='part-3'] .header-part,
+body[data-part='III'] .header-part {
+  font-family: var(--gs-body);
+  font-variant-caps: all-small-caps;
+  letter-spacing: .2em;
+  color: var(--gs-sun);
+}
+body[data-part-id='part-3'] .reader-header.scrolled,
+body[data-part='III'] .reader-header.scrolled {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .35), 0 1px 0 color-mix(in srgb, var(--gs-sun) 25%, transparent);
+}
+
+/* ---------- B4 settings = dipped controls ---------- */
+body[data-part-id='part-3'] .settings-card,
+body[data-part='III'] .settings-card {
+  border-top: 2px solid var(--gs-sun);
+  border-radius: 0;
+}
+body[data-part-id='part-3'] .settings-card h3,
+body[data-part='III'] .settings-card h3,
+body[data-part-id='part-3'] #settings-title,
+body[data-part='III'] #settings-title {
+  font-family: var(--gs-display);
+  font-style: italic;
+}
+body[data-part-id='part-3'] .seg-btn.active,
+body[data-part='III'] .seg-btn.active {
+  background: color-mix(in srgb, var(--gs-sun) 18%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gs-sun) 45%, transparent);
+}
+
+/* ---------- B5 TOC Book-One chapters ---------- */
+body[data-chapter^='p3c'] .toc-chapter[data-chapter-id^='p3c'] .toc-num {
+  font-family: var(--gs-display);
+  color: var(--gs-sun);
+}
+body[data-chapter^='p3c'] .toc-chapter[data-chapter-id^='p3c'].active {
+  background: color-mix(in srgb, var(--gs-sun) 14%, transparent);
+  border-left-color: var(--gs-sun);
+}
+body[data-chapter^='p3c'] .toc-chapter[data-chapter-id^='p3c'].read .toc-check {
+  background: var(--gs-sun);
+  border-color: var(--gs-sun);
+  color: var(--gs-night);
+}
+
+/* ---------- B6 TOC Part-III header ---------- */
+body[data-chapter^='p3c'] .toc-part:nth-of-type(3) .toc-part-header {
+  color: var(--gs-sun);
+  letter-spacing: .24em;
+  font-family: var(--gs-display);
+  font-style: italic;
+}
+
+/* ---------- Guards ---------- */
+html,
+body {
+  overflow-x: clip;
+}
+@media (max-width: 560px) {
+  body[data-part-id='part-3'] #chapter-art.gs-b-opener-essay-opener,
+  body[data-part='III'] #chapter-art.gs-b-opener-essay-opener,
+  body[data-part-id='part-3'] #chapter-art.gs-b-opener-landmark-panel,
+  body[data-part='III'] #chapter-art.gs-b-opener-landmark-panel {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-quiet svg,
+  body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-quiet svg {
+    width: 60px;
+  }
+  body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-standard svg,
+  body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-standard svg {
+    width: 88px;
+  }
+  body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-duet svg,
+  body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-duet svg {
+    width: 160px;
+  }
+  body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-read-closing svg,
+  body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-read-closing svg {
+    width: 104px;
+  }
+  body[data-part-id='part-3'] #chapter-art.gs-b-opener-mark.gs-b-tone-glare svg,
+  body[data-part='III'] #chapter-art.gs-b-opener-mark.gs-b-tone-glare svg {
+    width: 104px;
+  }
+}

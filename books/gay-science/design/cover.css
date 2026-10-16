@@ -1,0 +1,142 @@
+/* The Gay Science — NOON cover composition (Direction A, PROPOSED).
+   Designer: SupGayScience-2.GsIdentityDesigner. Only touches existing cover
+   hooks (.cover-bg/.cover-grid/.cover-glow/.cover-content/.cover-eyebrow/
+   .cover-title/.title-line/.cover-rule/.rule-diamond/.cover-author/
+   .cover-quote/.cover-actions/.cover-footer). Supervisor merges into theme.css.
+   Requires: art/cover.svg shipped to the built site (supervisor flagged
+   build_site.sh gap to ReaderLead); Fraunces + Source Serif 4 added to the
+   Google-Fonts link in index.html. */
+
+#cover { overflow: hidden; }
+
+/* The authored mural replaces the old gradient/dot cover backdrop. */
+.cover-bg {
+  background:
+    url("../art/cover.svg") center 30% / cover no-repeat,
+    var(--gs-sea-deep, #04161d);
+}
+.cover-grid { background: none; opacity: 0; }
+/* Keep a soft legibility veil behind the title block only. */
+.cover-glow {
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 42%, rgba(3, 11, 15, 0.55) 0%, transparent 70%);
+  height: 100%;
+  top: 0;
+  animation: none;
+}
+
+.cover-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 9vh;
+}
+
+.cover-eyebrow {
+  font-family: var(--gs-body, Georgia, serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: 0.22em;
+  text-indent: 0.22em;
+  color: var(--gs-foam, #f3ead8);
+  opacity: 0.8;
+  margin-bottom: 0.6rem;
+  /* GR1: eyebrow sits above the art field, never across the sun disc. */
+}
+
+.cover-title {
+  font-family: var(--gs-display, Georgia, serif);
+  font-weight: 600;
+  font-size: clamp(3.6rem, 12vw, 7.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.015em;
+  color: var(--gs-foam, #f3ead8);
+  text-shadow: 0 2px 30px rgba(2, 9, 13, 0.7);
+  margin: 1.2rem 0 0;
+}
+.cover-title .title-line { display: block; }
+.cover-title .title-line.accent {
+  color: var(--gs-sun, #f5b301);
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+  text-shadow:
+    0 0 42px rgba(245, 179, 1, 0.45),
+    0 2px 30px rgba(2, 9, 13, 0.7);
+}
+
+.cover-rule { margin: 1.6rem auto; }
+.cover-rule .rule-diamond {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gs-sun-core, #ffedbe) 0 32%, var(--gs-sun, #f5b301) 60%, transparent 72%);
+  box-shadow: 0 0 18px var(--gs-ray, rgba(245, 179, 1, 0.5));
+}
+
+.cover-author {
+  font-family: var(--gs-display, Georgia, serif);
+  font-size: clamp(1.25rem, 3vw, 1.7rem);
+  letter-spacing: 0.08em;
+  color: var(--gs-foam, #f3ead8);
+}
+
+.cover-quote {
+  font-family: var(--gs-body, Georgia, serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+/* Buttons keep reader.css geometry; NOON restyles their voice. */
+.cover-actions .btn-primary {
+  background: var(--gs-sun, #f5b301);
+  border-color: var(--gs-sun, #f5b301);
+  color: #06222b;
+  font-weight: 600;
+}
+.cover-actions .btn-primary:hover {
+  background: var(--accent-hover, #ffc93c);
+  border-color: var(--accent-hover, #ffc93c);
+}
+.cover-actions .btn-ghost {
+  border-color: var(--gs-horizon, rgba(243, 234, 216, 0.35));
+  color: var(--gs-foam, #f3ead8);
+}
+.cover-actions .btn-ghost:hover {
+  border-color: var(--gs-sun, #f5b301);
+  color: var(--gs-sun, #f5b301);
+}
+
+.cover-footer {
+  color: var(--text-faint);
+  letter-spacing: 0.22em;
+  text-indent: 0.22em;
+}
+
+/* Light-paper themes: the dark mural stays, but the veil lightens the
+   lower third so footer meta and buttons keep contrast. */
+html[data-theme="sepia"] .cover-glow,
+html[data-theme="light"] .cover-glow {
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 42%, rgba(3, 11, 15, 0.55) 0%, transparent 70%),
+    linear-gradient(0deg, rgba(250, 246, 236, 0.12) 0%, transparent 30%);
+}
+
+@media (max-width: 560px) {
+  .cover-content { padding-top: 6vh; }
+  .cover-title { font-size: clamp(2.9rem, 19vw, 4.2rem); }
+  .cover-quote { font-size: 0.95rem; padding-inline: 1rem; }
+  /* GR3: zero phone overflow is the shipping floor — clip, never scroll. */
+  html, body { overflow-x: clip; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover-glow { animation: none; }
+}
+
+@media print {
+  .cover-bg { background: none; }
+  .cover-glow { display: none !important; }
+}

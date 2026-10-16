@@ -570,6 +570,7 @@ def book_html(meta: dict) -> str:
 <body>
   <div id="app">
     <section id="cover" class="view active" aria-label="Cover">
+      <figure class="cover-art" id="cover-art" aria-hidden="true" hidden></figure>
       <div class="cover-bg" aria-hidden="true">
         <div class="cover-grid"></div>
         <div class="cover-glow"></div>
@@ -626,6 +627,7 @@ def book_html(meta: dict) -> str:
       </header>
 
       <article class="reader-body" id="reader-body">
+        <figure class="chapter-art" id="chapter-art" aria-hidden="true" hidden></figure>
         <div class="chapter-meta" id="chapter-meta">
           <p class="meta-part" id="meta-part"></p>
           <h1 class="meta-title" id="meta-title"></h1>
@@ -647,7 +649,7 @@ def book_html(meta: dict) -> str:
     </section>
   </div>
 
-  <aside id="toc-drawer" class="drawer" aria-hidden="true" aria-label="Table of contents">
+  <aside id="toc-drawer" class="drawer" role="dialog" aria-modal="false" aria-hidden="true" aria-label="Table of contents">
     <div class="drawer-backdrop" data-action="close-toc"></div>
     <div class="drawer-panel">
       <div class="drawer-header">
@@ -709,6 +711,7 @@ def book_html(meta: dict) -> str:
     window.BOOK_CONFIG = {{
       storageKey: "reader-{slug}",
       libraryHref: "../../index.html",
+      notesPart: {json.dumps(meta.get("notes_part"))},
       tagline: {json.dumps(tagline)}
     }};
   </script>
@@ -719,17 +722,40 @@ def book_html(meta: dict) -> str:
 
 
 def main() -> None:
+    """Non-destructive bootstrap (READER-CONTRACT §10).
+
+    - Books with design/ART-DIRECTION.md are NEVER touched.
+    - Otherwise files are written ONLY when missing, unless --force.
+    - No build/deploy step runs this script; supervisors own their files.
+    """
+    import sys
+
+    force = "--force" in sys.argv
     catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
     for meta in catalog["books"]:
         slug = meta["slug"]
         book_dir = BOOKS / slug
         book_dir.mkdir(parents=True, exist_ok=True)
+        if (book_dir / "design" / "ART-DIRECTION.md").exists() and not force:
+            print(f"  · {slug}/ skipped (ART-DIRECTION.md present)")
+            continue
         theme_key = THEME_KEY.get(meta.get("theme", slug), slug)
         css = THEMES.get(theme_key, THEMES["atlas-shrugged"])
-        (book_dir / "theme.css").write_text(css.strip() + "\n", encoding="utf-8")
-        (book_dir / "index.html").write_text(book_html(meta), encoding="utf-8")
-        print(f"  ✓ {slug}/index.html + theme.css")
-    print("Done generating book pages.")
+        wrote = []
+        for name, content in (
+            ("theme.css", css.strip() + "\n"),
+            ("index.html", book_html(meta)),
+        ):
+            target = book_dir / name
+            if target.exists() and not force:
+                continue
+            target.write_text(content, encoding="utf-8")
+            wrote.append(name)
+        if wrote:
+            print(f"  ✓ {slug}/{' + '.join(wrote)}")
+        else:
+            print(f"  · {slug}/ unchanged (owned files preserved)")
+    print("Done (non-destructive; pass --force to overwrite).")
 
 
 if __name__ == "__main__":

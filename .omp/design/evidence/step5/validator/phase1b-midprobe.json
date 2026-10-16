@@ -1,0 +1,2302 @@
+{
+ "atlas-shrugged": {
+  "slug": "atlas-shrugged",
+  "chapter": "p1c3",
+  "hooks": {
+   "chapter": "p1c3",
+   "part": "I",
+   "partId": "part-i",
+   "art": "signal-clear",
+   "view": "reader",
+   "book": "atlas-shrugged"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 248,
+     "paraClass": "(none)",
+     "paraLen": 2569,
+     "pWidth": 656,
+     "pMaxWidth": "763.86px",
+     "fontSize": "20.48px",
+     "lineHeight": "36.4544px",
+     "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"atlas-shrugged\"][data-view=\"reader\"] .chapter-text p",
+      "value": "min(var(--reader-max), 66ch)",
+      "layer": "(unlayered)",
+      "href": "atlas-shrugged/theme.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 248,
+     "paraClass": "(none)",
+     "paraLen": 2569,
+     "pWidth": 763.86,
+     "pMaxWidth": "763.86px",
+     "fontSize": "20.48px",
+     "lineHeight": "36.4544px",
+     "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+     "readerBodyWidth": 912,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"atlas-shrugged\"][data-view=\"reader\"] .chapter-text p",
+      "value": "min(var(--reader-max), 66ch)",
+      "layer": "(unlayered)",
+      "href": "atlas-shrugged/theme.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 248,
+     "paraClass": "(none)",
+     "paraLen": 2569,
+     "pWidth": 763.86,
+     "pMaxWidth": "763.86px",
+     "fontSize": "20.48px",
+     "lineHeight": "36.4544px",
+     "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"atlas-shrugged\"][data-view=\"reader\"] .chapter-text p",
+      "value": "min(var(--reader-max), 66ch)",
+      "layer": "(unlayered)",
+      "href": "atlas-shrugged/theme.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 248,
+    "paraClass": "(none)",
+    "paraLen": 2569,
+    "pWidth": 763.86,
+    "pMaxWidth": "763.86px",
+    "fontSize": "20.48px",
+    "lineHeight": "36.4544px",
+    "fontFamily": "\"Crimson Pro\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "being-and-time": {
+  "slug": "being-and-time",
+  "chapter": "p2c19",
+  "hooks": {
+   "chapter": "p2c19",
+   "part": "2",
+   "partId": "part-2",
+   "art": "ts-they",
+   "view": "reader",
+   "book": "being-and-time"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 19,
+     "paraClass": "(none)",
+     "paraLen": 1448,
+     "pWidth": 544,
+     "pMaxWidth": "544px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1152,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"being-and-time\"] .chapter-text p",
+      "value": "min(var(--chapter-max, var(--reader-max)), 65ch)",
+      "layer": "(unlayered)",
+      "href": "being-and-time/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"being-and-time\"][data-chapter=\"p2c17\"] .chapter-text > p, body[data-book=\"being-and-time\"][data-chapter=",
+      "value": "34rem",
+      "layer": "(unlayered)",
+      "href": "design/they-self.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 19,
+     "paraClass": "(none)",
+     "paraLen": 1448,
+     "pWidth": 544,
+     "pMaxWidth": "544px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1152,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"being-and-time\"] .chapter-text p",
+      "value": "min(var(--chapter-max, var(--reader-max)), 65ch)",
+      "layer": "(unlayered)",
+      "href": "being-and-time/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"being-and-time\"][data-chapter=\"p2c17\"] .chapter-text > p, body[data-book=\"being-and-time\"][data-chapter=",
+      "value": "34rem",
+      "layer": "(unlayered)",
+      "href": "design/they-self.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 19,
+     "paraClass": "(none)",
+     "paraLen": 1448,
+     "pWidth": 544,
+     "pMaxWidth": "544px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1152,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"being-and-time\"] .chapter-text p",
+      "value": "min(var(--chapter-max, var(--reader-max)), 65ch)",
+      "layer": "(unlayered)",
+      "href": "being-and-time/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"being-and-time\"][data-chapter=\"p2c17\"] .chapter-text > p, body[data-book=\"being-and-time\"][data-chapter=",
+      "value": "34rem",
+      "layer": "(unlayered)",
+      "href": "design/they-self.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "18.4px",
+    "lineHeight": "34.04px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "24px",
+    "lineHeight": "44.4px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "27.2px",
+    "lineHeight": "43.52px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 19,
+    "paraClass": "(none)",
+    "paraLen": 1448,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"DM Sans\", system-ui, -apple-system, sans-serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "beyond-good-and-evil": {
+  "slug": "beyond-good-and-evil",
+  "chapter": "p1c5",
+  "hooks": {
+   "chapter": "p1c5",
+   "part": "I",
+   "partId": "part-1",
+   "art": "sorts",
+   "view": "reader",
+   "book": "beyond-good-and-evil"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 20,
+     "paraClass": "reader-fragnum sec-start",
+     "paraLen": 230,
+     "pWidth": 640,
+     "pMaxWidth": "640px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 20,
+     "paraClass": "reader-fragnum sec-start",
+     "paraLen": 230,
+     "pWidth": 674.53,
+     "pMaxWidth": "674.544px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 912,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 20,
+     "paraClass": "reader-fragnum sec-start",
+     "paraLen": 230,
+     "pWidth": 1024,
+     "pMaxWidth": "1024px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": []
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "18.4px",
+    "lineHeight": "34.04px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "24px",
+    "lineHeight": "44.4px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "43.52px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 20,
+    "paraClass": "reader-fragnum sec-start",
+    "paraLen": 230,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "Archivo, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "forty-ways-to-look-at-churchill": {
+  "slug": "forty-ways-to-look-at-churchill",
+  "chapter": "p2c3",
+  "hooks": {
+   "chapter": "p2c3",
+   "part": "II",
+   "partId": "part-2",
+   "art": "constellation-pins",
+   "view": "reader",
+   "book": "forty-ways-to-look-at-churchill"
+  },
+  "measures": {
+   "narrow": {
+    "probe": null,
+    "rules": [
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"] .chapter-text p",
+      "value": "var(--fw-measure)",
+      "layer": "(unlayered)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"] .chapter-text p",
+      "value": "100%",
+      "layer": "@media (max-width: 720px)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"][data-chapter=\"p2c3\"] .chapter-text > p:first-of-type",
+      "value": "34rem",
+      "layer": "(unlayered)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": null,
+    "rules": [
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"] .chapter-text p",
+      "value": "var(--fw-measure)",
+      "layer": "(unlayered)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"] .chapter-text p",
+      "value": "100%",
+      "layer": "@media (max-width: 720px)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"][data-chapter=\"p2c3\"] .chapter-text > p:first-of-type",
+      "value": "34rem",
+      "layer": "(unlayered)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": null,
+    "rules": [
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"] .chapter-text p",
+      "value": "var(--fw-measure)",
+      "layer": "(unlayered)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"] .chapter-text p",
+      "value": "100%",
+      "layer": "@media (max-width: 720px)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"forty-ways-to-look-at-churchill\"][data-chapter=\"p2c3\"] .chapter-text > p:first-of-type",
+      "value": "34rem",
+      "layer": "(unlayered)",
+      "href": "forty-ways-to-look-at-churchill/theme.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": null,
+   "md": null,
+   "lg": null,
+   "xl": null
+  },
+  "leading": {
+   "tight": null,
+   "normal": null,
+   "loose": null
+  },
+  "fonts": {
+   "serif": null,
+   "sans": null
+  }
+ },
+ "gay-science": {
+  "slug": "gay-science",
+  "chapter": "p5c18",
+  "hooks": {
+   "chapter": "p5c18",
+   "part": "V",
+   "partId": "part-5",
+   "art": "lantern",
+   "view": "reader",
+   "book": "gay-science"
+  },
+  "measures": {
+   "narrow": {
+    "probe": null,
+    "rules": [
+     {
+      "selector": "body[data-book=\"gay-science\"] .chapter-text p",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "gay-science/theme.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": null,
+    "rules": [
+     {
+      "selector": "body[data-book=\"gay-science\"] .chapter-text p",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "gay-science/theme.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": null,
+    "rules": [
+     {
+      "selector": "body[data-book=\"gay-science\"] .chapter-text p",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "gay-science/theme.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": null,
+   "md": null,
+   "lg": null,
+   "xl": null
+  },
+  "leading": {
+   "tight": null,
+   "normal": null,
+   "loose": null
+  },
+  "fonts": {
+   "serif": null,
+   "sans": null
+  }
+ },
+ "gentle-introduction": {
+  "slug": "gentle-introduction",
+  "chapter": "p1c5",
+  "hooks": {
+   "chapter": "p1c5",
+   "part": "I",
+   "partId": "part-1",
+   "art": "westwork",
+   "view": "reader",
+   "book": "gentle-introduction"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 30,
+     "paraClass": "(none)",
+     "paraLen": 1315,
+     "pWidth": 656,
+     "pMaxWidth": "672px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"gentle-introduction\"] .chapter-text p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "gentle-introduction/theme.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 30,
+     "paraClass": "(none)",
+     "paraLen": 1315,
+     "pWidth": 672,
+     "pMaxWidth": "672px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 752,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"gentle-introduction\"] .chapter-text p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "gentle-introduction/theme.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 30,
+     "paraClass": "(none)",
+     "paraLen": 1315,
+     "pWidth": 672,
+     "pMaxWidth": "672px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"gentle-introduction\"] .chapter-text p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "gentle-introduction/theme.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 635.28,
+    "pMaxWidth": "635.287px",
+    "fontSize": "18.4px",
+    "lineHeight": "34.04px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "24px",
+    "lineHeight": "44.4px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "27.2px",
+    "lineHeight": "43.52px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 30,
+    "paraClass": "(none)",
+    "paraLen": 1315,
+    "pWidth": 672,
+    "pMaxWidth": "672px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"DM Sans\", system-ui, -apple-system, sans-serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "infinite-jest": {
+  "slug": "infinite-jest",
+  "chapter": "p1c32",
+  "hooks": {
+   "chapter": "p1c32",
+   "part": "I",
+   "partId": "part-1",
+   "art": "dial-midnight",
+   "view": "reader",
+   "book": "infinite-jest"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 29,
+     "paraClass": "(none)",
+     "paraLen": 4030,
+     "pWidth": 592,
+     "pMaxWidth": "592px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 688,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"infinite-jest\"] .chapter-text p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "infinite-jest/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"infinite-jest\"][data-chapter=\"p1c32\"] #chapter-text > p",
+      "value": "min(37rem, 66ch)",
+      "layer": "(unlayered)",
+      "href": "infinite-jest/theme.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 29,
+     "paraClass": "(none)",
+     "paraLen": 4030,
+     "pWidth": 592,
+     "pMaxWidth": "592px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 688,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"infinite-jest\"] .chapter-text p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "infinite-jest/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"infinite-jest\"][data-chapter=\"p1c32\"] #chapter-text > p",
+      "value": "min(37rem, 66ch)",
+      "layer": "(unlayered)",
+      "href": "infinite-jest/theme.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 29,
+     "paraClass": "(none)",
+     "paraLen": 4030,
+     "pWidth": 592,
+     "pMaxWidth": "592px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 688,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"infinite-jest\"] .chapter-text p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "infinite-jest/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"infinite-jest\"][data-chapter=\"p1c32\"] #chapter-text > p",
+      "value": "min(37rem, 66ch)",
+      "layer": "(unlayered)",
+      "href": "infinite-jest/theme.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "18.4px",
+    "lineHeight": "34.04px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "24px",
+    "lineHeight": "44.4px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "27.2px",
+    "lineHeight": "43.52px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 29,
+    "paraClass": "(none)",
+    "paraLen": 4030,
+    "pWidth": 592,
+    "pMaxWidth": "592px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "Newsreader, Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 688,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "open-letter": {
+  "slug": "open-letter",
+  "chapter": "p1c9",
+  "hooks": {
+   "chapter": "p1c9",
+   "part": "I",
+   "partId": "part-1",
+   "art": "facade-dissolution",
+   "view": "reader",
+   "book": "open-letter"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 94,
+     "paraClass": "(none)",
+     "paraLen": 964,
+     "pWidth": 618.91,
+     "pMaxWidth": "618.912px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"open-letter\"] .chapter-text p",
+      "value": "min(var(--reader-max), 62ch)",
+      "layer": "(unlayered)",
+      "href": "open-letter/theme.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 94,
+     "paraClass": "(none)",
+     "paraLen": 964,
+     "pWidth": 618.91,
+     "pMaxWidth": "618.912px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+     "readerBodyWidth": 816,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"open-letter\"] .chapter-text p",
+      "value": "min(var(--reader-max), 62ch)",
+      "layer": "(unlayered)",
+      "href": "open-letter/theme.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 94,
+     "paraClass": "(none)",
+     "paraLen": 964,
+     "pWidth": 618.91,
+     "pMaxWidth": "618.912px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"open-letter\"] .chapter-text p",
+      "value": "min(var(--reader-max), 62ch)",
+      "layer": "(unlayered)",
+      "href": "open-letter/theme.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 547.3,
+    "pMaxWidth": "547.306px",
+    "fontSize": "18.4px",
+    "lineHeight": "34.04px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 618.91,
+    "pMaxWidth": "618.912px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 714.23,
+    "pMaxWidth": "714.238px",
+    "fontSize": "24px",
+    "lineHeight": "44.4px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 736,
+    "pMaxWidth": "736px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 736,
+    "pMaxWidth": "736px",
+    "fontSize": "27.2px",
+    "lineHeight": "43.52px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 736,
+    "pMaxWidth": "736px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 736,
+    "pMaxWidth": "736px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 736,
+    "pMaxWidth": "736px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 94,
+    "paraClass": "(none)",
+    "paraLen": 964,
+    "pWidth": 736,
+    "pMaxWidth": "736px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"EB Garamond\", \"Cormorant Garamond\", \"Palatino Linotype\", Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "sovereign-individual": {
+  "slug": "sovereign-individual",
+  "chapter": "p1c7",
+  "hooks": {
+   "chapter": "p1c7",
+   "part": "I",
+   "partId": "part-1",
+   "art": "knot-mesh",
+   "view": "reader",
+   "book": "sovereign-individual"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 18,
+     "paraClass": "(none)",
+     "paraLen": 1550,
+     "pWidth": 626.56,
+     "pMaxWidth": "647.492px",
+     "fontSize": "18px",
+     "lineHeight": "31.5px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1152,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"sovereign-individual\"] .chapter-text p",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "sovereign-individual/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"sovereign-individual\"] #chapter-text p.sv-head-title",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "sovereign-individual/theme.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 18,
+     "paraClass": "(none)",
+     "paraLen": 1550,
+     "pWidth": 626.56,
+     "pMaxWidth": "647.492px",
+     "fontSize": "18px",
+     "lineHeight": "31.5px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1152,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"sovereign-individual\"] .chapter-text p",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "sovereign-individual/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"sovereign-individual\"] #chapter-text p.sv-head-title",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "sovereign-individual/theme.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 18,
+     "paraClass": "(none)",
+     "paraLen": 1550,
+     "pWidth": 626.56,
+     "pMaxWidth": "647.492px",
+     "fontSize": "18px",
+     "lineHeight": "31.5px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+     "readerBodyWidth": 1152,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"sovereign-individual\"] .chapter-text p",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "sovereign-individual/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"sovereign-individual\"] #chapter-text p.sv-head-title",
+      "value": "68ch",
+      "layer": "(unlayered)",
+      "href": "sovereign-individual/theme.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "647.492px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 18,
+    "paraClass": "(none)",
+    "paraLen": 1550,
+    "pWidth": 626.56,
+    "pMaxWidth": "811.507px",
+    "fontSize": "18px",
+    "lineHeight": "31.5px",
+    "fontFamily": "Archivo, \"DM Sans\", system-ui, -apple-system, sans-serif",
+    "readerBodyWidth": 1152,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "the-fountainhead": {
+  "slug": "the-fountainhead",
+  "chapter": "p1c8",
+  "hooks": {
+   "chapter": "p1c8",
+   "part": "1",
+   "partId": "part-1",
+   "art": "keating-pilasters",
+   "view": "reader",
+   "book": "the-fountainhead"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 51,
+     "paraClass": "(none)",
+     "paraLen": 1615,
+     "pWidth": 640,
+     "pMaxWidth": "640px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 51,
+     "paraClass": "(none)",
+     "paraLen": 1615,
+     "pWidth": 674.53,
+     "pMaxWidth": "674.544px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+     "readerBodyWidth": 912,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 51,
+     "paraClass": "(none)",
+     "paraLen": 1615,
+     "pWidth": 1024,
+     "pMaxWidth": "1024px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": []
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "18.4px",
+    "lineHeight": "34.04px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "24px",
+    "lineHeight": "44.4px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "43.52px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Source Serif 4\", Georgia, \"Palatino Linotype\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 51,
+    "paraClass": "(none)",
+    "paraLen": 1615,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "thus-spoke-zarathustra": {
+  "slug": "thus-spoke-zarathustra",
+  "chapter": "p1c23",
+  "hooks": {
+   "chapter": "p1c23",
+   "part": "I",
+   "partId": "part-1",
+   "art": "sun-serpent",
+   "view": "reader",
+   "book": "thus-spoke-zarathustra"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 49,
+     "paraClass": "(none)",
+     "paraLen": 347,
+     "pWidth": 640,
+     "pMaxWidth": "640px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Spectral, Georgia, serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 49,
+     "paraClass": "(none)",
+     "paraLen": 347,
+     "pWidth": 640,
+     "pMaxWidth": "640px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Spectral, Georgia, serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 49,
+     "paraClass": "(none)",
+     "paraLen": 347,
+     "pWidth": 1024,
+     "pMaxWidth": "1024px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "Spectral, Georgia, serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": []
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "Spectral, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 49,
+    "paraClass": "(none)",
+    "paraLen": 347,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "\"DM Sans\", system-ui, -apple-system, sans-serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "twilight-of-the-idols": {
+  "slug": "twilight-of-the-idols",
+  "chapter": "p1c7",
+  "hooks": {
+   "chapter": "p1c7",
+   "part": "I",
+   "partId": "part-1",
+   "art": "fourfold-knot",
+   "view": "reader",
+   "book": "twilight-of-the-idols"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 7,
+     "paraClass": "(none)",
+     "paraLen": 2256,
+     "pWidth": 640,
+     "pMaxWidth": "640px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+     "readerBodyWidth": 720,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 7,
+     "paraClass": "(none)",
+     "paraLen": 2256,
+     "pWidth": 644.8,
+     "pMaxWidth": "644.804px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+     "readerBodyWidth": 848,
+     "docOverflowX": 0
+    },
+    "rules": []
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 7,
+     "paraClass": "(none)",
+     "paraLen": 2256,
+     "pWidth": 1024,
+     "pMaxWidth": "1024px",
+     "fontSize": "20.8px",
+     "lineHeight": "38.48px",
+     "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": []
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "18.4px",
+    "lineHeight": "34.04px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "20.8px",
+    "lineHeight": "38.48px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "24px",
+    "lineHeight": "44.4px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "43.52px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "50.32px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"Cormorant Garamond\", \"Palatino Linotype\", Palatino, Georgia, serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 7,
+    "paraClass": "(none)",
+    "paraLen": 2256,
+    "pWidth": 1024,
+    "pMaxWidth": "1024px",
+    "fontSize": "27.2px",
+    "lineHeight": "57.12px",
+    "fontFamily": "\"DM Sans\", system-ui, -apple-system, sans-serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ },
+ "will-to-power": {
+  "slug": "will-to-power",
+  "chapter": "p2c2",
+  "hooks": {
+   "chapter": "p2c2",
+   "part": "I",
+   "partId": "part-2",
+   "art": "ring-tablets",
+   "view": "reader",
+   "book": "will-to-power"
+  },
+  "measures": {
+   "narrow": {
+    "probe": {
+     "paraIndex": 16,
+     "paraClass": "(none)",
+     "paraLen": 2633,
+     "pWidth": 544,
+     "pMaxWidth": "544px",
+     "fontSize": "17.6px",
+     "lineHeight": "29.92px",
+     "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+     "readerBodyWidth": 688,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-view=\"reader\"] #chapter-text > p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "will-to-power/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-part-id=\"part-1\"] #chapter-text > p, body[data-book=\"will-to-power\"][data-part-id=\"",
+      "value": "min(var(--wtp-early-measure), 68ch)",
+      "layer": "(unlayered)",
+      "href": "design/early.css"
+     },
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-part-id=\"part-1\"] #chapter-text > p, body[data-book=\"will-to-power\"][data-part-id=\"",
+      "value": "min(var(--wtp-early-measure), 60ch)",
+      "layer": "@media (max-width: 820px)",
+      "href": "design/early.css"
+     }
+    ]
+   },
+   "standard": {
+    "probe": {
+     "paraIndex": 16,
+     "paraClass": "(none)",
+     "paraLen": 2633,
+     "pWidth": 544,
+     "pMaxWidth": "544px",
+     "fontSize": "17.6px",
+     "lineHeight": "29.92px",
+     "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+     "readerBodyWidth": 688,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-view=\"reader\"] #chapter-text > p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "will-to-power/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-part-id=\"part-1\"] #chapter-text > p, body[data-book=\"will-to-power\"][data-part-id=\"",
+      "value": "min(var(--wtp-early-measure), 68ch)",
+      "layer": "(unlayered)",
+      "href": "design/early.css"
+     },
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-part-id=\"part-1\"] #chapter-text > p, body[data-book=\"will-to-power\"][data-part-id=\"",
+      "value": "min(var(--wtp-early-measure), 60ch)",
+      "layer": "@media (max-width: 820px)",
+      "href": "design/early.css"
+     }
+    ]
+   },
+   "wide": {
+    "probe": {
+     "paraIndex": 16,
+     "paraClass": "(none)",
+     "paraLen": 2633,
+     "pWidth": 544,
+     "pMaxWidth": "544px",
+     "fontSize": "17.6px",
+     "lineHeight": "29.92px",
+     "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+     "readerBodyWidth": 1104,
+     "docOverflowX": 0
+    },
+    "rules": [
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-view=\"reader\"] #chapter-text > p",
+      "value": "min(var(--reader-max), 68ch)",
+      "layer": "(unlayered)",
+      "href": "will-to-power/theme.css"
+     },
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-part-id=\"part-1\"] #chapter-text > p, body[data-book=\"will-to-power\"][data-part-id=\"",
+      "value": "min(var(--wtp-early-measure), 68ch)",
+      "layer": "(unlayered)",
+      "href": "design/early.css"
+     },
+     {
+      "selector": "body[data-book=\"will-to-power\"][data-part-id=\"part-1\"] #chapter-text > p, body[data-book=\"will-to-power\"][data-part-id=\"",
+      "value": "min(var(--wtp-early-measure), 60ch)",
+      "layer": "@media (max-width: 820px)",
+      "href": "design/early.css"
+     }
+    ]
+   }
+  },
+  "sizes": {
+   "sm": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "md": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "lg": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "xl": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "leading": {
+   "tight": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "normal": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "loose": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  },
+  "fonts": {
+   "serif": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "Newsreader, Georgia, \"Iowan Old Style\", serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   },
+   "sans": {
+    "paraIndex": 16,
+    "paraClass": "(none)",
+    "paraLen": 2633,
+    "pWidth": 544,
+    "pMaxWidth": "544px",
+    "fontSize": "17.6px",
+    "lineHeight": "29.92px",
+    "fontFamily": "system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "readerBodyWidth": 1104,
+    "docOverflowX": 0
+   }
+  }
+ }
+}

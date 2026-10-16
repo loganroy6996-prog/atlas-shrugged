@@ -1,0 +1,877 @@
+{
+ "cohort": "C",
+ "parts": [
+  "part-4"
+ ],
+ "chapters": [
+  {
+   "id": "p4c1",
+   "part": "part-4",
+   "order": 1,
+   "title": "57. To the realists.",
+   "word_count": 286,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c2",
+   "part": "part-4",
+   "order": 2,
+   "title": "58. Only as creators!",
+   "word_count": 191,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c3",
+   "part": "part-4",
+   "order": 3,
+   "title": "59. We artists.",
+   "word_count": 380,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c4",
+   "part": "part-4",
+   "order": 4,
+   "title": "60. Women and their action at a distance.",
+   "word_count": 366,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c5",
+   "part": "part-4",
+   "order": 5,
+   "title": "61. In honour of friendship.",
+   "word_count": 130,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c6",
+   "part": "part-4",
+   "order": 6,
+   "title": "62. Love.",
+   "word_count": 10,
+   "weight": "seed",
+   "rationale": "Fallback: high-morning altitude \u00d7 seed weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c7",
+   "part": "part-4",
+   "order": 7,
+   "title": "63. The woman in music.",
+   "word_count": 40,
+   "weight": "seed",
+   "rationale": "Fallback: high-morning altitude \u00d7 seed weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c8",
+   "part": "part-4",
+   "order": 8,
+   "title": "64. Sceptics.",
+   "word_count": 66,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c9",
+   "part": "part-4",
+   "order": 9,
+   "title": "65. Devotion.",
+   "word_count": 62,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c10",
+   "part": "part-4",
+   "order": 10,
+   "title": "66. The strength of the weak.",
+   "word_count": 69,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c11",
+   "part": "part-4",
+   "order": 11,
+   "title": "67. Feigning oneself.",
+   "word_count": 62,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c12",
+   "part": "part-4",
+   "order": 12,
+   "title": "68. Will and willingness.",
+   "word_count": 184,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c13",
+   "part": "part-4",
+   "order": 13,
+   "title": "69. Capacity for revenge.",
+   "word_count": 109,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c14",
+   "part": "part-4",
+   "order": 14,
+   "title": "70. The women who master the masters.",
+   "word_count": 174,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c15",
+   "part": "part-4",
+   "order": 15,
+   "title": "71. On female chastity.",
+   "word_count": 362,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c16",
+   "part": "part-4",
+   "order": 16,
+   "title": "72. Mothers.",
+   "word_count": 141,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c17",
+   "part": "part-4",
+   "order": 17,
+   "title": "73. Holy cruelty.",
+   "word_count": 126,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c18",
+   "part": "part-4",
+   "order": 18,
+   "title": "74. The unsuccessful.",
+   "word_count": 40,
+   "weight": "seed",
+   "rationale": "Fallback: high-morning altitude \u00d7 seed weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c19",
+   "part": "part-4",
+   "order": 19,
+   "title": "75. The third sex.",
+   "word_count": 46,
+   "weight": "seed",
+   "rationale": "Fallback: high-morning altitude \u00d7 seed weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c20",
+   "part": "part-4",
+   "order": 20,
+   "title": "76. The greatest danger.",
+   "word_count": 408,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c21",
+   "part": "part-4",
+   "order": 21,
+   "title": "77. The animal with a good conscience.",
+   "word_count": 376,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c22",
+   "part": "part-4",
+   "order": 22,
+   "title": "78. What we should be grateful for.",
+   "word_count": 184,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c23",
+   "part": "part-4",
+   "order": 23,
+   "title": "79. The attraction of imperfection.",
+   "word_count": 204,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c24",
+   "part": "part-4",
+   "order": 24,
+   "title": "80. Art and nature.",
+   "word_count": 719,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c25",
+   "part": "part-4",
+   "order": 25,
+   "title": "81. Greek taste.",
+   "word_count": 38,
+   "weight": "seed",
+   "rationale": "Fallback: high-morning altitude \u00d7 seed weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c26",
+   "part": "part-4",
+   "order": 26,
+   "title": "82. Esprit17 as un-Greek.",
+   "word_count": 213,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c27",
+   "part": "part-4",
+   "order": 27,
+   "title": "83. Translations.",
+   "word_count": 343,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c28",
+   "part": "part-4",
+   "order": 28,
+   "title": "84. On the origin of poetry.",
+   "word_count": 985,
+   "weight": "branch+",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch+ weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "gold letter drop-cap"
+  },
+  {
+   "id": "p4c29",
+   "part": "part-4",
+   "order": 29,
+   "title": "85. The good and the beautiful.",
+   "word_count": 203,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c30",
+   "part": "part-4",
+   "order": 30,
+   "title": "86. On theatre.",
+   "word_count": 425,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c31",
+   "part": "part-4",
+   "order": 31,
+   "title": "87. On the vanity of artists.",
+   "word_count": 403,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c32",
+   "part": "part-4",
+   "order": 32,
+   "title": "88. Being serious about truth.",
+   "word_count": 167,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c33",
+   "part": "part-4",
+   "order": 33,
+   "title": "89. Now and formerly.",
+   "word_count": 77,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c34",
+   "part": "part-4",
+   "order": 34,
+   "title": "90. Lights and shadows.",
+   "word_count": 68,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c35",
+   "part": "part-4",
+   "order": 35,
+   "title": "91. Caution.",
+   "word_count": 101,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c36",
+   "part": "part-4",
+   "order": 36,
+   "title": "92. Prose and poetry.",
+   "word_count": 289,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c37",
+   "part": "part-4",
+   "order": 37,
+   "title": "93. But then why do you write?",
+   "word_count": 135,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c38",
+   "part": "part-4",
+   "order": 38,
+   "title": "94. Growth after death.",
+   "word_count": 111,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c39",
+   "part": "part-4",
+   "order": 39,
+   "title": "95. Chamfort.40",
+   "word_count": 468,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c40",
+   "part": "part-4",
+   "order": 40,
+   "title": "96. Two speakers.",
+   "word_count": 188,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c41",
+   "part": "part-4",
+   "order": 41,
+   "title": "97. On the garrulousness of writers.",
+   "word_count": 102,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c42",
+   "part": "part-4",
+   "order": 42,
+   "title": "98. In praise of Shakespeare.",
+   "word_count": 435,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c43",
+   "part": "part-4",
+   "order": 43,
+   "title": "99. Schopenhauer\u2019s followers.",
+   "word_count": 1328,
+   "weight": "branch+",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch+ weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "gold letter drop-cap"
+  },
+  {
+   "id": "p4c44",
+   "part": "part-4",
+   "order": 44,
+   "title": "100. Learning how to pay homage.",
+   "word_count": 216,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c45",
+   "part": "part-4",
+   "order": 45,
+   "title": "101. Voltaire.65",
+   "word_count": 133,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c46",
+   "part": "part-4",
+   "order": 46,
+   "title": "102. A word to the philologists.",
+   "word_count": 132,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c47",
+   "part": "part-4",
+   "order": 47,
+   "title": "103. On German music.",
+   "word_count": 411,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c48",
+   "part": "part-4",
+   "order": 48,
+   "title": "104. On the sound of the German language.",
+   "word_count": 743,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c49",
+   "part": "part-4",
+   "order": 49,
+   "title": "105. The Germans as artists.",
+   "word_count": 186,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c50",
+   "part": "part-4",
+   "order": 50,
+   "title": "106. Music as advocate",
+   "word_count": 217,
+   "weight": "shoot",
+   "rationale": "Fallback: high-morning altitude \u00d7 shoot weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p4c51",
+   "part": "part-4",
+   "order": 51,
+   "title": "107. Our ultimate gratitude to art.",
+   "word_count": 405,
+   "weight": "branch",
+   "rationale": "Fallback: high-morning altitude \u00d7 branch weight (cohort C refines with content kinds).",
+   "palette_role": "high-morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iv",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  }
+ ],
+ "grammar_notes": "Supervisor fallback map (provisional, pre-cohort-delivery). Cohort lead files design/cohort-<id>.json supersede on matching ids.",
+ "landmarks": []
+}

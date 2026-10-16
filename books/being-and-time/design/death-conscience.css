@@ -1,0 +1,793 @@
+/* Being and Time · cohort 5 "death-conscience" (p3c1–p3c16, §§45–60).
+   Night-path opener ledger + calm reading body in the Clearing identity.
+   SCOPE: every rule is guarded by the explicit 16-id :is() list below
+   (body[data-chapter]); body[data-art] refinements only narrow further.
+   Never touches theme.css, index.html, shared/**, prose, or sibling ids.
+   Beams/shafts are inlined SVG art only (B1) — this file ships ZERO gradients.
+   Ember (#C96F3B) appears ONLY under p3c3–p3c9 guards (B5). */
+
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) {
+  --bt-humus: #0C0F0A;
+  --bt-canopy: #141B12;
+  --bt-under: #1D2619;
+  --bt-ink: #060805;
+  --bt-mist: #C9D4C3;
+  --bt-lichen: #9DB89A;
+  --bt-shaft: #E9D488;
+  --bt-ember: #C96F3B;
+  --bt-bark: #3E4A34;
+  --bt-display: "Fraunces", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --bt-body: "Source Serif 4", "Cormorant Garamond", Georgia, serif;
+  --reader-max: 34rem;
+  --dc-art-max: 62rem;
+  --dc-gutter: clamp(1.25rem, 4vw, 3rem);
+  color: var(--bt-mist);
+}
+
+/* Widest threshold: the two longest chapters breathe deeper. */
+body[data-chapter="p3c14"],
+body[data-chapter="p3c16"] {
+  --reader-max: 38rem;
+}
+
+/* ---------- #chapter-art slot: inlined symbol treatments ---------- */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art {
+  display: block;
+  width: 100%;
+  max-width: var(--dc-art-max);
+  margin: 0 auto 2.75rem;
+  padding: 0;
+  background: var(--bt-ink);
+  border-bottom: 2px solid var(--bt-bark);
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art[hidden] {
+  display: none;
+  border: 0;
+  margin: 0 auto;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Per-class slot presence: plate = full-bleed night scene; banner = climax /
+   clearing scale; motif = compact conscience fragment. The inlined symbol
+   keeps its native 1200×760 viewBox ratio (B1: no CSS reshaping of art). */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"]) #chapter-art.plate { max-width: var(--dc-art-max); }
+body[data-chapter="p3c9"] #chapter-art.banner { max-width: 46rem; border-bottom-width: 4px; }
+body:is([data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"]) #chapter-art.motif { max-width: 46rem; }
+body[data-chapter="p3c15"] #chapter-art.motif { max-width: 52rem; }
+body[data-chapter="p3c16"] #chapter-art.banner { max-width: var(--dc-art-max); }
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art figcaption {
+  margin: 0;
+  padding: 0.7rem var(--dc-gutter);
+  font-family: var(--bt-body);
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: var(--bt-lichen);
+  background: var(--bt-ink);
+  border-top: 1px solid var(--bt-bark);
+  text-align: left;
+}
+/* Ember floor rule under the death-act plates (p3c3–p3c9 ONLY). */
+body:is([data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"]) #chapter-art {
+  border-bottom: 3px solid var(--bt-ember);
+}
+
+/* ---------- opener ledger: ghost gutter 22% + title 52% + rail 26% ----------
+   The meta block breaks out of the reader measure to ledger width; title
+   children stack in the title column via an explicit two-row placement. */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 2.7fr) minmax(0, 1.25fr);
+  grid-template-areas: "ghost title rail";
+  gap: 0;
+  width: min(var(--dc-art-max), 100%);
+  max-width: var(--dc-art-max);
+  margin: 0 auto 3rem;
+  padding: 0 var(--dc-gutter);
+  text-align: left;
+  overflow: visible;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta > * {
+  grid-column: title;
+  grid-row: auto;
+  min-width: 0;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta::before {
+  grid-area: ghost;
+  align-self: start;
+  font-family: var(--bt-display);
+  font-weight: 300;
+  font-optical-sizing: auto;
+  font-size: clamp(4.5rem, 13vw, 10rem);
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  color: var(--bt-mist);
+  opacity: 0.1;
+  transform: translate(-8%, 4%);
+  pointer-events: none;
+  user-select: none;
+}
+body[data-chapter="p3c1"] #chapter-meta::before { content: "45"; }
+body[data-chapter="p3c2"] #chapter-meta::before { content: "46"; }
+body[data-chapter="p3c3"] #chapter-meta::before { content: "47"; }
+body[data-chapter="p3c4"] #chapter-meta::before { content: "48"; }
+body[data-chapter="p3c5"] #chapter-meta::before { content: "49"; }
+body[data-chapter="p3c6"] #chapter-meta::before { content: "50"; }
+body[data-chapter="p3c7"] #chapter-meta::before { content: "51"; }
+body[data-chapter="p3c8"] #chapter-meta::before { content: "52"; }
+body[data-chapter="p3c9"] #chapter-meta::before { content: "53"; }
+body[data-chapter="p3c10"] #chapter-meta::before { content: "54"; }
+body[data-chapter="p3c11"] #chapter-meta::before { content: "55"; }
+body[data-chapter="p3c12"] #chapter-meta::before { content: "56"; }
+body[data-chapter="p3c13"] #chapter-meta::before { content: "57"; }
+body[data-chapter="p3c14"] #chapter-meta::before { content: "58"; }
+body[data-chapter="p3c15"] #chapter-meta::before { content: "59"; }
+body[data-chapter="p3c16"] #chapter-meta::before { content: "60"; }
+
+/* Title column: Fraunces light, flush-left, straw only at the clearing. */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-title {
+  font-family: var(--bt-display);
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: clamp(2.25rem, 4.4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: var(--bt-mist);
+  text-wrap: balance;
+  max-width: 26ch;
+}
+/* Kicker line first, then title, number, sub: Part · § N · words · min. */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-part {
+  order: -2;
+  font-family: var(--bt-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--bt-lichen);
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-number {
+  font-family: var(--bt-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--bt-lichen);
+  border: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-number::before {
+  content: none;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-sub {
+  font-family: var(--bt-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--bt-lichen);
+}
+/* Meta rule: left-set shaft hairline, never centered. */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-rule {
+  justify-content: flex-start;
+  margin-top: 1.25rem;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-rule span {
+  width: 4.5rem;
+  height: 2px;
+  background: var(--bt-shaft);
+  opacity: 0.85;
+  box-shadow: none; transform: none;
+}
+/* Rail column: the chapter's German landmark in Fraunces italic. */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta::after {
+  grid-area: rail;
+  align-self: start;
+  justify-self: stretch;
+  margin-top: 0.4rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--bt-bark);
+  font-family: var(--bt-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--bt-lichen);
+  opacity: 0.92;
+}
+body[data-chapter="p3c1"] #chapter-meta::after { content: "Vorhabe · Vorsicht · Vorgriff — the hermeneutical situation still to be secured."; }
+body[data-chapter="p3c2"] #chapter-meta::after { content: "Ausstand — what is always still outstanding."; }
+body[data-chapter="p3c3"] #chapter-meta::after { content: "dabei — at best always just nearby."; }
+body[data-chapter="p3c4"] #chapter-meta::after { content: "zum Ende — toward the end, not at an end."; }
+body[data-chapter="p3c5"] #chapter-meta::after { content: "Sterben — dying, reserved from perishing and demise."; }
+body[data-chapter="p3c6"] #chapter-meta::after { content: "Bevorstand — eminent imminence, aimed at the reader."; }
+body[data-chapter="p3c7"] #chapter-meta::after { content: "man stirbt — one dies, but for now one is not affected."; }
+body[data-chapter="p3c8"] #chapter-meta::after { content: "gewiss–unbestimmt — certain, and as such indefinite."; }
+body[data-chapter="p3c9"] #chapter-meta::after { content: "Vorlaufen, not Erwarten — anticipation holds the possibility open."; }
+body[data-chapter="p3c10"] #chapter-meta::after { content: "Bezeugung — the attestation Dasein itself must bear."; }
+body[data-chapter="p3c11"] #chapter-meta::after { content: "Hören — vocal utterance is not essential to discourse."; }
+body[data-chapter="p3c12"] #chapter-meta::after { content: "Ruf — the call that says, strictly speaking, nothing."; }
+body[data-chapter="p3c13"] #chapter-meta::after { content: "unheimlich — the thin wall; cold assurance."; }
+body[data-chapter="p3c14"] #chapter-meta::after { content: "Schuld — being-the-ground of a nullity."; }
+body[data-chapter="p3c15"] #chapter-meta::after { content: "Abrechnung — balancing accounts, the vulgar idiom."; }
+body[data-chapter="p3c16"] #chapter-meta::after { content: "Entschlossenheit — reticent self-projection on ownmost guilt."; }
+
+/* ---------- threshold first paragraph (B4: confident, legible) ---------- */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-text > p:first-of-type {
+  font-family: var(--bt-display);
+  font-weight: 400;
+  font-size: calc(var(--text-size, 1.19rem) * 1.1026);
+  line-height: 1.6;
+  letter-spacing: 0.002em;
+  color: var(--bt-mist);
+  background: var(--bt-under);
+  border-left: 3px solid var(--bt-shaft);
+  max-width: var(--reader-max);
+  margin: 0 auto 2.25rem;
+  padding: 1.5rem 1.75rem 1.5rem 1.5rem;
+  text-align: left;
+  hyphens: auto;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-text > p:first-of-type::first-letter {
+  float: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  font-weight: inherit;
+  color: inherit;
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+}
+/* Ember threshold edge for the death act (p3c3–p3c9 ONLY). */
+body:is([data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"]) #chapter-text > p:first-of-type {
+  border-left-color: var(--bt-ember);
+}
+
+/* ---------- calm reading body: 34rem, ragged right ---------- */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-text {
+  font-family: var(--bt-body);
+  font-size: var(--text-size, 1.19rem);
+  line-height: var(--leading, 1.75);
+  color: var(--bt-mist);
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-text p {
+  max-width: var(--reader-max);
+  margin: 0 auto 1.1em;
+  text-align: left;
+  hyphens: auto;
+}
+/* Silence the shared end-fleuron inside this cohort (firewall: no glyph ornaments). */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-text > p:last-child::after {
+  content: none;
+}
+
+/* ---------- authored breathers + fleck treatments (explicit per-ID) ---------- */
+/* p3c1: six-stage Division program (P18, final para) — carved contents rule. */
+body[data-chapter="p3c1"] #chapter-text > p:nth-of-type(18) {
+  border-top: 1px solid var(--bt-bark);
+  padding-top: 1.75rem;
+  margin-top: 2.5rem;
+  color: var(--bt-lichen);
+  font-size: 1.1rem;
+}
+/* p3c2: §§47–53 program list (P6, final para) — forward-link rule. */
+body[data-chapter="p3c2"] #chapter-text > p:nth-of-type(6) {
+  border-top: 1px solid var(--bt-bark);
+  padding-top: 1.75rem;
+  margin-top: 2.5rem;
+  color: var(--bt-lichen);
+  font-size: 1.1rem;
+}
+/* p3c4: three theses (P5–P7) — carved propositions; P5 leads with mist. */
+body[data-chapter="p3c4"] #chapter-text > p:nth-of-type(5) {
+  border-left: 2px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+}
+body[data-chapter="p3c4"] #chapter-text > p:nth-of-type(6),
+body[data-chapter="p3c4"] #chapter-text > p:nth-of-type(7) {
+  border-left: 2px solid var(--bt-bark);
+  padding-left: 1.25rem;
+}
+/* p3c6: thunderstorm example (P3) vs definition (P5) — dim then pull-line. */
+body[data-chapter="p3c6"] #chapter-text > p:nth-of-type(3) {
+  color: var(--bt-lichen);
+}
+body[data-chapter="p3c6"] #chapter-text > p:nth-of-type(5) {
+  border-left: 3px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+}
+/* p3c7: 'one dies' analysis (P4, P7) — voiced phrases in italic serif. */
+body[data-chapter="p3c7"] #chapter-text > p:nth-of-type(4),
+body[data-chapter="p3c7"] #chapter-text > p:nth-of-type(7) {
+  font-style: italic;
+  color: var(--bt-mist);
+}
+/* p3c8: the Division's thesis sentence (P14) — left-cut rule + wider measure. */
+body[data-chapter="p3c8"] #chapter-text > p:nth-of-type(14) {
+  border-left: 3px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+  max-width: calc(var(--reader-max) + 4rem);
+}
+/* p3c9: attestation bridge (P20–P21) — carved forward-link into Act III. */
+body[data-chapter="p3c9"] #chapter-text > p:nth-of-type(20),
+body[data-chapter="p3c9"] #chapter-text > p:nth-of-type(21) {
+  border-left: 2px solid var(--bt-ember);
+  padding-left: 1.25rem;
+  color: var(--bt-mist);
+}
+/* p3c10: §§55–60 program list (P9, final para) — carved contents rule. */
+body[data-chapter="p3c10"] #chapter-text > p:nth-of-type(9) {
+  border-top: 1px solid var(--bt-bark);
+  padding-top: 1.75rem;
+  margin-top: 2.5rem;
+  color: var(--bt-lichen);
+  font-size: 1.1rem;
+}
+/* p3c11: load-bearing sentence (P3) — pull-line (shortest chapter: 4 paras). */
+body[data-chapter="p3c11"] #chapter-text > p:nth-of-type(3) {
+  border-left: 3px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+}
+/* p3c12: 'mode of silence' (P7) — the cohort's stillest pull-line. */
+body[data-chapter="p3c12"] #chapter-text {
+  letter-spacing: 0.004em;
+}
+body[data-chapter="p3c12"] #chapter-text p {
+  margin-bottom: 1.45em;
+}
+body[data-chapter="p3c12"] #chapter-text > p:nth-of-type(7) {
+  border-left: 3px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+  text-align: left;
+}
+/* p3c13: care-formula stanza (P14) — caller/summoned/called. */
+body[data-chapter="p3c13"] #chapter-text > p:nth-of-type(14) {
+  border-left: 2px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+  font-size: 1.2rem;
+  line-height: 1.9;
+}
+/* p3c14: long-chapter relief (33 paras) — sub-dividers + pull-line. */
+body[data-chapter="p3c14"] #chapter-text > p:nth-of-type(6),
+body[data-chapter="p3c14"] #chapter-text > p:nth-of-type(12),
+body[data-chapter="p3c14"] #chapter-text > p:nth-of-type(28) {
+  border-top: 1px solid var(--bt-bark);
+  padding-top: 1.75rem;
+  margin-top: 2.5rem;
+}
+body[data-chapter="p3c14"] #chapter-text > p:nth-of-type(13) {
+  border-left: 3px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+}
+/* p3c15: four objections (P5–P8) — carved enumeration (prose-enumerated). */
+body[data-chapter="p3c15"] #chapter-text > p:nth-of-type(5) {
+  border-top: 1px solid var(--bt-bark);
+  padding-top: 1.75rem;
+  margin-top: 2.5rem;
+}
+body[data-chapter="p3c15"] #chapter-text > p:nth-of-type(5),
+body[data-chapter="p3c15"] #chapter-text > p:nth-of-type(6),
+body[data-chapter="p3c15"] #chapter-text > p:nth-of-type(7),
+body[data-chapter="p3c15"] #chapter-text > p:nth-of-type(8) {
+  border-left: 2px solid var(--bt-bark);
+  padding-left: 1.25rem;
+}
+/* p3c16: triad stanza (P3–P5) + Situation pull-line (P14) + closing divider (P20). */
+body[data-chapter="p3c16"] #chapter-text > p:nth-of-type(3),
+body[data-chapter="p3c16"] #chapter-text > p:nth-of-type(4),
+body[data-chapter="p3c16"] #chapter-text > p:nth-of-type(5) {
+  border-left: 2px solid var(--bt-bark);
+  padding-left: 1.25rem;
+  line-height: 1.9;
+}
+body[data-chapter="p3c16"] #chapter-text > p:nth-of-type(14) {
+  border-left: 3px solid var(--bt-shaft);
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+}
+body[data-chapter="p3c16"] #chapter-text > p:nth-of-type(20) {
+  border-bottom: 1px solid var(--bt-bark);
+  padding-bottom: 1.75rem;
+}
+
+/* Fleck fields: per-chapter floor weight via explicit rules (no modulo).
+   Authored SVG data-URI dots (B1: zero CSS gradients) gathered shaft-side;
+   §53/§60 clearings stay open. Ember-fleck chapters: p3c3–p3c9 ONLY. */
+body[data-chapter="p3c1"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='104' cy='52' r='2.4' fill='%23C9D4C3' fill-opacity='0.5'/%3E%3Ccircle cx='96' cy='238' r='2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='108' cy='330' r='1.6' fill='%23C9D4C3' fill-opacity='0.35'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c2"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='108' cy='84' r='2.4' fill='%23C9D4C3' fill-opacity='0.5'/%3E%3Ccircle cx='98' cy='300' r='1.8' fill='%23C9D4C3' fill-opacity='0.35'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c3"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='102' cy='126' r='2.6' fill='%23C96F3B' fill-opacity='0.6'/%3E%3Ccircle cx='110' cy='270' r='2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='96' cy='356' r='1.6' fill='%23C9D4C3' fill-opacity='0.3'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c4"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='106' cy='100' r='2.6' fill='%23C96F3B' fill-opacity='0.55'/%3E%3Ccircle cx='100' cy='244' r='2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='110' cy='352' r='1.8' fill='%23C9D4C3' fill-opacity='0.35'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c5"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='108' cy='142' r='2.4' fill='%23C96F3B' fill-opacity='0.55'/%3E%3Ccircle cx='98' cy='310' r='1.8' fill='%23C9D4C3' fill-opacity='0.35'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c6"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='102' cy='118' r='2.6' fill='%23C96F3B' fill-opacity='0.55'/%3E%3Ccircle cx='110' cy='278' r='2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='96' cy='360' r='1.6' fill='%23C9D4C3' fill-opacity='0.3'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c7"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='106' cy='92' r='2.6' fill='%23C96F3B' fill-opacity='0.55'/%3E%3Ccircle cx='100' cy='218' r='2.2' fill='%23C96F3B' fill-opacity='0.45'/%3E%3Ccircle cx='110' cy='336' r='2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c8"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='108' cy='110' r='2.6' fill='%23C96F3B' fill-opacity='0.55'/%3E%3Ccircle cx='100' cy='262' r='2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='96' cy='358' r='1.6' fill='%23C9D4C3' fill-opacity='0.3'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c9"] #chapter-text { background: none; }
+body[data-chapter="p3c10"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='104' cy='126' r='2.2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='110' cy='318' r='1.8' fill='%23C9D4C3' fill-opacity='0.32'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c11"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='108' cy='168' r='2.2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='100' cy='322' r='1.6' fill='%23C9D4C3' fill-opacity='0.3'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c12"] #chapter-text { background: none; }
+body[data-chapter="p3c13"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='102' cy='100' r='2.2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='108' cy='294' r='2' fill='%23C9D4C3' fill-opacity='0.35'/%3E%3Ccircle cx='98' cy='368' r='1.6' fill='%23C9D4C3' fill-opacity='0.3'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c14"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='560'%3E%3Ccircle cx='106' cy='100' r='2.2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='100' cy='280' r='2' fill='%23C9D4C3' fill-opacity='0.35'/%3E%3Ccircle cx='108' cy='460' r='1.8' fill='%23C9D4C3' fill-opacity='0.3'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c15"] #chapter-text { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='420'%3E%3Ccircle cx='104' cy='126' r='2.2' fill='%23C9D4C3' fill-opacity='0.4'/%3E%3Ccircle cx='108' cy='278' r='2' fill='%23C9D4C3' fill-opacity='0.35'/%3E%3Ccircle cx='98' cy='364' r='1.6' fill='%23C9D4C3' fill-opacity='0.3'/%3E%3C/svg%3E") right top repeat-y; }
+body[data-chapter="p3c16"] #chapter-text { background: none; }
+
+/* ---------- TOC: canopy ground, shaft tick, authored glyphs ---------- */
+#toc-drawer:has(.toc-chapter[data-chapter-id="p3c1"]) .drawer-panel {
+  background: #141B12;
+}
+.toc-chapter[data-chapter-id="p3c1"] .toc-num,
+.toc-chapter[data-chapter-id="p3c2"] .toc-num,
+.toc-chapter[data-chapter-id="p3c3"] .toc-num,
+.toc-chapter[data-chapter-id="p3c4"] .toc-num,
+.toc-chapter[data-chapter-id="p3c5"] .toc-num,
+.toc-chapter[data-chapter-id="p3c6"] .toc-num,
+.toc-chapter[data-chapter-id="p3c7"] .toc-num,
+.toc-chapter[data-chapter-id="p3c8"] .toc-num,
+.toc-chapter[data-chapter-id="p3c9"] .toc-num,
+.toc-chapter[data-chapter-id="p3c10"] .toc-num,
+.toc-chapter[data-chapter-id="p3c11"] .toc-num,
+.toc-chapter[data-chapter-id="p3c12"] .toc-num,
+.toc-chapter[data-chapter-id="p3c13"] .toc-num,
+.toc-chapter[data-chapter-id="p3c14"] .toc-num,
+.toc-chapter[data-chapter-id="p3c15"] .toc-num,
+.toc-chapter[data-chapter-id="p3c16"] .toc-num {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: normal;
+  font-size: 0.8125rem;
+  color: #9DB89A;
+  border: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  width: 2.5rem;
+}
+.toc-chapter[data-chapter-id="p3c1"] .toc-name,
+.toc-chapter[data-chapter-id="p3c2"] .toc-name,
+.toc-chapter[data-chapter-id="p3c3"] .toc-name,
+.toc-chapter[data-chapter-id="p3c4"] .toc-name,
+.toc-chapter[data-chapter-id="p3c5"] .toc-name,
+.toc-chapter[data-chapter-id="p3c6"] .toc-name,
+.toc-chapter[data-chapter-id="p3c7"] .toc-name,
+.toc-chapter[data-chapter-id="p3c8"] .toc-name,
+.toc-chapter[data-chapter-id="p3c9"] .toc-name,
+.toc-chapter[data-chapter-id="p3c10"] .toc-name,
+.toc-chapter[data-chapter-id="p3c11"] .toc-name,
+.toc-chapter[data-chapter-id="p3c12"] .toc-name,
+.toc-chapter[data-chapter-id="p3c13"] .toc-name,
+.toc-chapter[data-chapter-id="p3c14"] .toc-name,
+.toc-chapter[data-chapter-id="p3c15"] .toc-name,
+.toc-chapter[data-chapter-id="p3c16"] .toc-name {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.9375rem;
+}
+.toc-chapter[data-chapter-id="p3c1"].active,
+.toc-chapter[data-chapter-id="p3c2"].active,
+.toc-chapter[data-chapter-id="p3c3"].active,
+.toc-chapter[data-chapter-id="p3c4"].active,
+.toc-chapter[data-chapter-id="p3c5"].active,
+.toc-chapter[data-chapter-id="p3c6"].active,
+.toc-chapter[data-chapter-id="p3c7"].active,
+.toc-chapter[data-chapter-id="p3c8"].active,
+.toc-chapter[data-chapter-id="p3c9"].active,
+.toc-chapter[data-chapter-id="p3c10"].active,
+.toc-chapter[data-chapter-id="p3c11"].active,
+.toc-chapter[data-chapter-id="p3c12"].active,
+.toc-chapter[data-chapter-id="p3c13"].active,
+.toc-chapter[data-chapter-id="p3c14"].active,
+.toc-chapter[data-chapter-id="p3c15"].active,
+.toc-chapter[data-chapter-id="p3c16"].active {
+  border-left: 2px solid #E9D488;
+}
+.toc-chapter[data-chapter-id="p3c1"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c2"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c3"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c4"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c5"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c6"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c7"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c8"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c9"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c10"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c11"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c12"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c13"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c14"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c15"].read .toc-name,
+.toc-chapter[data-chapter-id="p3c16"].read .toc-name {
+  opacity: 0.55;
+}
+/* Authored 28px glyphs, one per chapter, drawn from the cohort sprite. */
+.toc-chapter[data-chapter-id="p3c1"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c2"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c3"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c4"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c5"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c6"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c7"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c8"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c9"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c10"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c11"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c12"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c13"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c14"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c15"] .toc-num::before,
+.toc-chapter[data-chapter-id="p3c16"] .toc-num::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 0.55rem;
+  vertical-align: -8px;
+  background: no-repeat center / contain;
+}
+.toc-chapter[data-chapter-id="p3c1"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c1"); }
+.toc-chapter[data-chapter-id="p3c2"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c2"); }
+.toc-chapter[data-chapter-id="p3c3"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c3"); }
+.toc-chapter[data-chapter-id="p3c4"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c4"); }
+.toc-chapter[data-chapter-id="p3c5"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c5"); }
+.toc-chapter[data-chapter-id="p3c6"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c6"); }
+.toc-chapter[data-chapter-id="p3c7"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c7"); }
+.toc-chapter[data-chapter-id="p3c8"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c8"); }
+.toc-chapter[data-chapter-id="p3c9"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c9"); }
+.toc-chapter[data-chapter-id="p3c10"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c10"); }
+.toc-chapter[data-chapter-id="p3c11"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c11"); }
+.toc-chapter[data-chapter-id="p3c12"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c12"); }
+.toc-chapter[data-chapter-id="p3c13"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c13"); }
+.toc-chapter[data-chapter-id="p3c14"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c14"); }
+.toc-chapter[data-chapter-id="p3c15"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c15"); }
+.toc-chapter[data-chapter-id="p3c16"] .toc-num::before { background-image: url("../art/death-conscience.svg#frag-p3c16"); }
+
+/* ---------- prev/next: quiet call beams, Fraunces § numerals ---------- */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-nav {
+  max-width: var(--reader-max);
+  border-top: 1px solid var(--bt-bark);
+  padding-top: 2rem;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0.25rem 0;
+  gap: 0.25rem;
+  font-family: var(--bt-body);
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn:hover:not(:disabled) {
+  background: transparent;
+  transform: none;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn.prev {
+  border-left: 2px solid var(--bt-shaft);
+  padding-left: 1rem;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn.next {
+  border-right: 2px solid var(--bt-shaft);
+  padding-right: 1rem;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn .nav-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bt-lichen);
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn .nav-title {
+  font-family: var(--bt-display);
+  font-size: 1.1rem;
+  color: var(--bt-mist);
+}
+/* Calling-back / calling-forth beams (§58): authored arc fragments. */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn.prev .nav-label::before {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-right: 0.6rem;
+  vertical-align: -4px;
+  background: url("../art/death-conscience.svg#frag-nav-back") no-repeat center / contain;
+}
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn.next .nav-label::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-left: 0.6rem;
+  vertical-align: -4px;
+  background: url("../art/death-conscience.svg#frag-nav-forth") no-repeat center / contain;
+}
+/* 2px shaft progress beam on cohort chapters. */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .progress-fill {
+  background: var(--bt-shaft);
+  height: 2px;
+  box-shadow: none;
+}
+
+/* ---------- focus-visible shaft rings (cohort-scoped) ---------- */
+body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .nav-btn:focus-visible {
+  outline: 2px solid var(--bt-shaft);
+  outline-offset: 3px;
+}
+.toc-chapter[data-chapter-id="p3c1"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c2"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c3"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c4"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c5"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c6"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c7"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c8"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c9"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c10"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c11"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c12"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c13"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c14"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c15"]:focus-visible,
+.toc-chapter[data-chapter-id="p3c16"]:focus-visible {
+  outline: 2px solid #E9D488;
+  outline-offset: 2px;
+}
+
+/* ---------- light / sepia: designed remaps, never auto-invert ---------- */
+html[data-theme="light"] body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) {
+  --bt-humus: #F5F1E4;
+  --bt-canopy: #EDE7D3;
+  --bt-under: #EAE2C9;
+  --bt-ink: #20271D;
+  --bt-mist: #1C231A;
+  --bt-lichen: #5A6B54;
+  --bt-shaft: #7A6414;
+  --bt-ember: #A34E22;
+  --bt-bark: #C9BFA4;
+}
+html[data-theme="sepia"] body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) {
+  --bt-humus: #EFE6D0;
+  --bt-canopy: #E5D9B8;
+  --bt-under: #E3D6B2;
+  --bt-ink: #232B1F;
+  --bt-mist: #232B1F;
+  --bt-lichen: #5F6B53;
+  --bt-shaft: #6E5A10;
+  --bt-ember: #A34E22;
+  --bt-bark: #C4B78F;
+}
+/* Light/sepia: the night plates stay night (ink grounds are the argument);
+   only the page chrome remaps. Ghost numeral deepens for legibility. */
+html[data-theme="light"] body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta::before,
+html[data-theme="sepia"] body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta::before {
+  opacity: 0.12;
+}
+html[data-theme="light"] #toc-drawer:has(.toc-chapter[data-chapter-id="p3c1"]) .drawer-panel,
+html[data-theme="sepia"] #toc-drawer:has(.toc-chapter[data-chapter-id="p3c1"]) .drawer-panel {
+  background: #EDE7D3;
+}
+html[data-theme="sepia"] #toc-drawer:has(.toc-chapter[data-chapter-id="p3c1"]) .drawer-panel {
+  background: #E5D9B8;
+}
+
+/* ---------- responsive: rail folds <1100px; single column <640px ---------- */
+@media (max-width: 1100px) {
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta {
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "ghost title" "rail rail";
+  }
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta::after {
+    justify-self: start;
+    max-width: none;
+    margin-top: 1.5rem;
+    border-top: 0;
+    border-left: 2px solid var(--bt-bark);
+    padding-top: 0;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 640px) {
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta {
+    display: block;
+    padding: 0 1.25rem;
+  }
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta::before {
+    display: block;
+    font-size: 24vw;
+    transform: translateX(30%);
+    margin-bottom: -0.35em;
+  }
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) .meta-title {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+    max-width: none;
+  }
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art {
+    margin-bottom: 2rem;
+  }
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-text > p:first-of-type {
+    padding: 1.25rem;
+  }
+}
+
+/* ---------- reduced motion: static art, no grain shimmer ---------- */
+@media (prefers-reduced-motion: reduce) {
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art,
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-meta,
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-text {
+    animation: none;
+  }
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art .dc-grainrect {
+    display: none;
+  }
+}
+/* Narrow widths: drop the feTurbulence grain rect (GPU note, ART-DIRECTION §4.7.5). */
+@media (max-width: 640px) {
+  body:is([data-chapter="p3c1"], [data-chapter="p3c2"], [data-chapter="p3c3"], [data-chapter="p3c4"], [data-chapter="p3c5"], [data-chapter="p3c6"], [data-chapter="p3c7"], [data-chapter="p3c8"], [data-chapter="p3c9"], [data-chapter="p3c10"], [data-chapter="p3c11"], [data-chapter="p3c12"], [data-chapter="p3c13"], [data-chapter="p3c14"], [data-chapter="p3c15"], [data-chapter="p3c16"]) #chapter-art .dc-grainrect {
+    display: none;
+  }
+}
+
+/* ---------- motif refinements via body[data-art] (narrows, never widens) ---------- */
+body[data-art="dc-night-p3c9"] #chapter-art.banner {
+  border-bottom-width: 4px;
+}
+body[data-art="dc-night-p3c12"] #chapter-meta::before {
+  opacity: 0.1;
+}
+body[data-art="dc-night-p3c16"] .meta-title {
+  color: var(--bt-shaft);
+}
+
+/* Supervisor integration addendum: light/sepia fixed-fill remap. The night
+   plates keep their ink grounds (the argument), so fixed shaft/ember fills
+   stay; but mist/lichen ink strokes would glare against paper chrome at the
+   plate edges — dc-ink re-inks to the paper text/muted tones. All hooks are
+   class-based; dark rendering is untouched. */
+html[data-theme="light"] body[data-book="being-and-time"] #chapter-art .dc-ink {
+  fill: #1C231A;
+  stroke: #1C231A;
+}
+html[data-theme="light"] body[data-book="being-and-time"] #chapter-art g.dc-ink,
+html[data-theme="light"] body[data-book="being-and-time"] #chapter-art .dc-ash {
+  stroke: #5A6B54;
+}
+html[data-theme="sepia"] body[data-book="being-and-time"] #chapter-art .dc-ink {
+  fill: #232B1F;
+  stroke: #232B1F;
+}
+html[data-theme="sepia"] body[data-book="being-and-time"] #chapter-art g.dc-ink,
+html[data-theme="sepia"] body[data-book="being-and-time"] #chapter-art .dc-ash {
+  stroke: #5F6B53;
+}
+
+/* Supervisor integration addendum (ArtDirector BT4): threshold wells never
+   hyphenate — calm front door on every chapter. */
+body[data-chapter="p3c1"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c2"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c3"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c4"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c5"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c6"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c7"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c8"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c9"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c10"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c11"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c12"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c13"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c14"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c15"] #chapter-text > p:first-of-type,
+body[data-chapter="p3c16"] #chapter-text > p:first-of-type {
+  hyphens: none;
+}

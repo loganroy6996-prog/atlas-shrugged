@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Being and Time — cohort art: historicity-finale (p3c28–p3c39, §§72–83).
+  Identity: "The Clearing" (Lichtung) per books/being-and-time/design/ART-DIRECTION.md
+  (binding incl. §9 + §10 B1–B8) + design/historicity-finale.json (design of record)
+  + design/historicity-finale-DESIGN.md. READER-CONTRACT v1.1 STABLE.
+
+  Arc beat: strata → CLEARING → finale. Gap ramp 75→100% per chapter. Verticals
+  fall 2/2/1/1/1/2-bands/1/1/1/0/0/0. hf-83 = 100% clearing glow + 3 ecstasis
+  horizons + sediment-memory hairlines, NO trunks (binding B6).
+
+  Contents: 12 <symbol id="hf-72"..hf-83"> (viewBox 0 0 1600 520 each) + shared
+  defs (hf-glowGrad, hf-shaftGrad, hf-grain, trunk/band templates, stratum template).
+  Inlined by reader.js v1.1 into #chapter-art via manifest {src, symbol}.
+  Each symbol carries width/height + preserveAspectRatio so BOTH the repo
+  reader (splice-children) and the currently-served reader (nested-symbol
+  appendChild) render identically — verified in-session 2026-10-15.
+
+  Palette: bt-star tokens ONLY with dark-first fallbacks. Strokes/fills use
+  currentColor or CSS vars so light/sepia re-ink automatically. NO ember (B5).
+  Art is STATIC. Grain (feTurbulence ≤0.06) carries class "hf-grain", gated by
+  cohort CSS: hidden <640px + under prefers-reduced-motion.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+  <defs>
+    <!-- Clearing glow: radial shaft→transparent. Used hf-80 / hf-82 / hf-83 only. -->
+    <radialGradient id="hf-glowGrad" cx="50%" cy="58%" r="72%">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.5"/>
+      <stop offset="0.42" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.16"/>
+      <stop offset="0.72" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.05"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Shaft band falloff for the §72/§73 horizon bands. -->
+    <linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Film grain: ≤0.06 opacity. Class hf-grain is gated by cohort CSS. -->
+    <filter id="hf-grain" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="83" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.91  0 0 0 0 0.83  0 0 0 0 0.53  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.06"/>
+      </feMerge>
+    </filter>
+    <!-- Trunk templates: hand-plotted silhouettes. Chapters place <use>
+         instances with own transforms + authored d-variants on strata —
+         no two plates share a skyline. -->
+    <path id="hf-trunk-l" fill="var(--bt-ink,#060805)"
+          d="M0,0 L96,0 C90,140 104,260 88,386 C80,448 88,486 82,520 L0,520 Z"/>
+    <path id="hf-trunk-r" fill="var(--bt-ink,#060805)"
+          d="M1600,0 L1502,0 C1508,140 1494,260 1510,386 C1518,448 1510,486 1516,520 L1600,520 Z"/>
+    <!-- Stratum template: one settled sediment line. Chapters author their
+         own d-variants (never identical copies) — see per-symbol strata. -->
+    <path id="hf-stratum" fill="none" stroke="var(--bt-bark,#3E4A34)"
+          stroke-width="2" stroke-linecap="round"
+          d="M120,0 C420,-12 760,14 1080,-4 C1240,-12 1400,4 1480,-6"/>
+    <!-- Ground wash: plate floor so inlined symbols carry their own ink ground. -->
+    <rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/>
+  </defs>
+
+  <!-- ============ hf-72 — §72 first strata under a widening shaft ============
+       Gap 75%. Two edge trunk silhouettes frame the shaft; four UNEVEN
+       sediment lines settle across the floor; one dimmed horizon band (12°)
+       crosses above them. -->
+  <symbol id="hf-72" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><path id="hf-trunk-r" fill="var(--bt-ink,#060805)"
+          d="M1600,0 L1502,0 C1508,140 1494,260 1510,386 C1518,448 1510,486 1516,520 L1600,520 Z"/><filter id="hf-grain" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    seed="83" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+                     values="0 0 0 0 0.91  0 0 0 0 0.83  0 0 0 0 0.53  0 0 0 0.5 0"
+                     result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="clip" opacity="0.06"/>
+      </feMerge>
+    </filter><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient><path id="hf-trunk-l" fill="var(--bt-ink,#060805)"
+          d="M0,0 L96,0 C90,140 104,260 88,386 C80,448 88,486 82,520 L0,520 Z"/></defs>
+    <use href="#hf-ground"/>
+    <polygon points="200,-40 1400,-40 1290,560 90,560" fill="url(#hf-shaftGrad)"
+             opacity="0.16" class="hf-grain" style="filter:url(#hf-grain)"/>
+    <polygon points="200,-40 1400,-40 1290,560 90,560" fill="url(#hf-shaftGrad)" opacity="0.16"/>
+    <path d="M120,128 C480,112 900,138 1480,106" fill="none"
+          style="stroke:var(--bt-shaft,#E9D488)" stroke-width="7" opacity="0.16"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M150,330 C420,312 700,344 940,326 C1140,310 1320,334 1450,320"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="2.4"/>
+      <path d="M170,372 C460,358 760,388 1020,368 C1200,356 1350,376 1430,368"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.8"/>
+      <path d="M150,414 C430,428 700,400 980,418 C1180,430 1340,408 1450,420"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.3"/>
+      <path d="M190,452 C500,442 820,462 1100,448 C1260,440 1380,452 1430,448"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.8"/>
+    </g>
+    <use href="#hf-trunk-l"/>
+    <use href="#hf-trunk-r"/>
+  </symbol>
+
+  <!-- ============ hf-73 — §73 leveled strata: the administered past ============
+       Gap 77%. Deliberate contrast to hf-72: four strata drawn STRAIGHT and
+       EVENLY spaced — the past as no-longer-now. Two thinner edge trunks. -->
+  <symbol id="hf-73" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="184,-40 1416,-40 1312,560 80,560" fill="url(#hf-shaftGrad)" opacity="0.18"/>
+    <path d="M110,120 L1490,120" style="stroke:var(--bt-shaft,#E9D488)" stroke-width="7" opacity="0.18"/>
+    <g fill="none" style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.6">
+      <path d="M150,332 L1450,332"/>
+      <path d="M150,372 L1450,372"/>
+      <path d="M150,412 L1450,412"/>
+      <path d="M150,452 L1450,452"/>
+    </g>
+    <path d="M0,0 L72,0 C67,150 79,300 66,420 C62,460 66,495 63,520 L0,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+    <path d="M1600,0 L1528,0 C1533,150 1521,300 1534,420 C1538,460 1534,495 1537,520 L1600,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+  </symbol>
+
+  <!-- ============ hf-74 — §74 COHORT PEAK: the Moment line ============
+       Gap 79%. One left trunk remnant; a single bright horizontal Moment-line
+       crosses the full gap; four strata BEND UPWARD toward it; five faint
+       vertical retrieval threads rise from strata to line — fetching, not copying. -->
+  <symbol id="hf-74" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="128,-40 1472,-40 1392,560 48,560" fill="url(#hf-shaftGrad)" opacity="0.22"/>
+    <g style="stroke:var(--bt-lichen,#9DB89A)" stroke-width="1.4" opacity="0.3">
+      <path d="M380,196 L380,392" fill="none"/>
+      <path d="M620,196 L620,404" fill="none"/>
+      <path d="M860,196 L860,398" fill="none"/>
+      <path d="M1100,196 L1100,390" fill="none"/>
+      <path d="M1300,196 L1300,396" fill="none"/>
+    </g>
+    <g fill="none" stroke-linecap="round">
+      <path d="M150,392 C420,372 700,360 1000,300 C1180,262 1330,232 1450,214"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="2.2"/>
+      <path d="M160,428 C460,408 760,394 1060,330 C1240,292 1370,258 1450,246"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.7"/>
+      <path d="M170,462 C500,444 820,428 1120,362 C1300,324 1400,292 1450,282"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.3"/>
+      <path d="M180,494 C540,478 880,462 1180,396 C1340,362 1420,330 1450,320"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.85"/>
+    </g>
+    <rect x="96" y="190" width="1408" height="7" style="fill:var(--bt-shaft,#E9D488)" opacity="0.55"/>
+    <rect x="96" y="190" width="1408" height="1.6" style="fill:var(--bt-shaft,#E9D488)" opacity="0.55"/>
+    <path d="M0,0 L118,0 C111,150 126,300 108,420 C102,462 109,496 104,520 L0,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+  </symbol>
+
+  <!-- ============ hf-75 — §75 bright shards riding the strata ============
+       Gap 81%. One trunk; four strata continue; three small bright lozenge
+       shards sit ON the upper stratum catching shaft light — the ring worn. -->
+  <symbol id="hf-75" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="152,-40 1448,-40 1376,560 80,560" fill="url(#hf-shaftGrad)" opacity="0.24"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M150,352 C440,336 740,366 1000,348 C1200,334 1350,352 1450,344"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="2.2"/>
+      <path d="M160,394 C470,380 770,406 1040,388 C1230,376 1370,392 1440,386"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.7"/>
+      <path d="M170,434 C480,446 780,422 1060,438 C1250,448 1380,432 1440,440"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.3"/>
+      <path d="M190,470 C520,460 840,478 1120,466 C1280,460 1390,470 1430,466"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.8"/>
+    </g>
+    <g style="fill:var(--bt-shaft,#E9D488)" opacity="0.5">
+      <path d="M468,318 L492,344 L468,370 L444,344 Z"/>
+      <path d="M812,322 L830,344 L812,366 L794,344 Z"/>
+      <path d="M1150,312 L1178,344 L1150,376 L1122,344 Z"/>
+    </g>
+    <g style="stroke:var(--bt-lichen,#9DB89A)" stroke-width="1" fill="none" opacity="0.5">
+      <path d="M468,318 L492,344 L468,370 L444,344 Z"/>
+      <path d="M812,322 L830,344 L812,366 L794,344 Z"/>
+      <path d="M1150,312 L1178,344 L1150,376 L1122,344 Z"/>
+    </g>
+    <path d="M0,0 L104,0 C98,150 112,300 96,420 C91,462 97,496 93,520 L0,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+  </symbol>
+
+  <!-- ============ hf-76 — §76 lens-ring of thematization ============
+       Gap 83%. One trunk; five FINE strata lines; a thin open lens-ring in
+       shaft color rests over the middle strata with faint radial selection
+       ticks inside — science is founded, not primordial. -->
+  <symbol id="hf-76" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="136,-40 1464,-40 1398,560 70,560" fill="url(#hf-shaftGrad)" opacity="0.26"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M150,318 C450,306 750,330 1050,314 C1250,304 1390,320 1450,314"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.4"/>
+      <path d="M155,356 C470,344 770,368 1070,352 C1260,342 1390,356 1445,352"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.2"/>
+      <path d="M160,394 C480,406 780,384 1080,398 C1270,406 1390,392 1440,398"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.1"/>
+      <path d="M165,432 C490,422 800,444 1100,430 C1280,422 1390,434 1435,430"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1"/>
+      <path d="M175,468 C510,460 830,478 1120,466 C1290,460 1390,470 1430,466"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="0.9" opacity="0.85"/>
+    </g>
+    <circle cx="830" cy="330" r="104" fill="none" style="stroke:var(--bt-shaft,#E9D488)"
+            stroke-width="2.4" opacity="0.5"/>
+    <g style="stroke:var(--bt-lichen,#9DB89A)" stroke-width="1.2" opacity="0.4">
+      <path d="M830,252 L830,272 M830,388 L830,408 M752,330 L772,330 M888,330 L908,330
+               M775,275 L789,289 M871,371 L885,385 M885,275 L871,289 M789,371 L775,385" fill="none"/>
+    </g>
+    <path d="M0,0 L92,0 C87,150 100,300 86,420 C81,462 87,496 83,520 L0,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+  </symbol>
+
+  <!-- ============ hf-77 — §77 letters plate: binding-bands + letter-ticks ============
+       Gap 85%. Archival turn: two thin upright binding-bands REPLACE trunks at
+       the gap edges; four strata run beneath; seven short indented shaft
+       letter-ticks stack along the right band — the quoted letters. -->
+  <symbol id="hf-77" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="120,-40 1480,-40 1420,560 60,560" fill="url(#hf-shaftGrad)" opacity="0.28"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M170,380 C470,366 770,392 1070,376 C1240,368 1360,382 1420,376"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.8"/>
+      <path d="M175,414 C480,402 790,426 1080,410 C1250,402 1360,414 1415,410"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.4"/>
+      <path d="M180,446 C490,456 800,438 1090,450 C1260,456 1360,446 1410,450"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.1"/>
+      <path d="M190,476 C520,468 830,486 1100,474 C1260,468 1360,476 1405,474"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="0.9" opacity="0.85"/>
+    </g>
+    <rect x="118" y="0" width="14" height="520" style="fill:var(--bt-bark,#3E4A34)"/>
+    <rect x="1468" y="0" width="14" height="520" style="fill:var(--bt-bark,#3E4A34)"/>
+    <g style="stroke:var(--bt-shaft,#E9D488)" stroke-width="3" opacity="0.4" stroke-linecap="round">
+      <path d="M1412,64 L1456,64"/>
+      <path d="M1424,116 L1456,116"/>
+      <path d="M1412,168 L1456,168"/>
+      <path d="M1430,220 L1456,220"/>
+      <path d="M1412,272 L1456,272"/>
+      <path d="M1424,324 L1456,324"/>
+      <path d="M1412,376 L1456,376"/>
+    </g>
+  </symbol>
+
+  <!-- ============ hf-78 — §78 the hinge: hairline rule ============
+       Gap 87%. QUIETEST plate: one hairline trunk at far left; three thin
+       strata in the lower third; upper field bare glow; a single full-width
+       hairline rule divides lower strata from upper emptiness. -->
+  <symbol id="hf-78" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="104,-40 1496,-40 1444,560 52,560" fill="url(#hf-shaftGrad)" opacity="0.2"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M120,398 C460,388 800,410 1120,396 C1300,388 1420,402 1480,396"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.3"/>
+      <path d="M130,438 C480,428 820,450 1140,436 C1310,428 1420,440 1475,436"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.1"/>
+      <path d="M140,476 C500,468 840,486 1150,474 C1320,466 1420,476 1470,474"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="0.9" opacity="0.85"/>
+    </g>
+    <rect x="60" y="298" width="1480" height="1.6" style="fill:var(--bt-shaft,#E9D488)" opacity="0.5"/>
+    <path d="M0,0 L44,0 C41,150 48,300 40,420 C38,462 41,496 39,520 L0,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+  </symbol>
+
+  <!-- ============ hf-79 — §79 datability: now-line + three speaking ticks ============
+       Gap 90%. One trunk; a full-width now-line with three shaft date-ticks
+       hung beneath at composed positions; two faint strata at the floor. -->
+  <symbol id="hf-79" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="80,-40 1520,-40 1476,560 36,560" fill="url(#hf-shaftGrad)" opacity="0.3"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M120,442 C480,432 840,452 1160,440 C1330,432 1430,444 1480,440"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.2"/>
+      <path d="M140,482 C520,474 860,490 1170,480 C1330,474 1425,484 1470,480"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.85"/>
+    </g>
+    <rect x="80" y="238" width="1440" height="3" style="fill:var(--bt-shaft,#E9D488)" opacity="0.5"/>
+    <g style="stroke:var(--bt-shaft,#E9D488)" stroke-width="3" opacity="0.6" stroke-linecap="round">
+      <path d="M420,241 L420,305"/>
+      <path d="M800,241 L800,285"/>
+      <path d="M1180,241 L1180,318"/>
+    </g>
+    <path d="M0,0 L64,0 C60,150 70,300 59,420 C56,462 60,496 57,520 L0,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+  </symbol>
+
+  <!-- ============ hf-80 — §80 horology ring: the reckoning instrument ============
+       Gap 92%. One trunk at far left edge; center holds the horology ring —
+       thin double circle with twelve composed ticks and one fixed pointer-line;
+       radial glow gathers behind the ring; two faint strata ground the floor. -->
+  <symbol id="hf-80" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><radialGradient id="hf-glowGrad" cx="50%" cy="58%" r="72%">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.5"/>
+      <stop offset="0.42" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.16"/>
+      <stop offset="0.72" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.05"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </radialGradient></defs>
+    <use href="#hf-ground"/>
+    <rect x="0" y="0" width="1600" height="520" fill="url(#hf-glowGrad)" opacity="0.6"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M110,446 C470,436 830,456 1150,444 C1330,436 1440,448 1490,444"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.2"/>
+      <path d="M130,484 C510,476 870,494 1170,484 C1335,478 1435,488 1480,484"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.85"/>
+    </g>
+    <circle cx="800" cy="252" r="118" fill="none" style="stroke:var(--bt-shaft,#E9D488)"
+            stroke-width="2" opacity="0.55"/>
+    <circle cx="800" cy="252" r="108" fill="none" style="stroke:var(--bt-bark,#3E4A34)"
+            stroke-width="1.2"/>
+    <g style="stroke:var(--bt-shaft,#E9D488)" stroke-width="2" opacity="0.55" stroke-linecap="round">
+      <path d="M800,122 L800,142 M800,362 L800,382 M670,252 L690,252 M910,252 L930,252
+               M735,187 L749,201 M851,303 L865,317 M865,187 L851,201 M749,303 L735,317
+               M756,152 L766,170 M834,334 L844,352 M844,152 L834,170 M766,334 L756,352"/>
+    </g>
+    <path d="M800,252 L852,162" style="stroke:var(--bt-shaft,#E9D488)" stroke-width="2.4"
+          opacity="0.7" stroke-linecap="round"/>
+    <circle cx="800" cy="252" r="3.4" style="fill:var(--bt-shaft,#E9D488)" opacity="0.7"/>
+    <path d="M0,0 L56,0 C53,150 61,300 52,420 C49,462 53,496 50,520 L0,520 Z"
+          fill="var(--bt-ink,#060805)"/>
+  </symbol>
+
+  <!-- ============ hf-81 — §81 the now-series: FIRST TRUNKLESS VIEW ============
+       Gap 94%. NO verticals. Eleven small even shaft dots cross the upper
+       field (the leveled now-series); beneath, the now-line sags and dims;
+       strata gone. Nadir-by-design. -->
+  <symbol id="hf-81" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><linearGradient id="hf-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+      <stop offset="0.18" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="0.82" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.55"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </linearGradient></defs>
+    <use href="#hf-ground"/>
+    <polygon points="48,-40 1552,-40 1520,560 16,560" fill="url(#hf-shaftGrad)" opacity="0.14"/>
+    <g style="fill:var(--bt-shaft,#E9D488)" opacity="0.45">
+      <circle cx="300" cy="180" r="7"/>
+      <circle cx="430" cy="180" r="7"/>
+      <circle cx="560" cy="180" r="7"/>
+      <circle cx="690" cy="180" r="7"/>
+      <circle cx="820" cy="180" r="7"/>
+      <circle cx="950" cy="180" r="7"/>
+      <circle cx="1080" cy="180" r="7"/>
+      <circle cx="1210" cy="180" r="7"/>
+      <circle cx="1340" cy="180" r="7"/>
+      <circle cx="1470" cy="180" r="7"/>
+      <circle cx="170" cy="180" r="7"/>
+    </g>
+    <path d="M120,330 C500,318 900,352 1480,326" fill="none"
+          style="stroke:var(--bt-shaft,#E9D488)" stroke-width="2.4" opacity="0.3"/>
+  </symbol>
+
+  <!-- ============ hf-82 — §82 refutation: scattered dots, one held line ============
+       Gap 97%. Trunkless. Eleven now-dots scatter in composed irregular drift
+       upward-right, dimming; beneath them a single steady horizontal line holds
+       at full shaft brightness; faint radial glow gathers behind the line. -->
+  <symbol id="hf-82" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><radialGradient id="hf-glowGrad" cx="50%" cy="58%" r="72%">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.5"/>
+      <stop offset="0.42" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.16"/>
+      <stop offset="0.72" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.05"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </radialGradient></defs>
+    <use href="#hf-ground"/>
+    <rect x="0" y="0" width="1600" height="520" fill="url(#hf-glowGrad)" opacity="0.24"/>
+    <g style="fill:var(--bt-shaft,#E9D488)" opacity="0.25">
+      <circle cx="312" cy="132" r="6"/>
+      <circle cx="452" cy="96" r="5.4"/>
+      <circle cx="598" cy="148" r="6"/>
+      <circle cx="724" cy="72" r="5"/>
+      <circle cx="866" cy="120" r="6"/>
+      <circle cx="992" cy="62" r="5"/>
+      <circle cx="1124" cy="140" r="5.6"/>
+      <circle cx="1248" cy="84" r="5"/>
+      <circle cx="1372" cy="152" r="5.4"/>
+      <circle cx="1478" cy="96" r="5"/>
+      <circle cx="196" cy="168" r="6"/>
+    </g>
+    <rect x="90" y="330" width="1420" height="3.4" style="fill:var(--bt-shaft,#E9D488)" opacity="0.6"/>
+  </symbol>
+
+  <!-- ============ hf-83 — §83 FINALE: the clearing ============
+       Gap 100%. NO TRUNKS. Full radial clearing-glow (50% core) + three
+       ecstasis horizon lines (future upper brightest, having-been middle,
+       present lower) spanning the field + two sediment-memory hairlines at
+       12% below — the strata remembered, not depicted. B6: silence. -->
+  <symbol id="hf-83" viewBox="0 0 1600 520" width="1600" height="520" preserveAspectRatio="xMidYMid slice"><defs><rect id="hf-ground" x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/><radialGradient id="hf-glowGrad" cx="50%" cy="58%" r="72%">
+      <stop offset="0" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.5"/>
+      <stop offset="0.42" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.16"/>
+      <stop offset="0.72" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0.05"/>
+      <stop offset="1" style="stop-color:var(--bt-shaft,#E9D488)" stop-opacity="0"/>
+    </radialGradient></defs>
+    <use href="#hf-ground"/>
+    <rect x="0" y="0" width="1600" height="520" fill="url(#hf-glowGrad)"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M80,196 C480,182 900,208 1520,190"
+            style="stroke:var(--bt-shaft,#E9D488)" stroke-width="3" opacity="0.55"/>
+      <path d="M80,268 C500,254 920,282 1520,264"
+            style="stroke:var(--bt-shaft,#E9D488)" stroke-width="2.4" opacity="0.45"/>
+      <path d="M80,340 C480,328 900,352 1520,336"
+            style="stroke:var(--bt-shaft,#E9D488)" stroke-width="2" opacity="0.35"/>
+    </g>
+    <g fill="none" stroke-linecap="round">
+      <path d="M240,436 C600,428 1000,444 1360,434"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1.2" opacity="0.9"/>
+      <path d="M320,472 C660,466 980,480 1280,472"
+            style="stroke:var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.7"/>
+    </g>
+  </symbol>
+</svg>

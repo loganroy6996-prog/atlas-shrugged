@@ -1,0 +1,218 @@
+/* WYNAND cohort (Part 3) — FURNACE grammar · ENGINEER PASS (lead fallback; see research §0)
+ * Conforms to ART-DIRECTION.md §2–§9 (integrated, F1–F10 + A1–A2), CHAPTERS.md
+ * Part 3 rows, READER-CONTRACT v1.0 §2–§4/§8, USER-FEEDBACK benchmark §6 marginals.
+ * Hooks: body[data-book="the-fountainhead"][data-part-id="part-3"],
+ * body[data-chapter="p3cN"], body[data-art="wynand-ziggurat"].
+ * Art: art/wynand-banner.svg inlined into #chapter-art.banner by reader.js.
+ * numeral_fill/bars/fig/dropcap per chapter live in cohort-wynand.json. */
+
+body[data-book="the-fountainhead"][data-part-id="part-3"] {
+  --fh-hearth: #17100b;
+  --fh-hearth-deep: #100b08;
+  --fh-bone: #f6ead6;
+  --fh-ember: #e4572e;
+  --fh-ember-deep: #8c3a20;
+  --fh-emberlight: #ffd9a0;
+  --fh-bronze: #c8a06a;
+  --fh-gilt: #d8a05a;
+  --fh-ash: #7a6a58;
+  --fh-cinder: #3a2c22;
+  --fh-display: Oswald, "Arial Narrow", Impact, sans-serif;
+  --fh-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+
+/* ── Banner slot: meta→text zone, compact, never pushes text (F4) ── */
+body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner {
+  display: block;
+  max-height: 12rem;
+  overflow: hidden;
+  margin: 0 0 1.5rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 3px double var(--fh-gilt);
+  background: var(--fh-hearth-deep);
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 12rem;
+}
+
+/* One panel visible per chapter; the rest hidden. Explicit per-chapter
+ * display rules (no :has() dependency for the core behavior). */
+body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner .w3-panel {
+  display: none;
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c1"] #chapter-art.banner #w3-c1,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c2"] #chapter-art.banner #w3-c2,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c3"] #chapter-art.banner #w3-c3,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c4"] #chapter-art.banner #w3-c4,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c5"] #chapter-art.banner #w3-c5,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c6"] #chapter-art.banner #w3-c6,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c7"] #chapter-art.banner #w3-c7,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c8"] #chapter-art.banner #w3-c8,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c9"] #chapter-art.banner #w3-c9 {
+  display: inline;
+}
+
+/* Chainage captions set via figcaption (reader caption field). Gilt on
+ * Hearth-deep meters 8.15:1 (F9 ✓ on dark). */
+body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner figcaption {
+  font-family: var(--fh-data);
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fh-gilt);
+  padding: 0.5rem 0 0;
+}
+
+/* ── Chapter meta: Oswald head + Plex kicker (§2 scale) ── */
+body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-part {
+  font-family: var(--fh-data);
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fh-gilt);
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-title {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fh-bone);
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-number {
+  font-family: var(--fh-display);
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--fh-gilt);
+  opacity: 0.8;
+}
+@supports not (-webkit-text-stroke: 1px black) {
+  body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-number {
+    color: var(--fh-gilt);
+    opacity: 0.45;
+  }
+}
+
+body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-rule span {
+  background: linear-gradient(90deg, var(--fh-gilt), transparent);
+}
+
+/* ── Drop-cap heat: Gilt, Bronze for COLD dialogue opens (A2) ── */
+body[data-book="the-fountainhead"][data-part-id="part-3"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--fh-display);
+  font-weight: 700;
+  color: var(--fh-gilt);
+  border-left-color: var(--fh-gilt);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c2"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c6"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--fh-bronze);
+  border-left-color: var(--fh-bronze);
+}
+
+/* ── End mark: Gilt diamond; Bronze COLD; Ember climaxes (F10) ── */
+body[data-book="the-fountainhead"][data-part-id="part-3"] .chapter-text > p:last-child::after {
+  content: "◆";
+  color: var(--fh-gilt);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c2"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c6"] .chapter-text > p:last-child::after {
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c1"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c5"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-part-id="part-3"][data-chapter="p3c9"] .chapter-text > p:last-child::after {
+  color: var(--fh-ember);
+}
+
+/* ── Benchmark marginals (§6): TOC FIG labels, nav kickers, progress ── */
+body[data-book="the-fountainhead"][data-part-id="part-3"] .toc-chapter .toc-fig {
+  font-family: var(--fh-data);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  color: var(--fh-gilt);
+  opacity: 0.75;
+  margin-left: auto;
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"] .toc-chapter.active {
+  border-left-color: var(--fh-gilt);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"] .nav-btn .nav-fig {
+  display: block;
+  font-family: var(--fh-data);
+  font-size: 0.66rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-gilt);
+  opacity: 0.8;
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"] .nav-btn:hover {
+  border-top: 2px solid var(--fh-gilt);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"] .progress-fill {
+  background: linear-gradient(90deg, var(--fh-ember), var(--fh-gilt));
+}
+
+/* ── Small screens: numeral stacks under meta, banner keeps width ── */
+@media (max-width: 720px) {
+  body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-number {
+    font-size: 4.2rem;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner {
+    max-height: none;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner svg {
+    max-height: none;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner figcaption {
+    letter-spacing: 0.18em;
+  }
+}
+@media (max-width: 390px) {
+  body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-number {
+    font-size: 3.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art.banner {
+    border-bottom-style: solid;
+  }
+}
+
+/* ── Sepia / light themes: Bone ground (F1/F9 policing) ──
+ * Gilt #D8A05A ≈2.2:1 on Bone — chainage/kickers/drop-caps take darkened
+ * gilt #8A5E1E (4.77:1 on Bone, computed — F9 ✓). */
+html[data-theme="sepia"] body[data-book="the-fountainhead"][data-part-id="part-3"],
+html[data-theme="light"] body[data-book="the-fountainhead"][data-part-id="part-3"] {
+  --fh-hearth: #f6ead6;
+  --fh-hearth-deep: #efe0c8;
+  --fh-bone: #2a1e14;
+  --fh-ember: #b23e1f;
+  --fh-ember-deep: #8c3a20;
+  --fh-emberlight: #8c3a20;
+  --fh-bronze: #8a6a3a;
+  --fh-gilt: #8a5e1e;
+  --fh-ash: #6b5c48;
+}
+
+/* ── Nocturne / slate: Hearth holds, Bone cools ── */
+html[data-theme="nocturne"] body[data-book="the-fountainhead"][data-part-id="part-3"],
+html[data-theme="slate"] body[data-book="the-fountainhead"][data-part-id="part-3"] {
+  --fh-bone: #e9e4d8;
+}
+
+/* ── Oxblood / candlelight / verdant: Bronze shifts toward theme accent ── */
+html[data-theme="oxblood"] body[data-book="the-fountainhead"][data-part-id="part-3"],
+html[data-theme="candlelight"] body[data-book="the-fountainhead"][data-part-id="part-3"],
+html[data-theme="verdant"] body[data-book="the-fountainhead"][data-part-id="part-3"] {
+  --fh-bronze: var(--accent, #c8a06a);
+}

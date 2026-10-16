@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="c8t c8d">
+<title id="c8t">Dose VIII — The spire: a moonlit parish tower with four glowing belfry lancets rises above a whole lit town</title>
+<desc id="c8d">Nave crown plate. The century's tower seen from below: a tall parish-church tower with Ashen quoins, its stone spire catching moonlight on the left face, its belfry stage carrying four tall lancets glowing flat candle-gold — the rhyme c9's lantern answers. The tower's west portal stands ajar with one sanctuary candle within. Four whole gabled merchants' houses with intact roofs and chimneys flank the tower, their small windows lit pale; the street band runs before them. Light lives in the sky half for the first time, aimed upward.</desc>
+<defs>
+<linearGradient id="c8night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".6" stop-color="#100F0D"/><stop offset="1" stop-color="#171410"/>
+</linearGradient>
+<linearGradient id="c8stone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="c8flame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<filter id="c8grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#c8grain)">
+<rect x="0" y="0" width="1600" height="900" fill="url(#c8night)"/>
+<g fill="#ECE2CE">
+<circle cx="150" cy="130" r="2" opacity=".55"/><circle cx="330" cy="220" r="1.5" opacity=".35"/>
+<circle cx="60" cy="380" r="1.4" opacity=".35"/><circle cx="560" cy="80" r="1.4" opacity=".35"/>
+<circle cx="1050" cy="90" r="1.6" opacity=".45"/><circle cx="1290" cy="160" r="1.5" opacity=".35"/>
+<circle cx="1470" cy="130" r="2" opacity=".55"/><circle cx="1540" cy="300" r="1.5" opacity=".4"/>
+<circle cx="930" cy="60" r="2.2" opacity=".7"/>
+</g>
+<!-- ===== the town: four whole gabled houses, intact roofs and chimneys ===== -->
+<g>
+<rect x="60" y="560" width="230" height="240" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<path d="M60,560 L175,480 L290,560 Z" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<rect x="238" y="470" width="26" height="60" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<rect x="118" y="620" width="30" height="44" fill="#ECE2CE" opacity=".5" stroke="#3A332A" stroke-width="1.5"/>
+<rect x="194" y="620" width="30" height="44" fill="#ECE2CE" opacity=".5" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="133" y1="620" x2="133" y2="664" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="209" y1="620" x2="209" y2="664" stroke="#3A332A" stroke-width="1.5"/>
+</g>
+<g>
+<rect x="310" y="600" width="230" height="200" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<path d="M310,600 L425,525 L540,600 Z" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<rect x="352" y="518" width="26" height="56" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<rect x="404" y="654" width="30" height="44" fill="#ECE2CE" opacity=".5" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="419" y1="654" x2="419" y2="698" stroke="#3A332A" stroke-width="1.5"/>
+</g>
+<g>
+<rect x="1060" y="600" width="230" height="200" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<path d="M1060,600 L1175,525 L1290,600 Z" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<rect x="1222" y="518" width="26" height="56" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<rect x="1166" y="654" width="30" height="44" fill="#ECE2CE" opacity=".5" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="1181" y1="654" x2="1181" y2="698" stroke="#3A332A" stroke-width="1.5"/>
+</g>
+<g>
+<rect x="1310" y="560" width="230" height="240" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<path d="M1310,560 L1425,480 L1540,560 Z" fill="#1E1B16" stroke="#5A5142" stroke-width="2.5"/>
+<rect x="1336" y="470" width="26" height="60" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<rect x="1376" y="620" width="30" height="44" fill="#ECE2CE" opacity=".5" stroke="#3A332A" stroke-width="1.5"/>
+<rect x="1452" y="620" width="30" height="44" fill="#ECE2CE" opacity=".5" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="1391" y1="620" x2="1391" y2="664" stroke="#3A332A" stroke-width="1.5"/>
+<line x1="1467" y1="620" x2="1467" y2="664" stroke="#3A332A" stroke-width="1.5"/>
+</g>
+<!-- ===== the tower shaft ===== -->
+<rect x="660" y="380" width="280" height="480" fill="url(#c8stone)" stroke="#5A5142" stroke-width="3"/>
+<g fill="#2C2721" stroke="#9C917E" stroke-width="1.5">
+<rect x="660" y="560" width="30" height="36"/><rect x="660" y="632" width="30" height="36"/>
+<rect x="660" y="704" width="30" height="36"/><rect x="660" y="776" width="30" height="36"/>
+<rect x="910" y="560" width="30" height="36"/><rect x="910" y="632" width="30" height="36"/>
+<rect x="910" y="704" width="30" height="36"/><rect x="910" y="776" width="30" height="36"/>
+</g>
+<line x1="660" y1="545" x2="940" y2="545" stroke="#4A4335" stroke-width="2"/>
+<!-- the belfry stage: FOUR glowing lancets (the c9 lantern rhyme) -->
+<rect x="660" y="420" width="280" height="120" fill="#0A0908" stroke="#4A4335" stroke-width="2"/>
+<g fill="#DFA050" opacity=".85">
+<path d="M680,540 V458 A22,22 0 0 1 724,458 V540 Z"/>
+<path d="M736,540 V458 A22,22 0 0 1 780,458 V540 Z"/>
+<path d="M820,540 V458 A22,22 0 0 1 864,458 V540 Z"/>
+<path d="M876,540 V458 A22,22 0 0 1 920,458 V540 Z"/>
+</g>
+<g fill="none" stroke="#4A4335" stroke-width="1.5">
+<path d="M680,540 V458 A22,22 0 0 1 724,458 V540"/>
+<path d="M736,540 V458 A22,22 0 0 1 780,458 V540"/>
+<path d="M820,540 V458 A22,22 0 0 1 864,458 V540"/>
+<path d="M876,540 V458 A22,22 0 0 1 920,458 V540"/>
+</g>
+<!-- the spire: moonlight on the LEFT face, night on the right -->
+<path d="M660,380 L800,60 L940,380 Z" fill="#1E1B16" stroke="#5A5142" stroke-width="3"/>
+<path d="M660,380 L800,60 L800,380 Z" fill="#ECE2CE" opacity=".18"/>
+<path d="M800,380 L800,60" stroke="#3A332A" stroke-width="2"/>
+<line x1="800" y1="60" x2="800" y2="42" stroke="#3A332A" stroke-width="3"/>
+<circle cx="800" cy="38" r="4" fill="#3A332A"/>
+<!-- the west portal ajar, with the candle within -->
+<path d="M724,860 V680 Q724,620 800,600 Q876,620 876,680 V860 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="3"/>
+<path d="M736,860 V686 Q736,632 800,614 V860 Z" fill="#DFA050" opacity=".3"/>
+<path d="M800,614 Q864,632 864,686 V860 H800 Z" fill="#171310" stroke="#6B5B3E" stroke-width="2"/>
+<g stroke="#6B5B3E" stroke-width="1.5" opacity=".9">
+<line x1="800" y1="720" x2="864" y2="720"/><line x1="800" y1="785" x2="864" y2="785"/>
+<line x1="800" y1="845" x2="864" y2="845"/>
+</g>
+<ellipse cx="800" cy="860" rx="16" ry="5" fill="#E8DCC2"/>
+<rect x="795" y="780" width="10" height="80" fill="#E8DCC2"/>
+<line x1="800" y1="780" x2="800" y2="774" stroke="#14120E" stroke-width="2"/>
+<path d="M800,774 C794.2,763.6 795.2,755.8 800,747.5 C804.8,755.8 805.8,763.6 800,774 Z" fill="url(#c8flame)"/>
+<!-- the street band -->
+<rect x="0" y="800" width="1600" height="100" fill="#0B0A08" opacity=".9"/>
+<line x1="0" y1="800" x2="1600" y2="800" stroke="#2C2721" stroke-width="2"/>
+<!-- drawn light: two wedges reach from the portal toward the viewer -->
+<path d="M724,860 H876 L930,900 H670 Z" fill="#DFA050" opacity=".4"/>
+<path d="M714,860 H886 L960,900 H640 Z" fill="#DFA050" opacity=".2"/>
+<!-- (no in-SVG caption strip: the manifest caption covers it) -->
+</g>
+</svg>

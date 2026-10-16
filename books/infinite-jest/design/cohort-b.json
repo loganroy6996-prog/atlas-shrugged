@@ -1,0 +1,1498 @@
+{
+  "acceptance_map": {
+    "cohort-b.css": "Phase 2 (engineer): scoped body[data-chapter] treatments per entry reading_treatment; no theme.css/index.html/shared edits",
+    "cohort-b.json": "this file (Phase 1 draft; final lock after TextCurator freeze)",
+    "cohort-b.svg": "Phase 2 (designer+engineer): original authored motifs referenced by entries' motif_asset"
+  },
+  "cohort": "B — 'Documents & Interlace'",
+  "coverage": {
+    "chapter_count": 14,
+    "ids": [
+      "p1c14",
+      "p1c15",
+      "p1c16",
+      "p1c17",
+      "p1c18",
+      "p1c19",
+      "p1c20",
+      "p1c21",
+      "p1c22",
+      "p1c23",
+      "p1c24",
+      "p1c25",
+      "p1c26",
+      "p1c27"
+    ],
+    "mode": "every assigned chapter JSON read in full or in substantial multi-pass samples; heads/middles/tails + structural scans; no invented events"
+  },
+  "entries": [
+    {
+      "id": "p1c14",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 14,
+      "number_label": "§ 14",
+      "title": "Year of the Depend Adult Undergarment (5) — Doctors tend to enter the arenas of…",
+      "subject": "Kate Gompert's clinical-depression interview on the psych ward; bridge to the Entertainment's victims; Schtitt profile and his ice-cream walk with Mario",
+      "mood": "Clinical dread dissolving into warm elegiac philosophy; the cohort's heaviest affective span",
+      "motifs": [
+        "fifth-floor psych ward, hot room, slim hard bed",
+        "fetal posture, Watteau-era frontispiece pathos",
+        "doctor's penmanship, chart, 'get me out of this' in quotes",
+        "shock treatment request ('Straps. Nurses… General')",
+        "Entertainment-victim attaché glimpse (single-para bridge)",
+        "Schtitt profile: riding crop, BMW cycle, pipe smoke-rings",
+        "Comm Ave ice-cream walk: tricolor cone vs Mario's chocolate",
+        "Green Line train, askew umbrella, waffle-seated chairs"
+      ],
+      "opener_worthy": "The fetal posture on the slim hard bed; the doctor's chart with 'get me out of this' in quotes; the tricolor cone vs Mario's chocolate at the walk's end.",
+      "rationale": "Triptych chapter: Kate Gompert's depression interview (clinical dialogue), a one-paragraph Entertainment-horror bridge, then the Schtitt profile and Mario ice-cream walk ('life's endless war against the self'). The design must honor the tonal hinge rather than flatten it — the chapter is the cohort's proof that voice shifts are structural, not decorative.",
+      "palette_role": "Anchor tragedy: coldest whites/steels in cohort, warming to amber at the coda — sets the emotional floor the documents later puncture",
+      "motif_asset": "cohort-b.svg #chart-and-cone — patient chart clipped to a tricolor ice-cream cone silhouette; waffle-chair lattice fragment",
+      "opener_composition": "Split-register opener: cold clinical masthead (chart-grid, narrow measure, fixed-width time-stamp feel) that warms as the reader scrolls — the Schtitt/Mario coda gets a sunlit sidewalk-vignette break treatment with the cone motif",
+      "reading_treatment": "Narrative: quiet clinical body with dialogue breathing room; doctor/patient exchange gets subtle speaker rhythm (no chat bubbles — typographic indentation shifts); scene hinges (p85, p86) get authored transition ornaments (chart-line → train-line); long Schtitt paragraphs keep calm measure",
+      "scene_map": [
+        {
+          "paras": "p82–p84",
+          "what": "Kate requests shock: 'I'll go willingly'; weeping"
+        },
+        {
+          "paras": "p85",
+          "what": "single-para bridge: attaché's wife finds Entertainment victim"
+        },
+        {
+          "paras": "p86–p119",
+          "what": "Schtitt profile → Comm Ave ice-cream walk with Mario; 'the chance to play'"
+        },
+        {
+          "paras": "p1–p81",
+          "what": "Kate Gompert psych-ward interview (depression phenomenology, Hope/cannabis)"
+        }
+      ],
+      "voice": "Narrative; three movements: (1) dry clinical dialogue, (2) horror vignette, (3) discursive elegiac profile + Socratic walk",
+      "para_count": 119,
+      "word_count": 8292,
+      "deep_research": {
+        "structure": "119 paras, median 195ch: dialogue volleys + long clinical set-pieces; max 4804ch Schtitt set-piece.",
+        "document_form": "Clinical interview transcript (p1-84) + incident vignette (p85) + coaching profile / Socratic walk (p86-119).",
+        "opener_lines": [
+          "P2: Kate fetal on the slim hard bed, 'dark-blue boating sneakers without socks or laces.'",
+          "P83: 'I'll go willingly.' (shock request)",
+          "P115: 'The true opponent, the enfolding boundary, is the player himself.'"
+        ],
+        "timestamp_notes": "Y.D.A.U. (undated within year); 0145h 2 April timestamp on the p85 bridge; ice-cream walk in daylight."
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "5TH FLOOR PSYCH · CLINICAL INTERVIEW + COACH PROFILE · 119 ENTRIES",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved triptych plate: patient chart with quoted line left, thin horror rule center, tricolor cone + waffle-chair lattice right; chart-to-sidewalk tonal hinge."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate triptych",
+        "motif": "chart-and-cone",
+        "caption": "Plate 14 · Chart, horror rule, and the tricolor cone",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "chart-and-cone"
+      },
+      "note_refs": {
+        "count": 9,
+        "notes": [
+          25,
+          28,
+          29,
+          30,
+          31,
+          32,
+          34,
+          35,
+          36
+        ]
+      },
+      "design_notes": "DESIGN chart-and-cone (FROZEN symbol): 800x450 CLINICAL TRIPTYCH — LEFT (x24-270): patient chart, clip top, 6 ruled lines, quoted GET ME OUT OF THIS in Newsreader italic 20px, oversized THEN WHAT? in Stamp Red stamp box; behind chart the WATTEAU-FRONTISPIECE vignette (fetal silhouette in oval vignette frame, gold oval, THE POSTURE tag) makes the prose's own frontispiece reference literal. CENTER (x270-330): 8px Stamp Red HORROR RULE running full plate height, 0145H tag. RIGHT (x330-776): tricolor cone in waffle-lattice cup (three scoop bands as three hatch densities — texture not hue — with TRICOLOR micro-tag), train-parallels asymptote + umbrella arc + GREE/CHAN micro-signs along the base; coda bathed in warm amber wash (opacity-only) against the chart's cool steel. J2 opener-slot only; spot red = stamp + horror rule."
+    },
+    {
+      "id": "p1c15",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 15,
+      "number_label": "§ 15",
+      "title": "Year of the Depend Adult Undergarment (6) — There is no jolly irony in Tiny…",
+      "subject": "Tiny Ewell's taxi ride to the Enfield Marine VA detox unit; St. Mel's roommate and the air conditioner; the attaché-house crowd",
+      "mood": "Grim, cramped, institutional; tenderness under fluorescent bleakness",
+      "motifs": [
+        "elf-sized Tiny Ewell, feet short of taxi floor",
+        "bombardier-jacket staffer, cow-placid stare",
+        "air-conditioner dial #4 → #5, billowing curtains, 12°C November room",
+        "Mass. Livery License, skallycap cabbie",
+        "'So it would seem'",
+        "2 April attaché-house crowd (second Entertainment-victim tableau)"
+      ],
+      "opener_worthy": "Elf-sized Tiny in the taxi with feet short of the floor; the roommate rapt before the air conditioner at setting #5; the single dry line 'So it would seem.'",
+      "rationale": "A five-paragraph transit miniature: Tiny Ewell's taxi ride to Enfield Marine VA Unit #6, his roommate rapt before the air conditioner, one bone-dry exchange, then the gathering crowd of Entertainment victims. Brevity is the point — design as a held breath, not a shrunken epic.",
+      "palette_role": "Institutional teal-grey; smallest chapter by paragraph count but dense — a claustrophobic miniature between two epics",
+      "motif_asset": "cohort-b.svg #taxi-vent — taxi window frame crossed by air-conditioner vent slats; 'thank you for not smoking' sticker fragment",
+      "opener_composition": "Transit opener: horizontal letterbox band (taxi-window aspect) with eastward-motion streaks; the single dry dialogue exchange ('sick or something' / 'So it would seem') set as a spaced two-beat before the dense final paragraph",
+      "reading_treatment": "Narrative miniature: slightly narrower measure, generous leading to let 5 long paragraphs breathe; the p4 one-liner isolated with air above/below as the chapter's heartbeat",
+      "scene_map": [
+        {
+          "paras": "p1–p4",
+          "what": "Tiny Ewell taxi ride east into Watertown; dry exchange with cabbie"
+        },
+        {
+          "paras": "p2",
+          "what": "(intercut) roommate rapt before St. Mel's air conditioner"
+        },
+        {
+          "paras": "p5",
+          "what": "2 April: crowd gathers at attaché's house (Entertainment aftermath)"
+        }
+      ],
+      "voice": "Narrative; wry omniscient compression — five dense blocks, one spoken line",
+      "para_count": 5,
+      "word_count": 1300,
+      "deep_research": {
+        "structure": "5 dense blocks (40/488/969/2295/3808ch): the cohort's tightest chapter; one spoken line (p4).",
+        "document_form": "Transit log: taxi ride + intercut detox vignette + casualty-list sting (p5).",
+        "opener_lines": [
+          "P3-P4: 'asked if he was sick or something.' / 'So it would seem.'"
+        ],
+        "timestamp_notes": "November (12 C room); destination Unit #6 Enfield Marine VA; p5 dated 2 April Y.D.A.U."
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "ENFIELD MARINE VA · TRANSIT LOG · UNIT #6 · 5 ENTRIES",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved transit miniature: taxi-window letterbox band with eastward streaks; vent-slat crosshatch; one-line exchange set as a two-beat below."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate miniature",
+        "motif": "taxi-vent",
+        "caption": "Plate 15 · Eastbound taxi; setting #5",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "taxi-vent"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN taxi-vent (FROZEN symbol): 800x450 TRANSIT LETTERBOX — 21:9 window band centered with horizontal motion streaks; elf-scale rung-ladder at left with PAIR OF FEET hovering 60px+ above the floor-line + FEET-BARELY-REACH tag (the gap IS the subject). VENT SCREEN overlays right 35%: 5 horizontal slats, slat #5 engraved + DIAL ARROW at #5 + phosphor #5 numeral and #4→#5 tick; cord dropping to three-prong outlet with black scuff arcs. THANK-YOU-FOR-NOT-SMOKING micro-strip along sill. Below window: TWO-BEAT RULE — SICK OR SOMETHING? (40%) / SO IT WOULD SEEM. (60%, gold rule, air) set as spaced beats. P5's crowd deliberately EXCLUDED (appended string quote stays prose; the sting is the chapter's, not the plate's). Spot phosphor = dial only."
+    },
+    {
+      "id": "p1c16",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 16,
+      "number_label": "§ 16",
+      "title": "30 April — Year of the Depend Adult Undergarment",
+      "subject": "Marathe and Steeply's first desert meeting above Tucson: the Entertainment, the dead attaché, betrayal layered on betrayal",
+      "mood": "Espionage tête-à-tête at planetary scale; melancholy, vastness, performed courtesy",
+      "motifs": [
+        "shale outcropping above Tucson, area code 6026",
+        "sun 'like a viscous drop about to fall'; knives of light",
+        "tumbling weeds over I-10; gespenst-phenomenon shadows",
+        "wheelchair, blanket, windbreaker, breast pocket of pens",
+        "perfume from handbag; electrolysis rash; pumps on stone",
+        "Sterling UL35 under blanket; mesquite scratch",
+        "cigarette butt arcing east, 'a tiny bloom of orange'"
+      ],
+      "opener_worthy": "The viscous-drop sun over the Tortolitas; two monstrous elongating shadows; the tossed cigarette's tiny bloom of orange at full dusk.",
+      "rationale": "First full Marathe/Steeply desert dialogue: the Entertainment samizdat, the murdered medical attaché, double and triple betrayals — staged against a Tucson sunset of almost operatic scale. The landscape is a third interlocutor; the chapter ends on a tossed cigarette's 'tiny bloom of orange' that the design should earn and echo.",
+      "palette_role": "Desert dusk: the cohort's only warm-exterior chapter — burnt red/ochre against violet dusk; ember-orange reserved for the closing beat",
+      "motif_asset": "cohort-b.svg #dusk-ember — shale outcropping horizon, viscous-drop sun, two elongating shadows, single cigarette-ember bloom",
+      "opener_composition": "Horizon opener: full-bleed dusk gradient band with the viscous-drop sun and twin-shadow motif; title set against darkening sky; dialogue that follows keeps the desert's wide measure — the cohort's most cinematic opening frame",
+      "reading_treatment": "Narrative dialogue: alternating-speaker rhythm with Marathe's sniff/shrug beats given hang-indent space; sunset passages (p1–p2) set slightly larger as scene-establishing shots; closing ember paragraph isolated as an envoy",
+      "scene_map": [
+        {
+          "paras": "p1–p10",
+          "what": "sunset establishment; language negotiation (Québecois vs U.S.A. English); Marathe's true betrayal"
+        },
+        {
+          "paras": "p11–p60",
+          "what": "samizdat/attaché interrogation; blue dazzle; Luria; gun under blanket"
+        },
+        {
+          "paras": "p61–p65",
+          "what": "shadows climb back; cigarette-ember envoy at full dusk"
+        }
+      ],
+      "voice": "Narrative; theatrical two-hander with landscape choruses",
+      "para_count": 65,
+      "word_count": 3398,
+      "deep_research": {
+        "structure": "65 paras, median 235ch: sunset establishment + interrogation volleys + ember envoy.",
+        "document_form": "Field-interview transcript with landscape choruses; footnote markers 39/40 intact in prose.",
+        "opener_lines": [
+          "P1: 'He sat alone above the desert, redly backlit and framed in shale...'",
+          "P65 (envoy): 'a tiny bloom of orange.'"
+        ],
+        "timestamp_notes": "30 April Y.D.A.U.; dusk progression is the chapter's clock (sun -> shadows climb back -> dusk)."
+      },
+      "ledger_conform": {
+        "stamp_band": "30 APRIL — YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "TUCSON AZ · FIELD INTERVIEW · DUSK SESSION · 65 ENTRIES",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved horizon plate: shale outcrop line, viscous-drop sun, twin elongating shadows; ember-bloom glyph reserved for the envoy."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate horizon",
+        "motif": "dusk-ember",
+        "caption": "Plate 16 · Tucson dusk; the viscous-drop sun",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "dusk-ember"
+      },
+      "note_refs": {
+        "count": 5,
+        "notes": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      "design_notes": "DESIGN dusk-ember (FROZEN symbol): 800x450 DUSK HORIZON tri-band — TOP shale crosshatch outcrop line + TUCSON 6026 tag; MIDDLE viscous-drop sun (perfect circle, 12 radiating knife-triangles, one tremor wobble tick, BACKLIT visor cap) sinking just above the horizon; BELOW TWIN SHADOWS stretching toward viewer, wheel-spoke ASTERISK-SHADOW radiating from one chair position (Bröckengespenst, P3). BOTTOM right: ember cell (crosshatch dusk square) holding the single branching ember + TINY BLOOM OF ORANGE tag — the ONLY red object. Ground: TWIN SHADOWS (mirror geometry, equal weight — TWO figures, never one) + WEEDS-OF-TUMBLING hairball scrolls along the I-10 baseline. Rhyme contract with c20: identical horizon line/outcrop verbatim; zones below go from dusk detail to night void."
+    },
+    {
+      "id": "p1c17",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 17,
+      "number_label": "§ 17",
+      "title": "Year of the Depend Adult Undergarment (7) — Tuesday, 3 November, Enfield Tennis Academy: A.M.…",
+      "subject": "E.T.A. locker room after P.M. matches: exhaustion liturgy, Leith quiz, Big Buddy lore — intercut with Marathe/Steeply on love and temples",
+      "mood": "Communal exhaustion turned into gallows liturgy; then night-philosophy in the desert",
+      "motifs": [
+        "locker-room inventory day-schedule (drills/shower/eat/class…)",
+        "blue crush carpet, thin steel lockers, wet-combed hair",
+        "Leith pop quiz: analogs v. digitals, acutance, 'seminal'",
+        "Hal nicknames: Halster/Halorama/Halation",
+        "thesaurus of fatigue; 'word-inflation'; syntax for tiredness",
+        "Big Buddy assignments; Hal stowing gear for the Pump Room",
+        "desert cut-ins: temples, what you love, 'You are what you love'"
+      ],
+      "opener_worthy": "The p1 day-schedule as procession (drills/shower/eat/class...); the fatigue-synonym litany (tired/tard/Totalled); the desert cut-ins arriving like transmissions.",
+      "rationale": "The cohort's longest chapter and its structural thesis: E.T.A. locker-room exhaustion liturgy (164 paras, mostly dialogue) intercut with Marathe/Steeply desert philosophy (p43, p127–p164). The desert cut-ins must read as transmissions from another world — inset, dusk-toned, typographically distinct — proving the 'Interlace' of the cohort title.",
+      "palette_role": "Tile-white and towel-steam grey cooled by fluorescent blue; desert cut-ins import p1c16's dusk as inset panels — the interlace made visible",
+      "motif_asset": "cohort-b.svg #thesaurus-tired — locker-room carpet-fiber field with a rising column of fatigue synonyms (tired→tard→Totalled); tile-and-towel stripe",
+      "opener_composition": "Litany opener: the p1 day-schedule set as a procession line (drills→shower→eat→class…) above the title; fatigue-synonym cascade (p51–p60) designed as the chapter's visual centerpiece — a rising/falling typographic exhaustion curve, the longest single-voice chorus in the cohort",
+      "reading_treatment": "Narrative chorus: rapid-fire dialogue set tight with speaker-name rhythm; fatigue litany as designed cascade; desert cut-ins as inset dusk panels with rule-and-shadow framing; Big Buddy exposition (p45) as a calmer expository inset",
+      "scene_map": [
+        {
+          "paras": "p1–p42",
+          "what": "day-schedule; locker room assembles; Leith pop quiz; Hal nicknames"
+        },
+        {
+          "paras": "p43",
+          "what": "desert cut-in #1 (single para: evening wind)"
+        },
+        {
+          "paras": "p44–p126",
+          "what": "fatigue litany; word-inflation; R&R fantasies; Interdependence Day; Schacht in stall"
+        },
+        {
+          "paras": "p127–p164",
+          "what": "desert cut-in #2 (sustained): love, temples, choice; humming the U.S.A. song"
+        }
+      ],
+      "voice": "Narrative chorus (dozens of boy-voices) interlaced with desert dialogue inserts — the cohort's explicit interlace demonstration",
+      "para_count": 164,
+      "word_count": 6315,
+      "deep_research": {
+        "structure": "164 paras, median 109ch: the cohort's longest chapter; rapid dialogue + desert inserts at p43 and p127-164.",
+        "document_form": "Locker-room chorus log interlaced with desert field-interview inserts; Big Buddy exposition (p45) as embedded minutes.",
+        "opener_lines": [
+          "P1: the full day-schedule procession line.",
+          "P53: 'So tired it's out of tired's word-range.'",
+          "P154: 'You are what you love.'"
+        ],
+        "timestamp_notes": "Tuesday 3 November Y.D.A.U.; 1640h locker room; Interdependence Day weekend approaching."
+      },
+      "ledger_conform": {
+        "stamp_band": "TUESDAY, 3 NOVEMBER — YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "E.T.A. COMM.-AD. LOCKER ROOM · CHORUS LOG · 164 ENTRIES · DESERT INSERTS",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved litany plate: day-schedule procession band over a locker/carpet field; fatigue-synonym cascade as a rising exhaustion curve; dusk inset frames for desert cut-ins."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate litany",
+        "motif": "thesaurus-tired",
+        "caption": "Plate 17 · The litany of tired; desert inserts",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "thesaurus-tired"
+      },
+      "note_refs": {
+        "count": 1,
+        "notes": [
+          45
+        ]
+      },
+      "design_notes": "DESIGN thesaurus-tired (FROZEN symbol): 800x450 LITANY PLATE — TOP: day-schedule PROCESSION band (sixteen gold stencil stops drills→collapse, arrow ticks, Tuesday 3 November 1640h tag, P1 verbatim). MIDDLE: carpet-fiber horizontal field over locker-louver stripes; TOWEL STRIPE with one black towel (Stice) + OWN TOWELS tag; exhaustion curve: descending hairline (P-early, steady), SMALL spike at IT'S TRYING TO THINK, long wavy trough (mid-litany), rising limp tail relabeled COLLAPSE (never recovery); cascade words tired→Totalled→wrung→NONE COME CLOSE along the curve, final word gold. TWO dusk CUT-IN FRAMES left/right (gold 6% wash, gold rules, WIND/WHAT-YOU-LOVE tags) overlapping frame edges as transmissions. Shared-panel contract with c18: identical locker x-positions/geometry; ONLY day↔night register shifts. Spot gold = procession + final word + frames; stamp band keeps red."
+    },
+    {
+      "id": "p1c18",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 18,
+      "number_label": "§ 18",
+      "title": "3 November Y.D.A.U.",
+      "subject": "November 3rd evening at E.T.A.: Hal and Blott on loneliness, Wayne's silent court, Struck's gamesmanship lecture",
+      "mood": "Dormitory night: earnest boy-philosophy, scatology, conspiracy-theories of coaching; tender underneath",
+      "motifs": [
+        "Hal/Kent Blott: hatred-as-structure, loneliness, community-spiel",
+        "spit-bubble Beak asleep; 'God no not with pliers!'",
+        "V.R.5: John Wayne, Chu, Sleepy T.P., 'Is this right Mr. Wayne?'",
+        "Struck's B.B. session: kertwanging, water-jug revenge, fart-vs-shit ('let it ride')",
+        "gingival-mound flossing; 'Double or Nothing' Pemulis dare",
+        "Mrs. Clarke's triangle; servers' hairnets and Ob/Gynish gloves",
+        "limits and rituals; need vs strong desire; tooth twinge"
+      ],
+      "opener_worthy": "Beak's spit-bubble sleep; Struck lecturing like an Oxford don ('let it ride'); Mrs. Clarke's dinner triangle; 'limits and rituals' as closing thesis.",
+      "rationale": "The evening complement to p1c17: Hal tutors Kent Blott on loneliness and engineered hatred, Wayne holds silent court, Struck lectures on gamesmanship and gastrointestinal courage. Three rooms, one night — the design should feel like moving down a dorm hallway, with the triangle-bell as the chapter's closing chime and 'limits and rituals' as its thesis line.",
+      "palette_role": "Night-interior indigo with viewer-screen phosphor accents; companion to p1c17's fluorescent day — same building, twelve hours later",
+      "motif_asset": "cohort-b.svg #triangle-bell — dinner triangle with steel ladle; spit-bubble circle motif for Beak's sleep",
+      "opener_composition": "Night-dorm opener: darkened-room composition with small warm light sources (viewer glow, hallway spill); the Blott dialogue set as Socratic pairs; Struck's B.B. session gets a blackboard-tactician inset; triangle-bell motif marks the dinner close",
+      "reading_treatment": "Narrative triptych: three room-sections with subtle locators (Hal/Blott room → V.R.5 → Struck's B.B. session → coda); rapid dialogue kept tight; 'limits and rituals' closing set as a quiet envoy matching p1c16's ember-beat grammar",
+      "scene_map": [
+        {
+          "paras": "p1–p59",
+          "what": "Hal/Blott/Arslanian/Ingersoll: hatred, community, loneliness"
+        },
+        {
+          "paras": "p60–p80",
+          "what": "V.R.5: Wayne's silent counsel; Possalthwaite card game fringe"
+        },
+        {
+          "paras": "p81–p120",
+          "what": "Struck's B.B. session: kertwanging, fart dilemma, Pemulis dare"
+        },
+        {
+          "paras": "p121–p122",
+          "what": "coda: 'So they do it on purpose?'; limits and rituals; dinner triangle"
+        }
+      ],
+      "voice": "Narrative; Socratic dialogue → silent tableau → lecture-hall comedy → lyrical coda",
+      "para_count": 122,
+      "word_count": 5722,
+      "deep_research": {
+        "structure": "122 paras, median 115ch: three room-sections + coda; max 2866ch Hal set-piece.",
+        "document_form": "Dorm-night minutes across three rooms (Hal/Blott room, V.R.5, Struck's B.B. session) + lyrical coda.",
+        "opener_lines": [
+          "P33: 'what we're talking about here is loneliness.'",
+          "P114: 'Mobes, if it's me: I let it ride.'",
+          "P122: 'Limits and rituals.'"
+        ],
+        "timestamp_notes": "3 November Y.D.A.U. evening; communal dinner as the chapter's closing bell."
+      },
+      "ledger_conform": {
+        "stamp_band": "3 NOVEMBER Y.D.A.U.",
+        "filing_line": "E.T.A. DORMITORY · NIGHT MINUTES · THREE ROOMS · 122 ENTRIES",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved night-dorm plate: three room panels (bunk, viewer glow, blackboard) joined by a hallway rule; triangle-and-ladle chime glyph at the close."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate night-triptych",
+        "motif": "triangle-bell",
+        "caption": "Plate 18 · Three rooms; limits and rituals",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "triangle-bell"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN triangle-bell (FROZEN symbol): 800x450 NIGHT-DORM QUAD — three dark room cells joined by a horizontal hallway rule joining all three panels; ROOM 1 bunk+jacket hood + 'LONELINESS.' stencil plate; ROOM 2 viewer-on-south-wall rectangle OFF (crossed by an UNLIT diagonal: never glowing, P60-verified) + silent floor-semicircle with 4 seated arcs facing JOHN WAYNE standing plate; ROOM 3 blackboard with chalk graphs + LET-IT-RIDE chalk underline. RIGHT: spit-bubble circle pair drifting on a thin waver line; BELOW: triangle DINNER BELL with ladle at strike angle + CLANG arcs; LIMITS+RITUALS gold ledger rule along the base. Shared tile/louver geometry with c17 (same family, night register). Spot gold = bell + hallway rule + base rule; red appears ONLY in the stamp band."
+    },
+    {
+      "id": "p1c19",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 19,
+      "number_label": "§ 19",
+      "title": "Mario Incandenza’s First and Only Even Remotely Romantic Experience, Thus Far",
+      "subject": "Mario's evening walk with Millicent Kent: confessions, an embrace in poison sumac, and a tripod found in the thicket",
+      "mood": "Tender, autumnal, gently absurd; the cohort's only love story",
+      "motifs": [
+        "mid-October stroll; dry leaves not yet colorless; crackle-crackle-stop",
+        "illegally burned leaves + dining-hall ventilator smell",
+        "U.S.S. Millicent Kent: 200 kilos, #1 Singles, secret interpretive dancer",
+        "leotard/confession doublings (Millicent's father; sister's Cupid costume)",
+        "poison-sumac thicket; crushed-head embrace; ambient-energy cold",
+        "cinematic tripod: 'dully glinting TL waffle-tipped Husky'",
+        "Hal melting away down the path (the discreet brother)"
+      ],
+      "opener_worthy": "Leaf-crackle rhythm (crackle crackle stop); Millicent at 200 kilos dwarfing Mario; the dully glinting tripod found last in the thicket.",
+      "rationale": "Mario's almost-romance with Millicent Kent — tennis-vs-dance confessions, a West Virginia joke, a crushing embrace in poison sumac — ending on the mysterious tripod in the thicket. The chapter withholds its real subject (surveillance? the Entertainment's apparatus?) until the final paragraph; the design must stage that reveal, not spoiler it.",
+      "palette_role": "Leaf-amber and pine-shadow green; the cohort's warmest interior feeling despite the chill — tenderness rendered in color",
+      "motif_asset": "cohort-b.svg #thicket-tripod — bare thicket branches parting on a dully glinting tripod; falling-leaf crackle marks",
+      "opener_composition": "Autumn-path opener: leaf-litter ground-line with crackle rhythm marks; Millicent introduced at full scale (she dwarfs Mario — let the typography feel her size once, then go gentle); tripod reveal reserved as the closing image — the chapter's true subject arriving last",
+      "reading_treatment": "Narrative romance: airy measure, leaf-break ornaments between walk-beats; confessions (p9, p15, p17) given confessional inset warmth; final tripod paragraph as a cold reveal panel — temperature drop made typographic",
+      "scene_map": [
+        {
+          "paras": "p1–p3",
+          "what": "October stroll; Hal melts away; leaf-crackle establishment"
+        },
+        {
+          "paras": "p4–p14",
+          "what": "Millicent appears; lashes compliment; dance confession; West Virginia joke; 'Hold my hand'"
+        },
+        {
+          "paras": "p15–p18",
+          "what": "father-in-leotard confession; poison-sumac embrace"
+        },
+        {
+          "paras": "p19",
+          "what": "tripod reveal in the thicket"
+        }
+      ],
+      "voice": "Narrative; Mario-focalized tenderness with deadpan footnotes of absurdity",
+      "para_count": 19,
+      "word_count": 2666,
+      "deep_research": {
+        "structure": "19 paras, median 388ch: walk-beats + confessions + single-para reveal; max 3555ch embrace para.",
+        "document_form": "Evening-walk record with embedded confessions; final paragraph is a found-object report (tripod).",
+        "opener_lines": [
+          "P2: 'crackle crackle crackle stop; crackle crackle crackle stop.'",
+          "P13: 'Hold my hand.'",
+          "P19 (reveal): 'a dully glinting TL waffle-tipped Husky.'"
+        ],
+        "timestamp_notes": "Mid-October Y.D.A.U., post-prandial; dark by the walk's end."
+      },
+      "ledger_conform": {
+        "stamp_band": "MID-OCTOBER Y.D.A.U.",
+        "filing_line": "E.T.A. WEST COURTS · EVENING WALK · 19 ENTRIES · 1 FOUND OBJECT",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved autumn-path plate: leaf-litter ground line with crackle marks; two walkers at true scale contrast; tripod glyph withheld from the opener (closing reveal only)."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate walk",
+        "motif": "thicket-tripod",
+        "caption": "Plate 19 · October walk; the thicket keeps its object",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "thicket-tripod"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN thicket-tripod (FROZEN symbol): 800x450 AUTUMN WALK — OPEN PATH ground-line with stipple leaf-litter + CRACKLE×3 tick-trio; two gulls + dumpster-block + West-Courts fence-strip; WALKER PAIR at true scale contrast (her silhouette rises above the plate's midline, RIBCAGE tag; he small beside her — no name or gender spelled); LEAF-AND-TWIG ENSEMBLE motif underfoot (P1). EMBRACE thicket: unprickly round-leaf + PINE sprigs + SUMAC leaves with COLD tick-halo (ambient-energy drop, P18-19) — tenderness via the halo, never a literal crush. RIGHT: thicket parting in a V on the SMALL tripod (1/8 plate height — found, never monument): Husky silhouette with WAFFLE-TIPPED micro-legs + 360° pan-head arc + 3 gold glint ticks. NO West Virginia joke text, NO violet leotard color (stays prose). Tripod = phosphor object per ledger machine-role; gold = litter + ribcage + glint."
+    },
+    {
+      "id": "p1c20",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 20,
+      "number_label": "§ 20",
+      "title": "30 April — Year of the Depend Adult Undergarment (2) — Steeply said ‘Choosing Boston as your Ops…",
+      "subject": "Marathe and Steeply at night: Boston, the anti-film rumor, past personas, dying wives",
+      "mood": "Nocturnal, intimate, melancholy; spycraft as sad small talk",
+      "motifs": [
+        "Boston as Ops center / Entertainment's origin city",
+        "anti-film rumors ('craziness of rumors')",
+        "Tucson lights as Val d'Or dance-hall ceiling globe",
+        "Marathe's dying wife; 'die twice'",
+        "Steeply's past personas: Haitian year, 'negroid tendencies'",
+        "nail-examination mannerism (feminine hand-back vs male curl)",
+        "coyote like a high-strung dog; forlorn nautical car horn",
+        "wheelchair squeak; dryer-warm wind gone cold"
+      ],
+      "opener_worthy": "Tucson lights as a Val d'Or dance-hall ceiling globe; the nail-examination mannerism; the forlorn nautical car horn in the dark.",
+      "rationale": "The desert diptych's night panel: eight paragraphs of Steeply/Marathe small talk that is really about everything (Boston, the anti-film, personas, dying wives). Must rhyme with p1c16's opener grammar at night pitch — same two men, same rocks, the sun gone — proving neighboring chapters share grammar without cloning.",
+      "palette_role": "Night ultramarine with sodium-vapor amber below; pairs with p1c16 (dusk) as its night panel — a diptych across the cohort",
+      "motif_asset": "cohort-b.svg #dancehall-globe — Tucson light-globe as dance-hall ceiling; raised-hand nail-examination glyph; coyote-ear notch",
+      "opener_composition": "Night-desert opener: near-black sky band with the Tucson light-globe glowing below the horizon line; dialogue set close and quiet — the smallest desert chapter, staged as a whispered coda to p1c16",
+      "reading_treatment": "Narrative nocturne: hushed narrow measure; Steeply's preening beats (p5, p8) as stage directions in italic066 spacing; 'die twice' isolated as the chapter's cold center",
+      "scene_map": [
+        {
+          "paras": "p1–p4",
+          "what": "Boston logic; anti-film rumors"
+        },
+        {
+          "paras": "p5–p8",
+          "what": "dance-hall light-globe; dying wife; Haitian persona; nails, coyote, horn"
+        }
+      ],
+      "voice": "Narrative; hushed two-hander, stage-direction heavy",
+      "para_count": 8,
+      "word_count": 587,
+      "deep_research": {
+        "structure": "8 paras, median 311ch: the desert diptych's night panel; max 1565ch closing beat.",
+        "document_form": "Night field-interview fragment; stage-direction heavy (preening, nails, silences).",
+        "opener_lines": [
+          "P5: 'Marathe's wife was dying slowly of ventricular restenosis. 48 He thought: die twice.'",
+          "P8: 'Haitian,' Steeply said. 'I was Haitian.'"
+        ],
+        "timestamp_notes": "30 April Y.D.A.U., night; pairs with p1c16 (dusk) as a diptych."
+      },
+      "ledger_conform": {
+        "stamp_band": "30 APRIL — YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "TUCSON AZ · FIELD INTERVIEW · NIGHT SESSION · 8 ENTRIES",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved night-desert plate: near-black sky band, Tucson light-globe below the horizon, raised-hand nail glyph; rhymes with the p1c16 plate at night pitch."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate nocturne",
+        "motif": "dancehall-globe",
+        "caption": "Plate 20 · Night session; the dance-hall globe",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "dancehall-globe"
+      },
+      "note_refs": {
+        "count": 1,
+        "notes": [
+          48
+        ]
+      },
+      "design_notes": "DESIGN dancehall-globe (FROZEN symbol): 800x450 NIGHT DESERT — crosshatched near-black sky; THE GLOBE: inverted dome of ~200 phosphor dot-cluster city-lights below the horizon line with radiating dance-hall ticks + VAL D'OR tag (the globe is phosphor; VIOLET marble/stucco stay prose). BELOW: two seated dune-shadows (SAME two figures as c16, now sunk low in the frame). THREE stage-direction glyphs along the base: nail-hand (raised hand-back + NAILS tag), horn (sound-hole arc + nautical wave tick + HORN tag), coyote ear-notch + DOG tag. SPIT-DISTANCE hairline between Boston and the rocks; DAY-GLO ORANGE deliberately NOT painted as orange — the P3 tank orange stays prose; nothing in this plate is orange-red (reserves ember for c16). Rhyme contract: horizon line + seated geometry shared verbatim with c16; sun position replaced by void + globe below."
+    },
+    {
+      "id": "p1c21",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 21,
+      "number_label": "§ 21",
+      "title": "30 April — Year of the Depend Adult Undergarment (3) — Several times also Marathe called U.S.A. to…",
+      "subject": "The sweat guru of the E.T.A. weight room; Poor Tony's street-crew narrative in full dialect",
+      "mood": "Whiplash: gym koan serenity → feral street vernacular; the cohort's most violent voice swing",
+      "motifs": [
+        "'Your walled nation' / 'Your murated nation' (single-line desert hinge)",
+        "TRANSCEND / DEUS PROVIDEBIT tank top; crustacean muscle saucers",
+        "licking sweat for guru nuggets; 'Let not the weight…'",
+        "overweighted shoulder-pull become a chin-up (inversion image)",
+        "Poor Tony / C / yrstruly: Harvard Square boosting, Patty citizen",
+        "Brighton Projects playground at night; Crown Royal purple bags",
+        "Orange Line $400; nurse encounter; Dr. Wo in Chinatown"
+      ],
+      "opener_worthy": "The lotus guru atop the towel dispenser; the overweighted pull-down become a chin-up (inversion); the Orange Line rush in full dialect.",
+      "rationale": "Eight paragraphs, three worlds: a one-line Marathe hinge, the weight-room sweat-guru parable (with its perfect inversion image — the pull-down that lifts you), then Poor Tony's first-person street torrent in heavy dialect. The chapter is the cohort's stress test for voice-shift design: serenity and ferality must share a page without contaminating each other.",
+      "palette_role": "Gym-rubber black and sweat-sheen gold colliding with street-sodium orange and subway-line orange; the cohort's highest-contrast chapter",
+      "motif_asset": "cohort-b.svg #lotus-pull — lotus figure atop a towel dispenser above a shoulder-pull bar bent into a chin-up arc; Orange Line track slash",
+      "opener_composition": "Triptych opener with hard cuts: one-line desert hinge → serene centered guru panel (symmetrical, lotus-calm) → a violent typographic break into the street-dialect torrent (ragged, breathless, unkerned energy). The three panels must NOT blend — the cuts are the content",
+      "reading_treatment": "Narrative triptych with hard-cut dividers: guru section centered and calm with koan pull-quote ('Let not the weight…'); street section in a rougher ragged measure, dialect preserved exactly, no cleanup; Orange Line passage given forward-rush pacing",
+      "scene_map": [
+        {
+          "paras": "p1",
+          "what": "desert hinge: 'Your walled nation'"
+        },
+        {
+          "paras": "p2–p5",
+          "what": "weight-room sweat guru; chin-up inversion"
+        },
+        {
+          "paras": "p6–p8",
+          "what": "Poor Tony crew narrative: Harvard Sq → Brighton Projects → Orange Line → Chinatown"
+        }
+      ],
+      "voice": "Narrative triptych: desert aphorism → gym parable → first-person street torrent (heaviest dialect in cohort)",
+      "para_count": 8,
+      "word_count": 4843,
+      "deep_research": {
+        "structure": "8 paras, median 896ch, max 12734ch: one-line hinge + gym parable + 3 massive dialect blocks.",
+        "document_form": "Triptych: desert aphorism (p1) + gym parable/koan (p2-5) + first-person street testimony (p6-8).",
+        "opener_lines": [
+          "P1: 'Your walled nation' / 'Your murated nation.'",
+          "P3: 'Let not the weight thou wouldst pull to thyself exceed thine own weight.'"
+        ],
+        "timestamp_notes": "30 April Y.D.A.U. hinge; gym and street sections undated ('post 2200' in Projects passage)."
+      },
+      "ledger_conform": {
+        "stamp_band": "30 APRIL — YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "TRIPTYCH · DESERT HINGE / GYM PARABLE / STREET TESTIMONY · 8 ENTRIES",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved triptych with hard-cut rules: single desert line, centered lotus figure over a bent pull-bar, Orange Line track slash; panels must not blend."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate triptych hardcut",
+        "motif": "lotus-pull",
+        "caption": "Plate 21 · The guru; the pull-down that lifts",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "lotus-pull"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN lotus-pull (FROZEN symbol): 800x450 HARD-CUT TRIPTYCH — three panels separated by 6px FULL-HEIGHT red cut-rules (the cuts are impassable, panels never blend). PANEL 1 (20%): desert hinge line WALLED NATION / MURATED NATION + dune hatch + HINGE tag. PANEL 2 (40%): symmetric guru panel around a CENTER VERTICAL AXIS: lotus figure (lap counter-curves, crustacean saucer-muscle arcs, gleam tick), TRANSCEND stencil on tank (verbatim, spot red), towel dispenser below with TOWEL strip, shoulder-pull bar BENT into an upward chin-up arc with CHIN-UP arrow + LYLE tag. PANEL 3 (40%): Orange Line slash (red, diagonal) + NIGHT PLAYGROUND fence-grid + purple-velvet bag (manila with CR tag — violet stays prose) + 400$ stencil + Chinatown gate-chip + YRSTRULY·C·POOR-TONY ledger tag; P6's '$' spacing preserved as depicted 400$. Reading: P1 hinge rule, P2-5 serene centered guru panel (koan marked by side-rules, never extracted), P5 inversion ornament, P6 red hard-cut into ragged street measure P6-8."
+    },
+    {
+      "id": "p1c22",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 22,
+      "number_label": "§ 22",
+      "title": "3 November Y.D.A.U. (2) — Hal could hear the phone console ringing…",
+      "subject": "Hal and Orin's cross-country phone call; the foundation legend of Ennet House",
+      "mood": "Shimmering long-distance intimacy → institutional legend; heat-haze giving way to granite",
+      "motifs": [
+        "transparent phone, visible guts; 'Mmyellow'",
+        "Orin in Phoenix: glass city, spilled-fuel shimmer, see-through hand",
+        "sizzling pedestrian; stolen pith helmet; 'Describe snow for me'",
+        "lies (60%+), Kleenex concession, 'What do you know about Separatism?'",
+        "Ennet House founding: the Guy Who Didn't Even Use His First Name",
+        "M.D.C.-Walpole shower awakening; boosting expeditions; rock-eating",
+        "Yushityu 2007 Upgrade death notice — founder dies unremarked"
+      ],
+      "opener_worthy": "The transparent phone with visible guts; Phoenix shimmer vs Enfield cold; the foundation legend arriving as granite under gossip.",
+      "rationale": "Hal and Orin's phone call (heat, lies, snow-longing, a sudden Separatism question) followed without transition by the Ennet House foundation legend. The hinge from brothers' banter to institutional myth is the chapter's meaning — gossip above, granite below — and the design should make the reader feel the floor change.",
+      "palette_role": "Phoenix amber-beige dissolving into Ennet brick-and-mortar grey; the chapter performs distance collapsing into history",
+      "motif_asset": "cohort-b.svg #guts-phone — transparent phone case showing its guts; heat-shimmer waves resolving into Ennet House brick courses",
+      "opener_composition": "Split-line opener: the phone call staged as two distant voices across a heat-shimmer gap (Phoenix amber left, Enfield blue right); the Ennet history arrives as a granite foundation course beneath — legend literally underwriting the gossip above",
+      "reading_treatment": "Narrative + legend: phone dialogue in quick alternating rhythm with heat-shimmer section tint; Ennet history (p31–p37) in a sturdier, slightly larger monumental measure with the founder's epithet as a carved-line feature; death-notice close as colophon",
+      "scene_map": [
+        {
+          "paras": "p1–p30",
+          "what": "Hal–Orin phone call: Phoenix heat, lies, snow, Separatism question"
+        },
+        {
+          "paras": "p31–p37",
+          "what": "Ennet House foundation legend; rock-eating; founder's unremarked death"
+        }
+      ],
+      "voice": "Narrative dialogue → institutional legend/history — gossip collapsing into granite",
+      "para_count": 37,
+      "word_count": 1274,
+      "deep_research": {
+        "structure": "37 paras, median 114ch: phone volleys (p1-30) + legend blocks (p31-37); max 866ch foundation para.",
+        "document_form": "Phone-call transcript (p1-30) + institutional foundation history (p31-37) with death-notice colophon.",
+        "opener_lines": [
+          "P2: 'Mmyellow.'",
+          "P18: 'The man's face made a sizzling noise... Like bacon-caliber sizzling.'",
+          "P28: 'What all do you know about Separatism?'"
+        ],
+        "timestamp_notes": "3 November Y.D.A.U.; Phoenix 90+ F vs Enfield November; Ennet founded Year of the Whopper."
+      },
+      "ledger_conform": {
+        "stamp_band": "3 NOVEMBER Y.D.A.U.",
+        "filing_line": "CROSS-COUNTRY CALL + FOUNDATION HISTORY · 37 ENTRIES · Ennet House No. 49",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved split-line plate: transparent phone with visible guts spanning a heat-shimmer gap (Phoenix amber / Enfield blue); granite foundation courses below with the founder's epithet carved in."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate split-line",
+        "motif": "guts-phone",
+        "caption": "Plate 22 · Transparent phone; granite legend",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "guts-phone"
+      },
+      "note_refs": {
+        "count": 3,
+        "notes": [
+          49,
+          50,
+          51
+        ]
+      },
+      "design_notes": "DESIGN guts-phone (FROZEN symbol): 800x450 SPLIT-LINE — CENTER: transparent phone case (beveled rectangle, 2 tiny screws, internal circuit-board guts: phosphor traces + chip squares + signal dots) with MMYELLOW tag; heat-shimmer waves LEFT (Phoenix wash, PITH HELMET lying on sidewalk + sizzle ticks spelling SIZZLE below the pavement line, P16/P18) vs right-angle cold ticks RIGHT (Enfield); GOSSIP ABOVE / GRANITE BELOW: phone call floats in the upper 55%, below a ledger rule the ENNET foundation course (brick courses, 22-CLIENTS keystone tag, M.W. WHOPPER corner-stone). FORBIDDEN: founder drawing (refused-first-name anonymity honored), rock-chewing, any second building. Separatism beat honored in margin tick (SEPARATISM? on P28) since the prose question must not be illustrated away. Spot phosphor = circuit guts; brick/manila manila."
+    },
+    {
+      "id": "p1c23",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 23,
+      "number_label": "§ 23",
+      "title": "From Internal Interlace-System E-Mail Memo Cah-Nne22- 3575634-22, Claims Adjustment Headquarters, State Farm",
+      "subject": "Interlace email memo forwarding bricklayer Dwayne Glynn's pulley-and-barrel accident letter",
+      "mood": "Corporate deadpan framing slapstick catastrophe; schadenfreude with a liability waiver",
+      "motifs": [
+        "INTCOM addresses; 'guys, get a load. my def. of a bad day'",
+        "claim blocks #3 ('trying to do the job alone') and #11 (75 kg)",
+        "900 kg brick vs 75 kg bricklayer; third-floor meetings (up and down)",
+        "fractured skull, collar bone, ankles; knuckles in the pulley",
+        "letting go: the final barrel-drop; 'endtransINTCOM626'",
+        "Dwayne R. Glynn, 176 N. Faneuil Blvd., Stoneham Mass."
+      ],
+      "opener_worthy": "The INTCOM routing slip ('guys, get a load'); claim blocks #3/#11; the barrel's two third-floor meetings; the hard 'endtransINTCOM626' cut.",
+      "rationale": "First of the five inserted documents: a forwarded Interlace email memo wrapping bricklayer Dwayne Glynn's accident letter — a perfect slapstick machine (900 kg vs 75 kg, two third-floor meetings with the barrel). The frame (claims adjuster schadenfreude) and the letter (working-class precision) need distinct treatments nested honestly, ending on the hard cut of 'endtransINTCOM626'.",
+      "palette_role": "Phosphor-terminal green on memo-black for the frame; manila/ink for the embedded letter — first document of the insert run, sets the archival grammar",
+      "motif_asset": "cohort-b.svg #pulley-barrel — pulley wheel with rope, barrel mid-plummet between floor-lines 3 and 6; claim-form block grid",
+      "opener_composition": "Transmission opener: memo envelope-header (FROM/TO/MESSAGE as a designed routing slip with INTCOM addresses intact); the bricklayer's letter set as a scanned-document panel with claim-block callouts (#3/#11) in the margin; floor-diagram (roof→3rd→ground) tracing the slapstick trajectory alongside",
+      "reading_treatment": "DOCUMENT/memo: routing-slip header; memo body in terminal/mono-adjacent texture (readable, not gimmicky); embedded letter as paper panel with margin claim-block tags; trajectory diagram as marginalia; endtrans line as transmission-cut rule",
+      "scene_map": [
+        {
+          "paras": "p1–p3",
+          "what": "memo routing slip: INTCOM header, 'get a load'"
+        },
+        {
+          "paras": "p4–p6",
+          "what": "letter header: Glynn address, claim office, block #3"
+        },
+        {
+          "paras": "p7–p12",
+          "what": "the accident: ascent, pulley, descent, barrel (slapstick physics)"
+        },
+        {
+          "paras": "p13",
+          "what": "endtransINTCOM626 transmission cut"
+        }
+      ],
+      "voice": "DOCUMENT: corporate memo frame + working-class letter insert — deadpan nesting",
+      "para_count": 13,
+      "word_count": 605,
+      "deep_research": {
+        "structure": "13 paras, median 207ch: routing slip + letter header + 6 accident blocks + transmission cut.",
+        "document_form": "MEMO: INTCOM email frame (p1-3) wrapping a workman's-comp letter (p4-12); p13 is the endtrans cut.",
+        "opener_lines": [
+          "P2: 'guys, get a load. my def. of a bad day.'",
+          "P6: block #3: 'trying to do the job alone.'",
+          "P13: 'endtransINTCOM626'"
+        ],
+        "timestamp_notes": "26 June Y.D.P.F.T.A.H. memo; accident 27 March; claim dated 21 June YODPFTAH (Year of Dairy Products)."
+      },
+      "ledger_conform": {
+        "stamp_band": "26 JUNE — YEAR OF DAIRY PRODUCTS FROM THE AMERICAN HEARTLAND",
+        "filing_line": "INTCOM 626 · CLAIMS ADJUSTMENT HQ · MEMO Cah-Nne22-3575634-22",
+        "seal": "Dairy Products barn seal (frame dated Y.D.P.F.T.A.H.)",
+        "plate": "Engraved transmission plate: routing-slip header with INTCOM addresses; pulley-and-barrel floor diagram (roof/3rd/ground) as marginalia; endtrans cut-rule."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate memo",
+        "motif": "pulley-barrel",
+        "caption": "Plate 23 · Memo Cah-Nne22; the barrel at the third floor",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "pulley-barrel"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN pulley-barrel (FROZEN symbol; LEAD PLATE): 800x450 INTCOM TRANSMISSION — routing slip head (FROM/TO verbatim mono rows, guys-get-a-load band with GUYS-GET-A-LOAD tag); six-story section drawing (six ruled floor-lines with ROOF/3RD/GROUND tags; ROPE path drawn continuous through the pulley wheel with KNOW DEEP tick at the fingers, dashed over the 3RD-floor interval; BARREL ascending right past 3RD with brick-load hatch + #3/#11 block stamps; knuckle hand-grip on rope with KNUCKLES tag; 900KG vs 75KG balance ticket (tipped scale, BLOCK-#11 tag); ground scatter of stippled brick-dust + 30KG emptied-barrel inset note; red hard ENDTRANS rule along the base with ENDTRANS-INTCOM-626 tag. 26 June date in locked stamp band. Spot red = barrel + stamps + starbursts + endtrans. Reading: P1-2 terminal panel, P3-12 manila paper panel with claim-block gutter tags, P12::after endtrans cut-rule."
+    },
+    {
+      "id": "p1c24",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 24,
+      "number_label": "§ 24",
+      "title": "Hal Incandenza’s First Extant Written Comment on Anything Even Remotely Filmic, Submitted in Mr.",
+      "subject": "Hal's seventh-grade essay: McGarrett vs Furillo, and the prophecy of the catatonic hero",
+      "mood": "Preternaturally assured schoolboy criticism with an unjustified prophetic leap at the end",
+      "motifs": [
+        "Ogilvie header: Perdure Wonderchicken, 2 terms required, post-broadcast",
+        "B/B+ grade; unsupported concluding paragraph",
+        "McGarrett: homing in, bare field of action, tripodic close-up",
+        "Furillo: triage, cluttered fields, frenetic moving pan",
+        "'post-' and 'post-post'-modern reactive moral ambiguity",
+        "the coming hero of non-action: catatonic, carried by burly extras",
+        "retrograde amines"
+      ],
+      "opener_worthy": "Ogilvie's header + the B/B+ grader's mark; McGarrett's tripodic close-up vs Furillo's moving pan; the unsupported prophecy of the catatonic hero.",
+      "rationale": "Hal's seventh-grade film essay: McGarrett (modern hero of action, tripodic close-up) vs Furillo (postmodern hero of reaction, moving pan), ending in the famous unjustified prophecy of the catatonic hero of non-action. The design must stage the dialectic (thesis/antithesis in visible tension) and isolate the prophecy as the unsupported leap Ogilvie flagged — the grade is part of the content.",
+      "palette_role": "Ruled-paper blue and margin-red ink on dark — the cohort's only schoolroom document; red reserved for the grader's hand",
+      "motif_asset": "cohort-b.svg #hero-triptych — tripod close-up circle (McGarrett) → moving-pan band (Furillo) → empty static frame (catatonic hero)",
+      "opener_composition": "Graded-paper opener: school-header block (course/date/context) with the B/B+ rendered as an actual grader's mark and Ogilvie's objection as a margin annotation; the McGarrett/Furillo comparison as a two-column dialectic spread resolving into the single-sentence prophecy panel",
+      "reading_treatment": "DOCUMENT/school essay: header block with course metadata; body in clean student-essay measure; McGarrett/Furillo passages with subtle side-tagging (ACTION vs REACTION); concluding prophecy as an isolated oracle panel with the B/B+ mark and Ogilvie note attached",
+      "scene_map": [
+        {
+          "paras": "p1–p2",
+          "what": "Ogilvie header; B/B+ verdict and objection"
+        },
+        {
+          "paras": "p3–p5",
+          "what": "McGarrett: modern hero of action"
+        },
+        {
+          "paras": "p6–p9",
+          "what": "Furillo: postmodern hero of reaction"
+        },
+        {
+          "paras": "p10–p11",
+          "what": "reactive probity → prophecy of the catatonic hero"
+        }
+      ],
+      "voice": "DOCUMENT: school essay — precocious critical prose with academic apparatus (Viz., I.e.)",
+      "para_count": 11,
+      "word_count": 837,
+      "deep_research": {
+        "structure": "11 paras, median 364ch: header + verdict + dialectic (McGarrett p3-5 / Furillo p6-9) + prophecy (p10-11).",
+        "document_form": "SCHOOL ESSAY: course header (p1) + grader verdict (p2) + thesis/antithesis + unsupported conclusion.",
+        "opener_lines": [
+          "P2: 'SUBJECTIVE INTUITION AND RHETORICAL FLOURISH' (Ogilvie's objection).",
+          "P11 (prophecy): 'the hero of non-action, the catatonic hero...'"
+        ],
+        "timestamp_notes": "21 February Year of the Perdue Wonderchicken; 4 years post-broadcast, 1 year post-Incandenza death."
+      },
+      "ledger_conform": {
+        "stamp_band": "21 FEBRUARY — YEAR OF THE PERDUE WONDERCHICKEN",
+        "filing_line": "E.T.A. ENTERTAINMENT STUDIES · GRADED ESSAY · B/B+",
+        "seal": "Perdue Wonderchicken bird seal",
+        "plate": "Engraved graded-paper plate: school-header block with grader's B/B+ mark + Ogilvie margin note; tripod-circle vs moving-pan band dialectic; isolated prophecy panel."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate graded",
+        "motif": "hero-triptych",
+        "caption": "Plate 24 · McGarrett v. Furillo; the prophecy",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "hero-triptych"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN hero-triptych (FROZEN symbol; LEAD PLATE): 800x450 GRADED DIALECTIC — left third ACTION BAY: concentric tripod rings around a stable rhomboid close-up mark + HOMING-IN tag + 'BARE FIELD' ground hatching empty (McGarrett's uncluttered field, P3); right third REACTION BAY: eleven overlapping case-file cards + moving-pan horizontal streak band + TRIAGE tag (Furillo's clutter, P4-5); center divider DOLLY-TRACK rule with TRIPODIC-CLOSE-UP plaque (P6's exact contrast); bottom prophecy panel: EMPTY STATIC witnesses'-box frame with dashed center cross + CATATONIC HERO tag + carried-by-burly-extras arrow ticks + buried RETROGRADE-AMINES micro-label; circled B/B+ grader mark pinned top-right with UNSUPPORTED-LEAP object tag (grade = archival metadata from locked conform; essay body anchors stay prose-verified). Spot red = grader's hand (B/B+, tag, prophecy rules)."
+    },
+    {
+      "id": "p1c25",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 25,
+      "number_label": "§ 25",
+      "title": "Enormous, Electrolysis-Rashed ‘Journalist’ ‘Helen’ Steeply’s Only Putative Published Article Before",
+      "subject": "Steeply's Moment Magazine article: the Jarvik IX heart in the stolen Aigner purse",
+      "mood": "Tabloid earnestness stretched past parody into genuine ache; the cohort's blackest comedy",
+      "motifs": [
+        "Moment Magazine; soft profile that never profiles anyone",
+        "Jarvik IX Exterior Artificial Heart in an Aigner purse",
+        "power cell 'same as an electric man's razor'",
+        "transvestite purse-snatcher: cocktail dress, spike heels, feather boa, auburn wig",
+        "'She stole my heart, stop her!' — four-block chase",
+        "knowing shoppers; 'Happens all the time' patrolmen",
+        "heart beaten with a stone behind the Boston Public Library",
+        "toe tag; medical student unable to wield the power saw"
+      ],
+      "opener_worthy": "The Moment masthead; the Jarvik IX in the Aigner purse; 'She stole my heart, stop her!' across four blocks; the toe-tag postscript.",
+      "rationale": "Steeply's only published article: a Moment Magazine 'soft profile' that is actually a Jarvik-heart purse-snatching horror-comedy ('She stole my heart!'). The scare-quoted title already tells us the byline is drag; the design should play the tabloid straight — masthead, deck, chase — and let the content supply the irony.",
+      "palette_role": "Newsprint cream-in-dark with tabloid-red kickers; the cohort's loudest document — ink-black headlines against archival paper",
+      "motif_asset": "cohort-b.svg #aigner-heart — Etienne Aigner purse with ventricular tubes; Harvard Square chase-line with 'She stole my heart!' speech ribbon",
+      "opener_composition": "Tabloid opener: magazine kicker/headline/deck composition (Moment masthead, August Y.D.A.U. dateline) with the purse-heart as a spot illustration; the chase paragraph (p5) as a full-width pursuit band; the toe-tag close as a small cold colophon tag",
+      "reading_treatment": "DOCUMENT/magazine: masthead + dateline header; deck/standfirst styling for p1's run-on context; body in magazine measure with the chase (p5) as a pursuit band; ironic scare-quotes preserved and given slight typographic lift; toe-tag close as colophon",
+      "scene_map": [
+        {
+          "paras": "p1",
+          "what": "dateline deck: profile-that-isn't, microwave-oven context"
+        },
+        {
+          "paras": "p2–p3",
+          "what": "Jarvik IX recipient; 'fearless journalistic doggedness'"
+        },
+        {
+          "paras": "p4–p7",
+          "what": "the snatching; four-block chase; heart beaten behind the library"
+        },
+        {
+          "paras": "p8–p9",
+          "what": "officials' silence; toe tag; power-saw postscript"
+        }
+      ],
+      "voice": "DOCUMENT: tabloid magazine — earnest sleaze, scare-quoted throughout",
+      "para_count": 9,
+      "word_count": 711,
+      "deep_research": {
+        "structure": "9 paras, median 430ch: dateline deck + heart setup + snatching/chase + silence + postscript.",
+        "document_form": "MAGAZINE: Moment soft-profile deck (p1) + investigative body (p2-8) + morgue postscript (p9).",
+        "opener_lines": [
+          "P5: 'She stole my heart, stop her!'",
+          "P6: patrolmen: 'Happens all the time.'",
+          "P9: the toe tag + power saw."
+        ],
+        "timestamp_notes": "10 August Y.D.A.U.; 4 years after Incandenza's microwave death (deck context)."
+      },
+      "ledger_conform": {
+        "stamp_band": "10 AUGUST — YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "MOMENT MAGAZINE · SOFT PROFILE · JARVIK IX FILE",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved tabloid plate: Moment masthead + dateline deck; Aigner purse with ventricular tubes as spot illustration; chase-line ribbon; toe-tag colophon."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate tabloid",
+        "motif": "aigner-heart",
+        "caption": "Plate 25 · The Aigner heart; four blocks",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "aigner-heart"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN aigner-heart (FROZEN symbol): 800x450 TABLOID — MOMENT MASTHEAD band (Archivo Black plate-name, August dateline rule, Y.D.A.U. seal corner) + purse spot illustration: Aigner purse with ventricular tube lines running UP to two shunt cuffs, tube pulse ticks, Agnes purse-clasp horsebit; shoe-ribbon chase line: stiletto footprints + feather-boa curl + wig-strand + SHE-STOLE-MY-HEART ribbon with repeated text + four red block numerals; police shrug-gesture shrug-mark + HAPPENS-ALL-THE-TIME tag; library colophon: stone/impact ticks + toe-tag rect + power-saw blade glyph. Flat white tabloid ground with ink-black structural rules (no fine hatching — the cohort's loudest document, texture via type scale). Spot red = tubes + kicker + blocks + impact. Reading: P1 deck, P4-5 pursuit band, P8 toe-tag colophon."
+    },
+    {
+      "id": "p1c26",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 26,
+      "number_label": "§ 26",
+      "title": "Alphabetical Tally of Séparatisteur / ANTI-O.N.A.N. Groups Whose Opposition to Interdependence /",
+      "subject": "Classified tally of anti-O.N.A.N. separatist groups with code legend",
+      "mood": "Bureaucratic menace in miniature; a dossier that fits on an index card",
+      "motifs": [
+        "R.C.M.P./U.S.O.U.S. terrorist/extortionist designation",
+        "legend: Q/E/S/V/VV",
+        "seven groups incl. Les Assassins des Fauteuils Rollents (Q, S, VV)",
+        "em-dash row separators in a single dense paragraph"
+      ],
+      "opener_worthy": "The R.C.M.P./U.S.O.U.S. designation stamp; the Q/E/S/V/VV legend; seven groups in one em-dash chain incl. the AFR (Q, S, VV).",
+      "rationale": "Three paragraphs, 68 words: a classified tally of separatist groups with a code legend. The source packs all seven groups into one em-dash-separated paragraph; rendering each group as a ledger row respects the separators as structure (a reading treatment, not a prose edit). The cohort's purest archival object — it should feel found, stamped, and filed.",
+      "palette_role": "Stamp-ink red-black on file-folder manila-in-dark; smallest chapter in the book — design as an artifact, not a page",
+      "motif_asset": "cohort-b.svg #tally-ledger — ledger rows with Q/E/S/V/VV code chips; wheelchair-icon mark for the AFR row (present but unemphasized — content-true, not spoilered)",
+      "opener_composition": "Dossier opener: classification stamp bar (designation line as a stamped band), legend as a code-key strip, and the seven groups rendered as true ledger rows (the source's em-dash separators honored as row breaks — presentation, not prose alteration); AFR row carries the VV weight without editorializing",
+      "reading_treatment": "DOCUMENT/dossier: stamp-band header; legend key strip; ledger-row list treatment of p3 (rows break ONLY at the source's em-dashes); code chips per row; whole chapter fits one viewport as a filed card",
+      "scene_map": [
+        {
+          "paras": "p1",
+          "what": "classification designation stamp"
+        },
+        {
+          "paras": "p2",
+          "what": "code legend (Q/E/S/V/VV)"
+        },
+        {
+          "paras": "p3",
+          "what": "seven-group tally, em-dash separated"
+        }
+      ],
+      "voice": "DOCUMENT: dossier/ledger — pure bureaucratic enumeration",
+      "para_count": 3,
+      "word_count": 68,
+      "deep_research": {
+        "structure": "3 paras (77/97/258ch): stamp + legend + single em-dash-chained tally; 68 words total.",
+        "document_form": "DOSSIER: designation stamp (p1) + code legend (p2) + em-dash-separated ledger chain (p3).",
+        "opener_lines": [
+          "P3: the seven-group chain incl. 'Les Assassins des Fauteuils Rollents (Q, S, VV).'"
+        ],
+        "timestamp_notes": "Undated filing; 'AS OF Y.D.A.U.' seal per draft direction."
+      },
+      "ledger_conform": {
+        "stamp_band": "AS OF Y.D.A.U. · DESIGNATED TERRORIST / EXTORTIONIST",
+        "filing_line": "R.C.M.P. / U.S.O.U.S. · ALPHABETICAL TALLY · 7 GROUPS",
+        "seal": "Y.D.A.U. filing seal (undated document)",
+        "plate": "Engraved dossier card: classification stamp band, Q/E/S/V/VV code-key strip, seven ledger rows breaking only at the source em-dashes; fits one viewport."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate dossier",
+        "motif": "tally-ledger",
+        "caption": "Plate 26 · Seven groups; Q/E/S/V/VV",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "tally-ledger"
+      },
+      "note_refs": {
+        "count": 0,
+        "notes": []
+      },
+      "design_notes": "DESIGN tally-ledger (FROZEN symbol; LEAD PLATE): 800x450 DOSSIER CARD — portrait file card (62% width) centered on ledger ground with file tab (FILE-7 stencil) + punched margin holes; classification stamp band (red box-stamp CLASSIFIED·TERRORIST-EXTORTIONIST, R.C.M.P./U.S.O.U.S. from locked band); legend strip: five chips Q/E/S/V manila + VV red; SEVEN ledger rows with dotted-leader rules (AFR wheelchair glyph small, SAME weight as FLQ's VV red — no hierarchy, no editorializing); card throws a hard offset SHADOW onto the ground from upper-left light (the ONLY plate with a drop shadow — found-filed object). Rows break ONLY at the source em-dashes. Live prose is 2 paras (P1 legend, P2 chain) — locked ledger line/symbols preserved verbatim. Spot red = stamp + VV chips."
+    },
+    {
+      "id": "p1c27",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 27,
+      "number_label": "§ 27",
+      "title": "Why — Though in the Early Days of Interlace’s Internetted Teleputers That Operated Off Largely The",
+      "subject": "Videophony's rise and fall (masks, Tableaux); the quarterly urine trade; Pemulis, Hal, and Mario profiles",
+      "mood": "Techno-satire collapsing into carnival commerce; the cohort's finale and its thesis on masks",
+      "motifs": [
+        "homuncular Intelligent-Agent icon: straw boater, tap-dancing cane",
+        "trivalent nutshell: stress, vanity, microeconomics",
+        "listener's-expression fatigue; Video-Physiognomic Dysphoria",
+        "High-Definition masks; Optimistically Misrepresentational Masking",
+        "Tableaux: diorama photos over the camera; chic return to blind phoning",
+        "quarterly urine vendors: papery caps, 'Urine! Piping hot!'",
+        "Visine bottles in armpits; ephebic toxicologist; square-faced nurse",
+        "Pemulis/Hal/Mario profiles; 'Mathew (sic)'; Allston Wolf Spiders"
+      ],
+      "opener_worthy": "The tap-dancing homunculus icon; the trivalent theses (1)(2)(3); the Tableaux dioramas; the papery vendor caps and 'Urine! Piping hot!' cries.",
+      "rationale": "The cohort finale fuses both halves of 'Documents & Interlace': a videophony whitepaper (masks, Tableaux, the chic return to blind phoning) that detonates into the urine-vending carnival and the Pemulis/Hal/Mario profiles. The mask essay is secretly about the whole book (what face do you show the lens?); the design must let the treatise be rigorous and the carnival be loud, with the hinge at p17 as the cohort's biggest gear-change.",
+      "palette_role": "Cold fiber-optic blue for the essay half, hot vendor-amber for the carnival half; the chapter performs the cohort's whole arc (document → flesh) in one span",
+      "motif_asset": "cohort-b.svg #mask-vendor — videophone mask/Tableau face over a papery vendor cap; Visine-bottle row; homunculus-icon sprite",
+      "opener_composition": "Whitepaper-to-carnival opener: the videophony essay opens as a designed technical treatise (numbered theses (1)(2)(3), VPD/OMM as defined-term callouts, mask-diagram marginalia); the urine-vending turn (p17+) crashes in as a barkers' broadside — vendor-cap stripe, 'Urine!' cries as poster shouts; profiles close as yearbook plates",
+      "reading_treatment": "DOCUMENT-ESSAY → narrative carnival: essay half in treatise measure with thesis numerals, defined-term callouts (VPD, OMM, Tableaux), mask marginalia; hinge at p17 marked by a broadside break; vendor cries (p20–p25) as poster shouts; profiles (p29–p36) as plates with nameplate headers; smuggling close (p37–p38) as hushed practical appendix",
+      "scene_map": [
+        {
+          "paras": "p1–p2",
+          "what": "cold open mid-sentence: videophony's rise (ALL-CAPS transmission texture)"
+        },
+        {
+          "paras": "p3–p16",
+          "what": "trivalent autopsy: stress, vanity, microeconomics; masks; Tableaux"
+        },
+        {
+          "paras": "p17–p28",
+          "what": "urine-vending carnival; Mario filming; 'Urine! Piping hot!'"
+        },
+        {
+          "paras": "p29–p38",
+          "what": "Pemulis/Hal/Mario profiles; smuggling tradecraft close"
+        }
+      ],
+      "voice": "DOCUMENT-ESSAY (technical treatise, opens mid-sentence in caps) → carnivalesque narrative → profile plates",
+      "para_count": 38,
+      "word_count": 5369,
+      "deep_research": {
+        "structure": "38 paras, median 660ch: caps cold-open (p1-2) + treatise (p3-16) + carnival (p17-28) + profiles (p29-38); max 3102ch.",
+        "document_form": "WHITEPAPER-BROADSIDE: technical treatise with numbered theses (p1-16) + vendor broadside (p17-28) + profile plates (p29-38).",
+        "opener_lines": [
+          "P3: 'The answer, in a kind of trivalent nutshell, is: (1) emotional stress, (2) physical vanity, (3)...'",
+          "P20-23: 'Urine!' / 'Piping hot!' vendor cries."
+        ],
+        "timestamp_notes": "Undated essay; quarterly urine cycle (four times per annum); 'as of 10/Y.D.A.U.' Hal ranking (p32)."
+      },
+      "ledger_conform": {
+        "stamp_band": "VIDEOPHONY FILE · AS OF Y.D.A.U.",
+        "filing_line": "TECHNICAL TREATISE + VENDOR BROADSIDE + PROFILE PLATES · 38 ENTRIES",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved whitepaper-broadside plate: numbered theses (1)(2)(3), VPD/OMM defined-term callouts, mask/Tableau marginalia; vendor-cap stripe + Visine-bottle row for the carnival hinge; nameplate headers for profiles."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-b.svg",
+        "class": "plate treatise",
+        "motif": "mask-vendor",
+        "caption": "Plate 27 · Masks, Tableaux, and urine vendors",
+        "slot": "#chapter-art",
+        "note": "Single-SVG-with-symbols integration shape (READER-CONTRACT v1.1 §A.2: explicit symbol key sanctioned; reader.js fetches src once, clones the matching symbol/g id into the slot; missing id → hidden slot + console warning, never fatal). Footnote fallback: if symbol addressing is ever revoked, engineer splits to art/cohort-b/<motif>.svg with identical ids — no entry remap beyond src.",
+        "symbol": "mask-vendor"
+      },
+      "note_refs": {
+        "count": 3,
+        "notes": [
+          52,
+          53,
+          54
+        ]
+      },
+      "design_notes": "DESIGN mask-vendor (FROZEN symbol): 800x450 TREATISE-BROADSIDE — essay half: numbered theses 1-2-3 stack at left (gold numerals, HOMUNCULUS straw-boater sprite pinned top-left as the specimen), ANNULAR CURVE plot (kicked-tent collapse) + TABLEAU diorama card (plastic lens-cap holder corners) + BLIND-PHONE coda specimen row (phone with 6 pinholes + 62 footnote tag); mask specimens: HD-COMPOSITE grid + POLYBUTYLENE mask shell + 2-D cutout card on cardboard neck-stump; carnival hinge: full-height wavy vendor-canopy scallop rule with PAPERY-CAP cap icons; vendor half: VENDOR TUB (Fenway wienerman tub with WIENERS-FENWAY stencil, conical-tipped Visine bottles row with CONICAL tags, 10$/CC price ticket), cries in Archivo Black poster-stack URINE! / CLINICALLY STERILE / PIPING HOT! / URINE TROUBLE (manila type, 2.2→1.2rem scale = loudness, red underline ONLY on PIPING HOT); profiles: three nameplate ledgers PEMULIS/HAL/MARIO with Wolf-Spiders pennant + COMMIT-A-CRIME tag; square-faced nurse door-ajar wedge + VAD-MECUM pamphlet. Spot gold = numerals + rules + nameplates (red reserved for P17 hinge rule + P22 underline in reading CSS)."
+    }
+  ],
+  "phase": "Phase 1 LOCKED — IDs frozen; awaiting second-wave fire order",
+  "shared_grammar": {
+    "archival_run": "p1c23–p1c27 insert run shares an 'archival object' grammar (provenance header, artifact texture, colophon close) with per-document medium: memo-terminal, school-paper, tabloid, dossier-ledger, whitepaper-broadside. Never the same paper twice.",
+    "desert_diptych": "p1c16 (dusk) ↔ p1c20 (night): shared horizon grammar, sun gone in the second panel",
+    "envoy_beats": "p1c14 (cone), p1c16 (ember), p1c18 (triangle), p1c22 (death notice), p1c27 (appendix): closing beats isolated with air — the cohort's signature cadence",
+    "eta_day": "p1c17 (fluorescent day) → p1c18 (night dorm): same building, shared tile/carpet textures, cooling palette",
+    "interlace_devices": "desert cut-ins inside ETA chapters (p1c17) and legend-under-gossip (p1c22) use inset-panel grammar: ruled, shadowed, dusk- or granite-toned",
+    "principle": "Neighboring chapters share devices (inset panels, envoy beats, provenance headers) but never the same composition twice; voice shifts are marked by hard cuts, never blends"
+  },
+  "remap_keys": "Each entry records part + index (sequential order) + full_title so the manifest survives TextCurator splits/merges/renames. IDs p1c14–p1c27 provisional.",
+  "research_basis": "TOC slice (toc.json §§14–27) + every assigned chapter JSON read: full multi-pass samples (heads/middles/tails, dialogue-beat scans, scene-break mapping, motif census). Baseline rendering viewed at http://127.0.0.1:8000/ (IJ entrance + p1c14 + p1c23 reader views, 1440x1000): confirmed body[data-chapter]/body[data-part] hooks; confirmed document chapters currently render identically to narrative (no archival treatment) — the gap this cohort closes.",
+  "status": "locked-frozen",
+  "supervisor": "SupIJ-2",
+  "cohort_title": "Documents & Interlace",
+  "book": "infinite-jest",
+  "ids_provisional": false,
+  "provisional_note": "Per SupIJ-2 relay of TextCurator: chapter IDs provisional until PDF audit freeze. Each entry records part + order + title for cheap remap. Do not lock final manifests until freeze notice.",
+  "cohort_grammar": {
+    "idea": "Found-paper + interlace: openers alternate between ETA/desert narrative plates and archival-document plates (memo, graded essay, tabloid, dossier, whitepaper-broadside). Shared grammar = Subsidized-Time stamp band + filing line + one engraved plate + envoy-beat close; the artifact TYPE changes per chapter so neighbors rhyme without cloning.",
+    "date_band": "Each opener carries its Subsidized Year / calendar date as a stamped band; p1c23 uses the Dairy Products seal, p1c24 the Wonderchicken seal, undated filings use the AS OF Y.D.A.U. seal.",
+    "palette_role": "Cohort B spans the full ledger range: clinical steel (c14), institutional teal (c15), desert dusk/ember (c16/c20), fluorescent tile and night indigo (c17/c18), leaf-amber (c19), found-paper manila in five mediums (c23-c27). The p1c23-27 insert run is the heaviest archival sequence in Part I.",
+    "reading_treatments": "Narrative chapters get speaker/chorus rhythm + inset dusk/legend panels for cut-ins; document chapters get bounded found-paper blocks per medium; envoy beats (c14/c16/c18/c22/c27) close in isolated air."
+  },
+  "contract_conformance": {
+    "contract": "READER-CONTRACT v1.1 STABLE (symbol key) + SupIJ-2 IJ relay",
+    "slots": "All 14 plates target #chapter-art (injected above #chapter-meta); prose untouched, pure CSS via body[data-chapter]/[data-part]/[data-art] + #chapter-text[data-paras]; no reader-* classes minted (all motif/plate names are book-owned).",
+    "css_cascade": "Cohort CSS (design/cohort-b.css) unlayered → always wins over @layer shared; scoped to body[data-book='infinite-jest'] + per-chapter hooks.",
+    "manifest_merge": "Supervisor merges entries' contract_manifest blocks into design/chapters.json sequentially; cohort JSON stays the source of truth with part+order+title for the provisional-ID remap.",
+    "fonts": "No cohort font loading (book-level concern: theme.css/index.html via supervisor); cohort CSS references --font-* tokens only.",
+    "endnotes": "Cohort B has no notes-part chapters; footnote markers (e.g. p1c16 nn.39-40, p1c20 n.48) noted for future body→note refs if TextCurator supplies note_refs — no guessing.",
+    "fragments": "Explicit symbol key per v1.1 §A.2 (fragment form superseded; backward-compatible)."
+  },
+  "rev2_note": "rev2: conformed to Cohort A rev5 standard + ART-DIRECTION-DRAFT.md (Direction 1 'Subsidized Time Ledger', pending supervisor finalization + ArtDirector critique): per-entry order/title/opener_worthy/deep_research/ledger_conform/contract_manifest; cohort_grammar + contract_conformance records. No specialist spawns — still gated on SupIJ-2's finalized ART-DIRECTION.md + integration spec.",
+  "fragments_confirmed": "Superseded by v1.1 §A.2: explicit symbol key is the sanctioned form.",
+  "rev3_note": "rev3: contract_manifest blocks migrated from A.1 fragment src to v1.1 §A.2 explicit symbol key ({src: art/cohort-b.svg, symbol: motif}); all 14 symbols match motif ids; no other changes. Still gated on SupIJ-2's finalized ART-DIRECTION.md + integration spec; no specialist spawns. FINAL ART-DIRECTION.md reviewed 2026-10-15: no entry changes required; J-conditions bind prototype chapters only (none in B).",
+  "art_direction": "FINAL (books/infinite-jest/design/ART-DIRECTION.md) reviewed: entries already conform — plates target #chapter-art via {src, symbol, class, motif, caption}; cohort B grammar matches §9; no Part II chapters (no violet); prototype scope (J8) contains no Cohort B chapters.",
+  "phase2_notes": "Engineer: cohort CSS classes ij-*-prefixed (§11.2); plates ≥~200px even on phones, never display:none; seals referenced from art/seals.svg, never redrawn; body prose untouched (opener plates + margin ticks + bounded insert blocks only).",
+  "freeze_note": "ID FREEZE 2026-10-15 (TextCurator audit via SupIJ-2 + Main verification): p1c1–p1c77/p2c1–p2c12 FINAL, no splits/merges/renames, titles unchanged — verified all 14 Cohort B titles/part/order match frozen chapter JSON. part+order+title keys retained as permanent provenance. Report: .omp/design/infinite-jest-text-audit.md.",
+  "lock_note": "rev4 lock: manifest locked against frozen IDs; per-entry note_refs counts recorded from live chapter JSON (22 refs across 6 chapters: p1c14×9, p1c16×5, p1c17×1, p1c20×1, p1c22×3, p1c27×3; 8 chapters carry zero refs). Body→note links activate from note_refs data only (§6) — no design guessing needed. Still parked for second-wave fire after F+G.",
+  "design": {
+    "date": "2026-10-15",
+    "designer": "JestCohortBDesigner (SupIJ-3.JestCohortBLead.JestCohortBDesigner)",
+    "directions_considered": "A PORTRAITS (rejected): likenesses of Kate/Schtitt/Marathe/Steeply — Wallace interiority does not survive likeness; drag, scale and suffering risk caricature. B PURE DOCUMENTS (rejected): every plate a paper form — flattens the nine narrative chapters and clones across c23-27. C FRONTISPIECE ARTIFACTS (CHOSEN): fourteen distinct engraved objects/scenes from the chapters pages in one burin hand — chart, letterbox, horizon, litany curve, dorm rooms, walkers, night globe, hard-cut triptych, split phone, floor diagram, dialectic bays, tabloid, dossier card, treatise-broadside. Self-review per frontend-design: c27 carnival loudness moved from hue to display-type scale (avoids the default acid-accent shout); c26 reduced from designed page to artifact portrait + CSS ledger (honors the 68-word truth); c15 staged as held breath, not shrunken epic.",
+    "engraving_vocabulary": {
+      "caption_rule": "Plates are caption-free: captions come from the locked contract_manifest. Verbatim prose quotes inside plates (INTCOM message, THEN WHAT?, TRANSCEND, cries) are depicted content, never captions.",
+      "figure_policy": "No literal human figures except abstracted silhouettes: c19 walker pair (faceless scale contrast), c21 lotus figure (geometric diagram: circle head, arc limbs, saucer muscles), c27 homunculus (in-world UI icon). c16/c20场所 deserts carry shadows only; c25 snatcher appears as garment fragments + chase ribbon; c14/c15 suffering stays in objects (chart, feet-gap, bubble). Horror is never literalized.",
+      "frames": "Double ruled keyline (outer 2.5px, inner 1px, 6px gap) inset 24px on 800x450; corner ticks; no seals inside plates (stamp-band seals are supervisor-owned via seals.svg <use>).",
+      "grounds": "Transparent plate ground over --ij-plate-bg; register washes via opacity only (cool steel vs warm amber in c14, Phoenix/Enfield split in c22, panel cuts in c21).",
+      "hatch_families": "(a) 45-degree parallel shade; (b) crosshatch for deep shadow/rock/night; (c) contour curves for round forms (cone scoops, globe, pulley, dial); (d) stipple for grain (leaf litter, hot steam, brick dust); (e) ruled ledger lines for documents; (f) radiating ticks for glow (ember, globe dots, dial needle, glints).",
+      "ink": "Manila #E8DCC0 line at 85-100% for primary, 25-60% for shade/texture; explicit hex on every stroke (no currentColor across the clone boundary).",
+      "lettering": "Plex Mono 600 micro-labels 12-14px user units, 0.14em tracking, for archival tags; Newsreader italic (Georgia fallback) 17-24px for verbatim quotes; Archivo Black ONLY for c25 MOMENT masthead and c27 vendor cries (display scale = loudness).",
+      "spot_rule": "Exactly one spot color per plate (see spot_registry). Gold = institutional/record marks; red = stamp/sever/body/alert; phosphor = machine/glow/transmission/object. Red-on-dark uses #E05238 bump where computed contrast needs it."
+    },
+    "envoy_cadence": "Isolated closers with air + hairline/ornament: c14 P119 cone coda, c16 P65 ember envoy, c18 P122 triangle coda, c19 P19 cold reveal, c20 P8 horn/nails envoy, c22 P37 death-notice colophon, c24 P9 oracle panel, c25 P8 toe-tag colophon, c27 P37-38 hushed appendix. Deliberate exceptions (no isolation): c15 P5 sting (abrupt crowd cut), c21 P8 street rush (ends mid-torrent), c23 P12 endtrans (transmission-cut rule, not air), c26 whole chapter = the card.",
+    "handoff_left_for_engineer": [
+      "c26 P2 ledger rows: PRIMARY needs supervisor book-JS assist (wrap em-dash segments in spans, textContent preserved) — lead to request; FALLBACK approved (hanging indent + gold rule + leading) ships without JS.",
+      "Short-para dialogue-air device: engineer computes explicit nth-of-type lists for paras under 300ch in c14 P1-84, c18 dialogue runs, c22 P1-30 from chapter JSON; no :not() ranges, no modulo.",
+      "c20 P5 die-twice sentence isolation is OPTIONAL supervisor-JS enhancement; shipped state is whole-para cold-center (air + hairlines).",
+      "c25 scare-quote lift DROPPED (needs markup); irony carried by masthead, chase band, colophon.",
+      "Re-verify 1-based indices for c18 blackboard inset (scene_map P81-120) and c17 litany ramp against frozen JSON before authoring CSS.",
+      "All 14 symbols 800x450, explicit hex strokes, no external refs; seals referenced via <use> only, never drawn in plates.",
+      "Do NOT depend on Newsreader 600 cut (currently byte-equals 400 per INTEGRATION.md); use 400 + letterspacing for SVG emphasis.",
+      "Plates min-height >=200px at 390px wide, never display:none (P1); cohort CSS unlayered, ij- prefix, body[data-book/infinite-jest][data-chapter] scope; NEVER touch .meta-rule span geometry (7px diamond, recolor only)."
+    ],
+    "insert_specs": {
+      "c23_memo_terminal": "P1-P2 .ij-insert-terminal: Plex Mono 0.95em, green-black lifted panel, phosphor left rule (frame = transmission). P3-P12 .ij-insert-paper-memo: manila wash 8%, ledger rules, claim tags in gutter (see ticks). P12::after endtrans cut-rule (red 3px, bounded).",
+      "c24_school_paper": "P1-P8 calm student measure 34rem; side-tags ACTION/REACTION via gutter ticks (no panel). P9 .ij-insert-oracle: gold rule frame, air 2em, UNSUPPORTED LEAP stencil tag; circled B/B+ lives in the PLATE (single source for the grade mark).",
+      "c25_tabloid": "P1 .ij-insert-deck: 1.05em measure, masthead rules above (plate carries MOMENT). P4-P5 .ij-insert-pursuit: contiguous wash + red left rule + air (explicit nth backgrounds). P8 .ij-insert-colophon: toe-tag bordered tag + air.",
+      "c26_dossier_ledger": "Whole chapter = filed card (fits one viewport). P1 legend strip: bordered, mono, letterspaced. P2 ledger rows: PRIMARY supervisor-JS wraps at source em-dashes (7 rows, code chips via CSS on spans); FALLBACK hanging indent + gold rule. Rows break ONLY at source em-dashes.",
+      "c27_whitepaper_broadside": "P1-P2 .ij-insert-transmission: mono caps panel, phosphor rule. P3 trivalent-nutshell box (whole para). P4/P11/P15 treatise paras: calm + defined-term gutter ticks. P17 broadside break: red 3px bounded rule + air (no invented text). P20/P21/P22/P23/P25 poster shouts (Archivo Black 2.2/1.6/2.0/1.4/1.2rem, manila; P22 red underline). Profile plates: nameplate block labels above P29 PEMULIS, P31 HAL, P33 MARIO, P36 PEMULIS CODA; plates = contiguous wash + hairlines. P37-38 appendix: 1.0rem, hushed, air.",
+      "narrative_bounded_inserts": "c14: P85 hinge ornament (chart-line jog morphing to train parallels) via ::before; P60 scare-cut isolated. c17: P43 + P127-164 desert inset panels (ruled, shadowed, gold 6% dusk wash, gold left rule); P45 Big Buddy expository panel; P51-60 litany size ramp (explicit nth: P51 1.0, P53 1.05, P54 1.1, P57 1.12, P59 1.08, P60 0.95 centered; interleaved P52/P55/P56/P58 base). c18: room-tab block labels above P1/P60/P81; blackboard inset P81-120 (scene_map bounds, engineer re-verifies); P114 chalk underline; P122 triangle ornament + air. c19: leaf-break ornaments after P3/P8/P14/P17; confession panels P15/P17 (warm wash); P13 heartbeat isolated centered; P19 cold reveal panel. c20: P1-2 establishment 1.2em; P5 cold-center (air + hairlines); P8 envoy air. c21: P1 hinge rule + air; P2-5 guru panel (30rem calm, symmetric air); P3 double gold side-rules (koan marker, no text extraction); P5 inversion ornament; P6 hard-cut red rule + street ragged measure P6-8 (38rem, no hyphenation). c22: P1-30 contiguous warm wash via explicit nth (first/last radius) + short-para air device; P31::first-line carved feature; P37 colophon (centered, hairlines, air)."
+    },
+    "j_conformance": "J2: all 14 plates in #chapter-art opener slot only; no mid-flow art; dividers (c21 cuts, c27 hinge, c14 P85, c19 breaks) are bounded blocks clearing the measure. J4: every insert bounded + honest; prose untouched — no sentence-level styling anywhere (c20 P5 whole-para rule), no text extraction/duplication (c21 P3 side-rules, not pull-quote), c26 JS-wrap preserves textContent, five paper mediums mutually distinct. J5: ZERO violet ink — audit: c17 violet sky stays prose, c19 violet leotard stays prose, c21 Crown Royal bag drawn manila with CR tag, c26 chips manila/red only. P1: all plates >=200px at 390px, never display:none. Meta-rule pitfall: cohort CSS never touches .meta-rule span.",
+    "margin_tick_system": {
+      "clearance_rule": "Cohort ticks NEVER share a paragraph with a ledger note-tick. Ledger note-tick paras (1-based, replayed from frozen note_refs 0-based para +1): c14 P10/P24/P53/P73/P88/P103/P105/P110; c16 P3/P7/P9/P42; c17 P163; c20 P5; c22 P31/P34/P37; c27 P18/P29/P30. c15/c18/c19/c21/c23/c24/c25/c26 carry zero ledger notes. Every cohort tick below re-verified clear.",
+      "collapse": "Mirror theme lexicon: absolute right gutter at >=1100px (left:calc(100%+1rem) like .ij-tick), inline-block below 1100px. (Theme §10/§11 merged-cohort lexicon supersedes the 720px line in INTEGRATION.md §2.) Room tabs and profile nameplates are block labels, never gutter-dependent.",
+      "color_roles": "Gold = record marks (dates, counts, names); red = sever/alert (shock, cuts, chase, warnings); phosphor = machine/transmission/object (dial, globe, guts, endtrans, tripod). Cohort ticks are outline pills via ::before/::after on explicit nth-of-type; ledger owns filled note pills.",
+      "per_chapter": {
+        "p1c14": [
+          {
+            "color": "gold",
+            "label": "WATTEAU",
+            "p": 2
+          },
+          {
+            "color": "red",
+            "label": "WILLINGLY",
+            "p": 83
+          },
+          {
+            "color": "gold",
+            "label": "0145H·2APR",
+            "p": 85
+          },
+          {
+            "color": "gold",
+            "label": "CHANCE TO PLAY",
+            "p": 119
+          }
+        ],
+        "p1c15": [
+          {
+            "color": "gold",
+            "label": "EAST →",
+            "p": 1
+          },
+          {
+            "color": "phosphor",
+            "label": "#5·12°C",
+            "p": 2
+          },
+          {
+            "color": "gold",
+            "label": "2 APR",
+            "p": 5
+          }
+        ],
+        "p1c16": [
+          {
+            "color": "gold",
+            "label": "6026",
+            "p": 1
+          },
+          {
+            "color": "gold",
+            "label": "VISCOUS DROP",
+            "p": 2
+          },
+          {
+            "color": "red",
+            "label": "TINY BLOOM",
+            "p": 65
+          }
+        ],
+        "p1c17": [
+          {
+            "color": "gold",
+            "label": "TUE 3 NOV",
+            "p": 1
+          },
+          {
+            "color": "phosphor",
+            "label": "CUT-IN·WIND",
+            "p": 43
+          },
+          {
+            "color": "phosphor",
+            "label": "CUT-IN·TEMPLES",
+            "p": 127
+          },
+          {
+            "color": "gold",
+            "label": "WHAT YOU LOVE",
+            "p": 154
+          }
+        ],
+        "p1c18": [
+          {
+            "block_tab": true,
+            "color": "gold",
+            "label": "HAL/BLOTT",
+            "p": 1
+          },
+          {
+            "block_tab": true,
+            "color": "gold",
+            "label": "V.R.5",
+            "p": 60
+          },
+          {
+            "block_tab": true,
+            "color": "gold",
+            "label": "B.B. SESSION",
+            "p": 81
+          },
+          {
+            "color": "gold",
+            "label": "LIMITS+RITUALS",
+            "p": 122
+          }
+        ],
+        "p1c19": [
+          {
+            "color": "gold",
+            "label": "CRACKLE ×3",
+            "p": 2
+          },
+          {
+            "color": "gold",
+            "label": "HOLD MY HAND",
+            "p": 13
+          },
+          {
+            "color": "phosphor",
+            "label": "HUSKY·TL",
+            "p": 19
+          }
+        ],
+        "p1c20": [
+          {
+            "color": "gold",
+            "label": "BOSTON OPS",
+            "p": 1
+          },
+          {
+            "color": "gold",
+            "label": "SPIT-DISTANCE",
+            "p": 2
+          },
+          {
+            "color": "gold",
+            "label": "NAILS·HORN",
+            "p": 8
+          }
+        ],
+        "p1c21": [
+          {
+            "color": "gold",
+            "label": "WALLED NATION",
+            "p": 1
+          },
+          {
+            "color": "red",
+            "label": "TRANSCEND",
+            "p": 2
+          },
+          {
+            "color": "gold",
+            "label": "CHIN-UP ↑",
+            "p": 5
+          },
+          {
+            "color": "red",
+            "label": "YSTRULY·C·TONY",
+            "p": 6
+          }
+        ],
+        "p1c22": [
+          {
+            "color": "phosphor",
+            "label": "GUTS",
+            "p": 1
+          },
+          {
+            "color": "gold",
+            "label": "TRIANGLE",
+            "p": 27
+          },
+          {
+            "color": "red",
+            "label": "SEPARATISM?",
+            "p": 28
+          },
+          {
+            "color": "gold",
+            "label": "22 CLIENTS",
+            "p": 32
+          }
+        ],
+        "p1c23": [
+          {
+            "color": "red",
+            "label": "#3",
+            "p": 5
+          },
+          {
+            "color": "red",
+            "label": "#11·75KG",
+            "p": 6
+          },
+          {
+            "color": "gold",
+            "label": "3RD ↑",
+            "p": 7
+          },
+          {
+            "color": "gold",
+            "label": "3RD ↓",
+            "p": 10
+          },
+          {
+            "color": "phosphor",
+            "label": "ENDTRANS",
+            "p": 12
+          }
+        ],
+        "p1c24": [
+          {
+            "color": "gold",
+            "label": "THESIS",
+            "p": 1
+          },
+          {
+            "color": "gold",
+            "label": "ACTION",
+            "p": 2
+          },
+          {
+            "color": "gold",
+            "label": "REACTION",
+            "p": 4
+          },
+          {
+            "color": "red",
+            "label": "PROPHECY",
+            "p": 9
+          }
+        ],
+        "p1c25": [
+          {
+            "color": "red",
+            "label": "JARVIK IX",
+            "p": 1
+          },
+          {
+            "color": "red",
+            "label": "SHE STOLE MY HEART",
+            "p": 4
+          },
+          {
+            "color": "gold",
+            "label": "4 BLOCKS",
+            "p": 5
+          },
+          {
+            "color": "gold",
+            "label": "TOE TAG",
+            "p": 8
+          }
+        ],
+        "p1c26": [],
+        "p1c27": [
+          {
+            "color": "gold",
+            "label": "(1)(2)(3)",
+            "p": 3
+          },
+          {
+            "color": "gold",
+            "label": "VPD",
+            "p": 9
+          },
+          {
+            "color": "red",
+            "label": "OMM",
+            "p": 12
+          },
+          {
+            "color": "gold",
+            "label": "TABLEAUX",
+            "p": 13
+          },
+          {
+            "color": "red",
+            "label": "HINGE ▸",
+            "p": 17
+          },
+          {
+            "color": "gold",
+            "label": "VISINE·TUB",
+            "p": 19
+          },
+          {
+            "color": "red",
+            "label": "URINE!",
+            "p": 20
+          },
+          {
+            "color": "gold",
+            "label": "COMMIT A CRIME?",
+            "p": 37
+          }
+        ]
+      },
+      "shape": "Outline pills (cohort) vs filled pills (ledger): shared gutter, disjoint paras, distinct fill. Font Plex Mono 600 0.72rem, 0.08em tracking, 999px radius."
+    },
+    "provenance_flags": [
+      "P1c24 grade metadata: Ogilvie header, B/B+ verdict and February/Wonderchicken date live in the TITLE + locked ledger_conform/filing line, NOT in the 9-paragraph prose (verified by full-text scan). Plate renders the circled B/B+ as an archival metadata mark per the locked plate brief; essay body uses only prose-verified anchors (P1/P2/P6/P9). Non-blocking: engineer keeps locked filing line verbatim.",
+      "P1c26 para count: live chapter JSON carries 2 paras (P1 legend, P2 seven-group chain), NOT 3 — the brief-era scene_map (stamp/legend/tally) predates the freeze. Design-layer truth is P1/P2; locked keys untouched.",
+      "P1c26 R.C.M.P./U.S.O.U.S. designation stamp: brief/title-tradition metadata (absent from the 2-para prose); plate renders the classification stamp per the locked stamp_band. Same archival-metadata treatment as the c24 grade.",
+      "P1c23 memo frame date: prose letter header reads June 21, YODPFTAH (P4); locked stamp_band carries the Dairy seal + memo dating — engineer implements locked band verbatim.",
+      "P1c25 10 August dateline: locked stamp_band metadata, absent from the 8-para prose; plate masthead renders it as dateline per locked conform."
+    ],
+    "references_studied": [
+      "READ FULL Steve Snider, On Creating the Cover for IJ (LitHub 2026): Wallace wanted complexity/specificity over minimalism; Big Book look; subsidized-sky discipline -> plates carry specific depicted density, never minimal marks.",
+      "READ FULL AIGA Eye on Design, Museum der Dinge Ephemera (2015): throwaway paper as medium; density + heterogeneity as curation; uniform hanging -> five mutually distinct paper mediums in one archival run.",
+      "SURVEYED Delaborde, Engraving (Gutenberg) + Britannica engraving + NYPL/Met frontispiece collections: burin line grammar, hatch families, ruled keylines, stencil lettering, frontispiece-before-text tradition -> cohort engraving vocabulary; c14 Watteau frontispiece made literal inside the plate.",
+      "SURVEYED masthead history (DU Clarion) + early-television schematics (WorldRadioHistory, EarlyTelevision.org): masthead/ledger/schematic grammar -> c25 masthead band, c26 file tab, c23 floor diagram, c27 treatise diagrams, c22 circuit guts.",
+      "ATTEMPTED JacksonsArt hatching techniques (HTTP 403, unavailable): hatch grammar derived from Delaborde/Britannica instead.",
+      "QUALITY BAR theme.css §11 merged cohorts C/A/E/F/G (read as reference only, never copied): 1100px margin lexicon, explicit nth-of-type discipline, J5 zero-violet audits."
+    ],
+    "scope_note": "DESIGN ONLY. No .svg/.css authored (engineer phase next). Additive edits to cohort-b.json only: this top-level design object + per-entry design_notes; every pre-existing key preserved verbatim.",
+    "skill_fallback_used": false,
+    "skills": [
+      "skill://frontend-design",
+      "skill://frontend-workflow",
+      "skill://reference-study"
+    ],
+    "spot_registry": {
+      "aigner-heart": "Stamp Red — ventricular tubes, kicker, chase blocks, stone ticks; purse + masthead type manila.",
+      "chart-and-cone": "Stamp Red — THEN WHAT stamp box + horror rule; chart manila, cone bands as three hatch densities (tricolor via texture + caption).",
+      "dancehall-globe": "Cartridge Phosphor — Tucson globe dot-field + radiating ticks; night crosshatch, hand, horn manila.",
+      "dusk-ember": "Stamp Red — ember bloom ONLY; sun + shadows + spokes manila.",
+      "guts-phone": "Cartridge Phosphor — phone circuit guts + MMYELLOW tag; shimmer, helmet, brick courses manila.",
+      "hero-triptych": "Stamp Red (grader hand per locked palette_role) — circled B/B+, UNSUPPORTED LEAP tag, prophecy rules; bays manila with structural contrast (rings vs streaks vs empty dash).",
+      "lotus-pull": "Stamp Red — TRANSCEND tank stencil (verbatim) + Orange Line slash; lotus, bar, hinge manila.",
+      "mask-vendor": "Seal Gold — thesis numerals, nameplate rules, hinge rule; vendor cries manila display type (loudness via scale).",
+      "pulley-barrel": "Stamp Red — barrel, block stamps, 3rd-floor starbursts, endtrans rule; slip + elevation manila.",
+      "tally-ledger": "Stamp Red — classification stamp + VV chips (AFR + FLQ rows); card, names, Q/E/S/V chips manila.",
+      "taxi-vent": "Cartridge Phosphor — dial needle at #5 + #5 numeral; cab, vents, sticker manila.",
+      "thesaurus-tired": "Seal Gold — procession band + final cascade word + cut-in frames; carpet, towels, curve manila.",
+      "thicket-tripod": "Seal Gold — leaf litter, RIBCAGE tag, tripod glint tick; branches, walkers, footprints manila.",
+      "triangle-bell": "Seal Gold — triangle + ladle + room rules; bunks, viewer, blackboard manila."
+    },
+    "status": "design-complete",
+    "thesis": "Documents and Interlace as frontispiece artifacts: fourteen mutually distinct engraved plates in one burin hand — clinical chart, taxi letterbox, dusk horizon, fatigue curve, night dorm, autumn walk, night globe, hard-cut triptych, split phone, pulley elevation, dialectic bays, tabloid, dossier card, treatise-broadside. Voice shifts marked by hard cuts, never blends; neighboring chapters rhyme in grammar (desert diptych shares horizon geometry; ETA day/night share tile; envoy closers share cadence) without cloning composition.",
+    "viewBox_policy": "All 14 symbols 800x450 (uniform sprite grid). tally-ledger draws its portrait dossier card centered inside the landscape plate (artifact-on-ledger-ground). Minimum essential detail 60px user units; micro-labels >=12px; quotes >=17px."
+  }
+}

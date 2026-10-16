@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas Shrugged — Direction Sketches A/B/C</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow+Semi+Condensed:wght@500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Limelight&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #07090c; color: #eee; font-family: Georgia, serif; }
+  .fontnote {
+    max-width: 66rem; margin: 0 auto 2rem; padding: 0.9rem 1.2rem;
+    border: 1px dashed #8b98a5; color: #8b98a5;
+    font: 400 0.78rem/1.6 "Space Mono", ui-monospace, monospace;
+  }
+  .dir { min-height: 100vh; padding: 4.5rem 2rem 5rem; position: relative; overflow: hidden; }
+  .dir-tag {
+    position: absolute; top: 1.2rem; left: 1.5rem; z-index: 5;
+    font: 700 0.7rem/1 "Space Mono", monospace; letter-spacing: 0.2em;
+    padding: 0.5rem 0.8rem; border: 1px solid currentColor; opacity: 0.85;
+  }
+  .verdict {
+    max-width: 66rem; margin: 0 auto 2.5rem; font: 400 0.85rem/1.7 "Space Mono", monospace;
+    letter-spacing: 0.04em; opacity: 0.75;
+  }
+
+  /* ============ DIRECTION A · THE SIGNAL (recommended) ============ */
+  .dir-a { background: #0e1216; color: #f2e8d0; }
+  .dir-a .dir-tag { color: #3fd08c; }
+  .dir-a .cover { max-width: 66rem; margin: 0 auto; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 2.5rem; align-items: start; }
+  .dir-a .kicker { font: 700 0.72rem/1 "Space Mono", monospace; letter-spacing: 0.34em; text-transform: uppercase; color: #3fd08c; margin-bottom: 1.6rem; }
+  .dir-a h1 { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: clamp(3.4rem, 9vw, 6.6rem); line-height: 0.95; letter-spacing: 0.015em; text-transform: uppercase; }
+  .dir-a h1 .dim { color: #f2e8d0; opacity: 0.55; }
+  .dir-a .aspectbar { display: flex; gap: 6px; margin: 1.7rem 0 1.3rem; max-width: 26rem; }
+  .dir-a .aspectbar i { display: block; height: 8px; }
+  .dir-a .aspectbar i:nth-child(1) { flex: 3; background: #3fd08c; }
+  .dir-a .aspectbar i:nth-child(2) { flex: 2; background: #e8a33d; }
+  .dir-a .aspectbar i:nth-child(3) { flex: 4; background: #e0483e; }
+  .dir-a .author { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 1.35rem; letter-spacing: 0.4em; text-transform: uppercase; }
+  .dir-a .tag { font-family: "Crimson Pro", Georgia, serif; font-style: italic; font-size: 1.2rem; color: #8b98a5; margin-top: 1rem; }
+  .dir-a .plate { width: 100%; border: 1px solid #232b33; background: #07090c; }
+  .dir-a .plate svg { display: block; width: 100%; height: auto; }
+  .dir-a .plate figcaption { font: 700 0.68rem/1 "Space Mono", monospace; letter-spacing: 0.22em; color: #3fd08c; padding: 0.8rem 1rem; border-top: 1px solid #232b33; }
+  .dir-a .parts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 2.5rem; border-top: 1px solid #232b33; }
+  .dir-a .part { padding: 1.3rem 1.2rem 0.5rem; border-left: 1px solid #232b33; }
+  .dir-a .part:first-child { border-left: none; padding-left: 0; }
+  .dir-a .part svg { display: block; width: 100%; height: 92px; margin-bottom: 1rem; }
+  .dir-a .part h3 { font: 600 0.95rem/1.3 "Barlow Condensed", sans-serif; letter-spacing: 0.14em; text-transform: uppercase; }
+  .dir-a .part h3 small { display: block; font: 700 0.64rem/1 "Space Mono", monospace; letter-spacing: 0.3em; margin-bottom: 0.5rem; }
+  .dir-a .part p { font: 400 0.8rem/1.6 "Space Mono", monospace; color: #8b98a5; margin-top: 0.4rem; }
+  .dir-a .p1 h3 small { color: #3fd08c; } .dir-a .p2 h3 small { color: #e8a33d; } .dir-a .p3 h3 small { color: #e0483e; }
+  .dir-a .opener { grid-column: 1 / -1; margin-top: 3.5rem; border: 1px solid #232b33; background: #0a0e12; }
+  .dir-a .opener .band svg { display: block; width: 100%; height: 12rem; }
+  .dir-a .opener .meta { padding: 1.8rem 2.2rem 2.2rem; }
+  .dir-a .opener h2 { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 1.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .dir-a .opener h2 small { display: block; font: 700 0.7rem/1 "Space Mono", monospace; letter-spacing: 0.34em; color: #3fd08c; margin-bottom: 0.8rem; }
+  .dir-a .opener .code { font: 400 0.7rem/1 "Space Mono", monospace; letter-spacing: 0.24em; color: #8b98a5; margin-top: 0.7rem; }
+  .dir-a .opener .rule { height: 4px; width: 12rem; background: #3fd08c; margin-top: 1.1rem; }
+  .dir-a .opener .lede { font-family: "Crimson Pro", Georgia, serif; font-size: 1.12rem; line-height: 1.78; color: #d8cdb2; margin-top: 1.2rem; max-width: 38rem; }
+  .dir-a .opener .lede::first-letter { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 3.2em; line-height: 0.85; float: left; padding: 0.05em 0.14em 0 0; color: #3fd08c; opacity: 0.9; }
+  @media (max-width: 900px) { .dir-a .cover { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) { .dir-a .parts { grid-template-columns: 1fr; } .dir-a .part { border-left: none; border-top: 1px solid #232b33; padding-left: 0; } }
+
+  /* ============ DIRECTION B · THE CURRENCY ============ */
+  .dir-b { background: #0b0d0a; color: #efe6cf; }
+  .dir-b .dir-tag { color: #4fa876; }
+  .dir-b .note { max-width: 60rem; margin: 0 auto; border: 1px solid #2a332b; background: #10130e; padding: 1.2rem; }
+  .dir-b .lathe { border: 3px double #4fa876; padding: 2.4rem 2rem 2rem; text-align: center; position: relative; }
+  .dir-b .lathe::before { content: ""; position: absolute; inset: 8px; border: 1px solid #2a4436; pointer-events: none; }
+  .dir-b .series { font: 700 0.68rem/1 "Space Mono", monospace; letter-spacing: 0.4em; color: #4fa876; }
+  .dir-b h1 { font-family: "Limelight", serif; font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.05; margin: 1.1rem 0 0.4rem; color: #efe6cf; }
+  .dir-b .denom { font-family: "Limelight", serif; font-size: 1.1rem; letter-spacing: 0.5em; color: #4fa876; }
+  .dir-b .specimen { display: inline-block; margin-top: 1.3rem; font: 700 0.7rem/1 "Space Mono", monospace; letter-spacing: 0.34em; color: #0b0d0a; background: #4fa876; padding: 0.55rem 1rem 0.55rem 1.3rem; }
+  .dir-b .byline { margin-top: 1.2rem; font-family: "Literata", Georgia, serif; font-style: italic; color: #9aa39b; }
+  .dir-b .parts { max-width: 60rem; margin: 2.2rem auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+  .dir-b .bill { border: 1px solid #2a332b; padding: 1.1rem; background: #10130e; }
+  .dir-b .bill svg { width: 100%; height: 84px; display: block; margin-bottom: 0.9rem; }
+  .dir-b .bill h3 { font-family: "Limelight", serif; font-size: 1rem; }
+  .dir-b .bill h3 small { display: block; font: 700 0.62rem/1 "Space Mono", monospace; letter-spacing: 0.3em; margin-bottom: 0.5rem; }
+  .dir-b .bill p { font-family: "Literata", Georgia, serif; font-size: 0.85rem; line-height: 1.6; color: #9aa39b; margin-top: 0.5rem; }
+  .dir-b .b1 h3 small { color: #4fa876; } .dir-b .b2 h3 small { color: #d8963b; } .dir-b .b3 h3 small { color: #d14a40; }
+  .dir-b .opener { max-width: 60rem; margin: 2.2rem auto 0; border: 1px solid #2a332b; background: #10130e; padding: 2rem 2.2rem; }
+  .dir-b .opener h2 { font-family: "Limelight", serif; font-size: 1.9rem; }
+  .dir-b .opener h2 small { display: block; font: 700 0.66rem/1 "Space Mono", monospace; letter-spacing: 0.3em; color: #4fa876; margin-bottom: 0.8rem; }
+  .dir-b .opener .lede { font-family: "Literata", Georgia, serif; font-size: 1.05rem; line-height: 1.8; color: #d5cdb4; margin-top: 1rem; max-width: 38rem; }
+  @media (max-width: 640px) { .dir-b .parts { grid-template-columns: 1fr; } }
+
+  /* ============ DIRECTION C · THE TERMINAL ============ */
+  .dir-c { background: #0c0e12; color: #ede7d6; }
+  .dir-c .dir-tag { color: #e0a13b; }
+  .dir-c .station { max-width: 62rem; margin: 0 auto; }
+  .dir-c .frieze { text-align: center; border-top: 6px solid #a89b7c; border-bottom: 1px solid #2a3140; padding: 2.2rem 1rem 1.8rem; }
+  .dir-c .frieze p { font: 700 0.68rem/1 "Space Mono", monospace; letter-spacing: 0.4em; color: #a89b7c; }
+  .dir-c h1 { font-family: "Barlow Semi Condensed", sans-serif; font-weight: 700; font-size: clamp(3rem, 8.5vw, 5.8rem); letter-spacing: 0.04em; text-transform: uppercase; margin-top: 0.8rem; }
+  .dir-c .board { margin-top: 2rem; border: 1px solid #2a3140; background: #060809; }
+  .dir-c .row { display: grid; grid-template-columns: 7rem 1fr auto; gap: 1rem; align-items: baseline; padding: 0.85rem 1.2rem; border-top: 1px solid #1a2130; font-family: "Barlow Semi Condensed", sans-serif; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+  .dir-c .row:first-child { border-top: none; }
+  .dir-c .row .t { font: 700 0.72rem/1 "Space Mono", monospace; color: #8b98a5; letter-spacing: 0.2em; }
+  .dir-c .row .s { font: 700 0.72rem/1 "Space Mono", monospace; letter-spacing: 0.2em; }
+  .dir-c .on .s { color: #46b27e; } .dir-c .dl .s { color: #e0a13b; } .dir-c .an .s { color: #d34a3f; }
+  .dir-c .parts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid #2a3140; border-top: none; background: #0a0d13; }
+  .dir-c .p { padding: 1.2rem 1.2rem 1.4rem; border-left: 1px solid #2a3140; }
+  .dir-c .p:first-child { border-left: none; }
+  .dir-c .p svg { width: 100%; height: 72px; display: block; margin-bottom: 0.9rem; }
+  .dir-c .p h3 { font-family: "Barlow Semi Condensed", sans-serif; font-weight: 600; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .dir-c .p h3 small { display: block; font: 700 0.62rem/1 "Space Mono", monospace; letter-spacing: 0.3em; margin-bottom: 0.5rem; }
+  .dir-c .p p { font-family: "Crimson Pro", Georgia, serif; font-size: 0.88rem; line-height: 1.6; color: #8b98a5; margin-top: 0.5rem; }
+  .dir-c .c1 h3 small { color: #46b27e; } .dir-c .c2 h3 small { color: #e0a13b; } .dir-c .c3 h3 small { color: #d34a3f; }
+  .dir-c .opener { margin-top: 2rem; border: 1px solid #2a3140; background: #060809; padding: 2rem 2.2rem; }
+  .dir-c .opener h2 { font-family: "Barlow Semi Condensed", sans-serif; font-weight: 600; font-size: 1.8rem; letter-spacing: 0.06em; text-transform: uppercase; }
+  .dir-c .opener h2 small { display: block; font: 700 0.66rem/1 "Space Mono", monospace; letter-spacing: 0.3em; color: #46b27e; margin-bottom: 0.8rem; }
+  .dir-c .opener .lede { font-family: "Crimson Pro", Georgia, serif; font-size: 1.05rem; line-height: 1.8; color: #cfc6ac; margin-top: 1rem; max-width: 38rem; }
+  @media (max-width: 640px) { .dir-c .parts { grid-template-columns: 1fr; } .dir-c .p { border-left: none; border-top: 1px solid #2a3140; } .dir-c .row { grid-template-columns: 1fr auto; } .dir-c .row .t { display: none; } }
+</style>
+</head>
+<body>
+
+<p class="fontnote" style="margin-top:2rem">TYPE NOTE (2026-10-15): all six faces verified live via the Google Fonts CSS API (HTTP 200). This sandbox lost fonts.googleapis.com TLS afterwards (curl exit 35), so the render below shows fallback stacks — condensed grotesques → Arial Narrow/Impact, serifs → Georgia, mono → ui-monospace. Judge composition, plates, and color here; judge letterforms after the engineer vendors woff2.</p>
+ <!-- ============ DIRECTION A · THE SIGNAL (recommended) ============ -->
+<section class="dir dir-a" id="dir-a">
+  <span class="dir-tag">A · THE SIGNAL ★ RECOMMENDED</span>
+  <div class="cover">
+    <div>
+      <p class="kicker">A novel in three signals · 1957</p>
+      <h1>Atlas<br><span class="dim">Shrugged</span></h1>
+      <div class="aspectbar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="author">Ayn Rand</p>
+      <p class="tag">Who is John Galt?</p>
+    </div>
+    <figure class="plate">
+      <svg viewBox="0 0 480 420" role="img" aria-label="Night signal plate: green lamp over converging rails">
+        <rect x="0" y="0" width="480" height="420" fill="#07090c"/>
+        <g fill="#0e1216">
+          <rect x="0" y="0" width="480" height="150"/>
+        </g>
+        <g fill="#f2e8d0" opacity="0.5">
+          <circle cx="60" cy="40" r="1.6"/><circle cx="150" cy="70" r="1.3"/><circle cx="240" cy="34" r="1.6"/>
+          <circle cx="330" cy="66" r="1.3"/><circle cx="420" cy="40" r="1.6"/><circle cx="380" cy="110" r="1.2"/>
+          <circle cx="100" cy="115" r="1.2"/><circle cx="290" cy="105" r="1.2"/>
+        </g>
+        <rect x="222" y="60" width="36" height="96" fill="#141a20"/>
+        <rect x="222" y="60" width="36" height="96" fill="none" stroke="#8b98a5" stroke-width="2"/>
+        <circle cx="240" cy="84" r="11" fill="#1c242c"/>
+        <circle cx="240" cy="132" r="11" fill="#1c242c"/>
+        <circle cx="240" cy="108" r="11" fill="#3fd08c"/>
+        <circle cx="240" cy="108" r="15" fill="none" stroke="#3fd08c" stroke-width="2"/>
+        <line x1="236" y1="156" x2="236" y2="240" stroke="#8b98a5" stroke-width="4"/>
+        <line x1="244" y1="156" x2="244" y2="240" stroke="#8b98a5" stroke-width="4"/>
+        <polygon points="240,250 60,420 150,420" fill="#8b98a5" opacity="0.28"/>
+        <polygon points="240,250 420,420 330,420" fill="#8b98a5" opacity="0.28"/>
+        <polygon points="240,250 150,420 120,420" fill="#f2e8d0" opacity="0.85"/>
+        <polygon points="240,250 330,420 360,420" fill="#f2e8d0" opacity="0.85"/>
+        <polygon points="240,250 228,420 252,420" fill="#3fd08c" opacity="0.35"/>
+        <g fill="#3fd08c" opacity="0.85">
+          <rect x="205" y="262" width="70" height="4"/><rect x="185" y="282" width="110" height="5"/>
+          <rect x="160" y="306" width="160" height="6"/><rect x="128" y="334" width="224" height="7"/>
+          <rect x="92" y="366" width="296" height="8"/>
+        </g>
+        <rect x="0" y="404" width="480" height="16" fill="#0e1216"/>
+      </svg>
+      <figcaption>SIG 0-00 · CLEAR · THE LINE RUNS</figcaption>
+    </figure>
+    <div class="parts">
+      <div class="part p1">
+        <svg viewBox="0 0 200 92"><rect x="0" y="0" width="200" height="92" fill="#07090c"/><line x1="20" y1="80" x2="100" y2="20" stroke="#f2e8d0" stroke-width="3"/><line x1="180" y1="80" x2="100" y2="20" stroke="#f2e8d0" stroke-width="3"/><circle cx="100" cy="20" r="9" fill="#3fd08c"/><circle cx="100" cy="20" r="13" fill="none" stroke="#3fd08c" stroke-width="2"/><g stroke="#3fd08c" stroke-width="2" opacity="0.8"><line x1="62" y1="62" x2="138" y2="62"/><line x1="80" y1="48" x2="120" y2="48"/></g></svg>
+        <h3><small>SIG I · CLEAR</small>One · Non-Contradiction</h3>
+        <p>Open track at night. The Line runs; the lamp is green.</p>
+      </div>
+      <div class="part p2">
+        <svg viewBox="0 0 200 92"><rect x="0" y="0" width="200" height="92" fill="#07090c"/><rect x="30" y="18" width="26" height="52" fill="#141a20" stroke="#8b98a5" stroke-width="2"/><rect x="144" y="18" width="26" height="52" fill="#141a20" stroke="#8b98a5" stroke-width="2"/><circle cx="43" cy="34" r="7" fill="#e8a33d"/><circle cx="43" cy="34" r="10" fill="none" stroke="#e8a33d" stroke-width="2"/><circle cx="157" cy="56" r="7" fill="#e0483e" opacity="0.85"/><line x1="56" y1="44" x2="144" y2="44" stroke="#8b98a5" stroke-width="2"/><line x1="20" y1="80" x2="180" y2="80" stroke="#f2e8d0" stroke-width="3"/></svg>
+        <h3><small>SIG II · CAUTION</small>Two · Either-Or</h3>
+        <p>Signals against signals. Orders contradict orders.</p>
+      </div>
+      <div class="part p3">
+        <svg viewBox="0 0 200 92"><rect x="0" y="0" width="200" height="92" fill="#07090c"/><rect x="70" y="30" width="60" height="50" fill="#141a20"/><path d="M70 80 L70 55 Q100 30 130 55 L130 80 Z" fill="#07090c" stroke="#8b98a5" stroke-width="2"/><circle cx="100" cy="24" r="8" fill="#e0483e"/><circle cx="100" cy="24" r="12" fill="none" stroke="#e0483e" stroke-width="2"/><line x1="20" y1="80" x2="70" y2="80" stroke="#f2e8d0" stroke-width="3"/><line x1="130" y1="80" x2="180" y2="80" stroke="#f2e8d0" stroke-width="3"/><line x1="100" y1="62" x2="100" y2="80" stroke="#3fd08c" stroke-width="3"/></svg>
+        <h3><small>SIG III · STOP</small>Three · A Is A</h3>
+        <p>The stopped world; one green thread — the valley.</p>
+      </div>
+    </div>
+    <div class="opener">
+      <div class="band">
+        <svg viewBox="0 0 900 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The John Galt Line first run: headlight wedge through rain">
+          <rect x="0" y="0" width="900" height="200" fill="#07090c"/>
+          <polygon points="120,200 420,60 480,60 260,200" fill="#f2e8d0" opacity="0.16"/>
+          <polygon points="150,200 430,70 460,70 230,200" fill="#f2e8d0" opacity="0.22"/>
+          <line x1="0" y1="170" x2="900" y2="170" stroke="#f2e8d0" stroke-width="3"/>
+          <line x1="0" y1="184" x2="900" y2="184" stroke="#f2e8d0" stroke-width="2" opacity="0.6"/>
+          <g stroke="#3fd08c" stroke-width="3" opacity="0.9">
+            <line x1="60" y1="162" x2="60" y2="192"/><line x1="150" y1="162" x2="150" y2="192"/>
+            <line x1="240" y1="162" x2="240" y2="192"/><line x1="330" y1="162" x2="330" y2="192"/>
+            <line x1="420" y1="162" x2="420" y2="192"/><line x1="510" y1="162" x2="510" y2="192"/>
+            <line x1="600" y1="162" x2="600" y2="192"/><line x1="690" y1="162" x2="690" y2="192"/>
+            <line x1="780" y1="162" x2="780" y2="192"/>
+          </g>
+          <circle cx="450" cy="66" r="12" fill="#f2e8d0"/>
+          <circle cx="450" cy="66" r="17" fill="none" stroke="#f2e8d0" stroke-width="2"/>
+          <circle cx="800" cy="48" r="9" fill="#3fd08c"/>
+          <circle cx="800" cy="48" r="13" fill="none" stroke="#3fd08c" stroke-width="2"/>
+          <rect x="796" y="57" width="8" height="60" fill="#8b98a5"/>
+          <g stroke="#8b98a5" stroke-width="1.5" opacity="0.7">
+            <line x1="100" y1="20" x2="92" y2="52"/><line x1="200" y1="14" x2="192" y2="46"/>
+            <line x1="300" y1="22" x2="292" y2="54"/><line x1="560" y1="18" x2="552" y2="50"/>
+            <line x1="660" y1="24" x2="652" y2="56"/><line x1="740" y1="16" x2="732" y2="48"/>
+          </g>
+        </svg>
+      </div>
+      <div class="meta">
+        <h2><small>Part I · Non-Contradiction · Clear</small>The John Galt Line</h2>
+        <p class="code">SIG I-08 · CHAPTER VIII · 18,521 WORDS</p>
+        <div class="rule" aria-hidden="true"></div>
+        <p class="lede">The worker smiled, looking at Eddie Willers across the table. “I feel like a fugitive,” said Eddie Willers. “I guess you know why I haven't been here for months?”…</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIRECTION B · THE CURRENCY ============ -->
+<section class="dir dir-b" id="dir-b">
+  <span class="dir-tag">B · THE CURRENCY</span>
+  <p class="verdict">Rejected finalist: the money grammar starves Part I's railroad sublime and 30 lathe borders risk ornament fatigue. Kept as the dollar-plate detail inside A.</p>
+  <div class="note">
+    <div class="lathe">
+      <p class="series">Series 1957 · The Taggart Reserve</p>
+      <h1>Atlas Shrugged</h1>
+      <p class="denom">Ayn Rand</p>
+      <p><span class="specimen">Specimen · Non-Negotiable</span></p>
+      <p class="byline">Who is John Galt?</p>
+    </div>
+  </div>
+  <div class="parts">
+    <div class="bill b1">
+      <svg viewBox="0 0 200 84"><rect x="0" y="0" width="200" height="84" fill="#0b0d0a"/><g fill="none" stroke="#4fa876"><ellipse cx="100" cy="42" rx="70" ry="30" stroke-width="1.5"/><ellipse cx="100" cy="42" rx="52" ry="22" stroke-width="1"/><ellipse cx="100" cy="42" rx="34" ry="14" stroke-width="1"/></g><text x="100" y="48" text-anchor="middle" font-family="monospace" font-size="14" fill="#4fa876">I</text></svg>
+      <h3><small>Productive note</small>One</h3>
+      <p>Full lathe borders. Value earned, engraving unbroken.</p>
+    </div>
+    <div class="bill b2">
+      <svg viewBox="0 0 200 84"><rect x="0" y="0" width="200" height="84" fill="#0b0d0a"/><g fill="none" stroke="#d8963b"><ellipse cx="100" cy="42" rx="70" ry="30" stroke-width="1.5" stroke-dasharray="8 5"/><ellipse cx="100" cy="42" rx="52" ry="22" stroke-width="1" stroke-dasharray="8 5"/></g><text x="100" y="48" text-anchor="middle" font-family="monospace" font-size="14" fill="#d8963b">10-289</text></svg>
+      <h3><small>Inflated note</small>Two</h3>
+      <p>Borders fraying; overprint stamps deface the plate.</p>
+    </div>
+    <div class="bill b3">
+      <svg viewBox="0 0 200 84"><rect x="0" y="0" width="200" height="84" fill="#0b0d0a"/><g fill="none" stroke="#d14a40"><ellipse cx="100" cy="42" rx="70" ry="30" stroke-width="2.5"/><ellipse cx="100" cy="42" rx="52" ry="22" stroke-width="1.5"/><ellipse cx="100" cy="42" rx="34" ry="14" stroke-width="1.5"/></g><text x="100" y="50" text-anchor="middle" font-family="monospace" font-size="18" fill="#d14a40">$</text></svg>
+      <h3><small>Strikers' note</small>Three</h3>
+      <p>Borders re-cut razor sharp. The dollar, densest object.</p>
+    </div>
+  </div>
+  <div class="opener">
+    <h2><small>The Taggart Reserve · Series II · Serial 21590</small>The Sign of the Dollar</h2>
+    <p class="lede">She sat at the window of the train, her head thrown back, not moving, wishing she would never have to move again…</p>
+  </div>
+</section>
+
+<!-- ============ DIRECTION C · THE TERMINAL ============ -->
+<section class="dir dir-c" id="dir-c">
+  <span class="dir-tag">C · THE TERMINAL</span>
+  <p class="verdict">Rejected: the board conceit trivializes the valley and the Galt address, and the symmetric facade sits closest to the rejected baseline DNA.</p>
+  <div class="station">
+    <div class="frieze">
+      <p>Taggart Transcontinental · Grand Concourse</p>
+      <h1>Atlas Shrugged</h1>
+    </div>
+    <div class="board">
+      <div class="row on"><span class="t">TRK 1–10</span><span>Part One · Non-Contradiction · Full Service</span><span class="s">On time</span></div>
+      <div class="row dl"><span class="t">TRK 11–20</span><span>Part Two · Either-Or · Delays Posted</span><span class="s">Delayed</span></div>
+      <div class="row an"><span class="t">TRK 21–30</span><span>Part Three · A Is A · Board Dark</span><span class="s">Annulled</span></div>
+    </div>
+    <div class="parts">
+      <div class="p c1">
+        <svg viewBox="0 0 200 72"><rect x="0" y="0" width="200" height="72" fill="#060809"/><g fill="#46b27e"><rect x="30" y="14" width="140" height="10"/><rect x="30" y="28" width="110" height="10"/><rect x="30" y="42" width="90" height="10"/></g></svg>
+        <h3><small>Full service</small>One</h3>
+        <p>Every departure on time. The board glows green.</p>
+      </div>
+      <div class="p c2">
+        <svg viewBox="0 0 200 72"><rect x="0" y="0" width="200" height="72" fill="#060809"/><g fill="#e0a13b"><rect x="30" y="14" width="140" height="10"/><rect x="30" y="28" width="60" height="10"/></g><rect x="30" y="42" width="140" height="10" fill="none" stroke="#d34a3f" stroke-width="2"/></svg>
+        <h3><small>Delays posted</small>Two</h3>
+        <p>Rows flicker, contradict, annul each other.</p>
+      </div>
+      <div class="p c3">
+        <svg viewBox="0 0 200 72"><rect x="0" y="0" width="200" height="72" fill="#060809"/><rect x="30" y="14" width="140" height="10" fill="#1a2130"/><rect x="30" y="28" width="140" height="10" fill="#1a2130"/><rect x="30" y="42" width="140" height="10" fill="#46b27e"/></svg>
+        <h3><small>Board dark</small>Three</h3>
+        <p>One line lit: Atlas · Cleared.</p>
+      </div>
+    </div>
+    <div class="opener">
+      <h2><small>Track 8 · The John Galt Line · On time</small>The John Galt Line</h2>
+      <p class="lede">The worker smiled, looking at Eddie Willers across the table. “I feel like a fugitive,” said Eddie Willers…</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

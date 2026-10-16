@@ -1,0 +1,242 @@
+{
+ "map_15_28": [
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c15",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; mountain + climber right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-mountain",
+    "treatment": "motif"
+   },
+   "order": 15,
+   "palette_role": "distance \u2014 disenchanted height",
+   "part": "part-3",
+   "rationale": "Mountain enchants only from below/distance; climb it and magic dies (155w).",
+   "reading_treatment": "Shoot",
+   "title": "15. From a distance.",
+   "word_count": 155
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c16",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; bridge left; torrent gap; gull + 2 sparks.",
+    "symbol": "gs-b-motif-bridge",
+    "treatment": "motif"
+   },
+   "order": 16,
+   "palette_role": "friendship \u2014 refused crossing",
+   "part": "part-3",
+   "rationale": "'Do you want to cross the footbridge to me?' \u2014 refused; mountains and torrents divide (201w).",
+   "reading_treatment": "Shoot",
+   "title": "16. Over the footbridge.",
+   "word_count": 201
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c17",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; stream-in-laurel right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-stream",
+    "treatment": "motif"
+   },
+   "order": 17,
+   "palette_role": "poverty \u2014 dignified trickle",
+   "part": "part-3",
+   "rationale": "Wise gardener lays the poor stream in a nymph's arms (97w).",
+   "reading_treatment": "Shoot",
+   "title": "17. Finding a motive for one\u2019s poverty.",
+   "word_count": 97
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c18",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; column + rank steps left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-column",
+    "treatment": "motif"
+   },
+   "order": 18,
+   "palette_role": "antiquity \u2014 flattened ranks",
+   "part": "part-3",
+   "rationale": "Greek nobility needed distance from the slave, not even Plato could see; equality flattened it (210w).",
+   "reading_treatment": "Shoot",
+   "title": "18. Ancient pride.",
+   "word_count": 210
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c19",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; storm-tree right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-tree",
+    "treatment": "motif"
+   },
+   "order": 19,
+   "palette_role": "growth \u2014 storm-proven",
+   "part": "part-3",
+   "rationale": "No proud tree without storms; poison killing weak strengthens strong (93w).",
+   "reading_treatment": "Shoot",
+   "title": "19. Evil.",
+   "word_count": 93
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c20",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; cap over snapped ledger left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-cap",
+    "treatment": "motif"
+   },
+   "order": 20,
+   "palette_role": "folly \u2014 noble to come",
+   "part": "part-3",
+   "rationale": "Under coming tyranny of prudence, to be noble = entertain follies (108w).",
+   "reading_treatment": "Shoot",
+   "title": "20. The dignity of foolishness.",
+   "word_count": 108
+  },
+  {
+   "delta": "v1 landmark\u2192\u00a77B grand Branch banner.",
+   "id": "p3c21",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "ORIGINAL 1200x380: tablets monumental RIGHT; herd arc low full-width; rakerays rake across tablets; high foam contrast.",
+    "symbol": "gs-b-grand-tablets",
+    "treatment": "banner"
+   },
+   "order": 21,
+   "palette_role": "essay \u2014 iron morning",
+   "part": "part-3",
+   "rationale": "'Teachers of...' pair w/ \u00a71 (957w): virtues praised for society's use dominate possessors; self-refuting ought.",
+   "reading_treatment": "Branch",
+   "title": "21. To the teachers of selflessness.",
+   "word_count": 957
+  },
+  {
+   "delta": "v1 landmark\u2192Branch banner (416w band).",
+   "id": "p3c22",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Curtain valance full-width top; bell large LEFT; torn slip RIGHT; low sun + fan behind; vermilion-forward.",
+    "symbol": "gs-b-banner-court",
+    "treatment": "banner"
+   },
+   "order": 22,
+   "palette_role": "stage-content \u2014 court day",
+   "part": "part-3",
+   "rationale": "Most formally eccentric: staged court-day monologue, Montaigne's stone, five-o'clock bell, world improvising (416w Branch).",
+   "reading_treatment": "Branch",
+   "title": "22. L\u2019ordre du jour pour le roi.12",
+   "word_count": 416
+  },
+  {
+   "delta": "essay-opener\u2192\u00a77B grand Branch banner; G5 autumn w/o aubergine.",
+   "id": "p3c23",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "ORIGINAL 1200x380: branch upper-left; 7 apples stagger across full width; seeding apple bottom-center; deep-sea bands.",
+    "symbol": "gs-b-grand-applefall",
+    "treatment": "banner"
+   },
+   "order": 23,
+   "palette_role": "essay \u2014 autumn morning",
+   "part": "part-3",
+   "rationale": "Corruption as a people's autumn: colourful superstition, Napoleon's 'That is me,' apples as seed-bearers (980w).",
+   "reading_treatment": "Branch",
+   "title": "23. The signs of corruption.",
+   "word_count": 980
+  },
+  {
+   "delta": "NEW stripe banner (was mark). 301w Branch.",
+   "id": "p3c24",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "Weather-stripe band (twocups in sequence).",
+    "symbol": "gs-b-banner-stripe",
+    "treatment": "banner"
+   },
+   "order": 24,
+   "palette_role": "essay \u2014 survey stripe",
+   "part": "part-3",
+   "rationale": "Weak discontents opiates (beautiful), strong physicians (better) (301w Branch; boundary vs p3c11 295 Shoot).",
+   "reading_treatment": "Branch",
+   "title": "24. Different forms of dissatisfaction.",
+   "word_count": 301
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c25",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; turned profile right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-turned",
+    "treatment": "motif"
+   },
+   "order": 25,
+   "palette_role": "knowledge \u2014 refused",
+   "part": "part-3",
+   "rationale": "Stupid humility turns on heel from the striking: 'too many old truths' (129w).",
+   "reading_treatment": "Shoot",
+   "title": "25. Not predestined for knowledge.",
+   "word_count": 129
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c26",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun right; shed-curve left; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-shed",
+    "treatment": "motif"
+   },
+   "order": 26,
+   "palette_role": "life \u2014 sloughing",
+   "part": "part-3",
+   "rationale": "Life = continual shedding of what wants to die vs Moses (67w).",
+   "reading_treatment": "Shoot",
+   "title": "26. What is life?",
+   "word_count": 67
+  },
+  {
+   "delta": "Shoot motif.",
+   "id": "p3c27",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: sun left; hood rising + ballast right; sea; gull + 2 sparks.",
+    "symbol": "gs-b-motif-hood",
+    "treatment": "motif"
+   },
+   "order": 27,
+   "palette_role": "renunciation \u2014 secret affirming",
+   "part": "part-3",
+   "rationale": "Renouncer casts ballast to soar, hiding pride under hood: secretly affirmer (151w).",
+   "reading_treatment": "Shoot",
+   "title": "27. The renouncer.",
+   "word_count": 151
+  },
+  {
+   "delta": "Shoot motif; glare tone killed \u2192 tableau with sun emblem standard.",
+   "id": "p3c28",
+   "motif_asset": "art/cohort-b.svg",
+   "opener": {
+    "composition": "480x300: LOW sun LARGE left (the blinding best) + fan; small weak figures right shaded; sea; no gull (glare stills air).",
+    "symbol": "gs-b-motif-glare",
+    "treatment": "motif"
+   },
+   "order": 28,
+   "palette_role": "power \u2014 blinding best",
+   "part": "part-3",
+   "rationale": "The great destroy the weak precisely with their best, an overly potent drink (193w).",
+   "reading_treatment": "Shoot",
+   "title": "28. Harming with what is best in oneself.",
+   "word_count": 193
+  }
+ ]
+}

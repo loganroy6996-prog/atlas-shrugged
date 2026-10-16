@@ -1,0 +1,249 @@
+/* ROARK cohort (Part 4 · Howard Roark) — THE FURNACE, white-hot register.
+ * Conforms to ART-DIRECTION.md §2–§9, CHAPTERS.md Part 4 rows, ArtDirector
+ * binding F1–F10, supervisor amendments A1–A2, READER-CONTRACT v1.0 §2–§4/§8
+ * + v1.1 symbol addendum + Appendix A.0 (SVG-inked end seals only).
+ * UNLAYERED by contract §8: wins over @layer shared on any specificity.
+ * Hooks: body[data-book="the-fountainhead"][data-part-id="part-4"],
+ * body[data-chapter="p4cN"], body[data-art="roark-cantilever|roark-cortlandt|roark-ascent"].
+ * Art: art/roark-banner.svg (symbols r4-c1..r4-c18, inlined per chapter via
+ * the manifest `symbol` key — one fetch, never 18 files) + the finale plates
+ * art/roark-cortlandt.svg (p4c19) + art/roark-ascent.svg (p4c20).
+ * Numeral fills + bars + FIGs per chapter live in cohort-roark.json.
+ * Fonts load book-relatively (contract §8); Google Fonts is the verified
+ * fallback during development (spec §2). */
+
+/* ── FURNACE tokens, Roark register ── */
+body[data-book="the-fountainhead"][data-part-id="part-4"] {
+  --fh-hearth: #17100b;
+  --fh-hearth-deep: #100b08;
+  --fh-tower: #241610;
+  --fh-heat-mid: #33200f;
+  --fh-bone: #f6ead6;
+  --fh-ember: #e4572e;
+  --fh-ember-deep: #8c3a20;
+  --fh-emberlight: #ffd9a0;
+  --fh-bronze: #c8a06a;
+  --fh-ash: #7a6a58;
+  --fh-cinder: #3a2c22;
+  --fh-sepia-ember: #b23e1f;
+}
+
+/* ── Banner slot: meta→text zone, compact, never pushes text (F4) ──
+ * reader.js inlines exactly one symbol per chapter, then appends the
+ * chainage figcaption. No per-chapter panel toggling: the slot carries
+ * one symbol, so there is nothing to hide. */
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.banner {
+  display: block;
+  max-height: 12rem;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 3px solid var(--fh-ember);
+  background: var(--fh-hearth-deep);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.banner svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 9.5rem;
+}
+/* Chainage stamp (contract §4 caption → figcaption): Plex Mono, tracked,
+ * Ember on Hearth-deep meters 5.31:1 (F9 PASS, small text allowed). */
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.banner figcaption,
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.plate figcaption,
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.finale figcaption {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-ember);
+  background: var(--fh-hearth-deep);
+  padding: 0.55rem 0.25rem 0.15rem;
+}
+
+/* ── Finale plates: earned extra height, art never overlaps prose ── */
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.plate {
+  display: block;
+  margin: 0 auto 2rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 4px solid var(--fh-ember);
+  background: var(--fh-hearth-deep);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 22rem;
+}
+/* p4c20 ASCENT: the DISTINCT finale class (supervisor ruling Q2) — the
+ * tallest bar in the cohort keys only here, never via banner/plate. */
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.finale {
+  display: block;
+  margin: 0 auto 2rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 4px solid var(--fh-ember);
+  background: var(--fh-hearth-deep);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.finale svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 30rem;
+}
+
+/* ── Chapter meta: Oswald head + Plex kicker (spec §2 scale) ──
+ * Kicker takes Emberlight (14.06:1 on Hearth) so F9 holds on every
+ * composited ground, not only the metered Hearth-deep slot. */
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-part {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fh-emberlight);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-title {
+  font-family: Oswald, "Arial Narrow", Impact, sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fh-bone);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-number {
+  color: var(--fh-bronze);
+}
+/* Silence the pre-FURNACE part-4 chrome this cohort replaces (theme.css
+ * lines 534–697): cantilever beams, meta ornaments, 3-cycle rhythms,
+ * length tiers, and the p4c19/p4c20 finale overrides — plus the shared
+ * fleuron/diamond ornaments (contract A.0 diamond seals replace them).
+ * theme.css is supervisor-owned — never edited — so this cohort
+ * out-specifies it under its own part-id hook. */
+body[data-book="the-fountainhead"][data-part-id="part-4"] .reader-body::before,
+body[data-book="the-fountainhead"][data-part-id="part-4"] .reader-body::after,
+body[data-book="the-fountainhead"][data-part-id="part-4"] .chapter-meta::before,
+body[data-book="the-fountainhead"][data-part-id="part-4"] .chapter-meta::after,
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-number::after {
+  content: none;
+  display: none;
+  background: none;
+  box-shadow: none;
+  animation: none;
+}
+/* Hearth-line rule: full-width Ember with a Bone-hot core (spec §6 mark).
+ * The shared span is a rotated 7px diamond — reset transform/size so the
+ * hearth line reads as a line, and silence the shared side hairlines. */
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-rule {
+  justify-content: flex-start;
+  gap: 0;
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-rule::before,
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-rule::after {
+  content: none;
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-rule span {
+  width: min(26rem, 88%);
+  height: 4px;
+  transform: none;
+  background: linear-gradient(90deg, var(--fh-ember) 0 78%, transparent 96%);
+  box-shadow: 0 -2px 0 var(--fh-emberlight);
+  opacity: 1;
+}
+
+/* ── Drop-cap heat: Ember Oswald; Bronze ONLY on the COLD set (A2) ──
+ * The shared .no-drop rule keeps short/quote-led openers un-capped;
+ * this cohort styles the cap color, never the cap placement. */
+body[data-book="the-fountainhead"][data-part-id="part-4"] .chapter-text > p:first-of-type::first-letter {
+  font-family: Oswald, "Arial Narrow", Impact, sans-serif;
+  font-weight: 700;
+  color: var(--fh-ember);
+  background: none;
+  border-left: 3px solid var(--fh-ember);
+  text-shadow: none;
+  padding-left: 0.15em;
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"][data-chapter="p4c6"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-part-id="part-4"][data-chapter="p4c14"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--fh-bronze);
+  border-left-color: var(--fh-bronze);
+}
+
+/* ── End seals: F10 diamond as authored SVG url() art (contract A.0) ──
+ * Empty content + background url() art sized ≤32px — never a bare glyph —
+ * so no font support check can fail on any target. Ember on standards,
+ * Bronze on COLD chapters, brightest on the p4c20 finale. Centered block
+ * with the shared end-mark's top rhythm; no layout shift. */
+body[data-book="the-fountainhead"][data-part-id="part-4"] .chapter-text > p:last-child::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 2.75rem auto 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M9 1 L17 9 L9 17 L1 9 Z' fill='%23E4572E'/%3E%3C/svg%3E") center / contain no-repeat;
+  text-shadow: none;
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"][data-chapter="p4c6"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-part-id="part-4"][data-chapter="p4c14"] .chapter-text > p:last-child::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M9 1 L17 9 L9 17 L1 9 Z' fill='%23C8A06A'/%3E%3C/svg%3E");
+}
+/* p4c20 explicit end state: closing rule + 24px diamond seal (F5). */
+body[data-book="the-fountainhead"][data-part-id="part-4"][data-chapter="p4c20"] .chapter-text > p:last-child::after {
+  width: 100%;
+  max-width: 26rem;
+  height: 24px;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 3px solid var(--fh-ember);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 1 L23 12 L12 23 L1 12 Z' fill='none' stroke='%23FFD9A0' stroke-width='2'/%3E%3Cpath d='M12 6 L18 12 L12 18 L6 12 Z' fill='%23E4572E'/%3E%3C/svg%3E") center bottom / 24px 24px no-repeat;
+}
+
+/* ── Motif treatments (body[data-art] distinctions, supervisor Q3) ──
+ * p4c18 keeps roark-cantilever (branch-cut banner); the cortlandt and
+ * ascent motifs earn their plate/finale rules only. */
+body[data-book="the-fountainhead"][data-part-id="part-4"][data-art="roark-cortlandt"] .meta-rule span {
+  background: linear-gradient(90deg, var(--fh-ember) 0 88%, transparent);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"][data-art="roark-ascent"] .meta-rule span {
+  background: linear-gradient(90deg, var(--fh-emberlight) 0 30%, var(--fh-ember) 60%, transparent);
+  box-shadow: 0 -2px 0 var(--fh-emberlight);
+}
+
+/* ── Small screens: slot scales, chainage wraps, no overflow ── */
+@media (max-width: 720px) {
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.banner {
+    max-height: none;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.banner svg {
+    max-height: none;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.banner figcaption,
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.plate figcaption,
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.finale figcaption {
+    letter-spacing: 0.14em;
+    overflow-wrap: anywhere;
+  }
+  body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-rule span {
+    width: min(18rem, 82%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.banner,
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.plate,
+  body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art.finale {
+    border-bottom-style: solid;
+  }
+}
+
+/* ── Sepia / light themes: Bone ground, darkened Ember (F1 policing) ──
+ * Sepia Ember #B23E1F meters 4.90:1 on Bone (F9 PASS for Plex kickers);
+ * slot wells stay Hearth-deep so banner symbols read unchanged. */
+html[data-theme="sepia"] body[data-book="the-fountainhead"][data-part-id="part-4"],
+html[data-theme="light"] body[data-book="the-fountainhead"][data-part-id="part-4"] {
+  --fh-bone: #2a1e14;
+  --fh-ember: #b23e1f;
+  --fh-emberlight: #b23e1f;
+  --fh-bronze: #8a6a3a;
+  --fh-ash: #6b5c48;
+}

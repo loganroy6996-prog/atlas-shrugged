@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="ndt nd">
+<title id="ndt">Dose I — The narthex door: a single pointed-arch portal ajar in near-black, one ember of candlelight</title>
+<desc id="nd">Narthex plate. Near-black night field; one stone portal, door ajar, a single candle flame inside; flat stepped wedges of light spill down the steps. The reader stands at the threshold.</desc>
+<defs>
+<linearGradient id="ndnight" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#060504"/><stop offset=".6" stop-color="#100F0D"/><stop offset="1" stop-color="#171410"/>
+</linearGradient>
+<linearGradient id="ndstone" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14120E"/><stop offset=".5" stop-color="#242019"/><stop offset="1" stop-color="#14120E"/>
+</linearGradient>
+<linearGradient id="ndflame" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#A83A2C"/><stop offset=".45" stop-color="#DFA050"/><stop offset="1" stop-color="#F4D9A0"/>
+</linearGradient>
+<filter id="ndgrain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" result="g"/>
+<feComposite in="SourceGraphic" in2="g" operator="over"/>
+</filter>
+</defs>
+<g filter="url(#ndgrain)" font-family="Marcellus,'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif">
+<rect x="0" y="0" width="1600" height="900" fill="url(#ndnight)"/>
+<!-- stars: sparse, cold; flanks quiet -->
+<g fill="#ECE2CE">
+<circle cx="120" cy="150" r="2" opacity=".55"/><circle cx="260" cy="260" r="1.5" opacity=".35"/>
+<circle cx="90" cy="430" r="1.6" opacity=".35"/><circle cx="420" cy="110" r="1.8" opacity=".5"/>
+<circle cx="1460" cy="120" r="2" opacity=".55"/><circle cx="1330" cy="210" r="1.4" opacity=".35"/>
+<circle cx="1520" cy="330" r="1.5" opacity=".4"/><circle cx="700" cy="90" r="1.4" opacity=".35"/>
+</g>
+<!-- nave wall -->
+<rect x="560" y="180" width="480" height="560" fill="url(#ndstone)" stroke="#3A332A" stroke-width="3"/>
+<!-- ashlar joints: bitten horizontal courses -->
+<g stroke="#2C2721" stroke-width="2">
+<line x1="560" y1="300" x2="640" y2="300"/><line x1="960" y1="300" x2="1040" y2="300"/>
+<line x1="560" y1="420" x2="640" y2="420"/><line x1="960" y1="420" x2="1040" y2="420"/>
+<line x1="560" y1="540" x2="640" y2="540"/><line x1="960" y1="540" x2="1040" y2="540"/>
+<line x1="560" y1="660" x2="640" y2="660"/><line x1="960" y1="660" x2="1040" y2="660"/>
+</g>
+<!-- gable -->
+<path d="M560,180 L800,60 L1040,180 Z" fill="#1E1B16" stroke="#3A332A" stroke-width="3"/>
+<circle cx="800" cy="140" r="14" fill="#0A0908" stroke="#4A4335" stroke-width="2"/>
+<circle cx="800" cy="140" r="4" fill="#A83A2C"/>
+<!-- steps -->
+<g>
+<rect x="640" y="740" width="320" height="18" fill="#1E1B16" stroke="#3A332A" stroke-width="2"/>
+<rect x="612" y="758" width="376" height="18" fill="#1B1813" stroke="#3A332A" stroke-width="2"/>
+<rect x="584" y="776" width="432" height="18" fill="#171410" stroke="#2C2721" stroke-width="2"/>
+</g>
+<!-- the outer door: three orders -->
+<path d="M668,740 V520 Q668,420 800,360 Q932,420 932,520 V740 Z" fill="#0B0A08" stroke="#5A5142" stroke-width="4"/>
+<path d="M690,740 V530 Q690,442 800,388 Q910,442 910,530 V740 Z" fill="none" stroke="#4A4335" stroke-width="2.5"/>
+<path d="M710,740 V540 Q710,462 800,412 Q890,462 890,540 V740 Z" fill="#060504" stroke="#3A332A" stroke-width="2"/>
+<!-- colonnettes -->
+<g stroke="#5A5142" stroke-width="3">
+<line x1="660" y1="740" x2="660" y2="528"/><line x1="940" y1="740" x2="940" y2="528"/>
+</g>
+<g fill="#5A5142">
+<rect x="652" y="514" width="16" height="14"/><rect x="932" y="514" width="16" height="14"/>
+</g>
+<!-- the ajar door: open leaf flat ember mass, closed leaf barred -->
+<path d="M718,740 V544 Q718,470 800,424 V740 Z" fill="#A83A2C" opacity=".42"/>
+<path d="M800,424 Q882,470 882,544 V740 H800 Z" fill="#171310" stroke="#6B5B3E" stroke-width="2.5"/>
+<g stroke="#6B5B3E" stroke-width="2" opacity=".9">
+<line x1="800" y1="560" x2="882" y2="560"/><line x1="800" y1="630" x2="882" y2="630"/><line x1="800" y1="700" x2="882" y2="700"/>
+</g>
+<circle cx="812" cy="652" r="5" fill="#DFA050"/>
+<!-- the sanctuary candle, just inside (GI5 single flame grammar, cf. cover) -->
+<rect x="772" y="660" width="9" height="70" fill="#E8DCC2"/>
+<path d="M776.5,660 C771,650 772,642 776.5,634 C781,642 782,650 776.5,660 Z" fill="url(#ndflame)"/>
+<!-- drawn light: stepped spill wedges (GI5 flat mass, no blur) -->
+<path d="M710,740 H890 L930,794 H670 Z" fill="#DFA050" opacity=".5"/>
+<path d="M698,740 H902 L952,794 H648 Z" fill="#DFA050" opacity=".25"/>
+<path d="M686,740 H914 L976,794 H624 Z" fill="#DFA050" opacity=".12"/>
+<!-- ground -->
+<rect x="0" y="794" width="1600" height="106" fill="#0B0A08"/>
+<line x1="0" y1="794" x2="1600" y2="794" stroke="#2C2721" stroke-width="2"/>
+<!-- (no in-SVG dose strip: the manifest caption covers it — GI-A3) -->
+</g>
+</svg>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Being and Time — cohort art: temporality (p3c17–p3c27, §§61–71).
+  Identity: "The Clearing" (ART-DIRECTION.md §§1–10, binding incl. B1–B8).
+  Design authority: books/being-and-time/design/temporality.json
+    (direction D1 "The Turn"; manifest updated incl. benchmarkResponse).
+  Cohort beat: resoluteness → TEMPORALITY horizons. Night-path vertical
+    beams (inherited from death-conscience) rejoin at §62, then TURN
+    HORIZONTAL at §65: three ecstasis horizon-lines persist, reworked per
+    chapter, fading to a grey flatline at §71.
+
+  Integration: READER-CONTRACT v1.1 explicit-symbol rule. reader.js fetches
+    this file once, clones the manifest's <symbol> into #chapter-art wrapped
+    in <svg viewBox="…">. One <symbol id="tp-61".."tp-71"> per chapter
+    treatment; ALL paint lives INSIDE each symbol because only the symbol
+    subtree is inlined (root-level <defs> are NEVER inlined — every gradient,
+    filter and fleck it needs MUST be declared inside each symbol).
+
+  Geometry: all symbols viewBox="0 0 1600 520" (wide banner register; §65
+    tallest scene via CSS treatment ~1.4×, §67 motif ~0.6× — heights are
+    carried by the slot CSS, not by diverging viewBoxes).
+
+  Tokens (CSS vars with dark fallbacks, auto re-ink light/sepia themes):
+    bt-humus #0C0F0A ground; bt-ink #060805 night ground;
+    bt-mist #C9D4C3 light line-work; bt-lichen #9DB89A secondary;
+    bt-shaft #E9D488 THE accent; bt-bark #3E4A34 hairlines
+    NO ember anywhere in this cohort (binding B5).
+
+  Grain: class="tp-grain" group (feTurbulence, opacity ≤0.06). Cohort CSS
+    hides .tp-grain under prefers-reduced-motion and below 640px.
+
+  Slots terminate ABOVE the first paragraph (B3); shafts are authored SVG
+  polygons, never CSS stripes (B1). No animation in this file.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+
+  <!-- ==================== tp-61 — §61: converging twin beams + seam ========
+       Two 12° beams converge downward into one shaft (two-becoming-one:
+       anticipation + resoluteness "from within"). A 1px lichen seam marks
+       the join for the upper third, dissolving below. Three offset
+       joinery ticks at the meeting point = unfinished joinery. -->
+  <symbol id="tp-61" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="tp61-shaftGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#E9D488" stop-opacity="0.16"/>
+        <stop offset="0.55" stop-color="#E9D488" stop-opacity="0.5"/>
+        <stop offset="1" stop-color="#E9D488" stop-opacity="0.8"/>
+      </linearGradient>
+      <filter id="tp61-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="61" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/>
+    <!-- faint second ground plane: the path under the beams -->
+    <rect x="0" y="430" width="1600" height="90" fill="var(--bt-humus,#0C0F0A)" opacity="0.85"/>
+    <g filter="url(#tp61-grain)">
+      <!-- left beam: 12° from vertical, top at x≈560, meets bottom center -->
+      <polygon points="520,-20 660,-20 880,540 740,540" fill="url(#tp61-shaftGrad)" opacity="0.8"/>
+      <!-- right beam: mirrored, top at x≈1040 -->
+      <polygon points="940,-20 1080,-20 860,540 720,540" fill="url(#tp61-shaftGrad)" opacity="0.8"/>
+      <!-- rejoined shaft core below the join -->
+      <polygon points="748,330 852,330 880,540 720,540" fill="var(--bt-shaft,#E9D488)" opacity="0.8"/>
+    </g>
+    <!-- seam: 1px lichen, upper third only, dissolving via dash decay -->
+    <line x1="800" y1="0" x2="800" y2="120" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.75"/>
+    <line x1="800" y1="128" x2="800" y2="160" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.45"/>
+    <line x1="800" y1="166" x2="800" y2="180" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.22"/>
+    <!-- joinery ticks: three small offset marks where beams meet -->
+    <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" opacity="0.6">
+      <line x1="726" y1="356" x2="748" y2="356"/>
+      <line x1="852" y1="372" x2="874" y2="372"/>
+      <line x1="732" y1="392" x2="754" y2="392"/>
+    </g>
+    <!-- bark hairline register at the slot floor -->
+    <line x1="0" y1="519" x2="1600" y2="519" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.8"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp61-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-62 — §62: the rejoined shaft, brightest ========
+       Pure severity: one 0° vertical shaft, full slot height, 100% core with
+       soft falloff. Two hairline afterimages at ±18% width (the extinguished
+       split). No ornament — "relentless severity" (§62 p5). -->
+  <symbol id="tp-62" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="tp62-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#E9D488" stop-opacity="0"/>
+        <stop offset="0.32" stop-color="#E9D488" stop-opacity="0.42"/>
+        <stop offset="0.5" stop-color="#E9D488" stop-opacity="1"/>
+        <stop offset="0.68" stop-color="#E9D488" stop-opacity="0.42"/>
+        <stop offset="1" stop-color="#E9D488" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="tp62-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="62" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-ink,#060805)"/>
+    <!-- falloff wash: widest in cohort -->
+    <rect x="560" y="0" width="480" height="520" fill="url(#tp62-shaftGrad)" opacity="0.55" filter="url(#tp62-grain)"/>
+    <!-- 100% core -->
+    <rect x="772" y="0" width="56" height="520" fill="var(--bt-shaft,#E9D488)" opacity="1" filter="url(#tp62-grain)"/>
+    <rect x="792" y="0" width="16" height="520" fill="var(--bt-mist,#C9D4C3)" opacity="0.55"/>
+    <!-- extinguished-split afterimages at ±18% of width -->
+    <line x1="512" y1="0" x2="512" y2="520" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.3"/>
+    <line x1="1088" y1="0" x2="1088" y2="520" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.3"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp62-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-63 — §63: shaft through the ring ===============
+       The rejoined shaft threads a large thin lichen ring centered
+       right-of-middle — drawn OVER, unbroken (the leap INTO the circle,
+       p17). The shaft exits the ring ~15% wider: primordiality gained.
+       Two tangent ticks where shaft meets ring. -->
+  <symbol id="tp-63" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="tp63-shaftGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#E9D488" stop-opacity="0"/>
+        <stop offset="0.35" stop-color="#E9D488" stop-opacity="0.4"/>
+        <stop offset="0.5" stop-color="#E9D488" stop-opacity="0.85"/>
+        <stop offset="0.65" stop-color="#E9D488" stop-opacity="0.4"/>
+        <stop offset="1" stop-color="#E9D488" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="tp63-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="63" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <!-- shaft: enters top at 88px wide, exits ring +15% (101px) -->
+    <polygon points="756,-10 844,-10 844,196 850,196 850,520 750,520 750,196 756,196" fill="url(#tp63-shaftGrad)" filter="url(#tp63-grain)"/>
+    <polygon points="786,-10 814,-10 814,196 819,196 819,520 781,520 781,196 786,196" fill="var(--bt-shaft,#E9D488)" opacity="0.85"/>
+    <!-- the hermeneutic ring: over the shaft, unbroken, lichen 2px -->
+    <circle cx="952" cy="260" r="150" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="2" opacity="0.95"/>
+    <circle cx="952" cy="260" r="150" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="6" opacity="0.18"/>
+    <!-- tangent ticks where shaft threads the ring -->
+    <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" opacity="0.7">
+      <line x1="776" y1="128" x2="824" y2="128"/>
+      <line x1="776" y1="392" x2="824" y2="392"/>
+    </g>
+    <!-- quiet bark hairlines, far from the ring -->
+    <line x1="120" y1="0" x2="120" y2="520" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.7"/>
+    <line x1="1480" y1="0" x2="1480" y2="520" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.7"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp63-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-64 — §64: plumb through refused square =========
+       A single plumb hairline (self-constancy as held line, not block)
+       passes through the center of a hollow dashed square with broken
+       corners (the refused substantial subject) — untouched. Faint dashed
+       construction lines (diagonals + bounding box) = the refused
+       categorial horizon. Quietest vertical chapter before the Turn. -->
+  <symbol id="tp-64" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="tp64-shaftGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#E9D488" stop-opacity="0.55"/>
+        <stop offset="0.5" stop-color="#E9D488" stop-opacity="0.9"/>
+        <stop offset="1" stop-color="#E9D488" stop-opacity="0.55"/>
+      </linearGradient>
+      <filter id="tp64-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="64" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <!-- refused drafting guides: diagonals + bounding box, lichen 25% dashed -->
+    <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" stroke-dasharray="6 8" opacity="0.25">
+      <line x1="600" y1="120" x2="1000" y2="400"/>
+      <line x1="1000" y1="120" x2="600" y2="400"/>
+      <rect x="600" y="120" width="400" height="280" fill="none"/>
+    </g>
+    <!-- hollow square, lichen dashed, corners broken open -->
+    <g fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1.5" stroke-dasharray="10 7" opacity="0.9">
+      <line x1="672" y1="170" x2="928" y2="170"/>
+      <line x1="672" y1="350" x2="928" y2="350"/>
+      <line x1="670" y1="172" x2="670" y2="348"/>
+      <line x1="930" y1="172" x2="930" y2="348"/>
+    </g>
+    <!-- the plumb: 0° shaft hairline, full height, through the center -->
+    <rect x="798" y="0" width="4" height="520" fill="url(#tp64-shaftGrad)" filter="url(#tp64-grain)"/>
+    <line x1="800" y1="0" x2="800" y2="520" stroke="var(--bt-shaft,#E9D488)" stroke-width="1" opacity="0.9"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp64-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-65 — §65: THE TURN (summit) ====================
+       The vertical beam breaks into THREE HORIZONTAL ecstasis lines,
+       top→bottom = future (5px shaft 100%) / having-been (3px shaft 70%)
+       / present (2px lichen 60%). Future thickest+brightest = priority;
+       equal spacing = equiprimordiality. One vertical Moment-tick pierces
+       all three at x=62%; a faint beam-afterimage stands at x=6%. Below
+       the present line, ~24 even vulgar-now ticks = the derivative "mere
+       succession of nows" (p17). Tallest scene in the cohort. -->
+  <symbol id="tp-65" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="tp65-future" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#E9D488" stop-opacity="0.25"/>
+        <stop offset="0.12" stop-color="#E9D488" stop-opacity="1"/>
+        <stop offset="0.88" stop-color="#E9D488" stop-opacity="1"/>
+        <stop offset="1" stop-color="#E9D488" stop-opacity="0.25"/>
+      </linearGradient>
+      <linearGradient id="tp65-past" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#E9D488" stop-opacity="0.12"/>
+        <stop offset="0.12" stop-color="#E9D488" stop-opacity="0.7"/>
+        <stop offset="0.88" stop-color="#E9D488" stop-opacity="0.7"/>
+        <stop offset="1" stop-color="#E9D488" stop-opacity="0.12"/>
+      </linearGradient>
+      <filter id="tp65-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="65" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <!-- faint beam-afterimage at x=6% (the turned vertical, remembered) -->
+    <rect x="88" y="0" width="16" height="520" fill="var(--bt-lichen,#9DB89A)" opacity="0.2"/>
+    <line x1="96" y1="0" x2="96" y2="520" stroke="var(--bt-lichen,#9DB89A)" stroke-width="1" opacity="0.28"/>
+    <!-- the three ecstasis horizons (grain-kissed, hand-set y) -->
+    <g filter="url(#tp65-grain)">
+      <rect x="0" y="118" width="1600" height="5" fill="url(#tp65-future)"/>
+      <rect x="0" y="247" width="1600" height="3" fill="url(#tp65-past)"/>
+    </g>
+    <rect x="0" y="376" width="1600" height="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.6"/>
+    <!-- Moment-tick: 2px shaft 100%, 40% of slot height, piercing all at x=62% -->
+    <rect x="990" y="156" width="3" height="208" fill="var(--bt-shaft,#E9D488)" opacity="1"/>
+    <rect x="988" y="156" width="7" height="208" fill="var(--bt-shaft,#E9D488)" opacity="0.25"/>
+    <!-- vulgar-now strip: ~24 even ticks below the present line -->
+    <g stroke="var(--bt-lichen,#9DB89A)" stroke-width="2" opacity="0.3">
+      <line x1="180" y1="452" x2="180" y2="472"/><line x1="238" y1="452" x2="238" y2="472"/>
+      <line x1="296" y1="452" x2="296" y2="472"/><line x1="354" y1="452" x2="354" y2="472"/>
+      <line x1="412" y1="452" x2="412" y2="472"/><line x1="470" y1="452" x2="470" y2="472"/>
+      <line x1="528" y1="452" x2="528" y2="472"/><line x1="586" y1="452" x2="586" y2="472"/>
+      <line x1="644" y1="452" x2="644" y2="472"/><line x1="702" y1="452" x2="702" y2="472"/>
+      <line x1="760" y1="452" x2="760" y2="472"/><line x1="818" y1="452" x2="818" y2="472"/>
+      <line x1="876" y1="452" x2="876" y2="472"/><line x1="934" y1="452" x2="934" y2="472"/>
+      <line x1="992" y1="452" x2="992" y2="472"/><line x1="1050" y1="452" x2="1050" y2="472"/>
+      <line x1="1108" y1="452" x2="1108" y2="472"/><line x1="1166" y1="452" x2="1166" y2="472"/>
+      <line x1="1224" y1="452" x2="1224" y2="472"/><line x1="1282" y1="452" x2="1282" y2="472"/>
+      <line x1="1340" y1="452" x2="1340" y2="472"/><line x1="1398" y1="452" x2="1398" y2="472"/>
+      <line x1="1456" y1="452" x2="1456" y2="472"/><line x1="1514" y1="452" x2="1514" y2="472"/>
+    </g>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp65-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-66 — §66: horizons at work =====================
+       The summit's lines put to work: three horizons continue slightly
+       dimmer (85/60/55%). Below them four short vertical task-ticks in a
+       row (the program's four assignments) + a faint tally register —
+       reckoning with time (p4). -->
+  <symbol id="tp-66" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="tp66-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="66" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <g filter="url(#tp66-grain)">
+      <rect x="0" y="108" width="1600" height="4" fill="var(--bt-shaft,#E9D488)" opacity="0.85"/>
+      <rect x="0" y="212" width="1600" height="3" fill="var(--bt-shaft,#E9D488)" opacity="0.6"/>
+    </g>
+    <rect x="0" y="316" width="1600" height="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.55"/>
+    <!-- four task-ticks (workmanlike, even spacing, centered) -->
+    <g fill="var(--bt-lichen,#9DB89A)" opacity="0.85">
+      <rect x="620" y="392" width="3" height="52"/>
+      <rect x="740" y="392" width="3" height="52"/>
+      <rect x="860" y="392" width="3" height="52"/>
+      <rect x="980" y="392" width="3" height="52"/>
+    </g>
+    <!-- faint tally register beneath -->
+    <g stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.9">
+      <line x1="600" y1="462" x2="1003" y2="462"/>
+      <line x1="621" y1="462" x2="621" y2="472"/><line x1="741" y1="462" x2="741" y2="472"/>
+      <line x1="861" y1="462" x2="861" y2="472"/><line x1="981" y1="462" x2="981" y2="472"/>
+    </g>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp66-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-67 — §67: compression (quietest) ===============
+       Three horizons compress into ONE fine line (primordial wholeness);
+       beneath it seven small lichen dots (multiplicity) held under a
+       single thin bark arc. No Moment-tick, no afterimage. Restraint is
+       the content. Motif treatment (~0.6×). -->
+  <symbol id="tp-67" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="tp67-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="67" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <!-- the compressed line: wholeness -->
+    <rect x="200" y="150" width="1200" height="2" fill="var(--bt-shaft,#E9D488)" opacity="0.8" filter="url(#tp67-grain)"/>
+    <!-- seven dots: multiplicity, precisely spaced -->
+    <g fill="var(--bt-lichen,#9DB89A)" opacity="0.85">
+      <circle cx="604" cy="252" r="5"/><circle cx="669" cy="252" r="5"/>
+      <circle cx="734" cy="252" r="5"/><circle cx="800" cy="252" r="5"/>
+      <circle cx="866" cy="252" r="5"/><circle cx="931" cy="252" r="5"/>
+      <circle cx="996" cy="252" r="5"/>
+    </g>
+    <!-- the holding arc, thin bark, cradling the row -->
+    <path d="M560,252 A240,110 0 0,0 1040,252" fill="none" stroke="var(--bt-bark,#3E4A34)" stroke-width="1.5" opacity="0.95"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp67-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-68 — §68 GIANT I: four-band descent stack ======
+       Rothko register: FOUR stacked subsection bands (a/b/c/d) with air
+       between them — (a) 2px lichen 55%, (b) 3px shaft 65%, (c) 2px lichen
+       35% (falling = dimmest in cohort), (d) 4px shaft 90%. Left ends step
+       rightward in 4% staircase steps: the stack reads as descent. Tiny
+       Fraunces-italic a/b/c/d markers at each step. -->
+  <symbol id="tp-68" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="tp68-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="68" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <g filter="url(#tp68-grain)">
+      <!-- (a) understanding: 2px lichen 55%, step 0% -->
+      <rect x="120" y="72" width="1360" height="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.55"/>
+      <!-- (b) attunement: 3px shaft 65%, step +4% -->
+      <rect x="184" y="196" width="1296" height="3" fill="var(--bt-shaft,#E9D488)" opacity="0.65"/>
+      <!-- (c) falling: 2px lichen 35% DIMMEST, step +8% -->
+      <rect x="248" y="322" width="1232" height="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.35"/>
+      <!-- (d) discourse: 4px shaft 90%, step +12% -->
+      <rect x="312" y="444" width="1168" height="4" fill="var(--bt-shaft,#E9D488)" opacity="0.9"/>
+    </g>
+    <!-- subsection markers at each left step -->
+    <g font-family="Fraunces, Georgia, serif" font-style="italic" font-size="13" fill="var(--bt-lichen,#9DB89A)" opacity="0.75">
+      <text x="98" y="78">a</text>
+      <text x="162" y="203">b</text>
+      <text x="226" y="328">c</text>
+      <text x="290" y="452">d</text>
+    </g>
+    <!-- faint descent hairline connecting the steps -->
+    <line x1="120" y1="74" x2="312" y2="446" stroke="var(--bt-bark,#3E4A34)" stroke-width="1" stroke-dasharray="3 6" opacity="0.6"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp68-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-69 — §69 GIANT II: horizons escape + hammer ====
+       Three horizons (summit weights) with right ends running 6% past the
+       slot edge — square-cut, no caps ("further outside than any object",
+       p52). Three faint whereto-ticks at the exit edge. At left, a small
+       flat lichen hammer tool-shadow dissolves rightward dot-by-dot into
+       one shaft grid point (circumspection→theory, p33-40). -->
+  <symbol id="tp-69" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="tp69-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="69" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <!-- clip so horizons bleed exactly 6% past the visible edge, square-cut -->
+    <clipPath id="tp69-frame"><rect x="0" y="0" width="1696" height="520"/></clipPath>
+    <g clip-path="url(#tp69-frame)" filter="url(#tp69-grain)">
+      <rect x="0" y="118" width="1696" height="5" fill="var(--bt-shaft,#E9D488)" opacity="1"/>
+      <rect x="0" y="247" width="1696" height="3" fill="var(--bt-shaft,#E9D488)" opacity="0.7"/>
+      <rect x="0" y="376" width="1696" height="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.6"/>
+    </g>
+    <!-- whereto ticks at the exit edge -->
+    <g stroke="var(--bt-shaft,#E9D488)" stroke-width="1.5" opacity="0.5">
+      <line x1="1592" y1="106" x2="1592" y2="120"/>
+      <line x1="1592" y1="237" x2="1592" y2="249"/>
+      <line x1="1592" y1="368" x2="1592" y2="378"/>
+    </g>
+    <!-- hammer tool-shadow dissolving rightward into dots → grid point -->
+    <g fill="var(--bt-lichen,#9DB89A)" opacity="0.85">
+      <rect x="150" y="196" width="52" height="10"/>
+      <rect x="196" y="168" width="12" height="98"/>
+      <rect x="206" y="168" width="34" height="22"/>
+    </g>
+    <g fill="var(--bt-lichen,#9DB89A)">
+      <circle cx="286" cy="206" r="5" opacity="0.7"/>
+      <circle cx="330" cy="206" r="4.5" opacity="0.55"/>
+      <circle cx="372" cy="206" r="4" opacity="0.42"/>
+      <circle cx="412" cy="206" r="3.5" opacity="0.3"/>
+    </g>
+    <circle cx="452" cy="206" r="4" fill="var(--bt-shaft,#E9D488)" opacity="0.95"/>
+    <g stroke="var(--bt-bark,#3E4A34)" stroke-width="1" opacity="0.7">
+      <line x1="452" y1="188" x2="452" y2="224"/>
+      <line x1="434" y1="206" x2="470" y2="206"/>
+    </g>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp69-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-70 — §70: region ring + de-distancing rails ====
+       The cohort's ONLY perspectival scene. One 3px shaft horizon at 55%
+       height; a broken lichen ring (gap lower-right) rests on it at 60%
+       width — region as belonging-without-containment. Beneath the ring a
+       low hatched bark band = the Spielraum leeway (p5). Two bark rails
+       from the bottom corners converge to the horizon point (de-distancing
+       as perspective). -->
+  <symbol id="tp-70" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="tp70-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="70" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.83  0 0 0 0 0.55  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.12"/>
+        </feMerge>
+      </filter>
+      <pattern id="tp70-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="10" stroke="#3E4A34" stroke-width="2" opacity="0.3"/>
+      </pattern>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <!-- converging de-distancing rails -->
+    <line x1="60" y1="520" x2="960" y2="286" stroke="var(--bt-bark,#3E4A34)" stroke-width="2" opacity="0.95"/>
+    <line x1="1540" y1="520" x2="960" y2="286" stroke="var(--bt-bark,#3E4A34)" stroke-width="2" opacity="0.95"/>
+    <!-- leeway hatch band beneath the ring seat -->
+    <rect x="830" y="286" width="260" height="34" fill="url(#tp70-hatch)" opacity="0.9"/>
+    <!-- the horizon -->
+    <rect x="0" y="284" width="1600" height="3" fill="var(--bt-shaft,#E9D488)" opacity="0.9" filter="url(#tp70-grain)"/>
+    <!-- broken region-ring resting on the line (gap lower-right) -->
+    <path d="M 960,198 A 86,86 0 1,1 1021,352" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="2" opacity="0.95"/>
+    <path d="M 960,198 A 86,86 0 1,1 1021,352" fill="none" stroke="var(--bt-lichen,#9DB89A)" stroke-width="6" opacity="0.15"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp70-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+  <!-- ==================== tp-71 — §71: grey flatline + one notch =============
+       Diminuendo: horizons collapse to ONE flat unbroken lichen-grey line
+       (the eternal yesterday) — grey on dark ground, lichen-dominant by
+       intent. A single 8×14px shaft notch interrupts it at center: the
+       Moment mastering the everyday "only for the moment". The emptiest
+       slot in the cohort; maximum air. -->
+  <symbol id="tp-71" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="tp71-grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="71" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.62  0 0 0 0 0.68  0 0 0 0 0.6  0 0 0 0.5 0" result="tint"/>
+        <feComposite in="tint" in2="SourceGraphic" operator="in" result="clip"/>
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="clip" opacity="0.1"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="520" fill="var(--bt-humus,#0C0F0A)"/>
+    <!-- the eternal yesterday: flat, grey, unbroken -->
+    <rect x="160" y="285" width="1280" height="2" fill="var(--bt-lichen,#9DB89A)" opacity="0.55" filter="url(#tp71-grain)"/>
+    <!-- the Moment notch: 8px wide × 14px tall, the only shaft ink -->
+    <rect x="796" y="279" width="8" height="14" fill="var(--bt-shaft,#E9D488)" opacity="1"/>
+    <rect x="794" y="279" width="12" height="14" fill="var(--bt-shaft,#E9D488)" opacity="0.2"/>
+    <g class="tp-grain" opacity="0.06">
+      <rect x="0" y="0" width="1600" height="520" filter="url(#tp71-grain)" opacity="0.5"/>
+    </g>
+  </symbol>
+
+</svg>

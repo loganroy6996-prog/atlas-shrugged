@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Atlas Shrugged by Ayn Rand — a clean literary reading experience." />
   <title>Atlas Shrugged — Ayn Rand</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="design/fonts/barlowcondensed-600.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="design/fonts/crimsonpro-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="../../shared/reader.css" />
+  <link rel="stylesheet" href="design/fonts.css" />
   <link rel="stylesheet" href="theme.css" />
 </head>
 <body>
   <div id="app">
     <section id="cover" class="view active" aria-label="Cover">
+      <figure class="cover-art" id="cover-art" aria-hidden="true" hidden></figure>
       <div class="cover-bg" aria-hidden="true">
         <div class="cover-grid"></div>
         <div class="cover-glow"></div>
       </div>
       <div class="cover-content">
-        <p class="cover-eyebrow">A work by</p>
+        <p class="cover-eyebrow">A novel in three signals · 1957</p>
         <h1 class="cover-title">
           <span class="title-line" id="cover-title-main">Atlas</span>
           <span class="title-line accent">Shrugged</span>
@@ -70,6 +71,7 @@
       </header>
 
       <article class="reader-body" id="reader-body">
+        <figure class="chapter-art" id="chapter-art" aria-hidden="true" hidden></figure>
         <div class="chapter-meta" id="chapter-meta">
           <p class="meta-part" id="meta-part"></p>
           <h1 class="meta-title" id="meta-title"></h1>
@@ -157,5 +159,6 @@
     };
   </script>
   <script src="../../shared/reader.js"></script>
+  <script src="signal.js"></script>
 </body>
 </html>

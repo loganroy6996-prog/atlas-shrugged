@@ -1,0 +1,601 @@
+{
+  "book": "thus-spoke-zarathustra",
+  "cohort": "cohort-p4",
+  "cohort_title": "Part Four — Ember into Morning (p4c1–p4c20)",
+  "part": "part-4",
+  "partRoman": "IV",
+  "directions_considered": [
+    {
+      "name": "P4-A · LITURGICAL CARNIVAL conformed (ember parade rekindling to gold)",
+      "choice": true,
+      "summary": "Parade-emblem bestiary for encounters (Direction C inheritance, Solar Gospel hand), centered lyric for three true songs + c5 left-measure lament exception, bell/finale scenes for the climax, ember→gold migration pivoting exactly at c10 (Z6).",
+      "type": "Cinzel liturgical / Spectral body+italic / DM Sans chrome.",
+      "palette": "Binding Solar Gospel tokens; ember lead c1-c9, white-gold pivot c10, gold returns c11-c20.",
+      "signature": "The ember parade rekindling to gold under the Sign-Ring; lion-and-doves book seal.",
+      "rejected_why": null
+    },
+    {
+      "name": "P4-B · ALPINE BESTIARY (woodcut specimen plates)",
+      "choice": false,
+      "summary": "Woodcut plate per encounter.",
+      "rejected_why": "Unachievable plate load, strands songs, clip-art risk at small sizes; converges with identity's rejection of Direction B."
+    },
+    {
+      "name": "P4-C · MIDNIGHT MANUSCRIPT (all-nocturnal star-charts)",
+      "choice": false,
+      "summary": "All-night star-chart treatment.",
+      "rejected_why": "Factually wrong for morning/noon chapters; flattens the arc."
+    }
+  ],
+  "supervisor_rulings": [
+    "c5 lament: left-measure lyric (option a) — centered reserved for true songs.",
+    "c7 motif bestiary-ugliest APPROVED (rule 15).",
+    "c14 motif bestiary-sorcerer reuse APPROVED.",
+    "c17/c18 shared bestiary-ass with distinct classes (emblem vs plate) APPROVED — compositions differ.",
+    "c19 class scene CONFIRMED (song lyric in reading).",
+    "c18 class plate CONFIRMED.",
+    "c13 desktop margin motif CUT (measure-intrusion risk); dance-call breaks carry the relief."
+  ],
+  "entries": [
+    {
+      "id": "p4c1",
+      "order": 1,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Honey Offering",
+      "form": "offering-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "honey-offering",
+      "pull_line": {
+        "text": "Away, away my hook! In, down, bait for my happiness! Drop down your sweetest dew, honey of my heart!",
+        "cite": "¶20"
+      },
+      "caption": "“Away, away my hook! In, down, bait for my happiness! Drop down your sweetest dew, honey of my heart!” — ¶20",
+      "rationale": "White-haired fisher-Zarathustra casts honey as bait for human fishes; sunrise/noontide/sunset triple suns; triptych panel 1 (sun low-left).",
+      "palette_role": "Ember-led morning; solar gold reserved for the rod-line itself (graphic, not text).",
+      "opener_composition": "Emblem ≤120px centered; standard sun-rule.",
+      "reading_treatment": "Calm body; rod-casting ¶7 solar left rule; closing eye ¶21 as 1.15em benediction. No drop cap (emblem form).",
+      "motif_asset": "cohort-p4.svg #p4-honey",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-honey",
+        "class": "emblem",
+        "motif": "honey-offering",
+        "caption": "“Away, away my hook! In, down, bait for my happiness! Drop down your sweetest dew, honey of my heart!” — ¶20"
+      }
+    },
+    {
+      "id": "p4c2",
+      "order": 2,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Cry of Distress",
+      "form": "threshold-parable",
+      "class": "scene",
+      "src": "art/cohort-p4.svg",
+      "motif": "sign-ring",
+      "pull_line": {
+        "text": "It is the Higher Man that cries for you!",
+        "cite": "¶4"
+      },
+      "caption": "“It is the Higher Man that cries for you!” — ¶4",
+      "rationale": "Prophet brings the cry; two shadows on the slab; Higher-Man dread under bright day; sound made visible once.",
+      "palette_role": "Ember ground first invaded by deepened-night sea bands.",
+      "opener_composition": "Scene figure above title; stacked text (contrast discipline).",
+      "reading_treatment": "Cinzel solar drop cap (threshold voice); cry passages ¶3-5 Spectral italic + ember left rule.",
+      "motif_asset": "cohort-p4.svg #p4-cry",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-cry",
+        "class": "scene",
+        "motif": "sign-ring",
+        "caption": "“It is the Higher Man that cries for you!” — ¶4"
+      }
+    },
+    {
+      "id": "p4c3",
+      "order": 3,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "Conversation with the Kings",
+      "form": "parade-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-kings",
+      "pull_line": {
+        "text": "What do we kings matter!",
+        "cite": "¶11"
+      },
+      "caption": "“What do we kings matter!” — ¶11",
+      "rationale": "Two shabby kings in yellowed pomp, laden ass, Sybil verse; first ass drawing (quoted haloed c17, wreathed c18).",
+      "palette_role": "Ember + faded pomp derivations (color-mix ember/lapis), no new hues.",
+      "opener_composition": "Emblem ≤120px; standard sun-rule.",
+      "reading_treatment": "Sybil verse ¶18-20 as LEFT-measure indented italic with thin sun-rule above; ass's Ye-a (¶17) Cinzel small display bone. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-kings",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-kings",
+        "class": "emblem",
+        "motif": "bestiary-kings",
+        "caption": "“What do we kings matter!” — ¶11"
+      }
+    },
+    {
+      "id": "p4c4",
+      "order": 4,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Leech",
+      "form": "parade-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-leech",
+      "pull_line": {
+        "text": "But what I am master of and expert on is the leech’s brain – that is my world!",
+        "cite": "¶16"
+      },
+      "caption": "“But what I am master of and expert on is the leech’s brain – that is my world!” — ¶16",
+      "rationale": "Conscientious leech-man in the swamp: one hand's-breadth of ground, ten leeches on the arm, root-lines in dark water.",
+      "palette_role": "Serpent-green leads (swamp knowledge); ember frame.",
+      "opener_composition": "Emblem with heavier bottom ground-line, half-submerged feel.",
+      "reading_treatment": "¶16 serpent left rule. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-leech",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-leech",
+        "class": "emblem",
+        "motif": "bestiary-leech",
+        "caption": "“But what I am master of and expert on is the leech’s brain – that is my world!” — ¶16"
+      }
+    },
+    {
+      "id": "p4c5",
+      "order": 5,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Sorcerer",
+      "form": "parade-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-sorcerer",
+      "pull_line": {
+        "text": "Who still loves me? – offer me hot hands!",
+        "cite": "¶44"
+      },
+      "caption": "“Who still loves me? – offer me hot hands!” — ¶44",
+      "rationale": "Sorcerer-actor's 52-paragraph lament collapsing into confession; storm-lit prostration; fallen mask at frame edge (¶55-56). SUPERVISOR RULING: left-measure lyric treatment (option a) — centered reserved for true songs.",
+      "palette_role": "Ember + night; lightning bone-white (no green-flash hue).",
+      "opener_composition": "Emblem; title standard Cinzel roman.",
+      "reading_treatment": "Prose frame calm; lament ¶1-52 LEFT-measure indented italic with hanging indent; refrain size-steps (Ha ha! / Away! Away! / Hangman-god ¶26 largest). No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-sorcerer",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-sorcerer",
+        "class": "emblem",
+        "motif": "bestiary-sorcerer",
+        "caption": "“Who still loves me? – offer me hot hands!” — ¶44"
+      }
+    },
+    {
+      "id": "p4c6",
+      "order": 6,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "Retired from Service",
+      "form": "parade-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-pope",
+      "pull_line": {
+        "text": "For this old god no longer lives: he is quite dead.",
+        "cite": "¶39"
+      },
+      "caption": "“For this old god no longer lives: he is quite dead.” — ¶39",
+      "rationale": "Last pope, unemployed holy: blessing hand, forest hut, two wolves, blind-eye keystone; courteous autumnal melancholy.",
+      "palette_role": "Bone line on ember-night; palest ember chapter.",
+      "opener_composition": "Emblem; standard sun-rule.",
+      "reading_treatment": "God-history ¶22-24 soft bone left rule. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-pope",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-pope",
+        "class": "emblem",
+        "motif": "bestiary-pope",
+        "caption": "“For this old god no longer lives: he is quite dead.” — ¶39"
+      }
+    },
+    {
+      "id": "p4c7",
+      "order": 7,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Ugliest Man",
+      "form": "parade-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-ugliest",
+      "pull_line": {
+        "text": "Man, however, is something that must be overcome.",
+        "cite": "¶43"
+      },
+      "caption": "“Man, however, is something that must be overcome.” — ¶43",
+      "rationale": "Murderer of God in Serpent's Death valley; half-turned seated shape honoring 'do not look at me!'; slashed-eye keystone. DARKEST OPENER (near-black). SUPERVISOR: motif bestiary-ugliest APPROVED (rule 15).",
+      "palette_role": "Near-black deepened night, ember cliff bands; NO solar gold anywhere — only P4 opener without it.",
+      "opener_composition": "Emblem; title +0.01em air (dread needs air, not a tracked label).",
+      "reading_treatment": "Riddle dialogue ¶3-6 indented +0.95em; murder confession ¶30-32 bordered inset, ember edge. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-ugliest",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-ugliest",
+        "class": "emblem",
+        "motif": "bestiary-ugliest",
+        "caption": "“Man, however, is something that must be overcome.” — ¶43"
+      }
+    },
+    {
+      "id": "p4c8",
+      "order": 8,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Voluntary Beggar",
+      "form": "parade-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-beggar",
+      "pull_line": {
+        "text": "If we do not alter and become as cows, we shall not enter into the kingdom of heaven.",
+        "cite": "¶8"
+      },
+      "caption": "“If we do not alter and become as cows, we shall not enter into the kingdom of heaven.” — ¶8",
+      "rationale": "Mountain sermonizer preaching rumination to cows; hillock from below, three calm cow heads, breath-wisp spirals. [title-inference] VERIFIED in full prose.",
+      "palette_role": "Serpent pasture-light + solar warmth inside ember frame; brightest ember emblem.",
+      "opener_composition": "Emblem; standard sun-rule.",
+      "reading_treatment": "Rumination lesson ¶8-10 left-measure indented block with leader spacing; +10% paragraph air. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-beggar",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-beggar",
+        "class": "emblem",
+        "motif": "bestiary-beggar",
+        "caption": "“If we do not alter and become as cows, we shall not enter into the kingdom of heaven.” — ¶8"
+      }
+    },
+    {
+      "id": "p4c9",
+      "order": 9,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Shadow",
+      "form": "parade-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-shadow",
+      "pull_line": {
+        "text": "Where is – my home? I ask and seek and have sought for it, I have not found it.",
+        "cite": "¶24"
+      },
+      "caption": "“Where is – my home? I ask and seek and have sought for it, I have not found it.” — ¶24",
+      "rationale": "Free spirit's shadow: six foolish legs diminishing along the ridge, broken-backbone hitch, mirror/window-pane cold. Typographic lost-and-found.",
+      "palette_role": "Ember-night with star-silver derivation (color-mix bone/lapis, sanctioned).",
+      "opener_composition": "Emblem; standard sun-rule.",
+      "reading_treatment": "Confession ¶9-24 ragged with increasing right indent toward 'Vanity!' (¶24); answer ¶25-31 snaps back to full measure. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-shadow",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-shadow",
+        "class": "emblem",
+        "motif": "bestiary-shadow",
+        "caption": "“Where is – my home? I ask and seek and have sought for it, I have not found it.” — ¶24"
+      }
+    },
+    {
+      "id": "p4c10",
+      "order": 10,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "At Noontide",
+      "form": "still-vision",
+      "class": "scene",
+      "src": "art/cohort-p4.svg",
+      "motif": "noontide-tree",
+      "pull_line": {
+        "text": "Soft! Soft! Has the world not just become perfect?",
+        "cite": "¶3"
+      },
+      "caption": "“Soft! Soft! Has the world not just become perfect?” — ¶3",
+      "rationale": "PART PIVOT (Z6): noontide sleep under vine; golden round ring; one open eye; world round and ripe. QUIETEST OPENER in the book — title always stacked, no overlay. Triptych panel 2 (sun apex).",
+      "palette_role": "Pivot: white-gold blaze inside the ember part; ground begins return umber-lapis → lapis.",
+      "opener_composition": "Scene figure; no overlay text ever.",
+      "reading_treatment": "Cinzel solar drop cap (vision); sleep-song ¶3-14 LEFT-measure breath-lines 2.1 leading; 'golden round ring' ¶15 Spectral italic 1.2em; waking dialogue ¶17-21 alternating indent.",
+      "motif_asset": "cohort-p4.svg #p4-noontide",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-noontide",
+        "class": "scene",
+        "motif": "noontide-tree",
+        "caption": "“Soft! Soft! Has the world not just become perfect?” — ¶3"
+      }
+    },
+    {
+      "id": "p4c11",
+      "order": 11,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Greeting",
+      "form": "assembly",
+      "class": "plate",
+      "src": "art/cohort-p4.svg",
+      "motif": "sign-ring",
+      "pull_line": {
+        "text": "You are only bridges: may higher men than you step across upon you!",
+        "cite": "¶28"
+      },
+      "caption": "“You are only bridges: may higher men than you step across upon you!” — ¶28",
+      "rationale": "Guest-gallery header: nine silhouettes in the cave-mouth semicircle, ass center-front, eagle above ruffled, pine at the mouth (¶15). Widest art in P4 (max 420px).",
+      "palette_role": "Gold returns; all encounter accents gather at low saturation — group-portrait palette in lapis.",
+      "opener_composition": "Plate; standard sun-rule.",
+      "reading_treatment": "Role-call ¶1 with middot breathing; bridges/steps verdict ¶28-29 Spectral italic 1.15em. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-assembly",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-assembly",
+        "class": "plate",
+        "motif": "sign-ring",
+        "caption": "“You are only bridges: may higher men than you step across upon you!” — ¶28"
+      }
+    },
+    {
+      "id": "p4c12",
+      "order": 12,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Last Supper",
+      "form": "feast-emblem",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "feast-table",
+      "pull_line": {
+        "text": "But man does not live by bread alone, but also by the flesh of good lambs, of which I have two.",
+        "cite": "¶8"
+      },
+      "caption": "“But man does not live by bread alone, but also by the flesh of good lambs, of which I have two.” — ¶8",
+      "rationale": "Feast organization still-life from above: two lamb joints, sage, bounty ring, walnut riddle-knot, wineskin with crowned cork, crossed carving knives.",
+      "palette_role": "Ember-gold feast warmth on lapis.",
+      "opener_composition": "Emblem ≤120px; standard sun-rule.",
+      "reading_treatment": "Menu ¶8-9 left-measure indented with dish leaders; protest ¶11-13 vs law ¶14-16 facing indented exchange. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-feast",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-feast",
+        "class": "emblem",
+        "motif": "feast-table",
+        "caption": "“But man does not live by bread alone, but also by the flesh of good lambs, of which I have two.” — ¶8"
+      }
+    },
+    {
+      "id": "p4c13",
+      "order": 13,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "Of the Higher Man",
+      "form": "long-sermon",
+      "class": "seal",
+      "src": "art/cohort-p4.svg",
+      "motif": "sign-ring",
+      "pull_line": {
+        "text": "This laugher’s crown, this rose-wreath crown: I myself have set this crown on my head, I myself have canonized my laughter.",
+        "cite": "¶87"
+      },
+      "caption": "“This laugher’s crown, this rose-wreath crown: I myself have set this crown on my head, I myself have canonized my laughter.” — ¶87",
+      "rationale": "Long sermon-tablet (97 paras): Higher-Man address dissolving into dance; laugher's crown canonized; greatest-sin inset (¶75-79). Sign-Ring seal + static rose-ring title halo (non-animated).",
+      "palette_role": "Gold leads; lightning bone-white; rose-wreath ring in ember-rose derivation.",
+      "opener_composition": "Seal (56-72px); title largest in cohort clamp(2.6rem,7vw,4rem); sun-rule.",
+      "reading_treatment": "Cinzel solar drop cap (sermon); dance calls ¶86/89/96 full-measure Spectral italic 1.2em breaks with rose rules. (Margin motif CUT — measure intrusion risk; relief lives in the dance-call breaks.)",
+      "motif_asset": "cohort-p4.svg #p4-sign-ring",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-sign-ring",
+        "class": "seal",
+        "motif": "sign-ring",
+        "caption": "“This laugher’s crown, this rose-wreath crown: I myself have set this crown on my head, I myself have canonized my laughter.” — ¶87"
+      }
+    },
+    {
+      "id": "p4c14",
+      "order": 14,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Song of Melancholy",
+      "form": "harp-song",
+      "class": "song",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-sorcerer",
+      "pull_line": {
+        "text": "No! Only a fool! Only a poet!",
+        "cite": "¶14"
+      },
+      "caption": "“No! Only a fool! Only a poet!” — ¶14",
+      "rationale": "Harp-song seduction: strings morphing to panther's back + eagle's wing (¶17-23), crescent in ember disc, bird-net at base. SUPERVISOR: motif bestiary-sorcerer REUSE approved for the harp-song.",
+      "palette_role": "Ember-night; harp gold graphic-only; no purple hue.",
+      "opener_composition": "Song-class slot; standard sun-rule.",
+      "reading_treatment": "Prose frame ¶0-10 calm left; verses ¶11-26 CENTERED 26-30rem Spectral italic with harp-string crowns; 'Only a…' anaphora bone italic +0.15em; eagle/panther stanza feathered chevron edge. No drop cap (song).",
+      "motif_asset": "cohort-p4.svg #p4-harp",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-harp",
+        "class": "song",
+        "motif": "bestiary-sorcerer",
+        "caption": "“No! Only a fool! Only a poet!” — ¶14"
+      }
+    },
+    {
+      "id": "p4c15",
+      "order": 15,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "Of Science",
+      "form": "dialogue-sermon",
+      "class": "seal",
+      "src": "art/cohort-p4.svg",
+      "motif": "sign-ring",
+      "pull_line": {
+        "text": "For fear – is the exception with us.",
+        "cite": "¶14"
+      },
+      "caption": "“For fear – is the exception with us.” — ¶14",
+      "rationale": "[title-inference] CORRECTED: leech-man's fear speech (¶8-12) → Zarathustra's courage rebuttal (¶13-16) → sorcerer reconciliation (¶17-22). Thrown-roses fleuron row (seven petals, authored) above ¶13.",
+      "palette_role": "Airiest gold chapter; night ground thinnest in the evening band.",
+      "opener_composition": "Seal (smallest P4 seal presentation — the snatch is quick); sun-rule.",
+      "reading_treatment": "Cinzel solar drop cap (sermon); fear/courage exchange ¶8-14 tight facing indents; choral 'Zarathustra!' (¶17) centered display.",
+      "motif_asset": "cohort-p4.svg #p4-sign-ring",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-sign-ring",
+        "class": "seal",
+        "motif": "sign-ring",
+        "caption": "“For fear – is the exception with us.” — ¶14"
+      }
+    },
+    {
+      "id": "p4c16",
+      "order": 16,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "Among the Daughters of the Desert",
+      "form": "desert-song",
+      "class": "song",
+      "src": "art/cohort-p4.svg",
+      "motif": "desert-dance",
+      "pull_line": {
+        "text": "Deserts grow: woe to him who harbours deserts!",
+        "cite": "¶8"
+      },
+      "caption": "“Deserts grow: woe to him who harbours deserts!” — ¶8",
+      "rationale": "Burlesque desert-song: oasis-mouth lips, one-legged date-palm dancer, distant lion joke (¶38), Dudu/Suleika in reeds; Selah/Amen liturgy framing 'Deserts grow' bookends (¶8/56).",
+      "palette_role": "Arid tints = ember/solar derivations ONLY (no date-brown/palm-green hues).",
+      "opener_composition": "Song-class slot; standard sun-rule; long title may wrap 2 lines (≤3 allowed).",
+      "reading_treatment": "Prose frame ¶0-7 calm; burlesque ¶8-56 CENTERED 26-30rem Spectral italic with desert-diamond crowns; Selah right-italic, Amen (¶20/26/55) centered Cinzel small display; leg-farce ¶28-38 indent staircase; virtue-bellows ¶48-53 largest verse in P4. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-desert",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-desert",
+        "class": "song",
+        "motif": "desert-dance",
+        "caption": "“Deserts grow: woe to him who harbours deserts!” — ¶8"
+      }
+    },
+    {
+      "id": "p4c17",
+      "order": 17,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Awakening",
+      "form": "threshold-parable",
+      "class": "emblem",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-ass",
+      "pull_line": {
+        "text": "They have all become pious again, they are praying, they are mad!",
+        "cite": "¶19"
+      },
+      "caption": "“They have all become pious again, they are praying, they are mad!” — ¶19",
+      "rationale": "Festival ignition: noise → deathly stillness → incense → kneeling ring around the haloed ass (quotes c3 head); purple-saddle rider on the horizon (¶6).",
+      "palette_role": "Ember leads; purple-saddle dusk via ember/lapis color-mix (NOT a purple hue).",
+      "opener_composition": "Emblem (kneeling ring — vs c18 festival plate; adjacent openers differ per rule 12); sun-rule.",
+      "reading_treatment": "Stillness ¶17-19 +25% leading; litany ¶20-34 alternating left roman versicles / Cinzel bone responses; final thistle ¶34 as feast-anticipation rule. No drop cap.",
+      "motif_asset": "cohort-p4.svg #p4-ass",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-ass",
+        "class": "emblem",
+        "motif": "bestiary-ass",
+        "caption": "“They have all become pious again, they are praying, they are mad!” — ¶19"
+      }
+    },
+    {
+      "id": "p4c18",
+      "order": 18,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Ass Festival",
+      "form": "festival",
+      "class": "plate",
+      "src": "art/cohort-p4.svg",
+      "motif": "bestiary-ass",
+      "pull_line": {
+        "text": "Do not forget this night and this ass festival, you Higher Men!",
+        "cite": "¶34"
+      },
+      "caption": "“Do not forget this night and this ass festival, you Higher Men!” — ¶34",
+      "rationale": "FESTIVAL (communal voice): ass enthroned with fool's rose-wreath, wine-cup in reach (¶19), Bruegel dancing ring, ember/gold bunting; doctrine 'One kills, not by anger but by laughter' (¶26). SUPERVISOR: class plate CONFIRMED.",
+      "palette_role": "Full ember-gold festival; most saturated P4 opener after c19.",
+      "opener_composition": "Festival double-rule art/rule-festival.svg INSTEAD of sun-rule (sole sanctioned exception); NO drop cap (festival voice).",
+      "reading_treatment": "Interrogation ¶0-26 quick alternating indents (comic pace); ¶26 doctrine centered Cinzel display; benediction ¶32-35 Spectral italic 1.15em with festival-rule above.",
+      "motif_asset": "cohort-p4.svg #p4-festival",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-festival",
+        "class": "plate",
+        "motif": "bestiary-ass",
+        "caption": "“Do not forget this night and this ass festival, you Higher Men!” — ¶34"
+      }
+    },
+    {
+      "id": "p4c19",
+      "order": 19,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Intoxicated Song",
+      "form": "midnight-song",
+      "class": "scene",
+      "src": "art/cohort-p4.svg",
+      "motif": "bell-midnight",
+      "pull_line": {
+        "text": "But all joy wants eternity, ‘Wants deep, deep, deep eternity!",
+        "cite": "¶47"
+      },
+      "caption": "“But all joy wants eternity, ‘Wants deep, deep, deep eternity!” — ¶47",
+      "rationale": "MIDNIGHT CLIMAX: bell-tower spread, round midnight disc, twelve bell dots; 'O Man! Attend!' calls (¶9/43); GOLD ROUNDELAY ¶43-47 in Cinzel-liturgical bold 1.5rem+ (rule 14 large-text gold passes). SUPERVISOR: class scene CONFIRMED (song lyric in reading treatment).",
+      "palette_role": "Climax gold on deepened night; white-gold bell-light wedges (flat fills, hatching via paths).",
+      "opener_composition": "Scene figure; gold roundelay stanza crowns (bell motif) introduced here.",
+      "reading_treatment": "Prose frame ¶0-8 calm; calls Cinzel display; midnight song ¶10-42 CENTERED 26-30rem Spectral italic; roundelay ¶43-47 GOLD; 'Wants deep, deep, deep eternity!' largest verse line in cohort. No drop cap (song).",
+      "motif_asset": "cohort-p4.svg #p4-bell",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-bell",
+        "class": "scene",
+        "motif": "bell-midnight",
+        "caption": "“But all joy wants eternity, ‘Wants deep, deep, deep eternity!” — ¶47"
+      }
+    },
+    {
+      "id": "p4c20",
+      "order": 20,
+      "part": "part-4",
+      "part_roman": "IV",
+      "title": "The Sign",
+      "form": "finale",
+      "class": "finale",
+      "src": "art/cohort-p4.svg",
+      "motif": "lion-doves",
+      "pull_line": {
+        "text": "My children are near, my children",
+        "cite": "¶14"
+      },
+      "caption": "“My children are near, my children” — ¶14",
+      "rationale": "FINALE — BOOK SEAL: laughing lion pressing head to the knee (¶12), doves swarming (one across the lion's nose ¶13), rising sun ray-field; Higher Men fleeing small at the cave mouth (¶16). Triptych panel 3 (sun rising). SUPERVISOR: motif lion-doves (identity asset-listed) — the scene-sign-lion-doves master is this symbol.",
+      "palette_role": "Morning gold FULLY restored; ember gone; rose-dawn blush via solar/bone color-mix.",
+      "opener_composition": "Finale-class slot; Cinzel title; pull-line; sun-rule. No overlay text.",
+      "reading_treatment": "Dawn dialogue ¶1-9 calm; sign passage ¶10-15 +15% leading (timelessness); closing charge ¶21-23 Spectral italic 1.2em. No drop cap (finale). Lion-and-doves special close — ONLY non-ember-ring close in P4.",
+      "motif_asset": "cohort-p4.svg #p4-lion-doves",
+      "manifest": {
+        "src": "art/cohort-p4.svg",
+        "symbol": "p4-lion-doves",
+        "class": "finale",
+        "motif": "lion-doves",
+        "caption": "“My children are near, my children” — ¶14"
+      }
+    }
+  ]
+}

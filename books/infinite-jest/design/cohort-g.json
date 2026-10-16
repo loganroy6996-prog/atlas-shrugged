@@ -1,0 +1,1211 @@
+{
+ "anchor_requests": [
+  "Note-level anchors: every note head addressable as #n<NNN> (1-388), including mid-paragraph merged heads (64, 251, 254, 257, 258, 259, 272, 283, 306, 326, 327, 329, 330, 331, 337).",
+  "Lettered sub-note anchors: #n<NNN><letter> for a-l apparatus (esp. p2c5 note 110 a-l, p2c2 a-f, p2c9/p2c10 clusters).",
+  "Cross-reference links: raw patterns below auto-linked to note anchors; unknown targets degrade to styled (non-link) small-caps, never broken hrefs.",
+  "Filmography entry anchors: stable per-entry ids (entry order 1..N, NOT titles) for the ~44 catalogue rows in p2c2.",
+  "Round-trip navigation: Part I note-callouts (when ReaderLead adds ref-markup) deep-link to #n<NNN>; each note renders a back-link to its calling passage; validator must exercise both directions.",
+  "Unnumbered apparatus landmarks: p2c12 tail paras (ACMÉ colophon ×2, Phelps-cults fragment, Eschaton-variant fragment) are verified author text — style hooks for 4 distinct entries, prose untouched."
+ ],
+ "book": "infinite-jest",
+ "cohort": "cohort-g",
+ "cohort_title": "Endnotes & Errata",
+ "cross_reference_density": {
+  "by_group": {
+   "p2c1": 1,
+   "p2c10": 4,
+   "p2c11": 2,
+   "p2c2": 0,
+   "p2c3": 3,
+   "p2c4": 1,
+   "p2c5": 2,
+   "p2c6": 2,
+   "p2c7": 3,
+   "p2c8": 0,
+   "p2c9": 2
+  },
+  "total_qv_see_cf": 22
+ },
+ "entries": [
+  {
+   "anchor_needs": [
+    "#n1-#n23 (all para-start post-freeze)",
+    "all para-start heads (post-freeze)"
+   ],
+   "id": "p2c1",
+   "motif_asset": "cohort-g.svg #ledger-threshold — cardioid floor-plan line figure (E.T.A. Valentine-heart) as opener plate; note numerals set as index tabs in CSS",
+   "note_range": [
+    1,
+    23
+   ],
+   "opener": "Threshold plate: narrow archival index — range numeral large, cardioid line figure right, one-line descent cue. First screen must read as 'leaving the novel'.",
+   "order": 78,
+   "palette_role": "Threshold: lightest Part II surface of the cohort; full ink. Drug-gloss notes cool, E.T.A.-lore notes warm — the only group that still touches Part I daylight.",
+   "part": "part-2",
+   "rationale": "Gateway group: chem/drug glosses (1, 5, 6, 8, 9, 12, 22), E.T.A. cardioid layout (3, 199w standout), Gately-burglary backstory chain (13/14/16/17). Sets the glossary rhythm the whole cohort riffs on.",
+   "reading_treatment": "Glossary rhythm: short notes breathable, generous inter-note air; n3 cardioid and n5 'drines N.B. get inset emphasis; n21 Q.v. is the cohort's first live cross-ref — link-styled prototype.",
+   "standout_notes": [
+    {
+     "n": 3,
+     "why": "199w E.T.A. cardioid floor-plan — the cohort's only architectural passage; source of the opener plate.",
+     "words": 199
+    },
+    {
+     "n": 5,
+     "why": "208w 'drines taxonomy with N.B. — glossary-plus-essay prototype.",
+     "words": 208
+    },
+    {
+     "n": 21,
+     "why": "First Q.v. cross-ref in Part II ('Q.v. Note 211 sub.') — forward link across 190 notes.",
+     "words": 6
+    }
+   ],
+   "stats": {
+    "dialog_paras": 0,
+    "letter_subnotes": 3,
+    "median_words": 37,
+    "notes": 23,
+    "paras": 30,
+    "total_words": 1373,
+    "xrefs": 1
+   },
+   "title": "Notes 1–23",
+   "part_roman": "II",
+   "number_label": "Notes 1–23",
+   "ledger_conform": {
+    "stamp_band": "NOTES 1–23 · ENDNOTES & ERRATA",
+    "filing_line": "THRESHOLD FILE · 23 NOTES · GLOSSARY RHYTHM",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Engraved threshold plate: E.T.A. cardioid floor-plan line figure (Valentine-heart) with index-tab numerals 1–23 in the margin; one-line descent cue."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "ledger-threshold",
+    "caption": "Plate G1 · The cardioid plan; leaving the novel",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "ledger-threshold"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n24-#n24 (all para-start post-freeze)",
+    "~44 filmography entry anchors by entry order",
+    "lettered footnotes #n24a-#n24f",
+    "medium-era divider landmarks for validator screenshots"
+   ],
+   "filmography": {
+    "entries_approx": 44,
+    "eras": [
+     "B.S. undated (31)",
+     "Year of the Whopper (8)",
+     "Year of the Tucks Medicated Pad (14)",
+     "Year of the Trial-Size Dove Bar (5)"
+    ],
+    "found_drama_count": 8,
+    "infinite_jest_iterations": [
+     "Infinite Jest (I) — referenced original",
+     "Infinite Jest (II) — unfinished remake attempt",
+     "Infinite Jest (III) — unfinished remake of (I)+(II)",
+     "Infinite Jest (IV) — unfinished attempt at completion",
+     "Infinite Jest (V?) — the Entertainment itself (buried mid-listing)"
+    ],
+    "medium_tags": {
+     "16mm": 11,
+     "35mm": 27,
+     "78mm": 11,
+     "holography": 7,
+     "super8": 3,
+     "video": 21
+    },
+    "rhythm": "Title. Year. Company. Cast; medium; runtime; color; sound. Synopsis — parody/homage target named, then deadpan plot précis; UNRELEASED stamps punctuate like redactions; Found Dramas compress to one-line conceptual entries; lettered footnotes a-f append a mock-scholarly tail (Comstock/Posner/Duquette, Romney & Sperber, Cartridge Quarterly East).",
+    "synopsis_register": "mock-archival: parody targets (Frampton, Peckinpah, Hollis, Iimura, Griffith), production companies (Latrodectus Mactans, Poor Yorick Entertainment Unlimited), recurring players (Cosgrove Watt, Pam Heath, P. A. Heaven, 'Madame Psychosis'), escalating absurdity toward Infinite Jest (V?)",
+    "unreleased_count": 39
+   },
+   "id": "p2c2",
+   "motif_asset": "cohort-g.svg #filmography-catalogue — cartridge-spine / leader-countdown plate; CSS catalogue-row lockup (title / year / format / synopsis) + UNRELEASED stamp device",
+   "note_range": [
+    24,
+    24
+   ],
+   "opener": "Exceptional catalogue opener: masthead 'JAMES O. INCANDENZA: A FILMOGRAPHY' as archival title card, completeness-disclaimer as set-in-small-caps colophon paragraph, then the listing as ruled catalogue rows — title/year/format lockup, synopsis in measure, UNRELEASED as stamp. Medium-era dividers (CELLULOID / MAGNETIC VIDEO / cartridge) break the scroll.",
+   "order": 79,
+   "palette_role": "Catalogue: monochrome silver-gelatin register — the one group allowed near-black/white contrast play; color only in medium tags (mm gauges) and the UNRELEASED stamp.",
+   "part": "part-2",
+   "rationale": "Note 24 entire: the 4517-word filmography — the novel's shadow-canon and the cohort's centerpiece. Entry rhythm is rigidly formulaic (title/year/company/cast/medium/runtime/synopsis), which is exactly what makes a catalogue treatment sing; the Infinite Jest I→V? thread must be traceable through the list.",
+   "reading_treatment": "Catalogue rows with hanging title lockups; one-line Found Dramas compress; Infinite Jest iterations get a recurring marginal sigil; footnotes a-f set as nested apparatus at tail; long entries (Cage III, Desire to Desire, Marat) get scene-breath spacing.",
+   "standout_notes": [
+    {
+     "n": 24,
+     "why": "Entire chapter is one note: ~44 entries, 39 UNRELEASED, 5 Infinite Jest iterations, mock-scholarly footnotes a-f.",
+     "words": 4517
+    }
+   ],
+   "stats": {
+    "dialog_paras": 2,
+    "letter_subnotes": 6,
+    "median_words": 4517,
+    "notes": 1,
+    "paras": 72,
+    "total_words": 4517,
+    "xrefs": 0
+   },
+   "title": "Note 24 — James O. Incandenza: A Filmography",
+   "part_roman": "II",
+   "number_label": "Note 24",
+   "ledger_conform": {
+    "stamp_band": "NOTE 24 · JAMES O. INCANDENZA",
+    "filing_line": "AUTEUR FILE · FILMOGRAPHY BROADSHEET · ~44 ENTRIES",
+    "seal": "Auteur seal (Himself)",
+    "plate": "Filmography broadsheet masthead: cartridge-spine title card with gauge/medium stamps (16/35/78mm), UNRELEASED stamp device, Found-Drama compression rows; Infinite Jest I–V? sigil thread."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate broadsheet",
+    "motif": "filmography-broadsheet",
+    "caption": "Plate G2 · Himself, complete to date — mostly unreleased",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "filmography-broadsheet"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n25-#n64 (all para-start post-freeze)",
+    "all para-start heads (post-freeze)"
+   ],
+   "id": "p2c3",
+   "motif_asset": "cohort-g.svg #separatist-primer — wheel-and-fleur marginal device (A.F.R. primer notes 39-42); CSS merged-head splitter for n63/n64",
+   "note_range": [
+    25,
+    64
+   ],
+   "opener": "Lexicon plate: dense short-note rhythm announced up front — range numeral with note-count ('40 notes'), primer cluster (39-42) previewed as the group's narrative spine.",
+   "order": 80,
+   "palette_role": "Lexicon: clinical — pharma/medical glosses (26, 28, 43, 46, 48) in cool register; Québecois separatist cluster (39-42, 47) carries the group's only warm insurgent accent.",
+   "part": "part-2",
+   "rationale": "Pure lexicon group (median 34w) with a separatist-primer spine: 39-42 Fortier/A.F.R. triple-agent briefing, n45 first 'See Note 304 sub.' forward-pointer to the cohort's climax note. N64 shares its paragraph with n63 — TextCurator split confirmed at freeze.",
+   "reading_treatment": "Tight glossary cadence; primer notes 39-42 set as a continuous briefing block; n57 DMZ temporal-perception note and n64 T&Q note get inset emphasis.",
+   "standout_notes": [
+    {
+     "n": 40,
+     "why": "162w triple-agent briefing — the group's narrative peak.",
+     "words": 162
+    },
+    {
+     "n": 45,
+     "why": "'See Note 304 sub.' — first forward pointer to the Struck/Assassin mega-note.",
+     "words": 6
+    },
+    {
+     "n": 64,
+     "why": "252w T&Q curriculum note; merged mid-para head — segmentation test case.",
+     "words": 252
+    }
+   ],
+   "stats": {
+    "dialog_paras": 0,
+    "letter_subnotes": 2,
+    "median_words": 34,
+    "notes": 40,
+    "paras": 44,
+    "total_words": 1741,
+    "xrefs": 3
+   },
+   "title": "Notes 25–64",
+   "part_roman": "II",
+   "number_label": "Notes 25–64",
+   "ledger_conform": {
+    "stamp_band": "NOTES 25–64 · ENDNOTES & ERRATA",
+    "filing_line": "LEXICON FILE · 40 NOTES · SEPARATIST PRIMER",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Lexicon plate: wheel-and-fleur marginal device for the A.F.R. primer cluster (notes 39–42); merged-head splitter mark for n63/n64."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "separatist-primer",
+    "caption": "Plate G3 · Primer: the triple agent’s briefing",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "separatist-primer"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n65-#n104 (all para-start post-freeze)",
+    "all para-start heads (post-freeze)",
+    "note 90 transcript-speaker styling hooks (Gately interface hours)"
+   ],
+   "id": "p2c4",
+   "motif_asset": "cohort-g.svg #interface-hours — cassette-transcript plate for note 90; CSS dialogue-continuation rhythm for 47 dialogue paras",
+   "note_range": [
+    65,
+    104
+   ],
+   "opener": "First long-form plate: glossary surface breaks — n67 (E.M. officers/Mario) and n90 (Gately interface transcript, 1540w) announced as embedded scenes; opener shows the cohort can carry narrative, not just glosses.",
+   "order": 81,
+   "palette_role": "Wards-and-dorms: Ennet/AA cluster (69-71, 91, 93, 99-100) in muted institutional register; tennis-admin cluster (74, 78, 86, 88, 93-98) in chalk-dust pale; n90 transcript carries interview-ink accent shared with n145/n234.",
+   "part": "part-2",
+   "rationale": "The group where notes become scenes: n67 (596w, E.M. officers who knew Mario re: Himself's films) and n90 (1540w Gately resident-interface transcript — 47 dialogue paras, the cohort's first transcript). Surrounding glosses stay short (median 50w), so the two scenes land hard.",
+   "reading_treatment": "Transcript treatment debuts in n90: speaker turns, hanging dialogue, cassette-record affordance; n67 reads as embedded anecdote with scene-breath; n87 'Q.v. Note 24 supra.' is the first backward cross-ref — back-link prototype.",
+   "standout_notes": [
+    {
+     "n": 67,
+     "why": "596w E.M. officers / Mario / Himself's-films anecdote — first narrative scene.",
+     "words": 596
+    },
+    {
+     "n": 87,
+     "why": "'Q.v. Note 24 supra.' — first backward cross-ref (to the filmography).",
+     "words": 6
+    },
+    {
+     "n": 90,
+     "why": "1540w Gately interface-hours transcript — cohort's first full transcript scene.",
+     "words": 1540
+    }
+   ],
+   "stats": {
+    "dialog_paras": 47,
+    "letter_subnotes": 0,
+    "median_words": 50,
+    "mega_notes": {
+     "67": 596,
+     "90": 1540
+    },
+    "notes": 40,
+    "paras": 88,
+    "total_words": 4498,
+    "xrefs": 1
+   },
+   "title": "Notes 65–104",
+   "part_roman": "II",
+   "number_label": "Notes 65–104",
+   "ledger_conform": {
+    "stamp_band": "NOTES 65–104 · ENDNOTES & ERRATA",
+    "filing_line": "WARDS FILE · 40 NOTES · FIRST TRANSCRIPT",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Cassette-transcript plate for note 90 (Gately interface hours); dialogue-continuation ticks for the 47-turn scene."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "interface-hours",
+    "caption": "Plate G4 · Interface hours; the transcript begins",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "interface-hours"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n105-#n144 (all para-start post-freeze)",
+    "all para-start heads (post-freeze)",
+    "note 110 scene-break landmarks (frame / Avril letter / Orin call) + #n110a-#n110l",
+    "note 123 math-lecture styling (diagram references PEEMSTER/HALSADICK are text-only — no images to link)"
+   ],
+   "id": "p2c5",
+   "motif_asset": "cohort-g.svg #halo-ankle — Epsom-salts pail / Hush Puppy shoebox still-life plate for note 110; CSS letter-inset + phone-call two-voice rhythm + a-l sub-note apparatus",
+   "note_range": [
+    105,
+    144
+   ],
+   "opener": "Monster-group plate: n110 (10,740w — larger than most Part I chapters) needs a chapter-scale opener of its own: Hal ankle-soak frame, Avril's letter, Orin's seduction-strategy call as three announced movements; progress/wayfinding inside the note matters more here than anywhere in the book.",
+   "order": 82,
+   "palette_role": "Deep water: darkest Part II surface so far — the descent midpoint; Avril's letter in faded airmail register, Orin's call in late-night phosphor; lettered sub-notes a-l in marginalia tint.",
+   "part": "part-2",
+   "rationale": "The cohort's largest group (13,536w): n110 (10,740w: Hal frame + Avril's hypercorrect letter + Orin's phone call with numbered seduction strategies + lettered sub-notes a-l — apparatus inside apparatus) and n123 (968w Pemulis Eschaton math lecture with PEEMSTER/HALSADICK diagram gags). 226/325 dialogue paras — the group is mostly voices.",
+   "reading_treatment": "Long-chapter relief: scene-break ornaments between n110's three movements; Avril's letter as inset correspondence (salutation/close lockup); Orin/Hal call as two-voice dialogue rhythm; sub-notes a-l as nested marginalia; n123 math lecture keeps its sic-gags and diagram-name punchlines; former false head 'sicker than 4.' (p52) documented for validator regression.",
+   "standout_notes": [
+    {
+     "n": 110,
+     "why": "10,740w triptych: Hal frame + Avril letter + Orin call, with a-l sub-apparatus. The cohort's gravitational center.",
+     "words": 10740
+    },
+    {
+     "n": 123,
+     "why": "968w Eschaton Mean-Value lecture with PEEMSTER/HALSADICK diagrams — math farce.",
+     "words": 968
+    }
+   ],
+   "stats": {
+    "dialog_paras": 226,
+    "letter_subnotes": 13,
+    "median_words": 30,
+    "mega_notes": {
+     "110": 10740,
+     "123": 968
+    },
+    "notes": 40,
+    "paras": 325,
+    "total_words": 13536,
+    "xrefs": 2
+   },
+   "title": "Notes 105–144",
+   "part_roman": "II",
+   "number_label": "Notes 105–144",
+   "ledger_conform": {
+    "stamp_band": "NOTES 105–144 · ENDNOTES & ERRATA",
+    "filing_line": "DEEP-WATER FILE · 40 NOTES · N110 TRIPTYCH",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Halo-ankle still life: Epsom-salts pail + Hush Puppy shoebox; three-movement marker (frame / Avril letter / Orin call); a–l sub-note apparatus ticks."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate triptych",
+    "motif": "halo-ankle",
+    "caption": "Plate G5 · Ankle in the pail; letter and call",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "halo-ankle"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n145-#n184 (all para-start post-freeze)",
+    "all para-start heads (post-freeze)",
+    "note 145 transcript styling (interview nº 1, Steeply/Orin)"
+   ],
+   "id": "p2c6",
+   "motif_asset": "cohort-g.svg #moment-magazine — press-badge / transcript-masthead plate shared by interview notes 145 & 234; CSS French-gloss run (170-174) as dictionary strip",
+   "note_range": [
+    145,
+    184
+   ],
+   "opener": "Interview plate: n145 (1372w PUTATIVE MOMENT transcript-fragment nº 1) opens the group — masthead opener with dateline (3 NOVEMBER Y.D.A.U.), then transcript rhythm; media-theory cluster (163-167) as second movement.",
+   "order": 83,
+   "palette_role": "Newsprint: interview-ink accent continues from n90; Nielsen-portraits note (162) gets grotesque-gallery tint; French glosses (170-174) in dictionary buff.",
+   "part": "part-2",
+   "rationale": "Interview-transcript group nº 1 (n145: Steeply/Orin, 1372w) plus the media-theory cluster (163-167: Lace-Forché, Veals, InterLace, R.I.S.C.) and the French-gloss run (170-174: 'working up steam', 'Homestyle', 'pursuit of happiness', 'no bonking'). N162's Nielsen repulsion-portraits are the cohort's most grotesque single passage.",
+   "reading_treatment": "Transcript treatment (from n90) with masthead + dateline variant; media-theory notes as essay insets; French run as a dictionary strip — five micro-glosses in sequence; n173 'Q.v. Note 304 sub.' re-points at the climax.",
+   "standout_notes": [
+    {
+     "n": 145,
+     "why": "1372w Steeply/Orin interview transcript nº 1 — masthead + dateline + Q&A rhythm.",
+     "words": 1372
+    },
+    {
+     "n": 162,
+     "why": "225w Nielsen repulsion-portraits — grotesque gallery passage.",
+     "words": 225
+    }
+   ],
+   "stats": {
+    "dialog_paras": 23,
+    "letter_subnotes": 1,
+    "median_words": 34,
+    "mega_notes": {
+     "145": 1372
+    },
+    "notes": 40,
+    "paras": 66,
+    "total_words": 3898,
+    "xrefs": 2
+   },
+   "title": "Notes 145–184",
+   "part_roman": "II",
+   "number_label": "Notes 145–184",
+   "ledger_conform": {
+    "stamp_band": "NOTES 145–184 · ENDNOTES & ERRATA",
+    "filing_line": "NEWSPRINT FILE · 40 NOTES · INTERVIEW Nº 1",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Press-badge transcript masthead (PUTATIVE MOMENT, 3 NOV Y.D.A.U.); French-gloss dictionary-strip ticks (notes 170–174)."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "moment-masthead",
+    "caption": "Plate G6 · Putative Moment, interview nº 1",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "moment-masthead"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n185-#n224 (all para-start post-freeze)",
+    "all para-start heads (post-freeze)"
+   ],
+   "id": "p2c7",
+   "motif_asset": "cohort-g.svg #ballpersons-gallery — portrait-row plate for note 209 (Schacht/Spodek/Bain/Stice/Wayne vignettes); CSS tennis-manual inset for 186/213",
+   "note_range": [
+    185,
+    224
+   ],
+   "opener": "Manual plate: tennis-instruction cluster (186 ball-pickup, 213 errant shots) + Ennet/Gately lore (190-196) + portrait gallery (209) — the group's most humane surface; opener leans yearbook, not archive.",
+   "order": 84,
+   "palette_role": "Yearbook: warmest group in the cohort's back half — portrait-gallery notes (209, 211) in lamplight; tennis-manual notes in chalk; n216 'No clue.' gets deadpan spotlight — the cohort's shortest beat.",
+   "part": "part-2",
+   "rationale": "The humane group: tennis-manual insets (186, 213), Ennet mythology (190-196: Blue-File, MK-Ultra, Financial Amends), the E.T.A. portrait gallery (209, 512w: Schacht, Spodek, Bain, Stice, Wayne), Pemulis dread (211), and n216 'No clue.' (4w) — the cohort's shortest note and a deliberate comic exhale.",
+   "reading_treatment": "Portrait-row rhythm for n209 (vignette breaks between players); manual insets for 186/213 with rule-off; lore notes as fireside register; n216 isolated with air — the joke needs silence around it.",
+   "standout_notes": [
+    {
+     "n": 209,
+     "why": "512w player-portrait gallery — yearbook vignette rhythm.",
+     "words": 512
+    },
+    {
+     "n": 211,
+     "why": "111w Pemulis expulsion-dread — the group's emotional peak.",
+     "words": 111
+    },
+    {
+     "n": 216,
+     "why": "'No clue.' (4w) — shortest note in Part II; comic exhale.",
+     "words": 4
+    }
+   ],
+   "stats": {
+    "dialog_paras": 0,
+    "letter_subnotes": 1,
+    "median_words": 39,
+    "mega_notes": {
+     "209": 512
+    },
+    "notes": 40,
+    "paras": 41,
+    "total_words": 2519,
+    "xrefs": 3
+   },
+   "title": "Notes 185–224",
+   "part_roman": "II",
+   "number_label": "Notes 185–224",
+   "ledger_conform": {
+    "stamp_band": "NOTES 185–224 · ENDNOTES & ERRATA",
+    "filing_line": "YEARBOOK FILE · 40 NOTES · PORTRAIT GALLERY",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Ballpersons portrait row (Schacht/Spodek/Bain/Stice/Wayne vignettes); deadpan isolator for n216 ‘No clue.’"
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "ballpersons-gallery",
+    "caption": "Plate G7 · The ballpersons, in a row",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "ballpersons-gallery"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n225-#n264 (all para-start post-freeze)",
+    "note 234 transcript styling (interview nº 2)"
+   ],
+   "id": "p2c8",
+   "motif_asset": "cohort-g.svg #moms-transcript — second press-badge plate (interview nº 2, the Moms material); CSS stage-direction strip for the parenthetical machine-gun run 250-259",
+   "note_range": [
+    225,
+    264
+   ],
+   "opener": "Confession plate: n234 (4252w Steeply/Orin interview nº 2 — the Moms/Avril material, the novel's emotional core) dominates; opener carries the interview masthead at full weight, then the group exhales into micro-notes and the parenthetical stage-direction run (250-259).",
+   "order": 85,
+   "palette_role": "Confessional: interview-ink at its darkest — n234 is the descent's emotional bottom; the micro-run (236-264, median 26w) in flat clerk-ink; parenthetical stage directions (250-259) in aside-grey.",
+   "part": "part-2",
+   "rationale": "Interview-transcript nº 2 (n234, 4252w — Orin on the Moms/Avril, 'the most I've thought about the Moms in a dog's age') followed by the cohort's fastest micro-run: one-line notes and parenthetical stage directions (250-259). TextCurator freeze: all 388 heads para-start. Post-freeze note: former false-head traps ('021549872/4.', 'number 2.' in n234 p53) documented for validator regression.",
+   "reading_treatment": "Full transcript treatment for n234; then staccato micro-rhythm — short notes nearly touching; parenthetical run 250-259 as an aside strip; all heads para-start post-freeze; p53 false-head traps (zip+addr, number 2.) documented for validator regression.",
+   "standout_notes": [
+    {
+     "n": 234,
+     "why": "4252w interview nº 2 — the Moms/Avril confession; emotional core of Part II.",
+     "words": 4252
+    }
+   ],
+   "stats": {
+    "dialog_paras": 50,
+    "letter_subnotes": 2,
+    "median_words": 26,
+    "mega_notes": {
+     "234": 4252
+    },
+    "notes": 40,
+    "paras": 93,
+    "total_words": 6063,
+    "xrefs": 0
+   },
+   "title": "Notes 225–264",
+   "part_roman": "II",
+   "number_label": "Notes 225–264",
+   "ledger_conform": {
+    "stamp_band": "NOTES 225–264 · ENDNOTES & ERRATA",
+    "filing_line": "CONFESSION FILE · 40 NOTES · INTERVIEW Nº 2",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Second press-badge plate (the Moms material, note 234); parenthetical stage-direction strip for the 250–259 run."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "moms-confession",
+    "caption": "Plate G8 · On the Moms; then small change",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "moms-confession"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n265-#n304 (all para-start post-freeze)",
+    "note 269 letter-section landmarks (§§ 1/3c/3e/5/7) + #n269a-c",
+    "note 304 quotation-block styling (Struck's plagiarized source in single-quote blocks) + #n304a-b"
+   ],
+   "id": "p2c9",
+   "motif_asset": "cohort-g.svg #next-train — railroad-tie / headlight plate for note 304 (Le Jeu du Prochain Train); CSS correspondence treatment for n269 (Saprogenic Greetings letterhead) + quotation-block treatment for n304's plagiarized source",
+   "note_range": [
+    265,
+    304
+   ],
+   "opener": "Mythic plate: two mega-narratives — n269 (4260w Marlon Bain letter to Steeply: Orin/Avril/'abuse' meditation in numbered §§) and n304 (4674w Struck's term-paper scene unearthing the Wheelchair Assassin origin-myth: the Cult of the Next Train). The opener must feel like reaching the archive's sanctum.",
+   "order": 86,
+   "palette_role": "Sanctum: iron-and-kerosene register — n269 letter in lamp-flicker correspondence; n304 in cold rail-yard steel with headlight accent; Québecois-dialect cluster (274-277) in borderland violet.",
+   "part": "part-2",
+   "rationale": "The mythic group: n269 (Bain's letter — numbered sections (1)(3c)(3e)(5)(7), Orin's lying, Avril as multivalent mother, 'abuse' as vacuous word) and n304 (Struck plagiarizing the A.F.R. origin: Le Jeu du Prochain Train, the six boys, the train, the wheelchairs — the novel's mythic core, and the most cross-referenced note in Part II: 45, 173, 314 all point here).",
+   "reading_treatment": "Correspondence treatment for n269 (letterhead, numbered §§, sub-notes a-c); quotation-block treatment for n304 (Struck's source in set-off quote blocks vs. Struck's own blear narration); plagiarist's-lapse beat ('hurl himself athwart') kept inline; dialect cluster 274-277 as borderland strip.",
+   "standout_notes": [
+    {
+     "n": 269,
+     "why": "4260w Bain letter — numbered §§, Orin/Avril/'abuse' meditation; correspondence treatment.",
+     "words": 4260
+    },
+    {
+     "n": 304,
+     "why": "4674w Struck term-paper + Cult of the Next Train origin-myth; most cross-referenced note in Part II.",
+     "words": 4674
+    }
+   ],
+   "stats": {
+    "dialog_paras": 22,
+    "letter_subnotes": 8,
+    "median_words": 46,
+    "mega_notes": {
+     "269": 4260,
+     "304": 4674
+    },
+    "notes": 40,
+    "paras": 109,
+    "total_words": 11166,
+    "xrefs": 2
+   },
+   "title": "Notes 265–304",
+   "part_roman": "II",
+   "number_label": "Notes 265–304",
+   "ledger_conform": {
+    "stamp_band": "NOTES 265–304 · ENDNOTES & ERRATA",
+    "filing_line": "SANCTUM FILE · 40 NOTES · TWO MYTHS",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Railroad-tie / headlight plate for note 304 (Le Jeu du Prochain Train); Saprogenic Greetings letterhead device for note 269."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate diptych",
+    "motif": "next-train",
+    "caption": "Plate G9 · The Bain letter; the next train",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "next-train"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n305-#n344 (all para-start post-freeze)",
+    "dialogue-heavy scenes need speaker-turn rhythm (101 dialogue paras)"
+   ],
+   "id": "p2c10",
+   "motif_asset": "cohort-g.svg #locker-room — bench/locker plate for notes 324/332 (17 NOV scenes); CSS dialogue-duet treatment for n321 (Hal/Pemulis) + micro-parenthetical strip for 325-331",
+   "note_range": [
+    305,
+    344
+   ],
+   "opener": "Triptych plate: three mega-scenes — n321 (2150w Hal/Pemulis calculus + DMZ-dream dialogue), n324 (4269w locker-room: Possalthwaite crisis, Pemulis at 1420h), n332 (2193w deLint interrogation, 17 NOV). The group's opener is a scene index: three doors.",
+   "order": 87,
+   "palette_role": "Floodlit: dialogue-duet register — n321 in chalkboard green (Rise Over Run), n324 in locker-room steam, n332 in interrogation white; micro-run 325-331 in clerk-ink; pharma cluster 338-341 in formulary amber.",
+   "part": "part-2",
+   "rationale": "The scene-triptych group: three fully dramatized mega-notes (321/324/332, all November, all E.T.A. interiors) separated by the fastest micro-run in the cohort (325-331: seven short notes) and closed by the pharma cluster (338-341). 101/199 dialogue paras. Former false-head traps ('age 15.' p80, 'V.i. 9.' pre-338) documented for validator regression.",
+   "reading_treatment": "Dialogue-duet rhythm for n321 (Hal/Pemulis turns, DMZ-dream inset); scene treatment for n324/n332 with dateline lockups (17 NOVEMBER / 17 NOV. Y.D.A.U.); micro-run 325-331 as machine-gun strip — seven anchors in quick succession; pharma cluster as formulary run.",
+   "standout_notes": [
+    {
+     "n": 314,
+     "why": "'See Note 304 supra.' — the climax note's final back-pointer.",
+     "words": 6
+    },
+    {
+     "n": 321,
+     "why": "2150w calculus-lesson + DMZ-dream dialogue duet.",
+     "words": 2150
+    },
+    {
+     "n": 324,
+     "why": "4269w locker-room scene — the cohort's longest single scene after n110.",
+     "words": 4269
+    },
+    {
+     "n": 332,
+     "why": "2193w deLint interrogation aftermath — 17 NOV triptych closer.",
+     "words": 2193
+    }
+   ],
+   "stats": {
+    "dialog_paras": 101,
+    "letter_subnotes": 8,
+    "median_words": 20,
+    "mega_notes": {
+     "321": 2150,
+     "324": 4269,
+     "332": 2193
+    },
+    "notes": 40,
+    "paras": 205,
+    "total_words": 9501,
+    "xrefs": 4
+   },
+   "title": "Notes 305–344",
+   "part_roman": "II",
+   "number_label": "Notes 305–344",
+   "ledger_conform": {
+    "stamp_band": "NOTES 305–344 · ENDNOTES & ERRATA",
+    "filing_line": "FLOODLIT FILE · 40 NOTES · SCENE TRIPTYCH",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Bench/locker plate for the 17 NOV scenes (notes 324/332); dialogue-duet ticks for n321; micro-parenthetical strip for 325–331."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate triptych",
+    "motif": "locker-triptych",
+    "caption": "Plate G10 · Three November interiors",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "locker-triptych"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n345-#n384 (all para-start post-freeze)",
+    "all para-start heads (post-freeze)"
+   ],
+   "id": "p2c11",
+   "motif_asset": "cohort-g.svg #formulary — apothecary-label plate; CSS trademark-chant rhythm for the ®-ledger run (355-362)",
+   "note_range": [
+    345,
+    384
+   ],
+   "opener": "Formulary plate: densest short-note rhythm in the cohort (median 16w) — opener as apothecary index: 40 notes, mostly one line, the ®-ledger run (Anexsia/Levo-Dromoran/Numorphan/Perwin/Chlordiazepoxide/…) as the group's chant.",
+   "order": 88,
+   "palette_role": "Apothecary: formulary amber on deep shelf-brown — registered-trademark symbols (®) as recurring glints; n349 'Sic.' (3w) and n379 'See Note 144 supra.' as punctuation beats.",
+   "part": "part-2",
+   "rationale": "The formulary group: 40 notes at median 16w — pharma-trademark chant (355-362, 364, 368, 370, 373, 376, 384), micro-glosses, n366 Bloom parody, n369 Sorkin maps, n380-382 media/tennis closers. Pure index-card rhythm — the descent's shallow end before the terminus.",
+   "reading_treatment": "Index-card cadence: tightest inter-note air in the cohort; ®-ledger run kept unbroken; one-line notes (349 'Sic.', 365 'Long-Term Institution.') isolated as beats; n369 maps-note gets inset.",
+   "standout_notes": [
+    {
+     "n": 349,
+     "why": "'Sic.' (3w) — the cohort's tersest note.",
+     "words": 3
+    },
+    {
+     "n": 355,
+     "why": "Start of the ®-ledger chant (355-362: eight pharma trademarks in sequence).",
+     "words": 5
+    },
+    {
+     "n": 369,
+     "why": "169w Sorkin maps-note — the group's only long passage.",
+     "words": 169
+    }
+   ],
+   "stats": {
+    "dialog_paras": 0,
+    "letter_subnotes": 3,
+    "median_words": 16,
+    "notes": 40,
+    "paras": 46,
+    "total_words": 1103,
+    "xrefs": 2
+   },
+   "title": "Notes 345–384",
+   "part_roman": "II",
+   "number_label": "Notes 345–384",
+   "ledger_conform": {
+    "stamp_band": "NOTES 345–384 · ENDNOTES & ERRATA",
+    "filing_line": "FORMULARY FILE · 40 NOTES · ®-LEDGER",
+    "seal": "Appendix seal (Carbon Violet)",
+    "plate": "Apothecary-label plate; trademark-chant rhythm ticks for the ® run (notes 355–362)."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "formulary-ledger",
+    "caption": "Plate G11 · The formulary chant",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "formulary-ledger"
+   }
+  },
+  {
+   "anchor_needs": [
+    "#n385-#n388 (all para-start post-freeze)",
+    "unnumbered apparatus entries (5 tail paras: ACMÉ colophon + entries 4/5/6 + closing colophon) need stable styling landmarks — verified author text, extractor merge repaired"
+   ],
+   "id": "p2c12",
+   "motif_asset": "cohort-g.svg #terminus-colophon — endmark plate (Talwin-NX / ACMÉ colophon); CSS unnumbered-apparatus treatment for the 4 tail entries (prose untouched)",
+   "note_range": [
+    385,
+    388
+   ],
+   "opener": "Terminus plate: four pharma notes (385-388, missile metaphors) then the archive ends — opener as endmark/colophon; the 5 unnumbered tail paras (ACMÉ colophon, entries 4/5/6, closing colophon) styled as distinct apparatus entries — each with its own colophon lockup.",
+   "order": 89,
+   "palette_role": "Colophon: ember register — missile metaphors (Cruise/Exocet/Day-Glo-yellow serum) against closing dark; unnumbered tail (5 paras) in colophon-grey — visibly distinct, fully authored, no provisional hatch.",
+   "part": "part-2",
+   "rationale": "The terminus: four pharma notes (385-388) with escalating missile metaphors, then five unnumbered apparatus paras (ACMÉ colophon, cartridge-summary entry 4, Phelps-cults bibliography entry 5, Eschaton-variant entry 6, closing colophon) — TextCurator-verified REAL author text (pp.1225-1229); extractor flattened the markers, curator repaired the para[5] merge (9→10 paras). Style as authored apparatus, prose untouched.",
+   "reading_treatment": "Endmark cadence: notes breathe wide, then a colophon rule, then the five apparatus paras in distinct unnumbered styling (colophon / cartridge-summary / bibliography / variant-note / closing colophon) — final screen of Part II must feel like surfacing.",
+   "standout_notes": [
+    {
+     "n": 385,
+     "why": "'the Cruise missile of gram-negative antibiotics' — missile-metaphor opener.",
+     "words": 14
+    },
+    {
+     "n": 388,
+     "why": "Final anchored note: 'Talwin-NX—®Sanofi Winthrop U.S.' — the archive's last filing.",
+     "words": 8
+    }
+   ],
+   "stats": {
+    "dialog_paras": 0,
+    "letter_subnotes": 1,
+    "median_words": 34,
+    "notes": 4,
+    "paras": 10,
+    "total_words": 220,
+    "xrefs": 0,
+    "unnumbered_apparatus_entries": 5
+   },
+   "title": "Notes 385–388",
+   "part_roman": "II",
+   "number_label": "Notes 385–388",
+   "ledger_conform": {
+    "stamp_band": "NOTES 385–388 · ENDNOTES & ERRATA",
+    "filing_line": "TERMINUS FILE · 4 NOTES · COLOPHON",
+    "seal": "Appendix seal, closing (Carbon Violet)",
+    "plate": "Endmark plate (Talwin-NX / ACMÉ colophon); unnumbered-apparatus entry styling for the verified tail — distinct colophon lockups, no quarantine framing."
+   },
+   "contract_manifest": {
+    "src": "art/cohort-g.svg",
+    "class": "plate",
+    "motif": "terminus-colophon",
+    "caption": "Plate G12 · Last filing; the unnumbered tail",
+    "slot": "#chapter-art",
+    "note": "Explicit symbol key per READER-CONTRACT v1.1 addendum A.2 (A.1 fragment-src superseded but honored): reader.js fetches src once per file (cached), clones the symbol/g id into #chapter-art; missing id -> hidden slot + console warning, never fatal. Single authored art/cohort-g.svg with 12 plates; supervisor merges into design/chapters.json.",
+    "symbol": "terminus-colophon"
+   }
+  }
+ ],
+ "part_ii_grammar_draft": {
+  "archival_devices": [
+   "Note numerals as index tabs (marginal, tabular figures) — never body-copy size",
+   "Cross-refs (Q.v./See/cf.) as the cohort's link affordance — small-caps + anchor, the 'card-catalogue drawer pull'",
+   "Lettered sub-notes (a-l) as nested apparatus — indented marginalia register, own anchors",
+   "UNRELEASED / sic / Ibid / supra / infra as archival stamps — letterspaced micro-caps",
+   "Transcript mastheads (notes 90/145/234) share one interview-ink plate family",
+   "Correspondence insets (Avril letter in n110, Bain letter n269) share one letterhead treatment",
+   "Mega-scenes (n110/304/321/324/332) get scene datelines + wayfinding, not just longer scrolls",
+   "Orphan tail (p2c12) quarantined, never silently absorbed"
+  ],
+  "descent_arc": "p2c1 threshold (lightest, still touches Part I) → p2c2 catalogue (monochrome) → p2c3-p2c4 lexicon warming to scenes → p2c5 deep water (darkest, n110 triptych) → p2c6-p2c8 interview corridor (newsprint→confessional) → p2c9 sanctum (mythic steel) → p2c10 floodlit triptych → p2c11 formulary (amber shallow) → p2c12 terminus colophon (ember, surfacing)",
+  "note": "DRAFT grammar — conforms to supervisor ART-DIRECTION.md at Phase 2. Palette roles are relational (light→dark→ember), not hex-committed.",
+  "palette_strategy": "Relational, not absolute: one archival ink family deepening toward p2c5/p2c8-p2c9, then warming toward the p2c12 ember colophon; per-group accent registers (clinical/formulary/interview-ink/correspondence/rail-steel) vary the voice without breaking the grammar.",
+  "principles": [
+   "Part II must feel like descending into the novel's apparatus: distinct from Part I from the first screen of p2c1",
+   "Every note number is an address — anchorability is the cohort's core reading feature",
+   "Short-note rhythm varies per group (glossary/lexicon/formulary/machine-gun) — never one default list style",
+   "Mega-notes are chapters-within-chapters: own openers, scene breaks, wayfinding",
+   "Cross-references are visible plumbing — the apparatus showing its own wiring",
+   "Nothing obscures the prose: stamps, tabs, and rules live in margins and inter-note air"
+  ]
+ },
+ "ref_markup_raw_patterns": [
+  "Q.v. Note 211 sub. (p2c1 n21)",
+  "Q.v. Note 24 supra. (p2c4 n87)",
+  "Q.v. Note 304 sub. (p2c6 n173)",
+  "Q.v. Note 22 supra. (p2c10, inside n332 apparatus e.)",
+  "Q.v. note a to Note 12. (p2c11 n354 — only letter-target ref)",
+  "See Note 304 sub. (p2c3 n45)",
+  "See Note 304 supra. (p2c10 n314)",
+  "See Note 144 supra. (p2c11 n379)",
+  "(cf. Note 115) (p2c7 n194 — only parenthetical cf.)",
+  "q.v. Part I of Goethe's Faust, the Walpurgisnacht six-toed dancea… (p2c3 n38 — literary q.v., NOT a note target)",
+  "q.v. Note 78) (p2c5 n114 — parenthetical, lowercase)",
+  "q.v. Note 24 supra (p2c6 — lowercase)",
+  "q.v. Note 334 sub (p2c10 — lowercase)",
+  "Q.v. @ 2030h. on 11 November Year of the D.A.U., 308 Subdorm B… (p2c9 n304 — scene-setting Q.v., not a link)",
+  "Q.v. for a confirming example 1930h. Thurs., 12 November Y.D.A.U.… (p2c10 n321 — scene-setting Q.v., not a link)",
+  "Q.v. here later in the same day, 11/7, as Hal Incandenza sits… (p2c5 n110 — scene-setting Q.v., not a link)",
+  "Q.v. here Note 301 sub (p2c7 — scene+link hybrid)",
+  "a. … / b. … (lettered sub-notes: p2c1 x3, p2c2 a-f, p2c3 a-b, p2c5 a-l + a, p2c6 a, p2c8 a, p2c9 a-c/a/a/a, p2c10 a-f + a, p2c11 x3, p2c12 a)",
+  "Ibid. (p2c2 f., p2c5 b.)",
+  "sic / Sic. (99 occurrences incl. standalone 'Sic.' n349, 'Redundancy sic.' n49, 'Syntax sic' n51)",
+  "supra (5), infra (1), sub. (9), N.B./n.b. (6), Viz./viz. (4), E.g./e.g. (16), I.e./i.e. (13), a.k.a. (6)"
+ ],
+ "remap_keys": "Each entry records part ('II') + order (78-89, sequential book position) + full title verbatim from toc.json, so a TextCurator id split/merge/rename remaps by (part, order, title) without re-research.",
+ "segmentation_notes_for_reader_lead": {
+  "freeze_status": "TEXT FROZEN 2026-10-15: all 388 heads para-start (15 merged heads split by TextCurator: 64, 251, 254, 257-259, 272, 283, 306, 326-327, 329-331, 337); p2c12 9→10 paras; notes-index.json 388/388; note_refs 299 across 52 body chapters (build-validated).",
+  "rule_note_heads": "Para-start ^\\d{1,3}\\.\\s — clean census, zero exceptions post-freeze.",
+  "rule_letter_heads": "Para-start ^[a-z]\\.\\s = sub-note of current note (p2c5 n110 owns a-l).",
+  "validator_regression_traps": [
+   "p2c5 p52: sicker than 4. Was it 4?",
+   "p2c8 p53: zip+addr 021549872/4. + number 2.",
+   "p2c10 p80: installed at age 15.",
+   "p2c10 pre-338: Hamlet cite V.i. 9.",
+   "p2c2 footnotes: pp. 44-117 / 4-26 / 35-39 / 93-95 page ranges"
+  ],
+  "p2c12_tail": {
+   "ruling": "TextCurator: REAL author text (verified pp.1225-1229); para[5] merge repaired (9→10 paras).",
+   "entries": [
+    "p5: ACMÉ colophon",
+    "p6: cartridge-summary entry 4 (CBC/PATHÉ 911-24-04)",
+    "p7: Phelps-cults bibliography entry 5",
+    "p8: Eschaton-variant entry 6",
+    "p9: closing ACMÉ colophon"
+   ]
+  }
+ },
+ "status": "locked-frozen-phase1-rev6",
+ "ids_provisional": false,
+ "provisional_note": "Per SupIJ-2 relay of TextCurator: chapter IDs provisional until PDF audit freeze. Each entry records part + sequential order + full title for cheap remap. Do not lock final manifests until freeze notice.",
+ "cohort_grammar": {
+  "idea": "Appendix of the Ledger: Carbon Violet register, footnote-rule ornaments, index-tab numerals; every group opener is a stamped appendix file (threshold index, auteur broadsheet, lexicon, transcript cassette, deep-water triptych, press badge ×2, yearbook, sanctum diptych, floodlit triptych, formulary, terminus colophon). Shared grammar = violet stamp band + engraved plate + hanging note numerals; artifact TYPE changes per group.",
+  "appendix_register": "Carbon Violet #7C6BD6 owns all Part II chrome: stamp bands, .reader-note numerals/ticks, .reader-noteref links, .note-return-chip, footnote rules. Stamp Red reserved for the UNRELEASED stamp (p2c2) and seal keylines only.",
+  "palette_role": "Cohort G owns the Carbon Violet appendix register of the six draft tokens (Ledger Black #0D0F0C / File Manila #E8DCC0 / Stamp Red #D6402B / Cartridge Phosphor #9FE870 / Seal Gold #C9A227 / Carbon Violet #7C6BD6). Descent arc p2c1→p2c12 runs threshold-light → catalogue monochrome → deep water (p2c5) → confessional (p2c8) → sanctum steel (p2c9) → ember colophon (p2c12), all inside the violet register.",
+  "reading_treatments": "Glossary rhythm (c1/c3), catalogue rows (c2 broadsheet), transcript Q&A (c4/c6/c8 mastheads), triptych scenes with datelines (c5/c10), portrait rows (c7), correspondence + quotation blocks (c9), index-card chant (c11), endmark + unnumbered apparatus (c12). Mega-notes are chapters-within-chapters: own scene breaks and wayfinding."
+ },
+ "contract_delta": {
+  "covered_by_v1": [
+   "Para-start note heads → id=note-<N> + .reader-note + data-note (§6.1); para-start letter heads attach as .reader-note-sub — covers ALL 388 heads post-freeze (merged-head gap closed by TextCurator).",
+   "Note→note idioms auto-linked (§6.2): covers 20 of 22 observed cross-refs (scene-setting Q.v. correctly NOT linkified).",
+   "Backlinks: return chip + Esc + :target flash (§6.4); styling hooks (§6.5).",
+   "Body→note links LIVE from curator note_refs (299 refs, 52 chapters, build-validated) + notes-index.json 388/388 — validator exercises round-trips end-to-end."
+  ],
+  "extension_requests_via_supervisor": [
+   "Uncovered idioms: “Q.v. note a to Note 12.” (p2c11 n354, letter-target) and “(cf. Note 115)” (p2c7 n194) — request §6.2 idiom extension or confirm styled-non-link fallback.",
+   "Filmography entry anchors (~44 rows, order-based ids) — request book-JS-on-reader:chapter sanction confirmation (§3) or contract extension."
+  ]
+ },
+ "contract_conformance": {
+  "contract": "READER-CONTRACT v1.0 STABLE + v1.1 addendum A.2 (explicit symbol key) + SupIJ-2 IJ relay",
+  "slots": "All 12 plates target #chapter-art (injected above #chapter-meta) via contract_manifest fragment src; p2c2 uses class \"plate broadsheet\". Prose untouched, pure CSS via body[data-book]/[data-part-id]/[data-chapter]/[data-art] + #chapter-text[data-paras] + :has(.reader-note); no reader-* classes minted (all motif/plate names are book-owned).",
+  "css_cascade": "Cohort CSS (design/cohort-g.css) unlayered → always wins over @layer shared; scoped to body[data-book=\"infinite-jest\"] + body[data-part-id=\"part-2\"] + per-chapter/per-motif hooks.",
+  "manifest_merge": "Supervisor merges entries contract_manifest blocks ({src, symbol, class, motif, caption}) into design/chapters.json sequentially; cohort JSON stays the source of truth with part+order+title for the provisional-ID remap. Single art/cohort-g.svg with 12 <symbol> plates.",
+  "fonts": "No cohort font loading (book-level concern: theme.css/index.html via supervisor); cohort CSS references --font-* tokens only (Archivo Black display / Newsreader body / IBM Plex Mono document per draft direction).",
+  "endnotes": "Cohort G IS the notes part: style .reader-note (hanging violet numerals, index-tab rhythm), .reader-note-sub (nested marginalia), .reader-noteref (violet link affordance), .note-return-chip (violet backlink); #chapter-text:has(.reader-note) gates all notes treatments. Merged-head + idiom gaps tracked in contract_delta.extension_requests_via_supervisor — no local DOM guessing."
+ },
+ "rev2_note": "Conformed to ART-DIRECTION-DRAFT.md (Direction 1 “Subsidized Time Ledger”, pending supervisor finalization + ArtDirector critique) and READER-CONTRACT v1.0 + fragment ruling: per-entry ledger_conform (violet stamp band, filing line, appendix/auteur seal, engraved plate brief) + contract_manifest (§4-ready fragment src, class, motif→body[data-art], caption, #chapter-art slot); cohort-level cohort_grammar + contract_delta (covered-vs-extension analysis) + contract_conformance. Part field normalized to part-2/part_roman II. No specialist spawns — still gated on finalized ART-DIRECTION.md + Phase 2 sequencing.",
+ "baseline": {
+  "viewed": "2026-10-15 native Eval browser, dark default, 1440x1000",
+  "cover": "Dim green gradient wash + dot grid + conic glow; Cormorant title, no authored art.",
+  "openers": "p2c2/p2c11 render as undifferentiated prose under the identical Part I cartouche (part label + hairlines, serif title, bordered badge, word-count line); no note anchors, no cross-ref links, no catalogue rhythm. Router verified: TOC → p2c2 sets body[data-chapter=\"p2c2\"] + body[data-part=\"II\"], 72 paras.",
+  "screenshots": "Eval session captures (cover, p2c2 filmography reader view, p2c11 formulary view); re-capture at after-state for comparison."
+ },
+ "rev3_note": "v1.1 addendum A.2: contract_manifest blocks migrated from fragment-src (A.1, superseded but honored) to explicit {src, symbol} keys. All 12 entries carry symbol ids matching planned <symbol> plates in art/cohort-g.svg. Still gated on finalized ART-DIRECTION.md + Phase 2 sequencing.",
+ "rev4_note": "Scrub: prose bare-number refs (interview #1/#2 in p2c6/p2c8 anchor_needs/motif_asset/rationale/standout) rewritten to nº form — fragment-scan regexes mistook them for asset fragments. contract_manifest blocks already on v1.1 {src, symbol} form (rev3). Still gated on finalized ART-DIRECTION.md + Phase 2 sequencing.",
+ "benchmark": "Homepage benchmark (Main order, USER-FEEDBACK.md): homepage creativity is the library-wide bar. Cohort G ambition flows through the LEDGER appendix identity (violet register, archival rules, broadsheet composition, note ticks, filmography stamps) — never by copying the homepage look. Quiet reading stays calm; finish bar raised, J1-J8 design unchanged. Designer spawn spec must carry this paragraph.",
+ "queue": "Parked FIFTH in SupIJ-2 Phase 2 order C→A→E→F→G.",
+ "rev5_note": "Benchmark addendum recorded (ambition via LEDGER appendix identity, not homepage copy). TextCurator p2c12 ruling incorporated: tail is verified author text — quarantine framing dropped everywhere (entry, anchor_requests, segmentation notes, contract_delta); styled as distinct unnumbered apparatus entries. Queue: fifth (C→A→E→F→G). Still parked.",
+ "freeze_provenance": "ID FREEZE 2026-10-15 (TextCurator audit + Main verification): p2c1–p2c12 FINAL, no splits/merges/renames, titles unchanged. part+order+title keys retained as permanent provenance. Report: .omp/design/infinite-jest-text-audit.md.",
+ "rev6_note": "ID FREEZE locked: status provisional→locked-frozen; merged-head/false-head framing retired (all 388 para-start, verified in rebuilt data); per-group para counts refreshed (p2c8 88→93, p2c9 107→109, p2c10 199→205, p2c12 9→10); p2c12 tail now 5 apparatus paras (merge repaired); note_refs (299/52) + notes-index (388/388) live — round-trip tests unblocked. Still parked fifth (C→A→E→F→G) for Phase 2 fire.",
+ "design": {
+  "status": "design-final-2026-10-15",
+  "designer": "JestCohortGDesigner (SupIJ-3.JestCohortGLead.JestCohortGDesigner)",
+  "identity": "Appendix of the Ledger: the cool paper-shadow of Part I. Where Part I plates are warm engraved objects from the novel's three worlds in Seal-Gold keylines, Cohort G plates are the archive's own furniture -- plans, catalogues, cassettes, letters, badges, shelves, colophons -- drawn in Manila line with Carbon-Violet keylines on grounds that descend from threshold-light (G1) through deep water (G5), confession (G8), sanctum steel (G9), to ember colophon (G12).",
+  "type_and_color_governance": "Faces fixed by ART-DIRECTION: Archivo Black (plate titles/cartouches only), Newsreader (plate caption sentences, never labels), IBM Plex Mono (all plate microtype, stamps, ticks, row anatomy). Palette fixed: Ledger Black #0D0F0C grounds, File Manila #E8DCC0 line/text, Carbon Violet #7C6BD6 (rendered --ij-violet #a89cf0 on dark / #5b4bc4 on light) for every keyline, rule, tick, and link in Part II, Stamp Red #D6402B ONLY for UNRELEASED stamps and seal keylines (J5). No gold anywhere in the cohort. Supporting tints by opacity only.",
+  "descent_arc_rendering": "Plates lighten/darken/ember in step with the prose: G1 lightest ground with a daylight sliver; G2 near-black/white silver-gelatin; G3-G4 mid-register; G5 darkest ground with two warm inset windows (letter, call) glowing out of it; G6-G8 newsprint grays sinking to confessional dark; G9 cold steel with one headlight bloom; G10 floodlit white bands; G11 amber-on-brown shallow shelf; G12 near-black ground with ember rules and the Day-Glo serum tick -- surfacing.",
+  "references_studied": [
+   {
+    "cite": "Metropolitan Museum of Art -- Stefano della Bella, 'Frontispiece: Ornamenti o Grottesche' (metmuseum.org/art/collection/search/377609); Thomas Landseer, 'Lion Couchant (Frontispiece)' (metmuseum.org/art/collection/search/655916). What was taken: frontispiece as engraved object-stage -- ruled double frame, corner furniture, caption cartouche below the image field; plates G1/G5/G7/G12 copy this frame grammar directly.",
+    "id": "R1",
+    "what": "Engraved book frontispieces and head-pieces (Met Museum collection)"
+   },
+   {
+    "cite": "aesthetary.com/a/archival.html ('Archival -- the ordering is the design'); GVSU 'Anatomy of a Finding Aid'; UW Digital Collections 'Style Manual for Archival Finding Aids'. What was taken: the register logic -- container lists, drawer pulls, address-everything numerals; the tick vocabulary's index-tab numerals and drawer-pull cross-ref chips come from here, not from generic UI pills.",
+    "id": "R2",
+    "what": "Archival finding aids and card-catalogue registers"
+   },
+   {
+    "cite": "artofthetitle.com/designer/saul-bass/ ; oscars.org Saul Bass Collection. What was taken: Bass's title-card economy -- one cut-paper idea per card, letterspaced caps lockups, the catalogue-row discipline of credit sequences; the filmography row anatomy (title lockup / spec line / synopsis / release stamp) follows title-sequence credit hierarchy, not table design.",
+    "id": "R3",
+    "what": "Catalogue raisonne rhythm + Saul Bass title-card lockups"
+   },
+   {
+    "cite": "Wellcome Collection -- 'A sheet of designs for pharmacy labels. Etching' (works/cwqp3vy8); 'A design for a pharmacy label... Engraving' (works/s6bvh3sw); Guyard et Hagemeyer 'Etiquettes a bocaux' sample book, 171 samples (works/e7bq84nh); Smithsonian NMAH Bristol-Myers Squibb prescription-label collection (nmah_1383871). What was taken: apothecary label architecture -- bordered cartouche, centered product name, ®-adjacent maker line, dosage microtype, shelf-row repetition; plate G11 and the formulary chant treatment are drawn straight from these.",
+    "id": "R4",
+    "what": "Apothecary labels and pharmaceutical ephemera (Wellcome Collection, Smithsonian)"
+   }
+  ],
+  "fallback_record": "No fallback used. skill://frontend-design, skill://frontend-workflow, and skill://reference-study were all injected into this session's context at launch (verified in-context); .omp/design/SKILL-MAP.md local paths were read as a cross-check only.",
+  "design_comparison": {
+   "belongs_to_appendix": "Part I plates depict the novel's worlds (courts, rooms, streets, bodies in motion) in gold; these depict the novel's paperwork about those worlds (floor-plans, catalogues, transcripts, letters, labels, colophons) in violet. The threshold plate is a plan, not a place; the broadsheet is a catalogue, not a cinema; the confession is a badge, not a face. Put a Part I title on any of these and the violet apparatus reads as filing furniture for a story happening elsewhere -- which is exactly what endnotes are.",
+   "chosen": "C, hardened: every plate is an engraved office object drawn from the notes' own nouns (cardioid, cartridge spine, wheel, cassette, pail, press badge, portrait row, badge variant, rail ties, bench, apothecary bottle, endmark), composed as plate furniture with mono caption bands, violet keylines, and one textual wink per plate (dent, IJ-V sigil, sic, ®) that only a reader of the notes gets.",
+   "considered": [
+    "A. Pure index furniture: 12 variations of ruled cards, tabs, numerals. Rejected -- honest to the appendix but visually monotonous; violates the ambition bar and repeats the Part I ledger frame with nothing new to look at.",
+    "B. Illustrative scenes from note content (Hal soaking his ankle, the six boys on the rails, the locker room). Rejected -- competes with Part I's world-depicting plates, risks kitsch literalism (Cage III eyeballs, feral infants), and misreads the notes as story rather than apparatus.",
+    "C. Apparatus-as-artifact: each plate is the physical document-object the note-group resembles (floor-plan, broadsheet, primer seal, cassette, triptych file, press badge, yearbook page, confession file, letterhead+rail diagram, locker bench, apothecary shelf, colophon endmark). Chosen."
+   ]
+  },
+  "tick_vocabulary": {
+   "coordinate_not_duplicate": "ledger.js ALREADY paints: .ij-filing band (seal + stamp band + filing line, violet in Part II), .ij-tick pills on paragraphs containing .reader-noteref (violet pill, gutter on wide / inline below 1100px), .ij-stamp spans (gauge + UNRELEASED + VAULT) + .ij-film row class on p2c2. Cohort G CSS styles these hooks; it NEVER mints parallel stamp/tick DOM. The vocabulary below assigns each hook its visual role and adds ONLY CSS-side treatments (no new elements) plus the plate symbols.",
+   "hooks": {
+    "ij_film_row": "p2c2 catalogue-row left rule (violet) + left padding; the row's hanging left edge. Engineer extends to ruled-row anatomy per the p2c2 spec.",
+    "ij_stamp": "p2c2 stamp family ONLY. .ij-stamp-gauge (violet mono micro-stamp), .ij-stamp-unrel (Stamp Red, -1.5deg tilt, letterspaced caps -- the cohort's ONLY red text), .ij-stamp-vault (faint clerk-ink). No other chapter gets .ij-stamp spans; other chapters' archival micro-caps (sic, Ibid, supra) are plate/prose-register treatments, not spans.",
+    "ij_tick": "Cross-ref drawer pull. ledger.js appends exactly one per paragraph containing a .reader-noteref ('◈ NNN'). Cohort CSS keeps the violet pill unaltered in shape and only tunes placement rhythm per group (e.g. tighter vertical offset in the p2c11 machine-gun strip so ticks stack without colliding). No chapter adds a second tick element.",
+    "note_return_chip": "Violet return chip (theme §6/§10 base). Cohort G confirms violet-on-elevated with 3px violet left edge; no per-chapter restyle except p2c2 keeps chip above the two-column flow (sticky top within chapter, never inside a column).",
+    "reader_note": "Hanging numeral (theme §7 base: 3.2rem hanging indent). Cohort G adds the index-tab numeral treatment: Plex Mono tabular figures, violet, with a short violet footnote-rule tick before the numeral on mega-note heads (n110, n234, n269, n304, n321, n324, n332) so chapters-within-chapters announce themselves. Numerals stay text -- never replaced by graphics.",
+    "reader_note_sub": "Nested marginalia register (theme §7 base: muted, indented). Cohort G sets letter heads (a-l) in Plex Mono violet at 0.85em with a mid-dot leader (a.·) distinguishing them from numeric heads; the p2c5 a-l run gets a continuous left marginalia rule binding all 12 sub-notes into one visible apparatus column.",
+    "reader_noteref": "Card-catalogue drawer pull: Plex Mono 0.86em, violet, underline in 50% violet (theme §7 base). Cohort G keeps this identical across all 12 chapters -- the ONE invariant affordance, so every Q.v./See/cf. idiom reads as the same drawer pull wherever it appears. Styled-non-link fallback (unresolvable targets, letter-target n354, scene-setting Q.v.) renders as violet small-caps WITHOUT underline -- visibly related, honestly inert."
+   },
+   "shared_vocabulary": {
+    "cross_ref_affordance": "The drawer pull: .reader-noteref (link) + .ij-tick (margin pill) always appear as a pair -- the phrase in the prose, the pill in the margin. Validator must see both on every live cross-ref (n21, n87, n45, n173, n314, n379, n194-cf, n301-hybrid) and pill-absent on styled-non-link fallbacks.",
+    "dateline_and_scene_ornaments": "Scene datelines (n304 'Q.v. @ 2030h. on 11 November...', n321 '1930h. Thurs., 12 November...', n324 '17 NOVEMBER—YEAR OF THE DEPEND ADULT UNDERGARMENT', n332 '17 NOV. Y.D.A.U.') set as Plex Mono violet letterspaced lockups with flanking hairline rules (╶── 1930H · RM. 204 ──╴). Scene-break ornaments between mega-note movements: centered violet '◈ ◈ ◈' on a hairline, bounded, clearing the measure (J2). No other ornament glyphs in the cohort -- ◈ is the only dingbat.",
+    "lettered_sub_note_marks": "a-l apparatus: Plex Mono violet letter + mid-dot leader + hanging indent one step deeper than numeric notes (4.4rem). Runs longer than 4 letters (p2c2 a-f, p2c5 a-l, p2c9 n269 a-c, p2c10 n324 a-f) get a continuous left marginalia rule. Single sub-notes (n210a, n292a, n301a) get the letter mark without the rule.",
+    "note_numeral_tabs": "Index-tab numerals: numeric heads hang in the margin in Plex Mono tabular figures, violet, sized 0.95em; mega-note heads (110, 234, 269, 304, 321, 324, 332, 24) get the numeral at 1.3em with a violet footnote-rule tick (24px hairline) above the head paragraph. Short-note heads stay small -- the size contrast IS the wayfinding."
+   }
+  },
+  "broadsheet_spec": {
+   "a_f_footnote_tail": "Paras p62-p71: the mock-scholarly tail. Sub-note heads a-f (Comstock/Posner/Duquette; Cage disclaimer; Romney & Sperber; Duquette; Cartridge Quarterly East; Ibid.) use the lettered-sub-note marks (violet mono letter + mid-dot leader) inside a nested apparatus block: full measure, hairline violet rule above (the footnote rule -- the cohort's only full-width rule inside prose), 0.92em Newsreader, hanging letter indent. Continuation paras p63 (ONANite Annual vol. 8, pp. 44-117), p66 (Post-Millennium Journal pp. 4-26), p68 (Cartridge Quarterly East vol. 4 no. 2, pp. 35-39), p70 (4 no. 4, pp. 93-95) indent to the sub-note text column (no letter). 'Ibid.' (p71, 2w) closes the tail flush -- no ornament after it; the apparatus simply stops.",
+   "broadsheet_frame": "Theme §7 already sets the honest frame: two-column at >=1100px (64rem measure, break-inside:avoid per para). Engineer keeps it and adds: masthead (p0-p2) spans both columns; the a-f footnote tail (p62-p71) spans both columns as the foot of the sheet; medium-era dividers (below) span both columns as band rules; catalogue rows (p4-p61) flow in columns. Below 1100px: single column, dividers become band rules, stamps inline. Column rules: 1px violet hairline between columns (column-rule: 1px solid rgba(124,107,214,.28)) -- the broadsheet gutter.",
+   "catalogue_row_anatomy": "Every catalogue paragraph p4-p61 is a ruled row: 1px violet hairline above (except rows after a divider), 0.55rem inter-row air, padding-left for the .ij-film left rule. Row interior keeps author prose order EXACTLY (J4 -- no DOM restructure, text untouched); rhythm comes from the stamps + the IJ sigil + Found-Drama compression, all margin/inline treatments: (1) TITLE lockup: the row's opening title words cannot be wrapped (no DOM edits), so the row is identified by its position under the masthead + its stamps; engineer may NOT bold titles via JS. Instead the gauge stamp + release stamp at row end give each row its catalogue identity. (2) SPEC line: gauge/medium/runtime/bw/sound data stays inline in Newsreader; the .ij-stamp-gauge pill (ledger.js: 16MM/35MM/78MM from the gauge regex) floats right at row end as the row's spec chip. (3) SYNOPSIS: deadpan précis in calm Newsreader measure -- the row's body. (4) RELEASE stamp: .ij-stamp-unrel (Stamp Red, tilted) or .ij-stamp-vault (faint) or nothing (released works carry only the gauge stamp -- their lockup is quieter, which correctly inverts expectations: the released films whisper, the unreleased shout). Multi-entry paras (p4: Cage + Kinds of Light; p7: Flux + IJ-I; p16: IJ-II + Immanent Domain; p23: Homo Duplex + Tea Ceremony; p31/p33/p39: Found Drama + feature; p44: Lite + Untitled + No Troy; p45: Untitled + Coupon; p49: three unfinished + Civics; p51: Desire + Safe Boating; p54: Accomplice + 3 Untitleds + Dial C; p58: Cage V + Single Girl; p61: three unfinished + IJ-V) keep both entries in ONE row (J4 -- no splitting); the row earns BOTH stamps when both halves release differently (ledger.js paints per-paragraph, so one UNRELEASED stamp covers the row; engineer does not add a second).",
+   "era_dividers": "Medium-era dividers break the scroll as full-width band rules spanning both columns (J2-bounded, clear the measure): (1) CELLULOID -- before p4 (the B.S. celluloid run p4-p30: Meniscus/Heliotrope/Latrodectus gauges, Kinds of Light's 4,444 frames, the Cage series). Band text: 'CELLULOID · B.S. UNDATED · GAUGES 16/35/78'. (2) MAGNETIC VIDEO -- before p31 (the Whopper-era video run p31-p41: Man Who Began to Suspect, ONANtiad, Poultry in Motion, Möbius Strips). Band text: 'MAGNETIC VIDEO · YEAR OF THE WHOPPER'. (3) CARTRIDGE -- before p42 (the Tucks/Dove cartridge run p42-p61: Blood Sister, IJ-IV, Poor Yorick slate, Marat, IJ-V). Band text: 'CARTRIDGE · Y.T.M.P. → Y.T.-S.D.B.'. Band anatomy: Plex Mono 0.72rem letterspaced violet caps centered on a double hairline (thin over thick, engraved-rule style), 1.2rem air above/below. Dividers are CSS treatments on the boundary rows' ::before (engineer implements as .ij-era-* classes assigned to researched paras p4/p31/p42 -- explicit indices, no modulo). The in-prose release phrases (CELLULOID/MAGNETIC VIDEO/CARTRIDGE #...) stay untouched inside rows; the bands are wayfinding, not relabeling.",
+   "found_drama_compression": "Found Dramas I, II, V, IX, X (p29, p30, p32, p37, p38 -- bare titles, 3w each) compress into ONE bounded 'FOUND DRAMAS' group block: a bordered inset (violet hairline, elevated surface) listing the five titles as five ruled micro-rows in Plex Mono, each with its para anchor preserved (anchors live on the paras; the block is visual grouping via adjacent-sibling CSS, prose untouched). Found Dramas III, VI, XI (p31, p33, p39 -- with 'conceptual, conceptually unfilmable. UNRELEASED' tails) stay inline in their multi-entry rows (they share paras with features) but their opening words get no special wrap (no DOM edits); the row's UNRELEASED stamp covers them. Effect: the five bare titles read as a compressed conceptual cluster, the three tailed ones as row openers -- matching the author's own distinction.",
+   "gauge_medium_stamps": "ledger.js paints .ij-stamp-gauge (16MM/35MM/78MM, violet) + .ij-stamp-unrel (UNRELEASED, Stamp Red tilted) + .ij-stamp-vault (VAULT, faint) as inline spans at row end, and .ij-film on stamped rows. Engineer styles ONLY these hooks -- never parallel stamp DOM. Gauge stamp: violet mono micro-caps, bordered, floats to row end. UNRELEASED stamp: Stamp Red #D6402B (bumped #E05238 on dark per §1 contrast), 1.5deg tilt, letterspaced -- the cohort's ONLY red text, punctuating like redactions (39 occurrences). Super-8 rows (Homo Duplex p23, Stand Behind p47, Marat p59) carry NO gauge stamp (regex excludes Super-8 by design -- the absence is the tell; engineer does not patch the regex). Silent/sound and b/w/color data stay inline prose -- not stamped (restraint: two stamp kinds only).",
+   "infinite_jest_sigil_thread": "The five iterations must be traceable: IJ-I (buried mid-para p7), IJ-II (p16), IJ-III (p28), IJ-IV (p43), IJ-V? (buried mid-para p61). Treatment: a recurring marginal sigil -- violet '◈ J·I' through '◈ J·V?' mono mark in the row's left margin (CSS ::before on researched rows p7/p16/p28/p43/p61, explicit indices), PLUS the row's left rule thickens to 3px violet. Buried iterations (I in p7, V? in p61) additionally get a violet underline on nothing (no DOM edits) -- instead their rows get the sigil + thick rule + extra top air (1.2rem) so the eye stops. The V? row (p61) is the broadsheet's climax: sigil reads '◈ J·V? — THE ENTERTAINMENT' (the only sigil with an epithet), row gets 1.6rem top air and a double hairline above. The sigil thread is margin-only (J2) and survives two-column flow (margins are per-column).",
+   "masthead_lockup": "Para p0 ('24. JAMES O. INCANDENZA: A FILMOGRAPHY') is the broadsheet masthead: spans both columns, Archivo Black 2rem letterspaced center lockup 'JAMES O. INCANDENZA' over Plex Mono 0.8rem letterspaced 'A FILMOGRAPHY · NOTE 24 · AS COMPLETE AS WE ARE ABLE TO MAKE IT', flanked by violet double rules, with the auteur medallion (seal-filing <use>, violet) centered above the name. Paras p1-p3 (the completeness disclaimer: 'as complete as we are able to make it', 'not definitive', the title-followed-by schema ending 'The designation UNRELEASED is used for those works which never saw distribution and are now publicly unavailable or lost') set as a bounded colophon block: elevated surface, violet hairline border, Plex Mono 0.85em small-caps lead-in on first line, full measure, spans both columns. The masthead + colophon occupy the first screen: title card, then schema, then the listing.",
+   "plate_symbol": "filmography-broadsheet (see p2c2 chapter entry): cartridge-spine title card with gauge/medium stamps, UNRELEASED device, auteur medallion, IJ I-V sigil strip. The plate is the broadsheet's front page; the prose IS the broadsheet's inside.",
+   "prototype_gates": "This spec is the J8 prototype: engineer implements p2c2 FIRST at 1440x1000 / 820x1180 / 390x844; the masthead lockup, catalogue rows, stamps, dividers, Found-Drama block, IJ sigils, and a-f tail must all read designed before any other chapter expands. Two-column rules, stamp styling, and sigil placement proven here propagate to the other 11 (ticks, lettered marks, scene ornaments all debut in miniature here).",
+   "two_column_rules": "At >=1100px: .chapter-text column-count 2, 64rem measure, 2.5rem gap, violet column-rule hairline; masthead (p0), colophon (p1-p3), era dividers (p4/p31/p42 ::before bands), Found-Drama block (p29-p38 group), and a-f tail (p62-p71) all span both columns (column-span: all); rows p4-p61 flow with break-inside:avoid. At 720-1100px: single column at 44rem (document measure per ART-DIRECTION §2). Below 720px: single column, stamps wrap inline after row text, sigils shrink to '◈' alone, dividers stay band rules. .ij-tick pills follow the theme's 1100px collapse rule (inline below). Return chip stays above the columns (sticky). No row ever splits across columns or pages (break-inside:avoid + print parity).",
+   "wayfinding": "72 paragraphs need orientation: the three era bands + five IJ sigils + Found-Drama block + a-f footnote rule give seven landmarks across the scroll; the masthead colophon teaches the schema ('title, year, company, players, gauge, length, stock, sound, synopsis, mediation') so every row parses. Long entries (Cage III p19, Desire to Desire p51, Marat p59) get scene-breath spacing (1.1rem bottom air vs 0.55rem standard) -- the broadsheet breathes where the films are longest."
+  },
+  "chapters": {
+   "p2c1": {
+    "anchors": "n3 cardioid inset (para p2, 198w); n5 'drines taxonomy + N.B. (p4, 60w); n13/n14/n16 Gately-burglary chain (p19/p20/p22: Trent 'Quo Vadis' Kite, Stetson A.D.A., Québecois subsequent developments); n21 first Q.v. cross-ref (p27, 5w: 'Q.v. Note 211 sub.') -- link-styled prototype with .ij-tick drawer pull.",
+    "caption_relationship": "Caption 'Plate G1 · The cardioid plan; leaving the novel' sits in the plate's own cartouche band (bottom), repeated by the manifest figcaption below the slot -- the plate labels itself as an index object, then the reader caption confirms it.",
+    "color_roles": "Lightest Part II ground: elevated warm-black with a 12% Manila wash on the left third ONLY (the last daylight); violet keylines + violet tab numerals; drug-gloss tabs (1/5/6/8/9/12/22) cool violet-white, E.T.A.-lore tabs (3/4/10/13-18) warm Manila -- the only plate in the cohort with a warm/cool split.",
+    "composition": "Threshold plate: a narrow archival index, read left-to-right as EXIT. Left third: vertical index-tab stack of note numerals 1-23 (Plex Mono tabular, violet) with the standout tabs (3, 5, 21) slightly wider and ruled -- the 'leaving the novel' directory. Right two-thirds: the E.T.A. cardioid floor-plan line figure (n3): a Valentine-heart outline in Manila line, four convex inward-facing building arcs, tennis courts + pavilions as hatched rectangles at center, parking-lot dent bashed into the back curve, all arcs struck from the same radius r (a small 'r' dimension mark winks at the 'staggering feat' sentence). One-line descent cue in Plex Mono microtype along the bottom cartouche: 'LEAVING THE NOVEL · 23 NOTES · GLOSSARY RHYTHM'.",
+    "elements": [
+     "23 index tabs (violet mono numerals, tabs 3/5/21 emphasized)",
+     "cardioid heart outline (Manila, 2px) with 4 convex building arcs",
+     "center courts/pavilions hatch + parking-lot dent",
+     "radius-'r' dimension mark + 'staggering feat' wink in microtype",
+     "bashed-in dent exaggerated 1.2x (affectionate, matches 'Valentine-heart aspect')",
+     "Stetson-hat micro-glyph tucked by tab 14 (the A.D.A.'s trademark, n14)",
+     "bottom cartouche: descent cue + range numeral"
+    ],
+    "layout_800x450": "Full-bleed index: x0-240 tab stack (23 tabs, 16px rows); x260-780 cardioid figure centered (heart ~360px wide, courts at optical center); y380-450 cartouche band with double violet rule above. Cardioid heart apex points DOWN (Valentine orientation, matching 'Valentine-heart aspect'); courts sit at the heart's center notch.",
+    "motif": "ledger-threshold",
+    "reading_treatment": "Glossary rhythm: generous inter-note air (1.3rem), short notes breathable; n3 + n5 get inset emphasis (bounded .ij-insert, violet left rule); n21's 'Q.v. Note 211 sub.' is the cohort's first live cross-ref -- full drawer-pull pair (link + .ij-tick pill), validator exercises the 190-note forward jump.",
+    "ticks": "Index-tab numerals in-plate; prose uses standard hanging numerals; n21 earns the first .ij-tick pill."
+   },
+   "p2c2": {
+    "anchors": "Note 24 entire (72 paras, 4517w). Masthead p0; disclaimer colophon p1-p3 ('as complete as we are able to make it', 'not definitive', title-followed-by schema, 'The designation UNRELEASED is used for those works which never saw distribution'); B.S. celluloid run p4-p30 (Cage p4, Kinds of Light 4,444 frames p4, IJ-I buried p7, Cage II p13, IJ-II p16, Cage III p19, Medusa v. Odalisque p20, Joke p25, IJ-III p28, Found I/II p29-30); Whopper video run p31-p41 (Found III+Glass Man p31, Found VI+American Century p33, ONANtiad p34, Poultry p36, Found IX/X p37-38, Found XI+Möbius p39, Bureaucrat p41); Tucks/Dove cartridge run p42-p61 (Blood Sister p42, IJ-IV p43, Lite+Untitled+No Troy p44, Coupon p45, Baby Pictures p46, As of Yore p48, Civics p49, Cheers p50, Desire p51, Sombrero p52-53, Accomplice+3 Untitleds+Dial C p54, Insubstantial p55, Marvel p56, Cage IV/V + Single Girl p57-58, Marat p59-60, Fun/Me/Sorry + IJ-V? p61); a-f tail p62-p71 (Comstock/Posner/Duquette, Cage disclaimer, Romney & Sperber, Duquette, Cartridge Quarterly East, Ibid.).",
+    "caption_relationship": "Caption 'Plate G2 · Himself, complete to date -- mostly unreleased' is the plate's subtitle cartouche AND the manifest figcaption: the plate fronts the broadsheet the way a newspaper nameplate fronts page one.",
+    "color_roles": "Silver-gelatin monochrome: near-black ground, Manila line, white title lockup; color ONLY in the gauge stamps (violet 16/35/78MM), the UNRELEASED stamp (Stamp Red -- the cohort's only red), and the auteur medallion keyline (violet). The most contrast-forward plate in the cohort.",
+    "composition": "Broadsheet nameplate: a CARTRIDGE-SPINE title card. Top band: auteur medallion (Himself -- engraved profile in a roundel, violet keyline) flanked by 'JAMES O. INCANDENZA' in Archivo Black letterspaced caps. Below: a masthead rule with 'A FILMOGRAPHY · AS COMPLETE AS WE ARE ABLE TO MAKE IT' in Plex Mono micro-caps. Center field: three gauge stamps (16MM / 35MM / 78MM) as engraved stamp devices + one tilted UNRELEASED stamp in Stamp Red, arranged as a printer's specimen row. Bottom strip: the IJ I-V? sigil thread -- five annular-ring sigils (I, II, III, IV, V?) in a row, the V? ring broken/open, labeled 'THE ENTERTAINMENT PROBLEM'. Bottom cartouche: '~44 ENTRIES · 39 UNRELEASED · B.S. → Y.T.-S.D.B.'.",
+    "elements": [
+     "auteur medallion roundel (Himself profile, violet keyline)",
+     "Archivo Black name lockup + mono masthead rule",
+     "gauge stamp specimens 16/35/78MM (violet) + tilted UNRELEASED (red)",
+     "IJ I-V? annular sigil strip (V? ring broken)",
+     "Found-Drama compression glyph (three nested rectangles, labeled 'CONCEPTUAL, CONCEPTUALLY UNFILMABLE')",
+     "bottom cartouche: entry/stamp counts"
+    ],
+    "full_spec": "SEE broadsheet_spec (this design record's J8 section): masthead lockup, catalogue-row anatomy, gauge/medium stamps, era dividers, Found-Drama compression, IJ sigil thread, a-f tail, two-column rules. This chapter entry covers the PLATE; broadsheet_spec covers the READING TREATMENT in full.",
+    "layout_800x450": "Nameplate stack: medallion center-top (x400, y70, r48); name lockup y140-180; masthead rule y200; stamp specimen row y230-300 (4 stamps, x80-720); sigil strip y320-370 (5 rings + label); Found-Drama glyph right margin x700-770 y230-300; cartouche y390-450.",
+    "motif": "filmography-broadsheet",
+    "reading_treatment": "Broadsheet (full spec in broadsheet_spec): masthead + colophon spanning two columns; ruled catalogue rows with gauge/UNRELEASED stamps; CELLULOID/MAGNETIC VIDEO/CARTRIDGE era bands; Found-Drama compression block; IJ I-V? marginal sigils; a-f nested apparatus tail; scene-breath for Cage III / Desire / Marat.",
+    "ticks": ".ij-stamp (gauge/unrel/vault) + .ij-film row rules + IJ marginal sigils + era band rules. The richest tick surface in the cohort -- the prototype that proves every vocabulary element."
+   },
+   "p2c3": {
+    "anchors": "Primer cluster 39-42 (p14-p20: Fortier/A.F.R. briefing, triple-agent n40 161w, 'thing of important' n42) + apparatus a ('Les Assassins des Fauteuils Rollents' p15) and b ('See Note 304 sub.' p17 -- early climax pointer); n45 'See Note 304 sub.' (p23, 5w); n57 DMZ temporal-perception (p35, 103w -- inset); n64 T&Q curriculum mega-note (p42, 211w -- inset, merged-head split verified); n38 literary q.v. (Goethe Faust -- styled-non-link, NOT a note target).",
+    "caption_relationship": "Caption 'Plate G3 · Primer: the triple agent's briefing' names the plate's subject (the briefing, not the war); the wheel-and-fleur device reappears at 32px as the primer-block's section mark in-prose (CSS background, bounded).",
+    "color_roles": "Clinical lexicon: cool mid-register ground; pharma/medical tabs (26/28/43/46/48) in flat violet-white; the primer cluster (39-42) carries the group's only warm insurgent accent -- a heated violet-red underglow on the fleur (opacity layering, never leaving the violet family).",
+    "composition": "Primer-seal plate: a WHEEL-AND-FLEUR marginal device -- an engraved wheelchair wheel (n37 'Wheelchair.', the cohort's shortest gloss, earns the biggest glyph) merged with a fleur-de-lis hub, drawn as a briefing seal: outer ring lettered 'A.F.R. · TRIPLE AGENT · FORTIER BRIEFING' in Plex Mono micro-caps. Left field: the primer cluster preview -- four ruled briefing rows (39/40/41/42) with n40's row triple-ruled (the triple agent gets three rules). Right field: the wheel-fleur seal at hero scale. Bottom: merged-head splitter mark for n63/n64 -- a small '¶→¶' engraved splitter glyph with 'N63/N64 SPLIT VERIFIED' microtype (the segmentation test case, honored in the plate).",
+    "elements": [
+     "wheel-fleur briefing seal (hero, right field)",
+     "4 briefing rows 39-42 (n40 triple-ruled)",
+     "splitter glyph for n63/n64 + verification microtype",
+     "'See Note 304' pointer tick (first climax thread, violet arrow-chip)",
+     "DMZ temporal-perception tick (warped clock-ring micro-glyph, n57)",
+     "lexicon density bar (40 tabs compressed -- the tight-glossary preview)"
+    ],
+    "layout_800x450": "Left x30-330: briefing rows (4 rows, 64px each, y80-340) + density bar y350-370; right x380-770: wheel-fleur seal (r130, center x575 y210); splitter glyph bottom-center x350-450 y350-370; cartouche y390-450.",
+    "motif": "separatist-primer",
+    "reading_treatment": "Tight glossary cadence (0.8rem air); primer notes 39-42 set as a continuous briefing block (bounded, shared left rule, wheel-fleur section mark); n57 + n64 as bounded insets; n45/b-pointer drawer pulls to the climax note.",
+    "ticks": "Briefing-block shared rule; pointer arrow-chips on 304-bound refs (CSS ::after on .reader-noteref[href='#note-304'] -- qualified selector, allowed); splitter mark honored in prose by clean para-start heads."
+   },
+   "p2c4": {
+    "anchors": "n67 E.M.-officers/Mario anecdote (p2, 596w -- embedded scene, Dial C + Three Cheers namecheck); n87 'Q.v. Note 24 supra.' (p22, 5w -- first BACKWARD cross-ref, back-link prototype); n90 interface transcript (p25-p73: 'E.g.:' head p25, SELECTED SNIPPET masthead p26 'WEDNESDAY 11 NOV ... 2329H', 47 dialogue turns p27-p73, 'They can't kick you out' closer p73).",
+    "caption_relationship": "Caption 'Plate G4 · Interface hours; the transcript begins' -- the plate shows the cassette that the prose then plays for 47 turns.",
+    "color_roles": "Wards-and-dorms: muted institutional mid-register; Ennet/AA cluster ticks in flat clerk violet; tennis-admin cluster in chalk-dust pale violet; the transcript cassette + n90 turns in interview-ink (deep violet-black, the first appearance of the interview register shared with n145/n234).",
+    "composition": "Cassette-transcript plate: an engraved COMPACT CASSETTE at hero scale (the interface hours, recorded), label hand-lettered 'D.W. GATELY · INTERFACE HRS · 11 NOV · 2329H' in Plex Mono, reels drawn as annular rings, tape-head + capstan detailed. Behind the cassette: a dialogue-continuation rhythm strip -- 47 thin turn-ticks (alternating long/short for Gately/Day turns) running the plate's width like a waveform. Left margin: the n67 anecdote tick -- a tiny 'UNEXAMINED LIFE' tavern-sign glyph (Blind Bouncer nights). Right margin: the n87 back-link tick -- a violet '↩ 24' return-chip glyph (the first backward pointer, honored). Bottom cartouche: 'WARDS FILE · FIRST TRANSCRIPT · 47 TURNS'.",
+    "elements": [
+     "hero cassette (labeled, annular reels, tape path)",
+     "47-turn waveform strip (alternating Gately/Day ticks)",
+     "tavern-sign micro-glyph (n67)",
+     "return-chip glyph '↩ 24' (n87)",
+     "masthead band quoting 'SELECTED SNIPPET ... 2329H' (microtype, plate only -- prose untouched)",
+     "interview-ink color debut"
+    ],
+    "layout_800x450": "Cassette center x250-550, y60-280 (300x220 hero); waveform strip y300-340 full width (47 ticks); margin glyphs x40-120 + x680-760 at y140; masthead micro-band y350-370; cartouche y390-450.",
+    "motif": "interface-hours",
+    "reading_treatment": "Transcript treatment debuts: n90 masthead (p26) as bounded transcript header (violet rules, Plex Mono, dateline lockup 'WEDNESDAY 11 NOV · 2329H'); dialogue turns p27-p73 as hanging Q&A rhythm (alternating left offsets for Day/Gately voices -- positional set, CSS-only); n67 as embedded anecdote with scene-breath (1.1rem air); n87 as back-link prototype (drawer pull + return chip both exercised).",
+    "ticks": "Transcript masthead rules; alternating dialogue-turn leaders; return-chip glyph; the waveform strip is plate-only (prose turns are NOT decorated per-turn -- restraint)."
+   },
+   "p2c5": {
+    "anchors": "n110 triptych (p5-p266, 10,740w): Hal frame p5-p6 (ankle/Epsom pail, Hush Puppy shoebox, Kodiak/NASA glass); Avril letter movement p7-p22 (ALL-CAPS header p7, '20 June Y.W.-Q.M.D.' p8, 'Dear Filbert' p9, M.G.M./Telegrocer letter body p10-p15, 'Miss You and Love You Lots' p16, Saints form-response p19-p22 'Cordjally, Jethro Bodine'); Orin call movement p23-p266 ('Mmyellow' p23, 'Speedy Seduction Strategy Number 7' p24, ring/Subject routine p30-p44, Pemberton eye p60, meta-extortion close p260-p266); apparatus a-l (p267-p279: 'Don't ask', Ibid., M.G.M., Dishmaster craze, Kornspan, Telegrocery, InterLace grid, Meech Lake, French and Indian War, Grammar and Meaning, Clean U.S. Party, Calgarian Phalanx); n123 math lecture (p292-p300: Mean-Value dictation, PEEMSTER diagram p297, HALSADICK diagram p299, 'P.S. Allston Rules' p300).",
+    "caption_relationship": "Caption 'Plate G5 · Ankle in the pail; letter and call' lists the three movements in order -- the plate is the triptych's program note.",
+    "color_roles": "Deep water: DARKEST Part II ground in the cohort (the descent midpoint); frame objects in Manila line; Avril's letter window in faded airmail register (pale violet-white, red-blue airmail edge ticks -- the only red-blue in the cohort, and only as 2px edge ticks); Orin's call window in late-night phosphor-violet (violet lifted toward phosphor, never reaching green); a-l apparatus in marginalia tint (violet at 60%).",
+    "composition": "Triptych still-life plate: THREE PANELS divided by engraved rules. LEFT panel (frame): Hal's ankle-soak -- a janitor pail (Epsom-salts label: 'EPSOM · ANKLE') with a foot/ankle line figure above it, the Hush Puppy shoebox beside it (labeled, letters tri-folded upright like a Rolodex), NASA rocket glass with Kodiak juice. CENTER panel (letter): Avril's airmail letter -- an envelope with red-blue edge ticks, 'Dear Filbert' salutation visible, 'M.G.M.' plea + Telegrocer micro-lines, 'Miss You and Love You Lots' close, and the Saints form-response ('Cordjally, Jethro Bodine') as a smaller overlapping slip. RIGHT panel (call): Orin's phone call -- a telephone handset + coiled cord drawn as an engraved knot, 'STRATEGY Nº 7' tag, ring glyph (the wedding-band routine), sound-wave ticks for the two voices. Below the panels: the a-l apparatus strip -- 12 letter tabs a through l in a ruled row. Bottom cartouche: 'DEEP-WATER FILE · N110 TRIPTYCH · 10,740 WORDS'.",
+    "elements": [
+     "pail + ankle + shoebox + NASA glass (frame panel)",
+     "airmail envelope + Saints slip (letter panel)",
+     "handset + cord knot + ring + Strategy-7 tag (call panel)",
+     "a-l ruled letter strip (12 tabs)",
+     "PEEMSTER/HALSADICK diagram-name punchline tick (tiny 'FIG. P' glyph -- text-only, no images, per the brief)",
+     "movement numerals I/II/III on panel dividers"
+    ],
+    "layout_800x450": "Three panels x20-260 / x280-520 / x540-780, y40-320; a-l strip y330-365 (12 tabs); cartouche y385-450. Letter panel slightly taller visual weight (airmail white pops on dark ground); call panel phosphor-violet glows second.",
+    "motif": "halo-ankle",
+    "reading_treatment": "Long-chapter relief: scene-break ornaments (◈ ◈ ◈ on hairline) between the three movements (after p6 frame, after p22 letter, call runs p23-p266); Avril's letter as inset correspondence (salutation/close lockup, airmail edge ticks on the inset border); Orin/Hal call as two-voice dialogue rhythm (positional offsets); sub-notes a-l as nested marginalia with continuous left rule; n123 math lecture keeps sic-gags + diagram-name punchlines (PEEMSTER/HALSADICK set as violet figure tags -- text-only, no images to link).",
+    "ticks": "Scene-break ornaments; correspondence inset rules; two-voice turn leaders; a-l continuous marginalia rule; figure-name tags."
+   },
+   "p2c6": {
+    "anchors": "n145 interview nº 1 (p0-p24: TRANSCRIPT-FRAGMENT masthead '3 NOVEMBER Y.D.A.U.' p0, 'Q.' turns, Mad Stork consolations, copper-earrings beat); media-theory cluster 163-167 (p44-p48: NoCoat #346, Lace-Forché/Veals, A.C.D.C./Sherman Act, R.I.S.C., InterLace documentaries); n162 Nielsen repulsion-portraits (p43, 224w -- grotesque gallery: carpenter's tools face, scarlet-light spear, shark crown, skull flora); French-gloss run 170-174 (p51-p55: 'working up steam', 'Homestyle. Ready to Serve.', 'pursuit of happiness', 'Q.v. Note 304 sub.', 'no bonking'); n154 '= the anticonfluental Cage III ... q.v. Note 24 supra' (back-pointer to filmography).",
+    "caption_relationship": "Caption 'Plate G6 · Putative Moment, interview nº 1' -- the plate is the press badge that admits the reader to the interview; n234's plate (G8) is the same badge, worn darker.",
+    "color_roles": "Newsprint: mid-gray register, interview-ink (deep violet-black) for the badge + transcript; Nielsen-portraits tick in grotesque violet (heavy hatch); French glosses in dictionary buff-violet (pale, warm-leaning violet -- the dictionary strip); media cluster in flat clerk-ink.",
+    "composition": "Press-badge plate: an engraved PRESS BADGE at hero scale -- a laminated credential card on a lanyard clip, lettered 'PUTATIVE MOMENT · SOFT PROFILE · HELEN STEEPLY · 3 NOV Y.D.A.U.' with a photo window showing an engraved microphone + steno pad (never a face -- the interviewer stays a function). Behind the badge: a transcript-masthead band quoting the masthead's dateline. Left field: the media-theory cluster as four stacked essay slugs (LACE-FORCHÉ / VEALS / R.I.S.C. / INTERLACE). Right field: the French-gloss dictionary strip -- five micro-gloss rows (170-174) with the middle row (173, 'Q.v. Note 304') breaking the strip as a violet pointer chip (the climax thread piercing the dictionary). Bottom corner: the Nielsen grotesque tick -- a small portrait frame with a scarlet-spear glyph (the most grotesque passage, miniaturized). Bottom cartouche: 'NEWSPRINT FILE · INTERVIEW Nº 1 · 3 NOV'.",
+    "elements": [
+     "press badge + lanyard + mic/pad photo window",
+     "masthead dateline band",
+     "4 media-theory essay slugs",
+     "5-row French dictionary strip with 304 pointer chip",
+     "Nielsen portrait-frame tick (scarlet spear)",
+     "Cage-III back-pointer tick ('q.v. 24' chip, n154)"
+    ],
+    "layout_800x450": "Badge center x280-520, y50-290 (hero); lanyard clip above y30-50; masthead band y300-325; left slugs x30-250 (4 rows); right dictionary strip x550-770 (5 rows, chip on row 4); Nielsen tick x30-120 y330-380; cartouche y390-450.",
+    "motif": "moment-masthead",
+    "reading_treatment": "Transcript treatment with masthead + dateline variant (p0 as bounded header 'TRANSCRIPT-FRAGMENT ... 3 NOVEMBER Y.D.A.U.'); media-theory notes as essay insets (bounded, shared rule); French run as dictionary strip (five micro-glosses, 0.5rem air, buff-violet numerals, n173's Q.v. as drawer pull breaking the strip); n162 grotesque passage with gallery air (1.2rem, heavy left rule).",
+    "ticks": "Press-badge section mark on the masthead; essay-slug rules; dictionary-strip micro-numerals; grotesque-frame rule; 304 pointer chip."
+   },
+   "p2c7": {
+    "anchors": "n186 ball-pickup manual (p1, 134w -- dribble-up substyles, trap-and-lift); n209 portrait gallery (p24, 512w -- Schacht wristbands, Spodek volley, Bain sweat corona, Stice handstand, Yardguard backhand, Wayne red-clay slide, Pemulis+Stice cross-armed, Shaw mustache, pale photos, Hal toss, Wayne silver plate); n211 Pemulis dread (p27, 110w -- expulsion dread, emotional peak); n213 errant-shots manual (p29, 187w -- ballboys); n216 'No clue.' (p32, 3w -- shortest note, deadpan isolator); n194 '(cf. Note 115)' (styled-non-link cf. -- extension requested); n222 Marathe French note; n224 William James q.v.",
+    "caption_relationship": "Caption 'Plate G7 · The ballpersons, in a row' -- the plate hangs the portraits; the prose walks the row.",
+    "color_roles": "Yearbook: WARMEST group in the cohort's back half -- lamplight violet (violet warmed with Manila underlay) for the portrait row; tennis-manual notes in chalk-pale violet; n216 'No clue.' in deadpan spotlight white on dark (the joke's spotlight); lore notes (190-196) in fireside register (warm violet-gray).",
+    "composition": "Yearbook-page plate: a PORTRAIT ROW -- five engraved portrait vignettes in oval/roundel frames in a row (Schacht adjusting wristbands / Spodek distended volley / Bain sweat-corona follow-through / Stice handstand / Wayne red-clay slide with the red cloud rendered as violet hatch -- NO red, the 'red' is translated to dense violet cross-hatch with a micro-label 'ROME, IN VIOLET'). Below the row: the manual strip -- two rule-off tennis-manual insets (186 ball-pickup: dribble-up diagram of stick + ball arcs; 213 errant shots: frame/net-post/fence ricochet diagram). Right margin: the n216 isolator -- a tiny spotlight cone with 'No clue.' in white microtype (the joke, spotlit). Bottom cartouche: 'YEARBOOK FILE · PORTRAIT GALLERY · N216 SPOTLIT'.",
+    "elements": [
+     "5 portrait roundels (Schacht/Spodek/Bain/Stice/Wayne)",
+     "Wayne clay-cloud in violet cross-hatch + translation label",
+     "2 manual diagrams (dribble-up arcs / ricochet lines)",
+     "n216 spotlight cone + 'No clue.' microtype",
+     "pale-photos tick (washed-out frame corners, 'looked at so often they're pale')",
+     "Pemulis-dread tick (small 'EXPULSION' file-tab, n211)"
+    ],
+    "layout_800x450": "Portrait row y60-220 (5 roundels x40-720, r55); manual strip y240-330 (two diagrams x40-380 / x420-680); spotlight cone x700-770 y240-330; cartouche y390-450.",
+    "motif": "ballpersons-gallery",
+    "reading_treatment": "Portrait-row rhythm for n209 (vignette breaks between players -- CSS scene-breath at researched sentence boundaries is FORBIDDEN (no DOM edits); instead the whole note gets gallery air + a portrait-row section mark, and the plate carries the per-player breakdown); manual insets for 186/213 with rule-off borders; lore notes 190-196 in fireside register (warm inset tint); n216 isolated with 1.6rem air above/below + spotlight styling (centered, white, the joke needs silence).",
+    "ticks": "Portrait-row section mark; manual rule-off borders; n216 spotlight isolator; fireside inset tint."
+   },
+   "p2c8": {
+    "anchors": "n234 interview nº 2 (p9-p59, 4252w: TRANSCRIPT-FRAGMENTS masthead 'NOVEMBER Y.D.A.U.' p9, 'I'm not going to talk about ... the Moms' p10, 'Q.' turns, Moms-functions passage p20, 'unredeemably fucking bats' p30, Hallie-in-pajamas p40, fourth horseman p50, 'Help! My son ate this!' p56, sub-notes a/b p57/p59) + validator traps p53 (zip+addr, 'number 2.' -- documented, NOT heads); micro-run 236-264 (median 26w); parenthetical stage-direction run 250-259 (p78-p87: Lincoln/Henderson, Insurance Reasons, donated-clothes, never-run, handgun argot, Erdedy's hands, NNE fidgeting, Desert-SW skirt, mop-handle).",
+    "caption_relationship": "Caption 'Plate G8 · On the Moms; then small change' -- the plate shows the badge (the confession) over the small-change strip (the exhale), in reading order.",
+    "color_roles": "Confessional: interview-ink at its DARKEST (near-black violet); the badge glows faintly (worn credential, second use); micro-run in flat clerk-ink (featureless, fast); parentheticals in aside-grey-violet (recessed, parenthetical literally). The descent's emotional bottom -- then small change.",
+    "composition": "Confession-file plate: the SAME press badge as G6, redrawn WORN -- creased laminate, faded lettering ('PUTATIVE MOMENT · Nº 2 · NOVEMBER'), a coffee-ring stain (engraved concentric arcs), the photo window now showing a veiled/night microphone (the Moms material is darker). The badge hangs lower and tilts 3deg (fatigue). Below the badge: the small-change strip -- the micro-run 236-264 as a staccato strip of 29 thin note ticks (nearly touching, like film sprockets), with the parenthetical run 250-259 recessed as 10 aside-grey sub-ticks (visually parenthesized by flanking curve brackets). A stage-direction curve motif (parenthesis arcs) frames the strip. Bottom cartouche: 'CONFESSION FILE · INTERVIEW Nº 2 · THEN SMALL CHANGE'.",
+    "elements": [
+     "worn press badge (creased, coffee-ring, tilted, night mic)",
+     "29-tick micro-run sprocket strip",
+     "10 recessed parenthetical sub-ticks with curve brackets",
+     "stage-direction parenthesis frame motif",
+     "'MOMS' tab (the emotional bottom, violet-black on violet)",
+     "validator-trap wink: tiny '021549872/4.' micro-glyph (p53, labeled 'NOT A HEAD' -- the trap, honored)"
+    ],
+    "layout_800x450": "Badge center x270-530, y40-250 (tilted 3deg); small-change strip y270-340 (29 ticks full width, sub-ticks recessed center); parenthesis frame arcs x20 + x780; MOMS tab x600-740 y90-120; trap glyph x40-180 y350-370; cartouche y390-450.",
+    "motif": "moms-confession",
+    "reading_treatment": "Full transcript treatment for n234 (masthead + dateline 'NOVEMBER Y.D.A.U.', Q&A rhythm, sub-notes a/b as nested apparatus); then staccato micro-rhythm (0.55rem air, short notes nearly touching); parenthetical run 250-259 as aside strip (recessed tint, curve-bracket section marks, 0.5rem air); p53 traps documented for validator (no heads there).",
+    "ticks": "Worn-badge section mark; sprocket-strip micro-ticks (plate only); aside curve brackets; MOMS tab; trap glyph (plate only)."
+   },
+   "p2c9": {
+    "anchors": "n269 Bain letter (p4-p38, 4260w: 'Saprogenic Greetings' letterhead p4 'Ms. Helen Steepley And So On / November Y.D.A.U.', §(1) formative years p5, §(3c) suicide facts p7, §(3e) separation cause p9, §(5) high-sodium Orin p11 + truth-constructed p12 + mendacious idiocy p14-p18, §(7) 'abuse is vacuous' p19 + upscale-parents meditation p20-p23 + 'multileveled and indictment-proof' Avril p25 + philanthropist p28 + 'badly abused as a child' p29 + lover passage p30, sub-notes a/b/c p31-p38: Marijuana Thinking, S. Johnson, 'valued'); n274-277 dialect cluster (p43-p46: réflechis, s'annuler, transperçant, Trois-Rivières idiom); n304 Struck term-paper (p77-p105, 4674w: scene dateline 'Q.v. @ 2030h. on 11 November' p77, quote blocks p78/p80/p82-p87/p89/p91/p93-p100/p102-p105 vs Struck narration p79/p81/p88/p90/p92/p101, 'hurl himself athwart' p91 + plagiarist's-lapse beat p92, six boys/railroad ties p87, last-to-jump rules p89-p98, express-vs-transport p99, legless survivors p100, Les Trente-Six p103, Culte-directorate founders p104).",
+    "caption_relationship": "Caption 'Plate G9 · The Bain letter; the next train' -- two myths, two halves of the plate, in reading order.",
+    "color_roles": "Sanctum: iron-and-kerosene -- cold rail-yard steel violet (blue-leaning violet-gray line) for the n304 half; lamp-flicker correspondence violet (warm-leaning, flicker via varied stroke opacity) for the n269 half; the headlight bloom in hot white-violet (the train's approach, the plate's brightest element); dialect cluster in borderland violet (mid, uninflected).",
+    "composition": "Diptych plate: TWO MYTHS side by side. LEFT half (the letter): Saprogenic Greetings letterhead -- an engraved letterhead device ('SAPROGENIC GREETINGS · WHEN YOU CARE ENOUGH...' micro-masthead) above five ruled section bands (§1 / §3c / §3e / §5 / §7, each band tagged with its thesis: 'FORMATIVE', 'SUICIDE', 'SEPARATION', 'HIGH-SODIUM', 'ABUSE IS VACUOUS'), the §7 band longest and ruled heaviest (the meditation's weight). RIGHT half (the train): rail-yard diagram -- six railroad ties in perspective recession, two rails converging to a headlight bloom (concentric engraved arcs + hot center), six boy-ticks (small vertical marks, one per tie: 'ages ten to sixteen') on the near ties, a cow-catcher glyph + '30 K.P.H.' tag (express-vs-transport, p99), and a wheelchair-wheel micro-glyph at the vanishing point (the Assassins' origin -- the myth's terminus, drawn small and cold). Center divider: a violet rule with the 'hurl himself athwart' lapse tick -- a small verb-phrase slip ('HURL HIMSELF ATHWART · VERBATIM' microtype, the plagiarist's tell). Bottom cartouche: 'SANCTUM FILE · TWO MYTHS · §§ + LE JEU'.",
+    "elements": [
+     "Saprogenic letterhead device + 5 thesis bands",
+     "rail perspective: 6 ties, converging rails, headlight bloom",
+     "6 boy-ticks + cow-catcher + 30 K.P.H. tag",
+     "wheelchair-wheel vanishing-point glyph",
+     "lapse-tick divider ('HURL HIMSELF ATHWART')",
+     "dialect-cluster borderland strip (4 micro-rows: réflechis/s'annuler/transperçant/idiom)"
+    ],
+    "layout_800x450": "Left x20-380 (letterhead y50-110, 5 bands y120-340); divider x390-410 (lapse tick center y200); right x420-780 (rails converge x600 y120 bloom; ties y150-340; boy-ticks on near ties); dialect strip x20-380 y345-370; cartouche y390-450.",
+    "motif": "next-train",
+    "reading_treatment": "Correspondence treatment for n269 (letterhead lockup p4 as bounded header, numbered §§ as ruled section bands with thesis tags via CSS ::before on researched paras, sub-notes a-c as nested marginalia); quotation-block treatment for n304 (Struck's plagiarized source in set-off quote blocks -- quote-led paras p78/p80/p82-p87/p89/p91/p93-p100/p102-p105 get blockquote styling: left rule + indent + 0.95em; Struck's own blear narration stays in body measure -- the two voices VISIBLY separate); plagiarist's-lapse beat p92 kept inline with a violet lapse tick in the margin (no text change); dialect cluster 274-277 as borderland strip (shared rule, mid-violet).",
+    "ticks": "Letterhead lockup; § thesis bands; quote-block left rules (the cohort's heaviest blockquote treatment); lapse tick; borderland strip rule."
+   },
+   "p2c10": {
+    "anchors": "n314 'See Note 304 supra.' (p9, 5w -- climax back-pointer, drawer pull); n321 calculus duet + DMZ dream (p16-p71: 'Rise Over Run' p16, 'Can I tell you about my dream' p21, 'It was a DMZ-dream' p23, Leavenworth convict p27, 'screaming for help' p31); n324 locker scene (p74-p134: dateline '17 NOVEMBER—YEAR OF THE DEPEND ADULT UNDERGARMENT', showers-drip/mirror opening, Possalthwaite crisis, 'Troeltsch's got Wayne on the air' p134) + apparatus a-f (p135-p144, incl. 'Q.v. Note 22 supra.' e.); micro-run 325-331 (p146-p152, parenthetical machine-gun strip); n332 interrogation (p153-p190: dateline '17 NOV. Y.D.A.U.', 'Gracious me and mine' p154, riffled leaflet p170); pharma formulary run 338-341 (p197-p200).",
+    "caption_relationship": "Caption 'Plate G10 · Three November interiors' -- the plate shows three doors ajar with three different lights; the prose opens each door in turn.",
+    "color_roles": "Floodlit: near-white steam bands against violet-dark ground; n321 door spills chalkboard green-white, n324 door spills steam white, n332 door spills interrogation white; micro-run strip in flat clerk-ink; pharma cluster ticks in formulary amber (the amber preview of G11).",
+    "composition": "Scene-index plate: THREE DOORS ajar in a dark corridor wall, each door leaking a different light -- the group's opener is a scene index and the plate is its directory. Door 1 (left): chalkboard green-white slit, '321 · RISE OVER RUN' tag -- the calculus duet. Door 2 (center, widest): steam-white flood, '324 · LOCKER ROOM · 17 NOV' tag, bench silhouette + mirror glint inside the slit. Door 3 (right): hard interrogation white, '332 · DE LINT · 17 NOV' tag. Below the doors: the micro-run strip -- seven thin parenthetical ticks (325-331) as a machine-gun timing diagram. Bottom cartouche: 'FLOODLIT FILE · THREE NOVEMBER INTERIORS'.",
+    "elements": [
+     "three ajar doors with distinct light spills (green-white / steam / hard white)",
+     "door tags: 321 RISE OVER RUN / 324 LOCKER ROOM / 332 DE LINT (violet mono)",
+     "bench + mirror glint inside door 2's slit",
+     "micro-run timing strip: 7 parenthetical ticks 325-331",
+     "pharma-cluster amber tick at strip end (338-341 preview)",
+     "corridor wall hatch (Manila, low opacity)"
+    ],
+    "layout_800x450": "Wall spans x20-780, y40-300; doors at x60-220 (321), x300-500 (324, widest), x580-740 (332); light spills pool y300-360 (soft wedges, decreasing opacity); micro-run strip y370-400 (7 ticks + amber end tick); cartouche y410-450.",
+    "motif": "locker-triptych",
+    "reading_treatment": "Dialogue-duet rhythm for n321 (Hal/Pemulis turns, DMZ-dream inset p21-p31 as bounded dream block with wavy violet left rule); scene treatment for n324/n332 with dateline lockups ('17 NOVEMBER—YEAR OF THE DEPEND ADULT UNDERGARMENT' / '17 NOV. Y.D.A.U.' as Plex Mono violet band rules); micro-run 325-331 as machine-gun strip (0.5rem air, parenthetical gray); pharma 338-341 as formulary run (amber ® glints).",
+    "ticks": "Dialogue-duet ticks: alternating violet turn-markers (CSS leaders on quote-led paras, no new DOM); dateline lockups with flanking rules; micro-run parenthetical strip; formulary amber ® ticks."
+   },
+   "p2c11": {
+    "anchors": "n349 'Sic.' (p4, 2w -- tersest note, isolated beat); ®-ledger chant 355-362 (p10-p17: Anexsia/SmithKline, Levo-Dromoran/Roche, Numorphan/Du Pont, Perwin NX/Boswell, Chlordiazepoxide/Roche, entry-level C-III, hyoscyamine/Schwarz, methaqualone/Parestol); n365 'Long-Term Institution.' (p20, 3w -- isolated beat); n366 Bloom parody (p21, 87w); n369 Sorkin maps (p25, 168w -- group's only long passage, inset); n379 'See Note 144 supra.' (p35 -- back-pointer, drawer pull); n380-382 media/tennis closers; n384 Lorazepam/Wyeth (p45).",
+    "caption_relationship": "Caption 'Plate G11 · The formulary chant' -- the plate is the shelf; the prose is the chant sung from it.",
+    "color_roles": "Apothecary: formulary amber (#d9a441 at low opacity -- the ONLY amber in the cohort, earned by the pharma subject) on deep shelf-brown black; violet keylines + violet ® glints; n349 'Sic.' tick in deadpan white; the shallow end before the terminus -- warmest ground since G1.",
+    "composition": "Apothecary-shelf plate: a shelf of EIGHT ENGRAVED BOTTLES AND JARS in a row (the ®-ledger run 355-362 made physical), each bottle a different apothecary silhouette (tincture, spansule jar, serum vial, tranq bottle) with its own bordered label cartouche carrying the trademark name (ANEXSIA, LEVO-DROMORAN, NUMORPHAN, PERWIN NX, CHLORDIAZEPOXIDE, HYOSCYAMINE, plus two unlabelled for the non-® entries 360/362 -- their blank labels ARE the joke). ® glints in violet beside each maker's name. Below the shelf: two isolated beats -- 'Sic.' (n349) and 'Long-Term Institution.' (n365) -- as single engraved pills on the shelf edge. Bottom cartouche: 'FORMULARY FILE · 40 NOTES · MEDIAN 16W'.",
+    "elements": [
+     "8 apothecary bottles/jars, distinct silhouettes, labeled cartouches",
+     "violet ® glints + maker lines (SmithKline, Roche, Du Pont, Boswell, Schwarz)",
+     "2 blank-label bottles (entries 360/362 -- the visual joke)",
+     "2 engraved pills on shelf edge ('Sic.' / 'Long-Term Institution.')",
+     "shelf plank + bracket hatch",
+     "Sorkin-maps inset tick (tiny folded-map glyph, n369)"
+    ],
+    "layout_800x450": "Shelf plank y300-320 spanning x30-770; 8 bottles x40-760 (each ~85px wide, heights varying 120-180px, y140-300); label cartouches centered per bottle; pills on shelf edge x120 + x660, y330; cartouche band y390-450.",
+    "motif": "formulary-ledger",
+    "reading_treatment": "Index-card cadence: tightest inter-note air in the cohort (0.65rem); ®-run kept unbroken (no insertions); one-line notes n349/n365 isolated with 1.4rem air above/below (the beats need silence); n369 maps-note as bounded inset; n379 back-pointer as drawer pull.",
+    "ticks": "Trademark-chant ticks: violet ® glints stay inline (prose text), margin carries NO pills in the chant (restraint -- the chant must not be interrupted); pills resume for n379 + lettered sub-notes."
+   },
+   "p2c12": {
+    "anchors": "n385 Doryx/Cruise missile (p0, 13w); n386 Nalaxone/Exocet missile (p1, 14w); n387 Sunshine/Talwin-PX/Day-Glo serum (p2, 33w) + sub-note a (Ponstel/nuclear-grade Midol, p3); n388 Talwin-NX (p4, 4w -- last anchored filing); tail p5 ACMÉ colophon ('a proud member of the ACMÉ Family...'); p6 entry 4 (CBC/PATHÉ cartridge summary #911-24-04); p7 entry 5 (Phelps-cults bibliography); p8 entry 6 (Eschaton-variant note); p9 closing ACMÉ colophon.",
+    "caption_relationship": "Caption 'Plate G12 · Last filing; the unnumbered tail' -- the plate is the endmark; the five tail lockups below it are the actual colophon. Plate + tail together are the archive's closing spread.",
+    "color_roles": "Ember: near-black ground, ember-violet rules (violet at 80% + warm underglow via layered strokes), missile ticks in hot white, Day-Glo serum tick in pale yellow-green (the cohort's single brightest pixel -- earned by 'Day-Glo-yellow serum'), ACMÉ colophon in colophon-gray (muted Manila). Surfacing: the ground lightens 6% toward the bottom edge -- the only gradient-direction cue in the cohort, reading as ascent.",
+    "composition": "Endmark plate: a CLOSING SPREAD in miniature. Left half: the last filing -- an engraved Talwin-NX serum vial (n388) lying on its side beside two missile ticks (Cruise n385 / Exocet n386, tiny engraved darts) and a Day-Glo serum drop (n387, the bright pixel). Right half: the unnumbered tail preview -- five stacked colophon lockup bands (ACMÉ / cartridge / bibliography / variant / ACMÉ), each a distinct ruled band in miniature, like a printer's specimen of the five tail treatments. Center: the endmark device -- a violet '❦'-class fleuron drawn as an engraved annular-ring knot (no emoji: pure stroke geometry), marking the archive's end. Bottom cartouche: 'TERMINUS FILE · 4 NOTES + 5 UNNUMBERED · END OF PART II'.",
+    "elements": [
+     "Talwin-NX vial on its side + 2 missile darts + Day-Glo serum drop",
+     "5 miniature tail lockup bands (specimen stack)",
+     "annular-ring endmark fleuron (stroke geometry, violet)",
+     "ember double-rule frame (violet + warm under-stroke)",
+     "ground lightening toward bottom (surfacing cue)"
+    ],
+    "layout_800x450": "Left field x30-370 (vial horizontal center y200, darts above, serum drop below); center fleuron x400, y200 (90px); right field x440-770 (5 bands, 56px each, y100-380); cartouche y390-450.",
+    "motif": "terminus-colophon",
+    "reading_treatment": "Endmark cadence: notes breathe wide (1.5rem air), then a colophon rule (double violet hairline, full measure), then the five tail paras in five DISTINCT unnumbered lockups (see tail_lockups): ACMÉ colophon / cartridge-summary / bibliography / variant-note / closing colophon. Prose untouched -- verified author text (TextCurator pp.1225-1229), styled as authored apparatus, never quarantined.",
+    "tail_lockups": [
+     "T1 · ACMÉ colophon (p5): centered Plex Mono small-caps, colophon-gray, flanked by asterisk rules (❋ ── ❋ drawn as strokes) -- the gag-family crest, played straight.",
+     "T2 · Cartridge summary entry 4 (p6): left-ruled mono block (violet left rule, elevated surface) -- reads as a filing slip: 'CBC/PATHÉ 1200h.-0000h. Summary Cartridge #911-24-04'.",
+     "T3 · Phelps-cults bibliography entry 5 (p7): hanging-indent bibliography lockup (0.9em Newsreader, first line outdented, the 40-cult litany flowing as a proper bib entry) -- the longest sentence in the tail, given scholars' measure.",
+     "T4 · Eschaton-variant entry 6 (p8): single-line variant note, italic Newsreader, prefixed by a violet section-mark rule ('§ 6 · VARIANT' margin tag) -- the rules-lawyer's footnote.",
+     "T5 · Closing ACMÉ colophon (p9): mirrors T1 exactly (same lockup, same rules) -- the archive closes its own bracket. Final screen of Part II must feel like surfacing: 3rem air below, then the chapter-end seal."
+    ],
+    "ticks": "No pills in the tail (unnumbered = unaddressed -- the absence of ticks IS the design). Missile/serum ticks live in the plate only."
+   }
+  }
+ }
+}

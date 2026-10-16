@@ -1,0 +1,283 @@
+<!-- Forty Ways: Cohort B (Part III private interior, Ways 12–20 minus prototypes) plates.
+     One symbol per chapter, viewBox 0 0 1200 360. Primitives referenced
+     cross-file via art/facets.svg id refs (reader.js inlines ONLY the matching
+     symbol, so local url()/use would die on clone: S1). Fills ALWAYS
+     fw theme vars so all 8 themes recolor; NO hardcoded colors. Way numeral:
+     text.fw-num painted BEFORE dark occluders (paint order is z-order);
+     only lampblack/gallery/vermilion masses cross Bone strokes (C1);
+     crossings confined to the middle-60% band, first/last strokes clear.
+     C2: every plate a distinct arrangement; p3c5/p3c6 share ONE shard
+     TRANSFORM (the ART-DIRECTION-§5-mandated father/son hinge) with opposite
+     clips, mirrored numerals and disjoint satellites — no shared visible
+     polygon. Grain filters are local per symbol (cross-file filter refs die
+     on clone); opacity <= 0.16; no ochre glow anywhere (S2). -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none" aria-hidden="true">
+  <title>Cohort B facet plates — Ways 12–20 (private interior)</title>
+
+  <!-- p3c2 Way 12: turned shoulder — all mass looks AWAY left, numeral exiled right. -->
+  <symbol id="p3c2" viewBox="0 0 1200 360">
+    <title>Way 12 plate — shoulder mass turned away, numeral exiled right</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(60,50) rotate(-8) scale(2.2,1.3)" fill="var(--fw-slate)" opacity="0.9"/>
+    <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(375,120) rotate(-4) scale(1.7,1.0)" fill="var(--fw-slate)" opacity="0.75"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(500,250) rotate(-6) scale(1.1)" fill="var(--fw-slate)" opacity="0.6"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(660,120) rotate(24) scale(0.9)" fill="var(--fw-bone)" opacity="0.8"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(1130,300) scale(3)" fill="var(--fw-ochre)" opacity="0.5"/>
+    <text class="fw-num" x="880" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">12</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(810,140) rotate(-12) scale(1.5,0.9)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(905,175) rotate(18) scale(1.5,1.0)"/>
+    </g>
+    <g filter="url(#fw-b12-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b12-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p3c3 Way 13: bared edge — sharpest angles in the book; blades bare
+       left-to-right, the fourth points BACK (war cuts both ways); slate tooth
+       grounds the cost of war. Lampblack bed for maximum attack. -->
+  <symbol id="p3c3" viewBox="0 0 1200 360">
+    <title>Way 13 plate — bared vermilion blades, one pointing back</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(80,60) scale(1.6,1.2)" fill="var(--fw-vermilion)"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(60,150) rotate(-8) scale(1.9,1.0)" fill="var(--fw-vermilion)"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(120,230) rotate(6) scale(1.7,1.1)" fill="var(--fw-vermilion)"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(760,200) rotate(180) scale(1.5,1.0)" fill="var(--fw-vermilion)" opacity="0.85"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(980,250) rotate(-20) scale(1.1)" fill="var(--fw-slate)" opacity="0.8"/>
+    <text class="fw-num" x="600" y="310" text-anchor="middle" font-size="230" fill="var(--fw-bone)">13</text>
+    <g fill="var(--fw-vermilion)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(500,150) rotate(-8) scale(1.5,0.7)"/>
+      <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(620,170) rotate(-8) scale(0.9,0.8)"/>
+    </g>
+    <g filter="url(#fw-b13-grain)" opacity="0.12">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b13-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.6"/>
+  </symbol>
+
+  <!-- p3c4 Way 14: dated procession — ledger shards march 1874→1965 ascending
+       left-to-right toward the numeral; the 1940 beat burns vermilion; ochre
+       year ticks bracket the life. -->
+  <symbol id="p3c4" viewBox="0 0 1200 360">
+    <title>Way 14 plate — dated procession marching toward the numeral</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(60,250) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.55"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(160,236) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.7"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(260,222) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.85"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(360,208) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.55"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(460,194) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.7"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(560,180) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.85"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(660,166) scale(0.38,0.8)" fill="var(--fw-vermilion)" opacity="1.0"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(760,152) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.55"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(860,138) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.7"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(960,124) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.85"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(1060,110) scale(0.38,0.8)" fill="var(--fw-bone)" opacity="0.7"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(60,300) scale(0.3,0.12)" fill="var(--fw-ochre)"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(1060,104) scale(0.3,0.12)" fill="var(--fw-ochre)"/>
+    <text class="fw-num" x="975" y="255" text-anchor="middle" font-size="200" fill="var(--fw-bone)">14</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(900,130) rotate(-10) scale(1.2,0.8)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(950,160) rotate(12) scale(1.3,0.9)"/>
+    </g>
+    <g filter="url(#fw-b14-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b14-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+
+  <!-- p3c5 Way 15: split shard (i) — LEFT half of the father/son hinge.
+       THE hinge shard below is BYTE-IDENTICAL in p3c6 (opposite clip). -->
+  <symbol id="p3c5" viewBox="0 0 1200 360">
+    <title>Way 15 plate — left half of the father/son hinge shard</title>
+    <clipPath id="fw-b15-clip"><rect x="0" y="0" width="600" height="360"/></clipPath>
+    <clipPath id="fw-b15-clipR"><rect x="600" y="0" width="600" height="360"/></clipPath>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <g clip-path="url(#fw-b15-clip)"><use href="art/facets.svg#shard-long" xlink:href="art/facets.svg#shard-long" transform="translate(420,120) rotate(-12) scale(2.0,1.4)" fill="var(--fw-ochre)"/></g>
+    <g clip-path="url(#fw-b15-clipR)"><use href="art/facets.svg#shard-long" xlink:href="art/facets.svg#shard-long" transform="translate(420,120) rotate(-12) scale(2.0,1.4)" fill="none" stroke="var(--fw-bone)" stroke-width="1.5" opacity="0.35"/></g>
+    <polyline points="600,150 588,175 606,200 590,225 604,250" fill="none" stroke="var(--fw-bone)" stroke-width="3" opacity="0.9"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(600,205) scale(2.5)" fill="var(--fw-ochre)"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(700,260) rotate(140) scale(1.0)" fill="var(--fw-slate)" opacity="0.7"/>
+    <text class="fw-num" x="330" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">15</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(250,150) scale(1.4,0.9)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(380,155) scale(1.7,1.1)"/>
+    </g>
+    <g filter="url(#fw-b15-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b15-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p3c6 Way 16: split shard (ii) — RIGHT half of the hinge, completed.
+       Hinge shard transform BYTE-IDENTICAL to p3c5; split edge + pin numbers
+       identical so the hinge aligns across the two plates. -->
+  <symbol id="p3c6" viewBox="0 0 1200 360">
+    <title>Way 16 plate — right half of the father/son hinge shard</title>
+    <clipPath id="fw-b16-clip"><rect x="600" y="0" width="600" height="360"/></clipPath>
+    <clipPath id="fw-b16-clipL"><rect x="0" y="0" width="600" height="360"/></clipPath>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(90,50) rotate(-12) scale(1.1,0.8)" fill="var(--fw-slate)" opacity="0.45"/>
+    <g clip-path="url(#fw-b16-clip)"><use href="art/facets.svg#shard-long" xlink:href="art/facets.svg#shard-long" transform="translate(420,120) rotate(-12) scale(2.0,1.4)" fill="var(--fw-ochre)"/></g>
+    <g clip-path="url(#fw-b16-clipL)"><use href="art/facets.svg#shard-long" xlink:href="art/facets.svg#shard-long" transform="translate(420,120) rotate(-12) scale(2.0,1.4)" fill="none" stroke="var(--fw-bone)" stroke-width="1.5" opacity="0.35"/></g>
+    <polyline points="600,150 588,175 606,200 590,225 604,250" fill="none" stroke="var(--fw-bone)" stroke-width="3" opacity="0.9"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(600,205) scale(2.5)" fill="var(--fw-ochre)"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(90,250) scale(0.9,0.5)" fill="var(--fw-bone)" opacity="0.75"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(90,292) rotate(2) scale(0.9,0.5)" fill="var(--fw-slate)" opacity="0.75"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(60,195) scale(2.5)" fill="var(--fw-ochre)" opacity="0.5"/>
+    <text class="fw-num" x="870" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">16</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(790,150) scale(1.4,0.9)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(920,155) scale(1.7,1.1)"/>
+    </g>
+    <g filter="url(#fw-b16-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b16-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p3c8 Way 18: leaking vessel — cracked vermilion vessel center; small
+       ochre inflow against five spilling teeth, the last bleeding off-edge. -->
+  <symbol id="p3c8" viewBox="0 0 1200 360">
+    <title>Way 18 plate — cracked vessel spilling off the plate edge</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(330,90) scale(2.2,1.9)" fill="var(--fw-vermilion)" opacity="0.9"/>
+    <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(360,180) rotate(12) scale(1.8,1.2)" fill="var(--fw-vermilion)" opacity="0.75"/>
+    <use href="art/facets.svg#shard-blade" xlink:href="art/facets.svg#shard-blade" transform="translate(420,140) rotate(78) scale(0.9,0.35)" fill="var(--fw-lampblack)"/>
+    <use href="art/facets.svg#tile-ledger" xlink:href="art/facets.svg#tile-ledger" transform="translate(300,52) scale(0.8,0.3)" fill="var(--fw-ochre)" opacity="0.9"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(700,250) scale(1.2)" fill="var(--fw-vermilion)" opacity="0.9"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(850,270) rotate(30) scale(1.1)" fill="var(--fw-vermilion)" opacity="0.8"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(980,250) rotate(-15) scale(1.0)" fill="var(--fw-vermilion)" opacity="0.85"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(1090,280) rotate(45) scale(0.9)" fill="var(--fw-vermilion)" opacity="0.8"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(1170,240) rotate(20) scale(1.0)" fill="var(--fw-vermilion)" opacity="0.9"/>
+    <text class="fw-num" x="450" y="305" text-anchor="middle" font-size="220" fill="var(--fw-bone)">18</text>
+    <g fill="var(--fw-gallery)">
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(375,140) rotate(-14) scale(1.7,1.0)"/>
+      <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(455,170) rotate(12) scale(1.6,1.0)"/>
+    </g>
+    <g filter="url(#fw-b18-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b18-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p3c9 Way 19: 57 witness tiles — 36 tiles in two flanking banks of 18
+       (synecdoche: each tile a voice; hues cycle so no two adjacent tiles
+       agree). Center aisle x∈[432,768] holds ONLY numeral + occluders.
+       R05/R11/R17 nudged +50 x from the raw jitter table so rot-180 leftward
+       extents clear the 768 aisle edge. -->
+  <symbol id="p3c9" viewBox="0 0 1200 360">
+    <title>Way 19 plate — thirty-six witness tiles in flanking banks</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <!-- LEFT bank row 1 -->
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(14,52) rotate(0) scale(0.5)" fill="var(--fw-ochre)" opacity="0.85"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(93,53) rotate(90) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.6"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(159,62) rotate(180) scale(0.75)" fill="var(--fw-slate)" opacity="0.95"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(225,55) rotate(270) scale(4.5)" fill="var(--fw-bone)" opacity="0.7"/>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(291,56) rotate(15) scale(0.5)" fill="var(--fw-ochre)" opacity="0.5"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(357,57) rotate(-15) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.8"/>
+    <!-- LEFT bank row 2 -->
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(15,160) rotate(0) scale(0.75)" fill="var(--fw-slate)" opacity="0.85"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(94,161) rotate(90) scale(4.5)" fill="var(--fw-bone)" opacity="0.6"/>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(160,162) rotate(180) scale(0.5)" fill="var(--fw-ochre)" opacity="0.95"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(226,163) rotate(270) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.7"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(292,164) rotate(15) scale(0.75)" fill="var(--fw-slate)" opacity="0.5"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(358,165) rotate(-15) scale(4.5)" fill="var(--fw-bone)" opacity="0.8"/>
+    <!-- LEFT bank row 3 -->
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(16,268) rotate(0) scale(0.5)" fill="var(--fw-ochre)" opacity="0.85"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(82,256) rotate(90) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.6"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(161,257) rotate(180) scale(0.75)" fill="var(--fw-slate)" opacity="0.95"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(227,258) rotate(270) scale(4.5)" fill="var(--fw-bone)" opacity="0.7"/>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(293,259) rotate(15) scale(0.5)" fill="var(--fw-ochre)" opacity="0.5"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(359,260) rotate(-15) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.8"/>
+    <!-- RIGHT bank row 1 -->
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(1125,59) rotate(270) scale(0.75)" fill="var(--fw-slate)" opacity="0.7"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(1055,60) rotate(15) scale(4.5)" fill="var(--fw-bone)" opacity="0.5"/>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(985,61) rotate(-15) scale(0.5)" fill="var(--fw-ochre)" opacity="0.8"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(915,62) rotate(0) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.85"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(845,63) rotate(90) scale(0.75)" fill="var(--fw-slate)" opacity="0.6"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(825,64) rotate(180) scale(4.5)" fill="var(--fw-bone)" opacity="0.95"/>
+    <!-- RIGHT bank row 2 -->
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(1126,154) rotate(270) scale(0.5)" fill="var(--fw-ochre)" opacity="0.7"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(1056,155) rotate(15) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.5"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(986,156) rotate(-15) scale(0.75)" fill="var(--fw-slate)" opacity="0.8"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(916,157) rotate(0) scale(4.5)" fill="var(--fw-bone)" opacity="0.85"/>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(846,158) rotate(90) scale(0.5)" fill="var(--fw-ochre)" opacity="0.6"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(826,159) rotate(180) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.95"/>
+    <!-- RIGHT bank row 3 -->
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(1114,262) rotate(270) scale(0.75)" fill="var(--fw-slate)" opacity="0.7"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(1057,263) rotate(15) scale(4.5)" fill="var(--fw-bone)" opacity="0.5"/>
+    <use href="art/facets.svg#tile-square" xlink:href="art/facets.svg#tile-square" transform="translate(987,264) rotate(-15) scale(0.5)" fill="var(--fw-ochre)" opacity="0.8"/>
+    <use href="art/facets.svg#shard-tri" xlink:href="art/facets.svg#shard-tri" transform="translate(917,265) rotate(0) scale(0.5)" fill="var(--fw-vermilion)" opacity="0.85"/>
+    <use href="art/facets.svg#shard-tooth" xlink:href="art/facets.svg#shard-tooth" transform="translate(847,266) rotate(90) scale(0.75)" fill="var(--fw-slate)" opacity="0.6"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(827,267) rotate(180) scale(4.5)" fill="var(--fw-bone)" opacity="0.95"/>
+    <text class="fw-num" x="600" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">19</text>
+    <g fill="var(--fw-lampblack)">
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(515,140) rotate(-14) scale(1.5,0.9)"/>
+      <use href="art/facets.svg#shard-quad" xlink:href="art/facets.svg#shard-quad" transform="translate(615,170) rotate(10) scale(1.3,0.8)"/>
+    </g>
+    <g filter="url(#fw-b19-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b19-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+
+  <!-- p3c10 Way 20: held tear — softest geometry in the book; the tear held
+       clear of the floor, answered by a smaller tear; lampblack ELLIPSE
+       occluders (no angular shards cross the numeral; prototype-p3c7
+       precedent); soft grain variant. -->
+  <symbol id="p3c10" viewBox="0 0 1200 360">
+    <title>Way 20 plate — a held tear answered by a smaller one</title>
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <use href="art/facets.svg#tear" xlink:href="art/facets.svg#tear" transform="translate(760,180) scale(3.2)" fill="var(--fw-slate)" opacity="0.9"/>
+    <use href="art/facets.svg#tear" xlink:href="art/facets.svg#tear" transform="translate(300,230) scale(1.4)" fill="var(--fw-slate)" opacity="0.5"/>
+    <use href="art/facets.svg#point" xlink:href="art/facets.svg#point" transform="translate(950,120) scale(2.0)" fill="var(--fw-ochre)" opacity="0.7"/>
+    <text class="fw-num" x="430" y="300" text-anchor="middle" font-size="220" fill="var(--fw-bone)">20</text>
+    <ellipse cx="395" cy="172" rx="44" ry="32" fill="var(--fw-lampblack)"/>
+    <ellipse cx="502" cy="264" rx="28" ry="24" fill="var(--fw-lampblack)"/>
+    <g filter="url(#fw-b20-grain)" opacity="0.16">
+      <rect x="0" y="0" width="1200" height="360" fill="var(--fw-bone)"/>
+    </g>
+    <filter id="fw-b20-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.22 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+</svg>

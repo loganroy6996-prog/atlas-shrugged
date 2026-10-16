@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" aria-hidden="true">
+<title>Thus Spoke Zarathustra — Solar Gospel seal masters</title>
+<!-- SOLAR GOSPEL seal masters. Owner: ZaraShellEngineer. Status: final v1.
+     12 Contract <symbol>s for the reader.js slot path (A.2: clones symbol
+     children into a fresh <svg>, so symbols are SELF-CONTAINED: no <use>,
+     no cross-symbol references, no external defs) + raw positioned image
+     cells with <view> crops for CSS image-context use (fragments on symbols
+     do NOT crop in image context; the <view> elements below are the only
+     fragment targets in url()).
+     Palette: night #0A0E21 / lapis #1B2350 / solar #E8A93D / ember #C8502E /
+     serpent #7A8B5A / bone #F2E7CF. currentColor = bone in slot context.
+     Z1 firewall: flat engraved line-work only — no gradients, no filters,
+     no glow, no drop-shadow. Legends are the only <text> in this file. -->
+<!-- ============ SLOT SYMBOLS (reader.js A.2 path) ============ -->
+<symbol id="seal-dawn" viewBox="0 0 96 96">
+<title>Dawn-Ring: sun cresting the horizon, rays east-weighted</title>
+<g fill="none" stroke="currentColor">
+<circle cx="48" cy="48" r="44" stroke-width="2.4"/>
+<circle cx="48" cy="48" r="38.5" stroke-width="1" opacity="0.55"/>
+<path d="M12 63a36 36 0 0 0 72 0" stroke-width="1.4" opacity="0.8"/>
+<path d="M20 63a28 28 0 0 1 56 0" stroke-width="2"/>
+</g>
+<path d="M30 63a18 18 0 0 1 36 0z" fill="#E8A93D"/>
+<path d="M48 20v-9M66 25l5-8M30 25l-5-8M79 38l8-4M17 38l-8-4M86 52h9M1 52H10" fill="none" stroke="#E8A93D" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="48" cy="63" r="2.6" fill="#F2E7CF"/>
+<text x="48" y="88" text-anchor="middle" font-family="Cinzel,'Trajan Pro',Georgia,serif" font-size="8" letter-spacing="2.5" fill="#E8A93D">DAWN</text>
+</symbol>
+<symbol id="seal-night" viewBox="0 0 96 96">
+<title>Night-Ring: eclipsed disc with star points</title>
+<g fill="none" stroke="currentColor">
+<circle cx="48" cy="48" r="44" stroke-width="2.4"/>
+<circle cx="48" cy="48" r="38.5" stroke-width="1" opacity="0.55"/>
+<circle cx="48" cy="48" r="24" stroke-width="2"/>
+</g>
+<path d="M48 24a24 24 0 0 1 0 48 17 17 0 0 1 0-48z" fill="#070B1C" stroke="#7A8B5A" stroke-width="1.4"/>
+<circle cx="48" cy="48" r="3" fill="#7A8B5A"/>
+<g stroke="#C9D4E8" stroke-width="1.5" stroke-linecap="round">
+<path d="M48 8v4M48 84v4M8 48h4M84 48h4"/>
+<path d="M20 20l2.8 2.8M73.2 73.2L76 76M76 20l-2.8 2.8M22.8 73.2L20 76"/>
+</g>
+<g fill="#C9D4E8">
+<circle cx="30" cy="12" r="1.2"/><circle cx="66" cy="12" r="1.2"/><circle cx="12" cy="66" r="1.2"/><circle cx="84" cy="66" r="1.2"/>
+</g>
+<text x="48" y="90" text-anchor="middle" font-family="Cinzel,'Trajan Pro',Georgia,serif" font-size="8" letter-spacing="2.5" fill="#C9D4E8">NIGHT</text>
+</symbol>
+<symbol id="seal-zenith" viewBox="0 0 96 96">
+<title>Zenith-Ring: full noon blaze</title>
+<g fill="none" stroke="currentColor">
+<circle cx="48" cy="48" r="44" stroke-width="2.4"/>
+<circle cx="48" cy="48" r="38.5" stroke-width="1" opacity="0.55"/>
+<circle cx="48" cy="48" r="20" stroke-width="2.2"/>
+<circle cx="48" cy="48" r="15" stroke-width="1" opacity="0.7"/>
+</g>
+<circle cx="48" cy="48" r="9" fill="#F5C96B"/>
+<path d="M48 22v-8M48 82v-8M22 48h-8M82 48h-8M29.5 29.5l-5.6-5.6M72.1 72.1l-5.6-5.6M66.5 29.5l5.6-5.6M23.9 72.1l5.6-5.6" fill="none" stroke="#E8A93D" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M48 28.5v3M48 64.5v3M28.5 48h3M64.5 48h3" stroke="#F5C96B" stroke-width="1.4" stroke-linecap="round"/>
+<text x="48" y="90" text-anchor="middle" font-family="Cinzel,'Trajan Pro',Georgia,serif" font-size="8" letter-spacing="2.5" fill="#E8A93D">ZENITH</text>
+</symbol>
+<symbol id="seal-sign" viewBox="0 0 96 96">
+<title>Sign-Ring: ember disc rekindling to gold</title>
+<circle cx="48" cy="48" r="44" fill="none" stroke="currentColor" stroke-width="2.4"/>
+<circle cx="48" cy="48" r="38.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.55"/>
+<circle cx="48" cy="48" r="26" fill="none" stroke="#C8502E" stroke-width="2.4"/>
+<path d="M48 22a26 26 0 0 1 22.5 13" fill="none" stroke="#E8A93D" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="48" cy="48" r="12" fill="none" stroke="#E8A93D" stroke-width="1.4"/>
+<circle cx="48" cy="48" r="4" fill="#E8A93D"/>
+<path d="M48 30v-6M66 38l4.5-4.5M30 38l-4.5-4.5" fill="none" stroke="#E8A93D" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M22 74c8 5 16 7 26 7s18-2 26-7" fill="none" stroke="#7A8B5A" stroke-width="1.8" stroke-linecap="round"/>
+<text x="48" y="90" text-anchor="middle" font-family="Cinzel,'Trajan Pro',Georgia,serif" font-size="8" letter-spacing="2.5" fill="#C8502E">SIGN</text>
+</symbol>
+<symbol id="roundel-sun-serpent" viewBox="0 0 240 240">
+<title>The Sun-Serpent Roundel: the staff-head, a serpent coiled about a sun</title>
+<g fill="none" stroke="currentColor">
+<circle cx="120" cy="120" r="112" stroke-width="3"/>
+<circle cx="120" cy="120" r="104" stroke-width="1.2" opacity="0.6"/>
+<circle cx="120" cy="120" r="62" stroke-width="2.4"/>
+<circle cx="120" cy="120" r="55" stroke-width="1" opacity="0.7"/>
+</g>
+<g fill="none" stroke="#E8A93D" stroke-width="3" stroke-linecap="round">
+<path d="M120 34v-16M120 222v-16M34 120H18M222 120h-16"/>
+<path d="M59 59l-11-11M192 192l-11-11M181 59l11-11M48 192l11-11"/>
+</g>
+<g fill="none" stroke="#E8A93D" stroke-width="1.8" stroke-linecap="round" opacity="0.85">
+<path d="M88 44l-6-13M152 44l6-13M88 196l-6 13M152 196l6 13M44 88l-13-6M196 88l13-6M44 152l-13 6M196 152l13 6"/>
+<path d="M73 73l-8-8M175 175l-8-8M167 73l8-8M65 175l8-8"/>
+</g>
+<circle cx="120" cy="120" r="34" fill="#E8A93D"/>
+<circle cx="120" cy="120" r="34" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="120" cy="120" r="26" fill="none" stroke="#0A0E21" stroke-width="1.4" opacity="0.85"/>
+<circle cx="120" cy="120" r="8" fill="#0A0E21"/>
+<path d="M120 58c34 0 62 28 62 62s-28 62-62 62-62-28-62-62 28-62 62-62zm0 14c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48z" fill="#7A8B5A" opacity="0.92"/>
+<path d="M120 58c34 0 62 28 62 62s-28 62-62 62-62-28-62-62 28-62 62-62z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M120 72c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<path d="M88 92l6 3M80 108l6.5 1.5M80 124l6.5-1.5M88 138l6-3M152 92l-6 3M160 108l-6.5 1.5M160 124l-6.5-1.5M152 138l-6-3M106 80l3 6M134 80l-3 6M106 160l3-6M134 160l-3-6" stroke="#0A0E21" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M120 52c-5 0-9 3.5-9.5 8.5L106 66l4 3 3.5-4.5c1 2.5 3.5 4 6.5 4s5.5-1.5 6.5-4l3.5 4.5 4-3-4.5-5.5C129 55.5 125 52 120 52z" fill="#7A8B5A" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+<circle cx="116.5" cy="59" r="1.3" fill="#0A0E21"/>
+<circle cx="123.5" cy="59" r="1.3" fill="#0A0E21"/>
+<path d="M120 63l-2 3.5h4z" fill="#0A0E21"/>
+<path d="M182 120c8-2 14-8 15-16 2 8-2 16-10 19 6-6 6-14 2-20 0 8-6 15-14 16z" fill="#7A8B5A" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+</symbol>
+<symbol id="mini-dawn" viewBox="0 0 32 32">
+<title>Cresting-sun mini seal</title>
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<path d="M5 20a11 11 0 0 0 22 0" fill="none" stroke="currentColor" stroke-width="1" opacity="0.7"/>
+<path d="M8.5 20a7.5 7.5 0 0 1 15 0z" fill="#E8A93D"/>
+<path d="M16 9V6.4M21 10.5l1.8-2.2M11 10.5l-1.8-2.2M24.5 15l2.6-.7M7.5 15l-2.6-.7" fill="none" stroke="#E8A93D" stroke-width="1.3" stroke-linecap="round"/>
+</symbol>
+<symbol id="mini-night" viewBox="0 0 32 32">
+<title>Eclipsed-ring mini seal</title>
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<circle cx="16" cy="16" r="8" fill="none" stroke="#C9D4E8" stroke-width="1.8"/>
+<path d="M16 8a8 8 0 0 1 0 16 6 6 0 0 1 0-16z" fill="#070B1C"/>
+<circle cx="16" cy="16" r="1.8" fill="#7A8B5A"/>
+<path d="M16 2.5v2M16 27.5v2M2.5 16h2M27.5 16h2" stroke="#C9D4E8" stroke-width="1.2" stroke-linecap="round"/>
+</symbol>
+<symbol id="mini-zenith" viewBox="0 0 32 32">
+<title>Blazing-disc mini seal</title>
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<circle cx="16" cy="16" r="6.5" fill="none" stroke="#E8A93D" stroke-width="1.8"/>
+<circle cx="16" cy="16" r="2.6" fill="#F5C96B"/>
+<path d="M16 5.5V3.5M16 28.5v-2M5.5 16H3.5M28.5 16h-2M8.6 8.6L7.2 7.2M24.8 24.8l-1.4-1.4M23.4 8.6l1.4-1.4M7.2 24.8l1.4-1.4" stroke="#E8A93D" stroke-width="1.3" stroke-linecap="round"/>
+</symbol>
+<symbol id="mini-ember" viewBox="0 0 32 32">
+<title>Ember-ring mini seal</title>
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<circle cx="16" cy="16" r="8" fill="none" stroke="#C8502E" stroke-width="2"/>
+<path d="M16 8a8 8 0 0 1 6.9 4" fill="none" stroke="#E8A93D" stroke-width="2" stroke-linecap="round"/>
+<circle cx="16" cy="16" r="2.4" fill="#E8A93D"/>
+</symbol>
+<symbol id="mini-lion-doves" viewBox="0 0 32 32">
+<title>Lion-and-doves finale mini seal</title>
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<path d="M16 10.5c2.3 0 3.8 1.3 4.4 3.2 1.7.6 2.7 2.1 2.5 3.8-.2 1.7-1.5 2.9-3.2 3-.8 1.4-2.3 2.3-3.7 2.3s-2.9-0.9-3.7-2.3c-1.7-.1-3-1.3-3.2-3-.2-1.7.8-3.2 2.5-3.8.6-1.9 2.1-3.2 4.4-3.2z" fill="none" stroke="#E8A93D" stroke-width="1.3" stroke-linejoin="round"/>
+<circle cx="14.4" cy="15.4" r="0.9" fill="#E8A93D"/>
+<circle cx="17.6" cy="15.4" r="0.9" fill="#E8A93D"/>
+<path d="M16 17.2l-1 1.4h2z" fill="#E8A93D"/>
+<path d="M7.5 8.5l2.4-1.6 2.4 1.6-2.4-.6zM19.7 8.5l2.4-1.6 2.4 1.6-2.4-.6z" fill="#F2E7CF"/>
+</symbol>
+<symbol id="sun-rule-wide" viewBox="0 0 320 16">
+<title>Sun-rule: opener rule with center sun-dot</title>
+<path d="M8 8h118M194 8h118" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<circle cx="160" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="160" cy="8" r="2" fill="#E8A93D"/>
+<path d="M160 1.5v2M160 12.5v2M153.5 8h-2M168.5 8h-2" fill="none" stroke="#E8A93D" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="8" cy="8" r="1.4" fill="currentColor"/>
+<circle cx="312" cy="8" r="1.4" fill="currentColor"/>
+</symbol>
+<symbol id="festival-rule" viewBox="0 0 320 24">
+<title>Festival double-rule with rose-wreath medallion</title>
+<path d="M8 8h112M200 8h112M8 16h112M200 16h112" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<circle cx="160" cy="12" r="9" fill="none" stroke="#C8502E" stroke-width="1.6"/>
+<circle cx="160" cy="12" r="3.4" fill="#C8502E"/>
+<g fill="none" stroke="#C8502E" stroke-width="1.1">
+<path d="M160 3v-1.5M160 22.5V21M151 12H149.5M170.5 12H169"/>
+<path d="M153.6 5.6l-1-1M167.4 19.4l-1-1M166.4 5.6l1-1M152.6 19.4l1-1"/>
+</g>
+<circle cx="8" cy="12" r="1.4" fill="currentColor"/>
+<circle cx="312" cy="12" r="1.4" fill="currentColor"/>
+</symbol>
+<!-- ============ IMAGE-CONTEXT CELLS (raw positioned art + <view> crops).
+     Cells live on the 640x480 sheet, clear of all <symbol>s (symbols never
+     render inline). Art is DUPLICATED path data (never <use>: a <use>
+     shadow tree resolves against the sheet's own context and cannot be
+     relied on through a fragment crop). Strokes use FIXED bone (#F2E7CF)
+     instead of currentColor: CSS image context inherits no author color. -->
+<g id="cell-mini-dawn-art">
+<rect x="0" y="384" width="64" height="64" fill="none"/>
+<g transform="translate(16 400)">
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="#F2E7CF" stroke-width="1.4"/>
+<path d="M5 20a11 11 0 0 0 22 0" fill="none" stroke="#F2E7CF" stroke-width="1" opacity="0.7"/>
+<path d="M8.5 20a7.5 7.5 0 0 1 15 0z" fill="#E8A93D"/>
+<path d="M16 9V6.4M21 10.5l1.8-2.2M11 10.5l-1.8-2.2M24.5 15l2.6-.7M7.5 15l-2.6-.7" fill="none" stroke="#E8A93D" stroke-width="1.3" stroke-linecap="round"/>
+</g>
+</g>
+<g id="cell-mini-night-art">
+<rect x="64" y="384" width="64" height="64" fill="none"/>
+<g transform="translate(80 400)">
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="#F2E7CF" stroke-width="1.4"/>
+<circle cx="16" cy="16" r="8" fill="none" stroke="#C9D4E8" stroke-width="1.8"/>
+<path d="M16 8a8 8 0 0 1 0 16 6 6 0 0 1 0-16z" fill="#070B1C"/>
+<circle cx="16" cy="16" r="1.8" fill="#7A8B5A"/>
+<path d="M16 2.5v2M16 27.5v2M2.5 16h2M27.5 16h2" stroke="#C9D4E8" stroke-width="1.2" stroke-linecap="round"/>
+</g>
+</g>
+<g id="cell-mini-zenith-art">
+<rect x="128" y="384" width="64" height="64" fill="none"/>
+<g transform="translate(144 400)">
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="#F2E7CF" stroke-width="1.4"/>
+<circle cx="16" cy="16" r="6.5" fill="none" stroke="#E8A93D" stroke-width="1.8"/>
+<circle cx="16" cy="16" r="2.6" fill="#F5C96B"/>
+<path d="M16 5.5V3.5M16 28.5v-2M5.5 16H3.5M28.5 16h-2M8.6 8.6L7.2 7.2M24.8 24.8l-1.4-1.4M23.4 8.6l1.4-1.4M7.2 24.8l1.4-1.4" stroke="#E8A93D" stroke-width="1.3" stroke-linecap="round"/>
+</g>
+</g>
+<g id="cell-mini-ember-art">
+<rect x="192" y="384" width="64" height="64" fill="none"/>
+<g transform="translate(208 400)">
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="#F2E7CF" stroke-width="1.4"/>
+<circle cx="16" cy="16" r="8" fill="none" stroke="#C8502E" stroke-width="2"/>
+<path d="M16 8a8 8 0 0 1 6.9 4" fill="none" stroke="#E8A93D" stroke-width="2" stroke-linecap="round"/>
+<circle cx="16" cy="16" r="2.4" fill="#E8A93D"/>
+</g>
+</g>
+<g id="cell-mini-lion-doves-art">
+<rect x="256" y="384" width="64" height="64" fill="none"/>
+<g transform="translate(272 400)">
+<circle cx="16" cy="16" r="14.5" fill="none" stroke="#F2E7CF" stroke-width="1.4"/>
+<path d="M16 10.5c2.3 0 3.8 1.3 4.4 3.2 1.7.6 2.7 2.1 2.5 3.8-.2 1.7-1.5 2.9-3.2 3-.8 1.4-2.3 2.3-3.7 2.3s-2.9-0.9-3.7-2.3c-1.7-.1-3-1.3-3.2-3-.2-1.7.8-3.2 2.5-3.8.6-1.9 2.1-3.2 4.4-3.2z" fill="none" stroke="#E8A93D" stroke-width="1.3" stroke-linejoin="round"/>
+<circle cx="14.4" cy="15.4" r="0.9" fill="#E8A93D"/>
+<circle cx="17.6" cy="15.4" r="0.9" fill="#E8A93D"/>
+<path d="M16 17.2l-1 1.4h2z" fill="#E8A93D"/>
+<path d="M7.5 8.5l2.4-1.6 2.4 1.6-2.4-.6zM19.7 8.5l2.4-1.6 2.4 1.6-2.4-.6z" fill="#F2E7CF"/>
+</g>
+</g>
+<g id="cell-sun-rule-wide-art">
+<rect x="0" y="448" width="320" height="16" fill="none"/>
+<g transform="translate(0 448)">
+<path d="M8 8h118M194 8h118" fill="none" stroke="#F2E7CF" stroke-width="1.4"/>
+<circle cx="160" cy="8" r="5.5" fill="none" stroke="#F2E7CF" stroke-width="1.6"/>
+<circle cx="160" cy="8" r="2" fill="#E8A93D"/>
+<path d="M160 1.5v2M160 12.5v2M153.5 8h-2M168.5 8h-2" fill="none" stroke="#E8A93D" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="8" cy="8" r="1.4" fill="#F2E7CF"/>
+<circle cx="312" cy="8" r="1.4" fill="#F2E7CF"/>
+</g>
+</g>
+<g id="cell-festival-rule-art">
+<rect x="320" y="440" width="320" height="24" fill="none"/>
+<g transform="translate(320 440)">
+<path d="M8 8h112M200 8h112M8 16h112M200 16h112" fill="none" stroke="#F2E7CF" stroke-width="1.2"/>
+<circle cx="160" cy="12" r="9" fill="none" stroke="#C8502E" stroke-width="1.6"/>
+<circle cx="160" cy="12" r="3.4" fill="#C8502E"/>
+<g fill="none" stroke="#C8502E" stroke-width="1.1">
+<path d="M160 3v-1.5M160 22.5V21M151 12H149.5M170.5 12H169"/>
+<path d="M153.6 5.6l-1-1M167.4 19.4l-1-1M166.4 5.6l1-1M152.6 19.4l1-1"/>
+</g>
+<circle cx="8" cy="12" r="1.4" fill="#F2E7CF"/>
+<circle cx="312" cy="12" r="1.4" fill="#F2E7CF"/>
+</g>
+</g>
+<view id="view-mini-dawn" viewBox="16 400 32 32"/>
+<view id="view-mini-night" viewBox="80 400 32 32"/>
+<view id="view-mini-zenith" viewBox="144 400 32 32"/>
+<view id="view-mini-ember" viewBox="208 400 32 32"/>
+<view id="view-mini-lion-doves" viewBox="272 400 32 32"/>
+<view id="view-sun-rule-wide" viewBox="0 448 320 16"/>
+<view id="view-festival-rule" viewBox="320 440 320 24"/>
+</svg>

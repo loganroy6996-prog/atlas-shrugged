@@ -1,0 +1,500 @@
+/* SPECIE — The Private Banknote · Cohort B (B-dissolution) p1c5/p1c6/p1c8
+   Engineer-authored from design/cohort-b.design.md (§1/§3/§9/§10/§11).
+   Supervisor integrates into theme.css sequentially; this file is the source.
+   Unlayered: wins over @layer shared. Every rule is scoped under
+   body[data-book="sovereign-individual"] (+ [data-art]/[data-chapter] hooks).
+   Shared grammar (opener grid, banner, ornament kills, head tiers, epigraphs,
+   assay channel, turners, reduced-motion, print) ships in cohort-a.css — this
+   file adds ONLY cohort-B ink leads, specials, end-marks, TOC rows, and the
+   guards cohort A does not already cover. No duplicate conflicting rules. */
+
+/* ── §1 per-chapter ink leads (motif key + chapter fallback) ── */
+body[data-book="sovereign-individual"][data-art="rubble-courses"] {
+  --ink-lead: #ece3cc; --ink-second: #b26a3b;
+}
+body[data-book="sovereign-individual"][data-art="severed-belt"] {
+  --ink-lead: #b26a3b; --ink-second: #d2a72c;
+}
+body[data-book="sovereign-individual"][data-art="pareto-spire"] {
+  --ink-lead: #d2a72c; --ink-second: #b26a3b;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c5"] {
+  --ink-lead: #ece3cc; --ink-second: #b26a3b;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c6"] {
+  --ink-lead: #b26a3b; --ink-second: #d2a72c;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c8"] {
+  --ink-lead: #d2a72c; --ink-second: #b26a3b;
+}
+
+/* ── §1 plate var() remaps for the B-dissolution leads. Cohort A covers the
+   dark-family defaults + light/sepia remap; this block re-keys --plate-lead
+   to the B ink arc so the frame/rosette follow the motif without edits. ── */
+body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-art.plate,
+body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-art.plate {
+  --plate-lead: #ece3cc;
+  --plate-second: #b26a3b;
+}
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-art.plate,
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-art.plate {
+  --plate-lead: #b26a3b;
+  --plate-second: #d2a72c;
+}
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-art.plate,
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-art.plate {
+  --plate-lead: #d2a72c;
+  --plate-second: #b26a3b;
+}
+
+/* ── §9.2 p1c5 Fujimori pull [139–140] (1-based): framed pull + attribution.
+   The sv-attr rule from cohort A reunites the attribution (margin-top 0); the
+   pull rule below joins the quote para to it as one block. ── */
+body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-pull,
+body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-pull {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  border-left: 3px solid var(--seal, #9e3b2e);
+  border-top: 1px solid rgba(158, 59, 46, 0.5);
+  border-right: 1px solid rgba(158, 59, 46, 0.5);
+  background: rgba(158, 59, 46, 0.06);
+  padding: 1rem 1.25rem 0.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  max-width: 60ch;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-pull + p.sv-attr,
+body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-pull + p.sv-attr {
+  border-left: 3px solid var(--seal, #9e3b2e);
+  border-right: 1px solid rgba(158, 59, 46, 0.5);
+  border-bottom: 1px solid rgba(158, 59, 46, 0.5);
+  background: rgba(158, 59, 46, 0.06);
+  padding: 0 1.25rem 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+}
+
+/* ── §9.2 p1c6 Flint pull [5] (1-based): copper-rule detonation. ── */
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-pull-flint,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-pull-flint {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  border-top: 2px solid var(--copper-line, #b26a3b);
+  border-bottom: 2px solid var(--copper-line, #b26a3b);
+  padding: 1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+}
+
+/* ── §9.2 quote-pairing reunion: any sv-attr joins its preceding quote para
+   (p1c5 Tilly [97–99], p1c6 CAMPEN [264–266], p1c8 SHERMAN/DAVIDSON). The
+   cohort-A sv-quote-pair pattern generalizes here to all three chapters. ── */
+body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-quote-lede,
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-quote-lede,
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-quote-lede,
+body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-quote-lede,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-quote-lede,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-quote-lede {
+  font-style: italic;
+  text-align: left;
+  border-left: 2px solid var(--copper-line, #b26a3b);
+  background: rgba(210, 167, 44, 0.05);
+  padding: 1rem 1.25rem 0.25rem;
+  margin-bottom: 0;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-quote-lede + p.sv-attr {
+  border-left: 2px solid var(--copper-line, #b26a3b);
+  background: rgba(210, 167, 44, 0.05);
+  padding: 0 1.25rem 1rem;
+  margin-top: 0;
+}
+/* Two-line CAMPEN attribution [265–266]: the pair reads as one block. */
+body[data-book="sovereign-individual"] #chapter-text p.sv-attr + p.sv-attr {
+  margin-top: -1.5rem;
+}
+
+/* ── §9.3 p1c5 date-stamp ledger rows [141,144,148,157] (1-based; the one
+   special). Seal-red stamp frame (graphics) + Plex Mono Bone date numeral:
+   right margin ≥1100px, run-in small-caps prefix below. ── */
+body[data-book="sovereign-individual"] #chapter-text p.sv-stamp {
+  position: relative;
+  text-align: left;
+  border-top: 1px solid rgba(158, 59, 46, 0.55);
+  padding-top: 1rem;
+  margin-bottom: 1.75rem;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-stamp::before {
+  /* Run-in prefix below 1100px: [SEAL 1993]. The margin stamp (≥1100px)
+     is painted by ::after; content set per-row by the data-stamp attr. */
+  content: "[seal " attr(data-stamp) "]";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--bone, #ece3cc);
+  border: 1px solid var(--seal, #9e3b2e);
+  background: rgba(158, 59, 46, 0.08);
+  padding: 0.15rem 0.5rem;
+  width: max-content;
+  margin-bottom: 0.6rem;
+}
+@media (min-width: 1100px) {
+  body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-stamp::before,
+  body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-stamp::before {
+    content: none;
+  }
+  body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-stamp::after,
+  body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-stamp::after {
+    content: attr(data-stamp);
+    position: absolute;
+    right: -7.5rem;
+    top: 1rem;
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    color: var(--bone, #ece3cc);
+    border: 2px solid var(--seal, #9e3b2e);
+    outline: 1px solid var(--seal, #9e3b2e);
+    outline-offset: 3px;
+    padding: 0.35rem 0.6rem;
+    transform: rotate(3deg);
+  }
+}
+/* Minor head [147] "Peru in Ruins" carries a · 1993 stamp suffix (its
+   successor para supplies the date). Scoped to the tagged head only. */
+body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-head-title.sv-stamp-head::after,
+body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-head-title.sv-stamp-head::after {
+  content: " · 1993";
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-variant-caps: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--bone, #ece3cc);
+  border: 1px solid var(--seal, #9e3b2e);
+  padding: 0.05rem 0.4rem;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+/* p1c5 colon lede [119] (1-based): rubric over body paras [120–123], no list
+   restyle — prose untouched. */
+body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-rubric,
+body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-rubric {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--muted-ink, #a89c7c);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  max-width: 68ch;
+}
+
+/* ── §9.3 p1c6 cut-rule at the hinge head [222] (1-based; the one special).
+   Replaces the standard minor-head left tick with a severed-belt rule:
+   copper left half + gold right half + center gap with verdigris ticks
+   (plate geometry §8.6 at reading scale; graphics only). ── */
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-head-title.sv-cut-rule,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-head-title.sv-cut-rule {
+  border-left: none;
+  padding-left: 0;
+  position: relative;
+  padding-top: 1.1rem;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-head-title.sv-cut-rule::before,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-head-title.sv-cut-rule::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12rem;
+  height: 3px;
+  background:
+    linear-gradient(to right, #b26a3b 0 5.4rem, transparent 5.4rem 6.6rem, #d2a72c 6.6rem 12rem);
+}
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-head-title.sv-cut-rule::after,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-head-title.sv-cut-rule::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 5.7rem;
+  width: 6px;
+  height: 9px;
+  border-left: 2px solid #5da88a;
+  border-right: 2px solid #5da88a;
+  transform: rotate(24deg);
+}
+/* p1c6 enumerations (industrial 8 + information 6): Plex Mono Specie run-in
+   numerals; body serif untouched. The classifier tags the numeral-bearing
+   paras; the counter restates the served numeral as a struck marker. */
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-enum,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-enum {
+  position: relative;
+  text-align: left;
+  border-top: 1px solid rgba(178, 106, 59, 0.35);
+  padding: 0.9rem 0 0.9rem 3.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-enum::before,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-enum::before {
+  content: attr(data-enum);
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--specie, #d2a72c);
+  border: 1px solid var(--copper-line, #b26a3b);
+  padding: 0.1rem 0.45rem;
+}
+/* p1c6 imprint trailer [286–287] (1-based): colophon-small, never heads. */
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-trailer,
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-trailer {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--muted-ink, #a89c7c);
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  max-width: 68ch;
+}
+
+/* ── §9.3 p1c8 prize-table [7–10] (1-based; the one special). Tabular
+   numerals + hairline rules; body serif untouched. Row (a) is the pair
+   [7,8] (sv-prize + sv-prize-wrap); rows (b)/(c) are [9]/[10]. ── */
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-prize,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-prize {
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+  border-top: 1px solid rgba(210, 167, 44, 0.4);
+  padding-top: 0.9rem;
+  margin-bottom: 0;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-prize-wrap,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-prize-wrap {
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-prize-row,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-prize-row {
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+  border-top: 1px solid rgba(210, 167, 44, 0.4);
+  padding-top: 0.9rem;
+  margin-bottom: 1.5rem;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-prize-row:last-of-type,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-prize-row:last-of-type {
+  border-bottom: 1px solid rgba(210, 167, 44, 0.4);
+  padding-bottom: 0.9rem;
+}
+/* p1c8 Dray triptych [194–196] (1-based): one indented verse block with Plex
+   Mono attribution, inside the [190]→[197] slack sequence — part of the
+   same special's verse allowance, not a second special. */
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-verse,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-verse {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  border-left: 2px solid var(--specie, #d2a72c);
+  padding: 0.35rem 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2rem;
+  max-width: 56ch;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-verse-first,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-verse-first {
+  border-top: 2px solid var(--specie, #d2a72c);
+  padding-top: 1rem;
+  margin-top: 1.75rem;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-verse-last,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-verse-last {
+  border-bottom: 2px solid var(--specie, #d2a72c);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+/* p1c8 Ammon run-in heads [21,23,25,28] (1-based): bold-lead styling only
+   via first-line emphasis, never head blocks. */
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text p.sv-runin::first-line,
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text p.sv-runin::first-line {
+  font-weight: 600;
+}
+
+/* ── §9.4 end-marks: per-motif assay stamps (override the killed fleuron). ── */
+body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text > p:last-child::after,
+body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text > p:last-child::after {
+  content: "Ⅴ — ASSAYED";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--specie, #d2a72c);
+  margin-top: 3rem;
+  text-align: left;
+}
+body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text > p:last-child::after,
+body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text > p:last-child::after {
+  content: "Ⅵ — ASSAYED";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--specie, #d2a72c);
+  margin-top: 3rem;
+  text-align: left;
+}
+body[data-book="sovereign-individual"][data-art="pareto-spire"] #chapter-text > p:last-child::after,
+body[data-book="sovereign-individual"][data-chapter="p1c8"] #chapter-text > p:last-child::after {
+  content: "Ⅷ — ASSAYED";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--specie, #d2a72c);
+  margin-top: 3rem;
+  text-align: left;
+}
+
+/* ── §9.4 ledger TOC rows (cohort B): Specie numerals + hairlines. Hover
+   strikes the chapter's rosette mini-mark — 5-dot ring / 7-tick split ring /
+   13-dot ring in chapter ink (pure graphics, S3-safe). Current-chapter
+   seal-bar per SR3. ── */
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c5"] .toc-num,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c6"] .toc-num,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c8"] .toc-num {
+  /* S3: TOC numerals stay Specie; chapter ink appears only in the mini-mark. */
+  font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
+  color: var(--specie, #d2a72c);
+}
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c5"],
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c6"],
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c8"] {
+  border-bottom: 1px solid rgba(210, 167, 44, 0.14);
+  position: relative;
+}
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c5"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c6"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c8"] .toc-check {
+  font-size: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  border: 1px solid var(--faint-ink, #6e654e);
+  background: transparent;
+  color: transparent;
+  flex-shrink: 0;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+/* p1c5: 5-dot Bone ring (rubble-courses). Five 2px dots orbit the bead. */
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c5"]:hover .toc-check {
+  border-color: #ece3cc;
+  box-shadow:
+    0 -7px 0 -5px #ece3cc, 7px -2px 0 -5px #ece3cc, 4px 6px 0 -5px #ece3cc,
+    -4px 6px 0 -5px #ece3cc, -7px -2px 0 -5px #ece3cc;
+}
+/* p1c6: 7-tick split ring (severed-belt). Copper west ticks, gold east ticks. */
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c6"]:hover .toc-check {
+  border-color: #b26a3b;
+  border-radius: 50%;
+  box-shadow:
+    -8px -3px 0 -6px #b26a3b, -8px 3px 0 -6px #b26a3b,
+    -3px -8px 0 -6px #b26a3b, -3px 8px 0 -6px #b26a3b,
+    8px -3px 0 -6px #d2a72c, 8px 3px 0 -6px #d2a72c, 3px 0 0 -6px #d2a72c;
+}
+/* p1c8: 13-dot gold ring (pareto-spire). Dense assay orbit. */
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c8"]:hover .toc-check {
+  border-color: #d2a72c;
+  box-shadow:
+    0 -8px 0 -6px #d2a72c, 4px -7px 0 -6px #d2a72c, 7px -4px 0 -6px #d2a72c,
+    8px 0 0 -6px #d2a72c, 7px 4px 0 -6px #d2a72c, 4px 7px 0 -6px #d2a72c,
+    0 8px 0 -6px #d2a72c, -4px 7px 0 -6px #d2a72c, -7px 4px 0 -6px #d2a72c,
+    -8px 0 0 -6px #d2a72c, -7px -4px 0 -6px #d2a72c, -4px -7px 0 -6px #d2a72c,
+    0 0 0 -6px #d2a72c;
+}
+/* Read state keeps the assay tick legible: Specie ring, check restored. */
+body[data-book="sovereign-individual"] .toc-chapter.read[data-chapter-id="p1c5"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter.read[data-chapter-id="p1c6"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter.read[data-chapter-id="p1c8"] .toc-check {
+  font-size: 0.7rem;
+  border-color: var(--specie, #d2a72c);
+  background: var(--specie, #d2a72c);
+  color: #171204;
+  box-shadow: none;
+}
+/* Current-chapter seal-bar per SR3 (cohort-B rows). */
+body[data-book="sovereign-individual"] .toc-chapter.active[data-chapter-id="p1c5"]::before,
+body[data-book="sovereign-individual"] .toc-chapter.active[data-chapter-id="p1c6"]::before,
+body[data-book="sovereign-individual"] .toc-chapter.active[data-chapter-id="p1c8"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  width: 3px;
+  background: var(--seal, #9e3b2e);
+}
+
+/* ── §9.4 assay + turner hooks for cohort rows. The shared channel/fill and
+   engraved turner styles ship in cohort A; these hooks re-key the assay word
+   count voice for B-dissolution rows only. ── */
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c5"] .toc-sub,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c6"] .toc-sub,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c8"] .toc-sub {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── §10 reduced-motion + print guards for cohort-B additions. Cohort A
+   covers the plate/nav/check transitions and the base print treatment; this
+   block extends both to the B specials (stamp, cut-rule, prize, verse). ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="sovereign-individual"] #chapter-text p.sv-stamp::after,
+  body[data-book="sovereign-individual"] #chapter-text p.sv-head-title.sv-cut-rule::before,
+  body[data-book="sovereign-individual"] #chapter-text p.sv-head-title.sv-cut-rule::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media print {
+  body[data-book="sovereign-individual"][data-chapter="p1c5"] #chapter-text p.sv-stamp::after,
+  body[data-book="sovereign-individual"][data-art="rubble-courses"] #chapter-text p.sv-stamp::after {
+    position: static;
+    display: inline-block;
+    transform: none;
+    margin-left: 0.75rem;
+  }
+  body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-head-title.sv-cut-rule::before,
+  body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-head-title.sv-cut-rule::before {
+    background: none;
+    border-top: 2px solid #555;
+  }
+  body[data-book="sovereign-individual"][data-chapter="p1c6"] #chapter-text p.sv-head-title.sv-cut-rule::after,
+  body[data-book="sovereign-individual"][data-art="severed-belt"] #chapter-text p.sv-head-title.sv-cut-rule::after {
+    display: none;
+  }
+}

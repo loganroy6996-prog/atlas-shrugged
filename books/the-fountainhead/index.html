@@ -7,7 +7,7 @@
   <title>The Fountainhead — Ayn Rand</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../shared/reader.css" />
   <link rel="stylesheet" href="theme.css" />
 </head>
@@ -152,10 +152,39 @@
   <script>
     window.BOOK_CONFIG = {
       storageKey: "reader-the-fountainhead",
+      slug: "the-fountainhead",
       libraryHref: "../../index.html",
       tagline: "A novel of architecture and integrity"
     };
   </script>
   <script src="../../shared/reader.js"></script>
+  <!-- FURNACE R2: roman-only giant numeral. Shared reader.js:793 writes the
+       full number_label ("Chapter XV") into #meta-number; the spec's giant
+       numeral is the bare roman ("XV"). Book-owned JS listens for
+       reader:chapter (contract §2) and trims the label to its trailing
+       roman token. Falls back to a MutationObserver if the event ever
+       precedes this script. Touches #meta-number text only. -->
+  <script>
+  (function () {
+    "use strict";
+    var ROMAN = /\b([IVXLCDM]+)\.?$/;
+    function trimNumeral() {
+      var el = document.getElementById("meta-number");
+      if (!el || el.dataset.fhRoman === "1") return;
+      var m = ROMAN.exec(el.textContent.trim());
+      if (m) { el.textContent = m[1]; el.dataset.fhRoman = "1"; }
+    }
+    document.addEventListener("reader:chapter", function () {
+      var el = document.getElementById("meta-number");
+      if (el) delete el.dataset.fhRoman;
+      trimNumeral();
+    });
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", trimNumeral);
+    } else {
+      trimNumeral();
+    }
+  })();
+  </script>
 </body>
 </html>

@@ -1,0 +1,568 @@
+/* SPECIE — The Private Banknote · Cohort A (A-rupture) p1c1–p1c4
+   Engineer-authored from design/cohort-a.design.md (§2/§4/§9/§10/§11).
+   Supervisor integrates into theme.css sequentially; this file is the source.
+   Unlayered: wins over @layer shared. Every rule is scoped under
+   body[data-book="sovereign-individual"] (+ [data-art]/[data-chapter] hooks).
+   Tokens --vault/--ledger/--bone/--muted-ink/--faint-ink/--specie/--copper-line/
+   --verdigris/--seal/--font-display/--font-body/--font-micro come from
+   design/prototype-shell.css; local fallbacks keep this file resilient. */
+
+/* ── §2 per-chapter ink leads (motif key + chapter fallback) ── */
+body[data-book="sovereign-individual"][data-art="asymptote"] {
+  --ink-lead: #d2a72c; --ink-second: #b26a3b;
+}
+body[data-book="sovereign-individual"][data-art="strata"] {
+  --ink-lead: #b26a3b; --ink-second: #d2a72c;
+}
+body[data-book="sovereign-individual"][data-art="furrow"] {
+  --ink-lead: #5da88a; --ink-second: #ece3cc;
+}
+body[data-book="sovereign-individual"][data-art="fallen-capital"] {
+  --ink-lead: #b26a3b; --ink-second: #9e3b2e;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c1"] {
+  --ink-lead: #d2a72c; --ink-second: #b26a3b;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c2"] {
+  --ink-lead: #b26a3b; --ink-second: #d2a72c;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c3"] {
+  --ink-lead: #5da88a; --ink-second: #ece3cc;
+}
+body[data-book="sovereign-individual"][data-chapter="p1c4"] {
+  --ink-lead: #b26a3b; --ink-second: #9e3b2e;
+}
+
+/* ── §2 plate var() remaps. Inlined plate SVGs inherit these from the slot. ── */
+body[data-book="sovereign-individual"] #chapter-art.plate {
+  --plate-bg: #0b100e;
+  --plate-lead: var(--ink-lead, #d2a72c);
+  --plate-second: var(--ink-second, #b26a3b);
+  --plate-bone: #ece3cc;
+  --plate-muted: #a89c7c;
+  --plate-specie: #d2a72c;
+}
+html[data-theme="nocturne"] body[data-book="sovereign-individual"] #chapter-art.plate,
+html[data-theme="verdant"] body[data-book="sovereign-individual"] #chapter-art.plate,
+html[data-theme="oxblood"] body[data-book="sovereign-individual"] #chapter-art.plate,
+html[data-theme="candlelight"] body[data-book="sovereign-individual"] #chapter-art.plate,
+html[data-theme="slate"] body[data-book="sovereign-individual"] #chapter-art.plate {
+  --plate-bg: var(--bg, #0b100e);
+}
+html[data-theme="light"] body[data-book="sovereign-individual"] #chapter-art.plate,
+html[data-theme="sepia"] body[data-book="sovereign-individual"] #chapter-art.plate {
+  --plate-bg: #f2ecda;
+  --plate-lead: #7a5f10;
+  --plate-second: #8a4a24;
+  --plate-bone: #241f12;
+  --plate-muted: #6b5a40;
+  --plate-specie: #7a5f10;
+}
+
+/* ── §4 opener grid: ≥900px plate rail (38/62). ── */
+@media (min-width: 900px) {
+  body[data-book="sovereign-individual"][data-chapter] .reader-body {
+    display: grid;
+    grid-template-columns: minmax(300px, 340px) 1fr;
+    column-gap: 3rem;
+  }
+  body[data-book="sovereign-individual"][data-chapter] #chapter-art.plate {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+    position: static;
+    margin: 0;
+    max-width: none;
+  }
+  body[data-book="sovereign-individual"][data-chapter] #chapter-art.plate svg {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+  body[data-book="sovereign-individual"][data-chapter] .chapter-meta {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    text-align: left;
+  }
+  body[data-book="sovereign-individual"][data-chapter] .meta-rule {
+    justify-content: flex-start;
+  }
+  body[data-book="sovereign-individual"][data-chapter] #chapter-text,
+  body[data-book="sovereign-individual"][data-chapter] .chapter-nav,
+  body[data-book="sovereign-individual"][data-chapter] .chapter-error {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── §4 <900px banner: full-width plate, fixed 320px slice. Never hidden (S1). ── */
+@media (max-width: 899px) {
+  body[data-book="sovereign-individual"][data-chapter] #chapter-art.plate {
+    display: block;
+    width: 100%;
+    height: 320px;
+    margin: 0 0 2rem;
+    overflow: hidden;
+  }
+  body[data-book="sovereign-individual"][data-chapter] #chapter-art.plate svg {
+    width: 100%;
+    height: 320px;
+    max-height: none;
+  }
+  body[data-book="sovereign-individual"][data-chapter] #chapter-art.plate figcaption {
+    display: none;
+  }
+}
+
+/* ── §4 shared-ornament overrides: the plate carries all ornament (S2). ── */
+body[data-book="sovereign-individual"][data-chapter] .chapter-meta::after {
+  display: none;
+  content: none;
+}
+body[data-book="sovereign-individual"][data-chapter] .meta-number::after {
+  content: none;
+}
+body[data-book="sovereign-individual"][data-chapter] .meta-number::before {
+  content: none;
+}
+
+/* ── §9.1 heads (tagged by book JS with sv- classes; prose untouched). ── */
+/* Major tier: caps heads — Bodoni, Specie, copper rule above. S3: Specie carries text. */
+body[data-book="sovereign-individual"] #chapter-text p.sv-head-caps {
+  font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--specie, #d2a72c);
+  border-top: 2px solid var(--copper-line, #b26a3b);
+  padding-top: 0.9rem;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-head-caps::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+/* Minor tier: title heads — Source Serif small caps + copper tick. */
+body[data-book="sovereign-individual"] #chapter-text p.sv-head-title {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.08em;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  border-left: 2px solid var(--copper-line, #b26a3b);
+  padding-left: 0.75rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  max-width: 68ch;
+}
+/* p1c4 quote-head: Bodoni italic display. */
+body[data-book="sovereign-individual"] #chapter-text p.sv-head-quote {
+  font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  max-width: 68ch;
+}
+/* Attributions: Plex Mono muted, reunited with the preceding quote (margin-top 0). */
+body[data-book="sovereign-individual"] #chapter-text p.sv-attr {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--muted-ink, #a89c7c);
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+  max-width: 68ch;
+}
+/* p1c2 enumerators B–E: Plex Mono Specie run-in labels (S3: copper never text). */
+body[data-book="sovereign-individual"] #chapter-text p.sv-enum {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: var(--specie, #d2a72c);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-enum + p {
+  margin-top: 0;
+}
+
+/* ── §9.2 epigraph frames: p1c1[0], p1c2[0–1] only. ── */
+body[data-book="sovereign-individual"] #chapter-text p.sv-epigraph {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  border-top: 1px solid var(--copper-line, #b26a3b);
+  border-bottom: 1px solid var(--copper-line, #b26a3b);
+  padding: 1.1rem 1.25rem;
+  margin: 0 auto 1.5rem;
+  max-width: 56ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-epigraph-attr {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--muted-ink, #a89c7c);
+  border-bottom: 1px solid var(--copper-line, #b26a3b);
+  padding: 0 0.25rem 1rem;
+  margin: -1.5rem auto 2.5rem;
+  max-width: 56ch;
+}
+
+/* ── §9.2 p1c1 pull [66]: framed pull paragraph (CSS-only; prose untouched). ── */
+body[data-book="sovereign-individual"][data-chapter="p1c1"] #chapter-text p.sv-pull,
+body[data-book="sovereign-individual"][data-art="asymptote"] #chapter-text p.sv-pull {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  border-left: 3px solid var(--specie, #d2a72c);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+}
+
+/* ── §9.2 Cohen/Stewart pairing: p1c1[110–111] styles as one blockquote. ── */
+body[data-book="sovereign-individual"] #chapter-text p.sv-quote-pair {
+  font-style: italic;
+  text-align: left;
+  border-left: 2px solid var(--copper-line, #b26a3b);
+  background: rgba(210, 167, 44, 0.05);
+  padding: 1rem 1.25rem 0.25rem;
+  margin-bottom: 0;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-quote-pair + p.sv-attr {
+  border-left: 2px solid var(--copper-line, #b26a3b);
+  background: rgba(210, 167, 44, 0.05);
+  padding: 0 1.25rem 1rem;
+  margin-top: 0;
+}
+
+/* ── §8.2 p1c2 ledger list [71–79]: engraved enumerated rows (CSS counters). ── */
+body[data-book="sovereign-individual"][data-chapter="p1c2"] #chapter-text,
+body[data-book="sovereign-individual"][data-art="strata"] #chapter-text {
+  counter-reset: sv-ledger;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-ledger {
+  counter-increment: sv-ledger;
+  position: relative;
+  text-align: left;
+  border-top: 1px solid rgba(178, 106, 59, 0.45);
+  padding: 0.9rem 0 0.9rem 3.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-ledger:last-of-type {
+  border-bottom: 1px solid rgba(178, 106, 59, 0.45);
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-ledger::before {
+  content: counter(sv-ledger, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--specie, #d2a72c);
+}
+
+/* ── §8.3 p1c3 tech-card [91]: verdigris left rule, flat ground. ── */
+body[data-book="sovereign-individual"][data-chapter="p1c3"] #chapter-text p.sv-tech,
+body[data-book="sovereign-individual"][data-art="furrow"] #chapter-text p.sv-tech {
+  border-left: 3px solid var(--verdigris, #5da88a);
+  background: var(--accent-soft, rgba(210, 167, 44, 0.1));
+  padding: 1.1rem 1.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  max-width: 68ch;
+}
+/* §8.3: figures keep body serif with tabular numerals (never whole-para mono). */
+body[data-book="sovereign-individual"][data-chapter="p1c3"] #chapter-text p,
+body[data-book="sovereign-individual"][data-art="furrow"] #chapter-text p {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── §8.4 p1c4 scandal ledger [6–7]: broadsheet rows. ── */
+body[data-book="sovereign-individual"] #chapter-text p.sv-scandal {
+  text-align: left;
+  border-top: 1px solid rgba(178, 106, 59, 0.45);
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-scandal-first::before {
+  content: "The roll call";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted-ink, #a89c7c);
+  margin-bottom: 0.6rem;
+}
+/* ── §8.4 p1c4 ballad broadside [160–163]: verse + attribution in copper frame. ── */
+body[data-book="sovereign-individual"] #chapter-text p.sv-ballad {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  text-align: left;
+  color: var(--bone, #ece3cc);
+  border-left: 2px solid var(--copper-line, #b26a3b);
+  border-right: 2px solid var(--copper-line, #b26a3b);
+  padding: 0.35rem 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 56ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-ballad-first {
+  border-top: 2px solid var(--copper-line, #b26a3b);
+  padding-top: 1rem;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-ballad-last {
+  border-bottom: none;
+  padding-bottom: 0.25rem;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-ballad-last + p.sv-attr {
+  border-left: 2px solid var(--copper-line, #b26a3b);
+  border-right: 2px solid var(--copper-line, #b26a3b);
+  border-bottom: 2px solid var(--copper-line, #b26a3b);
+  padding: 0 1.25rem 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  max-width: 56ch;
+}
+/* ── §8.4 p1c4 etymology gloss [2]: gloss plate. ── */
+body[data-book="sovereign-individual"] #chapter-text p.sv-gloss {
+  text-align: left;
+  border: 1px solid rgba(178, 106, 59, 0.55);
+  background: rgba(178, 106, 59, 0.07);
+  padding: 1.1rem 1.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  max-width: 68ch;
+}
+body[data-book="sovereign-individual"] #chapter-text p.sv-gloss::before {
+  content: "Gloss · politics, 1529";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted-ink, #a89c7c);
+  margin-bottom: 0.6rem;
+}
+
+/* ── §9.3 end-marks: per-motif assay stamps (override the killed fleuron). ── */
+body[data-book="sovereign-individual"][data-art="asymptote"] #chapter-text > p:last-child::after,
+body[data-book="sovereign-individual"][data-chapter="p1c1"] #chapter-text > p:last-child::after {
+  content: "Ⅰ — ASSAYED";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--specie, #d2a72c);
+  margin-top: 3rem;
+  text-align: left;
+}
+body[data-book="sovereign-individual"][data-art="strata"] #chapter-text > p:last-child::after,
+body[data-book="sovereign-individual"][data-chapter="p1c2"] #chapter-text > p:last-child::after {
+  content: "Ⅱ — ASSAYED";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--specie, #d2a72c);
+  margin-top: 3rem;
+  text-align: left;
+}
+body[data-book="sovereign-individual"][data-art="furrow"] #chapter-text > p:last-child::after,
+body[data-book="sovereign-individual"][data-chapter="p1c3"] #chapter-text > p:last-child::after {
+  content: "Ⅲ — ASSAYED";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--specie, #d2a72c);
+  margin-top: 3rem;
+  text-align: left;
+}
+body[data-book="sovereign-individual"][data-art="fallen-capital"] #chapter-text > p:last-child::after,
+body[data-book="sovereign-individual"][data-chapter="p1c4"] #chapter-text > p:last-child::after {
+  content: "Ⅳ — ASSAYED";
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--specie, #d2a72c);
+  margin-top: 3rem;
+  text-align: left;
+}
+
+/* ── §9.4 ledger TOC rows (cohort A): Specie numerals + hairlines (§9.5 assay bar
+   fill + channel and plate-turner buttons are supervisor-owned shared-chrome
+   extensions; cohort rows below carry the per-chapter mini-mark hovers). ── */
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c1"] .toc-num,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c2"] .toc-num,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c3"] .toc-num,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c4"] .toc-num {
+  /* S3: TOC numerals stay Specie; chapter ink appears only in the mini-mark. */
+  font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
+  color: var(--specie, #d2a72c);
+}
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c1"],
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c2"],
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c3"],
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c4"] {
+  border-bottom: 1px solid rgba(210, 167, 44, 0.14);
+  position: relative;
+}
+/* Rosette mini-marks: pure-graphics chapter-ink glyphs struck on hover (S3-safe). */
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c1"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c2"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c3"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c4"] .toc-check {
+  font-size: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  border: 1px solid var(--faint-ink, #6e654e);
+  background: transparent;
+  color: transparent;
+  flex-shrink: 0;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c1"]:hover .toc-check {
+  border-color: #d2a72c;
+  box-shadow: 0 0 0 3px rgba(210, 167, 44, 0.18), 0 0 0 6px rgba(210, 167, 44, 0.08);
+}
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c2"]:hover .toc-check {
+  border-color: #b26a3b;
+  border-radius: 2px;
+  box-shadow: inset 0 5px 0 -3px #b26a3b, inset 0 -5px 0 -3px #b26a3b;
+}
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c3"]:hover .toc-check {
+  border-color: #5da88a;
+  box-shadow: inset 4px 0 0 -2px #5da88a, inset -4px 0 0 -2px #5da88a;
+}
+body[data-book="sovereign-individual"] .toc-chapter[data-chapter-id="p1c4"]:hover .toc-check {
+  border-color: #9e3b2e;
+  box-shadow: 4px 0 0 -2px #b26a3b, -4px 0 0 -2px #b26a3b;
+}
+/* Read state keeps the assay tick legible: Specie ring, check restored. */
+body[data-book="sovereign-individual"] .toc-chapter.read[data-chapter-id="p1c1"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter.read[data-chapter-id="p1c2"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter.read[data-chapter-id="p1c3"] .toc-check,
+body[data-book="sovereign-individual"] .toc-chapter.read[data-chapter-id="p1c4"] .toc-check {
+  font-size: 0.7rem;
+  border-color: var(--specie, #d2a72c);
+  background: var(--specie, #d2a72c);
+  color: #171204;
+  box-shadow: none;
+}
+
+/* ── §9.5 assay progress: thin Specie fill in an engraved Copper channel. ── */
+body[data-book="sovereign-individual"] .progress-track {
+  background: rgba(178, 106, 59, 0.28);
+  border-bottom: 1px solid rgba(178, 106, 59, 0.55);
+}
+body[data-book="sovereign-individual"] .progress-fill {
+  background: var(--specie, #d2a72c);
+}
+body[data-book="sovereign-individual"] .progress-fill::after {
+  background: var(--specie, #d2a72c);
+  border: 1px solid #171204;
+}
+/* Plate turners: engraved prev/next with rosette-tick edges. */
+body[data-book="sovereign-individual"] .chapter-nav .nav-btn {
+  border: 1px solid rgba(178, 106, 59, 0.55);
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-radius: 2px;
+  background: rgba(18, 25, 21, 0.6);
+}
+body[data-book="sovereign-individual"] .chapter-nav .nav-btn:hover:not(:disabled) {
+  border-color: var(--specie, #d2a72c);
+  background: rgba(210, 167, 44, 0.08);
+  transform: translateY(-1px);
+}
+body[data-book="sovereign-individual"] .chapter-nav .nav-label {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted-ink, #a89c7c);
+}
+body[data-book="sovereign-individual"] .chapter-nav .nav-title {
+  font-family: "Bodoni Moda", Didot, "Bodoni MT", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--bone, #ece3cc);
+}
+
+/* ── §10 reduced-motion guard (plates are static line-work; only sweeps move). ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="sovereign-individual"] #chapter-art.plate *,
+  body[data-book="sovereign-individual"] .assay-bar *,
+  body[data-book="sovereign-individual"] .plate-turner,
+  body[data-book="sovereign-individual"] .chapter-nav .nav-btn,
+  body[data-book="sovereign-individual"] .toc-chapter .toc-check {
+    animation: none !important;
+    transition: none !important;
+  }
+  body[data-book="sovereign-individual"] .chapter-nav .nav-btn:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+/* ── §10 print: plates at 60% width, strokes held, captions #555, body 12pt. ── */
+@media print {
+  body[data-book="sovereign-individual"] #chapter-art.plate {
+    width: 60%;
+    margin: 0 auto 1.5rem;
+  }
+  body[data-book="sovereign-individual"] #chapter-art.plate svg {
+    filter: grayscale(1) contrast(1.2);
+    max-height: none;
+    height: auto;
+  }
+  body[data-book="sovereign-individual"] #chapter-art.plate figcaption {
+    display: block;
+    color: #555;
+  }
+  body[data-book="sovereign-individual"] .chapter-text {
+    font-size: 12pt;
+  }
+}
+
+/* ── §11 breakpoints: S6 — at 390px bump title weight, never size. ── */
+@media (max-width: 560px) {
+  body[data-book="sovereign-individual"] .meta-title {
+    font-weight: 700;
+  }
+}

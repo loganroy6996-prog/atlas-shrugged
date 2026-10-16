@@ -1,0 +1,546 @@
+{
+  "books": [
+    {
+      "slug": "atlas-shrugged",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "the-fountainhead",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "beyond-good-and-evil",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "thus-spoke-zarathustra",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "gay-science",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "twilight-of-the-idols",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "will-to-power",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "being-and-time",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 624,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 816,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1008,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "infinite-jest",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "forty-ways-to-look-at-churchill",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "open-letter",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "gentle-introduction",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 640,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 832,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 1024,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    },
+    {
+      "slug": "sovereign-individual",
+      "values": [
+        {
+          "measure": "narrow",
+          "chapter": "p1c1",
+          "readerMax": "40rem",
+          "paragraphWidth": 308,
+          "articleWidth": 720,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "narrow"
+        },
+        {
+          "measure": "standard",
+          "chapter": "p1c1",
+          "readerMax": "52rem",
+          "paragraphWidth": 477.765625,
+          "articleWidth": 912,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "standard"
+        },
+        {
+          "measure": "wide",
+          "chapter": "p1c1",
+          "readerMax": "64rem",
+          "paragraphWidth": 596.8125,
+          "articleWidth": 1104,
+          "viewport": 1920,
+          "overflow": false,
+          "selected": "wide"
+        }
+      ],
+      "increasing": true
+    }
+  ],
+  "screenshotChapter": {
+    "persisted": {
+      "measure": "wide",
+      "chapter": "p1c1",
+      "readerMax": "64rem",
+      "paragraphWidth": 1024,
+      "articleWidth": 1104,
+      "viewport": 1920,
+      "overflow": false
+    },
+    "widths": [
+      {
+        "measure": "narrow",
+        "chapter": "p1c32",
+        "readerMax": "40rem",
+        "paragraphWidth": 640,
+        "articleWidth": 720,
+        "viewport": 1920,
+        "overflow": false,
+        "selected": "narrow"
+      },
+      {
+        "measure": "standard",
+        "chapter": "p1c32",
+        "readerMax": "52rem",
+        "paragraphWidth": 832,
+        "articleWidth": 912,
+        "viewport": 1920,
+        "overflow": false,
+        "selected": "standard"
+      },
+      {
+        "measure": "wide",
+        "chapter": "p1c32",
+        "readerMax": "64rem",
+        "paragraphWidth": 1024,
+        "articleWidth": 1104,
+        "viewport": 1920,
+        "overflow": false,
+        "selected": "wide"
+      }
+    ],
+    "sans": {
+      "measure": "wide",
+      "chapter": "p1c32",
+      "readerMax": "64rem",
+      "paragraphWidth": 1024,
+      "articleWidth": 1104,
+      "viewport": 1920,
+      "overflow": false,
+      "selected": "wide"
+    },
+    "tablet": {
+      "measure": "wide",
+      "chapter": "p1c32",
+      "readerMax": "64rem",
+      "paragraphWidth": 756,
+      "articleWidth": 820,
+      "viewport": 820,
+      "overflow": false,
+      "selected": "wide"
+    },
+    "phone": {
+      "measure": "wide",
+      "chapter": "p1c32",
+      "readerMax": "64rem",
+      "paragraphWidth": 353.21875,
+      "articleWidth": 390,
+      "viewport": 390,
+      "overflow": false,
+      "selected": "wide"
+    }
+  },
+  "errors": []
+}

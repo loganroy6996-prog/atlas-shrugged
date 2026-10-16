@@ -1,0 +1,893 @@
+{
+  "version": 1,
+  "chapters": {
+    "p2c3": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c3",
+      "class": "plate",
+      "motif": "constellation-pins",
+      "caption": "seventy names hung like stars",
+      "part": "II",
+      "order": 3,
+      "way": "3",
+      "title": "Churchill’s Contemporaries: Whom He Knew",
+      "content_kind": "name-list",
+      "palette_role": "bone",
+      "rationale": "Constellation pins: ~70 acquaintances (¶2–36) as a social star-chart on a lampblack night bed. Salon-wall register reading; split continuations ¶10/11 and ¶23/24 glued AS SERVED via label hooks.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": false,
+        "register": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "list-head"
+        },
+        {
+          "index": 2,
+          "role": "list-item"
+        },
+        {
+          "index": 3,
+          "role": "list-item"
+        },
+        {
+          "index": 4,
+          "role": "list-item"
+        },
+        {
+          "index": 5,
+          "role": "list-item"
+        },
+        {
+          "index": 6,
+          "role": "list-item"
+        },
+        {
+          "index": 7,
+          "role": "list-item"
+        },
+        {
+          "index": 8,
+          "role": "list-item"
+        },
+        {
+          "index": 9,
+          "role": "list-item"
+        },
+        {
+          "index": 10,
+          "role": "list-item",
+          "label": "glue-a"
+        },
+        {
+          "index": 11,
+          "role": "list-item",
+          "label": "glue-b"
+        },
+        {
+          "index": 12,
+          "role": "list-item"
+        },
+        {
+          "index": 13,
+          "role": "list-item"
+        },
+        {
+          "index": 14,
+          "role": "list-item"
+        },
+        {
+          "index": 15,
+          "role": "list-item"
+        },
+        {
+          "index": 16,
+          "role": "list-item"
+        },
+        {
+          "index": 17,
+          "role": "list-item"
+        },
+        {
+          "index": 18,
+          "role": "list-item"
+        },
+        {
+          "index": 19,
+          "role": "list-item"
+        },
+        {
+          "index": 20,
+          "role": "list-item"
+        },
+        {
+          "index": 21,
+          "role": "list-item"
+        },
+        {
+          "index": 22,
+          "role": "list-item"
+        },
+        {
+          "index": 23,
+          "role": "list-item",
+          "label": "glue-a"
+        },
+        {
+          "index": 24,
+          "role": "list-item",
+          "label": "glue-b"
+        },
+        {
+          "index": 25,
+          "role": "list-item"
+        },
+        {
+          "index": 26,
+          "role": "list-item"
+        },
+        {
+          "index": 27,
+          "role": "list-item"
+        },
+        {
+          "index": 28,
+          "role": "list-item"
+        },
+        {
+          "index": 29,
+          "role": "list-item"
+        },
+        {
+          "index": 30,
+          "role": "list-item"
+        },
+        {
+          "index": 31,
+          "role": "list-item"
+        },
+        {
+          "index": 32,
+          "role": "list-item"
+        },
+        {
+          "index": 33,
+          "role": "list-item"
+        },
+        {
+          "index": 34,
+          "role": "list-item"
+        },
+        {
+          "index": 35,
+          "role": "list-item"
+        },
+        {
+          "index": 36,
+          "role": "list-item"
+        }
+      ]
+    },
+    "p2c4": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c4",
+      "class": "plate",
+      "motif": "converging-wedge",
+      "caption": "the afternoon of May the twenty-eighth",
+      "part": "II",
+      "order": 4,
+      "way": "4",
+      "title": "Churchill’s Finest Hour—May 28, 1940: The Decisive Moment",
+      "content_kind": "decisive-moment",
+      "palette_role": "ochre/vermilion",
+      "rationale": "Converging wedge: all blades aim at the vermilion afternoon (¶2, ¶9, ¶13). Left-weighted convergence, numeral right — inverse of p2c8. Cabinet vow ¶16 and beaches peroration ¶21 as speeches, confidential memo ¶18 as memo slip, wept coda ¶22, never-surrender thesis ¶23.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 15,
+          "role": "setup"
+        },
+        {
+          "index": 16,
+          "role": "speech"
+        },
+        {
+          "index": 18,
+          "role": "memo"
+        },
+        {
+          "index": 20,
+          "role": "setup"
+        },
+        {
+          "index": 21,
+          "role": "speech"
+        },
+        {
+          "index": 22,
+          "role": "coda"
+        },
+        {
+          "index": 23,
+          "role": "thesis"
+        }
+      ]
+    },
+    "p2c5": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c5",
+      "class": "plate",
+      "motif": "balanced-scales",
+      "caption": "for and against, in perfect balance",
+      "part": "II",
+      "order": 5,
+      "way": "5",
+      "title": "Churchill as Leader: Suited to High Office?",
+      "content_kind": "debate-diptych",
+      "palette_role": "bone",
+      "rationale": "Balanced scales: equipoise diptych — the book's only symmetric plate. For (¶0–6) vs Against (¶7–12) with opposing verdict plaques ¶6 / ¶12.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": false,
+        "diptych": true
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "head",
+          "label": "side-a"
+        },
+        {
+          "index": 1,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 2,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 3,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 4,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 5,
+          "role": "prose",
+          "label": "side-a"
+        },
+        {
+          "index": 6,
+          "role": "verdict",
+          "label": "side-a"
+        },
+        {
+          "index": 7,
+          "role": "head",
+          "label": "side-b"
+        },
+        {
+          "index": 8,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 9,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 10,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 11,
+          "role": "prose",
+          "label": "side-b"
+        },
+        {
+          "index": 12,
+          "role": "verdict",
+          "label": "side-b"
+        }
+      ]
+    },
+    "p2c6": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c6",
+      "class": "plate",
+      "motif": "type-as-shards",
+      "caption": "words are the only things which last for ever",
+      "part": "II",
+      "order": 6,
+      "way": "6",
+      "title": "Churchill’s Genius with Words: His Greatest Strength",
+      "content_kind": "craft-essay",
+      "palette_role": "ochre",
+      "rationale": "Type-as-shards: letterforms cut into ochre facets — W/O/R for WORDS (¶1, ¶12). Lampblack letters on ochre (~7:1). Japan declaration letter ¶6–10, tools broadcast ¶13, central thesis ¶19, verdict close ¶23.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 6,
+          "role": "letter"
+        },
+        {
+          "index": 7,
+          "role": "letter"
+        },
+        {
+          "index": 8,
+          "role": "letter"
+        },
+        {
+          "index": 9,
+          "role": "letter"
+        },
+        {
+          "index": 10,
+          "role": "letter-signoff"
+        },
+        {
+          "index": 13,
+          "role": "speech"
+        },
+        {
+          "index": 19,
+          "role": "thesis"
+        },
+        {
+          "index": 23,
+          "role": "verdict"
+        }
+      ]
+    },
+    "p2c7": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c7",
+      "class": "plate",
+      "motif": "77-tiles",
+      "caption": "seventy-seven tiles of exact words",
+      "part": "II",
+      "order": 7,
+      "way": "7",
+      "title": "Churchill’s Eloquence: His Exact Words",
+      "content_kind": "quote-flood",
+      "palette_role": "mixed",
+      "rationale": "77 small tiles: eloquence as mosaic — scattered rotated diamonds in mixed hues (not the strict ledger grid of p4c2). Strict setup/quote two-voice with dated rail from data-fw-label dates. Four wartime set-pieces as full-bleed plates: ¶47, ¶51–52, ¶55, ¶58.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": false,
+        "two_voice": true,
+        "dated_rail": true,
+        "set_pieces": [
+          47,
+          51,
+          52,
+          55,
+          58
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "role": "thesis"
+        },
+        {
+          "index": 1,
+          "role": "quote",
+          "label": "1894"
+        },
+        {
+          "index": 2,
+          "role": "quote",
+          "label": "1897"
+        },
+        {
+          "index": 3,
+          "role": "setup"
+        },
+        {
+          "index": 4,
+          "role": "quote"
+        },
+        {
+          "index": 5,
+          "role": "quote"
+        },
+        {
+          "index": 6,
+          "role": "quote",
+          "label": "1907"
+        },
+        {
+          "index": 7,
+          "role": "setup"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        },
+        {
+          "index": 9,
+          "role": "quote"
+        },
+        {
+          "index": 10,
+          "role": "setup",
+          "label": "1908"
+        },
+        {
+          "index": 11,
+          "role": "quote"
+        },
+        {
+          "index": 12,
+          "role": "quote"
+        },
+        {
+          "index": 13,
+          "role": "quote",
+          "label": "1911"
+        },
+        {
+          "index": 14,
+          "role": "quote"
+        },
+        {
+          "index": 15,
+          "role": "quote"
+        },
+        {
+          "index": 16,
+          "role": "quote"
+        },
+        {
+          "index": 17,
+          "role": "quote",
+          "label": "1914–18"
+        },
+        {
+          "index": 18,
+          "role": "quote",
+          "label": "1914–18"
+        },
+        {
+          "index": 19,
+          "role": "quote",
+          "label": "1922"
+        },
+        {
+          "index": 20,
+          "role": "quote",
+          "label": "1932"
+        },
+        {
+          "index": 21,
+          "role": "quote",
+          "label": "1930s"
+        },
+        {
+          "index": 22,
+          "role": "quote"
+        },
+        {
+          "index": 23,
+          "role": "quote"
+        },
+        {
+          "index": 24,
+          "role": "quote"
+        },
+        {
+          "index": 25,
+          "role": "quote",
+          "label": "1935"
+        },
+        {
+          "index": 26,
+          "role": "quote",
+          "label": "1935"
+        },
+        {
+          "index": 27,
+          "role": "quote"
+        },
+        {
+          "index": 28,
+          "role": "setup",
+          "label": "12 Nov 1936"
+        },
+        {
+          "index": 29,
+          "role": "quote"
+        },
+        {
+          "index": 30,
+          "role": "quote"
+        },
+        {
+          "index": 31,
+          "role": "quote",
+          "label": "1936"
+        },
+        {
+          "index": 32,
+          "role": "quote"
+        },
+        {
+          "index": 33,
+          "role": "quote",
+          "label": "1938"
+        },
+        {
+          "index": 34,
+          "role": "quote"
+        },
+        {
+          "index": 35,
+          "role": "setup"
+        },
+        {
+          "index": 36,
+          "role": "quote"
+        },
+        {
+          "index": 37,
+          "role": "quote"
+        },
+        {
+          "index": 38,
+          "role": "quote"
+        },
+        {
+          "index": 39,
+          "role": "quote"
+        },
+        {
+          "index": 40,
+          "role": "quote",
+          "label": "1 Oct 1939"
+        },
+        {
+          "index": 41,
+          "role": "quote",
+          "label": "1 Oct 1939"
+        },
+        {
+          "index": 42,
+          "role": "quote",
+          "label": "Oct 1939"
+        },
+        {
+          "index": 43,
+          "role": "quote",
+          "label": "Jan 1940"
+        },
+        {
+          "index": 44,
+          "role": "quote"
+        },
+        {
+          "index": 45,
+          "role": "quote",
+          "label": "1940"
+        },
+        {
+          "index": 46,
+          "role": "setup",
+          "label": "11 Sept 1940"
+        },
+        {
+          "index": 47,
+          "role": "speech"
+        },
+        {
+          "index": 48,
+          "role": "quote",
+          "label": "Oct 1940"
+        },
+        {
+          "index": 49,
+          "role": "quote"
+        },
+        {
+          "index": 50,
+          "role": "setup",
+          "label": "1940"
+        },
+        {
+          "index": 51,
+          "role": "speech"
+        },
+        {
+          "index": 52,
+          "role": "speech"
+        },
+        {
+          "index": 53,
+          "role": "quote"
+        },
+        {
+          "index": 54,
+          "role": "setup",
+          "label": "22 June 1941"
+        },
+        {
+          "index": 55,
+          "role": "speech"
+        },
+        {
+          "index": 56,
+          "role": "quote"
+        },
+        {
+          "index": 57,
+          "role": "setup",
+          "label": "Dec 1941"
+        },
+        {
+          "index": 58,
+          "role": "speech"
+        },
+        {
+          "index": 59,
+          "role": "quote",
+          "label": "10 Nov 1942"
+        },
+        {
+          "index": 60,
+          "role": "quote",
+          "label": "Nov 1942"
+        },
+        {
+          "index": 61,
+          "role": "quote",
+          "label": "1943"
+        },
+        {
+          "index": 62,
+          "role": "quote",
+          "label": "Aug 1943"
+        },
+        {
+          "index": 63,
+          "role": "quote",
+          "label": "Jan 1945"
+        },
+        {
+          "index": 64,
+          "role": "quote",
+          "label": "1 May 1945"
+        },
+        {
+          "index": 65,
+          "role": "quote",
+          "label": "26 July 1945"
+        },
+        {
+          "index": 66,
+          "role": "quote",
+          "label": "1945"
+        },
+        {
+          "index": 67,
+          "role": "quote",
+          "label": "1945"
+        },
+        {
+          "index": 68,
+          "role": "quote"
+        },
+        {
+          "index": 69,
+          "role": "quote",
+          "label": "9 Aug 1947"
+        },
+        {
+          "index": 70,
+          "role": "quote"
+        },
+        {
+          "index": 71,
+          "role": "quote"
+        },
+        {
+          "index": 72,
+          "role": "quote",
+          "label": "11 Nov 1947"
+        },
+        {
+          "index": 73,
+          "role": "quote"
+        },
+        {
+          "index": 74,
+          "role": "quote",
+          "label": "1953"
+        },
+        {
+          "index": 75,
+          "role": "quote",
+          "label": "1954"
+        },
+        {
+          "index": 76,
+          "role": "quote",
+          "label": "1955"
+        }
+      ]
+    },
+    "p2c8": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c8",
+      "class": "plate",
+      "motif": "three-strokes",
+      "caption": "a cigar, a gesture, a suit of blue",
+      "part": "II",
+      "order": 8,
+      "way": "8",
+      "title": "Churchill in Symbols: Metonymy",
+      "content_kind": "symbol-study",
+      "palette_role": "ochre",
+      "rationale": "Three swift strokes: cigar/V-sign/uniform (¶2, ¶4/5/6) as three PARALLEL calligraphic blades — parallel, not p2c4's convergence. Numeral left, strokes right. Emblem tags on ¶4/5/6 plus ¶9 drink as fourth tag; thesis ¶2; coda ¶10.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true,
+        "emblems": true
+      },
+      "paragraphs": [
+        {
+          "index": 2,
+          "role": "thesis"
+        },
+        {
+          "index": 4,
+          "role": "symbol",
+          "label": "Cigar"
+        },
+        {
+          "index": 5,
+          "role": "symbol",
+          "label": "V Sign"
+        },
+        {
+          "index": 6,
+          "role": "symbol",
+          "label": "Siren Suit"
+        },
+        {
+          "index": 9,
+          "role": "symbol",
+          "label": "Drink"
+        },
+        {
+          "index": 10,
+          "role": "coda"
+        }
+      ]
+    },
+    "p2c9": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c9",
+      "class": "plate",
+      "motif": "word-stone",
+      "caption": "true, like a ship's compass",
+      "part": "II",
+      "order": 9,
+      "way": "9",
+      "title": "Churchill, True: In a Single Word",
+      "content_kind": "single-word",
+      "palette_role": "bone",
+      "rationale": "One word-stone: True single engraved block (¶1, ¶6). Bone block and Bone numeral kept DISJOINT — number left, stone right. Oaken Heart quotations ¶5–9 as engraved blocks, Shakespeare verse ¶4 as centered inscription, lead ¶3 as setup.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 3,
+          "role": "setup"
+        },
+        {
+          "index": 4,
+          "role": "verse"
+        },
+        {
+          "index": 5,
+          "role": "quote"
+        },
+        {
+          "index": 6,
+          "role": "quote"
+        },
+        {
+          "index": 7,
+          "role": "quote"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        },
+        {
+          "index": 9,
+          "role": "quote"
+        }
+      ]
+    },
+    "p2c10": {
+      "src": "art/cohort-a.svg",
+      "symbol": "p2c10",
+      "class": "plate",
+      "motif": "grasping-talons",
+      "caption": "nothing else but ambition to cling to",
+      "part": "II",
+      "order": 10,
+      "way": "10",
+      "title": "Churchill’s Desire for Fame: His Motive",
+      "content_kind": "motive-study",
+      "palette_role": "vermilion",
+      "rationale": "Grasping talons: fame-lust shards reach upward, clutching (¶1, ¶4, ¶5). Curved vermilion claws on lampblack — distinct from p2c1's straight ochre monoliths and p2c2's mirror. Vermilion occluders are motif-native. Closes Part II. Thesis ¶1 with vermilion claw-mark, Savrola/Macaulay close ¶8 as quote.",
+      "opener": {
+        "numeral_occluded": true,
+        "plate_min_px": 340,
+        "seal": "II"
+      },
+      "reading": {
+        "drop_cap": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "role": "thesis"
+        },
+        {
+          "index": 8,
+          "role": "quote"
+        }
+      ]
+    }
+  }
+}

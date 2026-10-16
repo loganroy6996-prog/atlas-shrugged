@@ -1,0 +1,962 @@
+{
+ "cohort": "B",
+ "parts": [
+  "part-3"
+ ],
+ "chapters": [
+  {
+   "id": "p3c1",
+   "part": "part-3",
+   "order": 1,
+   "title": "1. The teachers of the purpose of existence.",
+   "word_count": 1239,
+   "weight": "branch+",
+   "rationale": "Fallback: morning altitude \u00d7 branch+ weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "gold letter drop-cap"
+  },
+  {
+   "id": "p3c2",
+   "part": "part-3",
+   "order": 2,
+   "title": "2. Intellectual conscience.",
+   "word_count": 340,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c3",
+   "part": "part-3",
+   "order": 3,
+   "title": "3. Noble and common.",
+   "word_count": 644,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c4",
+   "part": "part-3",
+   "order": 4,
+   "title": "4. What preserves the species.",
+   "word_count": 278,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c5",
+   "part": "part-3",
+   "order": 5,
+   "title": "5. Unconditional duties.",
+   "word_count": 303,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c6",
+   "part": "part-3",
+   "order": 6,
+   "title": "6. Loss of dignity.",
+   "word_count": 165,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c7",
+   "part": "part-3",
+   "order": 7,
+   "title": "7. Something for the industrious.",
+   "word_count": 440,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c8",
+   "part": "part-3",
+   "order": 8,
+   "title": "8. Unconscious virtues.",
+   "word_count": 265,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c9",
+   "part": "part-3",
+   "order": 9,
+   "title": "9. Our eruptions.",
+   "word_count": 154,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c10",
+   "part": "part-3",
+   "order": 10,
+   "title": "10. A kind of atavism.",
+   "word_count": 217,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c11",
+   "part": "part-3",
+   "order": 11,
+   "title": "11. Consciousness (Bewu\u00dftsein)6",
+   "word_count": 295,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c12",
+   "part": "part-3",
+   "order": 12,
+   "title": "12. On the aim of science.",
+   "word_count": 312,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c13",
+   "part": "part-3",
+   "order": 13,
+   "title": "13. On the doctrine of the feeling of power.",
+   "word_count": 558,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c14",
+   "part": "part-3",
+   "order": 14,
+   "title": "14. The things people call love.",
+   "word_count": 611,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c15",
+   "part": "part-3",
+   "order": 15,
+   "title": "15. From a distance.",
+   "word_count": 155,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c16",
+   "part": "part-3",
+   "order": 16,
+   "title": "16. Over the footbridge.",
+   "word_count": 201,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c17",
+   "part": "part-3",
+   "order": 17,
+   "title": "17. Finding a motive for one\u2019s poverty.",
+   "word_count": 97,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c18",
+   "part": "part-3",
+   "order": 18,
+   "title": "18. Ancient pride.",
+   "word_count": 210,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c19",
+   "part": "part-3",
+   "order": 19,
+   "title": "19. Evil.",
+   "word_count": 93,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c20",
+   "part": "part-3",
+   "order": 20,
+   "title": "20. The dignity of foolishness.",
+   "word_count": 108,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c21",
+   "part": "part-3",
+   "order": 21,
+   "title": "21. To the teachers of selflessness.",
+   "word_count": 957,
+   "weight": "branch+",
+   "rationale": "Fallback: morning altitude \u00d7 branch+ weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "gold letter drop-cap"
+  },
+  {
+   "id": "p3c22",
+   "part": "part-3",
+   "order": 22,
+   "title": "22. L\u2019ordre du jour pour le roi.12",
+   "word_count": 416,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c23",
+   "part": "part-3",
+   "order": 23,
+   "title": "23. The signs of corruption.",
+   "word_count": 980,
+   "weight": "branch+",
+   "rationale": "Fallback: morning altitude \u00d7 branch+ weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "gold letter drop-cap"
+  },
+  {
+   "id": "p3c24",
+   "part": "part-3",
+   "order": 24,
+   "title": "24. Different forms of dissatisfaction.",
+   "word_count": 301,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c25",
+   "part": "part-3",
+   "order": 25,
+   "title": "25. Not predestined for knowledge.",
+   "word_count": 129,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c26",
+   "part": "part-3",
+   "order": 26,
+   "title": "26. What is life?",
+   "word_count": 67,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c27",
+   "part": "part-3",
+   "order": 27,
+   "title": "27. The renouncer.",
+   "word_count": 151,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c28",
+   "part": "part-3",
+   "order": 28,
+   "title": "28. Harming with what is best in oneself.",
+   "word_count": 193,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c29",
+   "part": "part-3",
+   "order": 29,
+   "title": "29. The add-on-liars.",
+   "word_count": 122,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c30",
+   "part": "part-3",
+   "order": 30,
+   "title": "30. The comedy of the famous.",
+   "word_count": 230,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c31",
+   "part": "part-3",
+   "order": 31,
+   "title": "31. Trade and nobility.",
+   "word_count": 233,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c32",
+   "part": "part-3",
+   "order": 32,
+   "title": "32. Undesired disciples.",
+   "word_count": 112,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c33",
+   "part": "part-3",
+   "order": 33,
+   "title": "33. Outside the lecture-room.",
+   "word_count": 77,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c34",
+   "part": "part-3",
+   "order": 34,
+   "title": "34. Historia abscondita.20",
+   "word_count": 67,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c35",
+   "part": "part-3",
+   "order": 35,
+   "title": "35. Heresy and witchcraft.",
+   "word_count": 116,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c36",
+   "part": "part-3",
+   "order": 36,
+   "title": "36. Last words.",
+   "word_count": 224,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c37",
+   "part": "part-3",
+   "order": 37,
+   "title": "37. Because of three errors.",
+   "word_count": 130,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c38",
+   "part": "part-3",
+   "order": 38,
+   "title": "38. The explosive ones.",
+   "word_count": 94,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c39",
+   "part": "part-3",
+   "order": 39,
+   "title": "39. Changed taste.",
+   "word_count": 176,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c40",
+   "part": "part-3",
+   "order": 40,
+   "title": "40. On the lack of noble style.",
+   "word_count": 323,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c41",
+   "part": "part-3",
+   "order": 41,
+   "title": "41. Against remorse.",
+   "word_count": 69,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c42",
+   "part": "part-3",
+   "order": 42,
+   "title": "42. Work and boredom.",
+   "word_count": 284,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c43",
+   "part": "part-3",
+   "order": 43,
+   "title": "43. What the laws betray.",
+   "word_count": 263,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c44",
+   "part": "part-3",
+   "order": 44,
+   "title": "44. The supposed motives.",
+   "word_count": 87,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c45",
+   "part": "part-3",
+   "order": 45,
+   "title": "45. Epicurus.34",
+   "word_count": 123,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c46",
+   "part": "part-3",
+   "order": 46,
+   "title": "46. Our amazement.",
+   "word_count": 213,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c47",
+   "part": "part-3",
+   "order": 47,
+   "title": "47. On the suppression of the passions.",
+   "word_count": 218,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c48",
+   "part": "part-3",
+   "order": 48,
+   "title": "48. Knowledge of distress.",
+   "word_count": 462,
+   "weight": "branch",
+   "rationale": "Fallback: morning altitude \u00d7 branch weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "banner",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c49",
+   "part": "part-3",
+   "order": 49,
+   "title": "49. Magnanimity and related things.",
+   "word_count": 258,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c50",
+   "part": "part-3",
+   "order": 50,
+   "title": "50. The argument from growing solitary.",
+   "word_count": 96,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c51",
+   "part": "part-3",
+   "order": 51,
+   "title": "51. The sense of truth.",
+   "word_count": 55,
+   "weight": "seed",
+   "rationale": "Fallback: morning altitude \u00d7 seed weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c52",
+   "part": "part-3",
+   "order": 52,
+   "title": "52. What others know about us.",
+   "word_count": 64,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c53",
+   "part": "part-3",
+   "order": 53,
+   "title": "53. Where the good begins.",
+   "word_count": 111,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c54",
+   "part": "part-3",
+   "order": 54,
+   "title": "54. The consciousness of appearance.",
+   "word_count": 265,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c55",
+   "part": "part-3",
+   "order": 55,
+   "title": "55. The ultimate noblemindedness.",
+   "word_count": 213,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  },
+  {
+   "id": "p3c56",
+   "part": "part-3",
+   "order": 56,
+   "title": "56. The desire for suffering.",
+   "word_count": 231,
+   "weight": "shoot",
+   "rationale": "Fallback: morning altitude \u00d7 shoot weight (cohort B refines with content kinds).",
+   "palette_role": "morning",
+   "motif_asset": "art/part-dividers.svg",
+   "opener": {
+    "treatment": "motif",
+    "symbol": "gs-part-iii",
+    "composition": "part-altitude sprite panel (fallback; cohort-authored tableau replaces)"
+   },
+   "reading_treatment": "foam letter drop-cap"
+  }
+ ],
+ "grammar_notes": "Supervisor fallback map (provisional, pre-cohort-delivery). Cohort lead files design/cohort-<id>.json supersede on matching ids.",
+ "landmarks": []
+}

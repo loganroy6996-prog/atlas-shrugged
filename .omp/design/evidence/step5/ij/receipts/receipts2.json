@@ -1,0 +1,106 @@
+[
+ {
+  "slug": "r4-p1c46-para29-medtick",
+  "chapter": "p1c46",
+  "view": 1440,
+  "info": {
+   "paras": 162,
+   "pTop": 231,
+   "pBottom": 1000,
+   "pH": 769,
+   "ticks": [
+    {
+     "cls": "ij-tick",
+     "text": "◈ 152",
+     "top": 233,
+     "h": 28,
+     "w": 59
+    }
+   ]
+  },
+  "errs": []
+ },
+ {
+  "slug": "r4-p1c46-para37-lowtick",
+  "chapter": "p1c46",
+  "view": 1440,
+  "info": {
+   "paras": 162,
+   "pTop": 539,
+   "pBottom": 1000,
+   "pH": 462,
+   "ticks": [
+    {
+     "cls": "ij-tick ij-tick--low",
+     "text": "◈ 150",
+     "top": 569,
+     "h": 28,
+     "w": 59
+    }
+   ]
+  },
+  "errs": []
+ },
+ {
+  "slug": "r4-p1c44-para20-tick139",
+  "chapter": "p1c44",
+  "view": 1440,
+  "info": {
+   "paras": 46,
+   "pTop": -38,
+   "pBottom": 1000,
+   "pH": 1039,
+   "ticks": [
+    {
+     "cls": "ij-tick ij-tick--low",
+     "text": "◈ 139",
+     "top": -8,
+     "h": 28,
+     "w": 59
+    }
+   ]
+  },
+  "errs": []
+ },
+ {
+  "slug": "r4-p1c41-para26-stack",
+  "chapter": "p1c41",
+  "view": 1440,
+  "info": {
+   "paras": 35,
+   "pTop": 269,
+   "pBottom": 1000,
+   "pH": 731,
+   "ticks": [
+    {
+     "cls": "ij-tick ij-tick--low",
+     "text": "◈ 113 · 114",
+     "top": 299,
+     "h": 28,
+     "w": 107
+    }
+   ]
+  },
+  "errs": []
+ },
+ {
+  "slug": "r3-p1c31-title-390",
+  "chapter": "p1c31",
+  "view": 390,
+  "info": {
+   "paras": 21,
+   "scrollToTop": true
+  },
+  "errs": []
+ },
+ {
+  "slug": "r3-p1c9-title-390",
+  "chapter": "p1c9",
+  "view": 390,
+  "info": {
+   "paras": 20,
+   "scrollToTop": true
+  },
+  "errs": []
+ }
+]

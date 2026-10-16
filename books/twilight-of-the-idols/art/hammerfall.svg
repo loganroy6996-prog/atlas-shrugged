@@ -1,0 +1,337 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-label="Hammerfall cohort emblems: struck-bronze sounding-points for the first four chapters of Twilight of the Idols">
+  <title>Hammerfall cohort emblems — Twilight of the Idols p1c1–p1c4</title>
+  <!-- NOTE: no style element here on purpose: reader.js clones only the addressed
+       symbol into the slot, so defs-level styles would never ship. Every
+       element carries its own presentation attributes with var fallbacks;
+       classes remain as validator and counting hooks only. -->
+  <defs>
+    <clipPath id="hf-mask-clip">
+      <path d="M300 96 C252 96 226 130 224 168 L214 172 L226 184 C222 196 224 208 230 218 C224 236 226 256 240 272 L236 300 L300 300 L300 96 Z"/>
+    </clipPath>
+    <clipPath id="hf-ring-clip-daylight">
+      <rect x="0" y="0" width="300" height="420"/>
+    </clipPath>
+  </defs>
+
+  <!-- ══════════ p1c1 · SOUNDING-FORK · 1 ring ══════════ -->
+  <symbol id="sounding-fork" viewBox="0 0 600 420">
+    <!-- R2-1 recompose (2026-10-15): the ? shadow shrinks to atmosphere (stroke 46→30, -->
+    <!-- opacity .92→.55), the ring pulls fully inside the frame (r=96 at 300,316, -->
+    <!-- nodal gaps top/bottom), the nodal bar docks to the fork stem. T1: still 1 ring. -->
+    <g aria-hidden="true" opacity=".55">
+      <path d="M314 190 C314 158 352 150 352 118 C352 92 330 72 304 72 C278 72 258 92 259 118 C260 132 268 140 279 144 L284 180" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" transform="translate(10,14)"/>
+      <circle cx="304" cy="212" r="15" fill="#000" transform="translate(10,14)"/>
+    </g>
+    <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M316.7 221.5 A96 96 0 0 1 323.2 409.1 M276.8 409.1 A96 96 0 0 1 283.3 221.5"/>
+    <line class="hf-hair" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1" stroke-linecap="round" opacity=".5" x1="204" y1="396" x2="396" y2="396"/>
+    <line class="hf-bronze" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" x1="270" y1="196" x2="330" y2="196"/>
+    <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M270 96 L270 218 C270 244 330 244 330 218 L330 96"/>
+    <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M300 234 L300 308"/>
+    <circle class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="318" r="8"/>
+    <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M262 96 C262 88 278 88 278 96 M322 96 C322 88 338 88 338 96"/>
+    <polygon points="250,330 350,330 338,352 262,352" fill="var(--tw-anvil,#1B1510)" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linejoin="round"/>
+    <g class="hf-bronze" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+      <path d="M300 314 L300 346 M284 322 L316 338 M284 338 L316 322 M288 330 L312 330"/>
+    </g>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="300,330 297,336 301,341 298,347 300,352"/>
+  </symbol>
+
+  <!-- ══════════ p1c2 · FANNED-BARBS · 2 rings · 30 darts ══════════ -->
+  <symbol id="fanned-barbs" viewBox="0 0 600 420">
+    <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M197.2 429.5 A150 150 0 0 1 -71.0 401.3 M-79.2 334.3 A150 150 0 1 1 217.7 376.0"/>
+    <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M17.9 645.4 A300 300 0 0 1 -122.8 120.2 M-12.7 61.6 A300 300 0 0 1 172.6 631.9"/>
+    <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M180 214 Q300 219 420 214"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="70,350 62,358 66,366 58,372"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="70,350 78,357 74,365 80,371"/>
+    <g id="hf-volley" aria-hidden="true">
+      <g class="hf-dart" id="hf-dart-1" data-index="0">
+        <line x1="72.9" y1="356.0" x2="98.8" y2="353.8" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="102.3,353.5 99.0,355.8 95.3,354.1 98.6,351.8"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M70.9 356.2 L65.4,359.7 M70.9 356.2 L64.8,352.1"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-2" data-index="1">
+        <line x1="75.6" y1="347.0" x2="108.3" y2="343.8" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="111.8,343.5 108.6,345.7 105.0,344.2 108.1,341.8"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M73.6 347.2 L68.2,350.9 M73.6 347.2 L67.5,343.2"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-3" data-index="2">
+        <line x1="75.9" y1="343.1" x2="114.9" y2="338.0" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="118.3,337.5 115.4,339.9 111.6,338.6 114.4,336.1"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M73.9 343.4 L68.7,347.3 M73.9 343.4 L67.7,339.5"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-4" data-index="3">
+        <line x1="74.6" y1="344.9" x2="121.1" y2="335.9" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="124.5,335.3 121.8,337.8 118.0,336.6 120.5,334.0"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M72.6 345.2 L67.6,349.4 M72.6 345.2 L66.3,341.4"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-5" data-index="4">
+        <line x1="70.9" y1="349.5" x2="121.8" y2="338.0" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="125.2,337.3 122.6,339.9 118.7,338.8 121.1,336.1"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M68.9 349.9 L64.2,354.3 M68.9 349.9 L62.6,346.0"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-6" data-index="5">
+        <line x1="67.4" y1="348.8" x2="123.7" y2="333.3" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="127.1,332.4 124.7,335.1 120.6,334.2 122.8,331.4"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M65.4 349.3 L61.1,354.0 M65.4 349.3 L59.0,345.2"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-7" data-index="6">
+        <line x1="66.5" y1="344.6" x2="127.5" y2="325.3" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="130.8,324.3 128.7,327.1 124.6,326.4 126.4,323.5"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M64.6 345.2 L60.6,350.2 M64.6 345.2 L58.1,340.9"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-8" data-index="7">
+        <line x1="68.9" y1="343.1" x2="131.2" y2="317.6" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="134.3,316.3 132.6,319.2 128.4,318.9 129.8,316.0"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M67.1 343.9 L63.6,349.2 M67.1 343.9 L58.4,339.0"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-9" data-index="8">
+        <line x1="72.9" y1="346.0" x2="122.7" y2="313.9" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="125.5,312.3 124.3,315.3 120.1,315.5 121.1,312.5"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M71.2 346.9 L68.5,352.6 M71.2 346.9 L61.7,342.8"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-10" data-index="9">
+        <line x1="75.4" y1="350.4" x2="130.1" y2="311.8" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="132.7,310.0 131.9,313.1 127.7,313.6 128.4,310.5"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M73.8 351.5 L71.7,357.3 M73.8 351.5 L62.4,347.1"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-11" data-index="10">
+        <line x1="74.7" y1="352.4" x2="112.9" y2="322.3" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="115.0,320.4 114.7,323.4 110.6,324.1 110.8,321.1"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M73.1 353.6 L71.9,359.6 M73.1 353.6 L61.7,348.6"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-12" data-index="11">
+        <line x1="71.4" y1="350.5" x2="102.8" y2="325.7" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="104.6,323.5 104.7,326.6 100.7,327.8 100.4,324.7"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M69.9 351.9 L69.4,358.0 M69.9 351.9 L58.4,346.3"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-13" data-index="12">
+        <line x1="75.2" y1="353.7" x2="111.6" y2="325.7" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="113.4,323.6 113.4,326.7 109.5,328.0 109.3,324.9"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M73.6 355.1 L73.5,361.2 M73.6 355.1 L62.2,349.0"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-14" data-index="13">
+        <line x1="250.0" y1="210.0" x2="340.0" y2="210.0" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="343.5,210.0 340.0,212.0 336.5,210.0 340.0,208.0"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M248.0 210.0 L242.0,214.0 M248.0 210.0 L242.0,206.0"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-15" data-index="14">
+        <line x1="74.9" y1="353.1" x2="117.7" y2="311.0" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="119.5,308.7 119.7,311.8 116.0,313.5 115.5,310.4"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M73.5 354.7 L74.1,360.8 M73.5 354.7 L62.0,348.1"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-16" data-index="15">
+        <line x1="68.4" y1="348.8" x2="104.2" y2="312.0" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="105.9,309.6 106.1,312.7 102.5,314.6 102.1,311.5"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M67.0 350.5 L68.3,356.5 M67.0 350.5 L55.5,343.4"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-17" data-index="16">
+        <line x1="64.6" y1="343.4" x2="94.9" y2="308.2" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="96.4,305.7 96.9,308.8 93.3,310.9 92.6,307.8"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M63.3 345.2 L65.2,351.0 M63.3 345.2 L51.7,337.6"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-18" data-index="17">
+        <line x1="64.7" y1="343.7" x2="100.3" y2="290.1" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="101.6,287.6 102.2,290.7 98.7,293.0 98.0,289.8"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M63.5 345.6 L66.1,351.2 M63.5 345.6 L51.7,337.2"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-19" data-index="18">
+        <line x1="67.9" y1="348.7" x2="110.0" y2="290.4" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="111.2,287.8 111.9,291.0 108.4,293.3 107.5,290.1"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M66.9 350.7 L69.9,356.0 M66.9 350.7 L54.9,341.6"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-20" data-index="19">
+        <line x1="71.8" y1="354.4" x2="103.1" y2="307.2" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="104.2,304.5 105.0,307.7 101.6,310.2 100.7,307.0"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M70.7 356.4 L74.2,361.5 M70.7 356.4 L58.7,348.8"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-21" data-index="20">
+        <line x1="74.0" y1="356.0" x2="94.9" y2="325.8" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="96.0,323.3 96.9,326.3 93.5,329.0 92.5,326.0"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M72.8 357.9 L76.6,362.7 M72.8 357.9 L61.2,349.7"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-22" data-index="21">
+        <line x1="73.5" y1="352.6" x2="87.2" y2="322.3" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="88.1,319.7 89.2,322.7 85.8,325.5 84.6,322.5"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M72.6 354.5 L76.7,359.1 M72.6 354.5 L61.3,346.0"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-23" data-index="22">
+        <line x1="70.9" y1="346.7" x2="82.5" y2="313.8" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="83.4,311.1 84.5,314.1 81.2,317.0 80.0,314.0"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M70.2 348.6 L74.5,353.0 M70.2 348.6 L59.3,339.8"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-24" data-index="23">
+        <line x1="68.0" y1="344.3" x2="86.6" y2="296.1" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="87.6,293.5 88.6,296.5 85.2,299.4 84.1,296.4"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M67.3 346.3 L71.8,350.5 M67.3 346.3 L56.7,337.1"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-25" data-index="24">
+        <line x1="66.7" y1="346.7" x2="92.8" y2="288.8" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="93.9,286.3 94.8,289.3 91.4,292.2 90.3,289.2"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M66.0 348.6 L70.6,352.7 M66.0 348.6 L55.6,339.2"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-26" data-index="25">
+        <line x1="67.8" y1="351.4" x2="85.5" y2="304.9" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="86.4,302.3 87.5,305.4 84.0,308.2 82.9,305.1"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M67.0 353.3 L71.7,357.3 M67.0 353.3 L56.8,344.0"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-27" data-index="26">
+        <line x1="70.5" y1="354.6" x2="81.9" y2="320.7" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="82.7,318.1 83.9,321.1 80.4,324.0 79.3,321.0"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M69.9 356.5 L74.7,360.3 M69.9 356.5 L60.0,347.0"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-28" data-index="27">
+        <line x1="73.1" y1="354.4" x2="94.3" y2="305.4" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="95.3,302.9 96.3,305.9 92.8,308.7 91.7,305.7"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M72.3 356.3 L77.1,360.0 M72.3 356.3 L62.6,346.7"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-29" data-index="28">
+        <line x1="75.3" y1="354.2" x2="80.1" y2="324.4" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="80.7,321.7 82.1,324.6 78.7,327.5 77.5,324.5"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M74.9 356.2 L79.8,359.5 M74.9 356.2 L65.5,346.9"/>
+      </g>
+      <g class="hf-dart" id="hf-dart-30" data-index="29">
+        <line x1="75.7" y1="356.0" x2="78.8" y2="319.1" class="hf-shaft" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round"/>
+        <polygon class="hf-head" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-width="1.5" stroke-linejoin="round" points="79.1,315.6 80.7,319.2 77.4,322.7 76.1,319.3"/>
+        <path class="hf-fletch" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" d="M75.5 358.0 L80.6,361.1 M75.5 358.0 L66.4,351.2"/>
+      </g>
+    </g>
+  </symbol>
+
+  <!-- ══════════ p1c3 · HEMISECTED-MASK · 3 rings (daylight side) ══════════ -->
+  <symbol id="hemisected-mask" viewBox="0 0 600 420">
+    <!-- R2-7 fix: clips inlined — fillArtSlot splices only the symbol's children, -->
+    <!-- so root-level defs never reach the slot. Same geometry, new local ids. -->
+    <defs>
+      <clipPath id="hf-ring-clip-daylight-in">
+        <rect x="0" y="0" width="300" height="420"/>
+      </clipPath>
+      <clipPath id="hf-mask-clip-in">
+        <path d="M300 96 C252 96 226 130 224 168 L214 172 L226 184 C222 196 224 208 230 218 C224 236 226 256 240 272 L236 300 L300 300 L300 96 Z"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#hf-ring-clip-daylight-in)">
+      <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M224.6 230.8 A90 90 0 0 1 62.1 245.0 M50.2 206.3 A90 90 0 1 1 230.0 200.0"/>
+      <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M145.9 369.9 A170 170 0 0 1 -7.2 115.0 M35.3 66.0 A170 170 0 1 1 225.0 347.2"/>
+      <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M-33.7 379.8 A250 250 0 0 1 183.4 -46.2 M300.7 8.5 A250 250 0 0 1 54.5 434.9"/>
+    </g>
+    <g class="hf-ash" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <line x1="200" y1="120" x2="400" y2="280"/>
+      <line x1="400" y1="120" x2="200" y2="280"/>
+      <circle cx="200" cy="280" r="10"/>
+      <circle cx="400" cy="280" r="10"/>
+      <circle cx="200" cy="120" r="3"/>
+      <circle cx="400" cy="120" r="3"/>
+    </g>
+    <g class="hf-bronze" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <polygon points="20,150 38,153 20,156 2,153"/>
+      <polygon points="45,190 63,193 45,196 27,193"/>
+      <polygon points="70,230 88,233 70,236 52,233"/>
+    </g>
+    <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M300 96 C252 96 226 130 224 168 L214 172 L226 184 C222 196 224 208 230 218 C224 236 226 256 240 272 L236 300 L364 300 L360 272 C374 256 376 236 370 218 C376 208 378 196 374 184 L386 172 L376 168 C374 130 348 96 300 96 Z"/>
+    <g clip-path="url(#hf-mask-clip-in)" class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="195" y1="135" x2="235" y2="95"/>
+      <line x1="195" y1="163" x2="263" y2="95"/>
+      <line x1="195" y1="191" x2="291" y2="95"/>
+      <line x1="195" y1="219" x2="300" y2="114"/>
+      <line x1="195" y1="247" x2="300" y2="142"/>
+      <line x1="195" y1="275" x2="300" y2="170"/>
+      <line x1="195" y1="303" x2="300" y2="198"/>
+      <line x1="221" y1="305" x2="300" y2="226"/>
+    </g>
+    <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M262 240 C258 258 262 274 274 286 M278 244 C276 260 280 274 290 284 M294 246 C294 260 298 272 306 280"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="300,90 294,140 304,180 296,230 302,270 298,300"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="318,140 336,162 330,190 344,214"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="326,220 340,238 336,258"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="314,260 326,276 322,292"/>
+    <rect x="200" y="300" width="200" height="40" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2"/>
+    <text class="hf-text" font-family="Cinzel, 'Cormorant Garamond', serif" x="300" y="316" text-anchor="middle" font-size="10.5" letter-spacing="1" fill="var(--tw-bone,#EDE2CC)" aria-hidden="true">REASON = VIRTUE = HAPPINESS</text>
+    <line class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" x1="330" y1="306" x2="336" y2="322"/>
+    <g aria-hidden="true">
+      <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M430 300 C430 318 444 326 452 326 C460 326 474 318 474 300 M452 326 L452 334 M444 334 L460 334"/>
+      <ellipse cx="452" cy="306" rx="14" ry="4" fill="var(--tw-ember,#B23A2A)"/>
+    </g>
+    <g class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M130 336 L132 318 C134 310 142 308 144 314 L146 322 L158 314 L150 326 C152 332 148 336 142 336 Z"/>
+      <path d="M132 318 C128 312 130 306 136 306 M138 306 C136 302 140 300 142 304"/>
+      <path d="M158 314 C164 308 166 300 162 294 M160 316 C168 312 172 304 170 296"/>
+    </g>
+  </symbol>
+
+  <!-- ══════════ p1c4 · MUMMY-CASE · 4 rings ══════════ -->
+  <symbol id="mummy-case" viewBox="0 0 600 420">
+    <circle cx="300" cy="210" r="200" fill="var(--tw-forge,#100D0A)"/>
+    <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" opacity=".85" pathLength="1" d="M357.5 255.6 A80 80 0 0 1 221.2 186.1 M235.3 153.0 A80 80 0 0 1 375.2 227.4"/>
+    <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M173.9 298.5 A160 160 0 0 1 380.0 61.4 M438.6 120.0 A160 160 0 0 1 220.0 338.6"/>
+    <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M69.3 266.2 A240 240 0 0 1 437.7 3.4 M524.1 114.0 A240 240 0 0 1 116.1 354.3"/>
+    <path class="hf-ring" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1" d="M450.2 482.5 A320 320 0 0 1 -0.7 90.6 M77.7 -30.2 A320 320 0 0 1 545.1 405.7"/>
+    <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M230 360 L230 120 C230 70 370 70 370 120 L370 360 Z"/>
+    <g class="hf-bronze" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <path d="M244 96 C270 116 330 116 356 96"/>
+      <path d="M244 108 C270 128 330 128 356 108"/>
+      <path d="M244 120 C270 140 330 140 356 120"/>
+      <path d="M244 132 C270 152 330 152 356 132"/>
+      <path d="M244 144 C270 164 330 164 356 144"/>
+    </g>
+    <g class="hf-ash" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <line x1="232" y1="176" x2="368" y2="196"/>
+      <line x1="368" y1="210" x2="232" y2="230"/>
+      <line x1="232" y1="244" x2="368" y2="264"/>
+      <line x1="368" y1="278" x2="232" y2="298"/>
+      <line x1="232" y1="312" x2="368" y2="332"/>
+      <line x1="368" y1="346" x2="232" y2="358"/>
+      <line x1="232" y1="160" x2="300" y2="170"/>
+      <line x1="300" y1="336" x2="368" y2="344"/>
+      <line x1="250" y1="358" x2="350" y2="358"/>
+    </g>
+    <g aria-hidden="true">
+      <g>
+        <rect x="255" y="150" width="90" height="26" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <circle cx="300" cy="146" r="5" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <text class="hf-text" font-family="Cinzel, 'Cormorant Garamond', serif" x="300" y="167" text-anchor="middle" font-size="9" letter-spacing="1" fill="var(--tw-ash,#A89A80)" aria-hidden="true">UNITY</text>
+      </g>
+      <g>
+        <rect x="255" y="205" width="90" height="26" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <circle cx="300" cy="201" r="5" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <text class="hf-text" font-family="Cinzel, 'Cormorant Garamond', serif" x="300" y="222" text-anchor="middle" font-size="9" letter-spacing="1" fill="var(--tw-ash,#A89A80)" aria-hidden="true">MATERIALITY</text>
+      </g>
+      <g>
+        <rect x="255" y="260" width="90" height="26" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <circle cx="300" cy="256" r="5" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <text class="hf-text" font-family="Cinzel, 'Cormorant Garamond', serif" x="300" y="277" text-anchor="middle" font-size="9" letter-spacing="1" fill="var(--tw-ash,#A89A80)" aria-hidden="true">SUBSTANCE</text>
+      </g>
+      <g>
+        <rect x="255" y="315" width="90" height="26" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <circle cx="300" cy="311" r="5" fill="none" stroke="var(--tw-ash,#A89A80)" stroke-width="1.5"/>
+        <text class="hf-text" font-family="Cinzel, 'Cormorant Garamond', serif" x="300" y="332" text-anchor="middle" font-size="9" letter-spacing="1" fill="var(--tw-ash,#A89A80)" aria-hidden="true">DURATION</text>
+      </g>
+    </g>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="300,40 312,70 292,100 310,130 294,160 305,180 305,230 296,260 308,290 294,320 300,360"/>
+    <line class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" x1="305" y1="180" x2="295" y2="230"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="306,120 330,140 326,166"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="300,260 278,282 282,304"/>
+    <polyline class="hf-crack" fill="none" stroke="var(--tw-ember,#B23A2A)" stroke-linecap="round" stroke-linejoin="round" points="302,300 322,318 318,340"/>
+    <g aria-hidden="true">
+      <path d="M305 205 C350 190 400 170 430 150 C450 138 462 132 470 140 C478 148 470 160 460 156" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M350 190 C340 176 342 166 354 160 C362 172 360 184 350 190 Z" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2"/>
+      <path d="M384 172 C380 158 386 148 398 146 C404 158 398 170 384 172 Z" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2"/>
+      <path d="M414 156 C414 144 420 136 430 134 C434 146 428 156 414 156 Z" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2"/>
+      <path d="M366 184 C374 194 372 204 360 208 C354 198 358 188 366 184 Z" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2"/>
+      <path d="M400 166 C408 176 406 186 394 190 C388 180 392 170 400 166 Z" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2"/>
+    </g>
+    <g aria-hidden="true">
+      <path class="hf-line" fill="none" stroke="var(--tw-bone,#EDE2CC)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M492 280 C488 296 484 308 478 316 L486 320 C482 326 478 332 480 340"/>
+      <path class="hf-bronze" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" d="M462 300 C446 296 432 288 424 278"/>
+      <path class="hf-bronze" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="2" stroke-linecap="round" d="M464 318 C448 316 434 310 426 302"/>
+    </g>
+    <g class="hf-text" font-family="Cinzel, 'Cormorant Garamond', serif" font-size="22" fill="var(--tw-ash,#A89A80)" opacity=".7" aria-hidden="true">
+      <text x="240" y="392" transform="rotate(70 240 392)" text-anchor="middle" aria-hidden="true">I</text>
+      <text x="300" y="396" transform="rotate(95 300 396)" text-anchor="middle" aria-hidden="true">I</text>
+      <text x="360" y="392" transform="rotate(110 360 392)" text-anchor="middle" aria-hidden="true">I</text>
+    </g>
+  </symbol>
+
+  <!-- ══════════ ARC DIVIDER (p1c3 pivots + p1c4 tablets) ══════════ -->
+  <symbol id="hammerfall-divider" viewBox="0 0 160 24">
+    <path d="M8 21 A76 76 0 0 1 70 6.2 M90 6.2 A76 76 0 0 1 152 21" fill="none" stroke="var(--tw-bronze,#D29A4A)" stroke-width="1.5" stroke-linecap="round" opacity=".65"/>
+  </symbol>
+</svg>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The Fountainhead · Part 2 banner slab (TOOHEY cohort, FURNACE grammar).
+     Original authored SVG. 15 chapter groups; exactly one visible per chapter,
+     toggled by cohort CSS via body[data-chapter]. viewBox 1200x260.
+     Palette: Hearth #17100B, Bone #F6EAD6, Ember #E4572E, Ember-deep #8C3A20,
+     Bronze #C8A06A, Ash #7A6A58, Cinder #3A2C22. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="t2-title">
+  <title id="t2-title">Part Two — Ellsworth M. Toohey — chapter banner</title>
+  <defs>
+    <linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient>
+    <linearGradient id="t2-climax" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E4572E"/>
+      <stop offset="0.5" stop-color="#8C3A20"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient>
+    <!-- Heat-arc numeral fills: authored % per CHAPTERS.md (F7), banked heat -->
+    <linearGradient id="t2-fill-15" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.15" stop-color="#8C3A20"/><stop offset="0.15" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-20" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.2" stop-color="#8C3A20"/><stop offset="0.2" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-25" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.25" stop-color="#8C3A20"/><stop offset="0.25" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-28" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.28" stop-color="#8C3A20"/><stop offset="0.28" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-30" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.3" stop-color="#8C3A20"/><stop offset="0.3" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-32" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.32" stop-color="#8C3A20"/><stop offset="0.32" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-35" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.35" stop-color="#8C3A20"/><stop offset="0.35" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-40" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.4" stop-color="#8C3A20"/><stop offset="0.4" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="t2-fill-45" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.45" stop-color="#8C3A20"/><stop offset="0.45" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient>
+
+  </defs>
+
+  <!-- shared well -->
+  <rect x="0" y="0" width="1200" height="260" fill="var(--fh-hearth-deep, #17100B)"/>
+  <rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/>
+
+  <!-- ══ p2c1 · DRILL · S 15% · DRILL (quarry steel, vertical) ══ -->
+  <g id="t2-c1" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-15" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.15" stop-color="#8C3A20"/><stop offset="0.15" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="880" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="190" fill="url(#t2-fill-15)" stroke="#8C3A20" stroke-width="3">I</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M830 232 A 40 36 0 0 1 910 232"/><path d="M910 232 A 40 36 0 0 1 990 232"/>
+    </g>
+    <line x1="830" y1="232" x2="990" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="870" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="950" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- drill steel biting granite -->
+    <rect x="120" y="30" width="26" height="180" fill="#7A6A58"/>
+    <polygon points="120,210 146,210 133,244" fill="#F6EAD6"/>
+    <rect x="112" y="18" width="42" height="16" fill="#C8A06A"/>
+    <g stroke="#7A6A58" stroke-width="3">
+      <line x1="200" y1="60" x2="420" y2="40"/><line x1="200" y1="120" x2="440" y2="110"/>
+      <line x1="200" y1="180" x2="420" y2="190"/><line x1="200" y1="230" x2="400" y2="244"/>
+    </g>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="480" y="50" width="14" height="170"/><rect x="516" y="50" width="14" height="170"/><rect x="552" y="50" width="14" height="170"/></g><g fill="#8C3A20"><rect x="480" y="46" width="14" height="4"/><rect x="516" y="46" width="14" height="4"/><rect x="552" y="46" width="14" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c2 · GOAL · S 20% · SINGLE-HI (fixed morning line) ══ -->
+  <g id="t2-c2" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-20" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.2" stop-color="#8C3A20"/><stop offset="0.2" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="120" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="170" fill="url(#t2-fill-20)" stroke="#8C3A20" stroke-width="3">II</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M90 232 A 40 36 0 0 1 170 232"/><path d="M170 232 A 40 36 0 0 1 250 232"/>
+    </g>
+    <line x1="90" y1="232" x2="250" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="130" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="210" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- marble slab with manganese veins + folded note -->
+    <rect x="560" y="150" width="260" height="14" fill="#3A2C22"/><rect x="560" y="80" width="260" height="120" fill="#F6EAD6" opacity="0.82"/>
+    <path d="M560 130 L690 112 L820 142" stroke="#7A6A58" stroke-width="3" fill="none"/>
+    <path d="M580 190 L700 160 L820 178" stroke="#7A6A58" stroke-width="3" fill="none"/>
+    <polygon points="820,80 820,124 776,80" fill="#C8A06A"/>
+    <rect x="730" y="140" width="104" height="62" fill="#17100B" opacity="0.88"/><g fill="#7A6A58"><rect x="740" y="152" width="84" height="5"/><rect x="740" y="163" width="84" height="5"/><rect x="740" y="174" width="60" height="5"/></g>
+    <rect x="730" y="140" width="104" height="62" fill="none" stroke="#C8A06A" stroke-width="3"/>
+    <circle cx="826" cy="149" r="5" fill="#8C3A20"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="940" y="80" width="220" height="14"/></g><rect x="940" y="76" width="220" height="4" fill="#8C3A20"/>
+  </g>
+
+  <!-- ══ p2c3 · TRUMPET · H 25% · SPLIT (triumph/shot) ══ -->
+  <g id="t2-c3" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-25" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.25" stop-color="#8C3A20"/><stop offset="0.25" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="800" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="150" fill="url(#t2-fill-25)" stroke="#8C3A20" stroke-width="3">III</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M770 232 A 40 36 0 0 1 850 232"/><path d="M850 232 A 40 36 0 0 1 930 232"/>
+    </g>
+    <line x1="770" y1="232" x2="930" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="810" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="890" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- trumpet bell + blast lines -->
+    <polygon points="120,100 300,70 300,170 120,140" fill="#C8A06A"/>
+    <rect x="300" y="105" width="130" height="20" fill="#C8A06A"/>
+    <circle cx="430" cy="115" r="12" fill="none" stroke="#C8A06A" stroke-width="4"/>
+    <g stroke="#F6EAD6" stroke-width="3">
+      <line x1="470" y1="80" x2="540" y2="60"/><line x1="470" y1="115" x2="550" y2="115"/><line x1="470" y1="150" x2="540" y2="170"/>
+    </g>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="40" y="60" width="14" height="170"/><rect x="76" y="60" width="14" height="170"/></g><g fill="#8C3A20"><rect x="40" y="56" width="14" height="4"/><rect x="76" y="56" width="14" height="4"/></g><g fill="var(--fh-bar-inlay, #100B08)"><rect x="1010" y="60" width="14" height="170"/><rect x="1046" y="60" width="14" height="170"/></g><g fill="#8C3A20"><rect x="1010" y="56" width="14" height="4"/><rect x="1046" y="56" width="14" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c4 · JINGLE · S 20% · HIGHBARS (rhyme lines) · COLD cap ══ -->
+  <g id="t2-c4" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-20" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.2" stop-color="#8C3A20"/><stop offset="0.2" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="120" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="150" fill="url(#t2-fill-20)" stroke="#8C3A20" stroke-width="3">IV</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M90 232 A 40 36 0 0 1 170 232"/><path d="M170 232 A 40 36 0 0 1 250 232"/>
+    </g>
+    <line x1="90" y1="232" x2="250" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="130" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="210" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- black book with scarlet title bar -->
+    <rect x="580" y="50" width="240" height="170" fill="var(--fh-bar-inlay, #100B08)" stroke="#7A6A58" stroke-width="3"/>
+    <rect x="580" y="50" width="18" height="170" fill="#7A6A58"/>
+    <rect x="620" y="90" width="160" height="26" fill="#8C3A20"/>
+    <rect x="620" y="130" width="110" height="10" fill="#7A6A58"/>
+    <rect x="620" y="148" width="140" height="10" fill="#7A6A58"/>
+    <rect x="620" y="166" width="90" height="10" fill="#7A6A58"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="940" y="60" width="220" height="14"/><rect x="940" y="104" width="220" height="14"/><rect x="940" y="148" width="220" height="14"/></g><g fill="#8C3A20"><rect x="940" y="56" width="220" height="4"/><rect x="940" y="100" width="220" height="4"/><rect x="940" y="144" width="220" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c5 · RETURN · H 28% · SINGLE-LO (city ground line) ══ -->
+  <g id="t2-c5" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-28" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.28" stop-color="#8C3A20"/><stop offset="0.28" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="880" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="170" fill="url(#t2-fill-28)" stroke="#8C3A20" stroke-width="3">V</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M830 232 A 40 36 0 0 1 910 232"/><path d="M910 232 A 40 36 0 0 1 990 232"/>
+    </g>
+    <line x1="830" y1="232" x2="990" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="870" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="950" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- skyline slab + return track -->
+    <g fill="#7A6A58">
+      <rect x="330" y="120" width="60" height="110"/><rect x="400" y="90" width="50" height="140"/>
+      <rect x="460" y="130" width="70" height="100"/><rect x="540" y="70" width="55" height="160"/>
+      <rect x="605" y="110" width="65" height="120"/>
+    </g>
+    <path d="M300 90 L700 90 L700 60" stroke="#F6EAD6" stroke-width="4" fill="none"/>
+    <polygon points="700,40 716,62 684,62" fill="#F6EAD6"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="40" y="196" width="220" height="14"/></g><rect x="40" y="192" width="220" height="4" fill="#8C3A20"/>
+  </g>
+
+  <!-- ══ p2c6 · ENRIGHT · S 25% · STRATA (coal seams) ══ -->
+  <g id="t2-c6" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-25" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.25" stop-color="#8C3A20"/><stop offset="0.25" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="110" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="150" fill="url(#t2-fill-25)" stroke="#8C3A20" stroke-width="3">VI</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M90 232 A 40 36 0 0 1 170 232"/><path d="M170 232 A 40 36 0 0 1 250 232"/>
+    </g>
+    <line x1="90" y1="232" x2="250" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="130" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="210" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- coal strata + twin whirlpool spirals -->
+    <g>
+      <rect x="560" y="70" width="300" height="18" fill="var(--fh-bar-inlay, #100B08)" stroke="#7A6A58" stroke-width="3"/>
+      <rect x="560" y="92" width="300" height="18" fill="#3A2C22"/>
+      <rect x="560" y="114" width="300" height="18" fill="var(--fh-bar-inlay, #100B08)" stroke="#7A6A58" stroke-width="3"/>
+      <rect x="560" y="136" width="300" height="18" fill="#7A6A58" opacity="0.5"/>
+    </g>
+    <g fill="none" stroke="#C8A06A" stroke-width="4">
+      <path d="M600 200 a26 26 0 1 1 -26 -26 a18 18 0 1 0 18 18"/>
+      <path d="M760 200 a26 26 0 1 1 -26 -26 a18 18 0 1 0 18 18"/>
+    </g>
+    <circle cx="660" cy="196" r="6" fill="#8C3A20"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="940" y="150" width="200" height="14"/><rect x="940" y="180" width="200" height="14"/><rect x="940" y="210" width="200" height="14"/></g><g fill="#8C3A20"><rect x="940" y="146" width="200" height="4"/><rect x="940" y="176" width="200" height="4"/><rect x="940" y="206" width="200" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c7 · MONUMENT · H 32% · SINGLE-HI (speech line) · COLD cap ══ -->
+  <g id="t2-c7" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-32" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.32" stop-color="#8C3A20"/><stop offset="0.32" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="850" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="130" fill="url(#t2-fill-32)" stroke="#8C3A20" stroke-width="3">VII</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M830 232 A 40 36 0 0 1 910 232"/><path d="M910 232 A 40 36 0 0 1 990 232"/>
+    </g>
+    <line x1="830" y1="232" x2="990" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="870" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="950" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- column clipping crossed by two never-meeting parallels -->
+    <rect x="330" y="50" width="260" height="180" fill="#F6EAD6" opacity="0.12" stroke="#7A6A58" stroke-width="3"/><g fill="#C8A06A"><polygon points="330,50 344,50 330,64"/><polygon points="330,216 344,216 330,230"/><polygon points="576,50 590,50 590,64"/><polygon points="576,216 590,216 590,230"/></g>
+    <g fill="#7A6A58">
+      <rect x="350" y="70" width="220" height="8"/><rect x="350" y="86" width="220" height="8"/>
+      <rect x="350" y="102" width="150" height="8"/>
+    </g>
+    <line x1="330" y1="140" x2="590" y2="140" stroke="#C8A06A" stroke-width="5"/>
+    <line x1="330" y1="185" x2="590" y2="185" stroke="#C8A06A" stroke-width="5"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="40" y="80" width="220" height="14"/></g><rect x="40" y="76" width="220" height="4" fill="#8C3A20"/>
+  </g>
+
+  <!-- ══ p2c8 · BLINDS · S 30% · STRATA (slats over lights) ══ -->
+  <g id="t2-c8" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-30" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.3" stop-color="#8C3A20"/><stop offset="0.3" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="90" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="120" fill="url(#t2-fill-30)" stroke="#8C3A20" stroke-width="3">VIII</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M90 232 A 40 36 0 0 1 170 232"/><path d="M170 232 A 40 36 0 0 1 250 232"/>
+    </g>
+    <line x1="90" y1="232" x2="250" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="130" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="210" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- blind slats over city lights + smoke curl -->
+    <rect x="560" y="50" width="300" height="180" fill="var(--fh-bar-inlay, #100B08)" stroke="#7A6A58" stroke-width="3"/>
+    <g fill="#C8A06A">
+      <rect x="560" y="70" width="300" height="8"/><rect x="560" y="100" width="300" height="8"/>
+      <rect x="560" y="130" width="300" height="8"/><rect x="560" y="160" width="300" height="8"/>
+    </g>
+    <g fill="#8C3A20">
+      <circle cx="600" cy="88" r="4"/><circle cx="660" cy="118" r="4"/><circle cx="720" cy="88" r="4"/>
+      <circle cx="780" cy="148" r="4"/><circle cx="640" cy="178" r="4"/><circle cx="810" cy="118" r="4"/>
+    </g>
+    <path d="M880 220 q20 -40 0 -80 q-16 -32 6 -60" stroke="#7A6A58" stroke-width="4" fill="none"/>
+    <circle cx="886" cy="222" r="3.5" fill="#8C3A20" opacity="0.55"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="940" y="150" width="200" height="14"/><rect x="940" y="180" width="200" height="14"/><rect x="940" y="210" width="200" height="14"/></g><g fill="#8C3A20"><rect x="940" y="146" width="200" height="4"/><rect x="940" y="176" width="200" height="4"/><rect x="940" y="206" width="200" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c9 · HOSE · H 35% · DRILL (water columns) ══ -->
+  <g id="t2-c9" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-35" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.35" stop-color="#8C3A20"/><stop offset="0.35" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="870" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="150" fill="url(#t2-fill-35)" stroke="#8C3A20" stroke-width="3">IX</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M830 232 A 40 36 0 0 1 910 232"/><path d="M910 232 A 40 36 0 0 1 990 232"/>
+    </g>
+    <line x1="830" y1="232" x2="990" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="870" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="950" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- hose nozzle + arcing jet -->
+    <rect x="330" y="180" width="60" height="40" fill="#7A6A58"/>
+    <rect x="380" y="188" width="26" height="24" fill="#8C3A20"/>
+    <path d="M406 200 Q 520 40 660 150" stroke="#C8A06A" stroke-width="10" fill="none"/>
+    <path d="M406 200 Q 520 40 660 150" stroke="#F6EAD6" stroke-width="3" fill="none" opacity="0.7"/>
+    <g fill="#C8A06A">
+      <circle cx="560" cy="118" r="4"/><circle cx="600" cy="122" r="4"/><circle cx="640" cy="138" r="4"/>
+    </g>
+    <rect x="640" y="150" width="40" height="80" fill="#7A6A58" opacity="0.7"/>
+    <circle cx="660" cy="136" r="14" fill="#7A6A58" opacity="0.7"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="60" y="50" width="14" height="170"/><rect x="96" y="50" width="14" height="170"/><rect x="132" y="50" width="14" height="170"/></g><g fill="#8C3A20"><rect x="60" y="46" width="14" height="4"/><rect x="96" y="46" width="14" height="4"/><rect x="132" y="46" width="14" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c10 · ENRIGHT-HOUSE · SOLID 100% · HEARTH (first hearth) ══ -->
+  <g id="t2-c10" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-climax" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E4572E"/>
+      <stop offset="0.5" stop-color="#8C3A20"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs>
+    <rect x="0" y="0" width="1200" height="260" fill="url(#t2-climax)" opacity="0.3"/>
+    <text x="880" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="170" fill="#E4572E">X</text>
+    <g fill="none" stroke="#C8A06A" stroke-width="6">
+      <path d="M830 232 A 40 36 0 0 1 910 232"/><path d="M910 232 A 40 36 0 0 1 990 232"/>
+    </g>
+    <line x1="830" y1="232" x2="966" y2="232" stroke="#E4572E" stroke-width="3"/>
+    <!-- raised-arms crystal tower -->
+    <polygon points="420,230 460,80 500,80 540,230" fill="#F6EAD6" opacity="0.9"/>
+    <polygon points="460,230 490,40 520,40 550,230" fill="#F6EAD6"/>
+    <rect x="490" y="40" width="8" height="190" fill="#E4572E"/>
+    <polygon points="380,230 420,120 440,120 420,230" fill="#7A6A58"/>
+    <polygon points="590,230 570,120 590,120 610,230" fill="#7A6A58"/>
+    <!-- fence boards -->
+    <g fill="#3A2C22" stroke="#7A6A58" stroke-width="3">
+      <rect x="300" y="150" width="26" height="80"/><rect x="330" y="150" width="26" height="80"/>
+      <rect x="654" y="150" width="26" height="80"/><rect x="684" y="150" width="26" height="80"/>
+    </g>
+    <!-- camera shutter tick -->
+    <rect x="120" y="150" width="70" height="50" fill="var(--fh-bar-inlay, #100B08)" stroke="#C8A06A" stroke-width="3"/>
+    <circle cx="155" cy="175" r="14" fill="none" stroke="#C8A06A" stroke-width="3"/>
+    <circle cx="155" cy="175" r="4" fill="#E4572E"/>
+    <rect x="40" y="238" width="1120" height="10" fill="#E4572E"/>
+    <rect x="40" y="248" width="1120" height="3" fill="#F6EAD6" opacity="0.5"/>
+  </g>
+
+  <!-- ══ p2c11 · COSMO-SLOTNICK · S 35% · HIGHBARS (searchlight bands) ══ -->
+  <g id="t2-c11" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-35" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.35" stop-color="#8C3A20"/><stop offset="0.35" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="850" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="120" fill="url(#t2-fill-35)" stroke="#8C3A20" stroke-width="3">XI</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M830 232 A 40 36 0 0 1 910 232"/><path d="M910 232 A 40 36 0 0 1 990 232"/>
+    </g>
+    <line x1="830" y1="232" x2="990" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="870" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="950" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- white-bromide slab + searchlight beams -->
+    <rect x="400" y="60" width="180" height="170" fill="#F6EAD6" opacity="0.85"/>
+    <rect x="400" y="60" width="180" height="14" fill="#7A6A58"/>
+    <g stroke="#F6EAD6" stroke-width="6" opacity="0.5">
+      <line x1="620" y1="220" x2="760" y2="60"/><line x1="640" y1="220" x2="700" y2="50"/>
+    </g>
+    <circle cx="630" cy="222" r="8" fill="#8C3A20"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="60" y="60" width="220" height="14"/><rect x="60" y="100" width="220" height="14"/><rect x="60" y="140" width="220" height="14"/></g><g fill="#8C3A20"><rect x="60" y="56" width="220" height="4"/><rect x="60" y="96" width="220" height="4"/><rect x="60" y="136" width="220" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c12 · TEMPLE · SOLID 100% · HEARTH (trial climax) ══ -->
+  <g id="t2-c12" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-climax" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E4572E"/>
+      <stop offset="0.5" stop-color="#8C3A20"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs>
+    <rect x="0" y="0" width="1200" height="260" fill="url(#t2-climax)" opacity="0.3"/>
+    <text x="830" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="120" fill="#E4572E">XII</text>
+    <g fill="none" stroke="#C8A06A" stroke-width="6">
+      <path d="M830 232 A 40 36 0 0 1 910 232"/><path d="M910 232 A 40 36 0 0 1 990 232"/>
+    </g>
+    <line x1="830" y1="232" x2="966" y2="232" stroke="#E4572E" stroke-width="3"/>
+    <!-- LOW HORIZONTAL limestone mass, wide-open front (prose: "wide open... horizontal"); envelope + TEN photos -->
+    <rect x="280" y="120" width="360" height="100" fill="#7A6A58"/>
+    <rect x="280" y="120" width="360" height="16" fill="#C8A06A"/>
+    <rect x="280" y="156" width="360" height="64" fill="var(--fh-bar-inlay, #100B08)"/>
+    <rect x="428" y="166" width="24" height="54" fill="#F6EAD6" opacity="0.9"/>
+    <circle cx="440" cy="158" r="9" fill="#F6EAD6" opacity="0.9"/>
+    <rect x="680" y="120" width="150" height="100" fill="#8C3A20" opacity="0.55" stroke="#C8A06A" stroke-width="3"/>
+    <polygon points="680,120 755,170 830,120" fill="none" stroke="#C8A06A" stroke-width="3"/>
+    <g fill="#F6EAD6" opacity="0.9">
+      <rect x="690" y="96" width="18" height="28"/><rect x="712" y="92" width="18" height="32"/>
+      <rect x="734" y="96" width="18" height="28"/><rect x="756" y="92" width="18" height="32"/>
+      <rect x="778" y="96" width="18" height="28"/>
+      <rect x="701" y="82" width="18" height="28"/><rect x="723" y="78" width="18" height="32"/>
+      <rect x="745" y="82" width="18" height="28"/><rect x="767" y="78" width="18" height="32"/>
+      <rect x="789" y="82" width="18" height="28"/>
+    </g>
+    <rect x="40" y="238" width="1120" height="10" fill="#E4572E"/>
+    <rect x="40" y="248" width="1120" height="3" fill="#F6EAD6" opacity="0.5"/>
+  </g>
+
+  <!-- ══ p2c13 · VERDICT · H 40% · SINGLE-HI (verdict line) ══ -->
+  <g id="t2-c13" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-40" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.4" stop-color="#8C3A20"/><stop offset="0.4" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="80" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="100" fill="url(#t2-fill-40)" stroke="#8C3A20" stroke-width="3">XIII</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M90 244 A 40 36 0 0 1 170 244"/><path d="M170 244 A 40 36 0 0 1 250 244"/>
+    </g>
+    <line x1="90" y1="244" x2="250" y2="244" stroke="#C8A06A" stroke-width="3"/><circle cx="130" cy="244" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="210" cy="244" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- verdict stamp + gates + cable strip -->
+    <rect x="560" y="66" width="180" height="10" fill="#C8A06A"/>
+    <rect x="560" y="82" width="120" height="26" fill="#8C3A20"/>
+    <g stroke="#7A6A58" stroke-width="6">
+      <line x1="560" y1="140" x2="560" y2="230"/><line x1="740" y1="140" x2="740" y2="230"/>
+    </g>
+    <line x1="560" y1="140" x2="650" y2="230" stroke="#7A6A58" stroke-width="3"/>
+    <line x1="740" y1="140" x2="650" y2="230" stroke="#7A6A58" stroke-width="3"/>
+    <rect x="560" y="182" width="180" height="14" fill="#F6EAD6" opacity="0.7"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="60" y="80" width="220" height="14"/></g><rect x="60" y="76" width="220" height="4" fill="#8C3A20"/>
+  </g>
+
+  <!-- ══ p2c14 · LAMP · S 30% · SPLIT (two in one room) · COLD cap ══ -->
+  <g id="t2-c14" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-30" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.3" stop-color="#8C3A20"/><stop offset="0.3" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="800" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="110" fill="url(#t2-fill-30)" stroke="#8C3A20" stroke-width="3">XIV</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M790 232 A 40 36 0 0 1 870 232"/><path d="M870 232 A 40 36 0 0 1 950 232"/>
+    </g>
+    <line x1="790" y1="232" x2="950" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="830" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="910" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- open doorway + beaded lamp (FIG LAMP [58]) + highway bands -->
+    <rect x="360" y="60" width="140" height="170" fill="var(--fh-bar-inlay, #100B08)" stroke="#7A6A58" stroke-width="4"/>
+    <polygon points="360,60 430,110 360,160" fill="#7A6A58" opacity="0.6"/>
+    <polygon points="540,84 620,84 606,120 554,120" fill="#C8A06A"/>
+    <rect x="573" y="56" width="14" height="30" fill="#7A6A58"/>
+    <g fill="#C8A06A">
+      <circle cx="552" cy="130" r="5"/><circle cx="568" cy="130" r="5"/><circle cx="584" cy="130" r="5"/>
+      <circle cx="600" cy="130" r="5"/><circle cx="612" cy="130" r="5"/>
+    </g>
+    <g>
+      <rect x="360" y="196" width="300" height="8" fill="#7A6A58" opacity="0.7"/>
+      <rect x="360" y="210" width="300" height="8" fill="#C8A06A" opacity="0.5"/>
+      <rect x="360" y="224" width="300" height="6" fill="#7A6A58" opacity="0.4"/>
+    </g>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="40" y="60" width="14" height="170"/><rect x="76" y="60" width="14" height="170"/></g><g fill="#8C3A20"><rect x="40" y="56" width="14" height="4"/><rect x="76" y="56" width="14" height="4"/></g><g fill="var(--fh-bar-inlay, #100B08)"><rect x="1060" y="60" width="14" height="170"/><rect x="1096" y="60" width="14" height="170"/></g><g fill="#8C3A20"><rect x="1060" y="56" width="14" height="4"/><rect x="1096" y="56" width="14" height="4"/></g>
+  </g>
+
+  <!-- ══ p2c15 · LOCKED-DOOR · H 45% · SINGLE-LO (locked threshold) ══ -->
+  <g id="t2-c15" class="t2-panel"><defs><linearGradient id="t2-banked" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8C3A20"/>
+      <stop offset="0.6" stop-color="#3A2C22"/>
+      <stop offset="1" stop-color="#17100B"/>
+    </linearGradient></defs><rect x="0" y="0" width="1200" height="260" fill="#17100B"/><rect x="0" y="0" width="1200" height="260" fill="url(#t2-banked)" opacity="0.35"/><defs><linearGradient id="t2-fill-45" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0.45" stop-color="#8C3A20"/><stop offset="0.45" stop-color="#17100B" stop-opacity="0"/>
+    </linearGradient></defs>
+    <text x="90" y="205" font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="110" fill="url(#t2-fill-45)" stroke="#8C3A20" stroke-width="3">XV</text>
+    <g fill="none" stroke="#7A6A58" stroke-width="6">
+      <path d="M90 232 A 40 36 0 0 1 170 232"/><path d="M170 232 A 40 36 0 0 1 250 232"/>
+    </g>
+    <line x1="90" y1="232" x2="250" y2="232" stroke="#C8A06A" stroke-width="3"/><circle cx="130" cy="232" r="5" fill="#C8A06A" opacity="0.8"/><circle cx="210" cy="232" r="5" fill="#C8A06A" opacity="0.8"/>
+    <!-- locked door + key + ringing telephone -->
+    <rect x="560" y="50" width="150" height="180" fill="#3A2C22" stroke="#7A6A58" stroke-width="4"/>
+    <rect x="580" y="70" width="110" height="70" fill="none" stroke="#7A6A58" stroke-width="3"/>
+    <rect x="580" y="150" width="110" height="60" fill="none" stroke="#7A6A58" stroke-width="3"/>
+    <circle cx="680" cy="145" r="8" fill="none" stroke="#C8A06A" stroke-width="4"/><rect x="676" y="153" width="8" height="26" fill="#C8A06A"/><rect x="676" y="162" width="14" height="5" fill="#C8A06A"/><rect x="676" y="171" width="11" height="5" fill="#C8A06A"/>
+    <rect x="676" y="145" width="6" height="22" fill="#C8A06A"/>
+    <circle cx="800" cy="150" r="34" fill="none" stroke="#C8A06A" stroke-width="5"/>
+    <circle cx="800" cy="150" r="12" fill="#C8A06A"/>
+    <path d="M850 110 q30 40 0 80" stroke="#8C3A20" stroke-width="4" fill="none"/>
+    <path d="M868 96 q44 54 0 108" stroke="#8C3A20" stroke-width="4" fill="none"/>
+    <g fill="var(--fh-bar-inlay, #100B08)"><rect x="940" y="196" width="220" height="14"/></g><rect x="940" y="192" width="220" height="4" fill="#8C3A20"/>
+  </g>
+</svg>

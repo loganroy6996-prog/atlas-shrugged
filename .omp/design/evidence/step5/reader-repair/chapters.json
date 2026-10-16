@@ -1,0 +1,484 @@
+{
+  "atlas-shrugged": {
+    "slug": "atlas-shrugged",
+    "selection": {
+      "chapterId": "p1c3",
+      "paraIdx": 13,
+      "fallback": false,
+      "parasCount": 249,
+      "title": "THE TOP AND THE BOTTOM",
+      "len": 413,
+      "excerpt": "Orren Boyle had appeared from nowhere, five years ago, and had since made the co",
+      "override": "anchor cross-check",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "being-and-time": {
+    "slug": "being-and-time",
+    "selection": {
+      "chapterId": "p2c19",
+      "paraIdx": 11,
+      "fallback": false,
+      "parasCount": 22,
+      "title": "Everyday Being a Self and the They",
+      "len": 596,
+      "excerpt": "In these characteristics of being which we have laid out-everyday beingamong-one",
+      "override": "anchor cross-check",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "beyond-good-and-evil": {
+    "slug": "beyond-good-and-evil",
+    "selection": {
+      "chapterId": "p1c2",
+      "paraIdx": 10,
+      "fallback": false,
+      "parasCount": 75,
+      "title": "Prejudices of Philosophers",
+      "len": 1396,
+      "excerpt": "problem of truthfulness is even hinted at in the remotest manner. They all pose ",
+      "scanTried": [
+        {
+          "id": "p1c1",
+          "reason": "no qualifying paragraph"
+        }
+      ]
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "forty-ways-to-look-at-churchill": {
+    "slug": "forty-ways-to-look-at-churchill",
+    "selection": {
+      "chapterId": "p1c1",
+      "paraIdx": 10,
+      "fallback": false,
+      "parasCount": 33,
+      "title": "Introduction",
+      "len": 1013,
+      "excerpt": "Sometimes I’d detect a biographer’s reading too much into facts—supplying motive",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "gay-science": {
+    "slug": "gay-science",
+    "selection": {
+      "chapterId": "p2c63",
+      "paraIdx": 5,
+      "fallback": true,
+      "parasCount": 6,
+      "title": "63. Stellar Morals",
+      "len": 758,
+      "excerpt": "* ‘Scherz, List, und Rache’ is the title of a libretto written by Goethe and set",
+      "scanTried": [
+        {
+          "id": "p1c1",
+          "reason": "no qualifying paragraph"
+        },
+        {
+          "id": "p2c1",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c2",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c3",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c4",
+          "reason": "no qualifying paragraph"
+        },
+        {
+          "id": "p2c5",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c6",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c7",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c8",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c9",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c10",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c11",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c12",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c13",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c14",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c15",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c16",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c17",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c18",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c19",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c20",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c21",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c22",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c23",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c24",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c25",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c26",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c27",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c28",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c29",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c30",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c31",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c32",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c33",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c34",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c35",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c36",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c37",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c38",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c39",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c40",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c41",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c42",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c43",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c44",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c45",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c46",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c47",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c48",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c49",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c50",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c51",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c52",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c53",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c54",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c55",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c56",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c57",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c58",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c59",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c60",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c61",
+          "reason": "skip: < 6 paragraphs"
+        },
+        {
+          "id": "p2c62",
+          "reason": "skip: < 6 paragraphs"
+        }
+      ]
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "gentle-introduction": {
+    "slug": "gentle-introduction",
+    "selection": {
+      "chapterId": "p1c1",
+      "paraIdx": 11,
+      "fallback": false,
+      "parasCount": 158,
+      "title": "The Red Pill",
+      "len": 713,
+      "excerpt": "The third, our third, is very different from the other two. We must remember tha",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "infinite-jest": {
+    "slug": "infinite-jest",
+    "selection": {
+      "chapterId": "p1c32",
+      "paraIdx": 12,
+      "fallback": false,
+      "parasCount": 54,
+      "title": "Late October — Year of the Depend Adult Undergarment",
+      "len": 408,
+      "excerpt": "‘Attractive paraplegic female seeks same; object:’ The windowless laryngeal stud",
+      "override": "mandatory per brief",
+      "scanTried": []
+    },
+    "noteRefsTotal": 299,
+    "chaptersWithRefs": 52,
+    "notesChapterIds": 12,
+    "firstRef": {
+      "chapterId": "p1c32",
+      "para": 25,
+      "match": "‘aesthetically challenged.’ 62 She sometimes",
+      "note": 62
+    }
+  },
+  "open-letter": {
+    "slug": "open-letter",
+    "selection": {
+      "chapterId": "p1c1",
+      "paraIdx": 11,
+      "fallback": false,
+      "parasCount": 115,
+      "title": "A Horizon Made of Canvas",
+      "len": 403,
+      "excerpt": "Of course, Mamet is Mamet. He’s out to shock, not convert. Even the word “libera",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "sovereign-individual": {
+    "slug": "sovereign-individual",
+    "selection": {
+      "chapterId": "p1c5",
+      "paraIdx": 10,
+      "fallback": false,
+      "parasCount": 164,
+      "title": "The Life and Health of the Nation-State",
+      "len": 1212,
+      "excerpt": "When failing systems have the power to do so, they often impose penal burdens up",
+      "override": "authored plate-grid chapter (manifest class=plate)",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "the-fountainhead": {
+    "slug": "the-fountainhead",
+    "selection": {
+      "chapterId": "p1c1",
+      "paraIdx": 10,
+      "fallback": false,
+      "parasCount": 164,
+      "title": "Chapter I",
+      "len": 581,
+      "excerpt": "He cut straight across the lake to the shore ahead. He reached the rocks where h",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "thus-spoke-zarathustra": {
+    "slug": "thus-spoke-zarathustra",
+    "selection": {
+      "chapterId": "p1c1",
+      "paraIdx": 105,
+      "fallback": false,
+      "parasCount": 150,
+      "title": "Zarathustra’s Prologue",
+      "len": 513,
+      "excerpt": "But then something happened that silenced every mouth and fixed every eye. In th",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "twilight-of-the-idols": {
+    "slug": "twilight-of-the-idols",
+    "selection": {
+      "chapterId": "p1c10",
+      "paraIdx": 10,
+      "fallback": false,
+      "parasCount": 61,
+      "title": "Reconnaissance Raids of an Untimely Man",
+      "len": 1126,
+      "excerpt": "In this state we enrich everything out of our own plenitude: whatever we see, wh",
+      "override": "anchor cross-check",
+      "scanTried": []
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  },
+  "will-to-power": {
+    "slug": "will-to-power",
+    "selection": {
+      "chapterId": "p2c1",
+      "paraIdx": 5,
+      "fallback": true,
+      "parasCount": 9,
+      "title": "European Nihilism",
+      "len": 848,
+      "excerpt": "(4) If we are to be opposed to ‘meaninglessness’ on the one hand, and moral valu",
+      "scanTried": [
+        {
+          "id": "p1c1",
+          "reason": "skip: < 6 paragraphs"
+        }
+      ]
+    },
+    "noteRefsTotal": 0,
+    "chaptersWithRefs": 0,
+    "notesChapterIds": 0
+  }
+}

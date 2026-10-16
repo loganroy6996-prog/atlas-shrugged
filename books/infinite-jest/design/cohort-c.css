@@ -1,0 +1,3721 @@
+/* =====================================================================
+   INFINITE JEST — Cohort C · Winter & Subsidized Time (p1c28–p1c40)
+   REV13 engineering. UNLAYERED (wins over shared layer). Scoped to
+   body[data-book="infinite-jest"][data-chapter="pNcM"]; ij-* classes only.
+   Explicit researched nth-of-type indices only — no modulo tinting.
+   Part I GOLD note register (J5: no violet). Marginalia collapse < 720px.
+   Probed 2026-10-15: Chromium cannot paint SVG-sprite fragments through
+   CSS content:/background:, so in-flow dividers are pure-CSS compositions;
+   art/cohort-c.svg divider/sub symbols ship as supervisor-mergeable assets.
+   ===================================================================== */
+
+/* ---- C0. Cohort-wide: Part I gold note register + phosphor focus ---- */
+/* reader.js wraps the FULL match phrase in a.reader-noteref, so cohort CSS
+   keeps the phrase legible: gold underline treatment, no pill/raise. */
+body[data-book="infinite-jest"][data-chapter="p1c28"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c29"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c30"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c31"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c32"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c33"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c34"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c35"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c36"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c37"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c38"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c39"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c40"] .reader-noteref {
+  font-family: var(--ij-mono);
+  font-size: 0.88em;
+  color: var(--ij-seal);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.55);
+  text-underline-offset: 0.22em;
+}
+body[data-book="infinite-jest"][data-chapter="p1c28"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c29"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c30"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c31"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c32"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c33"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c34"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c35"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c36"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c37"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c38"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c39"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c40"] .reader-noteref:hover { color: var(--text); text-decoration-color: var(--ij-seal); }
+body[data-book="infinite-jest"][data-chapter="p1c28"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c29"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c30"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c31"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c32"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c33"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c34"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c35"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c36"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c37"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c38"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c39"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c40"] .reader-noteref:focus-visible {
+  outline: 2px solid var(--ij-phosphor);
+  outline-offset: 2px;
+}
+body[data-book="infinite-jest"][data-chapter="p1c28"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c29"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c30"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c31"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c32"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c33"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c34"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c35"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c36"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c37"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c38"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c39"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+body[data-book="infinite-jest"][data-chapter="p1c40"] .note-return-chip {
+  border-color: var(--ij-seal);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+
+/* Plates: composed scale per aspect; never display:none (P1). */
+body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-art {
+  width: min(26rem, 92vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-art svg {
+  max-height: 72vh;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-art {
+  width: min(64rem, 100%);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c40"] #chapter-art {
+  width: min(30rem, 94vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 560px) {
+  body[data-book="infinite-jest"][data-chapter="p1c28"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-art svg { min-height: 200px; }
+  body[data-book="infinite-jest"][data-chapter="p1c40"] #chapter-art svg { min-height: 200px; }
+}
+
+/* ---- C28 · garage-door: warm monolith, stencil opener, no ticks ---- */
+body[data-book="infinite-jest"][data-chapter="p1c28"] #chapter-text > p {
+  max-width: min(38rem, 68ch);
+  margin-bottom: 1.6em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c28"] #chapter-text > p:first-of-type::first-letter {
+  color: #B98A2E;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c28"] .meta-title {
+  color: #EFE3C8;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c28"] .meta-rule span {
+  background: #B98A2E;
+}
+
+/* ---- C29 · redline-evasion: catalog monograph, bus-hop ticks, sting ---- */
+body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p:nth-of-type(2) {
+  font-size: 0.96em;
+  line-height: 1.68;
+  border-left: 3px solid var(--ij-seal);
+  padding-left: 1.1rem;
+  color: var(--text);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p:nth-of-type(1)::after {
+  content: "BUS 1 · CENTRAL — BUS 2 · DAVIS SQ DECOY";
+  display: block;
+  margin-top: 0.9em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p:nth-of-type(8) {
+  margin-top: 2em;
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p:nth-of-type(9) {
+  margin-top: 0;
+  color: var(--text-muted);
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p:nth-of-type(1)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.2em; margin-top: 0;
+    display: block; width: max-content; max-width: 13rem; white-space: normal;
+  }
+}
+
+/* ---- C30 · cartridge-label: 32 cued manual steps + 17 italic insets ---- */
+/* Cue numerals hang in the margin on desktop, inline-hang on narrow. */
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(1)::before {
+  content: "CUE 001";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(2)::before {
+  content: "CUE 002";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(3)::before {
+  content: "CUE 003";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(4)::before {
+  content: "CUE 004";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(7)::before {
+  content: "CUE 007";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(8)::before {
+  content: "CUE 008";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(9)::before {
+  content: "CUE 009";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(10)::before {
+  content: "CUE 010";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(11)::before {
+  content: "CUE 011";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(12)::before {
+  content: "CUE 012";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(13)::before {
+  content: "CUE 013";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(15)::before {
+  content: "CUE 015";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(16)::before {
+  content: "CUE 016";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(18)::before {
+  content: "CUE 018";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(19)::before {
+  content: "CUE 019";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(20)::before {
+  content: "CUE 020";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(21)::before {
+  content: "CUE 021";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(23)::before {
+  content: "CUE 023";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(24)::before {
+  content: "CUE 024";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(25)::before {
+  content: "CUE 025";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(26)::before {
+  content: "CUE 026";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(28)::before {
+  content: "CUE 028";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(29)::before {
+  content: "CUE 029";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(32)::before {
+  content: "CUE 032";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(36)::before {
+  content: "CUE 036";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(37)::before {
+  content: "CUE 037";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(38)::before {
+  content: "CUE 038";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(39)::before {
+  content: "CUE 039";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(41)::before {
+  content: "CUE 041";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(44)::before {
+  content: "CUE 044";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(48)::before {
+  content: "CUE 048";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(49)::before {
+  content: "CUE 049";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.35em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(1),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(4),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(24),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(25),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(26),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(39),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(49) {
+  padding-left: 0;
+  border-left: none;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(27),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(43),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(47) {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.97em;
+  border-left: 1px solid var(--border-strong);
+  padding-left: 1.25rem;
+  margin-left: 1.5rem;
+  max-width: min(36rem, 64ch);
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p { position: relative; }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(1)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(2)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(3)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(4)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(7)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(8)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(9)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(10)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(11)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(12)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(13)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(15)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(16)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(18)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(19)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(20)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(21)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(23)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(24)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(25)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(26)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(28)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(29)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(32)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(36)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(37)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(38)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(39)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(41)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(44)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(48)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p:nth-of-type(49)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-bottom: 0;
+    width: max-content;
+  }
+}
+
+/* ---- C31 · placard-door: 21 session blocks, 1300H+10m ticks ---- */
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(1),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(4),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(21) {
+  border-top: 1px solid var(--border);
+  padding-top: 1.1em;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(1) {
+  border-top: none;
+  padding-top: 0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(1)::before {
+  content: "SESS 1300H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(2)::before {
+  content: "SESS 1310H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(3)::before {
+  content: "SESS 1320H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(4)::before {
+  content: "SESS 1330H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(5)::before {
+  content: "SESS 1340H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(6)::before {
+  content: "SESS 1350H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(7)::before {
+  content: "SESS 1400H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(8)::before {
+  content: "SESS 1410H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(9)::before {
+  content: "SESS 1420H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(10)::before {
+  content: "SESS 1430H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(11)::before {
+  content: "SESS 1440H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(12)::before {
+  content: "SESS 1450H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(13)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(14)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(15)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(16)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(17)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(18)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(19)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(20)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(21)::before {
+  content: "SESS 1500H";
+  display: block;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  margin-bottom: 0.4em;
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(1)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(2)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(3)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(4)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(5)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(6)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(7)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(8)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(9)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(10)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(11)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(12)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(13)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(14)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(15)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(16)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(17)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(18)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(19)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(20)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(21)::before {
+    position: absolute; left: calc(100% + 1.25rem); top: 1.35em; margin-bottom: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p:nth-of-type(1)::before { top: 0.25em; }
+}
+
+/* ---- C32 · dial-midnight: braid breaths + 9 halo ticks ---- */
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(27) {
+  margin-top: 2em;
+  padding-top: 1.6em;
+  border-top: 1px solid var(--border-strong);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(29) {
+  margin-top: 2em;
+  padding-top: 1.6em;
+  border-top: 1px solid var(--border-strong);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(44) {
+  margin-top: 2em;
+  padding-top: 1.6em;
+  border-top: 1px solid var(--border-strong);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(5)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(15)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(18)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(19)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(22)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(26)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(30)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(32)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(39)::after {
+  content: "○ PSYCHOSIS 0000H";
+  display: block;
+  margin-top: 0.8em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #A08B93;
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(5)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(15)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(18)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(19)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(22)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(26)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(30)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(32)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p:nth-of-type(39)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0;
+    width: max-content; max-width: 12rem; white-space: normal;
+  }
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p {
+  max-width: min(37rem, 66ch);
+}
+
+/* ---- C33 · beech-plate: That-litany hanging blocks + T-ordinals ---- */
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(39),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(43),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(47),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(49),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(50),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(51),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(56),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(57),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(58),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(60),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(61),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(62),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(63),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(64),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(65),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(66),
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(67) {
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  margin-bottom: 0.9em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(33)::before {
+  content: "EXOTIC NEW FACTS · ENNET HOUSE LEDGER · THAT-LITANY T-01–T-34";
+  display: block;
+  text-indent: 0;
+  margin: 0 auto 1.6em;
+  max-width: 34rem;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-seal);
+  border-top: 1px solid var(--ij-seal);
+  border-bottom: 1px solid var(--ij-seal);
+  padding: 0.9em 1em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(33) {
+  margin-top: 2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(33)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(34)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(35)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(36)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(37)::after {
+  content: "◇ T-05";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(38)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(39)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(40)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(41)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(42)::after {
+  content: "◇ T-10";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(43)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(44)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(45)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(46)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(47)::after {
+  content: "◇ T-15";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(48)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(49)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(50)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(52)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(53)::after {
+  content: "◇ T-20";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(54)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(55)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(56)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(57)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(58)::after {
+  content: "◇ T-25";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(59)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(60)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(61)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(62)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(63)::after {
+  content: "◇ T-30";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(64)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(65)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(66)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(67)::after {
+  content: "◇";
+  display: block;
+  text-indent: 0;
+  margin-top: 0.4em;
+  margin-left: 2.4em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(51)::after {
+  content: none;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(51)::before {
+  content: none;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(67) {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(33)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(34)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(35)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(36)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(37)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(38)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(39)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(40)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(41)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(42)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(43)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(44)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(45)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(46)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(47)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(48)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(49)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(50)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(52)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(53)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(54)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(55)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(56)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(57)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(58)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(59)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(60)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(61)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(62)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(63)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(64)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(65)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(66)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p:nth-of-type(67)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin: 0; width: max-content;
+  }
+}
+
+/* ---- C34 · directors-chairs: chamber-music hush, no ticks ---- */
+body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-text > p {
+  max-width: min(32rem, 60ch);
+  line-height: 1.9;
+  margin-bottom: 1.4em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-text > p:nth-of-type(3) {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  padding: 1.2em 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c34"] .meta-title {
+  font-size: clamp(1.4rem, 3.4vw, 2rem);
+  letter-spacing: 0.06em;
+}
+
+/* ---- C35 · nine-seals: bounded P0 ledger block + rain ticks ---- */
+/* Honest cut: P0 text untouched; the BLOCK is the found form. Filing tag
+   clears the top keyline by >=2.2em (probe defect fix) — in-flow, never
+   absolutely overlapping. Sub-plate lives in the supervisor-merged second
+   opener; here a bounded filing strip marks the walk span. */
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(1) {
+  border: 1px solid var(--ij-plate-line);
+  border-radius: 2px;
+  background: var(--ij-plate-bg);
+  padding: 1.25rem 1.4rem;
+  max-width: min(38rem, 68ch);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(1)::before {
+  content: "LEDGER (1)–(9) · SUBSIDIZED TIME · BY YEAR";
+  display: block;
+  margin-bottom: 2.2em;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-seal);
+  border-bottom: 1px solid var(--ij-plate-line);
+  padding-bottom: 0.9em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(2)::before {
+  content: "BOYLSTON ST. · EAST · RAIN — WALK SPAN";
+  display: block;
+  margin: 1.2em auto 1.6em;
+  max-width: 34rem;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #8B93A0;
+  border-top: 1px solid #8B93A0;
+  border-bottom: 1px solid #8B93A0;
+  padding: 0.9em 1em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(2) {
+  margin-top: 2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(2)::after {
+  content: "/// RAIN";
+  display: block;
+  margin-top: 0.7em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #8B93A0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(3)::after {
+  content: "/// RAIN";
+  display: block;
+  margin-top: 0.7em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #8B93A0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(4)::after {
+  content: "/// RAIN";
+  display: block;
+  margin-top: 0.7em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #8B93A0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(5)::after {
+  content: "/// RAIN";
+  display: block;
+  margin-top: 0.7em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #8B93A0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(6)::after {
+  content: "/// RAIN";
+  display: block;
+  margin-top: 0.7em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #8B93A0;
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(2)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(3)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(4)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(5)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p:nth-of-type(6)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.25em; margin-top: 0; width: max-content;
+  }
+}
+
+/* ---- C36 · cv-ledger: single-para CV dossier + tenure stamps ---- */
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(1) {
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--ij-seal);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  padding: 1.1rem 1.25rem;
+  font-size: 0.97em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(1)::before {
+  content: "DOSSIER · H.P.S. · PRESS CREDENTIALS";
+  display: block;
+  margin-bottom: 1em;
+  font-family: var(--ij-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-seal);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(1)::after {
+  content: "TENURE · 1 YR · TIME / 16 MO · DECADE / 5 YR · SOUTHWEST / 5 MO · NEWSWEEK / 1 YR · LADIES DAY / 15 MO+ · MOMENT";
+  display: block;
+  margin-top: 1em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--ij-stamp);
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(1)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0; margin-top: 0;
+    width: 10rem; white-space: normal; line-height: 2.1;
+  }
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(3)::before {
+  content: "▲ STAIR-TREAD · CLIMBING TO THE THIRD FLOOR";
+  display: block;
+  margin: 0 auto 1.6em;
+  max-width: 34rem;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--ij-seal);
+  border-top: 1px solid var(--ij-seal);
+  border-bottom: 1px solid var(--ij-seal);
+  padding: 0.9em 1em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(3) {
+  margin-top: 2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(45) {
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(46) {
+  margin-top: 0;
+  margin-bottom: 2em;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--ij-stamp);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p:nth-of-type(47) {
+  font-size: 0.95em;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ---- C37 · call-rhythm: PROVEN positional speaker set ---- */
+/* P0 narrative set; Hal LEFT rail (phosphor rule) vs Orin RIGHT rail (gold
+   rule); duals = full-width both-rails blocks. Explicit 117/116/6 lists. */
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(1) {
+  font-style: italic;
+  text-align: center;
+  color: var(--text-muted);
+  max-width: min(34rem, 60ch);
+  margin-bottom: 2.5em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(4),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(8),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(10),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(12),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(14),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(16),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(18),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(20),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(24),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(26),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(28),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(30),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(32),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(34),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(36),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(38),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(40),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(42),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(45),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(47),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(49),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(51),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(57),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(61),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(64),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(66),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(68),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(70),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(72),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(74),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(76),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(78),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(80),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(82),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(84),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(86),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(88),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(90),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(92),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(94),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(96),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(98),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(99),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(101),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(103),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(106),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(108),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(110),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(113),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(116),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(118),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(120),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(122),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(124),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(126),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(128),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(130),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(132),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(134),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(136),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(138),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(140),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(142),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(144),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(146),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(148),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(150),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(152),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(154),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(155),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(157),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(159),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(161),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(163),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(166),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(168),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(169),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(171),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(173),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(175),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(177),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(179),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(180),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(182),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(184),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(187),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(189),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(191),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(193),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(195),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(197),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(199),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(201),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(203),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(205),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(207),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(209),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(211),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(214),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(217),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(219),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(222),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(224),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(226),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(228),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(230),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(232),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(234),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(236),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(238),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(240) {
+  margin-left: 0;
+  margin-right: 12%;
+  max-width: min(34rem, 62ch);
+  text-align: left;
+  line-height: 1.62;
+  border-left: 3px solid var(--ij-phosphor);
+  padding-left: 1rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(9),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(15),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(17),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(19),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(21),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(23),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(25),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(27),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(29),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(31),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(33),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(35),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(37),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(39),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(41),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(44),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(46),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(48),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(50),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(56),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(58),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(60),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(62),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(63),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(65),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(67),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(69),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(71),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(73),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(75),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(77),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(79),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(81),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(83),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(85),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(87),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(89),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(91),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(93),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(95),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(97),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(100),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(102),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(104),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(105),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(107),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(109),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(111),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(112),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(115),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(117),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(119),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(121),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(123),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(125),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(127),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(129),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(131),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(133),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(135),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(137),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(139),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(141),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(143),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(145),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(147),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(149),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(151),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(153),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(156),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(158),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(160),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(162),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(164),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(167),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(170),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(172),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(174),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(176),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(178),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(181),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(183),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(185),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(188),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(190),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(192),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(194),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(196),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(198),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(200),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(202),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(204),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(206),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(208),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(210),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(212),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(215),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(218),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(220),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(221),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(223),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(225),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(227),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(229),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(231),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(233),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(235),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(237),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(239) {
+  margin-left: 12%;
+  margin-right: 0;
+  max-width: min(34rem, 62ch);
+  text-align: left;
+  line-height: 1.62;
+  color: #CFC4A6;
+  border-right: 3px solid var(--ij-seal);
+  padding-right: 1rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(43),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(114),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(165),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(186),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(213),
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(216) {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: min(38rem, 68ch);
+  line-height: 1.62;
+  border-left: 3px solid var(--ij-phosphor);
+  border-right: 3px solid var(--ij-seal);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: var(--bg-elevated);
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(11)::after {
+  content: "TURN 010";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(21)::after {
+  content: "TURN 020";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(31)::after {
+  content: "TURN 030";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(41)::after {
+  content: "TURN 040";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(50)::after {
+  content: "TURN 050";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(60)::after {
+  content: "TURN 060";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(70)::after {
+  content: "TURN 070";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(80)::after {
+  content: "TURN 080";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(90)::after {
+  content: "TURN 090";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(100)::after {
+  content: "TURN 100";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(110)::after {
+  content: "TURN 110";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(119)::after {
+  content: "TURN 120";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(129)::after {
+  content: "TURN 130";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(139)::after {
+  content: "TURN 140";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(149)::after {
+  content: "TURN 150";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(159)::after {
+  content: "TURN 160";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(168)::after {
+  content: "TURN 170";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(178)::after {
+  content: "TURN 180";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(187)::after {
+  content: "TURN 190";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(197)::after {
+  content: "TURN 200";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(207)::after {
+  content: "TURN 210";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(216)::after {
+  content: "TURN 220";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(225)::after {
+  content: "TURN 230";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(235)::after {
+  content: "TURN 240";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(43)::before {
+  content: "DUAL TURN · BOTH RAILS"; display: block; margin-bottom: 0.6em;
+  font-family: var(--ij-mono); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.16em; color: var(--ij-seal);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(114)::before {
+  content: "DUAL TURN · BOTH RAILS"; display: block; margin-bottom: 0.6em;
+  font-family: var(--ij-mono); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.16em; color: var(--ij-seal);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(165)::before {
+  content: "DUAL TURN · BOTH RAILS"; display: block; margin-bottom: 0.6em;
+  font-family: var(--ij-mono); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.16em; color: var(--ij-seal);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(186)::before {
+  content: "DUAL TURN · BOTH RAILS"; display: block; margin-bottom: 0.6em;
+  font-family: var(--ij-mono); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.16em; color: var(--ij-seal);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(213)::before {
+  content: "DUAL TURN · BOTH RAILS"; display: block; margin-bottom: 0.6em;
+  font-family: var(--ij-mono); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.16em; color: var(--ij-seal);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(216)::before {
+  content: "DUAL TURN · BOTH RAILS"; display: block; margin-bottom: 0.6em;
+  font-family: var(--ij-mono); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.16em; color: var(--ij-seal);
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(11)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(21)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(31)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(41)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(50)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(60)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(70)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(80)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(90)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(100)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(110)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(119)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(129)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(139)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(149)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(159)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(168)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(178)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(187)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(197)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(207)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(216)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(225)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(235)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+}
+
+@media (max-width: 700px) {
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(2),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(3),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(4),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(5),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(6),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(7),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(8),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(9),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(10),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(11),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(12),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(13),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(14),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(15),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(16),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(17),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(18),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(19),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(20),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(21),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(22),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(23),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(24),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(25),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(26),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(27),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(28),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(29),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(30),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(31),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(32),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(33),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(34),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(35),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(36),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(37),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(38),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(39),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(40),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(41),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(42),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(44),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(45),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(46),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(47),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(48),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(49),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(50),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(51),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(52),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(53),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(54),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(55),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(56),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(57),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(58),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(59),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(60),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(61),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(62),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(63),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(64),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(65),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(66),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(67),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(68),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(69),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(70),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(71),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(72),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(73),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(74),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(75),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(76),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(77),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(78),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(79),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(80),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(81),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(82),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(83),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(84),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(85),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(86),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(87),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(88),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(89),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(90),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(91),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(92),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(93),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(94),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(95),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(96),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(97),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(98),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(99),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(100),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(101),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(102),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(103),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(104),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(105),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(106),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(107),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(108),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(109),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(110),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(111),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(112),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(113),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(115),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(116),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(117),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(118),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(119),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(120),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(121),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(122),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(123),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(124),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(125),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(126),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(127),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(128),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(129),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(130),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(131),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(132),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(133),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(134),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(135),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(136),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(137),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(138),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(139),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(140),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(141),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(142),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(143),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(144),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(145),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(146),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(147),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(148),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(149),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(150),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(151),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(152),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(153),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(154),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(155),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(156),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(157),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(158),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(159),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(160),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(161),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(162),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(163),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(164),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(166),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(167),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(168),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(169),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(170),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(171),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(172),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(173),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(174),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(175),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(176),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(177),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(178),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(179),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(180),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(181),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(182),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(183),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(184),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(185),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(187),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(188),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(189),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(190),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(191),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(192),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(193),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(194),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(195),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(196),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(197),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(198),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(199),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(200),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(201),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(202),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(203),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(204),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(205),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(206),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(207),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(208),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(209),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(210),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(211),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(212),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(214),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(215),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(217),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(218),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(219),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(220),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(221),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(222),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(223),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(224),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(225),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(226),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(227),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(228),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(229),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(230),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(231),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(232),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(233),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(234),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(235),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(236),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(237),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(238),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(239),
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(240) {
+    margin-left: 8%; margin-right: 8%;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(11)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(21)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(31)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(41)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(50)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(60)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(70)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(80)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(90)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(100)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(110)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(119)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(129)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(139)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(149)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(159)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(168)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(178)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(187)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(197)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(207)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(216)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(225)::after { content: none; }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p:nth-of-type(235)::after { content: none; }
+}
+
+/* ---- C38 · tri-dome: marathon braid set + 3 bounded dividers ---- */
+/* Dividers BEFORE 1-based P51 (sofa), P89 (dome), P94 (viewfinder). Pure-CSS
+   bounded blocks (max-width 34rem, centered, clear the measure) — never
+   mid-paragraph, always J2-bounded. Text labels primary; glyphs fallback. */
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(51)::before {
+  content: "■ SOFA · 0832 · ENNET — DAY / TREAT / LENZ / GATELY";
+  display: block;
+  margin: 0 auto 1.8em;
+  max-width: 34rem;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-seal);
+  border: 1px solid var(--ij-seal);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  padding: 1em 1.2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(89)::before {
+  content: "● DOME · MEET RETURN — SHIELDS BORNE HOME";
+  display: block;
+  margin: 0 auto 1.8em;
+  max-width: 34rem;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+  border: 1px solid var(--ij-phosphor);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  padding: 1em 1.2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(94)::before {
+  content: "▣ 114 SEC · BOLEX · ORIN–JOELLE — DECAPITATION BY LENS";
+  display: block;
+  margin: 0 auto 1.8em;
+  max-width: 34rem;
+  text-align: center;
+  font-family: var(--ij-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-stamp);
+  border: 1px solid var(--ij-stamp);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  padding: 1em 1.2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(51) {
+  margin-top: 2.2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(89) {
+  margin-top: 2.2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(94) {
+  margin-top: 2.2em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(51),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(52),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(53),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(54),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(55),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(56),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(57),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(58),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(59),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(60),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(61),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(62),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(63),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(64),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(65),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(66),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(67),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(68),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(69),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(70),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(71),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(72),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(73),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(74),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(75),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(76),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(77),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(78),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(79),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(80),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(81),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(82),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(83),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(84),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(85),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(86),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(87),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(88) {
+  background: rgba(201, 162, 39, 0.04);
+  border-radius: 2px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(94),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(95),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(96),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(97),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(98),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(99),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(100),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(101),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(102),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(103),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(104),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(105),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(106),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(107),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(108),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(109),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(110),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(111),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(112),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(113),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(114),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(115),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(116),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(117) {
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.9rem 1.1rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(11),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(13),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(22),
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(41) {
+  font-size: 0.98em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(2)::after {
+  content: "#1 SINGLES";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(11)::after {
+  content: "COURT 1";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(13)::after {
+  content: "#3 SINGLES";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(22)::after {
+  content: "COURT 2";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(41)::after {
+  content: "COURT 3";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-phosphor);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(80)::after {
+  content: "0832 · SOFA ROOM";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-seal);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(117)::after {
+  content: "BOLEX R32 · ANGENIEUX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--ij-stamp);
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(2)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(11)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(13)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(22)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(41)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(80)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p:nth-of-type(117)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+}
+
+/* ---- C39 · phosphene-burst: fever set, storm-gray aura (J5) ---- */
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(1),
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(2),
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(3),
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(4),
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(5),
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(6),
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(7),
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(8) {
+  line-height: 1.62;
+  max-width: min(34rem, 62ch);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(9) {
+  margin-top: 2em;
+  max-width: min(38rem, 68ch);
+  line-height: 1.9;
+  border-left: 3px solid #8B93A0;
+  padding-left: 1.25rem;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(10) {
+  max-width: min(38rem, 68ch);
+  line-height: 1.9;
+  border-left: 3px solid #8B93A0;
+  padding-left: 1.25rem;
+  color: var(--text);
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(1)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(2)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(3)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(4)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(5)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(6)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(7)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(8)::after {
+  content: "×16/DAY · CODINEX";
+  display: block;
+  margin-top: 0.5em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #C98A2B;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(9)::after {
+  content: "ZUCKUNG";
+  display: block;
+  margin-top: 0.6em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: #8B93A0;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(10)::after {
+  content: "ZUCKUNG";
+  display: block;
+  margin-top: 0.6em;
+  font-family: var(--ij-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: #8B93A0;
+}
+
+@media (min-width: 1100px) {
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(1)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(2)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(3)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(4)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(5)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(6)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(7)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(8)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(9)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p:nth-of-type(10)::after {
+    position: absolute; left: calc(100% + 1.25rem); top: 0.3em; margin-top: 0; width: max-content;
+  }
+}
+
+/* ---- C40 · exam-masthead: catalog-card coda, no ticks ---- */
+/* P0's bare '104' has no note_refs entry: renders plain, never a link. */
+body[data-book="infinite-jest"][data-chapter="p1c40"] #chapter-text > p:nth-of-type(1) {
+  font-size: 0.98em;
+}
+
+body[data-book="infinite-jest"][data-chapter="p1c40"] #chapter-text > p:nth-of-type(2) {
+  font-family: var(--ij-mono);
+  font-size: 0.92em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.8;
+  max-width: min(36rem, 64ch);
+  border-top: 1px solid var(--ij-seal);
+  border-bottom: 1px solid var(--ij-seal);
+  padding: 1.2em 1em;
+  margin-top: 1.6em;
+}
+
+/* ---- C99. Guards: reduced motion, focus, narrow collapse ---- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="infinite-jest"][data-chapter="p1c28"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c28"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c28"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c34"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c40"] #chapter-art svg,
+  body[data-book="infinite-jest"][data-chapter="p1c40"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c40"] #chapter-text > p::after {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 720px) {
+  body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c29"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c30"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c31"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c32"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c33"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c35"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c36"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c37"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c38"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p::before,
+  body[data-book="infinite-jest"][data-chapter="p1c39"] #chapter-text > p::after {
+    position: static;
+    width: auto;
+    max-width: none;
+  }
+}

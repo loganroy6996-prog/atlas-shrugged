@@ -1,43 +1,982 @@
-/* The Fountainhead — granite, glass, blueprint */
+/* ════════════════════════════════════════════════════════════════════
+   The Fountainhead — THE FURNACE (ArtDirector APPROVED, binding F1–F10)
+   Quarry fire and worked stone. Heat is the moral thermometer:
+   Keating bronze → Toohey dimmed ember → Wynand gilt-heat → Roark white-hot.
+   Replaces the rejected granite/blueprint lattice wholesale (no trace kept).
+   Spec: design/ART-DIRECTION.md · manifest: design/chapters.json (v1.1 symbol)
+   Hooks: body[data-book][data-view][data-part-id][data-chapter][data-art]
+   ════════════════════════════════════════════════════════════════════ */
+
+/* ── 0. Book fonts (Google Fonts verified fallback; §2) ── */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400..600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+/* ── 1. FURNACE tokens + shared-token overrides (contract §8) ── */
+body[data-book="the-fountainhead"] {
+  --fh-hearth: #17100b;
+  --fh-hearth-deep: #100b08;
+  --fh-tower: #241610;
+  --fh-heat-mid: #33200f;
+  --fh-bone: #f6ead6;
+  --fh-bone-cool: #e9e4d8;
+  --fh-ember: #e4572e;
+  --fh-ember-deep: #8c3a20;
+  --fh-emberlight: #ffd9a0;
+  --fh-bronze: #c8a06a;
+  --fh-gilt: #d8a05a;
+  --fh-ash: #7a6a58;
+  --fh-cinder: #3a2c22;
+  --fh-display: Oswald, "Arial Narrow", Impact, sans-serif;
+  --fh-body: "Source Serif 4", Georgia, "Palatino Linotype", serif;
+  --fh-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+  /* part accent defaults to Bronze; part-id rules below re-voice it */
+  --fh-part: var(--fh-bronze);
+  --fh-part-deep: var(--fh-bronze);
+  --fh-part-glow: rgba(200, 160, 106, 0.35);
+}
+body[data-book="the-fountainhead"][data-part-id="part-1"] {
+  --fh-part: #c8a06a; --fh-part-deep: #c8a06a;
+  --fh-part-glow: rgba(200, 160, 106, 0.35);
+}
+body[data-book="the-fountainhead"][data-part-id="part-2"] {
+  --fh-part: #8c3a20; --fh-part-deep: #8c3a20;
+  --fh-part-glow: rgba(140, 58, 32, 0.5);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"] {
+  --fh-part: #d8a05a; --fh-part-deep: #d8a05a;
+  --fh-part-glow: rgba(216, 160, 90, 0.4);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] {
+  --fh-part: #e4572e; --fh-part-deep: #e4572e;
+  --fh-part-glow: rgba(228, 87, 46, 0.5);
+}
+
+/* Shared surface tokens, FURNACE-voiced across all 8 themes. */
 :root, html[data-theme="dark"] {
-  --bg: #0e1218;
-  --bg-elevated: #151b24;
-  --bg-soft: #1a2230;
-  --surface: #1e2836;
-  --border: rgba(107, 154, 196, 0.16);
-  --border-strong: rgba(107, 154, 196, 0.32);
-  --text: #e6edf5;
-  --text-muted: #8b9bb0;
-  --text-faint: #5c6b7e;
-  --accent: #6b9ac4;
-  --accent-soft: rgba(107, 154, 196, 0.12);
-  --accent-hover: #8fb6d9;
-  --copper: #94a3b8;
+  --bg: #17100b;
+  --bg-elevated: #1e1410;
+  --bg-soft: #241610;
+  --surface: #2a1a12;
+  --border: rgba(200, 160, 106, 0.16);
+  --border-strong: rgba(200, 160, 106, 0.34);
+  --text: #f6ead6;
+  --text-muted: #c9b797;
+  --text-faint: #7a6a58;
+  --accent: #e4572e;
+  --accent-soft: rgba(228, 87, 46, 0.12);
+  --accent-hover: #ff6a3d;
+  --copper: #c8a06a;
+  --on-accent: #17100b;
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
   --reader-max: 52rem;
+  --font-serif: "Source Serif 4", Georgia, "Palatino Linotype", serif;
+  /* FinalValidator R3-4 ruling (supervisor): the SANS reading pref renders a
+     real sans (system stack) — Plex Mono stays the DATA voice (chainage,
+     kickers, seals) only. Mono-at-body was a token error, now corrected. */
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
+html[data-theme="nocturne"] {
+  --bg: #12100e; --bg-elevated: #181411; --bg-soft: #1e1712; --surface: #241b14;
+  --border: rgba(200, 160, 106, 0.16); --border-strong: rgba(200, 160, 106, 0.34);
+  --text: #e9e4d8; --text-muted: #b3a88f; --text-faint: #6e6252;
+  --accent: #e4572e; --accent-soft: rgba(228, 87, 46, 0.12); --accent-hover: #ff6a3d;
+  --copper: #c8a06a; --on-accent: #12100e;
+}
+html[data-theme="verdant"] {
+  --bg: #101410; --bg-elevated: #161b15; --bg-soft: #1c231a; --surface: #232b1e;
+  --border: rgba(200, 160, 106, 0.16); --border-strong: rgba(200, 160, 106, 0.34);
+  --text: #ece7d4; --text-muted: #b5ad8d; --text-faint: #6f6a55;
+  --accent: #e4572e; --accent-soft: rgba(228, 87, 46, 0.12); --accent-hover: #ff6a3d;
+  --copper: #c8a06a; --on-accent: #101410;
+}
+html[data-theme="oxblood"] {
+  --bg: #160d0b; --bg-elevated: #211312; --bg-soft: #291716; --surface: #301c18;
+  --border: rgba(216, 160, 90, 0.18); --border-strong: rgba(216, 160, 90, 0.36);
+  --text: #f2e4d2; --text-muted: #c2a686; --text-faint: #7d675c;
+  --accent: #e4572e; --accent-soft: rgba(228, 87, 46, 0.14); --accent-hover: #ff6a3d;
+  --copper: #d8a05a; --on-accent: #160d0b;
+}
+html[data-theme="candlelight"] {
+  --bg: #141009; --bg-elevated: #201710; --bg-soft: #291d14; --surface: #2f2316;
+  --border: rgba(216, 160, 90, 0.18); --border-strong: rgba(216, 160, 90, 0.36);
+  --text: #f2e7d3; --text-muted: #c0a67f; --text-faint: #7f6f58;
+  --accent: #e4572e; --accent-soft: rgba(228, 87, 46, 0.12); --accent-hover: #ff6a3d;
+  --copper: #d8a05a; --on-accent: #141009;
+}
+html[data-theme="slate"] {
+  --bg: #12100e; --bg-elevated: #191512; --bg-soft: #1f1915; --surface: #261e18;
+  --border: rgba(200, 160, 106, 0.16); --border-strong: rgba(200, 160, 106, 0.34);
+  --text: #e9e4d8; --text-muted: #b3a88f; --text-faint: #6e6252;
+  --accent: #e4572e; --accent-soft: rgba(228, 87, 46, 0.12); --accent-hover: #ff6a3d;
+  --copper: #c8a06a; --on-accent: #12100e;
+}
+/* Bone-ground daylight themes: Ember darkened for F1/F9. */
 html[data-theme="sepia"] {
-  --bg: #eef2f6;
-  --bg-elevated: #e4eaf1;
-  --bg-soft: #d8e0ea;
-  --surface: #ffffff;
-  --text: #1a2330;
-  --text-muted: #5a6a7c;
-  --accent: #3d6f99;
-  --border: rgba(61, 111, 153, 0.15);
+  --bg: #f6ead6; --bg-elevated: #efe0c8; --bg-soft: #e8d4b4; --surface: #fff6e8;
+  --border: rgba(140, 58, 32, 0.16); --border-strong: rgba(140, 58, 32, 0.34);
+  --text: #2a1e14; --text-muted: #5d4a36; --text-faint: #8a765c;
+  --accent: #b23e1f; --accent-soft: rgba(178, 62, 31, 0.1); --accent-hover: #8c3a20;
+  --copper: #8a6a3a; --on-accent: #fff6e8;
+  --shadow: 0 24px 64px rgba(80, 45, 15, 0.16);
 }
-.cover-grid {
-  background-image:
-    linear-gradient(rgba(107, 154, 196, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(107, 154, 196, 0.07) 1px, transparent 1px);
-  background-size: 48px 48px;
+html[data-theme="light"] {
+  --bg: #faf3e6; --bg-elevated: #fff8ec; --bg-soft: #f0e2cc; --surface: #fffdf6;
+  --border: rgba(140, 58, 32, 0.14); --border-strong: rgba(140, 58, 32, 0.3);
+  --text: #241a10; --text-muted: #5a4832; --text-faint: #8d7a60;
+  --accent: #b23e1f; --accent-soft: rgba(178, 62, 31, 0.1); --accent-hover: #8c3a20;
+  --copper: #8a6a3a; --on-accent: #fffdf6;
+  --shadow: 0 24px 64px rgba(60, 35, 10, 0.1);
 }
-.cover-glow {
-  background: radial-gradient(ellipse, rgba(107, 154, 196, 0.18) 0%, transparent 65%);
+/* FURNACE tokens follow the daylight ground (F1/F9 policing). */
+html[data-theme="sepia"] body[data-book="the-fountainhead"],
+html[data-theme="light"] body[data-book="the-fountainhead"] {
+  --fh-hearth: #f6ead6;
+  --fh-hearth-deep: #efe0c8;
+  --fh-bone: #2a1e14;
+  --fh-ember: #b23e1f;
+  --fh-ember-deep: #8c3a20;
+  --fh-emberlight: #8c3a20;
+  /* Validator R4: Bronze/Gilt daylight tokens must clear 4.5:1 as small Plex
+     (kickers, captions, TOC). #6e5228 → 5.57–6.09; #7a521a → 5.30–5.79. */
+  --fh-bronze: #6e5228;
+  --fh-gilt: #7a521a;
+  --fh-ash: #6b5c48;
+  --fh-cinder: #d8c6a4;
 }
-.cover-title { letter-spacing: -0.03em; }
-.title-line.accent { font-style: normal; font-weight: 600; color: var(--accent); }
-.chapter-text p:first-of-type::first-letter {
-  color: var(--accent);
-  border-left: 3px solid var(--accent);
+html[data-theme="sepia"] body[data-book="the-fountainhead"][data-part-id="part-1"],
+html[data-theme="light"] body[data-book="the-fountainhead"][data-part-id="part-1"] {
+  /* Validator R4: #8a6a3a metered 3.85–4.20 — darkened to 5.57–6.09. */
+  --fh-part: #6e5228; --fh-part-deep: #6e5228;
+}
+html[data-theme="sepia"] body[data-book="the-fountainhead"][data-part-id="part-3"],
+html[data-theme="light"] body[data-book="the-fountainhead"][data-part-id="part-3"] {
+  /* Validator R4: #8a5e1e metered 4.37–4.77 — darkened to 5.30–5.79. */
+  --fh-part: #7a521a; --fh-part-deep: #7a521a;
+}
+html[data-theme="sepia"] body[data-book="the-fountainhead"][data-part-id="part-4"],
+html[data-theme="light"] body[data-book="the-fountainhead"][data-part-id="part-4"] {
+  /* Validator R4: #b23e1f metered 4.49 — darkened to 5.14–5.61. */
+  --fh-part: #a5361d; --fh-part-deep: #a5361d;
+}
+html[data-theme="nocturne"] body[data-book="the-fountainhead"],
+html[data-theme="slate"] body[data-book="the-fountainhead"] {
+  --fh-bone: #e9e4d8;
+}
+html[data-theme="oxblood"] body[data-book="the-fountainhead"],
+html[data-theme="candlelight"] body[data-book="the-fountainhead"],
+html[data-theme="verdant"] body[data-book="the-fountainhead"] {
+  --fh-bronze: var(--copper, #c8a06a);
+}
+
+/* ── 2. COVER — asymmetric grid: kicker/title/rule/author left, tower right ── */
+body[data-book="the-fountainhead"][data-view="cover"] #cover {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  padding: clamp(2rem, 6vh, 4rem) clamp(1.25rem, 5vw, 4rem) 5rem;
+}
+/* Silence the rejected lattice/glow voice entirely. */
+body[data-book="the-fountainhead"] .cover-bg,
+body[data-book="the-fountainhead"] .cover-grid,
+body[data-book="the-fountainhead"] .cover-glow {
+  background: none;
+  background-image: none;
+  mask-image: none;
+  animation: none;
+  opacity: 1;
+}
+/* Cinder survey ticks: the cover's only background figure (FURNACE means). */
+body[data-book="the-fountainhead"] .cover-grid {
+  background-image: repeating-linear-gradient(90deg, var(--fh-cinder) 0 2px, transparent 2px 96px);
+  mask-image: linear-gradient(180deg, black 0%, transparent 34%);
+  opacity: 0.5;
+}
+body[data-book="the-fountainhead"] .cover-content {
+  flex: 1 1 26rem;
+  max-width: 34rem;
+  margin: 0;
+  text-align: left;
+  animation: fh-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes fh-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body[data-book="the-fountainhead"] .cover-eyebrow {
+  font-family: var(--fh-data);
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .cover-eyebrow::before,
+body[data-book="the-fountainhead"] .cover-eyebrow::after {
+  content: none; /* no fleurons: FURNACE speaks in bars, not blossoms */
+}
+body[data-book="the-fountainhead"] .cover-title {
+  font-family: var(--fh-display);
+  font-weight: 700;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.94;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--fh-bone);
+}
+body[data-book="the-fountainhead"] .title-line.accent {
+  color: var(--fh-ember);
+  font-style: normal;
+  font-weight: 700;
+}
+body[data-book="the-fountainhead"] .cover-rule {
+  justify-content: flex-start;
+  width: 16rem;
+  margin: 1.75rem 0;
+  gap: 0;
+}
+body[data-book="the-fountainhead"] .cover-rule::before {
+  height: 4px;
+  background: linear-gradient(90deg, var(--fh-ember), transparent);
+}
+body[data-book="the-fountainhead"] .cover-rule::after {
+  content: none;
+}
+body[data-book="the-fountainhead"] .rule-diamond {
+  display: none;
+}
+body[data-book="the-fountainhead"] .cover-author {
+  font-family: var(--fh-data);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .cover-dedication {
+  font-family: var(--fh-body);
+  font-style: italic;
+  color: var(--text-muted);
+}
+body[data-book="the-fountainhead"] .cover-quote {
+  font-family: var(--fh-body);
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  border-left: 3px solid var(--fh-ember);
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+body[data-book="the-fountainhead"] .cover-quote::after { content: none; }
+body[data-book="the-fountainhead"] .cover-actions { justify-content: flex-start; }
+/* Cover plate: the furnace tower, right column. */
+body[data-book="the-fountainhead"] #cover-art.plate {
+  display: block;
+  flex: 0 1 24rem;
+  max-width: 26rem;
+  margin: 0;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 4px solid var(--fh-ember);
+  background: var(--fh-hearth-deep);
+  animation: fh-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+}
+body[data-book="the-fountainhead"] #cover-art.plate svg {
+  width: 100%;
+  height: auto;
+  max-height: min(34rem, 62vh);
+}
+body[data-book="the-fountainhead"] #cover-art figcaption {
+  font-family: var(--fh-data);
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+  padding: 0.6rem 0.25rem 0.2rem;
+}
+body[data-book="the-fountainhead"] .cover-footer {
+  font-family: var(--fh-data);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fh-ash);
+}
+
+/* ── 3. CHAPTER OPENER — banner slot + Oswald meta + part-mark chainage ── */
+/* Silence every pre-FURNACE ornament this shell replaces (rejected tells). */
+body[data-book="the-fountainhead"] .reader-body::before,
+body[data-book="the-fountainhead"] .reader-body::after,
+body[data-book="the-fountainhead"] .chapter-meta::before,
+body[data-book="the-fountainhead"] .chapter-meta::after,
+body[data-book="the-fountainhead"] .meta-number::before,
+body[data-book="the-fountainhead"] .chapter-meta .meta-number::after {
+  content: none;
+  display: none;
+  background: none;
+  box-shadow: none;
+  animation: none;
+}
+/* Banner slot: meta→text zone, ≤12rem, never pushes text (F4). */
+body[data-book="the-fountainhead"] #chapter-art.banner {
+  display: block;
+  max-width: min(var(--reader-max), 65ch);
+  max-height: 12rem;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 3px double var(--fh-part);
+  background: var(--fh-hearth-deep);
+}
+body[data-book="the-fountainhead"] #chapter-art.banner svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 9.5rem;
+}
+/* Finale plates: earned height (p4c19 plate, p4c20 finale). */
+body[data-book="the-fountainhead"] #chapter-art.plate {
+  display: block;
+  max-width: min(var(--reader-max), 65ch);
+  margin: 0 auto 2rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 4px solid var(--fh-ember);
+  background: var(--fh-hearth-deep);
+}
+body[data-book="the-fountainhead"] #chapter-art.plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 22rem;
+}
+body[data-book="the-fountainhead"] #chapter-art.finale {
+  display: block;
+  max-width: min(var(--reader-max), 65ch);
+  margin: 0 auto 2rem;
+  border-top: 1px solid var(--fh-cinder);
+  border-bottom: 4px solid var(--fh-ember);
+  background: linear-gradient(180deg, #0e1a26 0%, var(--fh-hearth-deep) 60%);
+}
+body[data-book="the-fountainhead"] #chapter-art.finale svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 30rem;
+}
+/* Chainage stamp: STA P-ROMAN · words · FIG callout (§6 signature). */
+body[data-book="the-fountainhead"] #chapter-art figcaption {
+  font-family: var(--fh-data);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-emberlight);
+  background: var(--fh-hearth-deep);
+  padding: 0.55rem 0.25rem 0.15rem;
+}
+/* Part-voiced chainage: Bronze / Ember-deep / Gilt / Ember (all metered F9,
+   Ember-on-Hearth-deep 5.31:1 per Roark cohort; daylight map takes --fh-*
+   darkened forms). Part 2 keeps Emberlight for 4.5:1 (Ember-deep ≈2:1). */
+body[data-book="the-fountainhead"][data-part-id="part-1"] #chapter-art figcaption {
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"] #chapter-art figcaption {
+  color: var(--fh-gilt);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art figcaption {
+  color: var(--fh-ember);
+}
+/* Validator R4 residual: part-4 caption #b23e1f metered 4.49:1 on the sepia
+   strip (needs 4.5) — deepen to Ember-deep #8c3a20 (5.90:1) on daylight. */
+html[data-theme="sepia"] body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art figcaption,
+html[data-theme="light"] body[data-book="the-fountainhead"][data-part-id="part-4"] #chapter-art figcaption {
+  color: var(--fh-ember-deep);
+}
+/* Meta: Plex kicker + Oswald head. */
+body[data-book="the-fountainhead"] .chapter-meta { text-align: left; }
+body[data-book="the-fountainhead"] .meta-part {
+  font-family: var(--fh-data);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-part {
+  color: var(--fh-gilt);
+}
+body[data-book="the-fountainhead"][data-part-id="part-4"] .meta-part {
+  color: var(--fh-emberlight);
+}
+body[data-book="the-fountainhead"] .meta-title {
+  margin: 0;
+  max-width: none;
+  font-family: var(--fh-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fh-bone);
+}
+body[data-book="the-fountainhead"] .meta-sub {
+  font-family: var(--fh-data);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  /* Validator R2-1/R1: #a89880 (6.70:1) on dark grounds; #5d4a36 (7.07:1)
+     on Bone daylight — the unscoped lift regressed sepia to 2.36:1. */
+  color: #a89880;
+}
+html[data-theme="sepia"] body[data-book="the-fountainhead"] .meta-sub,
+html[data-theme="light"] body[data-book="the-fountainhead"] .meta-sub {
+  color: #5d4a36;
+}
+/* Giant stroke-only numeral (F3): never a badge — no border, fill, cartouche.
+   Wynand part: 6.4rem monumentality through scale (spec §2). */
+body[data-book="the-fountainhead"] .meta-number {
+  margin: 0.4rem 0 0;
+  font-family: var(--fh-display);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5.2rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--fh-part);
+  opacity: 0.8;
+}
+/* Validator R2-2: part-2 Ember-deep stroke metered 2.46:1 (needs 3:1 large).
+   Numeral-only lift to 3.70:1; Ember-deep kept everywhere else (drop-cap,
+   seals, TOC) where it is large-display or decorative. */
+body[data-book="the-fountainhead"][data-part-id="part-2"] .meta-number {
+  -webkit-text-stroke-color: #b4502e;
+}
+/* Validator R3: Wynand monumentality through scale (spec §2, open Q3). */
+body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-number {
+  font-size: 6.4rem;
+}
+/* Validator R2 — F7 heat-arc numeral fills (authored per-chapter values from
+   design/chapters.json; heat rises from the baseline like a furnace charge).
+   Stroke-only 0%: p1c1 p1c2 p1c4 p1c7 (base rule, no fill). */
+/* heat 5%: p1c11 p1c6 p1c9 */
+body[data-book="the-fountainhead"][data-chapter="p1c11"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p1c6"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p1c9"] .meta-number {
+  background: linear-gradient(180deg, transparent 95%, var(--fh-part) 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 10%: p1c14 p1c3 */
+body[data-book="the-fountainhead"][data-chapter="p1c14"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p1c3"] .meta-number {
+  background: linear-gradient(180deg, transparent 90%, var(--fh-part) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 12%: p1c5 p1c8 */
+body[data-book="the-fountainhead"][data-chapter="p1c5"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p1c8"] .meta-number {
+  background: linear-gradient(180deg, transparent 88%, var(--fh-part) 88%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 15%: p1c10 p2c1 */
+body[data-book="the-fountainhead"][data-chapter="p1c10"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c1"] .meta-number {
+  background: linear-gradient(180deg, transparent 85%, var(--fh-part) 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 18%: p1c12 */
+body[data-book="the-fountainhead"][data-chapter="p1c12"] .meta-number {
+  background: linear-gradient(180deg, transparent 82%, var(--fh-part) 82%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 20%: p1c13 p2c2 p2c4 */
+body[data-book="the-fountainhead"][data-chapter="p1c13"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c2"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c4"] .meta-number {
+  background: linear-gradient(180deg, transparent 80%, var(--fh-part) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 25%: p2c3 p2c6 */
+body[data-book="the-fountainhead"][data-chapter="p2c3"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c6"] .meta-number {
+  background: linear-gradient(180deg, transparent 75%, var(--fh-part) 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 28%: p2c5 */
+body[data-book="the-fountainhead"][data-chapter="p2c5"] .meta-number {
+  background: linear-gradient(180deg, transparent 72%, var(--fh-part) 72%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 30%: p2c14 p2c8 */
+body[data-book="the-fountainhead"][data-chapter="p2c14"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c8"] .meta-number {
+  background: linear-gradient(180deg, transparent 70%, var(--fh-part) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 32%: p2c7 */
+body[data-book="the-fountainhead"][data-chapter="p2c7"] .meta-number {
+  background: linear-gradient(180deg, transparent 68%, var(--fh-part) 68%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 35%: p2c11 p2c9 */
+body[data-book="the-fountainhead"][data-chapter="p2c11"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c9"] .meta-number {
+  background: linear-gradient(180deg, transparent 65%, var(--fh-part) 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 40%: p2c13 */
+body[data-book="the-fountainhead"][data-chapter="p2c13"] .meta-number {
+  background: linear-gradient(180deg, transparent 60%, var(--fh-part) 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 45%: p2c15 p3c2 */
+body[data-book="the-fountainhead"][data-chapter="p2c15"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p3c2"] .meta-number {
+  background: linear-gradient(180deg, transparent 55%, var(--fh-part) 55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 50%: p3c4 */
+body[data-book="the-fountainhead"][data-chapter="p3c4"] .meta-number {
+  background: linear-gradient(180deg, transparent 50%, var(--fh-part) 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 55%: p3c3 p3c6 */
+body[data-book="the-fountainhead"][data-chapter="p3c3"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p3c6"] .meta-number {
+  background: linear-gradient(180deg, transparent 45%, var(--fh-part) 45%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 65%: p3c7 */
+body[data-book="the-fountainhead"][data-chapter="p3c7"] .meta-number {
+  background: linear-gradient(180deg, transparent 35%, var(--fh-part) 35%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 70%: p3c8 p4c1 */
+body[data-book="the-fountainhead"][data-chapter="p3c8"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c1"] .meta-number {
+  background: linear-gradient(180deg, transparent 30%, var(--fh-part) 30%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 72%: p4c2 */
+body[data-book="the-fountainhead"][data-chapter="p4c2"] .meta-number {
+  background: linear-gradient(180deg, transparent 28%, var(--fh-part) 28%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 74%: p4c4 */
+body[data-book="the-fountainhead"][data-chapter="p4c4"] .meta-number {
+  background: linear-gradient(180deg, transparent 26%, var(--fh-part) 26%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 75%: p4c6 */
+body[data-book="the-fountainhead"][data-chapter="p4c6"] .meta-number {
+  background: linear-gradient(180deg, transparent 25%, var(--fh-part) 25%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 76%: p4c3 */
+body[data-book="the-fountainhead"][data-chapter="p4c3"] .meta-number {
+  background: linear-gradient(180deg, transparent 24%, var(--fh-part) 24%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 78%: p4c5 */
+body[data-book="the-fountainhead"][data-chapter="p4c5"] .meta-number {
+  background: linear-gradient(180deg, transparent 22%, var(--fh-part) 22%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 80%: p4c7 p4c9 */
+body[data-book="the-fountainhead"][data-chapter="p4c7"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c9"] .meta-number {
+  background: linear-gradient(180deg, transparent 20%, var(--fh-part) 20%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 82%: p4c10 p4c8 */
+body[data-book="the-fountainhead"][data-chapter="p4c10"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c8"] .meta-number {
+  background: linear-gradient(180deg, transparent 18%, var(--fh-part) 18%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 84%: p4c11 p4c12 p4c14 */
+body[data-book="the-fountainhead"][data-chapter="p4c11"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c12"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c14"] .meta-number {
+  background: linear-gradient(180deg, transparent 16%, var(--fh-part) 16%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 86%: p4c13 */
+body[data-book="the-fountainhead"][data-chapter="p4c13"] .meta-number {
+  background: linear-gradient(180deg, transparent 14%, var(--fh-part) 14%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 88%: p4c17 */
+body[data-book="the-fountainhead"][data-chapter="p4c17"] .meta-number {
+  background: linear-gradient(180deg, transparent 12%, var(--fh-part) 12%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* heat 90%: p4c16 */
+body[data-book="the-fountainhead"][data-chapter="p4c16"] .meta-number {
+  background: linear-gradient(180deg, transparent 10%, var(--fh-part) 10%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* solid climaxes (100%): p1c15 p2c10 p2c12 p3c1 p3c5 p3c9 p4c15 p4c18 p4c19 p4c20 */
+body[data-book="the-fountainhead"][data-chapter="p1c15"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c10"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p2c12"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p3c1"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p3c5"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p3c9"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c15"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c18"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c19"] .meta-number,
+body[data-book="the-fountainhead"][data-chapter="p4c20"] .meta-number {
+  color: var(--fh-part);
+  -webkit-text-stroke-color: var(--fh-part);
+  background: none;
+}
+/* Hearth-line rule: part accent with a hot core. */
+body[data-book="the-fountainhead"] .meta-rule {
+  justify-content: flex-start;
+  gap: 0;
+}
+body[data-book="the-fountainhead"] .meta-rule::before,
+body[data-book="the-fountainhead"] .meta-rule::after {
+  content: none;
+}
+body[data-book="the-fountainhead"] .meta-rule span {
+  width: min(26rem, 88%);
+  height: 4px;
+  transform: none;
+  background: linear-gradient(90deg, var(--fh-part) 0 78%, transparent 96%);
+  box-shadow: 0 -2px 0 var(--fh-emberlight);
+  opacity: 1;
+}
+/* Motif treatments (body[data-art] distinctions): finale plates earn theirs. */
+body[data-book="the-fountainhead"][data-art="roark-cortlandt"] .meta-rule span {
+  background: linear-gradient(90deg, var(--fh-ember) 0 88%, transparent);
+}
+body[data-book="the-fountainhead"][data-art="roark-ascent"] .meta-rule span {
+  background: linear-gradient(90deg, var(--fh-emberlight) 0 30%, var(--fh-ember) 60%, transparent);
+}
+
+/* ── 4. READING BODY — calm dark Source Serif; drop-cap heat only ── */
+body[data-book="the-fountainhead"] .chapter-text {
+  font-family: var(--fh-body);
+}
+/* Validator R5: honor the shared font=sans pref (contract §9). Per R3-4
+   ruling this resolves to the system sans, not the Plex data voice. */
+html[data-font="sans"] body[data-book="the-fountainhead"] .chapter-text {
+  font-family: var(--font-sans);
+}
+/* Plex carries U+25C6 on all targets (F10 verified by cohorts); the shared
+   fleuron is replaced by the part-voiced diamond seal. */
+body[data-book="the-fountainhead"] .chapter-text > p:last-child::after {
+  content: "◆";
+  display: block;
+  margin-top: 2.75rem;
+  text-align: center;
+  font-family: var(--fh-data);
+  font-size: 0.85rem;
+  font-style: normal;
+  line-height: 1;
+  color: var(--fh-part);
+  opacity: 0.9;
+  text-shadow: none;
+  background: none;
+}
+body[data-book="the-fountainhead"] .chapter-text > p:first-of-type::first-letter {
+  font-family: var(--fh-display);
+  font-weight: 700;
+  color: var(--fh-part);
+  background: none;
+  border-left: 3px solid var(--fh-part);
+  border-radius: 0;
+  text-shadow: none;
   padding-left: 0.15em;
+}
+/* Validator R6: part-2 Ember-deep drop 2.46:1 — same accepted #b4502e lift
+   as the numeral (3.70:1 large-display); COLD Bronze caps below win. */
+body[data-book="the-fountainhead"][data-part-id="part-2"] .chapter-text > p:first-of-type::first-letter {
+  color: #b4502e;
+  border-left-color: #b4502e;
+}
+/* COLD dialogue opens (A2): Bronze cap + Bronze seal. */
+body[data-book="the-fountainhead"][data-chapter="p2c4"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-chapter="p2c7"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-chapter="p2c14"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-chapter="p3c2"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-chapter="p3c6"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-chapter="p4c6"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="the-fountainhead"][data-chapter="p4c14"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--fh-bronze);
+  border-left-color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"][data-chapter="p2c4"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p2c7"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p2c14"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p3c2"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p3c6"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p4c6"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p4c14"] .chapter-text > p:last-child::after {
+  color: var(--fh-bronze);
+}
+/* Climax seals burn Ember (p1c15 p2c10 p2c12 p3c1 p3c5 p3c9 p4c15 p4c18 p4c19). */
+body[data-book="the-fountainhead"][data-chapter="p1c15"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p2c10"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p2c12"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p3c1"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p3c5"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p3c9"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p4c15"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p4c18"] .chapter-text > p:last-child::after,
+body[data-book="the-fountainhead"][data-chapter="p4c19"] .chapter-text > p:last-child::after {
+  color: var(--fh-ember);
+}
+/* p4c20 explicit end state: closing rule + brightest seal (F5). */
+body[data-book="the-fountainhead"][data-chapter="p4c20"] .chapter-text > p:last-child::after {
+  content: "◆  END";
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: var(--fh-emberlight);
+  border-top: 3px solid var(--fh-ember);
+  padding-top: 1.5rem;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── 5. READER CHROME in FURNACE means ── */
+body[data-book="the-fountainhead"] .progress-fill {
+  background: linear-gradient(90deg, var(--fh-ember), var(--fh-bronze));
+}
+body[data-book="the-fountainhead"] .progress-fill::after {
+  background: var(--fh-emberlight);
+  box-shadow: 0 0 8px var(--fh-part-glow);
+}
+body[data-book="the-fountainhead"] .header-part {
+  font-family: var(--fh-data);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .header-chapter {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+body[data-book="the-fountainhead"] .nav-label {
+  font-family: var(--fh-data);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .nav-title {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+body[data-book="the-fountainhead"] .nav-btn:hover:not(:disabled) {
+  border-top: 2px solid var(--fh-part);
+}
+/* Settings card: Oswald head, Plex labels. */
+body[data-book="the-fountainhead"] .settings-header h3 {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+body[data-book="the-fountainhead"] .settings-row > span,
+body[data-book="the-fountainhead"] .seg-btn {
+  font-family: var(--fh-data);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ── 6. TOC DRAWER — part marks + Bronze subtitles + part-voiced rows ── */
+body[data-book="the-fountainhead"] .drawer-header h2 {
+  font-family: var(--fh-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+body[data-book="the-fountainhead"] .drawer-eyebrow {
+  font-family: var(--fh-data);
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .toc-part-header {
+  font-family: var(--fh-data);
+  color: var(--fh-bone);
+}
+body[data-book="the-fountainhead"] .toc-part-sub {
+  font-family: var(--fh-body);
+  font-style: italic;
+  color: var(--fh-bronze);
+  border-top-color: var(--fh-cinder);
+}
+/* Part-mark elevations: pilasters / twin arches / ziggurat / cantilever.
+   Structural bars with real proportion (F2), drawn in Cinder + part voice —
+   clip-art glyphs fail review, so these are elevations, not icons. */
+body[data-book="the-fountainhead"] .toc-part-header::after {
+  content: "";
+  display: block;
+  margin-top: 0.7rem;
+  height: 22px;
+  opacity: 0.9;
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(1) .toc-part-header::after {
+  width: 11rem;
+  background:
+    linear-gradient(180deg, var(--fh-bronze) 0 3px, transparent 3px),
+    repeating-linear-gradient(90deg, var(--fh-ash) 0 8px, transparent 8px 22px);
+  background-size: 100% 100%, 100% 14px;
+  background-position: 0 0, 0 8px;
+  background-repeat: no-repeat;
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(2) .toc-part-header::after {
+  width: 11rem;
+  background:
+    radial-gradient(circle at 25% 100%, transparent 17px, var(--fh-ash) 18px 21px, transparent 22px),
+    radial-gradient(circle at 75% 100%, transparent 17px, var(--fh-ash) 18px 21px, transparent 22px),
+    linear-gradient(180deg, transparent 18px, var(--fh-ember-deep) 18px 21px, transparent 21px);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(3) .toc-part-header::after {
+  width: 11rem;
+  background:
+    linear-gradient(180deg, var(--fh-gilt) 0 4px, transparent 4px),
+    linear-gradient(180deg, var(--fh-ash) 0 4px, transparent 4px),
+    linear-gradient(180deg, var(--fh-ash) 0 4px, transparent 4px),
+    linear-gradient(180deg, var(--fh-ash) 0 4px, transparent 4px);
+  background-size: 34% 100%, 52% 100%, 72% 100%, 94% 100%;
+  background-position: 0 0, 0 5px, 0 10px, 0 15px;
+  background-repeat: no-repeat;
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(4) .toc-part-header::after {
+  width: 11rem;
+  background:
+    linear-gradient(180deg, transparent 6px, var(--fh-ash) 6px 9px, transparent 9px),
+    linear-gradient(180deg, transparent 2px, var(--fh-bone) 2px 6px, transparent 6px),
+    linear-gradient(90deg, var(--fh-ember) 0 4px, transparent 4px);
+  background-size: 55% 100%, 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+}
+/* Part-voiced TOC rows (TOC order = part order). */
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(1) .toc-num {
+  font-family: var(--fh-data);
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(2) .toc-num {
+  font-family: var(--fh-data);
+  color: var(--fh-ember-deep);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(3) .toc-num {
+  font-family: var(--fh-data);
+  color: var(--fh-gilt);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(4) .toc-num {
+  font-family: var(--fh-data);
+  color: var(--fh-ember);
+}
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(1) .toc-chapter.active { border-left-color: var(--fh-bronze); }
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(2) .toc-chapter.active { border-left-color: var(--fh-ember-deep); }
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(3) .toc-chapter.active { border-left-color: var(--fh-gilt); }
+body[data-book="the-fountainhead"] .toc-part:nth-of-type(4) .toc-chapter.active { border-left-color: var(--fh-ember); }
+/* Validator R7: spec §7 promises a Bronze ◆ for read chapters — the shared
+   ✓ chip becomes a Bronze diamond (Plex U+25C6, F10-safe). */
+body[data-book="the-fountainhead"] .toc-chapter.read .toc-check {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  font-size: 0;
+  font-family: var(--fh-data);
+}
+body[data-book="the-fountainhead"] .toc-chapter.read .toc-check::before {
+  content: "◆";
+  font-size: 0.8rem;
+  color: var(--fh-bronze);
+}
+body[data-book="the-fountainhead"] .toc-name { font-family: var(--fh-body); }
+body[data-book="the-fountainhead"] .toc-sub {
+  font-family: var(--fh-data);
+}
+
+/* ── 7. GUARDS — motion, small screens, print ── */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="the-fountainhead"] .cover-content,
+  body[data-book="the-fountainhead"] #cover-art.plate {
+    animation: none;
+  }
+  body[data-book="the-fountainhead"] #chapter-art.banner {
+    border-bottom-style: solid;
+  }
+}
+@media (max-width: 900px) {
+  body[data-book="the-fountainhead"][data-view="cover"] #cover {
+    flex-direction: column;
+  }
+  body[data-book="the-fountainhead"] .cover-content {
+    order: -1;
+    text-align: center;
+    max-width: 40rem;
+  }
+  body[data-book="the-fountainhead"] .cover-rule { margin: 1.75rem auto; justify-content: center; }
+  body[data-book="the-fountainhead"] .cover-rule::before {
+    background: linear-gradient(90deg, transparent, var(--fh-ember), transparent);
+  }
+  body[data-book="the-fountainhead"] .cover-quote { border-left: none; border-top: 3px solid var(--fh-ember); padding-left: 0; padding-top: 1rem; }
+  body[data-book="the-fountainhead"] .cover-actions { justify-content: center; }
+  body[data-book="the-fountainhead"] #cover-art.plate { max-width: 22rem; }
+}
+@media (max-width: 720px) {
+  /* Wynand numeral stacks without overflow (open question 3 — resolved). */
+  body[data-book="the-fountainhead"] .meta-number { font-size: 4.2rem; }
+  body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-number { font-size: 4.6rem; }
+  body[data-book="the-fountainhead"] #chapter-art.banner { max-height: none; }
+  body[data-book="the-fountainhead"] #chapter-art.banner svg { max-height: none; }
+  body[data-book="the-fountainhead"] #chapter-art figcaption {
+    letter-spacing: 0.14em;
+    overflow-wrap: anywhere;
+  }
+  body[data-book="the-fountainhead"] .meta-rule span { width: min(18rem, 82%); }
+}
+@media (max-width: 390px) {
+  body[data-book="the-fountainhead"] .meta-number { font-size: 3.4rem; }
+  body[data-book="the-fountainhead"][data-part-id="part-3"] .meta-number { font-size: 3.8rem; }
+}
+@media print {
+  body[data-book="the-fountainhead"] #chapter-art.banner,
+  body[data-book="the-fountainhead"] #chapter-art.plate,
+  body[data-book="the-fountainhead"] #chapter-art.finale {
+    border-bottom: 2px solid #000;
+    background: none;
+  }
+  body[data-book="the-fountainhead"] .meta-number {
+    color: #000;
+    -webkit-text-stroke: 0;
+    opacity: 1;
+  }
+  body[data-book="the-fountainhead"] .meta-rule span { box-shadow: none; }
+  body[data-book="the-fountainhead"] .chapter-text > p:last-child::after { color: #000; }
 }

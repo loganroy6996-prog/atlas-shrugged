@@ -1,0 +1,595 @@
+{
+ "version": 1,
+ "cover": {
+  "src": "art/cover-clearing.svg",
+  "symbol": "cover-clearing",
+  "class": "plate",
+  "caption": "The clearing \u2014 a shaft of straw light widens through dark trunks"
+ },
+ "default": {
+  "class": "motif"
+ },
+ "chapters": {
+  "p1c1": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-forgotten",
+   "class": "plate",
+   "motif": "iw-forgotten",
+   "caption": "Three bars over a buried query \u2014 the slit"
+  },
+  "p1c2": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-loop",
+   "class": "motif",
+   "motif": "iw-loop",
+   "caption": "The loop that is not a circle"
+  },
+  "p1c3": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-foundation",
+   "class": "motif",
+   "motif": "iw-foundation",
+   "caption": "The plumb line through the crack"
+  },
+  "p1c4": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-root",
+   "class": "motif",
+   "motif": "iw-root",
+   "caption": "Three roots, one trunk"
+  },
+  "p1c5": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-horizon",
+   "class": "banner",
+   "motif": "iw-horizon",
+   "caption": "Nearest below, farthest above"
+  },
+  "p1c6": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-strata",
+   "class": "banner",
+   "motif": "iw-strata",
+   "caption": "Tradition tilted \u22124\u00b0"
+  },
+  "p1c7": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-clearing",
+   "class": "banner",
+   "motif": "iw-clearing",
+   "caption": "The point where light lands"
+  },
+  "p1c8": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-map",
+   "class": "plate",
+   "motif": "iw-map",
+   "caption": "Enter at Dasein, exit at Zeit"
+  },
+  "p2c1": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-mine",
+   "class": "motif",
+   "motif": "iw-mine",
+   "caption": "The eccentric center"
+  },
+  "p2c2": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-boundary",
+   "class": "motif",
+   "motif": "iw-boundary",
+   "caption": "Three refusals, one point"
+  },
+  "p2c3": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-sherd",
+   "class": "motif",
+   "motif": "iw-sherd",
+   "caption": "Less hidden, less adorned"
+  },
+  "p2c4": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-dwelling",
+   "class": "banner",
+   "motif": "iw-dwelling",
+   "caption": "Held, never contained"
+  },
+  "p2c5": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-outside",
+   "class": "motif",
+   "motif": "iw-outside",
+   "caption": "No return path"
+  },
+  "p2c6": {
+   "src": "art/intro-world.svg",
+   "symbol": "iw-ring",
+   "class": "motif",
+   "motif": "iw-ring",
+   "caption": "Four ticks, one gap"
+  },
+  "p2c17": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-quest",
+   "class": "plate",
+   "motif": "ts-quest",
+   "caption": "Fig. 25 \u00b7 das Ich \u2014 the suspect I"
+  },
+  "p2c18": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-with",
+   "class": "plate",
+   "motif": "ts-with",
+   "caption": "Fig. 26 \u00b7 Mitsein \u2014 the with-world at work"
+  },
+  "p2c19": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-they",
+   "class": "plate",
+   "motif": "ts-they",
+   "caption": "Fig. 27 \u00b7 das Man \u2014 twelve even trunks"
+  },
+  "p2c20": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-hinge",
+   "class": "plate",
+   "motif": "ts-hinge",
+   "caption": "Fig. 28 \u00b7 die Erschlossenheit \u2014 plan of the there"
+  },
+  "p2c21": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-mood",
+   "class": "plate",
+   "motif": "ts-mood",
+   "caption": "Fig. 29 \u00b7 die Stimmung \u2014 weather over the there"
+  },
+  "p2c22": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-fear",
+   "class": "plate",
+   "motif": "ts-fear",
+   "caption": "Fig. 30 \u00b7 die Furcht \u2014 the approach"
+  },
+  "p2c23": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-project",
+   "class": "plate",
+   "motif": "ts-project",
+   "caption": "Fig. 31 \u00b7 der Entwurf \u2014 cast forward"
+  },
+  "p2c24": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-circle",
+   "class": "plate",
+   "motif": "ts-circle",
+   "caption": "Fig. 32 \u00b7 der Zirkel \u2014 fore-having, fore-sight, fore-conception"
+  },
+  "p2c25": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-point",
+   "class": "plate",
+   "motif": "ts-point",
+   "caption": "Fig. 33 \u00b7 die Aussage \u2014 the hammer, too heavy"
+  },
+  "p2c26": {
+   "src": "art/they-self.svg",
+   "symbol": "ts-voice",
+   "class": "plate",
+   "motif": "ts-voice",
+   "caption": "Fig. 34 \u00b7 die Rede \u2014 voice from silence"
+  },
+  "p2c27": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-35",
+   "class": "motif",
+   "motif": "fc-idle-talk",
+   "caption": "Idle talk \u2014 scattered saying, no floor"
+  },
+  "p2c28": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-36",
+   "class": "motif",
+   "motif": "fc-curiosity",
+   "caption": "Curiosity \u2014 everywhere and nowhere"
+  },
+  "p2c29": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-37",
+   "class": "motif",
+   "motif": "fc-ambiguity",
+   "caption": "Ambiguity \u2014 everything looks understood"
+  },
+  "p2c30": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-38",
+   "class": "motif",
+   "motif": "fc-falling",
+   "caption": "Falling \u2014 the plunge"
+  },
+  "p2c31": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-39",
+   "class": "motif",
+   "motif": "fc-totality-question",
+   "caption": "The totality question \u2014 held open"
+  },
+  "p2c32": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-40",
+   "class": "plate",
+   "motif": "fc-anxiety",
+   "caption": "Anxiety \u2014 the nothing and nowhere"
+  },
+  "p2c33": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-41",
+   "class": "plate",
+   "motif": "fc-care",
+   "caption": "Care \u2014 the threefold braid"
+  },
+  "p2c34": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-42",
+   "class": "motif",
+   "motif": "fc-cura-fable",
+   "caption": "Cura \u2014 she shapes the clay"
+  },
+  "p2c35": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-43",
+   "class": "motif",
+   "motif": "fc-reality",
+   "caption": "Reality \u2014 the dissolving question"
+  },
+  "p2c36": {
+   "src": "art/falling-care.svg",
+   "symbol": "fc-44",
+   "class": "banner",
+   "motif": "fc-truth",
+   "caption": "Truth \u2014 Dasein is in the truth"
+  },
+  "p3c1": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c1",
+   "class": "plate",
+   "motif": "dc-night-p3c1",
+   "caption": "\u00a745 \u00b7 The hermeneutic circuit stands open where wholeness is missing"
+  },
+  "p3c10": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c10",
+   "class": "motif",
+   "motif": "dc-night-p3c10",
+   "caption": "\u00a754 \u00b7 Attestation: the seal Dasein itself bears"
+  },
+  "p3c11": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c11",
+   "class": "motif",
+   "motif": "dc-night-p3c11",
+   "caption": "\u00a755 \u00b7 Silence breaks in from the margin"
+  },
+  "p3c12": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c12",
+   "class": "motif",
+   "motif": "dc-night-p3c12",
+   "caption": "\u00a756 \u00b7 What the call says, strictly speaking: nothing"
+  },
+  "p3c13": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c13",
+   "class": "motif",
+   "motif": "dc-night-p3c13",
+   "caption": "\u00a757 \u00b7 Not-at-home: the caller is Dasein itself"
+  },
+  "p3c14": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c14",
+   "class": "motif",
+   "motif": "dc-night-p3c14",
+   "caption": "\u00a758 \u00b7 Thrown projection never gets back behind its thrownness"
+  },
+  "p3c15": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c15",
+   "class": "motif",
+   "motif": "dc-night-p3c15",
+   "caption": "\u00a759 \u00b7 The ledger cracks where it meets the uncounted"
+  },
+  "p3c16": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c16",
+   "class": "banner",
+   "motif": "dc-night-p3c16",
+   "caption": "\u00a760 \u00b7 Resoluteness: the ring completed by occupation, not closure"
+  },
+  "p3c2": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c2",
+   "class": "plate",
+   "motif": "dc-night-p3c2",
+   "caption": "\u00a746 \u00b7 The gap, not the ring, is the subject"
+  },
+  "p3c3": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c3",
+   "class": "plate",
+   "motif": "dc-night-p3c3",
+   "caption": "\u00a747 \u00b7 No one can take another's dying away"
+  },
+  "p3c4": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c4",
+   "class": "plate",
+   "motif": "dc-night-p3c4",
+   "caption": "\u00a748 \u00b7 Toward the end, not at an end"
+  },
+  "p3c5": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c5",
+   "class": "plate",
+   "motif": "dc-night-p3c5",
+   "caption": "\u00a749 \u00b7 The path threads the exclusions untouched"
+  },
+  "p3c6": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c6",
+   "class": "plate",
+   "motif": "dc-night-p3c6",
+   "caption": "\u00a750 \u00b7 Not the thunderstorm: eminent imminence"
+  },
+  "p3c7": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c7",
+   "class": "plate",
+   "motif": "dc-night-p3c7",
+   "caption": "\u00a751 \u00b7 One dies \u2014 but for now, one is not affected"
+  },
+  "p3c8": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c8",
+   "class": "plate",
+   "motif": "dc-night-p3c8",
+   "caption": "\u00a752 \u00b7 Certain \u2014 and as such indefinite"
+  },
+  "p3c9": {
+   "src": "art/death-conscience.svg",
+   "symbol": "scene-p3c9",
+   "class": "banner",
+   "motif": "dc-night-p3c9",
+   "caption": "\u00a753 \u00b7 Anticipation: holding the possibility open as possibility"
+  },
+  "p3c17": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-61",
+   "class": "banner",
+   "motif": "tp-61",
+   "caption": "\u00a761 \u00b7 Converging twin beams with visible seam"
+  },
+  "p3c18": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-62",
+   "class": "banner",
+   "motif": "tp-62",
+   "caption": "\u00a762 \u00b7 Single rejoined vertical shaft, brightest pre-temporality"
+  },
+  "p3c19": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-63",
+   "class": "banner",
+   "motif": "tp-63",
+   "caption": "\u00a763 \u00b7 Shaft passing through the hermeneutic ring"
+  },
+  "p3c20": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-64",
+   "class": "banner",
+   "motif": "tp-64",
+   "caption": "\u00a764 \u00b7 Plumb line through a dissolving hollow square"
+  },
+  "p3c21": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-65",
+   "class": "banner",
+   "motif": "tp-65",
+   "caption": "\u00a765 \u00b7 Three horizontal ecstasis lines + piercing Moment-tick"
+  },
+  "p3c22": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-66",
+   "class": "banner",
+   "motif": "tp-66",
+   "caption": "\u00a766 \u00b7 Persisting horizons + four program task-ticks"
+  },
+  "p3c23": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-67",
+   "class": "motif",
+   "motif": "tp-67",
+   "caption": "\u00a767 \u00b7 Horizons compressed to one line holding a row of dots"
+  },
+  "p3c24": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-68",
+   "class": "banner",
+   "motif": "tp-68",
+   "caption": "\u00a768 \u00b7 Four stacked subsection bands (Rothko stack)"
+  },
+  "p3c25": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-69",
+   "class": "banner",
+   "motif": "tp-69",
+   "caption": "\u00a769 \u00b7 Horizons escaping the frame + dissolving hammer tool-shadow"
+  },
+  "p3c26": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-70",
+   "class": "banner",
+   "motif": "tp-70",
+   "caption": "\u00a770 \u00b7 Broken region-ring resting on a horizon + converging de-distancing rails"
+  },
+  "p3c27": {
+   "src": "art/temporality.svg",
+   "symbol": "tp-71",
+   "class": "banner",
+   "motif": "tp-71",
+   "caption": "\u00a771 \u00b7 Flat grey horizon with one small Moment-notch"
+  },
+  "p3c28": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-72",
+   "class": "plate",
+   "motif": "hf-72",
+   "caption": "\u00a772 \u00b7 First strata under a widening shaft"
+  },
+  "p3c29": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-73",
+   "class": "plate",
+   "motif": "hf-73",
+   "caption": "\u00a773 \u00b7 Leveled strata: the administered past"
+  },
+  "p3c30": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-74",
+   "class": "plate",
+   "motif": "hf-74",
+   "caption": "\u00a774 \u00b7 The Moment line: strata bend, threads rise"
+  },
+  "p3c31": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-75",
+   "class": "plate",
+   "motif": "hf-75",
+   "caption": "\u00a775 \u00b7 Bright shards riding the strata: the worn ring"
+  },
+  "p3c32": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-76",
+   "class": "plate",
+   "motif": "hf-76",
+   "caption": "\u00a776 \u00b7 Lens-ring of thematization over fine strata"
+  },
+  "p3c33": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-77",
+   "class": "plate",
+   "motif": "hf-77",
+   "caption": "\u00a777 \u00b7 Letters plate: binding-bands and stacked letter-ticks"
+  },
+  "p3c34": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-78",
+   "class": "plate",
+   "motif": "hf-78",
+   "caption": "\u00a778 \u00b7 The hinge: hairline rule between strata and clock"
+  },
+  "p3c35": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-79",
+   "class": "plate",
+   "motif": "hf-79",
+   "caption": "\u00a779 \u00b7 Datability: now-line with three speaking ticks"
+  },
+  "p3c36": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-80",
+   "class": "plate",
+   "motif": "hf-80",
+   "caption": "\u00a780 \u00b7 Horology ring: the reckoning instrument"
+  },
+  "p3c37": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-81",
+   "class": "plate",
+   "motif": "hf-81",
+   "caption": "\u00a781 \u00b7 The now-series: eleven leveled dots, sagging line"
+  },
+  "p3c38": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-82",
+   "class": "plate",
+   "motif": "hf-82",
+   "caption": "\u00a782 \u00b7 Refutation: scattered dots, one held line"
+  },
+  "p3c39": {
+   "src": "art/historicity-finale.svg",
+   "symbol": "hf-83",
+   "class": "plate",
+   "motif": "hf-83",
+   "caption": "\u00a783 \u00b7 The clearing: full glow, three horizons, sediment-memory"
+  },
+  "p2c7": {
+   "src": "art/equipment-space.svg",
+   "symbol": "equip-hammer",
+   "class": "banner",
+   "motif": "equip-hammer",
+   "caption": "Fig. 15 \u00b7 Zeug \u2014 the hammer in use; the totality it belongs to"
+  },
+  "p2c8": {
+   "src": "art/equipment-space.svg",
+   "symbol": "equip-breach",
+   "class": "motif",
+   "motif": "equip-breach",
+   "caption": "Fig. 16 \u00b7 Verweisungen \u2014 the breach where the web lights up"
+  },
+  "p2c9": {
+   "src": "art/equipment-space.svg",
+   "symbol": "equip-signs",
+   "class": "motif",
+   "motif": "equip-signs",
+   "caption": "Fig. 17 \u00b7 Zeigen \u2014 yielding at the intersection"
+  },
+  "p2c10": {
+   "src": "art/equipment-space.svg",
+   "symbol": "equip-lattice",
+   "class": "banner",
+   "motif": "equip-lattice",
+   "caption": "Fig. 18 \u00b7 Bewandtnis \u2014 relevance converging on the for-the-sake-of-which"
+  },
+  "p2c11": {
+   "src": "art/equipment-space.svg",
+   "symbol": "cartes-extensa",
+   "class": "plate",
+   "motif": "cartes-extensa",
+   "caption": "Fig. 19 \u00b7 res extensa \u2014 one body, three shapes; the world held flat"
+  },
+  "p2c12": {
+   "src": "art/equipment-space.svg",
+   "symbol": "cartes-substantia",
+   "class": "plate",
+   "motif": "cartes-substantia",
+   "caption": "Fig. 20 \u00b7 substantia \u2014 the sealed sphere that needs nothing"
+  },
+  "p2c13": {
+   "src": "art/equipment-space.svg",
+   "symbol": "cartes-crack",
+   "class": "banner",
+   "motif": "cartes-crack",
+   "caption": "Fig. 21 \u00b7 intellectio \u2014 the grid cracking; four doors ajar"
+  },
+  "p2c14": {
+   "src": "art/equipment-space.svg",
+   "symbol": "space-region",
+   "class": "motif",
+   "motif": "space-region",
+   "caption": "Fig. 22 \u00b7 N\u00e4he \u2014 the room by use; the sun's day-places"
+  },
+  "p2c15": {
+   "src": "art/equipment-space.svg",
+   "symbol": "space-dedist",
+   "class": "motif",
+   "motif": "space-dedist",
+   "caption": "Fig. 23 \u00b7 de-distancing \u2014 over there and back; measures of nearness"
+  },
+  "p2c16": {
+   "src": "art/equipment-space.svg",
+   "symbol": "space-room",
+   "class": "banner",
+   "motif": "space-room",
+   "caption": "Fig. 24 \u00b7 making room \u2014 made room; the lattice dissolving"
+  }
+ }
+}

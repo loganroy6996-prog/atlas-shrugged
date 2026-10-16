@@ -1,0 +1,674 @@
+{
+ "version": 1,
+ "cover": {
+  "src": "art/cover.svg",
+  "class": "plate"
+ },
+ "default": {
+  "class": "banner"
+ },
+ "chapters": {
+  "p1c1": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-I · 5,736 words · FIG CLIFF",
+   "numeral_fill": 0,
+   "bars": "STRATA",
+   "notes": [
+    "FIG CLIFF retained (CHAPTERS.md): opening line 'He stood naked at the edge of a cliff.' (p1c1 para 0, verified substring).",
+    "Bars STRATA (CHAPTERS.md why stands): rock layers of the cliff.",
+    "Verification needle: 'edge of a cliff' — 'cliff' occurs 2× in p1c1."
+   ],
+   "symbol": "k1-c1"
+  },
+  "p1c10": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-X · 6,679 words · FIG CHECK",
+   "numeral_fill": 15,
+   "bars": "HIGHBARS",
+   "notes": [
+    "FIG CHECK overrides HOLCOMBE (lead-accepted): Holcombe is the opening salon only; the commission is the chapter's weight. Needle: 'The check was made out to \"Howard Roark, Architect.\"' (p1c10 para 198, verified substring).",
+    "Bars HIGHBARS (CHAPTERS.md why stands): the eclectic's palace cornices.",
+    "No-text-in-art deviation recorded: the '500' amount is a Bronze tick device, not Plex numerals.",
+    "Verification needle: 'check' occurs 3× in p1c10."
+   ],
+   "symbol": "k1-c10"
+  },
+  "p1c11": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-XI · 4,375 words · FIG DOOR",
+   "numeral_fill": 5,
+   "bars": "SINGLE-LO",
+   "notes": [
+    "FIG DOOR overrides ATTIC (lead-accepted): 'attic' occurs 0× in p1c11. Needle: 'The glass entrance door bore the words: \"Howard Roark, Architect.\"' (p1c11 para 0, verified substring).",
+    "Bars SINGLE-LO (CHAPTERS.md why stands): one top-floor room — the office sill line.",
+    "T-square returns to TRUE here (Roark's room; the only true edge after p1c2).",
+    "Verification needle: 'door' occurs 4× in p1c11."
+   ],
+   "symbol": "k1-c11"
+  },
+  "p1c12": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-XII · 9,349 words · FIG BANNER",
+   "numeral_fill": 18,
+   "bars": "HIGHBARS",
+   "notes": [
+    "FIG BANNER retained (CHAPTERS.md + lead): the chapter's medium throughout. Needle: 'appeared daily on the front page of the New York Banner' (p1c12 para 0, verified substring).",
+    "Bars HIGHBARS (CHAPTERS.md why stands): Scarret's headlines.",
+    "T-square slips 4° (steepest slip — the surrender chapter).",
+    "Verification needle: 'Banner' occurs 5× in p1c12. Longest chapter in Part 1 (9,349 words); no mid-text devices."
+   ],
+   "symbol": "k1-c12"
+  },
+  "p1c13": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-XIII · 6,096 words · FIG STATION",
+   "numeral_fill": 20,
+   "bars": "STRATA",
+   "notes": [
+    "FIG STATION overrides HELLER per LEAD RULING (designer proposed HELLER retained with BUBBLES alternate; lead chose STATION): the station is the built center. 'station' occurs 7× in p1c13. Needle: 'filling station of my own' (p1c13 para 2, verified substring).",
+    "Bars STRATA RE-AUTHORED (lead-directed): Post Road courses — NOT Heller-house massing. Panel draws glass cylinder + concrete oval + pump colonnade; NO Heller massing anywhere.",
+    "Ember @40%: the oval's leading edge.",
+    "Verification needle: 'It looked like a cluster of bubbles' (station description, p1c13)."
+   ],
+   "symbol": "k1-c13"
+  },
+  "p1c14": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-XIV · 5,125 words · FIG ENVELOPE",
+   "numeral_fill": 10,
+   "bars": "SINGLE-LO",
+   "notes": [
+    "FIG ENVELOPE overrides HEYER (lead-accepted): Heyer opens it; the envelope is its carried object. Needle: 'The envelope, accompanying the entry, contained the names' (p1c14 para 49, verified substring).",
+    "Bars SINGLE-LO (CHAPTERS.md why stands): the deathbed line — Cameron's three days.",
+    "Authored Ember exception: NO ember anywhere in this panel (Cameron's death cools it).",
+    "Verification needle: 'envelope' occurs 1× in p1c14."
+   ],
+   "symbol": "k1-c14"
+  },
+  "p1c15": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-XV · 8,849 words · FIG COMPETITION",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": [
+    "FIG COMPETITION retained (CHAPTERS.md + lead): the chapter's spine (fear → Heyer → victory → fame → bank refusal). 'competition' occurs 6× in p1c15. Needle: 'He would lose the competition' (p1c15, verified substring).",
+    "Bars HEARTH (climax; CHAPTERS.md): fear, contest, partnership.",
+    "Pilaster border GONE — replaced by the hearth line (borrowed orders fully shed). T-square SNAPPED.",
+    "Chainage in Emberlight (F1 medium-display license, metered). Part's only full-saturation Ember element."
+   ],
+   "symbol": "k1-c15"
+  },
+  "p1c2": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-II · 4,646 words · FIG MEDAL",
+   "numeral_fill": 0,
+   "bars": "SINGLE-HI",
+   "notes": [
+    "FIG MEDAL overrides LECTURE (lead-accepted): 'lecture' occurs 0× in p1c2. Needle: 'presented him with a gold medal' (p1c2 para 9, verified substring).",
+    "Bars SINGLE-HI RE-AUTHORED (designer must-fix, lead-accepted): Francon's commencement address from the platform — the CHAPTERS.md 'Dean's pronouncement' why was factually wrong (the Dean belongs to p1c1).",
+    "T-square true and straight (the last time it is).",
+    "Verification needle: 'medal' occurs 2× in p1c2."
+   ],
+   "symbol": "k1-c2"
+  },
+  "p1c3": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-III · 5,939 words · FIG STRINGCOURSE",
+   "numeral_fill": 10,
+   "bars": "STRATA",
+   "notes": [
+    "FIG STRINGCOURSE overrides SIDEWALK (lead-accepted): 'sidewalk' occurs 0× in p1c3. Needle: 'an ornamented stringcourse would be so much more appropriate' (p1c3 para 46, verified substring).",
+    "Bars STRATA (CHAPTERS.md why stands): city street courses — 'PETER KEATING LOOKED AT THE STREETS OF NEW YORK' (para 0).",
+    "T-square slips 1° (authored).",
+    "Verification needle: 'stringcourse' occurs 5× in p1c3."
+   ],
+   "symbol": "k1-c3"
+  },
+  "p1c4": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-IV · 7,407 words · FIG LAMP",
+   "numeral_fill": 0,
+   "bars": "SPLIT",
+   "notes": [
+    "FIG LAMP overrides FRANCON (lead-accepted): proper name violates FIG concrete-noun discipline; the lamp links both halves. Needle: 'Bending under a solitary green lamp' (p1c4 para 36, verified substring).",
+    "Bars SPLIT RE-AUTHORED (designer should-fix, lead-accepted): two desks after hours — Keating's borrowed night work / Cameron's country-house summons (no salon exists in p1c4).",
+    "Palette stays Furnace for the shade (Ash shade, Bronze stem; no green). Pilaster border: one shaft short.",
+    "Verification needle: 'lamp' occurs 2× in p1c4."
+   ],
+   "symbol": "k1-c4"
+  },
+  "p1c5": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-V · 5,259 words · FIG DRAFTING",
+   "numeral_fill": 12,
+   "bars": "HIGHBARS",
+   "notes": [
+    "FIG DRAFTING retained (CHAPTERS.md + lead): 'drafting' occurs 7×; the drafting room is the main setting. Needle: 'In the drafting room, Keating concentrated on Tim Davis' (p1c5 para 2, verified substring).",
+    "Bars HIGHBARS (CHAPTERS.md why stands): sheets pinned up over the boards.",
+    "T-square slips 2° (authored). Pilaster border: capital rail gone.",
+    "Verification needle: 'drafting' occurs 7× in p1c5."
+   ],
+   "symbol": "k1-c5"
+  },
+  "p1c6": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-VI · 4,399 words · FIG SERMONS",
+   "numeral_fill": 5,
+   "bars": "SINGLE-LO",
+   "notes": [
+    "FIG SERMONS retained (CHAPTERS.md + lead): title-word, opening line. Needle: 'SERMONS IN STONE BY ELLSWORTH M. TOOHEY WAS PUBLISHED IN January of the year 1925.' (p1c6 para 0, verified substring).",
+    "Bars SINGLE-LO (CHAPTERS.md why stands): one published book, laid down — the bar doubles as the slab's shadow.",
+    "Bronze pyramid device per the jacket ('silver pyramid'); Ember @40% on the page-line under-edge.",
+    "Verification needle: 'SERMONS' in para 0; 'sermons' occurs 2× in p1c6."
+   ],
+   "symbol": "k1-c6"
+  },
+  "p1c7": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-VII · 3,191 words · FIG BULLETIN",
+   "numeral_fill": 0,
+   "bars": "SINGLE-HI",
+   "notes": [
+    "FIG BULLETIN retained (CHAPTERS.md + lead): opening line. Needle: 'THE BULLETIN OF THE ARCHITECTS’ GUILD OF AMERICA CARRIED' (p1c7 para 0, verified substring).",
+    "Bars SINGLE-HI (CHAPTERS.md why stands): the posted Guild notice — strip carries 6 Ash rule-lines (the six misspelled lines).",
+    "Torch jet in Furnace metals (Bone flame sliver, Ember root); Ember @40% on the flame root only.",
+    "Verification needle: 'BULLETIN' in para 0; 'bulletin' occurs 2× in p1c7."
+   ],
+   "symbol": "k1-c7"
+  },
+  "p1c8": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-VIII · 3,832 words · FIG PHOTOGRAPH",
+   "numeral_fill": 12,
+   "bars": "STRATA",
+   "notes": [
+    "FIG PHOTOGRAPH overrides MUSEUM (lead-accepted, designer-independent challenge): the museum is named in para 0 and never seen; the photograph is causally central. Needle: 'It was a photograph of the Dana Building.' (p1c8 para 7, verified substring).",
+    "Bars STRATA RE-AUTHORED (designer should-fix, lead-accepted): street courses of the closing walk (side streets to the East River) — 'museum wall courses' was unsupported.",
+    "T-square slips 3° (authored). Pilaster border: three shafts + one stub.",
+    "Verification needle: 'photograph' occurs 4× in p1c8."
+   ],
+   "symbol": "k1-c8"
+  },
+  "p1c9": {
+   "src": "art/keating-banner.svg",
+   "class": "banner",
+   "motif": "keating-pilasters",
+   "caption": "STA K-IX · 5,497 words · FIG SKETCHES",
+   "numeral_fill": 5,
+   "bars": "SPLIT",
+   "notes": [
+    "FIG SKETCHES retained (CHAPTERS.md + lead): opening line + SPLIT rationale. Needle: 'LOOKED THROUGH ROARK’S SKETCHES, FLIPPED three of them aside, gathered the rest into an even pile' (p1c9 para 0, verified substring).",
+    "Bars SPLIT (CHAPTERS.md why stands): kept pile / flipped-aside pile.",
+    "T-square slips 3° (authored). Pilaster border: three shafts.",
+    "Verification needle: 'SKETCHES' in para 0; 'sketches' occurs 3× in p1c9."
+   ],
+   "symbol": "k1-c9"
+  },
+  "p2c1": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-I · 3,794 words · FIG DRILL",
+   "numeral_fill": 15,
+   "bars": "DRILL",
+   "notes": "FIG DRILL [0] 'his knees, his wrists, his shoulders and the drill he held' (8 hits). Quarry drill-hand; first hostile exchange w/ Dominique [70]. DRILL bars = quarry steel, vertical. Fill 15% = Part-2 arc floor. Num 190px.",
+   "symbol": "t2-c1"
+  },
+  "p2c10": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-X · 6,246 words · FIG ENRIGHT-HOUSE",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "FIG ENRIGHT-HOUSE [0] 'THE ENRIGHT HOUSE WAS OPENED IN JUNE OF 1929' (7 hits). Opening + stolen photo [3] + fenced Temple plot [109]. HEARTH climax: first hearth. Solid Ember. Ember end mark. Num 170px.",
+   "symbol": "t2-c10"
+  },
+  "p2c11": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-XI · 7,773 words · FIG COSMO-SLOTNICK",
+   "numeral_fill": 35,
+   "bars": "HIGHBARS",
+   "notes": "FIG COSMO-SLOTNICK [0] 'IN DECEMBER THE COSMO-SLOTNICK BUILDING WAS OPENED' (3 hits). Rival opening + Mallory hire [100] + posing [240] + sunset walk [260]. HIGHBARS = bromide mass under searchlight bands [ADOPTED reword; cornice 0 hits]. Fill 35% S. Num 120px.",
+   "symbol": "t2-c11"
+  },
+  "p2c12": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-XII · 9,005 words · FIG TEMPLE",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "FIG TEMPLE [0] 'THE OPENING OF THE STODDARD TEMPLE WAS ANNOUNCED' (31 hits). Sacrilege [3] + trial + ten photos [196]. HEARTH climax. Temple MUST read horizontal/open ('wide open, like a western saloon' [9]), never pedimented. Solid Ember. Ember end mark. Num 120px.",
+   "symbol": "t2-c12"
+  },
+  "p2c13": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-XIII · 5,178 words · FIG VERDICT",
+   "numeral_fill": 40,
+   "bars": "SINGLE-HI",
+   "notes": "FIG VERDICT interpretive (word 0 hits): grounded [0] 'HOPTON STODDARD WON THE SUIT'. Cable [10-13] + gates [95] + Katie rupture [146]. SINGLE-HI = the verdict line from above [ADOPTED reword; gavel 0 hits]. No stamp prop. Fill 40% H. Num 100px.",
+   "symbol": "t2-c13"
+  },
+  "p2c14": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-XIV · 4,006 words · FIG LAMP",
+   "numeral_fill": 30,
+   "bars": "SPLIT",
+   "notes": "FIG LAMP [58] 'a lamp with a fringe of glass beads' (supervisor ruling (a): VISITOR 0 hits anywhere, ungrounded). Proposal [11] + Connecticut marriage [13,58] + farewell [113,115]. SPLIT = two in one room. COLD Bronze cap (quote-led). Fill 30% S. Num 110px.",
+   "symbol": "t2-c14"
+  },
+  "p2c15": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-XV · 5,509 words · FIG LOCKED-DOOR",
+   "numeral_fill": 45,
+   "bars": "SINGLE-LO",
+   "notes": "FIG LOCKED-DOOR [0-1] 'his door locked' / 'The door of his room was locked' (hyphenated form editorial). Marriage news [2] + mutilation [81] + driveway [130]. SINGLE-LO = locked threshold. Fill 45% H = arc ceiling. Num 110px.",
+   "symbol": "t2-c15"
+  },
+  "p2c2": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-II · 5,755 words · FIG GOAL",
+   "numeral_fill": 20,
+   "bars": "SINGLE-HI",
+   "notes": "FIG GOAL [0] 'the goal of making it a day on which she would not go to the quarry'. Marble slab [8] + note [70] + Enright letter [108]. SINGLE-HI = the fixed morning line. Fill 20%. Num 170px.",
+   "symbol": "t2-c2"
+  },
+  "p2c3": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-III · 5,375 words · FIG TRUMPET",
+   "numeral_fill": 25,
+   "bars": "SPLIT",
+   "notes": "FIG TRUMPET [0] 'the opening of the door sounded like a single high blast on a trumpet' (door simile). Proof slug KEATING [13] + Mallory shot [41] + Toohey portrait [48-49]. SPLIT = triumph/shot, two faces [ADOPTED reword]. Fill 25% H. Num 150px.",
+   "symbol": "t2-c3"
+  },
+  "p2c4": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-IV · 4,109 words · FIG JINGLE",
+   "numeral_fill": 20,
+   "bars": "HIGHBARS",
+   "notes": "FIG JINGLE interpretive (word 0 hits): grounded [0] toothbrush verse + [107] 'think how nicely you can rhyme it: Toohey-gooey-phooey-hooey'. Lois Cook book [1] + rotogravure [4] + tea/napkin [80]. HIGHBARS = rhyme stave lines. COLD Bronze cap (quote-led, no-drop). Fill 20% S. Num 150px.",
+   "symbol": "t2-c4"
+  },
+  "p2c5": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-V · 3,984 words · FIG RETURN",
+   "numeral_fill": 28,
+   "bars": "SINGLE-LO",
+   "notes": "FIG RETURN [0] 'DOMINIQUE HAD RETURNED TO NEW YORK' (verb form, 3 hits). Council founding [34-39]; 18 chairs + chairman. SINGLE-LO = the city ground line she returns to [ADOPTED reword; train hit is a subway]. No gavel (word absent). Fill 28% H. Num 170px.",
+   "symbol": "t2-c5"
+  },
+  "p2c6": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-VI · 6,856 words · FIG ENRIGHT",
+   "numeral_fill": 25,
+   "bars": "STRATA",
+   "notes": "FIG ENRIGHT [0] 'ROGER ENRIGHT HAD STARTED LIFE AS A COAL MINER IN PENNSYLVANIA' (18 hits). Salon whirlpools [48]; Roark meets Dominique [80]; unseen [160]. STRATA = coal seams. No derrick (word absent). Fill 25% S. Num 150px.",
+   "symbol": "t2-c6"
+  },
+  "p2c7": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-VII · 3,689 words · FIG MONUMENT",
+   "numeral_fill": 32,
+   "bars": "SINGLE-HI",
+   "notes": "FIG MONUMENT [0] 'AS A MONUMENT TO nothing but the egotism of Mr. Enright and of Mr. Roark'. Hostile column + Euclid parallels [50] + night vow [147]. SINGLE-HI = speech pronouncement line. COLD Bronze cap (A2, quote-led). Fill 32% H. Num 130px.",
+   "symbol": "t2-c7"
+  },
+  "p2c8": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-VIII · 9,146 words · FIG BLINDS",
+   "numeral_fill": 30,
+   "bars": "STRATA",
+   "notes": "FIG BLINDS [0] 'THE BLINDS RAISED OVER THE WINDOWS OF HER LIVING ROOM'. Window talks [100] + Council room [195] + drugstore kindness [196-197]. STRATA = slats over lights (bars explicit, distinct from FIG slats). Fill 30% S. Num 120px.",
+   "symbol": "t2-c8"
+  },
+  "p2c9": {
+   "src": "art/toohey-banner.svg",
+   "class": "banner",
+   "motif": "toohey-arches",
+   "caption": "STA T-IX · 6,636 words · FIG HOSE",
+   "numeral_fill": 35,
+   "bars": "DRILL",
+   "notes": "FIG HOSE [0] 'turned the hose upon Johnny Stokes' (8 hits). Toohey biography; Sermons in Stone [56]; Banner contract [62]; Councils [73-74]. DRILL = water columns. Fill 35% H. Num 150px.",
+   "symbol": "t2-c9"
+  },
+  "p3c1": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-I · 13,695 words · FIG GUN",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "CLIMAX-CLASS: solid Gilt numeral + full hearth. Muzzle-ring vignette (concentric Ash circles, Ember-deep bore); gray-death ring vs red bore. Verified: 'GAIL WYNAND RAISED A GUN TO HIS TEMPLE.' / 'yours, Gail Wynand, will be a gray death'.",
+   "symbol": "w3-c1"
+  },
+  "p3c2": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-II · 5,953 words · FIG BRACELET",
+   "numeral_fill": 45,
+   "bars": "SINGLE-LO",
+   "notes": "COLD: Bronze stroke numeral + Bronze end-mark. Emerald-bracelet arc + lamplight glint; toast-stem second detail. No drop-cap letterform (no-drop opener: single short shouted line) but COLD marking governs numeral/close. Verified first line: \"WHY DIDN'T YOU WEAR YOUR EMERALD BRACELET?\"",
+   "symbol": "w3-c2"
+  },
+  "p3c3": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-III · 4,162 words · FIG OFFICE",
+   "numeral_fill": 55,
+   "bars": "SPLIT",
+   "notes": "SPLIT = two figures across the desk. Desk-line vignette + contract slip + 3 ascending ticks (the three dead masters). Correction applied: the 'price of one / bargain' is Keating's buildings, not Stoneridge; the goad is the Holcombe threat.",
+   "symbol": "w3-c3"
+  },
+  "p3c4": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-IV · 3,171 words · FIG SEA",
+   "numeral_fill": 50,
+   "bars": "STRATA",
+   "notes": "STRATA = green-sky sea bands + fire-trace. White bow wedge + painted 'I Do' name + rail stanchions. Bookended by p3c9 (vow → reckoning). Verified: 'gold letters—I Do—on the delicate white bow'.",
+   "symbol": "w3-c4"
+  },
+  "p3c5": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-V · 7,428 words · FIG STONERIDGE",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "CLIMAX: solid Gilt numeral + hearth as work-light glare. Derrick/girder + headlight orb; check-slip second detail. No drop-cap letterform (quote-led no-drop opener). Verified: 'WHAT'S THE MATTER? DON'T I GET STONERIDGE?'",
+   "symbol": "w3-c5"
+  },
+  "p3c6": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-VI · 4,527 words · FIG MUSKRAT",
+   "numeral_fill": 55,
+   "bars": "HIGHBARS",
+   "notes": "COLD: Bronze stroke numeral + Bronze cap/end-mark. Cane-hook + dragged script; inverted star second detail. Corrections applied: 'Neil Dumont and Bennett' (not 'Dumont & Bennett'); Augustus Webb (Gus in salon); partner firm 'Peter Keating & Cornelius Dumont'.",
+   "symbol": "w3-c6"
+  },
+  "p3c7": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-VII · 4,173 words · FIG TRAIN",
+   "numeral_fill": 65,
+   "bars": "SINGLE-LO",
+   "notes": "SINGLE-LO = twin rails + sleepers. Platform pair + jasmine-on-black-band second detail. Correction applied: 'page eighteen' (words). Verified first line: 'WHEN DOMINIQUE STEPPED OFF THE TRAIN IN NEW YORK…'.",
+   "symbol": "w3-c7"
+  },
+  "p3c8": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-VIII · 4,041 words · FIG PENTHOUSE",
+   "numeral_fill": 70,
+   "bars": "DRILL",
+   "notes": "DRILL = glass-cage mullions. Emberlight diamond rhomb + cablegram-slip second detail. Corrections applied: full 'Shut up!' scream quote; 'holding the frame of the window' (no grip/midnight — 'midnight' absent from chapter); sunflower is on Sally Brent's shoulder.",
+   "symbol": "w3-c8"
+  },
+  "p3c9": {
+   "src": "art/wynand-banner.svg",
+   "class": "banner",
+   "motif": "wynand-ziggurat",
+   "caption": "STA W-IX · 3,372 words · FIG YACHT",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "CLIMAX: solid Gilt numeral + hearth as deck-rail dusk line. Rail/bow + 'I Do' bookend to p3c4; crumpled-cablegram polygon second detail (paper destroyed twice). Verified: 'She crumpled it, her fingers twisting slowly in a grinding motion against her palm.'",
+   "symbol": "w3-c9"
+  },
+  "p4c1": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-I · 5,560 words · FIG LEAVES",
+   "numeral_fill": 70,
+   "bars": "STRATA",
+   "notes": "FILL 70%: arc floor — spring forest is the part's coolest chapter; heat banked at opening. FIG LEAVES VERIFIED: opener 'THE LEAVES STREAMED DOWN, TREMBLING IN THE SUN' (para 0). Bars STRATA = light bands through the forest. Ember cap (opener ≥80 chars is para 1; para 0 is 47 chars so reader.js no-drops it — cap lands on para 1 per shared rule; cohort CSS never forces it).",
+   "symbol": "r4-c1"
+  },
+  "p4c10": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-X · 3,361 words · FIG RAIN",
+   "numeral_fill": 82,
+   "bars": "DRILL",
+   "notes": "FILL 82% (S): cold-sweat city; rain can't cool the arc. FIG RAIN VERIFIED: opener 'IT HAD STOPPED RAINING, BUT PETER KEATING WISHED IT WOULD start again' + 'bathed in cold sweat'. Bars DRILL = rain over pavements. Ember cap.",
+   "symbol": "r4-c10"
+  },
+  "p4c11": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XI · 3,562 words · FIG DECK",
+   "numeral_fill": 84,
+   "bars": "STRATA",
+   "notes": "FILL 84% (H): yacht sun + second-hander doctrine; philosophical white heat. FIG DECK VERIFIED: opener 'GAIL WYNAND LOOKED AT THE SHINING WOOD OF THE YACHT DECK' + 'brass doorknob that had become a smear of fire'. Bars STRATA = deck planks. Ember cap.",
+   "symbol": "r4-c11"
+  },
+  "p4c12": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XII · 4,074 words · FIG APRIL",
+   "numeral_fill": 84,
+   "bars": "HIGHBARS",
+   "notes": "FILL 84% (S): dynamite night — heat held stroke-dominant because the blast is darkness plus flash, not furnace (design spec override: authored 84% stands). FIG APRIL VERIFIED: opener 'IT WAS APRIL WHEN ROARK AND WYNAND RETURNED' + 'pink against the blue sky' (CROSSES considered — 'white crosses on the fresh panes of glass' — but APRIL is the governing opener word; no change). Bars HIGHBARS = pink-tower sky bands. Ember cap.",
+   "symbol": "r4-c12"
+  },
+  "p4c13": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XIII · 6,061 words · FIG PENTHOUSE",
+   "numeral_fill": 86,
+   "bars": "DRILL",
+   "notes": "FILL 86% (H): aftermath glare; Wynand's crusade ignites. FIG PENTHOUSE VERIFIED: opener 'GLANCED ABOUT THE BEDROOM OF THE PENTHOUSE' + 'lacquered with light' (prose: 'DOMINIQUE GLANCED ABOUT THE BEDROOM OF THE PENTHOUSE'). Bars DRILL = luxury-cage mullions. Ember cap.",
+   "symbol": "r4-c13"
+  },
+  "p4c14": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XIV · 4,873 words · FIG CALLER",
+   "numeral_fill": 84,
+   "bars": "SPLIT",
+   "notes": "FILL 84% (S, COLD, authored dip): Toohey's midnight confession; heat dips from 86 while the arc holds. FIG CALLER VERIFIED against prose: the chapter is the uninvited night caller (Toohey) admitted by Mrs. Keating into Peter's room (paras 0–2: 'I'M glad you came … He won't see anyone'). FIG names the dramatic agent, not a quoted noun — 'caller' is the chapter's operative concrete noun. Bronze cap (A2 COLD set).",
+   "symbol": "r4-c14"
+  },
+  "p4c15": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XV · 7,108 words · FIG TEST-CASE",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "FILL 100% SOLID: CLIMAX — the strike; full hearth. FIG TEST-CASE VERIFIED: opener 'THIS IS A TEST CASE' (opener is a 492-char quotation so reader.js no-drops it — cap lands per shared rule; cohort CSS never forces it). Bars HEARTH (climaxes only): full-width hearth line with returns stacked 'like marble slabs'. Ember cap.",
+   "symbol": "r4-c15"
+  },
+  "p4c16": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XVI · 4,262 words · FIG MONOGRAM",
+   "numeral_fill": 90,
+   "bars": "SINGLE-HI",
+   "notes": "FILL 90% (H, authored descent): surrender aftermath — heat draining from climax toward the cool trial wait. FIG MONOGRAM VERIFIED: opener 'there was a monogram in colored wood—G W' + 'green traffic lights as an endless rosary'. Bars SINGLE-HI = the board-table line from above; green-bead hint below (metered). Ember cap.",
+   "symbol": "r4-c16"
+  },
+  "p4c17": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XVII · 4,781 words · FIG RING",
+   "numeral_fill": 88,
+   "bars": "STRATA",
+   "notes": "FILL 88% (S): cool summer stasis; held below climax heat before the trial. FIG CHANGED SUMMER→RING: SUPERVISOR RULING Q5 CONFIRMED (design Q5). SUMMER is a seasonal setting, weakly concrete; RING is the chapter's central concrete device — 'It was a star-sapphire ring set in platinum' + 'my star-sapphire ring was stolen here last night' (paras 42, 52). Bars STRATA = heat bands of the cloudless wait. Ember cap.",
+   "symbol": "r4-c17"
+  },
+  "p4c18": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-XVIII · 5,821 words · FIG BRANCH",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "FILL 100% SOLID: CLIMAX — the trial; 'Not guilty'. FIG BRANCH VERIFIED: opener 'A TREE BRANCH HUNG IN THE OPEN WINDOW'. Bars HEARTH (climaxes only); the branch as an Ember-edged diagonal with Bone leaf-slabs. Motif stays roark-cantilever: the branch-cut belongs to the banner system (body[data-art] distinguishes p4c18/p4c19/p4c20 via the cortlandt/ascent motifs). Ember cap; the long address stays calm body — the words carry it.",
+   "symbol": "r4-c18"
+  },
+  "p4c19": {
+   "src": "art/roark-cortlandt.svg",
+   "class": "plate",
+   "motif": "roark-cortlandt",
+   "caption": "STA R-XIX · 2,761 words · FIG CORTLANDT",
+   "numeral_fill": 100,
+   "bars": "HEARTH",
+   "notes": "FILL 100% SOLID: CLIMAX — aftermath-farewell; Banner dies, commission granted; brightest band with p4c20. SUPERVISOR RULINGS: Q1 asset art/roark-cortlandt.svg (A2 content: 9-o'clock press-stop + contract + clean hole — 'the courtroom belongs to p4c18, the asset name must not lie'); Q3 motif roark-cortlandt renamed from courtroom. FIG CORTLANDT VERIFIED: opener 'ROGER ENRIGHT BOUGHT THE SITE, THE PLANS AND THE RUINS OF Cortlandt' + 'a clean hole in the earth'. Plate registers (all prose-verified): nickel key-rims glittering typewriter (para 20) + green-glass lamp (para 13) + paper clip (para 26) / stopped press rolls + wrist watch at nine (paras 21–23: 'The presses stopped' / 'It's nine o'clock') / clean-hole earth cut + masthead-gone door with discolored rectangle (paras 0, 40) + signed contract sheets (paras 46–56). No figural faces; no courtroom furniture. Ember cap."
+  },
+  "p4c2": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-II · 4,710 words · FIG MASTHEAD",
+   "numeral_fill": 72,
+   "bars": "SINGLE-HI",
+   "notes": "FILL 72%: first spark — furnace-mouth lobby, mutual recognition. FIG MASTHEAD VERIFIED: opener 'A SIGN HUNG OVER THE ENTRANCE DOOR, A REPRODUCTION OF THE paper's masthead: THE NEW YORK BANNER'. Bars SINGLE-HI = the small sign hung high over the door. SUPERVISOR RULING: notes prose uses 'desk drawer' — Wynand slips the 'Superman' clipping into his desk drawer (para 161), NOT pocketed. Ember cap.",
+   "symbol": "r4-c2"
+  },
+  "p4c20": {
+   "src": "art/roark-ascent.svg",
+   "class": "finale",
+   "motif": "roark-ascent",
+   "caption": "STA R-XX · 840 words · FIG ASCENT",
+   "numeral_fill": 100,
+   "bars": "ASCENT",
+   "notes": "FILL 100% SOLID: FINALE one-off (F5) — ocean/sky/Roark triptych; brightest white-hot in the book; explicit end state. SUPERVISOR RULING Q2: DISTINCT finale class (not banner/plate) so ASCENT one-off styling keys cleanly. FIG ASCENT is the sanctioned one-off (the hoist rise past every crown; prose-verified: tin plate 'Howard Roark, Architect' para 4; 'crowns of courthouses … spires of churches' para 11; 'only the ocean and the sky and the figure of Howard Roark' para 12). Triptych: ocean band rising / sky field with cantilever platform + lone figure / three descending crowns (bank pinnacle, courthouse crown, church spire). Ember cap on the short triumph."
+  },
+  "p4c3": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-III · 3,820 words · FIG HILLTOP",
+   "numeral_fill": 76,
+   "bars": "STRATA",
+   "notes": "FILL 76% (H): honesty exchanged on the hill; heat rises. FIG HILLTOP VERIFIED: opener 'ROARK AND WYNAND STOOD ON THE TOP OF A HILL' + 'the steel frame of a building'. Bars STRATA = land contours sloping to the lake. Cool blue-green accent permitted ONLY inside the slab art (prose: 'fragile blue-green'); numeral stays Ember. Ember cap.",
+   "symbol": "r4-c3"
+  },
+  "p4c4": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-IV · 5,092 words · FIG GLASS-DOOR",
+   "numeral_fill": 74,
+   "bars": "DRILL",
+   "notes": "FILL 74% (S, authored dip): held-breath dinner courtesy — heat banked under formality after p4c3's 76. FIG GLASS-DOOR VERIFIED: opener 'DOMINIQUE STOOD AT THE GLASS DOOR OF HER ROOM' (para 0, 46 chars so reader.js no-drops it — cap lands on para 1 per shared rule). Bars DRILL = door mullions. Ember cap.",
+   "symbol": "r4-c4"
+  },
+  "p4c5": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-V · 3,218 words · FIG PROOFS",
+   "numeral_fill": 78,
+   "bars": "HIGHBARS",
+   "notes": "FILL 78% (H): the branch bent into an arc; hair-shirt devotion. FIG PROOFS VERIFIED: opener 'SAT AT HIS DESK IN HIS OFFICE AND READ THE proofs of an editorial' (prose: 'GAIL WYNAND SAT AT HIS DESK … READ THE proofs'). Bars HIGHBARS = proof columns on the desk; one bar carries the arc-bend gesture in Ember. Ember cap.",
+   "symbol": "r4-c5"
+  },
+  "p4c6": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-VI · 3,541 words · FIG TYPEWRITER",
+   "numeral_fill": 75,
+   "bars": "SINGLE-HI",
+   "notes": "FILL 75% (S, COLD, authored dip): Toohey's cold-doctrine chapter inside Roark's part — lukewarm dip + Bronze cap per COLD set. FIG CHANGED FALLACY→TYPEWRITER: SUPERVISOR RULING Q5 APPROVED (design Q5). 'Fallacy' is an abstraction (violates FIG discipline 'never abstractions'); the chapter's signature concrete image is 'the vision of a huge typewriter. Each famous name he heard was a key of its keyboard' (para 45, prose-verified). Bars SINGLE-HI = the pronouncement from above. Opener is an 849-char quotation so reader.js no-drops it — Bronze cap lands per shared rule. Coolest banner in the cohort.",
+   "symbol": "r4-c6"
+  },
+  "p4c7": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-VII · 6,076 words · FIG STAIRWELL",
+   "numeral_fill": 80,
+   "bars": "SINGLE-LO",
+   "notes": "FILL 80% (H): heat of judgment on a lukewarm man. FIG STAIRWELL VERIFIED: 'the outline of the square where the stairway had been removed and the opening closed over' (STAIRWELL is the architectural term for the element; prose says 'stairway', paras 0–1). Bars SINGLE-LO = the painted-over square sitting low. Ember cap.",
+   "symbol": "r4-c7"
+  },
+  "p4c8": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-VIII · 4,406 words · FIG SHOCK",
+   "numeral_fill": 82,
+   "bars": "SPLIT",
+   "notes": "FILL 82% (H): white heat of the contract scene. FIG SHOCK VERIFIED: opener 'ROARK KNEW THAT HE MUST NOT SHOW THE SHOCK OF HIS FIRST glance' (CANVASES considered — 'six of his canvases' / 'It's too late, Peter' — but SHOCK is the governing opener word; no change). Bars SPLIT = Roark and Keating face to face across the desk. Ember cap.",
+   "symbol": "r4-c8"
+  },
+  "p4c9": {
+   "src": "art/roark-banner.svg",
+   "class": "banner",
+   "motif": "roark-cantilever",
+   "caption": "STA R-IX · 4,944 words · FIG SHORE",
+   "numeral_fill": 80,
+   "bars": "STRATA",
+   "notes": "FILL 80% (S, authored dip): pastoral exhale at the lake before Cortlandt. FIG SHORE VERIFIED: opener 'THEY SAT ON THE SHORE OF THE LAKE'. Bars STRATA = shoreline bands, three figures (boulder / ground / grass); sun-glitter band in Emberlight (metered 14:1). Warmest non-climax banner. Ember cap.",
+   "symbol": "r4-c9"
+  }
+ }
+}

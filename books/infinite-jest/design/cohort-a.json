@@ -1,0 +1,828 @@
+{
+  "cohort": "cohort-a",
+  "cohort_title": "First Weeks",
+  "book": "infinite-jest",
+  "status": "locked-frozen-phase1",
+  "ids_provisional": false,
+  "provisional_note": "Per SupIJ-2 relay of TextCurator: chapter IDs provisional until PDF audit freeze. Each entry records part + sequential order + full title for cheap remap. Do not lock final manifests until freeze notice.",
+  "cohort_grammar": {
+    "idea": "Subsidized-Time documents: every opener is a dated bureaucratic artifact (admissions file, waiting-room memo, clinical transcript, incident log, memo mailer, field recording, dorm-room cassette, scouting report, tunnel map, rap sheet, sick-slip, institutional prospectus, game-day program). Shared grammar = a date-stamp band + a document-form opener + one authored motif; the artifact TYPE changes per chapter so neighbors rhyme without cloning.",
+    "date_band": "Each opener carries its Subsidized Year / calendar date as a stamped band; p1c1's Year of Glad sets the far-future anchor, the rest settle into Y.D.A.U./adjacent years.",
+    "palette_role": "Cohort A owns the cold institutional register of the book: enamel greens, fluorescent whites, bruise violets, warning reds \u2014 bureaucratic dread before the warmer Ennet/ETA interiors arrive later in the book.",
+    "reading_treatments": "Dialogue-heavy chapters (c1,c3,c7) get speaker-breathing rhythm + turn rules; monolith chapters (c2,c5,c10,c12) get drop-cap anchors + section air; short chapters (c4,c11) get single-gesture treatments; p1c13's two-halve split gets a visible intermission seam."
+  },
+  "entries": [
+    {
+      "id": "p1c1",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 1,
+      "number_label": "\u00a7 1",
+      "title": "Year of Glad",
+      "subject": "Hal Incandenza's University of Arizona admissions interview a year in the future: deans watch a composed applicant dissolve into animal sounds; nested flashbacks (ear trumpet / Moms hysteria, E.R. intake premonition).",
+      "mood": "Clinical dread; fluorescent-lit humiliation curdling into body horror.",
+      "motifs": [
+        "horseshoe of deans' heads around a table",
+        "Remington-hung wood-paneled office vs November heat",
+        "molded orange E.R. chairs + gurney",
+        "Hal's internal narration vs his unheard screams"
+      ],
+      "opener_worthy": "The horseshoe seating of watching heads; Hal's 'I am in here' entrapment; the Year of Glad far-future date itself as alien artifact.",
+      "rationale": "Book's cold open and tonal thesis: watched body, failed speech. Opener = admissions file stamped YEAR OF GLAD with a ring of watching-head glyphs around the title; reading treatment gives dialogue turns tight interrogation rhythm and sets the E.R.-premonition tail in colder type.",
+      "palette_role": "Cold office enamel: wood-panel brown-black ground, fluorescent white, orange-plastic accent (E.R. chairs).",
+      "motif_asset": "cohort-a.svg #glad-horseshoe \u2014 ring of nine watching-head silhouettes, one gap where Hal sits.",
+      "opener_composition": "Date-stamp band 'YEAR OF GLAD' over a horseshoe arc of heads; title seated in the gap; rule like a conference table edge.",
+      "reading_treatment": "Interrogation rhythm: speaker turns separated by hairline turn-marks; internal narration blocks indented; final E.R. passage shifts to cold green-white register.",
+      "deep_research": {
+        "structure": "139 paras, median 140ch: volley rhythm (short turns 100-800ch) + two long set-pieces; max 4545ch E.R. premonition tail.",
+        "document_form": "Admissions interview transcript + nested witness statements (Orin memory, E.R. premonition).",
+        "opener_lines": [
+          "P2: 'I am in here.'",
+          "P101: 'Have you ever gotten help for this boy Dr. Tavis?'"
+        ],
+        "timestamp_notes": "No clock timestamps; dated only by the Year of Glad \u2014 farthest-future date in the cohort.",
+        "full_coverage": "Complete: all 139 paras sampled across head/volley/memory/flashback(ear-trumpet, Moms)/breakdown(E.R. premonition) movements.",
+        "added_motifs": [
+          "court-shaped reading glasses (sidelines top/bottom, P7)",
+          "fingers mated into mirrored X's (P5); wen on jaw (P8)",
+          "EXIT = HE LEAVES to a Latin speaker (P46)",
+          "Brewster's-Angle tabletop rose flush behind closed lids (P56)",
+          "'I cannot make myself understood, now' / 'Call it something I ate' (P56)",
+          "men's-room porcelain/marble trough passage (P91) \u2014 the chapter's one calm room",
+          "WhataBurger ballet vs. 'strangled bleats... they waggled' (P111/P121)",
+          "gurneyside deLint hand-squeeze (P138); green-tiled E.R. room + cursive-name M.D. (P139)"
+        ],
+        "movements": "P1-P45 interview volleys \u2192 P46-P60 breakdown onset \u2192 P61-P100 nested memories (Orin/Moms/ear trumpet) \u2192 P101-P137 aftermath volleys (bathroom calm P91) \u2192 P138-P139 E.R. premonition tail."
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF GLAD",
+        "filing_line": "U. OF ARIZONA \u00b7 ADMISSIONS INTERVIEW \u00b7 NOV",
+        "seal": "Year of Glad (bag seal)",
+        "plate": "Engraved horseshoe seating diagram: nine watching-head silhouettes around a conference-table arc, one empty gap where Hal sits; court-glasses glyph in margin."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "glad-horseshoe",
+        "caption": "Plate 1 \u00b7 The horseshoe of heads, one chair empty",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "glad-horseshoe"
+      },
+      "note_refs_frozen": {
+        "count": 0,
+        "notes": []
+      }
+    },
+    {
+      "id": "p1c2",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 2,
+      "number_label": "\u00a7 2",
+      "title": "Year of the Depend Adult Undergarment",
+      "subject": "Ken Erdedy waits all day in his condo for the woman bringing 200g of marijuana: insect in the audio-rack girder, agony over the phone, supplies laid in, blinds drawn \u2014 four enormous claustrophobic paragraphs.",
+      "mood": "Paranoid stasis; time thickening in a sealed room.",
+      "motifs": [
+        "insect going in/out of the steel girder hole",
+        "window-light shadows crossing the floor as hours pass",
+        "the phone / audio-only call / answering device",
+        "laid-in supplies (Oreos, M&Ms, Pepperidge Farm cake)",
+        "drawn blinds"
+      ],
+      "opener_worthy": "The girder-hole insect; the migrating window shadows as a clock; the phone that must not be tied up.",
+      "rationale": "The book's great waiting-room chapter: addiction as architecture. Opener = sealed-room elevation: blind-slats + two crossing light-shadows + one small insect glyph; only 4 paragraphs so the page itself must feel airless and long.",
+      "palette_role": "Sealed-room amber: blind-slatted gloom, sodium window-light, insect black.",
+      "motif_asset": "cohort-a.svg #erdedy-insect \u2014 small armored insect half-emerged from a girder hole; #waiting-shadows \u2014 crossing window-light bands.",
+      "opener_composition": "Blind-slat band across the top; title in the dim room below; two diagonal light-shadows crossing behind the date stamp like sundial hands.",
+      "reading_treatment": "Monolith treatment: oversized drop cap, generous paragraph air to make 4 long blocks navigable; insect glyph as the sole section ornament; no turn-marks (zero dialogue).",
+      "deep_research": {
+        "structure": "4 monoliths (1123/1346/15001/12757ch): the cohort's most airless chapter; zero dialogue.",
+        "document_form": "Waiting log / stakeout record: supplies inventory, phone-call attempts, insect sightings.",
+        "opener_lines": [
+          "P1 opens on window-light shadows crossing the floor as a clock."
+        ],
+        "timestamp_notes": "Time told by migrating window shadows, not clocks."
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "BRIGHTON MA \u00b7 STAKEOUT LOG \u00b7 4 ENTRIES \u00b7 AUDIO ONLY",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved sealed-room elevation: blind-slat band, two crossing window-light shadows as sundial hands, one small armored insect half-emerged from a girder hole."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "erdedy-insect",
+        "caption": "Plate 2 \u00b7 Sealed room; the insect in the girder",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "erdedy-insect"
+      },
+      "note_refs_frozen": {
+        "count": 1,
+        "notes": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "p1c3",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 3,
+      "number_label": "\u00a7 3",
+      "title": "1 April \u2014 Year of the Tucks Medicated Pad",
+      "subject": "Ten-year-old Hal, lexical prodigy, in a clinical conversation with an unseen professional ('Come right in... chair to your immediate left'); denies sounding 'like a man' \u2014 voice, precocity, and being observed.",
+      "mood": "Dry clinical comedy with an undertow of wrongness; child vs. institution.",
+      "motifs": [
+        "the chair to the immediate left",
+        "the condensed O.E.D. (not even up to J)",
+        "the professional's office / appointment-calendar squares",
+        "mouths moving with nothing coming out (father's delusion, echoed)"
+      ],
+      "opener_worthy": "The empty chair offered to a ten-year-old; the dictionary as totem; April-date clinical intake form.",
+      "rationale": "First ETA-era Hal: a child processed by adult systems. Opener = intake form with a small empty-chair glyph and dictionary-block motif; dialogue-dominant (71/78) so turn typography carries the chapter.",
+      "palette_role": "Clinical mint: pale office green, ink black, one warm accent for the child's voice.",
+      "motif_asset": "cohort-a.svg #intake-chair \u2014 small empty wooden chair, three-quarter view; #oed-block \u2014 dictionary brick with 'J' tab.",
+      "opener_composition": "Intake-form header with date stamp; small chair glyph left of title like a seating diagram; dictionary-block rule beneath.",
+      "reading_treatment": "Two-voice turn rhythm: professional's turns in a cooler register, Hal's in a warmer one; short turns keep tight leading to feel like live exchange.",
+      "deep_research": {
+        "structure": "78 paras, median 74ch: rapid clinical Q&A volleys; max 665ch (Hal's self-introduction).",
+        "document_form": "Clinical intake transcript; 'Tap tap tap tap.' (P32) as stage direction; 'MYURP. Excuse me.' (P31).",
+        "opener_lines": [
+          "P1: 'All I know is my dad said to come here.'",
+          "P58: 'I'm ten for Pete's sake...'"
+        ],
+        "timestamp_notes": "1 April Y.T.M.P.: only chapter in the Year of the Tucks Medicated Pad.",
+        "added_motifs": [
+          "Seven-Up/lemon soda + salivaless sounds + caries (P4-P29)",
+          "bow tie / 'young sir' (P19-P20)",
+          "'Tap tap tap tap' as the conversationalist's tell (P32-P42)",
+          "April Fools reveal: fake nose/mustache running, Himself's argyle sweater-vest with veal marsala stain (P64-P72)",
+          "closer: 'Praying for just one conversation... you staring, me swallowing?' / 'Son? Son?' (P76-P78)"
+        ]
+      },
+      "ledger_conform": {
+        "stamp_band": "1 APRIL \u2014 YEAR OF THE TUCKS MEDICATED PAD",
+        "filing_line": "PROFESSIONAL CONVERSATION \u00b7 CHALLENGE MATCH 1500H",
+        "seal": "Tucks Medicated Pad (pad seal)",
+        "plate": "Engraved intake form: small empty chair (three-quarter view) left of a dictionary brick with J-tab; soda-fizz tick marks; argyle-vest swatch hidden in the border."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "intake-chair",
+        "caption": "Plate 3 \u00b7 Intake: the chair to the immediate left",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "intake-chair"
+      },
+      "note_refs_frozen": {
+        "count": 0,
+        "notes": []
+      }
+    },
+    {
+      "id": "p1c4",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 4,
+      "number_label": "\u00a7 4",
+      "title": "9 May \u2014 Year of the Depend Adult Undergarment",
+      "subject": "Fathers-and-sons telephone locutions; Hal packing bags in the dark before dawn drills while Mario sleeps; a 0600 phone call ('My head is filled with things to say') he deflects \u2014 14 short paragraphs, vignette-like.",
+      "mood": "Tender and furtive; dark dorm room before dawn.",
+      "motifs": [
+        "phone console + deactivated ringer",
+        "three coverless Dunlop widebodies with handles sticking out",
+        "packing in the dark / stealth",
+        "Mario asleep in the other bed",
+        "father's voice in the son's mouth"
+      ],
+      "opener_worthy": "The gear bag with three racquet handles protruding; the silenced phone; dark-room packing.",
+      "rationale": "Shortest ETA vignette in the cohort: a single gesture chapter. Opener = one horizontal gesture \u2014 racquet-handle silhouettes rising from a bag-line; reading stays quiet, single-column, no ornament beyond the phone motif.",
+      "palette_role": "Pre-dawn blue: dark dorm ground, faint console-light green, Dunlop graphite.",
+      "motif_asset": "cohort-a.svg #dawn-bag \u2014 gear-bag line with three racquet handles protruding; #ringer-off \u2014 phone handset with a silencing slash.",
+      "opener_composition": "Single horizontal band: bag-line with handles as the chapter's horizon; title above in quiet caps; date stamp small, like a wake-up slip.",
+      "reading_treatment": "Vignette treatment: narrow measure, calm single column, phone-line dialogue set with a small handset marker; ends on the ringer-off glyph.",
+      "deep_research": {
+        "structure": "14 paras, median 126ch: vignette; alternating micro-narration and phone fragments.",
+        "document_form": "Wake-up slip / phone log: 'My head is filled with things to say.' (P5), 'Hey Hal?' (P9), 'Who was it?' (P13).",
+        "opener_lines": [
+          "P5: 'I want to tell you... My head is filled with things to say.'"
+        ],
+        "timestamp_notes": "0600 departure; dated 9 May Y.D.A.U.",
+        "added_motifs": [
+          "'Mmmyellow' phone answer (P4) \u2014 the father's voice literalized",
+          "'I could wait forever' / 'That's what you think' + cut connection; caller is Orin (P7-P8)",
+          "Mario: 'Is it still dark out, or is it me?' (P11); four pillows for the oversized skull",
+          "closer: ringer deactivated, 'No one you know, I don't think.' (P14)"
+        ]
+      },
+      "ledger_conform": {
+        "stamp_band": "9 MAY \u2014 YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "ETA SUBDORM \u00b7 0600H PHONE LOG \u00b7 RINGER OFF",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Single horizontal engraving: gear-bag line with three coverless Dunlop handles protruding; transparent-phone handset with silencing slash as the numeral holder."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "dawn-bag",
+        "caption": "Plate 4 \u00b7 Three Dunlops packed before 0600",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "dawn-bag"
+      },
+      "note_refs_frozen": {
+        "count": 0,
+        "notes": []
+      }
+    },
+    {
+      "id": "p1c5",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 5,
+      "number_label": "\u00a7 5",
+      "title": "Year of the Depend Adult Undergarment (2) \u2014 Though only one-half ethnic Arab and a\u2026",
+      "subject": "The Saudi medical attach\u00e9's Wednesday night in Boston: devout, unwinding-constrained, defeated by the InterLace Pulse-Matrix; finds an unmarked cartridge in a 'HAPPY ANNIVERSARY!' mailer with a crude smiling ballpoint face \u2014 the Entertainment enters the book.",
+      "mood": "Opulent unease; luxury apartment as trap; the horror of convenience.",
+      "motifs": [
+        "padded cartridge-mailer + crude smiling ballpoint face",
+        "TP viewer glowing at 1927h",
+        "triptych of Byzantine erotica over the sideboard",
+        "Wednesday T\u00f6blerone / Mount Auburn tennis night",
+        "the recliner facing the screen"
+      ],
+      "opener_worthy": "The smiling-face mailer \u2014 the book's most ominous object so far; the viewer's digital 1927h; the recliner-and-screen tableau.",
+      "rationale": "The Entertainment's delivery scene: horror arriving as mail. Opener = mailer-tableau: padded envelope with the crude smiling face as the chapter's seal; the date band styled as a postmark (suburban Phoenix).",
+      "palette_role": "Mailer brown + screen glow: kraft-paper tan, phosphor blue-white, ballpoint-ink navy.",
+      "motif_asset": "cohort-a.svg #anniversary-mailer \u2014 padded mailer with crude smiling ballpoint face + 'HAPPY ANNIVERSARY!'; #viewer-1927 \u2014 viewer rectangle reading 1927h.",
+      "opener_composition": "Postmark date band (Phoenix AZ); mailer-with-smiling-face as the central seal above the title; faint scanline texture behind.",
+      "reading_treatment": "Mail-log treatment: monolith paragraphs with drop cap; the mailer's arrival paragraph marked with the smile-face glyph in the margin.",
+      "deep_research": {
+        "structure": "7 paras swelling then cut: 874\u21924127ch then a 94ch sting. The shape IS the scare.",
+        "document_form": "Consular evening log + postal delivery record; postmark 'suburban Phoenix'; mailer text 'HAPPY ANNIVERSARY!' + ballpoint smile.",
+        "opener_lines": [
+          "P7 (closer): 'the TP's viewer's digital display reads 1927h.'"
+        ],
+        "timestamp_notes": "1800h/1840h/1927h progression \u2014 clock time as countdown; rhymes with p1c7's 2010h cut.",
+        "added_motifs": [
+          "Prince Q. + T\u00f6blerone + Candida/maxillofacial detail (E.N.T. consultant irony)",
+          "wife wordlessly attending / Wednesday tennis night at Mount Auburn",
+          "P5's failed channel-surf: sports/opera/redisseminated episode \u2014 the Pulse-Matrix defeat",
+          "sideboard mail rows + Byzantine erotica triptych (rhymes with p1c3's Byzantine erotica lure)"
+        ]
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "BOSTON MA \u00b7 WEDNESDAY \u00b7 POSTMARK PHOENIX AZ \u00b7 1927H",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved mailer tableau: padded envelope with crude smiling ballpoint face + HAPPY ANNIVERSARY! as the chapter seal; viewer rectangle reading 1927h below; scanline hatch."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "anniversary-mailer",
+        "caption": "Plate 5 \u00b7 The mailer: HAPPY ANNIVERSARY!",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "anniversary-mailer"
+      },
+      "note_refs_frozen": {
+        "count": 0,
+        "notes": []
+      }
+    },
+    {
+      "id": "p1c6",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 6,
+      "number_label": "\u00a7 6",
+      "title": "Year of the Trial-Size Dove Bar",
+      "subject": "Clenette Henderson's Brighton Projects testimony in her own vernacular \u2014 Wardine in the closet, Roy Tony's ankle monitor \u2014 braided with the third-person tragedy of Poor Tony, Bruce Green and Mildred Bonk; street Boston vs. the Academy world.",
+      "mood": "Street-level grief and loyalty; asphalt tenderness; dread under fluorescent projects light.",
+      "motifs": [
+        "blacktop double-dutch",
+        "the closet Wardine hides in",
+        "Roy Tony's parole ankle monitor (radio signals)",
+        "the housetrailer off the Allston Spur",
+        "flaxen-haired Mildred Bonk gliding corridors"
+      ],
+      "opener_worthy": "The double-dutch ropes / blacktop; the ankle monitor's radio waves; the closet door ajar.",
+      "rationale": "The cohort's only vernacular-voice chapter and only projects chapter: must look and sound like a different Boston. Opener = blacktop diagram: double-dutch rope arcs over asphalt texture; the ankle-monitor signal as a repeating marginal pulse.",
+      "palette_role": "Asphalt + sodium: tar black, streetlight sodium orange, brick-project red.",
+      "motif_asset": "cohort-a.svg #blacktop-ropes \u2014 two crossing double-dutch rope arcs; #ankle-signal \u2014 ankle band emitting radio arcs.",
+      "opener_composition": "Asphalt-ground band with rope arcs swinging over the title; date stamp as a sprayed/stenciled tag; signal-pulse rule beneath.",
+      "reading_treatment": "Testimony treatment: Clenette's first-person blocks in a distinct voice register (slightly larger, looser); third-person braid in standard register; rope-arc glyph marks the voice switch.",
+      "deep_research": {
+        "structure": "8 paras, median 779ch: Clenette testimony braid (P1-P5, first-person vernacular) + third-person Poor Tony/Green/Bonk braid (P6-P8).",
+        "document_form": "Sworn testimony + caseworker narrative; voice switch mid-chapter is the structural event.",
+        "opener_lines": [
+          "P1: 'Wardine say her momma aint treat her right.'"
+        ],
+        "timestamp_notes": "Year of the Trial-Size Dove Bar: only chapter in this year; flashback depth (4 years gone)."
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF THE TRIAL-SIZE DOVE BAR",
+        "filing_line": "BRIGHTON PROJECTS \u00b7 TESTIMONY \u00b7 2 VOICES",
+        "seal": "Trial-Size Dove Bar (bar seal)",
+        "plate": "Engraved blacktop diagram: two crossing double-dutch rope arcs over asphalt hatch; ankle-monitor band emitting radio arcs as the repeating marginal pulse."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "blacktop-ropes",
+        "caption": "Plate 6 \u00b7 Double-dutch on the blacktop",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "blacktop-ropes"
+      },
+      "note_refs_frozen": {
+        "count": 0,
+        "notes": []
+      }
+    },
+    {
+      "id": "p1c7",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 7,
+      "number_label": "\u00a7 7",
+      "title": "Year of the Depend Adult Undergarment (3) \u2014 \u2018Hal?\u2019\u2026",
+      "subject": "Night: Mario keeps calling 'Hal?' / 'Hey Hal?' from the other bed; Hal, sleepless, finally answers with the two-ways-to-lower-a-flag-to-half-mast meditation \u2014 then the cold cut to the attach\u00e9 still watching at 2010h.",
+      "mood": "Insomniac tenderness; brothers in the dark; a parable whispered past bedtime.",
+      "motifs": [
+        "the repeated 'Hal? / Hey Hal?' calls",
+        "flag at half-mast vs. raised pole",
+        "two beds in a dark dorm room",
+        "the 2010h timestamp cut to the attach\u00e9"
+      ],
+      "opener_worthy": "The flag/flagpole image (the chapter's only visual); the call-and-echo dialogue shape; the timestamp guillotine at the end.",
+      "rationale": "A two-hander lullaby with a horror sting in the tail: 58/60 dialogue. Opener = night-dorm: flagpole glyph rising beside the title; the closing timestamp set as a cold stamped cut-line, visually severing the chapter (it rhymes with p1c5's 1927h viewer).",
+      "palette_role": "Night-dorm indigo: deep blue-black, moonlit sheet white, timestamp red.",
+      "motif_asset": "cohort-a.svg #flagpole \u2014 flag at half-mast beside a doubled-height pole; #cut-2010 \u2014 timestamp stamp '2010h'.",
+      "opener_composition": "Dark band with the flagpole glyph tall at left, title right like a whispered reply; date stamp dim; closing timestamp rule rendered as a severed tape-strip.",
+      "reading_treatment": "Call-and-echo rhythm: Mario's short calls in one margin-anchored register, Hal's long parable opening into full measure; final timestamp isolated as a stamped cut.",
+      "deep_research": {
+        "structure": "60 paras, median 35ch: the cohort's sparsest \u2014 call-and-echo fragments; max 376ch (flag parable P57).",
+        "document_form": "Night cassette: 'Hal?/Hey Hal?' calls, one parable, then a timestamp guillotine.",
+        "opener_lines": [
+          "P57: flag parable (only visual image).",
+          "P60 (closer): 'At 2010h. on 1 April Y.D.A.U., the medical attach\u00e9 is still watching the unlabelled entertainment cartridge.'"
+        ],
+        "timestamp_notes": "2010h closing stamp severs the chapter; pair with p1c5's 1927h.",
+        "added_motifs": [
+          "insomniac/agnostic/dyslexic dog joke (P35-P41)",
+          "Moms-never-cried thread (P43-P52): Tosca, half-mast flag at portcullis/Convocation",
+          "two beds / unbridgeable difference (P30)",
+          "'She's plenty sad, I bet.' (P59) as the tender last word before the 2010h guillotine"
+        ]
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "ETA SUBDORM \u00b7 NIGHT CASSETTE \u00b7 CUT 2010H",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Night-dorm engraving: flagpole glyph tall at left (flag at half-mast beside a doubled pole); severed tape-strip timestamp rule 2010H closes the plate."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "flagpole",
+        "caption": "Plate 7 \u00b7 Lower the flag, or raise the pole",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "flagpole"
+      },
+      "note_refs_frozen": {
+        "count": 0,
+        "notes": []
+      }
+    },
+    {
+      "id": "p1c8",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 8,
+      "number_label": "\u00a7 8",
+      "title": "October \u2014 Year of the Depend Adult Undergarment",
+      "subject": "Orin Incandenza's Phoenix morning: soaked sheets, the Subject's violet note with darkened circles and heart-dotted i's, sewer roaches that stare back, and the CBC schizophrenia documentary with the P.E.T. scanner \u2014 fame, dread, and morning as the soul's night.",
+      "mood": "Sun-blasted paranoia; celebrity loneliness; condo-cool vs. desert heat.",
+      "motifs": [
+        "violet bond note with darkened circles + heart-dotted i's",
+        "sewer roaches staring back from the tile",
+        "P.E.T. scanner (Cameron \u00d7 Fritz Lang machine)",
+        "AC cranked down / soaked sheets",
+        "Ambush perfume + honey toast"
+      ],
+      "opener_worthy": "The violet note (darkened o/d/p/6/8, heart i-dots); the fearless roach; the P.E.T. ring as an evil halo.",
+      "rationale": "Orin's establishing chapter: surfaces (notes, bodies, machines) that stare back. Opener = evidence-board: violet note-card with darkened circles and heart-dots as the central artifact; roach glyph as marginal pest; P.E.T. ring behind the date band.",
+      "palette_role": "Violet + clinical chrome: violet bond, Ambush gold, roach black, scanner chrome.",
+      "motif_asset": "cohort-a.svg #violet-note \u2014 note card with darkened circles and heart-dotted i's; #sewer-roach \u2014 armored roach seen from above; #pet-ring \u2014 scanner ring.",
+      "opener_composition": "Note-card artifact overlapping the title block like pinned evidence; P.E.T. ring faint behind the date band; roach glyph tucked at the band's edge.",
+      "reading_treatment": "Evidence-file treatment: the note description marked with the violet glyph; roach passage with roach marginalia; documentary passage in a screened/televisual register.",
+      "deep_research": {
+        "structure": "22 paras, median 514ch: essayistic blocks; max 3044ch (P.E.T. documentary passage).",
+        "document_form": "Scouting report + evidence file: violet note transcription, roach incident log, documentary synopsis.",
+        "opener_lines": [
+          "P1: 'For Orin Incandenza, #71, morning is the soul's night.'",
+          "Closer: shaving upward, south-to-north strokes, as he was taught."
+        ],
+        "timestamp_notes": "0730h wake; October Y.D.A.U. (month-only date).",
+        "added_motifs": [
+          "sweat-fossil bed outlines fanned 'like a deck of cards... acid trail' (P4)",
+          "dead bird falling into the Jacuzzi 'out of nowhere' (P9/P20)",
+          "roaches-in-tumblers obstacle course (P12); toilet-bowl dog-paddling (P13)",
+          "spider-and-heights dreams \u2192 tennis-dream cold opens (P17)",
+          "P.E.T. passage is the chapter's long set-piece (P19, 3044ch)"
+        ]
+      },
+      "ledger_conform": {
+        "stamp_band": "OCTOBER \u2014 YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "PHOENIX AZ \u00b7 0730H \u00b7 SUBJECT FILE #71",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved evidence board: violet note-card with darkened circles + heart-dotted i's pinned overlap; P.E.T. scanner ring faint behind; armored roach at the band's edge."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "violet-note",
+        "caption": "Plate 8 \u00b7 Violet bond: darkened circles, heart-dotted i's",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "violet-note"
+      },
+      "note_refs_frozen": {
+        "count": 1,
+        "notes": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "p1c9",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 9,
+      "number_label": "\u00a7 9",
+      "title": "Year of the Depend Adult Undergarment (4) \u2014 Here\u2019s Hal Incandenza, age seventeen, with his\u2026",
+      "subject": "Hal getting covertly high in the Pump Room with his brass one-hitter, exhaling into the exhaust fan; the secrecy-attachment confession; E.T.A. tunnel geography; Mario's filmic function with the camcorder \u2014 the Academy's underground revealed.",
+      "mood": "Covert calm; warm machinery hum; secrecy as sacrament.",
+      "motifs": [
+        "brass one-hitter + pale exhalation",
+        "industrial exhaust fan",
+        "elephant-colored cement tunnels / knuckle-dragging passages",
+        "Headmaster's House and Comm.-Ad. swallowed-ball architecture",
+        "Mario's tripod camcorder"
+      ],
+      "opener_worthy": "The brass one-hitter wisping into the fan; the tunnel cross-section map; the fan's circular grille.",
+      "rationale": "ETA's underground chapter: the Academy as burrow. Opener = tunnel cross-section: horizontal strata with the Pump Room chamber + fan grille above the title; one-hitter wisp curling through; tunnel-map marginal strip for the geography passage.",
+      "palette_role": "Pump-room brass + cement: elephant gray, brass gold, fan-blur steel, wisp pale.",
+      "motif_asset": "cohort-a.svg #pump-fan \u2014 circular exhaust-fan grille; #one-hitter \u2014 brass one-hitter with a wisp curl; #tunnel-section \u2014 strata cross-section with chamber.",
+      "opener_composition": "Strata bands forming the opener's ground; fan-grille medallion holding the section numeral; wisp curl rising into the title.",
+      "reading_treatment": "Subterranean treatment: geography passage accompanied by a marginal tunnel strip; secrecy-confession paragraph set slightly apart as the chapter's thesis; camcorder-tail marked with a film-frame glyph.",
+      "deep_research": {
+        "structure": "20 paras, median 708ch: gear-catalog precision (one-hitter specs) + tunnel survey + filmic coda.",
+        "document_form": "Equipment manual + tunnel survey map + camcorder shot log.",
+        "opener_lines": [
+          "P1: 'Here's Hal Incandenza, age seventeen, with his little brass one-hitter...'",
+          "P2 (thesis): 'as attached to the secrecy as he is to getting high.'"
+        ],
+        "timestamp_notes": "0015h/0020h in tunnel passages \u2014 after-midnight infrastructure time.",
+        "added_motifs": [
+          "P19 attach\u00e9 timestamp bridge: 0015h 2 April, wife at Mount Auburn, cartridge on recursive loop \u2014 cohort's cross-chapter stitch to p1c5/p1c7",
+          "P4 thesis-equation: 'Total utilization of available resources = lack of publicly detectable waste.'",
+          "Comm.-Ad. as swallowed-ball cube (Mario's architecture)",
+          "toilet-stall winter routine vs. Pump Room covert drama (P14)"
+        ]
+      },
+      "ledger_conform": {
+        "stamp_band": "YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "ETA PUMP ROOM \u00b7 EQUIPMENT SURVEY \u00b7 0015H",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Engraved tunnel cross-section: horizontal strata with Pump Room chamber; circular fan-grille medallion as numeral holder; brass one-hitter wisp curling up into the title zone."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "pump-fan",
+        "caption": "Plate 9 \u00b7 Pump Room cross-section and fan",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "pump-fan"
+      },
+      "note_refs_frozen": {
+        "count": 6,
+        "notes": [
+          3,
+          4,
+          5,
+          7,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "id": "p1c10",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 10,
+      "number_label": "\u00a7 10",
+      "title": "Autumn \u2014 Year of Dairy Products from the American Heartland",
+      "subject": "Don Gately's establishing chapter: oral-narcotics burglar with ferocious jolly \u00e9lan; the toothbrush-revenge Polaroids in clown masks; the Brookline neo-Georgian job gone wrong when the sick homeowner wakes \u2014 ending on the InterLace equipment-list drone.",
+      "mood": "Jolly menace curdling into farce-horror; big man in small rooms.",
+      "motifs": [
+        "Halloween clown masks + toothbrush Polaroids",
+        "big square chin / wide smile",
+        "neo-Georgian Brookline home + French doors + dumpster",
+        "sick man in acetate pajamas with NyQuil + Kleenex",
+        "InterLace spec-list drone (R.I.S.C. TPs, Pink2, tri-modems)"
+      ],
+      "opener_worthy": "The clown mask; the Polaroid pair; the spec-list as found poetry; the French doors in shrubbery.",
+      "rationale": "Gately's entrance must feel big, jolly, and doomed. Opener = rap-sheet with a clown-mask seal and two Polaroid frames; the closing InterLace spec-list set as a found-document terminal strip in phosphor type \u2014 the chapter's coldest joke.",
+      "palette_role": "Clown-mask carnival on bruise ground: greasepaint white/red, Polaroid cream, spec-list phosphor green.",
+      "motif_asset": "cohort-a.svg #clown-mask \u2014 Halloween clown mask, grinning; #polaroid-pair \u2014 two tilted Polaroid frames; #speclist-strip \u2014 terminal strip frame.",
+      "opener_composition": "Rap-sheet header with date stamp; clown-mask seal overlapping title corner; Polaroid pair tilted beneath like clipped evidence.",
+      "reading_treatment": "Rap-sheet treatment: monolith paragraphs with drop cap; revenge-Polaroid passage marked with mask glyph; closing spec-list isolated as a phosphor terminal block.",
+      "deep_research": {
+        "structure": "7 paras: rap-sheet escalation 1075\u21929612ch, then a 620ch spec-list drone as terminal strip.",
+        "document_form": "Rap sheet + burglary incident report + InterLace equipment manifest (closer is verbatim spec catalog).",
+        "opener_lines": [
+          "Closer is the found poem: '932/1864 R.I.S.C. power-TPs w/ or w/o console, Pink2...' ending '...lumbar stressae.'"
+        ],
+        "timestamp_notes": "Autumn Y.D.P.A.H.: only chapter in the Year of Dairy Products; Gately age 27."
+      },
+      "ledger_conform": {
+        "stamp_band": "AUTUMN \u2014 YEAR OF DAIRY PRODUCTS FROM THE AMERICAN HEARTLAND",
+        "filing_line": "NORTH SHORE / BROOKLINE \u00b7 INCIDENT REPORT \u00b7 SPEC MANIFEST",
+        "seal": "Dairy Products (barn seal)",
+        "plate": "Engraved rap sheet: clown-mask seal overlapping the corner, two tilted Polaroid frames beneath; terminal-strip frame reserved for the closing InterLace spec-list."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "clown-mask",
+        "caption": "Plate 10 \u00b7 The clown masks; two Polaroids",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "clown-mask"
+      },
+      "note_refs_frozen": {
+        "count": 6,
+        "notes": [
+          13,
+          14,
+          15,
+          17,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "id": "p1c11",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 11,
+      "number_label": "\u00a7 11",
+      "title": "3 November \u2014 Year of the Depend Adult Undergarment",
+      "subject": "Jim Troeltsch taken ill in Subdorm B: Tenuate stashed in the Seldane bottle, the ceiling-glued Turkish blanket terrain, and the long nightmare-essay \u2014 the worst dreams' center that's been with you all along \u2014 ending 'And then its mouth opens at your light.'",
+      "mood": "Feverish dorm-room dread; the horror chapter of the cohort; illness as revelation.",
+      "motifs": [
+        "Turkish blanket glued to the ceiling, folds as terrain with valleys/shadows",
+        "flashlight on the floor / shining the light all over",
+        "the Seldane bottle hiding Tenuate",
+        "circle-stained pillow",
+        "the mouth that opens at your light"
+      ],
+      "opener_worthy": "The ceiling-blanket terrain seen from the pillow; the flashlight beam in darkness; the mouth opening.",
+      "rationale": "The cohort's horror centerpiece in only 5 paragraphs: needs maximum atmosphere per word. Opener = view from the pillow: blanket-fold terrain arched over the title with a flashlight beam cutting across; the final one-line paragraph isolated as a scare-cut.",
+      "palette_role": "Fever dark: sickroom black-green, flashlight cone yellow, blanket Turkish red.",
+      "motif_asset": "cohort-a.svg #blanket-terrain \u2014 draped folds forming valleys/shadows; #flashlight-cone \u2014 beam cone in darkness; #sick-slip \u2014 pill-bottle glyph.",
+      "opener_composition": "Blanket-fold arch over the title like a tent; flashlight beam diagonal across the date band; pill-bottle glyph as the numeral holder.",
+      "reading_treatment": "Nightmare treatment: nightmare-essay passage in slightly compressed, airless measure; final line 'And then its mouth opens at your light.' isolated full-measure as a scare-cut with the beam glyph.",
+      "deep_research": {
+        "structure": "5 paras: 3799/474/3131/39/844 \u2014 the 39ch P4 ('And then its mouth opens at your light.') is the scare-cut pivot.",
+        "document_form": "Sick-slip + infirmary log + nightmare incident report; P4 as the stamped DIAGNOSIS line.",
+        "opener_lines": [
+          "P4 (pivot): 'And then its mouth opens at your light.'"
+        ],
+        "timestamp_notes": "0745h drills onset; 3 November Y.D.A.U."
+      },
+      "ledger_conform": {
+        "stamp_band": "3 NOVEMBER \u2014 YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "RM 204 SUBDORM B \u00b7 SICK-SLIP \u00b7 ONSET 0745H",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "View-from-the-pillow engraving: blanket-fold terrain arched over the title zone, flashlight beam diagonal across; pill-bottle glyph as numeral holder."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate",
+        "motif": "blanket-terrain",
+        "caption": "Plate 11 \u00b7 The ceiling terrain, seen from the pillow",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "blanket-terrain"
+      },
+      "note_refs_frozen": {
+        "count": 1,
+        "notes": [
+          21
+        ]
+      }
+    },
+    {
+      "id": "p1c12",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 12,
+      "number_label": "\u00a7 12",
+      "title": "As of Year of the Depend Adult Undergarment",
+      "subject": "Institutional prospectus: E.T.A.'s accredited history, James Incandenza's biography (optical physics, O.N.R., avant-garde film), his cartridge oeuvre and suicide at 54 \u2014 three vast expository paragraphs; the book's archive voice.",
+      "mood": "Archival gravity; institutional pride over an open grave.",
+      "motifs": [
+        "accredited-operation ledger (3 pre- + 8 Subsidized years)",
+        "optical-physics doctorate / O.N.R.",
+        "film/cartridge oeuvre + small academic following",
+        "posthumous citation via classified ARPA-NET mail",
+        "burial twice delayed in L'Islet County"
+      ],
+      "opener_worthy": "The institutional seal; the ledger of years; the filmography-as-tombstone.",
+      "rationale": "The archive chapter: only 3 paragraphs, all record. Opener = prospectus cover: institutional seal + ledger-lines of Subsidized years; reading treatment is document-grade: ledger clarity, film titles in a distinct cartridge register.",
+      "palette_role": "Prospectus navy + gilt: archival navy, gilt seal gold, paper cream (dark-first: cream as accent, not ground).",
+      "motif_asset": "cohort-a.svg #eta-seal \u2014 institutional seal (racquet + aperture blades); #ledger-years \u2014 ruled year-lines 3+8.",
+      "opener_composition": "Centered prospectus plate: seal above title, ledger-rules of the eleven years beneath, date band as an accreditation stamp.",
+      "reading_treatment": "Archive treatment: widest comfortable measure, ledger-calm leading, film/cartridge titles in small-caps register; suicide/citation tail given quiet funereal air.",
+      "deep_research": {
+        "structure": "3 paras (4262/842/1093): the cohort's densest archive blocks; zero dialogue.",
+        "document_form": "Accredited prospectus + curriculum vitae + obituary/citation record (ARPA-NET mail, L'Islet burial).",
+        "opener_lines": [
+          "Closer: burial twice delayed; posthumous citation by classified mail."
+        ],
+        "timestamp_notes": "'As of Y.D.A.U.': 3 pre-Subsidized + 8 Subsidized years = ledger lines."
+      },
+      "ledger_conform": {
+        "stamp_band": "AS OF YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "ACCREDITED PROSPECTUS \u00b7 3 PRE- + 8 SUBSIDIZED YEARS",
+        "seal": "Filing seal (AS OF Y.D.A.U.)",
+        "plate": "Engraved prospectus plate: institutional seal (racquet + aperture blades) above, eleven ledger year-rules beneath; funereal air, gilt on navy."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate prospectus",
+        "motif": "eta-seal",
+        "caption": "Plate 12 \u00b7 The Academy seal; eleven ledger years",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "eta-seal"
+      },
+      "note_refs_frozen": {
+        "count": 1,
+        "notes": [
+          23
+        ]
+      }
+    },
+    {
+      "id": "p1c13",
+      "part": "part-1",
+      "part_roman": "I",
+      "order": 13,
+      "number_label": "\u00a7 13",
+      "title": "Denver CO, 1 November \u2014 Year of the Depend Adult Undergarment",
+      "subject": "Two halves seamed: (1) Orin in fake red wings + beak, gliding over Mile-High as a hated freak-show Cardinal; (2) E.T.A. Viewing Room Big Buddy powwow \u2014 Pemulis on muscimole, then the gargantuan tennis-court dream with convolved string-sculpture lines, ending 'the distant opponent... for all the apparatus of the game.'",
+      "mood": "Humiliated spectacle giving way to hushed doom; stadium roar \u2192 dream silence.",
+      "motifs": [
+        "fake red wings + peeling feathers + beak",
+        "Mile-High oxides / loudest stadium",
+        "Big Buddy powwow on the Viewing Room floor",
+        "muscimole / fly agaric",
+        "gargantuan court with string-sculpture lines; unseen distant opponent"
+      ],
+      "opener_worthy": "The red wings over the stadium bowl; the string-sculpture court lines; the halved structure itself demanding a seam.",
+      "rationale": "The cohort finale is two chapters in a trenchcoat: spectacle then dream. Opener = split program cover: stadium-bowl arc with wings above, string-court lines below, title on the seam; reading treatment renders the Orin\u2192Pemulis handoff as a visible intermission break \u2014 the cohort's only multi-register chapter.",
+      "palette_role": "Game-day red fading to dream indigo: Cardinal wing red, stadium-bowl concrete, muscimole agaric red-cap, dream-court indigo.",
+      "motif_asset": "cohort-a.svg #cardinal-wings \u2014 fake red wings with a peeling feather; #string-court \u2014 convolved string-sculpture court lines; #seam \u2014 intermission break rule.",
+      "opener_composition": "Split opener: upper stadium register (wings + bowl arc + date stamp as game ticket), lower dream register (string lines), title seated exactly on the seam rule.",
+      "reading_treatment": "Two-register treatment: Orin half in bright game-day measure with wing glyph; intermission seam (agaric-cap marker); Pemulis/dream half in deepening indigo with string-court marginalia widening toward the finale line.",
+      "deep_research": {
+        "structure": "15 paras in two registers: P1-P9 stadium volleys (short, loud) / P10-P15 Viewing Room + dream (long, hushed); seam between P9 and P10.",
+        "document_form": "Game-day program (halves 1) + Big Buddy meeting minutes + dream transcript (halves 2).",
+        "opener_lines": [
+          "P8: 'I'm paid to punt!'",
+          "P14: 'The umpire whispers Please Play.'",
+          "P15 (cohort finale): 'I never get quite to see the distant opponent, for all the apparatus of the game.'"
+        ],
+        "timestamp_notes": "1 November Y.D.A.U., Denver CO: away-game dateline; muscimole dosage passage (10-20mg) as minutes.",
+        "seam_correction": "REVCORR: seam is between P10 and P11, not P9/P10. P10 ('...of how you could be an Oiler! You could be a Brown.') is the last stadium-fragment line \u2014 a cut-off overheard sentence \u2014 then P11 hard-cuts to Pemulis's muscimole lecture. The intermission treatment must honor P10 as the true cut point: stadium register runs P1-P10, dream register P11-P15."
+      },
+      "ledger_conform": {
+        "stamp_band": "DENVER CO, 1 NOVEMBER \u2014 YEAR OF THE DEPEND ADULT UNDERGARMENT",
+        "filing_line": "GAME PROGRAM \u00b7 FIRST HALF / BIG BUDDY MINUTES \u00b7 SECOND HALF",
+        "seal": "Y.D.A.U. (undergarment seal)",
+        "plate": "Split engraved program cover: upper stadium register (fake red wings + bowl arc, game-ticket stamp), lower dream register (string-sculpture court lines), title seated on the seam rule with agaric-cap intermission marker."
+      },
+      "contract_manifest": {
+        "src": "art/cohort-a.svg",
+        "class": "plate diptych",
+        "motif": "cardinal-wings",
+        "caption": "Plate 13 \u00b7 First half: wings. Second half: the string court",
+        "slot": "#chapter-art",
+        "note": "v1.1 sanctioned form {src:'art/cohort-a.svg', symbol:'motif-id'} per SupIJ-2 relay of contract v1.1 addendum (fragments still honored, new manifests MUST use symbol). ReaderLead ruling App. A.1: reader.js fetches once, extracts #symbol id, inlines a clone into #chapter-art; missing id \u2192 hidden slot + console warning, never fatal. (Footnote: split art/cohort-a/<motif>.svg fallback retained only if symbols prove unworkable.)",
+        "symbol": "cardinal-wings"
+      },
+      "note_refs_frozen": {
+        "count": 3,
+        "notes": [
+          16,
+          26,
+          27
+        ]
+      }
+    }
+  ],
+  "rev2_note": "Added per-entry structure (para counts/lengths), document_form, opener_lines (verified verbatim excerpts), timestamp_notes. Awaiting SupIJ-2 ART-DIRECTION.md + integration spec for Phase 2 gate.",
+  "rev3_note": "Full-text reads: c3,c4,c5,c7,c8(partial heads),c11,c13 complete; c1 sampled (139 paras, key excerpts); c2,c6,c9,c10,c12 heads+motifs surveyed. Corrected c13 seam to P10/P11. Added verified verbatim motifs per chapter. Still gated on SupIJ-2 ART-DIRECTION.md for Phase 2 spawns. c1 now fully covered: movements mapped, motifs verified.",
+  "rev4_note": "Conformed to ART-DIRECTION-DRAFT.md (Direction 1 'Subsidized Time Ledger', pending supervisor finalization + ArtDirector critique): per-entry stamp band, filing sub-line, year seal, engraved plate brief. Palette remaps to the six draft tokens (Ledger Black #0D0F0C / File Manila #E8DCC0 / Stamp Red #D6402B / Cartridge Phosphor #9FE870 / Seal Gold #C9A227 / Carbon Violet for Pt II). No specialist spawns \u2014 still gated on SupIJ-2's finalized ART-DIRECTION.md + integration spec.",
+  "baseline": {
+    "viewed": "2026-10-15 Eval browser, dark default, 1440x1000",
+    "cover": "Dim green gradient wash + dot grid + conic glow; Cormorant title, no authored art \u2014 matches JestIdentity diagnosis.",
+    "openers": "p1c1/p1c7/p1c13 all identical cartouche: part label + hairline rules, centered serif title, bordered \u00a7 badge, word-count line, fleuron. Router verified: Begin Reading -> p1c1, btn-next steps chapters, body[data-chapter] set correctly.",
+    "screenshots": "Eval session captures (cover, p1c1 opener+body, p1c7, p1c13); re-capture at after-state for comparison."
+  },
+  "contract_conformance": {
+    "contract": "READER-CONTRACT v1.0 STABLE + SupIJ-2 IJ relay",
+    "slots": "All 13 plates target #chapter-art (injected above #chapter-meta); prose untouched, pure CSS via body[data-chapter]/[data-part]/[data-art] + #chapter-text[data-paras]; no reader-* classes minted (all motif/plate names are book-owned).",
+    "css_cascade": "Cohort CSS (design/cohort-a.css) unlayered \u2192 always wins over @layer shared; scoped to body[data-book='infinite-jest'] + per-chapter hooks.",
+    "manifest_merge": "Supervisor merges entries' contract_manifest blocks into design/chapters.json sequentially; cohort JSON stays the source of truth with part+order+title for the provisional-ID remap.",
+    "fonts": "No cohort font loading (book-level concern: theme.css/index.html via supervisor); cohort CSS references --font-* tokens only.",
+    "endnotes": "Cohort A has no notes-part chapters; p1c9-P19/p1c5/p1c7 timestamp bridge noted for future body\u2192note refs if TextCurator supplies note_refs \u2014 no guessing.",
+    "fragment_ruling": "ReaderLead via SupIJ-2: fragment-addressed src art/cohort-a.svg#motif-id supported; fetch-once + extract + inline-clone; missing id non-fatal.",
+    "symbol_form": "v1.1: {src:'art/cohort-a.svg', symbol:'<motif-id>'} \u2014 fragment srcs superseded, still honored."
+  },
+  "svg_authoring_constraints": {
+    "verified_against": "shared/reader.js fillArtSlot L535-594 (read 2026-10-15)",
+    "symbol_form": "art/cohort-a.svg MUST define 13 <symbol id='<motif>' viewBox='...'> elements (per-symbol viewBox REQUIRED \u2014 the inlined wrapper inherits the target's viewBox, else the root's, which would mis-scale plates).",
+    "motif_ids": [
+      "glad-horseshoe",
+      "erdedy-insect",
+      "intake-chair",
+      "dawn-bag",
+      "anniversary-mailer",
+      "blacktop-ropes",
+      "flagpole",
+      "violet-note",
+      "pump-fan",
+      "clown-mask",
+      "blanket-terrain",
+      "eta-seal",
+      "cardinal-wings"
+    ],
+    "caption": "entry.caption becomes <figcaption> text; slot aria-hidden=false when captioned \u2014 captions are real content, keep them short.",
+    "class": "entry.class appended to #chapter-art className (base 'chapter-art' always present); cohort CSS styles .chapter-art.plate etc. scoped under body[data-chapter].",
+    "failure_mode": "Missing symbol id \u2192 slot hidden + console warning, never fatal. Validator MUST check console for '[reader] art skipped' warnings.",
+    "no_js_needed": "Declarative manifest fill covers all 13 plates; no book-owned JS required for Cohort A."
+  },
+  "id_freeze": {
+    "frozen": "2026-10-15",
+    "source": ".omp/design/infinite-jest-text-audit.md",
+    "verdict": "p1c1\u2013p1c77/p2c1\u2013p2c12 FINAL, no splits/merges/renames, titles unchanged; part+order+title keys now permanent provenance."
+  },
+  "noteref_design": {
+    "cohort_refs": 19,
+    "note": "19 refs across 6 chapters (p1c2:1, p1c8:1, p1c9:6, p1c10:6, p1c11:1, p1c12:1, p1c13:3); p1c1/p1c3\u2013p1c7 carry zero. Reader activates body\u2192note links from note_refs ONLY (\u00a76); cohort CSS styles .reader-noteref + return chip in Part I register (NO violet \u2014 J5). Validator exercises round-trips on p1c9/p1c10."
+  },
+  "design": {
+    "status": "design-complete",
+    "designer": "JestCohortADesigner",
+    "date": "2026-10-15",
+    "artifact": "local://jest-cohort-a-design.md",
+    "scope_note": "Notes only. No entry contract_manifest/ledger_conform altered. No SVG/CSS authored. Skills read via skill:// URIs (frontend-design, frontend-workflow, reference-study); no fallback used.",
+    "thesis": "Cold intake drawer: thirteen different document-type plates (exhibit diagram, elevation, form, gesture log, postal evidence, plan testimony, dimensioned parable, evidence board, engineering section, rap sheet, sick-slip canopy, prospectus, program) in one engraving hand (ruled keylines, hatch families, stencil mono labels, one spot role + Manila). Scaffold shared; object/arrangement/hatch never repeat.",
+    "j8_prototype": "p1c1 FIRST and prototype-grade: nine watching-head silhouettes (7 named watchers + 2 Administrative periphery; P3/P5/P70 headcount audited) arc around a conference-table arc with Brewster's-Angle rose streak; tenth position is Hal's empty chair in phosphor outline (plate's sole phosphor object). Opener adds ij-exhibit double keyline + table-edge ledger rule. Reading: red/gold turn-ticks on volley runs P1-P45/P101-P137 (interior beats exempt), indented internal-narration blocks incl. P91 calm room with extra air, E.R. cold tail P138-P139 (phosphor rule + red cross-tick + 1.9 leading). Court-glasses margin glyph on P7.",
+    "plates": {
+      "p1c1": "glad-horseshoe: horseshoe seating exhibit, 9 differentiated heads (lean/smile, shaggy lion, aviarian+cock+freckles, extra eyebrows+pocks, crewcut+sunburn+change, deLint thumbs, mismatched mustache+watchband, Kekulean tie, palm-to-mouth witness), empty phosphor chair, Brewster streak. Ground: 'I am seated in an office, surrounded by heads and bodies.' (P1)",
+      "p1c2": "erdedy-insect: sealed-room elevation; blind-slats, two crossing sundial shadows, dull-steel girder triangle, black-figure insect half-emerged (cohort's only black figure), red DO NOT TIE UP LINE tag. Ground: 'The insect kept going in and out of one of the holes on the girders.' (P1)",
+      "p1c3": "intake-chair: clinical form with juggled calendar square, 3/4 wooden chair, O.E.D. brick with J-tab (numeral holder), soda-fizz ticks, hidden argyle+veal-marsala swatch in border. Ground: 'Come right in. You'll see a chair to your immediate left.' (P2)",
+      "p1c4": "dawn-bag: single horizontal gesture; bag zipper line + 3 coverless Dunlop handles, nonlight band, dashed transparent handset with red ringer slash. Emptiest plate. Ground: 'Shoving three coverless Dunlop widebodies into the gear bag...' (P14)",
+      "p1c5": "anniversary-mailer: postal evidence; quilted mailer torn open, black cartridge with embossed smile sliding out, gold HAND-LETTERED 'HAPPY ANNIVERSARY!' + naive ballpoint smile (only hand-lettering in cohort), Phoenix killer-cancel, 1927 seven-seg viewer strip with scanlines. Ground: mailer passage (P6) + 'the TP's viewer's digital display reads 1927h.' (P7)",
+      "p1c6": "blacktop-ropes: plan-view testimony; stipple asphalt (only stipple), crossing double-dutch ropes with twist ticks, chalk hopscotch, phosphor ankle-signal legend, closet-door-ajar shadow wedge. Ground: 'where me and Delores Epps jump double dutch' (P1)",
+      "p1c7": "flagpole: dimensioned parable; half-mast pole beside doubled pole (flags at equal altitude; 1/2 + 2x labels), two beds with unbridgeable gap, severed tape-strip base stamped 2010H with torn gap. Ground: 'You can raise the pole to like twice its original height.' (P57)",
+      "p1c8": "violet-note: pinned evidence board; note-card with fold + spritzer ring + gold-ink darkened o/d/p/6/8 + gold heart-dotted i's, P.E.T. ring concentric behind, dorsal roach with red eyes, AC slats, 0730H stamp. ZERO violet pigment (J5): violet depicted via gold-ink shapes + caption. Ground: 'The note from last night's Subject is on violet bond once folded...' (P6)",
+      "p1c9": "pump-fan: engineering cross-section; 4 strata bands, Pump Room chamber, fan-grille numeral holder, brass one-hitter with phosphor wisp spiral (only spiral), simian tunnel dimension, camcorder glyph, title block 'DWN: M. INCANDENZA'. Ground: 'Here's Hal Incandenza, age seventeen, with his little brass one-hitter' (P1)",
+      "p1c10": "clown-mask: rap sheet; booking height-chart, symmetric greasepaint mask overlapping corner (red nose+smile), 2 tilted Polaroids with withheld dark images, phosphor terminal strip quoting '932/1864 R.I.S.C....' verbatim. Ground: 'each in a Halloween mask denoting a clown's great good professional cheer' (P3)",
+      "p1c11": "blanket-terrain: view from pillow; Turkish drape-fold canopy with valley hatch + kilim band, Krazy-Glue corner dots, diagonal flashlight beam with mote dots, circle-stained pillow, mouth-valley negative space with one red rim line (horror never literalized), 'SELDANE (NOT)' pill-bottle numeral holder. Ground: 'its folds form a terrain, like with valleys and shadows.' (P2)",
+      "p1c12": "eta-seal: centered prospectus cover (only symmetric plate); racquet+aperture Academy seal, 3+8 enumerated ledger year-rules, punched-paper citation tape, armband + '54' memorial cartouche. Heaviest gold. Ground: 'accredited operation for three pre-Subsidized years and then eight Subsidized years' (P1)",
+      "p1c13": "cardinal-wings: bisected program (only diptych); UPPER loud bowl arc + fake red wings with peeling feather + freak-show ticket; agaric-cap INTERMISSION seam; LOWER hushed string-sculpture court deliquescing to blank (unseen opponent), Moms's white umbrella, italic 'Please Play.' Red exists upper-only. Ground: 'ill-glued feathers keep peeling off' (P1) + 'complex and convolved as a sculpture of string' (P13)"
+    },
+    "margin_ticks": "Cohort outline pills/glyphs (ledger owns filled note-tick pills + filing band). Timestamps: 0600 c4:P2/P14, 1800H-1840H-1927H countdown c5:P4/P7 (phosphor finale), severed 2010H c7:P60 (red), 0730H c8:P2, 0015/0020 pair c9:P19 (phosphor), 0745H c11:P1; none elsewhere (verified no clock stamps). Glyphs: court-glasses c1:P7, smile-face c5:P6, signal-pulse c6:P2, rope-switch c6:P6, roach c8:P12, mask c10:P3, beam c11:P5, tunnel strip c9:P11, string strip c13:P13, film-frame c9:P20. Gutter >1100px, inline collapse below; outline vs ledger-filled; never violet.",
+    "reading_treatments": "c13 diptych seam between P10/P11 (rev3 honored; P10 last stadium fragment): game-day compression P1-P10, agaric INTERMISSION divider via P10::after, deepening dream leading P11-P15, centered italic P14 whisper. c11 scare-cut: airless P3, isolated centered P4 (39ch) with beam rules, no red. c10 terminal strip: P7 as phosphor mono ij-insert block; P6 9612ch unbroken monolith. c6 voice-switch: testimony register P1-P5 (1.05em/loose/indent), rope glyph + air-break at P6. c7 call-and-echo: Mario calls right-indented with echo prefix, P57 parable opens full, P59 tender italic, P60 severed red tape-strip with torn edge. Monolith caps: c2 oversized cap + air (zero dialogue, no turns), c5 swell-then-sting air above P7, c12 ledger-calm 38rem + funereal P3 air. Vignettes: c4 narrow 32rem + handset markers + ringer-off close; c11 one-screen compression. c3 two-voice cool/warm + centered mono Tap-taps; c8 gold evidence rule P6 + screened P19; c9 thesis P2 enthroned. All CSS-only, explicit nth-of-type, ij- prefix, no reader-*, prose untouched.",
+    "palette_register": "Part I GOLD only; Carbon Violet count zero incl. p1c8 (violet-bond depicted in gold-ink shapes + caption). Six tokens + E05238 red-on-dark bump, opacity tints only. Phosphor = machine/glow/exhalation (6 plates + c10 terminal text); red = stamp/sever/makeup (all 13); gold = record/institution (all 13, heaviest c12). Black-figure subjects: c2 insect, c5 cartridge, c10 Polaroid cores, c12 armband.",
+    "directions": "A seating-plans (rejected: 4 dark rooms would clone) / B portraits (rejected: Hal unreadable P88; objects carry more dread) / C thirteen document types CHOSEN: distinct artifacts in one hand, matches document-saturated prose, 13 different compositional problems, coldness in artifacts + calm body (benchmark split).",
+    "references": "Snider IJ cover history (LitHub 2026, read full: Wallace complexity/specificity instinct, subsidized-sky discipline); banknote guilloche/vignette engraving (BoC Museum, USCEP: keylines, hatch, stencil, concentric rings -> c8 rings, c12 seal); 19th-c. frontispiece/headpiece/tailpiece tradition (exhibit-before-text, captions as content); clinical intake ephemera (Wellcome admission papers, NLM checklist: forms, calendar squares, stamp boxes -> c3/c11/c1); engineering section/title-block grammar (strata, dimensions, drawn-by -> c9/c7); in-text Wallace diagrams (court glasses P7, secrecy equation P4, muscimole moniker).",
+    "handoff": "Engineer: (1) REPLACE art/cohort-a.svg with 13 viewBoxed symbols per artifact section 2; (2) author design/cohort-a.css per sections 1.4/3/4 (unlayered, ij- prefix, explicit nth-of-type); (3) touch no manifest keys (locked); (4) J5 grep for violet hexes must be empty; (5) build p1c1 first as within-cohort J8 gate."
+  }
+}

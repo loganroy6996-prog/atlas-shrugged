@@ -1,0 +1,377 @@
+/* =====================================================================
+   Cohort D — Book Three (part-5) · Lantern at Noon
+   Owner: GsCohortDEngineer. Binding: design/cohort-d.md §3–§4, ART-DIRECTION.md
+   (NOON Direction A), READER-CONTRACT v1.1.
+   Disjoint gs-d- classes only; every rule book-scoped via
+   body[data-book="gay-science"]. Supervisor merges this file into theme.css
+   (or links it from index.html); all url()s are data: URIs so no path
+   rewrite is needed.
+   GR3: banners bleed via margin, never transforms; overflow-x clip;
+   phone containment caps. GR5: captions stay HTML figcaption (reader.js).
+   ===================================================================== */
+
+/* ---- D.1 seal URI vars (from art/cohort-d.svg gs-seal-*, intrinsic ≤32px) ---- */
+body[data-book="gay-science"] {
+  --gs-d-seal-tablet: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xNiAtMTggMzIgMzYiIHdpZHRoPSIyMyIgaGVpZ2h0PSIyNiI+CjxyZWN0IHg9Ii05IiB5PSItMTQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyOCIgZmlsbD0iI2YzZWFkOCIvPgo8bGluZSB4MT0iLTUiIHkxPSItNiIgeDI9IjUiIHkyPSItNiIgc3Ryb2tlPSIjMDYyMjJiIiBzdHJva2Utd2lkdGg9IjIiLz4KPGxpbmUgeDE9Ii01IiB5MT0iMiIgeDI9IjUiIHkyPSIyIiBzdHJva2U9IiMwNjIyMmIiIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNOSwtMTQgTDMsLTE0IEw5LC04IFoiIGZpbGw9IiNlNDU3MmUiLz4KPC9zdmc+");
+  --gs-d-seal-herd: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMTIgNDAgMjQiIHdpZHRoPSIyNiIgaGVpZ2h0PSIxNiI+CjxwYXRoIGQ9Ik0tMTgsNiBBNiw2IDAgMCAxIC02LDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YzZWFkOCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz4KPHBhdGggZD0iTS02LDYgQTYsNiAwIDAgMSA2LDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YzZWFkOCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz4KPHBhdGggZD0iTTYsNiBBNiw2IDAgMCAxIDE4LDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YzZWFkOCIgc3Ryb2tlLXdpZHRoPSIyLjQiLz4KPGxpbmUgeDE9Ii0xMCIgeTE9IjEwIiB4Mj0iMTAiIHkyPSIxMCIgc3Ryb2tlPSIjZTQ1NzJlIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+");
+  --gs-d-seal-spark-gold: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMjAgNDAgNDAiIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CjxwYXRoIGQ9Ik0wLC0xNCBDMi40LC0zLjggMy44LC0yLjQgMTQsMCBDMy44LDIuNCAyLjQsMy44IDAsMTQgQy0yLjQsMy44IC0zLjgsMi40IC0xNCwwIEMtMy44LC0yLjQgLTIuNCwtMy44IDAsLTE0IFoiIGZpbGw9IiNmNWIzMDEiLz4KPC9zdmc+");
+  --gs-d-seal-spark-verm: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMjAgNDAgNDAiIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CjxwYXRoIGQ9Ik0wLC0xNCBDMi40LC0zLjggMy44LC0yLjQgMTQsMCBDMy44LDIuNCAyLjQsMy44IDAsMTQgQy0yLjQsMy44IC0zLjgsMi40IC0xNCwwIEMtMy44LC0yLjQgLTIuNCwtMy44IDAsLTE0IFoiIGZpbGw9IiNlNDU3MmUiLz4KPC9zdmc+");
+}
+
+/* ---- D.2 marginal Seed sparks (CSS-only, BY CONTENT KIND — never modulo) ----
+   Seeds carry NO manifest entry, so body[data-art] is ALWAYS ABSENT on Seed
+   chapters (reader.js deletes it): tint MUST be keyed off data-chapter, never
+   data-art alone (validator Issue 1). Blood-kind Seeds (godshadow/herd/virtue)
+   take the vermilion default; the 70 light-kind Seeds (knowledge/self/sea,
+   cohort-d.md §3.2) are listed per-chapter below — same pattern as the D.5
+   end-seal rules. The mark floats 26px left of the first line; on narrow
+   screens it tucks above the paragraph. */
+body[data-book="gay-science"][data-part-id="part-5"] .gs-d-seed {
+  position: relative;
+}
+body[data-book="gay-science"][data-part-id="part-5"] .gs-d-seed::before {
+  content: var(--gs-d-seal-spark-verm);
+  position: absolute;
+  left: -2.4rem;
+  top: 0.35em;
+  width: 26px;
+  height: 26px;
+  line-height: 0;
+  pointer-events: none;
+}
+/* Light-kind Seeds (knowledge/self/sea) take gold — per-chapter list, §3.2. */
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c19"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c26"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c48"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c49"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c50"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c51"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c55"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c56"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c57"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c59"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c60"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c62"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c70"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c71"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c72"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c75"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c76"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c82"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c84"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c86"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c87"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c89"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c90"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c91"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c95"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c96"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c98"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c100"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c101"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c102"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c104"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c105"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c108"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c109"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c110"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c111"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c115"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c116"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c117"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c119"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c120"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c121"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c124"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c125"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c128"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c131"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c132"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c133"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c134"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c135"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c137"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c138"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c139"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c141"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c145"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c146"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c147"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c149"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c150"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c151"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c153"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c154"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c155"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c156"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c158"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c161"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c162"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c163"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c165"] .gs-d-seed::before,
+body[data-book="gay-science"][data-part-id="part-5"][data-chapter="p5c168"] .gs-d-seed::before {
+  content: var(--gs-d-seal-spark-gold);
+}
+
+/* ---- D.3 zenith banner treatment (Branch + p5c18 landmark) ----
+   Full-bleed tableau: bleeds via margin (never transforms — GR4 root cause),
+   cropped by vh caps, contained (GR3). The landmark keeps the clear sky band
+   y8–74 (no scrim in the SVG); Branch banners carry their own scrim ellipse
+   in-art at (800,242). Title/caption stay HTML (GR5). */
+body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-banner {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0 calc(50% - 50vw) 2.4rem;
+  overflow: hidden;
+}
+body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-banner svg {
+  display: block;
+  width: 100%;
+  max-width: min(100%, calc(46vh * 3.81));
+  max-height: 46vh;
+  margin-inline: auto;
+  object-fit: cover;
+}
+body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-banner figcaption {
+  font-family: var(--gs-display, Georgia, serif);
+  font-style: italic;
+  text-align: center;
+  text-wrap: balance;
+  padding: 1rem 48px 1.4rem;
+  color: var(--gs-foam, #f3ead8);
+}
+
+/* ---- D.4 zenith medallion treatment (Shoots + one-off actors) ----
+   Contained motif-class figure ≤24rem above the meta block; the medallion
+   SVG (480×300 meet) renders whole — never cropped. */
+body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-medallion {
+  max-width: 24rem;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+}
+body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-medallion svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-medallion figcaption {
+  font-family: var(--gs-display, Georgia, serif);
+  font-style: italic;
+  text-align: center;
+  text-wrap: balance;
+  padding: 0.8rem 1rem 0;
+  color: var(--text-muted, #cdbfa4);
+}
+
+/* ---- D.5 kind end-seals (Contract A.0: body[data-chapter]-qualified,
+   p:last-child::after, url() ≤32px, never layout-shifting) ----
+   godshadow → lantern (shell var, same art); virtue → tablet; herd → herd;
+   light-kinds (knowledge/self/sea) → gold spark. Qualified per chapter so
+   the rule survives manifest motif renames. */
+body[data-book="gay-science"][data-chapter="p5c1"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c15"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c18"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c21"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c22"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c23"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c24"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c25"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c28"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c29"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c30"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c31"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c32"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c33"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c34"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c35"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c36"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c37"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c39"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c40"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c41"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c42"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c43"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c44"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c45"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c46"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c73"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c152"] .chapter-text > p:last-child::after {
+  content: var(--seal-lantern);
+}
+body[data-book="gay-science"][data-chapter="p5c7"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c11"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c12"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c13"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c27"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c38"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c52"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c53"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c58"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c69"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c77"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c78"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c79"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c85"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c92"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c93"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c97"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c99"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c103"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c106"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c107"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c112"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c113"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c114"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c118"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c122"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c123"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c126"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c130"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c136"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c140"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c143"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c159"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c160"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c164"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c166"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c167"] .chapter-text > p:last-child::after {
+  content: var(--gs-d-seal-tablet);
+}
+body[data-book="gay-science"][data-chapter="p5c9"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c10"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c54"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c61"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c63"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c64"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c65"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c66"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c67"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c68"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c74"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c80"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c81"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c83"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c88"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c94"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c129"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c148"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c157"] .chapter-text > p:last-child::after {
+  content: var(--gs-d-seal-herd);
+}
+body[data-book="gay-science"][data-chapter="p5c2"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c3"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c4"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c5"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c6"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c8"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c14"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c16"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c19"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c20"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c26"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c50"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c51"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c71"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c72"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c82"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c84"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c86"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c89"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c98"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c102"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c109"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c110"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c115"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c116"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c117"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c119"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c120"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c121"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c124"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c135"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c137"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c139"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c141"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c142"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c153"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c154"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c158"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c47"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c48"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c49"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c55"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c56"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c57"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c59"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c60"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c62"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c70"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c75"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c76"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c87"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c90"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c91"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c95"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c96"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c100"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c101"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c104"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c105"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c108"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c111"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c125"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c127"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c128"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c131"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c132"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c134"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c138"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c144"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c145"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c146"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c147"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c150"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c151"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c155"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c156"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c161"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c162"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c163"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c165"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c168"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c17"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c133"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p5c149"] .chapter-text > p:last-child::after {
+  content: var(--gs-d-seal-spark-gold);
+}
+
+/* ---- D.6 reduced motion: zenith art renders still ---- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-banner,
+  body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-medallion {
+    animation: none;
+  }
+}
+
+/* ---- D.7 phone containment (GR3: zero phone overflow, shipping floor) ---- */
+@media (max-width: 560px) {
+  body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-banner svg {
+    min-height: 200px; /* P1 phone opener floor (final-validator MINOR-1; mirrors merged theme.css) */
+    max-height: 34vh;
+    max-width: min(100%, calc(34vh * 3.81));
+  }
+  body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-banner figcaption {
+    padding-inline: 20px;
+  }
+  body[data-book="gay-science"][data-part-id="part-5"] #chapter-art.gs-d-medallion {
+    max-width: 100%;
+    padding-inline: 1.1rem;
+  }
+  body[data-book="gay-science"][data-part-id="part-5"] .gs-d-seed::before {
+    left: auto;
+    right: 0;
+    top: -1.9rem;
+  }
+}

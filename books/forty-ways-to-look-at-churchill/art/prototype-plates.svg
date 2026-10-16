@@ -1,0 +1,154 @@
+<!-- Forty Facets prototype plates (supervisor-owned). C9 set. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <title>Forty Facets prototype plates</title>
+
+  <!-- p2c1 Way 1: rising monoliths, ochre-dominant. THE mirror source. -->
+  <symbol id="p2c1" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <text class="fw-num" x="620" y="320" text-anchor="middle" font-size="300">1</text>
+    <g fill="var(--fw-ochre)">
+      <path d="M120 360 L210 60 L300 80 L220 360 Z"/>
+      <path d="M300 360 L400 130 L490 150 L400 360 Z"/>
+      <path d="M60 360 L110 220 L165 232 L120 360 Z" opacity="0.7"/>
+      <path d="M520 360 L580 200 L655 214 L610 360 Z" opacity="0.85"/>
+    </g>
+    <g fill="var(--fw-bone)">
+      <path d="M700 360 L740 170 L830 182 L795 360 Z" opacity="0.85"/>
+      <path d="M860 360 L895 250 L955 258 L930 360 Z" opacity="0.6"/>
+    </g>
+    <g fill="var(--fw-slate)">
+      <path d="M1000 360 L1050 220 L1110 232 L1075 360 Z" opacity="0.75"/>
+    </g>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p2c2 Way 2: EXACT inversion of p2c1 (C2), Vermilion relight.
+       Same shard set, mirrored about x=600, ochre->vermilion. -->
+  <symbol id="p2c2" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <text class="fw-num" x="580" y="320" text-anchor="middle" font-size="300">2</text>
+    <g fill="var(--fw-vermilion)">
+      <path d="M1080 360 L990 60 L900 80 L980 360 Z"/>
+      <path d="M900 360 L800 130 L710 150 L800 360 Z"/>
+      <path d="M1140 360 L1090 220 L1035 232 L1080 360 Z" opacity="0.7"/>
+      <path d="M680 360 L620 200 L545 214 L590 360 Z" opacity="0.85"/>
+    </g>
+    <g fill="var(--fw-bone)">
+      <path d="M500 360 L460 170 L370 182 L405 360 Z" opacity="0.85"/>
+      <path d="M340 360 L305 250 L245 258 L270 360 Z" opacity="0.6"/>
+    </g>
+    <g fill="var(--fw-slate)">
+      <path d="M200 360 L150 220 L90 232 L125 360 Z" opacity="0.75"/>
+    </g>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p3c1 Way 11: black dog mass — one light-swallowing shard. -->
+  <symbol id="p3c1" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <text class="fw-num" x="600" y="300" text-anchor="middle" font-size="230">11</text>
+    <path d="M330 330 L430 40 L790 70 L700 330 Z" fill="var(--fw-slate)" opacity="0.9"/>
+    <path d="M470 330 L540 110 L700 130 L640 330 Z" fill="var(--fw-lampblack)"/>
+    <path d="M180 330 L230 210 L280 220 L240 330 Z" fill="var(--fw-ochre)" opacity="0.5"/>
+    <path d="M920 330 L970 230 L1020 240 L985 330 Z" fill="var(--fw-ochre)" opacity="0.35"/>
+    <path d="M540 330 L580 230 L640 240 L610 330 Z" fill="var(--fw-slate)" opacity="0.5"/>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-slate)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p3c7 Way 17: painter — palette shards, wettest colour, max grain. -->
+  <symbol id="p3c7" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <text class="fw-num" x="620" y="310" text-anchor="middle" font-size="230">17</text>
+    <g>
+      <path d="M100 320 L200 120 L300 140 L210 320 Z" fill="var(--fw-ochre)"/>
+      <path d="M280 330 L400 90 L500 120 L390 330 Z" fill="var(--fw-vermilion)" opacity="0.85"/>
+      <path d="M480 320 L590 140 L690 165 L600 320 Z" fill="var(--fw-slate)"/>
+      <path d="M680 330 L790 110 L890 140 L800 330 Z" fill="var(--fw-bone)" opacity="0.9"/>
+      <path d="M880 320 L970 170 L1060 190 L990 320 Z" fill="var(--fw-ochre)" opacity="0.7"/>
+      <path d="M60 340 L120 240 L170 250 L120 340 Z" fill="var(--fw-vermilion)" opacity="0.6"/>
+      <path d="M1050 340 L1100 260 L1145 268 L1110 340 Z" fill="var(--fw-slate)" opacity="0.7"/>
+    </g>
+    <ellipse cx="620" cy="300" rx="330" ry="26" fill="var(--fw-lampblack)" opacity="0.55"/>
+    <rect x="620" y="296" width="330" height="8" fill="var(--fw-ochre)" opacity="0.8"/>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-ochre)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p4c2 Way 22: ledger grid — calmest plate, tabular bone tiles. -->
+  <symbol id="p4c2" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-gallery)"/>
+    <text class="fw-num" x="1055" y="320" text-anchor="middle" font-size="200">22</text>
+    <g fill="var(--fw-bone)">
+      <rect x="100" y="60" width="250" height="34" opacity="0.85"/>
+      <rect x="100" y="102" width="250" height="34" opacity="0.7"/>
+      <rect x="100" y="144" width="250" height="34" opacity="0.78"/>
+      <rect x="100" y="186" width="250" height="34" opacity="0.62"/>
+      <rect x="380" y="60" width="250" height="34" opacity="0.7"/>
+      <rect x="380" y="102" width="250" height="34" opacity="0.82"/>
+      <rect x="380" y="144" width="250" height="34" opacity="0.66"/>
+      <rect x="380" y="186" width="250" height="34" opacity="0.75"/>
+      <rect x="660" y="60" width="250" height="34" opacity="0.75"/>
+      <rect x="660" y="102" width="250" height="34" opacity="0.65"/>
+      <rect x="660" y="144" width="250" height="34" opacity="0.8"/>
+      <rect x="660" y="186" width="250" height="34" opacity="0.7"/>
+    </g>
+    <g fill="var(--fw-vermilion)">
+      <rect x="100" y="60" width="10" height="34"/>
+      <rect x="380" y="102" width="10" height="34"/>
+      <rect x="660" y="144" width="10" height="34"/>
+    </g>
+    <g fill="var(--fw-ochre)" opacity="0.55">
+      <rect x="100" y="250" width="150" height="8"/>
+      <rect x="380" y="250" width="150" height="8"/>
+      <rect x="660" y="250" width="150" height="8"/>
+    </g>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-bone)" opacity="0.4"/>
+  </symbol>
+
+  <!-- p5c3 Way 33: nemesis — split diptych, halves that rhyme. -->
+  <symbol id="p5c3" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <text class="fw-num" x="600" y="315" text-anchor="middle" font-size="230">33</text>
+    <g fill="var(--fw-vermilion)">
+      <path d="M80 360 L180 80 L300 100 L210 360 Z"/>
+      <path d="M250 360 L330 170 L420 185 L350 360 Z" opacity="0.75"/>
+    </g>
+    <g fill="var(--fw-slate)">
+      <path d="M1120 360 L1020 80 L900 100 L990 360 Z"/>
+      <path d="M950 360 L870 170 L780 185 L850 360 Z" opacity="0.75"/>
+    </g>
+    <rect x="596" y="40" width="8" height="320" fill="var(--fw-bone)" opacity="0.7"/>
+    <path d="M560 360 L600 300 L640 360 Z" fill="var(--fw-ochre)"/>
+    <path d="M560 0 L600 60 L640 0 Z" fill="var(--fw-ochre)" opacity="0.6"/>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.5"/>
+  </symbol>
+
+  <!-- p5c6 Way 36: tragedy — full vermilion fracture, Greek-mask angles. -->
+  <symbol id="p5c6" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <text class="fw-num" x="600" y="330" text-anchor="middle" font-size="250">36</text>
+    <g fill="var(--fw-vermilion)">
+      <path d="M0 0 L260 0 L140 180 L0 150 Z"/>
+      <path d="M330 0 L600 0 L520 200 L380 170 Z" opacity="0.85"/>
+      <path d="M680 0 L940 0 L860 190 L720 160 Z"/>
+      <path d="M1010 0 L1200 0 L1200 160 L1090 190 Z" opacity="0.85"/>
+      <path d="M150 360 L300 220 L420 250 L300 360 Z" opacity="0.9"/>
+      <path d="M480 360 L620 210 L760 240 L640 360 Z"/>
+      <path d="M800 360 L950 220 L1080 250 L960 360 Z" opacity="0.9"/>
+    </g>
+    <g stroke="var(--fw-bone)" stroke-width="3" opacity="0.8">
+      <path d="M260 0 L300 220" fill="none"/>
+      <path d="M600 0 L620 210" fill="none"/>
+      <path d="M940 0 L950 220" fill="none"/>
+    </g>
+    <rect x="0" y="358" width="1200" height="2" fill="var(--fw-vermilion)" opacity="0.6"/>
+  </symbol>
+
+  <!-- p5c10 Way 40: epitaph — single ochre point on lampblack (C6). -->
+  <symbol id="p5c10" viewBox="0 0 1200 360">
+    <rect x="0" y="0" width="1200" height="360" fill="var(--fw-lampblack)"/>
+    <rect x="180" y="300" width="840" height="1" fill="var(--fw-ochre)" opacity="0.35"/>
+    <rect x="280" y="312" width="640" height="1" fill="var(--fw-ochre)" opacity="0.22"/>
+    <path d="M600 148 L614 180 L600 212 L586 180 Z" fill="var(--fw-ochre)"/>
+    <path d="M600 164 L606 180 L600 196 L594 180 Z" fill="var(--fw-bone)"/>
+  </symbol>
+</svg>

@@ -1,0 +1,133 @@
+/* Cohort C - Book Two (part-4) - Sunlit Orchestra (C3) reader skin.
+   Owner: GsCohortCEngineer. Scope: body[data-book="gay-science"][data-part-id="part-4"] ONLY.
+   Data hooks + cc- seal vars only; nothing outside part-4 is styled.
+   Banner bleed (margin calc(50% - 50vw), 46vh/34vh caps) + GR3 containment + motif caps are
+   shell-owned. This file adds ONLY: seal URI vars, kind->seal refinements incl. the
+   cc-seal-bust + verm-spark voices the shell lacks, Branch+ gold caps + ray rule,
+   Seed marginal marks. */
+
+body[data-book="gay-science"][data-part-id="part-4"] {
+  --cc-seal-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMiAtMTYgNDQgMzIiIHdpZHRoPSIyNiIgaGVpZ2h0PSIxOSI+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjNFQUQ4IiBzdHJva2Utd2lkdGg9IjIuNiI+PHBhdGggZD0iTS0yMCwtNCBDLTIwLDYgLTE0LDExIC04LDExIEMtMiwxMSAyLDYgMiwtNCBDLTUsLTcgLTEzLC03IC0yMCwtNCBaIi8+PHBhdGggZD0iTS0yLC00IEMtMiw2IDQsMTEgMTAsMTEgQzE2LDExIDIwLDYgMjAsLTQgQzEzLC03IDUsLTcgLTIsLTQgWiIvPjwvZz48cGF0aCBkPSJNLTE1LDIgUS05LDcgLTMsMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjNFQUQ4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0zLDcgUTksMSAxNSw2IiBmaWxsPSJub25lIiBzdHJva2U9IiNGM0VBRDgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+");
+  --cc-seal-lyre: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xNiAtMjAgMzIgNDAiIHdpZHRoPSIyMSIgaGVpZ2h0PSIyNiI+PHBhdGggZD0iTS04LDEwIEMtMTIsMCAtMTIsLTggLTYsLTE0IE04LDEwIEMxMiwwIDEyLC04IDYsLTE0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGM0VBRDgiIHN0cm9rZS13aWR0aD0iMi42IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48bGluZSB4MT0iLTkiIHkxPSItMTQiIHgyPSI5IiB5Mj0iLTE0IiBzdHJva2U9IiNGNUIzMDEiIHN0cm9rZS13aWR0aD0iMi40Ii8+PHBhdGggZD0iTS04LDEwIFEwLDE2IDgsMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0Y1QjMwMSIgc3Ryb2tlLXdpZHRoPSIyLjQiLz48bGluZSB4MT0iLTQiIHkxPSItMTQiIHgyPSItNCIgeTI9IjEyIiBzdHJva2U9IiNGNUIzMDEiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSIwIiB5MT0iLTE0IiB4Mj0iMCIgeTI9IjEzIiBzdHJva2U9IiNGNUIzMDEiIHN0cm9rZS13aWR0aD0iMSIvPjxsaW5lIHgxPSI0IiB5MT0iLTE0IiB4Mj0iNCIgeTI9IjEyIiBzdHJva2U9IiNGNUIzMDEiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPg==");
+  --cc-seal-spark-gold: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMjAgNDAgNDAiIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PHBhdGggZD0iTTAsLTE1IEMyLjUsLTQgNCwtMi41IDE1LDAgQzQsMi41IDIuNSw0IDAsMTUgQy0yLjUsNCAtNCwyLjUgLTE1LDAgQy00LC0yLjUgLTIuNSwtNCAwLC0xNSBaIiBmaWxsPSIjRjVCMzAxIi8+PC9zdmc+");
+  --cc-seal-spark-verm: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMjAgNDAgNDAiIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PHBhdGggZD0iTTAsLTE1IEMyLjUsLTQgNCwtMi41IDE1LDAgQzQsMi41IDIuNSw0IDAsMTUgQy0yLjUsNCAtNCwyLjUgLTE1LDAgQy00LC0yLjUgLTIuNSwtNCAwLC0xNSBaIiBmaWxsPSIjRTQ1NzJFIi8+PC9zdmc+");
+  --cc-seal-wave: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMTIgNDAgMjQiIHdpZHRoPSIyNiIgaGVpZ2h0PSIxNiI+PHBhdGggZD0iTS0xNyw0IHE4LjUsLTggMTcsMCB0MTcsMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTczQThGIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0tMTcsLTUgcTguNSwtOCAxNywwIHQxNywwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGNUIzMDEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjciLz48L3N2Zz4=");
+  --cc-seal-bust: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMjAgNDAgNDAiIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+PGNpcmNsZSBjeD0iMTIuMCIgY3k9IjAuMCIgcj0iMiIgZmlsbD0iI0Y1QjMwMSIvPjxjaXJjbGUgY3g9IjguNSIgY3k9IjguNSIgcj0iMiIgZmlsbD0iI0Y1QjMwMSIvPjxjaXJjbGUgY3g9IjAuMCIgY3k9IjEyLjAiIHI9IjIiIGZpbGw9IiNGNUIzMDEiLz48Y2lyY2xlIGN4PSItOC41IiBjeT0iOC41IiByPSIyIiBmaWxsPSIjRjVCMzAxIi8+PGNpcmNsZSBjeD0iLTEyLjAiIGN5PSIwLjAiIHI9IjIiIGZpbGw9IiNGNUIzMDEiLz48Y2lyY2xlIGN4PSItOC41IiBjeT0iLTguNSIgcj0iMiIgZmlsbD0iI0Y1QjMwMSIvPjxjaXJjbGUgY3g9Ii0wLjAiIGN5PSItMTIuMCIgcj0iMiIgZmlsbD0iI0Y1QjMwMSIvPjxjaXJjbGUgY3g9IjguNSIgY3k9Ii04LjUiIHI9IjIiIGZpbGw9IiNGNUIzMDEiLz48Y2lyY2xlIGN4PSIwIiBjeT0iMCIgcj0iNSIgZmlsbD0iI0YzRUFEOCIvPjxsaW5lIHgxPSItOCIgeTE9IjEyIiB4Mj0iOCIgeTI9IjEyIiBzdHJva2U9IiNFNDU3MkUiIHN0cm9rZS13aWR0aD0iMi41Ii8+PC9zdmc+");}
+
+/* ---------- Branch vs Branch+ meta rule: Branch+ lengthens into a ray -- */
+/* Branch+ (p4c28/p4c43): gold ray under the meta block, shell-landmark echo. */
+body[data-book="gay-science"][data-chapter="p4c28"] .meta-rule span,
+body[data-book="gay-science"][data-chapter="p4c43"] .meta-rule span {
+  width: 7rem;
+}
+
+/* ---------- Branch+ gold drop-caps (design S4; shell owns landmarks) --- */
+body[data-book="gay-science"][data-chapter="p4c28"] .chapter-text > p:first-of-type::first-letter,
+body[data-book="gay-science"][data-chapter="p4c43"] .chapter-text > p:first-of-type::first-letter {
+  color: var(--gs-sun, #f5b301);
+}
+
+/* ---------- Seed marginal marks (G2: CSS-only, NO manifest entry) ------ */
+/* Seeds (p4c6/p4c7/p4c18/p4c19 vermilion, p4c25 gold): 26px marginal mark
+   floats left of the first line; the meta rule shortens to a spark. */
+body[data-book="gay-science"][data-chapter="p4c6"] .chapter-text,
+body[data-book="gay-science"][data-chapter="p4c7"] .chapter-text,
+body[data-book="gay-science"][data-chapter="p4c18"] .chapter-text,
+body[data-book="gay-science"][data-chapter="p4c19"] .chapter-text,
+body[data-book="gay-science"][data-chapter="p4c25"] .chapter-text {
+  position: relative;
+}
+body[data-book="gay-science"][data-chapter="p4c6"] .chapter-text > p:first-of-type::before,
+body[data-book="gay-science"][data-chapter="p4c7"] .chapter-text > p:first-of-type::before,
+body[data-book="gay-science"][data-chapter="p4c18"] .chapter-text > p:first-of-type::before,
+body[data-book="gay-science"][data-chapter="p4c19"] .chapter-text > p:first-of-type::before,
+body[data-book="gay-science"][data-chapter="p4c25"] .chapter-text > p:first-of-type::before {
+  content: "";
+  display: block;
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin: 0.35rem 0.9rem 0 -2.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+body[data-book="gay-science"][data-chapter="p4c6"] .chapter-text > p:first-of-type::before {
+  background-image: var(--cc-seal-spark-verm);
+}
+body[data-book="gay-science"][data-chapter="p4c7"] .chapter-text > p:first-of-type::before,
+body[data-book="gay-science"][data-chapter="p4c18"] .chapter-text > p:first-of-type::before,
+body[data-book="gay-science"][data-chapter="p4c19"] .chapter-text > p:first-of-type::before {
+  background-image: var(--cc-seal-mask);
+}
+body[data-book="gay-science"][data-chapter="p4c25"] .chapter-text > p:first-of-type::before {
+  background-image: var(--cc-seal-spark-gold);
+}
+body[data-book="gay-science"][data-chapter="p4c6"] .meta-rule span,
+body[data-book="gay-science"][data-chapter="p4c7"] .meta-rule span,
+body[data-book="gay-science"][data-chapter="p4c18"] .meta-rule span,
+body[data-book="gay-science"][data-chapter="p4c19"] .meta-rule span,
+body[data-book="gay-science"][data-chapter="p4c25"] .meta-rule span {
+  width: 1.4rem;
+  height: 3px;
+}
+/* Narrow screens: keep the mark inside the text column (GR3). */
+@media (max-width: 560px) {
+  body[data-book="gay-science"][data-chapter="p4c6"] .chapter-text > p:first-of-type::before,
+  body[data-book="gay-science"][data-chapter="p4c7"] .chapter-text > p:first-of-type::before,
+  body[data-book="gay-science"][data-chapter="p4c18"] .chapter-text > p:first-of-type::before,
+  body[data-book="gay-science"][data-chapter="p4c19"] .chapter-text > p:first-of-type::before,
+  body[data-book="gay-science"][data-chapter="p4c25"] .chapter-text > p:first-of-type::before {
+    margin-left: 0;
+  }
+}
+
+/* ---------- end-seals: kind voices the shell lacks (A.0, <=32px) -------- */
+/* Shell already maps part-4 default -> masks, lyre -> lyre, ship -> ship.
+   Cohort adds per-chapter voices the shell lacks (design S4, JSON-verified):
+   verm-spark (poetry + portrait Shoots), gold-spark (knowledge/greek),
+   bust (portrait Branch/Branch+), wave (p4c4 actio in distans). */
+body[data-book="gay-science"][data-chapter="p4c23"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c27"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c28"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c34"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c36"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c37"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c40"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c41"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c46"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c48"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c35"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c38"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c45"] .chapter-text > p:last-child::after {
+  content: var(--cc-seal-spark-verm);
+}
+body[data-book="gay-science"][data-chapter="p4c1"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c2"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c3"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c5"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c20"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c31"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c32"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c44"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c25"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c26"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c29"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c51"] .chapter-text > p:last-child::after {
+  content: var(--cc-seal-spark-gold);
+}
+body[data-book="gay-science"][data-chapter="p4c39"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c42"] .chapter-text > p:last-child::after,
+body[data-book="gay-science"][data-chapter="p4c43"] .chapter-text > p:last-child::after {
+  content: var(--cc-seal-bust);
+}
+body[data-book="gay-science"][data-chapter="p4c4"] .chapter-text > p:last-child::after {
+  content: var(--cc-seal-wave);
+}
+
+/* ---------- reduced motion: cohort adds no animation (shell owns it) --- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-book="gay-science"][data-part-id="part-4"] #chapter-art {
+    animation: none;
+  }
+}
