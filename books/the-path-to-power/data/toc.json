@@ -1,0 +1,314 @@
+{
+  "title": "The Path to Power",
+  "author": "Robert A. Caro",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "The Trap",
+      "subtitle": "The Trap",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Chapter 1",
+          "roman": "1",
+          "title": "The Bunton Strain",
+          "word_count": 15429
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Chapter 2",
+          "roman": "2",
+          "title": "The People’s Party",
+          "word_count": 3514
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Chapter 3",
+          "roman": "3",
+          "title": "The Johnson Strut",
+          "word_count": 4503
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Chapter 4",
+          "roman": "4",
+          "title": "The Father and Mother",
+          "word_count": 7953
+        },
+        {
+          "id": "p1c5",
+          "number_label": "Chapter 5",
+          "roman": "5",
+          "title": "The Son",
+          "word_count": 6144
+        },
+        {
+          "id": "p1c6",
+          "number_label": "Chapter 6",
+          "roman": "6",
+          "title": "“The Best Man I Ever Knew”",
+          "word_count": 9505
+        },
+        {
+          "id": "p1c7",
+          "number_label": "Chapter 7",
+          "roman": "7",
+          "title": "“The Bottom of the Heap”",
+          "word_count": 21062
+        }
+      ]
+    },
+    {
+      "id": "part-2",
+      "roman": "II",
+      "name": "Escape",
+      "subtitle": "Escape",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "Chapter 8",
+          "roman": "8",
+          "title": "“Bull” Johnson",
+          "word_count": 10133
+        },
+        {
+          "id": "p2c2",
+          "number_label": "Chapter 9",
+          "roman": "9",
+          "title": "The Rich Man’s Daughter",
+          "word_count": 1988
+        },
+        {
+          "id": "p2c3",
+          "number_label": "Chapter 10",
+          "roman": "10",
+          "title": "Cotulla",
+          "word_count": 3794
+        },
+        {
+          "id": "p2c4",
+          "number_label": "Chapter 11",
+          "roman": "11",
+          "title": "White Stars and Black Stars",
+          "word_count": 13625
+        },
+        {
+          "id": "p2c5",
+          "number_label": "Chapter 12",
+          "roman": "12",
+          "title": "“A Very Unusual Ability”",
+          "word_count": 6348
+        }
+      ]
+    },
+    {
+      "id": "part-3",
+      "roman": "III",
+      "name": "Sowing",
+      "subtitle": "Sowing",
+      "chapters": [
+        {
+          "id": "p3c1",
+          "number_label": "Chapter 13",
+          "roman": "13",
+          "title": "On His Way",
+          "word_count": 11951
+        },
+        {
+          "id": "p3c2",
+          "number_label": "Chapter 14",
+          "roman": "14",
+          "title": "The New Deal",
+          "word_count": 9674
+        },
+        {
+          "id": "p3c3",
+          "number_label": "Chapter 15",
+          "roman": "15",
+          "title": "The Boss of the Little Congress",
+          "word_count": 3675
+        },
+        {
+          "id": "p3c4",
+          "number_label": "Chapter 16",
+          "roman": "16",
+          "title": "In Tune",
+          "word_count": 11577
+        },
+        {
+          "id": "p3c5",
+          "number_label": "Chapter 17",
+          "roman": "17",
+          "title": "Lady Bird",
+          "word_count": 6315
+        },
+        {
+          "id": "p3c6",
+          "number_label": "Chapter 18",
+          "roman": "18",
+          "title": "Rayburn",
+          "word_count": 17905
+        },
+        {
+          "id": "p3c7",
+          "number_label": "Chapter 19",
+          "roman": "19",
+          "title": "“Put Them to Work!”",
+          "word_count": 14537
+        },
+        {
+          "id": "p3c8",
+          "number_label": "Chapter 20",
+          "roman": "20",
+          "title": "The Dam",
+          "word_count": 8306
+        }
+      ]
+    },
+    {
+      "id": "part-4",
+      "roman": "IV",
+      "name": "Reaping",
+      "subtitle": "Reaping",
+      "chapters": [
+        {
+          "id": "p4c1",
+          "number_label": "Chapter 21",
+          "roman": "21",
+          "title": "The First Campaign",
+          "word_count": 23720
+        },
+        {
+          "id": "p4c2",
+          "number_label": "Chapter 22",
+          "roman": "22",
+          "title": "From the Forks of the Creeks",
+          "word_count": 3717
+        },
+        {
+          "id": "p4c3",
+          "number_label": "Chapter 23",
+          "roman": "23",
+          "title": "Galveston",
+          "word_count": 11696
+        },
+        {
+          "id": "p4c4",
+          "number_label": "Chapter 24",
+          "roman": "24",
+          "title": "Balancing the Books",
+          "word_count": 3357
+        },
+        {
+          "id": "p4c5",
+          "number_label": "Chapter 25",
+          "roman": "25",
+          "title": "Longlea",
+          "word_count": 8211
+        },
+        {
+          "id": "p4c6",
+          "number_label": "Chapter 26",
+          "roman": "26",
+          "title": "The Tenth District",
+          "word_count": 4631
+        },
+        {
+          "id": "p4c7",
+          "number_label": "Chapter 27",
+          "roman": "27",
+          "title": "The Sad Irons",
+          "word_count": 7408
+        },
+        {
+          "id": "p4c8",
+          "number_label": "Chapter 28",
+          "roman": "28",
+          "title": "“I’ll Get It for You”",
+          "word_count": 6524
+        }
+      ]
+    },
+    {
+      "id": "part-5",
+      "roman": "V",
+      "name": "New Fields",
+      "subtitle": "New Fields",
+      "chapters": [
+        {
+          "id": "p5c1",
+          "number_label": "Chapter 29",
+          "roman": "29",
+          "title": "Mr. Johnson Goes to Washington",
+          "word_count": 12589
+        },
+        {
+          "id": "p5c2",
+          "number_label": "Chapter 30",
+          "roman": "30",
+          "title": "A Contract and Three Telegrams",
+          "word_count": 24127
+        },
+        {
+          "id": "p5c3",
+          "number_label": "Chapter 31",
+          "roman": "31",
+          "title": "Campaign Committee",
+          "word_count": 9897
+        },
+        {
+          "id": "p5c4",
+          "number_label": "Chapter 32",
+          "roman": "32",
+          "title": "The Munsey Building",
+          "word_count": 18356
+        },
+        {
+          "id": "p5c5",
+          "number_label": "Chapter 33",
+          "roman": "33",
+          "title": "Through the Back Door",
+          "word_count": 3155
+        }
+      ]
+    },
+    {
+      "id": "part-6",
+      "roman": "VI",
+      "name": "Defeat",
+      "subtitle": "Defeat",
+      "chapters": [
+        {
+          "id": "p6c1",
+          "number_label": "Chapter 34",
+          "roman": "34",
+          "title": "“Pass the Biscuits, Pappy”",
+          "word_count": 33360
+        },
+        {
+          "id": "p6c2",
+          "number_label": "Chapter 35",
+          "roman": "35",
+          "title": "“I Want to See Lyndon”",
+          "word_count": 5905
+        },
+        {
+          "id": "p6c3",
+          "number_label": "Chapter 36",
+          "roman": "36",
+          "title": "“Mister Speaker”",
+          "word_count": 4454
+        },
+        {
+          "id": "p6c4",
+          "number_label": "Chapter 37",
+          "roman": "37",
+          "title": "The “Perfect Roosevelt Man”",
+          "word_count": 1954
+        }
+      ]
+    }
+  ]
+}

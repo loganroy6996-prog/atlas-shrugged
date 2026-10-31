@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <symbol id="chapter-p1c1" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART I</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 01</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-82 82v-164h164V82M-48 82V-48l90-22V82M18 6h3"/><path d="M-114 82h228"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p1c2" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART I</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 02</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-82 82v-164h164V82M-48 82V-48l90-22V82M18 6h3"/><path d="M-114 82h228"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p1c3" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART I</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 03</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-82 82v-164h164V82M-48 82V-48l90-22V82M18 6h3"/><path d="M-114 82h228"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p1c4" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART I</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 04</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-82 82v-164h164V82M-48 82V-48l90-22V82M18 6h3"/><path d="M-114 82h228"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p1c5" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART I</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 05</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-82 82v-164h164V82M-48 82V-48l90-22V82M18 6h3"/><path d="M-114 82h228"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p2c1" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART II</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 01</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-70 92V-92m0 8q54-34 108 0v68q-54-34-108 0M-92 92h184"/><path d="m-14-57 12-12 12 12-12 12z" fill="var(--accent-hover,var(--accent))"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p2c2" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART II</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 02</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><path d="M0-62v62l42 26M0-102v18M102 0H84M0 102V84M-102 0h18"/><circle r="9" fill="var(--accent-hover,var(--accent))"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p2c3" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART II</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 03</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="-94" y="-50" width="188" height="118" rx="11"/><circle cx="-42" cy="7" r="30"/><circle cx="-42" cy="7" r="7" fill="var(--accent-hover,var(--accent))"/><path d="M18-20h48M18 0h48M18 20h48M-70-50l-25-42"/><path d="M105-22q35 22 0 44m15-64q60 42 0 84"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p2c4" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART II</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 04</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-82 82v-164h164V82M-48 82V-48l90-22V82M18 6h3"/><path d="M-114 82h228"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p2c5" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART II</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 05</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-42-76c-28 12-40 39-32 70s32 62 69 80c27 13 57 11 74-10l-33-34-28 14c-22-12-39-28-50-50l14-27z"/><path d="M40-86q52 20 52 66m-75-82q86 28 86 104"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p3c1" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART III</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 01</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p3c2" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART III</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 02</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p4c1" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART IV</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 01</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-124 8 124-24 28 12 74 62 50 70 0 28-50 72-74 63-28 12z"/><path d="M-26 12 14-90l20-7-10 102"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p4c2" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART IV</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 02</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-42-76c-28 12-40 39-32 70s32 62 69 80c27 13 57 11 74-10l-33-34-28 14c-22-12-39-28-50-50l14-27z"/><path d="M40-86q52 20 52 66m-75-82q86 28 86 104"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p4c3" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART IV</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 03</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-42-76c-28 12-40 39-32 70s32 62 69 80c27 13 57 11 74-10l-33-34-28 14c-22-12-39-28-50-50l14-27z"/><path d="M40-86q52 20 52 66m-75-82q86 28 86 104"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c1" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 01</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c2" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 02</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c3" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 03</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c4" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 04</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c5" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 05</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c6" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 06</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c7" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 07</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c8" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 08</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c9" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 09</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c10" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 10</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+  <symbol id="chapter-p5c11" viewBox="0 0 400 240">
+    <rect x="12" y="12" width="376" height="216" rx="5" fill="var(--bg-elevated)" stroke="var(--border-strong)"/>
+    <path d="M32 52H368M32 198H368" stroke="var(--border)"/>
+    <text x="34" y="41" fill="var(--text-muted)" font-size="11" letter-spacing="2">PART V</text>
+    <text x="366" y="41" fill="var(--text-muted)" font-size="11" text-anchor="end" letter-spacing="2">CHAPTER 11</text>
+    <g transform="translate(200 126)" fill="none" stroke="var(--accent-hover,var(--accent))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle r="82"/><circle r="64"/><circle r="12" fill="var(--accent-hover,var(--accent))"/><path d="M0-42v84m-42-42h84M-30-30l60 60m0-60-60 60"/></g>
+    <path d="M34 216h42m248 0h42" stroke="var(--accent)" stroke-width="2"/>
+  </symbol>
+</defs>
+</svg>

@@ -1,0 +1,113 @@
+{
+  "title": "SPQR: A History of Ancient Rome",
+  "author": "Mary Beard",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "SPQR",
+      "subtitle": "SPQR",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Prologue",
+          "roman": "Prologue",
+          "title": "Prologue: The History of Rome",
+          "word_count": 1708
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Chapter 1",
+          "roman": "1",
+          "title": "Cicero’s Finest Hour",
+          "word_count": 10221
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Chapter 2",
+          "roman": "2",
+          "title": "In the Beginning",
+          "word_count": 11805
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Chapter 3",
+          "roman": "3",
+          "title": "The Kings of Rome",
+          "word_count": 12379
+        },
+        {
+          "id": "p1c5",
+          "number_label": "Chapter 4",
+          "roman": "4",
+          "title": "Rome’s Great Leap Forward",
+          "word_count": 12630
+        },
+        {
+          "id": "p1c6",
+          "number_label": "Chapter 5",
+          "roman": "5",
+          "title": "A Wider World",
+          "word_count": 12829
+        },
+        {
+          "id": "p1c7",
+          "number_label": "Chapter 6",
+          "roman": "6",
+          "title": "New Politics",
+          "word_count": 14441
+        },
+        {
+          "id": "p1c8",
+          "number_label": "Chapter 7",
+          "roman": "7",
+          "title": "From Empire to Emperors",
+          "word_count": 14566
+        },
+        {
+          "id": "p1c9",
+          "number_label": "Chapter 8",
+          "roman": "8",
+          "title": "The Home Front",
+          "word_count": 13015
+        },
+        {
+          "id": "p1c10",
+          "number_label": "Chapter 9",
+          "roman": "9",
+          "title": "The Transformations of Augustus",
+          "word_count": 15356
+        },
+        {
+          "id": "p1c11",
+          "number_label": "Chapter 10",
+          "roman": "10",
+          "title": "Fourteen Emperors",
+          "word_count": 15425
+        },
+        {
+          "id": "p1c12",
+          "number_label": "Chapter 11",
+          "roman": "11",
+          "title": "The Haves and Have-Nots",
+          "word_count": 11912
+        },
+        {
+          "id": "p1c13",
+          "number_label": "Chapter 12",
+          "roman": "12",
+          "title": "Rome Outside Rome",
+          "word_count": 15299
+        },
+        {
+          "id": "p1c14",
+          "number_label": "Epilogue",
+          "roman": "Epilogue",
+          "title": "Epilogue",
+          "word_count": 3041
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "altar",
+      "caption": "The Victimage Mechanism as the Basis of Religion"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "eye",
+      "caption": "The Development of Culture and Institutions"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "altar",
+      "caption": "The Process of Hominization"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "mask",
+      "caption": "Myth: The Invisibility of the Founding Murder"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "circle",
+      "caption": "Texts of Persecution"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "Things hidden since the Foundation of the World"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "A Non-Sacrificial Reading of the Gospel Text"
+    },
+    "p2c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c3",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "The Sacrificial Reading and Historical Christianity"
+    },
+    "p2c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c4",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "The Logos of Heraclitus and the Logos of John"
+    },
+    "p3c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c1",
+      "class": "plate",
+      "motif": "triangle",
+      "caption": "Mimetic Desire"
+    },
+    "p3c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c2",
+      "class": "plate",
+      "motif": "triangle",
+      "caption": "Desire without Object"
+    },
+    "p3c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c3",
+      "class": "plate",
+      "motif": "mirror",
+      "caption": "Mimesis and Sexuality"
+    },
+    "p3c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c4",
+      "class": "plate",
+      "motif": "mask",
+      "caption": "Psychoanalytic Mythology"
+    },
+    "p3c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c5",
+      "class": "plate",
+      "motif": "branch",
+      "caption": "Beyond Scandal"
+    },
+    "p3c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c6",
+      "class": "plate",
+      "motif": "scale",
+      "caption": "To Conclude"
+    }
+  }
+}

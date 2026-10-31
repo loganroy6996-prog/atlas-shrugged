@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "arch",
+      "caption": "Prologue: The History of Rome"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "laurel",
+      "caption": "Cicero’s Finest Hour"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "coin",
+      "caption": "In the Beginning"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "crown",
+      "caption": "The Kings of Rome"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "arch",
+      "caption": "Rome’s Great Leap Forward"
+    },
+    "p1c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c6",
+      "class": "plate",
+      "motif": "globe",
+      "caption": "A Wider World"
+    },
+    "p1c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c7",
+      "class": "plate",
+      "motif": "ship",
+      "caption": "New Politics"
+    },
+    "p1c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c8",
+      "class": "plate",
+      "motif": "coin",
+      "caption": "From Empire to Emperors"
+    },
+    "p1c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c9",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "The Home Front"
+    },
+    "p1c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c10",
+      "class": "plate",
+      "motif": "laurel",
+      "caption": "The Transformations of Augustus"
+    },
+    "p1c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c11",
+      "class": "plate",
+      "motif": "coin",
+      "caption": "Fourteen Emperors"
+    },
+    "p1c12": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c12",
+      "class": "plate",
+      "motif": "arch",
+      "caption": "The Haves and Have-Nots"
+    },
+    "p1c13": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c13",
+      "class": "plate",
+      "motif": "arch",
+      "caption": "Rome Outside Rome"
+    },
+    "p1c14": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c14",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "Epilogue"
+    }
+  }
+}

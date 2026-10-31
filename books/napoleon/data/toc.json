@@ -1,0 +1,255 @@
+{
+  "title": "Napoleon: A Life",
+  "author": "Andrew Roberts",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "Rise",
+      "subtitle": "Rise",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Chapter 1",
+          "roman": "1",
+          "title": "Corsica",
+          "word_count": 10820
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Chapter 2",
+          "roman": "2",
+          "title": "Revolution",
+          "word_count": 9777
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Chapter 3",
+          "roman": "3",
+          "title": "Desire",
+          "word_count": 8641
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Chapter 4",
+          "roman": "4",
+          "title": "Italy",
+          "word_count": 12180
+        },
+        {
+          "id": "p1c5",
+          "number_label": "Chapter 5",
+          "roman": "5",
+          "title": "Victory",
+          "word_count": 13869
+        },
+        {
+          "id": "p1c6",
+          "number_label": "Chapter 6",
+          "roman": "6",
+          "title": "Peace",
+          "word_count": 8770
+        },
+        {
+          "id": "p1c7",
+          "number_label": "Chapter 7",
+          "roman": "7",
+          "title": "Egypt",
+          "word_count": 9352
+        },
+        {
+          "id": "p1c8",
+          "number_label": "Chapter 8",
+          "roman": "8",
+          "title": "Acre",
+          "word_count": 8446
+        },
+        {
+          "id": "p1c9",
+          "number_label": "Chapter 9",
+          "roman": "9",
+          "title": "Brumaire",
+          "word_count": 9290
+        }
+      ]
+    },
+    {
+      "id": "part-2",
+      "roman": "II",
+      "name": "Mastery",
+      "subtitle": "Mastery",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "Chapter 10",
+          "roman": "10",
+          "title": "Consul",
+          "word_count": 7920
+        },
+        {
+          "id": "p2c2",
+          "number_label": "Chapter 11",
+          "roman": "11",
+          "title": "Marengo",
+          "word_count": 7064
+        },
+        {
+          "id": "p2c3",
+          "number_label": "Chapter 12",
+          "roman": "12",
+          "title": "Lawgiver",
+          "word_count": 5988
+        },
+        {
+          "id": "p2c4",
+          "number_label": "Chapter 13",
+          "roman": "13",
+          "title": "Plots",
+          "word_count": 6640
+        },
+        {
+          "id": "p2c5",
+          "number_label": "Chapter 14",
+          "roman": "14",
+          "title": "Amiens",
+          "word_count": 9381
+        },
+        {
+          "id": "p2c6",
+          "number_label": "Chapter 15",
+          "roman": "15",
+          "title": "Coronation",
+          "word_count": 12476
+        },
+        {
+          "id": "p2c7",
+          "number_label": "Chapter 16",
+          "roman": "16",
+          "title": "Austerlitz",
+          "word_count": 11911
+        },
+        {
+          "id": "p2c8",
+          "number_label": "Chapter 17",
+          "roman": "17",
+          "title": "Jena",
+          "word_count": 10892
+        },
+        {
+          "id": "p2c9",
+          "number_label": "Chapter 18",
+          "roman": "18",
+          "title": "Blockades",
+          "word_count": 8914
+        },
+        {
+          "id": "p2c10",
+          "number_label": "Chapter 19",
+          "roman": "19",
+          "title": "Tilsit",
+          "word_count": 6877
+        },
+        {
+          "id": "p2c11",
+          "number_label": "Chapter 20",
+          "roman": "20",
+          "title": "Iberia",
+          "word_count": 13132
+        },
+        {
+          "id": "p2c12",
+          "number_label": "Chapter 21",
+          "roman": "21",
+          "title": "Wagram",
+          "word_count": 10493
+        },
+        {
+          "id": "p2c13",
+          "number_label": "Chapter 22",
+          "roman": "22",
+          "title": "Zenith",
+          "word_count": 10176
+        }
+      ]
+    },
+    {
+      "id": "part-3",
+      "roman": "III",
+      "name": "Denouement",
+      "subtitle": "Denouement",
+      "chapters": [
+        {
+          "id": "p3c1",
+          "number_label": "Chapter 23",
+          "roman": "23",
+          "title": "Russia",
+          "word_count": 9421
+        },
+        {
+          "id": "p3c2",
+          "number_label": "Chapter 24",
+          "roman": "24",
+          "title": "Trapped",
+          "word_count": 10141
+        },
+        {
+          "id": "p3c3",
+          "number_label": "Chapter 25",
+          "roman": "25",
+          "title": "Retreat",
+          "word_count": 11114
+        },
+        {
+          "id": "p3c4",
+          "number_label": "Chapter 26",
+          "roman": "26",
+          "title": "Resilience",
+          "word_count": 10524
+        },
+        {
+          "id": "p3c5",
+          "number_label": "Chapter 27",
+          "roman": "27",
+          "title": "Leipzig",
+          "word_count": 9067
+        },
+        {
+          "id": "p3c6",
+          "number_label": "Chapter 28",
+          "roman": "28",
+          "title": "Defiance",
+          "word_count": 9369
+        },
+        {
+          "id": "p3c7",
+          "number_label": "Chapter 29",
+          "roman": "29",
+          "title": "Elba",
+          "word_count": 11078
+        },
+        {
+          "id": "p3c8",
+          "number_label": "Chapter 30",
+          "roman": "30",
+          "title": "Waterloo",
+          "word_count": 10740
+        },
+        {
+          "id": "p3c9",
+          "number_label": "Chapter 31",
+          "roman": "31",
+          "title": "St Helena",
+          "word_count": 14169
+        },
+        {
+          "id": "p3c10",
+          "number_label": "Epilogue",
+          "roman": "Epilogue",
+          "title": "Epilogue",
+          "word_count": 1170
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "coin",
+      "caption": "THE PARADOXICAL REPUBLIC"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "THE SIBYL’S CURSE"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "laurel",
+      "caption": "LUCK BE A LADY"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "sword",
+      "caption": "RETURN OF THE NATIVE"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "ship",
+      "caption": "FAME IS THE SPUR"
+    },
+    "p1c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c6",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "A BANQUET OF CARRION"
+    },
+    "p1c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c7",
+      "class": "plate",
+      "motif": "arch",
+      "caption": "THE DEBT TO PLEASURE"
+    },
+    "p1c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c8",
+      "class": "plate",
+      "motif": "road",
+      "caption": "TRIUMVIRATE"
+    },
+    "p1c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c9",
+      "class": "plate",
+      "motif": "river",
+      "caption": "THE WINGS OF ICARUS"
+    },
+    "p1c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c10",
+      "class": "plate",
+      "motif": "coin",
+      "caption": "WORLD WAR"
+    },
+    "p1c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c11",
+      "class": "plate",
+      "motif": "sword",
+      "caption": "THE DEATH OF THE REPUBLIC"
+    }
+  }
+}

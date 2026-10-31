@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "Going Back"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "scale",
+      "caption": "All Quiet on the Western Front"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "In the Pacific"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "clock",
+      "caption": "Lady Bird"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "county-map",
+      "caption": "Marking Time"
+    },
+    "p1c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c6",
+      "class": "plate",
+      "motif": "route",
+      "caption": "Buying and Selling"
+    },
+    "p1c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c7",
+      "class": "plate",
+      "motif": "airplane",
+      "caption": "One of a Crowd"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "scale",
+      "caption": "The Story of Coke Stevenson"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "Head Start"
+    },
+    "p2c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c3",
+      "class": "plate",
+      "motif": "scale",
+      "caption": "“Will!”"
+    },
+    "p2c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c4",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "The Flying Windmill"
+    },
+    "p2c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c5",
+      "class": "plate",
+      "motif": "clock",
+      "caption": "All or Nothing"
+    },
+    "p2c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c6",
+      "class": "plate",
+      "motif": "county-map",
+      "caption": "The Stealing"
+    },
+    "p2c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c7",
+      "class": "plate",
+      "motif": "route",
+      "caption": "Lists of Names"
+    },
+    "p2c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c8",
+      "class": "plate",
+      "motif": "airplane",
+      "caption": "Qualities of Leadership"
+    },
+    "p2c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c9",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "The Making of a Legend"
+    },
+    "p2c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c10",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "A Love Story"
+    },
+    "p2c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c11",
+      "class": "plate",
+      "motif": "scale",
+      "caption": "Three Rings"
+    }
+  }
+}

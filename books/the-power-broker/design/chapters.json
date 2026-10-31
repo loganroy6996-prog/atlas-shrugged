@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "city",
+      "caption": "Line of Succession"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "road",
+      "caption": "Robert Moses at Yale"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "bridge",
+      "caption": "Home Away from Home"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "grid",
+      "caption": "Burning"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "blueprint",
+      "caption": "Age of Optimism"
+    },
+    "p3c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c1",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Curriculum Changes"
+    },
+    "p3c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c2",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Change in Major"
+    },
+    "p3c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c3",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Taste of Power"
+    },
+    "p3c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c4",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "A Dream"
+    },
+    "p3c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c5",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Best Bill Drafter in Albany"
+    },
+    "p4c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c1",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Majesty of the Law"
+    },
+    "p4c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c2",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Robert Moses and the Creature of the Machine"
+    },
+    "p4c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c3",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Driving"
+    },
+    "p4c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c4",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Changing"
+    },
+    "p4c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c5",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Curator of Cauli owers"
+    },
+    "p4c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c6",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Featherduster"
+    },
+    "p4c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c7",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Mother of Accommodation"
+    },
+    "p4c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c8",
+      "class": "plate",
+      "motif": "city",
+      "caption": "New York City Before Robert Moses"
+    },
+    "p4c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c9",
+      "class": "plate",
+      "motif": "city",
+      "caption": "To Power in the City"
+    },
+    "p4c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c10",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "One Year"
+    },
+    "p4c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c11",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Candidate"
+    },
+    "p4c12": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c12",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Order Number 129"
+    },
+    "p4c13": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c13",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "In the Saddle"
+    },
+    "p4c14": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c14",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Driving"
+    },
+    "p5c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c1",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Changing"
+    },
+    "p5c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c2",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Two Brothers"
+    },
+    "p5c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c3",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Changing"
+    },
+    "p5c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c4",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Warp on the Loom"
+    },
+    "p6c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c1",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "“And When the Last Law Was Down …”"
+    },
+    "p6c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c2",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Revenge"
+    },
+    "p6c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c3",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Monopoly"
+    },
+    "p6c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c4",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Quid Pro Quo"
+    },
+    "p6c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c5",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Leading Out the Regiment"
+    },
+    "p6c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c6",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Moses and the Mayors"
+    },
+    "p6c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c7",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "“RM”"
+    },
+    "p6c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c8",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Meat Ax"
+    },
+    "p6c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c9",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "One Mile"
+    },
+    "p6c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c10",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "One Mile (Afterward)"
+    },
+    "p6c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c11",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Highwayman"
+    },
+    "p6c12": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c12",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Point of No Return"
+    },
+    "p7c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c1",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Rumors and the Report of Rumors"
+    },
+    "p7c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c2",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Tavern in the Town"
+    },
+    "p7c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c3",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Late Arrival"
+    },
+    "p7c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c4",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Mustache and the Bard"
+    },
+    "p7c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c5",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "O to the Fair"
+    },
+    "p7c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c6",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Nelson"
+    },
+    "p7c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c7",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Great Fair"
+    },
+    "p7c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c8",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Old Lion, Young Mayor"
+    },
+    "p7c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c9",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "The Last Stand"
+    },
+    "p7c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p7c10",
+      "class": "plate",
+      "motif": "chain",
+      "caption": "Old"
+    }
+  }
+}

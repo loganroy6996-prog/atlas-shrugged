@@ -1,0 +1,53 @@
+/* Rubicon - Roman marble */
+:root, html[data-theme="dark"] {
+  --bg: #100b0a;
+  --bg-elevated: #181110;
+  --bg-soft: #1f1614;
+  --surface: #261c18;
+  --border: rgba(180, 83, 9, 0.16);
+  --border-strong: rgba(180, 83, 9, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #b45309;
+  --accent-soft: rgba(180, 83, 9, 0.12);
+  --accent-hover: #d97706;
+  --reader-max: 50rem;
+}
+
+/* Chapter art styles */
+#chapter-art {
+  margin: 0 auto 2rem;
+  max-width: min(var(--reader-max, 52rem), 90vw);
+  width: 100%;
+}
+#chapter-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+#chapter-art[hidden] {
+  display: none;
+}
+#cover-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Book plate treatment used by the library cover artwork. */
+.cover-art.plate {
+  width: min(25rem, 76vw);
+  margin: 0.25rem auto 1.1rem;
+}
+.cover-art.plate svg {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.3);
+}
+@media (max-height: 760px) {
+  .cover-art.plate { width: min(19rem, 58vw); margin-bottom: 0.5rem; }
+}

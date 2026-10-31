@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "chamber",
+      "caption": "The Desks of the Senate"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "gavel",
+      "caption": "“Great Things Are Underway!”"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "Seniority and the South"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "column",
+      "caption": "A Hard Path"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "vote",
+      "caption": "The Path Ahead"
+    },
+    "p2c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c3",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "“The Right Size”"
+    },
+    "p2c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c4",
+      "class": "plate",
+      "motif": "door",
+      "caption": "A Russell of the Russells of Georgia"
+    },
+    "p2c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c5",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "“We of the South”"
+    },
+    "p2c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c6",
+      "class": "plate",
+      "motif": "chamber",
+      "caption": "Thirtieth Place"
+    },
+    "p2c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c7",
+      "class": "plate",
+      "motif": "gavel",
+      "caption": "Lyndon Johnson and the Liberal"
+    },
+    "p2c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c8",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "The Hearing"
+    },
+    "p2c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c9",
+      "class": "plate",
+      "motif": "column",
+      "caption": "The Debate"
+    },
+    "p2c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c10",
+      "class": "plate",
+      "motif": "vote",
+      "caption": "“No Time for a Siesta”"
+    },
+    "p2c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c11",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Out of the Crowd"
+    },
+    "p3c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c1",
+      "class": "plate",
+      "motif": "door",
+      "caption": "No Choice"
+    },
+    "p3c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c2",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "The General and the Senator"
+    },
+    "p3c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c3",
+      "class": "plate",
+      "motif": "chamber",
+      "caption": "The “Nothing Job”"
+    },
+    "p3c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c4",
+      "class": "plate",
+      "motif": "gavel",
+      "caption": "The Johnson Ranch"
+    },
+    "p3c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c5",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "The Orator of the Dawn"
+    },
+    "p3c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c6",
+      "class": "plate",
+      "motif": "column",
+      "caption": "Gettysburg"
+    },
+    "p3c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c7",
+      "class": "plate",
+      "motif": "vote",
+      "caption": "The Whole Stack"
+    },
+    "p4c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c1",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Masterstrokes"
+    },
+    "p4c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c2",
+      "class": "plate",
+      "motif": "door",
+      "caption": "Tail-Gunner Joe"
+    },
+    "p4c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c3",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "The “Johnson Rule”"
+    },
+    "p4c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c4",
+      "class": "plate",
+      "motif": "gavel",
+      "caption": "The Leader"
+    },
+    "p4c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c5",
+      "class": "plate",
+      "motif": "gavel",
+      "caption": "“Zip, Zip”"
+    },
+    "p4c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c6",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "“Go Ahead with the Blue”"
+    },
+    "p4c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c7",
+      "class": "plate",
+      "motif": "column",
+      "caption": "Memories"
+    },
+    "p4c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c8",
+      "class": "plate",
+      "motif": "vote",
+      "caption": "The Program with a Heart"
+    },
+    "p5c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c1",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "The Rising Tide"
+    },
+    "p5c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c2",
+      "class": "plate",
+      "motif": "door",
+      "caption": "The Compassion of Lyndon Johnson"
+    },
+    "p5c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c3",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "“Proud to Be of Assistance”"
+    },
+    "p5c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c4",
+      "class": "plate",
+      "motif": "chamber",
+      "caption": "Footsteps"
+    },
+    "p5c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c5",
+      "class": "plate",
+      "motif": "gavel",
+      "caption": "Finesses"
+    },
+    "p5c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c6",
+      "class": "plate",
+      "motif": "ledger",
+      "caption": "Convention"
+    },
+    "p5c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c7",
+      "class": "plate",
+      "motif": "column",
+      "caption": "Choices"
+    },
+    "p5c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c8",
+      "class": "plate",
+      "motif": "vote",
+      "caption": "The “Working Up”"
+    },
+    "p5c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c9",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Hells Canyon"
+    },
+    "p5c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c10",
+      "class": "plate",
+      "motif": "door",
+      "caption": "“You Do It”"
+    },
+    "p5c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c11",
+      "class": "plate",
+      "motif": "scroll",
+      "caption": "Yeas and Nays"
+    },
+    "p5c12": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c12",
+      "class": "plate",
+      "motif": "chamber",
+      "caption": "Omens"
+    },
+    "p6c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c1",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Three More Years"
+    },
+    "p6c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c2",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "The Last Caucus"
+    }
+  }
+}

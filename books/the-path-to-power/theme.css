@@ -1,0 +1,53 @@
+/* LBJ Path to Power */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #161210;
+  --bg-soft: #1c1712;
+  --surface: #241d18;
+  --border: rgba(146, 64, 14, 0.16);
+  --border-strong: rgba(146, 64, 14, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #92400e;
+  --accent-soft: rgba(146, 64, 14, 0.12);
+  --accent-hover: #b45309;
+  --reader-max: 52rem;
+}
+
+/* Chapter art styles */
+#chapter-art {
+  margin: 0 auto 2rem;
+  max-width: min(var(--reader-max, 52rem), 90vw);
+  width: 100%;
+}
+#chapter-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+#chapter-art[hidden] {
+  display: none;
+}
+#cover-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Book plate treatment used by the library cover artwork. */
+.cover-art.plate {
+  width: min(25rem, 76vw);
+  margin: 0.25rem auto 1.1rem;
+}
+.cover-art.plate svg {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.3);
+}
+@media (max-height: 760px) {
+  .cover-art.plate { width: min(19rem, 58vw); margin-bottom: 0.5rem; }
+}

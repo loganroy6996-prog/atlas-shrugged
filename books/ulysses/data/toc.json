@@ -1,0 +1,157 @@
+{
+  "title": "Ulysses",
+  "author": "James Joyce",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "Telemachia",
+      "subtitle": "Stephen Dedalus",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Episode 1",
+          "roman": "1",
+          "title": "Telemachus",
+          "word_count": 7380
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Episode 2",
+          "roman": "2",
+          "title": "Nestor",
+          "word_count": 4566
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Episode 3",
+          "roman": "3",
+          "title": "Proteus",
+          "word_count": 5791
+        }
+      ]
+    },
+    {
+      "id": "part-2",
+      "roman": "II",
+      "name": "Odyssey",
+      "subtitle": "Leopold Bloom's day",
+      "chapters": [
+        {
+          "id": "p2c1",
+          "number_label": "Episode 4",
+          "roman": "4",
+          "title": "Calypso",
+          "word_count": 6027
+        },
+        {
+          "id": "p2c2",
+          "number_label": "Episode 5",
+          "roman": "5",
+          "title": "Lotus Eaters",
+          "word_count": 6455
+        },
+        {
+          "id": "p2c3",
+          "number_label": "Episode 6",
+          "roman": "6",
+          "title": "Hades",
+          "word_count": 11211
+        },
+        {
+          "id": "p2c4",
+          "number_label": "Episode 7",
+          "roman": "7",
+          "title": "Aeolus",
+          "word_count": 10408
+        },
+        {
+          "id": "p2c5",
+          "number_label": "Episode 8",
+          "roman": "8",
+          "title": "Lestrygonians",
+          "word_count": 12823
+        },
+        {
+          "id": "p2c6",
+          "number_label": "Episode 9",
+          "roman": "9",
+          "title": "Scylla and Charybdis",
+          "word_count": 12009
+        },
+        {
+          "id": "p2c7",
+          "number_label": "Episode 10",
+          "roman": "10",
+          "title": "Wandering Rocks",
+          "word_count": 12862
+        },
+        {
+          "id": "p2c8",
+          "number_label": "Episode 11",
+          "roman": "11",
+          "title": "Sirens",
+          "word_count": 12509
+        },
+        {
+          "id": "p2c9",
+          "number_label": "Episode 12",
+          "roman": "12",
+          "title": "Cyclops",
+          "word_count": 21839
+        },
+        {
+          "id": "p2c10",
+          "number_label": "Episode 13",
+          "roman": "13",
+          "title": "Nausicaa",
+          "word_count": 16839
+        },
+        {
+          "id": "p2c11",
+          "number_label": "Episode 14",
+          "roman": "14",
+          "title": "Oxen of the Sun",
+          "word_count": 20356
+        },
+        {
+          "id": "p2c12",
+          "number_label": "Episode 15",
+          "roman": "15",
+          "title": "Circe",
+          "word_count": 38602
+        }
+      ]
+    },
+    {
+      "id": "part-3",
+      "roman": "III",
+      "name": "Nostos",
+      "subtitle": "Homecoming",
+      "chapters": [
+        {
+          "id": "p3c1",
+          "number_label": "Episode 16",
+          "roman": "16",
+          "title": "Eumaeus",
+          "word_count": 22814
+        },
+        {
+          "id": "p3c2",
+          "number_label": "Episode 17",
+          "roman": "17",
+          "title": "Ithaca",
+          "word_count": 22596
+        },
+        {
+          "id": "p3c3",
+          "number_label": "Episode 18",
+          "roman": "18",
+          "title": "Penelope",
+          "word_count": 24086
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "A Portrait of the Artist as a Young Man",
+  "author": "James Joyce",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "A Portrait",
+      "subtitle": "",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "Chapter I",
+          "roman": "I",
+          "title": "Chapter I",
+          "word_count": 17713
+        },
+        {
+          "id": "p1c2",
+          "number_label": "Chapter II",
+          "roman": "II",
+          "title": "Chapter II",
+          "word_count": 14680
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Chapter III",
+          "roman": "III",
+          "title": "Chapter III",
+          "word_count": 16572
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Chapter IV",
+          "roman": "IV",
+          "title": "Chapter IV",
+          "word_count": 9573
+        },
+        {
+          "id": "p1c5",
+          "number_label": "Chapter V",
+          "roman": "V",
+          "title": "Chapter V",
+          "word_count": 26384
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "tower",
+      "caption": "Telemachus"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "schoolbook",
+      "caption": "Nestor"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "river",
+      "caption": "Proteus"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "bed",
+      "caption": "Calypso"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "lotus",
+      "caption": "Lotus Eaters"
+    },
+    "p2c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c3",
+      "class": "plate",
+      "motif": "tomb",
+      "caption": "Hades"
+    },
+    "p2c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c4",
+      "class": "plate",
+      "motif": "wind",
+      "caption": "Aeolus"
+    },
+    "p2c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c5",
+      "class": "plate",
+      "motif": "table",
+      "caption": "Lestrygonians"
+    },
+    "p2c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c6",
+      "class": "plate",
+      "motif": "strait",
+      "caption": "Scylla and Charybdis"
+    },
+    "p2c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c7",
+      "class": "plate",
+      "motif": "route",
+      "caption": "Wandering Rocks"
+    },
+    "p2c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c8",
+      "class": "plate",
+      "motif": "harp",
+      "caption": "Sirens"
+    },
+    "p2c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c9",
+      "class": "plate",
+      "motif": "eye",
+      "caption": "Cyclops"
+    },
+    "p2c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c10",
+      "class": "plate",
+      "motif": "shell",
+      "caption": "Nausicaa"
+    },
+    "p2c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c11",
+      "class": "plate",
+      "motif": "sun",
+      "caption": "Oxen of the Sun"
+    },
+    "p2c12": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c12",
+      "class": "plate",
+      "motif": "mirror",
+      "caption": "Circe"
+    },
+    "p3c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c1",
+      "class": "plate",
+      "motif": "lamp",
+      "caption": "Eumaeus"
+    },
+    "p3c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c2",
+      "class": "plate",
+      "motif": "compass",
+      "caption": "Ithaca"
+    },
+    "p3c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c3",
+      "class": "plate",
+      "motif": "moon",
+      "caption": "Penelope"
+    }
+  }
+}

@@ -55,19 +55,22 @@
   <main class="library">
     <header class="masthead">
       <p class="masthead-kicker">A private library</p>
-      <h1 class="masthead-title">Thirteen long volumes, set for the long read.</h1>
+      <h1 class="masthead-title">Long reads, easy to find.</h1>
       <p class="masthead-sub">
-        Rand, Nietzsche, Heidegger, Wallace, and more — publisher junk removed,
-        typography respected. Pick a volume and begin.
+        Browse by subject, then choose a book—or open Robert Caro’s four-volume LBJ series.
       </p>
       <p class="masthead-stats" id="library-count">Loading…</p>
     </header>
 
-    <section class="featured" id="featured" aria-label="Featured volume" hidden></section>
-
-    <section class="continue-shelf" id="continue-shelf" hidden aria-label="Continue reading">
-      <h2 class="shelf-title">Continue reading</h2>
-      <ul class="shelf-list" id="shelf-list"></ul>
+    <section class="subject-navigation" aria-labelledby="browse-title">
+      <div class="browse-heading">
+        <div>
+          <p class="browse-kicker">Find your shelf</p>
+          <h2 id="browse-title">Browse by subject</h2>
+        </div>
+        <p class="browse-note">Choose a subject to narrow the library.</p>
+      </div>
+      <nav class="shelf-chips" id="shelf-chips" aria-label="Library subjects"></nav>
     </section>
 
     <div class="toolbar" role="search">
@@ -81,7 +84,6 @@
           autocomplete="off"
         />
       </div>
-      <div class="shelf-chips" id="shelf-chips" role="group" aria-label="Shelves"></div>
       <label class="sort-wrap">
         <span class="sort-label">Sort</span>
         <span class="select-wrap">
@@ -98,7 +100,13 @@
         </span>
       </label>
     </div>
-    <p class="result-count" id="result-count" aria-live="polite"></p>
+
+    <section class="series-collection" id="lbj-collection" aria-label="The Years of Lyndon Johnson" hidden></section>
+
+    <div class="results-heading">
+      <h2 class="results-title" id="results-title">All volumes</h2>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+    </div>
 
     <div id="shelves"></div>
     <div class="empty-state" id="empty-state" hidden>
@@ -106,6 +114,11 @@
       <p class="empty-sub">No volume matches that search.</p>
       <button type="button" class="btn-reset" id="btn-reset">Clear search</button>
     </div>
+
+    <section class="continue-shelf" id="continue-shelf" hidden aria-label="Continue reading">
+      <h2 class="shelf-title">Continue reading</h2>
+      <ul class="shelf-list" id="shelf-list"></ul>
+    </section>
 
     <footer class="library-footer">
       <p>Progress is stored locally in your browser · Themes carry into the reader</p>
@@ -129,30 +142,47 @@
       const emptyEl = document.getElementById("empty-state");
       const shelfEl = document.getElementById("continue-shelf");
       const shelfList = document.getElementById("shelf-list");
-      const featuredEl = document.getElementById("featured");
+      const lbjEl = document.getElementById("lbj-collection");
+      const resultsTitleEl = document.getElementById("results-title");
       const chipsEl = document.getElementById("shelf-chips");
 
       let allBooks = [];
       const tocCache = new Map(); // slug -> flat chapter list
       const progressBySlug = new Map(); // slug -> { idx, total, pct, ch }
 
-      /* ── Shelves (derived from slug; no catalog change needed) ── */
+      /* ── Subject shelves: a book may live in more than one subject ── */
       const SHELVES = [
-        { id: "novels", name: "Novels of ideas", desc: "Three doorstops that argue with the world.",
-          slugs: ["atlas-shrugged", "the-fountainhead", "infinite-jest"] },
-        { id: "philosophy", name: "Philosophy", desc: "Nietzsche's provocations, then Heidegger's question.",
-          slugs: ["beyond-good-and-evil", "thus-spoke-zarathustra", "gay-science",
-                  "twilight-of-the-idols", "will-to-power", "being-and-time"] },
-        { id: "polemics", name: "Portraits & polemics", desc: "A life, two letters, and a forecast.",
-          slugs: ["forty-ways-to-look-at-churchill", "open-letter",
-                  "gentle-introduction", "sovereign-individual"] },
+        { id: "novels", name: "Novels", mark: "01", desc: "Fiction across three literary worlds.",
+          slugs: ["atlas-shrugged", "the-fountainhead", "infinite-jest", "dubliners", "portrait-of-the-artist", "ulysses"] },
+        { id: "biographies", name: "Biographies", mark: "02", desc: "Lives shaped by power and ambition.",
+          slugs: ["forty-ways-to-look-at-churchill", "napoleon", "the-power-broker", "the-path-to-power", "means-of-ascent", "master-of-the-senate", "the-passage-of-power", "the-definitive-fdr"] },
+        { id: "philosophy", name: "Philosophy", mark: "03", desc: "Being, value, culture, and desire.",
+          slugs: ["beyond-good-and-evil", "thus-spoke-zarathustra", "gay-science", "twilight-of-the-idols", "will-to-power", "being-and-time", "things-hidden"] },
+        { id: "history", name: "History", mark: "04", desc: "Rome, New York, and the American presidency.",
+          slugs: ["rubicon", "spqr", "napoleon", "the-power-broker", "the-path-to-power", "means-of-ascent", "master-of-the-senate", "the-passage-of-power", "the-definitive-fdr"] },
+        { id: "other", name: "Politics & essays", mark: "05", desc: "Modern institutions and political argument.",
+          slugs: ["open-letter", "gentle-introduction", "sovereign-individual"] },
       ];
-      const shelfOf = new Map();
-      SHELVES.forEach((s) => s.slugs.forEach((slug) => shelfOf.set(slug, s.id)));
-      const shelfNameOf = (slug) => {
-        const s = SHELVES.find((x) => x.id === shelfOf.get(slug));
-        return s ? s.name : "";
+      const shelvesBySlug = new Map();
+      SHELVES.forEach((s) => s.slugs.forEach((slug) => {
+        const memberships = shelvesBySlug.get(slug) || [];
+        memberships.push(s.id);
+        shelvesBySlug.set(slug, memberships);
+      }));
+      const shelfNamesOf = (slug) => (shelvesBySlug.get(slug) || [])
+        .map((id) => SHELVES.find((s) => s.id === id)?.name || "");
+      const shelfNameFor = (slug, preferred = "all") => {
+        const ids = shelvesBySlug.get(slug) || [];
+        const id = ids.includes(preferred) ? preferred : ids[0];
+        return SHELVES.find((s) => s.id === id)?.name || "";
       };
+      const LBJ_VOLUMES = [
+        { slug: "the-path-to-power", roman: "I" },
+        { slug: "means-of-ascent", roman: "II" },
+        { slug: "master-of-the-senate", roman: "III" },
+        { slug: "the-passage-of-power", roman: "IV" },
+      ];
+      const LBJ_SLUGS = new Set(LBJ_VOLUMES.map((v) => v.slug));
 
       /* ── Theme menu (shared with the reader via LIB_THEME_KEY) ── */
       // Dark-first. Stored value is a concrete theme ("dark" default) or
@@ -362,7 +392,7 @@
         return flat;
       }
 
-      /* ── Shelf chips + persisted toolbar state ── */
+      /* ── Subject navigation + persisted library state ── */
       let activeShelf = "all";
       try {
         const s = localStorage.getItem(SHELF_KEY);
@@ -373,16 +403,22 @@
 
       function renderChips(counts) {
         chipsEl.innerHTML = "";
-        const defs = [{ id: "all", name: "All volumes" }, ...SHELVES];
+        const defs = [{ id: "all", name: "All books", mark: "✦", desc: "The whole library." }, ...SHELVES];
         defs.forEach((d) => {
           const btn = document.createElement("button");
           btn.type = "button";
           btn.className = "chip";
           btn.dataset.shelf = d.id;
+          btn.dataset.category = d.id;
           btn.setAttribute("aria-pressed", d.id === activeShelf ? "true" : "false");
-          btn.textContent = d.id === "all"
-            ? `All volumes · ${allBooks.length}`
-            : `${d.name} · ${counts[d.id] || 0}`;
+          btn.setAttribute("aria-label", `Browse ${d.name}, ${d.id === "all" ? allBooks.length : counts[d.id] || 0} volumes`);
+          btn.innerHTML = `
+            <span class="category-mark" aria-hidden="true">${escapeHtml(d.mark)}</span>
+            <span class="category-copy">
+              <span class="category-name">${escapeHtml(d.name)}</span>
+              <span class="category-desc">${escapeHtml(d.desc)}</span>
+            </span>
+            <span class="category-count" aria-hidden="true">${String(d.id === "all" ? allBooks.length : counts[d.id] || 0).padStart(2, "0")}</span>`;
           chipsEl.appendChild(btn);
         });
       }
@@ -405,9 +441,10 @@
           b.author.toLowerCase().includes(q) ||
           (b.tagline || "").toLowerCase().includes(q) ||
           (b.blurb || "").toLowerCase().includes(q) ||
-          shelfNameOf(b.slug).toLowerCase().includes(q)
+          (LBJ_SLUGS.has(b.slug) && /lbj|lyndon johnson/.test(q)) ||
+          shelfNamesOf(b.slug).join(" ").toLowerCase().includes(q)
         );
-        if (activeShelf !== "all") list = list.filter((b) => shelfOf.get(b.slug) === activeShelf);
+        if (activeShelf !== "all") list = list.filter((b) => (shelvesBySlug.get(b.slug) || []).includes(activeShelf));
         const sort = sortEl.value;
         const by = {
           title: (a, b) => a.title.localeCompare(b.title),
@@ -434,6 +471,7 @@
 
       function cardHtml(b, i) {
         const p = progressBySlug.get(b.slug);
+        const categoryName = shelfNameFor(b.slug, activeShelf);
         const cont = p ? `<p class="continue-line">Continue · ${escapeHtml(p.ch.title)}</p>` : "";
         const track = p
           ? `<div class="progress-track" aria-hidden="true"><div class="progress-fill" style="width:${p.pct}%"></div></div>`
@@ -448,6 +486,7 @@
               <span class="book-year">${escapeHtml(b.year || "")}</span>
               ${progressBadgeHtml(p)}
             </span>
+            ${categoryName ? `<span class="book-category">${escapeHtml(categoryName)}</span>` : ""}
             <h2 class="book-title">${escapeHtml(b.title)}</h2>
             <span class="book-author">${escapeHtml(b.author)}</span>
             ${b.tagline ? `<span class="book-tagline">${escapeHtml(b.tagline)}</span>` : ""}
@@ -479,90 +518,82 @@
         return li;
       }
 
-      function featuredPick() {
-        let best = null;
-        for (const b of allBooks) {
-          const p = progressBySlug.get(b.slug);
-          if (p && (!best || p.pct > progressBySlug.get(best.slug).pct)) best = b;
-        }
-        return best || allBooks[0] || null;
-      }
-
-      function renderFeatured() {
-        const b = featuredPick();
-        if (!b) { featuredEl.hidden = true; featuredEl.innerHTML = ""; return; }
-        const p = progressBySlug.get(b.slug);
-        featuredEl.hidden = false;
-        featuredEl.innerHTML = `
-          <a class="featured-plate" href="${bookHref(b.slug)}" tabindex="-1" aria-hidden="true">
-            <img src="${coverSrc(b.slug)}" alt="" width="800" height="1000" fetchpriority="high" />
-          </a>
-          <div class="featured-text">
-            <p class="featured-kicker">${p ? "Picked up where you left off" : "Featured volume"}</p>
-            <h2 class="featured-title"><a href="${bookHref(b.slug)}">${escapeHtml(b.title)}</a></h2>
-            <p class="featured-author">${escapeHtml(b.author)} · ${escapeHtml(b.year || "")}</p>
-            ${b.tagline ? `<p class="featured-tagline">${escapeHtml(b.tagline)}</p>` : ""}
-            ${b.blurb ? `<p class="featured-blurb">${escapeHtml(b.blurb)}</p>` : ""}
-            <p class="featured-meta">${escapeHtml(metaLine(b))}</p>
-            ${p ? `<p class="featured-progress">Chapter ${p.idx + 1} of ${p.total} · ${escapeHtml(p.ch.title)} · ${p.pct}%</p>` : ""}
-            <a class="btn-open" href="${bookHref(b.slug)}">${p ? "Continue reading" : "Open the book"} →</a>
-          </div>
-        `;
-        const img = featuredEl.querySelector("img");
-        img.addEventListener("error", () => {
-          const plate = featuredEl.querySelector(".featured-plate");
-          plate.classList.add("plate-fallback");
-          plate.innerHTML = `<span class="plate-mono" aria-hidden="true">${escapeHtml(b.title.charAt(0))}</span>`;
-        }, { once: true });
+      function renderLBJCollection() {
+        const volumes = LBJ_VOLUMES
+          .map((entry) => ({ ...entry, book: allBooks.find((b) => b.slug === entry.slug) }))
+          .filter((entry) => entry.book);
+        if (!volumes.length) return "";
+        const words = volumes.reduce((total, entry) => total + (entry.book.words || 0), 0);
+        const coverStack = volumes.map(({ book }) =>
+          `<img src="${coverSrc(book.slug)}" alt="" loading="lazy" width="800" height="1000" />`
+        ).join("");
+        const volumeItems = volumes.map(({ book, roman }) => {
+          const p = progressBySlug.get(book.slug);
+          return `
+            <li>
+              <a class="series-volume" href="${bookHref(book.slug)}">
+                <img class="series-volume-cover" src="${coverSrc(book.slug)}" alt="" loading="lazy" width="800" height="1000" />
+                <span class="series-volume-copy">
+                  <span class="series-volume-number">Volume ${roman}${p ? ` · ${p.pct}% read` : ""}</span>
+                  <span class="series-volume-title">${escapeHtml(book.title)}</span>
+                  <span class="series-volume-sub">${escapeHtml(book.tagline || "Robert A. Caro")}</span>
+                  <span class="series-volume-open">${p ? "Continue reading" : "Open volume"} <span aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+            </li>`;
+        }).join("");
+        return `
+          <details class="series-details">
+            <summary class="series-summary">
+              <span class="series-covers" aria-hidden="true">${coverStack}</span>
+              <span class="series-heading">
+                <span class="series-kicker">Robert A. Caro · four-volume biography</span>
+                <span class="series-title">The Years of Lyndon Johnson</span>
+                <span class="series-description">One life, from the Texas Hill Country to the presidency.</span>
+              </span>
+              <span class="series-meta"><span>4 volumes</span><span>${fmt(words)} words</span></span>
+              <span class="series-action"><span class="series-action-closed">Choose a volume</span><span class="series-action-open">Close volumes</span><span class="series-chevron" aria-hidden="true">⌄</span></span>
+            </summary>
+            <div class="series-content">
+              <div class="series-content-heading">
+                <p>Choose where to begin</p>
+                <span>Volume I–IV · Robert A. Caro</span>
+              </div>
+              <ul class="series-volume-grid">${volumeItems}</ul>
+            </div>
+          </details>`;
       }
 
       function render() {
         const list = filtered();
-        const searching = searchEl.value.trim() !== "" || activeShelf !== "all" || sortEl.value !== "featured";
+        const query = searchEl.value.trim();
+        const activeCategory = SHELVES.find((s) => s.id === activeShelf);
+        const showLBJ = !query && sortEl.value === "featured" &&
+          ["all", "biographies", "history"].includes(activeShelf) &&
+          LBJ_VOLUMES.every((entry) => list.some((b) => b.slug === entry.slug));
+        const displayList = showLBJ ? list.filter((b) => !LBJ_SLUGS.has(b.slug)) : list;
         shelvesEl.innerHTML = "";
-        let n = 0;
-        if (!searching) {
-          // Shelf sections in catalog order.
-          SHELVES.forEach((s) => {
-            const members = list.filter((b) => shelfOf.get(b.slug) === s.id);
-            if (!members.length) return;
-            const sec = document.createElement("section");
-            sec.className = "shelf";
-            sec.setAttribute("aria-label", s.name);
-            sec.innerHTML = `
-              <header class="shelf-head">
-                <h2 class="shelf-name">${escapeHtml(s.name)}</h2>
-                <p class="shelf-desc">${escapeHtml(s.desc)}</p>
-              </header>
-              <ul class="book-grid"></ul>`;
-            const ul = sec.querySelector("ul");
-            members.forEach((b) => ul.appendChild(makeCard(b, n++)));
-            shelvesEl.appendChild(sec);
-          });
-          // Anything unmapped still shows up, rather than vanishing.
-          const rest = list.filter((b) => !shelfOf.has(b.slug));
-          if (rest.length) {
-            const sec = document.createElement("section");
-            sec.className = "shelf";
-            sec.setAttribute("aria-label", "More volumes");
-            sec.innerHTML = `<ul class="book-grid"></ul>`;
-            const ul = sec.querySelector("ul");
-            rest.forEach((b) => ul.appendChild(makeCard(b, n++)));
-            shelvesEl.appendChild(sec);
-          }
-        } else {
+        lbjEl.hidden = !showLBJ;
+        lbjEl.innerHTML = showLBJ ? renderLBJCollection() : "";
+        resultsTitleEl.textContent = query
+          ? "Search results"
+          : (activeCategory ? activeCategory.name : "All books");
+        const description = query
+          ? `${list.length} result${list.length === 1 ? "" : "s"}`
+          : activeShelf === "all"
+            ? `${allBooks.length} volumes · LBJ series grouped below`
+            : `${list.length} volumes${showLBJ ? " · LBJ series grouped below" : ""}`;
+        resultEl.textContent = description;
+        if (displayList.length) {
           const sec = document.createElement("section");
           sec.className = "shelf";
-          sec.setAttribute("aria-label", "Volumes");
+          sec.setAttribute("aria-label", query ? "Search results" : `${activeCategory?.name || "All books"} volumes`);
           sec.innerHTML = `<ul class="book-grid"></ul>`;
           const ul = sec.querySelector("ul");
-          list.forEach((b) => ul.appendChild(makeCard(b, n++)));
+          displayList.forEach((b, i) => ul.appendChild(makeCard(b, i)));
           shelvesEl.appendChild(sec);
         }
-        renderFeatured();
         emptyEl.hidden = list.length > 0;
-        resultEl.textContent =
-          list.length === allBooks.length ? "" : `${list.length} of ${allBooks.length} volumes`;
       }
 
       /* ── Progress badges + continue shelf ── */
@@ -585,7 +616,7 @@
             progressBySlug.set(b.slug, { idx, total, pct, ch: flat[idx] });
           })
         );
-        // Re-render cards so badges/tracks/featured pick up progress.
+        // Re-render cards, the LBJ collection, and resume shelf with progress.
         render();
         const bySlug = new Map(allBooks.map((b) => [b.slug, b]));
         const items = [...progressBySlug.entries()]
@@ -664,9 +695,8 @@
           const chapters = allBooks.reduce((n, b) => n + (b.chapters || 0), 0);
           countEl.textContent = `${allBooks.length} volumes · ${fmt(words)} words · ${chapters} chapters`;
           const counts = {};
-          allBooks.forEach((b) => {
-            const id = shelfOf.get(b.slug);
-            if (id) counts[id] = (counts[id] || 0) + 1;
+          SHELVES.forEach((s) => {
+            counts[s.id] = s.slugs.reduce((n, slug) => n + (allBooks.some((b) => b.slug === slug) ? 1 : 0), 0);
           });
           renderChips(counts);
           render();

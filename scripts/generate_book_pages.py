@@ -11,7 +11,7 @@ BOOKS = ROOT / "books"
 # Unique visual identity per book (CSS variable overrides + cover flourishes)
 THEMES: dict[str, str] = {
     "atlas-shrugged": """
-/* Atlas Shrugged — industrial gold on iron */
+/* Atlas Shrugged - industrial gold on iron */
 :root, html[data-theme="dark"] {
   --bg: #0b0a09;
   --bg-elevated: #141210;
@@ -40,7 +40,7 @@ THEMES: dict[str, str] = {
 .title-line.accent { color: var(--accent); font-style: italic; }
 """,
     "the-fountainhead": """
-/* The Fountainhead — granite, glass, blueprint */
+/* The Fountainhead - granite, glass, blueprint */
 :root, html[data-theme="dark"] {
   --bg: #0e1218;
   --bg-elevated: #151b24;
@@ -85,7 +85,7 @@ html[data-theme="sepia"] {
 }
 """,
     "beyond-good-and-evil": """
-/* Beyond Good and Evil — violet lightning, free spirit */
+/* Beyond Good and Evil - violet lightning, free spirit */
 :root, html[data-theme="dark"] {
   --bg: #0c0a12;
   --bg-elevated: #15121f;
@@ -115,7 +115,7 @@ html[data-theme="sepia"] {
 .rule-diamond { border-radius: 1px; box-shadow: 0 0 12px var(--accent); }
 """,
     "thus-spoke-zarathustra": """
-/* Zarathustra — mountain dusk, amber sun */
+/* Zarathustra - mountain dusk, amber sun */
 :root, html[data-theme="dark"] {
   --bg: #100d0a;
   --bg-elevated: #1a1510;
@@ -146,7 +146,7 @@ html[data-theme="sepia"] {
 .chapter-text { font-size: calc(var(--text-size) * 1.02); }
 """,
     "gay-science": """
-/* The Gay Science — Mediterranean sea & sky */
+/* The Gay Science - Mediterranean sea & sky */
 :root, html[data-theme="dark"] {
   --bg: #071318;
   --bg-elevated: #0c1c24;
@@ -180,7 +180,7 @@ html[data-theme="light"] {
 .cover-eyebrow { color: var(--accent); }
 """,
     "twilight": """
-/* Twilight of the Idols — hammer, bronze, ash */
+/* Twilight of the Idols - hammer, bronze, ash */
 :root, html[data-theme="dark"] {
   --bg: #12100e;
   --bg-elevated: #1c1814;
@@ -208,7 +208,7 @@ html[data-theme="light"] {
 .meta-title { text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(1.5rem, 4vw, 2.2rem); }
 """,
     "will-to-power": """
-/* Will to Power — crimson iron */
+/* Will to Power - crimson iron */
 :root, html[data-theme="dark"] {
   --bg: #0c0808;
   --bg-elevated: #160e0e;
@@ -238,7 +238,7 @@ html[data-theme="light"] {
 .progress-fill { background: linear-gradient(90deg, #9f1239, #e11d48); }
 """,
     "being-and-time": """
-/* Being and Time — forest manuscript */
+/* Being and Time - forest manuscript */
 :root, html[data-theme="dark"] {
   --bg: #0a100c;
   --bg-elevated: #101a14;
@@ -275,7 +275,7 @@ html[data-theme="sepia"] {
 .chapter-text p { text-align: justify; hyphens: auto; }
 """,
     "forty-ways-to-look-at-churchill": """
-/* Forty Ways — wartime brass, newsprint, cigar smoke */
+/* Forty Ways - wartime brass, newsprint, cigar smoke */
 :root, html[data-theme="dark"] {
   --bg: #0f1410;
   --bg-elevated: #161c16;
@@ -323,7 +323,7 @@ html[data-theme="light"] {
 .chapter-text blockquote { border-left-color: var(--accent); }
 """,
     "infinite-jest": """
-/* Infinite Jest — court green, entertainment yellow, maximalist */
+/* Infinite Jest - court green, entertainment yellow, maximalist */
 :root, html[data-theme="dark"] {
   --bg: #0a120c;
   --bg-elevated: #111c14;
@@ -362,7 +362,7 @@ html[data-theme="light"] {
 .chapter-text { font-size: calc(var(--text-size) * 0.98); line-height: calc(var(--leading) * 1.02); }
 """,
     "open-letter": """
-/* Open Letter — oxblood ink, broadsheet */
+/* Open Letter - oxblood ink, broadsheet */
 :root, html[data-theme="dark"] {
   --bg: #120d0c;
   --bg-elevated: #1a1312;
@@ -409,7 +409,7 @@ html[data-theme="light"] {
 .chapter-text p { text-align: justify; hyphens: auto; }
 """,
     "gentle-introduction": """
-/* Gentle Introduction — verdigris, deep water */
+/* Gentle Introduction - verdigris, deep water */
 :root, html[data-theme="dark"] {
   --bg: #0b1214;
   --bg-elevated: #111b1e;
@@ -456,51 +456,282 @@ html[data-theme="light"] {
 .chapter-text p { text-align: justify; hyphens: auto; }
 """,
     "sovereign-individual": """
-/* Sovereign Individual — bullion gold on charcoal */
+/* The Sovereign Individual - cyberpunk monarchist */
 :root, html[data-theme="dark"] {
-  --bg: #101014;
-  --bg-elevated: #17171d;
-  --bg-soft: #1f1f26;
-  --surface: #26262e;
+  --bg: #0a0b0f;
+  --bg-elevated: #111218;
+  --bg-soft: #161820;
+  --surface: #1c1e28;
   --border: rgba(201, 162, 39, 0.16);
-  --border-strong: rgba(201, 162, 39, 0.32);
-  --text: #f0ead6;
-  --text-muted: #b3a888;
-  --text-faint: #776f57;
+  --border-strong: rgba(201, 162, 39, 0.3);
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-faint: #6b7280;
   --accent: #c9a227;
   --accent-soft: rgba(201, 162, 39, 0.12);
-  --accent-hover: #e0bc45;
-  --copper: #e0bc45;
+  --accent-hover: #e5b94a;
+  --reader-max: 52rem;
+}
+""",
+    "dubliners": """
+/* Dubliners - Dublin mist, Georgian brick */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #181410;
+  --bg-soft: #1f1914;
+  --surface: #261f18;
+  --border: rgba(139, 115, 85, 0.16);
+  --border-strong: rgba(139, 115, 85, 0.3);
+  --text: #ebe3d6;
+  --text-muted: #a08968;
+  --text-faint: #6b5d4a;
+  --accent: #8b7355;
+  --accent-soft: rgba(139, 115, 85, 0.12);
+  --accent-hover: #a08968;
+  --copper: #8b7355;
+  --reader-max: 50rem;
+}
+.cover-glow { background: radial-gradient(ellipse, rgba(139, 115, 85, 0.14) 0%, transparent 65%); }
+""",
+    "portrait-of-the-artist": """
+/* Portrait of the Artist - Jesuit ivory */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #161210;
+  --bg-soft: #1c1712;
+  --surface: #241d18;
+  --border: rgba(160, 137, 104, 0.16);
+  --border-strong: rgba(160, 137, 104, 0.3);
+  --text: #ebe3d6;
+  --text-muted: #a08968;
+  --text-faint: #6b5d4a;
+  --accent: #a08968;
+  --accent-soft: rgba(160, 137, 104, 0.12);
+  --accent-hover: #b89f7a;
+  --reader-max: 50rem;
+}
+""",
+    "ulysses": """
+/* Ulysses - Dublin June 16th */
+:root, html[data-theme="dark"] {
+  --bg: #0b0a0f;
+  --bg-elevated: #13121a;
+  --bg-soft: #191822;
+  --surface: #201f2a;
+  --border: rgba(107, 140, 174, 0.16);
+  --border-strong: rgba(107, 140, 174, 0.3);
+  --text: #e6e6f0;
+  --text-muted: #9ca3af;
+  --text-faint: #6b7280;
+  --accent: #6b8cae;
+  --accent-soft: rgba(107, 140, 174, 0.12);
+  --accent-hover: #8ba4c4;
+  --reader-max: 52rem;
+}
+""",
+    "rubicon": """
+/* Rubicon - Roman marble */
+:root, html[data-theme="dark"] {
+  --bg: #100b0a;
+  --bg-elevated: #181110;
+  --bg-soft: #1f1614;
+  --surface: #261c18;
+  --border: rgba(180, 83, 9, 0.16);
+  --border-strong: rgba(180, 83, 9, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #b45309;
+  --accent-soft: rgba(180, 83, 9, 0.12);
+  --accent-hover: #d97706;
+  --reader-max: 50rem;
+}
+""",
+    "spqr": """
+/* SPQR - Roman */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0b;
+  --bg-elevated: #171412;
+  --bg-soft: #1e1916;
+  --surface: #251f1a;
+  --border: rgba(139, 115, 85, 0.16);
+  --border-strong: rgba(139, 115, 85, 0.3);
+  --text: #ebe3d6;
+  --text-muted: #a08968;
+  --text-faint: #6b5d4a;
+  --accent: #a08968;
+  --accent-soft: rgba(139, 115, 85, 0.12);
+  --accent-hover: #b89f7a;
+  --reader-max: 52rem;
+}
+""",
+    "napoleon": """
+/* Napoleon - Imperial */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #161410;
+  --bg-soft: #1c1814;
+  --surface: #241f18;
+  --border: rgba(161, 98, 7, 0.16);
+  --border-strong: rgba(161, 98, 7, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #a16207;
+  --accent-soft: rgba(161, 98, 7, 0.12);
+  --accent-hover: #d97706;
+  --reader-max: 52rem;
+}
+""",
+    "the-power-broker": """
+/* The Power Broker - NYC */
+:root, html[data-theme="dark"] {
+  --bg: #0a0b0d;
+  --bg-elevated: #111316;
+  --bg-soft: #16181c;
+  --surface: #1c1e24;
+  --border: rgba(148, 163, 184, 0.16);
+  --border-strong: rgba(148, 163, 184, 0.3);
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-faint: #6b7280;
+  --accent: #94a3b8;
+  --accent-soft: rgba(148, 163, 184, 0.12);
+  --accent-hover: #cbd5e1;
+  --reader-max: 52rem;
+}
+""",
+    "the-path-to-power": """
+/* LBJ Path to Power */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #161210;
+  --bg-soft: #1c1712;
+  --surface: #241d18;
+  --border: rgba(146, 64, 14, 0.16);
+  --border-strong: rgba(146, 64, 14, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #92400e;
+  --accent-soft: rgba(146, 64, 14, 0.12);
+  --accent-hover: #b45309;
+  --reader-max: 52rem;
+}
+""",
+    "means-of-ascent": """
+/* Means of Ascent */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #161210;
+  --bg-soft: #1c1712;
+  --surface: #241d18;
+  --border: rgba(146, 64, 14, 0.16);
+  --border-strong: rgba(146, 64, 14, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #92400e;
+  --accent-soft: rgba(146, 64, 14, 0.12);
+  --accent-hover: #b45309;
+  --reader-max: 52rem;
+}
+""",
+    "master-of-the-senate": """
+/* Master of the Senate */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #161210;
+  --bg-soft: #1c1712;
+  --surface: #241d18;
+  --border: rgba(146, 64, 14, 0.16);
+  --border-strong: rgba(146, 64, 14, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #92400e;
+  --accent-soft: rgba(146, 64, 14, 0.12);
+  --accent-hover: #b45309;
+  --reader-max: 52rem;
+}
+""",
+    "the-passage-of-power": """
+/* Passage of Power */
+:root, html[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #161210;
+  --bg-soft: #1c1712;
+  --surface: #241d18;
+  --border: rgba(146, 64, 14, 0.16);
+  --border-strong: rgba(146, 64, 14, 0.3);
+  --text: #f5ebe0;
+  --text-muted: #b08968;
+  --text-faint: #7a5d4a;
+  --accent: #92400e;
+  --accent-soft: rgba(146, 64, 14, 0.12);
+  --accent-hover: #b45309;
+  --reader-max: 52rem;
+}
+""",
+    "the-definitive-fdr": """
+/* FDR */
+:root, html[data-theme="dark"] {
+  --bg: #0a0b0f;
+  --bg-elevated: #111218;
+  --bg-soft: #161820;
+  --surface: #1c1e28;
+  --border: rgba(37, 99, 235, 0.16);
+  --border-strong: rgba(37, 99, 235, 0.3);
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-faint: #6b7280;
+  --accent: #2563eb;
+  --accent-soft: rgba(37, 99, 235, 0.12);
+  --accent-hover: #3b82f6;
+  --reader-max: 52rem;
+}
+""",
+    "things-hidden": """
+/* Things Hidden - mimetic triangles, violet ritual, and the scapegoat */
+:root, html[data-theme="dark"] {
+  --bg: #100c15;
+  --bg-elevated: #191220;
+  --bg-soft: #22182d;
+  --surface: #2c2038;
+  --border: rgba(167, 139, 250, 0.17);
+  --border-strong: rgba(167, 139, 250, 0.32);
+  --text: #f0eaf7;
+  --text-muted: #c1b1d3;
+  --text-faint: #83728f;
+  --accent: #a78bfa;
+  --accent-soft: rgba(167, 139, 250, 0.13);
+  --accent-hover: #c4b5fd;
   --reader-max: 52rem;
 }
 html[data-theme="sepia"] {
-  --bg: #f4efdd;
-  --bg-elevated: #eae2c9;
-  --bg-soft: #dcd2b2;
-  --surface: #ffffff;
-  --text: #2a2517;
-  --text-muted: #6b6247;
-  --accent: #8a6f14;
-  --border: rgba(138, 111, 20, 0.18);
+  --bg: #f3eee6;
+  --bg-elevated: #e9e0d6;
+  --text: #2b2030;
+  --text-muted: #69596e;
+  --accent: #7040a0;
+  --border: rgba(112, 64, 160, 0.18);
 }
 html[data-theme="light"] {
-  --bg: #fbf9f2;
-  --text: #201c10;
-  --accent: #8a6f14;
+  --bg: #faf8fc;
+  --text: #211a28;
+  --text-muted: #62566a;
+  --accent: #7040a0;
   --bg-elevated: #ffffff;
 }
 .cover-glow {
-  background: radial-gradient(ellipse at 50% 35%, rgba(201, 162, 39, 0.2) 0%, rgba(150, 120, 40, 0.06) 45%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 38%, rgba(167, 139, 250, 0.18) 0%, rgba(112, 64, 160, 0.08) 45%, transparent 72%);
 }
 .cover-grid {
   background-image:
-    linear-gradient(rgba(201, 162, 39, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 162, 39, 0.07) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(rgba(167, 139, 250, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.05) 1px, transparent 1px);
+  background-size: 52px 52px;
 }
-.title-line.accent { color: var(--accent); font-style: italic; }
-.cover-eyebrow { color: var(--accent); letter-spacing: 0.08em; }
-.chapter-text p { text-align: justify; hyphens: auto; }
 """,
 }
 
@@ -519,7 +750,63 @@ THEME_KEY = {
     "open-letter": "open-letter",
     "gentle-introduction": "gentle-introduction",
     "sovereign-individual": "sovereign-individual",
+    "dubliners": "dubliners",
+    "portrait-of-the-artist": "portrait-of-the-artist",
+    "portrait": "portrait-of-the-artist",
+    "ulysses": "ulysses",
+    "rubicon": "rubicon",
+    "spqr": "spqr",
+    "napoleon": "napoleon",
+    "the-power-broker": "the-power-broker",
+    "the-path-to-power": "the-path-to-power",
+    "means-of-ascent": "means-of-ascent",
+    "master-of-the-senate": "master-of-the-senate",
+    "the-passage-of-power": "the-passage-of-power",
+    "the-definitive-fdr": "the-definitive-fdr",
+    "fdr": "the-definitive-fdr",
+    "things-hidden": "things-hidden",
+    "girard": "things-hidden",
+    "power-broker": "the-power-broker",
+    "lbj-path": "the-path-to-power",
+    "lbj-means": "means-of-ascent",
+    "lbj-master": "master-of-the-senate",
+    "lbj-passage": "the-passage-of-power",
 }
+
+ART_SLOT_BOOKS = {
+    "dubliners", "portrait-of-the-artist", "ulysses", "rubicon", "spqr", "napoleon",
+    "the-power-broker", "the-path-to-power", "means-of-ascent", "master-of-the-senate",
+    "the-passage-of-power", "the-definitive-fdr", "things-hidden",
+}
+
+ART_SLOT_THEME = """
+/* Book-authored cover and chapter art slots. */
+#chapter-art {
+  margin: 0 auto 2rem;
+  max-width: min(var(--reader-max, 52rem), 90vw);
+  width: 100%;
+}
+#chapter-art svg, #cover-art svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#chapter-art svg { border: 1px solid var(--border); border-radius: 4px; }
+#chapter-art[hidden], #cover-art[hidden] { display: none; }
+.cover-art.plate {
+  width: min(25rem, 76vw);
+  margin: 0.25rem auto 1.1rem;
+}
+.cover-art.plate svg {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.3);
+}
+@media (max-height: 760px) {
+  .cover-art.plate { width: min(19rem, 58vw); margin-bottom: 0.5rem; }
+}
+"""
 
 
 def book_html(meta: dict) -> str:
@@ -559,8 +846,8 @@ def book_html(meta: dict) -> str:
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="{title} by {author} — a clean literary reading experience." />
-  <title>{title} — {author}</title>
+  <meta name="description" content="{title} by {author} - a clean literary reading experience." />
+  <title>{title} - {author}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
@@ -741,6 +1028,8 @@ def main() -> None:
             continue
         theme_key = THEME_KEY.get(meta.get("theme", slug), slug)
         css = THEMES.get(theme_key, THEMES["atlas-shrugged"])
+        if slug in ART_SLOT_BOOKS:
+            css = f"{css.rstrip()}\n\n{ART_SLOT_THEME.strip()}\n"
         wrote = []
         for name, content in (
             ("theme.css", css.strip() + "\n"),

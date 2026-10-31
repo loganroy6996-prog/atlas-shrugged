@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "door",
+      "caption": "The Prediction"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "door",
+      "caption": "The Rich Man’s Son"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "door",
+      "caption": "Forging Chains"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "door",
+      "caption": "The Back Stairs"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "door",
+      "caption": "The “LBJ Special”"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "flag",
+      "caption": "“Power Is Where Power Goes”"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "clock",
+      "caption": "Genuine Warmth"
+    },
+    "p2c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c3",
+      "class": "plate",
+      "motif": "radio",
+      "caption": "“Cut”"
+    },
+    "p2c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c4",
+      "class": "plate",
+      "motif": "door",
+      "caption": "Gestures and Tactics"
+    },
+    "p2c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c5",
+      "class": "plate",
+      "motif": "phone",
+      "caption": "The Protégé"
+    },
+    "p3c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c1",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "The Cubicle"
+    },
+    "p3c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c2",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Taking Charge"
+    },
+    "p4c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c1",
+      "class": "plate",
+      "motif": "airplane",
+      "caption": "Aboard Air Force One"
+    },
+    "p4c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c2",
+      "class": "plate",
+      "motif": "phone",
+      "caption": "Three Encounters"
+    },
+    "p4c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c3",
+      "class": "plate",
+      "motif": "phone",
+      "caption": "The Drums"
+    },
+    "p5c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c1",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "EOB 274"
+    },
+    "p5c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c2",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "The Warren Commission"
+    },
+    "p5c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c3",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "The Southern Strategy"
+    },
+    "p5c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c4",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "“Old Harry”"
+    },
+    "p5c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c5",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "“The Johnsons in Johnson City”"
+    },
+    "p5c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c6",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Serenity"
+    },
+    "p5c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c7",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "“Old Harry” II"
+    },
+    "p5c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c8",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "In the Books of Law"
+    },
+    "p5c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c9",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Defeating Despair"
+    },
+    "p5c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c10",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Hammer Blows"
+    },
+    "p5c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c11",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Long Enough"
+    }
+  }
+}

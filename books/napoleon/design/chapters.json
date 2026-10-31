@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "map",
+      "caption": "Corsica"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "crown",
+      "caption": "Revolution"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "map",
+      "caption": "Desire"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "map",
+      "caption": "Italy"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "fortress",
+      "caption": "Victory"
+    },
+    "p1c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c6",
+      "class": "plate",
+      "motif": "horse",
+      "caption": "Peace"
+    },
+    "p1c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c7",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Egypt"
+    },
+    "p1c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c8",
+      "class": "plate",
+      "motif": "sword",
+      "caption": "Acre"
+    },
+    "p1c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c9",
+      "class": "plate",
+      "motif": "compass",
+      "caption": "Brumaire"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "crown",
+      "caption": "Consul"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "map",
+      "caption": "Marengo"
+    },
+    "p2c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c3",
+      "class": "plate",
+      "motif": "cannon",
+      "caption": "Lawgiver"
+    },
+    "p2c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c4",
+      "class": "plate",
+      "motif": "fortress",
+      "caption": "Plots"
+    },
+    "p2c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c5",
+      "class": "plate",
+      "motif": "horse",
+      "caption": "Amiens"
+    },
+    "p2c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c6",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "Coronation"
+    },
+    "p2c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c7",
+      "class": "plate",
+      "motif": "sword",
+      "caption": "Austerlitz"
+    },
+    "p2c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c8",
+      "class": "plate",
+      "motif": "compass",
+      "caption": "Jena"
+    },
+    "p2c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c9",
+      "class": "plate",
+      "motif": "crown",
+      "caption": "Blockades"
+    },
+    "p2c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c10",
+      "class": "plate",
+      "motif": "map",
+      "caption": "Tilsit"
+    },
+    "p2c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c11",
+      "class": "plate",
+      "motif": "cannon",
+      "caption": "Iberia"
+    },
+    "p2c12": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c12",
+      "class": "plate",
+      "motif": "fortress",
+      "caption": "Wagram"
+    },
+    "p2c13": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c13",
+      "class": "plate",
+      "motif": "horse",
+      "caption": "Zenith"
+    },
+    "p3c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c1",
+      "class": "plate",
+      "motif": "map",
+      "caption": "Russia"
+    },
+    "p3c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c2",
+      "class": "plate",
+      "motif": "sword",
+      "caption": "Trapped"
+    },
+    "p3c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c3",
+      "class": "plate",
+      "motif": "compass",
+      "caption": "Retreat"
+    },
+    "p3c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c4",
+      "class": "plate",
+      "motif": "crown",
+      "caption": "Resilience"
+    },
+    "p3c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c5",
+      "class": "plate",
+      "motif": "map",
+      "caption": "Leipzig"
+    },
+    "p3c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c6",
+      "class": "plate",
+      "motif": "cannon",
+      "caption": "Defiance"
+    },
+    "p3c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c7",
+      "class": "plate",
+      "motif": "fortress",
+      "caption": "Elba"
+    },
+    "p3c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c8",
+      "class": "plate",
+      "motif": "cannon",
+      "caption": "Waterloo"
+    },
+    "p3c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c9",
+      "class": "plate",
+      "motif": "seal",
+      "caption": "St Helena"
+    },
+    "p3c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c10",
+      "class": "plate",
+      "motif": "sword",
+      "caption": "Epilogue"
+    }
+  }
+}

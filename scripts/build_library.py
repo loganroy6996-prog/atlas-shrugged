@@ -8,8 +8,11 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import subprocess
 import tempfile
+import xml.etree.ElementTree as ET
 import zipfile
+from functools import lru_cache
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -32,6 +35,14 @@ JUNK_CONTAINS = re.compile(
 SENT_END = re.compile(r'[.!?…](?:["\u201d\u2019\'»”)\]]+)?$')
 
 
+PDF_HYPHEN_ENDINGS = frozenset({
+    "age", "ance", "ancy", "ation", "ations", "ence", "ency", "ing",
+    "ion", "ions", "ise", "ism", "ist", "ity", "ive", "ization",
+    "ize", "ized", "ly", "ment", "ness", "ous", "ries", "sion", "tion",
+    "tions", "ure", "ures",
+})
+
+
 def clean_line(s: str) -> str:
     s = s.replace("\u00ad", "").replace("\ufeff", "")
     s = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", s)
@@ -52,7 +63,10 @@ def is_junk(line: str) -> bool:
     return False
 
 
-def reflow(lines: list[str], fill_width: int = 68) -> list[str]:
+def reflow(lines: list[str], fill_width: int = 68, *,
+           normalize_pdf_hyphenation: bool = False,
+           known_words: frozenset[str] = frozenset(),
+           known_compounds: frozenset[tuple[str, str]] = frozenset()) -> list[str]:
     """Join hard-wrapped lines into paragraphs."""
     src = []
     for ln in lines:
@@ -72,9 +86,28 @@ def reflow(lines: list[str], fill_width: int = 68) -> list[str]:
         if not buf:
             return
         result = buf[0]
-        for p in buf[1:]:
+        for index, p in enumerate(buf[1:], 1):
             if result.endswith("-") and not result.endswith("—") and not result.endswith("--"):
-                result = result + p
+                previous_line = buf[index - 1]
+                left = re.search(r"([A-Za-z]{2,})-$", previous_line.rstrip())
+                right = re.match(r"([a-z]{2,})", p)
+                joined = f"{left.group(1)}{right.group(1)}".casefold() if left and right else ""
+                pair = (left.group(1).casefold(), right.group(1).casefold()) if left and right else None
+                known_compound = bool(
+                    pair
+                    and pair in known_compounds
+                    and pair[0] in known_words
+                    and pair[1] in known_words
+                )
+                soft_wrap = (
+                    normalize_pdf_hyphenation
+                    and len(previous_line.rstrip()) >= 55
+                    and bool(joined)
+                    and not known_compound
+                    and (joined in known_words or right.group(1).casefold() in PDF_HYPHEN_ENDINGS
+                         or pair[0] not in known_words or pair[1] not in known_words)
+                )
+                result = result[:-1] + p if soft_wrap else result + p
             else:
                 result = result + " " + p
         result = re.sub(r"[ \t]+", " ", result).strip()
@@ -206,6 +239,207 @@ def write_book(slug: str, meta: dict, parts: list[dict]) -> None:
 def load_raw(name: str) -> list[str]:
     path = RAW / name
     return path.read_text(encoding="utf-8", errors="replace").splitlines()
+
+
+@lru_cache(maxsize=1)
+def existing_pdf_import_lexicon() -> tuple[frozenset[str], frozenset[tuple[str, str]]]:
+    """Use the established clean books as an offline word/compound reference."""
+    imported = {
+        "dubliners", "portrait-of-the-artist", "ulysses", "rubicon", "spqr",
+        "napoleon", "the-power-broker", "the-path-to-power", "means-of-ascent",
+        "master-of-the-senate", "the-passage-of-power", "the-definitive-fdr",
+        "things-hidden",
+    }
+    words: set[str] = set()
+    compounds: set[tuple[str, str]] = set()
+    for path in BOOKS.glob("*/data/chapters/*.json"):
+        if path.parents[2].name in imported:
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        text = " ".join(data.get("paragraphs", []))
+        words.update(word.casefold() for word in re.findall(r"[A-Za-z]+", text))
+        compounds.update(
+            (left.casefold(), right.casefold())
+            for left, right in re.findall(r"\b([A-Za-z]+)-([A-Za-z]+)\b", text)
+        )
+    return frozenset(words), frozenset(compounds)
+
+
+def load_pdf_source(name: str) -> list[str]:
+    """Keep page boundaries long enough to remove repeated running heads."""
+    path = RAW / name
+    source = path.read_text(encoding="utf-8", errors="replace")
+    if name == "A-Portrait-of-the-Artist-as-a-Young-Man--Dubliners---James-Joyce.txt":
+        source = strip_portrait_pdf_link_labels(source)
+    lines = source.split("\n")
+    page_heads: dict[str, int] = {}
+    keyed_lines: list[tuple[str, str | None, bool]] = []
+    for line in lines:
+        key = None
+        has_page_number = False
+        if "\f" in line:
+            text = clean_line(line).strip()
+            prefix_page = re.match(r"^[0-9OIlSs]{1,4}\s+", text)
+            suffix_page = re.search(r"\s+[0-9]{1,4}$", text)
+            has_page_number = bool(prefix_page or suffix_page)
+            text = re.sub(r"^[0-9OIlSs]{1,4}\s+", "", text)
+            text = re.sub(r"\s+[0-9]{1,4}$", "", text)
+            text = re.sub(r"\s+", " ", text).strip()
+            if has_page_number and text and len(text) <= 110 and re.search(r"[A-Za-z]", text):
+                key = text.casefold()
+                page_heads[key] = page_heads.get(key, 0) + 1
+        keyed_lines.append((line, key, has_page_number))
+    repeated_heads = {key for key, count in page_heads.items() if count >= 4}
+    return [
+        line.replace("\f", "")
+        for line, key, has_page_number in keyed_lines
+        if not (has_page_number and key in repeated_heads)
+    ]
+
+
+def _pdf_alnum(text: str) -> str:
+    return "".join(char.lower() for char in text if char.isascii() and char.isalnum())
+
+
+def _find_all(text: str, needle: str) -> list[int]:
+    return [match.start() for match in re.finditer(rf"(?={re.escape(needle)})", text)]
+
+
+def strip_portrait_pdf_link_labels(source: str) -> str:
+    """Remove blue two-letter hyperlink labels embedded by this PDF edition."""
+    pdf = ROOT / "pdfs" / "_OceanofPDF.com_A_Portrait_of_the_Artist_as_a_Young_Man__Dubliners_-_James_Joyce.pdf"
+    converter = shutil.which("pdftohtml")
+    if not pdf.exists():
+        raise FileNotFoundError(f"Portrait PDF is required to remove embedded link labels: {pdf}")
+    if not converter:
+        raise RuntimeError("Install Poppler's pdftohtml command to clean Portrait PDF link labels")
+
+    xml = subprocess.run(
+        [converter, "-q", "-xml", "-i", "-stdout", "-f", "44", "-l", "284", str(pdf)],
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout
+    root = ET.fromstring(xml)
+    font_colors = {
+        font.attrib.get("id", ""): font.attrib.get("color", "").casefold()
+        for font in root.iter("fontspec")
+    }
+    pages = source.split("\f")
+    removed = 0
+    unresolved: list[tuple[int, str]] = []
+
+    for page in root.findall("page"):
+        page_number = int(page.attrib["number"])
+        page_index = page_number - 1
+        if not 0 <= page_index < len(pages):
+            continue
+        page_text = pages[page_index]
+        offsets = [index for index, char in enumerate(page_text) if char.isascii() and char.isalnum()]
+        flat = "".join(page_text[index].lower() for index in offsets)
+        nodes = page.findall("text")
+        edits: list[tuple[int, int, str]] = []
+
+        for index, node in enumerate(nodes):
+            link = node.find(".//a")
+            if link is None:
+                continue
+            label = "".join(link.itertext()).strip()
+            color = font_colors.get(node.attrib.get("font", ""), "")
+            if not re.fullmatch(r"[a-z]{2}", label) or color not in {"#0000ed", "#0000ff"}:
+                continue
+
+            previous = "".join(nodes[index - 1].itertext()) if index else ""
+            following = "".join(nodes[index + 1].itertext()) if index + 1 < len(nodes) else ""
+            left = _pdf_alnum(previous)[-12:]
+            right = _pdf_alnum(following)[:12]
+            flat_position = None
+
+            for width in (12, 10, 8, 6, 4, 2, 1):
+                left_context = left[-width:]
+                right_context = right[:width]
+                pattern = left_context + label + right_context
+                if not left_context and not right_context:
+                    continue
+                matches = _find_all(flat, pattern)
+                if len(matches) == 1:
+                    flat_position = matches[0] + len(left_context)
+                    break
+
+            if flat_position is None:
+                # A few labels sit alone after a page break in the XML text flow.
+                fallback = re.compile(rf"(?<=[.!?])\s+({re.escape(label)})\s+(?=[A-Z])")
+                matches = list(fallback.finditer(page_text))
+                if len(matches) == 1:
+                    start = matches[0].start(1)
+                    end = matches[0].end(1)
+                else:
+                    unresolved.append((page_number, label))
+                    continue
+            else:
+                start = offsets[flat_position]
+                end = offsets[flat_position + len(label) - 1] + 1
+
+            before = page_text[start - 1] if start else ""
+            after = page_text[end] if end < len(page_text) else ""
+            separator = " " if (before.isalpha() and after.isalpha()) or (before in ".!?;:" and after.isalpha()) else ""
+            edits.append((start, end, separator))
+
+        for start, end, separator in sorted(edits, reverse=True):
+            page_text = page_text[:start] + separator + page_text[end:]
+            removed += 1
+        pages[page_index] = page_text
+
+    if unresolved:
+        examples = ", ".join(f"page {page}: {label}" for page, label in unresolved[:5])
+        raise ValueError(f"Could not locate {len(unresolved)} Portrait PDF link labels ({examples})")
+    if not removed:
+        raise ValueError("No Portrait PDF link labels were removed; check the source PDF and pdftohtml output")
+    return "\f".join(pages)
+
+
+_PDF_SOURCE_LEXICONS: dict[int, tuple[list[str], frozenset[str], frozenset[tuple[str, str]]]] = {}
+
+
+def pdf_source_lexicon(lines: list[str]) -> tuple[frozenset[str], frozenset[tuple[str, str]]]:
+    cached = _PDF_SOURCE_LEXICONS.get(id(lines))
+    if cached and cached[0] is lines:
+        return cached[1], cached[2]
+    words, _ = existing_pdf_import_lexicon()
+    source_lines = [clean_line(line) for line in lines]
+    source_words: set[str] = set()
+    for index, line in enumerate(source_lines):
+        words_on_line = re.findall(r"[A-Za-z]+", line)
+        if not words_on_line:
+            continue
+        if re.search(r"[A-Za-z]{2,}-\s*$", line):
+            words_on_line = words_on_line[:-1]
+        if index and re.search(r"[A-Za-z]{2,}-\s*$", source_lines[index - 1]):
+            words_on_line = words_on_line[1:]
+        source_words.update(word.casefold() for word in words_on_line)
+    source_text = "\n".join(source_lines)
+    words = frozenset(set(words) | source_words)
+    compounds = frozenset(
+        (left.casefold(), right.casefold())
+        for left, right in re.findall(r"\b([A-Za-z]+)-([A-Za-z]+)\b", source_text)
+    )
+    _PDF_SOURCE_LEXICONS[id(lines)] = (lines, words, compounds)
+    return words, compounds
+
+
+def pdf_reflow(lines: list[str], *, fill_width: int = 68,
+               reference_lines: list[str] | None = None) -> list[str]:
+    words, compounds = pdf_source_lexicon(reference_lines or lines)
+    return reflow(
+        lines,
+        fill_width=fill_width,
+        normalize_pdf_hyphenation=True,
+        known_words=words,
+        known_compounds=compounds,
+    )
 
 
 # ── Book parsers ─────────────────────────────────────────
@@ -2488,6 +2722,818 @@ MOLDBUG_HEADER_RE = re.compile(r"^\s*\d+\s+CHAPTER\s+[0-9XIV]+\..*$")
 MOLDBUG_CH_RE = re.compile(r"^\s*Chapter\s+([0-9XIV]+)\s*$")
 
 
+ROMAN_VALUES = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+ORDINALS = {
+    "ONE": 1, "TWO": 2, "THREE": 3, "FOUR": 4, "FIVE": 5,
+    "SIX": 6, "SEVEN": 7, "EIGHT": 8, "NINE": 9, "TEN": 10,
+}
+TOC_END_MARKERS = {
+    "ACKNOWLEDGMENTS", "ACKNOWLEDGEMENTS", "DEBTS", "FURTHER READING",
+    "GENERAL BIBLIOGRAPHY", "INDEX", "ILLUSTRATIONS", "IMAGE GALLERY",
+    "LIST OF ILLUSTRATIONS", "LIST OF MAPS", "MAPS", "NOTES",
+    "PHOTOGRAPHS", "SELECTED BIBLIOGRAPHY", "TIMELINE",
+    "A NOTE ON THE STUDY OF POLITICAL LEADERSHIP", "A NOTE ON SOURCES",
+}
+
+
+def roman_value(value: str) -> int:
+    total = 0
+    previous = 0
+    for char in reversed(value.upper()):
+        current = ROMAN_VALUES.get(char, 0)
+        total += -current if current < previous else current
+        previous = max(previous, current)
+    return total
+
+
+def roman_numeral(value: int) -> str:
+    numerals = (
+        (1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
+        (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
+        (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I"),
+    )
+    out = []
+    for number, glyph in numerals:
+        while value >= number:
+            out.append(glyph)
+            value -= number
+    return "".join(out) or "I"
+
+
+def clean_toc_title(value: str) -> str:
+    value = re.sub(r"\s{2,}\d{1,4}\s*$", "", value)
+    return re.sub(r"\s+", " ", value).strip(" .\t")
+
+
+def display_part_title(value: str) -> str:
+    aliases = {
+        "fundamentalanthropology": "Fundamental Anthropology",
+    }
+    compact = re.sub(r"[^a-z]", "", value.casefold())
+    if compact in aliases:
+        return aliases[compact]
+    small_words = {"a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "of", "on", "or", "the", "to", "with"}
+    words = value.title().replace("’S", "’s").replace("'S", "'s").split()
+    for index in range(1, len(words)):
+        key = re.sub(r"^[^A-Za-z]+|[^A-Za-z]+$", "", words[index]).casefold()
+        if key in small_words:
+            words[index] = re.sub(r"[A-Z]", lambda match: match.group().lower(), words[index])
+    return " ".join(words)
+
+
+def parse_part_heading(line: str) -> tuple[str, str] | None:
+    """Return (part number, title) for a printed PART/BOOK heading."""
+    match = re.match(
+        r"^\s*(?:PART\s+|BOOK\s*)(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|[IVXLC]+|\d{1,3})\b\s*(.*)$",
+        line,
+        re.I,
+    )
+    if match:
+        marker, title = match.groups()
+        number = ORDINALS.get(marker.upper(), int(marker) if marker.isdigit() else roman_value(marker))
+        return roman_numeral(number), clean_toc_title(re.sub(r"^[–—:-]+\s*", "", title))
+    match = re.match(r"^\s*([IVXLC]+)\s*[–—-]\s*(.+?)\s*$", line, re.I)
+    if match:
+        number, title = match.groups()
+        return roman_numeral(roman_value(number)), clean_toc_title(title)
+    return None
+
+
+def parse_contents(lines: list[str], *, mode: str = "numbered", contents_index: int | None = None,
+                   default_part: str = "", scan_limit: int = 700,
+                   reset_chapters_on_part: bool = False) -> tuple[list[dict], list[dict], int]:
+    """Read a PDF's printed contents into ordered chapter/part records.
+
+    `mode` is `numbered` for decimal chapter headings, or `roman` for the
+    Roman-numbered FDR chapters. It deliberately reads only the opening
+    contents page, then the matching body headings are found separately.
+    """
+    if contents_index is None:
+        contents_index = next(
+            (i for i, line in enumerate(lines[:1200]) if "contents" in line.casefold()),
+            0,
+        )
+    parts: list[dict] = []
+    chapters: list[dict] = []
+    current_part = -1
+    expected_number = 1
+    consumed = contents_index
+
+    def ensure_part(number: str | None = None, title: str | None = None) -> int:
+        nonlocal current_part
+        if current_part < 0:
+            parts.append({"roman": number or "I", "name": title or default_part or "Contents"})
+            current_part = 0
+        return current_part
+
+    end = min(len(lines), contents_index + scan_limit)
+    i = contents_index + 1
+    while i < end:
+        raw = lines[i]
+        text = raw.strip()
+        consumed = i
+        if not text:
+            i += 1
+            continue
+
+        marker = parse_part_heading(raw)
+        if marker:
+            part_number, part_title = marker
+            if not part_title:
+                j = i + 1
+                while j < end and not lines[j].strip():
+                    j += 1
+                if j < end and not re.match(r"^(?:\d{1,3}[.)]?\s|CHAPTER\s+)", lines[j].strip(), re.I):
+                    part_title = clean_toc_title(lines[j])
+                    i = j
+                    consumed = j
+            parts.append({"roman": part_number, "name": display_part_title(part_title) if part_title else f"Part {part_number}"})
+            current_part = len(parts) - 1
+            if reset_chapters_on_part:
+                expected_number = 1
+            i += 1
+            continue
+
+        # The Power Broker's contents labels parts with bare Roman numerals
+        # followed by a dash rather than the word PART.
+        special = re.match(r"^\s*(PROLOGUE|EPILOGUE|TO\s+CONCLUDE)\b\s*[:—-]?\s*(.*)$", text, re.I)
+        if special and (chapters or special.group(1).upper() == "PROLOGUE"):
+            label = special.group(1).title()
+            ensure_part()
+            title = clean_toc_title(special.group(2))
+            if label == "To Conclude":
+                title = "To Conclude"
+            elif label == "Prologue" and title:
+                title = f"Prologue: {title}"
+            else:
+                title = label
+            chapters.append({
+                "title": title,
+                "number_label": label,
+                "roman": label,
+                "part_index": current_part,
+            })
+            i += 1
+            continue
+
+        chapter_match = None
+        if mode == "roman":
+            chapter_match = re.match(r"^\s*([IVXLC]+)\s+(.+?)\s*$", raw, re.I)
+        elif mode == "girard":
+            chapter_match = re.match(r"^\s*Chapter\s+([IVXLC]+|\d+)\s*:\s*(.+?)\s*$", raw, re.I)
+        else:
+            chapter_match = re.match(r"^\s*(\d{1,3})\s*[.)]?\s+(.+?)\s*$", raw)
+
+        if chapter_match:
+            numeral, title = chapter_match.groups()
+            number = roman_value(numeral) if numeral.isalpha() else int(numeral)
+            # A restarted list after the contents is usually maps or plates.
+            if chapters and number == 1 and expected_number > 3:
+                break
+            if number != expected_number:
+                i += 1
+                continue
+            ensure_part()
+            title = clean_toc_title(title)
+            if mode == "girard":
+                title = re.sub(r"\s+\d{1,4}\s*$", "", title)
+            chapters.append({
+                "title": title,
+                "number_label": f"Chapter {numeral.upper() if numeral.isalpha() else numeral}",
+                "roman": numeral.upper() if numeral.isalpha() else str(number),
+                "part_index": current_part,
+            })
+            expected_number += 1
+            i += 1
+            continue
+
+        if chapters and text.upper().rstrip(" .") in TOC_END_MARKERS:
+            break
+        i += 1
+
+    if not chapters:
+        raise ValueError(f"no chapter headings found in contents near line {contents_index + 1}")
+    # Remove empty part headings from titles before the first chapter only.
+    used_part_indexes = {chapter["part_index"] for chapter in chapters}
+    parts = [part for index, part in enumerate(parts) if index in used_part_indexes]
+    remap = {old: new for new, old in enumerate(sorted(used_part_indexes))}
+    for chapter in chapters:
+        chapter["part_index"] = remap[chapter["part_index"]]
+    return chapters, parts, consumed
+
+
+def normalized_heading(value: str) -> str:
+    value = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", value)
+    value = value.casefold().replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
+    value = re.sub(r"[^\w]+", " ", value, flags=re.UNICODE)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def normalized_heading_candidate(value: str) -> str:
+    value = value.strip()
+    value = re.sub(r"^(?:CHAPTER\s+[IVXLC0-9]+|\d{1,3})[.):]?\s+", "", value, flags=re.I)
+    value = re.sub(r"\s{2,}\d{1,4}\s*$", "", value)
+    return normalized_heading(value)
+
+
+def heading_block_start(lines: list[str], heading_index: int) -> int:
+    """Include nearby printed chapter and part labels in a boundary."""
+    index = heading_index
+    heading_label = re.compile(
+        r"(?i)(?:"
+        r"CHAPTER\s+(?:[IVXLC0-9]+|ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|ELEVEN|TWELVE)|"
+        r"PART\s+(?:[IVXLC0-9]+|ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN)(?:\s+.*)?|"
+        r"BOOK\s*(?:[IVXLC0-9]+|ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN)(?:\s*[:—-]?\s*.*)?|"
+        r"[IVXLC]{1,6}|\d{1,3}|"
+        r"ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|ELEVEN|TWELVE"
+        r")"
+    )
+    for _ in range(12):
+        if index <= 0:
+            break
+        previous = lines[index - 1].strip()
+        if not previous:
+            index -= 1
+            continue
+        if heading_label.fullmatch(previous):
+            index -= 1
+            continue
+        break
+    return index
+
+
+def find_heading(lines: list[str], title: str, start: int) -> tuple[int, int] | None:
+    target = normalized_heading(title)
+    if not target:
+        return None
+    for i in range(max(0, start), len(lines)):
+        if normalized_heading_candidate(lines[i]) == target:
+            return heading_block_start(lines, i), i
+        # Some centered headings are split over two or three printed lines.
+        combined = []
+        last = i
+        for j in range(i, min(len(lines), i + 4)):
+            text = lines[j].strip()
+            if not text:
+                continue
+            if re.fullmatch(r"[·•*—-]+", text):
+                continue
+            combined.append(text)
+            last = j
+            joined = normalized_heading(" ".join(combined))
+            if joined == target:
+                return heading_block_start(lines, i), last
+            if len(joined) > len(target) + 20 or not target.startswith(joined):
+                break
+    return None
+
+
+def find_printed_chapter_heading(lines: list[str], number_label: str, start: int) -> tuple[int, int] | None:
+    match = re.search(r"Chapter\s+([IVXLC0-9]+)", number_label, re.I)
+    if not match:
+        return None
+    value = match.group(1).upper()
+    number = roman_value(value) if value.isalpha() else int(value)
+    words = {
+        1: "ONE", 2: "TWO", 3: "THREE", 4: "FOUR", 5: "FIVE", 6: "SIX",
+        7: "SEVEN", 8: "EIGHT", 9: "NINE", 10: "TEN", 11: "ELEVEN", 12: "TWELVE",
+    }
+    candidates = {f"CHAPTER {number}", f"CHAPTER {value}"}
+    if number in words:
+        candidates.add(f"CHAPTER {words[number]}")
+    for index in range(max(0, start), len(lines)):
+        if lines[index].strip().upper() in candidates:
+            return heading_block_start(lines, index), index
+    return None
+
+
+def find_part_boundary(lines: list[str], start: int, end: int, part: dict) -> int | None:
+    """Find the printed part heading that precedes a chapter in a new part."""
+    target_name = normalized_heading(part.get("name", "").split("·")[-1])
+    target_roman = part.get("roman", "").upper()
+    for index in range(max(0, start), min(end, len(lines))):
+        marker = parse_part_heading(lines[index])
+        if not marker:
+            continue
+        roman, title = marker
+        if roman == target_roman:
+            return heading_block_start(lines, index)
+        normalized_title = normalized_heading(title)
+        if normalized_title and target_name and (
+            normalized_title == target_name
+            or normalized_title in target_name
+            or target_name in normalized_title
+        ):
+            return heading_block_start(lines, index)
+    return None
+
+
+def build_structured_parts(lines: list[str], chapters: list[dict], parts: list[dict],
+                           *, search_from: int, stop_markers: tuple[str, ...] = ()) -> list[dict]:
+    """Split source text at its printed chapter headings and group by part."""
+    located = []
+    cursor = search_from
+    missing = []
+    for chapter in chapters:
+        match = find_heading(lines, chapter["title"], cursor)
+        if not match:
+            match = find_printed_chapter_heading(lines, chapter["number_label"], cursor)
+            if not match:
+                missing.append(chapter["title"])
+                continue
+        boundary, title_end = match
+        located.append((chapter, boundary, title_end))
+        cursor = title_end + 1
+
+    if missing:
+        print(f"  ! source headings not found: {', '.join(missing[:8])}")
+    if not located:
+        raise ValueError("no source chapter headings matched the printed contents")
+
+    result = [{
+        "roman": part.get("roman", roman_numeral(i + 1)),
+        "name": part.get("name") or f"Part {i + 1}",
+        "subtitle": part.get("name", ""),
+        "chapters": [],
+    } for i, part in enumerate(parts)]
+
+    for index, (chapter, boundary, title_end) in enumerate(located):
+        end = located[index + 1][1] if index + 1 < len(located) else len(lines)
+        if index + 1 < len(located):
+            next_chapter = located[index + 1][0]
+            if next_chapter["part_index"] != chapter["part_index"]:
+                part_start = find_part_boundary(
+                    lines,
+                    title_end + 1,
+                    located[index + 1][1],
+                    parts[next_chapter["part_index"]],
+                )
+                if part_start is not None:
+                    end = part_start
+        if index + 1 == len(located) and stop_markers:
+            for j in range(title_end + 1, len(lines)):
+                marker_text = lines[j].strip().casefold().rstrip(" .")
+                marker = normalized_heading(marker_text)
+                marker_words = set(marker.split())
+                combined_end_heading = "," in marker_text and bool(marker_words.intersection(stop_markers))
+                if marker in {normalized_heading(item) for item in stop_markers} or combined_end_heading:
+                    end = min(end, heading_block_start(lines, j))
+                    break
+        paragraphs = pdf_reflow(lines[title_end + 1:end], reference_lines=lines)
+        if not paragraphs:
+            continue
+        item = {
+            "number_label": chapter["number_label"],
+            "roman": chapter["roman"],
+            "title": chapter["title"],
+            "paragraphs": paragraphs,
+        }
+        part_index = min(chapter["part_index"], len(result) - 1)
+        result[part_index]["chapters"].append(item)
+    return [part for part in result if part["chapters"]]
+
+
+
+
+def parse_dubliners() -> tuple[dict, list]:
+    """Dubliners by James Joyce - collection of short stories."""
+    lines = load_pdf_source("Dubliners---James-Joyce.txt")
+    start = 0
+    for i, l in enumerate(lines):
+        if re.match(r'^\s*THE SISTERS\s*$', l):
+            start = i
+            break
+    body = lines[start:]
+
+    story_titles = [
+        "The Sisters", "An Encounter", "Araby", "Eveline", "After the Race",
+        "Two Gallants", "The Boarding House", "A Little Cloud", "Counterparts",
+        "Clay", "A Painful Case", "Ivy Day in the Committee Room", "A Mother",
+        "Grace", "The Dead"
+    ]
+    story_keys = [s.upper() for s in story_titles]
+
+    TITLE_RE = re.compile(r"^\s*([A-Z][A-Z\s']+)\s*$")
+    parts = [{"roman": "I", "name": "Dubliners", "subtitle": "", "chapters": []}]
+    cur_ch = None
+    buf = []
+    seen_titles = set()
+
+    def fin_ch():
+        nonlocal cur_ch, buf
+        if cur_ch is None:
+            buf = []
+            return
+        paras = pdf_reflow(buf, reference_lines=lines)
+        cur_ch["paragraphs"] = paras
+        if paras and cur_ch['title'] not in seen_titles:
+            parts[0]["chapters"].append(cur_ch)
+            seen_titles.add(cur_ch['title'])
+        cur_ch = None
+        buf = []
+
+    i = 0
+    while i < len(body):
+        s = body[i]
+        stripped = s.strip()
+        if i + 1 < len(body) and stripped == 'IVY DAY IN THE' and body[i+1].strip() == 'COMMITTEE ROOM':
+            fin_ch()
+            title = "Ivy Day in the Committee Room"
+            cur_ch = {"number_label": title, "roman": str(len(parts[0]["chapters"]) + 1), "title": title, "paragraphs": []}
+            buf = []
+            i += 2
+            while i < len(body) and body[i].strip() in ['MUNICIPAL ELECTIONS', 'ROYAL EXCHANGE WARD', 'THE DEATH OF PARNELL']:
+                i += 1
+            continue
+        m = TITLE_RE.match(s)
+        if m and stripped in story_keys:
+            title = story_titles[story_keys.index(stripped)]
+            if title in seen_titles:
+                i += 1
+                continue
+            fin_ch()
+            cur_ch = {"number_label": title, "roman": str(len(parts[0]["chapters"]) + 1), "title": title, "paragraphs": []}
+            buf = []
+            i += 1
+            continue
+        if cur_ch is not None:
+            if stripped.startswith('MUNICIPAL ELECTIONS') or stripped.startswith('ROYAL EXCHANGE') or stripped.startswith('THE DEATH OF PARNELL'):
+                i += 1
+                continue
+            buf.append(body[i])
+        i += 1
+    fin_ch()
+
+    meta = {"title": "Dubliners", "author": "James Joyce", "dedication": "", "tagline": "Fifteen stories of Dublin life", "year": "1914", "theme": "dubliners", "accent": "#8b7355", "blurb": "Fifteen stories of Dublin life, culminating in The Dead.", "slug": "dubliners"}
+    return meta, parts
+
+
+
+def parse_portrait() -> tuple[dict, list]:
+    """A Portrait of the Artist as a Young Man by James Joyce."""
+    lines = load_pdf_source("A-Portrait-of-the-Artist-as-a-Young-Man--Dubliners---James-Joyce.txt")
+    start = 0
+    for i, l in enumerate(lines):
+        if not re.fullmatch(r"CHAPTER I", l.strip(), re.I):
+            continue
+        following = i + 1
+        while following < len(lines) and not lines[following].strip():
+            following += 1
+        # Skip the contents list; its Chapter I is followed by Chapter II.
+        if following < len(lines) and re.fullmatch(r"CHAPTER II", lines[following].strip(), re.I):
+            continue
+        start = i
+        break
+    end = len(lines)
+    for i, l in enumerate(lines[start:], start):
+        if re.fullmatch(r"THE END", l.strip(), re.I):
+            end = i
+            break
+    body = lines[start:end]
+
+    CH_RE = re.compile(r'^\s*CHAPTER\s+([IVX]+)\s*$')
+    parts = [{"roman": "I", "name": "A Portrait", "subtitle": "", "chapters": []}]
+    cur_ch = None
+    buf = []
+    seen = set()
+
+    def fin_ch():
+        nonlocal cur_ch, buf
+        if cur_ch is None:
+            buf = []
+            return
+        paras = pdf_reflow(buf, reference_lines=lines)
+        paras = [re.sub(r"\bartifi1cer\b", "artificer", para, flags=re.I) for para in paras]
+        cur_ch["paragraphs"] = paras
+        if paras and cur_ch['roman'] not in seen:
+            parts[0]["chapters"].append(cur_ch)
+            seen.add(cur_ch['roman'])
+        cur_ch = None
+        buf = []
+
+    i = 0
+    while i < len(body):
+        s = body[i]
+        stripped = s.strip()
+        m = CH_RE.match(stripped)
+        if m:
+            fin_ch()
+            rom = m.group(1)
+            if rom in seen:
+                i += 1
+                continue
+            cur_ch = {"number_label": f"Chapter {rom}", "roman": rom, "title": f"Chapter {rom}", "paragraphs": []}
+            buf = []
+            i += 1
+            continue
+        if cur_ch is not None:
+            buf.append(body[i])
+        i += 1
+    fin_ch()
+    if parts[0]["chapters"]:
+        # Preserve the Ovid epigraph printed before the first chapter.
+        parts[0]["chapters"][0]["paragraphs"][0:0] = [
+            "Et ignotas animum dimittit in artes.",
+            "Ovid, Metamorphoses, VIII, 188 a",
+        ]
+    # Sort by roman numerals
+    roman_vals = {'I':1,'II':2,'III':3,'IV':4,'V':5}
+    parts[0]["chapters"].sort(key=lambda x: roman_vals.get(x['roman'], 99))
+
+    meta = {"title": "A Portrait of the Artist as a Young Man", "author": "James Joyce", "dedication": "", "tagline": "A Künstlerroman", "year": "1916", "theme": "portrait", "accent": "#a08968", "blurb": "Stephen Dedalus's journey toward artistic awakening.", "slug": "portrait-of-the-artist"}
+    return meta, parts
+
+
+
+def parse_ulysses() -> tuple[dict, list]:
+    """Ulysses by James Joyce, split at its eighteen episode openings."""
+    lines = load_pdf_source("Ulysses---James-Joyce.txt")
+    episodes = [
+        ("Telemachus", "Stately, plump Buck Mulligan came from the stairhead"),
+        ("Nestor", "You, Cochrane, what city sent for him"),
+        ("Proteus", "Ineluctable modality of the visible"),
+        ("Calypso", "Mr Leopold Bloom ate with relish"),
+        ("Lotus Eaters", "By lorries along Sir John Rogerson"),
+        ("Hades", "Martin Cunningham, first, poked his silkhatted head"),
+        ("Aeolus", "In the heart of the Hibernian metropolis"),
+        ("Lestrygonians", "Pineapple rock, lemon platt, butter scotch"),
+        ("Scylla and Charybdis", "Urbane, to comfort them, the quaker librarian purred"),
+        ("Wandering Rocks", "The superior, the very reverend John Conmee"),
+        ("Sirens", "Bronze by gold heard the hoofirons"),
+        ("Cyclops", "I was just passing the time of day with old Troy"),
+        ("Nausicaa", "The summer evening had begun to fold the world"),
+        ("Oxen of the Sun", "Deshil Holles Eamus"),
+        ("Circe", "The Mabbot street entrance of nighttown"),
+        ("Eumaeus", "Preparatory to anything else Mr Bloom brushed off"),
+        ("Ithaca", "What parallel courses did Bloom and Stephen follow returning"),
+        ("Penelope", "Yes because he never did a thing like that before"),
+    ]
+
+    def find_phrase(phrase: str, start: int) -> int | None:
+        wanted = normalized_heading(phrase)
+        for i in range(start, len(lines)):
+            window = ""
+            spans = []
+            for j in range(i, min(len(lines), i + 5)):
+                piece = normalized_heading(lines[j])
+                if not piece:
+                    continue
+                offset = len(window) + (1 if window else 0)
+                window = f"{window} {piece}".strip()
+                spans.append((offset, offset + len(piece), j))
+                position = window.find(wanted)
+                if position >= 0:
+                    return next(line_index for begin, finish, line_index in spans if begin <= position < finish)
+        return None
+
+    cursor = 0
+    located = []
+    for title, phrase in episodes:
+        position = find_phrase(phrase, cursor)
+        if position is None:
+            raise ValueError(f"Ulysses episode opening not found: {title}")
+        located.append((title, position))
+        cursor = position + 1
+
+    novel_end = len(lines)
+    for i in range(located[-1][1], len(lines)):
+        if normalized_heading(lines[i]) == "a catalog of selected":
+            novel_end = heading_block_start(lines, i)
+            break
+
+    part_defs = [
+        {"roman": "I", "name": "Telemachia", "subtitle": "Stephen Dedalus"},
+        {"roman": "II", "name": "Odyssey", "subtitle": "Leopold Bloom's day"},
+        {"roman": "III", "name": "Nostos", "subtitle": "Homecoming"},
+    ]
+    parts = [{**part, "chapters": []} for part in part_defs]
+    for index, (title, start) in enumerate(located):
+        end = located[index + 1][1] if index + 1 < len(located) else novel_end
+        paragraphs = pdf_reflow(lines[start:end], reference_lines=lines)
+        part_index = 0 if index < 3 else 1 if index < 15 else 2
+        parts[part_index]["chapters"].append({
+            "number_label": f"Episode {index + 1}",
+            "roman": str(index + 1),
+            "title": title,
+            "paragraphs": paragraphs,
+        })
+    meta = {"title": "Ulysses", "author": "James Joyce", "dedication": "", "tagline": "Eighteen episodes across one day in Dublin", "year": "1922", "theme": "ulysses", "accent": "#6b8cae", "blurb": "Leopold Bloom and Stephen Dedalus cross Dublin on June 16, 1904.", "slug": "ulysses"}
+    return meta, parts
+
+
+
+
+
+def parse_catalog_book(raw_name: str, meta: dict, default_part: str, *, mode: str = "numbered",
+                       reset_chapters_on_part: bool = False,
+                       scan_limit: int = 700,
+                       stop_markers: tuple[str, ...] = (
+                           "debts", "notes", "index", "bibliography", "further reading",
+                           "timeline", "illustrations", "photographs", "about the author",
+                       )) -> tuple[dict, list]:
+    lines = load_pdf_source(raw_name)
+    chapters, toc_parts, toc_end = parse_contents(
+        lines, mode=mode, default_part=default_part,
+        reset_chapters_on_part=reset_chapters_on_part,
+        scan_limit=scan_limit,
+    )
+    parts = build_structured_parts(
+        lines, chapters, toc_parts, search_from=toc_end + 1,
+        stop_markers=stop_markers,
+    )
+    return meta, parts
+
+
+def parse_rubicon() -> tuple[dict, list]:
+    meta = {"title": "Rubicon: The Last Years of the Roman Republic", "author": "Tom Holland", "dedication": "", "tagline": "The death of the Roman Republic", "year": "2003", "theme": "rubicon", "accent": "#b45309", "blurb": "Caesar, Pompey, and the fall of the Roman Republic.", "slug": "rubicon"}
+    return parse_catalog_book(
+        "Rubicon---Tom-Holland.txt", meta, "Rubicon",
+        stop_markers=("timeline", "notes", "bibliography", "index", "about the author"),
+    )
+
+
+def parse_spqr() -> tuple[dict, list]:
+    meta = {"title": "SPQR: A History of Ancient Rome", "author": "Mary Beard", "dedication": "", "tagline": "A history of ancient Rome", "year": "2015", "theme": "spqr", "accent": "#8b7355", "blurb": "Rome's rise from village to empire.", "slug": "spqr"}
+    meta, parts = parse_catalog_book("SPQR---Mary-Beard.txt", meta, "SPQR")
+    drop_caps = {
+        "A NCIENT": "ANCIENT",
+        "A CCORDING": "ACCORDING",
+        "S CIPIO": "SCIPIO",
+        "W HILE": "WHILE",
+        "C ICERO": "CICERO",
+        "R ICH": "RICH",
+    }
+    for part in parts:
+        for chapter in part["chapters"]:
+            chapter["paragraphs"] = [
+                re.sub(r"^(?:" + "|".join(map(re.escape, drop_caps)) + r")\b", lambda match: drop_caps[match.group()], paragraph)
+                for paragraph in chapter["paragraphs"]
+            ]
+    return meta, parts
+
+
+def parse_napoleon() -> tuple[dict, list]:
+    meta = {"title": "Napoleon: A Life", "author": "Andrew Roberts", "dedication": "", "tagline": "A biography of Napoleon Bonaparte", "year": "2014", "theme": "napoleon", "accent": "#a16207", "blurb": "The life and times of Napoleon Bonaparte.", "slug": "napoleon"}
+    return parse_catalog_book("Napoleon---Andrew-Roberts.txt", meta, "Napoleon")
+
+
+def parse_power_broker() -> tuple[dict, list]:
+    meta = {"title": "The Power Broker: Robert Moses and the Fall of New York", "author": "Robert A. Caro", "dedication": "", "tagline": "Robert Moses and the Fall of New York", "year": "1974", "theme": "power-broker", "accent": "#475569", "blurb": "How Robert Moses shaped New York City.", "slug": "the-power-broker"}
+    return parse_catalog_book("The-power-broker---Robert-A-Caro.txt", meta, "The Power Broker")
+
+
+def parse_path_to_power() -> tuple[dict, list]:
+    meta = {"title": "The Path to Power", "author": "Robert A. Caro", "dedication": "", "tagline": "The Years of Lyndon Johnson, Volume 1", "year": "1982", "theme": "lbj-path", "accent": "#92400e", "blurb": "Lyndon Johnson's early years and first campaign for power.", "slug": "the-path-to-power"}
+    return parse_catalog_book("The-Path-to-Power---Robert-A-Caro.txt", meta, "The Years of Lyndon Johnson")
+
+
+def parse_means_of_ascent() -> tuple[dict, list]:
+    meta = {"title": "Means of Ascent", "author": "Robert A. Caro", "dedication": "", "tagline": "The Years of Lyndon Johnson, Volume 2", "year": "1990", "theme": "lbj-means", "accent": "#92400e", "blurb": "Johnson's contested 1948 Senate campaign and rise in Texas.", "slug": "means-of-ascent"}
+    return parse_catalog_book("Robert-A-Caro---Means-of-Ascent.txt", meta, "The Years of Lyndon Johnson")
+
+
+def parse_master_of_the_senate() -> tuple[dict, list]:
+    meta = {"title": "Master of the Senate", "author": "Robert A. Caro", "dedication": "", "tagline": "The Years of Lyndon Johnson, Volume 3", "year": "2002", "theme": "lbj-master", "accent": "#92400e", "blurb": "Johnson's years as a Senate leader and legislative strategist.", "slug": "master-of-the-senate"}
+    return parse_catalog_book("Master-of-the-Senate--The-Years-of-Lyndon---Robert-A-Caro.txt", meta, "The Years of Lyndon Johnson")
+
+
+def parse_passage_of_power() -> tuple[dict, list]:
+    meta = {"title": "The Passage of Power", "author": "Robert A. Caro", "dedication": "", "tagline": "The Years of Lyndon Johnson, Volume 4", "year": "2012", "theme": "lbj-passage", "accent": "#92400e", "blurb": "Johnson's years as vice president and his sudden accession to the presidency.", "slug": "the-passage-of-power"}
+    return parse_catalog_book("The-Passage-of-Power---Robert-A-Caro.txt", meta, "The Years of Lyndon Johnson")
+
+
+def fdr_second_volume(lines: list[str], after: int) -> tuple[list[dict], list[dict], int]:
+    """Read the unnumbered contents for Roosevelt: The Soldier of Freedom."""
+    contents_indexes = [
+        i for i, line in enumerate(lines)
+        if line.strip().casefold() == "contents" and i > after
+    ]
+    if not contents_indexes:
+        raise ValueError("second FDR volume contents page not found")
+    contents_index = contents_indexes[-1]
+    parts: list[dict] = []
+    chapters: list[dict] = []
+    current_part = -1
+    in_part_contents = False
+    consumed = contents_index
+    prelude_added = False
+    for i in range(contents_index + 1, min(len(lines), contents_index + 260)):
+        text = lines[i].strip()
+        if not text:
+            continue
+        consumed = i
+        marker = parse_part_heading(lines[i])
+        if marker:
+            _, title = marker
+            title = display_part_title(title)
+            parts.append({"roman": roman_numeral(len(parts) + 1), "name": f"Soldier of Freedom · {title}"})
+            current_part = len(parts) - 1
+            in_part_contents = True
+            continue
+        if text.upper() in {"ACKNOWLEDGMENTS", "ACKNOWLEDGEMENTS", "GENERAL BIBLIOGRAPHY", "INDEX"}:
+            if chapters:
+                break
+            continue
+        if re.match(r"^PROLOGUE\b", text, re.I) and not prelude_added:
+            parts.append({"roman": roman_numeral(len(parts) + 1), "name": "Soldier of Freedom · Prologue"})
+            current_part = len(parts) - 1
+            chapters.append({"title": "Prologue Fall 1940", "number_label": "Prologue", "roman": "Prologue", "part_index": current_part})
+            prelude_added = True
+            continue
+        if not in_part_contents or current_part < 0 or len(text) > 105 or not re.search(r"[A-Za-z]", text):
+            continue
+        if text != text.upper() or text.upper() in TOC_END_MARKERS:
+            continue
+        normalized_source_title = re.sub(r"\s+", " ", text).strip()
+        title_aliases = {
+            "STALIN: THE TWIST OF REAL POLITIK": "Stalin: The Twist of Realpolitik",
+            "THRUS ACROSS THE ATLANTIC": "Thrust Across the Atlantic",
+            "WALK WITH THE DEVIL": "To Walk with the Devil",
+            "TEHERAN: THE MARSHALL": "Teheran: The Marshal",
+        }
+        title = title_aliases.get(
+            normalized_source_title,
+            re.sub(r"\s+", " ", text.title()).replace("’S", "’s").replace("'S", "'s"),
+        )
+        chapters.append({
+            "title": title,
+            "number_label": f"Section {sum(c['part_index'] == current_part for c in chapters) + 1}",
+            "roman": str(sum(c['part_index'] == current_part for c in chapters) + 1),
+            "part_index": current_part,
+        })
+    if not chapters or len(parts) < 5:
+        raise ValueError("could not read the five parts of the Soldier of Freedom contents")
+    return chapters, parts, consumed
+
+
+def parse_definitive_fdr() -> tuple[dict, list]:
+    lines = load_pdf_source("The-Definitive-FDR---James-MacGregor-Burns.txt")
+    first_chapters, first_parts, first_toc_end = parse_contents(
+        lines, mode="roman", default_part="The Lion and the Fox",
+    )
+    first_volume = build_structured_parts(
+        lines, first_chapters, first_parts, search_from=first_toc_end + 1,
+        stop_markers=(
+            "acknowledgments", "general bibliography", "index", "illustrations",
+            "photographs", "about the author",
+        ),
+    )
+    second_chapters, second_parts, second_toc_end = fdr_second_volume(lines, first_toc_end)
+    second_volume = build_structured_parts(
+        lines, second_chapters, second_parts, search_from=second_toc_end + 1,
+        stop_markers=(
+            "acknowledgments", "general bibliography", "index", "photographs",
+            "illustrations", "about the author", "copyright",
+        ),
+    )
+    # Keep the source's two-volume structure visible in the part names.
+    for part in first_volume:
+        part["name"] = f"Lion and the Fox · {part['name']}"
+    meta = {
+        "title": "The Definitive FDR",
+        "author": "James MacGregor Burns",
+        "dedication": "",
+        "tagline": "Two volumes on Roosevelt, from 1882 to 1945",
+        "year": "1956–1970",
+        "theme": "fdr",
+        "accent": "#2563eb",
+        "blurb": "The political formation, presidency, and wartime leadership of Franklin D. Roosevelt.",
+        "slug": "the-definitive-fdr",
+    }
+    return meta, first_volume + second_volume
+
+
+def parse_things_hidden() -> tuple[dict, list]:
+    meta = {"title": "Things Hidden Since the Foundation of the World", "author": "René Girard", "dedication": "", "tagline": "Mimesis, violence, and scapegoating", "year": "1978", "theme": "girard", "accent": "#7c3aed", "blurb": "An inquiry into mimetic desire, the origins of culture, and the scapegoat mechanism.", "slug": "things-hidden"}
+    meta, parts = parse_catalog_book(
+        "Things-Hidden-Since-the-Foundation-of-the-World---Rene-Girard.txt",
+        meta,
+        "Things Hidden",
+        mode="girard",
+        reset_chapters_on_part=True,
+        scan_limit=100,
+        stop_markers=("notes", "bibliography", "index", "further reading", "about the author"),
+    )
+    corrections = {
+        "emgma": "enigma",
+        "surpnsmg": "surprising",
+        "divisi9n": "division",
+        "milnesis": "mimesis",
+        "milnetic": "mimetic",
+    }
+    speaker = re.compile(r"\bJ\.\s*-M\.\s*0\.", re.I)
+    for part in parts:
+        for chapter in part["chapters"]:
+            cleaned = []
+            for paragraph in chapter["paragraphs"]:
+                paragraph = speaker.sub("J.-M. O.", paragraph)
+                for source, replacement in corrections.items():
+                    paragraph = re.sub(rf"\b{source}\b", replacement, paragraph, flags=re.I)
+                cleaned.append(paragraph)
+            chapter["paragraphs"] = cleaned
+    return meta, parts
+
+
 def parse_moldbug(raw_name: str, meta: dict, titles: list[str], part_name: str) -> tuple[dict, list]:
     """Shared parser for the Moldbug LaTeX PDFs (pdftotext -layout extract).
 
@@ -2805,6 +3851,21 @@ PARSERS = [
     ("infinite-jest", parse_infinite_jest),
     ("forty-ways-to-look-at-churchill", parse_forty_ways_to_look_at_churchill),
     ("sovereign-individual", parse_sovereign_individual),
+    ("open-letter", parse_open_letter),
+    ("gentle-introduction", parse_gentle_introduction),
+    ("dubliners", parse_dubliners),
+    ("portrait-of-the-artist", parse_portrait),
+    ("ulysses", parse_ulysses),
+    ("rubicon", parse_rubicon),
+    ("spqr", parse_spqr),
+    ("napoleon", parse_napoleon),
+    ("the-power-broker", parse_power_broker),
+    ("the-path-to-power", parse_path_to_power),
+    ("means-of-ascent", parse_means_of_ascent),
+    ("master-of-the-senate", parse_master_of_the_senate),
+    ("the-passage-of-power", parse_passage_of_power),
+    ("the-definitive-fdr", parse_definitive_fdr),
+    ("things-hidden", parse_things_hidden),
 ]
 
 
@@ -2845,7 +3906,8 @@ def main() -> None:
             catalog.append(json.loads(meta_path.read_text(encoding="utf-8")))
             print(f"  … {slug}: kept existing data (source absent)")
 
-    # Sort catalog: Rand, Nietzsche cluster, Heidegger, DFW, Churchill, Moldbug, Davidson/Rees-Mogg
+    # Sort catalog: the original philosophy and fiction shelf, then Joyce,
+    # Roman history, Caro and FDR, and Girard.
     order = [
         "atlas-shrugged",
         "the-fountainhead",
@@ -2860,6 +3922,19 @@ def main() -> None:
         "open-letter",
         "gentle-introduction",
         "sovereign-individual",
+        "dubliners",
+        "portrait-of-the-artist",
+        "ulysses",
+        "rubicon",
+        "spqr",
+        "napoleon",
+        "the-power-broker",
+        "the-path-to-power",
+        "means-of-ascent",
+        "master-of-the-senate",
+        "the-passage-of-power",
+        "the-definitive-fdr",
+        "things-hidden",
     ]
     catalog.sort(key=lambda m: order.index(m["slug"]) if m["slug"] in order else 99)
     (ROOT / "catalog.json").write_text(

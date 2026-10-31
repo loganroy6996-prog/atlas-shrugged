@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "candle",
+      "caption": "The Sisters"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "road",
+      "caption": "An Encounter"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "bazaar",
+      "caption": "Araby"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "ship",
+      "caption": "Eveline"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "horse",
+      "caption": "After the Race"
+    },
+    "p1c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c6",
+      "class": "plate",
+      "motif": "coin",
+      "caption": "Two Gallants"
+    },
+    "p1c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c7",
+      "class": "plate",
+      "motif": "door",
+      "caption": "The Boarding House"
+    },
+    "p1c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c8",
+      "class": "plate",
+      "motif": "cloud",
+      "caption": "A Little Cloud"
+    },
+    "p1c9": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c9",
+      "class": "plate",
+      "motif": "mirror",
+      "caption": "Counterparts"
+    },
+    "p1c10": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c10",
+      "class": "plate",
+      "motif": "clay",
+      "caption": "Clay"
+    },
+    "p1c11": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c11",
+      "class": "plate",
+      "motif": "window",
+      "caption": "A Painful Case"
+    },
+    "p1c12": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c12",
+      "class": "plate",
+      "motif": "ivy",
+      "caption": "Ivy Day in the Committee Room"
+    },
+    "p1c13": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c13",
+      "class": "plate",
+      "motif": "theatre",
+      "caption": "A Mother"
+    },
+    "p1c14": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c14",
+      "class": "plate",
+      "motif": "chalice",
+      "caption": "Grace"
+    },
+    "p1c15": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c15",
+      "class": "plate",
+      "motif": "snow",
+      "caption": "The Dead"
+    }
+  }
+}

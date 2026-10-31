@@ -1,0 +1,78 @@
+/* Things Hidden - mimetic triangles, violet ritual, and the scapegoat */
+:root, html[data-theme="dark"] {
+  --bg: #100c15;
+  --bg-elevated: #191220;
+  --bg-soft: #22182d;
+  --surface: #2c2038;
+  --border: rgba(167, 139, 250, 0.17);
+  --border-strong: rgba(167, 139, 250, 0.32);
+  --text: #f0eaf7;
+  --text-muted: #c1b1d3;
+  --text-faint: #83728f;
+  --accent: #a78bfa;
+  --accent-soft: rgba(167, 139, 250, 0.13);
+  --accent-hover: #c4b5fd;
+  --reader-max: 52rem;
+}
+html[data-theme="sepia"] {
+  --bg: #f3eee6;
+  --bg-elevated: #e9e0d6;
+  --text: #2b2030;
+  --text-muted: #69596e;
+  --accent: #7040a0;
+  --border: rgba(112, 64, 160, 0.18);
+}
+html[data-theme="light"] {
+  --bg: #faf8fc;
+  --text: #211a28;
+  --text-muted: #62566a;
+  --accent: #7040a0;
+  --bg-elevated: #ffffff;
+}
+.cover-grid {
+  background-image:
+    linear-gradient(rgba(167, 139, 250, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.05) 1px, transparent 1px);
+  background-size: 52px 52px;
+}
+.cover-glow {
+  background: radial-gradient(ellipse at 50% 38%, rgba(167, 139, 250, 0.18) 0%, rgba(112, 64, 160, 0.08) 45%, transparent 72%);
+}
+.title-line.accent { color: var(--accent); font-style: italic; }
+
+/* Chapter art styles */
+#chapter-art {
+  margin: 0 auto 2rem;
+  max-width: min(var(--reader-max, 52rem), 90vw);
+  width: 100%;
+}
+#chapter-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+#chapter-art[hidden] {
+  display: none;
+}
+#cover-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Book plate treatment used by the library cover artwork. */
+.cover-art.plate {
+  width: min(25rem, 76vw);
+  margin: 0.25rem auto 1.1rem;
+}
+.cover-art.plate svg {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.3);
+}
+@media (max-height: 760px) {
+  .cover-art.plate { width: min(19rem, 58vw); margin-bottom: 0.5rem; }
+}

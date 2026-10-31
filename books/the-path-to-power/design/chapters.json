@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "cover": {
+    "src": "art/cover.svg",
+    "class": "plate"
+  },
+  "default": {
+    "class": "plate"
+  },
+  "chapters": {
+    "p1c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c1",
+      "class": "plate",
+      "motif": "field",
+      "caption": "The Bunton Strain"
+    },
+    "p1c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c2",
+      "class": "plate",
+      "motif": "rail",
+      "caption": "The People’s Party"
+    },
+    "p1c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c3",
+      "class": "plate",
+      "motif": "star",
+      "caption": "The Johnson Strut"
+    },
+    "p1c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c4",
+      "class": "plate",
+      "motif": "letter",
+      "caption": "The Father and Mother"
+    },
+    "p1c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c5",
+      "class": "plate",
+      "motif": "route",
+      "caption": "The Son"
+    },
+    "p1c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c6",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "“The Best Man I Ever Knew”"
+    },
+    "p1c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p1c7",
+      "class": "plate",
+      "motif": "radio",
+      "caption": "“The Bottom of the Heap”"
+    },
+    "p2c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c1",
+      "class": "plate",
+      "motif": "door",
+      "caption": "“Bull” Johnson"
+    },
+    "p2c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c2",
+      "class": "plate",
+      "motif": "field",
+      "caption": "The Rich Man’s Daughter"
+    },
+    "p2c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c3",
+      "class": "plate",
+      "motif": "rail",
+      "caption": "Cotulla"
+    },
+    "p2c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c4",
+      "class": "plate",
+      "motif": "star",
+      "caption": "White Stars and Black Stars"
+    },
+    "p2c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p2c5",
+      "class": "plate",
+      "motif": "letter",
+      "caption": "“A Very Unusual Ability”"
+    },
+    "p3c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c1",
+      "class": "plate",
+      "motif": "route",
+      "caption": "On His Way"
+    },
+    "p3c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c2",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "The New Deal"
+    },
+    "p3c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c3",
+      "class": "plate",
+      "motif": "radio",
+      "caption": "The Boss of the Little Congress"
+    },
+    "p3c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c4",
+      "class": "plate",
+      "motif": "door",
+      "caption": "In Tune"
+    },
+    "p3c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c5",
+      "class": "plate",
+      "motif": "field",
+      "caption": "Lady Bird"
+    },
+    "p3c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c6",
+      "class": "plate",
+      "motif": "rail",
+      "caption": "Rayburn"
+    },
+    "p3c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c7",
+      "class": "plate",
+      "motif": "star",
+      "caption": "“Put Them to Work!”"
+    },
+    "p3c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p3c8",
+      "class": "plate",
+      "motif": "letter",
+      "caption": "The Dam"
+    },
+    "p4c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c1",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "The First Campaign"
+    },
+    "p4c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c2",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "From the Forks of the Creeks"
+    },
+    "p4c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c3",
+      "class": "plate",
+      "motif": "radio",
+      "caption": "Galveston"
+    },
+    "p4c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c4",
+      "class": "plate",
+      "motif": "door",
+      "caption": "Balancing the Books"
+    },
+    "p4c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c5",
+      "class": "plate",
+      "motif": "field",
+      "caption": "Longlea"
+    },
+    "p4c6": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c6",
+      "class": "plate",
+      "motif": "rail",
+      "caption": "The Tenth District"
+    },
+    "p4c7": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c7",
+      "class": "plate",
+      "motif": "star",
+      "caption": "The Sad Irons"
+    },
+    "p4c8": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p4c8",
+      "class": "plate",
+      "motif": "letter",
+      "caption": "“I’ll Get It for You”"
+    },
+    "p5c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c1",
+      "class": "plate",
+      "motif": "letter",
+      "caption": "Mr. Johnson Goes to Washington"
+    },
+    "p5c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c2",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "A Contract and Three Telegrams"
+    },
+    "p5c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c3",
+      "class": "plate",
+      "motif": "ballot",
+      "caption": "Campaign Committee"
+    },
+    "p5c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c4",
+      "class": "plate",
+      "motif": "door",
+      "caption": "The Munsey Building"
+    },
+    "p5c5": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p5c5",
+      "class": "plate",
+      "motif": "field",
+      "caption": "Through the Back Door"
+    },
+    "p6c1": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c1",
+      "class": "plate",
+      "motif": "rail",
+      "caption": "“Pass the Biscuits, Pappy”"
+    },
+    "p6c2": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c2",
+      "class": "plate",
+      "motif": "star",
+      "caption": "“I Want to See Lyndon”"
+    },
+    "p6c3": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c3",
+      "class": "plate",
+      "motif": "letter",
+      "caption": "“Mister Speaker”"
+    },
+    "p6c4": {
+      "src": "art/chapter-plates.svg",
+      "symbol": "chapter-p6c4",
+      "class": "plate",
+      "motif": "route",
+      "caption": "The “Perfect Roosevelt Man”"
+    }
+  }
+}

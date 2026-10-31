@@ -1,0 +1,120 @@
+{
+  "title": "Dubliners",
+  "author": "James Joyce",
+  "dedication": "",
+  "parts": [
+    {
+      "id": "part-1",
+      "roman": "I",
+      "name": "Dubliners",
+      "subtitle": "",
+      "chapters": [
+        {
+          "id": "p1c1",
+          "number_label": "The Sisters",
+          "roman": "1",
+          "title": "The Sisters",
+          "word_count": 3155
+        },
+        {
+          "id": "p1c2",
+          "number_label": "An Encounter",
+          "roman": "2",
+          "title": "An Encounter",
+          "word_count": 3271
+        },
+        {
+          "id": "p1c3",
+          "number_label": "Araby",
+          "roman": "3",
+          "title": "Araby",
+          "word_count": 2331
+        },
+        {
+          "id": "p1c4",
+          "number_label": "Eveline",
+          "roman": "4",
+          "title": "Eveline",
+          "word_count": 1835
+        },
+        {
+          "id": "p1c5",
+          "number_label": "After the Race",
+          "roman": "5",
+          "title": "After the Race",
+          "word_count": 2238
+        },
+        {
+          "id": "p1c6",
+          "number_label": "Two Gallants",
+          "roman": "6",
+          "title": "Two Gallants",
+          "word_count": 3928
+        },
+        {
+          "id": "p1c7",
+          "number_label": "The Boarding House",
+          "roman": "7",
+          "title": "The Boarding House",
+          "word_count": 2800
+        },
+        {
+          "id": "p1c8",
+          "number_label": "A Little Cloud",
+          "roman": "8",
+          "title": "A Little Cloud",
+          "word_count": 5053
+        },
+        {
+          "id": "p1c9",
+          "number_label": "Counterparts",
+          "roman": "9",
+          "title": "Counterparts",
+          "word_count": 4149
+        },
+        {
+          "id": "p1c10",
+          "number_label": "Clay",
+          "roman": "10",
+          "title": "Clay",
+          "word_count": 2637
+        },
+        {
+          "id": "p1c11",
+          "number_label": "A Painful Case",
+          "roman": "11",
+          "title": "A Painful Case",
+          "word_count": 2130
+        },
+        {
+          "id": "p1c12",
+          "number_label": "Ivy Day in the Committee Room",
+          "roman": "12",
+          "title": "Ivy Day in the Committee Room",
+          "word_count": 5284
+        },
+        {
+          "id": "p1c13",
+          "number_label": "A Mother",
+          "roman": "13",
+          "title": "A Mother",
+          "word_count": 4517
+        },
+        {
+          "id": "p1c14",
+          "number_label": "Grace",
+          "roman": "14",
+          "title": "Grace",
+          "word_count": 7608
+        },
+        {
+          "id": "p1c15",
+          "number_label": "The Dead",
+          "roman": "15",
+          "title": "The Dead",
+          "word_count": 15659
+        }
+      ]
+    }
+  ]
+}
